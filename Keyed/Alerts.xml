@@ -1,89 +1,100 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-	<ClickToJumpToProblem>Clicca per saltare il problema</ClickToJumpToProblem>
-
+  <ClickToJumpToProblem>Clicca per raggiungere il problema</ClickToJumpToProblem>
+  
+  <AlertNeedStockpile>Serve una riserva</AlertNeedStockpile>
+  <AlertNeedStockpileDesc>I tuoi coloni hanno bisogno di un posto dove riporre gli oggetti. Designa una RISERVA dove possano sistemare gli oggetti.\n\nPuoi trovare la riserva nella sezione ZONE del menù ARCHITETTURA in basso a sinistra.</AlertNeedStockpileDesc>
+  
+  <AlertUnforbidStartingResources>Rimuovi il divieto sulle risorse</AlertUnforbidStartingResources>
+  <AlertUnforbidStartingResourcesDesc>Le risorse iniziali nella mappa sono VIETATE.\n\nPer farle prendere dai coloni, devi RIMUOVERE IL DIVIETO su di esse selezionandole e cliccando il comando RIMUOVI IL DIVIETO nella parte bassa dello schermo.</AlertUnforbidStartingResourcesDesc>
+  
+  <AlertEquipStartingWeapons>Equipaggia le armi</AlertEquipStartingWeapons>
+  <AlertEquipStartingWeaponsDesc>I tuoi coloni sono arrivati con delle armi. Equipaggiale!\n\nSeleziona un colono e clicca col tasto destro sull'arma che vuoi che equipaggino.</AlertEquipStartingWeaponsDesc>
+  
   <NeedSawmill>Serve una segheria</NeedSawmill>
-  <NeedSawmillDesc>Ti serve un qualche tipo di segheria per tagliare i tronchi in legna.\n\nCostruiscine una, anche elettrica.</NeedSawmillDesc>
+  <NeedSawmillDesc>Ti serve una specie di segheria per tagliare i tronchi in assi di legno più versatili.\n\nCostruisci una SEGHERIA A MANO oppure una SEGHERIA ELETTRICA.</NeedSawmillDesc>
   
   <EquipStartingEquipment>Prendi il tuo equipaggiamento</EquipStartingEquipment>
-  <EquipStartingEquipmentDesc>Sei atterrato con alcune armi. Prendile dal punto d'arrivo.\n\nPer equipaggiare qualcosa, Seleziona un colono e clicca il dasto destro sull'item che vuoi equipaggiare.</EquipStartingEquipmentDesc>
+  <EquipStartingEquipmentDesc>Sei atterrato con delle armi. Prendile dal tuo punto d'atterraggio.\n\nPer equipaggiare qualcosa, seleziona un colono e clicca con il tasto destro sull'oggetto che vuoi equipaggiare.</EquipStartingEquipmentDesc>
   
-  <MentalBreakSoon>Crisi di nervi in vista</MentalBreakSoon>
-  <MentalBreakSoonDesc>Questi coloni sono vicini alla pazzia:\n\n{0}\nIncrementa la loro felicita' o avverranno brutte cose.</MentalBreakSoonDesc>
+  <MentalBreakSoon>Esaurimento nervoso in vista</MentalBreakSoon>
+  <MentalBreakSoonDesc>Questi coloni sono vicini all'esaurimento nervoso:\n\n{0}\nIncrementa la loro felicità al più presto o avverranno brutte cose.</MentalBreakSoonDesc>
 
-  <MentalBreakImminent>Crisi di nervi imminente</MentalBreakImminent>
-  <MentalBreakImminentDesc>Questi coloni sono molto stressati, e potrebbero impazzire a momenti:\n\n{0}</MentalBreakImminentDesc>
+  <MentalBreakImminent>Esaurimento nervoso imminente</MentalBreakImminent>
+  <MentalBreakImminentDesc>Questi coloni sono molto stressati, e potrebbero impazzire in qualsiasi momento:\n\n{0}</MentalBreakImminentDesc>
 
   <ColonistNeedsRescue>Un colono ha bisogno di aiuto</ColonistNeedsRescue>
   <ColonistsNeedRescue>Dei coloni hanno bisogno di aiuto</ColonistsNeedRescue>
-  <ColonistsNeedRescueDesc>Questi coloni sono inabili a terra:\n\n{0}\nManda altri coloni per salvarli e portarli nei loro letti.\n\n(Per salvarli, seleziona un'altro colono, poi click destro sulla vittima.)</ColonistsNeedRescueDesc>
+  <ColonistsNeedRescueDesc>Questi coloni sono inabili a terra:\n\n{0}\nManda un altro colono per salvarli e riportarli nei loro letti.\n\n(Per salvarli, seleziona un altro colono, poi click destro sulla vittima e seleziona Soccorri.)</ColonistsNeedRescueDesc>
 
   <BuildARoom>Costruisci una stanza</BuildARoom>
-  <BuildARoomDesc>Non hai stanze.\n\nCostruisci quattro mura e una porta per crearne una.\n\nUsa il menu' ARCHITECT in basso a sinistra dello schermo per segnare dove vuoi costruire. Una volta designato qualcosa da costruire, i tuoi coloni lo faranno appena possono.</BuildARoomDesc>
+  <BuildARoomDesc>Non hai stanze.\n\nCostruisci quattro mura e una porta per crearne una.\n\nUsa il menù ARCHITETTURA in basso a sinistra dello schermo per segnare dove vuoi costruire. Una volta ordinata una costruzione, i tuoi coloni ci lavoreranno appena possono.</BuildARoomDesc>
 
   <NeedGrowingZone>Serve una zona agricola</NeedGrowingZone>
-  <NeedGrowingZoneDesc>Non hai una zona agricola.\n\nPiazza una zona agricola su di un terreno fertile dal menu' ARCHITECT.</NeedGrowingZoneDesc>
+  <NeedGrowingZoneDesc>Non hai una zona agricola.\n\nPiazza una zona agricola su di un terreno fertile dal menù ARCHITETTURA.</NeedGrowingZoneDesc>
 
   <NeedDefenses>Servono difese</NeedDefenses>
-  <NeedDefensesDesc>Sei qui da un po' di tempo, e potresti esser stato visto. I raid dei pirati cominceranno a breve.\n\ndovresti preparare delle difese.\n\nCostruisci qualche torretta.</NeedDefensesDesc>
+  <NeedDefensesDesc>Sei qui da un po' di tempo, e potresti esser stato visto. I raid dei pirati cominceranno a breve.\n\nDovresti preparare le difese.\n\nCostruisci qualche torretta.</NeedDefensesDesc>
 
-  <NeedDoctor>Servono dottori</NeedDoctor>
-  <NeedDoctorDesc>Questi pazienti sono inabili e affamati a letto. Necessitano di cibo, Ma tu non hai coloni assegnati a questo lavoro.\n\n{0}\nAssegnane qualcuno per dargli le giuste cure.</NeedDoctorDesc>
+  <NeedDoctor>Serve un dottore</NeedDoctor>
+  <NeedDoctorDesc>Questi pazienti sono inabili a letto e affamati. Necessitano di cibo, ma tu non hai coloni in salute assegnati a questo tipo di lavoro.\n\n{0}\nAssegna qualcuno in forma al lavoro di Dottore per dargli le giuste cure.</NeedDoctorDesc>
 
-  <NeedMiner>Servono minatori</NeedMiner>
-  <NeedMinerDesc>Hai segnato alcune rocce per essere distrutte, ma nessun colono e' minatore.\n\nAssegnane qualcuno.</NeedMinerDesc>
+  <NeedMiner>Serve un minatore</NeedMiner>
+  <NeedMinerDesc>Hai ordinato la distruzione di alcune rocce, ma nessun colono è minatore.\n\nAssegna qualcuno al lavoro di Minatore.</NeedMinerDesc>
 
-  <NeedWarden>Servono custodi</NeedWarden>
-  <NeedWardenDesc>Hai dei prigionieri, ma nessun custode.\n\nAssegnane qualcuno.</NeedWardenDesc>
+  <NeedWarden>Serve un guardiano</NeedWarden>
+  <NeedWardenDesc>Hai dei prigionieri, ma nessun guardiano.\n\nAssegna qualcuno al lavoro di Guardiano.</NeedWardenDesc>
 
   <LowFood>Poco cibo</LowFood>
-  <LowFoodDesc>Hai rimasto {0} cibo nel deposito. E' molto basso.\n\nColtivane, comprane, trovane, o procuratene con la caccia.</LowFoodDesc>
+  <LowFoodDesc>Hai soltanto {0} unità di cibo nel deposito. È pericolosamente basso.\n\nColtivane, comprane, trovane, o procuratene con la caccia.</LowFoodDesc>
 
   <NeedColonistBeds>Servono letti</NeedColonistBeds>
-  <NeedColonistBedsDesc>Hai più coloni che letti. A qualcuno manchera' il posto per dormire.\n\nQuindi crea piu' letti, o adibisci i letti per prigionieri a letti per coloni.</NeedColonistBedsDesc>
+  <NeedColonistBedsDesc>Hai più coloni che letti. A qualcuno mancherà un posto per dormire.\n\nCrea più letti, o cambia i letti per prigionieri a letti per coloni.\n\nSe non hai risorse, i posti per dormire sono gratuiti e possono essere piazzati istantaneamente.</NeedColonistBedsDesc>
 
   <Starvation>Coloni affamati</Starvation>
-  <StarvationDesc>Questi coloni sono affamati:\n\n{0}\nDagli del cibo. Ti serve una fonte di cibo.</StarvationDesc>
+  <StarvationDesc>Questi coloni stanno morendo di fame:\n\n{0}\nDagli del cibo. Ti serve una fonte di cibo come un dispenser di pasta nutriente e del cibo da fornirgli. Inoltre assicurati che non siano arruolati.</StarvationDesc>
 
   <Exhaustion>Coloni esausti</Exhaustion>
-  <ExhaustionDesc>Questi coloni sono stanchi:\n\n{0}\nFalli dormire un po'. Gli servira' un letto.</ExhaustionDesc>
+  <ExhaustionDesc>Questi coloni sono esausti e hanno bisogno di dormire:\n\n{0}\nFalli dormire un po'. Gli servirà un letto assegnato ai coloni. Inoltre assicurati che non siano arruolati.</ExhaustionDesc>
 
   <NeedFoodHopper>Serve una tramoggia</NeedFoodHopper>
-  <NeedFoodHopperDesc>Hai un dispenser senza una tramoggia vicino.\n\nPer funzionare, la tramoggia deve essere riempita con del cibo grezzo.\n\nCostruisci una tramoggia vicino al distributore.</NeedFoodHopperDesc>
+  <NeedFoodHopperDesc>Hai un dispenser senza una tramoggia vicino.\n\nPer far funzionare il dispenser, la tramoggia deve essere riempita con del cibo grezzo.\n\nCostruisci una tramoggia vicino al dispenser.</NeedFoodHopperDesc>
 
   <BuildingNeedsPower>Una costruzione necessita di corrente</BuildingNeedsPower>
   <BuildingsNeedPower>Delle costruzioni necessitano di corrente</BuildingsNeedPower>
-  <BuildingsNeedPowerDesc>Queste costruzioni sono disconnesse dalla corrente elettrica:\n\n{0}\nConnettile ad una batteria o a un generatore.</BuildingsNeedPowerDesc>
-  <AndMore>and more</AndMore>
+  <BuildingsNeedPowerDesc>Queste costruzioni che consumano elettricità sono disconnesse dalla corrente elettrica:\n\n{0}\nConnettile ad una batteria o a un generatore.</BuildingsNeedPowerDesc>
+  
+  <AndMore>e più</AndMore>
   
   <NeedMealSource>Serve fonte di cibo</NeedMealSource>
-  <NeedMealSourceDesc>Non hai modo di produrre cibo.\n\nCostruisci un distributore o un fornello.\n\n(Non puo' stare in una cella, Altrimenti i coloni non lo useranno.)</NeedMealSourceDesc>
+  <NeedMealSourceDesc>Non hai modo di produrre pasti commestibili.\n\nCostruisci un dispenser o un fornello.\n\n(Non puo' stare in una cella, Altrimenti i coloni non lo useranno.)</NeedMealSourceDesc>
 
-  <NeedHomeRegion>Manca la home region</NeedHomeRegion>
-  <NeedHomeRegionDesc>Devi creare una HOME REGION dove i tuoi coloni puliranno, estingueranno incendi, e ripareranno strutture.\n\nDefiniscila dal sezione ZONES nel menu' ARCHITECT.</NeedHomeRegionDesc>
+  <NeedHomeRegion>Manca una zona di casa</NeedHomeRegion>
+  <NeedHomeRegionDesc>Devi creare una ZONA DI CASA dove i tuoi coloni puliranno, spegneranno incendi, e ripareranno strutture.\n\nDefiniscila dalla sezione ZONE nel menù ARCHITETTURA.</NeedHomeRegionDesc>
 
   <NeedBatteries>Servono batterie</NeedBatteries>
-  <NeedBatteriesDesc>Hai un solo pannello solare e niente batterie. Cosi' non avrai corrente la notte.\n\nCostruiscine un paio per mantenere le luci accese anche di notte.</NeedBatteriesDesc>
+  <NeedBatteriesDesc>Hai soltanto pannelli solari e niente batterie. Così non avrai corrente la notte.\n\nCostruiscine un paio per mantenere le luci accese anche di notte.</NeedBatteriesDesc>
 
-  <NoTradingCapacity>Non puoi negoziare</NoTradingCapacity>
-  <NoTradingCapacityDesc>Non puoi negoziare con le navi di passaggio.\n\nCostruisci una comms console.</NoTradingCapacityDesc>
+  <NoTradingCapacity>Non puoi commerciare</NoTradingCapacity>
+  <NoTradingCapacityDesc>Non puoi commerciare con le navi di passaggio.\n\nCostruisci una console di comunicazione.</NoTradingCapacityDesc>
 
   <NeedResearchProject>Serve un progetto di ricerca</NeedResearchProject>
-  <NeedResearchProjectDesc>Hai il tavolo di ricerca, ma non un progetto da far ricercare.\n\nApri il menu' delle ricerche e selezionane uno.</NeedResearchProjectDesc>
+  <NeedResearchProjectDesc>Hai il tavolo da ricerca, ma non hai scelto un progetto da far ricercare.\n\nApri il menù ricerca e selezionane uno.</NeedResearchProjectDesc>
 
-  <NeedDump>Serve discarica</NeedDump>
-  <NeedDumpDesc>Hai dei detriti che i coloni voglio spostare, ma non sanno dove metterli.\n\nDefinisci uno stockpile o abilita i detriti ad uno gia' esistente.</NeedDumpDesc>
+  <NeedDump>Serve una discarica</NeedDump>
+  <NeedDumpDesc>Hai dei detriti che i coloni voglio spostare, ma non sanno dove metterli.\n\nDefinisci una riserva e impostala in modo che accetti i detriti.</NeedDumpDesc>
 
-  <NeedGrave>servono tombe</NeedGrave>
-  <NeedGraveDesc>Ci sono dei corpi morti a terra ma i coloni non sanno dove metterli.\n\nCostrusci qualche tomba.</NeedGraveDesc>
+  <NeedGrave>Serve una tomba</NeedGrave>
+  <NeedGraveDesc>C'è un corpo a terra ma i coloni non sanno dove metterlo.\n\nCrea una tomba o una discarica e cambia le loro impostazioni di stoccaggio.</NeedGraveDesc>
 
-  <ColonistsIdle>{0} Coloni inattivi</ColonistsIdle>
-  <ColonistsIdleDesc>Questi coloni stanno oziando:\n\n{0}\nDovresti trovargli qualcosa di produttivo da fare.</ColonistsIdleDesc>
+  <ColonistsIdle>{0} coloni inattivi</ColonistsIdle>
+  <ColonistsIdleDesc>Questi coloni stanno oziando:\n\n{0}\nProbabilmente dovresti trovargli qualcosa di produttivo da fare.</ColonistsIdleDesc>
+  
+  <HaltedConstructions>Mancano i materiali per {0} costruzioni</HaltedConstructions> 
+  <HaltedConstructionsDesc>Mancano i materiali per queste costruzioni:\n\n{0}\nProbabilmente dovresti rendere disponibili ai coloni i materiali richiesti.</HaltedConstructionsDesc>
   
   <TableNeedsChairs>Ai tavoli servono sedie</TableNeedsChairs>
   <TableNeedsChairsDesc>Hai tavoli senza sedie vicine. I tavoli sono inutili senza sedie.</TableNeedsChairsDesc>
-  
-  
   
 </LanguageData>
