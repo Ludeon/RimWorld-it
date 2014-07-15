@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <LanguageData>
 
-  <AnimalInsanitySingle>Un {0} è impazzito. Attacherà chiunque.</AnimalInsanitySingle>
-  <AnimalInsanityMultiple>Una specie di onda psichica è passata nel tuo mondo. I coloni sono okey, ma...\n\nSembra che alcuni dei {0} nell'area stiano dando di matto.</AnimalInsanityMultiple>
+  <AnimalInsanitySingle>Un {0} è impazzito. Attacherà chiunque veda.</AnimalInsanitySingle>
+  <AnimalInsanityMultiple>Una specie di onda psichica è passata per il territorio. I coloni stanno bene, ma...\n\nSembra che molti esemplari di {0} nell'area stiano dando di matto.</AnimalInsanityMultiple>
 
   <CropBlight>Una misteriosa piaga ha distrutto le tue culture.</CropBlight>
 
-  <EclipseIncident>Una delle lune du questo pianeta si è spostata davanti al sole. Un'eclisse è iniziata.</EclipseIncident>
+  <EclipseIncident>Una delle lune di questo pianeta si è spostata davanti al sole. Un'eclisse è iniziata.</EclipseIncident>
 
   <MiracleHeal>{0} è guarito miracolosamente!</MiracleHeal>
 
   
   <!-- Enemy raids -->
-  <EnemyRaidWalkIn>Un gruppo di {0} provenienti da {1} Sono atterrati nelle vicinanze.</EnemyRaidWalkIn>
-  <EnemyRaidEdgeDrop>Un gruppo di {0} provenienti da {1} Sono atterrati nelle vicinanze.</EnemyRaidEdgeDrop>
-  <EnemyRaidCenterDrop>Un gruppo di {0} provenienti da {1} Sono atterrati proprio sopra di te!</EnemyRaidCenterDrop>
-  <EnemyRaidStageThenAttack>Si prepareranno per un po', Poi attaccheranno.\n\nDifenditi o attaccali per primo.</EnemyRaidStageThenAttack>
+  <EnemyRaidWalkIn>Un gruppo di {0} provenienti da {1} sono arrivati nelle vicinanze.</EnemyRaidWalkIn>
+  <EnemyRaidEdgeDrop>Un gruppo di {0} provenienti da {1} sono atterrati nelle vicinanze.</EnemyRaidEdgeDrop>
+  <EnemyRaidCenterDrop>Un gruppo di {0} provenienti da {1} sono atterrati proprio sopra di te!</EnemyRaidCenterDrop>
+  <EnemyRaidStageThenAttack>Si prepareranno per un po', poi attaccheranno.\n\nDifenditi o attaccali per primo.</EnemyRaidStageThenAttack>
   <EnemyRaidImmediateAttack>Attaccheranno immediatamente.</EnemyRaidImmediateAttack>
   <EnemyRaidBesiege>Sembra che vogliano mettere sotto assedio la colonia.</EnemyRaidBesiege>
 
 
   <!-- Friendly raids -->
-  <FriendlyRaidWalkIn>Un gruppo di amichevoli {0} provenienti da {1} Sono atterrati nelle vicinanze.</FriendlyRaidWalkIn>
-  <FriendlyRaidEdgeDrop>Un gruppo di amichevoli {0} provenienti da {1} Sono atterrati nelle vicinanze.</FriendlyRaidEdgeDrop>
+  <FriendlyRaidWalkIn>Un gruppo di amichevoli {0} provenienti da {1} sono arrivati nelle vicinanze.</FriendlyRaidWalkIn>
+  <FriendlyRaidEdgeDrop>Un gruppo di amichevoli {0} provenienti da {1} sono atterrati nelle vicinanze.</FriendlyRaidEdgeDrop>
   <FriendlyRaidCenterDrop>Un gruppo di amichevoli {0} provenienti da {1} Sono atterrati proprio sopra di te!</FriendlyRaidCenterDrop>
   <FriendlyRaidStageThenAttack>Si prepareranno per un po' prima di aiutarti.</FriendlyRaidStageThenAttack>
   <FriendlyRaidImmediateAttack>Ti aiuteranno immediatamente.</FriendlyRaidImmediateAttack>
@@ -30,25 +30,45 @@
 
   <RefugeePodCrash>Abbiamo rilevato una nave che si è schiantata bruscamente nelle vicinanze.\n\nSe c'è qualche sopravvissuto, sarà malridotto.</RefugeePodCrash>
 
-  <CargoPodCrash>Abbiamo rilevato una nave cargo caduta nelle vicinanze.\n\nPotresti trovare qualcosa di utile.</CargoPodCrash>
+  <CargoPodCrash>Abbiamo rilevato un gruppo di navette da carico caduto nelle vicinanze.\n\nPotresti trovare qualcosa di utile nei rottami.</CargoPodCrash>
 
   <AnElectricalConduit>un circuito elettrico</AnElectricalConduit>
   <AWallsPowerConduit>un circuito elettrico del muro</AWallsPowerConduit>
-  <ShortCircuit>Una falla in {0} ha causato un corto circuito.\n\nTutti i {1} Wd Delle batterie sono andati persi nell'esplosione.</ShortCircuit>
+  <ShortCircuit>Una falla in {0} ha causato un corto circuito.\n\nTutti i {1} Wd immagazzinati nelle batterie connesse sono andati persi in un'esplosione elettrica.</ShortCircuit>
   <ShortCircuitWasLarge>Quest'ammasso di corrente ha creato una bella esplosione.</ShortCircuitWasLarge>
-  <ShortCircuitWasHuge>Questa è stata veramente enorme. WOW.</ShortCircuitWasHuge>
+  <ShortCircuitWasHuge>Quell'esplosione è stata veramente enorme. Wow.</ShortCircuitWasHuge>
 
-  <LetterSolarFlare>Un'eruzione solare è arrivata.\n\nL'intensa radiazione ha spento tutti i circuiti elettrici.\n\nPasserà fra qualche giorno.</LetterSolarFlare>
+  <LetterSolarFlare>Un'eruzione solare è iniziata.\n\nL'intensa radiazione spegnerà tutti i circuiti elettrici.\n\nPasserà fra qualche giorno.</LetterSolarFlare>
 
   <TraderArrival>Una nave commerciale stà passando nelle vicinanze.\n\nSono conosciuti come {0}. Sono dei {1}.</TraderArrival>
 
-  <SingleTravelerPassing>Un {0} da {1} Stanno passando di quì. HECAP è chiamato {2}.</SingleTravelerPassing>
-  <GroupTravelersPassing>Un gruppo di viaggiatori da {0} Stanno passando di quì.</GroupTravelersPassing>
+  <SingleTravelerPassing>Un {0} da {1} sta passando di qui. HECAP si chiama {2}.</SingleTravelerPassing>
+  <GroupTravelersPassing>Un gruppo di viaggiatori da {0} stanno passando di qui.</GroupTravelersPassing>
 
-  <SingleVisitorArrives>Un {0} da {1} Stanno visitando la colonia.\n\nHECAP Sono chiamati {2}.</SingleVisitorArrives>
-  <GroupVisitorsArrive>Un gruppo da {0} Stà visitando la colonia.</GroupVisitorsArrive>
-  <VisitorsLeaving>I visitatori da {0} Se ne stanno andando.</VisitorsLeaving>
+  <SingleVisitorArrives>Un {0} da {1} sta visitando la colonia.\n\nHECAP si chiama {2}.</SingleVisitorArrives>
+  <GroupVisitorsArrive>Un gruppo da {0} sta visitando la colonia.</GroupVisitorsArrive>
+  <VisitorsLeaving>I visitatori da {0} se ne stanno andando.</VisitorsLeaving>
 
-  <WandererJoin>Un {0} Chiamato NAME è arrivato e si è unito alla colonia. HECAP lui è {1}.</WandererJoin>
+  <WandererJoin>Un {0} di nome NAME è arrivato e si è unito alla colonia. HECAP è un {1}.</WandererJoin>
+
+
+  <!-- Crashed ship part-->
+  <SpaceshipPartCrash>Un grande pezzo di un'antica nave si è schiantato nelle vicinanze.\n\nI tuoi coloni sentono che in un angolo della loro mente li stia esortando a fare cose indicibili. Deve avere a bordo un tipo di IA con poteri di proiezione psichica. E questo tipo di IA non è amichevole.\n\nDistruggila il prima possibile.</SpaceshipPartCrash>
+  <MessageAnimalInsanityPulse>L'antica struttura ha emesso un'onda psichica che ha portato gli animali vicini alla pazzia.</MessageAnimalInsanityPulse>
+  <LetterShipPartDroveColonistInsane>Il pezzo di nave schiantato ha emesso un'onda psichica focalizzata che ha portato il colono {0} alla pazzia.</LetterShipPartDroveColonistInsane>
+  <AwokeDaysAgo>Si è svegliato {0} giorni fa</AwokeDaysAgo>
+  <PsychicDroneLevel>Livello del drone psichico: {0}</PsychicDroneLevel>
+  <PsychicDroneLevelLow>Basso</PsychicDroneLevelLow>
+  <PsychicDroneLevelMedium>Medio</PsychicDroneLevelMedium>
+  <PsychicDroneLevelHigh>Alto</PsychicDroneLevelHigh>
+  <PsychicDroneLevelExtreme>Estremo</PsychicDroneLevelExtreme>
+  <LetterPsychicDroneLevelIncreased>Il pezzo di nave schiantato adesso emana un tipo di drone psichico più potente. Ogni umanoide nell'area adesso si sente più inquieto, terrificato, e paranoico.</LetterPsychicDroneLevelIncreased>
   
-</LanguageData>
+  <!-- Agent revealed -->
+  <LetterAgentRevealed>Abbiamo scoperto che {0} è un agente del tuo nemico {1}.\n\nAdesso sta cercando di scappare.</LetterAgentRevealed>
+  
+  <!-- Distant psychic drone -->
+  <LetterIncidentPsychicDrone>Un forte mal di testa perfora la tua testa come un chiodo!\n\nQualche distante macchina di odio è al lavoro. Sta proiettando un potente drone psichico in tutta la regione. Per qualche giorno l'umore di tutti sarà leggermente peggiore.</LetterIncidentPsychicDrone>
+
+  
+</LanguageData
