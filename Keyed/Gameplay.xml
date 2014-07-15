@@ -4,110 +4,110 @@
   <!-- Various -->
   <WorkLeft>Lavoro rimasto</WorkLeft>
   <Contents>Contenuto</Contents>
-  <ForPrisonerUse>Lo useranno i prigionieri</ForPrisonerUse>
-  <ForColonistUse>Lo useranno i coloni</ForColonistUse>
+  <ContainedResources>Risorse contenute</ContainedResources>
+  <ForPrisonerUse>Riservato ai prigionieri</ForPrisonerUse>
+  <ForColonistUse>Riservato ai coloni</ForColonistUse>
   <Owner>Proprietario</Owner>
   <Nobody>Nessuno</Nobody>
   <Unowned>Senza proprietario</Unowned>
-  <GunInstalled>Installato</GunInstalled>
-  <DeadTime>Morto {0}</DeadTime>
-  <WalkSpeed>Velocità di camminata {0}</WalkSpeed>
-  <DyingLower>Morente</DyingLower>
-  <PawnEffectiveness>Efficacemente</PawnEffectiveness>
-  <FilthOnFeet>Piedi sporchi:</FilthOnFeet>
-  <NotEnoughStoredLower>Non ne abbiamo abbastanza</NotEnoughStoredLower>
+  <DeadTime>Morto da {0}</DeadTime>
+  <WalkSpeed>Velocità di movimento {0}</WalkSpeed>
+  <DyingLower>morente</DyingLower>
+  <PawnEffectiveness>Efficacia</PawnEffectiveness>
+  <FilthOnFeet>Piedi sporchi di:</FilthOnFeet>
+  <NotEnoughStoredLower>non ne abbiamo abbastanza</NotEnoughStoredLower>
+  <NothingLower>niente</NothingLower>
   
+  <!-- Turrets -->
+  <GunInstalled>Arma montata</GunInstalled>
+  <MinimumRange>Distanza minima</MinimumRange>
+  <CanFireIn>Può sparare tra</CanFireIn>   
 
 	<!-- Job reports -->
 	<ReportHaulingTo>Spostando {0} a {1}.</ReportHaulingTo>
 	<ReportHauling>Spostando {0}.</ReportHauling>
 
 	<!-- Shooting report -->
-  	<WeaponMissRadius>L'arma perde precisione</WeaponMissRadius>
-	<RangeSlashSkill>Raggio/abilità</RangeSlashSkill>
-	<RangeSlashEquipment>Raggio/equipaggiamento</RangeSlashEquipment>
+  	<WeaponMissRadius>Raggio di errore massimo</WeaponMissRadius>
+	<ShootReportSkill>Abilità</ShootReportSkill>
+	<ShootReportWeapon>Arma</ShootReportWeapon>
 	<Darkness>Oscurità</Darkness>
-	<TargetProne>Obbiettivo incline</TargetProne>
+	<TargetProne>Bersaglio prono</TargetProne>
 	<TargetSize>Grandezza bersaglio</TargetSize>
-	<Weather>Tempo Metereologico</Weather>
-	<ShootingCover>Copertura</ShootingCover>
-	<CoverThingBlocksPercentOfShots>{0} ha coperto {1}</CoverThingBlocksPercentOfShots>
-	<NoCoverLower>Nessun riparo</NoCoverLower>
+	<Weather>Condizioni metereologiche</Weather>
+	<ShootingCover>Riparo</ShootingCover>
+	<CoverThingBlocksPercentOfShots>{0} ferma il {1}</CoverThingBlocksPercentOfShots>
+	<NoCoverLower>nessun riparo</NoCoverLower>
 	
 	
 	<!-- Status levels -->
-  <Loyalty>Lealtà</Loyalty>
-  <LoyaltyTip>La lealtà rappresenta quanto una persona crede nella colonia. Se è troppo bassa, una persona può rinunciare, diventare irrazionale, o impazzire.\n\nLa lealtà è uguale alla felicità o alla paura - ognuna è la migliore.</LoyaltyTip>
-  <Happiness>Felicità</Happiness>
-  <HappinessTip>La felicità è mantenuta soddisfando i bisogni fisici e psicologici dei coloni.</HappinessTip>
-  <Fear>Paura</Fear>
-  <FearTip>La paura rappresenta intimidire qualcuno.\n\nSorge dalle minacce, dalla brutalità o dallo sfoggio di potere.</FearTip>
-  <Food>Fame</Food>
-  <FoodTip>la fame è come qualcuno è soddisfatto del proprio cibo.\n\nLa fame si resetta quando mangiamo. Dopo un po', inizierà a scendere finchè non rimangerai ancora. Se raggiunge lo 0, I coloni inizieranno a morire di fame.</FoodTip>
+  <Mood>Umore</Mood>
+  <MoodTip>L'umore è mantenuto soddisfando i bisogni fisici e psicologici.\n\nSe l'umore di qualcuno scende troppo, potrebbero arrivare alla crisi di nervi.</MoodTip>
+  <Food>Cibo</Food>
+  <FoodTip>Il cibo è quanto qualcuno sia soddisfatto dei propri pasti.\n\nIl cibo si resetta quando qualcuno mangia. Dopo un po', inizierà a scendere finchè non mangerà ancora. Se scende a zero, i coloni inizieranno a morire di fame.</FoodTip>
   <Rest>Riposo</Rest>
-  <RestTip>Il riposo è quanto sonno e relax una persona riceve.\n\nRaggiunge il massimo quando dormono. Fuori dal letto, scenderà col tempo.</RestTip>
-  <Environment>Condizioni</Environment>
-  <EnvironmentTip>Le condizioni sono quanto un colono gradisce l'ambiente in cui stà.\n\nÈ alto quando i coloni stanno in ambienti grandi e con belle decorazioni. È basso se dove dormono è brutto e stretto.</EnvironmentTip>
-  <Openness>Apertura</Openness>
+  <RestTip>Il riposo è quanto sonno e relax di qualità una persona riceve.\n\nRaggiunge il massimo quando dormono in un letto. Fuori dal letto, scenderà col tempo.</RestTip>
+  <Environment>Ambiente</Environment>
+  <EnvironmentTip>L'ambiente è quanto una persona gradisce l'ambiente in cui sta.\n\nÈ alto quando le persone stanno in ambienti spaziosi e con belle decorazioni. È basso se i loro dintorni sono brutti e stretti.</EnvironmentTip>
+  <Openness>Spaziosità</Openness>
 
   
   <!-- Thoughts -->
   <ThoughtExpiresIn>Scade in: {0}</ThoughtExpiresIn>
-  <ThoughtStartsExpiringIn>inizierà a scadere in: {0}</ThoughtStartsExpiringIn>
+  <ThoughtStartsExpiringIn>Inizierà a scadere in: {0}</ThoughtStartsExpiringIn>
   <ThoughtFinishesExpiringIn>Finirà di scadere in: {0}</ThoughtFinishesExpiringIn>
-  <MentalBreakThreshold>Soglia di pazzia</MentalBreakThreshold>
+  <MentalBreakThreshold>Soglia di crisi di nervi</MentalBreakThreshold>
 
 
 
   <!--Effectiveness-->
-  <EffectivenessFull>Pieno</EffectivenessFull>
-  <EffectivenessReduced>Ridotto</EffectivenessReduced>
-  <EffectivenessImpaired>Danneggiare</EffectivenessImpaired>
-  <EffectivenessIncapacitated>Inabile</EffectivenessIncapacitated>
+  <EffectivenessFull>Piena</EffectivenessFull>
+  <EffectivenessReduced>Ridotta</EffectivenessReduced>
+  <EffectivenessImpaired>Compromessa</EffectivenessImpaired>
+  <EffectivenessIncapacitated>Totalmente inabile</EffectivenessIncapacitated>
 
-  <!-- Time indicator-->
-  <ClockDay>Giorno</ClockDay>
-  <ClockTime>Tempo</ClockTime>
-  <ClockTip>Il tempo è il conteggio dei giorni dal tuo arrivo.</ClockTip>
   
   <!-- Pawn info readout -->
   <Health>Salute</Health>
-  <PawnMainDescWithFactionGendered>{0} {1} su {2}</PawnMainDescWithFactionGendered>
+  <PawnMainDescWithFactionGendered>{0} {1} di {2}</PawnMainDescWithFactionGendered>
   <PawnMainDescGendered>{0} {1}</PawnMainDescGendered>
-  <PawnMainDescWithFactionGenderless>{0} su {1}</PawnMainDescWithFactionGenderless>
+  <PawnMainDescWithFactionGenderless>{0} di {1}</PawnMainDescWithFactionGenderless>
   <PawnMainDescGenderless>{0}</PawnMainDescGenderless>
   <Faction>Fazione</Faction>
   <Equipped>Equipaggiato</Equipped>
   <EquippedNothing>Niente</EquippedNothing>
   <Incapacitated>Incapacitato</Incapacitated>
-  <InRestraints>In riposo (Rallentato)</InRestraints>
+  <InRestraints>Incatenato (rallentato)</InRestraints>
   <Carrying>Trasportando</Carrying>
-  <SanityDazedWander>Impazzito: Stordito e vagabondo</SanityDazedWander>
-  <SanityGiveUpExit>Impazzito: Ha abbandonato</SanityGiveUpExit>
-  <SanityPanicFlee>Impazzito: Entrato nel panico</SanityPanicFlee>
-  <SanityPsychotic>Impazzito: Furia psicotica</SanityPsychotic>
+  <SanityDazedWander>Crisi: Confuso e vagabonda</SanityDazedWander>
+  <SanityGiveUpExit>Crisi: Ha lasciato perdere e se ne va</SanityGiveUpExit>
+  <SanityPanicFlee>Crisi: Fugge in preda al panico</SanityPanicFlee>
+  <SanityPsychotic>Crisi: Furia psicotica</SanityPsychotic>
 
 
   <!-- Inspector general stuff -->
-  <SelectNextInSquareTip>Seleziona la prossima cosa nel quadrato.\n\nScorciatoia: {0}\n\nPuoi anche farlo ricliccando qui.</SelectNextInSquareTip>
-
+  <SelectNextInSquareTip>Seleziona la prossima cosa nello stesso quadrato.\n\nScorciatoia da tastiera: {0}\n\nPuoi anche farlo cliccando di nuovo nello stesso punto.</SelectNextInSquareTip>
+  <DefInfoTip>Visualizza informazioni riguardo quest'oggetto.</DefInfoTip>
+  
+  
   <!-- ITab titles -->
-  <TabBills>Progetti</TabBills>
+  <TabBills>Programmi</TabBills>
   <TabGrowing>Agricoltura</TabGrowing>
-  <TabCharacter>Carattere</TabCharacter>
+  <TabCharacter>Personaggio</TabCharacter>
   <TabNeeds>Bisogni</TabNeeds>
   <TabPrisoner>Prigioniero</TabPrisoner>
+  <TabGear>Gear</TabGear>
   <TabThoughts>Pensieri</TabThoughts>
-  <TabStorage>Memorie</TabStorage>
-
+  <TabStorage>Deposito</TabStorage>
+<!-- incompleto -->
 	<!-- ITabs -->
-	<AddBill>Aggiungi progetto</AddBill>
-	<RecipeRequiresSkills>Questa ricetta {0} Richiede la seguente abilità. Nessuno pare averla, Quindi nessuno lo farà.</RecipeRequiresSkills>
+	<AddBill>Aggiungi programma</AddBill>
+	<RecipeRequiresSkills>La ricetta {0} richiede le abilità mostrate in basso. Nessuno dei tuoi coloni pare averle, quindi nessuno lavorerà a questo programma.</RecipeRequiresSkills>
 	<BillConfig>Configura</BillConfig>
 	<SuspendedCaps>SOSPESO</SuspendedCaps>
-	<PlantVerb>Impianto</PlantVerb>
-	<RecruitmentDifficulty>Reclutamento con difficoltà</RecruitmentDifficulty>
-	<PrisonerGetsFood>Ottiene cibo</PrisonerGetsFood>
+	<PlantVerb>Coltiva</PlantVerb>
+	<RecruitmentDifficulty>Difficoltà di reclutamento</RecruitmentDifficulty>
+	<PrisonerGetsFood>Riceve cibo</PrisonerGetsFood>
 	<ShouldTryToRecruit>Prova a reclutare</ShouldTryToRecruit>
 	<PrisonerNoInteraction>Nessuna interazione</PrisonerNoInteraction>
 	<PrisonerFriendlyChat>Chiacchierata amichevole</PrisonerFriendlyChat>
