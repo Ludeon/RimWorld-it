@@ -93,13 +93,13 @@
   <!-- ITab titles -->
   <TabBills>Programmi</TabBills>
   <TabGrowing>Agricoltura</TabGrowing>
-  <TabCharacter>Personaggio</TabCharacter>
+  <TabCharacter>Persona</TabCharacter>
   <TabNeeds>Bisogni</TabNeeds>
   <TabPrisoner>Prigioniero</TabPrisoner>
   <TabGear>Gear</TabGear>
   <TabThoughts>Pensieri</TabThoughts>
   <TabStorage>Deposito</TabStorage>
-<!-- incompleto -->
+
 	<!-- ITabs -->
 	<AddBill>Aggiungi programma</AddBill>
 	<RecipeRequiresSkills>La ricetta {0} richiede le abilità mostrate in basso. Nessuno dei tuoi coloni pare averle, quindi nessuno lavorerà a questo programma.</RecipeRequiresSkills>
@@ -114,17 +114,26 @@
 	<PrisonerMildBeating>Pestaggio lieve</PrisonerMildBeating>
 	<PrisonerViciousBeating>Pestaggio intenso</PrisonerViciousBeating>
 	<PrisonerExecution>Esecuzione</PrisonerExecution>
+	<Equipment>Equipaggiamento</Equipment>
+	<Apparel>Abbigliamento</Apparel>
+	<Inventory>Inventario</Inventory>
+	<ThingInfo>Informazioni</ThingInfo>
+	<DropThing>Lascia</DropThing>
+	<TotalModifiers>Somma dei modificatori</TotalModifiers>
+	<DamageAbsorption>Assorbimento danni</DamageAbsorption>
+	<MoveSpeed>Velocità di movimento</MoveSpeed>
+
 
 	<!-- like 'Blood of John' -->
 	<OfLower>di</OfLower>
 
 	<!-- Power readout -->
 	<PowerNotConnected>Non collegato all'alimentazione.</PowerNotConnected>
-	<PowerConnectedRate>Corrente prodotta: {0}W</PowerConnectedRate>
+	<PowerConnectedRate>Corrente nel circuito: {0}W</PowerConnectedRate>
 	<PowerConnectedStored>Corrente nelle batterie: {0}Wd</PowerConnectedStored>
   <PowerNeeded>Potenza necessaria</PowerNeeded>
   <PowerOutput>Potenza in uscita</PowerOutput>
-  <PowerBatteryStored>Nelle batterie</PowerBatteryStored>
+  <PowerBatteryStored>Energia immagazzinata</PowerBatteryStored>
   <PowerBatteryEfficiency>Efficienza</PowerBatteryEfficiency>
   
   
@@ -134,57 +143,76 @@
 	<RotStateDessicated>Essiccato</RotStateDessicated>
 	
   <!-- Shooting tooltip -->
-  <ShotBy>colpito da {0}</ShotBy>
-  <CannotHit>Non puoi colpirlo.</CannotHit>
+  <ShotBy>Colpito da {0}</ShotBy>
+  <CannotHit>Non può colpirlo.</CannotHit>
 
   <!-- Storage priority labels -->
   <StoragePriorityUnstored>Non usare</StoragePriorityUnstored>
-  <StoragePriorityLow>Basso</StoragePriorityLow>
+  <StoragePriorityLow>Bassa</StoragePriorityLow>
   <StoragePriorityNormal>Normale</StoragePriorityNormal>
-  <StoragePriorityPreferred>Preferito</StoragePriorityPreferred>
+  <StoragePriorityPreferred>Preferibile</StoragePriorityPreferred>
   <StoragePriorityImportant>Importante</StoragePriorityImportant>
-  <StoragePriorityCritical>Critico</StoragePriorityCritical>
+  <StoragePriorityCritical>Critica</StoragePriorityCritical>
 
   <!-- Meal -->
-  <TimeToSpoil>Raccogli in {0}</TimeToSpoil>
+  <TimeToSpoil>Da consumare entro {0}</TimeToSpoil>
   <Ingredients>Ingredienti</Ingredients>
 
   <!-- Plants -->
   <PercentGrowth>Cresciuto al {0}%</PercentGrowth>
   <Growing>Crescendo</Growing>
-  <NotGrowingNow>Non stà crescendo al momento (Deve essere {0}).</NotGrowingNow>
-  <HarvestableIn>Raccoglibile in {0} di crescita.</HarvestableIn>
-  <FullyGrownIn>Pronto al {0} di crescita.</FullyGrownIn>
+  <NotGrowingNow>Non sta crescendo al momento (deve essere {0}).</NotGrowingNow>
+  <FullyGrownIn>Completamente cresiuto tra {0} di crescita.</FullyGrownIn>
   <ReadyToHarvest>Pronto alla raccolta.</ReadyToHarvest>
   <Mature>Maturo.</Mature>
   
   <!-- Zones -->
   <Zone>Zona</Zone>
-  <GrowingZone>Zona di crescita</GrowingZone>
-  <Stockpile>Magazzino</Stockpile>
-  <DumpingStockpile>Magazzino per sporcizia</DumpingStockpile>
-  <SellingStockpile>Magazzino di vendita</SellingStockpile>
+  <GrowingZone>Zona agricola</GrowingZone>
+  <Stockpile>Riserva</Stockpile>
+  <DumpingStockpile>Discarica</DumpingStockpile>  <SellingStockpile>Riserva per le vendite</SellingStockpile>
   <Priority>Priorità</Priority>
 
   <!-- General time stuff -->
-  <DaysLower>Giorni</DaysLower>
-  <SecondsLower>Secondi</SecondsLower>
+  <DaysLower>giorni</DaysLower>
+  <SecondsLower>secondi</SecondsLower>
   
   <!-- Mouseover indicator -->
-  <Undiscovered>Sconosciuto</Undiscovered>
+  <Undiscovered>Inesplorato</Undiscovered>
   
   <!-- Buttons -->
-  <ZoneVisibilityToggleButton>Modifica la visibilità di una zona.</ZoneVisibilityToggleButton>
-  
+  <ZoneVisibilityToggleButton>Modifica la visibilità delle zone.</ZoneVisibilityToggleButton>
+  <AutoHomeRegionToggleButton>Modifica se vuoi che la regione domestica venga automaticamente aggiunta attorno alle nuove costruzioni.</AutoHomeRegionToggleButton>
+
   <!-- Fire -->
   <Fire>Fuoco</Fire>
-  <FireOn>Fuoco tra {0}</FireOn>
-  <Burning>Stà bruciando</Burning>
-  <FireSizeLower>Un fuoco grosso {0}</FireSizeLower>
+  <FireOn>Fuoco su di {0}</FireOn>
+  <Burning>Sta bruciando</Burning>
+  <FireSizeLower>grandezza del fuoco: {0}</FireSizeLower>
   
   <!-- Map conditions (eclipse, solar flare, etc )-->
-  <MapConditionsTip>Condizioni speciali sono attive in quest'area.</MapConditionsTip>
+  <MapConditionsTip>Delle condizioni speciali sono attive in quest'area.</MapConditionsTip>
   
-  
+   <!-- Building placement restricters -->
+  <MustPlaceUnroofed>Non può essere piazzato sotto un tetto.</MustPlaceUnroofed>
+  <MustPlaceHeadOnShipBeam>Deve essere piazzato con la parte frontale attaccata a un pezzo strutturale della nave.</MustPlaceHeadOnShipBeam>
+  <MustPlaceNextToHopperAccepter>Deve essere piazzato vicino a qualcosa che necessita una tramoggia.</MustPlaceNextToHopperAccepter>
+  <MustPlaceOnSteamGeyser>Deve essere piazzato direttamente sopra un geyser di vapore.</MustPlaceOnSteamGeyser>
+
+  <!-- Cryptosleep pod -->
+  <PodContains>Contiene</PodContains>
+ 
+   <!-- Ship launch report -->
+  <ShipReportCannotLaunch>Impossibilitato al decollo.</ShipReportCannotLaunch>
+  <ShipReportCanLaunch>Pronto al decollo.</ShipReportCanLaunch>
+  <ShipReportMissingPart>Manca un componente importante</ShipReportMissingPart>
+  <ShipReportNoFullPods>Nessuna camera da ibernazione occupata</ShipReportNoFullPods>
+
+    <!-- Game over -->
+  <GameOverEveryoneDead>Tutti sono morti o fuggiti. Questa storia è finita.\n\nForse qualcun'altro troverà utili le rovine di questo posto.</GameOverEveryoneDead>
+  <GameOverShipLaunched>Hai fatto decollare la nave! Questi coloni se ne sono andati:\n\n{0}\nQuesti coloni sono stati lasciati a terra:\n\n{1}\nLa tua IA adesso cercherà di guidare la nave verso un posto sicuro. Potrebbe lasciarti su un pianeta migliore in questo sistema stellare. Oppure, potrebbe intraprendere un viaggio lungo secoli verso un'altra stella. Potrebbe anche decidere di nascondersi sotto il giaccio di un asteroide per qualche migliaio di anni, aspettando un epoca migliore.\n\nLo saprai quando ti sveglierai.</GameOverShipLaunched>
+  <GameOverKeepPlaying>Continua a giocare</GameOverKeepPlaying>
+  <GameOverMainMenu>Menù principale</GameOverMainMenu>
+
 
 </LanguageData>
