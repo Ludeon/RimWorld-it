@@ -4,127 +4,136 @@
   <!-- Various -->
   <WorkLeft>Lavoro rimasto</WorkLeft>
   <Contents>Contenuto</Contents>
-  <ForPrisonerUse>Lo useranno i prigionieri</ForPrisonerUse>
-  <ForColonistUse>Lo useranno i coloni</ForColonistUse>
+  <ContainedResources>Risorse contenute</ContainedResources>
+  <ForPrisonerUse>Riservato ai prigionieri</ForPrisonerUse>
+  <ForColonistUse>Riservato ai coloni</ForColonistUse>
   <Owner>Proprietario</Owner>
   <Nobody>Nessuno</Nobody>
   <Unowned>Senza proprietario</Unowned>
-  <GunInstalled>Installato</GunInstalled>
-  <DeadTime>Morto {0}</DeadTime>
-  <WalkSpeed>Velocità di camminata {0}</WalkSpeed>
-  <DyingLower>Morente</DyingLower>
-  <PawnEffectiveness>Efficacemente</PawnEffectiveness>
-  <FilthOnFeet>Piedi sporchi:</FilthOnFeet>
-  <NotEnoughStoredLower>Non ne abbiamo abbastanza</NotEnoughStoredLower>
+  <DeadTime>Morto da {0}</DeadTime>
+  <WalkSpeed>Velocità di movimento {0}</WalkSpeed>
+  <DyingLower>morente</DyingLower>
+  <PawnEffectiveness>Efficacia</PawnEffectiveness>
+  <FilthOnFeet>Piedi sporchi di:</FilthOnFeet>
+  <NotEnoughStoredLower>non ne abbiamo abbastanza</NotEnoughStoredLower>
+  <NothingLower>niente</NothingLower>
   
+  <!-- Turrets -->
+  <GunInstalled>Arma montata</GunInstalled>
+  <MinimumRange>Distanza minima</MinimumRange>
+  <CanFireIn>Può sparare tra</CanFireIn>   
 
 	<!-- Job reports -->
 	<ReportHaulingTo>Spostando {0} a {1}.</ReportHaulingTo>
 	<ReportHauling>Spostando {0}.</ReportHauling>
 
 	<!-- Shooting report -->
-  	<WeaponMissRadius>L'arma perde precisione</WeaponMissRadius>
-	<RangeSlashSkill>Raggio/abilità</RangeSlashSkill>
-	<RangeSlashEquipment>Raggio/equipaggiamento</RangeSlashEquipment>
+  	<WeaponMissRadius>Raggio di errore massimo</WeaponMissRadius>
+	<ShootReportSkill>Abilità</ShootReportSkill>
+	<ShootReportWeapon>Arma</ShootReportWeapon>
 	<Darkness>Oscurità</Darkness>
-	<TargetProne>Obbiettivo incline</TargetProne>
+	<TargetProne>Bersaglio prono</TargetProne>
 	<TargetSize>Grandezza bersaglio</TargetSize>
-	<Weather>Tempo Metereologico</Weather>
-	<ShootingCover>Copertura</ShootingCover>
-	<CoverThingBlocksPercentOfShots>{0} ha coperto {1}</CoverThingBlocksPercentOfShots>
-	<NoCoverLower>Nessun riparo</NoCoverLower>
+	<Weather>Condizioni metereologiche</Weather>
+	<ShootingCover>Riparo</ShootingCover>
+	<CoverThingBlocksPercentOfShots>{0} ferma il {1}</CoverThingBlocksPercentOfShots>
+	<NoCoverLower>nessun riparo</NoCoverLower>
 	
 	
 	<!-- Status levels -->
-  <Loyalty>Lealtà</Loyalty>
-  <LoyaltyTip>La lealtà rappresenta quanto una persona crede nella colonia. Se è troppo bassa, una persona può rinunciare, diventare irrazionale, o impazzire.\n\nLa lealtà è uguale alla felicità o alla paura - ognuna è la migliore.</LoyaltyTip>
-  <Happiness>Felicità</Happiness>
-  <HappinessTip>La felicità è mantenuta soddisfando i bisogni fisici e psicologici dei coloni.</HappinessTip>
-  <Fear>Paura</Fear>
-  <FearTip>La paura rappresenta intimidire qualcuno.\n\nSorge dalle minacce, dalla brutalità o dallo sfoggio di potere.</FearTip>
-  <Food>Fame</Food>
-  <FoodTip>la fame è come qualcuno è soddisfatto del proprio cibo.\n\nLa fame si resetta quando mangiamo. Dopo un po', inizierà a scendere finchè non rimangerai ancora. Se raggiunge lo 0, I coloni inizieranno a morire di fame.</FoodTip>
+  <Mood>Umore</Mood>
+  <MoodTip>L'umore è mantenuto soddisfando i bisogni fisici e psicologici.\n\nSe l'umore di qualcuno scende troppo, potrebbero arrivare alla crisi di nervi.</MoodTip>
+  <Food>Cibo</Food>
+  <FoodTip>Il cibo è quanto qualcuno sia soddisfatto dei propri pasti.\n\nIl cibo si resetta quando qualcuno mangia. Dopo un po', inizierà a scendere finchè non mangerà ancora. Se scende a zero, i coloni inizieranno a morire di fame.</FoodTip>
   <Rest>Riposo</Rest>
-  <RestTip>Il riposo è quanto sonno e relax una persona riceve.\n\nRaggiunge il massimo quando dormono. Fuori dal letto, scenderà col tempo.</RestTip>
-  <Environment>Condizioni</Environment>
-  <EnvironmentTip>Le condizioni sono quanto un colono gradisce l'ambiente in cui stà.\n\nÈ alto quando i coloni stanno in ambienti grandi e con belle decorazioni. È basso se dove dormono è brutto e stretto.</EnvironmentTip>
-  <Openness>Apertura</Openness>
+  <RestTip>Il riposo è quanto sonno e relax di qualità una persona riceve.\n\nRaggiunge il massimo quando dormono in un letto. Fuori dal letto, scenderà col tempo.</RestTip>
+  <Environment>Ambiente</Environment>
+  <EnvironmentTip>L'ambiente è quanto una persona gradisce l'ambiente in cui sta.\n\nÈ alto quando le persone stanno in ambienti spaziosi e con belle decorazioni. È basso se i loro dintorni sono brutti e stretti.</EnvironmentTip>
+  <Openness>Spaziosità</Openness>
 
   
   <!-- Thoughts -->
   <ThoughtExpiresIn>Scade in: {0}</ThoughtExpiresIn>
-  <ThoughtStartsExpiringIn>inizierà a scadere in: {0}</ThoughtStartsExpiringIn>
+  <ThoughtStartsExpiringIn>Inizierà a scadere in: {0}</ThoughtStartsExpiringIn>
   <ThoughtFinishesExpiringIn>Finirà di scadere in: {0}</ThoughtFinishesExpiringIn>
-  <MentalBreakThreshold>Soglia di pazzia</MentalBreakThreshold>
+  <MentalBreakThreshold>Soglia di crisi di nervi</MentalBreakThreshold>
 
 
 
   <!--Effectiveness-->
-  <EffectivenessFull>Pieno</EffectivenessFull>
-  <EffectivenessReduced>Ridotto</EffectivenessReduced>
-  <EffectivenessImpaired>Danneggiare</EffectivenessImpaired>
-  <EffectivenessIncapacitated>Inabile</EffectivenessIncapacitated>
+  <EffectivenessFull>Piena</EffectivenessFull>
+  <EffectivenessReduced>Ridotta</EffectivenessReduced>
+  <EffectivenessImpaired>Compromessa</EffectivenessImpaired>
+  <EffectivenessIncapacitated>Totalmente inabile</EffectivenessIncapacitated>
 
-  <!-- Time indicator-->
-  <ClockDay>Giorno</ClockDay>
-  <ClockTime>Tempo</ClockTime>
-  <ClockTip>Il tempo è il conteggio dei giorni dal tuo arrivo.</ClockTip>
   
   <!-- Pawn info readout -->
   <Health>Salute</Health>
-  <PawnMainDescWithFactionGendered>{0} {1} su {2}</PawnMainDescWithFactionGendered>
+  <PawnMainDescWithFactionGendered>{0} {1} di {2}</PawnMainDescWithFactionGendered>
   <PawnMainDescGendered>{0} {1}</PawnMainDescGendered>
-  <PawnMainDescWithFactionGenderless>{0} su {1}</PawnMainDescWithFactionGenderless>
+  <PawnMainDescWithFactionGenderless>{0} di {1}</PawnMainDescWithFactionGenderless>
   <PawnMainDescGenderless>{0}</PawnMainDescGenderless>
   <Faction>Fazione</Faction>
   <Equipped>Equipaggiato</Equipped>
   <EquippedNothing>Niente</EquippedNothing>
   <Incapacitated>Incapacitato</Incapacitated>
-  <InRestraints>In riposo (Rallentato)</InRestraints>
+  <InRestraints>Incatenato (rallentato)</InRestraints>
   <Carrying>Trasportando</Carrying>
-  <SanityDazedWander>Impazzito: Stordito e vagabondo</SanityDazedWander>
-  <SanityGiveUpExit>Impazzito: Ha abbandonato</SanityGiveUpExit>
-  <SanityPanicFlee>Impazzito: Entrato nel panico</SanityPanicFlee>
-  <SanityPsychotic>Impazzito: Furia psicotica</SanityPsychotic>
+  <SanityDazedWander>Crisi: Confuso e vagabonda</SanityDazedWander>
+  <SanityGiveUpExit>Crisi: Ha lasciato perdere e se ne va</SanityGiveUpExit>
+  <SanityPanicFlee>Crisi: Fugge in preda al panico</SanityPanicFlee>
+  <SanityPsychotic>Crisi: Furia psicotica</SanityPsychotic>
 
 
   <!-- Inspector general stuff -->
-  <SelectNextInSquareTip>Seleziona la prossima cosa nel quadrato.\n\nScorciatoia: {0}\n\nPuoi anche farlo ricliccando qui.</SelectNextInSquareTip>
-
+  <SelectNextInSquareTip>Seleziona la prossima cosa nello stesso quadrato.\n\nScorciatoia da tastiera: {0}\n\nPuoi anche farlo cliccando di nuovo nello stesso punto.</SelectNextInSquareTip>
+  <DefInfoTip>Visualizza informazioni riguardo quest'oggetto.</DefInfoTip>
+  
+  
   <!-- ITab titles -->
-  <TabBills>Progetti</TabBills>
+  <TabBills>Programmi</TabBills>
   <TabGrowing>Agricoltura</TabGrowing>
-  <TabCharacter>Carattere</TabCharacter>
+  <TabCharacter>Persona</TabCharacter>
   <TabNeeds>Bisogni</TabNeeds>
   <TabPrisoner>Prigioniero</TabPrisoner>
+  <TabGear>Gear</TabGear>
   <TabThoughts>Pensieri</TabThoughts>
-  <TabStorage>Memorie</TabStorage>
+  <TabStorage>Deposito</TabStorage>
 
 	<!-- ITabs -->
-	<AddBill>Aggiungi progetto</AddBill>
-	<RecipeRequiresSkills>Questa ricetta {0} Richiede la seguente abilità. Nessuno pare averla, Quindi nessuno lo farà.</RecipeRequiresSkills>
+	<AddBill>Aggiungi programma</AddBill>
+	<RecipeRequiresSkills>La ricetta {0} richiede le abilità mostrate in basso. Nessuno dei tuoi coloni pare averle, quindi nessuno lavorerà a questo programma.</RecipeRequiresSkills>
 	<BillConfig>Configura</BillConfig>
 	<SuspendedCaps>SOSPESO</SuspendedCaps>
-	<PlantVerb>Impianto</PlantVerb>
-	<RecruitmentDifficulty>Reclutamento con difficoltà</RecruitmentDifficulty>
-	<PrisonerGetsFood>Ottiene cibo</PrisonerGetsFood>
+	<PlantVerb>Coltiva</PlantVerb>
+	<RecruitmentDifficulty>Difficoltà di reclutamento</RecruitmentDifficulty>
+	<PrisonerGetsFood>Riceve cibo</PrisonerGetsFood>
 	<ShouldTryToRecruit>Prova a reclutare</ShouldTryToRecruit>
 	<PrisonerNoInteraction>Nessuna interazione</PrisonerNoInteraction>
 	<PrisonerFriendlyChat>Chiacchierata amichevole</PrisonerFriendlyChat>
 	<PrisonerMildBeating>Pestaggio lieve</PrisonerMildBeating>
 	<PrisonerViciousBeating>Pestaggio intenso</PrisonerViciousBeating>
 	<PrisonerExecution>Esecuzione</PrisonerExecution>
+	<Equipment>Equipaggiamento</Equipment>
+	<Apparel>Abbigliamento</Apparel>
+	<Inventory>Inventario</Inventory>
+	<ThingInfo>Informazioni</ThingInfo>
+	<DropThing>Lascia</DropThing>
+	<TotalModifiers>Somma dei modificatori</TotalModifiers>
+	<DamageAbsorption>Assorbimento danni</DamageAbsorption>
+	<MoveSpeed>Velocità di movimento</MoveSpeed>
+
 
 	<!-- like 'Blood of John' -->
 	<OfLower>di</OfLower>
 
 	<!-- Power readout -->
 	<PowerNotConnected>Non collegato all'alimentazione.</PowerNotConnected>
-	<PowerConnectedRate>Corrente prodotta: {0}W</PowerConnectedRate>
+	<PowerConnectedRate>Corrente nel circuito: {0}W</PowerConnectedRate>
 	<PowerConnectedStored>Corrente nelle batterie: {0}Wd</PowerConnectedStored>
   <PowerNeeded>Potenza necessaria</PowerNeeded>
   <PowerOutput>Potenza in uscita</PowerOutput>
-  <PowerBatteryStored>Nelle batterie</PowerBatteryStored>
+  <PowerBatteryStored>Energia immagazzinata</PowerBatteryStored>
   <PowerBatteryEfficiency>Efficienza</PowerBatteryEfficiency>
   
   
@@ -134,57 +143,76 @@
 	<RotStateDessicated>Essiccato</RotStateDessicated>
 	
   <!-- Shooting tooltip -->
-  <ShotBy>colpito da {0}</ShotBy>
-  <CannotHit>Non puoi colpirlo.</CannotHit>
+  <ShotBy>Colpito da {0}</ShotBy>
+  <CannotHit>Non può colpirlo.</CannotHit>
 
   <!-- Storage priority labels -->
   <StoragePriorityUnstored>Non usare</StoragePriorityUnstored>
-  <StoragePriorityLow>Basso</StoragePriorityLow>
+  <StoragePriorityLow>Bassa</StoragePriorityLow>
   <StoragePriorityNormal>Normale</StoragePriorityNormal>
-  <StoragePriorityPreferred>Preferito</StoragePriorityPreferred>
+  <StoragePriorityPreferred>Preferibile</StoragePriorityPreferred>
   <StoragePriorityImportant>Importante</StoragePriorityImportant>
-  <StoragePriorityCritical>Critico</StoragePriorityCritical>
+  <StoragePriorityCritical>Critica</StoragePriorityCritical>
 
   <!-- Meal -->
-  <TimeToSpoil>Raccogli in {0}</TimeToSpoil>
+  <TimeToSpoil>Da consumare entro {0}</TimeToSpoil>
   <Ingredients>Ingredienti</Ingredients>
 
   <!-- Plants -->
   <PercentGrowth>Cresciuto al {0}%</PercentGrowth>
   <Growing>Crescendo</Growing>
-  <NotGrowingNow>Non stà crescendo al momento (Deve essere {0}).</NotGrowingNow>
-  <HarvestableIn>Raccoglibile in {0} di crescita.</HarvestableIn>
-  <FullyGrownIn>Pronto al {0} di crescita.</FullyGrownIn>
+  <NotGrowingNow>Non sta crescendo al momento (deve essere {0}).</NotGrowingNow>
+  <FullyGrownIn>Completamente cresiuto tra {0} di crescita.</FullyGrownIn>
   <ReadyToHarvest>Pronto alla raccolta.</ReadyToHarvest>
   <Mature>Maturo.</Mature>
   
   <!-- Zones -->
   <Zone>Zona</Zone>
-  <GrowingZone>Zona di crescita</GrowingZone>
-  <Stockpile>Magazzino</Stockpile>
-  <DumpingStockpile>Magazzino per sporcizia</DumpingStockpile>
-  <SellingStockpile>Magazzino di vendita</SellingStockpile>
+  <GrowingZone>Zona agricola</GrowingZone>
+  <Stockpile>Riserva</Stockpile>
+  <DumpingStockpile>Discarica</DumpingStockpile>  <SellingStockpile>Riserva per le vendite</SellingStockpile>
   <Priority>Priorità</Priority>
 
   <!-- General time stuff -->
-  <DaysLower>Giorni</DaysLower>
-  <SecondsLower>Secondi</SecondsLower>
+  <DaysLower>giorni</DaysLower>
+  <SecondsLower>secondi</SecondsLower>
   
   <!-- Mouseover indicator -->
-  <Undiscovered>Sconosciuto</Undiscovered>
+  <Undiscovered>Inesplorato</Undiscovered>
   
   <!-- Buttons -->
-  <ZoneVisibilityToggleButton>Modifica la visibilità di una zona.</ZoneVisibilityToggleButton>
-  
+  <ZoneVisibilityToggleButton>Modifica la visibilità delle zone.</ZoneVisibilityToggleButton>
+  <AutoHomeRegionToggleButton>Modifica se vuoi che la regione domestica venga automaticamente aggiunta attorno alle nuove costruzioni.</AutoHomeRegionToggleButton>
+
   <!-- Fire -->
   <Fire>Fuoco</Fire>
-  <FireOn>Fuoco tra {0}</FireOn>
-  <Burning>Stà bruciando</Burning>
-  <FireSizeLower>Un fuoco grosso {0}</FireSizeLower>
+  <FireOn>Fuoco su di {0}</FireOn>
+  <Burning>Sta bruciando</Burning>
+  <FireSizeLower>grandezza del fuoco: {0}</FireSizeLower>
   
   <!-- Map conditions (eclipse, solar flare, etc )-->
-  <MapConditionsTip>Condizioni speciali sono attive in quest'area.</MapConditionsTip>
+  <MapConditionsTip>Delle condizioni speciali sono attive in quest'area.</MapConditionsTip>
   
-  
+   <!-- Building placement restricters -->
+  <MustPlaceUnroofed>Non può essere piazzato sotto un tetto.</MustPlaceUnroofed>
+  <MustPlaceHeadOnShipBeam>Deve essere piazzato con la parte frontale attaccata a un pezzo strutturale della nave.</MustPlaceHeadOnShipBeam>
+  <MustPlaceNextToHopperAccepter>Deve essere piazzato vicino a qualcosa che necessita una tramoggia.</MustPlaceNextToHopperAccepter>
+  <MustPlaceOnSteamGeyser>Deve essere piazzato direttamente sopra un geyser di vapore.</MustPlaceOnSteamGeyser>
+
+  <!-- Cryptosleep pod -->
+  <PodContains>Contiene</PodContains>
+ 
+   <!-- Ship launch report -->
+  <ShipReportCannotLaunch>Impossibilitato al decollo.</ShipReportCannotLaunch>
+  <ShipReportCanLaunch>Pronto al decollo.</ShipReportCanLaunch>
+  <ShipReportMissingPart>Manca un componente importante</ShipReportMissingPart>
+  <ShipReportNoFullPods>Nessuna camera da ibernazione occupata</ShipReportNoFullPods>
+
+    <!-- Game over -->
+  <GameOverEveryoneDead>Tutti sono morti o fuggiti. Questa storia è finita.\n\nForse qualcun'altro troverà utili le rovine di questo posto.</GameOverEveryoneDead>
+  <GameOverShipLaunched>Hai fatto decollare la nave! Questi coloni se ne sono andati:\n\n{0}\nQuesti coloni sono stati lasciati a terra:\n\n{1}\nLa tua IA adesso cercherà di guidare la nave verso un posto sicuro. Potrebbe lasciarti su un pianeta migliore in questo sistema stellare. Oppure, potrebbe intraprendere un viaggio lungo secoli verso un'altra stella. Potrebbe anche decidere di nascondersi sotto il giaccio di un asteroide per qualche migliaio di anni, aspettando un epoca migliore.\n\nLo saprai quando ti sveglierai.</GameOverShipLaunched>
+  <GameOverKeepPlaying>Continua a giocare</GameOverKeepPlaying>
+  <GameOverMainMenu>Menù principale</GameOverMainMenu>
+
 
 </LanguageData>
