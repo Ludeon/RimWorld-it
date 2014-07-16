@@ -1,31 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <LanguageData>
 
-	<CallOnRadio>Chiama {0}</CallOnRadio>
-	<CannotUseSolarFlare>Non puoi (Tempesta solare)</CannotUseSolarFlare>
-	<CannotUseNoPower>Non puoi (Niente corrente)</CannotUseNoPower>
-	<CannotUseNoPath>Non puoi (Nessun percorso)</CannotUseNoPath>
-	
+	<CallOnRadio>Contatta {0}</CallOnRadio>
+	<CannotUseSolarFlare>Non puoi usarlo (tempesta solare)</CannotUseSolarFlare>
+	<CannotUseNoPower>Non puoi usarlo (niente corrente)</CannotUseNoPower>
+	<CannotUseNoPath>Non puoi usarlo (irraggiungibile)</CannotUseNoPath>
+	<CannotUseReserved>Non puoi usarlo (riservato)</CannotUseReserved>
+  <CannotUseFull>Non puoi usarlo (pieno)</CannotUseFull>
+
   <FireAt>Spara a {0}</FireAt>
 
-  <OutOfRange>Fuori raggio massimo</OutOfRange>
-  <CannotHitTarget>Non può colpire l'obbiettivo</CannotHitTarget>
-  <CannotFight>{0} Non può combattere</CannotFight>
-
+  <OutOfRange>fuori portata</OutOfRange>
+  <CannotHitTarget>non può colpire il bersaglio</CannotHitTarget>
+  <CannotFight>{0} non può combattere</CannotFight>
   
+  <OrderManThing>Aziona {0}</OrderManThing>
   
   <MeleeAttack>Attacca {0}</MeleeAttack>
   <MeleeAttackToDeath>Attacca {0} fino alla morte</MeleeAttackToDeath>
-  <NoPath>Nessun percorso</NoPath>
+  <NoPath>irraggiungibile</NoPath>
 
-	<ForbiddenLower>Vietato</ForbiddenLower>
-	<SociallyImproperLower>Socialmente scorretto</SociallyImproperLower>
-	<BurningLower>Stà bruciando</BurningLower>
-	<NoEmptyPlaceLower>Nessun posto vuoto su cui metterlo</NoEmptyPlaceLower>
-	<AlreadyFilledLower>Già pieno</AlreadyFilledLower>
+	<ForbiddenLower>vietato</ForbiddenLower>
+	<SociallyImproperLower>socialmente scorretto</SociallyImproperLower>
+	<BurningLower>sta bruciando</BurningLower>
+	<NoEmptyPlaceLower>nessuna riserva libera configurata per accettarlo</NoEmptyPlaceLower>
+	<AlreadyFilledLower>già riempito</AlreadyFilledLower>
+	<MissingMaterials>servono materiali</MissingMaterials>
 	
 	
-  <CannotGoNoPath>Non puoi andarci (nessun percorso)</CannotGoNoPath>
+  <CannotGoNoPath>Non puoi andarci (irraggiungibile)</CannotGoNoPath>
   <GoHere>Vai qui</GoHere>
   
   <Arrest>Arresta {0}</Arrest>
@@ -38,19 +41,29 @@
   <CannotRescue>Non puoi salvarlo</CannotRescue>
 
   <NoPrisonerBed>Non ci sono più posti letto per prigionieri.</NoPrisonerBed>
-  <NoNonPrisonerBed>Non ci sono più letti disponibili.</NoNonPrisonerBed>
+  <NoNonPrisonerBed>Non ci sono più letti per coloni disponibili.</NoNonPrisonerBed>
   <Reserved>Riservato a qualcun'altro.</Reserved>
-  <ReservedBy>Riservato da {0}.</ReservedBy>
-  <IsReservedBy>{0} è risarvato da {1}.</IsReservedBy>
+  <ReservedBy>Riservato a {0}.</ReservedBy>
+  <IsReservedBy>{0} è riservato a {1}.</IsReservedBy>
 
 
   <Equip>Equipaggia {0}</Equip>
   <CannotEquip>Non puoi equipaggiare {0}</CannotEquip>
+  
+  <Wear>Indossa {0}</Wear>
+  <CannotWear>Non puoi indossare {0}</CannotWear>
+
+  <Strip>Spoglia {0}</Strip>
+  <CannotStrip>Non puoi spogliare {0}</CannotStrip>
 
   <Deposit>Deposita {0} in {1}</Deposit>
   <CannotDeposit>Non puoi depositare {0} in {1}</CannotDeposit>
 
-  <Drop>lascia cadere {0}</Drop>
+  <Drop>Lascia cadere {0}</Drop>
+  
+  <!-- Specific thing interactions -->
+  <EnterCryptosleepPod>Entra nella camera di ibernazione</EnterCryptosleepPod>
+
 
   <!-- e.g. Cannot VERB OBJECT, Cannot repair wall, Cannot haul metal, etc.-->
   <CannotGenericWork>Non puoi {0} {1}</CannotGenericWork>
@@ -60,7 +73,7 @@
 
   <CannotPrioritizeIsNotA>Non puoi prioritizzare ({0} non è un {1})</CannotPrioritizeIsNotA>
 
-  <CannotPrioritizeResearch>Non puoi prioritizzare (La ricerca è a lungo termine)</CannotPrioritizeResearch>
+  <CannotPrioritizeResearch>Non puoi prioritizzare (La ricerca è un lavoro lungo)</CannotPrioritizeResearch>
 
   <CannotPrioritizeForbidden>Non puoi prioritizzare ({0} è vietato)</CannotPrioritizeForbidden>
 
