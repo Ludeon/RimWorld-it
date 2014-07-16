@@ -1,48 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <LanguageData>
 
-  <CommandForbiddenDesc>Vietato - i coloni non entreranno in contatto con questo.</CommandForbiddenDesc>
-  <CommandNotForbiddenDesc>Non vietato - I coloni interagiranno con questo.</CommandNotForbiddenDesc>
+  <CommandForbiddenDesc>Vietato - i coloni non toccheranno quest'oggetto.</CommandForbiddenDesc>
+  <CommandNotForbiddenDesc>Non vietato - I coloni possono interagire con quest'oggetto.</CommandNotForbiddenDesc>
 
-  <CommandTogglePowerDesc>Corrente ON/OFF.</CommandTogglePowerDesc>
+  <CommandTogglePowerDesc>Interruttore della corrente.</CommandTogglePowerDesc>
   <CommandTogglePowerLabel>Corrente ON/OFF</CommandTogglePowerLabel>
 
-  <CommandGatherSpotToggleLabel>Posto di raccolta</CommandGatherSpotToggleLabel>
-  <CommandGatherSpotToggleDescActive>Attivo - I coloni raccoglieranno qui intorno.</CommandGatherSpotToggleDescActive>
-  <CommandGatherSpotToggleDescInactive>Inattivo - I coloni NON raccoglieranno qui vicino.</CommandGatherSpotToggleDescInactive>
+  <CommandGatherSpotToggleLabel>Punto di raccolta</CommandGatherSpotToggleLabel>
+  <CommandGatherSpotToggleDescActive>Attivo - I coloni si raduneranno intorno quest'oggetto.</CommandGatherSpotToggleDescActive>
+  <CommandGatherSpotToggleDescInactive>Inattivo - I coloni non si raduneranno intorno quest'oggetto.</CommandGatherSpotToggleDescInactive>
   
   
   
-  <CommandDraftLabel>Draft</CommandDraftLabel>
-  <CommandUndraftLabel>Undraft</CommandUndraftLabel>
-  <CommandToggleDraftDesc>I coloni draftati prenderanno ordini e combatteranno. NON mangeranno, dormiranno o lavoreranno.</CommandToggleDraftDesc>
+  <CommandDraftLabel>Arruola</CommandDraftLabel>
+  <CommandUndraftLabel>Congeda</CommandUndraftLabel>
+  <CommandToggleDraftDesc>I coloni arruolati prenderanno ordini e combatteranno. Non potranno mangiare, dormire o lavorare.</CommandToggleDraftDesc>
   <IsIncapped>{0} è incapacitato.</IsIncapped>
 
   <CommandCancelConstructionLabel>Annulla</CommandCancelConstructionLabel>
   <CommandCancelConstructionDesc>Annulla questa costruzione.</CommandCancelConstructionDesc>
 
-  <CommandBedSetForPrisonersLabel>Per prigionieri</CommandBedSetForPrisonersLabel>
-  <CommandBedSetForPrisonersDesc> Assegna questi letti per i prigionieri.</CommandBedSetForPrisonersDesc>
-  <CommandBedSetForColonistsLabel>Per i coloni</CommandBedSetForColonistsLabel>
+  <CommandBedSetForPrisonersLabel>Assegna ai prigionieri</CommandBedSetForPrisonersLabel>
+  <CommandBedSetForPrisonersDesc> Assegna questi letti ai prigionieri.</CommandBedSetForPrisonersDesc>
+  <CommandBedSetForPrisonersFailOutdoors>Non puoi assegnare ai prigionieri dei letti che sono all'aperto.</CommandBedSetForPrisonersFailOutdoors>
+  <CommandBedSetForColonistsLabel>Assegna ai coloni</CommandBedSetForColonistsLabel>
   <CommandBedSetForColonistsDesc> Assegna questi letti ai coloni.</CommandBedSetForColonistsDesc>
-  <TurningOnPrisonerBedWarning>Dare letti ai prigionieri avrà effetto su tutta la stanza (I prigionieri e i coloni NON dormono nella stessa stanza).\n\nI letti perderanno i proprietari:</TurningOnPrisonerBedWarning>
-  <TurningOffPrisonerBedWarning>Dare letti ai coloni avrà effetto su tutta la stanza (I coloni e i prigionieri NON dormono nella stessa stanza).\n\nI letti perderanno i proprietari:</TurningOffPrisonerBedWarning>
-  <AreYouSure>Ne sei certo?</AreYouSure>
+  <TurningOnPrisonerBedWarning>Dare letti ai prigionieri avrà effetto su tutta la stanza (i prigionieri e i coloni non possono dormire nella stessa stanza).\n\nQueste persone perderanno i propri letti:</TurningOnPrisonerBedWarning>
+  <TurningOffPrisonerBedWarning>Dare letti ai coloni avrà effetto su tutta la stanza (i coloni e i prigionieri non possono dormire nella stessa stanza).\n\nnQueste persone perderanno i propri letti:</TurningOffPrisonerBedWarning>
+  <AreYouSure>Sei sicuro?</AreYouSure>
 
   
   
   <CommandDetonateDesc>Inizia il conto alla rovescia.</CommandDetonateDesc>
-  <CommandDetonateLabel>Aziona</CommandDetonateLabel>
+  <CommandDetonateLabel>Detona</CommandDetonateLabel>
 
   <CommandRenameZoneDesc>Rinomina la zona.</CommandRenameZoneDesc>
   <CommandRenameZoneLabel>Rinomina</CommandRenameZoneLabel>
 
-  <CommandHideZoneDesc>Nascondi/mostra le zone.</CommandHideZoneDesc>
+  <CommandHideZoneDesc>Nascondi/mostra la zona.</CommandHideZoneDesc>
   <CommandHideZoneLabel>Nascondi</CommandHideZoneLabel>
   <CommandUnhideZoneLabel>Mostra</CommandUnhideZoneLabel>
 
   <CommandDeleteZoneDesc>Rimuovi la zona.</CommandDeleteZoneDesc>
   <CommandDeleteZoneLabel>Rimuovi</CommandDeleteZoneLabel>
+ 
+ 
+   <!-- Artillery -->
+  <CommandSetForceAttackTarget>Imposta bersaglio forzato</CommandSetForceAttackTarget>
+  <CommandSetForceAttackTargetDesc>Imposta un obiettivo che questa torretta attaccherà finchè potrà.</CommandSetForceAttackTargetDesc>
+  <CommandStopForceAttack>Ferma l'attacco forzato</CommandStopForceAttack>
+  <CommandStopForceAttackDesc>Ferma l'attacco forzato e consente alla torretta di far fuoco come meglio crede.</CommandStopForceAttackDesc>
+  <CommandStopAttackFailNotForceAttacking>Correntemente non in attacco forzato.</CommandStopAttackFailNotForceAttacking>
+  <MessageTargetBeyondMaximumRange>Bersaglio fuori portata.</MessageTargetBeyondMaximumRange>
+  <MessageTargetBelowMinimumRange>Bersaglio troppo vicino.</MessageTargetBelowMinimumRange>
   
+  
+    <!-- Ship computer core -->
+  <CommandShipLaunch>Fai decollare la nave</CommandShipLaunch>
+  <CommandShipLaunchDesc>Inizia la sequenza di lancio della nave con la configurazione corrente.</CommandShipLaunchDesc>
+  <CommandShipLaunchReport>Mostra rapporto di lancio</CommandShipLaunchReport>
+  <CommandShipLaunchReportDesc>Mostra una valutazione della capacità di lancio della nave.</CommandShipLaunchReportDesc>
+
+   
+   <!-- Pod -->
+  <CommandPodEject>Fai uscire l'ibernato</CommandPodEject>
+  <CommandPodEjectDesc>Sveglia l'ibernato e fallo uscire.</CommandPodEjectDesc>
+  <CommandPodEjectFailEmpty>Non contiene nessuno.</CommandPodEjectFailEmpty>
+
   
 </LanguageData>
