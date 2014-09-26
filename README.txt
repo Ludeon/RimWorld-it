@@ -1,8 +1,8 @@
 RimWorld-it
 
-I will be on vacation until July 20th, so the translation will remain this way until I return :)
+To contribute with minor fixes fork the repo and create pull requests.
+Instead if you want to actively cooperate with us making the translation you can ask Tynan to give you access to the repo.
 
-I'm the second translator, focusing on correcting errors (there are lots of them!) in the Keyed folder and starting work on Defs.
 ===========
 
 Italian localization for RimWorld
