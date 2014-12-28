@@ -5,7 +5,9 @@
 	
 	<Goto.reportString>In movimento.</Goto.reportString>
 	
-	<Wait.reportString>In attesa.</Wait.reportString> <!-- probably can be better -->
+	<SeekSafeTemperature.reportString>In cerca di temperature sicure.</SeekSafeTemperature.reportString>
+	
+	<Wait.reportString>In attesa.</Wait.reportString>
 	
 	<AttackStatic.reportString>Attaccando TargetA.</AttackStatic.reportString>
 	
@@ -25,7 +27,13 @@
 	
 	<ManThing.reportString>Azionando macchina.</ManThing.reportString>
 	
-	<EnterCryptosleepPod.reportString>Entrando in camera d'ibernazione.</EnterCryptosleepPod.reportString>
+	<EnterCryptosleepCasket.reportString>Entrando in camera d'ibernazione.</EnterCryptosleepCasket.reportString>
+	
+	<OpenCryptosleepCasket.reportString>Aprendo camera d'ibernazione.</OpenCryptosleepCasket.reportString>
+	
+	<UseNeurotrainer.reportString>Usando allenacervello.</UseNeurotrainer.reportString>
+	
+	<ClearSnow.reportString>Spalando la neve.</ClearSnow.reportString>
 	
 	<!--============ Fire ============-->
 	
@@ -39,7 +47,7 @@
 	
 	<EatFood.reportString>Mangiando TargetA.</EatFood.reportString>
 	
-	<Sleep.reportString>Dormendo.</Sleep.reportString>
+	<LayDown.reportString>A letto.</LayDown.reportString>
 	
 	<!--============= Item hauling ===============-->
 	
@@ -51,13 +59,19 @@
 	
 	<Rescue.reportString>Salvando TargetA.</Rescue.reportString>
 	
+	<CarryToCryptosleepCasket.reportString>Portando TargetA alla camera d'ibernazione.</CarryToCryptosleepCasket.reportString>
+	
 	<Capture.reportString>Catturando TargetA.</Capture.reportString>
 	
 	<Arrest.reportString>Arrestando TargetA.</Arrest.reportString>
 	
-	<EscortPrisonerToBed.reportString>Scortando prigioniero TargetA.</EscortPrisonerToBed.reportString>
+	<ReleasePrisoner.reportString>Rilasciando TargetA.</ReleasePrisoner.reportString>
 	
-	<TakeWoundedPrisonerToBed.reportString>Portando prigioniero TargetA.</TakeWoundedPrisonerToBed.reportString>
+	<EscortPrisonerToBed.reportString>Scortando il prigioniero TargetA.</EscortPrisonerToBed.reportString>
+	
+	<TakeWoundedPrisonerToBed.reportString>Portando il prigioniero TargetA a letto.</TakeWoundedPrisonerToBed.reportString>
+	
+	<TakeToBedToOperate.reportString>Portando TargetA a letto.</TakeToBedToOperate.reportString>
 	
 	<Kidnap.reportString>Rapendo TargetA.</Kidnap.reportString>
 	
@@ -66,6 +80,8 @@
 	<DeliverFood.reportString>Portando TargetA da mangiare a TargetB.</DeliverFood.reportString>
 	
 	<FeedPatient.reportString>Facendo mangiare TargetA a TargetB.</FeedPatient.reportString>
+	
+	<HealPatient.reportString>Curando TargetA.</HealPatient.reportString>
 	
 	<PlaceNoCostFrame.reportString>Costruendo TargetA.</PlaceNoCostFrame.reportString>
 	
@@ -78,6 +94,8 @@
 	<UseCommsConsole.reportString>Usando console di comunicazione.</UseCommsConsole.reportString>
 	
 	<Mine.reportString>Scavando TargetA.</Mine.reportString>
+	
+	<SmoothFloor.reportString>Spianando il pavimento.</SmoothFloor.reportString>
 	
 	<Repair.reportString>Riparando TargetA.</Repair.reportString>
 	
@@ -92,10 +110,6 @@
 	<Deconstruct.reportString>Smantellando TargetA.</Deconstruct.reportString>
 	
 	<PrisonerFriendlyChat.reportString>Parlando col prigioniero TargetA.</PrisonerFriendlyChat.reportString>
-	
-	<PrisonerBeatingMild.reportString>Picchiando il prigioniero TargetA.</PrisonerBeatingMild.reportString>
-	
-	<PrisonerBeatingVicious.reportString>Picchiando brutalmente il prigioniero TargetA.</PrisonerBeatingVicious.reportString>
 	
 	<PrisonerExecution.reportString>Giustiziando il prigioniero TargetA.</PrisonerExecution.reportString>
 	
