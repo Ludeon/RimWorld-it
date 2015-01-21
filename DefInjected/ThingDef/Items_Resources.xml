@@ -1,48 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-	<Silver.label>Argento</Silver.label>
-	<Silver.description>Inutile di per se, questo metallo è usato più che altro come moneta di scambio.</Silver.description>
+    <!--=============== Pure stuffs: Basics ====================-->
+
+	<Silver.label>argento</Silver.label>
+	<Silver.description>Questo metallo è usato più che altro come moneta di scambio. Può anche essere usato per fare piacevoli decorazioni.</Silver.description>
 	
-	<!--=============== Construction ====================-->
+	<Gold.label>oro</Gold.label>
+	<Gold.description>Il più seducente metallo di tutti. Sono morti a milioni per cercare di soddisfare l'infinito desiderio umano per l'oro. Questo metallo morbido è inutile in sè, ma è notevolmente bello e molto raro.</Gold.description>
 	
-	<Metal.label>Metallo</Metal.label>
-	<Metal.description>Serve per costruire strutture.</Metal.description>
+	<Steel.label>acciaio</Steel.label>
+	<Steel.description>Una lega metallica di ferro e carbonio usata per costruire strutture, attrezzi e armi.</Steel.description>
 	
-	<StoneBlocks.label>Blocchi di pietra</StoneBlocks.label>
-	<StoneBlocks.description>Servono per costruire strutture.</StoneBlocks.description>
+	<Plasteel.label>plasteel</Plasteel.label> <!-- anything else would be incorrect and too long -->
+	<Plasteel.description>Materiale da costruzione di tecnologia spaziale avanzata. Il plasteel è estremamente resistente per la sua eccezionale struttura molecolare.</Plasteel.description>
 	
-	<WoodLog.label>Legno</WoodLog.label>
-	<WoodLog.description>Serve per costruire strutture. Può essere tagliato in assi.</WoodLog.description>
+	
+	<WoodLog.label>legno</WoodLog.label>
+	<WoodLog.description>Legno di alberi o altre piante di legno. Utile per la costruzione di strutture, armi e persino semplici protesi. In caso di necessità un pezzo di legno può anche essere usato come arma.</WoodLog.description>
 	
 	<!--
 	<WoodPlank.label>Assi di lengo</WoodPlank.label>
 	<WoodPlank.description>Servono per costruire strutture.</WoodPlank.description>
 	-->
 	
-	<!--=============== Raw foods ====================-->
+	<Uranium.label>uranio</Uranium.label>
+	<Uranium.description>Fonte di energia per i reattori.</Uranium.description>
+
+	<!--=============== Pure stuffs: Fabric, leather, etc  ====================-->
 	
-	<RawPotatoes.label>Patate</RawPotatoes.label>
+	<Cloth.label>tessuto</Cloth.label>
+	<Cloth.description>Un tessuto di fibre organiche intrecciate.</Cloth.description>
+	
+	<Synthread.label>fibra sintetica</Synthread.label> 
+	<Synthread.description>Un tessuto di tecnologia spaziale usato per fare comuni vestiti. È morbido, leggero, resistente ed è un buon isolante.</Synthread.description>
+
+	<DevilstrandCloth.label>filo del diavolo</DevilstrandCloth.label> <!-- openly interpreted -->
+	<DevilstrandCloth.description>Tessuto estremamente resistente estratto direttamente da funghi di Filo del Diavolo.</DevilstrandCloth.description>
+	
+	<Hyperweave.label>ipertessuto</Hyperweave.label>
+	<Hyperweave.description>Nanofibre ad alta tecnologia tessute a strati. È un po' pesante, ma è incredibilmente difficile da rompere. I segreti della sua produzione sono conosciuti solo dalle più avanzate culture dei Mondi Splendenti.</Hyperweave.description>
+
+    <!--=============== Raw foods ====================-->
+	
+	<RawPotatoes.label>patate</RawPotatoes.label>
 	<RawPotatoes.description>Patate crude.</RawPotatoes.description>
 	
-	<RawBerries.label>Bacche</RawBerries.label>
+	<RawBerries.label>bacche</RawBerries.label>
 	<RawBerries.description>Bacche assortite. Buone da mangiare, anche crude.</RawBerries.description>
 	
-	<RawAgave.label>Frutti di agave</RawAgave.label>
+	<RawAgave.label>frutti di agave</RawAgave.label>
 	<RawAgave.description>Frutti di agave crudi.</RawAgave.description>
 	
-	<!--=============== Unused resources ====================-->
+    <!--=============== Medicine ====================-->
 	
-	<Uranium.label>Uranio</Uranium.label>
-	<Uranium.description>Fonte di energia per i reattori.</Uranium.description>
+	<HerbalMedicine.label>medicine alle erbe</HerbalMedicine.label>
+	<HerbalMedicine.description>Una mistura di erbe tipicamente estratta dalla pianta di zericio<!-- openly interpreted -->. Meno efficace dei farmaci industrialmente prodotti.</HerbalMedicine.description>
 	
-	<Medicine.label>Medicine</Medicine.label>
+	<Medicine.label>medicine</Medicine.label>
 	<Medicine.description>I medici usano queste provviste per curare i feriti.</Medicine.description>
 	
-	<Shells.label>Munizioni</Shells.label>
-	<Shells.description>Sparate dai cannoni.</Shells.description>
+	<GlitterworldMedicine.label>medicine dei Mondi Splendenti</GlitterworldMedicine.label>
+	<GlitterworldMedicine.description>Provviste mediche avanzate provenienti da un Mondo Splendente ad alta tecnologia.</GlitterworldMedicine.description>
 	
-	<Missiles.label>Missili</Missiles.label>
-	<Missiles.description>Sparati dai lanciamissili.</Missiles.description>	
-
+	<!--=============== Shells ====================-->
+	
+	<Shells.label>proiettili</Shells.label>
+	<Shells.description>Sparati dai cannoni.</Shells.description>
+	
 </LanguageData>
