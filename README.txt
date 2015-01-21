@@ -8,6 +8,7 @@ Ask any of the main translators if you need help on how to translate.
 Main translators:
 -----------------
 -Lunatico9
+-lunargenta
 
 ===========
 
