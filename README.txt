@@ -12,7 +12,7 @@ Main translators:
 
 ===========
 Italian Fiction Primer:
-
+(should be referred to while translating, for consistency)
 https://docs.google.com/document/d/13aFF-7c1Ej_mzVEBjmHA-eKs2DFI8pbxczN2XoJ25LE/edit?usp=sharing
 ===========
 
