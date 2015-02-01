@@ -11,6 +11,10 @@ Main translators:
 -lunargenta
 
 ===========
+Italian Fiction Primer:
+
+https://docs.google.com/document/d/13aFF-7c1Ej_mzVEBjmHA-eKs2DFI8pbxczN2XoJ25LE/edit?usp=sharing
+===========
 
 Italian localization for RimWorld
 
