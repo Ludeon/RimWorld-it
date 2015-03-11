@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TerrainDef Name="FloorBase" Abstract="True">
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>SmoothHard</li>
+    </affordances>
+    <statBases>
+      <WorkToMake>135</WorkToMake>
+    </statBases>
+    <designationCategory>Floors</designationCategory>
+    <Fertility>0</Fertility>
+    <constructEffect>ConstructDirt</constructEffect>
+    <AcceptTerrainSourceFilth>True</AcceptTerrainSourceFilth>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  </TerrainDef>
+
+
+
+  <TerrainDef Abstract="True" ParentName="FloorBase" Name="TileStoneBase">
+    <RenderPrecedence>220</RenderPrecedence>
+    <Description>Mattonelle di pietra solide per una sensazione castello.</Description>
+    <graphicPath>Terrain/Surfaces/TileStone</graphicPath>
+    <statBases>
+      <WorkToMake>165</WorkToMake>
+      <Beauty>2</Beauty>
+    </statBases>
+  </TerrainDef>
+
+  
+  
+  
+  
+  <TerrainDef ParentName="TileStoneBase">
+    <DefName>TileSandstone</DefName>
+    <label>sandstone tile</label>
+    <defaultColor>(126,104,94)</defaultColor>
+    <CostList>
+      <BlocksSandstone>6</BlocksSandstone>
+    </CostList>
+  </TerrainDef>
+
+
+  <TerrainDef ParentName="TileStoneBase">
+    <DefName>TileGranite</DefName>
+    <label>granite tile</label>
+    <defaultColor>(105,95,97)</defaultColor>
+    <CostList>
+      <BlocksGranite>6</BlocksGranite>
+    </CostList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="TileStoneBase">
+    <DefName>TileLimestone</DefName>
+    <label>limestone tile</label>
+    <defaultColor>(158,153,135)</defaultColor>
+    <CostList>
+      <BlocksLimestone>6</BlocksLimestone>
+    </CostList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="TileStoneBase">
+    <DefName>TileSlate</DefName>
+    <label>slate tile</label>
+    <defaultColor>(70,70,70)</defaultColor>
+    <CostList>
+      <BlocksSlate>6</BlocksSlate>
+  </CostList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="TileStoneBase">
+    <DefName>TileMarble</DefName>
+    <label>marble tile</label>
+    <defaultColor>(132,135,132)</defaultColor>
+    <CostList>
+      <BlocksMarble>6</BlocksMarble>
+    </CostList>
+  </TerrainDef>
+  
+  
+
+</Defs>

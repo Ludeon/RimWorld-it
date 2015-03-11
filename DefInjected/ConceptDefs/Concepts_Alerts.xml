@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Start-active concepts -->
+
+  <ConceptDef>
+    <defName>Forbidding</defName>
+    <label>Unforbid resources</label>
+    <priority>40</priority>
+    <alertDisplay>true</alertDisplay>
+    <alertStartActive>true</alertStartActive>
+    <highlightTag>ToggleForbidden</highlightTag>
+    <helpTexts>
+      <li>I coloni non interagiscono con gli oggetti marcati VIETATO. \ N \ gli oggetti VIETATI hanno una piccola X rossa. Seleziona un elemento vietato e utilizza il pulsante in basso per levare il VIETATO.</li>
+    </helpTexts>
+  </ConceptDef>
+
+  <ConceptDef>
+    <defName>Stockpiles</defName>
+    <label>Place stockpile</label>
+    <priority>40</priority>
+    <alertDisplay>true</alertDisplay>
+    <alertStartActive>true</alertStartActive>
+    <highlightTag>Stockpile</highlightTag>
+    <helpTexts>
+      <li>I vostri coloni hanno bisogno di un posto per depositare gli oggetti. Designare una riserva per permettere hai tuoi coloni di accumulare le risorse . \ N \ Trovi le riserve o discarica nella sezione ZONE del menu ARCHITETTO in basso a sinistra.</li>
+    </helpTexts>
+  </ConceptDef>
+  
+  <ConceptDef>
+    <defName>GrowingFood</defName>
+    <label>Place growing zone</label>
+    <priority>37</priority>
+    <alertDisplay>true</alertDisplay>
+    <alertStartActive>true</alertStartActive>
+    <highlightTag>DesignatorZoneCreateGrowing</highlightTag>
+    <helpTexts>
+      <li>Per produrre cibo, posizionare ZONA AGRICOLA nella sezione ZONE del menu ARCHITETTO in basso a sinistra.. \ N \ può essere posizionato solo su un terreno fertile.</li>
+    </helpTexts>
+  </ConceptDef>
+
+  
+  
+
+
+  <!-- Timed concepts -->
+
+  <ConceptDef>
+    <defName>EquippingWeapons</defName>
+    <label>Equip weapons</label>
+    <priority>30</priority>
+    <alertDisplay>true</alertDisplay>
+    <helpTexts>
+      <li>I vostri coloni arrivano con alcune armi. dovremo fargliele prendere! \ N \ Selezionare il colono e fare clic destro su l'arma che si desidera equipaggiare.</li>
+    </helpTexts>
+  </ConceptDef>
+
+  <ConceptDef>
+		<defName>CameraZoom</defName>
+    <label>Learn camera zooming</label>
+		<priority>20</priority>
+    <alertDisplay>true</alertDisplay>
+    <helpTexts>
+			<li>Zoom avanti e indietro con la rotellina del mouse o i tasti T e G.</li>
+		</helpTexts>
+	</ConceptDef>
+
+  <ConceptDef>
+    <defName>WorkOverview</defName>
+    <label>Configure work settings</label>
+    <priority>20</priority>
+    <highlightTag>ButtonOverview</highlightTag>
+    <alertDisplay>true</alertDisplay>
+    <helpTexts>
+      <li>È possibile impostare le impostazioni di lavoro di ciascun coloni nella panoramica in basso a destra dello schermo. \ N \  Faranno sempre il lavoro al massimo con le priorità decise da voi. \ N \ Se nessuno ha un certo tipo di lavoro assegnato, o se sono occupato con priorità, quel lavoro non potrà mai ottenere svolto.</li>
+    </helpTexts>
+  </ConceptDef>
+
+  <ConceptDef>
+    <defName>TimeControls</defName>
+    <label>Learn time controls</label>
+    <priority>18</priority>
+    <alertDisplay>true</alertDisplay>
+    <highlightTag>TimeControls</highlightTag>
+    <helpTexts>
+      <li>È possibile accelerare, rallentare, o fermare il tempo con i pulsanti in basso a destra.</li>
+    </helpTexts>
+  </ConceptDef>
+
+
+  <ConceptDef>
+    <defName>InfoCard</defName>
+    <label>Open info card</label>
+    <priority>15</priority>
+    <alertDisplay>true</alertDisplay>
+    <highlightTag>InfoCard</highlightTag>
+    <helpTexts>
+      <li>La scheda Info mostra le statistiche dettagliate su qualsiasi oggetto, persona, o costruzione. \ N \ Selezionare una persona o un oggetto e aprire la scheda informazioni con il tasto 'i' nel riquadro ispezione.</li>
+    </helpTexts>
+  </ConceptDef>
+
+  <ConceptDef>
+    <defName>SpacePause</defName>
+    <label>Learn spacebar pause</label>
+    <priority>8</priority>
+    <alertDisplay>true</alertDisplay>
+    <helpTexts>
+      <li>BARRA SPAZIATRICE per mettere in pausa o riprendere a giocare \ n \ Puoi dare ordini durante la pausa \ n \ Ricorda questo.. Se le cose si fanno frenetici, basta premere SPAZIO!</li>
+    </helpTexts>
+  </ConceptDef>
+
+  <ConceptDef>
+    <defName>StorageTab</defName>
+    <label>Learn storage tab</label>
+    <priority>7</priority>
+    <alertDisplay>true</alertDisplay>
+    <highlightTag>TabStorage</highlightTag>
+    <minSecondsSinceLesson>800</minSecondsSinceLesson>
+    <helpTexts>
+      <li>È possibile configurare le scorte delle riserve o discariche selezionandoli e aprendo la scheda DEPOSITO sopra il riquadro.</li>
+    </helpTexts>
+  </ConceptDef>
+
+  <ConceptDef>
+    <defName>MedicalOperations</defName>
+    <label>Learn medical operations</label>
+    <priority>2</priority>
+    <alertDisplay>true</alertDisplay>
+    <minSecondsSinceLesson>1200</minSecondsSinceLesson>
+    <helpTexts>
+      <li>Per assegnare un operazione medica, come raccolta di organi,istallazione organi o installazione protesi , cliccare sul bottone salute di un colono, poi passare alla sub-scheda Operazioni.</li>
+    </helpTexts>
+  </ConceptDef>
+
+  <ConceptDef>
+    <defName>HomeRegion</defName>
+    <label>Learn home region</label>
+    <alertDisplay>true</alertDisplay>
+    <priority>1</priority>
+    <highlightTag>DesignatorHomeRegion</highlightTag>
+    <minSecondsSinceLesson>1600</minSecondsSinceLesson>
+    <helpTexts>
+      <li>ZONA DOMESTICA dire ai vostri coloni quali aree sono da pulire e dove si deve spegnere gli incendi. \ n \ Definire una ZONA DOMESTICA nella sezione ZONE del menu ARCHITETTO in basso a sinistra.</li>
+    </helpTexts>
+  </ConceptDef>
+
+  <ConceptDef>
+    <defName>RightClickClearLetter</defName>
+    <label>Learn clearing letters with right-click</label>
+    <alertDisplay>true</alertDisplay>
+    <priority>2</priority>
+    <minSecondsSinceLesson>1800</minSecondsSinceLesson>
+    <helpTexts>
+      <li>È possibile eliminare rapidamente le lettere in arrivo con un clic destro.</li>
+    </helpTexts>
+  </ConceptDef>
+
+
+  
+  
+  
+  
+  <!-- Opportunity needer concepts -->
+
+  <ConceptDef>
+    <defName>BuildOrbitalTradeBeacon</defName>
+    <label>Build orbital trade beacon</label>
+    <priority>40</priority>
+    <alertDisplay>true</alertDisplay>
+    <needsOpportunity>True</needsOpportunity>
+    <helpTexts>
+      <li>Per inviare articoli o argento ai commercianti orbitali, è necessario costruire un AEROFARO ORBITALE all'aperto e inserire una riserva vicino.</li>
+    </helpTexts>
+  </ConceptDef>
+
+  <ConceptDef>
+    <defName>SetGrowingZonePlant</defName>
+    <label>Learn growing zone config</label>
+    <priority>6</priority>
+    <alertDisplay>true</alertDisplay>
+    <highlightTag>GrowingZoneSetPlant</highlightTag>
+    <needsOpportunity>true</needsOpportunity>
+    <opportunityDecays>false</opportunityDecays>
+    <helpTexts>
+      <li>È possibile impostare cosa piantare in una zona agricola. È anche possibile piantare alberi! \ N \ selezionare la zona agricola, aprire la scheda AGRICOLTURA, e fare clic sul pulsante che vedete.</li>
+    </helpTexts>
+  </ConceptDef>
+
+  <ConceptDef>
+    <defName>PrisonerTab</defName>
+    <label>Learn prisoner tab</label>
+    <priority>20</priority>
+    <alertDisplay>true</alertDisplay>
+    <needsOpportunity>True</needsOpportunity>
+    <highlightTag>TabPrisoner</highlightTag>
+    <helpTexts>
+      <li>Guardate la scheda 'prigioniero' di un prigioniero per impostare come saranno trattati. \ N \ Avrete bisogno di un colono con il lavoro Guardiano per prendersi cura del detenuto.</li>
+    </helpTexts>
+  </ConceptDef>
+
+  <ConceptDef>
+    <defName>StoragePriority</defName>
+    <label>Learn to set storage priorities</label>
+    <priority>5</priority>
+    <alertDisplay>true</alertDisplay>
+    <needsOpportunity>True</needsOpportunity>
+    <highlightTag>StoragePriority</highlightTag>
+    <minSecondsSinceLesson>1200</minSecondsSinceLesson>
+    <helpTexts>
+      <li>È possibile modificare la priorità di accumulo delle riserve. I coloni riempiranno prima le riserve con priorità più alta.</li>
+    </helpTexts>
+  </ConceptDef>
+
+
+
+
+</Defs>

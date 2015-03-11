@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+	<RecipeDef>
+    <workerCounterClass>RecipeWorkerCounter_MakeStoneBlocks</workerCounterClass>
+		<defName>MakeStoneBlocks</defName>
+		<label>make stone blocks</label>
+		<description>Taglia pezzi di roccia in blocchi di pietra utilizzabili.</description>
+		<jobString>Stonecutting.</jobString>
+		<workAmount>1600</workAmount>
+		<workSpeedStat>StonecuttingSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <targetCountAdjustment>50</targetCountAdjustment>
+    <ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>StoneChunks</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+    <specialProducts>
+      <li>Butchery</li>
+    </specialProducts>
+		<fixedIngredientFilter>
+      <categories>
+        <li>StoneChunks</li>
+      </categories>
+		</fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>ExtractMetalFromSlag</defName>
+    <label>smelt metal from slag</label>
+    <description>Usa il calore e elettromagneti forti per separare metallo utile da blocchi di scorie.</description>
+    <jobString>Smelting metal from slag.</jobString>
+    <workAmount>1600</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ChunkSlagSteel</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <specialProducts>
+      <li>Smelted</li>
+    </specialProducts>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ChunkSlagSteel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>SmeltWeapon</defName>
+    <label>smelt metal from weapon</label>
+    <description>Usa il calore e elettromagneti forti per separare metallo utile dalle armi.</description>
+    <jobString>Smelting metal from weapon.</jobString>
+    <workAmount>1600</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <specialProducts>
+      <li>Smelted</li>
+    </specialProducts>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Weapons</li>
+      </categories>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+
+  <RecipeDef>
+    <defName>MakeArtilleryShell</defName>
+    <label>make artillery shell</label>
+    <description>Crei un proiettile di artiglieria.</description>
+    <jobString>Making artillery shell.</jobString>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>800</workAmount>
+    <targetCountAdjustment>5</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ArtilleryShell>1</ArtilleryShell>
+    </products>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+
+
+
+
+
+
+
+
+  <!--
+  <RecipeDef>
+    <defName>MakeWoodPlanks_Hand</defName>
+    <label>make wood planks</label>
+    <description>Tagliare 10 tronchi in 25 tavole di legno a mano. Piuttosto lento.</description>
+    <jobString>Making wood planks.</jobString>
+    <workAmount>1500</workAmount>
+    <effectWorking>MakeWoodPlanks_Hand</effectWorking>
+    <soundWorking>Recipe_MakeWoodPlanks_Hand</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <li>
+        <thingDef>WoodPlank</thingDef>
+        <count>25</count>
+      </li>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+
+  <RecipeDef>
+    <defName>MakeWoodPlanks_Electric</defName>
+    <label>make wood planks</label>
+    <description>Tagliare 10 tronchi in 25 tavole di legno.</description>
+    <jobString>Making wood planks.</jobString>
+    <workAmount>500</workAmount>
+    <effectWorking>MakeWoodPlanks_Electric</effectWorking>
+    <soundWorking>Recipe_MakeWoodPlanks_Electric</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <li>
+        <thingDef>WoodPlank</thingDef>
+        <count>25</count>
+      </li>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+  -->
+
+
+
+
+</RecipeDefs>

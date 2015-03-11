@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StatDefs>
+
+  <StatDef>
+    <defName>MoveSpeed</defName>
+    <label>move speed</label>
+    <description>Velocità di movimento attraverso il mondo in celle al secondo.</description>
+    <category>BasicsPawn</category>
+    <defaultBaseValue>2.8</defaultBaseValue>
+    <toStringStyle>FloatTwo</toStringStyle>
+    <formatString>{0} c/s</formatString>
+    <displayPriorityInCategory>90</displayPriorityInCategory>
+    <activityFactors>
+      <li>
+        <activity>Consciousness</activity>
+        <weight>1</weight>
+      </li>
+      <li>
+        <activity>Moving</activity>
+        <weight>1</weight>
+      </li>
+    </activityFactors>
+  </StatDef>
+
+
+  <StatDef>
+    <defName>MentalBreakThreshold</defName>
+    <label>mental break threshold</label>
+    <description>Finché l'umore di qualcuno è al di sotto di questo livello, sono in pericolo di avere una crisi.</description>
+    <category>BasicsPawn</category>
+    <defaultBaseValue>5</defaultBaseValue>
+    <minValue>1</minValue>
+    <maxValue>50</maxValue>
+    <toStringStyle>FloatZero</toStringStyle>
+    <showOnAnimals>false</showOnAnimals>
+    <displayPriorityInCategory>80</displayPriorityInCategory>
+  </StatDef>
+
+  
+  
+  <StatDef>
+    <defName>PsychicSensitivity</defName>
+    <label>psychic sensitivity</label>
+    <description>Moltiplicatore sull'impatto dei fenomeni psichici che interessano questa persona.</description>
+    <category>BasicsPawn</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>PercentZero</toStringStyle>
+    <showOnAnimals>false</showOnAnimals>
+    <hideAtValue>1</hideAtValue>
+    <displayPriorityInCategory>75</displayPriorityInCategory>
+  </StatDef>
+
+  <StatDef>
+    <defName>GlobalLearningFactor</defName>
+    <label>global learning factor</label>
+    <description>Efficienza di apprendimento globale per tutte le abilità.</description>
+    <category>BasicsPawn</category>
+    <defaultBaseValue>1.0</defaultBaseValue>
+    <toStringStyle>PercentZero</toStringStyle>
+    <showOnAnimals>false</showOnAnimals>
+    <hideAtValue>1</hideAtValue>
+    <displayPriorityInCategory>75</displayPriorityInCategory>
+  </StatDef>
+
+
+
+  <StatDef>
+    <defName>EatingSpeed</defName>
+    <label>eating speed</label>
+    <description>Moltiplicatore sulla velocità di mangiare.</description>
+    <category>BasicsPawn</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>PercentZero</toStringStyle>
+    <hideAtValue>1</hideAtValue>
+    <minValue>0.1</minValue>
+    <showOnMechanoids>false</showOnMechanoids>
+    <activityFactors>
+      <li>
+        <activity>Eating</activity>
+        <weight>0.95</weight>
+      </li>
+      <li>
+        <activity>Manipulation</activity>
+        <weight>0.3</weight>
+      </li>
+    </activityFactors>
+  </StatDef>
+
+  <StatDef>
+    <defName>ComfyTemperatureMin</defName>
+    <label>Minimum comfortable temperature</label>
+    <description>Sotto di questa temperatura, i personaggi saranno infelici. Significativamente al di sotto di questa temperatura, svilupperanno ipotermia e congelamento e alla fine muoiono.</description>
+    <category>BasicsPawn</category>
+    <defaultBaseValue>0</defaultBaseValue>
+    <toStringStyle>Temperature</toStringStyle>
+    <minValue>-2000</minValue>
+    <maxValue>2000</maxValue>
+    <displayPriorityInCategory>50</displayPriorityInCategory>
+    <parts>
+      <li Class="StatPart_ApparelStatOffset">
+        <apparelStat>Insulation_Cold</apparelStat>
+      </li>
+    </parts>
+  </StatDef>
+
+  <StatDef>
+    <defName>ComfyTemperatureMax</defName>
+    <label>Maximum comfortable temperature</label>
+    <description>Al di sopra di questa temperatura, i personaggi saranno infelici. Significativamente al di sopra di questa temperatura, svilupperanno un colpo di calore e alla fine muoiono</description>
+    <category>BasicsPawn</category>
+    <defaultBaseValue>50</defaultBaseValue>
+    <toStringStyle>Temperature</toStringStyle>
+    <minValue>-2000</minValue>
+    <maxValue>2000</maxValue>
+    <displayPriorityInCategory>50</displayPriorityInCategory>
+    <parts>
+      <li Class="StatPart_ApparelStatOffset">
+        <apparelStat>Insulation_Heat</apparelStat>
+      </li>
+    </parts>
+  </StatDef>
+
+
+
+  <StatDef>
+    <defName>ImmunityGainSpeed</defName>
+    <label>immunity gain speed</label>
+    <description>Velocità con cui questo personaggio guadagna l'immunità alle malattie. Se questo è troppo lento, il personaggio muore di una malattia prima di sviluppare l'immunità.</description>
+    <category>BasicsPawn</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <toStringStyle>PercentZero</toStringStyle>
+    <displayPriorityInCategory>40</displayPriorityInCategory>
+    <activityFactors>
+      <li>
+        <activity>BloodFiltration</activity>
+        <weight>1</weight>
+      </li>
+    </activityFactors>
+    <parts>
+      <li Class="StatPart_Food">
+        <factorUrgentlyHungry>0.9</factorUrgentlyHungry>
+        <factorStarving>0.7</factorStarving>
+      </li>
+      <li Class="StatPart_Rest">
+        <factorTired>0.96</factorTired>
+        <factorVeryTired>0.92</factorVeryTired>
+        <factorExhausted>0.8</factorExhausted>
+      </li>
+      <li Class="StatPart_InBed" />
+      <li Class="StatPart_Age">
+        <curve>
+          <points>
+            <li>
+              <loc>(40,1)</loc>
+            </li>
+            <li>
+              <loc>(80,0.8)</loc>
+            </li>
+          </points>
+        </curve>
+      </li>
+    </parts>
+  </StatDef>
+
+</StatDefs>

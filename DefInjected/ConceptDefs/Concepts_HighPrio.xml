@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DefPackage-ConceptDef>
+
+	<ConceptDef>
+		<defName>CameraDolly</defName>
+		<priority>95</priority>
+		<helpTexts>
+			<li>Spostare la camera facendo clic e trascinando il tasto centrale del mouse o con i tasti WASD.</li>
+		</helpTexts>
+	</ConceptDef>
+
+	<ConceptDef>
+		<defName>Rescuing</defName>
+		<priority>55</priority>
+		<needsOpportunity>True</needsOpportunity>
+		<helpTexts>
+			<li>Per salvare un colono ferito, selezionare un colono sano e il pulsante destro del mouse sul colone ferito.</li>
+		</helpTexts>
+	</ConceptDef>
+
+	<ConceptDef>
+		<defName>Capturing</defName>
+		<priority>55</priority>
+		<needsOpportunity>True</needsOpportunity>
+		<helpTexts>
+			<li>Un nemico è inabile. È possibile catturarlo!</li>
+			<li>Per catturare, selezionare un colono, fare clic destro sul nemico inabile, e selezionare Cattura. \ N \ hai bisogno di un letto supplementare segnato per i prigionieri.</li>
+		</helpTexts>
+	</ConceptDef>
+
+	<ConceptDef>
+		<defName>Drafting</defName>
+		<priority>45</priority>
+		<needsOpportunity>True</needsOpportunity>
+    <highlightTag>ToggleDrafted</highlightTag>
+    <helpTexts>
+			<li>Per controllare i coloni per combattere, li puoi selezionare e premere il pulsante del combattimento.</li>
+			<li>Un colono in modalità combattimento farà solo quello che gli si dice, e può prendere solo azioni di combattimento. Quelli con le armi le userà quando possibile \ n \ Non lasciare coloni sempre in combattimento li fara morire di fame e diventare infelici.</li>
+		</helpTexts>
+	</ConceptDef>
+
+  <ConceptDef>
+    <defName>BillsTab</defName>
+    <needsOpportunity>true</needsOpportunity>
+    <opportunityDecays>false</opportunityDecays>
+    <priority>40</priority>
+    <highlightTag>TabBills</highlightTag>
+    <helpTexts>
+      <li>Per fare lavorare i coloni ad un tavolo, selezionare la tabella programma del tavolo. Qui, si può dire che pasti deve cucinare, quali cose costruire, o quali creature macellare.</li>
+    </helpTexts>
+  </ConceptDef>
+
+  <ConceptDef>
+    <defName>StorageTabCategories</defName>
+    <priority>20</priority>
+    <needsOpportunity>True</needsOpportunity>
+    <helpTexts>
+      <li>Nella scheda di una riserva o zona agricola ect... , è possibile espandere le categorie per consentire o negare elementi specifici. Fare clic sui triangoli a sinistra dei nomi di categoria.</li>
+    </helpTexts>
+  </ConceptDef>
+
+  <ConceptDef>
+    <defName>OpeningComms</defName>
+    <priority>5</priority>
+    <needsOpportunity>True</needsOpportunity>
+    <helpTexts>
+      <li>Per comunicare, selezionare un colono e fare clic destro sulla console delle comunicazioni.</li>
+    </helpTexts>
+  </ConceptDef>
+
+    <ConceptDef>
+    <defName>Mining</defName>
+    <priority>12</priority>
+    <highlightTag>DesignatorMine</highlightTag>
+    <helpTexts>
+      <li>È possibile indicare dove SCAVARE aprendo il menu ARCHITETTO e selezionando la scheda ORDINI. \ N \ Alcuni blocchi sono ACCIAIO, ORO, ARGENTO, e altri materiali utili.</li>
+    </helpTexts>
+  </ConceptDef>
+
+
+
+</DefPackage-ConceptDef>
