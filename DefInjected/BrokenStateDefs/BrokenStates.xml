@@ -19,8 +19,8 @@
     <recoveryThought>Catharsis</recoveryThought>
     <blockNormalThoughts>true</blockNormalThoughts>
     <nameColor>(0.9,0.2,0.5)</nameColor>
-    <beginLetter>{0} è in collera.</beginLetter>
-    <recoveryMessage>{0}'s la collera è finita.</recoveryMessage>
+    <beginLetter>{0} ha una crisi psicotica.</beginLetter>
+    <recoveryMessage>{0} si è ripreso dalla crisi pricotica.</recoveryMessage>
     <inspectLine>Broken: Psychotic rampage</inspectLine>
   </BrokenStateDef>
 
@@ -54,9 +54,9 @@
     <nameColor>(0.5, 0.9, 0.5)</nameColor>
     <recoveryThought>Catharsis</recoveryThought>
     <breakType>Soft</breakType>
-    <beginLetter>{0} è leggermente brillo</beginLetter>
+    <beginLetter>{0} è ubriaco.</beginLetter>
     <beginLetterType>BadNonUrgent</beginLetterType>
-    <recoveryMessage>{0} non è più brillo.</recoveryMessage>
+    <recoveryMessage>{0} non è più ubriaco.</recoveryMessage>
     <inspectLine>Broken: Binging</inspectLine>
     <prisonersCanDo>false</prisonersCanDo>
   </BrokenStateDef>
@@ -85,9 +85,9 @@
     <recoveryThought>Catharsis</recoveryThought>
     <blockNormalThoughts>true</blockNormalThoughts>
     <nameColor>(0.65, 0.9, 0.93)</nameColor>
-    <beginLetter>{0} ha rinunciato e sta lasciando la colonia.</beginLetter>
+    <beginLetter>{0} ha rinunciato e se ne sta andando.</beginLetter>
     <beginLetterType>BadNonUrgent</beginLetterType>
-    <recoveryMessage>{0} ha cambiato idea e sta tornando alla colonia.</recoveryMessage>
+    <recoveryMessage>{0} ha cambiato idea e sta tornando.</recoveryMessage>
     <inspectLine>Broken: Given up and leaving</inspectLine>
     <prisonersCanDo>false</prisonersCanDo>
   </BrokenStateDef>
