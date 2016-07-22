@@ -6,7 +6,8 @@
   <MessageRaidersBeginningAssault>{0} da {1} stanno iniziando l'assalto.</MessageRaidersBeginningAssault>
   <MessageRaidersDetectedEarlyAssault>{0} da {1} vi hanno individuato e hanno iniziato l'assalto in anticipo.</MessageRaidersDetectedEarlyAssault>
   <MessageRaidersKidnapping>{0} da {1} hanno deciso di rapire chi possono e andarsene.</MessageRaidersKidnapping>
-  
+  <MessageRaidersStealing>{0} da {1} hanno deciso di rubare ciò che possono e andarsene.</MessageRaidersStealing>
+ 
   <MessageRaidersLeaving>{0} da {1} se ne stanno andando.</MessageRaidersLeaving>
   <MessageRaidersGivenUpLeaving>{0} da {1} hanno lasciato perdere e se ne stanno andando.</MessageRaidersGivenUpLeaving>
   <MessageRaidersSatisfiedLeaving>{0} da {1} sono soddisfatti dei danni che hanno causato e se ne stanno andando.</MessageRaidersSatisfiedLeaving>
@@ -14,32 +15,128 @@
   <MessageFightersFleeing>{0} da {1} stanno scappando.</MessageFightersFleeing>
   <MessageFriendlyFightersLeaving>Gli amici {0} da {1} se ne stanno andando.</MessageFriendlyFightersLeaving>
 
+  <MessageVisitorsTakingWounded>{0} da {1} stanno prendendo un ospite ferito.</MessageVisitorsTakingWounded>
+  <MessageVisitorsTrappedLeaving>{0} da {1} sono rimasti intrappolati e si stanno creando un varco per fuggire.</MessageVisitorsTrappedLeaving>
+  
+  <MessageWornApparelDeterioratedAway>{0} indossato da {1} si è deteriorato fino a rompersi.</MessageWornApparelDeterioratedAway>
+  
+  <MessageSeasonBegun>{0} è iniziata.</MessageSeasonBegun>
 
-  <MessageShipHasLeftCommsRange>{0} è uscita dal raggio di comunicazione della console.</MessageShipHasLeftCommsRange>
+  <MessageShipHasLeftCommsRange>{0} è uscita dal raggio di comunicazione.</MessageShipHasLeftCommsRange>
 	
-  <MessageNeedBeaconToTradeWithShip>Ti serve un aereofaro orbitale per commerciare con le navi.</MessageNeedBeaconToTradeWithShip>
+  <MessageNeedBeaconToTradeWithShip>Ti serve un aereofaro orbitale per commerciare con le navi.\n\nL'aereofaro deve essere alimentato.</MessageNeedBeaconToTradeWithShip>
 	
   <MessageBillComplete>Richiesta completata: {0}.</MessageBillComplete>
   
   <MessageFullyHealed>{0} è tornato in piena salute.</MessageFullyHealed>
 
   <MessagePrisonerIsEscaping>Il prigioniero {0} stà scappando.</MessagePrisonerIsEscaping>
+  
+  <MessageOutOfNearbyShellsFor>{0} non ha trovato cartucce disponibili nelle vicinanze per {1}.</MessageOutOfNearbyShellsFor>
 
+  <MessageAnimalsGoPsychoHunted>Attenzione: gli esemplari di {0} spesso attaccano quando vengono aggrediti.</MessageAnimalsGoPsychoHunted>
+  <MessageAnimalManhuntsOnTameFailed>Attenzione: gli esemplari di {0} potrebbero attaccare dopo un tentativo fallito di domarli ({1} di probabilità).</MessageAnimalManhuntsOnTameFailed>
+
+  <LetterLabelMessageRecruitSuccess>Nuova recluta</LetterLabelMessageRecruitSuccess>
   <MessageRecruitSuccess>{0} ha reclutato con successo {1} ({2} di probabilità).</MessageRecruitSuccess>
+  <MessageTameSuccess>{0} ha domato con successo {1} ({2} di probabilità).</MessageTameSuccess>
+  <MessageTameAndNameSuccess>{0} ha domato con successo {1} ({2} di probabilità) e lo ha chiamato {3}.</MessageTameAndNameSuccess>
+ 
+  <!-- No longer in original Messages.xml file
   <MessageRecruitFail>{0} non è riuscito a reclutare {1} ({2} di probabilità).</MessageRecruitFail>
   <MessageRecruitFailBecauseLoyalty>{0} non è riuscito a reclutare {1} (serve un livello più alto di lealtà).</MessageRecruitFailBecauseLoyalty>
-	
+  -->
+  
+  <!-- No longer in original Messages.xml file
   <MessageTraderCannotAfford>Il commerciante non può permettersi questo affare.</MessageTraderCannotAfford>
-  <MessageColonyCannotAfford>La colonia non può permettersi questo affare.</MessageColonyCannotAfford>
-  <MessageColonyNotEnoughSilver>Non hai abbastanza argento per lo scambio.</MessageColonyNotEnoughSilver>
   <MessageTraderNotEnoughSilver>Il commerciante non ha abbastanza argento per lo scambio.</MessageTraderNotEnoughSilver>
+  -->
+  
+  <MessageColonyCannotAfford>La colonia non può permettersi questo affare.</MessageColonyCannotAfford>
+  <MessageColonyNotEnoughSilver>Non hai abbastanza argento pronto per lo scambio.</MessageColonyNotEnoughSilver>
 
   <MessageCriticalAlert>Avviso critico: {0}</MessageCriticalAlert>
 
-  <MessageMustDesignateHarvestableFood>Devi designare delle piante che danno cibo e sono totalmente cresciute.</MessageMustDesignateHarvestableFood>
-  <MessageMustDesignateHarvestableWood>Devi designare degli alberi che danno legna e sono totalmente cresciuti.</MessageMustDesignateHarvestableWood>
+  <MessageMustDesignateHarvestable>Devi designare delle piante sufficientemente cresciute.</MessageMustDesignateHarvestable>
+  <MessageMustDesignateHarvestableWood>Devi designare degli alberi che danno legna e sufficientemente cresciuti.</MessageMustDesignateHarvestableWood>
   <MessageMustDesignatePlants>Devi designare delle piante.</MessageMustDesignatePlants>
-  <MessageMustDesignateHaulable>Devi designare degli oggetti spostabili.</MessageMustDesignateHaulable>
+  <MessageMustDesignateHaulable>Devi designare degli oggetti traspostabili.</MessageMustDesignateHaulable>
+   <MessageMustDesignateMineable>Devi designare roccie minerali intransitabili.</MessageMustDesignateMineable>
+  <MessageMustDesignateHuntable>Devi designare animali che si possono cacciare.</MessageMustDesignateHuntable>
+  <MessageMustDesignateTameable>Devi designare animali che si possono domare.</MessageMustDesignateTameable>
+  <MessageMustDesignateClaimable>Devi designare strutture artificiali abbandonate.</MessageMustDesignateClaimable>
+  <MessageMustDesignateSmoothableFloor>Devi designare un terreno in roccia ruvida.</MessageMustDesignateSmoothableFloor>
+  <MessageNothingCanRemoveThickRoofs>Non si possono rimuovere soffitti spessi.</MessageNothingCanRemoveThickRoofs>
+  <MessageAlreadyInStorage>Ciò è già in deposito e verrà spostato in depositi ad alta priorità come necessario.</MessageAlreadyInStorage>
+  <MessageMustDesignateStrippable>Devi designare un corpo o una persona abbattuta che può essere spogliata.</MessageMustDesignateStrippable>
+  <MessageMustDesignateSlaughterable>Devi selezionare un animale domato che appartiene alla colonia.</MessageMustDesignateSlaughterable>
+  <MessageMustDesignateOpenable>Devi designare tombe occupate o contenitori.</MessageMustDesignateOpenable>
+
+  <MessageRefusedArrest>{0} ha rifiutato di farsi arrestare!</MessageRefusedArrest>
   
+  <MessageNoMedicalBeds>Non ci sono letti medici disponibili.</MessageNoMedicalBeds>
+  <MessageNoAnimalBeds>Non ci sono letti per animali disponibili.</MessageNoAnimalBeds>
+  <MessageTooLowMedCare>L'operazione richiede {0} o superiore, ma l'attuale modalità di cura di {1} è "{2}".</MessageTooLowMedCare>
+
+  <PawnDiedBecauseOf>{0} è morto a causa di {1}.</PawnDiedBecauseOf>
+
+  <MessageNoLongerDowned>{0} non è più incapace di camminare.</MessageNoLongerDowned>
+
+  <MessageInvoluntarySleep>{0} è collassato per l'estrema stanchezza.</MessageInvoluntarySleep>
+  
+  <MessageMedicalOperationFailureCatastrophic>{0} ha fallito catastroficamente durante l'operazione su {1}.</MessageMedicalOperationFailureCatastrophic>
+  <MessageMedicalOperationFailureMinor>{0} ha fallito in maniera marginale durante l'operazione su {1}.</MessageMedicalOperationFailureMinor>
+
+  <MessageMedicalOperationWillAngerFaction>Questa operazione farà arrabbiare {0}.</MessageMedicalOperationWillAngerFaction>
+  
+  <MessagePawnExitMapRelationsGain>Visto che {0} è uscito dalla mappa in salute, le relazioni con {1} sono migliorate di {2}.</MessagePawnExitMapRelationsGain>
+
+  <MessageMiscarriedStarvation>{0} ha abortito a causa della fame.</MessageMiscarriedStarvation>
+  <MessageMiscarriedPoorHealth>{0} ha abortito a causa della scarsa salute.</MessageMiscarriedPoorHealth>
+  <MessageGaveBirth>{0} ha partorito.</MessageGaveBirth>
+
+  <!-- I HAVE NO IDEA IF THIS IS CORRECT -->
+  <MessageNuzzledPawnGaveNameTo>{0} ha chiamato {1} {2} dopo esserci stato abbracciato.</MessageNuzzledPawnGaveNameTo>
+
+  <MessageNoHandlerSkilledEnough>Nessun addestratore può domare {0} (richiede livello {1} in {2}, il miglior addestratore {3} ha {4}).</MessageNoHandlerSkilledEnough>
+  
+  <MessageEatenByPredator>{0} è stato mangiato da {1}.</MessageEatenByPredator>
+  <MessageAttackedByPredator>{0} sta venendo attaccato da {1}!</MessageAttackedByPredator>
+
+  <MessageHiveReproduced>Un alveare si è riprodotto.</MessageHiveReproduced>
+  
+  <MessageTraderCaravanLeaving>La carovana commerciale da {0} se ne sta andando.</MessageTraderCaravanLeaving>
+  
+  <MessageCantSelectDeadPawn>{0} è morto.</MessageCantSelectDeadPawn>
+  <MessageCantSelectOffMapPawn>{0} è fuori dalla mappa.</MessageCantSelectOffMapPawn>
+
+  <MessageSocialFight>{0} ha iniziato una discussione con {1}. Motivo: {2}.</MessageSocialFight>
+  
+  <MessageNewMarriageCeremony>I coloni si stanno radunando per celebrare il matrimonio tra {0} e {1}.</MessageNewMarriageCeremony>
+  <MessageMarriageCeremonyStarts>{0} e {1} stanno iniziando la cerimonia del loro matrimonio!</MessageMarriageCeremonyStarts>
+  <MessageMarriageCeremonyCalledOff>La cerimonia di matrimonio tra {0} e {1} è stata interrotta.</MessageMarriageCeremonyCalledOff>
+  <MessageNewlyMarried>{0} e {1} si sono sposati. I coloni stanno ora celebrando l'evento.</MessageNewlyMarried>
+  <MessageMarriageCeremonyAfterPartyFinished>La cerimonia di matrimonio tra {0} e {1} è finita.</MessageMarriageCeremonyAfterPartyFinished>
+ 
+  <MessageNewBondRelation>{0} e {1} hanno formato un legame.</MessageNewBondRelation>
+  <MessageNewBondRelationNewName>{0} e {1} hanno formato un legame. {0} lo ha chiamato {2}.</MessageNewBondRelationNewName>
+  
+  <MessageBondedAnimalMentalBreak>{0} è in crisi di nervi per la morte di {1}.</MessageBondedAnimalMentalBreak>
+  <MessageNamedBondedAnimalMentalBreak>{0} chiamato {1} è in crisi di nervi per la morte di {2}.</MessageNamedBondedAnimalMentalBreak>
+  <MessageBondedAnimalsMentalBreak>{0} animali sono in crisi di nervi per la morte di {1}.</MessageBondedAnimalsMentalBreak>
+
+  <MessageSuccessfullyRemovedHediff>{0} ha rimosso {2} di {1} con successo.</MessageSuccessfullyRemovedHediff>
+  
+  <MessageShipChunkDrop>Un pezzo di una navicella è caduto dallo spazio ed è atterrato nelle vicinanze.</MessageShipChunkDrop>
+  
+  <MessagePartyCalledOff>La festa è stata interrotta.</MessagePartyCalledOff>
+  <MessagePartyFinished>La festa è finita.</MessagePartyFinished>
+
+  <MessageCannotSellItemsReason>Alcuni oggetti non possono essere scambiati a causa di: </MessageCannotSellItemsReason>
+
+  <MessageConstructionFailed>{1} non è riuscito nella costruzione di {0}. Alcune risorse sono state sprecate.</MessageConstructionFailed>
+
+  <MessageScreenshotSavedAs>Screenshot salvato come: {0}</MessageScreenshotSavedAs>
+ 
   
 </LanguageData>
