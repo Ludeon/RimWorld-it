@@ -10,7 +10,7 @@ REMEMBER TO ALWAYS TEST YOUR TRANSLATIONS!
 Main translators:
 -----------------
 -Lunatico9
--rexlord
+-rexlord / lagorn
 -lunargenta
 
 ===========
