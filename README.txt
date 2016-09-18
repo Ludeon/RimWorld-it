@@ -11,7 +11,6 @@ Main translators:
 -----------------
 -Lunatico9
 -rexlord / lagorn
--lunargenta
 
 ===========
 Italian Fiction Primer:
