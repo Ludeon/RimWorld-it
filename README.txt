@@ -9,6 +9,9 @@ REMEMBER TO ALWAYS TEST YOUR TRANSLATIONS!
 ===========
 Main translators:
 -----------------
+-rexlord / lagorn
+
+Old translators
 -Lunatico9
 -rexlord / lagorn
 
