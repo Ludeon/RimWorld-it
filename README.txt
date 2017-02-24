@@ -10,6 +10,7 @@ REMEMBER TO ALWAYS TEST YOUR TRANSLATIONS!
 Main translators:
 -----------------
 -rexlord / lagorn
+-ITAHawkmoon
 
 Old translators
 -----------------
