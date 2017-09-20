@@ -1,110 +1,107 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
+
 <LanguageData>
-	<CameraDolly.label>Camera</CameraDolly.label>
-	<CameraDolly.helpText>Spostare la camera premendo il tasto centrale del mouse e trascinando, o con {Key:MapDollyUp}-{Key:MapDollyLeft}-{Key:MapDollyDown}-{Key:MapDollyRight}</CameraDolly.helpText>
 
-	<CameraZoom.label>Camerazoom</CameraZoom.label>
-	<CameraZoom.helpText>Clicca per ingrandire e ridurre con la rotellina del mouse o utilizzando i tasti {Key:MapZoomIn} e {Key:MapZoomOut} </CameraZoom.helpText>
-	
-	<TimeControls.label>Controllo Tempo</TimeControls.label>
-	<TimeControls.helpText>È possibile accelerare, rallentare o sospendere il tempo.\n\nmodificare il tempo con i tasti {Key:TimeSpeedNormal}, {Key:TimeSpeedFast} e {Key:TimeSpeedSuperfast}. In alternativa, è possibile utilizzare anche il controllo del tempo in basso a destra dello schermo.</TimeControls.helpText>
+<CameraDolly.label>Scorrimento camera</CameraDolly.label>
+<CameraDolly.helpText>Scorri la visuale tenendo premuto e trascinando il PULSANTE CENTRALE del mouse o con i tasti {Key:MapDollyUp}-{Key:MapDollyLeft}-{Key:MapDollyDown}-{Key:MapDollyRight}</CameraDolly.helpText>
 
-	<Pause.label>Pausa</Pause.label>
-	<Pause.helpText>pressione {Key:TogglePause} mette il gioco in pausa.\n\nÈ ancora possibile dare ordini quando il gioco è in pausa \n\n Tenere sempre un occhio. Se è frenetico il gioco, è sufficiente premere {Key:TogglePause}!</Pause.helpText>
+<CameraZoom.label>Zoom camera</CameraZoom.label>
+<CameraZoom.helpText>Ingradisci e rimpicciolisci la visuale con la ROTELLA del mouse o con i tasti {Key:MapZoomIn} e {Key:MapZoomOut} </CameraZoom.helpText>
 
-	<Stockpiles.label>Deposito</Stockpiles.label>
-    <Stockpiles.helpText>I tuoi coloni hanno bisogno di uno spazio per riporre gli oggetti. Definire un Deposito, su cui possono riporre oggetti.\n\nPuoi trovare la sezione ZONE nel menu ARCHITETTO.</Stockpiles.helpText>
+<TimeControls.label>Velocita' di gioco</TimeControls.label>
+<TimeControls.helpText>e' possibile accelerare o rallentare la velocita' di gioco.\n\Prova a farlo con i tasti {Key:TimeSpeedNormal}, {Key:TimeSpeedFast} e {Key:TimeSpeedSuperfast} o usando il controllo della velocita' in basso a destra dello schermo.</TimeControls.helpText>
 
-    <Forbidding.label>Negato</Forbidding.label>
-    <Forbidding.helpText>I coloni non interagire con gli oggetti che sono contrassegnati come non permessi.\n\nSelezionare un oggetto proibito e utilizzare i campi di interazione in basso a sinistra per aggiungerlo e consentire.</Forbidding.helpText>
+<Pause.label>Pausa</Pause.label>
+<Pause.helpText>Premi {Key:TogglePause} per mettere il gioco in pausa.\n\ne' ancora possibile dare ordini quando il gioco e' in pausa.\n\nRicorda questo: se il gioco si fa frenetico, premi {Key:TogglePause}!</Pause.helpText>
 
-    <GrowingFood.label>zone viticole</GrowingFood.label>
-    <GrowingFood.helpText>Per crescere cibo, crea una zona viticola dal menu ARCHITETTO.\n\nLa creazione può essere eseguita solo su terreno fertile.</GrowingFood.helpText>
+<Stockpiles.label>Deposito</Stockpiles.label>
+<Stockpiles.helpText>I tuoi coloni hanno bisogno di un luogo dove riporre gli oggetti. Designa un'area come DEPOSITO per permettere loro di farlo.\n\nPuoi trovare i depositi nella sezione ZONE del menu ARCHITETTO in basso a sinistra dello schermo.</Stockpiles.helpText>
 
-	 <EquippingWeapons.label>Equipaggiare armi</EquippingWeapons.label>
-  <EquippingWeapons.helpText>I tuoi coloni hanno accesso alle armi!\n\nSelezionare i coloni, un clic destro sul arma con cui devono essere equipaggiate.</EquippingWeapons.helpText>
+<Forbidding.label>Vietato e non vietato</Forbidding.label>
+<Forbidding.helpText>I coloni non interagiranno con gli oggetti che sono contrassegnati come VIETATI.\n\nGli oggetti vietati sono contrassegnati da una piccola X rossa. Seleziona un oggetto vietato ed utilizza il bottone in basso per NON VIETARLO.</Forbidding.helpText>
 
-  <Alerts.label>Allarme</Alerts.label>
-  <Alerts.helpText>Gli allarmi sul lato destro dello schermo vi mostrerà gli eventi importanti che attirano la vostra attenzione.\n\nFate attenzione ha questi allarmi!</Alerts.helpText>
-  
-  <Mining.label>Minare</Mining.label>
-  <Mining.helpText>Si può dire dove scavare aprendo il menu architetto e la scheda COMANDI.\n\nAlcuni blocchi degradabili danno acciaio, oro, plastacciaio o altri materiali.</Mining.helpText>
-  
-  <WorkTab.label>Priorità</WorkTab.label>
-  <WorkTab.helpText>In fondo TAB lavoro si può regolare, quali attività fare perseguire i coloni.\n\nÈ rivedere le funzioni della rispettiva priorità in base da sinistra a destra.\n\nSe non si è assegnato a un particolare tipo di lavoro, o se i coloni sono troppo occupati, l'oggetto associato non sarà mai fatto!</WorkTab.helpText>
+<GrowingFood.label>Zone agricole</GrowingFood.label>
+<GrowingFood.helpText>Per crescere cibo, crea una ZONA AGRICOLA selezionandola dal menu ARCHITETTO.\n\nPossono essere posizionate solo su terreno fertile.</GrowingFood.helpText>
 
-  <ForbiddingDoors.label>vietare porte</ForbiddingDoors.label>
-  <ForbiddingDoors.helpText>È possibile vietare porte quindi coloni e gli animali domestici non attraverso queste porte \n\nNOTA : Le porte sono sempre chiuse in modo che gli avversari non possono semplicemente passare attraverso di essa. Con il comando si può solo dire che non dovrebbero utilizzare questo porta i tuoi coloni. I coloni che sono fuori controllo potrebbe ancora passare attraverso quella porta.</ForbiddingDoors.helpText>
+<EquippingWeapons.label>Equipaggiare armi</EquippingWeapons.label>
+<EquippingWeapons.helpText>I tuoi coloni arrivano gia' con alcune armi. Armali!\n\nSeleziona i coloni e fai clic con il pulsante destro sull'arma con cui li vuoi equipaggiare.</EquippingWeapons.helpText>
 
-  <CoverAndShooting.label>Coprire e sparare</CoverAndShooting.label>
-  <CoverAndShooting.helpText>La più importante nel combattimento a distanza è la copertina.\n\nfunziona solo se il colono che tocca e si trova tra i coloni e gli avversari.\n\nè possibile posizionare il coloni anche agli angoli delle pareti. Si ottiene a sparare.\n\nMolte cose possono essere utilizzati come copertura, ma alcuni sono migliori di altri. Copertura dietro un albero è meglio di niente, ma al riparo dietro un sacchetto di sabbia è meglio che dietro un albero.</CoverAndShooting.helpText>
-  
-  <AnimalTaming.label>Addomesticamento</AnimalTaming.label>
-  <AnimalTaming.helpText>I coloni con il comando addomestica può catturare gli animali \n\ncoloni quindi offrono il cibo agli animali, per cercare di domarli \n\n Attenzione: Alcuni animali reagiscono violentemente ad un tentativo fallito.</AnimalTaming.helpText>
-  
-  <AnimalTraining.label>Addestramento</AnimalTraining.label>
-  <AnimalTraining.helpText>Potete dare hai vostri animali domestici competenze specifiche nella loro formazione \n\nanimali non possono andare ad allenarsi. hanno bisogno di un certo tempo tra gli allenamenti.</AnimalTraining.helpText>
-  
-  <InfoCard.label>Informazioni</InfoCard.label>
-  <InfoCard.helpText>La carta mostra informazioni che hai fatto un censimento dettagliato di tutti i componenti della tua colonia.\n\nSelezionare una persona o di un oggetto e aprire la scheda informazioni associate con il tasto 'i' visualizzato sul lato in basso a sinistra.</InfoCard.helpText>
+<Alerts.label>Allarmi</Alerts.label>
+<Alerts.helpText>Gli avvisi sul lato destro dello schermo ti mostreranno gli eventi importanti che richiedono la tua attenzione.\n\nTieni d'occhio questi allarmi.</Alerts.helpText>
 
-  <StorageTab.label>Tab. Deposito</StorageTab.label>
-  <StorageTab.helpText>è possibile configurare le zone di stoccaggio e rifiuti per definire esattamente ciò che deve essere conservato lì e che cosa no.</StorageTab.helpText>
+<Mining.label>Estrazione mineraria</Mining.label>
+<Mining.helpText>Puoi decidere dove scavare aprendo il menu ARCHITETTO e selezionando la scheda ORDINI.\n\nAlcuni blocchi minerari contengono acciaio, oro, plastacciaio o altri materiali utili.</Mining.helpText>
 
-  <HomeArea.label>Area Posseduta</HomeArea.label>
-  <HomeArea.helpText>L'area posseduta definisce l area in cui fare i coloni puliscono e spengono gli incendi.\n\nDefiniere zona nella categoria "zone" del menu architetto.</HomeArea.helpText>
+<WorkTab.label>Priorita' lavori</WorkTab.label>
+<WorkTab.helpText>Puoi impostare le priorita' di lavoro di ciascun colono nel menu LAVORO in basso a sinistra dello schermo.\n\nSi dedicheranno sempre al lavoro disponibile che avra' la priorita' piu' alta.\n\nSe per nessun colono e' impostata una priorita' per un certo lavoro, o se sono impegnati in lavori con priorita' piu' alta,  questo non verra' mai svolto.</WorkTab.helpText>
 
-  <SpoilageAndFreezers.label>Deperibili e congelatori</SpoilageAndFreezers.label>
-  <SpoilageAndFreezers.helpText>La maggior parte dei cibi possono deteriorarsi dopo un tempo relativamente breve.\n\nPer evitare che questo accada costruire un frigorifero in un muro.\n\nPer fine di costruire un frigorifero, la costruzione di uno spazio chiuso e inserire uno o due dispositivi di raffreddamento in una parete. Metterli ad una temperatura  negativa.\n\n Alimenti surgelati non si rovinano.</SpoilageAndFreezers.helpText>
-  
-  <Deterioration.label>Disintegrazione oggetti</Deterioration.label>
-  <Deterioration.helpText>I prodotti che vengono lasciati all'aria aperta, si disintegrano dopo qualche tempo.\n\nPer mantenere articoli per un lungo periodo di tempo, si consiglia di fare un deposito coperto dentro la colonia.</Deterioration.helpText>
-  
-  <HostilityResponse.label>risposta ostilità</HostilityResponse.label>
-  <HostilityResponse.helpText>È possibile regolare come i coloni dovrebbero comportarsi in pericolo.\n\nSelezionare tra fuggire, attaccare e ignorare nel menu.</HostilityResponse.helpText>
-  
-  <AllowedAreas.label>zone consentite</AllowedAreas.label>
-  <AllowedAreas.helpText>I tuoi coloni e gli animali domestici possono essere assegnati a ZONE consentito. Questo vieta loro di abbandonare questa zona.\n\nPuoi selezionare Zone nel menu Vincolo per creare, eliminare, e assegnare.\n\nPuoi estendere le zone anche abilitando l' AREA PERMESSO estendendo e ZONE DELETE comandi nella ripartizione menù zone.</AllowedAreas.helpText>
-  
-  <MedicalOperations.label>operazioni mediche</MedicalOperations.label>
-  <MedicalOperations.helpText>Per un operazione medica come effettuare prelievo di organi o l'installazione di una protesi, aprire la SALUTE dei coloni e passare alle operazioni.</MedicalOperations.helpText>
-  <TimeAssignments.label>allocazione del tempo</TimeAssignments.label>
-  <TimeAssignments.helpText>È possibile cambiare a che ora fare questo, cercando i tuoi coloni nel menu vincolo.</TimeAssignments.helpText>
+<ForbiddingDoors.label>Vietare porte</ForbiddingDoors.label>
+<ForbiddingDoors.helpText>e' possibile VIETARE l'accesso alle porte cosi' che coloni e animali domestici non possano mai attraversarle\n\nNOTA: le porte non vengono chiuse a chiave. Tutte le porte sono sempre chiuse a chiave in modo che i nemici non possano semplicemente attraversarle. Vietare l'accesso impedisce solo ai coloni di non usare la porta. I coloni che hanno perso il controllo potrebbero ancora usare quella porta.</ForbiddingDoors.helpText>
 
-  <ManualWorkPriorities.label>Prioritizzazione lavoro manuale</ManualWorkPriorities.label>
-  <ManualWorkPriorities.helpText>Una delle parti più importanti in RimWorld è quello di determinare la migliore priorità di lavoro per i vostri coloni.\n\nimpostazioni poveri in modo che lavoro importante su un periodo più lungo non sarà completata perché i coloni sono impegnati con attività poco importanti.\N\nPer il più opportunità di entrare nel lavoro da priorità come è, la possibilità di priorità manuale nella scheda di lavoro.\n\nin questa modalità, ogni colono riceve un numero di priorità assegnato per ogni opera. Egli poi elaborare il lavoro con priorità 1 da sinistra a destra, poi il lavoro della priorità 2 e così via.\n\nL'uso intelligente di queste impostazioni sono necessari nella vita di una grande e ben automatizzata colonia.</ManualWorkPriorities.helpText>
-  
-  <GettingMoreTraders.label>più rivenditori</GettingMoreTraders.label>
-  <GettingMoreTraders.helpText>Più mercanti visiterà la tua colonia quando siete alleati con più frazioni.\n\n Se non si dispone di alleati, è un commerciante non potrà mai visitare la tua colonia!\n\nÈ possibile pagare gli Alleati per inviare un caravana da voi usando la console di comunicazione.</GettingMoreTraders.helpText>
-  
-  <InspectRoomStats.label>sala Statistiche</InspectRoomStats.label>
-  <InspectRoomStats.helpText>Si può vedere che le proprietà di uno spazio, cercando Statistiche in basso a destra dello schermo.</InspectRoomStats.helpText>
-  
-  <Outfits.label>abiti</Outfits.label>
-  <Outfits.helpText>I coloni automaticamente sempre indossano l'ultima con la massima qualità.\n\nLei non ha bisogno di mettegli manualmente qualcosa (Si può fare, se si vuole).\n\nA dire coloni, cosa indossare, aprire la ASSIGN scheda e fare clic su "Modifica abiti".</Outfits.helpText>
-  
-  <FirePreparation.label>Preparazione per il fuoco</FirePreparation.label>
-  <FirePreparation.helpText>Il fuoco può facilmente bruciare un'intera colonia. Per evitare questo, è necessario prepararsi.
-  \n le seguenti opzioni che avete qui:
-  \n1. Invece di un enorme edificio, costruire edifici singoli con spazio in mezzo.
-  \n2. Utilizzare materiali che non sono infiammabili. Il legno è economico e veloce ma anche molto infiammabile.
-  \n3. Crea fasce tagliafuoco per fermare gli incendi boschivi. Una striscia di cemento, larga 3 x 4, ferma un fuoco in arrivo.
-  </FirePreparation.helpText>
+<CoverAndShooting.label>Sparare e copertura</CoverAndShooting.label>
+<CoverAndShooting.helpText>La cosa piu' importante nel combattimento a distanza e' la copertura.\n\nLa copertura funziona solo se il colono e' abbastanza vicino da toccarla e questa si trova tra lui e l'avversario.\n\nE' anche possibile posizionare i coloni agli angoli delle pareti. Si appresteranno a sparare.\n\nMolte cose possono essere utilizzate come copertura, ma alcune sono migliori di altre. Ripararsi dietro un albero e' meglio di niente, ma dietro un sacchetto di sabbia e' meglio che dietro ad un albero.</CoverAndShooting.helpText>
 
-  <HistoryTab.label>La scheda 'Storia'</HistoryTab.label>
-  <HistoryTab.helpText>È possibile chiamare i tempi della storia della vostra colonia sul pulsante in basso storia.</HistoryTab.helpText>
+<FormCaravan.label>Creare carovane</FormCaravan.label>
+<FormCaravan.helpText>Puoi creare delle carovane per mandare gruppi di persone in giro per il pianeta!\n\nNella scheda MONDO, seleziona la tua base e clicca il pulsante "Crea carovana".</FormCaravan.helpText>
 
-  <ClickingMessages.label>clicca Notizie</ClickingMessages.label>
-  <ClickingMessages.helpText>È possibile vedere il messaggio nella parte superiore sinistra dello schermo fare clic per centrare immediatamente la camera sull evento.</ClickingMessages.helpText>
+<AnimalTaming.label>Addomesticare animali</AnimalTaming.label>
+<AnimalTaming.helpText>I coloni designati come Domatori possono catturare e addestrare gli animali.\n\nI coloni offriranno cibo agli animali per cercare di addomesticarli.n\n Attenzione: alcuni animali possono reagire violentemente ad un tentativo fallito di addomesticamento.</AnimalTaming.helpText>
 
-  <ShotAccuracyTooltip.label>precisione di tiro</ShotAccuracyTooltip.label>
-  <ShotAccuracyTooltip.helpText>È possibile visualizzare il calcolo esatto della precisione di un colpo.\n\nPer farlo, selezionare i tiratori e lasciare il mouse sul bersaglio. La descrizione comando visualizza la possibilità di colpire e come viene calcolato.</ShotAccuracyTooltip.helpText>
-  
-  <FriendlyFireSafety.label>fuoco amico</FriendlyFireSafety.label>
-  <FriendlyFireSafety.helpText>Fuoco amico esiste, se il tiratore è in prossimità degli alleati.\n\nÈ possibile, ad esempio, uno spadaccino di fronte a una serie fucilieri. L'arciere spara sulla spalla del suo amico.\n\nIn questo modo è possibile combinare bene i combattenti locali e a lunga distanza</FriendlyFireSafety.helpText>
+<AnimalTraining.label>Addestrare animali</AnimalTraining.label>
+<AnimalTraining.helpText>Puoi far si che gli animali domestici siano addestrati in specifiche abilita' tramite il menu ANIMALI.\n\nGli animali non possono essere addestrati continuamente; avranno bisogno di tempo tra una sessione e l'altra.</AnimalTraining.helpText>
 
+<InfoCard.label>Scheda informazioni</InfoCard.label>
+<InfoCard.helpText>La scheda informazioni mostra dettagliate statistiche relativamente a qualsiasi oggetto, persona o edificio.\n\nSeleziona una persona o un oggetto e apri la scheda informazioni premendo il tasto 'i' nel pannello.</InfoCard.helpText>
 
+<StorageTab.label>Scheda DEPOSITO</StorageTab.label>
+<StorageTab.helpText>E' possibile configurare depositi e discariche selezionandoli e premendo il tasto DEPOSITO nel pannello.\n\nNella scheda che si apreo e' possibile espandere ogni categoria premendo i triangoli accanto ai nomi per consentire o proibire specifici oggetti.\n\nPuoi cambiare la PRIORITA' di ogni deposito. I coloni si dirigeranno per prima ai depositi con priorita' piu' alta e sposteranno gli oggetti dai depositi con proprita' piu' bassa a quelli con priorita' piu' alta.</StorageTab.helpText>
 
+<HomeArea.label>Zona domestica</HomeArea.label>
+<HomeArea.helpText>La ZONA DOMESTICA indica ai coloni in quale area dovranno pulire e spegnere incendi.\n\nDefinisci la ZONA DOMESTICA con la categoria ZONE/AREE sotto il menu ARCHITETTO.</HomeArea.helpText>
 
+<SpoilageAndFreezers.label>Deperibili e congelatori</SpoilageAndFreezers.label>
+<SpoilageAndFreezers.helpText>La maggior parte dei cibi possono deteriorarsi dopo un tempo relativamente breve.\n\nPer evitare che questo accada puoi costruire una stanza frigorifera.\n\nPer farlo, costruisci uno spazio chiuso e inserisci uno o due condizionatori sulla parete. Impostali ad una temperatura negativa.\n\nIl cibo surgelato non si rovina mai.</SpoilageAndFreezers.helpText>
 
- </LanguageData>
+<Deterioration.label>Deterioramento oggetti</Deterioration.label>
+<Deterioration.helpText>Gli oggetti lasciati all'aperto si deteriorano lentamente.\n\nSe vuoi conservarli a lungo, tienili al riparo sotto un tetto.</Deterioration.helpText>
+
+<HostilityResponse.label>Modalita' di risposta</HostilityResponse.label>
+<HostilityResponse.helpText>e' possibile configurare come i coloni devono rispondere alle minacce (ad esempio animali aggressivi).\n\nScegli tra FUGGI, ATTACCA e IGNORA nel pannello del colono.</HostilityResponse.helpText>
+
+<AllowedAreas.label>Zone consentite</AllowedAreas.label>
+<AllowedAreas.helpText>I coloni e gli animali domestici possono essere assegnati a ZONE CONSENTITE. Questo vieta loro di prendere altre destinazioni al di fuori dell'area permessa.\n\nCio' puo' essere usato, ad esempio, per impedire ai coloni di andare fuori.\n\nPuoi creare vari gruppi di AREE CONSENTITE ed assegnarle a differenti coloni e animali.\n\nPuoi creare, eliminare ed assegnare le zone consentite nel menu RESTRIZIONI.\n\nDisegna le aree usando i comandi ESPANDI e RIMUOVI zona permessa nel menu ARCHITETTO.</AllowedAreas.helpText>
+
+<MedicalOperations.label>Operazioni chirurgiche</MedicalOperations.label>
+<MedicalOperations.helpText>Per ordinare un'operazione chirurgica, come un trapianto o l'installazione di una protesi, apri la scheda SALUTE e passa alla sottoscheda OPERAZIONI.</MedicalOperations.helpText>
+
+<TimeAssignments.label>Programma giornaliero</TimeAssignments.label>
+<TimeAssignments.helpText>e' possibile impostare la quantita' di tempo che ogni colono deve dedicare ad ogni attivita' dal menu RESTRIZIONI.</TimeAssignments.helpText>
+
+<ManualWorkPriorities.label>Priorita' lavoro manuale</ManualWorkPriorities.label>
+<ManualWorkPriorities.helpText>Una delle parti piu' importanti in RimWorld e' trovare la migliore combinazione di attivita' per i tuoi coloni.\n\nCombinazioni sbagliate possono portare a lasciare a lungo lavori in sospeso mentre i coloni perdono tempo in compiti poco importanti.\n\nPer avere un maggiore controllo su quale lavoro i coloni debbano fare, puoi usare la PRIORITA' MANUALE nel menu LAVORO.\n\nIn questa modalita', ogni colono ha un numero che individua la priorita' assegnato per ogni lavoro. I coloni faranno prima i lavori con priorita' 1 da sinistra verso destra, poi quelli con priorita' 2 da sinistra verso destra, e cosi' via.\n\nL'uso intelligente di queste impostazioni e' essenziale per la gestione di una grande e ben automatizzata colonia.</ManualWorkPriorities.helpText>
+
+<GettingMoreTraders.label>Aumentare i commerci</GettingMoreTraders.label>
+<GettingMoreTraders.helpText>Piu' mercanti verranno a visitarti se sarai alleato con piu' fazioni.\n\nSe non hai alleati, nessuna verra' a trovarti!\n\ne' possibile anche pagare gli alleati perche' inviino una caravana da voi usando la console di comunicazione.</GettingMoreTraders.helpText>
+
+<InspectRoomStats.label>Analisi statistica stanze</InspectRoomStats.label>
+<InspectRoomStats.helpText>Puoi studiare la solennita', la ricchezza e la bellezza di ogni sigola camera selezionando l'indicatore STATISTICHE STANZA in basso a destra dello schermo.</InspectRoomStats.helpText>
+
+<Outfits.label>Abiti</Outfits.label>
+<Outfits.helpText>I coloni cercheranno sempre di indossare l'abito piu' nuovo e di migliore qualita' che possono avere.\n\nNon devi assegnare manualmente ogni vestito ai tuoi coloni (anche se puoi farlo, se vuoi).\n\nPer impostare delle restrizioni su cio' che i coloni possono indossare, apri il menu DISPOSIZIONI e usa il box "GESTISCI VESTIARIO" per impostare un nuovo outfit, quindi assegnalo ai coloni.</Outfits.helpText>
+
+<FirePreparation.label>Lotta all'incendio</FirePreparation.label>
+<FirePreparation.helpText>Il fuoco puo' facilmente bruciare un'intera colonia. Per evitare questo, e' necessario prepararsi prima.\nQuesti suggerimenti possono prevenire il facile propagarsi delle fiamme:\n1. Invece di costtuire un unico enorme edificio, costruire singoli edifici separati da spazio nel mezzo.\n2. Utilizzare materiali poco infiammabili. Il legno e' economico e veloce, ma anche molto infiammabile.\n3. Creare fasce tagliafuoco per fermare gli incendi boschivi. Una striscia di cemento, larga 3 x 4, e' solitamente in grado di fermare l'avanzata delle fiamme.</FirePreparation.helpText>
+
+<HistoryTab.label>Il menu 'Storia'</HistoryTab.label>
+<HistoryTab.helpText>e' possibile visualizzare l'andamento della tua colonia nel menu STORIA in basso dello schermo.</HistoryTab.helpText>
+
+<ClickingMessages.label>Cliccare gli avvisi</ClickingMessages.label>
+<ClickingMessages.helpText>Puoi cliccare gli avvisi nella parte superiore sinistra dello schermo per centrare immediatamente la visuale sull'evento.</ClickingMessages.helpText>
+
+<ShotAccuracyTooltip.label>Precisione di tiro</ShotAccuracyTooltip.label>
+<ShotAccuracyTooltip.helpText>e' possibile visualizzare il calcolo esatto della precisione di un colpo.\n\nPer farlo, seleziona il tiratore e sposta il puntatore del mouse sul bersaglio. Verra' visualizzata la probabilita' con l'indicazioni degli eventuali modificatori al tiro.</ShotAccuracyTooltip.helpText>
+
+<FriendlyFireSafety.label>Fuoco amico</FriendlyFireSafety.label>
+<FriendlyFireSafety.helpText>Il fuoco amico non si verifichera' mai se tiratore e' in prossimita' dell'alleato.\n\ne' possibile, ad esempio, mettere uno spadaccino immediatamente di fronte ad un fuciliere. Questo sparera' oltre le spalle del suo amico.\n\nQuesto e' un buon modo di combinare combattenti in mischia con altri a distanza.</FriendlyFireSafety.helpText>
+
+</LanguageData>
