@@ -1,115 +1,116 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+
 <LanguageData>
 
-  <OrbitalTradeBeacon.label>radiofaro per commercio orbitale</OrbitalTradeBeacon.label>
-  <OrbitalTradeBeacon.description>Necessario per il commercio orbitale. Si possono vendere solo le merci che si trovano vicine al radiofaro. Può essere posizionato all'interno.</OrbitalTradeBeacon.description>
-  <OrbitalTradeBeacon_plan.label>radiofaro per commercio orbitale (progetto)</OrbitalTradeBeacon_plan.label>
-  <OrbitalTradeBeacon_plan_Install.label>radiofaro per commercio orbitale (nuova posizione)</OrbitalTradeBeacon_plan_Install.label>
-  <OrbitalTradeBeacon_Frame.label>un radiofaro per commercio orbitale</OrbitalTradeBeacon_Frame.label>
+<OrbitalTradeBeacon.label>aerofaro commerciale</OrbitalTradeBeacon.label>
+<OrbitalTradeBeacon.description>Necessario per il commercio orbitale. Si possono vendere solo le merci che si trovano vicine all'aerofaro. Puo' essere posizionato all'interno.</OrbitalTradeBeacon.description>
+<OrbitalTradeBeacon_Blueprint.label>aerofaro commerciale (progetto)</OrbitalTradeBeacon_Blueprint.label>
+<OrbitalTradeBeacon_Blueprint_Install.label>aerofaro commerciale (nuova posizione)</OrbitalTradeBeacon_Blueprint_Install.label>
+<OrbitalTradeBeacon_Frame.label>un aerofaro commerciale</OrbitalTradeBeacon_Frame.label>
+<OrbitalTradeBeacon_Frame.description>Necessario per il commercio orbitale. Si possono vendere solo le merci che si trovano vicine all'aerofaro. Puo' essere posizionato all'interno.</OrbitalTradeBeacon_Frame.description>
 
-  <CommsConsole.label>console di comunicazione</CommsConsole.label>
-  <CommsConsole.description>Permette il contatto radio con i commercianti lontani e con le altre fazioni, per commercio e diplomazia.</CommsConsole.description>
-   <CommsConsole_plan.label>console di comunicazione (progetto)</CommsConsole_plan.label>
-  <CommsConsole_Frame.label>una console di comunicazione</CommsConsole_Frame.label>
+<CommsConsole.label>console di comunicazione</CommsConsole.label>
+<CommsConsole.description>Permette il contatto radio con i commercianti lontani cosi' come con le altre fazioni per commercio e diplomazia.</CommsConsole.description>
+<CommsConsole_Blueprint.label>console di comunicazione (progetto)</CommsConsole_Blueprint.label>
+<CommsConsole_Frame.label>una console di comunicazione</CommsConsole_Frame.label>
+<CommsConsole_Frame.description>Permette il contatto radio con i commercianti lontani cosi' come con le altre fazioni per commercio e diplomazia.</CommsConsole_Frame.description>
 
-  <FirefoamPopper.label>estintore a schiuma</FirefoamPopper.label>
-  <FirefoamPopper.description>Della schiuma estinguente viene proiettata e diffusa attorno all'estintore quando questo viene a contatto con fiamme o viene attivato a mano.</FirefoamPopper.description>
-  <FirefoamPopper.comps.1.useLabel>Attivare l'estintore a schiuma</FirefoamPopper.comps.1.useLabel>
-  <FirefoamPopper_plan.label>estintore a schiuma (progetto)</FirefoamPopper_plan.label>
-  <FirefoamPopper_plan_Install.label>estintore a schiuma (nuova posizione)</FirefoamPopper_plan_Install.label>
-  <FirefoamPopper_Frame.label>estintore a schiuma</FirefoamPopper_Frame.label>
+<FirefoamPopper.label>estintore a schiuma</FirefoamPopper.label>
+<FirefoamPopper.description>Della schiuma estinguente viene proiettata e diffusa attorno all'estintore quando questo viene a contatto con fiamme o viene attivato a mano.</FirefoamPopper.description>
+<FirefoamPopper.comps.1.useLabel>Azionare l'estintore a schiuma</FirefoamPopper.comps.1.useLabel>
+<FirefoamPopper_Blueprint.label>estintore a schiuma (progetto)</FirefoamPopper_Blueprint.label>
+<FirefoamPopper_Blueprint_Install.label>estintore a schiuma (nuova posizione)</FirefoamPopper_Blueprint_Install.label>
+<FirefoamPopper_Frame.label>un estintore a schiuma</FirefoamPopper_Frame.label>
+<FirefoamPopper_Frame.description>Della schiuma estinguente viene proiettata e diffusa attorno all'estintore quando questo viene a contatto con fiamme o viene attivato a mano.</FirefoamPopper_Frame.description>
 
-  <MoisturePump.label>idrovora</MoisturePump.label>
-  <MoisturePump.description>Prosciuga molto lentamente paludi e acque poco profonde. Non funziona con acque profonde.</MoisturePump.description>
-  <MoisturePump_plan.label>idrovora (progetto)</MoisturePump_plan.label>
-  <MoisturePump_Frame.label>una idrovora</MoisturePump_Frame.label>
+<MoisturePump.label>idrovora</MoisturePump.label>
+<MoisturePump.description>Prosciuga molto lentamente l'acqua dai terreni vicini, trasformando paludi o acque poco profonde in terreno asciutto. Non funziona con acque profonde.</MoisturePump.description>
+<MoisturePump_Blueprint.label>idrovora (progetto)</MoisturePump_Blueprint.label>
+<MoisturePump_Frame.label>una idrovora</MoisturePump_Frame.label>
+<MoisturePump_Frame.description>Prosciuga molto lentamente l'acqua dai terreni vicini, trasformando paludi o acque poco profonde in terreno asciutto. Non funziona con acque profonde.</MoisturePump_Frame.description>
 
-  <GroundPenetratingScanner.label>scanner minerario</GroundPenetratingScanner.label>
-  <GroundPenetratingScanner.description>Un radar direzionato verso il suolo, combinato con un sonar a risonanza magnetica, che permette di rilevare la presenza di minerali sotto il terreno (senza tuttavia identificarli). Richiede una grande quantità di energia elettrica per funzionare.</GroundPenetratingScanner.description>
-  <GroundPenetratingScanner_plan.label>scanner minerario (progetto)</GroundPenetratingScanner_plan.label>
-  <GroundPenetratingScanner_Frame.label>uno scanner minerario</GroundPenetratingScanner_Frame.label>
-  
-  <LongRangeMineralScanner.label>scanner minerario a lunga portata</LongRangeMineralScanner.label>
-  <LongRangeMineralScanner.description>Rileva automaticamente metalli preziosi come oro o giada nelle vicinanze (ma non nella zona dove è posizionato). In media, le vene vengono rilevate entro 30 giorni in un raggio di 30 caselle.\n\nN.B.: costruire più scanner uno vicino l'altro non è solo inefficace ma totalmente inutile.</LongRangeMineralScanner.description>
-  <LongRangeMineralScanner_plan.label>scanner minerario a lunga portata (progetto)</LongRangeMineralScanner_plan.label>
-  <LongRangeMineralScanner_Frame.label>uno scanner minerario a lunga portata</LongRangeMineralScanner_Frame.label>
+<GroundPenetratingScanner.label>scanner minerario</GroundPenetratingScanner.label>
+<GroundPenetratingScanner.description>Un radar direzionato verso il suolo, combinato con un sonar a risonanza magnetica, che permette di rilevare la presenza di minerali sotto il terreno (senza tuttavia identificarli). Richiede una grande quantita' di energia elettrica.</GroundPenetratingScanner.description>
+<GroundPenetratingScanner_Blueprint.label>scanner minerario (progetto)</GroundPenetratingScanner_Blueprint.label>
+<GroundPenetratingScanner_Frame.label>uno scanner minerario</GroundPenetratingScanner_Frame.label>
+<GroundPenetratingScanner_Frame.description>Un radar direzionato verso il suolo, combinato con un sonar a risonanza magnetica, che permette di rilevare la presenza di minerali sotto il terreno (senza tuttavia identificarli). Richiede una grande quantita' di energia elettrica.</GroundPenetratingScanner_Frame.description>
 
+<LongRangeMineralScanner.label>scanner minerario a lunga portata</LongRangeMineralScanner.label>
+<LongRangeMineralScanner.description>Rileva automaticamente metalli preziosi come oro o giada nelle vicinanze (ma non nella zona dove e' posizionato). In media, le vene vengono rilevate entro 30 giorni in un raggio di 30 caselle.\n\nN.B.: costruire piu' scanner uno vicino l'altro e' praticamente inutile.</LongRangeMineralScanner.description>
+<LongRangeMineralScanner_Blueprint.label>scanner minerario a lunga portata (progetto)</LongRangeMineralScanner_Blueprint.label>
+<LongRangeMineralScanner_Frame.label>uno scanner minerario a lunga portata</LongRangeMineralScanner_Frame.label>
+<LongRangeMineralScanner_Frame.description>Rileva automaticamente metalli preziosi come oro o giada nelle vicinanze (ma non nella zona dove e' posizionato). In media, le vene vengono rilevate entro 30 giorni in un raggio di 30 caselle.\n\nN.B.: costruire piu' scanner uno vicino l'altro e' praticamente inutile.</LongRangeMineralScanner_Frame.description>
 
-  
+<PodLauncher.label>rampa di lancio per capsule</PodLauncher.label>
+<PodLauncher.description>Una rampa di lancio alimentata a combustibile per il lancio di una capsula di trasporto. Le rampe di lancio si possono attivare in gruppo - ma per farlo devono trovarsi una affianco all'altra.</PodLauncher.description>
+<PodLauncher_Blueprint.label>rampa di lancio per capsule (progetto)</PodLauncher_Blueprint.label>
+<PodLauncher_Frame.label>una rampa di lancio per capsule</PodLauncher_Frame.label>
+<PodLauncher_Frame.description>Una rampa di lancio alimentata a combustibile per il lancio di una capsula di trasporto. Le rampe di lancio si possono attivare in gruppo - ma per farlo devono trovarsi una affianco all'altra.</PodLauncher_Frame.description>
 
-  <PodLauncher.label>rampa di lancio per capsule</PodLauncher.label>
-  <PodLauncher.description>Una rampa di lancio alimentata a combustibile per il lancio di una capsula di trasporto. Le rampe di lancio si possono attivare in gruppo, ma per farlo devono trovarsi una affianco all'altra.</PodLauncher.description>
-  <PodLauncher_plan.label>rampa di lancio per capsule (progetto)</PodLauncher_plan.label>
-  <PodLauncher_Frame.label>una rampa di lancio per capsule</PodLauncher_Frame.label>
+<TransportPod.label>capsula di trasporto</TransportPod.label>
+<TransportPod.description>Una capsula di trasporto che puo' essere lanciata in una traiettoria suborbitale ed capace di trasportare persone, cose o animali. Puo' essere utilizzata per il trasporto, per attacchi a sorpresa o per l'invio di rinforzi in battaglia.</TransportPod.description>
+<TransportPod_Blueprint.label>capsula di trasporto (progetto)</TransportPod_Blueprint.label>
+<TransportPod_Frame.label>una capsula di trasporto</TransportPod_Frame.label>
+<TransportPod_Frame.description>Una capsula di trasporto che puo' essere lanciata in una traiettoria suborbitale ed capace di trasportare persone, cose o animali. Puo' essere utilizzata per il trasporto, per attacchi a sorpresa o per l'invio di rinforzi in battaglia.</TransportPod_Frame.description>
 
-  <TransportPod.label>capsula di trasporto</TransportPod.label>
-  <TransportPod.description>Una capsula di trasporto può essere lanciata in una traiettoria suborbitale ed è capace di trasportare persone, cose o animali. Può essere utilizzata per il trasporto, per attacchi a sorpresa o per l'invio di rinforzi in battaglia.</TransportPod.description>
-   <TransportPod_plan.label>capsula di trasporto (progetto)</TransportPod_plan.label>
-  <TransportPod_Frame.label>capsula di trasporto</TransportPod_Frame.label>
- 
+<MultiAnalyzer.label>analizzatore multispettro</MultiAnalyzer.label>
+<MultiAnalyzer.description>Aumenta la velocita' di ricerca. Deve essere collocato vicino ad un banco di ricerca high-tech. Un banco di ricerca puo' essere collegato ad un unico analizzatore.</MultiAnalyzer.description>
+<MultiAnalyzer_Blueprint.label>analizzatore multispettro (progetto)</MultiAnalyzer_Blueprint.label>
+<MultiAnalyzer_Blueprint_Install.label>analizzatore multispettro (nuova posizione)</MultiAnalyzer_Blueprint_Install.label>
+<MultiAnalyzer_Frame.label>un analizzatore multispettro</MultiAnalyzer_Frame.label>
+<MultiAnalyzer_Frame.description>Aumenta la velocita' di ricerca. Deve essere collocato vicino ad un banco di ricerca high-tech. Un banco di ricerca puo' essere collegato ad un unico analizzatore.</MultiAnalyzer_Frame.description>
 
+<VitalsMonitor.label>monitor dei parametri vitali</VitalsMonitor.label>
+<VitalsMonitor.description>Aumenta la qualita' del trattamento dei pazienti. Deve essere posizionato accanto ad un letto medico. Un letto medico puo' essere collegato ad un unico monitor.</VitalsMonitor.description>
+<VitalsMonitor_Blueprint.label>monitor dei parametri vitali (progetto)</VitalsMonitor_Blueprint.label>
+<VitalsMonitor_Blueprint_Install.label>monitor dei parametri vitali (nuova posizione)</VitalsMonitor_Blueprint_Install.label>
+<VitalsMonitor_Frame.label>un monitor dei parametri vitali</VitalsMonitor_Frame.label>
+<VitalsMonitor_Frame.description>Aumenta la qualita' del trattamento dei pazienti. Deve essere posizionato accanto ad un letto medico. Un letto medico puo' essere collegato ad un unico monitor.</VitalsMonitor_Frame.description>
 
-  
+<ToolCabinet.label>cassetta attrezzi</ToolCabinet.label>
+<ToolCabinet.description>Aumenta la velocita' di lavoro. Deve essere posizionato vicino ad un banco da lavoro. Un banco puo' essere collegato simultaneamente solo a due cassette per gli attrezzi.</ToolCabinet.description>
+<ToolCabinet_Blueprint.label>cassetta attrezzi (progetto)</ToolCabinet_Blueprint.label>
+<ToolCabinet_Blueprint_Install.label>cassetta attrezzi (nuova posizione)</ToolCabinet_Blueprint_Install.label>
+<ToolCabinet_Frame.label>una cassetta attrezzi</ToolCabinet_Frame.label>
+<ToolCabinet_Frame.description>Aumenta la velocita' di lavoro. Deve essere posizionato vicino ad un banco da lavoro. Un banco puo' essere collegato simultaneamente solo a due cassette per gli attrezzi.</ToolCabinet_Frame.description>
 
-  <MultiAnalyzer.label>analizzatore multispettro</MultiAnalyzer.label>
-  <MultiAnalyzer.description>Aumenta la velocità di ricerca. Deve essere collocato vicino ad un banco di ricerca high-tech. Un banco di ricerca può essere collegato ad un unico analizzatore.</MultiAnalyzer.description>
-  <MultiAnalyzer_plan.label>analizzatore multispettro (progetto)</MultiAnalyzer_plan.label>
-  <MultiAnalyzer_plan_Install.label>analizzatore multispettro (nuova posizione)</MultiAnalyzer_plan_Install.label>
-  <MultiAnalyzer_Frame.label>un analizzatore multispettro</MultiAnalyzer_Frame.label>
+<Grave.label>tomba</Grave.label>
+<Grave.description>Metti i morti nelle tombe per offrire loro un ultimo degno riposo. I coloni visiteranno queste tombe per rilassarsi meditando.</Grave.description>
+<Grave_Blueprint.label>tomba (progetto)</Grave_Blueprint.label>
+<Grave_Frame.label>una tomba</Grave_Frame.label>
+<Grave_Frame.description>Metti i morti nelle tombe per offrire loro un ultimo degno riposo. I coloni visiteranno queste tombe per rilassarsi meditando.</Grave_Frame.description>
 
-  <VitalsMonitor.label>monitor dei parametri vitali</VitalsMonitor.label>
-  <VitalsMonitor.description>Aumenta la qualità del trattamento dei pazienti. Deve essere posizionato accanto ad un letto medico. Un letto medico può essere collegato ad un unico monitor.</VitalsMonitor.description>
-   <VitalsMonitor_plan.label>monitor dei parametri vitali (progetto)</VitalsMonitor_plan.label>
-  <VitalsMonitor_plan_Install.label>monitor dei parametri vitali (nuova posizione)</VitalsMonitor_plan_Install.label>
-  <VitalsMonitor_Frame.label>un monitor dei parametri vitali</VitalsMonitor_Frame.label>
+<Sarcophagus.label>sarcofago</Sarcophagus.label>
+<Sarcophagus.description>Una sepoltura ornamentale per onorare i morti.</Sarcophagus.description>
+<Sarcophagus_Blueprint.label>sarcofago (progetto)</Sarcophagus_Blueprint.label>
+<Sarcophagus_Frame.label>un sarcofago</Sarcophagus_Frame.label>
+<Sarcophagus_Frame.description>Una sepoltura ornamentale per onorare i morti.</Sarcophagus_Frame.description>
 
-  <ToolCabinet.label>cassetta degli attrezzi</ToolCabinet.label>
-  <ToolCabinet.description>Aumenta la velocità di lavoro. Deve essere posizionato vicino ad un banco da lavoro. Un banco può essere collegato simultaneamente solo a due cassette per gli attrezzi.</ToolCabinet.description>
-   <ToolCabinet_plan.label>cassetta degli attrezzi (progetto)</ToolCabinet_plan.label>
-  <ToolCabinet_plan_Install.label>cassetta degli attrezzi (nuova posizione)</ToolCabinet_plan_Install.label>
-  <ToolCabinet_Frame.label>una cassetta degli attrezzi</ToolCabinet_Frame.label>
+<CryptosleepCasket.label>bara cryosonno</CryptosleepCasket.label>
+<CryptosleepCasket.description>Un capsula autonoma progettata per mantenere una persona in uno stato di sospensione vitale per molti anni.</CryptosleepCasket.description>
+<CryptosleepCasket_Blueprint.label>bara cryosonno (progetto)</CryptosleepCasket_Blueprint.label>
+<CryptosleepCasket_Frame.label>una bara cryosonno</CryptosleepCasket_Frame.label>
+<CryptosleepCasket_Frame.description>Un capsula autonoma progettata per mantenere una persona in uno stato di sospensione vitale per molti anni.</CryptosleepCasket_Frame.description>
 
+<AncientCryptosleepCasket.label>antica bara cryosonno</AncientCryptosleepCasket.label>
+<AncientCryptosleepCasket.description>Questa bara cryosonno ha l'aria di essere qui da un'eternita'. Chissa' cosa potrebbe contenere?</AncientCryptosleepCasket.description>
 
-  
+<MarriageSpot.label>area di nozze</MarriageSpot.label>
+<MarriageSpot.description>Indica un'area in cui possono avere luogo delle cerimonie di nozze. Gli invitati potranno guardare da ogni lato del luogo indicato.</MarriageSpot.description>
+<MarriageSpot_Blueprint.label>area di nozze (progetto)</MarriageSpot_Blueprint.label>
+<MarriageSpot_Frame.label>un'area di nozze</MarriageSpot_Frame.label>
+<MarriageSpot_Frame.description>Indica un'area in cui possono avere luogo delle cerimonie di nozze. Gli invitati potranno guardare da ogni lato del luogo indicato.</MarriageSpot_Frame.description>
 
-  <Grave.label>tomba</Grave.label>
-  <Grave.description>L'ultima dimora dei morti, per offrire loro un degno luogo di riposo. I coloni visiteranno queste tombe per ottenere gioia attraverso la meditazione.</Grave.description>
-  <Grave_plan.label>tomba (progetto)</Grave_plan.label>
-  <Grave_Frame.label>una tomba</Grave_Frame.label>
+<PartySpot.label>area di festa</PartySpot.label>
+<PartySpot.description>Indica un'area dove potranno essere organizzate delle feste. I festeggiati useranno tutta l'area intorno a questa zona.</PartySpot.description>
+<PartySpot_Blueprint.label>area di festa (progetto)</PartySpot_Blueprint.label>
+<PartySpot_Frame.label>un'area di festa</PartySpot_Frame.label>
+<PartySpot_Frame.description>Indica un'area dove potranno essere organizzate delle feste. I festeggiati useranno tutta l'area intorno a questa zona.</PartySpot_Frame.description>
 
-  <Sarcophagus.label>sarcofago</Sarcophagus.label>
-  <Sarcophagus.description>Un ricettacolo funebre decorato per onorare i morti.</Sarcophagus.description>
-  <Sarcophagus_plan.label>sarcofago(progetto)</Sarcophagus_plan.label>
-  <Sarcophagus_Frame.label>un sarcofago</Sarcophagus_Frame.label>
-
-
-  
-
-  <CryptosleepCasket.label>capsula ipersonno</CryptosleepCasket.label>
-  <CryptosleepCasket.description>Una capsula autonoma progettata per mantenere una persona in uno stato di sospensione vitale per molti anni.</CryptosleepCasket.description>
-  <CryptosleepCasket_plan.label>capsula ipersonno (progetto)</CryptosleepCasket_plan.label>
-  <CryptosleepCasket_Frame.label>una capsula ipersonno</CryptosleepCasket_Frame.label>
-
-  <AncientCryptosleepCasket.label>antica capsula ipersonno</AncientCryptosleepCasket.label>
-  <AncientCryptosleepCasket.description>Questa capsula ipersonno ha l'aria di essere qui da un'eternità. Chissà cosa potrebbe contenere?</AncientCryptosleepCasket.description>
-
-
-  
-
-  <MarriageSpot.label>area di nozze</MarriageSpot.label>
-  <MarriageSpot.description>Indica un'area in cui possono avere luogo delle cerimonie di nozze. Gli invitati potranno guardare da ogni lato del luogo indicato.</MarriageSpot.description>
-  <MarriageSpot_plan.label>area  di nozze</MarriageSpot_plan.label>
-  <MarriageSpot_Frame.label>un'area di nozze</MarriageSpot_Frame.label>
-
-  <PartySpot.label>area di festa</PartySpot.label>
-  <PartySpot.description>Indica un'area dove potranno essere organizzate delle feste. Le feste si terrano intorno a questa zona.</PartySpot.description>
-  <PartySpot_plan.label>area di festa</PartySpot_plan.label>
-  <PartySpot_Frame.label>un'area di festa</PartySpot_Frame.label>
-    
-  <CaravanPackingSpot.label>area formazione carovane</CaravanPackingSpot.label>
-  <CaravanPackingSpot.description>Indica un'area in cui si formeranno le carovane.</CaravanPackingSpot.description>
-  <CaravanPackingSpot_plan.label>area formazione carovane (progetto)</CaravanPackingSpot_plan.label>
-  <CaravanPackingSpot_Frame.label>un'area formazione carovane</CaravanPackingSpot_Frame.label>
-
+<CaravanPackingSpot.label>area formazione carovane</CaravanPackingSpot.label>
+<CaravanPackingSpot.description>Indica un'area in cui si formeranno le carovane.</CaravanPackingSpot.description>
+<CaravanPackingSpot_Blueprint.label>area formazione carovane (progetto)</CaravanPackingSpot_Blueprint.label>
+<CaravanPackingSpot_Frame.label>un'area formazione delle carovane</CaravanPackingSpot_Frame.label>
+<CaravanPackingSpot_Frame.description>Indica un'area in cui si formeranno le carovane.</CaravanPackingSpot_Frame.description>
 
 </LanguageData>
