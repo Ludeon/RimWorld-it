@@ -1,157 +1,115 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-  <!-- glow -->
-  <Dark>Buio</Dark>
-  <Lit>Illuminato</Lit>
-  <LitBrightly>Intensamente illuminato</LitBrightly>
+<Dark>Buio</Dark>
+<Lit>Illuminato</Lit>
+<LitBrightly>Intensamente illuminato</LitBrightly>
+<Unspecified>Indeciso</Unspecified>
+<Always>Consentire</Always>
+<Never>Non consentire</Never>
+<PriceTypeVeryCheap>molto economico</PriceTypeVeryCheap>
+<PriceTypeCheap>economico</PriceTypeCheap>
+<PriceTypeNormal>normale</PriceTypeNormal>
+<PriceTypeExpensive>caro</PriceTypeExpensive>
+<PriceTypeExorbitant>esorbitante</PriceTypeExorbitant>
+<StoragePriorityUnstored>Rifiuta</StoragePriorityUnstored>
+<StoragePriorityLow>Bassa</StoragePriorityLow>
+<StoragePriorityNormal>Normale</StoragePriorityNormal>
+<StoragePriorityPreferred>Alta</StoragePriorityPreferred>
+<StoragePriorityImportant>Importante</StoragePriorityImportant>
+<StoragePriorityCritical>Critica</StoragePriorityCritical>
+<FoodTypeFlags_VegetableOrFruit>legumi</FoodTypeFlags_VegetableOrFruit>
+<FoodTypeFlags_Meat>carne cruda</FoodTypeFlags_Meat>
+<FoodTypeFlags_Corpse>cadaveri</FoodTypeFlags_Corpse>
+<FoodTypeFlags_Seed>semi</FoodTypeFlags_Seed>
+<FoodTypeFlags_AnimalProduct>prodotti di origine animale</FoodTypeFlags_AnimalProduct>
+<FoodTypeFlags_Plant>piante</FoodTypeFlags_Plant>
+<FoodTypeFlags_Tree>alberi</FoodTypeFlags_Tree>
+<FoodTypeFlags_Meal>pasti</FoodTypeFlags_Meal>
+<FoodTypeFlags_Processed>cibo trasformato</FoodTypeFlags_Processed>
+<FoodTypeFlags_Liquor>liquore</FoodTypeFlags_Liquor>
+<FoodTypeFlags_Kibble>foraggio</FoodTypeFlags_Kibble>
+<QualityCategory_Awful>terribile</QualityCategory_Awful>
+<QualityCategory_Shoddy>scadente</QualityCategory_Shoddy>
+<QualityCategory_Poor>mediocre</QualityCategory_Poor>
+<QualityCategory_Normal>normale</QualityCategory_Normal>
+<QualityCategory_Good>buono</QualityCategory_Good>
+<QualityCategory_Superior>superiore</QualityCategory_Superior>
+<QualityCategory_Excellent>eccellente</QualityCategory_Excellent>
+<QualityCategory_Masterwork>capolavoro</QualityCategory_Masterwork>
+<QualityCategory_Legendary>leggendaria</QualityCategory_Legendary>
+<QualityCategoryShort_Awful>terr</QualityCategoryShort_Awful>
+<QualityCategoryShort_Shoddy>scad</QualityCategoryShort_Shoddy>
+<QualityCategoryShort_Poor>medc</QualityCategoryShort_Poor>
+<QualityCategoryShort_Normal>norm</QualityCategoryShort_Normal>
+<QualityCategoryShort_Good>buon</QualityCategoryShort_Good>
+<QualityCategoryShort_Superior>supr</QualityCategoryShort_Superior>
+<QualityCategoryShort_Excellent>eccl</QualityCategoryShort_Excellent>
+<QualityCategoryShort_Masterwork>capl</QualityCategoryShort_Masterwork>
+<QualityCategoryShort_Legendary>legg</QualityCategoryShort_Legendary>
+<HungerLevel_Starving>Affamato</HungerLevel_Starving>
+<HungerLevel_UrgentlyHungry>Molta fame</HungerLevel_UrgentlyHungry>
+<HungerLevel_Hungry>Fame</HungerLevel_Hungry>
+<HungerLevel_Fed>Sazio</HungerLevel_Fed>
+<HungerLevel_Exhausted>Esausto</HungerLevel_Exhausted>
+<HungerLevel_VeryTired>Molto affaticato</HungerLevel_VeryTired>
+<HungerLevel_Tired>Affaticato</HungerLevel_Tired>
+<HungerLevel_Rested>Riposato</HungerLevel_Rested>
+<Hilliness_Flat>Pianeggiante</Hilliness_Flat>
+<Hilliness_SmallHills>Piccole colline</Hilliness_SmallHills>
+<Hilliness_LargeHills>Grandi colline</Hilliness_LargeHills>
+<Hilliness_Mountainous>Montagnoso</Hilliness_Mountainous>
+<Hilliness_Impassable>Insormontabile</Hilliness_Impassable>
+<WorkshopInteractStage_CreatingItem>Creare</WorkshopInteractStage_CreatingItem>
+<WorkshopInteractStage_SubmittingItem>Inviare</WorkshopInteractStage_SubmittingItem>
+<EItemUpdateStatus_k_EItemUpdateStatusInvalid>Non valido</EItemUpdateStatus_k_EItemUpdateStatusInvalid>
+<EItemUpdateStatus_k_EItemUpdateStatusPreparingConfig>Preparazione dei dati di configurazione</EItemUpdateStatus_k_EItemUpdateStatusPreparingConfig>
+<EItemUpdateStatus_k_EItemUpdateStatusPreparingContent>Preparazione dei files di contenuto</EItemUpdateStatus_k_EItemUpdateStatusPreparingContent>
+<EItemUpdateStatus_k_EItemUpdateStatusUploadingContent>Invio del contenuto</EItemUpdateStatus_k_EItemUpdateStatusUploadingContent>
+<EItemUpdateStatus_k_EItemUpdateStatusUploadingPreviewFile>Invio del file di anteprima</EItemUpdateStatus_k_EItemUpdateStatusUploadingPreviewFile>
+<EItemUpdateStatus_k_EItemUpdateStatusCommittingChanges>Inviare le modifiche</EItemUpdateStatus_k_EItemUpdateStatusCommittingChanges>
+<ContentSource_LocalFolder>cartella locale</ContentSource_LocalFolder>
+<ContentSource_SteamWorkshop>Steam Workshop</ContentSource_SteamWorkshop>
+<TrainableIntelligence_None>Nessuna</TrainableIntelligence_None>
+<TrainableIntelligence_Simple>Semplice</TrainableIntelligence_Simple>
+<TrainableIntelligence_Intermediate>Media</TrainableIntelligence_Intermediate>
+<TrainableIntelligence_Advanced>Avanzata</TrainableIntelligence_Advanced>
+<MedicalCareCategory_NoCare>Nessun supporto medico</MedicalCareCategory_NoCare>
+<MedicalCareCategory_NoMeds>Visita medica senza farmaci</MedicalCareCategory_NoMeds>
+<MedicalCareCategory_HerbalOrWorse>Erbe medicinali o peggio</MedicalCareCategory_HerbalOrWorse>
+<MedicalCareCategory_NormalOrWorse>Farmaci o peggio</MedicalCareCategory_NormalOrWorse>
+<MedicalCareCategory_Best>Miglior trattamento medico</MedicalCareCategory_Best>
+<HostilityResponseMode_Ignore>Ignorare</HostilityResponseMode_Ignore>
+<HostilityResponseMode_Attack>Attaccare</HostilityResponseMode_Attack>
+<HostilityResponseMode_Flee>Fuggire</HostilityResponseMode_Flee>
+<HediffGrowthMode_Growing>in sviluppo</HediffGrowthMode_Growing>
+<HediffGrowthMode_Stable>stabile</HediffGrowthMode_Stable>
+<HediffGrowthMode_Remission>in remissione</HediffGrowthMode_Remission>
+<TechLevel_Animal>animale</TechLevel_Animal>
+<TechLevel_Neolithic>neolitico</TechLevel_Neolithic>
+<TechLevel_Medieval>medievale</TechLevel_Medieval>
+<TechLevel_Industrial>industriale</TechLevel_Industrial>
+<TechLevel_Spacer>spaziale</TechLevel_Spacer>
+<TechLevel_Ultra>ultra</TechLevel_Ultra>
+<TechLevel_Transcendent>trascendente</TechLevel_Transcendent>
+<PlayerPawnsArriveMethod_Standing>Sul posto</PlayerPawnsArriveMethod_Standing>
+<PlayerPawnsArriveMethod_DropPods>Capsula di lancio</PlayerPawnsArriveMethod_DropPods>
+<PawnGenerationContext_All>tutti i personaggi</PawnGenerationContext_All>
+<PawnGenerationContext_PlayerStarter>personaggi iniziali</PawnGenerationContext_PlayerStarter>
+<PawnGenerationContext_NonPlayer>personaggi non giocanti</PawnGenerationContext_NonPlayer>
+<ShowAnimalNames>Visualizzare nomi degli animali</ShowAnimalNames>
+<AnimalNameDisplayMode_TameNamed>Solo nomi</AnimalNameDisplayMode_TameNamed>
+<AnimalNameDisplayMode_TameAll>Domestici (tutti)</AnimalNameDisplayMode_TameAll>
+<Celsius>Celsius</Celsius>
+<Fahrenheit>Fahrenheit</Fahrenheit>
+<Kelvin>Kelvin</Kelvin>
+<Direction8Way_North_Short>N</Direction8Way_North_Short>
+<Direction8Way_NorthEast_Short>NE</Direction8Way_NorthEast_Short>
+<Direction8Way_East_Short>E</Direction8Way_East_Short>
+<Direction8Way_SouthEast_Short>SE</Direction8Way_SouthEast_Short>
+<Direction8Way_South_Short>S</Direction8Way_South_Short>
+<Direction8Way_SouthWest_Short>SO</Direction8Way_SouthWest_Short>
+<Direction8Way_West_Short>O</Direction8Way_West_Short>
+<Direction8Way_NorthWest_Short>NO</Direction8Way_NorthWest_Short>
 
-<!-- history upload pref -->
-  <Unspecified>Non specificato </Unspecified>
-  <Always>Permetti</Always>
-  <Never>Non permettere</Never>
-
-<!-- Price types -->
-  <PriceTypeVeryCheap>molto economico</PriceTypeVeryCheap>
-  <PriceTypeCheap>economico</PriceTypeCheap>
-  <PriceTypeNormal>normale</PriceTypeNormal>
-  <PriceTypeExpensive>costoso</PriceTypeExpensive>
-  <PriceTypeExorbitant>esorbitante</PriceTypeExorbitant>
-
-<!-- Storage priority labels -->
-  <StoragePriorityUnstored>non immagazzinato</StoragePriorityUnstored>
-  <StoragePriorityLow>bassa</StoragePriorityLow>
-  <StoragePriorityNormal>normale</StoragePriorityNormal>
-  <StoragePriorityPreferred>preferita</StoragePriorityPreferred>
-  <StoragePriorityImportant>importante</StoragePriorityImportant>
-  <StoragePriorityCritical>critica</StoragePriorityCritical>
-
-<!-- Food type flags -->
-  <FoodTypeFlags_VegetableOrFruit>verdure</FoodTypeFlags_VegetableOrFruit>
-  <FoodTypeFlags_Meat>carne cruda</FoodTypeFlags_Meat>
-  <FoodTypeFlags_Corpse>cadaveri</FoodTypeFlags_Corpse>
-  <FoodTypeFlags_Seed>semi</FoodTypeFlags_Seed>
-  <FoodTypeFlags_AnimalProduct>prodotti animali</FoodTypeFlags_AnimalProduct>
-  <FoodTypeFlags_Plant>piante vive</FoodTypeFlags_Plant>
-  <FoodTypeFlags_Tree>alberi vivi</FoodTypeFlags_Tree>
-  <FoodTypeFlags_Meal>pasti</FoodTypeFlags_Meal>
-  <FoodTypeFlags_Processed>cibo processato</FoodTypeFlags_Processed>
-  <FoodTypeFlags_Liquor>liquore</FoodTypeFlags_Liquor>
-  <FoodTypeFlags_Kibble>croccantini</FoodTypeFlags_Kibble>
-
-<!-- Quality category -->
-  <QualityCategory_Awful>terribile</QualityCategory_Awful>
-  <QualityCategory_Shoddy>scadente</QualityCategory_Shoddy>
-  <QualityCategory_Poor>scarsa</QualityCategory_Poor>
-  <QualityCategory_Normal>normale</QualityCategory_Normal>
-  <QualityCategory_Good>buona</QualityCategory_Good>
-  <QualityCategory_Superior>superiore</QualityCategory_Superior>
-  <QualityCategory_Excellent>eccellente</QualityCategory_Excellent>
-  <QualityCategory_Masterwork>capolavoro</QualityCategory_Masterwork>
-  <QualityCategory_Legendary>leggendaria</QualityCategory_Legendary>
-  <QualityCategoryShort_Awful>trbl</QualityCategoryShort_Awful>
-  <QualityCategoryShort_Shoddy>scad</QualityCategoryShort_Shoddy>
-  <QualityCategoryShort_Poor>scarsa</QualityCategoryShort_Poor>
-  <QualityCategoryShort_Normal>norm</QualityCategoryShort_Normal>
-  <QualityCategoryShort_Good>buona</QualityCategoryShort_Good>
-  <QualityCategoryShort_Superior>super</QualityCategoryShort_Superior>
-  <QualityCategoryShort_Excellent>ecc</QualityCategoryShort_Excellent>
-  <QualityCategoryShort_Masterwork>caplv</QualityCategoryShort_Masterwork>
-  <QualityCategoryShort_Legendary>legg</QualityCategoryShort_Legendary>
-
-<!-- Hunger -->
-  <HungerLevel_Starving>Morendo di fame</HungerLevel_Starving>
-  <HungerLevel_UrgentlyHungry>Urgentemente affamato</HungerLevel_UrgentlyHungry>
-  <HungerLevel_Hungry>Affamato</HungerLevel_Hungry>
-  <HungerLevel_Fed>Sazio</HungerLevel_Fed>
-
-<!-- -Fatigue -->
-  <HungerLevel_Exhausted>Esausto</HungerLevel_Exhausted>
-  <HungerLevel_VeryTired>Molto stanco</HungerLevel_VeryTired>
-  <HungerLevel_Tired>Riposato</HungerLevel_Tired>
-  <HungerLevel_Rested>Riposato</HungerLevel_Rested>
-
-<!-- Hilliness -->
-  <Hilliness_Flat>piano</Hilliness_Flat>
-  <Hilliness_SmallHills>basse colline</Hilliness_SmallHills>
-  <Hilliness_LargeHills>alte colline</Hilliness_LargeHills>
-  <Hilliness_Mountainous>montagnoso</Hilliness_Mountainous>
-  <Hilliness_Impassable>invalicabile</Hilliness_Impassable>
-
-<!-- Steam workshop interaction -->
-  <WorkshopInteractStage_CreatingItem>Creando</WorkshopInteractStage_CreatingItem>
-  <WorkshopInteractStage_SubmittingItem>Immettendo</WorkshopInteractStage_SubmittingItem>
-  <EItemUpdateStatus_k_EItemUpdateStatusInvalid>Non valido</EItemUpdateStatus_k_EItemUpdateStatusInvalid>
-  <EItemUpdateStatus_k_EItemUpdateStatusPreparingConfig>Config dati in preparazione</EItemUpdateStatus_k_EItemUpdateStatusPreparingConfig>
-  <EItemUpdateStatus_k_EItemUpdateStatusPreparingContent>Contenuto file in preparazione</EItemUpdateStatus_k_EItemUpdateStatusPreparingContent>
-  <EItemUpdateStatus_k_EItemUpdateStatusUploadingContent>Uploading del contenuto</EItemUpdateStatus_k_EItemUpdateStatusUploadingContent>
-  <EItemUpdateStatus_k_EItemUpdateStatusUploadingPreviewFile>Uploading dell'anteprima dei file</EItemUpdateStatus_k_EItemUpdateStatusUploadingPreviewFile>
-  <EItemUpdateStatus_k_EItemUpdateStatusCommittingChanges>Applicando cambiamenti</EItemUpdateStatus_k_EItemUpdateStatusCommittingChanges>
-
-<!-- Mod sources -->
-  <ContentSource_LocalFolder>cartella locale</ContentSource_LocalFolder>
-  <ContentSource_SteamWorkshop>Workshop di Steam</ContentSource_SteamWorkshop>
-
-<!-- Trainable intelligence -->
-  <TrainableIntelligence_None>nessuna</TrainableIntelligence_None>
-  <TrainableIntelligence_Simple>semplice</TrainableIntelligence_Simple>
-  <TrainableIntelligence_Intermediate>media</TrainableIntelligence_Intermediate>
-  <TrainableIntelligence_Advanced>avanzata</TrainableIntelligence_Advanced>
-
-<!-- Medical care category -->
-  <MedicalCareCategory_NoCare>Nessuna cura medica</MedicalCareCategory_NoCare>
-  <MedicalCareCategory_NoMeds>Cure mediche, ma senza medicine</MedicalCareCategory_NoMeds>
-  <MedicalCareCategory_HerbalOrWorse>Erboristeria o inferiore</MedicalCareCategory_HerbalOrWorse>
-  <MedicalCareCategory_NormalOrWorse>Medicine normali or inferiore</MedicalCareCategory_NormalOrWorse>
-  <MedicalCareCategory_Best>Migliori cure mediche possibili</MedicalCareCategory_Best>
-
-  <!-- Hostility response mode -->
-  <HostilityResponseMode_Ignore>Ignora</HostilityResponseMode_Ignore>
-  <HostilityResponseMode_Attack>Attacca</HostilityResponseMode_Attack>
-  <HostilityResponseMode_Flee>Fuggi</HostilityResponseMode_Flee>
-  
-  <!-- HediffGrowthMode -->
-  <HediffGrowthMode_Growing>in crescita</HediffGrowthMode_Growing>
-  <HediffGrowthMode_Stable>stabile</HediffGrowthMode_Stable>
-  <HediffGrowthMode_Remission>in remissione</HediffGrowthMode_Remission>
-
-  <!-- TechLevel -->
-  <TechLevel_Animal>animale</TechLevel_Animal>
-  <TechLevel_Neolithic>neolitico</TechLevel_Neolithic>
-  <TechLevel_Medieval>medievale</TechLevel_Medieval>
-  <TechLevel_Industrial>industriale</TechLevel_Industrial>
-  <TechLevel_Spacer>spaziale</TechLevel_Spacer>
-  <TechLevel_Ultra>ultra</TechLevel_Ultra>
-  <TechLevel_Transcendent>transcendente</TechLevel_Transcendent>
-
-  <!-- Player pawns arrive method -->
-  <PlayerPawnsArriveMethod_Standing>In piedi</PlayerPawnsArriveMethod_Standing>
-  <PlayerPawnsArriveMethod_DropPods>Pod</PlayerPawnsArriveMethod_DropPods>
-
-  <!-- Pawn generation context -->
-  <PawnGenerationContext_All>Tutti i personaggi</PawnGenerationContext_All>
-  <PawnGenerationContext_PlayerStarter>Personaggi iniziali del giocatore</PawnGenerationContext_PlayerStarter>
-  <PawnGenerationContext_NonPlayer>Personaggi non del giocatore</PawnGenerationContext_NonPlayer>
-  
-  <!-- Animal name display mode -->
-  <ShowAnimalNames>Mostra i nomi degli animali</ShowAnimalNames>
-  <AnimalNameDisplayMode_TameNamed>Addomestica (solo nominati)</AnimalNameDisplayMode_TameNamed>
-  <AnimalNameDisplayMode_TameAll>Addomestica (tutti)</AnimalNameDisplayMode_TameAll>
-  
-  <!-- Temperature -->
-  <Celsius>Celsius</Celsius>
-  <Fahrenheit>Fahrenheit</Fahrenheit>
-  <Kelvin>Kelvin</Kelvin>
-  
-  <!-- Direction8Way -->
-  <Direction8Way_North_Short>N</Direction8Way_North_Short>
-  <Direction8Way_NorthEast_Short>NE</Direction8Way_NorthEast_Short>
-  <Direction8Way_East_Short>E</Direction8Way_East_Short>
-  <Direction8Way_SouthEast_Short>SE</Direction8Way_SouthEast_Short>
-  <Direction8Way_South_Short>S</Direction8Way_South_Short>
-  <Direction8Way_SouthWest_Short>SW</Direction8Way_SouthWest_Short>
-  <Direction8Way_West_Short>W</Direction8Way_West_Short>
-  <Direction8Way_NorthWest_Short>NW</Direction8Way_NorthWest_Short>
-  
-  
 </LanguageData>

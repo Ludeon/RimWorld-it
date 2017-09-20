@@ -1,165 +1,157 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
 <LanguageData>
 
-  <!--=========== Main menu ==========-->
-  <CreateWorld>Crea Mondo</CreateWorld>
-  <NewColony>Nuova colonia</NewColony>
-  <BackToGame>Torna al gioco</BackToGame>
-  <ReviewScenario>Esamina scenario</ReviewScenario>
-  <Save>Salva partita</Save>
-  <LoadGame>Carica partita</LoadGame>
-  <Options>Opzioni</Options>
-  <Mods>Mod</Mods>
-  <Credits>Crediti</Credits>
-  <QuitToMainMenu>Torna al menù iniziale</QuitToMainMenu>
-  <QuitToOS>Torna al Desktop</QuitToOS>
-  <SaveAndQuitToOS>Salva e torna al Desktop</SaveAndQuitToOS>
-  <FictionPrimer>Informazioni sulla trama (disponibile anche in italiano!)</FictionPrimer>
-  <LudeonBlog>Blog Ludeon</LudeonBlog>
-  <Forums>Forum</Forums>
-  <OfficialWiki>Wiki ufficiale</OfficialWiki>
-  <TynansTwitter>Twitter di Tynan</TynansTwitter>
-  <TynansDesignBook>Il libro di Tynan sul design</TynansDesignBook>
-  <HelpTranslate>Aiutaci a tradurre RimWorld!</HelpTranslate>
-  <BuySoundtrack>Compra la colonna sonora</BuySoundtrack>
-  
-  <!--=========== Create/review world ================-->
-  <ReviewWorld>Esamina mondo</ReviewWorld>
-  <WorldGenerate>Genera</WorldGenerate>
-  <WorldSaveAndFinish>Salva e concludi</WorldSaveAndFinish>
-  <Reset>Reset</Reset>
-  <WorldSize>Grandezza</WorldSize>
-  <WorldSeed>Seed</WorldSeed>
-  <RandomizeSeed>Randomizza seed</RandomizeSeed>
-  
-   <!--=========== Select world ===================-->
-  <SelectWorld>Scegli mondo</SelectWorld>
-  <WorldChooseButton>Seleziona</WorldChooseButton>
-  <NoWorldsFilesFound>Nessun file mondo trovato. Devi prima creare un mondo.</NoWorldsFilesFound>
-
-
-  <!--=========== Version info ==========-->
-  <BuildNowAvailable>La versione {0} è disponibile. Controlla ludeon.com per informazioni.</BuildNowAvailable>
-	<BuildUpToDate>La versione è aggiornata.</BuildUpToDate>
-	<ErrorGettingVersionInfo>Errore nel caricare informazioni sulla versione: {0}</ErrorGettingVersionInfo>
-	<LoadingVersionInfo>Caricando le informazioni sulla versione...</LoadingVersionInfo>
-
-  <!--=========== World generator =========-->
-  <GenerateWorld>Genera mondo</GenerateWorld>
-  
-  <!--=========== Mods config ==========-->
-  <OpenSteamWorkshop>Apri Steam Workshop</OpenSteamWorkshop>
-  <GetModsFromForum>Trova mod nei forum</GetModsFromForum>
-  <OpenModsDataFolder>Apri la cartella delle mod</OpenModsDataFolder>
-  <ConfirmDisableCoreMod>Sei sicuro di voler disabilitare la mod principale di gioco (Core)? Il gioco non funzionerà finchè non la rimpiazzerai.\n\nRicorda, le mod possono sovrascrivere le def nella mod principale usando lo stesso defName.</ConfirmDisableCoreMod>
-  <ConfirmDeleteMod>Are you sure you want to delete all the content for {0}?</ConfirmDeleteMod>
-  <Unsubscribe>Disiscriviti</Unsubscribe>
-  <ConfirmUnsubscribe>Sei sicuro di volerti disiscrivere da {0}?</ConfirmUnsubscribe>
-  <Author>Autore</Author>
-  <WorkshopPage>Pagina Workshop</WorkshopPage>
-  <UploadToSteamWorkshop>Carica su Steam Workshop</UploadToSteamWorkshop>
-  <UpdateOnSteamWorkshop>Aggiorna su Steam Workshop</UpdateOnSteamWorkshop>
-  <UploadAlreadyInProgress>Caricamento già in corso.</UploadAlreadyInProgress>
-  <WorkshopSubmissionFailed>Caricamento su Workshop fallito.\n\nMotivo: {0}</WorkshopSubmissionFailed>
-  <WorkshopUploadSucceeded>Caricato {0} con successo.</WorkshopUploadSucceeded>
-  <Downloading>Scaricando</Downloading>
-  <Source>Fonte</Source>
-  <ModTargetVersion>Per versione: {0}</ModTargetVersion>
-  <ModNotMadeForThisVersion>Questa mod non è stata fatta per questa versione di RimWorld, e probabilmente non funzionerà correttamente.</ModNotMadeForThisVersion>
-  <MessageModNeedsWellFormattedTargetVersion>La mod necessita di una versione-bersaglio ben formattata nel file About.xml. Ad esempio: &lt;targetVersion&gt;{0}&lt;/targetVersion&gt;.</MessageModNeedsWellFormattedTargetVersion>
-  
-  <!--=========== Select scenario =============-->
-  <ChooseScenario>Scegli scenario</ChooseScenario>
-  <ScenariosCustom>Personalizzato</ScenariosCustom>
-  <ScenariosSteamWorkshop>Steam Workshop</ScenariosSteamWorkshop>
-  <ScenarioEditor>Editor Scenario</ScenarioEditor>
-  <Delete>Elimina</Delete>
-
-  <!--============ Scenario editor ===============-->
-  <Seed>seed</Seed>
-  <Load>Carica</Load>
-  <EditMode>modalità modifica</EditMode>
-  <Summary>Sommario</Summary>
-  <AddPart>Aggiungi parte</AddPart>
-  <TextFieldsMustBeFilled>Tutti i campi di testo devono essere riempiti.</TextFieldsMustBeFilled>
-  <ConfirmSteamWorkshopUpload>Sei sicuro di voler caricare ciò sullo Steam Workshop?\n\nDevi accettare i termini di servizio dello Steam Workshop. Li puoi trovare qui:\n\nhttp://steamcommunity.com/sharedfiles/workshoplegalagreement</ConfirmSteamWorkshopUpload>
-  <ConfirmContentAuthor>Ovviamente dovresti solamente caricare contenuti creati da te stesso.\n\nSei il creatore di questi contenuti?</ConfirmContentAuthor>
-  <Incompatible>Incompatibile</Incompatible>
-  <TooMany>Troppi (max {0}): </TooMany>
-  <CanBeUpdatedOnWorkshop>Può essere caricato sul Workshop, dato che sei l'autore.</CanBeUpdatedOnWorkshop>
-
-  <!--=========== Select storyteller ==========-->
-  <ChooseAIStoryteller>Scegli il tuo narratore</ChooseAIStoryteller>
-  <HowStorytellersWork>Il narratore crea eventi come gli attacchi dei pirati, sganci di risorse, o animali impazziti. Le loro scelte influenzeranno la storia della tua colonia.</HowStorytellersWork>
-  <MustChooseDifficulty>Scegli un'impostazione di difficoltà.</MustChooseDifficulty>
-  <Difficulty>Difficoltà</Difficulty>
-
-  <!--=========== Landing site select =========-->
-  <SelectLandingSite>Scegli sito d'atterraggio</SelectLandingSite>
-  <SelectRandomSite>Scegli sito casuale</SelectRandomSite>
-  <SelectSite>Scegli sito</SelectSite>
-  <MustSelectLandingSite>Devi scegliere un sito d'atterraggio.</MustSelectLandingSite>
-  <CannotLandBiome>Non puoi atterrare su questo bioma: {0}</CannotLandBiome>
-  <WorldRenderMode>Modalità</WorldRenderMode>
-  <WorldRenderModeFull>Completa</WorldRenderModeFull>
-  <WorldRenderModeTemperature>Temperatura</WorldRenderModeTemperature>
-  <WorldRenderModeElevation>Altitudine</WorldRenderModeElevation>
-  <WorldRenderModeFertility>Fertilità</WorldRenderModeFertility>
-  <WorldRenderModeRainfall>Pioggia</WorldRenderModeRainfall>
-  <WorldRenderModeBiomes>Biomi</WorldRenderModeBiomes>
-  <BiomeNotImplemented>Bioma non implementato</BiomeNotImplemented>
-  <BaseAlreadyThere>{0} hanno già una base lì.</BaseAlreadyThere>
-  <Biome>Bioma</Biome>
-  <Terrain>Terreno</Terrain>
-  <Elevation>Altitudine</Elevation>
-  <Fertility>Fertilità</Fertility>
-  <AvgTemp>Temp Media</AvgTemp>
-  <AvgWinterTemp>Temp Media (inverno): {0}</AvgWinterTemp>
-  <AvgSummerTemp>Temp Media (estate): {0}</AvgSummerTemp>
-  <Rainfall>Pioggia</Rainfall>
-  <HasCoast0>Costa nord</HasCoast0>
-  <HasCoast1>Costa est</HasCoast1>
-  <HasCoast2>Costa sud</HasCoast2>
-  <HasCoast3>Costa ovest</HasCoast3>
-  <FactionBase>Base di fazione</FactionBase>
-  <StoneTypesHere>Tipi di roccia</StoneTypesHere>
-
-  <!--=========== Character chooser ==========-->
-  <CreateCharacters>Crea un personaggio</CreateCharacters>
-  <FirstNameDesc>Il nome del personaggio.\n\nQuesto è visualizzato solo in certi menù.</FirstNameDesc>
-  <ShortIdentifierDesc>Il soprannome del personaggio.\n\nQuesto verrà sempre visualizzato. Può essere il nome o il cognome, o un soprannome completamente diverso.</ShortIdentifierDesc>
-  <LastNameDesc>Il cognome del personaggio.\n\nQuesto è visualizzato solo in certi menù.</LastNameDesc>
-  <Randomize>Randomizza</Randomize>
-  <AgeIndicator>età {0}</AgeIndicator>
-  <Backstory>Storia passata</Backstory>
-  <IncapableOf>Incapace di</IncapableOf>
-  <Traits>Tratti</Traits>
-  <PermanentMoodEffect>Effetto permanente sull'umore</PermanentMoodEffect>  
-  <Skills>Abilità</Skills>
-  <NoneLower>niente</NoneLower>
-  <Adulthood>Età adulta</Adulthood>
-  <Childhood>Infanzia</Childhood>
-  <Male>maschio</Male>
-  <Female>femmina</Female>
-  <Pain>Dolore</Pain>
-  <Health>Salute</Health>
-  <Relations>Relazioni</Relations>
-  
-  
-  <!--=========== Misc ==========-->
-  <Start>Avvia</Start>
-  <Advanced>Avanzato</Advanced>
-  <Next>Avanti</Next>
-  <Back>Indietro</Back>
-  
-  <Gameplay>Gameplay</Gameplay>
-
-  <ConfirmQuit>Vuoi davvero uscire? perderai i progressi non salvati.</ConfirmQuit>
-  
-  <EveryoneNeedsValidName>Tutte le persone hanno bisogno di un nome valido.</EveryoneNeedsValidName>
-
-  <GeneratingWorld>Generando il mondo</GeneratingWorld>
-  <GeneratingMap>Generando la mappa</GeneratingMap>
-
+<Tutorial>Tutorial</Tutorial>
+<NewColony>Nuova colonia</NewColony>
+<BackToGame>Torna al gioco</BackToGame>
+<ReviewScenario>Esamina scenario</ReviewScenario>
+<Save>Salva</Save>
+<LoadGame>Carica una colonia</LoadGame>
+<Options>Opzioni</Options>
+<Mods>Mod</Mods>
+<Credits>Crediti</Credits>
+<QuitToMainMenu>Torna al menu' iniziale</QuitToMainMenu>
+<SaveAndQuitToMainMenu>Salva e torna al menu' iniziale</SaveAndQuitToMainMenu>
+<QuitToOS>Torna al Desktop</QuitToOS>
+<SaveAndQuitToOS>Salva e torna al Desktop</SaveAndQuitToOS>
+<FictionPrimer>Informazioni sulla trama</FictionPrimer>
+<LudeonBlog>Blog Ludeon</LudeonBlog>
+<Forums>Forum</Forums>
+<OfficialWiki>Wiki ufficiale</OfficialWiki>
+<TynansTwitter>Twitter di Tynan</TynansTwitter>
+<TynansDesignBook>Il libro di Tynan sul design</TynansDesignBook>
+<HelpTranslate>Aiutaci a tradurre RimWorld!</HelpTranslate>
+<BuySoundtrack>Compra la colonna sonora</BuySoundtrack>
+<CreateWorld>Crea mondo</CreateWorld>
+<ReviewWorld>Esamina mondo</ReviewWorld>
+<WorldGenerate>Generare</WorldGenerate>
+<WorldSaveAndFinish>Salva e concludi</WorldSaveAndFinish>
+<Reset>Reset</Reset>
+<PlanetCoverage>Copertura del globo</PlanetCoverage>
+<PlanetRainfall>Precipitazioni</PlanetRainfall>
+<PlanetTemperature>Temperatura</PlanetTemperature>
+<PlanetRainfall_Low>Basse</PlanetRainfall_Low>
+<PlanetRainfall_Normal>Normali</PlanetRainfall_Normal>
+<PlanetRainfall_High>Alte</PlanetRainfall_High>
+<PlanetTemperature_Low>Bassa</PlanetTemperature_Low>
+<PlanetTemperature_Normal>Normale</PlanetTemperature_Normal>
+<PlanetTemperature_High>Alta</PlanetTemperature_High>
+<WorldSeed>Seed</WorldSeed>
+<RandomizeSeed>Randomizza seed</RandomizeSeed>
+<PlanetCoverageTip>Il pianeta ha sempre lo stesso diametro ma, anche se e' piu' grande di quanto serva per giocare, noi non generiamo la superficie intera dato che richiederebbe troppo tempo. E' la percentuale di superficie sulla quale vuoi generare.</PlanetCoverageTip>
+<WorldFactionsTab>Fazioni</WorldFactionsTab>
+<SelectWorld>Scegli un mondo</SelectWorld>
+<WorldChooseButton>Seleziona</WorldChooseButton>
+<NoWorldsFilesFound>Nessun file mondo trovato. Devi prima creare un mondo.</NoWorldsFilesFound>
+<BuildNowAvailable>La versione {0} e' disponibile. Visita ludeon.com per maggiori informazioni.</BuildNowAvailable>
+<BuildUpToDate>La versione e' aggiornata.</BuildUpToDate>
+<ErrorGettingVersionInfo>Errore nel tentare di recuperare informazioni sulla versione: {0}</ErrorGettingVersionInfo>
+<LoadingVersionInfo>Caricamento delle informazioni sulla versione...</LoadingVersionInfo>
+<GenerateWorld>Genera un mondo</GenerateWorld>
+<OpenSteamWorkshop>Apri Steam Workshop</OpenSteamWorkshop>
+<GetModsFromForum>Trova mod nel forum</GetModsFromForum>
+<OpenModsDataFolder>Apri la cartella delle mod</OpenModsDataFolder>
+<ConfirmDisableCoreMod>Sei sicuro di voler disabilitare il modulo principale? Il gioco non funzionera' del tutto finche' non avrai una mod che rimpiazzi tutte le funzionalita' core.\n\nRicorda: le mod possono ridefinire delle funzionalita' core usando gli stessi defName.</ConfirmDisableCoreMod>
+<ConfirmDeleteMod>Sei sicuro di voler eliminare la mod {0}?</ConfirmDeleteMod>
+<Unsubscribe>Disiscriviti</Unsubscribe>
+<ConfirmUnsubscribe>Sei sicuro di volerti disiscrivere da {0}?</ConfirmUnsubscribe>
+<Author>Autore</Author>
+<WorkshopPage>Pagina del Workshop</WorkshopPage>
+<UploadToSteamWorkshop>Carica su Steam Workshop</UploadToSteamWorkshop>
+<UpdateOnSteamWorkshop>Aggiorna Steam Workshop</UpdateOnSteamWorkshop>
+<UploadAlreadyInProgress>Caricamento gia' in corso.</UploadAlreadyInProgress>
+<WorkshopSubmissionFailed>Errore nel caricamento sul Workshop.\n\nMotivo: {0}</WorkshopSubmissionFailed>
+<WorkshopUploadSucceeded>Caricamento di {0} riuscito.</WorkshopUploadSucceeded>
+<Downloading>Download</Downloading>
+<Source>Fonte</Source>
+<ModTargetVersion>Per la versione: {0}</ModTargetVersion>
+<ModNotMadeForThisVersion>Questa mod non e' stata fatta per questa versione di RimWorld, e probabilmente non funzionera' correttamente.</ModNotMadeForThisVersion>
+<MessageModNeedsWellFormattedTargetVersion>La mod ha bisogno di una versione di destinazione ben formattata nel file About.xml. Come questa: <targetVersion>{0}</targetVersion></MessageModNeedsWellFormattedTargetVersion>
+<DragToReorder>Trascina per riorganizzare</DragToReorder>
+<ChooseScenario>Scegli scenario</ChooseScenario>
+<ScenariosCustom>Personalizzato</ScenariosCustom>
+<ScenariosSteamWorkshop>Steam Workshop</ScenariosSteamWorkshop>
+<ScenarioEditor>Editor Scenario</ScenarioEditor>
+<Delete>Elimina</Delete>
+<Seed>Seed</Seed>
+<Load>Carica</Load>
+<EditMode>modalita' modifica</EditMode>
+<Summary>Sommario</Summary>
+<AddPart>Aggiungi parte</AddPart>
+<TextFieldsMustBeFilled>Tutti i campi di testo devono essere riempiti.</TextFieldsMustBeFilled>
+<ConfirmSteamWorkshopUpload>Sei sicuro di voler caricare cio' su Steam Workshop?\n\nDevi accettare i termini del servizio Steam Workshop. Leggi qui tutte le condizioni:\n\nhttp://steamcommunity.com/sharedfiles/workshoplegalagreement</ConfirmSteamWorkshopUpload>
+<ConfirmContentAuthor>Ovviamente dovresti solamente caricare contenuti creati da te stesso.\n\nSei il creatore di questi contenuti?</ConfirmContentAuthor>
+<Incompatible>Incompatibile</Incompatible>
+<TooMany>Troppi (max {0}): </TooMany>
+<CanBeUpdatedOnWorkshop>Puo' essere caricato sul Workshop, dato che sei l'autore.</CanBeUpdatedOnWorkshop>
+<ChooseAIStoryteller>Scegli il tuo narratore</ChooseAIStoryteller>
+<HowStorytellersWork>Il narratore crea eventi come gli assalti dei pirati, lanci di risorse o attacchi di animali. Le loro scelte influenzeranno la storia della tua colonia.</HowStorytellersWork>
+<MustChooseDifficulty>Scegli un livello di difficolta'.</MustChooseDifficulty>
+<Difficulty>Difficolta'</Difficulty>
+<SelectLandingSite>Scegli un sito d'atterraggio</SelectLandingSite>
+<SelectRandomSite>Scegli un sito casuale</SelectRandomSite>
+<SelectSite>Scegli il sito</SelectSite>
+<MustSelectLandingSite>Devi scegliere un sito d'atterraggio.</MustSelectLandingSite>
+<CannotLandBiome>Non puoi atterrare su questo bioma: {0}</CannotLandBiome>
+<BiomeNotImplemented>Bioma non implementato</BiomeNotImplemented>
+<CannotLandImpassableMountains>Non puoi atterrare su delle montagne inaccessibili.</CannotLandImpassableMountains>
+<BaseAlreadyThere>{0} hanno gia' una base li'.</BaseAlreadyThere>
+<YourBaseAlreadyThere>Hai gia' una base qui.</YourBaseAlreadyThere>
+<TileOccupied>Questa casella e' occupata.</TileOccupied>
+<FactionBaseAdjacent>Le colonie non possono essere adiacenti l'una all'altra.</FactionBaseAdjacent>
+<Biome>Bioma</Biome>
+<Terrain>Terreno</Terrain>
+<Road>Strada</Road>
+<River>Fiume</River>
+<Elevation>Altitudine</Elevation>
+<Fertility>Fertilita'</Fertility>
+<AvgTemp>Temperatura media</AvgTemp>
+<AvgSummerTemp>Temp. media (estate)</AvgSummerTemp>
+<AvgWinterTemp>Temp. media (inverno)</AvgWinterTemp>
+<Rainfall>Precipitazioni</Rainfall>
+<HasCoast0>Costa nord</HasCoast0>
+<HasCoast1>Costa est</HasCoast1>
+<HasCoast2>Costa sud</HasCoast2>
+<HasCoast3>Costa ovest</HasCoast3>
+<FactionBase>Base di fazione</FactionBase>
+<StoneTypesHere>Tipo di roccia</StoneTypesHere>
+<TimeZone>Fuso orario</TimeZone>
+<MovementTimeNow>Durata movimento attuale</MovementTimeNow>
+<MovementTimeSummer>Durata movimento in estate</MovementTimeSummer>
+<MovementTimeWinter>Durata movimento in inverno</MovementTimeWinter>
+<AnimalsCanGrazeNow>In questo momento gli animali non possono pascolare</AnimalsCanGrazeNow>
+<CreateCharacters>Creazione dei personaggi</CreateCharacters>
+<FirstNameDesc>Il nome del personaggio.\n\nQuesto e' visualizzato solo in certi menu'.</FirstNameDesc>
+<ShortIdentifierDesc>Il soprannome del personaggio.\n\nQuesto verra' sempre visualizzato. Puo' essere il nome, il cognome o un soprannome completamente diverso.</ShortIdentifierDesc>
+<LastNameDesc>Il cognome del personaggio.\n\nQuesto e' visualizzato solo in certi menu'.</LastNameDesc>
+<Randomize>Randomizza</Randomize>
+<AgeIndicator>eta' di {0} anni</AgeIndicator>
+<Backstory>Storia:</Backstory>
+<IncapableOf>Incapace di:</IncapableOf>
+<Traits>Tratti:</Traits>
+<PermanentMoodEffect>Effetti permanenti sull'umore</PermanentMoodEffect>
+<Skills>Abilita':</Skills>
+<NoneLower>nessuna</NoneLower>
+<Adulthood>Eta' adulta</Adulthood>
+<Childhood>Infanzia</Childhood>
+<Male>maschio</Male>
+<Female>femmina</Female>
+<Pain>Dolore</Pain>
+<Health>Salute</Health>
+<Relations>Relazioni</Relations>
+<Start>Avvia</Start>
+<Advanced>Avanzato</Advanced>
+<Next>Avanti</Next>
+<Back>Indietro</Back>
+<Gameplay>Gameplay</Gameplay>
+<ConfirmQuit>Vuoi davvero uscire? Perderai tutti i progressi non salvati.</ConfirmQuit>
+<EveryoneNeedsValidName>Ogni personaggio deve avere un nome valido.</EveryoneNeedsValidName>
+<Quit>Uscire</Quit>
+<Ignore>Ignorare</Ignore>
+<GeneratingWorld>Generazione del mondo</GeneratingWorld>
+<GeneratingPlanet>Generazione del pianeta</GeneratingPlanet>
+<GeneratingMap>Generazione della mappa</GeneratingMap>
+<GeneratingMapForNewEncounter>Generazione di una mappa per un nuovo incontro</GeneratingMapForNewEncounter>
 
 </LanguageData>
