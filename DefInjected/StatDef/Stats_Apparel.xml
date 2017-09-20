@@ -1,29 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!-- alpha9e -->
+
 <LanguageData>
 
-  <ArmorRating_Blunt.label>Armatura - Contondante</ArmorRating_Blunt.label>
-  <ArmorRating_Blunt.description>La protezione contro i danni da schiacciamento come mazze, frane ed esplosioni.</ArmorRating_Blunt.description>
+<ArmorRating_Blunt.label>Armatura - Contundente</ArmorRating_Blunt.label>
+<ArmorRating_Blunt.description>Protezione contro i danni contundenti come i colpi di mazza, le frane e le esplosioni.</ArmorRating_Blunt.description>
 
-  <ArmorRating_Sharp.label>Armatura - Perforante</ArmorRating_Sharp.label>
-  <ArmorRating_Sharp.description>Protezione contro i danni penetranti come armi da fuoco, coltellate e morsi di animali.</ArmorRating_Sharp.description>
+<ArmorRating_Sharp.label>Armatura - Penetrante</ArmorRating_Sharp.label>
+<ArmorRating_Sharp.description>Protezione contro i danni penetranti come le pallottole, le coltellate ed i morsi di animali.</ArmorRating_Sharp.description>
 
-  <ArmorRating_Heat.label>Armatura - Protezione termica</ArmorRating_Heat.label>
-  <ArmorRating_Heat.description>Protezione contro i danni relativi a temperatura e ustioni.</ArmorRating_Heat.description>
+<ArmorRating_Heat.label>Armatura - Termica</ArmorRating_Heat.label>
+<ArmorRating_Heat.description>Protezione contro i danni termici, come le ustioni.</ArmorRating_Heat.description>
 
-  <ArmorRating_Electric.label>Armatura - Protezione elettrica</ArmorRating_Electric.label>
-  <ArmorRating_Electric.description>Protezione contro i danni elettrici, come ad esempio EMP.</ArmorRating_Electric.description>
+<ArmorRating_Electric.label>Armatura - Elettrica</ArmorRating_Electric.label>
+<ArmorRating_Electric.description>Protezione contro i danni elettrici, come gli impulsi elettromagnetici.</ArmorRating_Electric.description>
 
-  <Insulation_Cold.label>Protezione contro il freddo</Insulation_Cold.label>
-  <Insulation_Cold.description>Modificatore temperatura minima di comfort.</Insulation_Cold.description>
+<Insulation_Cold.label>Isolamento - Freddo</Insulation_Cold.label>
+<Insulation_Cold.description>Modificatore della temperatura minima di comfort.</Insulation_Cold.description>
 
-  <Insulation_Heat.label>Protezione contro il calore</Insulation_Heat.label>
-  <Insulation_Heat.description>Modificatore della temperatura massima di comfort.</Insulation_Heat.description>
+<Insulation_Heat.label>Isolamento - Caldo</Insulation_Heat.label>
+<Insulation_Heat.description>Modificatore della temperatura massima di comfort.</Insulation_Heat.description>
 
-  <PersonalShieldEnergyMax.label>Scudo massima energia</PersonalShieldEnergyMax.label>
-  <PersonalShieldEnergyMax.description>Massima quantità di energia che può avere lo scudo. Più energia è equivalente ad un assorbimento di maggior danno.</PersonalShieldEnergyMax.description>
+<EnergyShieldEnergyMax.label>Massima energia scudo</EnergyShieldEnergyMax.label>
+<EnergyShieldEnergyMax.description>Massima quantita' di energia che puo' avere lo scudo. Piu' energia equivale ad un maggior assorbimento di danni.</EnergyShieldEnergyMax.description>
 
-  <PersonalShieldRechargeRate.label>Velocità di rigenerazione scudo</PersonalShieldRechargeRate.label>
-  <PersonalShieldRechargeRate.description>La velocità con cui lo scudo ristabilisce la sua energia, se non è rotto.</PersonalShieldRechargeRate.description>
+<EnergyShieldRechargeRate.label>Velocita' rigenerazione scudo</EnergyShieldRechargeRate.label>
+<EnergyShieldRechargeRate.description>Velocita' con cui lo scudo ricarica la sua energia fintanto che e' funzionante.</EnergyShieldRechargeRate.description>
+<EnergyShieldRechargeRate.formatString>{0}/s</EnergyShieldRechargeRate.formatString>
+
+<SmokepopBeltRadius.label>Portata cintura fumogena</SmokepopBeltRadius.label>
+<SmokepopBeltRadius.description>Area oscurata in caso di detonazione di una cintura fumogena.</SmokepopBeltRadius.description>
+<SmokepopBeltRadius.formatString>{0} c</SmokepopBeltRadius.formatString>
 
 </LanguageData>

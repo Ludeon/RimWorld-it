@@ -1,34 +1,41 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
 <LanguageData>
 
-   	<MaxHitPoints.label>Punti salute</MaxHitPoints.label>
-	<MaxHitPoints.description>I punti di vita di un oggetto. Questo indica quanto danno può prendere prima di essere distrutto.</MaxHitPoints.description>
-	
-   	<MarketValue.label>Valore di mercato</MarketValue.label>
-   	<MarketValue.description>Il valore di mercato di un oggetto. Il prezzo cambierà in base alle capacità relazionali e di negoziazione.</MarketValue.description>
+<MaxHitPoints.label>punti salute</MaxHitPoints.label>
+<MaxHitPoints.description>Punti salute massimi di un oggetto. Indica quanto danno puo' ricevere prima di essere distrutto.</MaxHitPoints.description>
 
-	<SellPriceFactor.label>Modificatore del prezzo di vendita</SellPriceFactor.label>
-	<SellPriceFactor.description>Un moltiplicatore sul prezzo a cui è possibile vendere gli oggetti.</SellPriceFactor.description>
+<Mass.label>peso</Mass.label>
+<Mass.description>Peso di un oggetto.</Mass.description>
+<Mass.formatString>{0} kg</Mass.formatString>
 
-	<Flammability.label>Infiammabilità</Flammability.label>
-	<Flammability.description>La facilità con cui un oggetto prende fuoco e con quanta forza si brucia.</Flammability.description>
-	
-	<WorkToMake.label>Lavoro rimanente</WorkToMake.label>
-	<WorkToMake.description>La quantità di lavoro necessaria per terminare la creazione dell'oggetto, una volta che le materie prime vengono riunite.</WorkToMake.description>
-	
-	<WorkToBuild.label>Lavoro rimanente</WorkToBuild.label>
-	<WorkToBuild.description>La quantità di lavoro che serve per costruire una struttura, una volta che tutti i materiali e gli strumenti sono riuniti.</WorkToBuild.description>
-	
-	<DeteriorationRate.label>Tasso di degradazione</DeteriorationRate.label>
-	<DeteriorationRate.description>La velocità alla quale un oggetto all'esterno si deteriora, soprattutto sotto la pioggia.</DeteriorationRate.description>
-	
-	<Beauty.label>Estetica</Beauty.label>
-	<Beauty.description>Il piacere di stare vicino a un oggetto e/o la visione di esso.</Beauty.description>
+<MarketValue.label>valore di mercato</MarketValue.label>
+<MarketValue.description>Valore di mercato di un oggetto. Il prezzo cambiera' in base alla capacita' di negoziazione, al livello di relazione e ad altri eventuali fattori.</MarketValue.description>
+<MarketValue.formatString>{0} €</MarketValue.formatString>
 
-	<Cleanliness.label>Pulizia</Cleanliness.label>
-	<Cleanliness.description>Livello di pulizia dell'oggetto.</Cleanliness.description>
+<SellPriceFactor.label>modificatore del prezzo di vendita</SellPriceFactor.label>
+<SellPriceFactor.description>Moltiplicatore del prezzo a cui e' possibile vendere gli oggetti.</SellPriceFactor.description>
 
-	<Comfort.label>Confort</Comfort.label>
-	<Comfort.description>Quant'è comodo un oggetto per sedersi o sdraiarsi.</Comfort.description>
-	
+<Flammability.label>infiammabilita'</Flammability.label>
+<Flammability.description>Facilita' con cui un oggetto prende fuoco e l'intensita' con cui brucia.</Flammability.description>
+
+<WorkToMake.label>lavoro rimanente</WorkToMake.label>
+<WorkToMake.description>Quantita' di lavoro necessaria per terminare la creazione dell'oggetto, una volta ottenuti tutti i mezzi e i materiali.</WorkToMake.description>
+
+<WorkToBuild.label>lavoro rimanente</WorkToBuild.label>
+<WorkToBuild.description>Quantita' di lavoro necessaria per terminare la costruzione di una struttura, una volta ottenuti tutti i mezzi e i materiali.</WorkToBuild.description>
+
+<DeteriorationRate.label>tasso di deterioramento</DeteriorationRate.label>
+<DeteriorationRate.description>Velocita' di deterioramento dell'oggetto quando lasciato all'esterno, calcolato in punti danno medi al giorno. Gli oggetti si deteriorano piu' velocemente in certe condizioni, come sotto la pioggia.</DeteriorationRate.description>
+<DeteriorationRate.formatString>{0} / giorno</DeteriorationRate.formatString>
+
+<Beauty.label>estetica</Beauty.label>
+<Beauty.description>Livello di piacere dato dallo stare vicino ad un oggetto o dal vederlo.</Beauty.description>
+
+<Cleanliness.label>pulizia</Cleanliness.label>
+<Cleanliness.description>Livello di pulizia di un oggetto.</Cleanliness.description>
+
+<Comfort.label>Comfort</Comfort.label>
+<Comfort.description>Livello di comodita' dato dal sedersi o sdraiarsi su un oggetto.</Comfort.description>
+
 </LanguageData>

@@ -1,32 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!-- alpha9e -->
+
 <LanguageData>
 
-	<WorkSpeedGlobal.label>velocità globale di lavoro</WorkSpeedGlobal.label>
-	<WorkSpeedGlobal.description>Fattore che influenza la velocità di esecuzione dei compiti.</WorkSpeedGlobal.description>
+<WorkSpeedGlobal.label>velocita' globale lavoro</WorkSpeedGlobal.label>
+<WorkSpeedGlobal.description>Moltiplicatore alla velocita' di esecuzione dei compiti.</WorkSpeedGlobal.description>
 
-	<MiningSpeed.label>velocità di minare</MiningSpeed.label>
-	<MiningSpeed.description>Fattore che influenza la velocità di scavare dei minerali.</MiningSpeed.description>
+<MiningSpeed.label>velocita' estrazione</MiningSpeed.label>
+<MiningSpeed.description>Velocita' di scavo e di trivellazione per la ricerca di minerali.</MiningSpeed.description>
 
-	<SmoothingSpeed.label>velocità di levigamento</SmoothingSpeed.label>
-	<SmoothingSpeed.description>Fattore che influenza la velocità alla quale una persona leviga il terreno.</SmoothingSpeed.description>
-	
-	<ResearchSpeed.label>velocità di ricerca</ResearchSpeed.label>
-	<ResearchSpeed.description>Fattore che influenza la velocità di ricerca.</ResearchSpeed.description>
+<MiningYield.label>capacita' estrazione</MiningYield.label>
+<MiningYield.description>Percentuale di minerali ottenibili dal minatore. Si applica sia agli scavi che alle trivellazioni. Non influenza il tasso di estrazione di pezzi di roccia.</MiningYield.description>
 
-	<ConstructionSpeed.label>velocità de construzione</ConstructionSpeed.label>
-	<ConstructionSpeed.description>Velocità con cui si costruisce oggetti o strutture o riparazione.</ConstructionSpeed.description>
+<SmoothingSpeed.label>velocita' spianamento</SmoothingSpeed.label>
+<SmoothingSpeed.description>Moltiplicatore alla velocita' di spianamento dei terreni.</SmoothingSpeed.description>
 
-	<PlantWorkSpeed.label>velocità di lavoro agricolo</PlantWorkSpeed.label>
-	<PlantWorkSpeed.description>La velocità con cui i coloni piantano e raccolgono.</PlantWorkSpeed.description>
+<ResearchSpeed.label>velocita' ricerca</ResearchSpeed.label>
+<ResearchSpeed.description>Velocita' di conduzione delle ricerche.</ResearchSpeed.description>
 
-	<HarvestFailChance.label>Rischio di perdita del raccolto</HarvestFailChance.label>
-	<HarvestFailChance.description>Rischio che il colone può accidentalmente distruggere il raccolto al posto di raccoglierlo.</HarvestFailChance.description>
-	
-	<ConstructFailChance.label>Rischio di fallimento costruzione</ConstructFailChance.label>
-    <ConstructFailChance.description>Rischio che la costruzione del colone crolli, causando perdita di tempo e spreco di risorse.</ConstructFailChance.description>
-    
-    <FixBrokenDownBuildingFailChance.label>Rischio di fallimento riparazione guasti</FixBrokenDownBuildingFailChance.label>
-    <FixBrokenDownBuildingFailChance.description>Rischio che il colone distrugga un oggetto o un edificio invece di ripararlo.</FixBrokenDownBuildingFailChance.description>
+<AnimalGatherSpeed.label>velocita' raccolta prodotti animali</AnimalGatherSpeed.label>
+<AnimalGatherSpeed.description>Velocita' di mungitura, tosatura e, in generale, raccolta delle risorse provenienti dagli animali.</AnimalGatherSpeed.description>
+
+<AnimalGatherYield.label>capacita' raccolta prodotti animali</AnimalGatherYield.label>
+<AnimalGatherYield.description>Percentuale di prodotti ottenibili in caso di mungitura, tosatura e, in generale, raccolta delle risorse provenienti dagli animali. Piu' e' alta la percentuale, minore e' la possibilita' di perdere dei prodotti.</AnimalGatherYield.description>
+
+<PlantWorkSpeed.label>velocita' lavoro agricolo</PlantWorkSpeed.label>
+<PlantWorkSpeed.description>Velocita' di semina e raccolta delle colture.</PlantWorkSpeed.description>
+
+<PlantHarvestYield.label>capacita' raccolta agricola</PlantHarvestYield.label>
+<PlantHarvestYield.description>Raccolto ottenibile dalle colture. Un valore basso aumenta la probabilita' di sprechi accidentali durante il raccolto.</PlantHarvestYield.description>
+
+<ConstructionSpeed.label>velocita' costruzione</ConstructionSpeed.label>
+<ConstructionSpeed.description>Velocita' di costruzione e riparazione delle strutture.</ConstructionSpeed.description>
+
+<ConstructSuccessChance.label>probabilita' riuscita costruzione</ConstructSuccessChance.label>
+<ConstructSuccessChance.description>Probabilita' di successo nella costruzione di qualcosa. Un fallimento implica spreco di tempo e risorse.</ConstructSuccessChance.description>
+
+<FixBrokenDownBuildingSuccessChance.label>rischio fallimento riparazioni</FixBrokenDownBuildingSuccessChance.label>
+<FixBrokenDownBuildingSuccessChance.description>Probabilita' di una riuscita riparazione di un guasto. Un fallimento implica spreco di tempo e risorse. Nota che si applica solo sulla riparazione dei guasti, che e' diverso dalla riparazione di danni.</FixBrokenDownBuildingSuccessChance.description>
  
 </LanguageData>

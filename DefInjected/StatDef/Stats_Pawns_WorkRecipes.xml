@@ -1,45 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!-- alpha9e -->
+
 <LanguageData>
 
-  <!-- Artistic recipes - speed not affected by skill.-->
+<SculptingSpeed.label>velocita' fabbricazione sculture</SculptingSpeed.label>
+<SculptingSpeed.description>Velocita' con cui il personaggio scolpisce. Nota: l'abilita' influenza la qualita' della scultura creata, non la velocita' di creazione.</SculptingSpeed.description>
+
+<TailoringSpeed.label>velocita' fabbricazione abiti</TailoringSpeed.label>
+<TailoringSpeed.description>Velocita' con cui il personaggio cuce vestiti. Nota: l'abilita' influenza la qualita' dell'abito creato, non la velocita' di creazione.</TailoringSpeed.description>
+
+<SmithingSpeed.label>velocita' forgiatura</SmithingSpeed.label>
+<SmithingSpeed.description>Velocita' con cui il personaggio forgia o costruisce armi, macchine, proiettili e utensili. Nota: l'abilita' influenza la qualita' degli oggetti creati, non la velocita' di creazione.</SmithingSpeed.description>
+
+<DrugProductionSpeed.label>velocita' creazione droghe</DrugProductionSpeed.label>
+<DrugProductionSpeed.description>Velocita' con cui il personaggio produce droghe.</DrugProductionSpeed.description>
+
+<StonecuttingSpeed.label>velocita' intaglio</StonecuttingSpeed.label>
+<StonecuttingSpeed.description>Velocita' con cui il personaggio intaglia pezzi di roccia in blocchi.</StonecuttingSpeed.description>
 	
-	<SculptingSpeed.label>Velocità di scultura</SculptingSpeed.label>
-	<SculptingSpeed.description>Velocità di fare una scultura di quella persona.</SculptingSpeed.description>
-	
-	<TailoringSpeed.label>Velocità di cucire</TailoringSpeed.label>
-	<TailoringSpeed.description>Velocità con cui quella persona fa i vestiti.</TailoringSpeed.description>
+<CookSpeed.label>velocita' cucina</CookSpeed.label>
+<CookSpeed.description>Velocita' con cui il personaggio cucina pasti.</CookSpeed.description>
 
-	<SmithingSpeed.label>Velocità di fabricazione di armesi/armi</SmithingSpeed.label>
-	<SmithingSpeed.description>Velocità con cui un colone forgia un arma o strumento.</SmithingSpeed.description>
-	
-  <!-- Production recipes - speed affected by skill.-->
+<FoodPoisonChance.label>rischio intossicazione alimentare</FoodPoisonChance.label>
+<FoodPoisonChance.description>Probabilita' del personaggio di avvelenare inavvertitamente un pasto che ha cucinato.</FoodPoisonChance.description>
 
-	<CookSpeed.label>Velocità di cucinare</CookSpeed.label>
-	<CookSpeed.description>La velocità alla quale questa persona cucina.</CookSpeed.description>
+<BrewingSpeed.label>velocita' produzione birra</BrewingSpeed.label>
+<BrewingSpeed.description>Velocita' con cui il personaggio produce birra.</BrewingSpeed.description>
 
-	<FoodPoisonChance.label>Rischio d'intossicazione alimentare</FoodPoisonChance.label>
-	<FoodPoisonChance.description>Probabilità che questa persona inavvertitamente avveleni un piatto di cottura.</FoodPoisonChance.description>
-	
-	<BrewingSpeed.label>Velocità prod.birra</BrewingSpeed.label>
-	<BrewingSpeed.description>La velocità con cui questa persona produce la birra.</BrewingSpeed.description>
+<ButcheryFleshSpeed.label>velocita' macellazione</ButcheryFleshSpeed.label>
+<ButcheryFleshSpeed.description>Velocita' con cui il personaggio macella carcasse.</ButcheryFleshSpeed.description>
 
-	<ButcheryFleshSpeed.label>Velocità di macellazione</ButcheryFleshSpeed.label>
-	<ButcheryFleshSpeed.description>La velocità con cui questa persona taglia gli animali.</ButcheryFleshSpeed.description>
+<ButcheryMechanoidSpeed.label>velocita' smontaggio meccanoide</ButcheryMechanoidSpeed.label>
+<ButcheryMechanoidSpeed.description>Velocita' con cui il personaggio riesce a smontare un meccanoide.</ButcheryMechanoidSpeed.description>
 
-	<ButcheryFleshEfficiency.label>efficacia di macellazione</ButcheryFleshEfficiency.label>
-	<ButcheryFleshEfficiency.description>Un moltiplicatore che influsce sulla quantita di carne prodotta da ogni taglio di carne.</ButcheryFleshEfficiency.description>
+<MechanoidOperationSuccessChance.label>probabilita' successo operazione meccanoide</MechanoidOperationSuccessChance.label>
+<MechanoidOperationSuccessChance.description>Probabilita' di successo del personaggio nell'esecuzione di un'operazione su un meccanoide. Un fallimento puo' comportare da una semplice perdita di tempo ad un danno catastrofico al soggetto.</MechanoidOperationSuccessChance.description>
 
-	<ButcheryMechanoidSpeed.label>disassemblare un mechanoide</ButcheryMechanoidSpeed.label>
-	<ButcheryMechanoidSpeed.description>La velocità con cui questa persona smonta i mechanoidi.</ButcheryMechanoidSpeed.description>
+<ButcheryFleshEfficiency.label>efficacia macellazione</ButcheryFleshEfficiency.label>
+<ButcheryFleshEfficiency.description>Moltiplicatore alla quantita' di carne prodotta macellando carcasse.</ButcheryFleshEfficiency.description>
 
-	<ButcheryMechanoidEfficiency.label>efficacia di disassemblare</ButcheryMechanoidEfficiency.label>
-	<ButcheryMechanoidEfficiency.description>Un moltiplicatore che influsce sulla quantità di materiale recuperato da ogni disassemblaggio di mechanoidi.</ButcheryMechanoidEfficiency.description>
+<ButcheryMechanoidEfficiency.label>efficacia smontaggio</ButcheryMechanoidEfficiency.label>
+<ButcheryMechanoidEfficiency.description>Moltiplicatore alla quantita' di materiale recuperato smontando un meccanoide.</ButcheryMechanoidEfficiency.description>
 
-	<StonecuttingSpeed.label>Velocità del taglio delle pietre</StonecuttingSpeed.label>
-	<StonecuttingSpeed.description>La velocità con cui questa persona rompe pietre in blocchi.</StonecuttingSpeed.description>
-
-	<SmeltingSpeed.label>Velocità di fontere il metallo</SmeltingSpeed.label>
-	<SmeltingSpeed.description>La velocità alla quale questa persona scioglie i materiali e gli oggetti.</SmeltingSpeed.description>
+<SmeltingSpeed.label>Velocita' fusione</SmeltingSpeed.label>
+<SmeltingSpeed.description>Velocita' con cui il personaggio fonde oggetti. Nota: dal momento che si tratta di un lavoro manuale, non viene influenzato da nessuna abilita'.</SmeltingSpeed.description>
 
 </LanguageData>

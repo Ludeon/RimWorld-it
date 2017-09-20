@@ -1,16 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+
 <LanguageData>
 
-	<MeleeDPS.label>DPS corpo a corpo</MeleeDPS.label>
-	<MeleeDPS.description>Danno medio per secondo in combattimento corpo a corpo.</MeleeDPS.description>
-	
-	<ShootingAccuracy.label>precisione di tiro</ShootingAccuracy.label>
-	<ShootingAccuracy.description>La possibilità di colpire un bersaglio a distanza.</ShootingAccuracy.description>
-	
-	<AimingDelayFactor.label>tempo di ricarica</AimingDelayFactor.label>
-	<AimingDelayFactor.description>Il tempo necessario per la ricarica dopo il colpo.</AimingDelayFactor.description>
+<MeleeDPS.label>DPS in mischia</MeleeDPS.label>
+<MeleeDPS.description>Danno medio al secondo in combattimento corpo a corpo. Non tiene conto delle difese del bersaglio come la sua capacita' di schivare e l'armatura.</MeleeDPS.description>
 
-	<MeleeHitChance.label>possibilità di colpire in mischia</MeleeHitChance.label>
-	<MeleeHitChance.description>La possibilità di colpire un bersaglio in combattimento corpo a corpo.</MeleeHitChance.description>
+<MeleeHitChance.label>possibilita' colpo a segno</MeleeHitChance.label>
+<MeleeHitChance.description>Possibilita' di colpire un bersaglio in combattimento corpo a corpo. Il bersaglio puo' sempre schivare un colpo anche se questo e' andato a segno.</MeleeHitChance.description>
+
+<MeleeDodgeChance.label>possibilita' schivata</MeleeDodgeChance.label>
+<MeleeDodgeChance.description>Possibilita' di schivare un attacco in mischia che sarebbe andato a segno. I personaggi non schiveranno mentre mirano o sparano con un'arma da tiro.</MeleeDodgeChance.description>
+
+<ShootingAccuracy.label>precisione tiro</ShootingAccuracy.label>
+<ShootingAccuracy.description>Possibilita' di colpire un bersaglio dalla distanza.</ShootingAccuracy.description>
+
+<AimingDelayFactor.label>velocita' mira</AimingDelayFactor.label>
+<AimingDelayFactor.description>Tempo necessario per sparare dopo aver mirato.</AimingDelayFactor.description>
 
 </LanguageData>
