@@ -1,58 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
 <LanguageData>
 
-  <!--================= player pawn filters =================-->
-  
-  <GameStartDialog.label>Dialogo Start Game</GameStartDialog.label>
-  
-  <!--================= player pawn filters =================-->
-  
-  <PawnFilter_Age.label>Ammessa Età</PawnFilter_Age.label>
-  
-  <!--================== player pawn modifier ================-->
-  
-  <OnPawnDeathExplode.label>I personaggi esplodono dopo la morte</OnPawnDeathExplode.label>
-  
-  <ForcedTrait.label>Forced Mode. tratto</ForcedTrait.label>
-  
-  <ForcedHediff.label>Forced Mode. salute</ForcedHediff.label>
-  
-  <StartingResearch.label>ricerca fatta</StartingResearch.label>
-  
-  <MapCondition_Planetkiller.label>Distruttrice di Pianeti</MapCondition_Planetkiller.label>
-  <SetNeedLevel.label>Regolare il livello di necessità</SetNeedLevel.label>
-  
+<GameStartDialog.label>dialogo iniziale</GameStartDialog.label>
 
-  <!--=================== rules changes =================-->
-  
-  <Rule_DisallowDesignator_ZoneAdd_Growing.label>coltivazione disabilitato</Rule_DisallowDesignator_ZoneAdd_Growing.label>
-  
-  <Rule_DisallowDesignator_Mine.label>miniera disabilitato</Rule_DisallowDesignator_Mine.label>
-  
-  <Rule_DisallowDesignator_Hunt.label>caccia disabilitato</Rule_DisallowDesignator_Hunt.label>
-  
-  <Rule_DisallowDesignator_Tame.label>domare disabilitato</Rule_DisallowDesignator_Tame.label>
-  
-  <StatFactor.label>Moltiplicatore Status</StatFactor.label>
+<PawnFilter_Age.label>intervallo eta' ammessa</PawnFilter_Age.label>
 
-  <!--===============================================-->
-  <!--==================== grouped ==================-->
-  <!--===============================================-->
-  
-  <DisableIncident.label>incidenti disabilitato</DisableIncident.label>
-  
-  <Rule_DisallowBuilding.label>costruzione disabilitato</Rule_DisallowBuilding.label>
-  
-  <PermanentMapCondition.label>Permanente condizione</PermanentMapCondition.label>
-  
-  <StartingAnimal.label>Inizia con animali</StartingAnimal.label>
-  
-  <StartingThing_Defined.label>iniziare con</StartingThing_Defined.label>
-  
-  <ScatterThingsNearPlayerStart.label>iniziare vicino</ScatterThingsNearPlayerStart.label>
-  
-  <ScatterThingsAnywhere.label>distribuito a caso</ScatterThingsAnywhere.label>
-  
-  <CreateIncident.label>Crea evento</CreateIncident.label>
+<OnPawnDeathExplode.label>i personaggi esplodono dopo la morte</OnPawnDeathExplode.label>
+
+<ForcedTrait.label>forza tratto</ForcedTrait.label>
+
+<ForcedHediff.label>forza condizioni salute</ForcedHediff.label>
+
+<SetNeedLevel.label>imposta livello bisogni</SetNeedLevel.label>
+
+<StartingResearch.label>ricerche disponibili</StartingResearch.label>
+
+<GameCondition_Planetkiller.label>Planetkiller</GameCondition_Planetkiller.label>
+
+<Rule_DisallowDesignator_ZoneAdd_Growing.label>agricoltura disabilitata</Rule_DisallowDesignator_ZoneAdd_Growing.label>
+<Rule_DisallowDesignator_ZoneAdd_Growing.description>Impossibile piantare.</Rule_DisallowDesignator_ZoneAdd_Growing.description>
+
+<Rule_DisallowDesignator_Mine.label>estrazione mineraria disabilitata</Rule_DisallowDesignator_Mine.label>
+<Rule_DisallowDesignator_Mine.description>Impossibile scavare.</Rule_DisallowDesignator_Mine.description>
+
+<Rule_DisallowDesignator_Hunt.label>caccia disabilitata</Rule_DisallowDesignator_Hunt.label>
+<Rule_DisallowDesignator_Hunt.description>Impossibile cacciare.</Rule_DisallowDesignator_Hunt.description>
+
+<Rule_DisallowDesignator_Tame.label>addomesticamento disabilitato</Rule_DisallowDesignator_Tame.label>
+<Rule_DisallowDesignator_Tame.description>Impossibile addomesticare.</Rule_DisallowDesignator_Tame.description>
+
+<StatFactor.label>moltiplicatore statistiche</StatFactor.label>
+
+<DisableIncident.label>disabilita eventi</DisableIncident.label>
+
+<CreateIncident.label>crea eventi</CreateIncident.label>
+
+<Rule_DisallowBuilding.label>disabilita costruzione</Rule_DisallowBuilding.label>
+
+<PermanentGameCondition.label>condizioni permanenti di gioco</PermanentGameCondition.label>
+
+<StartingAnimal.label>inzia con animale(i)</StartingAnimal.label>
+
+<StartingThing_Defined.label>inizia con</StartingThing_Defined.label>
+
+<ScatterThingsNearPlayerStart.label>iniziare vicino</ScatterThingsNearPlayerStart.label>
+
+<ScatterThingsAnywhere.label>distribuzione casuale</ScatterThingsAnywhere.label>
   
 </LanguageData>
