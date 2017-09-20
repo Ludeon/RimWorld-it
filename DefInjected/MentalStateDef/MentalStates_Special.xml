@@ -1,28 +1,33 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
+
 <LanguageData>
 
-  <!-- Special mental states -->
+<WanderConfused.label>confusione</WanderConfused.label>
+<WanderConfused.beginLetter>{0} ha avuto un crollo nervoso e va in giro confuso(a).</WanderConfused.beginLetter>
+<WanderConfused.beginLetterLabel>confuso(a)</WanderConfused.beginLetterLabel>
+<WanderConfused.recoveryMessage>{0} non e' piu' confuso(a).</WanderConfused.recoveryMessage>
+<WanderConfused.baseInspectLine>Condizione: Confuso(a)</WanderConfused.baseInspectLine>
 
-  <WanderConfused.label>Confuso</WanderConfused.label>
-  <WanderConfused.beginLetterLabel>Confuso</WanderConfused.beginLetterLabel>
-  <WanderConfused.beginLetter>{0} ha avuto una crisi e va in giro confuso.</WanderConfused.beginLetter>
-  <WanderConfused.recoveryMessage>{0} non è più confusa.</WanderConfused.recoveryMessage>
-  <WanderConfused.baseInspectLine>Condizione: Confuso</WanderConfused.baseInspectLine>
+<PanicFlee.label>panico</PanicFlee.label>
+<PanicFlee.beginLetter>{0} fugge in preda al panico.</PanicFlee.beginLetter>
+<PanicFlee.beginLetterLabel>in preda al panico</PanicFlee.beginLetterLabel>
+<PanicFlee.recoveryMessage>{0} non fugge piu'.</PanicFlee.recoveryMessage>
+<PanicFlee.baseInspectLine>Condizione: In preda al panico</PanicFlee.baseInspectLine>
 
-  <PanicFlee.label>Panico</PanicFlee.label>
-  <PanicFlee.beginLetterLabel>Panico</PanicFlee.beginLetterLabel>
-  <PanicFlee.beginLetter>{0} fugge in preda al panico.</PanicFlee.beginLetter>
-  <PanicFlee.recoveryMessage>{0} non fuggie più.</PanicFlee.recoveryMessage>
-  <PanicFlee.baseInspectLine>Condizione: Panico</PanicFlee.baseInspectLine>
+<Manhunter.label>sete di sangue</Manhunter.label>
+<Manhunter.beginLetter>{0} va a caccia di uomini.</Manhunter.beginLetter>
+<Manhunter.beginLetterLabel>sete di sangue</Manhunter.beginLetterLabel>
+<Manhunter.recoveryMessage>{0} non va piu' a caccia di uomini.</Manhunter.recoveryMessage>
+<Manhunter.baseInspectLine>Condizione: Sete di sangue</Manhunter.baseInspectLine>
 
-  <Manhunter.label>Caccia all'uomo</Manhunter.label>
-  <Manhunter.beginLetterLabel>Caccia all'uomo</Manhunter.beginLetterLabel>
-  <Manhunter.beginLetter>{0} e un cacciatore di uomini.</Manhunter.beginLetter>
-  <Manhunter.recoveryMessage>La sete di sangue di {0} è passata.</Manhunter.recoveryMessage>
-  <Manhunter.baseInspectLine>Condizione: cacciatore di uomini</Manhunter.baseInspectLine>
+<ManhunterPermanent.label>sete di sangue</ManhunterPermanent.label>
+<ManhunterPermanent.beginLetter>{0} e' diventato un cacciatore di uomini!</ManhunterPermanent.beginLetter>
+<ManhunterPermanent.beginLetterLabel>sete di sangue</ManhunterPermanent.beginLetterLabel>
+<ManhunterPermanent.recoveryMessage>{0} non va piu' a caccia di uomini.</ManhunterPermanent.recoveryMessage>
+<ManhunterPermanent.baseInspectLine>Condizione: Sete di sangue</ManhunterPermanent.baseInspectLine>
 
-  <SocialFighting.label>Rissa</SocialFighting.label>
-  <SocialFighting.recoveryMessage>{0} e {1} combattono.</SocialFighting.recoveryMessage>
-  <SocialFighting.baseInspectLine>Condizione: Rissa</SocialFighting.baseInspectLine>
+<SocialFighting.label>rissa</SocialFighting.label>
+<SocialFighting.baseInspectLine>Condizione: Rissa</SocialFighting.baseInspectLine>
+<SocialFighting.recoveryMessage>{0} e {1} si prendono a pugni.</SocialFighting.recoveryMessage>
 
 </LanguageData>
