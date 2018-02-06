@@ -1,4 +1,4 @@
-Rimworld Italian
+RimWorld Italian
 ================
 
 This is the Italian translation data for RimWorld.
