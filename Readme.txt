@@ -1,5 +1,6 @@
 RimWorld Italian
 ================
+Target Version: 0.18.1722
 
 This is the Italian translation data for RimWorld.
 
