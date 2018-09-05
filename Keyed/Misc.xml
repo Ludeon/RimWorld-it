@@ -1,53 +1,136 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-<Autosaving>Salvataggio automatico</Autosaving>
-<GameStartDialog>Vi risvegliate tutti e tre nelle vostre bare cryosonno tra sirene e suoni di metallo che si squarcia. Avete appena il tempo di raggiungere le capsule di salvataggio prima che la nave si spezzi in due.\n\nQualche tempo dopo, atterrate su un mondo sconosciuto del bordo esterno.\n\nMentre i pezzi dell'astronave si schiantano intorno a voi, iniziate a pianificare qualcosa per sopravvivere.</GameStartDialog>
-<Colony>Colonia</Colony>
-<ChangeLanguageFromMainMenu>Puoi cambiare la lingua soltanto dal menu' principale.</ChangeLanguageFromMainMenu>
-<AndLower>e</AndLower>
-<DisabledLower>disabilitato</DisabledLower>
-<VersionIndicator>Versione {0}</VersionIndicator>
-<DevelopmentBuildLower>Versione di sviluppo</DevelopmentBuildLower>
-<CompiledOn>Compilata il {0}</CompiledOn>
-<LoggedIntoSteamAs>Connesso a Steam come {0}</LoggedIntoSteamAs>
-<Yes>Si</Yes>
-<No>No</No>
-<min>min</min>
-<max>max</max>
-<chance>possibilita'</chance>
-<context>situazione</context>
-<multiplier>multiplicatore</multiplier>
-<damage>danni</damage>
-<radius>raggio</radius>
-<durationDays>durata (giorni)</durationDays>
-<intervalDays>intervallo (giorni)</intervalDays>
-<repeat>ripetere</repeat>
-<default>default</default>
-<MeatLabel>Carne di {0}</MeatLabel>
-<MeatDesc>Carne cruda in pezzi. Puo' essere cucinata o mangiata in questo stato.</MeatDesc>
-<LeatherLabel>Pelle di {0}</LeatherLabel>
-<LeatherDesc>Pelle trattata, essiccata e raschiata. Un buon materiale tradizionale per la realizzazione di abiti e sacchi.</LeatherDesc>
-<CorpseLabel>Corpo di {0}</CorpseLabel>
-<CorpseDesc>Cadavere di un {0}.</CorpseDesc>
-<DeadLabel>{0} (morto)</DeadLabel>
-<RoughStoneTerrainLabel>{0} grezzo(a)</RoughStoneTerrainLabel>
-<RoughStoneTerrainDesc>Pavimento di {0} grezzo(a).</RoughStoneTerrainDesc>
-<RoughHewnStoneTerrainLabel>{0} grezzo(a) intagliato(a) grossolanamente.</RoughHewnStoneTerrainLabel>
-<RoughHewnStoneTerrainDesc>Pavimento di {0} grezzo(a) intagliato(a) grossolanamente.</RoughHewnStoneTerrainDesc>
-<SmoothStoneTerrainLabel>{0} levigato(a)</SmoothStoneTerrainLabel>
-<SmoothStoneTerrainDesc>Pavimento di {0} levigato(a).</SmoothStoneTerrainDesc>
-<BlueprintLabelExtra> (progetto)</BlueprintLabelExtra>
-<FrameLabelExtra> (costruzione)</FrameLabelExtra>
-<ThingMadeOfStuffLabel>{1} di {0}</ThingMadeOfStuffLabel>
-<SomeonesRoom>{1} di {0}</SomeonesRoom>
-<CouplesRoom>{2} di {0} e {1}</CouplesRoom>
-<VariousLabel>(vari)</VariousLabel>
-<ColonistDied>Un colono e' morto.</ColonistDied>
-<North>Nord</North>
-<South>Sud</South>
-<West>Ovest</West>
-<East>Est</East>
+  <!-- EN: Autosaving -->
+  <Autosaving>Salvataggio automatico</Autosaving>
+  <!-- EN: The three of you awake in your cryptosleep sarcophagi to the sound of sirens and ripping metal. You barely get to the escape pods before the ship is torn apart.\n\nSome time later, you land on this unknown rimworld.\n\nAs pieces of the shredded starship fall around you, you start making plans to survive. -->
+  <GameStartDialog>Vi risvegliate tutti e tre nelle vostre bare cryosonno tra sirene e suoni di metallo che si squarcia. Avete appena il tempo di raggiungere le capsule di salvataggio prima che la nave si spezzi in due.\n\nQualche tempo dopo, atterrate su un mondo sconosciuto del bordo esterno.\n\nMentre i pezzi dell'astronave si schiantano intorno a voi, iniziate a pianificare qualcosa per sopravvivere.</GameStartDialog>
+  <!-- EN: Colony -->
+  <Colony>Colonia</Colony>
+  <!-- EN: You can only change language from the options screen on the main menu. -->
+  <ChangeLanguageFromMainMenu>Puoi cambiare la lingua soltanto dal menu' principale.</ChangeLanguageFromMainMenu>
+  <!-- EN: and -->
+  <AndLower>e</AndLower>
+  <!-- EN: disabled -->
+  <DisabledLower>disabilitato</DisabledLower>
+
+  <!-- EN: Version {0} -->
+  <VersionIndicator>Versione {0}</VersionIndicator>
+  <!-- EN: development build -->
+  <DevelopmentBuildLower>Versione di sviluppo</DevelopmentBuildLower>
+  <!-- EN: Compiled {0} -->
+  <CompiledOn>Compilata il {0}</CompiledOn>
+  <!-- EN: Logged into Steam as {0} -->
+  <LoggedIntoSteamAs>Connesso a Steam come {0}</LoggedIntoSteamAs>
+
+  <!-- General-use words -->
+  <!-- EN: Yes -->
+  <Yes>Sì</Yes>
+  <!-- EN: No -->
+  <No>No</No>
+  <!-- EN: min -->
+  <min>min</min>
+  <!-- EN: max -->
+  <max>max</max>
+  <!-- EN: chance -->
+  <chance>possibilità</chance>
+  <!-- EN: context -->
+  <context>situazione</context>
+  <!-- EN: multiplier -->
+  <multiplier>multiplicatore</multiplier>
+  <!-- EN: damage -->
+  <damage>danni</damage>
+  <!-- EN: radius -->
+  <radius>raggio</radius>
+  <!-- EN: duration (days) -->
+  <durationDays>durata (giorni)</durationDays>
+  <!-- EN: interval (days) -->
+  <intervalDays>intervallo (giorni)</intervalDays>
+  <!-- EN: repeat -->
+  <repeat>ripetere</repeat>
+  <!-- EN: default -->
+  <default>predefinito</default>
+  <!-- EN: distance -->
+  <distance>TODO</distance>
+  <!-- EN: YES -->
+  <YesUppercase>SÌ</YesUppercase>
+  <!-- EN: NO -->
+  <NoUppercase>NO</NoUppercase>
+  <!-- EN: kg -->
+  <kg>kg</kg>
+  <!-- EN: Day -->
+  <Day>Giorno</Day>
+  <!-- EN: day -->
+  <day>giorno</day>
+  <!-- EN: Default -->
+  <Default>Predefinito</Default>
+  <!-- EN: Average -->
+  <Average>Media</Average>
+
+  <!-- Content generation-->
+  
+  <!-- EN: {0} meat -->
+  <MeatLabel>Carne di {0}</MeatLabel>
+  <!-- EN: Raw butchered flesh. Can be cooked into meals, or eaten raw. -->
+  <MeatDesc>Carne cruda in pezzi. Può essere cucinata o mangiata in questo stato.</MeatDesc>
+  <!-- EN: Raw butchered flesh. If necessary, can be cooked into meals, or even eaten raw. Extremely unappetizing. -->
+  <MeatInsectDesc>Carne cruda in pezzi. Può essere cucinata o mangiata in questo stato. Estremamente gustoso.</MeatInsectDesc>
+  <!-- EN: Raw butchered flesh. Can be cooked into meals or eaten raw, although most humans dislike the idea. -->
+  <MeatHumanDesc>Carne cruda in pezzi. Può essere cucinata o mangiata in questo stato. Ma alla maggior parte della gente non piace l'idea.</MeatHumanDesc>
+
+  <!-- EN: {0} corpse -->
+  <CorpseLabel>Corpo di {0}</CorpseLabel>
+  <!-- EN: Dead body of a {0}. -->
+  <CorpseDesc>Cadavere di un {0}.</CorpseDesc>
+  <!-- EN: {1_label} (dead) -->
+  <DeadLabel>{0} (morto)</DeadLabel>
+
+  <!-- EN: rough {0} -->
+  <RoughStoneTerrainLabel>{0} grezzo(a)</RoughStoneTerrainLabel>
+  <!-- EN: Rough, natural {0} ground. -->
+  <RoughStoneTerrainDesc>Pavimento di {0} grezzo(a).</RoughStoneTerrainDesc>
+  <!-- EN: rough-hewn {0} -->
+  <RoughHewnStoneTerrainLabel>{0} grezzo(a) intagliato(a) grossolanamente.</RoughHewnStoneTerrainLabel>
+  <!-- EN: Roughly cut natural {0} floor. -->
+  <RoughHewnStoneTerrainDesc>Pavimento di {0} grezzo(a) intagliato(a) grossolanamente.</RoughHewnStoneTerrainDesc>
+  <!-- EN: smooth {0} -->
+  <SmoothStoneTerrainLabel>{0} levigato(a)</SmoothStoneTerrainLabel>
+  <!-- EN: Smoothed natural {0} floor. -->
+  <SmoothStoneTerrainDesc>Pavimento di {0} levigato(a).</SmoothStoneTerrainDesc>
+
+  <!-- EN:  (blueprint) -->
+  <BlueprintLabelExtra> (progetto)</BlueprintLabelExtra>
+  <!-- EN:  (building) -->
+  <FrameLabelExtra> (costruzione)</FrameLabelExtra>
+
+  <!-- EN: Unaffiliated -->
+  <FactionUnaffiliated>Non affiliato</FactionUnaffiliated>
+
+  <!-- For things made of stuff, e.g. "Stone bed" -->
+  <!-- 0 is the stuffAdjective property under stuffProps and 1 is the label -->
+  <!-- EN: {0} {1} -->
+  <ThingMadeOfStuffLabel>{1} di {0}</ThingMadeOfStuffLabel>
+
+  <!-- EN: {PAWN_labelShort}'s {1} -->
+  <SomeonesRoom>{1} di {0}</SomeonesRoom>
+  <!-- EN: {PAWN1_labelShort} and {PAWN2_labelShort}'s {2} -->
+  <CouplesRoom>{2} di {0} e {1}</CouplesRoom>
+  
+  <!-- EN: (various) -->
+  <VariousLabel>(vari)</VariousLabel>
+
+  <!-- History events -->
+  <!-- EN: Colonist died -->
+  <ColonistDied>Un colono e' morto.</ColonistDied>
+  
+  <!-- Rotation -->
+  <!-- EN: North -->
+  <North>Nord</North>
+  <!-- EN: South -->
+  <South>Sud</South>
+  <!-- EN: West -->
+  <West>Ovest</West>
+  <!-- EN: East -->
+  <East>Est</East>
 
 </LanguageData>
