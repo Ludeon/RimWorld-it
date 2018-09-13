@@ -1,45 +1,91 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
-<MoveSpeed.label>velocita' movimento</MoveSpeed.label>
-<MoveSpeed.description>Velocita' di movimento sul mondo in celle al secondo.</MoveSpeed.description>
-<MoveSpeed.formatString>{0} caselle/s</MoveSpeed.formatString>
-
-<MentalBreakThreshold.label>soglia crollo nervoso</MentalBreakThreshold.label>
-<MentalBreakThreshold.description>Livello minimo di umore al di sotto del quale si corre il rischio di subire un crollo nervoso.</MentalBreakThreshold.description>
-
-<PsychicSensitivity.label>sensibilita' psionica</PsychicSensitivity.label>
-<PsychicSensitivity.description>Moltiplicatore all'impatto dei fenomeni psichici che interessano il personaggio.</PsychicSensitivity.description>
-
-<ToxicSensitivity.label>sensibilita' tossicita'</ToxicSensitivity.label>
-<ToxicSensitivity.description>Moltiplicatore all'impatto dei fenomeni di avvelenamento che interessano il personaggio.</ToxicSensitivity.description>
-
-<GlobalLearningFactor.label>fattore apprendimento globale</GlobalLearningFactor.label>
-<GlobalLearningFactor.description>Efficacia complessiva di apprendimento per ogni competenza.</GlobalLearningFactor.description>
-
-<EatingSpeed.label>velocita' digestione</EatingSpeed.label>
-<EatingSpeed.description>Moltiplicatore alla velocita' con la quale un pasto viene consumato.</EatingSpeed.description>
-
-<ComfyTemperatureMin.label>Temperatura minima di confort</ComfyTemperatureMin.label>
-<ComfyTemperatureMin.description>Livello minimo di temperatura al di sotto della quale il personaggio sara' infelice. Se la temperatura scende troppo il soggetto soffrira' per congelamento, ipotermia ed infine morira'.</ComfyTemperatureMin.description>
-
-<ComfyTemperatureMax.label>Temperatura massima di confort</ComfyTemperatureMax.label>
-<ComfyTemperatureMax.description>Livello minimo di temperatura al di sopra della quale il personaggio sara' infelice. Se la temperatura sale troppo il soggetto soffrira' per ipertermia ed infine morira'.</ComfyTemperatureMax.description>
-
-<ImmunityGainSpeed.label>velocita' immunita' malattie</ImmunityGainSpeed.label>
-<ImmunityGainSpeed.description>Velocita' velocita' di acquisizione dell'immunita' per una malattia. Se e' troppo lenta, il soggetto morira' per la malattia prima di sviluppare l'immunita'.</ImmunityGainSpeed.description>
-
-<CarryingCapacity.label>capacita' transporto</CarryingCapacity.label>
-<CarryingCapacity.description>Quantita' di cose trasportabile dalla creatura con le mani, la bocca, o in altro modo.</CarryingCapacity.description>
-
-<MeatAmount.label>quantita' di carne</MeatAmount.label>
-<MeatAmount.description>Quantita' di carne ottenibile dal macellamento della creatura. </MeatAmount.description>
-
-<LeatherAmount.label>quantita di pelle</LeatherAmount.label>
-<LeatherAmount.description>Quantita' di pelle ottenibile dal macellamento della creatura.</LeatherAmount.description>
-
-<MinimumHandlingSkill.label>livello minimo addestramento</MinimumHandlingSkill.label>
-<MinimumHandlingSkill.description>Livello minimo di abilita' di addestramento necessario per l'addomesticamento, l'allenamento o il comando della creatura.</MinimumHandlingSkill.description>
-
+  
+  <!-- EN: carrying capacity -->
+  <CarryingCapacity.label>capacita' transporto</CarryingCapacity.label>
+  <!-- EN: The amount of stuff this creature can carry in its hands, mouth, or other manipulators. This is separate from the ability to carry cargo on long cross-world trips. -->
+  <CarryingCapacity.description>Quantita' di cose trasportabile dalla creatura con le mani, la bocca, o in altro modo.</CarryingCapacity.description>
+  
+  <!-- EN: Maximum comfortable temperature -->
+  <ComfyTemperatureMax.label>Temperatura massima di confort</ComfyTemperatureMax.label>
+  <!-- EN: Above this temperature, characters will be unhappy. Significantly above this temperature, they will develop heatstroke and eventually die. -->
+  <ComfyTemperatureMax.description>Livello minimo di temperatura al di sopra della quale il personaggio sara' infelice. Se la temperatura sale troppo il soggetto soffrira' per ipertermia ed infine morira'.</ComfyTemperatureMax.description>
+  
+  <!-- EN: Minimum comfortable temperature -->
+  <ComfyTemperatureMin.label>Temperatura minima di confort</ComfyTemperatureMin.label>
+  <!-- EN: Below this temperature, characters will be unhappy. Significantly below this temperature, they will develop hypothermia and frostbite and eventually die. -->
+  <ComfyTemperatureMin.description>Livello minimo di temperatura al di sotto della quale il personaggio sara' infelice. Se la temperatura scende troppo il soggetto soffrira' per congelamento, ipotermia ed infine morira'.</ComfyTemperatureMin.description>
+  
+  <!-- EN: eating speed -->
+  <EatingSpeed.label>velocita' digestione</EatingSpeed.label>
+  <!-- EN: A multiplier on eating speed. -->
+  <EatingSpeed.description>Moltiplicatore alla velocita' con la quale un pasto viene consumato.</EatingSpeed.description>
+  
+  <!-- EN: foraged food amount -->
+  <ForagedNutritionPerDay.label>TODO</ForagedNutritionPerDay.label>
+  <!-- EN: The amount of nutrition this person will automatically forage per day while traveling by caravan. -->
+  <ForagedNutritionPerDay.description>TODO</ForagedNutritionPerDay.description>
+  
+  <!-- EN: global learning factor -->
+  <GlobalLearningFactor.label>fattore apprendimento globale</GlobalLearningFactor.label>
+  <!-- EN: A multiplier on the learning rate for all skills. -->
+  <GlobalLearningFactor.description>Efficacia complessiva di apprendimento per ogni competenza.</GlobalLearningFactor.description>
+  
+  <!-- EN: hunger rate multiplier -->
+  <HungerRateMultiplier.label>TODO</HungerRateMultiplier.label>
+  <!-- EN: A multiplier on how quickly a creature becomes hungry. -->
+  <HungerRateMultiplier.description>TODO</HungerRateMultiplier.description>
+  
+  <!-- EN: immunity gain speed -->
+  <ImmunityGainSpeed.label>velocita' immunita' malattie</ImmunityGainSpeed.label>
+  <!-- EN: The speed at which this character gains immunity to diseases. If this is too slow, the character will die from a disease before developing immunity. -->
+  <ImmunityGainSpeed.description>Velocita' velocita' di acquisizione dell'immunita' per una malattia. Se e' troppo lenta, il soggetto morira' per la malattia prima di sviluppare l'immunita'.</ImmunityGainSpeed.description>
+  
+  <!-- EN: leather amount -->
+  <LeatherAmount.label>quantita di pelle</LeatherAmount.label>
+  <!-- EN: The amount of leather yielded when butchering this creature. -->
+  <LeatherAmount.description>Quantita' di pelle ottenibile dal macellamento della creatura.</LeatherAmount.description>
+  
+  <!-- EN: meat amount -->
+  <MeatAmount.label>quantita' di carne</MeatAmount.label>
+  <!-- EN: The amount of meat yielded when butchering this creature. -->
+  <MeatAmount.description>Quantita' di carne ottenibile dal macellamento della creatura. </MeatAmount.description>
+  
+  <!-- EN: mental break threshold -->
+  <MentalBreakThreshold.label>soglia crollo nervoso</MentalBreakThreshold.label>
+  <!-- EN: As long as someone's mood is below this level, they are in danger of having a mental break. The severity of the mental break will depend on how far below the threshold they are. -->
+  <MentalBreakThreshold.description>Livello minimo di umore al di sotto del quale si corre il rischio di subire un crollo nervoso.</MentalBreakThreshold.description>
+  
+  <!-- EN: minimum handling skill -->
+  <MinimumHandlingSkill.label>livello minimo addestramento</MinimumHandlingSkill.label>
+  <!-- EN: This creature cannot be tamed, trained, or commanded by anyone with less than this skill in animals. -->
+  <MinimumHandlingSkill.description>Livello minimo di abilita' di addestramento necessario per l'addomesticamento, l'allenamento o il comando della creatura.</MinimumHandlingSkill.description>
+  
+  <!-- EN: move speed -->
+  <MoveSpeed.label>velocita' movimento</MoveSpeed.label>
+  <!-- EN: Speed of movement in cells per second. -->
+  <MoveSpeed.description>Velocita' di movimento sul mondo in celle al secondo.</MoveSpeed.description>
+  <!-- EN: {0} c/s -->
+  <MoveSpeed.formatString>{0} caselle/s</MoveSpeed.formatString>
+  
+  <!-- EN: pain shock threshold -->
+  <PainShockThreshold.label>TODO</PainShockThreshold.label>
+  <!-- EN: The pain level at which this creature is downed from pain. -->
+  <PainShockThreshold.description>TODO</PainShockThreshold.description>
+  
+  <!-- EN: psychic sensitivity -->
+  <PsychicSensitivity.label>sensibilita' psionica</PsychicSensitivity.label>
+  <!-- EN: Multiplier on the impact of psychic phenomena affecting this person. More sensitive people both suffer more from negative psychic effects, and benefit more from positive ones. -->
+  <PsychicSensitivity.description>Moltiplicatore all'impatto dei fenomeni psichici che interessano il personaggio.</PsychicSensitivity.description>
+  
+  <!-- EN: rest rate multiplier -->
+  <RestRateMultiplier.label>TODO</RestRateMultiplier.label>
+  <!-- EN: A multiplier on how quickly a creature rests while sleeping. -->
+  <RestRateMultiplier.description>TODO</RestRateMultiplier.description>
+  
+  <!-- EN: toxic sensitivity -->
+  <ToxicSensitivity.label>sensibilita' tossicita'</ToxicSensitivity.label>
+  <!-- EN: Multiplier on the impact of toxic buildup on this creature. -->
+  <ToxicSensitivity.description>Moltiplicatore all'impatto dei fenomeni di avvelenamento che interessano il personaggio.</ToxicSensitivity.description>
+  
 </LanguageData>

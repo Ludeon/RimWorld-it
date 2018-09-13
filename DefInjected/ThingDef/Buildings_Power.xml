@@ -1,48 +1,54 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
-<PowerConduit.label>cavo elettrico</PowerConduit.label>
-<PowerConduit.description>Un insieme di cavi elettrici utilizzato per condurre elettricita'. Puo' essere installato all'interno di muri e di altre costruzioni.</PowerConduit.description>
-<PowerConduit_Blueprint.label>cavo elettrico (progetto)</PowerConduit_Blueprint.label>
-<PowerConduit_Frame.label>un cavo elettrico</PowerConduit_Frame.label>
-<PowerConduit_Frame.description>Un insieme di cavi elettrici utilizzato per condurre elettricita'. Puo' essere installato all'interno di muri e di altre costruzioni.</PowerConduit_Frame.description>
-
-<PowerSwitch.label>interruttore</PowerSwitch.label>
-<PowerSwitch.description>Apre o chiude i circuiti elettrici.</PowerSwitch.description>
-<PowerSwitch_Blueprint.label>interruttore (progetto)</PowerSwitch_Blueprint.label>
-<PowerSwitch_Frame.label>un interruttore</PowerSwitch_Frame.label>
-<PowerSwitch_Frame.description>Apre o chiude i circuiti elettrici.</PowerSwitch_Frame.description>
-
-<WoodFiredGenerator.label>generatore alimentato da legna</WoodFiredGenerator.label>
-<WoodFiredGenerator.description>Produce elettricità bruciando legno. Deve essere alimentato manualmente.</WoodFiredGenerator.description>
-<WoodFiredGenerator_Blueprint.label>generatore a combustibile (progetto)</WoodFiredGenerator_Blueprint.label>
-<WoodFiredGenerator_Frame.label>un generatore a combustibile</WoodFiredGenerator_Frame.label>
-<WoodFiredGenerator_Frame.description>Produce elettricita' bruciando legno. Deve essere alimentato manualmente.</WoodFiredGenerator_Frame.description>
-
-<ChemfuelPoweredGenerator.label>generatore alimentato da benzina</ChemfuelPoweredGenerator.label>
-<ChemfuelPoweredGenerator.description>Produrre elettricita' bruciando benzina. Deve essere alimentato manualmente.</ChemfuelPoweredGenerator.description>
-<ChemfuelPoweredGenerator_Blueprint.label>generatore a combustibile (progetto)</ChemfuelPoweredGenerator_Blueprint.label>
-<ChemfuelPoweredGenerator_Frame.label>un generatore a combustibile</ChemfuelPoweredGenerator_Frame.label>
-<ChemfuelPoweredGenerator_Frame.description>Produce elettricita' bruciando benzina. Deve essere alimentato manualmente.</ChemfuelPoweredGenerator_Frame.description>
-
-<Battery.label>batteria</Battery.label>
-<Battery.description>Accumula elettricita' quando c'e' un'eccesso di produzione e la eroga quando c'e' una carenza. Attenzione: le batterie cariche rischiano di esplodere quando vengono esposte al fuoco o alla pioggia.</Battery.description>
-<Battery_Blueprint.label>batteria (progetto)</Battery_Blueprint.label>
-<Battery_Blueprint_Install.label>batteria (nuova posizione)</Battery_Blueprint_Install.label>
-<Battery_Frame.label>una batteria</Battery_Frame.label>
-<Battery_Frame.description>Accumula elettricita' quando c'e' un'eccesso di produzione e la eroga quando c'e' una carenza. Attenzione: le batterie cariche rischiano di esplodere quando vengono esposte al fuoco o alla pioggia.</Battery_Frame.description>
-
-<SolarGenerator.label>pannello solare</SolarGenerator.label>
-<SolarGenerator.description>Produce elettricita' sfruttando la luce solare. Non funziona all'oscurita'.</SolarGenerator.description>
-<SolarGenerator_Blueprint.label>pannello solare (progetto)</SolarGenerator_Blueprint.label>
-<SolarGenerator_Frame.label>un pannello solare</SolarGenerator_Frame.label>
-<SolarGenerator_Frame.description>Produce elettricita' sfruttando la luce solare. Non funziona all'oscurita'.</SolarGenerator_Frame.description>
-
-<GeothermalGenerator.label>generatore geotermico</GeothermalGenerator.label>
-<GeothermalGenerator.description>Produce elettricita' sfruttando i potenti getti di vapore rilasciati dai geyser. Deve essere posizionato sopra un geyser.</GeothermalGenerator.description>
-<GeothermalGenerator_Blueprint.label>generatore geotermico (progetto)</GeothermalGenerator_Blueprint.label>
-<GeothermalGenerator_Frame.label>un generatore geotermico</GeothermalGenerator_Frame.label>
-<GeothermalGenerator_Frame.description>Produce elettricita' sfruttando i potenti getti di vapore rilasciati dai geyser. Deve essere posizionato sopra un geyser.</GeothermalGenerator_Frame.description>
-
+  
+  <!-- EN: battery -->
+  <Battery.label>batteria</Battery.label>
+  <!-- EN: Stores electricity for later use. Charged batteries explode when exposed to rain or fire. -->
+  <Battery.description>Accumula elettricita' quando c'e' un'eccesso di produzione e la eroga quando c'e' una carenza. Attenzione: le batterie cariche rischiano di esplodere quando vengono esposte al fuoco o alla pioggia.</Battery.description>
+  
+  <!-- EN: chemfuel powered generator -->
+  <ChemfuelPoweredGenerator.label>generatore alimentato da benzina</ChemfuelPoweredGenerator.label>
+  <!-- EN: Produces power by consuming chemfuel. Must be periodically refueled by hand. -->
+  <ChemfuelPoweredGenerator.description>Produrre elettricita' bruciando benzina. Deve essere alimentato manualmente.</ChemfuelPoweredGenerator.description>
+  
+  <!-- EN: geothermal generator -->
+  <GeothermalGenerator.label>generatore geotermico</GeothermalGenerator.label>
+  <!-- EN: Produces electricity from geothermal steam geysers. Must be placed on a steam geyser. -->
+  <GeothermalGenerator.description>Produce elettricita' sfruttando i potenti getti di vapore rilasciati dai geyser. Deve essere posizionato sopra un geyser.</GeothermalGenerator.description>
+  
+  <!-- EN: power conduit -->
+  <PowerConduit.label>cavo elettrico</PowerConduit.label>
+  <!-- EN: A bundle of electrical cables for moving power around. Can be placed under walls and other buildings. -->
+  <PowerConduit.description>Un insieme di cavi elettrici utilizzato per condurre elettricita'. Puo' essere installato all'interno di muri e di altre costruzioni.</PowerConduit.description>
+  
+  <!-- EN: power switch -->
+  <PowerSwitch.label>interruttore</PowerSwitch.label>
+  <!-- EN: Switches power on/off. -->
+  <PowerSwitch.description>Apre o chiude i circuiti elettrici.</PowerSwitch.description>
+  
+  <!-- EN: solar generator -->
+  <SolarGenerator.label>pannello solare</SolarGenerator.label>
+  <!-- EN: Produces electricity from sunlight. Does not work in the dark or under artificial light. -->
+  <SolarGenerator.description>Produce elettricita' sfruttando la luce solare. Non funziona all'oscurita'.</SolarGenerator.description>
+  
+  <!-- EN: watermill generator -->
+  <WatermillGenerator.label>TODO</WatermillGenerator.label>
+  <!-- EN: Produces electricity from a river. Must be placed with its wheel in moving water. If watermills are placed too close together, the turbulence they generate will interfere and reduce power generation. -->
+  <WatermillGenerator.description>TODO</WatermillGenerator.description>
+  
+  <!-- EN: waterproof conduit -->
+  <WaterproofConduit.label>TODO</WaterproofConduit.label>
+  <!-- EN: Insulated electrical cables for transmitting power under shallow water. -->
+  <WaterproofConduit.description>TODO</WaterproofConduit.description>
+  
+  <!-- EN: wind turbine -->
+  <WindTurbine.label>turbina eolica</WindTurbine.label>
+  <!-- EN: A wind-powered electrical generator. Requires a large clear space in front and behind for optimal air flow. -->
+  <WindTurbine.description>Una turbina che genera elettricita' sfruttando il vento. Richiede un grande spazio aperto davanti e dietro per un funzionamento ottimale.</WindTurbine.description>
+  
+  <!-- EN: wood-fired generator -->
+  <WoodFiredGenerator.label>generatore alimentato da legna</WoodFiredGenerator.label>
+  <!-- EN: Produces power by consuming wood. Must be periodically loaded with wood fuel by hand. -->
+  <WoodFiredGenerator.description>Produce elettricità bruciando legno. Deve essere alimentato manualmente.</WoodFiredGenerator.description>
+  
 </LanguageData>

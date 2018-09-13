@@ -1,37 +1,67 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
-<MakeStoneBlocksAny.label>intagliare qualsiasi pezzo di pietra</MakeStoneBlocksAny.label>
-<MakeStoneBlocksAny.description>Intagliare pezzi di pietra in blocchi utilizzabili.</MakeStoneBlocksAny.description>
-<MakeStoneBlocksAny.jobString>Intaglia pezzi di pietra in blocchi.</MakeStoneBlocksAny.jobString>
-
-<ExtractMetalFromSlag.label>recuperare metallo da rottami</ExtractMetalFromSlag.label>
-<ExtractMetalFromSlag.description>Usare il calore e forti elettromagneti per estrarre metallo utile da rottami.</ExtractMetalFromSlag.description>
-<ExtractMetalFromSlag.jobString>Fonde metallo dai rottami.</ExtractMetalFromSlag.jobString>
-
-<SmeltWeapon.label>fondere arma</SmeltWeapon.label>
-<SmeltWeapon.description>Usare il calore e forti elettromagneti per fondere armi in metallo utile.</SmeltWeapon.description>
-<SmeltWeapon.jobString>Fonde arma.</SmeltWeapon.jobString>
-
-<DestroyWeapon.label>distruggere arma</DestroyWeapon.label>
-<DestroyWeapon.description>Usare il calore per distruggere armi indesiderate. Piu' rapido della fusione e funziona anche su oggetti non riciclabili, ma non da' risorse.</DestroyWeapon.description>
-<DestroyWeapon.jobString>Distrugge arma.</DestroyWeapon.jobString>
-
-<MakeMortarShell.label>produrre granate di mortaio</MakeMortarShell.label>
-<MakeMortarShell.description>Produrre una granata di mortaio.</MakeMortarShell.description>
-<MakeMortarShell.jobString>Produrre granata di mortaio.</MakeMortarShell.jobString>
-
-<MakeChemfuelFromWood.label>produrre chemfuel da legno</MakeChemfuelFromWood.label>
-<MakeChemfuelFromWood.description>Produrre una partita di chemfuel gasificando trochi di legno.</MakeChemfuelFromWood.description>
-<MakeChemfuelFromWood.jobString>Raffina chemfuel dal legno.</MakeChemfuelFromWood.jobString>
-
-<MakeChemfuelFromOrganics.label>produrre chemfuel da componenti organici</MakeChemfuelFromOrganics.label>
-<MakeChemfuelFromOrganics.description>Produrre una partita di chemfuel estraendo biocarburante da materie prime organiche.</MakeChemfuelFromOrganics.description>
-<MakeChemfuelFromOrganics.jobString>Raffina chemfuel da componenti organici.</MakeChemfuelFromOrganics.jobString>
-
-<MakeComponent.label>produrre componente</MakeComponent.label>
-<MakeComponent.description>Produrre un componente.</MakeComponent.description>
-<MakeComponent.jobString>Produce componenti.</MakeComponent.jobString>
-
+  
+  <!-- EN: destroy weapon -->
+  <DestroyWeapon.label>distruggere arma</DestroyWeapon.label>
+  <!-- EN: Use heat to destroy unwanted weapons. This process is faster than smelting, and works on non-smeltable items, but yields no resources. -->
+  <DestroyWeapon.description>Usare il calore per distruggere armi indesiderate. Piu' rapido della fusione e funziona anche su oggetti non riciclabili, ma non da' risorse.</DestroyWeapon.description>
+  <!-- EN: Destroying weapon. -->
+  <DestroyWeapon.jobString>Distrugge arma.</DestroyWeapon.jobString>
+  
+  <!-- EN: smelt metal from slag -->
+  <ExtractMetalFromSlag.label>recuperare metallo da rottami</ExtractMetalFromSlag.label>
+  <!-- EN: Use heat and strong electromagnets to extract useful metal from slag chunks. -->
+  <ExtractMetalFromSlag.description>Usare il calore e forti elettromagneti per estrarre metallo utile da rottami.</ExtractMetalFromSlag.description>
+  <!-- EN: Smelting metal from slag. -->
+  <ExtractMetalFromSlag.jobString>Fonde metallo dai rottami.</ExtractMetalFromSlag.jobString>
+  
+  <!-- EN: make chemfuel from organics -->
+  <Make_ChemfuelFromOrganics.label>produrre chemfuel da componenti organici</Make_ChemfuelFromOrganics.label>
+  <!-- EN: Make a batch of chemfuel by extracting biofuel from organic feedstocks. -->
+  <Make_ChemfuelFromOrganics.description>Produrre una partita di chemfuel estraendo biocarburante da materie prime organiche.</Make_ChemfuelFromOrganics.description>
+  <!-- EN: Refining chemfuel from organics. -->
+  <Make_ChemfuelFromOrganics.jobString>Raffina chemfuel da componenti organici.</Make_ChemfuelFromOrganics.jobString>
+  
+  <!-- EN: make chemfuel from wood -->
+  <Make_ChemfuelFromWood.label>produrre chemfuel da legno</Make_ChemfuelFromWood.label>
+  <!-- EN: Make a batch of chemfuel by extracting and condensing wood gas from logs. -->
+  <Make_ChemfuelFromWood.description>Produrre una partita di chemfuel gasificando trochi di legno.</Make_ChemfuelFromWood.description>
+  <!-- EN: Refining chemfuel from wood. -->
+  <Make_ChemfuelFromWood.jobString>Raffina chemfuel dal legno.</Make_ChemfuelFromWood.jobString>
+  
+  <!-- EN: make component -->
+  <Make_ComponentIndustrial.label>produrre componente</Make_ComponentIndustrial.label>
+  <!-- EN: Make a component. -->
+  <Make_ComponentIndustrial.description>Produrre un componente.</Make_ComponentIndustrial.description>
+  <!-- EN: Making component. -->
+  <Make_ComponentIndustrial.jobString>Produce componenti.</Make_ComponentIndustrial.jobString>
+  
+  <!-- EN: make advanced component -->
+  <Make_ComponentSpacer.label>TODO</Make_ComponentSpacer.label>
+  <!-- EN: Make an advanced component. -->
+  <Make_ComponentSpacer.description>TODO</Make_ComponentSpacer.description>
+  <!-- EN: Making advanced component. -->
+  <Make_ComponentSpacer.jobString>TODO</Make_ComponentSpacer.jobString>
+  
+  <!-- EN: make patchleather -->
+  <Make_Patchleather.label>TODO</Make_Patchleather.label>
+  <!-- EN: Combine various types of leather to create weak patchleather. -->
+  <Make_Patchleather.description>TODO</Make_Patchleather.description>
+  <!-- EN: Making patchleather. -->
+  <Make_Patchleather.jobString>TODO</Make_Patchleather.jobString>
+  
+  <!-- EN: make any stone blocks -->
+  <Make_StoneBlocksAny.label>intagliare qualsiasi pezzo di pietra</Make_StoneBlocksAny.label>
+  <!-- EN: Cut rock chunks into usable stone blocks. -->
+  <Make_StoneBlocksAny.description>Intagliare pezzi di pietra in blocchi utilizzabili.</Make_StoneBlocksAny.description>
+  <!-- EN: Cutting stone blocks from chunk. -->
+  <Make_StoneBlocksAny.jobString>Intaglia pezzi di pietra in blocchi.</Make_StoneBlocksAny.jobString>
+  
+  <!-- EN: smelt weapon -->
+  <SmeltWeapon.label>fondere arma</SmeltWeapon.label>
+  <!-- EN: Use heat and strong electromagnets to break down weapons into useful resources. -->
+  <SmeltWeapon.description>Usare il calore e forti elettromagneti per fondere armi in metallo utile.</SmeltWeapon.description>
+  <!-- EN: Smelting weapon. -->
+  <SmeltWeapon.jobString>Fonde arma.</SmeltWeapon.jobString>
+  
 </LanguageData>

@@ -1,123 +1,209 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
-<CreateWorldParams.text>Benvenuto in RimWorld! Questo tutorial ti mostrera' come giocare.\n\nIn primo luogo e' necessario generare un mondo dove giocare.\n\nIn questa pagina e' possibile modificare le proprieta' del mondo.\n\nLe impostazioni predefinite sono buone - vai avanti e clicca a GENERARE!</CreateWorldParams.text>
-
-<ChooseLandingSite.text>Qui si sceglie il vostro punto di atterraggio.\n\nCi sono molti biomi ma, per ora, inziamo con uno semplice.\n\nClicca su una zona di atterraggio con una foresta temperata ed una pianura, poi clicca AVANTI.\n\nPuoi usare la scheda TERRENO per avere ulteriori informazioni sul punto selezionato.</ChooseLandingSite.text>
-<ChooseLandingSite.rejectInputMessage>Devi scegliere una zona di atterraggio con una foresta temperata ed una pianura.</ChooseLandingSite.rejectInputMessage>
-
-<RandomizeCharacter.text>Ora genereremo i personaggi!\n\nProva a generare personaggi casuali con il tasto RANDOM.</RandomizeCharacter.text>
-<RandomizeCharacter.rejectInputMessage>Prima prova a creare un personaggio casuale con il tasto RANDOM.</RandomizeCharacter.rejectInputMessage>
-
-<AcceptStartingPawns.text>Perfetto!\n\nPuoi continuare a creare personaggi casuali se vuoi - ma non cercare il personaggio perfetto. Ognuno ha le sue peculiarita', e questo e' cio' che rende la storia ancora piu' interessante.\n\nPuoi anche rinominare i personaggi cliccando sul loro nome.\n\nClicca su START quando sei pronto.</AcceptStartingPawns.text>
-
-<MapCameraDolly.text>Ora sei sulla superficie.\n\nProva a muoverti con la telecamera.\n\nUsa i tasti {Key:MapDollyUp}-{Key:MapDollyLeft}-{Key:MapDollyDown}-{Key:MapDollyRight} o fai clic e trascinare con il tasto centrale del mouse.\n\nProva ora!</MapCameraDolly.text>
-
-<MapCameraZoom.text>Perfetto!\n\ne' possibile anche ingrandire e ridurre la visuale con la rotellina del mouse o usando i tasti {Key:MapZoomIn} e {Key:MapZoomOut}.\n\nProva di nuovo!</MapCameraZoom.text>
-
-<Pause.text>e' possibile mettere in pausa il gioco.\n\nQuesto significa che non devi avere mai fretta. e' sempre possibile mettere in pausa e prendere il tempo necessario per dare gli ordini.\n\nProva a mettere in pausa con {Key:TogglePause} o cliccando sull'icona corrispondente del controllo del tempo nell'angolo in basso a destra.</Pause.text>
-
-<TimeControls.text>Puoi anche accellerare il gioco\n\nProva a cambiare velocita' con i tasti {Key:TimeSpeedNormal}, {Key:TimeSpeedFast}, e {Key:TimeSpeedSuperfast} o con le icone del controllo del tempo nell'angolo in basso a destra.</TimeControls.text>
-
-<MakeStockpile.text>Ottimo!\n\nOra crea un deposito in modo che i tuoi coloni sappiano dove riporre gli oggetti.\n\n1. Clicca sul menu ARCHITETTO in basso a sinistra.\n2. Fai clic su ZONA/AREA.\n3 Scegli DEPOSITO.\n4 Clicca e trascina un rettangolo come mostrato sulla mappa.</MakeStockpile.text>
-<MakeStockpile.rejectInputMessage>Devi creare un deposito nella posizione indicata.</MakeStockpile.rejectInputMessage>
-<MakeStockpile.onMapInstruction>Posiziona qui il deposito\n(trascina da angolo a angolo)</MakeStockpile.onMapInstruction>
-
-<EndStockpileDesignating.text>Fai clic sul pulsante destro del mouse per uscire dalla modalita' di creazione del deposito.</EndStockpileDesignating.text>
-
-<UnforbidStartingResources.text>Ora, per fare in modo che i coloni portino gli oggetti al deposito, non devi vietare gli oggetti.\n\n1. Fai clic sui tuoi oggetti iniziali per selezionarli.\n2. Fai clic sul comando VIETATO on/off.\n\n(Suggerimento: fare doppio clic su un oggetto per selezionare tutti gli oggetti dello stesso tipo sullo schermo.)</UnforbidStartingResources.text>
-<UnforbidStartingResources.rejectInputMessage>Non devi vietare i tuoi oggetti iniziali.</UnforbidStartingResources.rejectInputMessage>
-<UnforbidStartingResources.onMapInstruction>Non vietare questo</UnforbidStartingResources.onMapInstruction>
-
-<BuildRoomWalls.text>Fantastico! Avanti, costruiamo una stanza!\n\n1. Clicca ARCHITETTO.\n\n2. Clicca STRUTTURE.\n3. Seleziona MURO.\n4. Scegli legno come un materiale.\n5. Trascina per costruire quattro muri, come indicato sulla mappa.</BuildRoomWalls.text>
-<BuildRoomWalls.rejectInputMessage>Devi costruire i muri di legno lungo i lati del rettangolo indicato.</BuildRoomWalls.rejectInputMessage>
-<BuildRoomWalls.onMapInstruction>Costruisci muri</BuildRoomWalls.onMapInstruction>
-
-<BuildRoomDoor.text>Ora dovete solo mettere una PORTA su una delle pareti.\n\nLa PORTA e accanto al MURO nel menu' ARCHITETTO.</BuildRoomDoor.text>
-<BuildRoomDoor.rejectInputMessage>Devi costruire una porta di legno su una delle pareti.</BuildRoomDoor.rejectInputMessage>
-<BuildRoomDoor.onMapInstruction>Costruisci una porta di legno su una delle pareti</BuildRoomDoor.onMapInstruction>
-
-<BuildBeds.text>I tuoi coloni costruiranno ora la stanza!\n\nOra hanno bisogno di un posto dove dormire. Posiziona tre LETTI dentro la camera.\n\nPuoi trovare i letti nella categoria MOBILI.</BuildBeds.text>
-<BuildBeds.rejectInputMessage>Devi costruire tre letti all'interno della stanza.</BuildBeds.rejectInputMessage>
-<BuildBeds.onMapInstruction>Costruisci tre letti all'interno della stanza</BuildBeds.onMapInstruction>
-
-<BuildTorchLamp.text>Hai anche bisogno di luce all'interno, o i tuoi coloni diventeranno irascibili al buio.\n\nCostruisci una TORCIA all'interno della stanza.</BuildTorchLamp.text>
-<BuildTorchLamp.rejectInputMessage>Devi inserire una torcia nella stanza.</BuildTorchLamp.rejectInputMessage>
-<BuildTorchLamp.onMapInstruction>Inserisci una torcia nella stanza</BuildTorchLamp.onMapInstruction>
-
-<BuildAnimalSleepingSpot.text>Cosi' il tuo animale domestico dormira' all'interno con te. Posiziona un GIACIGLIO PER ANIMALI dentro la stanza.\n\nI posti a terra non sono vere e proprie costruzioni - sono semplicemente punti del terreno designati per dormire.</BuildAnimalSleepingSpot.text>
-<BuildAnimalSleepingSpot.rejectInputMessage>Devi posizionare un giaciglio per animali nella stanza.</BuildAnimalSleepingSpot.rejectInputMessage>
-<BuildAnimalSleepingSpot.onMapInstruction>Posiziona un giaciglio per animali nella stanza</BuildAnimalSleepingSpot.onMapInstruction>
-
-<BuildHorseshoesPin.text>I tuoi coloni hanno bisogno di qualcosa per divertirsi o diventano molto depressi nel tempo.\n\nPosiziona all'aperto un perno per ferri di cavallo, vicino la stanza.</BuildHorseshoesPin.text>
-<BuildHorseshoesPin.rejectInputMessage>Devi posizionare un perno per ferri di cavallo vicino la stanza.</BuildHorseshoesPin.rejectInputMessage>
-<BuildHorseshoesPin.onMapInstruction>Posiziona un perno per ferri di cavallo da qualche parte vicino la stanza</BuildHorseshoesPin.onMapInstruction>
-
-<MakeGrowingZone.text>La casa e' costruita!\n\nI tuoi coloni hanno anche bisogno di qualcosa da mangiare, percio' crea una ZONA AGRICOLA nella zona indicata sulla mappa.\n\nQui e' dove i tuoi coloni pianteranno le colture.</MakeGrowingZone.text>
-<MakeGrowingZone.rejectInputMessage>Devi creare una zona agricola nella posizione indicata.</MakeGrowingZone.rejectInputMessage>
-<MakeGrowingZone.onMapInstruction>Crea una zona agricola qui\n(trascina da angolo a angolo)</MakeGrowingZone.onMapInstruction>
-
-<SetToGrowRice.text>Puoi decidere che pianta i tuoi coloni dovranno seminare nella zona agricola.\n\n1. Fai clic con tasto destro del mouse per uscire dalla modalita' architetto.\n2. Fai clic sulla zona agricola per selezionarla.\n3. Clicca sul pulsante di seleziona della coltura e cambiala su Riso.</SetToGrowRice.text>
-<SetToGrowRice.rejectInputMessage>Devi cambiare la coltivazione per far crescere riso.</SetToGrowRice.rejectInputMessage>
-<SetToGrowRice.onMapInstruction>Cambia la coltivazione per far crescere riso</SetToGrowRice.onMapInstruction>
-
-<EquipWeapons.text>Fai in modo che i tuoi coloni vengano equipaggiati con le armi iniziali. Per equipaggiare un'arma:\n\n1. Clicca un colono per selezionarlo.\n2. Fai clic con il pulsante destro del mouse sull'arma che vuoi equipaggiare.\n3. Fai su 'EQUIPAGGIA' nel menu contestuale.\n\nFallo per ogni colono.</EquipWeapons.text>
-<EquipWeapons.rejectInputMessage>Devi equipaggiare i tuoi coloni con armi.</EquipWeapons.rejectInputMessage>
-<EquipWeapons.onMapInstruction>Equipaggia questo</EquipWeapons.onMapInstruction>
-
-<BuildFueledStove.text>Eccellente!\nOra hai bisogno di un fornello per cuocere il cibo.\n\nCostruisci un FORNELLO A LEGNA nella stanza.</BuildFueledStove.text>
-<BuildFueledStove.rejectInputMessage>Devi costruire un fornello a legna nella stanza che hai realizzato prima.</BuildFueledStove.rejectInputMessage>
-<BuildFueledStove.onMapInstruction>Costruisci un fornello a legna nella stanza</BuildFueledStove.onMapInstruction>
-
-<AddBillSimpleMeal.text>Ai coloni bisogna dire cosa cucinare.\n\noGli ordini vengono aggiunti direttamente sul fornello. Una volta che un compito e' stato creato, i coloni faranno il lavoro automaticamente.\n\n1. Attendi che il fornello venga costruito.\n2. Clicca il forno per selezionarlo.\n3. Apri la scheda ORDINI.\n4. Clicca AGGIUNGI ORDINE.\n5. Seleziona CUCINARE PASTO SEMPLICE nel menu contestuale.\n6. Fai clic sul pulsante + per aumentare il numero fino a 10.\n\nRicorda, puoi aumentare la valocita' in qualsiasi momento se ci vuole troppo tempo.\n\nPuoi anche selezionare un colono e cliccare con il pulsante destro del mouse sul fornello per dare massima priorita' alla costruzione.</AddBillSimpleMeal.text>
-<AddBillSimpleMeal.rejectInputMessage>Devi aggiungere come ordine 'Cucinare pasto semplice' al tuo fornello.</AddBillSimpleMeal.rejectInputMessage>
-<AddBillSimpleMeal.onMapInstruction>Seleziona questo</AddBillSimpleMeal.onMapInstruction>
-
-<MineSteel.text>Ora i tuoi coloni possono cucinare qualcosa da mangiare! Gustoso!\n\nCome prossimo passo, devi estrarr alcuni minerali. Ho creato una miniera di acciaio vicino alla tua base.\n\nSeleziona il comando SCAVA e trascinarlo sopra l'acciaio per designare questa zona per lo scavo.</MineSteel.text>
-<MineSteel.rejectInputMessage>Devi utilizzare il comando 'scava' sull'acciaio.</MineSteel.rejectInputMessage>
-<MineSteel.onMapInstruction>Seleziona tutto questo\n per l'estrazione mineraria</MineSteel.onMapInstruction>
-
-<ChopTrees.text>Hai bisogno di raccogliere un po' di legno. Scegli alcuni alberi per tagliarli.\n\nScegli l'ordine TAGLIA LEGNA e indica 10 alberi da abbattere.\n\n(Suggerimento: e' possibile selezionare un'area sopra gli alberi per selezionarne piu' alla volta.)</ChopTrees.text>
-<ChopTrees.rejectInputMessage>Devi trascinare l'ordine 'tagli legna' su alcuni alberi.</ChopTrees.rejectInputMessage>
-
-<OpenMainTabWork.text>e' possibile scegliere che tipo di lavoro far fare ai coloni.\n\nApri il menu LAVORO in basso allo schermo.</OpenMainTabWork.text>
-<OpenMainTabWork.rejectInputMessage>Devi aprire il menu Lavoro.</OpenMainTabWork.rejectInputMessage>
-
-<ChangeWorkSettings.text>Puoi impostare chi deve fare ogni lavoro usando le caselle di controllo. I coloni svolgeranno i compiti in ordine, da sinistra a destra.\n\nProva a modificare alcune impostazioni adesso.\n\nAttenzione! I coloni seguono sempre le loro priorita' di lavoro, anche se li porta a fare cose stupide. Costruire un regime di lavoro intelligente e' un requisito chiave per avere successo in RimWorld. Pertanto, modifica le impostazioni saggiamente e rivedile spesso!</ChangeWorkSettings.text>
-<ChangeWorkSettings.rejectInputMessage>Devi aprire il menu 'Lavoro' e modificare alcune impostazioni.</ChangeWorkSettings.rejectInputMessage>
-
-<BuildSimpleResearchBench.text>Per progredire devi ricercare nuove tecnologie.\n\nCostruisci un LABORATORIO DI RICERCA SEMPLICE nella tua stanza.</BuildSimpleResearchBench.text>
-<BuildSimpleResearchBench.rejectInputMessage>Devi costruire un laboratorio di ricerca semplice\nnella stanza.</BuildSimpleResearchBench.rejectInputMessage>
-<BuildSimpleResearchBench.onMapInstruction>Posiziona un laboratorio di ricerca semplice nella stanza che hai realizzato prima</BuildSimpleResearchBench.onMapInstruction>
-
-<OpenMainTabResearch.text>Eccellente! Adesso devi decidere cosa vuoi ricercare.\n\nApri la scheda RICERCA.</OpenMainTabResearch.text>
-<OpenMainTabResearch.rejectInputMessage>Devi aprire la scheda Ricerca.</OpenMainTabResearch.rejectInputMessage>
-
-<SelectResearchProject.text>Ora scegli semplicemente quello che vuoi ricercare per prima.\n\nPotresti dover attendere che il laboratorio venga costruito, o che gli albera vengano tagliati per avere del legno.\n\nSe ci vuole troppo tempo, usa il menu LAVORO per assegnare piu' coloni alla costruzione.</SelectResearchProject.text>
-<SelectResearchProject.rejectInputMessage>Devi scegliere un progetto di ricerca.</SelectResearchProject.rejectInputMessage>
-
-<ExpandAreaHome.text>Adesso devi imparare come espandere la ZONA DOMESTICA.\n\nI coloni puliranno i pavimenti e spegneranno gli incendi solo nella zona domestica, ed ignoreranno il fuoro e lo sporco fuori di essa.\n\nLa zona domestica si crea automaticamente quando costruisci qualcosa - ma si puo' anche espandere manualmente.\n\n Seleziona l'ordine ESPANDI ZONA DOMESTICA e trascina una nuova area sulla mappa.</ExpandAreaHome.text>
-<ExpandAreaHome.rejectInputMessage>Devi espandere la zona domestica un po', solo per pratica.</ExpandAreaHome.rejectInputMessage>
-
-<ExpandAreaBuildRoof.text>La ZONA CON TETTO definisce dove i tuoi coloni cercheranno di costruire un tetto.\n\nLa zona viene creata automaticamente quando chiudi una nuova stanza.\n\n Scegli ESPANDI ZONA CON TETTO e trascina per creare una tettoia davanti all'ingresso della casa.</ExpandAreaBuildRoof.text>
-<ExpandAreaBuildRoof.rejectInputMessage>Devi estendere la zona con tetto un po', solo per pratica.</ExpandAreaBuildRoof.rejectInputMessage>
-
-<BuildSandbags.text>Ottimo! Ora hai una colonia ben avviata! A volte, pero', i nemici razzieranno la tua colonia. E 'il momento di prepararsi a questo.\n\nSeleziona i SACCHI DI SABBIA e trascinali sulla posizione indicata.</BuildSandbags.text>
-<BuildSandbags.rejectInputMessage>Devi posizionare i sacchi di sabbia nella zona indicata.</BuildSandbags.rejectInputMessage>
-<BuildSandbags.onMapInstruction>Posiziona i sacchi di sabbia qui</BuildSandbags.onMapInstruction>
-
-<FinishSandbags.text>Aspettiamo che venga costruito tutto.\n\nCOnsidera di usare il menu LAVORO per assegnare altri coloni alla costruzione.\n\nPuoi anche aumentare la velocita' del gioco per abbreviare l'attesa.\n\nUna volta che tutto e' stato costruito, mandero' un assalitore per testare la tua difesa!</FinishSandbags.text>
-<FinishSandbags.rejectInputMessage>Devi attendere che i tuoi coloni finiscano di posizionare i sacchi di sabbia.</FinishSandbags.rejectInputMessage>
-
-<DownRaider.text>Ho inviato un razziatore per attaccare la tua colonia!\n\n1. Metti in pausa il gioco cliccando su: {Key:TogglePause}!\n2. Leggi il messaggio in rosso in basso a destra dello schermo.\n3. ARRUOLA i tuoi coloni selezionandoli e cliccando il comando ARRUOLA.\n4. Clicca con il pulsante destro del mouse per posizionare i coloni all'interno dei sacchi di sabbia.\n5 Leva la pausa.\n\nAssicurati che i coloni siano adiacenti ai sabbia per beneficiare della loro copertura. Una volta che sei in in copertura, attendi che l'attaccante si avvicini. I tuoi coloni spareranno automaticamente.</DownRaider.text>
-<DownRaider.rejectInputMessage>Concentrati sulla battaglia!</DownRaider.rejectInputMessage>
-<DownRaider.onMapInstruction>Posiziona qui i coloni\ncontro i sacchi di sabbia per metterli al riparo.</DownRaider.onMapInstruction>
-
-<UndraftAll.text>Successo! Ora SMOBILITA tutti i tuoi coloni usando lo stesso comando di prima.\n\nQuesto li fara' ritornare ai loro compiti.</UndraftAll.text>
-<UndraftAll.rejectInputMessage>Devi smobilitare i tuoi coloni</UndraftAll.rejectInputMessage>
-
-<ChooseStoryteller.text>Questa e' la fine del tutorial!\n\nC'e' ancora molto da imparare, come ad esempio i prigionieri, la caccia, gli animali domestici e molto altro ancora. Ma adesso hai le nozioni di base.\n\nGli eventi casuali erano disabilitati in questo tutorial. Per iniziare una vera partita:\n\n1. Fai clic sul menu in basso a destra dello schermo.\n2. Scegli le opzioni.\n3. Fai clic su MODIFICA NARRATORE.\n4. Scegli un narratore e una difficolta' che ti soddisfi.\n\nBuona fortuna e buon divertimento!</ChooseStoryteller.text>
-<ChooseStoryteller.rejectInputMessage>Devi scegliere un narratore nelle opzioni menu per completare il tutorial.</ChooseStoryteller.rejectInputMessage>
-
+  
+  <!-- EN: Great!\n\nReorder and randomize more if you want - but don't try to get the perfect characters. Everyone has flaws, and it makes the story more interesting!\n\nYou can also re-name the characters by clicking on their names.\n\nClick START when you're ready. -->
+  <AcceptStartingPawns.text>Perfetto!\n\nPuoi continuare a creare personaggi casuali se vuoi - ma non cercare il personaggio perfetto. Ognuno ha le sue peculiarita', e questo e' cio' che rende la storia ancora piu' interessante.\n\nPuoi anche rinominare i personaggi cliccando sul loro nome.\n\nClicca su START quando sei pronto.</AcceptStartingPawns.text>
+  
+  <!-- EN: Select this -->
+  <AddBillSimpleMeal.onMapInstruction>Seleziona questo</AddBillSimpleMeal.onMapInstruction>
+  <!-- EN: Please add a bill to cook simple meals at your cook stove. -->
+  <AddBillSimpleMeal.rejectInputMessage>Devi aggiungere come ordine 'Cucinare pasto semplice' al tuo fornello.</AddBillSimpleMeal.rejectInputMessage>
+  <!-- EN: Colonists need to be told what to cook.\n\nCooking orders are added on the stove itself. Once a bill has been created, colonists will do the work automatically.\n\n1. Wait for the stove to be built.\n2. Click the stove to select it.\n3. Open the BILLS tab.\n4. Click ADD BILL.\n5. Select COOK SIMPLE MEAL on the context menu.\n6. Click the + button to increase the count to 10.\n\nRemember, you can speed up time if building is taking too long.\n\nYou can also select a colonist and right-click the stove to prioritize building it. -->
+  <AddBillSimpleMeal.text>Ai coloni bisogna dire cosa cucinare.\n\noGli ordini vengono aggiunti direttamente sul fornello. Una volta che un compito e' stato creato, i coloni faranno il lavoro automaticamente.\n\n1. Attendi che il fornello venga costruito.\n2. Clicca il forno per selezionarlo.\n3. Apri la scheda ORDINI.\n4. Clicca AGGIUNGI ORDINE.\n5. Seleziona CUCINARE PASTO SEMPLICE nel menu contestuale.\n6. Fai clic sul pulsante + per aumentare il numero fino a 10.\n\nRicorda, puoi aumentare la valocita' in qualsiasi momento se ci vuole troppo tempo.\n\nPuoi anche selezionare un colono e cliccare con il pulsante destro del mouse sul fornello per dare massima priorita' alla costruzione.</AddBillSimpleMeal.text>
+  
+  <!-- EN: Build an animal sleeping spot\ninside the room -->
+  <BuildAnimalSleepingSpot.onMapInstruction>Posiziona un giaciglio per animali nella stanza</BuildAnimalSleepingSpot.onMapInstruction>
+  <!-- EN: Please place an animal sleeping spot inside the room. -->
+  <BuildAnimalSleepingSpot.rejectInputMessage>Devi posizionare un giaciglio per animali nella stanza.</BuildAnimalSleepingSpot.rejectInputMessage>
+  <!-- EN: So your pet will sleep inside with you, place an ANIMAL SLEEPING SPOT inside the room.\n\nSleeping spots aren't real buildings - they're just spots on the ground designated for a sleeping. -->
+  <BuildAnimalSleepingSpot.text>Cosi' il tuo animale domestico dormira' all'interno con te. Posiziona un GIACIGLIO PER ANIMALI dentro la stanza.\n\nI posti a terra non sono vere e proprie costruzioni - sono semplicemente punti del terreno designati per dormire.</BuildAnimalSleepingSpot.text>
+  
+  <!-- EN: Build three beds inside the room -->
+  <BuildBeds.onMapInstruction>Costruisci tre letti all'interno della stanza</BuildBeds.onMapInstruction>
+  <!-- EN: Please build wooden beds inside the room. -->
+  <BuildBeds.rejectInputMessage>Devi costruire tre letti all'interno della stanza.</BuildBeds.rejectInputMessage>
+  <!-- EN: Your colonists will now build the room!\n\nNow they need somewhere to sleep. Place three BEDS inside the room.\n\nFind them in the FURNITURE category.\n\nYou can use the {Key:Designator_RotateLeft} and {Key:Designator_RotateRight} keys to rotate the building. -->
+  <BuildBeds.text>I tuoi coloni costruiranno ora la stanza!\n\nOra hanno bisogno di un posto dove dormire. Posiziona tre LETTI dentro la camera.\n\nPuoi trovare i letti nella categoria MOBILI.</BuildBeds.text>
+  
+  <!-- EN: Build a fueled stove inside the room -->
+  <BuildFueledStove.onMapInstruction>Costruisci un fornello a legna nella stanza</BuildFueledStove.onMapInstruction>
+  <!-- EN: Please build the fueled stove inside the room you built earlier. -->
+  <BuildFueledStove.rejectInputMessage>Devi costruire un fornello a legna nella stanza che hai realizzato prima.</BuildFueledStove.rejectInputMessage>
+  <!-- EN: Excellent!\n\nNow you'll need to make a stove to cook food.\n\nBuild a FUELED STOVE inside the room. -->
+  <BuildFueledStove.text>Eccellente!\nOra hai bisogno di un fornello per cuocere il cibo.\n\nCostruisci un FORNELLO A LEGNA nella stanza.</BuildFueledStove.text>
+  
+  <!-- EN: Build a horseshoes pin\noutside the room -->
+  <BuildHorseshoesPin.onMapInstruction>Posiziona un perno per ferri di cavallo da qualche parte vicino la stanza</BuildHorseshoesPin.onMapInstruction>
+  <!-- EN: Please place a horseshoes pin somewhere near the room. -->
+  <BuildHorseshoesPin.rejectInputMessage>Devi posizionare un perno per ferri di cavallo vicino la stanza.</BuildHorseshoesPin.rejectInputMessage>
+  <!-- EN: Your colonists need sources of recreation or they'll get sad over time.\n\nBuild a HORSESHOES pin outside, near the room. -->
+  <BuildHorseshoesPin.text>I tuoi coloni hanno bisogno di qualcosa per divertirsi o diventano molto depressi nel tempo.\n\nPosiziona all'aperto un perno per ferri di cavallo, vicino la stanza.</BuildHorseshoesPin.text>
+  
+  <!-- EN: Build a door over one wall -->
+  <BuildRoomDoor.onMapInstruction>Costruisci una porta di legno su una delle pareti</BuildRoomDoor.onMapInstruction>
+  <!-- EN: Please build a wooden door over one of your room walls. -->
+  <BuildRoomDoor.rejectInputMessage>Devi costruire una porta di legno su una delle pareti.</BuildRoomDoor.rejectInputMessage>
+  <!-- EN: Now just place a DOOR over any one of the room walls.\n\nDOOR is right beside WALL in the ARCHITECT menu. -->
+  <BuildRoomDoor.text>Ora dovete solo mettere una PORTA su una delle pareti.\n\nLa PORTA e accanto al MURO nel menu' ARCHITETTO.</BuildRoomDoor.text>
+  
+  <!-- EN: Build walls -->
+  <BuildRoomWalls.onMapInstruction>Costruisci muri</BuildRoomWalls.onMapInstruction>
+  <!-- EN: Please build wooden walls along the edges of the highlighted rectangle. -->
+  <BuildRoomWalls.rejectInputMessage>Devi costruire i muri di legno lungo i lati del rettangolo indicato.</BuildRoomWalls.rejectInputMessage>
+  <!-- EN: Awesome! Next, we'll build a room.\n\n1. Click ARCHITECT.\n2. Click STRUCTURE.\n3. Select WALL.\n4. Select WOOD as the material.\n5. Drag out four walls to form the shape indicated on the map. -->
+  <BuildRoomWalls.text>Fantastico! Avanti, costruiamo una stanza!\n\n1. Clicca ARCHITETTO.\n\n2. Clicca STRUTTURE.\n3. Seleziona MURO.\n4. Scegli legno come un materiale.\n5. Trascina per costruire quattro muri, come indicato sulla mappa.</BuildRoomWalls.text>
+  
+  <!-- EN: Build sandbags here -->
+  <BuildSandbags.onMapInstruction>Posiziona i sacchi di sabbia qui</BuildSandbags.onMapInstruction>
+  <!-- EN: Please build sandbags in the highlighted area. -->
+  <BuildSandbags.rejectInputMessage>Devi posizionare i sacchi di sabbia nella zona indicata.</BuildSandbags.rejectInputMessage>
+  <!-- EN: Great! You've now got a basic colony running! Eventually, enemies will raid your colony. It's time to prepare for that.\n\nSelect the SANDBAGS designator and drag the sandbags out at the designated area. -->
+  <BuildSandbags.text>Ottimo! Ora hai una colonia ben avviata! A volte, pero', i nemici razzieranno la tua colonia. E 'il momento di prepararsi a questo.\n\nSeleziona i SACCHI DI SABBIA e trascinali sulla posizione indicata.</BuildSandbags.text>
+  
+  <!-- EN: Build a wooden simple research bench\ninside the room -->
+  <BuildSimpleResearchBench.onMapInstruction>Posiziona un laboratorio di ricerca semplice nella stanza che hai realizzato prima</BuildSimpleResearchBench.onMapInstruction>
+  <!-- EN: Please place a wooden simple research bench inside the room you built earlier. -->
+  <BuildSimpleResearchBench.rejectInputMessage>Devi costruire un laboratorio di ricerca semplice\nnella stanza.</BuildSimpleResearchBench.rejectInputMessage>
+  <!-- EN: To advance, you'll need to research new technologies.\n\nBuild a wooden SIMPLE RESEARCH BENCH inside your room. -->
+  <BuildSimpleResearchBench.text>Per progredire devi ricercare nuove tecnologie.\n\nCostruisci un LABORATORIO DI RICERCA SEMPLICE nella tua stanza.</BuildSimpleResearchBench.text>
+  
+  <!-- EN: Build a torch lamp inside the room -->
+  <BuildTorchLamp.onMapInstruction>Inserisci una torcia nella stanza</BuildTorchLamp.onMapInstruction>
+  <!-- EN: Please build a torch lamp inside the room. -->
+  <BuildTorchLamp.rejectInputMessage>Devi inserire una torcia nella stanza.</BuildTorchLamp.rejectInputMessage>
+  <!-- EN: You'll also want some light inside, or your colonists will get grumpy in the dark.\n\nBuild a TORCH LAMP inside the room. -->
+  <BuildTorchLamp.text>Hai anche bisogno di luce all'interno, o i tuoi coloni diventeranno irascibili al buio.\n\nCostruisci una TORCIA all'interno della stanza.</BuildTorchLamp.text>
+  
+  <!-- EN: Please open the 'Work' tab and change some settings. -->
+  <ChangeWorkSettings.rejectInputMessage>Devi aprire il menu 'Lavoro' e modificare alcune impostazioni.</ChangeWorkSettings.rejectInputMessage>
+  <!-- EN: You can control who does what kinds of work using the checkboxes. Colonists will do tasks in order, from left to right.\n\nTry changing some settings now.\n\nBeware - Colonists always follow their work priorities, even if this makes them do dumb things! Setting up a smart work regime is an important skill in RimWorld. So set the work settings carefully, and review them often! -->
+  <ChangeWorkSettings.text>Puoi impostare chi deve fare ogni lavoro usando le caselle di controllo. I coloni svolgeranno i compiti in ordine, da sinistra a destra.\n\nProva a modificare alcune impostazioni adesso.\n\nAttenzione! I coloni seguono sempre le loro priorita' di lavoro, anche se li porta a fare cose stupide. Costruire un regime di lavoro intelligente e' un requisito chiave per avere successo in RimWorld. Pertanto, modifica le impostazioni saggiamente e rivedile spesso!</ChangeWorkSettings.text>
+  
+  <!-- EN: Please choose a temperate forest landing site with flat terrain. -->
+  <ChooseLandingSite.rejectInputMessage>Devi scegliere una zona di atterraggio con una foresta temperata ed una pianura.</ChooseLandingSite.rejectInputMessage>
+  <!-- EN: Here, you choose your landing site.\n\nThere are lots of biomes, but for now, let's start with a friendly one.\n\nClick a landing site with temperate forest biome and flat terrain, and click NEXT.\n\nYou can use the TERRAIN tab to view information about the selected tile. -->
+  <ChooseLandingSite.text>Qui si sceglie il vostro punto di atterraggio.\n\nCi sono molti biomi ma, per ora, inziamo con uno semplice.\n\nClicca su una zona di atterraggio con una foresta temperata ed una pianura, poi clicca AVANTI.\n\nPuoi usare la scheda TERRENO per avere ulteriori informazioni sul punto selezionato.</ChooseLandingSite.text>
+  
+  <!-- EN: Please choose a storyteller in the Options menu to end the tutorial. -->
+  <ChooseStoryteller.rejectInputMessage>Devi scegliere un narratore nelle opzioni menu per completare il tutorial.</ChooseStoryteller.rejectInputMessage>
+  <!-- EN: This is the end of the tutorial!\n\nThere's still tons more to learn, including prisoners, hunting, trade, animal taming, and much more. But you've got the basics down.\n\nRandom incidents were disabled during this tutorial. To begin the real game:\n\n1. Open the MENU tab in the bottom-right.\n2. Select OPTIONS.\n3. Click STORYTELLER SETTINGS.\n4. Select a storyteller and difficulty level that appeals to you.\n\nGood luck, and have fun. -->
+  <ChooseStoryteller.text>Questa e' la fine del tutorial!\n\nC'e' ancora molto da imparare, come ad esempio i prigionieri, la caccia, gli animali domestici e molto altro ancora. Ma adesso hai le nozioni di base.\n\nGli eventi casuali erano disabilitati in questo tutorial. Per iniziare una vera partita:\n\n1. Fai clic sul menu in basso a destra dello schermo.\n2. Scegli le opzioni.\n3. Fai clic su MODIFICA NARRATORE.\n4. Scegli un narratore e una difficolta' che ti soddisfi.\n\nBuona fortuna e buon divertimento!</ChooseStoryteller.text>
+  
+  <!-- EN: Please drag the 'chop wood' designator over some trees. -->
+  <ChopTrees.rejectInputMessage>Devi trascinare l'ordine 'tagli legna' su alcuni alberi.</ChopTrees.rejectInputMessage>
+  <!-- EN: You'll want to harvest some wood. Designate some trees to be chopped.\n\nSelect the CHOP WOOD designator and designate 10 trees to be chopped down.\n\n(Pro tip: You can drag a box over trees to designate several at once.) -->
+  <ChopTrees.text>Hai bisogno di raccogliere un po' di legno. Scegli alcuni alberi per tagliarli.\n\nScegli l'ordine TAGLIA LEGNA e indica 10 alberi da abbattere.\n\n(Suggerimento: e' possibile selezionare un'area sopra gli alberi per selezionarne piu' alla volta.)</ChopTrees.text>
+  
+  <!-- EN: Welcome to RimWorld! This tutorial will teach you how to play the game.\n\nThe first step is to generate a world to play in.\n\nThis page configures how your world should be generated.\n\nThe default settings here are good - go ahead and click GENERATE! -->
+  <CreateWorldParams.text>Benvenuto in RimWorld! Questo tutorial ti mostrera' come giocare.\n\nIn primo luogo e' necessario generare un mondo dove giocare.\n\nIn questa pagina e' possibile modificare le proprieta' del mondo.\n\nLe impostazioni predefinite sono buone - vai avanti e clicca a GENERARE!</CreateWorldParams.text>
+  
+  <!-- EN: Send colonists here\ntouching sandbags for cover -->
+  <DownRaider.onMapInstruction>Posiziona qui i coloni\ncontro i sacchi di sabbia per metterli al riparo.</DownRaider.onMapInstruction>
+  <!-- EN: Please focus on winning the fight! -->
+  <DownRaider.rejectInputMessage>Concentrati sulla battaglia!</DownRaider.rejectInputMessage>
+  <!-- EN: I've now sent a raider to attack your colony!\n\n1. Pause the game by hitting {Key:TogglePause}!\n2. Read the red letter in the bottom-right of the screen.\n3. DRAFT your colonists by selecting them and hitting the DRAFT command.\n4. Right-click to them to positions inside the sandbag square, touching the sandbags.\n5. Unpause.\n\nColonists must be touching cover to benefit from it. Once you're in cover, wait for the attacker to approach. Your colonists will shoot automatically. -->
+  <DownRaider.text>Ho inviato un razziatore per attaccare la tua colonia!\n\n1. Metti in pausa il gioco cliccando su: {Key:TogglePause}!\n2. Leggi il messaggio in rosso in basso a destra dello schermo.\n3. ARRUOLA i tuoi coloni selezionandoli e cliccando il comando ARRUOLA.\n4. Clicca con il pulsante destro del mouse per posizionare i coloni all'interno dei sacchi di sabbia.\n5 Leva la pausa.\n\nAssicurati che i coloni siano adiacenti ai sabbia per beneficiare della loro copertura. Una volta che sei in in copertura, attendi che l'attaccante si avvicini. I tuoi coloni spareranno automaticamente.</DownRaider.text>
+  
+  <!-- EN: Right-click to get out of stockpile designating mode. -->
+  <EndStockpileDesignating.text>Fai clic sul pulsante destro del mouse per uscire dalla modalita' di creazione del deposito.</EndStockpileDesignating.text>
+  
+  <!-- EN: Equip this -->
+  <EquipWeapons.onMapInstruction>Equipaggia questo</EquipWeapons.onMapInstruction>
+  <!-- EN: Please have your colonists equip weapons. -->
+  <EquipWeapons.rejectInputMessage>Devi equipaggiare i tuoi coloni con armi.</EquipWeapons.rejectInputMessage>
+  <!-- EN: Have your colonists equip the starting weapons. To equip a weapon:\n\n1. Click a colonist to select them.\n2. Right-click the weapon you want to equip.\n3. Click 'equip weapon' on the context menu.\n\nDo this for each colonist. -->
+  <EquipWeapons.text>Fai in modo che i tuoi coloni vengano equipaggiati con le armi iniziali. Per equipaggiare un'arma:\n\n1. Clicca un colono per selezionarlo.\n2. Fai clic con il pulsante destro del mouse sull'arma che vuoi equipaggiare.\n3. Fai su 'EQUIPAGGIA' nel menu contestuale.\n\nFallo per ogni colono.</EquipWeapons.text>
+  
+  <!-- EN: Please expand the build roof area a bit, just for practice. -->
+  <ExpandAreaBuildRoof.rejectInputMessage>Devi estendere la zona con tetto un po', solo per pratica.</ExpandAreaBuildRoof.rejectInputMessage>
+  <!-- EN: The BUILD ROOF AREA defines where your colonists will try to build roofs.\n\nIt auto-fills when you enclose a new room.\n\nSelect the EXPAND BUILD ROOF AREA tool and drag out the shape of a porch roof on the front of the house. -->
+  <ExpandAreaBuildRoof.text>La ZONA CON TETTO definisce dove i tuoi coloni cercheranno di costruire un tetto.\n\nLa zona viene creata automaticamente quando chiudi una nuova stanza.\n\n Scegli ESPANDI ZONA CON TETTO e trascina per creare una tettoia davanti all'ingresso della casa.</ExpandAreaBuildRoof.text>
+  
+  <!-- EN: Please expand the home area a bit, just for practice. -->
+  <ExpandAreaHome.rejectInputMessage>Devi espandere la zona domestica un po', solo per pratica.</ExpandAreaHome.rejectInputMessage>
+  <!-- EN: Next, you'll learn to expand the HOME AREA.\n\nColonists will clean floors and extinguish fires in the home area only, and ignore fires or filth outside of it.\n\nThe home area is added automatically when you build things - but you can also expand it manually.\n\nSelect the EXPAND HOME AREA tool and drag out a new area on the map. -->
+  <ExpandAreaHome.text>Adesso devi imparare come espandere la ZONA DOMESTICA.\n\nI coloni puliranno i pavimenti e spegneranno gli incendi solo nella zona domestica, ed ignoreranno il fuoro e lo sporco fuori di essa.\n\nLa zona domestica si crea automaticamente quando costruisci qualcosa - ma si puo' anche espandere manualmente.\n\n Seleziona l'ordine ESPANDI ZONA DOMESTICA e trascina una nuova area sulla mappa.</ExpandAreaHome.text>
+  
+  <!-- EN: Please wait for your colonists to finish building the sandbags. -->
+  <FinishSandbags.rejectInputMessage>Devi attendere che i tuoi coloni finiscano di posizionare i sacchi di sabbia.</FinishSandbags.rejectInputMessage>
+  <!-- EN: Let's just wait for all your constructions to be built.\n\nConsider using the WORK tab to assign more colonists to Construct.\n\nAlso, you can speed up time to shorten the wait.\n\nOnce everything's built, I'll send an attacker to test your defenses! -->
+  <FinishSandbags.text>Aspettiamo che venga costruito tutto.\n\nCOnsidera di usare il menu LAVORO per assegnare altri coloni alla costruzione.\n\nPuoi anche aumentare la velocita' del gioco per abbreviare l'attesa.\n\nUna volta che tutto e' stato costruito, mandero' un assalitore per testare la tua difesa!</FinishSandbags.text>
+  
+  <!-- EN: Place growing zone here\n(drag corner-to-corner) -->
+  <MakeGrowingZone.onMapInstruction>Crea una zona agricola qui\n(trascina da angolo a angolo)</MakeGrowingZone.onMapInstruction>
+  <!-- EN: Please make a growing zone on the indicated area. -->
+  <MakeGrowingZone.rejectInputMessage>Devi creare una zona agricola nella posizione indicata.</MakeGrowingZone.rejectInputMessage>
+  <!-- EN: The house is being built!\n\nYour colonists will need something to eat, so place a GROWING ZONE as indicated on the map.\n\nThis is where your colonists will sow crops. -->
+  <MakeGrowingZone.text>La casa e' costruita!\n\nI tuoi coloni hanno anche bisogno di qualcosa da mangiare, percio' crea una ZONA AGRICOLA nella zona indicata sulla mappa.\n\nQui e' dove i tuoi coloni pianteranno le colture.</MakeGrowingZone.text>
+  
+  <!-- EN: Place stockpile here\n(drag corner-to-corner) -->
+  <MakeStockpile.onMapInstruction>Posiziona qui il deposito\n(trascina da angolo a angolo)</MakeStockpile.onMapInstruction>
+  <!-- EN: Please make a stockpile on the indicated area. -->
+  <MakeStockpile.rejectInputMessage>Devi creare un deposito nella posizione indicata.</MakeStockpile.rejectInputMessage>
+  <!-- EN: Great!\n\nNow, make a stockpile so your colonists know where to keep items.\n\n1. Click ARCHITECT tab in the bottom left.\n2. Click the ZONE/AREA category.\n3. Select the CREATE STOCKPILE tool.\n4. Click and drag out a square as indicated on the map. -->
+  <MakeStockpile.text>Ottimo!\n\nOra crea un deposito in modo che i tuoi coloni sappiano dove riporre gli oggetti.\n\n1. Clicca sul menu ARCHITETTO in basso a sinistra.\n2. Fai clic su ZONA/AREA.\n3 Scegli DEPOSITO.\n4 Clicca e trascina un rettangolo come mostrato sulla mappa.</MakeStockpile.text>
+  
+  <!-- EN: Here you are on the surface!\n\nNow try moving the camera around.\n\nUse the {Key:MapDolly_Up}-{Key:MapDolly_Left}-{Key:MapDolly_Down}-{Key:MapDolly_Right} keys, or click and drag with the middle mouse button.\n\nTry it now! -->
+  <MapCameraDolly.text>Ora sei sulla superficie.\n\nProva a muoverti con la telecamera.\n\nUsa i tasti {Key:MapDollyUp}-{Key:MapDollyLeft}-{Key:MapDollyDown}-{Key:MapDollyRight} o fai clic e trascinare con il tasto centrale del mouse.\n\nProva ora!</MapCameraDolly.text>
+  
+  <!-- EN: Great!\n\nYou can also zoom in and out with the mouse wheel, or the {Key:MapZoom_In} and {Key:MapZoom_Out} keys.\n\nTry it now! -->
+  <MapCameraZoom.text>Perfetto!\n\ne' possibile anche ingrandire e ridurre la visuale con la rotellina del mouse o usando i tasti {Key:MapZoomIn} e {Key:MapZoomOut}.\n\nProva di nuovo!</MapCameraZoom.text>
+  
+  <!-- EN: Designate all this\nfor mining -->
+  <MineSteel.onMapInstruction>Seleziona tutto questo\n per l'estrazione mineraria</MineSteel.onMapInstruction>
+  <!-- EN: Please use the 'mine' designator on the compacted steel. -->
+  <MineSteel.rejectInputMessage>Devi utilizzare il comando 'scava' sull'acciaio.</MineSteel.rejectInputMessage>
+  <!-- EN: Now your colonists will cook some food! Tasty!\n\nNext, you'll want to mine some minerals. I've spawned some mineable steel near your base.\n\nSelect the MINE designator and drag over the steel to designate it for mining. -->
+  <MineSteel.text>Ora i tuoi coloni possono cucinare qualcosa da mangiare! Gustoso!\n\nCome prossimo passo, devi estrarr alcuni minerali. Ho creato una miniera di acciaio vicino alla tua base.\n\nSeleziona il comando SCAVA e trascinarlo sopra l'acciaio per designare questa zona per lo scavo.</MineSteel.text>
+  
+  <!-- EN: Please open the 'Research' tab. -->
+  <OpenMainTabResearch.rejectInputMessage>Devi aprire la scheda Ricerca.</OpenMainTabResearch.rejectInputMessage>
+  <!-- EN: Excellent! Next, you'll want to select what you want to be researched.\n\nOpen the RESEARCH tab. -->
+  <OpenMainTabResearch.text>Eccellente! Adesso devi decidere cosa vuoi ricercare.\n\nApri la scheda RICERCA.</OpenMainTabResearch.text>
+  
+  <!-- EN: Please open the 'Work' tab. -->
+  <OpenMainTabWork.rejectInputMessage>Devi aprire il menu Lavoro.</OpenMainTabWork.rejectInputMessage>
+  <!-- EN: You can control which colonist does what kind of work.\n\nOpen the WORK tab at the bottom of the screen. -->
+  <OpenMainTabWork.text>e' possibile scegliere che tipo di lavoro far fare ai coloni.\n\nApri il menu LAVORO in basso allo schermo.</OpenMainTabWork.text>
+  
+  <!-- EN: You can pause time.\n\nThis means you never need to rush. You can always pause and take your time to issue orders.\n\nTry pausing with the {Key:TogglePause} key, or by using the time controls in the bottom right. -->
+  <Pause.text>e' possibile mettere in pausa il gioco.\n\nQuesto significa che non devi avere mai fretta. e' sempre possibile mettere in pausa e prendere il tempo necessario per dare gli ordini.\n\nProva a mettere in pausa con {Key:TogglePause} o cliccando sull'icona corrispondente del controllo del tempo nell'angolo in basso a destra.</Pause.text>
+  
+  <!-- EN: Please try randomizing a character first. -->
+  <RandomizeCharacter.rejectInputMessage>Prima prova a creare un personaggio casuale con il tasto RANDOM.</RandomizeCharacter.rejectInputMessage>
+  <!-- EN: If you don't like a character, you can regenerate them!\n\nTry randomizing a character with the RANDOMIZE button. -->
+  <RandomizeCharacter.text>Ora genereremo i personaggi!\n\nProva a generare personaggi casuali con il tasto RANDOM.</RandomizeCharacter.text>
+  
+  <!-- EN: Please try choosing a character first. -->
+  <ReorderCharacters.rejectInputMessage>TODO</ReorderCharacters.rejectInputMessage>
+  <!-- EN: Now you can choose characters!\n\nClick in the left area to select from available characters. If you find a character you like, drag them into the top section with the SELECTED label. -->
+  <ReorderCharacters.text>TODO</ReorderCharacters.text>
+  
+  <!-- EN: Please choose a research project. -->
+  <SelectResearchProject.rejectInputMessage>Devi scegliere un progetto di ricerca.</SelectResearchProject.rejectInputMessage>
+  <!-- EN: Now just choose whatever you want to be researched first.\n\nYou might have to wait for the research bench to be constructed, or for trees to be chopped for wood.\n\nIf it's taking too long, use the WORK tab to assign more colonists to Construct. -->
+  <SelectResearchProject.text>Ora scegli semplicemente quello che vuoi ricercare per prima.\n\nPotresti dover attendere che il laboratorio venga costruito, o che gli albera vengano tagliati per avere del legno.\n\nSe ci vuole troppo tempo, usa il menu LAVORO per assegnare piu' coloni alla costruzione.</SelectResearchProject.text>
+  
+  <!-- EN: Set this growing zone to grow rice -->
+  <SetToGrowRice.onMapInstruction>Cambia la coltivazione per far crescere riso</SetToGrowRice.onMapInstruction>
+  <!-- EN: Please set your growing zone to grow rice. -->
+  <SetToGrowRice.rejectInputMessage>Devi cambiare la coltivazione per far crescere riso.</SetToGrowRice.rejectInputMessage>
+  <!-- EN: You can decide what plant your colonists should sow in a growing zone.\n\n1. Right-click to exit architect mode.\n2. Click your growing zone to select it.\n3. Click the plant selector at the bottom and change it to rice. -->
+  <SetToGrowRice.text>Puoi decidere che pianta i tuoi coloni dovranno seminare nella zona agricola.\n\n1. Fai clic con tasto destro del mouse per uscire dalla modalita' architetto.\n2. Fai clic sulla zona agricola per selezionarla.\n3. Clicca sul pulsante di seleziona della coltura e cambiala su Riso.</SetToGrowRice.text>
+  
+  <!-- EN: You can also speed up time.\n\nTry controlling time with the {Key:TimeSpeed_Normal}, {Key:TimeSpeed_Fast}, and {Key:TimeSpeed_Superfast} keys, or with the time controls in the bottom right. -->
+  <TimeControls.text>Puoi anche accellerare il gioco\n\nProva a cambiare velocita' con i tasti {Key:TimeSpeedNormal}, {Key:TimeSpeedFast}, e {Key:TimeSpeedSuperfast} o con le icone del controllo del tempo nell'angolo in basso a destra.</TimeControls.text>
+  
+  <!-- EN: Please un-draft your colonists. -->
+  <UndraftAll.rejectInputMessage>Devi smobilitare i tuoi coloni</UndraftAll.rejectInputMessage>
+  <!-- EN: Success! Now UNDRAFT all your colonists using the same command as before.\n\nThis will let them return to their own schedules. -->
+  <UndraftAll.text>Successo! Ora SMOBILITA tutti i tuoi coloni usando lo stesso comando di prima.\n\nQuesto li fara' ritornare ai loro compiti.</UndraftAll.text>
+  
+  <!-- EN: Unforbid this -->
+  <UnforbidStartingResources.onMapInstruction>Non vietare questo</UnforbidStartingResources.onMapInstruction>
+  <!-- EN: Please unforbid your starting items. -->
+  <UnforbidStartingResources.rejectInputMessage>Non devi vietare i tuoi oggetti iniziali.</UnforbidStartingResources.rejectInputMessage>
+  <!-- EN: Now, to allow your colonists to bring your items to the stockpile, you must unforbid the items.\n\n1. Clicking your starting items to select them.\n2. Click the FORBID toggle button to unforbid them.\n\n(Pro tip: Double-click an item to select all on screen of the same type.) -->
+  <UnforbidStartingResources.text>Ora, per fare in modo che i coloni portino gli oggetti al deposito, non devi vietare gli oggetti.\n\n1. Fai clic sui tuoi oggetti iniziali per selezionarli.\n2. Fai clic sul comando VIETATO on/off.\n\n(Suggerimento: fare doppio clic su un oggetto per selezionare tutti gli oggetti dello stesso tipo sullo schermo.)</UnforbidStartingResources.text>
+  
 </LanguageData>

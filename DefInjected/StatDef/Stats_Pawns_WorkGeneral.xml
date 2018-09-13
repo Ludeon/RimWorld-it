@@ -1,41 +1,69 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
-<WorkSpeedGlobal.label>velocita' globale lavoro</WorkSpeedGlobal.label>
-<WorkSpeedGlobal.description>Moltiplicatore alla velocita' di esecuzione dei compiti.</WorkSpeedGlobal.description>
-
-<MiningSpeed.label>velocita' estrazione</MiningSpeed.label>
-<MiningSpeed.description>Velocita' di scavo e di trivellazione per la ricerca di minerali.</MiningSpeed.description>
-
-<MiningYield.label>capacita' estrazione</MiningYield.label>
-<MiningYield.description>Percentuale di minerali ottenibili dal minatore. Si applica sia agli scavi che alle trivellazioni. Non influenza il tasso di estrazione di pezzi di roccia.</MiningYield.description>
-
-<SmoothingSpeed.label>velocita' spianamento</SmoothingSpeed.label>
-<SmoothingSpeed.description>Moltiplicatore alla velocita' di spianamento dei terreni.</SmoothingSpeed.description>
-
-<ResearchSpeed.label>velocita' ricerca</ResearchSpeed.label>
-<ResearchSpeed.description>Velocita' di conduzione delle ricerche.</ResearchSpeed.description>
-
-<AnimalGatherSpeed.label>velocita' raccolta prodotti animali</AnimalGatherSpeed.label>
-<AnimalGatherSpeed.description>Velocita' di mungitura, tosatura e, in generale, raccolta delle risorse provenienti dagli animali.</AnimalGatherSpeed.description>
-
-<AnimalGatherYield.label>capacita' raccolta prodotti animali</AnimalGatherYield.label>
-<AnimalGatherYield.description>Percentuale di prodotti ottenibili in caso di mungitura, tosatura e, in generale, raccolta delle risorse provenienti dagli animali. Piu' e' alta la percentuale, minore e' la possibilita' di perdere dei prodotti.</AnimalGatherYield.description>
-
-<PlantWorkSpeed.label>velocita' lavoro agricolo</PlantWorkSpeed.label>
-<PlantWorkSpeed.description>Velocita' di semina e raccolta delle colture.</PlantWorkSpeed.description>
-
-<PlantHarvestYield.label>capacita' raccolta agricola</PlantHarvestYield.label>
-<PlantHarvestYield.description>Raccolto ottenibile dalle colture. Un valore basso aumenta la probabilita' di sprechi accidentali durante il raccolto.</PlantHarvestYield.description>
-
-<ConstructionSpeed.label>velocita' costruzione</ConstructionSpeed.label>
-<ConstructionSpeed.description>Velocita' di costruzione e riparazione delle strutture.</ConstructionSpeed.description>
-
-<ConstructSuccessChance.label>probabilita' riuscita costruzione</ConstructSuccessChance.label>
-<ConstructSuccessChance.description>Probabilita' di successo nella costruzione di qualcosa. Un fallimento implica spreco di tempo e risorse.</ConstructSuccessChance.description>
-
-<FixBrokenDownBuildingSuccessChance.label>rischio fallimento riparazioni</FixBrokenDownBuildingSuccessChance.label>
-<FixBrokenDownBuildingSuccessChance.description>Probabilita' di una riuscita riparazione di un guasto. Un fallimento implica spreco di tempo e risorse. Nota che si applica solo sulla riparazione dei guasti, che e' diverso dalla riparazione di danni.</FixBrokenDownBuildingSuccessChance.description>
- 
+  
+  <!-- EN: animal gather speed -->
+  <AnimalGatherSpeed.label>velocita' raccolta prodotti animali</AnimalGatherSpeed.label>
+  <!-- EN: The speed at which this person milks, shears, and otherwise gathers resources from animals. -->
+  <AnimalGatherSpeed.description>Velocita' di mungitura, tosatura e, in generale, raccolta delle risorse provenienti dagli animali.</AnimalGatherSpeed.description>
+  
+  <!-- EN: animal gather yield -->
+  <AnimalGatherYield.label>capacita' raccolta prodotti animali</AnimalGatherYield.label>
+  <!-- EN: The percentage yield someone receives when they shear, milk, or otherwise gather resources from a living animal. Higher percentages reduce the chance of wasting the product. -->
+  <AnimalGatherYield.description>Percentuale di prodotti ottenibili in caso di mungitura, tosatura e, in generale, raccolta delle risorse provenienti dagli animali. Piu' e' alta la percentuale, minore e' la possibilita' di perdere dei prodotti.</AnimalGatherYield.description>
+  
+  <!-- EN: construction speed -->
+  <ConstructionSpeed.label>velocita' costruzione</ConstructionSpeed.label>
+  <!-- EN: The speed at which this person constructs and repairs buildings. -->
+  <ConstructionSpeed.description>Velocita' di costruzione e riparazione delle strutture.</ConstructionSpeed.description>
+  
+  <!-- EN: construct success chance -->
+  <ConstructSuccessChance.label>probabilita' riuscita costruzione</ConstructSuccessChance.label>
+  <!-- EN: The chance that this person will succeed in constructing something. Failing means wasting time and resources. -->
+  <ConstructSuccessChance.description>Probabilita' di successo nella costruzione di qualcosa. Un fallimento implica spreco di tempo e risorse.</ConstructSuccessChance.description>
+  
+  <!-- EN: repair success chance -->
+  <FixBrokenDownBuildingSuccessChance.label>rischio fallimento riparazioni</FixBrokenDownBuildingSuccessChance.label>
+  <!-- EN: The chance that this person will successfully repair a broken down building using a component. Failing means wasting time and resources. Note that this only applies to repairing breakdowns, which is different from repairing damage. -->
+  <FixBrokenDownBuildingSuccessChance.description>Probabilita' di una riuscita riparazione di un guasto. Un fallimento implica spreco di tempo e risorse. Nota che si applica solo sulla riparazione dei guasti, che e' diverso dalla riparazione di danni.</FixBrokenDownBuildingSuccessChance.description>
+  
+  <!-- EN: hunting stealth -->
+  <HuntingStealth.label>TODO</HuntingStealth.label>
+  <!-- EN: This stat reduces the chance of hunted animals attacking the hunter. A 0% score means no reduction. A 100% score means animals never attack. -->
+  <HuntingStealth.description>TODO</HuntingStealth.description>
+  
+  <!-- EN: mining speed -->
+  <MiningSpeed.label>velocita' estrazione</MiningSpeed.label>
+  <!-- EN: A speed at which this person digs at walls and drills for deep resources. -->
+  <MiningSpeed.description>Velocita' di scavo e di trivellazione per la ricerca di minerali.</MiningSpeed.description>
+  
+  <!-- EN: mining yield -->
+  <MiningYield.label>capacita' estrazione</MiningYield.label>
+  <!-- EN: The percentage of mined resources a miner will produce. This applies to both wall mining and deep drill mining. This doesn't affect the production rate of rock chunks. -->
+  <MiningYield.description>Percentuale di minerali ottenibili dal minatore. Si applica sia agli scavi che alle trivellazioni. Non influenza il tasso di estrazione di pezzi di roccia.</MiningYield.description>
+  
+  <!-- EN: plant harvest yield -->
+  <PlantHarvestYield.label>capacita' raccolta agricola</PlantHarvestYield.label>
+  <!-- EN: The yield this person gets when harvesting plants. Low yields give a chance that this person will accidentally waste the harvest. -->
+  <PlantHarvestYield.description>Raccolto ottenibile dalle colture. Un valore basso aumenta la probabilita' di sprechi accidentali durante il raccolto.</PlantHarvestYield.description>
+  
+  <!-- EN: plant work speed -->
+  <PlantWorkSpeed.label>velocita' lavoro agricolo</PlantWorkSpeed.label>
+  <!-- EN: The speed at which this person sows and harvests plants. -->
+  <PlantWorkSpeed.description>Velocita' di semina e raccolta delle colture.</PlantWorkSpeed.description>
+  
+  <!-- EN: research speed -->
+  <ResearchSpeed.label>velocita' ricerca</ResearchSpeed.label>
+  <!-- EN: How fast this person performs research and how quickly they can find things using scanning equipment. -->
+  <ResearchSpeed.description>Velocita' di conduzione delle ricerche.</ResearchSpeed.description>
+  
+  <!-- EN: smoothing speed -->
+  <SmoothingSpeed.label>velocita' spianamento</SmoothingSpeed.label>
+  <!-- EN: A multiplier on the speed at which this person smooths rough stone floors and walls. -->
+  <SmoothingSpeed.description>Moltiplicatore alla velocita' di spianamento dei terreni.</SmoothingSpeed.description>
+  
+  <!-- EN: global work speed -->
+  <WorkSpeedGlobal.label>velocita' globale lavoro</WorkSpeedGlobal.label>
+  <!-- EN: A multiplier on a character's speed at doing any kind of work. -->
+  <WorkSpeedGlobal.description>Moltiplicatore alla velocita' di esecuzione dei compiti.</WorkSpeedGlobal.description>
+  
 </LanguageData>

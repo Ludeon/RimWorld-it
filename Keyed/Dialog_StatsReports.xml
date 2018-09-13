@@ -1,41 +1,119 @@
-<?xml version="1.0" encoding="utf-8" ?>
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-<StatsReport_BaseValue>Valore di base</StatsReport_BaseValue>
-<StatsReport_RelevantTraits>Caratteristiche principali</StatsReport_RelevantTraits>
-<StatsReport_RelevantGear>Equipaggiamento principale</StatsReport_RelevantGear>
-<StatsReport_RelevantHediffs>Condizioni di salute principali</StatsReport_RelevantHediffs>
-<StatsReport_LifeStage>Periodo di vita</StatsReport_LifeStage>
-<StatsReport_Material>Materiale</StatsReport_Material>
-<StatsReport_CharacterQuality>Qualita' del personaggio</StatsReport_CharacterQuality>
-<StatsReport_Skills>Abilita'</StatsReport_Skills>
-<StatsReport_OtherStats>Altri fattori</StatsReport_OtherStats>
-<StatsReport_HealthFactors>Fattori di salute</StatsReport_HealthFactors>
-<HealthFactorPercentImpact>{0} importanza</HealthFactorPercentImpact>
-<HealthFactorMaxImpact>{0} max</HealthFactorMaxImpact>
-<StatsReport_PostProcessed>Curva di post-trattamento</StatsReport_PostProcessed>
-<StatsReport_FinalValue>Valore finale</StatsReport_FinalValue>
-<StatsReport_MarketValueFromStuffsAndWork>Valore di mercato base calcolato a partire dai materiali di costruzione e dalla quantita' di lavoro.</StatsReport_MarketValueFromStuffsAndWork>
-<StatsReport_QualityMultiplier>Moltiplicatore di qualita'</StatsReport_QualityMultiplier>
-<StatsReport_AgeMultiplier>Moltiplicatore di eta' {0}</StatsReport_AgeMultiplier>
-<StatsReport_HealthMultiplier>Moltiplicatore di salute {0}</StatsReport_HealthMultiplier>
-<StatsReport_MoodMultiplier>Moltiplicatore di umore {0}</StatsReport_MoodMultiplier>
-<StatsReport_DifficultyMultiplier>Moltiplicatore di difficolta' {0}</StatsReport_DifficultyMultiplier>
-<StatsReport_InBed>A letto</StatsReport_InBed>
-<StatsReport_Facilities>Equipaggiamento</StatsReport_Facilities>
-<StatsReport_BodySize>Moltiplicatore per la taglia del corpo {0}</StatsReport_BodySize>
-<StatsReport_MeleeDPSExplanation>Stat visualizzata in formato:\nDPS ( Danno / Tempo di ricarica / Precisione )\n\nDPS = Danno * Precisione / Tempo di ricarica (secondi)</StatsReport_MeleeDPSExplanation>
-<StatsReport_MeleeDamage>Danno in mischia</StatsReport_MeleeDamage>
-<StatsReport_Cooldown>Tempo di ricarica</StatsReport_Cooldown>
-<StatsReport_MeleeHitChance>Precisione</StatsReport_MeleeHitChance>
-<StatsReport_CooldownFormat>{0}s</StatsReport_CooldownFormat>
-<StatsReport_LifeExpectancy>Durata media</StatsReport_LifeExpectancy>
-<StatsReport_MissingBodyParts>Moltiplicatore per le parti del corpo mancanti</StatsReport_MissingBodyParts>
-<StatsReport_GearAndInventoryMass>Peso di equipaggiamento ed inventario</StatsReport_GearAndInventoryMass>
-<StatsReport_WornByCorpse>Moltiplicatore per gli abiti di un morto</StatsReport_WornByCorpse>
-<AverageOfAllAttacks>Attacco medio</AverageOfAllAttacks>
-<StatsReport_ScenarioFactor>Scenario</StatsReport_ScenarioFactor>
-<StatsReport_IngredientsMass>Ingredienti</StatsReport_IngredientsMass>
+  <!-- EN: Tool -->
+  <Tool>TODO</Tool>
+  <!-- EN: damage -->
+  <DamageLower>TODO</DamageLower>
+  <!-- EN: seconds per attack -->
+  <SecondsPerAttackLower>TODO</SecondsPerAttackLower>
+
+  <!-- EN: Base value -->
+  <StatsReport_BaseValue>Valore di base</StatsReport_BaseValue>
+  <!-- EN: Relevant traits -->
+  <StatsReport_RelevantTraits>Caratteristiche principali</StatsReport_RelevantTraits>
+  <!-- EN: Relevant gear -->
+  <StatsReport_RelevantGear>Equipaggiamento principale</StatsReport_RelevantGear>
+  <!-- EN: Relevant health conditions -->
+  <StatsReport_RelevantHediffs>Condizioni di salute principali</StatsReport_RelevantHediffs>
+  <!-- EN: Life stage -->
+  <StatsReport_LifeStage>Periodo di vita</StatsReport_LifeStage>
+  <!-- EN: Material -->
+  <StatsReport_Material>Materiale</StatsReport_Material>
+  <!-- EN: Character quality -->
+  <StatsReport_CharacterQuality>Qualita' del personaggio</StatsReport_CharacterQuality>
+  <!-- EN: Skills -->
+  <StatsReport_Skills>Abilita'</StatsReport_Skills>
+  <!-- EN: Other stats -->
+  <StatsReport_OtherStats>Altri fattori</StatsReport_OtherStats>
+  <!-- EN: Health -->
+  <StatsReport_Health>TODO</StatsReport_Health>
+  <!-- EN: {0} importance -->
+  <HealthFactorPercentImpact>{0} importanza</HealthFactorPercentImpact>
+  <!-- EN: {0} impact -->
+  <HealthOffsetScale>TODO</HealthOffsetScale>
+  <!-- EN: {0} max -->
+  <HealthFactorMaxImpact>{0} max</HealthFactorMaxImpact>
+  <!-- EN: if below {0} -->
+  <HealthFactorAllowedDefect>TODO</HealthFactorAllowedDefect>
+  <!-- EN: Post-process curve -->
+  <StatsReport_PostProcessed>Curva di post-trattamento</StatsReport_PostProcessed>
+  <!-- EN: Final value -->
+  <StatsReport_FinalValue>Valore finale</StatsReport_FinalValue>
+  <!-- EN: Materials and labor -->
+  <StatsReport_MarketValueFromStuffsAndWork>Valore di mercato base calcolato a partire dai materiali di costruzione e dalla quantita' di lavoro.</StatsReport_MarketValueFromStuffsAndWork>
+  <!-- EN: Quality multiplier -->
+  <StatsReport_QualityMultiplier>Moltiplicatore di qualita'</StatsReport_QualityMultiplier>
+  <!-- EN: Max gain -->
+  <StatsReport_MaxGain>TODO</StatsReport_MaxGain>
+  <!-- EN: Multiplier for age {0} -->
+  <StatsReport_AgeMultiplier>Moltiplicatore di eta' {0}</StatsReport_AgeMultiplier>
+  <!-- EN: Multiplier for health {0} -->
+  <StatsReport_HealthMultiplier>Moltiplicatore di salute {0}</StatsReport_HealthMultiplier>
+  <!-- EN: Multiplier for mood {0} -->
+  <StatsReport_MoodMultiplier>Moltiplicatore di umore {0}</StatsReport_MoodMultiplier>
+  <!-- EN: Multiplier for light {0} -->
+  <StatsReport_LightMultiplier>TODO</StatsReport_LightMultiplier>
+  <!-- EN: Multiplier for difficulty {0} -->
+  <StatsReport_DifficultyMultiplier>Moltiplicatore di difficolta' {0}</StatsReport_DifficultyMultiplier>
+  <!-- EN: In bed -->
+  <StatsReport_InBed>A letto</StatsReport_InBed>
+  <!-- EN: Facilities -->
+  <StatsReport_Facilities>Equipaggiamento</StatsReport_Facilities>
+  <!-- EN: Multiplier for body size {0} -->
+  <StatsReport_BodySize>Moltiplicatore per la taglia del corpo {0}</StatsReport_BodySize>
+  <!-- EN: DPS = Melee damage * Melee hit chance / Cooldown in seconds -->
+  <StatsReport_MeleeDPSExplanation>Stat visualizzata in formato:\nDPS ( Danno / Tempo di ricarica / Precisione )\n\nDPS = Danno * Precisione / Tempo di ricarica (secondi)</StatsReport_MeleeDPSExplanation>
+  <!-- EN: Melee damage -->
+  <StatsReport_MeleeDamage>Danno in mischia</StatsReport_MeleeDamage>
+  <!-- EN: Cooldown -->
+  <StatsReport_Cooldown>Tempo di ricarica</StatsReport_Cooldown>
+  <!-- EN: Melee hit chance -->
+  <StatsReport_MeleeHitChance>Precisione</StatsReport_MeleeHitChance>
+  <!-- EN: {0} s -->
+  <StatsReport_CooldownFormat>{0}s</StatsReport_CooldownFormat>
+  <!-- EN: Life expectancy -->
+  <StatsReport_LifeExpectancy>Durata media</StatsReport_LifeExpectancy>
+  <!-- EN: Multiplier for missing body parts -->
+  <StatsReport_MissingBodyParts>Moltiplicatore per le parti del corpo mancanti</StatsReport_MissingBodyParts>
+  <!-- EN: Gear and inventory -->
+  <StatsReport_GearAndInventoryMass>Peso di equipaggiamento ed inventario</StatsReport_GearAndInventoryMass>
+  <!-- EN: Multiplier for worn by corpse -->
+  <StatsReport_WornByCorpse>Moltiplicatore per gli abiti di un morto</StatsReport_WornByCorpse>
+  <!-- EN: average of all attacks -->
+  <AverageOfAllAttacks>Attacco medio</AverageOfAllAttacks>
+  <!-- EN: Scenario -->
+  <StatsReport_ScenarioFactor>Scenario</StatsReport_ScenarioFactor>
+  <!-- EN: Ingredients -->
+  <StatsReport_IngredientsMass>Ingredienti</StatsReport_IngredientsMass>
+  <!-- EN: Permanently disabled. -->
+  <StatsReport_PermanentlyDisabled>TODO</StatsReport_PermanentlyDisabled>
+  <!-- EN: {0} -->
+  <StatsReport_Inspiration>TODO</StatsReport_Inspiration>
+  <!-- EN: Added body parts -->
+  <StatsReport_AddedBodyPartsMass>TODO</StatsReport_AddedBodyPartsMass>
+  <!-- EN: Material effect multiplier -->
+  <StatsReport_StuffEffectMultiplier>TODO</StatsReport_StuffEffectMultiplier>
+  <!-- EN: Resting -->
+  <StatsReport_Resting>TODO</StatsReport_Resting>
+  <!-- EN: recreation type -->
+  <StatsReport_JoyKind>TODO</StatsReport_JoyKind>
+  <!-- EN: work to uninstall -->
+  <StatsReport_WorkToUninstall>TODO</StatsReport_WorkToUninstall>
+  <!-- EN: Multiplier for growth {0} -->
+  <StatsReport_PlantGrowth>TODO</StatsReport_PlantGrowth>
+  <!-- EN: scaled because wild -->
+  <StatsReport_PlantGrowth_Wild>TODO</StatsReport_PlantGrowth_Wild>
+  <!-- EN: Not flesh -->
+  <StatsReport_NotFlesh>TODO</StatsReport_NotFlesh>
+  <!-- EN: Not fresh -->
+  <StatsReport_NotFresh>TODO</StatsReport_NotFresh>
+  <!-- EN: Wild man -->
+  <StatsReport_WildMan>TODO</StatsReport_WildMan>
+  <!-- EN: Attack -->
+  <StatsReport_NonToolAttack>TODO</StatsReport_NonToolAttack>
+
+  <!-- UNUSED -->
+  <StatsReport_HealthFactors>Fattori di salute</StatsReport_HealthFactors>
 
 </LanguageData>

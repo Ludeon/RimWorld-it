@@ -1,41 +1,80 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-
 <LanguageData>
-
-<BadBack.label>mal di schiena</BadBack.label>
-
-<Frail.label>gracile</Frail.label>
-
-<Cataract.label>cataratta</Cataract.label>
-
-<HearingLoss.label>sordita'</HearingLoss.label>
-
-<Dementia.label>demenza</Dementia.label>
-
-<Alzheimers.label>alzheimer</Alzheimers.label>
-<Alzheimers.stages.0.label>lieve</Alzheimers.stages.0.label>
-<Alzheimers.stages.1.label>lieve</Alzheimers.stages.1.label>
-<Alzheimers.stages.2.label>grave</Alzheimers.stages.2.label>
-<Alzheimers.stages.3.label>grave</Alzheimers.stages.3.label>
-
-<Asthma.label>asma</Asthma.label>
-<Asthma.stages.0.label>leggera</Asthma.stages.0.label>
-<Asthma.stages.1.label>forte</Asthma.stages.1.label>
-<Asthma.stages.2.label>forte</Asthma.stages.2.label>
-
-<HeartArteryBlockage.label>ostruzione arteriosa</HeartArteryBlockage.label>
-<HeartArteryBlockage.stages.0.label>leggera</HeartArteryBlockage.stages.0.label>
-<HeartArteryBlockage.stages.1.label>leggera</HeartArteryBlockage.stages.1.label>
-<HeartArteryBlockage.stages.2.label>grave</HeartArteryBlockage.stages.2.label>
-<HeartArteryBlockage.stages.3.label>grave</HeartArteryBlockage.stages.3.label>
-<HeartArteryBlockage.stages.4.label>estremo</HeartArteryBlockage.stages.4.label>
-
-<Carcinoma.label>carcinoma</Carcinoma.label>
-<Carcinoma.stages.0.label>lieve</Carcinoma.stages.0.label>
-<Carcinoma.stages.1.label>lieve</Carcinoma.stages.1.label>
-<Carcinoma.stages.2.label>grave</Carcinoma.stages.2.label>
-<Carcinoma.stages.3.label>grave</Carcinoma.stages.3.label>
-<Carcinoma.stages.4.label>estremo</Carcinoma.stages.4.label>
-<Carcinoma.stages.5.label>estremo</Carcinoma.stages.5.label>
-
+  
+  <!-- EN: alzheimer's -->
+  <Alzheimers.label>alzheimer</Alzheimers.label>
+  <!-- EN: minor -->
+  <Alzheimers.stages.minor-0.label>lieve</Alzheimers.stages.minor-0.label>
+  <!-- EN: minor -->
+  <Alzheimers.stages.minor-1.label>lieve</Alzheimers.stages.minor-1.label>
+  <!-- EN: major -->
+  <Alzheimers.stages.major-0.label>grave</Alzheimers.stages.major-0.label>
+  <!-- EN: major -->
+  <Alzheimers.stages.major-1.label>grave</Alzheimers.stages.major-1.label>
+  
+  <!-- EN: asthma -->
+  <Asthma.label>asma</Asthma.label>
+  <!-- EN: minor -->
+  <Asthma.stages.minor.label>leggera</Asthma.stages.minor.label>
+  <!-- EN: major -->
+  <Asthma.stages.major-0.label>forte</Asthma.stages.major-0.label>
+  <!-- EN: major -->
+  <Asthma.stages.major-1.label>forte</Asthma.stages.major-1.label>
+  
+  <!-- EN: bad back -->
+  <BadBack.label>mal di schiena</BadBack.label>
+  <!-- EN: a bad back -->
+  <BadBack.labelNoun>TODO</BadBack.labelNoun>
+  
+  <!-- EN: blindness -->
+  <Blindness.label>TODO</Blindness.label>
+  
+  <!-- EN: carcinoma -->
+  <Carcinoma.label>carcinoma</Carcinoma.label>
+  <!-- EN: a carcinoma -->
+  <Carcinoma.labelNoun>TODO</Carcinoma.labelNoun>
+  <!-- EN: minor -->
+  <Carcinoma.stages.minor-0.label>lieve</Carcinoma.stages.minor-0.label>
+  <!-- EN: minor -->
+  <Carcinoma.stages.minor-1.label>lieve</Carcinoma.stages.minor-1.label>
+  <!-- EN: major -->
+  <Carcinoma.stages.major-0.label>grave</Carcinoma.stages.major-0.label>
+  <!-- EN: major -->
+  <Carcinoma.stages.major-1.label>grave</Carcinoma.stages.major-1.label>
+  <!-- EN: extreme -->
+  <Carcinoma.stages.extreme-0.label>estremo</Carcinoma.stages.extreme-0.label>
+  <!-- EN: extreme -->
+  <Carcinoma.stages.extreme-1.label>estremo</Carcinoma.stages.extreme-1.label>
+  
+  <!-- EN: cataract -->
+  <Cataract.label>cataratta</Cataract.label>
+  <!-- EN: a cataract -->
+  <Cataract.labelNoun>TODO</Cataract.labelNoun>
+  
+  <!-- EN: dementia -->
+  <Dementia.label>demenza</Dementia.label>
+  
+  <!-- EN: frail -->
+  <Frail.label>gracile</Frail.label>
+  <!-- EN: frailty -->
+  <Frail.labelNoun>TODO</Frail.labelNoun>
+  
+  <!-- EN: hearing loss -->
+  <HearingLoss.label>sordita'</HearingLoss.label>
+  
+  <!-- EN: artery blockage -->
+  <HeartArteryBlockage.label>ostruzione arteriosa</HeartArteryBlockage.label>
+  <!-- EN: an artery blockage -->
+  <HeartArteryBlockage.labelNoun>TODO</HeartArteryBlockage.labelNoun>
+  <!-- EN: minor -->
+  <HeartArteryBlockage.stages.minor-0.label>leggera</HeartArteryBlockage.stages.minor-0.label>
+  <!-- EN: minor -->
+  <HeartArteryBlockage.stages.minor-1.label>leggera</HeartArteryBlockage.stages.minor-1.label>
+  <!-- EN: major -->
+  <HeartArteryBlockage.stages.major-0.label>grave</HeartArteryBlockage.stages.major-0.label>
+  <!-- EN: major -->
+  <HeartArteryBlockage.stages.major-1.label>grave</HeartArteryBlockage.stages.major-1.label>
+  <!-- EN: extreme -->
+  <HeartArteryBlockage.stages.extreme.label>estremo</HeartArteryBlockage.stages.extreme.label>
+  
 </LanguageData>

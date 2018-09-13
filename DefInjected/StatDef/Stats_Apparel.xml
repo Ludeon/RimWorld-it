@@ -1,34 +1,68 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
-<ArmorRating_Blunt.label>Armatura - Contundente</ArmorRating_Blunt.label>
-<ArmorRating_Blunt.description>Protezione contro i danni contundenti come i colpi di mazza, le frane e le esplosioni.</ArmorRating_Blunt.description>
-
-<ArmorRating_Sharp.label>Armatura - Penetrante</ArmorRating_Sharp.label>
-<ArmorRating_Sharp.description>Protezione contro i danni penetranti come le pallottole, le coltellate ed i morsi di animali.</ArmorRating_Sharp.description>
-
-<ArmorRating_Heat.label>Armatura - Calore</ArmorRating_Heat.label>
-<ArmorRating_Heat.description>Protezione contro i danni termici, come le ustioni.</ArmorRating_Heat.description>
-
-<ArmorRating_Electric.label>Armatura - Elettricita'</ArmorRating_Electric.label>
-<ArmorRating_Electric.description>Protezione contro i danni elettrici, come gli impulsi elettromagnetici.</ArmorRating_Electric.description>
-
-<Insulation_Cold.label>Isolamento - Freddo</Insulation_Cold.label>
-<Insulation_Cold.description>Modificatore della temperatura minima di comfort.</Insulation_Cold.description>
-
-<Insulation_Heat.label>Isolamento - Caldo</Insulation_Heat.label>
-<Insulation_Heat.description>Modificatore della temperatura massima di comfort.</Insulation_Heat.description>
-
-<EnergyShieldEnergyMax.label>Massima energia scudo</EnergyShieldEnergyMax.label>
-<EnergyShieldEnergyMax.description>Massima quantita' di energia che puo' avere lo scudo. Piu' energia equivale ad un maggior assorbimento di danni.</EnergyShieldEnergyMax.description>
-
-<EnergyShieldRechargeRate.label>Velocita' rigenerazione scudo</EnergyShieldRechargeRate.label>
-<EnergyShieldRechargeRate.description>Velocita' con cui lo scudo ricarica la sua energia fintanto che e' funzionante.</EnergyShieldRechargeRate.description>
-<EnergyShieldRechargeRate.formatString>{0}/s</EnergyShieldRechargeRate.formatString>
-
-<SmokepopBeltRadius.label>Portata cintura fumogena</SmokepopBeltRadius.label>
-<SmokepopBeltRadius.description>Area oscurata in caso di detonazione di una cintura fumogena.</SmokepopBeltRadius.description>
-<SmokepopBeltRadius.formatString>{0} c</SmokepopBeltRadius.formatString>
-
+  
+  <!-- EN: Armor - Blunt -->
+  <ArmorRating_Blunt.label>Armatura - Contundente</ArmorRating_Blunt.label>
+  <!-- EN: The chance to affect blunt damage like fists, club impacts and rock falls.\n\nUpon taking damage, first this armor rating is reduced by the attack's armor penetration value. The remaining armor rating is then compared against a random number from 0 to 100.\n\n    -If the random number is under half the armor rating, the damage deflects harmlessly.\n    -If the random number is over half the armor rating, but not higher than the armor rating, the damage is mitigated. This means it is reduced by half.\n    -If the random number is greater than the armor rating, the armor has no effect.\n\nFor example, at 90% armor rating against an attack with 10% armor penetration, there is a 40% chance of deflecting the attack harmlessly, and a 40% chance of mitigating the damage.\n\nIn the case of apparel armor, each layer of apparel applies its armor to the attack separately, from the outside in. -->
+  <ArmorRating_Blunt.description>Protezione contro i danni contundenti come i colpi di mazza, le frane e le esplosioni.</ArmorRating_Blunt.description>
+  
+  <!-- UNUSED -->
+  <ArmorRating_Electric.label>Armatura - Elettricita'</ArmorRating_Electric.label>
+  <ArmorRating_Electric.description>Protezione contro i danni elettrici, come gli impulsi elettromagnetici.</ArmorRating_Electric.description>
+  
+  <!-- EN: Armor - Heat -->
+  <ArmorRating_Heat.label>Armatura - Calore</ArmorRating_Heat.label>
+  <!-- EN: The chance to affect temperature-related damage like burns.\n\nUpon taking damage, first this armor rating is reduced by the attack's armor penetration value. The remaining armor rating is then compared against a random number from 0 to 100.\n\n    -If the random number is under half the armor rating, the damage deflects harmlessly.\n    -If the random number is over half the armor rating, but not higher than the armor rating, the damage is mitigated. This means it is reduced by half.\n    -If the random number is greater than the armor rating, the armor has no effect.\n\nFor example, at 90% armor rating against an attack with 10% armor penetration, there is a 40% chance of deflecting the attack harmlessly, and a 40% chance of mitigating the damage.\n\nIn the case of apparel armor, each layer of apparel applies its armor to the attack separately, from the outside in. -->
+  <ArmorRating_Heat.description>Protezione contro i danni termici, come le ustioni.</ArmorRating_Heat.description>
+  
+  <!-- EN: Armor - Sharp -->
+  <ArmorRating_Sharp.label>Armatura - Penetrante</ArmorRating_Sharp.label>
+  <!-- EN: The chance to affect sharp damage like bullets, knife stabs, explosions, and animal bites.\n\nUpon taking damage, first this armor rating is reduced by the attack's armor penetration value. The remaining armor rating is then compared against a random number from 0 to 100.\n\n    -If the random number is under half the armor rating, the damage deflects harmlessly.\n    -If the random number is over half the armor rating, but not higher than the armor rating, the damage is mitigated. This means it is converted into blunt damage and reduced by half.\n    -If the random number is greater than the armor rating, the armor has no effect.\n\nFor example, at 90% armor rating against an attack with 10% armor penetration, there is a 40% chance of deflecting the attack harmlessly, and a 40% chance of mitigating the damage.\n\nIn the case of apparel armor, each layer of apparel applies its armor to the attack separately, from the outside in. -->
+  <ArmorRating_Sharp.description>Protezione contro i danni penetranti come le pallottole, le coltellate ed i morsi di animali.</ArmorRating_Sharp.description>
+  
+  <!-- EN: Shield max energy -->
+  <EnergyShieldEnergyMax.label>Massima energia scudo</EnergyShieldEnergyMax.label>
+  <!-- EN: The maximum energy a shield belt can have at one time. More energy absorbs more damage. -->
+  <EnergyShieldEnergyMax.description>Massima quantita' di energia che puo' avere lo scudo. Piu' energia equivale ad un maggior assorbimento di danni.</EnergyShieldEnergyMax.description>
+  
+  <!-- EN: Shield recharge rate -->
+  <EnergyShieldRechargeRate.label>Velocita' rigenerazione scudo</EnergyShieldRechargeRate.label>
+  <!-- EN: The rate at which a shield gains energy as long as it is not broken. -->
+  <EnergyShieldRechargeRate.description>Velocita' con cui lo scudo ricarica la sua energia fintanto che e' funzionante.</EnergyShieldRechargeRate.description>
+  <!-- EN: {0}/s -->
+  <EnergyShieldRechargeRate.formatString>{0}/s</EnergyShieldRechargeRate.formatString>
+  
+  <!-- EN: equip delay -->
+  <EquipDelay.label>TODO</EquipDelay.label>
+  <!-- EN: The time it takes to equip and unequip this item. -->
+  <EquipDelay.description>TODO</EquipDelay.description>
+  <!-- EN: {0} s -->
+  <EquipDelay.formatString>TODO</EquipDelay.formatString>
+  
+  <!-- EN: Insulation - Cold -->
+  <Insulation_Cold.label>Isolamento - Freddo</Insulation_Cold.label>
+  <!-- EN: How much this apparel improves a wearer's minimum comfortable temperature. Greater values allow surviving in colder temperatures. -->
+  <Insulation_Cold.description>Modificatore della temperatura minima di comfort.</Insulation_Cold.description>
+  
+  <!-- EN: Insulation - Heat -->
+  <Insulation_Heat.label>Isolamento - Caldo</Insulation_Heat.label>
+  <!-- EN: How much this apparel improves a wearer's maximum comfortable temperature. Greater values allow surviving in warmer temperatures. -->
+  <Insulation_Heat.description>Modificatore della temperatura massima di comfort.</Insulation_Heat.description>
+  
+  <!-- EN: Smokepop belt radius -->
+  <SmokepopBeltRadius.label>Portata cintura fumogena</SmokepopBeltRadius.label>
+  <!-- EN: The area obscured when a smokepop belt detonates. -->
+  <SmokepopBeltRadius.description>Area oscurata in caso di detonazione di una cintura fumogena.</SmokepopBeltRadius.description>
+  <!-- EN: {0} c -->
+  <SmokepopBeltRadius.formatString>{0} c</SmokepopBeltRadius.formatString>
+  
+  <!-- EN: Armor - Material effect multiplier -->
+  <StuffEffectMultiplierArmor.label>TODO</StuffEffectMultiplierArmor.label>
+  
+  <!-- EN: Insulation - Cold - Material effect multiplier -->
+  <StuffEffectMultiplierInsulation_Cold.label>TODO</StuffEffectMultiplierInsulation_Cold.label>
+  
+  <!-- EN: Insulation - Heat - Material effect multiplier -->
+  <StuffEffectMultiplierInsulation_Heat.label>TODO</StuffEffectMultiplierInsulation_Heat.label>
+  
 </LanguageData>

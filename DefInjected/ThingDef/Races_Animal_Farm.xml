@@ -1,42 +1,48 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
-<Chicken.label>gallina</Chicken.label>
-<Chicken.description>Il volatile piu' comune in una fattoria, la gallina e' allevata per le sue uova e la sua carne.</Chicken.description>
-<Chicken_Meat.label>carne di pollo</Chicken_Meat.label>
-<Chicken_Meat.description>Carne cruda di pollo.</Chicken_Meat.description>
-<Chicken_Corpse.label>carcassa di gallina</Chicken_Corpse.label>
-<Chicken_Corpse.description>La carcassa di una gallina.</Chicken_Corpse.description>
-
-<Pig.label>maiale</Pig.label>
-<Pig.description>Il maiale e' stato uno dei primi animali addomesticati dall'uomo. E' comunemente allevato per la sua carne e la sua pelle, ed e' facile da nutrire grazie alla sua dieta onnivora.</Pig.description>
-<Pig_Leather.label>cuoio di maiale</Pig_Leather.label>
-<Pig_Leather.description>Cuoio realizzato dalla pelle di un maiale.</Pig_Leather.description>
-<Pig_Leather.stuffProps.stuffAdjective>cuoio di maiale</Pig_Leather.stuffProps.stuffAdjective>
-<Pig_Meat.label>carne di maiale</Pig_Meat.label>
-<Pig_Meat.description>Carne cruda di maiale.</Pig_Meat.description>
-<Pig_Corpse.label>carcassa di maiale</Pig_Corpse.label>
-<Pig_Corpse.description>La carcassa di un maiale.</Pig_Corpse.description>
-
-<Cow.label>mucca</Cow.label>
-<Cow.description>Un animale domestico molto comune. E' in grado di produrre grandi quantita' di latte o puo' essere macellato per la sua deliziosa carne.</Cow.description>
-<Cow_Leather.label>cuoio di mucca</Cow_Leather.label>
-<Cow_Leather.description>Cuoio realizzato dalla pelle di una mucca.</Cow_Leather.description>
-<Cow_Leather.stuffProps.stuffAdjective>cuoio di mucca</Cow_Leather.stuffProps.stuffAdjective>
-<Cow_Meat.label>carne di manzo</Cow_Meat.label>
-<Cow_Meat.description>Carne cruda di manzo.</Cow_Meat.description>
-<Cow_Corpse.label>carcassa di mucca</Cow_Corpse.label>
-<Cow_Corpse.description>La carcassa di una mucca.</Cow_Corpse.description>
-
-<Alpaca.label>alpaca</Alpaca.label>
-<Alpaca.description>Un ungulato di medie dimensioni strettamente legato al lama, l'alpaca e' spesso allevato per la sua lana estremamente morbida.</Alpaca.description>
-<Alpaca_Leather.label>cuoio di alpaca</Alpaca_Leather.label>
-<Alpaca_Leather.description>Cuoio realizzato dalla pelle di un alpaca.</Alpaca_Leather.description>
-<Alpaca_Leather.stuffProps.stuffAdjective>cuoio di alpaca</Alpaca_Leather.stuffProps.stuffAdjective>
-<Alpaca_Meat.label>carne di alpaca</Alpaca_Meat.label>
-<Alpaca_Meat.description>Carne cruda di alpaca.</Alpaca_Meat.description>
-<Alpaca_Corpse.label>carcassa di alpaca</Alpaca_Corpse.label>
-<Alpaca_Corpse.description>La carcassa di un alpaca.</Alpaca_Corpse.description>
-
+  
+  <!-- EN: alpaca -->
+  <Alpaca.label>alpaca</Alpaca.label>
+  <!-- EN: A medium-sized ungulate closely related to the llama, the alpaca is usually raised for its remarkably soft and insulating wool. Alpacas have also been used as pack animals since they hauled cargo on the rugged mountain trails of ancient South America -->
+  <Alpaca.description>Un ungulato di medie dimensioni strettamente legato al lama, l'alpaca e' spesso allevato per la sua lana estremamente morbida.</Alpaca.description>
+  <!-- EN: left hoof -->
+  <Alpaca.tools.left_hoof.label>TODO</Alpaca.tools.left_hoof.label>
+  <!-- EN: right hoof -->
+  <Alpaca.tools.right_hoof.label>TODO</Alpaca.tools.right_hoof.label>
+  <!-- EN: head -->
+  <Alpaca.tools.head.label>TODO</Alpaca.tools.head.label>
+  
+  <!-- EN: chicken -->
+  <Chicken.label>gallina</Chicken.label>
+  <!-- EN: The most traditional farm bird, the chicken is raised for its eggs and meat. It grows very quickly and lays eggs very often. -->
+  <Chicken.description>Il volatile piu' comune in una fattoria, la gallina e' allevata per le sue uova e la sua carne.</Chicken.description>
+  <!-- EN: claws -->
+  <Chicken.tools.claws.label>TODO</Chicken.tools.claws.label>
+  <!-- EN: beak -->
+  <Chicken.tools.beak.label>TODO</Chicken.tools.beak.label>
+  <!-- EN: head -->
+  <Chicken.tools.head.label>TODO</Chicken.tools.head.label>
+  
+  <!-- EN: cow -->
+  <Cow.label>mucca</Cow.label>
+  <!-- EN: A large domesticated ungulate, cows have been bred for millennia to produce huge amounts of milk, meat, and leather. They are exceptionally gentle creatures and will never seek revenge, no matter how many times they are harmed. Most of them are so adapted to farm life that they cannot survive in the wild. -->
+  <Cow.description>Un animale domestico molto comune. E' in grado di produrre grandi quantita' di latte o puo' essere macellato per la sua deliziosa carne.</Cow.description>
+  <!-- EN: beef -->
+  <Cow.race.meatLabel>TODO</Cow.race.meatLabel>
+  <!-- EN: head -->
+  <Cow.tools.head.label>TODO</Cow.tools.head.label>
+  <!-- EN: left hoof -->
+  <Cow.tools.left_hoof.label>TODO</Cow.tools.left_hoof.label>
+  <!-- EN: right hoof -->
+  <Cow.tools.right_hoof.label>TODO</Cow.tools.right_hoof.label>
+  
+  <!-- EN: pig -->
+  <Pig.label>maiale</Pig.label>
+  <!-- EN: The pig was one of the first animals domesticated by humans. It is commonly raised for meat, and is easy to feed because of its omnivorous diet. Though pigs are self-serving by disposition, they can be trained in complex tasks. -->
+  <Pig.description>Il maiale e' stato uno dei primi animali addomesticati dall'uomo. E' comunemente allevato per la sua carne e la sua pelle, ed e' facile da nutrire grazie alla sua dieta onnivora.</Pig.description>
+  <!-- EN: pork -->
+  <Pig.race.meatLabel>TODO</Pig.race.meatLabel>
+  <!-- EN: head -->
+  <Pig.tools.head.label>TODO</Pig.tools.head.label>
+  
 </LanguageData>
