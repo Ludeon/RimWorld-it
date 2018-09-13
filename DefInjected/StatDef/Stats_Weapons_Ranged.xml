@@ -1,21 +1,36 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
-<AccuracyTouch.label>Precisione (corpo a corpo)</AccuracyTouch.label>
-<AccuracyTouch.description>Moltiplicatore precisione a distanza ravvicinata.</AccuracyTouch.description>
-
-<AccuracyShort.label>Precisione (vicino)</AccuracyShort.label>
-<AccuracyShort.description>Moltiplicatore precisione a breve distanza.</AccuracyShort.description>
-
-<AccuracyMedium.label>Precisione (medio)</AccuracyMedium.label>
-<AccuracyMedium.description>Moltiplicatore precisione a media distanza.</AccuracyMedium.description>
-
-<AccuracyLong.label>Precisione (lontano)</AccuracyLong.label>
-<AccuracyLong.description>Moltiplicatore precisione a lunga distanza.</AccuracyLong.description>
-
-<RangedWeapon_Cooldown.label>cadenza di fuoco</RangedWeapon_Cooldown.label>
-<RangedWeapon_Cooldown.description>Tempo minimo di recupero dopo aver sparato con l'arma.</RangedWeapon_Cooldown.description>
-<RangedWeapon_Cooldown.formatString>{0} s</RangedWeapon_Cooldown.formatString>
-
+  
+  <!-- EN: Accuracy (long) -->
+  <AccuracyLong.label>Precisione (lontano)</AccuracyLong.label>
+  <!-- EN: The weapon's accuracy at a distance of 40 cells or more. An actual shot's chance to hit will also be affected by other factors. -->
+  <AccuracyLong.description>Moltiplicatore precisione a lunga distanza.</AccuracyLong.description>
+  
+  <!-- EN: Accuracy (medium) -->
+  <AccuracyMedium.label>Precisione (medio)</AccuracyMedium.label>
+  <!-- EN: The weapon's accuracy at a distance of 25 cells. An actual shot's chance to hit will also be affected by other factors. -->
+  <AccuracyMedium.description>Moltiplicatore precisione a media distanza.</AccuracyMedium.description>
+  
+  <!-- EN: Accuracy (short) -->
+  <AccuracyShort.label>Precisione (vicino)</AccuracyShort.label>
+  <!-- EN: The weapon's accuracy at a distance of 12 cells. An actual shot's chance to hit will also be affected by other factors. -->
+  <AccuracyShort.description>Moltiplicatore precisione a breve distanza.</AccuracyShort.description>
+  
+  <!-- EN: Accuracy (close) -->
+  <AccuracyTouch.label>Precisione (corpo a corpo)</AccuracyTouch.label>
+  <!-- EN: The weapon's accuracy at a distance of 3 cells or less. An actual shot's chance to hit will also be affected by other factors. -->
+  <AccuracyTouch.description>Moltiplicatore precisione a distanza ravvicinata.</AccuracyTouch.description>
+  
+  <!-- EN: ranged cooldown -->
+  <RangedWeapon_Cooldown.label>cadenza di fuoco</RangedWeapon_Cooldown.label>
+  <!-- EN: How long it takes to recover after firing this weapon. -->
+  <RangedWeapon_Cooldown.description>Tempo minimo di recupero dopo aver sparato con l'arma.</RangedWeapon_Cooldown.description>
+  <!-- EN: {0} s -->
+  <RangedWeapon_Cooldown.formatString>{0} s</RangedWeapon_Cooldown.formatString>
+  
+  <!-- EN: damage multiplier -->
+  <RangedWeapon_DamageMultiplier.label>TODO</RangedWeapon_DamageMultiplier.label>
+  <!-- EN: A damage multiplier applied to projectiles fired from this weapon. -->
+  <RangedWeapon_DamageMultiplier.description>TODO</RangedWeapon_DamageMultiplier.description>
+  
 </LanguageData>

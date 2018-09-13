@@ -1,50 +1,111 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
-<GutWorms.label>vermi intestinali</GutWorms.label>
-
-<MuscleParasites.label>parassiti muscolari</MuscleParasites.label>
-
-<FibrousMechanites.label>meccanite fibrosa</FibrousMechanites.label>
-<FibrousMechanites.stages.0.label>dolore lieve</FibrousMechanites.stages.0.label>
-<FibrousMechanites.stages.1.label>dolore intenso</FibrousMechanites.stages.1.label>
-
-<SensoryMechanites.label>meccanite sensoriale</SensoryMechanites.label>
-<SensoryMechanites.stages.0.label>dolore lieve</SensoryMechanites.stages.0.label>
-<SensoryMechanites.stages.1.label>dolore intenso</SensoryMechanites.stages.1.label>
-
-<WoundInfection.label>infezione</WoundInfection.label>
-<WoundInfection.stages.0.label>lieve</WoundInfection.stages.0.label>
-<WoundInfection.stages.1.label>grave</WoundInfection.stages.1.label>
-<WoundInfection.stages.2.label>estrema</WoundInfection.stages.2.label>
-<WoundInfection.stages.3.label>estrema</WoundInfection.stages.3.label>
-
-<Flu.label>influenza</Flu.label>
-<Flu.stages.0.label>leggera (nascosto)</Flu.stages.0.label>
-<Flu.stages.1.label>leggera</Flu.stages.1.label>
-<Flu.stages.2.label>grave</Flu.stages.2.label>
-<Flu.stages.3.label>estrema</Flu.stages.3.label>
-
-<Plague.label>peste</Plague.label>
-<Plague.stages.0.label>leggera</Plague.stages.0.label>
-<Plague.stages.1.label>leggera</Plague.stages.1.label>
-<Plague.stages.2.label>grave</Plague.stages.2.label>
-<Plague.stages.3.label>estrema</Plague.stages.3.label>
-<Plague.stages.4.label>estrema</Plague.stages.4.label>
-
-<Malaria.label>malaria</Malaria.label>
-<Malaria.stages.0.label>nascosto</Malaria.stages.0.label>
-<Malaria.stages.1.label>leggera</Malaria.stages.1.label>
-<Malaria.stages.2.label>grave</Malaria.stages.2.label>
-<Malaria.stages.3.label>estrema</Malaria.stages.3.label>
-
-<SleepingSickness.label>malattia del sonno</SleepingSickness.label>
-<SleepingSickness.stages.0.label>leggera (nascosto)</SleepingSickness.stages.0.label>
-<SleepingSickness.stages.1.label>leggera</SleepingSickness.stages.1.label>
-<SleepingSickness.stages.2.label>leggera</SleepingSickness.stages.2.label>
-<SleepingSickness.stages.3.label>grave</SleepingSickness.stages.3.label>
-<SleepingSickness.stages.4.label>estrema</SleepingSickness.stages.4.label>
-<SleepingSickness.stages.5.label>estrema</SleepingSickness.stages.5.label>
-
+  
+  <!-- EN: flu -->
+  <Animal_Flu.label>TODO</Animal_Flu.label>
+  <!-- EN: minor -->
+  <Animal_Flu.stages.minor.label>TODO</Animal_Flu.stages.minor.label>
+  <!-- EN: major -->
+  <Animal_Flu.stages.major.label>TODO</Animal_Flu.stages.major.label>
+  <!-- EN: extreme -->
+  <Animal_Flu.stages.extreme.label>TODO</Animal_Flu.stages.extreme.label>
+  
+  <!-- EN: plague -->
+  <Animal_Plague.label>TODO</Animal_Plague.label>
+  <!-- EN: minor -->
+  <Animal_Plague.stages.minor.label>TODO</Animal_Plague.stages.minor.label>
+  <!-- EN: major -->
+  <Animal_Plague.stages.major.label>TODO</Animal_Plague.stages.major.label>
+  <!-- EN: extreme -->
+  <Animal_Plague.stages.extreme-0.label>TODO</Animal_Plague.stages.extreme-0.label>
+  <!-- EN: extreme -->
+  <Animal_Plague.stages.extreme-1.label>TODO</Animal_Plague.stages.extreme-1.label>
+  
+  <!-- EN: fibrous mechanites -->
+  <FibrousMechanites.label>meccanite fibrosa</FibrousMechanites.label>
+  <!-- EN: mild pain -->
+  <FibrousMechanites.stages.mild_pain.label>dolore lieve</FibrousMechanites.stages.mild_pain.label>
+  <!-- EN: intense pain -->
+  <FibrousMechanites.stages.intense_pain.label>dolore intenso</FibrousMechanites.stages.intense_pain.label>
+  
+  <!-- EN: flu -->
+  <Flu.label>influenza</Flu.label>
+  <!-- EN: minor -->
+  <Flu.stages.minor.label>leggera (nascosto)</Flu.stages.minor.label>
+  <!-- EN: major -->
+  <Flu.stages.major.label>leggera</Flu.stages.major.label>
+  <!-- EN: extreme -->
+  <Flu.stages.extreme.label>grave</Flu.stages.extreme.label>
+  
+  <!-- UNUSED -->
+  <Flu.stages.3.label>estrema</Flu.stages.3.label>
+  
+  <!-- EN: gut worms -->
+  <GutWorms.label>vermi intestinali</GutWorms.label>
+  
+  <!-- EN: malaria -->
+  <Malaria.label>malaria</Malaria.label>
+  <!-- EN: minor -->
+  <Malaria.stages.minor.label>nascosto</Malaria.stages.minor.label>
+  <!-- EN: major -->
+  <Malaria.stages.major.label>leggera</Malaria.stages.major.label>
+  <!-- EN: extreme -->
+  <Malaria.stages.extreme.label>grave</Malaria.stages.extreme.label>
+  
+  <!-- UNUSED -->
+  <Malaria.stages.3.label>estrema</Malaria.stages.3.label>
+  
+  <!-- EN: muscle parasites -->
+  <MuscleParasites.label>parassiti muscolari</MuscleParasites.label>
+  
+  <!-- EN: plague -->
+  <Plague.label>peste</Plague.label>
+  <!-- EN: minor -->
+  <Plague.stages.minor.label>leggera</Plague.stages.minor.label>
+  <!-- EN: major -->
+  <Plague.stages.major.label>leggera</Plague.stages.major.label>
+  <!-- EN: extreme -->
+  <Plague.stages.extreme-0.label>grave</Plague.stages.extreme-0.label>
+  <!-- EN: extreme -->
+  <Plague.stages.extreme-1.label>estrema</Plague.stages.extreme-1.label>
+  
+  <!-- UNUSED -->
+  <Plague.stages.4.label>estrema</Plague.stages.4.label>
+  
+  <!-- EN: sensory mechanites -->
+  <SensoryMechanites.label>meccanite sensoriale</SensoryMechanites.label>
+  <!-- EN: mild pain -->
+  <SensoryMechanites.stages.mild_pain.label>dolore lieve</SensoryMechanites.stages.mild_pain.label>
+  <!-- EN: intense pain -->
+  <SensoryMechanites.stages.intense_pain.label>dolore intenso</SensoryMechanites.stages.intense_pain.label>
+  
+  <!-- EN: sleeping sickness -->
+  <SleepingSickness.label>malattia del sonno</SleepingSickness.label>
+  <!-- EN: minor -->
+  <SleepingSickness.stages.minor-0.label>leggera (nascosto)</SleepingSickness.stages.minor-0.label>
+  <!-- EN: minor -->
+  <SleepingSickness.stages.minor-1.label>leggera</SleepingSickness.stages.minor-1.label>
+  <!-- EN: major -->
+  <SleepingSickness.stages.major.label>leggera</SleepingSickness.stages.major.label>
+  <!-- EN: extreme -->
+  <SleepingSickness.stages.extreme-0.label>grave</SleepingSickness.stages.extreme-0.label>
+  <!-- EN: extreme -->
+  <SleepingSickness.stages.extreme-1.label>estrema</SleepingSickness.stages.extreme-1.label>
+  
+  <!-- UNUSED -->
+  <SleepingSickness.stages.5.label>estrema</SleepingSickness.stages.5.label>
+  
+  <!-- EN: infection -->
+  <WoundInfection.label>infezione</WoundInfection.label>
+  <!-- EN: an infection -->
+  <WoundInfection.labelNoun>TODO</WoundInfection.labelNoun>
+  <!-- EN: minor -->
+  <WoundInfection.stages.minor.label>lieve</WoundInfection.stages.minor.label>
+  <!-- EN: major -->
+  <WoundInfection.stages.major.label>grave</WoundInfection.stages.major.label>
+  <!-- EN: extreme -->
+  <WoundInfection.stages.extreme-0.label>estrema</WoundInfection.stages.extreme-0.label>
+  <!-- EN: extreme -->
+  <WoundInfection.stages.extreme-1.label>estrema</WoundInfection.stages.extreme-1.label>
+  
 </LanguageData>

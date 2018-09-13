@@ -1,13 +1,22 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
-<Beer.label>birra</Beer.label>
-<Beer.description>Dopo l'acqua, la prima bevanda consumata dall'umanita'. La birra puo' avere un buon sapore, ma il suo principale effetto e' l'intossicazione. Un consumo eccessivo puo' portare ad una dipendenza da alcol.</Beer.description>
-<Beer.ingestible.ingestCommandString>Bere {0}</Beer.ingestible.ingestCommandString>
-<Beer.ingestible.ingestReportString>Beve {0}.</Beer.ingestible.ingestReportString>
-
-<Wort.label>mosto</Wort.label>
-<Wort.description>Birra non fermentata. Questa sostanza deve fermentare in un barile prima di poter diventare una birra bevibile.</Wort.description>
-
+  
+  <!-- EN: beer -->
+  <Beer.label>birra</Beer.label>
+  <!-- EN: The first beverage besides water ever consumed by mankind. Beer can taste good, but its main effect is intoxication. Excessive consumption can lead to alcohol blackouts and, over time, addiction. -->
+  <Beer.description>Dopo l'acqua, la prima bevanda consumata dall'umanita'. La birra puo' avere un buon sapore, ma il suo principale effetto e' l'intossicazione. Un consumo eccessivo puo' portare ad una dipendenza da alcol.</Beer.description>
+  <!-- EN: Drink {0} -->
+  <Beer.ingestible.ingestCommandString>Bere {0}</Beer.ingestible.ingestCommandString>
+  <!-- EN: Drinking {0}. -->
+  <Beer.ingestible.ingestReportString>Beve {0}.</Beer.ingestible.ingestReportString>
+  <!-- EN: bottle -->
+  <Beer.tools.bottle.label>TODO</Beer.tools.bottle.label>
+  <!-- EN: neck -->
+  <Beer.tools.neck.label>TODO</Beer.tools.neck.label>
+  
+  <!-- EN: wort -->
+  <Wort.label>mosto</Wort.label>
+  <!-- EN: Un-fermented beer. This substance needs to ferment in a fermenting barrel before it becomes drinkable beer. -->
+  <Wort.description>Birra non fermentata. Questa sostanza deve fermentare in un barile prima di poter diventare una birra bevibile.</Wort.description>
+  
 </LanguageData>

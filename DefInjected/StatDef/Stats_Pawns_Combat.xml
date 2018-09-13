@@ -1,20 +1,38 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
-<MeleeDPS.label>DPS in mischia</MeleeDPS.label>
-<MeleeDPS.description>Danno medio al secondo in combattimento corpo a corpo. Non tiene conto delle difese del bersaglio come la sua capacita' di schivare e l'armatura.</MeleeDPS.description>
-
-<MeleeHitChance.label>possibilita' colpo a segno</MeleeHitChance.label>
-<MeleeHitChance.description>Possibilita' di colpire un bersaglio in combattimento corpo a corpo. Il bersaglio puo' sempre schivare un colpo anche se questo e' andato a segno.</MeleeHitChance.description>
-
-<MeleeDodgeChance.label>possibilita' schivata</MeleeDodgeChance.label>
-<MeleeDodgeChance.description>Possibilita' di schivare un attacco in mischia che sarebbe andato a segno. I personaggi non schiveranno mentre mirano o sparano con un'arma da tiro.</MeleeDodgeChance.description>
-
-<ShootingAccuracy.label>precisione tiro</ShootingAccuracy.label>
-<ShootingAccuracy.description>Possibilita' di colpire un bersaglio dalla distanza.</ShootingAccuracy.description>
-
-<AimingDelayFactor.label>velocita' mira</AimingDelayFactor.label>
-<AimingDelayFactor.description>Tempo necessario per sparare dopo aver mirato.</AimingDelayFactor.description>
-
+  
+  <!-- EN: aiming time -->
+  <AimingDelayFactor.label>velocita' mira</AimingDelayFactor.label>
+  <!-- EN: How long it takes to shoot after choosing a target. -->
+  <AimingDelayFactor.description>Tempo necessario per sparare dopo aver mirato.</AimingDelayFactor.description>
+  
+  <!-- EN: melee armor penetration -->
+  <MeleeArmorPenetration.label>TODO</MeleeArmorPenetration.label>
+  <!-- EN: Average armor penetration of all attacks in melee combat. This stat includes currently used weapon. -->
+  <MeleeArmorPenetration.description>TODO</MeleeArmorPenetration.description>
+  
+  <!-- EN: melee dodge chance -->
+  <MeleeDodgeChance.label>possibilita' schivata</MeleeDodgeChance.label>
+  <!-- EN: Chance to dodge a melee attack that would've otherwise hit. Characters will not dodge while aiming or firing a ranged weapon. -->
+  <MeleeDodgeChance.description>Possibilita' di schivare un attacco in mischia che sarebbe andato a segno. I personaggi non schiveranno mentre mirano o sparano con un'arma da tiro.</MeleeDodgeChance.description>
+  
+  <!-- EN: melee DPS -->
+  <MeleeDPS.label>DPS in mischia</MeleeDPS.label>
+  <!-- EN: Average damage per second in melee combat. This stat ignores target defenses like dodging and armor. -->
+  <MeleeDPS.description>Danno medio al secondo in combattimento corpo a corpo. Non tiene conto delle difese del bersaglio come la sua capacita' di schivare e l'armatura.</MeleeDPS.description>
+  
+  <!-- EN: melee hit chance -->
+  <MeleeHitChance.label>possibilita' colpo a segno</MeleeHitChance.label>
+  <!-- EN: Chance to hit a target in melee. The target can still dodge even if we would've hit. -->
+  <MeleeHitChance.description>Possibilita' di colpire un bersaglio in combattimento corpo a corpo. Il bersaglio puo' sempre schivare un colpo anche se questo e' andato a segno.</MeleeHitChance.description>
+  
+  <!-- UNUSED -->
+  <ShootingAccuracy.label>precisione tiro</ShootingAccuracy.label>
+  <ShootingAccuracy.description>Possibilita' di colpire un bersaglio dalla distanza.</ShootingAccuracy.description>
+  
+  <!-- EN: shooting accuracy -->
+  <ShootingAccuracyPawn.label>TODO</ShootingAccuracyPawn.label>
+  <!-- EN: Base chance to not miss per cell of shot distance. Chance to hit is also affected by many other factors. A hit chance explanation for any shot can be seen by selecting a shooter and mousing over a target. -->
+  <ShootingAccuracyPawn.description>TODO</ShootingAccuracyPawn.description>
+  
 </LanguageData>

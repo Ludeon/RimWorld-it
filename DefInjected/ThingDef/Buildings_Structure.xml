@@ -1,23 +1,19 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
-<Door.label>porta</Door.label>
-<Door.description>Separa le stanze. Deve essere aperta e chiusa manualmente, cosa che rallenta le persone.</Door.description>
-<Door_Blueprint.label>porta (progetto)</Door_Blueprint.label>
-<Door_Frame.label>una porta</Door_Frame.label>
-<Door_Frame.description>Separa le stanze. Deve essere aperta e chiusa manualmente, cosa che rallenta le persone.</Door_Frame.description>
-
-<Autodoor.label>porta automatica</Autodoor.label>
-<Autodoor.description>Separa le stanze. L'automatismo permette alle persone di attraversarla senza essere rallentate.</Autodoor.description>
-<Autodoor_Blueprint.label>porta automatica (progetto)</Autodoor_Blueprint.label>
-<Autodoor_Frame.label>una porta automatica</Autodoor_Frame.label>
-<Autodoor_Frame.description>Separa le stanze. L'automatismo permette alle persone di attraversarla senza essere rallentate.</Autodoor_Frame.description>
-
-<Wall.label>muro</Wall.label>
-<Wall.description>Una solida parete. In grado di sostenere una copertura.</Wall.description>
-<Wall_Blueprint.label>muro (progetto)</Wall_Blueprint.label>
-<Wall_Frame.label>un muro</Wall_Frame.label>
-<Wall_Frame.description>Una solida parete. In grado di sostenere una copertura.</Wall_Frame.description>
-
+  
+  <!-- EN: autodoor -->
+  <Autodoor.label>porta automatica</Autodoor.label>
+  <!-- EN: Divides rooms. Powered operation allows people to move through the door without slowing down. -->
+  <Autodoor.description>Separa le stanze. L'automatismo permette alle persone di attraversarla senza essere rallentate.</Autodoor.description>
+  
+  <!-- EN: door -->
+  <Door.label>porta</Door.label>
+  <!-- EN: Divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of. -->
+  <Door.description>Separa le stanze. Deve essere aperta e chiusa manualmente, cosa che rallenta le persone.</Door.description>
+  
+  <!-- EN: wall -->
+  <Wall.label>muro</Wall.label>
+  <!-- EN: An impassable wall. Capable of holding up a roof. -->
+  <Wall.description>Una solida parete. In grado di sostenere una copertura.</Wall.description>
+  
 </LanguageData>

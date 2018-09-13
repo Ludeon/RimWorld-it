@@ -1,145 +1,251 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
-<Firefighter.label>Pompiere</Firefighter.label>
-<Firefighter.description>Spegnere gli incendi nella colonia.</Firefighter.description>
-<Firefighter.labelShort>Antincendio</Firefighter.labelShort>
-<Firefighter.pawnLabel>Pompiere</Firefighter.pawnLabel>
-<Firefighter.gerundLabel>Spegne incendi</Firefighter.gerundLabel>
-<Firefighter.verb>Spegnere il fuoco</Firefighter.verb>
-
-<Patient.label>Paziente</Patient.label>
-<Patient.description>Andare verso un letto medico per essere curato in caso problemi di salute mettano in gioco la vita.</Patient.description>
-<Patient.labelShort>Cura</Patient.labelShort>
-<Patient.pawnLabel>Paziente</Patient.pawnLabel>
-<Patient.gerundLabel>Viene curato</Patient.gerundLabel>
-<Patient.verb>Diventare un paziente</Patient.verb>
-
-<Doctor.label>Medico</Doctor.label>
-<Doctor.description>Guarite i malati, portare loro del cibo, confortarli ed eseguire interventi chirurgici. I medici si prenderanno cura dei coloni e dei prigionieri.</Doctor.description>
-<Doctor.labelShort>Medicina</Doctor.labelShort>
-<Doctor.pawnLabel>Medico</Doctor.pawnLabel>
-<Doctor.gerundLabel>Cura</Doctor.gerundLabel>
-<Doctor.verb>Curare</Doctor.verb>
-
-<PatientBedRest.label>Paziente</PatientBedRest.label>
-<PatientBedRest.description>Rimanere a letto per curare problemi di salute che non mettono in pericolo la vita, almeno per ora.</PatientBedRest.description>
-<PatientBedRest.labelShort>Riposo</PatientBedRest.labelShort>
-<PatientBedRest.pawnLabel>Paziente</PatientBedRest.pawnLabel>
-<PatientBedRest.gerundLabel>Si riposa a letto</PatientBedRest.gerundLabel>
-<PatientBedRest.verb>Mettersi a riposo</PatientBedRest.verb>
-
-<Flicker.label>Controllore</Flicker.label>
-<Flicker.description>Azionare gli interruttori. Ad esempio, quando si sceglie di attivare l'alimentazione di una torretta, un controllore deve premere manualmente l'interruttore.</Flicker.description>
-<Flicker.labelShort>Controllo</Flicker.labelShort>
-<Flicker.pawnLabel>Controllore</Flicker.pawnLabel>
-<Flicker.gerundLabel>Aziona</Flicker.gerundLabel>
-<Flicker.verb>Azionare</Flicker.verb>
-
-<Warden.label>Sorveglianza</Warden.label>
-<Warden.description>Sorvegliare, dar da mangiare, parlare e reclutare i prigionieri.</Warden.description>
-<Warden.labelShort>Guardia</Warden.labelShort>
-<Warden.pawnLabel>Guardiano</Warden.pawnLabel>
-<Warden.gerundLabel>Sorveglia</Warden.gerundLabel>
-<Warden.verb>Sorvegliare</Warden.verb>
-
-<Handling.label>Ammaestramento</Handling.label>
-<Handling.description>Addomesticare gli animali, addestrarli, dar loro da mangiare, macellarli e prelevare i prodotti di origine animale come uova e latte.</Handling.description>
-<Handling.labelShort>Animali</Handling.labelShort>
-<Handling.pawnLabel>Domatore</Handling.pawnLabel>
-<Handling.gerundLabel>Addomestica</Handling.gerundLabel>
-<Handling.verb>Addomesticare</Handling.verb>
-
-<Cooking.label>Cucina</Cooking.label>
-<Cooking.description>Preparare i pasti e macellare le carcasse.</Cooking.description>
-<Cooking.labelShort>Cucina</Cooking.labelShort>
-<Cooking.pawnLabel>Cuoco</Cooking.pawnLabel>
-<Cooking.gerundLabel>Cucina</Cooking.gerundLabel>
-<Cooking.verb>Cucinare</Cooking.verb>
-
-<Hunting.label>Caccia</Hunting.label>
-<Hunting.description>Abbattere gli animali individuati come preda.</Hunting.description>
-<Hunting.labelShort>Caccia</Hunting.labelShort>
-<Hunting.pawnLabel>Cacciatore</Hunting.pawnLabel>
-<Hunting.gerundLabel>Caccia</Hunting.gerundLabel>
-<Hunting.verb>Cacciare</Hunting.verb>
-
-<Construction.label>Costruzione</Construction.label>
-<Construction.description>Costruire elementi specifici.</Construction.description>
-<Construction.labelShort>Edifici</Construction.labelShort>
-<Construction.pawnLabel>Ingegnere</Construction.pawnLabel>
-<Construction.gerundLabel>Costruisce</Construction.gerundLabel>
-<Construction.verb>Costruire</Construction.verb>
   
-<Growing.label>Agricultura</Growing.label>
-<Growing.description>Coltivare i campi.</Growing.description>
-<Growing.labelShort>Agricultura</Growing.labelShort>
-<Growing.pawnLabel>Agricoltore</Growing.pawnLabel>
-<Growing.gerundLabel>Coltiva</Growing.gerundLabel>
-<Growing.verb>Coltivare</Growing.verb>
-
-<Mining.label>Estrazione mineraria</Mining.label>
-<Mining.description>Scavare e perforare le aree designate per l'estrazione.</Mining.description>
-<Mining.labelShort>Scavo</Mining.labelShort>
-<Mining.pawnLabel>Minatore</Mining.pawnLabel>
-<Mining.gerundLabel>Scava</Mining.gerundLabel>
-<Mining.verb>Scavare</Mining.verb>
-
-<PlantCutting.label>Taglio piante</PlantCutting.label>
-<PlantCutting.description>Abbattere le piante designate.</PlantCutting.description>
-<PlantCutting.labelShort>Taglio piante</PlantCutting.labelShort>
-<PlantCutting.pawnLabel>Boscaiolo</PlantCutting.pawnLabel>
-<PlantCutting.gerundLabel>Abbatte</PlantCutting.gerundLabel>
-<PlantCutting.verb>Abbattere le piante</PlantCutting.verb>
-
-<Smithing.label>Forgiatura</Smithing.label>
-<Smithing.description>Creare armi e strumenti a partire da materie prime, sia forgiando che assemblando.</Smithing.description>
-<Smithing.labelShort>Forgiatura</Smithing.labelShort>
-<Smithing.pawnLabel>Fabbro</Smithing.pawnLabel>
-<Smithing.gerundLabel>Forgia</Smithing.gerundLabel>
-<Smithing.verb>Forgiare</Smithing.verb>
-
-<Tailoring.label>Sartoria</Tailoring.label>
-<Tailoring.description>Cucire dei vestiti a partire da materie prime.</Tailoring.description>
-<Tailoring.labelShort>Sartoria</Tailoring.labelShort>
-<Tailoring.pawnLabel>Sarto</Tailoring.pawnLabel>
-<Tailoring.gerundLabel>Cuce</Tailoring.gerundLabel>
-<Tailoring.verb>Cucire</Tailoring.verb>
-
-<Art.label>Arte</Art.label>
-<Art.description>Scolpire opere d'arte a partire da materie prime.</Art.description>
-<Art.labelShort>Arte</Art.labelShort>
-<Art.pawnLabel>Artista</Art.pawnLabel>
-<Art.gerundLabel>Scolpisce</Art.gerundLabel>
-<Art.verb>Scolpire</Art.verb>
-
-<Crafting.label>Artigianato</Crafting.label>
-<Crafting.description>Fare lavori scarsamente qualificati alle postazioni di lavoro. Queste includono taglio delle pietre, forgiatura, e altro ancora.</Crafting.description>
-<Crafting.labelShort>Artigianato</Crafting.labelShort>
-<Crafting.pawnLabel>Artigiano</Crafting.pawnLabel>
-<Crafting.gerundLabel>Fabbrica</Crafting.gerundLabel>
-<Crafting.verb>Fabbricare</Crafting.verb>
-
-<Hauling.label>Trasporto</Hauling.label>
-<Hauling.description>Trasportare le cose la' dove devono essere portate.</Hauling.description>
-<Hauling.labelShort>Trasporto</Hauling.labelShort>
-<Hauling.pawnLabel>Trasportatore</Hauling.pawnLabel>
-<Hauling.gerundLabel>Trasporta</Hauling.gerundLabel>
-<Hauling.verb>Trasportare</Hauling.verb>
-
-<Cleaning.label>Pulizia</Cleaning.label>
-<Cleaning.description>Ripulire i pavimenti e rimuovere la neve.</Cleaning.description>
-<Cleaning.labelShort>Pulizia</Cleaning.labelShort>
-<Cleaning.pawnLabel>Inserviente</Cleaning.pawnLabel>
-<Cleaning.gerundLabel>Ripulisce</Cleaning.gerundLabel>
-<Cleaning.verb>Ripulire</Cleaning.verb>
-
-<Research.label>Ricerca</Research.label>
-<Research.description>Lavorare sui progetti di ricerca.</Research.description>
-<Research.labelShort>Ricerca</Research.labelShort>
-<Research.pawnLabel>Ricercatore</Research.pawnLabel>
-<Research.gerundLabel>Ricerca</Research.gerundLabel>
-<Research.verb>Ricercare</Research.verb>
-
+  <Art.label>Arte</Art.label>
+  <!-- EN: Create beautiful works of art from raw materials. -->
+  <Art.description>Scolpire opere d'arte a partire da materie prime.</Art.description>
+  <!-- EN: art -->
+  <Art.gerundLabel>Scolpisce</Art.gerundLabel>
+  <!-- EN: Art -->
+  <Art.labelShort>Arte</Art.labelShort>
+  <!-- EN: Artist -->
+  <Art.pawnLabel>Artista</Art.pawnLabel>
+  <!-- EN: Do art at -->
+  <Art.verb>Scolpire</Art.verb>
+  
+  <!-- EN: Unskilled and easy tasks. Release prisoners and flick switches on machines. -->
+  <BasicWorker.description>TODO</BasicWorker.description>
+  <!-- EN: dealing with -->
+  <BasicWorker.gerundLabel>TODO</BasicWorker.gerundLabel>
+  <!-- EN: Basic -->
+  <BasicWorker.labelShort>TODO</BasicWorker.labelShort>
+  <!-- EN: Worker -->
+  <BasicWorker.pawnLabel>TODO</BasicWorker.pawnLabel>
+  <!-- EN: Deal with -->
+  <BasicWorker.verb>TODO</BasicWorker.verb>
+  
+  <Cleaning.label>Pulizia</Cleaning.label>
+  <!-- EN: Clear snow and clean the floor in the home area. -->
+  <Cleaning.description>Ripulire i pavimenti e rimuovere la neve.</Cleaning.description>
+  <!-- EN: cleaning -->
+  <Cleaning.gerundLabel>Ripulisce</Cleaning.gerundLabel>
+  <!-- EN: Clean -->
+  <Cleaning.labelShort>Pulizia</Cleaning.labelShort>
+  <!-- EN: Cleaner -->
+  <Cleaning.pawnLabel>Inserviente</Cleaning.pawnLabel>
+  <!-- EN: Clean -->
+  <Cleaning.verb>Ripulire</Cleaning.verb>
+  
+  <Construction.label>Costruzione</Construction.label>
+  <!-- EN: Build things that you've designated, and fix damaged or broken-down buildings. -->
+  <Construction.description>Costruire elementi specifici.</Construction.description>
+  <!-- EN: constructing -->
+  <Construction.gerundLabel>Costruisce</Construction.gerundLabel>
+  <!-- EN: Construct -->
+  <Construction.labelShort>Edifici</Construction.labelShort>
+  <!-- EN: Constructor -->
+  <Construction.pawnLabel>Ingegnere</Construction.pawnLabel>
+  <!-- EN: Construct -->
+  <Construction.verb>Costruire</Construction.verb>
+  
+  <Cooking.label>Cucina</Cooking.label>
+  <!-- EN: Prepare meals and butcher meat. -->
+  <Cooking.description>Preparare i pasti e macellare le carcasse.</Cooking.description>
+  <!-- EN: cooking -->
+  <Cooking.gerundLabel>Cucina</Cooking.gerundLabel>
+  <!-- EN: Cook -->
+  <Cooking.labelShort>Cucina</Cooking.labelShort>
+  <!-- EN: Cook -->
+  <Cooking.pawnLabel>Cuoco</Cooking.pawnLabel>
+  <!-- EN: Cook -->
+  <Cooking.verb>Cucinare</Cooking.verb>
+  
+  <Crafting.label>Artigianato</Crafting.label>
+  <!-- EN: Do general low-skilled labor at work stations. This includes stonecutting, smelting, and more. -->
+  <Crafting.description>Fare lavori scarsamente qualificati alle postazioni di lavoro. Queste includono taglio delle pietre, forgiatura, e altro ancora.</Crafting.description>
+  <!-- EN: crafting -->
+  <Crafting.gerundLabel>Fabbrica</Crafting.gerundLabel>
+  <!-- EN: Craft -->
+  <Crafting.labelShort>Artigianato</Crafting.labelShort>
+  <!-- EN: Crafter -->
+  <Crafting.pawnLabel>Artigiano</Crafting.pawnLabel>
+  <!-- EN: Craft at -->
+  <Crafting.verb>Fabbricare</Crafting.verb>
+  
+  <Doctor.label>Medico</Doctor.label>
+  <!-- EN: Treat the sick, bring them food, cheer them up, and perform assigned surgeries. Doctors will care for both colonists and prisoners. -->
+  <Doctor.description>Guarite i malati, portare loro del cibo, confortarli ed eseguire interventi chirurgici. I medici si prenderanno cura dei coloni e dei prigionieri.</Doctor.description>
+  <!-- EN: doctoring -->
+  <Doctor.gerundLabel>Cura</Doctor.gerundLabel>
+  <!-- EN: Doctor -->
+  <Doctor.labelShort>Medicina</Doctor.labelShort>
+  <!-- EN: Doctor -->
+  <Doctor.pawnLabel>Medico</Doctor.pawnLabel>
+  <!-- EN: Care for -->
+  <Doctor.verb>Curare</Doctor.verb>
+  
+  <Firefighter.label>Pompiere</Firefighter.label>
+  <!-- EN: Extinguish fires in the colony. -->
+  <Firefighter.description>Spegnere gli incendi nella colonia.</Firefighter.description>
+  <!-- EN: firefighting -->
+  <Firefighter.gerundLabel>Spegne incendi</Firefighter.gerundLabel>
+  <!-- EN: Firefight -->
+  <Firefighter.labelShort>Antincendio</Firefighter.labelShort>
+  <!-- EN: Firefighter -->
+  <Firefighter.pawnLabel>Pompiere</Firefighter.pawnLabel>
+  <!-- EN: Extinguish -->
+  <Firefighter.verb>Spegnere il fuoco</Firefighter.verb>
+  
+  <!-- UNUSED -->
+  <Flicker.label>Controllore</Flicker.label>
+  <Flicker.description>Azionare gli interruttori. Ad esempio, quando si sceglie di attivare l'alimentazione di una torretta, un controllore deve premere manualmente l'interruttore.</Flicker.description>
+  <Flicker.labelShort>Controllo</Flicker.labelShort>
+  <Flicker.pawnLabel>Controllore</Flicker.pawnLabel>
+  <Flicker.gerundLabel>Aziona</Flicker.gerundLabel>
+  <Flicker.verb>Azionare</Flicker.verb>
+  
+  <Growing.label>Agricultura</Growing.label>
+  <!-- EN: Plant seeds, harvest crops, and forage for wild plants. -->
+  <Growing.description>Coltivare i campi.</Growing.description>
+  <!-- EN: growing -->
+  <Growing.gerundLabel>Coltiva</Growing.gerundLabel>
+  <!-- EN: Grow -->
+  <Growing.labelShort>Agricultura</Growing.labelShort>
+  <!-- EN: Grower -->
+  <Growing.pawnLabel>Agricoltore</Growing.pawnLabel>
+  <!-- EN: Grow -->
+  <Growing.verb>Coltivare</Growing.verb>
+  
+  <Handling.label>Ammaestramento</Handling.label>
+  <!-- EN: Tame, train, harvest resources from and slaughter animals. -->
+  <Handling.description>Addomesticare gli animali, addestrarli, dar loro da mangiare, macellarli e prelevare i prodotti di origine animale come uova e latte.</Handling.description>
+  <!-- EN: handling -->
+  <Handling.gerundLabel>Addomestica</Handling.gerundLabel>
+  <!-- EN: Handle -->
+  <Handling.labelShort>Animali</Handling.labelShort>
+  <!-- EN: Handler -->
+  <Handling.pawnLabel>Domatore</Handling.pawnLabel>
+  <!-- EN: Handle -->
+  <Handling.verb>Addomesticare</Handling.verb>
+  
+  <Hauling.label>Trasporto</Hauling.label>
+  <!-- EN: Carry things to where they need to be. -->
+  <Hauling.description>Trasportare le cose la' dove devono essere portate.</Hauling.description>
+  <!-- EN: hauling -->
+  <Hauling.gerundLabel>Trasporta</Hauling.gerundLabel>
+  <!-- EN: Haul -->
+  <Hauling.labelShort>Trasporto</Hauling.labelShort>
+  <!-- EN: Hauler -->
+  <Hauling.pawnLabel>Trasportatore</Hauling.pawnLabel>
+  <!-- EN: Haul -->
+  <Hauling.verb>Trasportare</Hauling.verb>
+  
+  <Hunting.label>Caccia</Hunting.label>
+  <!-- EN: Kill animals which are designated to be hunted. -->
+  <Hunting.description>Abbattere gli animali individuati come preda.</Hunting.description>
+  <!-- EN: hunting -->
+  <Hunting.gerundLabel>Caccia</Hunting.gerundLabel>
+  <!-- EN: Hunt -->
+  <Hunting.labelShort>Caccia</Hunting.labelShort>
+  <!-- EN: Hunter -->
+  <Hunting.pawnLabel>Cacciatore</Hunting.pawnLabel>
+  <!-- EN: Hunt -->
+  <Hunting.verb>Cacciare</Hunting.verb>
+  
+  <Mining.label>Estrazione mineraria</Mining.label>
+  <!-- EN: Digging and drilling. -->
+  <Mining.description>Scavare e perforare le aree designate per l'estrazione.</Mining.description>
+  <!-- EN: mining -->
+  <Mining.gerundLabel>Scava</Mining.gerundLabel>
+  <!-- EN: Mine -->
+  <Mining.labelShort>Scavo</Mining.labelShort>
+  <!-- EN: Miner -->
+  <Mining.pawnLabel>Minatore</Mining.pawnLabel>
+  <!-- EN: Mine -->
+  <Mining.verb>Scavare</Mining.verb>
+  
+  <Patient.label>Paziente</Patient.label>
+  <!-- EN: Go to a medical bed for treatment if you have an immediately life-threatening health condition. -->
+  <Patient.description>Andare verso un letto medico per essere curato in caso problemi di salute mettano in gioco la vita.</Patient.description>
+  <!-- EN: patienting -->
+  <Patient.gerundLabel>Viene curato</Patient.gerundLabel>
+  <!-- EN: Patient -->
+  <Patient.labelShort>Cura</Patient.labelShort>
+  <!-- EN: Patient -->
+  <Patient.pawnLabel>Paziente</Patient.pawnLabel>
+  <!-- EN: Become patient -->
+  <Patient.verb>Diventare un paziente</Patient.verb>
+  
+  <PatientBedRest.label>Paziente</PatientBedRest.label>
+  <!-- EN: Rest in bed to recuperate from not-immediately-life-threatening medical problems. -->
+  <PatientBedRest.description>Rimanere a letto per curare problemi di salute che non mettono in pericolo la vita, almeno per ora.</PatientBedRest.description>
+  <!-- EN: resting in bed -->
+  <PatientBedRest.gerundLabel>Si riposa a letto</PatientBedRest.gerundLabel>
+  <!-- EN: Bed rest -->
+  <PatientBedRest.labelShort>Riposo</PatientBedRest.labelShort>
+  <!-- EN: Bed rester -->
+  <PatientBedRest.pawnLabel>Paziente</PatientBedRest.pawnLabel>
+  <!-- EN: Become patient -->
+  <PatientBedRest.verb>Mettersi a riposo</PatientBedRest.verb>
+  
+  <PlantCutting.label>Taglio piante</PlantCutting.label>
+  <!-- EN: Cut or harvest plants as designated. -->
+  <PlantCutting.description>Abbattere le piante designate.</PlantCutting.description>
+  <!-- EN: plant cutting -->
+  <PlantCutting.gerundLabel>Abbatte</PlantCutting.gerundLabel>
+  <!-- EN: Plant cut -->
+  <PlantCutting.labelShort>Taglio piante</PlantCutting.labelShort>
+  <!-- EN: Plant cutter -->
+  <PlantCutting.pawnLabel>Boscaiolo</PlantCutting.pawnLabel>
+  <!-- EN: Cut -->
+  <PlantCutting.verb>Abbattere le piante</PlantCutting.verb>
+  
+  <Research.label>Ricerca</Research.label>
+  <!-- EN: Perform research work. -->
+  <Research.description>Lavorare sui progetti di ricerca.</Research.description>
+  <!-- EN: researching -->
+  <Research.gerundLabel>Ricerca</Research.gerundLabel>
+  <!-- EN: Research -->
+  <Research.labelShort>Ricerca</Research.labelShort>
+  <!-- EN: Researcher -->
+  <Research.pawnLabel>Ricercatore</Research.pawnLabel>
+  <!-- EN: Research at -->
+  <Research.verb>Ricercare</Research.verb>
+  
+  <Smithing.label>Forgiatura</Smithing.label>
+  <!-- EN: Create weapons and tools from raw materials, either as a blacksmith or by machining. -->
+  <Smithing.description>Creare armi e strumenti a partire da materie prime, sia forgiando che assemblando.</Smithing.description>
+  <!-- EN: smithing -->
+  <Smithing.gerundLabel>Forgia</Smithing.gerundLabel>
+  <!-- EN: Smith -->
+  <Smithing.labelShort>Forgiatura</Smithing.labelShort>
+  <!-- EN: Smith -->
+  <Smithing.pawnLabel>Fabbro</Smithing.pawnLabel>
+  <!-- EN: Smith at -->
+  <Smithing.verb>Forgiare</Smithing.verb>
+  
+  <Tailoring.label>Sartoria</Tailoring.label>
+  <!-- EN: Create apparel from raw materials. -->
+  <Tailoring.description>Cucire dei vestiti a partire da materie prime.</Tailoring.description>
+  <!-- EN: tailoring -->
+  <Tailoring.gerundLabel>Cuce</Tailoring.gerundLabel>
+  <!-- EN: Tailor -->
+  <Tailoring.labelShort>Sartoria</Tailoring.labelShort>
+  <!-- EN: Tailor -->
+  <Tailoring.pawnLabel>Sarto</Tailoring.pawnLabel>
+  <!-- EN: Tailor at -->
+  <Tailoring.verb>Cucire</Tailoring.verb>
+  
+  <Warden.label>Sorveglianza</Warden.label>
+  <!-- EN: Manage, feed, chat with, and recruit prisoners. -->
+  <Warden.description>Sorvegliare, dar da mangiare, parlare e reclutare i prigionieri.</Warden.description>
+  <!-- EN: wardening -->
+  <Warden.gerundLabel>Sorveglia</Warden.gerundLabel>
+  <!-- EN: Warden -->
+  <Warden.labelShort>Guardia</Warden.labelShort>
+  <!-- EN: Warden -->
+  <Warden.pawnLabel>Guardiano</Warden.pawnLabel>
+  <!-- EN: Handle -->
+  <Warden.verb>Sorvegliare</Warden.verb>
+  
 </LanguageData>

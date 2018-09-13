@@ -1,33 +1,52 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-
 <LanguageData>
-
-<WanderConfused.label>confusione</WanderConfused.label>
-<WanderConfused.beginLetter>{0} ha avuto un crollo nervoso e va in giro confuso(a).</WanderConfused.beginLetter>
-<WanderConfused.beginLetterLabel>confuso(a)</WanderConfused.beginLetterLabel>
-<WanderConfused.recoveryMessage>{0} non e' piu' confuso(a).</WanderConfused.recoveryMessage>
-<WanderConfused.baseInspectLine>Condizione: Confuso(a)</WanderConfused.baseInspectLine>
-
-<PanicFlee.label>panico</PanicFlee.label>
-<PanicFlee.beginLetter>{0} fugge in preda al panico.</PanicFlee.beginLetter>
-<PanicFlee.beginLetterLabel>in preda al panico</PanicFlee.beginLetterLabel>
-<PanicFlee.recoveryMessage>{0} non fugge piu'.</PanicFlee.recoveryMessage>
-<PanicFlee.baseInspectLine>Condizione: In preda al panico</PanicFlee.baseInspectLine>
-
-<Manhunter.label>sete di sangue</Manhunter.label>
-<Manhunter.beginLetter>{0} va a caccia di uomini.</Manhunter.beginLetter>
-<Manhunter.beginLetterLabel>sete di sangue</Manhunter.beginLetterLabel>
-<Manhunter.recoveryMessage>{0} non va piu' a caccia di uomini.</Manhunter.recoveryMessage>
-<Manhunter.baseInspectLine>Condizione: Sete di sangue</Manhunter.baseInspectLine>
-
-<ManhunterPermanent.label>sete di sangue</ManhunterPermanent.label>
-<ManhunterPermanent.beginLetter>{0} e' diventato un cacciatore di uomini!</ManhunterPermanent.beginLetter>
-<ManhunterPermanent.beginLetterLabel>sete di sangue</ManhunterPermanent.beginLetterLabel>
-<ManhunterPermanent.recoveryMessage>{0} non va piu' a caccia di uomini.</ManhunterPermanent.recoveryMessage>
-<ManhunterPermanent.baseInspectLine>Condizione: Sete di sangue</ManhunterPermanent.baseInspectLine>
-
-<SocialFighting.label>rissa</SocialFighting.label>
-<SocialFighting.baseInspectLine>Condizione: Rissa</SocialFighting.baseInspectLine>
-<SocialFighting.recoveryMessage>{0} e {1} si prendono a pugni.</SocialFighting.recoveryMessage>
-
+  
+  <!-- EN: manhunter -->
+  <Manhunter.label>sete di sangue</Manhunter.label>
+  <!-- EN: Maddened: Manhunter -->
+  <Manhunter.baseInspectLine>Condizione: Sete di sangue</Manhunter.baseInspectLine>
+  <!-- EN: {0} has become a manhunter! -->
+  <Manhunter.beginLetter>{0} va a caccia di uomini.</Manhunter.beginLetter>
+  <Manhunter.beginLetterLabel>sete di sangue</Manhunter.beginLetterLabel>
+  <!-- EN: {0}'s manhunting bloodlust has come to an end. -->
+  <Manhunter.recoveryMessage>{0} non va piu' a caccia di uomini.</Manhunter.recoveryMessage>
+  
+  <!-- EN: manhunter -->
+  <ManhunterPermanent.label>sete di sangue</ManhunterPermanent.label>
+  <!-- EN: Maddened: Manhunter -->
+  <ManhunterPermanent.baseInspectLine>Condizione: Sete di sangue</ManhunterPermanent.baseInspectLine>
+  <!-- EN: {0} has become a manhunter! -->
+  <ManhunterPermanent.beginLetter>{0} e' diventato un cacciatore di uomini!</ManhunterPermanent.beginLetter>
+  <ManhunterPermanent.beginLetterLabel>sete di sangue</ManhunterPermanent.beginLetterLabel>
+  <!-- EN: {0}'s manhunting bloodlust has come to an end. -->
+  <ManhunterPermanent.recoveryMessage>{0} non va piu' a caccia di uomini.</ManhunterPermanent.recoveryMessage>
+  
+  <!-- EN: panic fleeing -->
+  <PanicFlee.label>panico</PanicFlee.label>
+  <!-- EN: Mental state: Fleeing in panic -->
+  <PanicFlee.baseInspectLine>Condizione: In preda al panico</PanicFlee.baseInspectLine>
+  <!-- EN: {0} is fleeing in panic. -->
+  <PanicFlee.beginLetter>{0} fugge in preda al panico.</PanicFlee.beginLetter>
+  <!-- EN: flee -->
+  <PanicFlee.beginLetterLabel>in preda al panico</PanicFlee.beginLetterLabel>
+  <!-- EN: {0} is no longer fleeing in panic. -->
+  <PanicFlee.recoveryMessage>{0} non fugge piu'.</PanicFlee.recoveryMessage>
+  
+  <!-- EN: social fighting -->
+  <SocialFighting.label>rissa</SocialFighting.label>
+  <!-- EN: Mental state: Social fighting -->
+  <SocialFighting.baseInspectLine>Condizione: Rissa</SocialFighting.baseInspectLine>
+  <SocialFighting.recoveryMessage>{0} e {1} si prendono a pugni.</SocialFighting.recoveryMessage>
+  
+  <!-- EN: confused wandering -->
+  <WanderConfused.label>confusione</WanderConfused.label>
+  <!-- EN: Mental state: Confused and wandering -->
+  <WanderConfused.baseInspectLine>Condizione: Confuso(a)</WanderConfused.baseInspectLine>
+  <!-- EN: {0} has broken down and is wandering around confused. -->
+  <WanderConfused.beginLetter>{0} ha avuto un crollo nervoso e va in giro confuso(a).</WanderConfused.beginLetter>
+  <!-- EN: confusion -->
+  <WanderConfused.beginLetterLabel>confuso(a)</WanderConfused.beginLetterLabel>
+  <!-- EN: {0} is no longer confused. -->
+  <WanderConfused.recoveryMessage>{0} non e' piu' confuso(a).</WanderConfused.recoveryMessage>
+  
 </LanguageData>
