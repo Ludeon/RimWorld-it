@@ -125,8 +125,8 @@
   <MissingMods>Alcune delle mod non sono disponibili, e devono essere installate</MissingMods>
   
   <!-- Player faction naming -->
-  <!-- EN: Since it looks like yoùll be here for a while, {0} thinks that you should give your faction a name. What should your faction be called? -->
-  <NamePlayerFactionMessage>Poiché sembra che vi tratterrete per un pò, {0} suggerisce di dare un nome alla fazione. Che nome avrà la fazione?</NamePlayerFactionMessage>
+  <!-- EN: Since it looks like you'll be here for a while, {0} thinks that you should give your faction a name. What should your faction be called? -->
+  <NamePlayerFactionMessage>Poiché sembra che vi tratterrete per un po', {0} suggerisce di dare un nome alla fazione. Che nome avrà la fazione?</NamePlayerFactionMessage>
   <!-- EN: Your faction is now known as {0}. -->
   <PlayerFactionGainsName>La tua fazione è ora chiamata {0}.</PlayerFactionGainsName>
   <!-- EN: That name isn't valid. -->
@@ -175,7 +175,7 @@
   <ModsMismatchWarningText>La mappa è stata salvata con alcune mod che attualmente non sono più attive. Questo potrebbe causare dei problemi a seconda delle mod.\n\nLa mappa è stata salvata con le seguenti mod (in questo ordine):\n\n{0}\n\nLe mod attualmente inattive sono le seguenti:\n\n{1}</ModsMismatchWarningText>
 
   <!-- Resolution change dialog -->
-  <!-- EN: Yoùve changed your screen settings. Do the new ones work okay?\n\nAuto-reverting in {0}... -->
+  <!-- EN: You've changed your screen settings. Do the new ones work okay?\n\nAuto-reverting in {0}... -->
   <ConfirmResolutionChange>Hai cambiato risoluzione. La nuova risoluzione va bene?\n\nRitorna alla precedente risoluzione in {0}...</ConfirmResolutionChange>
   <!-- EN: Keep -->
   <ResolutionKeep>Mantieni</ResolutionKeep>
@@ -183,7 +183,7 @@
   <ResolutionRevert>Annulla</ResolutionRevert>
 
   <!-- Confirm permanently disable dev mode -->
-  <!-- EN: Do you really want to permanently disable development mode on this computer?\n\nThis option is for people who want a pure play experience without the temptation to use development tools to gain advantage in normal play.\n\nDevelopment mode can be re-enabled, but doing so requires manually editing configuration files. Yoùll need to search the Internet to find out how. -->
+  <!-- EN: Do you really want to permanently disable development mode on this computer?\n\nThis option is for people who want a pure play experience without the temptation to use development tools to gain advantage in normal play.\n\nDevelopment mode can be re-enabled, but doing so requires manually editing configuration files. You'll need to search the Internet to find out how. -->
   <ConfirmPermanentlyDisableDevMode>Vuoi disattivare permanentemente la modalità di sviluppo su questo computer?\n\nQuesta opzione è per chi vuole un'esperienza pulita senza la tentazione di ottenere dei vantaggi sul gioco attraverso gli strumenti per sviluppatori.\n\nLa modalità di sviluppo può essere riattivata, ma farlo richiederà la modifica manuale dei file di configurazione. Dovrai cercare su Internet per sapere come fare.</ConfirmPermanentlyDisableDevMode>
 
   <!-- Research -->
@@ -274,7 +274,7 @@
   <BillRequiresNutrition>Richiede {0} cibo</BillRequiresNutrition>
   <!-- EN: Note: Small-volume ingredients like gold require {0}x as much. -->
   <BillRequiresMayVary>Nota: gli ingredienti di piccolo volume come l'oro richiedono x{0} volte di più.</BillRequiresMayVary>
-  <!-- EN: This is a small-volume ingredient. This means that each 'unit' is only 1/{0} as much as a normal-volume ingredient. So, to fill the same ingredient requirement, yoùll need {0}x as much as usual. -->
+  <!-- EN: This is a small-volume ingredient. This means that each 'unit' is only 1/{0} as much as a normal-volume ingredient. So, to fill the same ingredient requirement, you'll need {0}x as much as usual. -->
   <ThisIsSmallVolume>Questo è un ingrediente di piccolo volume. Ciò significa che ogni 'unità' conta per 1/{0} di un ingrediente di volume normale. Perciò, per soddisfare gli stessi requisiti, te ne servirà x{0} più del normale.</ThisIsSmallVolume>
   <!-- EN: ingredients -->
   <UsableIngredients>ingredienti</UsableIngredients>
@@ -832,20 +832,20 @@
   <TransportersCaravanWillBeImmobile>La carovana resterà immobile se mandi le capsule in una casella vuota. Continua comunque?</TransportersCaravanWillBeImmobile>
 
   <!-- UNUSED -->
-  <PermadeathMode>Modalità morte permanente</PermadeathMode>
+  <PermadeathMode>Modalita' morte permanente</PermadeathMode>
   <DoXTimes>Fallo X volte</DoXTimes>
-  <DoUntilYouHaveX>Fallo finchè non ne hai X</DoUntilYouHaveX>
+  <DoUntilYouHaveX>Fallo finche' non ne hai X</DoUntilYouHaveX>
   <DoForever>Fallo per sempre</DoForever>
   <BillStoreMode_DropOnFloor>Lascia a terra</BillStoreMode_DropOnFloor>
-  <BillStoreMode_BestStockpile>Porta al deposito più importante</BillStoreMode_BestStockpile>
-  <BillStoreMode_NearestStockpileAnyPriority>Porta al deposito più vicino</BillStoreMode_NearestStockpileAnyPriority>
+  <BillStoreMode_BestStockpile>Porta al deposito piu' importante</BillStoreMode_BestStockpile>
+  <BillStoreMode_NearestStockpileAnyPriority>Porta al deposito piu' vicino</BillStoreMode_NearestStockpileAnyPriority>
   <SurgeryRequireBed>È richiesto un letto</SurgeryRequireBed>
-  <TradeMassUsageTooltip>Il carico attuale e la capacità.</TradeMassUsageTooltip>
+  <TradeMassUsageTooltip>Il carico attuale e la capacita'.</TradeMassUsageTooltip>
   <CaravanConfigTab>Configurazione</CaravanConfigTab>
   <MassUsageInfo>{0} / {1} kg</MassUsageInfo>
   <DaysWorthOfFoodInfo>{0} giorni di cibo</DaysWorthOfFoodInfo>
-  <DaysWorthOfFoodTooltip_CanEatLocalPlants>Basandosi sulla stagione, la temperatura e le condizioni attuali, supponiamo che sarà possibile, per gli animali erbivori, nutrirsi di piante locali. Tuttavia ciò può cambiare in qualsiasi momento.</DaysWorthOfFoodTooltip_CanEatLocalPlants>
-  <DaysWorthOfFoodTooltip_CantEatLocalPlants>Basandosi sulla stagione, la temperatura e le condizioni attuali, supponiamo che NON sarà possibile, per gli animali erbivori, nutrirsi di piante locali. Tuttavia ciò può cambiare in qualsiasi momento.</DaysWorthOfFoodTooltip_CantEatLocalPlants>
+  <DaysWorthOfFoodTooltip_CanEatLocalPlants>Basandosi sulla stagione, la temperatura e le condizioni attuali, supponiamo che sara' possibile, per gli animali erbivori, nutrirsi di piante locali. Tuttavia cio' puo' cambiare in qualsiasi momento.</DaysWorthOfFoodTooltip_CanEatLocalPlants>
+  <DaysWorthOfFoodTooltip_CantEatLocalPlants>Basandosi sulla stagione, la temperatura e le condizioni attuali, supponiamo che NON sara' possibile, per gli animali erbivori, nutrirsi di piante locali. Tuttavia cio' puo' cambiare in qualsiasi momento.</DaysWorthOfFoodTooltip_CantEatLocalPlants>
   <NoExitDirectionForCaravanChosen>Devi decidere un punto di uscita per la carovana.</NoExitDirectionForCaravanChosen>
   <NoCaravanExitDirectionAvailable>(Nessun punto di uscita disponibile)</NoCaravanExitDirectionAvailable>
   <ExitDirection>Punto di uscita</ExitDirection>
@@ -853,12 +853,12 @@
   <EstimatedTimeToDestinationButton>Tempo stimato per raggiungere la destinazione</EstimatedTimeToDestinationButton>
   <CaravanSplitSourceLabel>Attuale</CaravanSplitSourceLabel>
   <CaravanSplitDestLabel>Nuova</CaravanSplitDestLabel>
-  <SplitCaravanMassUsageTooltip>Il carico attuale e la capacità.</SplitCaravanMassUsageTooltip>
-  <TransportersMassUsageTooltip>Il carico attuale e la capacità.\n\nNon puoi inviare le capsule di trasporto se il carico attuale supera la capacità.</TransportersMassUsageTooltip>
-  <ConfirmLeavePrisonersOrAnimalsBehind>Sono ancora presenti prigionieri o animali lasciati in questa zona ed è la sola carovana alla quale possono unirsi in questo momento.\n\nSe muovi la tua carovana non potranno lasciare la zona finchè non sarai di ritorno. I prigionieri cominceranno a fuggire mentre gli animali continueranno ad aspettarti.\n\nSe decidi di aspettare, essi cercheranno di riunirsi alla carovana appena possibile.\n\nSei sicuro di voler muovere la tua carovana?</ConfirmLeavePrisonersOrAnimalsBehind>
+  <SplitCaravanMassUsageTooltip>Il carico attuale e la capacita'.</SplitCaravanMassUsageTooltip>
+  <TransportersMassUsageTooltip>Il carico attuale e la capacita'.\n\nNon puoi inviare le capsule di trasporto se il carico attuale supera la capacita'.</TransportersMassUsageTooltip>
+  <ConfirmLeavePrisonersOrAnimalsBehind>Sono ancora presenti prigionieri o animali lasciati in questa zona ed è la sola carovana alla quale possono unirsi in questo momento.\n\nSe muovi la tua carovana non potranno lasciare la zona finche' non sarai di ritorno. I prigionieri cominceranno a fuggire mentre gli animali continueranno ad aspettarti.\n\nSe decidi di aspettare, essi cercheranno di riunirsi alla carovana appena possibile.\n\nSei sicuro di voler muovere la tua carovana?</ConfirmLeavePrisonersOrAnimalsBehind>
   <ConfirmAbandonPawnDialog>Vuoi davvero abbandonare {0}?</ConfirmAbandonPawnDialog>
-  <ConfirmAbandonPawnDialog_LeftToDie>{0} morirà certamente.</ConfirmAbandonPawnDialog_LeftToDie>
-  <ConfirmAbandonPawnDialog_EquipmentAndApparel>{0} prenderà i seguenti oggetti con [PAWN_objective] :</ConfirmAbandonPawnDialog_EquipmentAndApparel>
+  <ConfirmAbandonPawnDialog_LeftToDie>{0} morira' certamente.</ConfirmAbandonPawnDialog_LeftToDie>
+  <ConfirmAbandonPawnDialog_EquipmentAndApparel>{0} prendera' i seguenti oggetti con [PAWN_objective] :</ConfirmAbandonPawnDialog_EquipmentAndApparel>
   <ConfirmAbandonPawnDialog_AllColonistsThoughts>Tutti i coloni avranno i seguenti pensieri:</ConfirmAbandonPawnDialog_AllColonistsThoughts>
   <ConfirmAbandonPawnDialog_IndividualThoughts>Abbandonando {0}, tutti i membri della carovana verranno portati ad avere i seguenti pensieri: </ConfirmAbandonPawnDialog_IndividualThoughts>
 
