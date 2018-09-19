@@ -2,65 +2,65 @@
 <LanguageData>
 
   <!-- EN: {0} hurls some epithets into the microphone and disconnects. -->
-  <FactionGreetingHostile>Il rappresentante di {0} lancia degli epiteti allo schermo e si disconnette.</FactionGreetingHostile>
+  <FactionGreetingHostile>{0} sputa degli epiteti nel microfono e si disconnette.</FactionGreetingHostile>
   <!-- EN: {0} demands that you make a gesture of goodwill, like bringing gifts to one of {0_possessive} settlements or releasing {0_possessive} faction's prisoners unharmed. Until then, {0_pronoun} is unwilling to talk.\n\nMuttering an insult, {0_pronoun} disconnects. -->
-  <FactionGreetingHostileAppreciative>TODO</FactionGreetingHostileAppreciative>
+  <FactionGreetingHostileAppreciative>Il rappresentante di {0} esige un tuo gesto di buona volontà, come che porti doni a un suo insediamento o che rilasci i suoi prigionieri </FactionGreetingHostileAppreciative>
   <!-- EN: {0} greets {NEGOTIATOR_labelShort} warily and asks what business you want to handle. -->
-  <FactionGreetingWary>Il rappresentante di {0} saluta con cautela {1} e domanda il motivo della comunicazione.</FactionGreetingWary>
+  <FactionGreetingWary>{0} saluta cauto {NEGOTIATOR_labelShort} e domanda il motivo della comunicazione.</FactionGreetingWary>
   <!-- EN: {0} greets {NEGOTIATOR_labelShort} warmly and asks what {LEADER_pronoun} can do to help you. -->
-  <FactionGreetingWarm>Il rappresentante di {0} saluta calorosamente {1} e chiede notizie sulla colonia.</FactionGreetingWarm>
+  <FactionGreetingWarm>{0} saluta calorosamente {NEGOTIATOR_labelShort} e chiede cosa possa fare per aiutarti.</FactionGreetingWarm>
 
   <!-- EN: Disconnect -->
-  <Disconnect>Disconnessione</Disconnect>
+  <Disconnect>Disconnetti</Disconnect>
 
   <!-- Gift offer -->
   <!-- EN: Offer gift -->
   <OfferGift>Offri regalo</OfferGift>
   <!-- EN: must be ally -->
-  <MustBeAlly>TODO</MustBeAlly>
+  <MustBeAlly>deve essere alleato</MustBeAlly>
   <!-- EN: need {0} goodwill -->
-  <NeedGoodwill>TODO</NeedGoodwill>
+  <NeedGoodwill>serve {0} punti opinione</NeedGoodwill>
   <!-- EN: need {0} silver near trade beacons -->
-  <NeedSilverLaunchable>Servono altre {0} unita' di argento</NeedSilverLaunchable>
+  <NeedSilverLaunchable>Serve {0} argento vicino il radiofaro</NeedSilverLaunchable>
   <!-- EN: not enough silver -->
-  <NotEnoughSilver>Non hai abbastanza argento.</NotEnoughSilver>
+  <NotEnoughSilver>argento insufficiente</NotEnoughSilver>
   <!-- EN: {0} silver for {1} goodwill -->
-  <SilverForGoodwill>{0} di argento in cambio di {1} punti opinione</SilverForGoodwill>
+  <SilverForGoodwill>{0} argento in cambio di {1} punti opinione</SilverForGoodwill>
   <!-- EN: {0} thanks you.\n\n(Goodwill improved by {1}) -->
-  <SilverGiftSent>Il rappresentante di {0} ringrazia.\n\n(L'opinione del vostro interlocutore e' aumentata di {1}).</SilverGiftSent>
+  <SilverGiftSent>Il rappresentante di {0} ringrazia.\n\n(L'opinione aumenta di {1})</SilverGiftSent>
 
   <!-- Trade caravan request -->
   <!-- EN: Request a trade caravan (cost: {0} goodwill) -->
-  <RequestTrader>Richiedi una carovana commerciale (costo: {0} argento)</RequestTrader>
+  <RequestTrader>Richiedi una carovana commerciale (costo: {0} opinione)</RequestTrader>
   <!-- EN: {0} asks what kind of trade caravan you want. -->
   <ChooseTraderKind>{0} domanda che tipo di carovana commerciale preferite.</ChooseTraderKind>
   <!-- EN: {0} agrees to send you a trade caravan. It will arrive within a few days. -->
-  <TraderSent>{0} accetta di inviare una carovana commerciale. Arrivera' fra qualche giorno.</TraderSent>
+  <TraderSent>{0} accetta di inviare una carovana commerciale. Arriverà fra qualche giorno.</TraderSent>
   <!-- EN: wait {0} -->
   <WaitTime>attendi {0}</WaitTime>
 
   <!-- AI core request -->
   <!-- EN: Request the location of an {0} (cost: {1} silver) -->
-  <RequestAICoreInformation>TODO</RequestAICoreInformation>
+  <RequestAICoreInformation>Chiedi la posizione di un {0} (costo: {1} argento)</RequestAICoreInformation>
   <!-- EN: {0} sends the requested information and wishes you good luck. -->
-  <RequestAICoreInformationResult>TODO</RequestAICoreInformationResult>
+  <RequestAICoreInformationResult>{0} invia l'informazione richiesta e augura buona fortuna.</RequestAICoreInformationResult>
   <!-- EN: no more locations known -->
-  <NoKnownAICore>TODO</NoKnownAICore>  
+  <NoKnownAICore>nessun'altra posizione conosciuta</NoKnownAICore>  
   
   <!-- Military aid request -->
   <!-- EN: Request immediate military aid (cost: {0} goodwill) -->
-  <RequestMilitaryAid>Richiedi intervento militare immediato ({0} alle relazioni)</RequestMilitaryAid>
+  <RequestMilitaryAid>Richiedi intervento militare immediato (costo: {0} opinione)</RequestMilitaryAid>
   <!-- EN: {0} will not help you fight other factions who are not their enemies. This includes some who are currently threatening you, {1}. Do you still want to call for aid? -->
-  <MilitaryAidConfirmMutualEnemy>{0} non ti aiutera' a combattere contro fazioni che non sono nemiche. Cio' include quelle che ti stanno minacciando, {1}. Vuoi comunque chiedere il loro aiuto?</MilitaryAidConfirmMutualEnemy>
+  <MilitaryAidConfirmMutualEnemy>{0} non ti aiuterà a combattere contro fazioni che non le sono nemiche. Il che include quelle che ti stanno minacciando, {1}. Vuoi comunque chiedere il loro aiuto?</MilitaryAidConfirmMutualEnemy>
   <!-- EN: Yes, call them anyway. -->
-  <CallConfirm>Si, chiedi comunque il loro aiuto.</CallConfirm>
+  <CallConfirm>Sì, chiedi comunque il loro aiuto.</CallConfirm>
   <!-- EN: No, never mind. -->
   <CallCancel>No, lascia stare.</CallCancel>
   <!-- EN: {0} agrees to send fighters to help you. -->
-  <MilitaryAidSent>Il rappresentante di {0} accetta di inviare dei combattenti al vostro fianco.</MilitaryAidSent>
+  <MilitaryAidSent>Il rappresentante di {0} accetta di inviare dei combattenti al tuo fianco.</MilitaryAidSent>
   <!-- EN: {0} apologizes and says they won't be able to arrive in time.\n\n(This faction's technology level is too low for transport pods) -->
-  <CantSendMilitaryAidInTime>TODO</CantSendMilitaryAidInTime>
+  <CantSendMilitaryAidInTime>{0} si scusa e riferisce che non potranno arrivare in tempo.\n\n(Il livello tecnologico di questa fazione è troppo basso per le capsule di trasporto</CantSendMilitaryAidInTime>
   <!-- EN: hostile visitors present -->
-  <HostileVisitorsPresent>TODO</HostileVisitorsPresent>
+  <HostileVisitorsPresent>visitatori ostili presenti</HostileVisitorsPresent>
 
 </LanguageData>
