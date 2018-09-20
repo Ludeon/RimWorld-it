@@ -4,20 +4,20 @@
   <!-- EN: burn -->
   <Burn.label>ustione</Burn.label>
   <!-- EN: {0} has burned to death. -->
-  <Burn.deathMessage>{0} è {PAWN_gender ? bruciato : bruciata} a morte.</Burn.deathMessage>
+  <Burn.deathMessage>{0} è {PAWN_gender ? morto : morta} per le ustioni.</Burn.deathMessage>
   
   <!-- EN: flame -->
-  <Flame.label>flamma</Flame.label>
+  <Flame.label>fuoco</Flame.label>
   <!-- EN: {0} has burned to death. -->
-  <Flame.deathMessage>{0} è {PAWN_gender ? bruciato : bruciata} a morte.</Flame.deathMessage>
+  <Flame.deathMessage>{0} è {PAWN_gender ? morto : morta} {PAWN_gender ? bruciato : bruciata}.</Flame.deathMessage>
   
   <!-- EN: frostbite -->
   <Frostbite.label>assideramento</Frostbite.label>
   <!-- EN: {0} has succumbed to frostbite. -->
-  <Frostbite.deathMessage>{0} è {PAWN_gender ? congelato : congelata} a morte.</Frostbite.deathMessage>
+  <Frostbite.deathMessage>{0} è {PAWN_gender ? morto : morta} {PAWN_gender ? assiderato : assiderata}.</Frostbite.deathMessage>
   
   <!-- EN: scratch -->
-  <TornadoScratch.label>graffio</TornadoScratch.label>
+  <TornadoScratch.label>lacerazioni</TornadoScratch.label>
   <!-- EN: {0} has been killed by a tornado. -->
   <TornadoScratch.deathMessage>{0} è {PAWN_gender ? stato : stata} {PAWN_gender ? ucciso : uccisa} da un tornado.</TornadoScratch.deathMessage>
   
