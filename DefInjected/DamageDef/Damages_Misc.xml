@@ -2,38 +2,38 @@
 <LanguageData>
   
   <!-- EN: bomb -->
-  <Bomb.label>Esplosione</Bomb.label>
+  <Bomb.label>bomba</Bomb.label>
   <!-- EN: {0} has died in an explosion. -->
-  <Bomb.deathMessage>{0} e' morto(a) in un'esplosione.</Bomb.deathMessage>
+  <Bomb.deathMessage>{0} è {PAWN_gender ? morto : morta} in un'esplosione.</Bomb.deathMessage>
   
   <!-- EN: bomb -->
-  <BombSuper.label>TODO</BombSuper.label>
+  <BombSuper.label>bomba</BombSuper.label>
   <!-- EN: {0} has died in an explosion. -->
-  <BombSuper.deathMessage>TODO</BombSuper.deathMessage>
+  <BombSuper.deathMessage>{0} è {PAWN_gender ? morto : morta} in un'esplosione.</BombSuper.deathMessage>
   
   <!-- EN: deterioration -->
-  <Deterioration.label>Deterioramento</Deterioration.label>
+  <Deterioration.label>deterioramento</Deterioration.label>
   <!-- EN: {0} has been killed. -->
-  <Deterioration.deathMessage>{0} e' stato(a) ucciso(a).</Deterioration.deathMessage>
+  <Deterioration.deathMessage>{0} è {PAWN_gender ? stato : stata } {PAWN_gender ? ucciso : uccisa}.</Deterioration.deathMessage>
   
   <!-- EN: extinguish -->
-  <Extinguish.label>Spegnimento</Extinguish.label>
+  <Extinguish.label>spegnimento</Extinguish.label>
   <!-- EN: {0} has been killed. -->
-  <Extinguish.deathMessage>{0} e' stato(a) ucciso(a).</Extinguish.deathMessage>
+  <Extinguish.deathMessage>{0} è {PAWN_gender ? stato : stata } {PAWN_gender ? ucciso : uccisa}.</Extinguish.deathMessage>
   
   <!-- EN: mining -->
-  <Mining.label>Estrazione</Mining.label>
+  <Mining.label>estrazione</Mining.label>
   <!-- EN: {0} has been killed. -->
-  <Mining.deathMessage>{0} e' stato(a) ucciso(a).</Mining.deathMessage>
+  <Mining.deathMessage>{0} è {PAWN_gender ? stato : stata } {PAWN_gender ? ucciso : uccisa}.</Mining.deathMessage>
   
   <!-- EN: rotting -->
-  <Rotting.label>Putrefazione</Rotting.label>
+  <Rotting.label>putrefazione</Rotting.label>
   <!-- EN: {0} has been killed. -->
-  <Rotting.deathMessage>{0} e' stato(a) ucciso(a).</Rotting.deathMessage>
+  <Rotting.deathMessage>{0} è {PAWN_gender ? stato : stata } {PAWN_gender ? ucciso : uccisa}.</Rotting.deathMessage>
   
   <!-- EN: smoke -->
-  <Smoke.label>Fumo</Smoke.label>
+  <Smoke.label>fumo</Smoke.label>
   <!-- EN: {0} has been killed. -->
-  <Smoke.deathMessage>{0} e' stato(a) ucciso(a).</Smoke.deathMessage>
+  <Smoke.deathMessage>{0} è {PAWN_gender ? stato : stata } {PAWN_gender ? ucciso : uccisa}.</Smoke.deathMessage>
   
 </LanguageData>
