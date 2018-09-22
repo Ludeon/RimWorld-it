@@ -4,27 +4,27 @@
   <!-- EN: hideous environment -->
   <NeedBeauty.stages.hideous_environment.label>ambiente sgradevole</NeedBeauty.stages.hideous_environment.label>
   <!-- EN: This place is unbearably grotesque. I can't look at this any more. -->
-  <NeedBeauty.stages.hideous_environment.description>Questo posto e' sgradevole. Fatemi andare via da qui...</NeedBeauty.stages.hideous_environment.description>
+  <NeedBeauty.stages.hideous_environment.description>Questo posto è sgradevole. Fatemi andare via da qui...</NeedBeauty.stages.hideous_environment.description>
   <!-- EN: ugly environment -->
   <NeedBeauty.stages.ugly_environment.label>ambiente molto sgradevole</NeedBeauty.stages.ugly_environment.label>
   <!-- EN: This place is really ugly. I wish I didn't have to look at this any more. -->
-  <NeedBeauty.stages.ugly_environment.description>Questo posto e' veramente sgradevole. Non voglio stare qui.</NeedBeauty.stages.ugly_environment.description>
+  <NeedBeauty.stages.ugly_environment.description>Questo posto è veramente sgradevole. Non voglio stare qui.</NeedBeauty.stages.ugly_environment.description>
   <!-- EN: unsightly environment -->
   <NeedBeauty.stages.unsightly_environment.label>ambiente orrendo</NeedBeauty.stages.unsightly_environment.label>
   <!-- EN: This place is kind of unsightly. I wish I didn't have to look at all this. -->
-  <NeedBeauty.stages.unsightly_environment.description>Questo posto e' insopportabile.</NeedBeauty.stages.unsightly_environment.description>
+  <NeedBeauty.stages.unsightly_environment.description>Questo posto è insopportabile.</NeedBeauty.stages.unsightly_environment.description>
   <!-- EN: pretty environment -->
   <NeedBeauty.stages.pretty_environment.label>ambiente piacevole</NeedBeauty.stages.pretty_environment.label>
   <!-- EN: This place looks nice. -->
-  <NeedBeauty.stages.pretty_environment.description>Questo posto e' carino.</NeedBeauty.stages.pretty_environment.description>
+  <NeedBeauty.stages.pretty_environment.description>Questo posto è carino.</NeedBeauty.stages.pretty_environment.description>
   <!-- EN: beautiful environment -->
   <NeedBeauty.stages.beautiful_environment.label>ambiente molto piacevole</NeedBeauty.stages.beautiful_environment.label>
   <!-- EN: I really like this place. It's beautiful. -->
-  <NeedBeauty.stages.beautiful_environment.description>Mi piace molto questo posto. E' bellissimo.</NeedBeauty.stages.beautiful_environment.description>
+  <NeedBeauty.stages.beautiful_environment.description>Mi piace molto questo posto. è bellissimo.</NeedBeauty.stages.beautiful_environment.description>
   <!-- EN: gorgeous environment -->
   <NeedBeauty.stages.gorgeous_environment.label>ambiente magnifico</NeedBeauty.stages.gorgeous_environment.label>
   <!-- EN: This place is beautiful. It lifts me up and makes me love life. -->
-  <NeedBeauty.stages.gorgeous_environment.description>Questo posto e' bellissimo. Mi rende felice e mi fa amare la vita.</NeedBeauty.stages.gorgeous_environment.description>
+  <NeedBeauty.stages.gorgeous_environment.description>Questo posto è bellissimo. Mi rende felice e mi fa amare la vita.</NeedBeauty.stages.gorgeous_environment.description>
   
   <!-- EN: uncomfortable -->
   <NeedComfort.stages.uncomfortable.label>a disagio</NeedComfort.stages.uncomfortable.label>
@@ -41,7 +41,7 @@
   <!-- EN: extremely comfortable -->
   <NeedComfort.stages.extremely_comfortable.label>estremamente agiato</NeedComfort.stages.extremely_comfortable.label>
   <!-- EN: I've been extremely comfortable recently. This place is so cushy! -->
-  <NeedComfort.stages.extremely_comfortable.description>Ero estremamente a mio agio di recente. Questo posto e' cosi' comodo!</NeedComfort.stages.extremely_comfortable.description>
+  <NeedComfort.stages.extremely_comfortable.description>Ero estremamente a mio agio di recente. Questo posto è cosi' comodo!</NeedComfort.stages.extremely_comfortable.description>
   <!-- EN: luxuriantly comfortable -->
   <NeedComfort.stages.luxuriantly_comfortable.label>lussuosamente agiato</NeedComfort.stages.luxuriantly_comfortable.label>
   <!-- EN: I am resting on clouds of heaven. -->
@@ -50,7 +50,7 @@
   <!-- EN: hungry -->
   <NeedFood.stages.hungry.label>affamato</NeedFood.stages.hungry.label>
   <!-- EN: I'm really hungry. -->
-  <NeedFood.stages.hungry.description>Sono veramente affamato(a).</NeedFood.stages.hungry.description>
+  <NeedFood.stages.hungry.description>Sono veramente affamat{PAWN_gender ? o:a}.</NeedFood.stages.hungry.description>
   <!-- EN: ravenously hungry -->
   <NeedFood.stages.ravenously_hungry.label>fortemente affamato</NeedFood.stages.ravenously_hungry.label>
   <!-- EN: These hunger pangs are hard to ignore. -->
@@ -58,7 +58,7 @@
   <!-- EN: malnourished -->
   <NeedFood.stages.malnourished.label>denutrito (banale)</NeedFood.stages.malnourished.label>
   <!-- EN: It's been so long since I ate. I'm all fuzzy and it's hard to focus. My body is starting to waste away. -->
-  <NeedFood.stages.malnourished.description>e' da molto che non mangio. Sono confuso(a) e non riesco a concentrarmi.</NeedFood.stages.malnourished.description>
+  <NeedFood.stages.malnourished.description>e' da molto che non mangio. Sono confus{PAWN_gender ? o:a} e non riesco a concentrarmi.</NeedFood.stages.malnourished.description>
   <!-- EN: badly malnourished -->
   <NeedFood.stages.badly_malnourished.label>denutrizione (minore)</NeedFood.stages.badly_malnourished.label>
   <!-- EN: I can feel my body wasting away. My stomach hurts like never before. -->
@@ -91,58 +91,58 @@
   <!-- EN: recreation satisfied -->
   <NeedJoy.stages.recreation_satisfied.label>allegro</NeedJoy.stages.recreation_satisfied.label>
   <!-- EN: I've been having a great time doing various things I like to do. -->
-  <NeedJoy.stages.recreation_satisfied.description>Recentemente mi sono divertito(a).</NeedJoy.stages.recreation_satisfied.description>
+  <NeedJoy.stages.recreation_satisfied.description>Recentemente mi sono divertit{PAWN_gender ? o:a}.</NeedJoy.stages.recreation_satisfied.description>
   <!-- EN: recreation fully satisfied -->
   <NeedJoy.stages.recreation_fully_satisfied.label>estremamente allegro</NeedJoy.stages.recreation_fully_satisfied.label>
   <!-- EN: I've been enjoying myself so much, I love it! -->
-  <NeedJoy.stages.recreation_fully_satisfied.description>Mi sono divertito(a) cosi' tanto, adoro tutto questo!</NeedJoy.stages.recreation_fully_satisfied.description>
+  <NeedJoy.stages.recreation_fully_satisfied.description>Mi sono divertit{PAWN_gender ? o:a} cosi' tanto, adoro tutto questo!</NeedJoy.stages.recreation_fully_satisfied.description>
   
   <!-- EN: entombed underground -->
-  <NeedOutdoors.stages.entombed_underground.label>TODO</NeedOutdoors.stages.entombed_underground.label>
+  <NeedOutdoors.stages.entombed_underground.label>troppo tempo sotto terra</NeedOutdoors.stages.entombed_underground.label>
   <!-- EN: I've been underground too long. I feel like the weight of this mountain is crushing me. I need to see the sky and feel the wind. -->
-  <NeedOutdoors.stages.entombed_underground.description>TODO</NeedOutdoors.stages.entombed_underground.description>
+  <NeedOutdoors.stages.entombed_underground.description>Sono stat{PAWN_gender ? o:a} sotto terra troppo a lungo. Sento il peso di questa montagna schiacciarmi. Devo rivedere il cielo e sentire il vento.</NeedOutdoors.stages.entombed_underground.description>
   <!-- EN: trapped underground -->
-  <NeedOutdoors.stages.trapped_underground.label>TODO</NeedOutdoors.stages.trapped_underground.label>
+  <NeedOutdoors.stages.trapped_underground.label>intrappolato sotto terra</NeedOutdoors.stages.trapped_underground.label>
   <!-- EN: How long have I been underground? I need to get out in the fresh air and spend some time under the sky. -->
-  <NeedOutdoors.stages.trapped_underground.description>TODO</NeedOutdoors.stages.trapped_underground.description>
+  <NeedOutdoors.stages.trapped_underground.description>Da quanto è che sto qua sotto? Devo uscire a respirare l'aria fresca e passare del tempo sotto al cielo.</NeedOutdoors.stages.trapped_underground.description>
   <!-- EN: cabin fever -->
-  <NeedOutdoors.stages.cabin_fever.label>TODO</NeedOutdoors.stages.cabin_fever.label>
+  <NeedOutdoors.stages.cabin_fever.label>claustrofobia</NeedOutdoors.stages.cabin_fever.label>
   <!-- EN: I've spent so long indoors I feel like the roof is pressing in. I need to get out and see the sky. -->
-  <NeedOutdoors.stages.cabin_fever.description>TODO</NeedOutdoors.stages.cabin_fever.description>
+  <NeedOutdoors.stages.cabin_fever.description>Sono stato al chiuso così a lungo che sento il tetto premermi addosso. Devo uscire fuori e vedere il cielo.</NeedOutdoors.stages.cabin_fever.description>
   <!-- EN: trapped indoors -->
-  <NeedOutdoors.stages.trapped_indoors.label>TODO</NeedOutdoors.stages.trapped_indoors.label>
+  <NeedOutdoors.stages.trapped_indoors.label>intrappolato al chiuso</NeedOutdoors.stages.trapped_indoors.label>
   <!-- EN: It's been too long since I've seen the sky. -->
-  <NeedOutdoors.stages.trapped_indoors.description>TODO</NeedOutdoors.stages.trapped_indoors.description>
+  <NeedOutdoors.stages.trapped_indoors.description>È passato troppo tempo da quando ho visto il cielo.</NeedOutdoors.stages.trapped_indoors.description>
   <!-- EN: stuck indoors -->
-  <NeedOutdoors.stages.stuck_indoors.label>TODO</NeedOutdoors.stages.stuck_indoors.label>
+  <NeedOutdoors.stages.stuck_indoors.label>Chiuso dentro</NeedOutdoors.stages.stuck_indoors.label>
   <!-- EN: I'd like to go outside and get some fresh air. -->
-  <NeedOutdoors.stages.stuck_indoors.description>TODO</NeedOutdoors.stages.stuck_indoors.description>
+  <NeedOutdoors.stages.stuck_indoors.description>Vorrei uscire e respirare aria fresca.</NeedOutdoors.stages.stuck_indoors.description>
   
   <!-- EN: drowsy -->
-  <NeedRest.stages.drowsy.label>affaticato</NeedRest.stages.drowsy.label>
+  <NeedRest.stages.drowsy.label>assonnato</NeedRest.stages.drowsy.label>
   <!-- EN: I haven't slept in a while. It's hard to keep focus. -->
-  <NeedRest.stages.drowsy.description>Non dormo da un po'.</NeedRest.stages.drowsy.description>
+  <NeedRest.stages.drowsy.description>Non dormo da un po'. È dura restare concentrati.</NeedRest.stages.drowsy.description>
   <!-- EN: tired -->
-  <NeedRest.stages.tired.label>molto affaticato</NeedRest.stages.tired.label>
+  <NeedRest.stages.tired.label>affaticato</NeedRest.stages.tired.label>
   <!-- EN: I'm so tired. I just want to lay down and rest for a few minutes... -->
-  <NeedRest.stages.tired.description>Sono cosi' stanco(a). Voglio solo sdraiarmi e riposarmi per qualche minuto...</NeedRest.stages.tired.description>
+  <NeedRest.stages.tired.description>Sono così stanc{PAWN_gender ? o:a}. Voglio solo sdraiarmi e riposarmi per qualche minuto...</NeedRest.stages.tired.description>
   <!-- EN: exhausted -->
   <NeedRest.stages.exhausted.label>esausto</NeedRest.stages.exhausted.label>
   <!-- EN: I'm so exhausted I can barely stand. My eyelids have lead weights on them. Let me sleep... -->
-  <NeedRest.stages.exhausted.description>Sono esausto(a), non mi reggo piu' in piedi. Le mie palpebre sono diventate di piombo. Lasciatemi dormire...</NeedRest.stages.exhausted.description>
+  <NeedRest.stages.exhausted.description>Sono esaust{PAWN_gender ? o:a}, non mi reggo più in piedi. Le mie palpebre sono diventate di piombo. Lasciatemi dormire...</NeedRest.stages.exhausted.description>
   
   <!-- EN: confined interior -->
-  <NeedRoomSize.stages.confined_interior.label>TODO</NeedRoomSize.stages.confined_interior.label>
+  <NeedRoomSize.stages.confined_interior.label>spazio confinato</NeedRoomSize.stages.confined_interior.label>
   <!-- EN: This space is so tiny. I feel like a rat in a cage. -->
-  <NeedRoomSize.stages.confined_interior.description>TODO</NeedRoomSize.stages.confined_interior.description>
+  <NeedRoomSize.stages.confined_interior.description>Questo spazio è così stretto. Mi sento come un topo in gabbia.</NeedRoomSize.stages.confined_interior.description>
   <!-- EN: cramped interior -->
-  <NeedRoomSize.stages.cramped_interior.label>TODO</NeedRoomSize.stages.cramped_interior.label>
+  <NeedRoomSize.stages.cramped_interior.label>spazio stretto</NeedRoomSize.stages.cramped_interior.label>
   <!-- EN: This room is too small. I wish I had more space to move around and breathe. -->
-  <NeedRoomSize.stages.cramped_interior.description>TODO</NeedRoomSize.stages.cramped_interior.description>
+  <NeedRoomSize.stages.cramped_interior.description>Questa stanza è troppo piccola. Vorrei avere un po' di spazio per muovermi e respirare.</NeedRoomSize.stages.cramped_interior.description>
   <!-- EN: spacious interior -->
-  <NeedRoomSize.stages.spacious_interior.label>TODO</NeedRoomSize.stages.spacious_interior.label>
+  <NeedRoomSize.stages.spacious_interior.label>spazio ampio</NeedRoomSize.stages.spacious_interior.label>
   <!-- EN: This room is so expansive, I feel free. -->
-  <NeedRoomSize.stages.spacious_interior.description>TODO</NeedRoomSize.stages.spacious_interior.description>
+  <NeedRoomSize.stages.spacious_interior.description>Questa stanza è così grande, mi sento liber{PAWN_gender ? o:a}.</NeedRoomSize.stages.spacious_interior.description>
   
   <!-- UNUSED -->
   <NeedSpace.stages.0.label>ambiente molto angusto</NeedSpace.stages.0.label>
@@ -150,6 +150,6 @@
   <NeedSpace.stages.1.label>ambiente angusto</NeedSpace.stages.1.label>
   <NeedSpace.stages.1.description>Vorrei avere maggiore spazio per muovermi e respirare.</NeedSpace.stages.1.description>
   <NeedSpace.stages.2.label>interni spaziosi</NeedSpace.stages.2.label>
-  <NeedSpace.stages.2.description>Questo e' davvero un interno comodamente spazioso.</NeedSpace.stages.2.description>
+  <NeedSpace.stages.2.description>Questo è davvero un interno comodamente spazioso.</NeedSpace.stages.2.description>
   
 </LanguageData>
