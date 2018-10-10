@@ -9,8 +9,9 @@ http://ludeon.com/forums/index.php?topic=2933.0
 Translators:
 ------------------
 - Harkeidos
-- O Negative
-- Panico
+- ChristianLJB
+- Panic04
+- menos-grande
 
 *REMEMBER TO ALWAYS TEST YOUR TRANSLATIONS!
 
