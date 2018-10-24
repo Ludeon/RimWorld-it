@@ -1,25 +1,39 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
-  <SandInEyes.label>sand</SandInEyes.label>
-  <SandInEyes.battleStateLabel>blind</SandInEyes.battleStateLabel>
-  <SandInEyes.labelNoun>sand</SandInEyes.labelNoun>
-
-  <DirtInEyes.label>dirt</DirtInEyes.label>
-  <DirtInEyes.battleStateLabel>blind</DirtInEyes.battleStateLabel>
-  <DirtInEyes.labelNoun>dirt</DirtInEyes.labelNoun>
-
-  <MudInEyes.label>mud</MudInEyes.label>
-  <MudInEyes.battleStateLabel>blind</MudInEyes.battleStateLabel>
-  <MudInEyes.labelNoun>mud</MudInEyes.labelNoun>
-
-  <GravelInEyes.label>gravel</GravelInEyes.label>
-  <GravelInEyes.battleStateLabel>blind</GravelInEyes.battleStateLabel>
-  <GravelInEyes.labelNoun>gravel</GravelInEyes.labelNoun>
-
-  <WaterInEyes.label>water</WaterInEyes.label>
-  <WaterInEyes.battleStateLabel>blind</WaterInEyes.battleStateLabel>
-  <WaterInEyes.labelNoun>water</WaterInEyes.labelNoun>
-
-
+  
+  <!-- EN: dirt -->
+  <DirtInEyes.label>polvere</DirtInEyes.label>
+  <!-- EN: blind -->
+  <DirtInEyes.battleStateLabel>ciec{PAWN_gender ? o:a}</DirtInEyes.battleStateLabel>
+  <!-- EN: dirt -->
+  <DirtInEyes.labelNoun>polvere</DirtInEyes.labelNoun>
+  
+  <!-- EN: gravel -->
+  <GravelInEyes.label>pietrisco</GravelInEyes.label>
+  <!-- EN: blind -->
+  <GravelInEyes.battleStateLabel>ciec{PAWN_gender ? o:a}</GravelInEyes.battleStateLabel>
+  <!-- EN: gravel -->
+  <GravelInEyes.labelNoun>pietrisco</GravelInEyes.labelNoun>
+  
+  <!-- EN: mud -->
+  <MudInEyes.label>fango</MudInEyes.label>
+  <!-- EN: blind -->
+  <MudInEyes.battleStateLabel>ciec{PAWN_gender ? o:a}</MudInEyes.battleStateLabel>
+  <!-- EN: mud -->
+  <MudInEyes.labelNoun>fango</MudInEyes.labelNoun>
+  
+  <!-- EN: sand -->
+  <SandInEyes.label>sabbia</SandInEyes.label>
+  <!-- EN: blind -->
+  <SandInEyes.battleStateLabel>ciec{PAWN_gender ? o:a}</SandInEyes.battleStateLabel>
+  <!-- EN: sand -->
+  <SandInEyes.labelNoun>sabbia</SandInEyes.labelNoun>
+  
+  <!-- EN: water -->
+  <WaterInEyes.label>acqua</WaterInEyes.label>
+  <!-- EN: blind -->
+  <WaterInEyes.battleStateLabel>ciec{PAWN_gender ? o:a}</WaterInEyes.battleStateLabel>
+  <!-- EN: water -->
+  <WaterInEyes.labelNoun>acqua</WaterInEyes.labelNoun>
+  
 </LanguageData>
