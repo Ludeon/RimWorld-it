@@ -7,6 +7,7 @@
   <BedroomTantrum.baseInspectLine>Stato mentale: Scatto d'ira</BedroomTantrum.baseInspectLine>
   <!-- EN: {0} is having a tantrum.\n\n[PAWN_pronoun] is going to smash things in [PAWN_possessive] room. -->
   <BedroomTantrum.beginLetter>{0} sta avendo uno scatto d'ira.\n\n[PAWN_pronoun] sta per spaccare cose nella sua stanza.</BedroomTantrum.beginLetter>
+  <BedroomTantrum.beginLetterLabel>Scatto d'ira</BedroomTantrum.beginLetterLabel>
   <!-- EN: {0} is no longer having a tantrum. -->
   <BedroomTantrum.recoveryMessage>{0} non sta più avendo uno scatto d'ira.</BedroomTantrum.recoveryMessage>
   
@@ -16,6 +17,7 @@
   <Berserk.baseInspectLine>Stato mentale: Rabbia furiosa</Berserk.baseInspectLine>
   <!-- EN: {0} has gone berserk.\n\n[PAWN_pronoun] will attack anyone [PAWN_pronoun] sees. -->
   <Berserk.beginLetter>{0} è in preda ad una rabbia furiosa.\n\n[PAWN_pronoun] attaccherà chiunque veda.</Berserk.beginLetter>
+  <Berserk.beginLetterLabel>Rabbia furiosa</Berserk.beginLetterLabel>
   <!-- EN: {0}'s berserk rage has come to an end. -->
   <Berserk.recoveryMessage>La rabbia furiosa di {0} si è placata.</Berserk.recoveryMessage>
   
@@ -46,6 +48,7 @@
   <CorpseObsession.baseInspectLine>Stato mentale: Necrofilia</CorpseObsession.baseInspectLine>
   <!-- EN: {0} has broken inside and become obsessed with corpses.\n\n[PAWN_pronoun] is going to dig up a corpse and present it for all to see. -->
   <CorpseObsession.beginLetter>{0} è partit{PAWN_gender ? o:a} di testa ed ha iniziato ad essere ossessionat{PAWN_gender ? o:a} dai cadaveri.\n\n[PAWN_pronoun] sta per disseppellire un cadavere e portarlo in mostra davanti a tutti.</CorpseObsession.beginLetter>
+  <CorpseObsession.beginLetterLabel>Necrofilia</CorpseObsession.beginLetterLabel>
   <!-- EN: {0} is no longer having a corpse obsession. -->
   <CorpseObsession.recoveryMessage>{0} non sta più avendo un'ossessione per i cadaveri.</CorpseObsession.recoveryMessage>
   
@@ -55,6 +58,7 @@
   <FireStartingSpree.baseInspectLine>Stato mentale: Piromania</FireStartingSpree.baseInspectLine>
   <!-- EN: {0} is on a fire starting spree.\n\n[PAWN_pronoun] will wander around for a while, randomly starting fires. -->
   <FireStartingSpree.beginLetter>{0} è in preda alla piromania.\n\n[PAWN_pronoun] si aggirerà nei dintorni, appiccando casualmente incendi.</FireStartingSpree.beginLetter>
+  <FireStartingSpree.beginLetterLabel>Piromania</FireStartingSpree.beginLetterLabel>
   <!-- EN: {0} is no longer on a fire starting spree. -->
   <FireStartingSpree.recoveryMessage>{0} non è più in preda alla piromania.</FireStartingSpree.recoveryMessage>
   
@@ -75,6 +79,7 @@
   <InsultingSpree.baseInspectLine>Stato mentale: Insulto compulsivo</InsultingSpree.baseInspectLine>
   <!-- EN: {0} is on an insulting spree.\n\n[PAWN_pronoun] will wander around, randomly insulting others. -->
   <InsultingSpree.beginLetter>{0} è in preda ad insulti compulsivi.\n\n[PAWN_pronoun] si aggirerà nei dintorni, insultando casualmente gli altri.</InsultingSpree.beginLetter>
+  <InsultingSpree.beginLetterLabel>Insulto compulsivo</InsultingSpree.beginLetterLabel>
   <!-- EN: {0} is no longer on an insulting spree. -->
   <InsultingSpree.recoveryMessage>{0} non è più in preda ad insulti compulsivi.</InsultingSpree.recoveryMessage>
   
@@ -95,6 +100,7 @@
   <MurderousRage.baseInspectLine>Stato mentale: Rabbia omicida</MurderousRage.baseInspectLine>
   <!-- EN: {0} has flown into a murderous rage.\n\n[PAWN_pronoun] has decided to kill {1}. -->
   <MurderousRage.beginLetter>{0} ha deviato verso una rabbia omicida.\n\n[PAWN_pronoun] ha deciso di uccidere {1}.</MurderousRage.beginLetter>
+  <MurderousRage.beginLetterLabel>Rabbia omicida</MurderousRage.beginLetterLabel>
   <!-- EN: {0} is no longer in a murderous rage. -->
   <MurderousRage.recoveryMessage>{0} non è più in preda ad una rabbia omicida.</MurderousRage.recoveryMessage>
   
@@ -104,6 +110,7 @@
   <SadisticRage.baseInspectLine>Stato mentale: Rabbia sadica</SadisticRage.baseInspectLine>
   <!-- EN: {0} has flown into a sadistic rage.\n\n[PAWN_pronoun] is going to vent [PAWN_possessive] anger on the prisoners. -->
   <SadisticRage.beginLetter>{0} ha deviato verso una rabbia sadica.\n\n[PAWN_pronoun] sta per sfogare la sua collera sui prigionieri.</SadisticRage.beginLetter>
+  <SadisticRage.beginLetterLabel>Rabbia sadica</SadisticRage.beginLetterLabel>
   <!-- EN: {0} is no longer in a sadistic rage. -->
   <SadisticRage.recoveryMessage>{0} non è più in preda ad una rabbia sadica.</SadisticRage.recoveryMessage>
   
@@ -113,6 +120,7 @@
   <Slaughterer.baseInspectLine>Stato mentale: Macellaio</Slaughterer.baseInspectLine>
   <!-- EN: {0} has a mental breakdown and is going to vent [PAWN_possessive] anger on your animals. -->
   <Slaughterer.beginLetter>{0} ha avuto un crollo mentale e sta per sfogare la sua collera sui tuoi animali.</Slaughterer.beginLetter>
+  <Slaughterer.beginLetterLabel>Macellaio</Slaughterer.beginLetterLabel>
   <!-- EN: {0} is no longer slaughtering random animals. -->
   <Slaughterer.recoveryMessage>{0} non sta più massacrando animali a caso.</Slaughterer.recoveryMessage>
   
@@ -122,6 +130,7 @@
   <Tantrum.baseInspectLine>Stato mentale: Scatto d'ira</Tantrum.baseInspectLine>
   <!-- EN: {0} is having a tantrum.\n\n[PAWN_pronoun] will smash up random furniture, items and structures. -->
   <Tantrum.beginLetter>{0} sta avendo uno scatto d'ira.\n\n[PAWN_pronoun] spaccherà mobili, oggetti e strutture a caso.</Tantrum.beginLetter>
+  <Tantrum.beginLetterLabel>Scatto d'ira</Tantrum.beginLetterLabel>
   <!-- EN: {0} is no longer having a tantrum. -->
   <Tantrum.recoveryMessage>{0} non sta più avendo uno scatto d'ira.</Tantrum.recoveryMessage>
   
@@ -131,6 +140,8 @@
   <TargetedInsultingSpree.baseInspectLine>Stato mentale: Insulto compulsivo verso {0}</TargetedInsultingSpree.baseInspectLine>
   <!-- EN: {0} has fixated [PAWN_possessive] rage on {1}.\n\n[PAWN_pronoun] will follow {1} around, hurling insults. -->
   <TargetedInsultingSpree.beginLetter>{0} ha riversato la sua rabbia verso {1}.\n\n[PAWN_pronoun] seguirà {1}, urlando insulti.</TargetedInsultingSpree.beginLetter>
+  <TargetedInsultingSpree.beginLetterLabel>Insulto compulsivo</TargetedInsultingSpree.beginLetterLabel>
+  <TargetedInsultingSpree.recoveryMessage>{0} non è più in preda ad insulti compulsivi.</TargetedInsultingSpree.recoveryMessage>
   
   <!-- EN: tantrum -->
   <TargetedTantrum.label>scatto d'ira</TargetedTantrum.label>
@@ -138,6 +149,7 @@
   <TargetedTantrum.baseInspectLine>Stato mentale: Scatto d'ira</TargetedTantrum.baseInspectLine>
   <!-- EN: {0} is having a tantrum.\n\n[PAWN_pronoun] is going to destroy {1}. -->
   <TargetedTantrum.beginLetter>{0} sta avendo uno scatto d'ira.\n\n[PAWN_pronoun] sta per distruggere {1}.</TargetedTantrum.beginLetter>
+  <TargetedTantrum.beginLetterLabel>Scatto d'ira</TargetedTantrum.beginLetterLabel>
   <!-- EN: {0} is no longer having a tantrum. -->
   <TargetedTantrum.recoveryMessage>{0} non sta più avendo uno scatto d'ira.</TargetedTantrum.recoveryMessage>
   
