@@ -2,37 +2,33 @@
 <LanguageData>
   
   <!-- EN: aiming time -->
-  <AimingDelayFactor.label>velocita' mira</AimingDelayFactor.label>
+  <AimingDelayFactor.label>tempo di mira</AimingDelayFactor.label>
   <!-- EN: How long it takes to shoot after choosing a target. -->
-  <AimingDelayFactor.description>Tempo necessario per sparare dopo aver mirato.</AimingDelayFactor.description>
+  <AimingDelayFactor.description>Quanto tempo ha bisogno per sparare dopo aver mirato un obiettivo.</AimingDelayFactor.description>
   
   <!-- EN: melee armor penetration -->
-  <MeleeArmorPenetration.label>TODO</MeleeArmorPenetration.label>
+  <MeleeArmorPenetration.label>penetrazione armatura in mischia</MeleeArmorPenetration.label>
   <!-- EN: Average armor penetration of all attacks in melee combat. This stat includes currently used weapon. -->
-  <MeleeArmorPenetration.description>TODO</MeleeArmorPenetration.description>
+  <MeleeArmorPenetration.description>La penetrazione media dell'armatura di tutti gli attacchi in mischia. Questo valore include l'arma usata al momento.</MeleeArmorPenetration.description>
   
   <!-- EN: melee dodge chance -->
-  <MeleeDodgeChance.label>possibilita' schivata</MeleeDodgeChance.label>
+  <MeleeDodgeChance.label>probabilità schivata in mischia</MeleeDodgeChance.label>
   <!-- EN: Chance to dodge a melee attack that would've otherwise hit. Characters will not dodge while aiming or firing a ranged weapon. -->
-  <MeleeDodgeChance.description>Possibilita' di schivare un attacco in mischia che sarebbe andato a segno. I personaggi non schiveranno mentre mirano o sparano con un'arma da tiro.</MeleeDodgeChance.description>
+  <MeleeDodgeChance.description>La probabilità di schivare un attacco in mischia che sarebbe andato altrimenti a segno. I personaggi non schiveranno mentre mirano o sparano con un'arma da tiro.</MeleeDodgeChance.description>
   
   <!-- EN: melee DPS -->
   <MeleeDPS.label>DPS in mischia</MeleeDPS.label>
   <!-- EN: Average damage per second in melee combat. This stat ignores target defenses like dodging and armor. -->
-  <MeleeDPS.description>Danno medio al secondo in combattimento corpo a corpo. Non tiene conto delle difese del bersaglio come la sua capacita' di schivare e l'armatura.</MeleeDPS.description>
+  <MeleeDPS.description>Danno medio al secondo in mischia. Questo valore non tiene conto delle difese del bersaglio come schivata e armatura.</MeleeDPS.description>
   
   <!-- EN: melee hit chance -->
-  <MeleeHitChance.label>possibilita' colpo a segno</MeleeHitChance.label>
+  <MeleeHitChance.label>probabilità colpo in mischia</MeleeHitChance.label>
   <!-- EN: Chance to hit a target in melee. The target can still dodge even if we would've hit. -->
-  <MeleeHitChance.description>Possibilita' di colpire un bersaglio in combattimento corpo a corpo. Il bersaglio puo' sempre schivare un colpo anche se questo e' andato a segno.</MeleeHitChance.description>
-  
-  <!-- UNUSED -->
-  <ShootingAccuracy.label>precisione tiro</ShootingAccuracy.label>
-  <ShootingAccuracy.description>Possibilita' di colpire un bersaglio dalla distanza.</ShootingAccuracy.description>
+  <MeleeHitChance.description>La probabilità di colpire un bersaglio in mischia. Il bersaglio può ancora schivare anche se l'avessimo colpito.</MeleeHitChance.description>
   
   <!-- EN: shooting accuracy -->
-  <ShootingAccuracyPawn.label>TODO</ShootingAccuracyPawn.label>
+  <ShootingAccuracyPawn.label>precisione di tiro</ShootingAccuracyPawn.label>
   <!-- EN: Base chance to not miss per cell of shot distance. Chance to hit is also affected by many other factors. A hit chance explanation for any shot can be seen by selecting a shooter and mousing over a target. -->
-  <ShootingAccuracyPawn.description>TODO</ShootingAccuracyPawn.description>
+  <ShootingAccuracyPawn.description>Probabilità di base di non mancare misurata in celle di distanza di tiro. La probabilità di colpire è influenzata anche da molti altri fattori. Un'illustrazione della probabilità di colpire per ogni colpo può essere vista selezionando un tiratore e passando il mouse sopra un obiettivo.</ShootingAccuracyPawn.description>
   
 </LanguageData>
