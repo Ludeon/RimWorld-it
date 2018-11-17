@@ -8,15 +8,7 @@
   <Lit>Illuminato</Lit>
   <!-- EN: Brightly lit -->
   <LitBrightly>Intensamente illuminato</LitBrightly>
-  
-  <!-- History upload pref -->
-  <!-- EN: Undecided -->
-  <Unspecified>Indeciso</Unspecified>
-  <!-- EN: Allow -->
-  <Always>Consenti</Always>
-  <!-- EN: Do not allow -->
-  <Never>Non consentire</Never>
-  
+
   <!-- Price types -->
   <!-- EN: very cheap -->
   <PriceTypeVeryCheap>molto economico</PriceTypeVeryCheap>
@@ -27,7 +19,7 @@
   <!-- EN: expensive -->
   <PriceTypeExpensive>costoso</PriceTypeExpensive>
   <!-- EN: exorbitant -->
-  <PriceTypeExorbitant>esorbitante</PriceTypeExorbitant>
+  <PriceTypeExorbitant>esagerato</PriceTypeExorbitant>
 
   <!-- Storage priority labels -->
   <!-- EN: unstored -->
@@ -61,11 +53,11 @@
   <!-- EN: meals -->
   <FoodTypeFlags_Meal>pasti</FoodTypeFlags_Meal>
   <!-- EN: processed foods -->
-  <FoodTypeFlags_Processed>cibi trasformati</FoodTypeFlags_Processed>
+  <FoodTypeFlags_Processed>cibi lavorati</FoodTypeFlags_Processed>
   <!-- EN: liquor -->
   <FoodTypeFlags_Liquor>liquore</FoodTypeFlags_Liquor>
   <!-- EN: kibble -->
-  <FoodTypeFlags_Kibble>crocchette</FoodTypeFlags_Kibble>
+  <FoodTypeFlags_Kibble>mangime</FoodTypeFlags_Kibble>
 
   <!-- Quality category -->
   <!-- EN: awful -->
@@ -83,23 +75,23 @@
   <!-- EN: legendary -->
   <QualityCategory_Legendary>leggendario</QualityCategory_Legendary>
   <!-- EN: awfl -->
-  <QualityCategoryShort_Awful>terr</QualityCategoryShort_Awful>
+  <QualityCategoryShort_Awful>ter</QualityCategoryShort_Awful>
   <!-- EN: poor -->
-  <QualityCategoryShort_Poor>medc</QualityCategoryShort_Poor>
+  <QualityCategoryShort_Poor>med</QualityCategoryShort_Poor>
   <!-- EN: norm -->
-  <QualityCategoryShort_Normal>norm</QualityCategoryShort_Normal>
+  <QualityCategoryShort_Normal>nor</QualityCategoryShort_Normal>
   <!-- EN: good -->
-  <QualityCategoryShort_Good>buon</QualityCategoryShort_Good>
+  <QualityCategoryShort_Good>buo</QualityCategoryShort_Good>
   <!-- EN: exc -->
-  <QualityCategoryShort_Excellent>eccl</QualityCategoryShort_Excellent>
+  <QualityCategoryShort_Excellent>exl</QualityCategoryShort_Excellent>
   <!-- EN: mast -->
-  <QualityCategoryShort_Masterwork>capl</QualityCategoryShort_Masterwork>
+  <QualityCategoryShort_Masterwork>cap</QualityCategoryShort_Masterwork>
   <!-- EN: legd -->
-  <QualityCategoryShort_Legendary>legg</QualityCategoryShort_Legendary>
+  <QualityCategoryShort_Legendary>leg</QualityCategoryShort_Legendary>
   
   <!-- Hunger -->
   <!-- EN: Starving -->
-  <HungerLevel_Starving>Morendo di fame</HungerLevel_Starving>
+  <HungerLevel_Starving>Morto di fame</HungerLevel_Starving>
   <!-- EN: Urgently hungry -->
   <HungerLevel_UrgentlyHungry>Molto affamato</HungerLevel_UrgentlyHungry>
   <!-- EN: Hungry -->
@@ -137,15 +129,15 @@
   <!-- EN: Invalid -->
   <EItemUpdateStatus_k_EItemUpdateStatusInvalid>Non valido</EItemUpdateStatus_k_EItemUpdateStatusInvalid>
   <!-- EN: Preparing config data -->
-  <EItemUpdateStatus_k_EItemUpdateStatusPreparingConfig>Preparazione dati di configurazione</EItemUpdateStatus_k_EItemUpdateStatusPreparingConfig>
+  <EItemUpdateStatus_k_EItemUpdateStatusPreparingConfig>Preparazione dati configurazione</EItemUpdateStatus_k_EItemUpdateStatusPreparingConfig>
   <!-- EN: Preparing content files -->
-  <EItemUpdateStatus_k_EItemUpdateStatusPreparingContent>Preparazione file di contenuto</EItemUpdateStatus_k_EItemUpdateStatusPreparingContent>
+  <EItemUpdateStatus_k_EItemUpdateStatusPreparingContent>Preparazione file contenuto</EItemUpdateStatus_k_EItemUpdateStatusPreparingContent>
   <!-- EN: Uploading content -->
   <EItemUpdateStatus_k_EItemUpdateStatusUploadingContent>Invio contenuto</EItemUpdateStatus_k_EItemUpdateStatusUploadingContent>
   <!-- EN: Uploading preview file -->
-  <EItemUpdateStatus_k_EItemUpdateStatusUploadingPreviewFile>Invio file di anteprima</EItemUpdateStatus_k_EItemUpdateStatusUploadingPreviewFile>
+  <EItemUpdateStatus_k_EItemUpdateStatusUploadingPreviewFile>Invio file anteprima</EItemUpdateStatus_k_EItemUpdateStatusUploadingPreviewFile>
   <!-- EN: Committing changes -->
-  <EItemUpdateStatus_k_EItemUpdateStatusCommittingChanges>Commettendo le modifiche</EItemUpdateStatus_k_EItemUpdateStatusCommittingChanges>
+  <EItemUpdateStatus_k_EItemUpdateStatusCommittingChanges>Esecuzione modifiche</EItemUpdateStatus_k_EItemUpdateStatusCommittingChanges>
 
   <!-- Mod sources -->
   <!-- EN: local folder -->
@@ -157,13 +149,13 @@
   <!-- EN: No medical care -->
   <MedicalCareCategory_NoCare>Nessuna assistenza medica</MedicalCareCategory_NoCare>
   <!-- EN: Doctor care, but no medicine -->
-  <MedicalCareCategory_NoMeds>Assistenza medica senza farmaci</MedicalCareCategory_NoMeds>
+  <MedicalCareCategory_NoMeds>Assistenza medica, ma niente farmaci</MedicalCareCategory_NoMeds>
   <!-- EN: Herbal medicine or worse -->
   <MedicalCareCategory_HerbalOrWorse>Erbe medicinali o peggio</MedicalCareCategory_HerbalOrWorse>
   <!-- EN: Industrial-tech medicine or worse -->
   <MedicalCareCategory_NormalOrWorse>Medicina industriale o peggio</MedicalCareCategory_NormalOrWorse>
   <!-- EN: Best quality medicine -->
-  <MedicalCareCategory_Best>Miglior medicina disponibile</MedicalCareCategory_Best>
+  <MedicalCareCategory_Best>Miglior qualità medica</MedicalCareCategory_Best>
 
   <!-- Hostility response mode -->
   <!-- EN: Ignore -->
@@ -195,13 +187,13 @@
   <!-- EN: ultra -->
   <TechLevel_Ultra>ultra</TechLevel_Ultra>
   <!-- EN: archotech -->
-  <TechLevel_Archotech>TODO</TechLevel_Archotech>
+  <TechLevel_Archotech>archotech</TechLevel_Archotech>
 
   <!-- Player pawns arrive method -->
   <!-- EN: Standing -->
-  <PlayerPawnsArriveMethod_Standing>Sul posto</PlayerPawnsArriveMethod_Standing>
+  <PlayerPawnsArriveMethod_Standing>In attesa</PlayerPawnsArriveMethod_Standing>
   <!-- EN: Drop pods -->
-  <PlayerPawnsArriveMethod_DropPods>Capsula di lancio</PlayerPawnsArriveMethod_DropPods>
+  <PlayerPawnsArriveMethod_DropPods>Capsule di lancio</PlayerPawnsArriveMethod_DropPods>
 
   <!-- Pawn generation context -->
   <!-- EN: all characters -->
@@ -213,11 +205,11 @@
   
   <!-- Animal name display mode -->
   <!-- EN: Show animal names -->
-  <ShowAnimalNames>Visualizza nomi degli animali</ShowAnimalNames>
+  <ShowAnimalNames>Visualizza nomi animali</ShowAnimalNames>
   <!-- EN: Tame (named only) -->
-  <AnimalNameDisplayMode_TameNamed>Addomesticati (solo battezzati)</AnimalNameDisplayMode_TameNamed>
+  <AnimalNameDisplayMode_TameNamed>Domestici (solo rinominati)</AnimalNameDisplayMode_TameNamed>
   <!-- EN: Tame (all) -->
-  <AnimalNameDisplayMode_TameAll>Addomesticati (tutti)</AnimalNameDisplayMode_TameAll>
+  <AnimalNameDisplayMode_TameAll>Domestici (tutti)</AnimalNameDisplayMode_TameAll>
   
   <!-- Temperature -->
   <!-- EN: Celsius -->
@@ -246,7 +238,6 @@
   <Direction8Way_NorthWest_Short>NO</Direction8Way_NorthWest_Short>
   
   <!-- Diet category -->
-  <!-- ndt: dendrovoro non esiste in inglese, perciò nessun problema a tradurlo con un corrispettivo italiano che non esiste in italiano. -->
   <!-- EN: Never eats -->
   <DietCategory_NeverEats>Non mangia mai</DietCategory_NeverEats>
   <!-- EN: Herbivorous -->
@@ -260,27 +251,27 @@
   <!-- EN: Carnivorous -->
   <DietCategory_Carnivorous>Carnivoro</DietCategory_Carnivorous>
   <!-- EN: - -->
-  <DietCategory_NeverEats_Short>TODO</DietCategory_NeverEats_Short>
+  <DietCategory_NeverEats_Short>-</DietCategory_NeverEats_Short>
   <!-- EN: H -->
-  <DietCategory_Herbivorous_Short>TODO</DietCategory_Herbivorous_Short>
+  <DietCategory_Herbivorous_Short>E</DietCategory_Herbivorous_Short>
   <!-- EN: D -->
-  <DietCategory_Dendrovorous_Short>TODO</DietCategory_Dendrovorous_Short>
+  <DietCategory_Dendrovorous_Short>D</DietCategory_Dendrovorous_Short>
   <!-- EN: Ov -->
-  <DietCategory_Ovivorous_Short>TODO</DietCategory_Ovivorous_Short>
+  <DietCategory_Ovivorous_Short>Ov</DietCategory_Ovivorous_Short>
   <!-- EN: O -->
-  <DietCategory_Omnivorous_Short>TODO</DietCategory_Omnivorous_Short>
+  <DietCategory_Omnivorous_Short>O</DietCategory_Omnivorous_Short>
   <!-- EN: C -->
-  <DietCategory_Carnivorous_Short>TODO</DietCategory_Carnivorous_Short>
+  <DietCategory_Carnivorous_Short>C</DietCategory_Carnivorous_Short>
 
   <!-- Food poison cause -->
   <!-- EN: incompetent cook -->
-  <FoodPoisonCause_IncompetentCook>Cuoco incompetente</FoodPoisonCause_IncompetentCook>
+  <FoodPoisonCause_IncompetentCook>cuoco incapace</FoodPoisonCause_IncompetentCook>
   <!-- EN: dirty cooking area -->
-  <FoodPoisonCause_FilthyKitchen>Cucina sporca</FoodPoisonCause_FilthyKitchen>
+  <FoodPoisonCause_FilthyKitchen>cucina sporca</FoodPoisonCause_FilthyKitchen>
   <!-- EN: rotten food -->
-  <FoodPoisonCause_Rotten>Cibo guasto</FoodPoisonCause_Rotten>
+  <FoodPoisonCause_Rotten>cibo avariato</FoodPoisonCause_Rotten>
   <!-- EN: dangerous food type -->
-  <FoodPoisonCause_DangerousFoodType>Tipo di cibo pericoloso</FoodPoisonCause_DangerousFoodType>
+  <FoodPoisonCause_DangerousFoodType>tipo di cibo pericoloso</FoodPoisonCause_DangerousFoodType>
 
   <!-- Psychic drone level -->
   <!-- EN: none -->
@@ -295,16 +286,5 @@
   <PsychicDroneLevel_BadHigh>alto</PsychicDroneLevel_BadHigh>
   <!-- EN: extreme -->
   <PsychicDroneLevel_BadExtreme>estremo</PsychicDroneLevel_BadExtreme>
-
-  <!-- UNUSED -->
-  <QualityCategory_Shoddy>scadente</QualityCategory_Shoddy>
-  <QualityCategory_Superior>superiore</QualityCategory_Superior>
-  <QualityCategoryShort_Shoddy>scad</QualityCategoryShort_Shoddy>
-  <QualityCategoryShort_Superior>supr</QualityCategoryShort_Superior>
-  <TrainableIntelligence_None>Nessuna</TrainableIntelligence_None>
-  <TrainableIntelligence_Simple>Semplice</TrainableIntelligence_Simple>
-  <TrainableIntelligence_Intermediate>Media</TrainableIntelligence_Intermediate>
-  <TrainableIntelligence_Advanced>Avanzata</TrainableIntelligence_Advanced>
-  <TechLevel_Transcendent>trascendente</TechLevel_Transcendent>
 
 </LanguageData>
