@@ -10,11 +10,11 @@ Discord: https://discord.gg/kKTHbaJ
 
 Translators:
 ------------------
-- Lagorn
 - Harkeidos
 - ChristianLJB
 - Panic04
 - menos-grande
+- RexLord
 
 *REMEMBER TO ALWAYS TEST YOUR TRANSLATIONS!
 
