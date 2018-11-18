@@ -14,7 +14,7 @@ Translators:
 - ChristianLJB
 - Panic04
 - menos-grande
-- RexLord
+- Rexlord
 
 *REMEMBER TO ALWAYS TEST YOUR TRANSLATIONS!
 
