@@ -6,9 +6,9 @@
   <!-- EN: the -->
   <DefiniteArticle>il/la</DefiniteArticle>
   <!-- EN: a {0} -->
-  <IndefiniteForm>uno(a) {0}</IndefiniteForm>
+  <IndefiniteForm>{0_gender ? un : una : uno} {0}</IndefiniteForm>
   <!-- EN: the {0} -->
-  <DefiniteForm>il/la {0}</DefiniteForm>
+  <DefiniteForm>{0_gender ? il : la : lo} {0}</DefiniteForm>
 
   <!-- EN: its -->
   <Proits>suo/suoi</Proits>
@@ -26,15 +26,15 @@
   <!-- EN: it -->
   <ProitObj>questo/questa</ProitObj>
   <!-- EN: him -->
-  <ProhimObj>esso</ProhimObj>
+  <ProhimObj>lo</ProhimObj>
   <!-- EN: her -->
-  <ProherObj>essa</ProherObj>
+  <ProherObj>la</ProherObj>
   <!-- EN: It -->
-  <ProitObjCap>Questo/Questa</ProitObjCap>
+  <ProitObjCap>lo/la</ProitObjCap>
   <!-- EN: Him -->
-  <ProhimObjCap>Esso</ProhimObjCap>
+  <ProhimObjCap>Lo</ProhimObjCap>
   <!-- EN: Her -->
-  <ProherObjCap>Essa</ProherObjCap>
+  <ProherObjCap>La</ProherObjCap>
 
   <!-- EN: he -->
   <Prohe>lui</Prohe>
