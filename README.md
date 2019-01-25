@@ -6,25 +6,17 @@ This is the Italian translation data for RimWorld.
 See this page for license info:
 http://ludeon.com/forums/index.php?topic=2933.0
 
-Discord: https://discord.gg/kKTHbaJ
-
-Translators:
+TRADUTTORI:
 ------------------
 - Harkeidos
-- ChristianLJB
-- Panic04
-- menos-grande
-- Rexlord
-
-*REMEMBER TO ALWAYS TEST YOUR TRANSLATIONS!
 
 INSTALLAZIONE:
 ------------------
-1- Copia tutti i contenuti dell'archivio nella directory di installazione in /Mods/Core/Languages/
-2- Avvia il gioco
-3- Nelle opzioni di gioco, seleziona la lingua 'Italiano'
+1- Copiare i contenuti dell'archivio nella directory di installazione in /Mods/Core/Languages/
+2- Avviare il gioco
+3- Nelle opzioni di gioco, selezionare la lingua 'Italiano'
 
-IN CASO DI ERRORI O OMISSIONI:
+SEGNALAZIONE ERRORI:
 ------------------------------
-Non esitare ad intervenire sul forum dedicato ai traduttori: https://ludeon.com/forums/index.php?topic=4843.0
-Se individui errori o omissioni e per qualsiasi proposta di traduzione o miglioramento, non esitare a presentare le tue idee!
+Se individui errori, omissioni o per qualsiasi proposta di traduzione o miglioramento, non esitare ad intervenire sul forum dedicato ai traduttori:
+https://ludeon.com/forums/index.php?topic=4843.0
