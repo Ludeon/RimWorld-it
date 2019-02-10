@@ -2,9 +2,8 @@ RimWorld Italian
 ================
 Target Version: 1.0.1961
 
-This is the Italian translation data for RimWorld.
-See this page for license info:
-http://ludeon.com/forums/index.php?topic=2933.0
+Questi sono i file per la traduzione italiana di RimWorld.
+Puoi trovare ulteriori informazioni in questa pagina: http://ludeon.com/forums/index.php?topic=2933.0
 
 TRADUTTORI:
 ------------------
@@ -19,4 +18,5 @@ INSTALLAZIONE:
 SEGNALAZIONE ERRORI:
 ------------------------------
 Se individui errori, omissioni o per qualsiasi proposta di traduzione o miglioramento, non esitare ad intervenire sul forum dedicato ai traduttori:
-https://ludeon.com/forums/index.php?topic=4843.0
+SEZIONE GENERALE: https://ludeon.com/forums/index.php?board=17.0
+SEZIONE TRADUZIONE ITALIANA: https://ludeon.com/forums/index.php?topic=4843.0
