@@ -18,5 +18,7 @@ INSTALLAZIONE:
 SEGNALAZIONE ERRORI:
 ------------------------------
 Se individui errori, omissioni o per qualsiasi proposta di traduzione o miglioramento, non esitare ad intervenire sul forum dedicato ai traduttori:
+
 SEZIONE GENERALE: https://ludeon.com/forums/index.php?board=17.0
+
 SEZIONE TRADUZIONE ITALIANA: https://ludeon.com/forums/index.php?topic=4843.0
