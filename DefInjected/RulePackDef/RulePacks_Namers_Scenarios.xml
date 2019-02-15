@@ -1,10 +1,25 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
-  <NamerScenario.rulePack.rulesFiles>
+  
+  <!-- EN:
     <li>story->Words/Nouns/Stories</li>
+  -->
+  <NamerScenario.rulePack.rulesFiles>
+    <li>storySingularMas->Words/Nouns/Stories_Singular_Masculine</li>
+    <li>storySingularFem->Words/Nouns/Stories_Singular_Feminine</li>
+    <li>storySingularNeu->Words/Nouns/Stories_Singular_Neuter</li>
+    <li>storyPluralMas->Words/Nouns/Stories_Plural_Masculine</li>
+    <li>storyPluralFem->Words/Nouns/Stories_Plural_Feminine</li>
+    <li>storyPluralNeu->Words/Nouns/Stories_Plural_Neuter</li>
+    <li>storySingular->[storySingularMas]</li>
+    <li>storySingular->[storySingularFem]</li>
+    <li>storySingular->[storySingularNeu]</li>
+    <li>storyPlural->[storyPluralMas]</li>
+    <li>storyPlural->[storyPluralFem]</li>
+    <li>storyPlural->[storyPluralNeu]</li>
   </NamerScenario.rulePack.rulesFiles>
-  <NamerScenario.rulePack.rulesStrings>
+
+  <!-- EN:
     <li>r_name->[story] [Trans] the [Weapon]</li>
     <li>r_name->[story] [Trans] the [Animal]</li>
     <li>r_name->[story] [Trans] the [TerrainFeature]</li>
@@ -17,7 +32,40 @@
     <li>r_name->[story] in [Color] and [Color]</li>
     <li>r_name->[Color] [story]</li>
     <li>r_name->[story] [RomanNumeral]</li>
+  -->
+  <NamerScenario.rulePack.rulesStrings>
+    <li>r_name->[storySingular] [TransSingularMas] [WeaponSingularMas]</li>
+    <li>r_name->[storySingular] [TransSingularFem] [WeaponSingularFem]</li>
+    <li>r_name->[storySingular] [TransSingularNeu][WeaponSingularNeu]</li>
+    <li>r_name->[storySingular] [TransSingularMas] [AnimalSingularMas]</li>
+    <li>r_name->[storySingular] [TransSingularFem] [AnimalSingularFem]</li>
+    <li>r_name->[storySingular] [TransSingularNeu][AnimalSingularNeu]</li>
+    <li>r_name->[storySingular] [TransSingularMas] [TerrainFeatureSingularMas]</li>
+    <li>r_name->[storySingular] [TransSingularFem] [TerrainFeatureSingularFem]</li>
+    <li>r_name->[storySingular] [TransSingularNeu][TerrainFeatureSingularNeu]</li>
+    <li>r_name->[storySingular] [TransPluralMas] [PersonJobPluralMas]</li>
+    <li>r_name->[storySingular] [TransPluralFem] [PersonJobPluralFem]</li>
+    <li>r_name->[storySingular] [TransPluralNeu] [PersonJobPluralNeu]</li>
+    <li>r_name->[storySingular] [TransSingularMas] [ConceptAnySingularMas]</li>
+    <li>r_name->[storySingular] [TransSingularFem] [ConceptAnySingularFem]</li>
+    <li>r_name->[storySingular] [TransSingularNeu][ConceptAnySingularNeu]</li>
+    <li>r_name->[storySingular] del [ConceptAnySingularMas]</li>
+    <li>r_name->[storySingular] della [ConceptAnySingularFem]</li>
+    <li>r_name->[storySingular] dell'[ConceptAnySingularNeu]</li>
+    <li>r_name->[storySingular] [Trans] un [CommunitySingularMas]</li>
+    <li>r_name->[storySingular] [Trans] una [CommunitySingularFem]</li>
+    <li>r_name->un [storySingularMas] [AdjectiveAnySingularMas]</li>
+    <li>r_name->una [storySingularFem] [AdjectiveAnySingularFem]</li>
+    <li>r_name->un [storySingularNeu] [AdjectiveAnySingularMas]</li>
+    <li>r_name->[storySingular] [TransSingularMas] [GameSingularMas]</li>
+    <li>r_name->[storySingular] [TransPluralMas] [GamePluralMas]</li>
+    <li>r_name->[storySingular] [TransPluralFem] [GamePluralFem]</li>
+    <li>r_name->[storySingular] [TransPluralNeu] [GamePluralNeu]</li>
+    <li>r_name->[storySingular] in [ColorSingularMas] e [ColorSingularMas]</li>
+    <li>r_name->[storySingularMas] [ColorSingularMas]</li>
+    <li>r_name->[storySingularFem] [ColorSingularFem]</li>
+    <li>r_name->[storySingularNeu] [ColorSingularMas]</li>
+    <li>r_name->[RomanNumeral] [story]</li>
   </NamerScenario.rulePack.rulesStrings>
-
-
+  
 </LanguageData>
