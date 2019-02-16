@@ -18,12 +18,12 @@
     <li>standardname(p=0.2)->isola del [narrative_nameSingularMas]</li>
     <li>standardname(p=0.2)->isola della [narrative_nameSingularFem]</li>
     <li>standardname(p=0.2)->isola dell'[narrative_nameSingularNeu]</li>
-    <li>terrain_wordPluralFem(p=4)->isole</li>
-    <li>terrain_wordSingularNeu(p=3)->arcipelago</li>
-    <li>terrain_wordSingularFem->barriera corallina</li>
-    <li>terrain_wordSingularNeu->atollo</li>
-    <li>terrain_wordPluralNeu->scogli</li>
-    <li>terrain_wordPluralNeu->isolotti</li>
+    <li>terrain_word(p=4)->isole</li>
+    <li>terrain_word(p=3)->arcipelago</li>
+    <li>terrain_word->barriera corallina</li>
+    <li>terrain_word->atollo</li>
+    <li>terrain_word->scogli</li>
+    <li>terrain_word->isolotti</li>
   </NamerArchipelago.rulePack.rulesStrings>
   
   <!-- EN:
@@ -37,14 +37,14 @@
     <li>terrain_word->barrens</li>
   -->
   <NamerAridShrubland.rulePack.rulesStrings>
-    <li>terrain_wordSingularFem(p=4)->boscaglia</li>
-    <li>terrain_wordSingularFem(p=4)->macchia</li>
-    <li>terrain_wordSingularNeu(p=2)->altopiano</li>
-    <li>terrain_wordSingularFem(p=2)->selva</li>
-    <li>terrain_wordSingularMas->deserto</li>
-    <li>terrain_wordSingularFem->fratta</li>
-    <li>terrain_wordPluralMas->cespugli</li>
-    <li>terrain_wordSingularFem->radura</li>
+    <li>terrain_word(p=4)->boscaglia</li>
+    <li>terrain_word(p=4)->macchia</li>
+    <li>terrain_word(p=2)->altopiano</li>
+    <li>terrain_word(p=2)->selva</li>
+    <li>terrain_word->deserto</li>
+    <li>terrain_word->fratta</li>
+    <li>terrain_word->cespugli</li>
+    <li>terrain_word->radura</li>
   </NamerAridShrubland.rulePack.rulesStrings>
   
   <!-- EN:
@@ -60,11 +60,11 @@
     <li>standardname(p=0.2)->golfo del [narrative_nameSingularMas]</li>
     <li>standardname(p=0.2)->golfo della [narrative_nameSingularFem]</li>
     <li>standardname(p=0.2)->golfo dell'[narrative_nameSingularNeu]</li>
-    <li>terrain_wordSingularFem(p=6)->baia</li>
-    <li>terrain_wordSingularFem->rada</li>
-    <li>terrain_wordSingularMas->golfo</li>
-    <li>terrain_wordSingularNeu->approdo</li>
-    <li>terrain_wordSingularFem->cala</li>
+    <li>terrain_word(p=6)->baia</li>
+    <li>terrain_word->rada</li>
+    <li>terrain_word->golfo</li>
+    <li>terrain_word->approdo</li>
+    <li>terrain_word->cala</li>
   </NamerBay.rulePack.rulesStrings>
   
   <!-- EN:
@@ -77,13 +77,13 @@
     <li>terrain_word->thicket</li>
   -->
   <NamerBorealForest.rulePack.rulesStrings>
-    <li>terrain_wordSingularFem(p=6)->foresta</li>
-    <li>terrain_wordSingularFem(p=3)->taiga</li>
-    <li>terrain_wordSingularMas->bosco</li>
-    <li>terrain_wordSingularFem->boscaglia</li>
-    <li>terrain_wordPluralMas->boschi</li>
-    <li>terrain_wordSingularMas->groviglio</li>
-    <li>terrain_wordSingularMas->boschetto</li>
+    <li>terrain_word(p=6)->foresta</li>
+    <li>terrain_word(p=3)->taiga</li>
+    <li>terrain_word->bosco</li>
+    <li>terrain_word->boscaglia</li>
+    <li>terrain_word->boschi</li>
+    <li>terrain_word->groviglio</li>
+    <li>terrain_word->boschetto</li>
   </NamerBorealForest.rulePack.rulesStrings>
   
   <!-- EN:
@@ -129,13 +129,13 @@
     <li>desert_adjective->deserto umido</li>
     <li>desert_adjective->deserto sabbioso</li>
     <li>desert_adjective->deserto roccioso</li>
-    <li>terrain_wordSingularMas(p=6)->deserto</li>
-    <li>terrain_wordSingularNeu->altopiano</li>
-    <li>terrain_wordPluralFem->piane</li>
-    <li>terrain_wordSingularFem->conca</li>
-    <li>terrain_wordPluralFem->lande</li>
-    <li>terrain_wordPluralFem->terre desolate</li>
-    <li>terrain_wordPluralFem->distese</li>
+    <li>terrain_word(p=6)->deserto</li>
+    <li>terrain_word->altopiano</li>
+    <li>terrain_word->piane</li>
+    <li>terrain_word->conca</li>
+    <li>terrain_word->lande</li>
+    <li>terrain_word->terre desolate</li>
+    <li>terrain_word->distese</li>
   </NamerDesert.rulePack.rulesStrings>
   
   <!-- EN:
@@ -145,10 +145,10 @@
     <li>terrain_word->thicket</li>
   -->
   <NamerForest.rulePack.rulesStrings>
-    <li>terrain_wordSingularFem(p=6)->foresta</li>
-    <li>terrain_wordSingularMas->bosco</li>
-    <li>terrain_wordSingularFem->boscaglia</li>
-    <li>terrain_wordSingularMas->boschetto</li>
+    <li>terrain_word(p=6)->foresta</li>
+    <li>terrain_word->bosco</li>
+    <li>terrain_word->boscaglia</li>
+    <li>terrain_word->boschetto</li>
   </NamerForest.rulePack.rulesStrings>
   
   <!-- EN:
@@ -162,10 +162,10 @@
     <li>terrain_word(p=0.3)->tract</li>
   -->
   <NamerIceSheet.rulePack.rulesStrings>
-    <li>terrain_wordSingularFem->calotta</li>
-    <li>terrain_wordSingularFem->distesa</li>
-    <li>terrain_wordSingularFem(p=0.5)->landa</li>
-    <li>terrain_wordSingularFem(p=0.3)->regione</li>
+    <li>terrain_word->calotta</li>
+    <li>terrain_word->distesa</li>
+    <li>terrain_word(p=0.5)->landa</li>
+    <li>terrain_word(p=0.3)->regione</li>
   </NamerIceSheet.rulePack.rulesStrings>
   
   <!-- EN:
@@ -183,11 +183,11 @@
     <li>standardname(p=0.2)->isola del [narrative_nameSingularMas]</li>
     <li>standardname(p=0.2)->isola della [narrative_nameSingularFem]</li>
     <li>standardname(p=0.2)->isola dell'[narrative_nameSingularNeu]</li>
-    <li>terrain_wordPluralFem(p=4)->isole</li>
-    <li>terrain_wordSingularFem->barriera corallina</li>
-    <li>terrain_wordSingularNeu->atollo</li>
-    <li>terrain_wordPluralNeu->scogli</li>
-    <li>terrain_wordPluralNeu->isolotti</li>
+    <li>terrain_word(p=4)->isole</li>
+    <li>terrain_word->barriera corallina</li>
+    <li>terrain_word->atollo</li>
+    <li>terrain_word->scogli</li>
+    <li>terrain_word->isolotti</li>
   </NamerIsland.rulePack.rulesStrings>
   
   <!-- EN:
@@ -207,13 +207,13 @@
     <li>standardname(p=0.2)->lago del [narrative_nameSingularMas]</li>
     <li>standardname(p=0.2)->lago della [narrative_nameSingularFem]</li>
     <li>standardname(p=0.2)->lago dell'[narrative_nameSingularNeu]</li>
-    <li>terrain_wordSingularMas(p=6)->lago</li>
-    <li>terrain_wordSingularMas->mare</li>
-    <li>terrain_wordSingularMas->laghetto</li>
-    <li>terrain_wordSingularMas->bacino</li>
-    <li>terrain_wordSingularMas->bacino idrico</li>
-    <li>terrain_wordSingularFem(p=0.3)->pozza</li>
-    <li>terrain_wordSingularFem(p=0.3)->laguna</li>
+    <li>terrain_word(p=6)->lago</li>
+    <li>terrain_word->mare</li>
+    <li>terrain_word->laghetto</li>
+    <li>terrain_word->bacino</li>
+    <li>terrain_word->bacino idrico</li>
+    <li>terrain_word(p=0.3)->pozza</li>
+    <li>terrain_word(p=0.3)->laguna</li>
   </NamerLake.rulePack.rulesStrings>
   
   <!-- EN:
@@ -230,11 +230,11 @@
     <li>standardname(p=0.2)->monte del [narrative_nameSingularMas]</li>
     <li>standardname(p=0.2)->monte della [narrative_nameSingularFem]</li>
     <li>standardname(p=0.2)->monte dell'[narrative_nameSingularNeu]</li>
-    <li>terrain_wordPluralFem(p=5)->montagne</li>
-    <li>terrain_wordSingularFem(p=2)->catena</li>
-    <li>terrain_wordPluralMas->picchi</li>
-    <li>terrain_wordPluralFem->colline</li>
-    <li>terrain_wordPluralFem->scogliere</li>
+    <li>terrain_word(p=5)->montagne</li>
+    <li>terrain_word(p=2)->catena</li>
+    <li>terrain_word->picchi</li>
+    <li>terrain_word->colline</li>
+    <li>terrain_word->scogliere</li>
   </NamerMountainRange.rulePack.rulesStrings>
   
   <!-- EN:
@@ -275,9 +275,9 @@
     <li>ocean_adjective->mare immobile</li>
     <li>ocean_adjective->mare ondoso</li>
     <li>ocean_adjective->mare gentile</li>
-    <li>terrain_wordSingularNeu(p=6)->oceano</li>
-    <li>terrain_wordSingularMas(p=3)->mare</li>
-    <li>terrain_wordSingularFem->distesa</li>
+    <li>terrain_word(p=6)->oceano</li>
+    <li>terrain_word(p=3)->mare</li>
+    <li>terrain_word->distesa</li>
   </NamerOcean.rulePack.rulesStrings>
   
   <!-- EN:
@@ -299,10 +299,10 @@
     <li>standardname(p=0.2)->capo del [narrative_nameSingularMas]</li>
     <li>standardname(p=0.2)->capo della [narrative_nameSingularFem]</li>
     <li>standardname(p=0.2)->capo dell'[narrative_nameSingularNeu]</li>
-    <li>terrain_wordSingularFem(p=5)->penisola</li>
-    <li>terrain_wordSingularFem(p=2)->punta</li>
-    <li>terrain_wordSingularMas->capo</li>
-    <li>terrain_wordSingularMas->promontorio</li>
+    <li>terrain_word(p=5)->penisola</li>
+    <li>terrain_word(p=2)->punta</li>
+    <li>terrain_word->capo</li>
+    <li>terrain_word->promontorio</li>
   </NamerPeninsula.rulePack.rulesStrings>
   
   <!-- EN:
@@ -317,9 +317,9 @@
     <li>standardname(p=0.2)->lago del [narrative_nameSingularMas]</li>
     <li>standardname(p=0.2)->lago della [narrative_nameSingularFem]</li>
     <li>standardname(p=0.2)->lago dell'[narrative_nameSingularNeu]</li>
-    <li>terrain_wordSingularMas(p=6)->mare</li>
-    <li>terrain_wordSingularNeu->oceano</li>
-    <li>terrain_wordSingularMas->lago</li>
+    <li>terrain_word(p=6)->mare</li>
+    <li>terrain_word->oceano</li>
+    <li>terrain_word->lago</li>
   </NamerSea.rulePack.rulesStrings>
   
   <!-- EN:
@@ -357,12 +357,12 @@
     <li>swamp_adjective->palude incolta</li>
     <li>swamp_adjective->palude intricata</li>
     <li>swamp_adjective->palude spinosa</li>
-    <li>terrain_wordSingularFem(p=6)->palude</li>
-    <li>terrain_wordSingularMas->bacino</li>
-    <li>terrain_wordPluralMas->paludi</li>
-    <li>terrain_wordSingularNeu->acquitrino</li>
-    <li>terrain_wordSingularFem->torbiera</li>
-    <li>terrain_wordSingularMas->pantano</li>
+    <li>terrain_word(p=6)->palude</li>
+    <li>terrain_word->bacino</li>
+    <li>terrain_word->paludi</li>
+    <li>terrain_word->acquitrino</li>
+    <li>terrain_word->torbiera</li>
+    <li>terrain_word->pantano</li>
   </NamerSwamp.rulePack.rulesStrings>
   
   <!-- EN:
@@ -392,12 +392,12 @@
     <li>rainforest_adjective->foresta gigante</li>
     <li>rainforest_adjective->foresta intricata</li>
     <li>rainforest_adjective->foresta spinosa</li>
-    <li>terrain_wordSingularFem(p=6)->foresta tropicale</li>
-    <li>terrain_wordSingularFem(p=3)->giungla</li>
-    <li>terrain_wordSingularFem->foresta</li>
-    <li>terrain_wordSingularMas->bosco</li>
-    <li>terrain_wordSingularFem->boscaglia</li>
-    <li>terrain_wordSingularMas->groviglio</li>
+    <li>terrain_word(p=6)->foresta tropicale</li>
+    <li>terrain_word(p=3)->giungla</li>
+    <li>terrain_word->foresta</li>
+    <li>terrain_word->bosco</li>
+    <li>terrain_word->boscaglia</li>
+    <li>terrain_word->groviglio</li>
   </NamerTropicalRainforest.rulePack.rulesStrings>
   
   <!-- EN:
@@ -415,17 +415,17 @@
     <li>terrain_word->flats</li>
   -->
   <NamerTundra.rulePack.rulesStrings>
-    <li>terrain_wordSingularNeu(p=4)->altopiano</li>
-    <li>terrain_wordPluralFem(p=4)->radure</li>
-    <li>terrain_wordSingularFem(p=2)->taiga</li>
-    <li>terrain_wordSingularFem->selva</li>
-    <li>terrain_wordSingularFem->boscaglia</li>
-    <li>terrain_wordSingularFem->macchia</li>
-    <li>terrain_wordSingularFem->fratta</li>
-    <li>terrain_wordPluralMas->cespugli</li>
-    <li>terrain_wordSingularFem->distesa</li>
-    <li>terrain_wordSingularFem->prateria</li>
-    <li>terrain_wordPluralFem->pianure</li>
+    <li>terrain_word(p=4)->altopiano</li>
+    <li>terrain_word(p=4)->radure</li>
+    <li>terrain_word(p=2)->taiga</li>
+    <li>terrain_word->selva</li>
+    <li>terrain_word->boscaglia</li>
+    <li>terrain_word->macchia</li>
+    <li>terrain_word->fratta</li>
+    <li>terrain_word->cespugli</li>
+    <li>terrain_word->distesa</li>
+    <li>terrain_word->prateria</li>
+    <li>terrain_word->pianure</li>
   </NamerTundra.rulePack.rulesStrings>
   
   <!-- EN:
