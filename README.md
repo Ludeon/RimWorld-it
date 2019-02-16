@@ -1,6 +1,6 @@
 RimWorld Italian
 ================
-Target Version: 1.0.1961
+Target Version: 1.0.2150
 
 Questi sono i file per la traduzione italiana di RimWorld.
 Puoi trovare ulteriori informazioni in questa pagina: http://ludeon.com/forums/index.php?topic=2933.0
