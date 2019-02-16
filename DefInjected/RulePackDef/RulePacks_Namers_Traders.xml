@@ -12,13 +12,6 @@
     <li>businesstypeSingularNeu->Words/Nouns/BusinessTypes_Singular_Neuter</li>
     <li>businesstypePluralMas->Words/Nouns/BusinessTypes_Plural_Masculine</li>
     <li>businesstypePluralFem->Words/Nouns/BusinessTypes_Plural_Feminine</li>
-    <li>businesstypeSingular->[businesstypeSingularMas]</li>
-    <li>businesstypeSingular->[businesstypeSingularFem]</li>
-    <li>businesstypeSingular->[businesstypeSingularNeu]</li>
-    <li>businesstypePlural->[businesstypePluralMas]</li>
-    <li>businesstypePlural->[businesstypePluralFem]</li>
-    <li>businesstype->[businesstypeSingular]</li>
-    <li>businesstype->[businesstypePlural]</li>
     <li>businesstypeEn->Words/Nouns/BusinessTypes_En</li>
   </NamerTraderGeneral.rulePack.rulesFiles>
   <!-- EN:
@@ -40,6 +33,14 @@
     <li>maybe_adjective->[AdjectiveBadass]</li>
   -->
   <NamerTraderGeneral.rulePack.rulesStrings>
+    <li>businesstypeSingular->[businesstypeSingularMas]</li>
+    <li>businesstypeSingular->[businesstypeSingularFem]</li>
+    <li>businesstypeSingular->[businesstypeSingularNeu]</li>
+    <li>businesstypePlural->[businesstypePluralMas]</li>
+    <li>businesstypePlural->[businesstypePluralFem]</li>
+    <li>businesstype->[businesstypeSingular]</li>
+    <li>businesstype->[businesstypePlural]</li>
+
     <li>r_name(p=4)->[businessname] [businesstypeEn]</li>
     <li>r_name->[NamePerson] [businesstypeEn]</li>
     <li>r_name->[businesstype] [AnimalSingularMas] [maybe_adjectiveSingularMas]</li>
