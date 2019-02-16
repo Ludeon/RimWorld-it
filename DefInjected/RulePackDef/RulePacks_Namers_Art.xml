@@ -11,15 +11,16 @@
     <li>ArtworksPluralMas->Words/Nouns/Artworks_Plural_Masculine</li>
     <li>ArtworksPluralFem->Words/Nouns/Artworks_Plural_Feminine</li>
     <li>ArtworksPluralNeu->Words/Nouns/Artworks_Plural_Neuter</li>
+  </ArtNameUtility.rulePack.rulesFiles>
+  
+  <NamerArtCommon.rulePack.rulesStrings>
     <li>ArtworksSingular->[ArtworksSingularMas]</li>
     <li>ArtworksSingular->[ArtworksSingularFem]</li>
     <li>ArtworksSingular->[ArtworksSingularNeu]</li>
     <li>ArtworksPlural->[ArtworksPluralMas]</li>
     <li>ArtworksPlural->[ArtworksPluralFem]</li>
     <li>ArtworksPlural->[ArtworksPluralNeu]</li>
-  </ArtNameUtility.rulePack.rulesFiles>
-  
-  <NamerArtCommon.rulePack.rulesStrings>
+
 	<!--  <li>r_art_name(p=4)->[Artwork] [Trans] [ConceptAny]</li>  -->
     <li>r_art_name(p=4)->[ArtworksSingular] [TransSingularMas] [ConceptAnySingularMas]</li>
     <li>r_art_name(p=4)->[ArtworksSingular] [TransSingularFem] [ConceptAnySingularFem]</li>
