@@ -2,16 +2,16 @@
 <LanguageData>
   
   <!-- EN: animal chat -->
-  <AnimalChat.label>parlare agli animali</AnimalChat.label>
+  <AnimalChat.label>chiacchiera con animale</AnimalChat.label>
   <!-- EN:
     <li>r_logentry(p=5)->[INITIATOR_nameDef] [tamed] [RECIPIENT_nameDef].</li>
     <li>r_logentry->[INITIATOR_nameDef] sat near [RECIPIENT_nameDef] and talked to [INITIATOR_objective]self about [TalkTopicAny].</li>
     <li>r_logentry->[INITIATOR_nameDef] approached [RECIPIENT_nameDef] while whispering to [INITIATOR_objective]self about [TalkTopicAny].</li>
-    <li>r_logentry->[INITIATOR_nameDef] came near [RECIPIENT_nameDef] while talking to [INITIATOR_objective]self about [TalkTopicAny].</li>
-    <li>tamed->made calming noises towards</li>
+    <li>r_logentry->[INITIATOR_nameDef] came near [RECIPIENT_nameDef] while talking to [INITIATOR_objective]self about [TalkTopicAny].</li>    
+	<li>tamed->made calming noises towards</li>
     <li>tamed->offered slow, friendly gestures to</li>
-    <li>tamed->made shushing noises at</li>
-    <li>tamed->made happy clicking noises at</li>
+    <li>tamed->made shushing noises at</li>	
+    <li>tamed->made happy clicking noises at</li>	
     <li>tamed->gestured gently and approached</li>
     <li>tamed->slowly approached</li>
     <li>tamed->gently touched</li>
@@ -28,16 +28,32 @@
     <li>tamed->whispered a story about [TalkTopicAny] to</li>
   -->
   <AnimalChat.logRulesInitiator.rulesStrings>
-    <li>logentry->parla con [other_nameShortIndef], per instaurare un rapporto.</li>
+    <li>r_logentry(p=5)->[INITIATOR_nameDef] [tamed] [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] si è {INITIATOR_gender ? seduto : seduta : seduto} vicino a [RECIPIENT_nameDef] ed ha parlato tra sé di [TalkTopicAny].</li>
+    <li>r_logentry->[INITIATOR_nameDef] si è {INITIATOR_gender ? avvicinato : avvicinata : avvicinato} a [RECIPIENT_nameDef] mormorando tra sé di [TalkTopicAny].</li>
+    <li>r_logentry->[INITIATOR_nameDef] è {INITIATOR_gender ? andato : andata : andato} vicino a [RECIPIENT_nameDef] parlando tra sé di [TalkTopicAny].</li>
+    <li>tamed->ha fatto dei suoni rassicuranti verso</li>
+    <li>tamed->ha fatto dei gesti lenti ed amichevoli verso</li>
+    <li>tamed->ha fatto segno di stare in silenzio a</li>
+    <li>tamed->ha fatto dei piacevoli suoni ticchettanti verso</li>
+    <li>tamed->ha gesticolato gentilmente e si è avvicinato a</li>
+    <li>tamed->si è avvicinato lentamente a</li>
+    <li>tamed->ha toccato delicatamente</li>
+    <li>tamed->ha calmato e incoraggiato</li>
+    <li>tamed->ha respirato allo stesso ritmo di</li>
+    <li>tamed->si è abbassato avvicinandosi a</li>
+    <li>tamed->non ha mostrato paura o rabbia a</li>
+    <li>tamed->ha finto distrazione nei confronti di</li>
+    <li>tamed->ha canticchiato gentilmente una canzone a</li>
+    <li>tamed->ha cantato una vecchia ninna nanna a</li>
+    <li>tamed->ha toccato con decisione ma delicatezza</li>
+    <li>tamed->ha mostrato un atteggiamento rilassato verso</li>
+    <li>tamed->si è seduto pazientemente vicino a</li>
+    <li>tamed->a sussurrato una storia riguardante [TalkTopicAny] a</li>
   </AnimalChat.logRulesInitiator.rulesStrings>
   
-  <!-- UNUSED -->
-  <AnimalChat.logRulesRecipient.rulesStrings>
-    <li>logentry->Ha risposto al linguaggio amichevole di [other_nameShortIndef].</li>
-  </AnimalChat.logRulesRecipient.rulesStrings>
-  
   <!-- EN: nuzzle -->
-  <Nuzzle.label>strusciarsi</Nuzzle.label>
+  <Nuzzle.label>si struscia il muso</Nuzzle.label>
   <!-- EN:
     <li>r_logentry(p=2)->[INITIATOR_nameDef] [nuzzleadverb] [nuzzled] [RECIPIENT_nameDef].</li>
     <li>r_logentry->[INITIATOR_nameDef] [nuzzleadverb] rubbed [INITIATOR_possessive] nose against [RECIPIENT_nameDef]'s [rubbedpart].</li>
@@ -65,13 +81,31 @@
     <li>rubbedpart->arm</li>
   -->
   <Nuzzle.logRulesInitiator.rulesStrings>
-    <li>logentry->Si e' strusciato contro [other_nameShortIndef].</li>
+    <li>r_logentry(p=2)->[INITIATOR_nameDef] [nuzzled] [RECIPIENT_nameDef] [nuzzleadverb].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha strusciato [nuzzleadverb] il proprio muso contro [rubbedpart] di [RECIPIENT_nameDef].</li>
+    <li>nuzzled(p=2)->si è {INITIATOR_gender ? strusciato : strusciata : strusciato} contro</li>
+    <li>nuzzled->si è {INITIATOR_gender ? rannicchiato : rannicchiata : rannicchiato} vicino</li>
+    <li>nuzzleadverb(p=4)-></li>
+    <li>nuzzleadverb->delicatamente</li>
+    <li>nuzzleadverb->in maniera incoraggiante</li>
+    <li>nuzzleadverb->felicemente</li>
+    <li>nuzzleadverb->dolcemente</li>
+    <li>nuzzleadverb->in maniera confortante</li>
+    <li>nuzzleadverb->con leggerezza</li>
+    <li>nuzzleadverb->calorosamente</li>
+    <li>nuzzleadverb->mestamente</li>
+    <li>nuzzleadverb->amorevolmente</li>
+    <li>nuzzleadverb->affettuosamente</li>
+    <li>rubbedpart->la gamba</li>
+    <li>rubbedpart->il ginocchio</li>
+    <li>rubbedpart->il piede</li>
+    <li>rubbedpart->il gomito</li>
+    <li>rubbedpart->il bacino</li>
+    <li>rubbedpart->la spalla</li>
+    <li>rubbedpart->la mano</li>
+    <li>rubbedpart->il fianco</li>
+    <li>rubbedpart->il braccio</li>
   </Nuzzle.logRulesInitiator.rulesStrings>
-  
-  <!-- UNUSED -->
-  <Nuzzle.logRulesRecipient.rulesStrings>
-    <li>logentry->[other_nameShortIndef] si e' strusciato contro di lui.</li>
-  </Nuzzle.logRulesRecipient.rulesStrings>
   
   <!-- EN: tame attempt -->
   <TameAttempt.label>tentativo di addomesticamento</TameAttempt.label>
@@ -93,13 +127,22 @@
     <li>r_logentry->[INITIATOR_nameDef] gave [RECIPIENT_nameDef] a first command.</li>
   -->
   <TameAttempt.logRulesInitiator.rulesStrings>
-    <li>logentry->Ha provato a domare [other_nameShortIndef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha provato ad addomesticare [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha provato a portare [RECIPIENT_nameDef] sotto il suo controllo.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha tentato di mettere il collare a [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha richiesto obbedienza da [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha chiamato [RECIPIENT_nameDef] per andare verso [INITIATOR_objective].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha provato a far stare seduto [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha preso [RECIPIENT_nameDef] bruscamente ed ha sbraitato un ordine.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha provato a far stare fermo [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha urlato un ordine a [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha picchiato [RECIPIENT_nameDef] in segno di superiorità.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha riportato [RECIPIENT_nameDef] indietro alla comunità.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha richiamato [RECIPIENT_nameDef] per {RECIPIENT_gender ? riportarlo : riportarla : riportarlo} alla comunità.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha toccato una parte del corpo vulnerabile di [RECIPIENT_nameDef], chiedendo obbedienza.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha indicato il terreno, chiedendo a [RECIPIENT_nameDef] di venire.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha impartito a [RECIPIENT_nameDef] un primo comando.</li>
   </TameAttempt.logRulesInitiator.rulesStrings>
-  
-  <!-- UNUSED -->
-  <TameAttempt.logRulesRecipient.rulesStrings>
-    <li>logentry->Osserva il tentativo di [other_nameShortIndef] di domarmi.</li>
-  </TameAttempt.logRulesRecipient.rulesStrings>
   
   <!-- EN: train attempt -->
   <TrainAttempt.label>tentativo di addestramento</TrainAttempt.label>
@@ -116,12 +159,16 @@
     <li>tried->attempted</li>
   -->
   <TrainAttempt.logRulesInitiator.rulesStrings>
-    <li>logentry->Ha addestrato [other_nameShortIndef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [trained] [RECIPIENT_nameDef].</li>
+    <li>trained(p=2)->[tried] di addestrare</li>
+    <li>trained->[tried] di mostrare un nuovo gioco a</li>
+    <li>trained->[tried] di educare</li>
+    <li>trained->[tried] di preparare</li>
+    <li>trained->[tried] di incoraggiare una nuova abilità di</li>
+    <li>trained->ha mostrato un'abilità a</li>
+    <li>trained->ha incoraggiato una nuova reazione di</li>
+    <li>tried->ha cercato</li>
+    <li>tried->ha tentato</li>
   </TrainAttempt.logRulesInitiator.rulesStrings>
-  
-  <!-- UNUSED -->
-  <TrainAttempt.logRulesRecipient.rulesStrings>
-    <li>logentry->E' stato allenato da [other_nameShortIndef].</li>
-  </TrainAttempt.logRulesRecipient.rulesStrings>
   
 </LanguageData>

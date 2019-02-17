@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
-  <BuildRapport.label>try to get to know</BuildRapport.label>
-  <BuildRapport.logRulesInitiator.rulesStrings>
+  
+  <!-- EN: try to get to know -->
+  <BuildRapport.label>provare a conoscersi</BuildRapport.label>
+  <!-- EN:
     <li>r_logentry->[INITIATOR_nameDef] [toldastoryabout] [subject] to [RECIPIENT_nameDef].</li>
     <li>r_logentry->[INITIATOR_nameDef] told [RECIPIENT_nameDef] about [subject].</li>
     <li>r_logentry->[INITIATOR_nameDef] described [subject] to [RECIPIENT_nameDef].</li>
@@ -37,18 +38,69 @@
     <li>subject(p=4)->[ConceptPositive]</li>
     <li>subject(p=2)->[INITIATOR_possessive] [PersonalCharacteristic]</li>
     <li>subject(p=8)->[TalkTopicLight]</li>
+  -->
+  <BuildRapport.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha raccontato a [RECIPIENT_nameDef] [toldastoryabout] [subjectArt].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato a [RECIPIENT_nameDef] riguardo [subject].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha illustrato a [RECIPIENT_nameDef] [subject].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha incoraggiato [RECIPIENT_nameDef] a [talkabout] riguardo [subject].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha offerto la possibilità a [RECIPIENT_nameDef] di [talkabout] riguardo [subject].</li>	
+    <li>r_logentry->[INITIATOR_nameDef] ha mostrato interesse per i [PersonalCharacteristicPluralMas] di [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha mostrato interesse per le [PersonalCharacteristicPluralFem] di [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha mostrato interesse per gli [PersonalCharacteristicPluralNeu] di [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha chiesto a [RECIPIENT_nameDef] dei propri [PersonalCharacteristicPluralMas].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha chiesto a [RECIPIENT_nameDef] delle proprie [PersonalCharacteristicPluralFem].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha chiesto a [RECIPIENT_nameDef] dei propri [PersonalCharacteristicPluralNeu].</li>
+    <li>toldastoryabout(p=2)->una storia riguardo</li>
+    <li>toldastoryabout->una storia divertente riguardo</li>
+    <li>toldastoryabout->una storia profonda riguardo</li>
+    <li>toldastoryabout->una vecchia storia riguardo</li>
+    <li>toldastoryabout->una storia di famiglia riguardo</li>
+    <li>toldastoryabout->una storia d'infanzia riguardo</li>
+    <li>toldastoryabout->un aneddoto riguardo</li>
+    <li>talkabout->parlare</li>
+    <li>talkabout->discutere</li>
+    <li>talkabout->avere una discussione</li>
+    <li>talkabout->chiedere</li>
+    <li>talkabout->dire cosa che pensa</li>
+    <li>talkabout->trovare un punto d'incontro</li>
+    <li>subject->la colonia</li>
+    <li>subject->la comunità</li>
+    <li>subject->l'unirsi alla colonia</li>
+    <li>subject->il cambiare squadra</li>
+    <li>subject->il trovare degli amici</li>
+    <li>subject->l'incontrare nuove persone</li>
+    <li>subject->il riconsiderare le proprie idee</li>
+    <li>subject->il riconsiderare la propria lealtà</li>
+    <li>subject->la salute</li>
+    <li>subject->il futuro</li>
+    <li>subject->il voltare pagina</li>
+    <li>subject(p=4)->la [ConceptPositiveSingularFem]</li>
+    <li>ssubject(p=4)->l'[ConceptPositiveSingularNeu]</li>
+    <li>subject(p=2)->il proprio [PersonalCharacteristicSingularMas]</li>
+    <li>subject(p=2)->la propria [PersonalCharacteristicSingularFem]</li>
+    <li>subject(p=8)->[TalkTopicLight]</li>
   </BuildRapport.logRulesInitiator.rulesStrings>
-
-  <RecruitAttempt.label>recruit attempt</RecruitAttempt.label>
-  <RecruitAttempt.logRulesInitiator.rulesStrings>
+  
+  <!-- EN: recruit attempt -->
+  <RecruitAttempt.label>tentativo di reclutamento</RecruitAttempt.label>
+  <!-- EN:
     <li>r_logentry->[INITIATOR_nameDef] asked [RECIPIENT_nameDef] to join.</li>
     <li>r_logentry->[INITIATOR_nameDef] promised [goodthing] to [RECIPIENT_nameDef], and asked [RECIPIENT_objective] to join.</li>
     <li>goodthing(p=15)->[ConceptPositive]</li>
     <li>goodthing->free, fresh [Vegetable]s</li>
+  -->
+  <RecruitAttempt.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha chiesto a [RECIPIENT_nameDef] di unirsi.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha promesso a [RECIPIENT_nameDef] [goodthing], {RECIPIENT_gender ? chiedendogli : chiedendole : chiedendogli} di unirsi.</li>
+    <li>goodthing(p=15)->[ConceptPositiveSingular]</li>
+    <li>goodthing->[VegetablePluralMas] freschi gratis</li>
+    <li>goodthing->[VegetablePluralFem] fresche gratis</li>
   </RecruitAttempt.logRulesInitiator.rulesStrings>
-
-  <SparkJailbreak.label>spark jailbreak</SparkJailbreak.label>
-  <SparkJailbreak.logRulesInitiator.rulesStrings>
+  
+  <!-- EN: spark jailbreak -->
+  <SparkJailbreak.label>tentativo di evasione</SparkJailbreak.label>
+  <!-- EN:
     <li>r_logentry->[INITIATOR_nameDef] spoke about the joy of [freedom], and offered a means of escape.</li>
     <li>r_logentry->[INITIATOR_nameDef] talked about how beautiful the [TerrainFeature] is, and offered freedom.</li>
     <li>r_logentry->[INITIATOR_nameDef] demonstrated a means of escape to [RECIPIENT_nameDef], and promised [freedom].</li>
@@ -57,7 +109,22 @@
     <li>freedom->opportunity</li>
     <li>freedom->home</li>
     <li>freedom->self-determination</li>
+  -->
+  <SparkJailbreak.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato della gioia [freedomArt] ed ha offerto una via di fuga.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato di quanto è bello il [TerrainFeatureSingularMas] ed ha offerto la libertà.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato di quanto è bella la [TerrainFeatureSingularFem] ed ha offerto la libertà.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato di quanto è bello l'[TerrainFeatureSingularNeu] ed ha offerto la libertà.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha mostrato a [RECIPIENT_nameDef] una via di fuga ed ha promesso la [freedom].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha detto a [RECIPIENT_nameDef] che la sorveglianza è scarsa ed ha incoraggiato la fuga.</li>	
+    <li>freedomArt->della libertà</li>
+    <li>freedomArt->delle opportunità</li>
+    <li>freedomArt->di casa</li>
+    <li>freedomArt->dell'autodeterminazione</li>
+    <li>freedom->libertà</li>
+    <li>freedom->opportunità</li>
+    <li>freedom->casa</li>
+    <li>freedom->autodeterminazione</li>
   </SparkJailbreak.logRulesInitiator.rulesStrings>
-
-
+  
 </LanguageData>
