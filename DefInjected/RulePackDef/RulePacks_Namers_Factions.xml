@@ -6,14 +6,8 @@
     <li>political_adjective->Words/Adjectives/PoliticalUnions</li>
   -->
   <NamerFactionOutlander.rulePack.rulesFiles>
-    <li>political_union_outlanderSingularMas->Words/Nouns/PoliticalUnions_Outlander_Plural_Masculine</li>
-    <li>political_union_outlanderSingularFem->Words/Nouns/PoliticalUnions_Outlander_Plural_Feminine</li>
-    <li>political_union_outlanderPluralMas->Words/Nouns/PoliticalUnions_Outlander_Singular_Masculine</li>
-    <li>political_union_outlanderPluralFem->Words/Nouns/PoliticalUnions_Outlander_Singular_Feminine</li>
-    <li>political_adjectiveSingularMas->Words/Adjectives/PoliticalUnions_Singular_Masculine</li>
-    <li>political_adjectiveSingularFem->Words/Adjectives/PoliticalUnions_Singular_Feminine</li>
-    <li>political_adjectivePluralMas->Words/Adjectives/PoliticalUnions_Plural_Masculine</li>
-    <li>political_adjectivePluralFem->Words/Adjectives/PoliticalUnions_Plural_Feminine</li>
+    <li>political_union_outlander->Words/Nouns/PoliticalUnions_Outlander</li>
+    <li>political_adjective->Words/Adjectives/PoliticalUnions</li>
   </NamerFactionOutlander.rulePack.rulesFiles>
 
   <!-- EN:
@@ -26,40 +20,23 @@
     <li>r_name->[political_adjective] [political_union_outlander] of [nearnameinitial]</li>
   -->
   <NamerFactionOutlander.rulePack.rulesStrings>
-    <li>political_union_outlanderSingular->[political_union_outlanderSingularMas]</li>
-    <li>political_union_outlanderSingular->[political_union_outlanderSingularFem]</li>
-    <li>political_union_outlanderPlural->[political_union_outlanderPluralMas]</li>
-    <li>political_union_outlanderPlural->[political_union_outlanderPluralFem]</li>
-
     <li>r_name(p=3)->[nearnameinitial]</li>
     <li>nearnameinitial(p=3)->[PlaceOutlander]</li>
     <li>nearnameinitial->[PlaceOutlander] [Direction]</li>
-    <li>r_name->[political_union_outlanderSingularMas] [nearnameinitial]</li>
-    <li>r_name->[political_union_outlanderSingularFem] [nearnameinitial]</li>
-    <li>r_name->[political_union_outlanderSingularMas] [political_adjectiveSingularMas] [nearnameinitial]</li>
-    <li>r_name->[political_union_outlanderSingularFem] [political_adjectiveSingularFem] [nearnameinitial]</li>
-    <li>r_name->[political_union_outlanderSingularMas] di [nearnameinitial]</li>
-    <li>r_name->[political_union_outlanderSingularFem] di [nearnameinitial]</li>
-    <li>r_name->[political_union_outlanderSingularMas] [political_adjectiveSingularMas] di [nearnameinitial]</li>
-    <li>r_name->[political_union_outlanderSingularFem] [political_adjectiveSingularFem] di [nearnameinitial]</li>
+    <li>r_name->[political_union_outlander] [nearnameinitial]</li>
+    <li>r_name->[political_union_outlander] [political_adjective] [nearnameinitial]</li>
+    <li>r_name->[political_union_outlander] di [nearnameinitial]</li>
+    <li>r_name->[political_union_outlander] [political_adjective] di [nearnameinitial]</li>
   </NamerFactionOutlander.rulePack.rulesStrings>
   
   <!-- EN:
     <li>groupname->Words/Nouns/GroupNames</li>
   -->
   <NamerFactionPirate.rulePack.rulesFiles>
-    <li>groupnameSingularMas->Words/Nouns/GroupNames_Singular_Masculine</li>
-    <li>groupnameSingularFem->Words/Nouns/GroupNames_Singular_Feminine</li>
-    <li>groupnamePluralMas->Words/Nouns/GroupNames_Plural_Masculine</li>
-    <li>groupnamePluralFem->Words/Nouns/GroupNames_Plural_Feminine</li>
+    <li>groupname->Words/Nouns/GroupNames</li>
   </NamerFactionPirate.rulePack.rulesFiles>
 
   <NamerFactionPirate.rulePack.rulesStrings>
-    <li>groupnameSingular->[groupnamesSingularMas]</li>
-    <li>groupnameSingular->[groupnamesSingularFem]</li>
-    <li>groupnamePlural->[groupnamesPluralMas]</li>
-    <li>groupnamePlural->[groupnamesPluralFem]</li>
-
 	<!-- <li>r_name->The [AnimalBadass]s</li> -->
     <li>r_name->I [AnimalBadassPluralMas]</li>
     <li>r_name->Le [AnimalBadassPluralFem]</li>
@@ -150,9 +127,7 @@
     <li>r_name->Le [EnemyPluralFem] [ColorBadassPluralFem]</li>
 
 	<!-- <li>r_name->The [PersonBadass] [groupname]</li> -->
-    <li>r_name->Il [groupnameSingularMas] [PersonBadassSingularMas]</li>
-    <li>r_name->La [groupnameSingularFem] [PersonBadassSingularFem]</li>
-    <li>r_name->Il [groupnameSingularMas] [PersonBadassSingularNeu]</li>
+    <li>r_name->La [groupname] [PersonBadassSingularFem]</li>
 
 	<!-- <li>r_name->The [Enemy] [Enemy]s</li> -->
     <li>r_name->I [EnemyPluralMas] dei [EnemyPluralMas]</li>
@@ -161,8 +136,7 @@
     <li>r_name->Le [EnemyPluralFem] delle [EnemyPluralFem]</li>
 
 	<!-- <li>r_name->The [AdjectiveBadass] [groupname]</li> -->
-    <li>r_name->Il [groupnameSingularMas] [AdjectiveBadassSingularMas]</li>
-    <li>r_name->La [groupnameSingularFem] [AdjectiveBadassSingularFem]</li>
+    <li>r_name->La [groupname] [AdjectiveBadassSingularFem]</li>
 
 	<!-- <li>r_name->The [AdjectiveBadass] [AnimalBadass]s</li> -->
     <li>r_name->I [AnimalBadassPluralMas] [AdjectiveBadassPluralMas]</li>
@@ -204,57 +178,37 @@
     <li>r_name->Gli [WeaponPluralNeu] di [NamePerson]</li>
 
 	<!-- <li>r_name->[Weapon] [groupname]</li> -->
-    <li>r_name->Il [groupnameSingularMas] del [WeaponSingularMas]</li>
-    <li>r_name->Il [groupnameSingularMas] della [WeaponSingularFem]</li>
-    <li>r_name->Il [groupnameSingularMas] dell'[WeaponSingularNeu]</li>
-    <li>r_name->La [groupnameSingularFem] del [WeaponSingularMas]</li>
-    <li>r_name->La [groupnameSingularFem] della [WeaponSingularFem]</li>
-    <li>r_name->La [groupnameSingularFem] dell'[WeaponSingularNeu]</li>
+    <li>r_name->La [groupname] del [WeaponSingularMas]</li>
+    <li>r_name->La [groupname] della [WeaponSingularFem]</li>
+    <li>r_name->La [groupname] dell'[WeaponSingularNeu]</li>
 
 	<!-- <li>r_name->[ConceptBadass] [groupname]</li> -->
-    <li>r_name->Il [groupnameSingularMas] del [ConceptBadassSingularMas]</li>
-    <li>r_name->Il [groupnameSingularMas] della [ConceptBadassSingularFem]</li>
-    <li>r_name->Il [groupnameSingularMas] dell'[ConceptBadassSingularNeu]</li>
-    <li>r_name->La [groupnameSingularFem] del [ConceptBadassSingularMas]</li>
-    <li>r_name->La [groupnameSingularFem] della [ConceptBadassSingularFem]</li>
-    <li>r_name->La [groupnameSingularFem] dell'[ConceptBadassSingularNeu]</li>
+    <li>r_name->La [groupname] del [ConceptBadassSingularMas]</li>
+    <li>r_name->La [groupname] della [ConceptBadassSingularFem]</li>
+    <li>r_name->La [groupname] dell'[ConceptBadassSingularNeu]</li>
   </NamerFactionPirate.rulePack.rulesStrings>
   
   <!-- EN:
     <li>political_union_tribal->Words/Nouns/PoliticalUnions_Tribal</li>
   -->
   <NamerFactionTribal.rulePack.rulesFiles>
-    <li>political_union_tribalSingularMas->Words/Nouns/PoliticalUnions_Tribal_Singular_Masculine</li>
-    <li>political_union_tribalSingularFem->Words/Nouns/PoliticalUnions_Tribal_Singular_Feminine</li>
-    <li>political_union_tribalPluralMas->Words/Nouns/PoliticalUnions_Tribal_Plural_Masculine</li>
-    <li>political_union_tribalPluralFem->Words/Nouns/PoliticalUnions_Tribal_Plural_Feminine</li>
+    <li>political_union_tribal->Words/Nouns/PoliticalUnions_Tribal</li>
   </NamerFactionTribal.rulePack.rulesFiles>
 
   <NamerFactionTribal.rulePack.rulesStrings>
-    <li>political_union_tribalSingular->[political_union_tribalSingularMas]</li>
-    <li>political_union_tribalSingular->[political_union_tribalSingularFem]</li>
-    <li>political_union_tribalPlural->[political_union_tribalPluralMas]</li>
-    <li>political_union_tribalPlural->[political_union_tribalPluralFem]</li>
-
 	<!-- <li>r_name->[tribalworld] [political_union_tribal]</li> -->
-    <li>r_name->[political_union_tribalSingularMas] [tribalworld]</li>
-    <li>r_name->[political_union_tribalSingularFem] [tribalworld]</li>
+    <li>r_name->[political_union_tribal] [tribalworld]</li>
 
 	<!-- <li>r_name->The [tribalworld] [political_union_tribal]</li> -->
-    <li>r_name->Il [political_union_tribalSingularMas] [tribalworld]</li>
-    <li>r_name->La [political_union_tribalSingularFem] [tribalworld]</li>
+    <li>r_name->La [political_union_tribal] [tribalworld]</li>
 
 	<!-- <li>r_name->The [Color] [TerrainFeature] [political_union_tribal]</li> -->
-    <li>r_name->Il [political_union_tribalSingularMas] del [TerrainFeatureSingularMas] [ColorSingularMas]</li>
-    <li>r_name->La [political_union_tribalSingularFem] del [TerrainFeatureSingularMas] [ColorSingularMas]</li>
-    <li>r_name->Il [political_union_tribalSingularMas] della [TerrainFeatureSingularFem] [ColorSingularFem]</li>
-    <li>r_name->La [political_union_tribalSingularFem] della [TerrainFeatureSingularFem] [ColorSingularFem]</li>
-    <li>r_name->Il [political_union_tribalSingularMas] dell'[TerrainFeatureSingularNeu] [ColorSingularMas]</li>
-    <li>r_name->La [political_union_tribalSingularFem] dell'[TerrainFeatureSingularNeu] [ColorSingularMas]</li>
+    <li>r_name->La [political_union_tribal] del [TerrainFeatureSingularMas] [ColorSingularMas]</li>
+    <li>r_name->La [political_union_tribal] della [TerrainFeatureSingularFem] [ColorSingularFem]</li>
+    <li>r_name->La [political_union_tribal] dell'[TerrainFeatureSingularNeu] [ColorSingularMas]</li>
 
 	<!-- <li>r_name->[political_union_tribal] of [WordTribal]</li> -->
-    <li>r_name->[political_union_tribalSingularMas] di [WordTribal]</li>
-    <li>r_name->[political_union_tribalSingularFem] di [WordTribal]</li>
+    <li>r_name->[political_union_tribal] di [WordTribal]</li>
 
 	<!-- <li>r_name->The [Color] [Animal] [WordTribal]</li> -->
     <li>r_name->I [AnimalPluraMas] [ColorPluralMas] [WordTribal]</li>
