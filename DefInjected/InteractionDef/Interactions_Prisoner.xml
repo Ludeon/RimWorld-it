@@ -40,46 +40,58 @@
     <li>subject(p=8)->[TalkTopicLight]</li>
   -->
   <BuildRapport.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] ha raccontato a [RECIPIENT_nameDef] [toldastoryabout] [subjectArt].</li>
-    <li>r_logentry->[INITIATOR_nameDef] ha parlato a [RECIPIENT_nameDef] riguardo [subject].</li>
-    <li>r_logentry->[INITIATOR_nameDef] ha illustrato a [RECIPIENT_nameDef] [subject].</li>
-    <li>r_logentry->[INITIATOR_nameDef] ha incoraggiato [RECIPIENT_nameDef] a [talkabout] riguardo [subject].</li>
-    <li>r_logentry->[INITIATOR_nameDef] ha offerto la possibilità a [RECIPIENT_nameDef] di [talkabout] riguardo [subject].</li>	
+    <li>r_logentry->[INITIATOR_nameDef] ha raccontato a [RECIPIENT_nameDef] [toldastoryabout] sul [subjectMas].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha raccontato a [RECIPIENT_nameDef] [toldastoryabout] sulla [subjectFem].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha raccontato a [RECIPIENT_nameDef] [toldastoryabout] sull'[subjectNeu].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato a [RECIPIENT_nameDef] del [subjectMas].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato a [RECIPIENT_nameDef] della [subjectFem].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato a [RECIPIENT_nameDef] dell'[subjectNeu].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha descritto il [subjectMas] a [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha descritto la [subjectFem] a [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha descritto l'[subjectNeu] a [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha incoraggiato [RECIPIENT_nameDef] a [talkabout] del [subjectMas].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha incoraggiato [RECIPIENT_nameDef] a [talkabout] della [subjectFem].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha incoraggiato [RECIPIENT_nameDef] a [talkabout] dell'[subjectNeu].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha offerto a [RECIPIENT_nameDef] la possibilità di [talkabout] del [subjectMas].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha offerto a [RECIPIENT_nameDef] la possibilità di [talkabout] della [subjectFem].</li>	
+    <li>r_logentry->[INITIATOR_nameDef] ha offerto a [RECIPIENT_nameDef] la possibilità di [talkabout] dell'[subjectNeu].</li>	
     <li>r_logentry->[INITIATOR_nameDef] ha mostrato interesse per i [PersonalCharacteristicPluralMas] di [RECIPIENT_nameDef].</li>
     <li>r_logentry->[INITIATOR_nameDef] ha mostrato interesse per le [PersonalCharacteristicPluralFem] di [RECIPIENT_nameDef].</li>
     <li>r_logentry->[INITIATOR_nameDef] ha mostrato interesse per gli [PersonalCharacteristicPluralNeu] di [RECIPIENT_nameDef].</li>
     <li>r_logentry->[INITIATOR_nameDef] ha chiesto a [RECIPIENT_nameDef] dei propri [PersonalCharacteristicPluralMas].</li>
     <li>r_logentry->[INITIATOR_nameDef] ha chiesto a [RECIPIENT_nameDef] delle proprie [PersonalCharacteristicPluralFem].</li>
     <li>r_logentry->[INITIATOR_nameDef] ha chiesto a [RECIPIENT_nameDef] dei propri [PersonalCharacteristicPluralNeu].</li>
-    <li>toldastoryabout(p=2)->una storia riguardo</li>
-    <li>toldastoryabout->una storia divertente riguardo</li>
-    <li>toldastoryabout->una storia profonda riguardo</li>
-    <li>toldastoryabout->una vecchia storia riguardo</li>
-    <li>toldastoryabout->una storia di famiglia riguardo</li>
-    <li>toldastoryabout->una storia d'infanzia riguardo</li>
-    <li>toldastoryabout->un aneddoto riguardo</li>
+    <li>toldastoryabout(p=2)->una storia</li>
+    <li>toldastoryabout->una storia divertente</li>
+    <li>toldastoryabout->una storia profonda</li>
+    <li>toldastoryabout->una vecchia storia</li>
+    <li>toldastoryabout->una storia di famiglia</li>
+    <li>toldastoryabout->una storia d'infanzia</li>
+    <li>toldastoryabout->un aneddoto</li>
     <li>talkabout->parlare</li>
     <li>talkabout->discutere</li>
     <li>talkabout->avere una discussione</li>
     <li>talkabout->chiedere</li>
     <li>talkabout->dire cosa che pensa</li>
     <li>talkabout->trovare un punto d'incontro</li>
-    <li>subject->la colonia</li>
-    <li>subject->la comunità</li>
-    <li>subject->l'unirsi alla colonia</li>
-    <li>subject->il cambiare squadra</li>
-    <li>subject->il trovare degli amici</li>
-    <li>subject->l'incontrare nuove persone</li>
-    <li>subject->il riconsiderare le proprie idee</li>
-    <li>subject->il riconsiderare la propria lealtà</li>
-    <li>subject->la salute</li>
-    <li>subject->il futuro</li>
-    <li>subject->il voltare pagina</li>
-    <li>subject(p=4)->la [ConceptPositiveSingularFem]</li>
-    <li>ssubject(p=4)->l'[ConceptPositiveSingularNeu]</li>
-    <li>subject(p=2)->il proprio [PersonalCharacteristicSingularMas]</li>
-    <li>subject(p=2)->la propria [PersonalCharacteristicSingularFem]</li>
-    <li>subject(p=8)->[TalkTopicLight]</li>
+    <li>subjectFem->colonia</li>
+    <li>subjectFem->comunità</li>
+    <li>subjectNeu->unirsi alla colonia</li>
+    <li>subjectMas->cambiare squadra</li>
+    <li>subjectMas->trovare degli amici</li>
+    <li>subjectNeu->incontrare nuove persone</li>
+    <li>subjectMas->riconsiderare le proprie idee</li>
+    <li>subjectMas->riconsiderare la propria lealtà</li>
+    <li>subjectFem->salute</li>
+    <li>subjectMas->futuro</li>
+    <li>subjectMas->voltare pagina</li>
+    <li>subjectFem(p=4)->[ConceptPositiveSingularFem]</li>
+    <li>subjectNeu(p=4)->[ConceptPositiveSingularNeu]</li>
+    <li>subjectMas(p=2)->proprio [PersonalCharacteristicSingularMas]</li>
+    <li>subjectFem(p=2)->propria [PersonalCharacteristicSingularFem]</li>
+    <li>subjectMas(p=8)->[TalkTopicLightSingularMas]</li>
+    <li>subjectFem(p=8)->[TalkTopicLightSingularFem]</li>
+    <li>subjectNeu(p=8)->[TalkTopicLightSingularNeu]</li>
   </BuildRapport.logRulesInitiator.rulesStrings>
   
   <!-- EN: recruit attempt -->
@@ -92,10 +104,13 @@
   -->
   <RecruitAttempt.logRulesInitiator.rulesStrings>
     <li>r_logentry->[INITIATOR_nameDef] ha chiesto a [RECIPIENT_nameDef] di unirsi.</li>
-    <li>r_logentry->[INITIATOR_nameDef] ha promesso a [RECIPIENT_nameDef] [goodthing], {RECIPIENT_gender ? chiedendogli : chiedendole : chiedendogli} di unirsi.</li>
-    <li>goodthing(p=15)->[ConceptPositiveSingular]</li>
-    <li>goodthing->[VegetablePluralMas] freschi gratis</li>
-    <li>goodthing->[VegetablePluralFem] fresche gratis</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha promesso a [RECIPIENT_nameDef] dei [goodthingMas], {RECIPIENT_gender ? chiedendogli : chiedendole : chiedendogli} di unirsi.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha promesso a [RECIPIENT_nameDef] delle [goodthingFem], {RECIPIENT_gender ? chiedendogli : chiedendole : chiedendogli} di unirsi.</li>    <li>r_logentry->[INITIATOR_nameDef] ha promesso a [RECIPIENT_nameDef] delle [goodthingFem], {RECIPIENT_gender ? chiedendogli : chiedendole : chiedendogli} di unirsi.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha promesso a [RECIPIENT_nameDef] degli [goodthingNeu], {RECIPIENT_gender ? chiedendogli : chiedendole : chiedendogli} di unirsi.</li>
+    <li>goodthingFem(p=15)->[ConceptPositivePluralFem]</li>
+    <li>goodthingNeu(p=15)->[ConceptPositivePluralNeu]</li>
+    <li>goodthingMas->[VegetablePluralMas] freschi gratis</li>
+    <li>goodthingFem->[VegetablePluralFem] fresche gratis</li>
   </RecruitAttempt.logRulesInitiator.rulesStrings>
   
   <!-- EN: spark jailbreak -->

@@ -21,21 +21,26 @@
     <li>commentedabout->told a joke about</li>
   -->
   <Chitchat.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] e [RECIPIENT_nameDef] hanno [talkedabout] [TalkTopicLight].</li>
-    <li>r_logentry->[INITIATOR_nameDef] ha [talkedabout] [TalkTopicLight] con [RECIPIENT_nameDef].</li>
-    <li>r_logentry(p=0.8)->[INITIATOR_nameDef] ha [commentedabout] [TalkTopicLight] a [RECIPIENT_nameDef].</li>
-    <li>talkedabout(p=4)->chiacchierato riguardo</li>
-    <li>talkedabout->scambiato una parola riguardo</li>
-    <li>talkedabout->parlato riguardo</li>
-    <li>talkedabout->parlottato riguardo</li>
-    <li>talkedabout->discusso riguardo</li>
-    <li>talkedabout->scherzato riguardo</li>
-    <li>talkedabout->fatto battute riguardo</li>
-    <li>commentedabout->detto qualcosa riguardo</li>
-    <li>commentedabout->detto una parola riguardo</li>
-    <li>commentedabout->fatto un commento riguardo</li>
-    <li>commentedabout->commentato riguardo</li>
-    <li>commentedabout->fatto una battuta riguardo</li>
+    <li>r_logentry->[INITIATOR_nameDef] e [RECIPIENT_nameDef] hanno [talkedabout] del [TalkTopicLightSingularMas].</li>
+    <li>r_logentry->[INITIATOR_nameDef] e [RECIPIENT_nameDef] hanno [talkedabout] della [TalkTopicLightSingularFem].</li>
+    <li>r_logentry->[INITIATOR_nameDef] e [RECIPIENT_nameDef] hanno [talkedabout] dell'[TalkTopicLightSingularNeu].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha [talkedabout] con [RECIPIENT_nameDef] del [TalkTopicLightSingularMas].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha [talkedabout] con [RECIPIENT_nameDef] della [TalkTopicLightSingularFem].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha [talkedabout] con [RECIPIENT_nameDef] dell'[TalkTopicLightSingularNeu].</li>
+    <li>r_logentry(p=0.8)->[INITIATOR_nameDef] ha [commentedabout] a [RECIPIENT_nameDef] sul [TalkTopicLightSingularMas].</li>
+    <li>r_logentry(p=0.8)->[INITIATOR_nameDef] ha [commentedabout] a [RECIPIENT_nameDef] sulla [TalkTopicLightSingularFem].</li>
+    <li>r_logentry(p=0.8)->[INITIATOR_nameDef] ha [commentedabout] a [RECIPIENT_nameDef] sull'[TalkTopicLightSingularNeu].</li>
+    <li>talkedabout(p=4)->chiacchierato</li>
+    <li>talkedabout->detto cosa pensa</li>
+    <li>talkedabout->parlato</li>
+    <li>talkedabout->parlottato</li>
+    <li>talkedabout->discusso</li>
+    <li>talkedabout->scherzato</li>
+    <li>commentedabout->detto qualcosa</li>
+    <li>commentedabout->detto una parola</li>
+    <li>commentedabout->fatto un commento</li>
+    <li>commentedabout->fatto delle osservazioni</li>
+    <li>commentedabout->fatto una battuta</li>
   </Chitchat.logRulesInitiator.rulesStrings>
   
   <!-- EN: deep talk -->
@@ -56,9 +61,12 @@
     <li>subject->[TalkTopicHeavy]</li>
   -->
   <DeepTalk.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] e [RECIPIENT_nameDef] hanno [talkedabout] [subject].</li>
-    <li>r_logentry->[INITIATOR_nameDef] ha [talkedabout] [subject] con [RECIPIENT_nameDef].</li>	
-    <li>talkedabout->scambiato pensieri riguardo</li>
+    <li>r_logentry->[INITIATOR_nameDef] e [RECIPIENT_nameDef] hanno [talkedabout] il [subjectMas].</li>
+    <li>r_logentry->[INITIATOR_nameDef] e [RECIPIENT_nameDef] hanno [talkedabout] la [subjectFem].</li>
+    <li>r_logentry->[INITIATOR_nameDef] e [RECIPIENT_nameDef] hanno [talkedabout] l'[subjectNeu].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha [talkedabout] il [subjectMas] con [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha [talkedabout] la [subjectFem] con [RECIPIENT_nameDef].</li>	
+    <li>r_logentry->[INITIATOR_nameDef] ha [talkedabout] l'[subjectNeu] con [RECIPIENT_nameDef].</li>	
     <li>talkedabout->scambiato pensieri riguardo</li>
     <li>talkedabout->scambiato idee riguardo</li>
     <li>talkedabout->condiviso pareri riguardo</li>
@@ -68,7 +76,9 @@
     <li>talkedabout->parlato serenamente riguardo</li>
     <li>talkedabout->parlato profondamente riguardo</li>
     <li>talkedabout->condiviso il tema riguardante</li>
-    <li>subject->[TalkTopicHeavy]</li>
+    <li>subjectMas->[TalkTopicHeavySingularMas]</li>
+    <li>subjectFem->[TalkTopicHeavySingularFem]</li>
+    <li>subjectNeu->[TalkTopicHeavySingularNeu]</li>
   </DeepTalk.logRulesInitiator.rulesStrings>
   
   <!-- EN: insult -->

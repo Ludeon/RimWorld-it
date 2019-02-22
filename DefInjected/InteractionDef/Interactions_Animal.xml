@@ -29,9 +29,24 @@
   -->
   <AnimalChat.logRulesInitiator.rulesStrings>
     <li>r_logentry(p=5)->[INITIATOR_nameDef] [tamed] [RECIPIENT_nameDef].</li>
-    <li>r_logentry->[INITIATOR_nameDef] si è {INITIATOR_gender ? seduto : seduta : seduto} vicino a [RECIPIENT_nameDef] ed ha parlato tra sé di [TalkTopicAny].</li>
-    <li>r_logentry->[INITIATOR_nameDef] si è {INITIATOR_gender ? avvicinato : avvicinata : avvicinato} a [RECIPIENT_nameDef] mormorando tra sé di [TalkTopicAny].</li>
-    <li>r_logentry->[INITIATOR_nameDef] è {INITIATOR_gender ? andato : andata : andato} vicino a [RECIPIENT_nameDef] parlando tra sé di [TalkTopicAny].</li>
+    <li>r_logentry->[INITIATOR_nameDef] si è {INITIATOR_gender ? seduto : seduta : seduto} vicino a [RECIPIENT_nameDef] ed ha parlato tra sé del [TalkTopicAnySingularMas].</li>
+    <li>r_logentry->[INITIATOR_nameDef] si è {INITIATOR_gender ? seduto : seduta : seduto} vicino a [RECIPIENT_nameDef] ed ha parlato tra sé della [TalkTopicAnySingularFem].</li>
+    <li>r_logentry->[INITIATOR_nameDef] si è {INITIATOR_gender ? seduto : seduta : seduto} vicino a [RECIPIENT_nameDef] ed ha parlato tra sé dell'[TalkTopicAnySingularNeu].</li>
+    <li>r_logentry->[INITIATOR_nameDef] si è {INITIATOR_gender ? seduto : seduta : seduto} vicino a [RECIPIENT_nameDef] ed ha parlato tra sé dei [TalkTopicAnyPluralMas].</li>
+    <li>r_logentry->[INITIATOR_nameDef] si è {INITIATOR_gender ? seduto : seduta : seduto} vicino a [RECIPIENT_nameDef] ed ha parlato tra sé delle [TalkTopicAnyPluralFem].</li>
+    <li>r_logentry->[INITIATOR_nameDef] si è {INITIATOR_gender ? seduto : seduta : seduto} vicino a [RECIPIENT_nameDef] ed ha parlato tra sé degli [TalkTopicAnyPluralNeu].</li>
+    <li>r_logentry->[INITIATOR_nameDef] si è {INITIATOR_gender ? avvicinato : avvicinata : avvicinato} a [RECIPIENT_nameDef] parlando a voce bassa del [TalkTopicAnySingularMas].</li>	
+    <li>r_logentry->[INITIATOR_nameDef] si è {INITIATOR_gender ? avvicinato : avvicinata : avvicinato} a [RECIPIENT_nameDef] parlando a voce bassa della [TalkTopicAnySingularFem].</li>
+    <li>r_logentry->[INITIATOR_nameDef] si è {INITIATOR_gender ? avvicinato : avvicinata : avvicinato} a [RECIPIENT_nameDef] parlando a voce bassa dell'[TalkTopicAnySingularNeu].</li>
+    <li>r_logentry->[INITIATOR_nameDef] si è {INITIATOR_gender ? avvicinato : avvicinata : avvicinato} a [RECIPIENT_nameDef] parlando a voce bassa dei [TalkTopicAnyPluralMas].</li>
+    <li>r_logentry->[INITIATOR_nameDef] si è {INITIATOR_gender ? avvicinato : avvicinata : avvicinato} a [RECIPIENT_nameDef] parlando a voce bassa delle [TalkTopicAnyPluralFem].</li>
+    <li>r_logentry->[INITIATOR_nameDef] si è {INITIATOR_gender ? avvicinato : avvicinata : avvicinato} a [RECIPIENT_nameDef] parlando a voce bassa degli [TalkTopicAnyPluralNeu].</li>	
+    <li>r_logentry->[INITIATOR_nameDef] è {INITIATOR_gender ? andato : andata : andato} vicino a [RECIPIENT_nameDef] parlando tra sé del [TalkTopicAnySingularMas].</li>	
+    <li>r_logentry->[INITIATOR_nameDef] è {INITIATOR_gender ? andato : andata : andato} vicino a [RECIPIENT_nameDef] parlando tra sé della [TalkTopicAnySingularFem].</li>
+    <li>r_logentry->[INITIATOR_nameDef] è {INITIATOR_gender ? andato : andata : andato} vicino a [RECIPIENT_nameDef] parlando tra sé dell'[TalkTopicAnySingularNeu].</li>
+    <li>r_logentry->[INITIATOR_nameDef] è {INITIATOR_gender ? andato : andata : andato} vicino a [RECIPIENT_nameDef] parlando tra sé dei [TalkTopicAnyPluralMas].</li>
+    <li>r_logentry->[INITIATOR_nameDef] è {INITIATOR_gender ? andato : andata : andato} vicino a [RECIPIENT_nameDef] parlando tra sé delle [TalkTopicAnyPluralFem].</li>
+    <li>r_logentry->[INITIATOR_nameDef] è {INITIATOR_gender ? andato : andata : andato} vicino a [RECIPIENT_nameDef] parlando tra sé degli [TalkTopicAnyPluralNeu].</li>
     <li>tamed->ha fatto dei suoni rassicuranti verso</li>
     <li>tamed->ha fatto dei gesti lenti ed amichevoli verso</li>
     <li>tamed->ha fatto segno di stare in silenzio a</li>
