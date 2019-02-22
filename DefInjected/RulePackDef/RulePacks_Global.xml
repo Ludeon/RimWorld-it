@@ -228,6 +228,20 @@
 	<!-- <li>VerbFriendly->Words/Verbs/Friendly</li>  -->
 	<li>VerbFriendlyInf->Words/Verbs/Friendly_Inf</li>
 	<li>VerbFriendlyGer->Words/Verbs/Friendly_Ger</li>
+
+
+	<li>TalkTopicLightSingularMas->Words/Nouns/TalkTopics_Light_Singular_Masculine</li>
+	<li>TalkTopicLightSingularFem->Words/Nouns/TalkTopics_Light_Singular_Feminine</li>
+	<li>TalkTopicLightPluralMas->Words/Nouns/TalkTopics_Light_Plural_Masculine</li>
+	<li>TalkTopicLightPluralFem->Words/Nouns/TalkTopics_Light_Plural_Feminine</li>
+	<li>TalkTopicLightPluralNeu->Words/Nouns/TalkTopics_Light_Plural_Neuter</li>
+
+	<li>TalkTopicHeavySingularMas->Words/Nouns/TalkTopics_Heavy_Singular_Masculine</li>
+	<li>TalkTopicHeavySingularFem->Words/Nouns/TalkTopics_Heavy_Singular_Feminine</li>
+	<li>TalkTopicHeavySingularNeu->Words/Nouns/TalkTopics_Heavy_Singular_Neuter</li>
+	<li>TalkTopicHeavyPluralMas->Words/Nouns/TalkTopics_Heavy_Plural_Masculine</li>
+	<li>TalkTopicHeavyPluralFem->Words/Nouns/TalkTopics_Heavy_Plural_Feminine</li>
+	<li>TalkTopicHeavyPluralNeu->Words/Nouns/TalkTopics_Heavy_Plural_Neuter</li>
   </GlobalUtility.rulePack.rulesFiles>
 
   <GlobalUtility.rulePack.rulesStrings>
@@ -625,54 +639,129 @@
     <li>talktopicheavyfile(p=0.15)->animal sexuality</li>
     <li>talktopicheavyfile(p=0.15)->sexual fetishes</li>
   -->
-    <li>TalkTopicAny->[TalkTopicLight]</li>
-    <li>TalkTopicAny->[TalkTopicHeavy]</li>
-    <li>TalkTopicHeavy->[talktopicheavyfile]</li>
-    <li>TalkTopicHeavy(p=0.08)->nesso tra [talktopicheavyfile] e [talktopicheavyfile]</li>
-    <li>TalkTopicHeavy(p=0.08)->legame tra [talktopicheavyfile] e [talktopicheavyfile]</li>
-    <li>TalkTopicHeavy(p=0.08)->relazione tra [talktopicheavyfile] e [talktopicheavyfile]</li>
-    <li>TalkTopicLight(p=25)->[talktopiclightfile]</li>
-    <li>TalkTopicLight->[VegetablePlural]</li>
-    <li>TalkTopicLight->mangiare [VegetablePlural]</li>
-    <li>TalkTopicLight->cucinare con i [VegetablePluralMas]</li>
-    <li>TalkTopicLight->cucinare con le [VegetablePluralFem]</li>
-    <li>TalkTopicLight->[Game]</li>
-    <li>TalkTopicLight->giocare a [Game]</li>
-    <li>TalkTopicLight->allenarsi con il [GameSingularMas]</li>
-    <li>TalkTopicLight->allenarsi con i [GamePluralMas]</li>
-    <li>TalkTopicLight->allenarsi con le [GamePluralFem]</li>
-    <li>TalkTopicLight->allenarsi con gli [GamePluralNeu]</li>
-    <li>TalkTopicLight->imparare il [GameSingularMas]</li>
-    <li>TalkTopicLight->imparare i [GamePluralMas]</li>
-    <li>TalkTopicLight->imparare le [GamePluralFem]</li>
-    <li>TalkTopicLight->imparare gli [GamePluralNeu]</li>
-    <li>TalkTopicLight->[AnimalPlural]</li>
-    <li>TalkTopicLight->addestrare [AnimalPlural]</li>
-    <li>TalkTopicLight->addomesticare [AnimalPlural]</li>
-    <li>TalkTopicLight->combattere [AnimalPlural]</li>
-    <li>TalkTopicLight->[AnimalPluraMas] pazzi</li>
-    <li>TalkTopicLight->[AnimalPluralFem] pazze</li>
-    <li>TalkTopicLight->[AnimalPluralNeu] pazzi</li>
-    <li>TalkTopicLight->[WeaponPlural]</li>
-    <li>TalkTopicLight->usare [WeaponPlural]</li>
-    <li>TalkTopicLight->allenarsi con i [WeaponPluralMas]</li>
-    <li>TalkTopicLight->allenarsi con le [WeaponPluralFem]</li>
-    <li>TalkTopicLight->allenarsi con gli [WeaponPluralNeu]</li>
-    <li>TalkTopicLight->[TerrainFeaturePlural]</li>
-    <li>TalkTopicLight->[NaturalObjectPlural]</li>
-    <li>TalkTopicLight->[TreeTypePlural]</li>
-    <li>TalkTopicLight->[PersonJobPlural]</li>
-    <li>TalkTopicLight->[PersonJobPlural] amichevoli</li>
-    <li>TalkTopicLight->[PersonJobPlural] ostili</li>
-    <li>TalkTopicLight->[EnemyPlural]</li>
-    <li>TalkTopicLight->combattere [EnemyPlural]</li>
-    <li>TalkTopicLight->[ApparelPlural]</li>
-    <li>TalkTopicLight->indossare [ApparelPlural]</li>
-    <li>TalkTopicLight->realizzare [ApparelPlural]</li>
-    <li>talktopicheavyfile(p=0.15)->sesso</li>
-    <li>talktopicheavyfile(p=0.15)->seduzione</li>
-    <li>talktopicheavyfile(p=0.15)->sesso animalesco</li>
-    <li>talktopicheavyfile(p=0.15)->feticismo sessuale</li>  
+	<li>TalkTopicAny->[TalkTopicAnySingular]</li>
+    <li>TalkTopicAny->[TalkTopicAnyPlural]</li>
+	<li>TalkTopicAnySingular->[TalkTopicAnySingularMas]</li>
+	<li>TalkTopicAnySingular->[TalkTopicAnySingularFem]</li>
+	<li>TalkTopicAnySingular->[TalkTopicAnySingularNeu]</li>
+    <li>TalkTopicAnyPlural->[TalkTopicAnyPluralMas]</li>
+    <li>TalkTopicAnyPlural->[TalkTopicAnyPluralFem]</li>
+    <li>TalkTopicAnyPlural->[TalkTopicAnyPluralNeu]</li>	
+	<li>TalkTopicAnySingularMas->[TalkTopicHeavySingularMas]</li>
+    <li>TalkTopicAnySingularMas->[TalkTopicLightSingularMas]</li>
+	<li>TalkTopicAnySingularFem->[TalkTopicHeavySingularFem]</li>
+    <li>TalkTopicAnySingularFem->[TalkTopicLightSingularFem]</li>
+	<li>TalkTopicAnySingularNeu->[TalkTopicHeavySingularNeu]</li>
+    <li>TalkTopicAnySingularNeu->[TalkTopicLightSingularNeu]</li>
+	<li>TalkTopicAnyPluralMas->[TalkTopicHeavyPluralMas]</li>
+    <li>TalkTopicAnyPluralMas->[TalkTopicLightPluralMas]</li>
+	<li>TalkTopicAnyPluralFem->[TalkTopicHeavyPluralFem]</li>
+    <li>TalkTopicAnyPluralFem->[TalkTopicLightPluralFem]</li>
+	<li>TalkTopicAnyPluralNeu->[TalkTopicHeavyPluralNeu]</li>
+    <li>TalkTopicAnyPluralNeu->[TalkTopicLightPluralNeu]</li>
+
+    <li>TalkTopicHeavySingular->[TalkTopicHeavySingularMas]</li>
+    <li>TalkTopicHeavySingular->[TalkTopicHeavySingularFem]</li>
+    <li>TalkTopicHeavySingular->[TalkTopicHeavySingularNeu]</li>
+    <li>TalkTopicHeavyPlural->[TalkTopicHeavyPluralMas]</li>
+    <li>TalkTopicHeavyPlural->[TalkTopicHeavyPluralFem]</li>
+    <li>TalkTopicHeavyPlural->[TalkTopicHeavyPluralNeu]</li>
+    <li>TalkTopicHeavySingularMas->[talktopicheavyfileSingularMas]</li>
+    <li>TalkTopicHeavySingularFem->[talktopicheavyfileSingularFem]</li>
+    <li>TalkTopicHeavySingularFem(p=0.08)->relazione tra il [TalkTopicHeavySingularMas] ed il [TalkTopicHeavySingularMas]</li>
+    <li>TalkTopicHeavySingularFem(p=0.08)->relazione tra il [TalkTopicHeavySingularMas] ed la [TalkTopicHeavySingularFem]</li>
+    <li>TalkTopicHeavySingularFem(p=0.08)->relazione tra il [TalkTopicHeavySingularMas] e l'[TalkTopicHeavySingularNeu]</li>
+    <li>TalkTopicHeavySingularFem(p=0.08)->relazione tra la [TalkTopicHeavySingularFem] ed il [TalkTopicHeavySingularMas]</li>
+    <li>TalkTopicHeavySingularFem(p=0.08)->relazione tra la [TalkTopicHeavySingularFem] ed la [TalkTopicHeavySingularFem]</li>
+    <li>TalkTopicHeavySingularFem(p=0.08)->relazione tra la [TalkTopicHeavySingularFem] e l'[TalkTopicHeavySingularNeu]</li>
+    <li>TalkTopicHeavySingularFem(p=0.08)->relazione tra l'[TalkTopicHeavySingularNeu] ed il [TalkTopicHeavySingularMas]</li>
+    <li>TalkTopicHeavySingularFem(p=0.08)->relazione tra l'[TalkTopicHeavySingularNeu] ed la [TalkTopicHeavySingularFem]</li>
+    <li>TalkTopicHeavySingularFem(p=0.08)->relazione tra l'[TalkTopicHeavySingularNeu] e l'[TalkTopicHeavySingularNeu]</li>
+    <li>TalkTopicHeavySingularMas(p=0.08)->nesso tra il [TalkTopicHeavySingularMas] ed il [TalkTopicHeavySingularMas]</li>
+    <li>TalkTopicHeavySingularMas(p=0.08)->nesso tra il [TalkTopicHeavySingularMas] ed la [TalkTopicHeavySingularFem]</li>
+    <li>TalkTopicHeavySingularMas(p=0.08)->nesso tra il [TalkTopicHeavySingularMas] e l'[TalkTopicHeavySingularNeu]</li>
+    <li>TalkTopicHeavySingularMas(p=0.08)->nesso tra la [TalkTopicHeavySingularFem] ed il [TalkTopicHeavySingularMas]</li>
+    <li>TalkTopicHeavySingularMas(p=0.08)->nesso tra la [TalkTopicHeavySingularFem] ed la [TalkTopicHeavySingularFem]</li>
+    <li>TalkTopicHeavySingularMas(p=0.08)->nesso tra la [TalkTopicHeavySingularFem] e l'[TalkTopicHeavySingularNeu]</li>
+    <li>TalkTopicHeavySingularMas(p=0.08)->nesso tra l'[TalkTopicHeavySingularNeu] ed il [TalkTopicHeavySingularMas]</li>
+    <li>TalkTopicHeavySingularMas(p=0.08)->nesso tra l'[TalkTopicHeavySingularNeu] ed la [TalkTopicHeavySingularFem]</li>
+    <li>TalkTopicHeavySingularMas(p=0.08)->nesso tra l'[TalkTopicHeavySingularNeu] e l'[TalkTopicHeavySingularNeu]</li>
+
+    <li>TalkTopicLightSingular(p=25)->[TalkTopicLightSingularMas]</li>
+    <li>TalkTopicLightSingular(p=25)->[TalkTopicLightSingularFem]</li>
+    <li>TalkTopicLightSingular(p=25)->[TalkTopicLightSingularNeu]</li>
+    <li>TalkTopicLightPlural(p=25)->[TalkTopicLightPluralMas]</li>
+    <li>TalkTopicLightPlural(p=25)->[TalkTopicLightPluralFem]</li>
+    <li>TalkTopicLightPlural(p=25)->[TalkTopicLightPluralNeu]</li>
+    <li>TalkTopicLightSingularMas->[VegetableSingularMas]</li>
+    <li>TalkTopicLightSingularFem->[VegetableSingularFem]</li>
+    <li>TalkTopicLightPluralMas->[VegetablePluralMas]</li>
+    <li>TalkTopicLightPluralFem->[VegetablePluralFem]</li>
+    <li>TalkTopicLightSingularFem->dieta a base di [VegetablePlural]</li>
+    <li>TalkTopicLightSingularFem->cucina a base di [VegetablePluralMas]</li>
+    <li>TalkTopicLightSingularMas->[GameSingularMas]</li>
+    <li>TalkTopicLightPluralMas->[GamePluralMas]</li>
+    <li>TalkTopicLightPluralFem->[GamePluralFem]</li>
+    <li>TalkTopicLightPluralNeu->[GamePluralNeu]</li>
+    <li>TalkTopicLightSingularNeu->allenamento con il [GameSingularMas]</li>
+    <li>TalkTopicLightSingularNeu->allenamento con i [GamePluralMas]</li>
+    <li>TalkTopicLightSingularNeu->allenamento con le [GamePluralFem]</li>
+    <li>TalkTopicLightSingularNeu->allenamento con gli [GamePluralNeu]</li>
+    <li>TalkTopicLightSingularMas->gioco del [GameSingularMas]</li>
+    <li>TalkTopicLightSingularMas->gioco dei [GamePluralMas]</li>
+    <li>TalkTopicLightSingularMas->gioco delle [GamePluralFem]</li>
+    <li>TalkTopicLightSingularMas->gioco degli [GamePluralNeu]</li>
+    <li>TalkTopicLightPluralMas->[AnimalPluralMas]</li>
+    <li>TalkTopicLightPluralFem->[AnimalPluralFem]</li>
+    <li>TalkTopicLightPluralNeu->[AnimalPluralNeu]</li>
+    <li>TalkTopicLightSingularNeu->addestramento di [AnimalPlural]</li>
+    <li>TalkTopicLightSingularNeu->addomesticamento di [AnimalPlural]</li>
+    <li>TalkTopicLightSingularMas->combattimento con i [AnimalPluralMas]</li>
+    <li>TalkTopicLightSingularMas->combattimento con le [AnimalPluralFem]</li>
+    <li>TalkTopicLightSingularMas->combattimento con gli [AnimalPluralNeu]</li>
+    <li>TalkTopicLightPluralMas->[AnimalPluraMas] pazzi</li>
+    <li>TalkTopicLightPluralFem->[AnimalPluralFem] pazze</li>
+    <li>TalkTopicLightPluralNeu->[AnimalPluralNeu] pazzi</li>
+    <li>TalkTopicLightPluralMas->[WeaponPluralMas]</li>
+    <li>TalkTopicLightPluralFem->[WeaponPluralFem]</li>
+    <li>TalkTopicLightPluralNeu->[WeaponPluralNeu]</li>
+    <li>TalkTopicLightSingularNeu->uso dei [WeaponPluralMas]</li>
+    <li>TalkTopicLightSingularNeu->uso delle [WeaponPluralFem]</li>
+    <li>TalkTopicLightSingularNeu->uso degli [WeaponPluralNeu]</li>
+    <li>TalkTopicLightSingularNeu->allenamento con i [WeaponPluralMas]</li>
+    <li>TalkTopicLightSingularNeu->allenamento con le [WeaponPluralFem]</li>
+    <li>TalkTopicLightSingularNeu->allenamento con gli [WeaponPluralNeu]</li>
+    <li>TalkTopicLightPluralMas->[TerrainFeaturePluralMas]</li>
+    <li>TalkTopicLightPluralFem->[TerrainFeaturePluralFem]</li>
+    <li>TalkTopicLightPluralNeu->[TerrainFeaturePluralNeu]</li>
+    <li>TalkTopicLightPluralMas->[NaturalObjectPluralMas]</li>
+    <li>TalkTopicLightPluralFem->[NaturalObjectPluralFem]</li>
+    <li>TalkTopicLightPluralNeu->[NaturalObjectPluralNeu]</li>
+    <li>TalkTopicLightPluralMas->[TreeTypePluralMas]</li>
+    <li>TalkTopicLightPluralFem->[TreeTypePluralFem]</li>
+    <li>TalkTopicLightPluralNeu->[TreeTypePluralNeu]</li>
+    <li>TalkTopicLightPluralMas->[PersonJobPluralMas]</li>
+    <li>TalkTopicLightPluralFem->[PersonJobPluralFem]</li>
+    <li>TalkTopicLightPluralNeu->[PersonJobPluralNeu]</li>
+    <li>TalkTopicLightPluralMas->[PersonJobPluralMas] amichevoli</li>
+    <li>TalkTopicLightPluralFem->[PersonJobPluralFem] amichevoli</li>
+    <li>TalkTopicLightPluralNeu->[PersonJobPluralNeu] amichevoli</li>
+    <li>TalkTopicLightPluralMas->[PersonJobPluralMas] ostili</li>
+    <li>TalkTopicLightPluralFem->[PersonJobPluralFem] ostili</li>
+    <li>TalkTopicLightPluralNeu->[PersonJobPluralNeu] ostili</li>
+    <li>TalkTopicLightPluralMas->[EnemyPluralMas]</li>
+    <li>TalkTopicLightPluralFem->[EnemyPluralFem]</li>
+    <li>TalkTopicLightSingularMas->combattimento con i [EnemyPluralMas]</li>
+    <li>TalkTopicLightSingularMas->combattimento con le [EnemyPluralFem]</li>
+    <li>TalkTopicLightPluralMas->[ApparelPluralMas]</li>
+    <li>TalkTopicLightPluralFem->[ApparelPluralFem]</li>
+    <li>TalkTopicLightPluralNeu->[ApparelPluralNeu]</li>
+    <li>TalkTopicLightSingularMas->come indossare [ApparelPlural]</li>
+    <li>TalkTopicLightSingularMas->come realizzare [ApparelPlural]</li>
+    <li>talktopicheavyfileSingularMas(p=0.15)->sesso</li>
+    <li>talktopicheavyfileSingularFem(p=0.15)->seduzione</li>
+    <li>talktopicheavyfileSingularMas(p=0.15)->sesso animalesco</li>
+    <li>talktopicheavyfileSingularMas(p=0.15)->feticismo sessuale</li>  
   </TalkTopicsUtility.rulePack.rulesStrings>
   
 </LanguageData>
