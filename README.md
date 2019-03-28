@@ -8,6 +8,8 @@ Puoi trovare ulteriori informazioni in questa pagina: http://ludeon.com/forums/i
 TRADUTTORI:
 ------------------
 - Harkeidos
+- Rexlord
+- Lunatico9
 
 INSTALLAZIONE:
 ------------------
