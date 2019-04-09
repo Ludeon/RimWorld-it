@@ -104,9 +104,9 @@
   -->
   <RecruitAttempt.logRulesInitiator.rulesStrings>
     <li>r_logentry->[INITIATOR_nameDef] ha chiesto a [RECIPIENT_nameDef] di unirsi.</li>
-    <li>r_logentry->[INITIATOR_nameDef] ha promesso a [RECIPIENT_nameDef] dei [goodthingMas], {RECIPIENT_gender ? chiedendogli : chiedendole : chiedendogli} di unirsi.</li>
-    <li>r_logentry->[INITIATOR_nameDef] ha promesso a [RECIPIENT_nameDef] delle [goodthingFem], {RECIPIENT_gender ? chiedendogli : chiedendole : chiedendogli} di unirsi.</li>    <li>r_logentry->[INITIATOR_nameDef] ha promesso a [RECIPIENT_nameDef] delle [goodthingFem], {RECIPIENT_gender ? chiedendogli : chiedendole : chiedendogli} di unirsi.</li>
-    <li>r_logentry->[INITIATOR_nameDef] ha promesso a [RECIPIENT_nameDef] degli [goodthingNeu], {RECIPIENT_gender ? chiedendogli : chiedendole : chiedendogli} di unirsi.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha promesso a [RECIPIENT_nameDef] dei [goodthingMas], chiedendo a [RECIPIENT_objective] di unirsi.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha promesso a [RECIPIENT_nameDef] delle [goodthingFem], chiedendo a [RECIPIENT_objective] di unirsi.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha promesso a [RECIPIENT_nameDef] degli [goodthingNeu], chiedendo a [RECIPIENT_objective] di unirsi.</li>
     <li>goodthingFem(p=15)->[ConceptPositivePluralFem]</li>
     <li>goodthingNeu(p=15)->[ConceptPositivePluralNeu]</li>
     <li>goodthingMas->[VegetablePluralMas] freschi gratis</li>
