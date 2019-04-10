@@ -151,10 +151,10 @@
     <li>collapsed->è {SUBJECT_gender ? collassato : collassata : collassato}</li>
     <li>collapsed->ha ceduto</li>
     <li>collapsed->è {SUBJECT_gender ? caduto : caduta : caduto}</li>
-    <li>collapsed(subject_flesh!=Mechanoid)->è {SUBJECT_gender ? svenuto : svenuta : svenuto}</li>
-    <li>collapsed(subject_flesh==Mechanoid)->si è {SUBJECT_gender ? bloccato : bloccata : bloccato}</li>
-    <li>collapsed(subject_flesh==Mechanoid)->si è {SUBJECT_gender ? riavviato : riavviata : riavviato}</li>
-    <li>collapsed(subject_flesh==Mechanoid)->è {SUBJECT_gender ? andato : andata : andato} in loop</li>
+    <li>collapsed(subject_flesh!=Mechanoid)->è svenuto</li>
+    <li>collapsed(subject_flesh==Mechanoid)->si è bloccato</li>
+    <li>collapsed(subject_flesh==Mechanoid)->si è riavviato</li>
+    <li>collapsed(subject_flesh==Mechanoid)->è andato in loop</li>
     <li>helplessly->impotente</li>
     <li>helplessly(subject_flesh!=Mechanoid)->perdendo i sensi</li>
     <li>helplessly(subject_flesh!=Mechanoid)->per lo sfinimento</li>
