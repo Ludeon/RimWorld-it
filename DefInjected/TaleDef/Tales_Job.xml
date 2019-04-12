@@ -509,11 +509,11 @@
     <li>tale_noun->[PAWN_nameDef] gioca {OBJECT_gender ? sul : sulla : sullo} [OBJECT_label]</li>
     <li>tale_noun->[PAWN_nameDef] si diverte {OBJECT_gender ? sul : sulla : sullo} [OBJECT_label]</li>
     <li>image->[PAWN_nameFull] che aspetta su una sedia, [circumstance_group]</li>
-    <li>image->[PAWN_nameFull] {PAWN_gender ? fermo : ferma} {OBJECT_gender ? sul : sulla : sullo} [OBJECT_label], [circumstance_group]</li>
-    <li>image->[PAWN_nameFull] {PAWN_gender ? seduto : seduta} vicino {OBJECT_gender ? al : alla : allo} [OBJECT_label], [circumstance_group]</li>
-    <li>image->[PAWN_nameFull] che vince {OBJECT_gender ? al : alla : allo} [OBJECT_label], [circumstance_group]</li>
-    <li>image->[PAWN_nameFull] che perde {OBJECT_gender ? al : alla : allo} [OBJECT_label], [circumstance_group]</li>
-    <li>circumstance_phrase->energicamente {PAWN_gender ? teso : tesa}</li>
+    <li>image->[PAWN_nameFull] fermo sul [OBJECT_label], [circumstance_group]</li>
+    <li>image->[PAWN_nameFull] seduto vicino al [OBJECT_label], [circumstance_group]</li>
+    <li>image->[PAWN_nameFull] che vince al [OBJECT_label], [circumstance_group]</li>
+    <li>image->[PAWN_nameFull] che perde al [OBJECT_label], [circumstance_group]</li>
+    <li>circumstance_phrase->energicamente teso</li>
     <li>circumstance_phrase->con il proprio corpo sciolto e rilassato</li>
     <li>circumstance_phrase->che pianifica la sua prossima azione</li>
     <li>circumstance_phrase->che si massaggia delicatamente i polsi</li>
