@@ -140,8 +140,10 @@
   <EItemUpdateStatus_k_EItemUpdateStatusCommittingChanges>Esecuzione modifiche</EItemUpdateStatus_k_EItemUpdateStatusCommittingChanges>
 
   <!-- Mod sources -->
+  <!-- EN: official content -->
+  <ContentSource_OfficialModsFolder>contenuto ufficiale</ContentSource_OfficialModsFolder>
   <!-- EN: local folder -->
-  <ContentSource_LocalFolder>cartella locale</ContentSource_LocalFolder>
+  <ContentSource_ModsFolder>cartella locale</ContentSource_ModsFolder>
   <!-- EN: Steam Workshop -->
   <ContentSource_SteamWorkshop>Steam Workshop</ContentSource_SteamWorkshop>
   
@@ -205,7 +207,7 @@
   
   <!-- Animal name display mode -->
   <!-- EN: Show animal names -->
-  <ShowAnimalNames>Visualizza nomi animali</ShowAnimalNames>
+  <ShowAnimalNames>Mostra nomi animali</ShowAnimalNames>
   <!-- EN: Tame (named only) -->
   <AnimalNameDisplayMode_TameNamed>Domestici (solo rinominati)</AnimalNameDisplayMode_TameNamed>
   <!-- EN: Tame (all) -->
@@ -286,5 +288,31 @@
   <PsychicDroneLevel_BadHigh>alto</PsychicDroneLevel_BadHigh>
   <!-- EN: extreme -->
   <PsychicDroneLevel_BadExtreme>estremo</PsychicDroneLevel_BadExtreme>
+  
+  <!-- Automatic pause mode -->
+  <!-- EN: Never -->
+  <AutomaticPauseMode_Never>Mai</AutomaticPauseMode_Never>
+  <!-- EN: Major threats -->
+  <AutomaticPauseMode_MajorThreat>Gravi minacce</AutomaticPauseMode_MajorThreat>
+  <!-- EN: Any threat -->
+  <AutomaticPauseMode_AnyThreat>Ogni minaccia</AutomaticPauseMode_AnyThreat>
+  <!-- EN: Any letter -->
+  <AutomaticPauseMode_AnyLetter>Ogni avviso</AutomaticPauseMode_AnyLetter>
+
+  <!-- Pain category -->
+  <!-- EN: itchy -->
+  <PainCategory_LowPain>prurito</PainCategory_LowPain>
+  <!-- EN: aching -->
+  <PainCategory_MediumPain>doloroso</PainCategory_MediumPain>
+  <!-- EN: painful -->
+  <PainCategory_HighPain>insopportabile</PainCategory_HighPain>
+  
+  <!-- ExtraFactionType -->
+  <!-- EN: home faction -->
+  <ExtraFactionType_HomeFaction>fazione di origine</ExtraFactionType_HomeFaction>
+  <!-- EN: remote host faction -->
+  <ExtraFactionType_HostFaction>lontana fazione ospite</ExtraFactionType_HostFaction>
+  <!-- UNUSED -->
+  <ContentSource_LocalFolder>cartella locale</ContentSource_LocalFolder>
 
 </LanguageData>
