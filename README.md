@@ -14,9 +14,10 @@ TRADUTTORI:
 
 INSTALLAZIONE:
 ------------------
-1) Copiare i contenuti dell'archivio nella directory di installazione in ...\Data\Core\Languages\Italian
+1) Estrarre il contenuto dello zip in una cartella.
+2) Copiare il contenuto di ...\RimWorld-it-master\Core nella directory di installazione in ...\Data\Core\Languages\Italian
 2) Avviare il gioco
-3) Nelle opzioni di gioco, selezionare la lingua 'Italiano'
+3) Nelle opzioni di gioco, selezionare la lingua 'Italian'
 
 SEGNALAZIONE ERRORI:
 ------------------------------
