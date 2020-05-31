@@ -25,3 +25,7 @@ Se individui errori, omissioni o per qualsiasi proposta di traduzione o migliora
 SEZIONE GENERALE: https://ludeon.com/forums/index.php?board=17.0
 
 SEZIONE TRADUZIONE ITALIANA: https://ludeon.com/forums/index.php?topic=4843.0
+
+VECCHIE VERSIONI:
+-----------------
+La cartella V1.0.2150 contiene la traduzione per la versione 1.0.2150 di RimWorld. Essa è stata mantenuta per chi avesse ancora questa vecchia versione installata sul proprio PC. Non serve per le versioni successive di RimWorld e in futuro verrà cancellata.
