@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>scraped_present->glancing</li>
+    <li>scraped_present->bouncing</li>
+    <li>scraped_present->grazing</li>
+    <li>scraped_present->caroming</li>
+    <li>scraped_present->skipping</li>
+    <li>scraped_present->skating</li>
+    <li>scraped_past->glanced</li>
+    <li>scraped_past->bounced</li>
+    <li>scraped_past->grazed</li>
+    <li>scraped_past->caromed</li>
+    <li>scraped_past->skipped</li>
+    <li>scraped_past->skated</li>
+  -->
+  <Combat_DeflectIncludes.rulePack.rulesStrings>
+    <li>scraped_past->ha rimbalzato</li>
+    <li>scraped_past->ha graffiato</li>
+    <li>scraped_past->ha saltellato</li>
+    <li>scraped_present->rimbalzando</li>
+    <li>scraped_present->graffiando</li>
+    <li>scraped_present->saltellando</li>
+  </Combat_DeflectIncludes.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>action->[INITIATOR_definite] [tried] to [damaged_inf] [RECIPIENT_definite]</li>
+    <li>action->[INITIATOR_definite] [tried] to [damaged_inf] [RECIPIENT_definite] with [implement]</li>
+    <li>action->[INITIATOR_definite] [tried] to use [implement] to [damaged_inf] [RECIPIENT_definite]</li>
+    <li>action->[INITIATOR_definite] swung [INITIATOR_possessive] [WEAPON_label] at [RECIPIENT_definite]</li>
+    <li>action(p=0.3)->[INITIATOR_definite] [verb_genericattack] [towardsat] [RECIPIENT_definite] with [implement]</li>
+    <li>action(p=0.3)->[INITIATOR_definite] [verb_genericattack] [towardsat] [RECIPIENT_definite]</li>
+    <li>action(p=0.3)->[INITIATOR_definite] [verb_genericattack] with [implement]</li>
+    <li>towardsat->towards</li>
+    <li>towardsat->at</li>
+    <li>verb_genericattack->swung</li>
+    <li>verb_genericattack->flailed</li>
+    <li>verb_genericattack->thrashed</li>
+    <li>tried->tried</li>
+    <li>tried->attempted</li>
+  -->
+  <Combat_FailIncludes.rulePack.rulesStrings>
+    <li>action->[INITIATOR_definite] [tried] [damaged_inf] [RECIPIENT_definite]</li>
+    <li>action->[INITIATOR_definite] [tried] [damaged_inf] [RECIPIENT_definite] con [implement]</li>
+    <li>action->[INITIATOR_definite] [tried] usare [implement] per [damaged_inf] [RECIPIENT_definite]</li>
+    <li>action->[INITIATOR_definite] ha sferrato {WEAPON_gender ? il : la : il} {WEAPON_gender ? proprio : propria : proprio} [WEAPON_label] contro [RECIPIENT_definite]</li>
+    <li>action(p=0.3)->[INITIATOR_definite] [verb_genericattack] con [implement] [towardsat] [RECIPIENT_definite]</li>
+    <li>action(p=0.3)->[INITIATOR_definite] [verb_genericattack] [towardsat] [RECIPIENT_definite]</li>
+    <li>action(p=0.3)->[INITIATOR_definite] [verb_genericattack] con [implement]</li>
+    <li>tried->ha provato a</li>
+    <li>tried->ha tentato di</li>
+    <li>towardsat->verso</li>
+    <li>towardsat->su</li>
+    <li>verb_genericattack->ha sferrato un colpo</li>
+    <li>verb_genericattack->ha tirato un colpo</li>
+    <li>verb_genericattack->ha assestato un colpo</li>
+  </Combat_FailIncludes.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>result(p=1)->[damaged_present] [RECIPIENT_possessive] [targetlist]</li>
+    <li>result(p=0.2)->[damaged_present] [RECIPIENT_possessive] [targetlist] and [flavortext_consequence]</li>
+    <li>result(p=0.1)->[damaged_present] [RECIPIENT_possessive] [targetlist] [strikeAdv]</li>
+    <li>strikeAdv->painfully</li>
+    <li>strikeAdv->horribly</li>
+    <li>strikeAdv->savagely</li>
+    <li>strikeAdv->viciously</li>
+    <li>flavortext_consequence(recipient_flesh!=Mechanoid)->leaving a disgusting wound</li>
+    <li>flavortext_consequence->leaving a horrific wound</li>
+    <li>flavortext_consequence(recipient_flesh!=Mechanoid)->making [RECIPIENT_objective] [wince] [painevent]</li>
+    <li>flavortext_consequence(p=0.2)->throwing [RECIPIENT_objective] off balance</li>
+  -->
+  <Combat_MeleeDamageIncludes.rulePack.rulesStrings>
+    <li>result(p=0.5)->[damaged_present] [targetlistPos]</li>
+    <li>result(p=0.1)->[damaged_present] [adverb_flavortext] [targetlistPos]</li>
+    <li>result(p=0.1)->[damaged_present] [targetlistPos] [flavortext_situation]</li>
+    <li>result(p=0.1)->[damaged_present] [targetlistPos] e [flavortext_consequence]</li>
+    <li>adverb_flavortext->dolorosamente</li>
+    <li>adverb_flavortext->brutalmente</li>
+    <li>adverb_flavortext->orribilmente</li>
+    <li>adverb_flavortext->in maniera straziante</li>
+    <li>adverb_flavortext->ferocemente</li>
+    <li>adverb_flavortext->spietatamente</li>
+    <li>adverb_flavortext->selvaggiamente</li>
+    <li>adverb_flavortext->crudelmente</li>
+    <li>adverb_flavortext->senza pietà</li>
+    <li>adverb_flavortext->in maniera crudele</li>
+    <li>flavortext_situation(recipient_flesh!=Mechanoid)->in un'esplosione di sangue</li>
+    <li>flavortext_situation(recipient_flesh==Mechanoid)->in un'esplosione di rottami</li>
+    <li>flavortext_situation->senza nessuna emozione</li>
+    <li>flavortext_situation(p=0.4)->con uno sguardo assente</li>
+    <li>flavortext_situation(p=0.2,initiator_flesh==Normal)->con uno sguardo selvaggio</li>
+    <li>flavortext_situation(p=0.2,initiator_flesh==Normal)->con uno sguardo assente [AdjectiveBadassSingularMas]</li>
+    <li>flavortext_situation(p=0.2,initiator_flesh==Normal)->facendo delle smorfie</li>
+    <li>flavortext_situation(p=0.2,initiator_flesh==Normal)->ridendo</li>
+    <li>flavortext_situation(p=0.2,initiator_flesh==Normal)->sogghignando</li>
+    <li>flavortext_consequence(recipient_flesh!=Mechanoid)->lasciando una disgustosa ferita</li>
+    <li>flavortext_consequence->lasciando una raccapricciante ferita</li>
+    <li>flavortext_consequence(recipient_flesh!=Mechanoid)->{RECIPIENT_gender ? facendolo : facendola : facendolo} [wince] [painevent]</li>
+    <li>flavortext_consequence(p=0.2)->{RECIPIENT_gender ? facendogli : facendole : facendogli} perdere l'equilibrio</li>
+  </Combat_MeleeDamageIncludes.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>r_logentry->[action], [result].</li>
+    <li>r_logentry(priority=-10)->[action].</li>
+    <li>implement(IMPLEMENTOWNER_type==weapon,p=2)->[INITIATOR_possessive] [WEAPON_label]'s [TOOL_label]</li>
+    <li>implement(IMPLEMENTOWNER_type==weapon,p=1)->[INITIATOR_possessive] [WEAPON_label]</li>
+    <li>implement(IMPLEMENTOWNER_type==weapon,p=1)->a [WEAPON_label]'s [TOOL_label]</li>
+    <li>implement(IMPLEMENTOWNER_type==weapon,p=0.5)->a [WEAPON_label]</li>
+    <li>implement(IMPLEMENTOWNER_type==bodypart,p=2)->[INITIATOR_possessive] [TOOL_label]</li>
+    <li>implement(IMPLEMENTOWNER_type==hediff,p=2)->[INITIATOR_possessive] [WEAPON_label]'s [TOOL_label]</li>
+    <li>implement(IMPLEMENTOWNER_type==hediff,p=1)->[INITIATOR_possessive] [WEAPON_label]</li>
+    <li>implement(IMPLEMENTOWNER_type==hediff,p=1)->[INITIATOR_possessive] [TOOL_label]</li>
+    <li>targetlist(recipient_part_count==1)->[recipient_part0_label]</li>
+    <li>targetlist(recipient_part_count==2)->[recipient_part0_label] and [recipient_part1_label]</li>
+    <li>targetlist(recipient_part_count==3)->[recipient_part0_label], [recipient_part1_label], and [recipient_part2_label]</li>
+    <li>targetlist->[recipient_part0_label], [recipient_part1_label], [recipient_part2_label], and [recipient_part3_label]</li>
+    <li>damaged_present(deflected!=True)->wounding</li>
+    <li>damaged_present(deflected!=True)->injuring</li>
+    <li>destroyed(p=0.5)->destroyed</li>
+    <li>destroyed(p=0.5)->demolished</li>
+    <li>destroyed(p=0.5)->ruined</li>
+    <li>destroyed(p=0.5)->wrecked</li>
+    <li>wince(recipient_flesh==Normal)->wince</li>
+    <li>wince(recipient_flesh==Normal)->grimace</li>
+    <li>wince(recipient_flesh==Normal)->cringe</li>
+    <li>wince(recipient_flesh==Normal)->groan</li>
+    <li>wince(recipient_flesh!=Mechanoid)->scream</li>
+    <li>wince(recipient_flesh!=Mechanoid)->shout</li>
+    <li>wince->recoil</li>
+    <li>wince->stumble</li>
+    <li>painstate->in</li>
+    <li>painstate->with</li>
+    <li>painstate->from the</li>
+    <li>painevent(recipient_flesh!=Mechanoid)->[painstate] pain</li>
+    <li>painevent(recipient_flesh!=Mechanoid)->[painstate] agony</li>
+    <li>painevent(recipient_flesh==Normal)->with misery</li>
+    <li>painevent->from the injury</li>
+    <li>painevent->from the wound</li>
+    <li>to->to</li>
+    <li>to->into</li>
+  -->
+  <Combat_MeleeIncludes.rulePack.rulesStrings>
+    <li>r_logentry->[action], [result].</li>
+    <li>r_logentry(p=0.2)->[action].</li>
+    <li>implement(IMPLEMENTOWNER_type==weapon,p=2)->{TOOL_gender ? il : la : il} [TOOL_label] {WEAPON_gender ? del : della : del} {WEAPON_gender ? proprio : propria : proprio} [WEAPON_label]</li>
+    <li>implement(IMPLEMENTOWNER_type==weapon,p=1)->{WEAPON_gender ? il : la : il} {WEAPON_gender ? proprio : propria : proprio} [WEAPON_label]</li>
+    <li>implement(IMPLEMENTOWNER_type==weapon,p=1)->{TOOL_gender ? un : una : uno} [TOOL_label] {WEAPON_gender ? del : della : dello} [WEAPON_label]</li>
+    <li>implement(IMPLEMENTOWNER_type==weapon,p=0.5)->{WEAPON_gender ? un : una : uno} [WEAPON_label]</li>
+    <li>implement(IMPLEMENTOWNER_type==bodypart,p=2)->{TOOL_gender ? il : la : il} {TOOL_gender ? proprio : propria : proprio} [TOOL_label]</li>
+    <li>implement(IMPLEMENTOWNER_type==bodypart,p=1)->{TOOL_gender ? il : la : il} {TOOL_gender ? proprio : propria : proprio} {TOOL_gender ? [adjective_bodypartSingularMas] : [adjective_bodypartSingularFem] : [adjective_bodypartSingularMas]} [TOOL_label]</li>
+    <li>implement(IMPLEMENTOWNER_type==hediff,p=2)->{TOOL_gender ? il : la : il} [TOOL_label] {WEAPON_gender ? del : della : del} {WEAPON_gender ? proprio : propria : proprio} [WEAPON_label]</li>
+    <li>implement(IMPLEMENTOWNER_type==hediff,p=1)->{WEAPON_gender ? il : la : il} {WEAPON_gender ? proprio : propria : proprio} [WEAPON_label]</li>
+    <li>implement(IMPLEMENTOWNER_type==hediff,p=1)->{TOOL_gender ? il : la : il} {TOOL_gender ? proprio : propria : proprio} [TOOL_label]</li>
+    <li>adjective_bodypartSingularMas->duro</li>
+    <li>adjective_bodypartSingularMas->forte</li>
+    <li>adjective_bodypartSingularMas->potente</li>
+    <li>adjective_bodypartSingularMas->possente</li>
+    <li>adjective_bodypartSingularMas->poderoso</li>
+    <li>adjective_bodypartSingularMas->massiccio</li>
+    <li>adjective_bodypartSingularMas->rude</li>
+    <li>adjective_bodypartSingularMas->robusto</li>
+    <li>adjective_bodypartSingularMas->solido</li>
+    <li>adjective_bodypartSingularMas->resistente</li>
+    <li>adjective_bodypartSingularMas->pesante</li>
+    <li>adjective_bodypartSingularMas(initiator_flesh==True)->calloso</li>
+    <li>adjective_bodypartSingularMas->saldo</li>
+    <li>adjective_bodypartSingularFem->dura</li>
+    <li>adjective_bodypartSingularFem->forte</li>
+    <li>adjective_bodypartSingularFem->potente</li>
+    <li>adjective_bodypartSingularFem->possente</li>
+    <li>adjective_bodypartSingularFem->poderosa</li>
+    <li>adjective_bodypartSingularFem->massiccia</li>
+    <li>adjective_bodypartSingularFem->rude</li>
+    <li>adjective_bodypartSingularFem->robusta</li>
+    <li>adjective_bodypartSingularFem->solida</li>
+    <li>adjective_bodypartSingularFem->resistente</li>
+    <li>adjective_bodypartSingularFem->pesante</li>
+    <li>adjective_bodypartSingularFem(initiator_flesh==True)->callosa</li>
+    <li>adjective_bodypartSingularFem->salda</li>
+    <li>targetlist(recipient_part_count==1)->{recipient_part_0_gender ? il : la : lo} [recipient_part0_label]</li>
+    <li>targetlist(recipient_part_count==2)->{recipient_part_0_gender ? il : la : lo} [recipient_part0_label] e {recipient_part_1_gender ? il : la : lo} [recipient_part1_label]</li>
+    <li>targetlist(recipient_part_count==3)->{recipient_part_0_gender ? il : la : lo} [recipient_part0_label], {recipient_part_1_gender ? il : la : lo} [recipient_part1_label], e {recipient_part_2_gender ? il : la : lo} [recipient_part2_label]</li>
+    <li>targetlist->{recipient_part_0_gender ? il : la : lo} [recipient_part0_label], {recipient_part_1_gender ? il : la : lo} [recipient_part1_label], {recipient_part_2_gender ? il : la : lo} [recipient_part2_label], e {recipient_part_3_gender ? il : la : lo} [recipient_part3_label]</li>
+    <li>targetlistPos(recipient_part_count==1)->{recipient_part_0_gender ? il : la : lo} {recipient_part_0_gender ? suo : sua : suo} [recipient_part0_label]</li>
+    <li>targetlistPos(recipient_part_count==2)->{recipient_part_0_gender ? il : la : lo} {recipient_part_0_gender ? suo : sua : suo} [recipient_part0_label] e {recipient_part_1_gender ? il : la : lo} {recipient_part_1_gender ? suo : sua : suo} [recipient_part1_label]</li>
+    <li>targetlistPos(recipient_part_count==3)->{recipient_part_0_gender ? il : la : lo} {recipient_part_0_gender ? suo : sua : suo} [recipient_part0_label], {recipient_part_1_gender ? il : la : lo} {recipient_part_1_gender ? suo : sua : suo} [recipient_part1_label], e {recipient_part_2_gender ? il : la : lo} {recipient_part_2_gender ? suo : sua : suo} [recipient_part2_label]</li>
+    <li>targetlistPos->{recipient_part_0_gender ? il : la : lo} {recipient_part_0_gender ? suo : sua : suo} [recipient_part0_label], {recipient_part_1_gender ? il : la : lo} {recipient_part_1_gender ? suo : sua : suo} [recipient_part1_label], {recipient_part_2_gender ? il : la : lo} {recipient_part_2_gender ? suo : sua : suo} [recipient_part2_label], e {recipient_part_3_gender ? il : la : lo} {recipient_part_3_gender ? suo : sua : suo} [recipient_part3_label]</li>
+    <li>damaged_present(deflected!=True)->ferendo</li>
+    <li>damaged_present(deflected!=True)->lesionando</li>
+    <li>destroyed(p=0.5)->distrutto</li>
+    <li>destroyed(p=0.5)->demolito</li>
+    <li>destroyed(p=0.5)->rovinato</li>
+    <li>destroyed(p=0.5)->sfasciato</li>
+    <li>wince(recipient_flesh==Normal)->trasalire</li>
+    <li>wince(recipient_flesh==Normal)->agitare</li>
+    <li>wince(recipient_flesh==Normal)->rabbrividire</li>
+    <li>wince(recipient_flesh==Normal)->gemere</li>
+    <li>wince(recipient_flesh!=Mechanoid)->urlare</li>
+    <li>wince(recipient_flesh!=Mechanoid)->gridare</li>
+    <li>wince->indietreggiare</li>
+    <li>wince->vacillare</li>
+    <li>painstateMas->nel</li>
+    <li>painstateMas->a causa del</li>
+    <li>painstateMas->per il</li>
+    <li>painstateNeu->nell'</li>
+    <li>painstateNeu->a causa dell'</li>
+    <li>painstateNeu->per l'</li>
+    <li>painevent(recipient_flesh!=Mechanoid)->[painstateMas] dolore</li>
+    <li>painevent(recipient_flesh!=Mechanoid)->[painstateNeu]agonia</li>
+    <li>painevent(recipient_flesh==Normal)->con sofferenza</li>
+    <li>painevent->per la ferita</li>
+    <li>painevent->per il danno</li>
+  </Combat_MeleeIncludes.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>skillDescMelee->[wielding] [INITIATOR_possessive] [WEAPON_label] [skillAdv]</li>
+    <li>skillDescMelee->[using] [implement] [skillAdv]</li>
+    <li>wielding(p=4)->wielding</li>
+    <li>wielding(p=3)->using</li>
+    <li>wielding(p=2)->handling</li>
+    <li>wielding->brandishing</li>
+    <li>wielding->manipulating</li>
+    <li>using(p=4)->using</li>
+    <li>using->driving</li>
+    <li>using->thrusting</li>
+    <li>using->utilizing</li>
+    <li>using->moving</li>
+    <li>skillAdv(INITIATOR_skill<=3)->incompetently</li>
+    <li>skillAdv(INITIATOR_skill<=3)->ineptly</li>
+    <li>skillAdv(INITIATOR_skill<=3)->wildly</li>
+    <li>skillAdv(INITIATOR_skill<=3)->randomly</li>
+    <li>skillAdv(INITIATOR_skill<=3)->flailingly</li>
+    <li>skillAdv(INITIATOR_skill<=4)->awkwardly</li>
+    <li>skillAdv(INITIATOR_skill<=4)->clumsily</li>
+    <li>skillAdv(INITIATOR_skill<=5)->fearfully</li>
+    <li>skillAdv(INITIATOR_skill<=5)->falteringly</li>
+    <li>skillAdv(INITIATOR_skill<=5)->foolishly</li>
+    <li>skillAdv(INITIATOR_skill<=6)->hesitantly</li>
+    <li>skillAdv(INITIATOR_skill<=6)->reluctantly</li>
+    <li>skillAdv(INITIATOR_skill<=6)->slowly</li>
+    <li>skillAdv(INITIATOR_skill<=6)->tentatively</li>
+    <li>skillAdv(INITIATOR_skill<=6)->inexpertly</li>
+    <li>skillAdv(INITIATOR_skill<=6)->amateurishly</li>
+    <li>skillAdv(INITIATOR_skill<=6)->timidly</li>
+    <li>skillAdv(INITIATOR_skill<=8)->enthusiastically</li>
+    <li>skillAdv(INITIATOR_skill>=6,INITIATOR_skill<=10)->proficiently</li>
+    <li>skillAdv(INITIATOR_skill>=6,INITIATOR_skill<=10)->competently</li>
+    <li>skillAdv(INITIATOR_skill>=8)->professionally</li>
+    <li>skillAdv(INITIATOR_skill>=8)->deftly</li>
+    <li>skillAdv(INITIATOR_skill>=8)->aptly</li>
+    <li>skillAdv(INITIATOR_skill>=8)->cleverly</li>
+    <li>skillAdv(INITIATOR_skill>=8)->dexterously</li>
+    <li>skillAdv(INITIATOR_skill>=8)->skillfully</li>
+    <li>skillAdv(INITIATOR_skill>=10)->adeptly</li>
+    <li>skillAdv(INITIATOR_skill>=10)->slickly</li>
+    <li>skillAdv(INITIATOR_skill>=12)->expertly</li>
+    <li>skillAdv(INITIATOR_skill>=12)->precisely</li>
+    <li>skillAdv(INITIATOR_skill>=14)->masterfully</li>
+    <li>skillAdv(INITIATOR_skill>=16)->artistically</li>
+    <li>skillAdv(INITIATOR_skill>=16)->gracefully</li>
+    <li>skillAdv(initiator_flesh==Mechanoid)->mechanically</li>
+    <li>skillAdv(initiator_flesh==Mechanoid)->robotically</li>
+    <li>skillAdv(initiator_flesh==Mechanoid)->directly</li>
+  -->
+  <Combat_SkillIncludes.rulePack.rulesStrings>TODO</Combat_SkillIncludes.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>destroyed_targets(recipient_part_destroyed_count==1)->[recipient_part_destroyed0_label]</li>
+    <li>destroyed_targets(recipient_part_destroyed_count==2)->[recipient_part_destroyed0_label] and [recipient_part_destroyed1_label]</li>
+    <li>destroyed_targets(recipient_part_destroyed_count==3)->[recipient_part_destroyed0_label], [recipient_part_destroyed1_label], and [recipient_part_destroyed2_label]</li>
+    <li>destroyed_targets->[recipient_part_destroyed0_label], [recipient_part_destroyed1_label], [recipient_part_destroyed2_label], and [recipient_part_destroyed3_label]</li>
+    <li>damaged_targets(recipient_part_damaged_count==1)->[recipient_part_damaged0_label]</li>
+    <li>damaged_targets(recipient_part_damaged_count==2)->[recipient_part_damaged0_label] and [recipient_part_damaged1_label]</li>
+    <li>damaged_targets(recipient_part_damaged_count==3)->[recipient_part_damaged0_label], [recipient_part_damaged1_label], and [recipient_part_damaged2_label]</li>
+    <li>damaged_targets->[recipient_part_damaged0_label], [recipient_part_damaged1_label], [recipient_part_damaged2_label], and [recipient_part_damaged3_label]</li>
+  -->
+  <Combat_WoundIncludes.rulePack.rulesStrings>
+    <li>destroyed_targets(recipient_part_destroyed_count==1)->{recipient_part_destroyed0_gender ? il : la : lo} [recipient_part_destroyed0_label]</li>
+    <li>destroyed_targets(recipient_part_destroyed_count==2)->{recipient_part_destroyed0_gender ? il : la : lo} [recipient_part_destroyed0_label] e {recipient_part_destroyed1_gender ? il : la : lo} [recipient_part_destroyed1_label]</li>
+    <li>destroyed_targets(recipient_part_destroyed_count==3)->{recipient_part_destroyed0_gender ? il : la : lo} [recipient_part_destroyed0_label], {recipient_part_destroyed1_gender ? il : la : lo} [recipient_part_destroyed1_label], e {recipient_part_destroyed2_gender ? il : la : lo} [recipient_part_destroyed2_label]</li>
+    <li>destroyed_targets->{recipient_part_destroyed0_gender ? il : la : lo} [recipient_part_destroyed0_label], {recipient_part_destroyed1_gender ? il : la : lo} [recipient_part_destroyed1_label], {recipient_part_destroyed2_gender ? il : la : lo} [recipient_part_destroyed2_label], e {recipient_part_destroyed3_gender ? il : la : lo} [recipient_part_destroyed3_label]</li>
+    <li>destroyed_targetsPos(recipient_part_destroyed_count==1)->{recipient_part_destroyed0_gender ? il : la : lo} {recipient_part_destroyed0_gender ? suo : sua : suo} [recipient_part_destroyed0_label]</li>
+    <li>destroyed_targetsPos(recipient_part_destroyed_count==2)->{recipient_part_destroyed0_gender ? il : la : lo} {recipient_part_destroyed0_gender ? suo : sua : suo} [recipient_part_destroyed0_label] e {recipient_part_destroyed1_gender ? il : la : lo} {recipient_part_destroyed1_gender ? suo : sua : suo} [recipient_part_destroyed1_label]</li>
+    <li>destroyed_targetsPos(recipient_part_destroyed_count==3)->{recipient_part_destroyed0_gender ? il : la : lo} {recipient_part_destroyed0_gender ? suo : sua : suo} [recipient_part_destroyed0_label], {recipient_part_destroyed1_gender ? il : la : lo} {recipient_part_destroyed1_gender ? suo : sua : suo} [recipient_part_destroyed1_label], e {recipient_part_destroyed2_gender ? il : la : lo} {recipient_part_destroyed2_gender ? suo : sua : suo} [recipient_part_destroyed2_label]</li>
+    <li>destroyed_targetsPos->{recipient_part_destroyed0_gender ? il : la : lo} {recipient_part_destroyed0_gender ? suo : sua : suo} [recipient_part_destroyed0_label], {recipient_part_destroyed1_gender ? il : la : lo} {recipient_part_destroyed1_gender ? suo : sua : suo} [recipient_part_destroyed1_label], {recipient_part_destroyed2_gender ? il : la : lo} {recipient_part_destroyed2_gender ? suo : sua : suo} [recipient_part_destroyed2_label], e {recipient_part_destroyed3_gender ? il : la : lo} {recipient_part_destroyed3_gender ? suo : sua : suo} [recipient_part_destroyed3_label]</li>
+    <li>damaged_targets(recipient_part_damaged_count==1)->{recipient_part_damaged0_gender ? il : la : lo} [recipient_part_damaged0_label]</li>
+    <li>damaged_targets(recipient_part_damaged_count==2)->{recipient_part_damaged0_gender ? il : la : lo} [recipient_part_damaged0_label] e {recipient_part_damaged1_gender ? il : la : lo} [recipient_part_damaged1_label]</li>
+    <li>damaged_targets(recipient_part_damaged_count==3)->{recipient_part_damaged0_gender ? il : la : lo} [recipient_part_damaged0_label], {recipient_part_damaged1_gender ? il : la : lo} [recipient_part_damaged1_label], e {recipient_part_damaged2_gender ? il : la : lo} [recipient_part_damaged2_label]</li>
+    <li>damaged_targets->{recipient_part_damaged0_gender ? il : la : lo} [recipient_part_damaged0_label], {recipient_part_damaged1_gender ? il : la : lo} [recipient_part_damaged1_label], {recipient_part_damaged2_gender ? il : la : lo} [recipient_part_damaged2_label], e {recipient_part_damaged3_gender ? il : la : lo} [recipient_part_damaged3_label]</li>
+    <li>damaged_targetsPos(recipient_part_damaged_count==1)->{recipient_part_damaged0_gender ? il : la : il} {recipient_part_damaged0_gender ? suo : sua : suo} [recipient_part_damaged0_label]</li>
+    <li>damaged_targetsPos(recipient_part_damaged_count==2)->{recipient_part_damaged0_gender ? il : la : il} {recipient_part_damaged0_gender ? suo : sua : suo} [recipient_part_damaged0_label] e {recipient_part_damaged1_gender ? il : la : il} {recipient_part_damaged1_gender ? suo : sua : suo} [recipient_part_damaged1_label]</li>
+    <li>damaged_targetsPos(recipient_part_damaged_count==3)->{recipient_part_damaged0_gender ? il : la : il} {recipient_part_damaged0_gender ? suo : sua : suo} [recipient_part_damaged0_label], {recipient_part_damaged1_gender ? il : la : il} {recipient_part_damaged1_gender ? suo : sua : suo} [recipient_part_damaged1_label], e {recipient_part_damaged2_gender ? il : la : il} {recipient_part_damaged2_gender ? suo : sua : suo} [recipient_part_damaged2_label]</li>
+    <li>damaged_targetsPos->{recipient_part_damaged0_gender ? il : la : il} {recipient_part_damaged0_gender ? suo : sua : suo} [recipient_part_damaged0_label], {recipient_part_damaged1_gender ? il : la : il} {recipient_part_damaged1_gender ? suo : sua : suo} [recipient_part_damaged1_label], {recipient_part_damaged2_gender ? il : la : il} {recipient_part_damaged2_gender ? suo : sua : suo} [recipient_part_damaged2_label], e {recipient_part_damaged3_gender ? il : la : il} {recipient_part_damaged3_gender ? suo : sua : suo} [recipient_part_damaged3_label]</li>
+    <li>expertly->abilmente</li>
+    <li>expertly->espertamente</li>
+    <li>expertly->magistralmente</li>
+    <li>expertly->sapientemente</li>
+    <li>expertly->destramente</li>
+    <li>expertly->eccellentemente</li>
+    <li>expertly->professionalmente</li>
+    <li>expertly->appropriatamente</li>
+    <li>expertly->agilmente</li>
+    <li>expertly->brillantemente</li>
+    <li>expertly->perfettamente</li>
+    <li>expertly->artisticamente</li>
+    <li>expertly->con competenza</li>
+    <li>expertly->con straordinaria esperienza</li>
+    <li>expertly->con talento</li>
+    <li>expertly->con cura</li>
+    <li>expertly->con precisione</li>
+    <li>expertly->con abilità</li>
+    <li>expertly->con forza</li>
+    <li>expertly->con destrezza</li>
+    <li>expertly->con maestria</li>
+    <li>expertly->con bravura</li>
+    <li>expertly->con professionalità</li>
+    <li>expertly->come un genio</li>
+    <li>expertly->come un esperto</li>
+    <li>expertly->come un maestro</li>
+    <li>expertly->come un artista</li>
+    <li>expertly->come un professionista</li>
+    <li>expertMas->esperto</li>
+    <li>expertMas->abile</li>
+    <li>expertMas->accorto</li>
+    <li>expertMas->sapiente</li>
+    <li>expertMas->scaltro</li>
+    <li>expertMas->professionale</li>
+    <li>expertMas->capace</li>
+    <li>expertMas->agile</li>
+    <li>expertMas->geniale</li>
+    <li>expertMas->magistrale</li>
+    <li>expertMas->artistico</li>
+    <li>expertFem->esperta</li>
+    <li>expertFem->abile</li>
+    <li>expertFem->accorta</li>
+    <li>expertFem->sapiente</li>
+    <li>expertFem->scaltra</li>
+    <li>expertFem->professionale</li>
+    <li>expertFem->capace</li>
+    <li>expertFem->agile</li>
+    <li>expertFem->geniale</li>
+    <li>expertFem->magistrale</li>
+    <li>expertFem->artistica</li>
+  </Combat_WoundIncludes.rulePack.rulesStrings>
+  
+</LanguageData>
