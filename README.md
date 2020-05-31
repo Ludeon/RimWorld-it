@@ -14,9 +14,9 @@ TRADUTTORI:
 
 INSTALLAZIONE:
 ------------------
-1- Copiare i contenuti dell'archivio nella directory di installazione in ...\Data\Core\Languages\Italian
-2- Avviare il gioco
-3- Nelle opzioni di gioco, selezionare la lingua 'Italiano'
+1) Copiare i contenuti dell'archivio nella directory di installazione in ...\Data\Core\Languages\Italian
+2) Avviare il gioco
+3) Nelle opzioni di gioco, selezionare la lingua 'Italiano'
 
 SEGNALAZIONE ERRORI:
 ------------------------------
