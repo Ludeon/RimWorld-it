@@ -43,7 +43,7 @@
   <!-- EN: Contents -->
   <TabTransporterContents>Inventario</TabTransporterContents>
   <!-- EN: Contents -->
-  <TabCasketContents>TODO</TabCasketContents>
+  <TabCasketContents>Contenuto</TabCasketContents>
   
   <!-- Bills tab  -->
   <!-- EN: Add bill -->
@@ -83,23 +83,23 @@
   <!-- EN: Recruitment chance -->
   <RecruitmentChance>Probabilità reclutamento</RecruitmentChance>
   <!-- EN: Recruit difficulty factor: {0}\nMood factor: {1}\nCombined base chance: {2} -->
-  <RecruitmentChanceExplanation>TODO</RecruitmentChanceExplanation>
+  <RecruitmentChanceExplanation>Fattore di difficoltà di reclutamento: {0}\nFattore di umore: {1}\nProbabilità di base combinata: {2}</RecruitmentChanceExplanation>
   <!-- EN: \n- - - - - - - - - -\nLast recruitment attempt\nRecruiter: {3}\nNegotiation ability factor: {4}\nOpinion factor: {5} ({6})\nFinal chance for {3}: {7} -->
-  <RecruitmentChanceWithLastRecruiterExplanationPart>TODO</RecruitmentChanceWithLastRecruiterExplanationPart>
+  <RecruitmentChanceWithLastRecruiterExplanationPart>\n- - - - - - - - - -\nUltimo tentativo di reclutamento\nReclutatore: {3}\nFattore di capacità di negoziazione: {4}\nFattore di opinione: {5} ({6})\nProbabilità finale per {3}: {7}</RecruitmentChanceWithLastRecruiterExplanationPart>
   <!-- EN: \nResistance reduction: {0} -->
-  <RecruitmentLastRecruiterResistanceReduceExplanationPart>TODO</RecruitmentLastRecruiterResistanceReduceExplanationPart>
+  <RecruitmentLastRecruiterResistanceReduceExplanationPart>\nRiduzione della resistenza: {0}</RecruitmentLastRecruiterResistanceReduceExplanationPart>
   <!-- EN: Relations gain on release -->
-  <PrisonerReleasePotentialRelationGains>Incr. reputaz. se rilasciato</PrisonerReleasePotentialRelationGains>
+  <PrisonerReleasePotentialRelationGains>Incremento reputazione se rilasciato</PrisonerReleasePotentialRelationGains>
   <!-- EN: The faction relations improvement you will get from the prisoner's faction if you release them. This is affected by the prisoner's health and mental condition. -->
-  <PrisonerReleaseRelationGainsDesc>TODO</PrisonerReleaseRelationGainsDesc>
+  <PrisonerReleaseRelationGainsDesc>Il miglioramento delle relazioni che otterrai dalla fazione del prigioniero se le rilasci. Ciò è influenzato dalla salute e dalle condizioni mentali del prigioniero.</PrisonerReleaseRelationGainsDesc>
   <!-- EN: Prison break interval -->
   <PrisonBreakMTBDays>Intervallo tra evasioni</PrisonBreakMTBDays>
   <!-- EN: The mean number of days of time awake between prison break attempts. Affected by mood, mobility and time since the last prison break.\n\nThis number ignores time spent sleeping, so the actual average prison break interval will usually be longer. -->
-  <PrisonBreakMTBDaysDescription>TODO</PrisonBreakMTBDaysDescription>
+  <PrisonBreakMTBDaysDescription>Il numero medio di giorni tra i tentativi di evasione dalla prigione. Interessato dall'umore, dalla mobilità e dal tempo trascorso dall'ultima tentativo di evasione.\n\nQuesto numero ignora il tempo trascorso a dormire, quindi l'intervallo effettivo sarà generalmente più lungo.</PrisonBreakMTBDaysDescription>
   <!-- EN: Never -->
   <Never>Mai</Never>
   <!-- EN: Not while asleep -->
-  <NotWhileAsleep>TODO</NotWhileAsleep>
+  <NotWhileAsleep>Non mentre dorme</NotWhileAsleep>
   <!-- EN: Slave price -->
   <SlavePrice>Valore come schiavo</SlavePrice>
   <!-- EN: Gets food -->
@@ -139,7 +139,7 @@
   <!-- EN: Injured -->
   <Injured>Ferito</Injured>
   <!-- EN: Untended injury -->
-  <UntendedInjury>TODO</UntendedInjury>
+  <UntendedInjury>Lesioni non intenzionali</UntendedInjury>
   <!-- EN: no health conditions -->
   <NoHealthConditions>nessun problema di salute</NoHealthConditions>
   <!-- EN: Whole body -->
@@ -234,7 +234,7 @@
   <!-- EN: Kidnapped -->
   <Kidnapped>Rapito</Kidnapped>
   <!-- EN: Lent to {FACTION_name}, returns in {1} -->
-  <Lent>TODO</Lent>
+  <Lent>Prestato a {FACTION_name}, ritorna in {1}</Lent>
   <!-- EN: Missing -->
   <Missing>Sparito</Missing>
   <!-- EN: Slave -->
@@ -316,18 +316,18 @@
   <!-- EN: Remove {{0}}x {0} -->
   <RemoveSliderText>Rimuovi {{0}}x {0}</RemoveSliderText>
   <!-- EN: Contained items -->
-  <ContainedItems>TODO</ContainedItems>
+  <ContainedItems>Oggetti contenuti</ContainedItems>
   <!-- EN: Do you really want to remove {0}? -->
   <ConfirmRemoveItemDialog>Vuoi veramente rimuovere {0}?</ConfirmRemoveItemDialog>
   
   <!-- Quests tab -->
   <!-- EN: Dismiss this quest and move it to the historical tab.\n\nThe quest can be un-dismissed at any time. Its effects and expiry times will proceed as normal. You won't recieve notifications about dismissed quests. -->
-  <DismissQuest>TODO</DismissQuest>
+  <DismissQuest>Rifiuta questa missione e spostala nella scheda storica.\n\nLa missione può essere ripristinata in qualsiasi momento. Gli effetti e i tempi di scadenza procederanno normalmente. Non riceverai notifiche sulle missioni respinte.</DismissQuest>
   <!-- EN: Un-dismiss this quest.\n\nThe quest will be returned to the available or active tab, and notifications will be re-enabled. -->
-  <UnDismissQuest>TODO</UnDismissQuest>
+  <UnDismissQuest>Ripristina la missione.\n\nLa missione verrà riportata alla scheda disponibile/attiva e le notifiche verranno riattivate.</UnDismissQuest>
   <!-- EN: This quest is here because it was dismissed.\n\nYou can un-dismiss it until it expires. -->
-  <QuestDismissed>TODO</QuestDismissed>
+  <QuestDismissed>Questa missione è qui perché è stata rifiutata.\n\nÈ possibile annullare la sua dismissione fino alla scadenza.</QuestDismissed>
   <!-- EN: Delete this quest and remove it from the quest list forever. -->
-  <DeleteQuest>TODO</DeleteQuest>
+  <DeleteQuest>Elimina questa missione e rimuovila dall'elenco delle missioni per sempre.</DeleteQuest>
 
 </LanguageData>
