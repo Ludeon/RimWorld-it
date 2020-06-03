@@ -59,11 +59,11 @@
   <ShortCircuitWasHuge>Questa è veramente una grossa esplosione. Wow.</ShortCircuitWasHuge>
 
   <!-- EN: A trade ship is passing nearby.\n\nThey are known as {0}. They are a {1}.\n\n{2} -->
-  <TraderArrival>Una nave mercantile sta passando nelle vicinanze.\n\nSono conosciuti come {0}. Sono {1}.</TraderArrival>
+  <TraderArrival>Una nave mercantile sta passando nelle vicinanze.\n\nSono conosciuti come {0}. Sono {1}.\n\n{2}</TraderArrival>
   <!-- EN: They're affiliated with {FACTION_name}. -->
-  <TraderArrivalFromFaction>TODO</TraderArrivalFromFaction>
+  <TraderArrivalFromFaction>Sono affiliati a {FACTION_name}.</TraderArrivalFromFaction>
   <!-- EN: They are not affiliated with any faction. -->
-  <TraderArrivalNoFaction>TODO</TraderArrivalNoFaction>
+  <TraderArrivalNoFaction>Non sono affiliati a nessuna fazione.</TraderArrivalNoFaction>
 
   <!-- EN: A {PAWN_title} from {1} is passing by. {PAWN_pronoun} is named {PAWN_nameFull}. -->
   <SingleTravelerPassing>{PAWN_gender ? Un : Una : Uno} {PAWN_title} proveniente da {1} è di passaggio. Si chiama {PAWN_nameFull}.</SingleTravelerPassing>
@@ -102,9 +102,9 @@
   <!-- EN: Awoke {0} days ago -->
   <AwokeDaysAgo>Sveglio da {0} giorni</AwokeDaysAgo>
   <!-- EN: Activated {0} days ago -->
-  <ActivatedDaysAgo>TODO</ActivatedDaysAgo>
+  <ActivatedDaysAgo>Attivato {0} giorni fa</ActivatedDaysAgo>
   <!-- EN: Opened {0} days ago -->
-  <OpenedDaysAgo>TODO</OpenedDaysAgo>
+  <OpenedDaysAgo>Aperto {0} giorni fa</OpenedDaysAgo>
   <!-- EN: Psychic drone level: {0} -->
   <PsychicDroneLevel>Livello ronzio psichico: {0}</PsychicDroneLevel>
   <!-- EN: Drone intensifies -->
@@ -152,7 +152,7 @@
   <!-- EN: A caravan from {0} is approaching. They are a {1}. -->
   <LetterTraderCaravanArrival>Una carovana proveniente da {0} sta arrivando. Sono {1}.\n\nResteranno nei paraggi della colonia per qualche giorno prima di ripartire. Puoi attaccarli... ma questo farà infuriare la loro fazione!</LetterTraderCaravanArrival>
   <!-- EN: They will hang around the colony for some time before leaving. You can attack them - but this will anger their faction! -->
-  <LetterCaravanArrivalCommonWarning>TODO</LetterCaravanArrivalCommonWarning>
+  <LetterCaravanArrivalCommonWarning>Rimarranno intorno alla colonia per qualche tempo prima di andarsene. Puoi attaccarli - ma questo farà arrabbiare la loro fazione!</LetterCaravanArrivalCommonWarning>
     
   <!-- Ransom demand -->
   <!-- EN: Ransom demand at {0} -->
@@ -168,13 +168,13 @@
   <!-- EN: Ship found -->
   <EscapeShipFoundLabel>Astronave trovata</EscapeShipFoundLabel>
   <!-- EN: You've reached the coordinates sent by (*Name)Charlon Whitestone(/Name) and discovered the hidden starship.\n\nThe ship's reactor is still in deep hibernation mode, so it can't fly yet. You can start it up by interacting with the computer core.\n\n(*Name)Charlon Whitestone(/Name) warns you that the startup process will take about 15 days, and the energy signature will be detectable from a long distance away. This sort of energy signature indicates interstellar flight capability, and will attract gangs of desperate raiders and swarms of deadly mechanoids.\n\nYou will be assaulted with an intensity you've never seen. Make sure your defenses are prepared first. -->
-  <EscapeShipFound>Hai raggiunto le coordinate inviate da Charlon Whitestone e trovato l'astronave nascosta.\n\nIl reattore di questa nave è ancora in modalità di ibernazione profonda, pertanto non può ancora volare. Puoi riavviarlo interagendo con il nucleo del computer.\n\nCharlon Whitestone ti avverte che il processo di avvio durerà circa 15 giorni e la traccia energetica sarà individuabile da grandi distanze. Questo tipo di traccia energetica indica capacità di volo interstellari ed attirerà bande di assalitori disperati e sciami di meccanoidi mortali.\n\nSarai attaccato con una ferocia che non hai mai visto. Assicurati di preparare prima le tue difese.</EscapeShipFound>
+  <EscapeShipFound>Hai raggiunto le coordinate inviate da (*Name)Charlon Whitestone(/Name) e trovato l'astronave nascosta.\n\nIl reattore di questa nave è ancora in modalità di ibernazione profonda, pertanto non può ancora volare. Puoi riavviarlo interagendo con il nucleo del computer.\n\nCharlon Whitestone ti avverte che il processo di avvio durerà circa 15 giorni e la traccia energetica sarà individuabile da grandi distanze. Questo tipo di traccia energetica indica capacità di volo interstellari ed attirerà bande di assalitori disperati e sciami di meccanoidi mortali.\n\nSarai attaccato con una ferocia che non hai mai visto. Assicurati di preparare prima le tue difese.</EscapeShipFound>
   <!-- EN: You've reached the coordinates sent by (*Name)Charlon Whitestone(/Name) and discovered the hidden starship.\n\nThe ship's reactor is still in deep hibernation mode, so it can't fly yet. You can start it up by interacting with the computer core.\n\n(*Name)Charlon Whitestone(/Name) warns you that the startup process will take about 15 days. -->
-  <EscapeShipFoundPeaceful>TODO</EscapeShipFoundPeaceful>
+  <EscapeShipFoundPeaceful>Hai raggiunto le coordinate inviate da (*Name)Charlon Whitestone(/Name) e scoperto l'astronave nascosta.\n\nIl reattore della nave è ancora in modalità di ibernazione profonda, quindi non può ancora volare. Puoi avviarlo interagendo con il computer.\n\n(*Name)Charlon Whitestone(/Nome) ti avverte che il processo di avvio richiederà circa 15 giorni.</EscapeShipFoundPeaceful>
   <!-- EN: Ship destroyed -->
   <EscapeShipLostLabel>Astronave distrutta</EscapeShipLostLabel>
   <!-- EN: (*Name)Charlon Whitestone(/Name) sends you a message.\n\nHe sees that you've lost control of the landed ship. To stop it falling into the wrong hands, he's been forced to trigger the ship's self-destruct mechanism. The ship is now a crater.\n\nYou'll need to find another way off this planet. -->
-  <EscapeShipLost>Charlon Whitestone ti manda un messaggio.\n\nHa visto che hai perso il controllo dell'astronave. Per impedire che cada nelle mani sbagliate, è stato costretto ad attivare il meccanismo di autodistruzione dell'astronave. L'astronave adesso è un cratere.\n\nDovrai trovare un'altra maniera di lasciare questo pianeta.</EscapeShipLost>
+  <EscapeShipLost>(*Name)Charlon Whitestone(/Name) ti manda un messaggio.\n\nHa visto che hai perso il controllo dell'astronave. Per impedire che cada nelle mani sbagliate, è stato costretto ad attivare il meccanismo di autodistruzione dell'astronave. L'astronave adesso è un cratere.\n\nDovrai trovare un'altra maniera di lasciare questo pianeta.</EscapeShipLost>
 
   <!-- Caravan meeting -->
   <!-- EN: Caravan meeting by {0} -->
@@ -190,7 +190,7 @@
   <!-- EN: no caravan members capable of trading -->
   <CaravanMeeting_TradeIncapable>nessun membro della carovana capace di commerciare</CaravanMeeting_TradeIncapable>
   <!-- EN: need a trader with the title of {0} from {1_name} -->
-  <CaravanMeeting_NoPermit>TODO</CaravanMeeting_NoPermit>
+  <CaravanMeeting_NoPermit>bisogno di un commerciante con il titolo di {0} da {1_name}</CaravanMeeting_NoPermit>
   
   <!-- Caravan request -->
   <!-- EN: Caravan request -->
@@ -216,9 +216,9 @@
 
   <!-- Site no longer hostile -->
   <!-- EN: Quest no longer available -->
-  <LetterLabelSiteNoLongerHostile>Quest non più disponibile</LetterLabelSiteNoLongerHostile>
+  <LetterLabelSiteNoLongerHostile>Missione non più disponibile</LetterLabelSiteNoLongerHostile>
   <!-- EN: Quests no longer available -->
-  <LetterLabelSiteNoLongerHostileMulti>Quest non più disponibili</LetterLabelSiteNoLongerHostileMulti>
+  <LetterLabelSiteNoLongerHostileMulti>Missione non più disponibili</LetterLabelSiteNoLongerHostileMulti>
   <!-- EN: Because you are no longer hostile with {0}, the {1} site is no longer available. -->
   <LetterSiteNoLongerHostile>Dal momento che non sei più ostile con {0}, il sito di {1} non è più disponibile.</LetterSiteNoLongerHostile>
   <!-- EN: Because you are no longer hostile with {0}, the following sites are no longer available -->
@@ -226,21 +226,21 @@
 
   <!-- Quest asker faction hostile -->
   <!-- EN: Quest failed -->
-  <LetterLabelQuestAskerFactionHostile>TODO</LetterLabelQuestAskerFactionHostile>
+  <LetterLabelQuestAskerFactionHostile>Missione fallita</LetterLabelQuestAskerFactionHostile>
   <!-- EN: The quest is now incompletable because {FACTION_name} is hostile. -->
-  <LetterQuestAskerFactionHostile>TODO</LetterQuestAskerFactionHostile>
+  <LetterQuestAskerFactionHostile>La missione non può più essere completata perché {FACTION_name} è ostile.</LetterQuestAskerFactionHostile>
 
   <!-- Quest asker captured -->
   <!-- EN: Quest failed -->
-  <LetterLabelQuestAskerCaptured>TODO</LetterLabelQuestAskerCaptured>
+  <LetterLabelQuestAskerCaptured>Missione fallita</LetterLabelQuestAskerCaptured>
   <!-- EN: The quest is now incompletable because {SUBJECT_definite} has been captured. -->
-  <LetterQuestAskerCaptured>TODO</LetterQuestAskerCaptured>
+  <LetterQuestAskerCaptured>La missione non può più essere completata perché {SUBJECT_definite} è stato catturato.</LetterQuestAskerCaptured>
 
   <!-- Quest asker died -->
   <!-- EN: Quest failed -->
-  <LetterLabelQuestAskerDied>TODO</LetterLabelQuestAskerDied>
+  <LetterLabelQuestAskerDied>Missione Fallita</LetterLabelQuestAskerDied>
   <!-- EN: The quest is now incompletable because {SUBJECT_definite} has died. -->
-  <LetterQuestAskerDied>TODO</LetterQuestAskerDied>
+  <LetterQuestAskerDied>La missione non può più essere completata perché {SUBJECT_definite} è morto.</LetterQuestAskerDied>
 
   <!-- UNUSED -->
   <LetterLabelPsychicDrone>Ronzio psichico</LetterLabelPsychicDrone>
