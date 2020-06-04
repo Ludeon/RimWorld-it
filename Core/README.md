@@ -11,6 +11,7 @@ TRADUTTORI:
 - Rexlord
 - Lunatico9
 - MaBo974
+- StoneNimRod
 
 INSTALLAZIONE:
 ------------------
