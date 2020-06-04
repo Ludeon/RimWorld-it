@@ -35,7 +35,7 @@
   <!-- EN: {0} worn by {1_nameFull} deteriorated away to nothing. -->
   <MessageWornApparelDeterioratedAway>{0} indossat{0_gender ? o : a : o} da {1} si è deteriorato del tutto.</MessageWornApparelDeterioratedAway>
   <!-- EN: {0} has deteriorated away in storage. -->
-  <MessageDeterioratedAway>TODO</MessageDeterioratedAway>
+  <MessageDeterioratedAway>{0} si è deteriorato nel deposito.</MessageDeterioratedAway>
 
   <!-- EN: {0} has begun. -->
   <MessageSeasonBegun>La stagione {0} sta cominciando.</MessageSeasonBegun>
@@ -46,10 +46,10 @@
   <!-- EN: You need a powered orbital trade beacon to trade with a ship. -->
   <MessageNeedBeaconToTradeWithShip>Hai bisogno di un faro orbitale commerciale attivo per commerciare con un'astronave.</MessageNeedBeaconToTradeWithShip>
   <!-- EN: Caller must have the title of {0_label} or higher. -->
-  <MessageNeedRoyalTitleToCallWithShip>TODO</MessageNeedRoyalTitleToCallWithShip>
+  <MessageNeedRoyalTitleToCallWithShip>Deve avere il titolo di {0_label} o superiore per chiamare.</MessageNeedRoyalTitleToCallWithShip>
 
   <!-- EN: {0} has been destroyed. -->
-  <MessageConditionCauserDespawned>TODO</MessageConditionCauserDespawned>
+  <MessageConditionCauserDespawned>{0} è stato distrutto.</MessageConditionCauserDespawned>
   
   <!-- EN: Bill complete: {0}. -->
   <MessageBillComplete>Ordine completato: {0}.</MessageBillComplete>
@@ -102,7 +102,7 @@
   <!-- EN: Must designate abandoned artificial structures. -->
   <MessageMustDesignateClaimable>Devi selezionare strutture artificiali abbandonate.</MessageMustDesignateClaimable>
   <!-- EN: You must defeat a mech cluster before you can deconstruct it. -->
-  <MessageMustDesignateDeconstructibleMechCluster>TODO</MessageMustDesignateDeconstructibleMechCluster>
+  <MessageMustDesignateDeconstructibleMechCluster>Devi sconfiggere un gruppo di Mechanoidi prima di poterlo smantellare.</MessageMustDesignateDeconstructibleMechCluster>
   <!-- EN: Must designate rough stone surfaces. -->
   <MessageMustDesignateSmoothableSurface>Devi selezionare superfici di roccia grezza.</MessageMustDesignateSmoothableSurface>
   <!-- EN: Nothing can remove thick roofs. -->
@@ -161,13 +161,13 @@
   <MessageGaveBirth>{0} ha partorito.</MessageGaveBirth>
   
   <!-- EN: {PAWN_labelShort} won't be able to use the psylink while {PAWN_pronoun} has zero psychic sensitivity. -->
-  <MessagePsylinkNoSensitivity>TODO</MessagePsylinkNoSensitivity>
+  <MessagePsylinkNoSensitivity>{PAWN_labelShort} non sarà in grado di usare lo psylink mentre {PAWN_pronoun} non ha sensibilità psichica.</MessagePsylinkNoSensitivity>
   <!-- EN: {PAWN_labelShort} has lost a {1} implant level due to {2}. -->
-  <MessageLostImplantLevelFromHediff>TODO</MessageLostImplantLevelFromHediff>
+  <MessageLostImplantLevelFromHediff>{PAWN_labelShort} ha perso un {1} livello di impianto a causa di {2}.</MessageLostImplantLevelFromHediff>
   <!-- EN: {PAWN_labelShort} has suffered {1} points of brain damage due to {2}. -->
-  <MessageReceivedBrainDamageFromHediff>TODO</MessageReceivedBrainDamageFromHediff>
+  <MessageReceivedBrainDamageFromHediff>{PAWN_labelShort} ha subito {1} punti di danno cerebrale a causa di {2}.</MessageReceivedBrainDamageFromHediff>
   <!-- EN: {PAWN_labelShort} has exceeded the normal limit of neural heat. -->
-  <MessageWentOverPsychicEntropyLimit>TODO</MessageWentOverPsychicEntropyLimit>
+  <MessageWentOverPsychicEntropyLimit>{PAWN_labelShort} ha superato il limite normale di calore neurale.</MessageWentOverPsychicEntropyLimit>
 
   <!-- EN: {NAMER_nameFull} has named {1} {NAMEE_nameFull} after being nuzzled. -->
   <MessageNuzzledPawnGaveNameTo>{NAMER_nameFull} ha chiamato {1} {NAMEE_nameFull} dopo essere stat{NAMER_gender ? o : a : o} coccolat{NAMER_gender ? o : a : o}.</MessageNuzzledPawnGaveNameTo>
@@ -296,7 +296,7 @@
   <MessagePermanentWoundHealed>{2_gender ? Il : La : Lo} {2} di {PAWN_labelShort} è guarit{2_gender ? o : a : o}. Causa: {0}</MessagePermanentWoundHealed>
   
   <!-- EN: [PAWN_nameDef] has recovered and decided to leave. -->
-  <MessageRescueeDidntJoin>TODO</MessageRescueeDidntJoin>
+  <MessageRescueeDidntJoin>[PAWN_nameDef] si è ripreso e ha deciso di andarsene.</MessageRescueeDidntJoin>
   
   <!-- EN: Some transport pods are unreachable. -->
   <MessageTransporterUnreachable>Alcune capsule di trasporto sono irraggiungibili.</MessageTransporterUnreachable>
@@ -306,14 +306,14 @@
   <!-- EN: The loading process has been canceled because one of the transport pods has been destroyed. -->
   <MessageTransportersLoadCanceled_TransporterDestroyed>Il processo di caricamento è stato annullato perché una delle capsule di trasporto è stata distrutta.</MessageTransportersLoadCanceled_TransporterDestroyed>
   <!-- EN: The loading process has been canceled because the shuttle has been destroyed. -->
-  <MessageTransporterSingleLoadCanceled_TransporterDestroyed>TODO</MessageTransporterSingleLoadCanceled_TransporterDestroyed>
+  <MessageTransporterSingleLoadCanceled_TransporterDestroyed>Il processo di caricamento è stato annullato perché la navetta è stata distrutta.</MessageTransporterSingleLoadCanceled_TransporterDestroyed>
   <!-- EN: The loading process has been canceled because one of the pod launchers has been destroyed. -->
   <MessageTransportersLoadCanceled_FuelingPortGiverDeSpawned>Il processo di caricamento è stato annullato perché uno dei lanciacapsule è stato distrutto.</MessageTransportersLoadCanceled_FuelingPortGiverDeSpawned>
   
   <!-- EN: Assigned items and people will now be loaded into the transport pods. -->
   <MessageTransportersLoadingProcessStarted>I tuoi coloni caricheranno gli oggetti selezionati nelle capsule di trasporto.</MessageTransportersLoadingProcessStarted>
   <!-- EN: Assigned items and people will now be loaded into the shuttle. -->
-  <MessageTransporterSingleLoadingProcessStarted>TODO</MessageTransporterSingleLoadingProcessStarted>
+  <MessageTransporterSingleLoadingProcessStarted>Gli oggetti e le persone assegnati verranno ora caricati sulla navetta.</MessageTransporterSingleLoadingProcessStarted>
   
   <!-- EN: Your transport pods have arrived. -->
   <MessageTransportPodsArrived>Le tue capsule di trasporto sono arrivate.</MessageTransportPodsArrived>
@@ -325,7 +325,7 @@
   <!-- EN: Transport pod loading complete. Launch when ready. -->
   <MessageFinishedLoadingTransporters>I tuoi coloni hanno completato il caricamento delle capsule di trasporto.</MessageFinishedLoadingTransporters>
   <!-- EN: Shuttle is loaded with required cargo and can launch when ready. -->
-  <MessageFinishedLoadingTransporterSingle>TODO</MessageFinishedLoadingTransporterSingle>
+  <MessageFinishedLoadingTransporterSingle>La navetta è caricata con il carico necessario ed è pronto a partire.</MessageFinishedLoadingTransporterSingle>
 
   <!-- EN: Your {1} can't finish loading the transport pods because some items or people became unavailable ({2_labelShort}). -->
   <MessageCantLoadMoreIntoTransporters>{1_gender ? Il : La : Lo} {1_gender ? tuo : tua : tuo} {1} non può completare il caricamento delle capsule di trasporto perché alcuni oggetti o persone non sono più disponibili ({2_labelShort}).</MessageCantLoadMoreIntoTransporters>
@@ -342,17 +342,17 @@
   <MessageCantBanishLastColonist>Non puoi esiliare l'ultimo colono.</MessageCantBanishLastColonist>
 
   <!-- EN: Cannot equip: {0}. -->
-  <MessageCantEquipCustom>TODO</MessageCantEquipCustom>
+  <MessageCantEquipCustom>Impossibile equipaggiare: {0}</MessageCantEquipCustom>
   <!-- EN: Cannot equip: {1_labelShort} is incapable of violence. -->
   <MessageCantEquipIncapableOfViolence>Impossibile equipaggiare: {1_labelShort} è incapace di violenza.</MessageCantEquipIncapableOfViolence>
   <!-- EN: Cannot equip: Incapable. -->
   <MessageCantEquipIncapableOfManipulation>Impossibile equipaggiare: incosciente.</MessageCantEquipIncapableOfManipulation>
   <!-- EN: Cannot wear: {1_labelShort} is missing required body parts. -->
-  <MessageCantWearApparelMissingBodyParts>TODO</MessageCantWearApparelMissingBodyParts>
+  <MessageCantWearApparelMissingBodyParts>Impossibile indossare: {1_labelShort} mancano le parti del corpo richieste.</MessageCantWearApparelMissingBodyParts>
   <!-- EN: This person refuses to remove this. -->
-  <MessageCantUnequipLockedApparel>TODO</MessageCantUnequipLockedApparel>
+  <MessageCantUnequipLockedApparel>Questa persona rifiuta di rimuoverlo.</MessageCantUnequipLockedApparel>
   <!-- EN: Cannot wear: This would replace apparel {1_labelShort} refues to remove. -->
-  <MessageWouldReplaceLockedApparel>TODO</MessageWouldReplaceLockedApparel>
+  <MessageWouldReplaceLockedApparel>Impossibile indossare: questo sostituisce l'indumento {1_labelShort} che si rifiuta di rimuovere.</MessageWouldReplaceLockedApparel>
   
   <!-- EN: Because they are bonded, slaughtering {DESIGNATED_labelShort} will make {BONDED_labelShort} unhappy. -->
   <MessageSlaughteringBondedAnimal>Dal momento che sono legati, uccidere {DESIGNATED_labelShort} renderà {BONDED_labelShort} triste.</MessageSlaughteringBondedAnimal>
@@ -360,7 +360,7 @@
   <!-- EN: {0} has run out of food ({PAWN_label}). -->
   <MessageCaravanRanOutOfFood>{0} ha terminato il cibo ({PAWN_label}).</MessageCaravanRanOutOfFood>
   <!-- EN: {PAWN_definite}'s corpse has been picked up by the caravan. It is heavy and may immobilize the caravan, but can be left behind in the caravan items tab. -->
-  <MessageCaravanDeathCorpseAddedToInventory>TODO</MessageCaravanDeathCorpseAddedToInventory>
+  <MessageCaravanDeathCorpseAddedToInventory>Il cadavere di {PAWN_definite} è stato prelevato dalla carovana. È pesante e può immobilizzare la carovana, ma può essere lasciato indietro nella scheda degli elementi della carovana.</MessageCaravanDeathCorpseAddedToInventory>
 
   <!-- EN: To form a caravan, select your own colony or a site where you have people. -->
   <MessageSelectOwnBaseToFormCaravan>Per formare una carovana seleziona la tua colonia o un sito dove hai delle persone.</MessageSelectOwnBaseToFormCaravan>
@@ -374,11 +374,11 @@
   <!-- EN: {0} from {1} are attacking your {2}. -->
   <MessageDefendersAttacking>{0} provenienti da {1} stanno attaccando i tuoi {2}.</MessageDefendersAttacking>
   <!-- EN: Mechanoids have been assembled and will defend their cluster. -->
-  <MessageMechanoidsAssembled>TODO</MessageMechanoidsAssembled>
+  <MessageMechanoidsAssembled>I meccanoidi sono stati assemblati e difenderanno la loro base.</MessageMechanoidsAssembled>
   <!-- EN: Remaining mechanoids to assemble -->
-  <MessageMechanoidsLeftToAssemble>TODO</MessageMechanoidsLeftToAssemble>
+  <MessageMechanoidsLeftToAssemble>Meccanoidi rimanenti da assemblare</MessageMechanoidsLeftToAssemble>
   <!-- EN: Mech drop beacon has summoned reinforcements in drop pods nearby. -->
-  <MessageMechanoidsReinforcementsDrop>TODO</MessageMechanoidsReinforcementsDrop>
+  <MessageMechanoidsReinforcementsDrop>Il faro mech-drop ha chiamato rinforzi con capsule di trasporto nelle vicinanze.</MessageMechanoidsReinforcementsDrop>
 
   <!-- EN: To self-tend, {1_labelShort} must also be assigned to Doctor work. -->
   <MessageSelfTendUnsatisfied>Per curarsi da solo, {1_labelShort} deve anche ricoprire il ruolo di Medico.</MessageSelfTendUnsatisfied>
@@ -408,7 +408,7 @@
   <!-- EN: {0} have woken up. -->
   <MessageSleepingPawnsWokenUp>{0} si sono svegliat{0_gender ? i : e : i}.</MessageSleepingPawnsWokenUp>
   <!-- EN: Mech cluster buildings have been defeated. -->
-  <MessageMechClusterDefeated>TODO</MessageMechClusterDefeated>
+  <MessageMechClusterDefeated>Gli edifici della base dei meccanoidi sono stati sconfitti.</MessageMechClusterDefeated>
 
   <!-- EN: Item produced: {0}. -->
   <MessageCompSpawnerSpawnedItem>Oggetto creato: {0}.</MessageCompSpawnerSpawnedItem>
@@ -470,13 +470,13 @@
   <!-- EN: used {ITEM_labelShort} on {TARGET_labelShort} -->
   <GoodwillChangedReason_UsedItem>usato {ITEM_labelShort} su {TARGET_labelShort}</GoodwillChangedReason_UsedItem>
   <!-- EN: used {0} on {1} -->
-  <GoodwillChangedReason_UsedAbility>TODO</GoodwillChangedReason_UsedAbility>
+  <GoodwillChangedReason_UsedAbility>usato {0} su {1}</GoodwillChangedReason_UsedAbility>
   <!-- EN: harvested {0} -->
   <GoodwillChangedReason_RemovedBodyPart>raccolto {0}</GoodwillChangedReason_RemovedBodyPart>
   <!-- EN: removed {0} -->
-  <GoodwillChangedReason_RemovedImplant>TODO</GoodwillChangedReason_RemovedImplant>
+  <GoodwillChangedReason_RemovedImplant>rimosso {0}</GoodwillChangedReason_RemovedImplant>
   <!-- EN: downgraded {0} -->
-  <GoodwillChangedReason_DowngradedImplant>TODO</GoodwillChangedReason_DowngradedImplant>
+  <GoodwillChangedReason_DowngradedImplant>declassato {0}</GoodwillChangedReason_DowngradedImplant>
   <!-- EN: needlessly installed {0} -->
   <GoodwillChangedReason_NeedlesslyInstalledWorseBodyPart>installato inutilmente {0}</GoodwillChangedReason_NeedlesslyInstalledWorseBodyPart>
   <!-- EN: captured {1_labelShort} -->
@@ -486,7 +486,7 @@
   <!-- EN: {1_labelShort} died -->
   <GoodwillChangedReason_PawnDied>{1_labelShort} morto</GoodwillChangedReason_PawnDied>
   <!-- EN: {0_labelShort} stripped -->
-  <GoodwillChangedReason_PawnStripped>TODO</GoodwillChangedReason_PawnStripped>
+  <GoodwillChangedReason_PawnStripped>{0_labelShort} rimosso</GoodwillChangedReason_PawnStripped>
   <!-- EN: traded -->
   <GoodwillChangedReason_Traded>scambiato</GoodwillChangedReason_Traded>
   <!-- EN: attacked a caravan -->
@@ -502,17 +502,17 @@
   <!-- EN: fulfilled a trade offer -->
   <GoodwillChangedReason_FulfilledTradeRequest>soddisfatto un'offerta commerciale</GoodwillChangedReason_FulfilledTradeRequest>
   <!-- EN: finished a quest -->
-  <GoodwillChangedReason_FinishedQuest>TODO</GoodwillChangedReason_FinishedQuest>
+  <GoodwillChangedReason_FinishedQuest>terminato una missione</GoodwillChangedReason_FinishedQuest>
   <!-- EN: {PAWN_labelShort} used {CULPRIT} -->
-  <GoodwillChangedReason_UsedForbiddenThing>TODO</GoodwillChangedReason_UsedForbiddenThing>
+  <GoodwillChangedReason_UsedForbiddenThing>{PAWN_labelShort} usa {CULPRIT}</GoodwillChangedReason_UsedForbiddenThing>
   <!-- EN: sold {0_labelShort} -->
-  <GoodwillChangedReason_SoldPawn>TODO</GoodwillChangedReason_SoldPawn>
+  <GoodwillChangedReason_SoldPawn>venduto {0_labelShort}</GoodwillChangedReason_SoldPawn>
   <!-- EN: euthanized {PAWN_labelShort} -->
-  <GoodwillChangedReason_EuthanizedPawn>TODO</GoodwillChangedReason_EuthanizedPawn>
+  <GoodwillChangedReason_EuthanizedPawn>ucciso {PAWN_labelShort}</GoodwillChangedReason_EuthanizedPawn>
   <!-- EN: requested military aid -->
-  <GoodwillChangedReason_RequestedMilitaryAid>TODO</GoodwillChangedReason_RequestedMilitaryAid>
+  <GoodwillChangedReason_RequestedMilitaryAid>richiesto aiuto militare</GoodwillChangedReason_RequestedMilitaryAid>
   <!-- EN: requested trader caravan -->
-  <GoodwillChangedReason_RequestedTrader>TODO</GoodwillChangedReason_RequestedTrader>
+  <GoodwillChangedReason_RequestedTrader>carovana richiesta</GoodwillChangedReason_RequestedTrader>
 
   <!-- EN: {0} accept your gift but they don't appreciate it. -->
   <MessageGiftGivenButNotAppreciated>{0} accetta il tuo dono ma non lo apprezza.</MessageGiftGivenButNotAppreciated>
@@ -555,7 +555,7 @@
   <MessageEnterCooldownBlocksEntering>Non puoi rientrare per altri {0} giorni.</MessageEnterCooldownBlocksEntering>
 
   <!-- EN: {0_labelShort} can now freely use "{1}". -->
-  <MessagePermitCooldownFinished>TODO</MessagePermitCooldownFinished>
+  <MessagePermitCooldownFinished>{0_labelShort} ora può usare liberamente "{1}".</MessagePermitCooldownFinished>
 
   <!-- EN: {PREDATOR} is hunting {PREY_definite} ({PREY_kindBase}) for food! -->
   <MessagePredatorHuntingPlayerAnimal>{PREDATOR} sta cacciando {PREY_definite} per nutrirsi!</MessagePredatorHuntingPlayerAnimal>
@@ -566,11 +566,11 @@
   <MessagePrisonerResistanceBroken_RecruitAttempsWillBegin>Inizierà il tentativo di reclutamento.</MessagePrisonerResistanceBroken_RecruitAttempsWillBegin>
 
   <!-- EN: Another mod with the package ID {0} is already active. Deactivate {1} before trying to activate this. -->
-  <MessageModWithPackageIdAlreadyEnabled>TODO</MessageModWithPackageIdAlreadyEnabled>
+  <MessageModWithPackageIdAlreadyEnabled>Un'altra mod con packageId {0} è già attiva. Disattiva {1} prima di provare ad attivarla.</MessageModWithPackageIdAlreadyEnabled>
   <!-- EN: Disable all mods before using this tool. -->
   <MessageDisableModsBeforeCleaningTranslationFiles>Disabilita tutte le mod prima di usare questo tool.</MessageDisableModsBeforeCleaningTranslationFiles>
   <!-- EN: Unpack and then delete all compressed translation files for this language before using this tool. -->
-  <MessageUnpackBeforeCleaningTranslationFiles>TODO</MessageUnpackBeforeCleaningTranslationFiles>
+  <MessageUnpackBeforeCleaningTranslationFiles>Decomprimere e quindi eliminare tutti i file di traduzione compressi per questa lingua prima di utilizzare questo strumento.</MessageUnpackBeforeCleaningTranslationFiles>
   <!-- EN: Done. Affected folders: {0} -->
   <MessageTranslationFilesCleanupDone>Fatto. Cartelle interessate: {0}</MessageTranslationFilesCleanupDone>
 
@@ -578,43 +578,43 @@
   <MessageCantCleanupTranslationFilesBeucaseOfXmlError>Uno dei file di traduzione ({0}) non può essere caricato. Devono essere prima risolte tutte le analisi errori XML.</MessageCantCleanupTranslationFilesBeucaseOfXmlError>
 
   <!-- EN: Warning: Capturing {PAWN_nameDef} will anger {PAWN_possessive} faction {PAWN_factionName}. -->
-  <MessageCapturingWillAngerFaction>Catturare {PAWN_nameDef} manderà in collera la sua fazione {PAWN_factionName}.</MessageCapturingWillAngerFaction>
+  <MessageCapturingWillAngerFaction>Attenzione: Catturare {PAWN_nameDef} manderà in collera la sua fazione {PAWN_factionName}.</MessageCapturingWillAngerFaction>
 
   <!-- EN: Warning: Stripping {PAWN_nameDef} will anger {PAWN_factionName}. -->
-  <MessageStrippingWillAngerFaction>TODO</MessageStrippingWillAngerFaction>
+  <MessageStrippingWillAngerFaction>Avviso: L'uccisione di {PAWN_nameDef} manderà in collera la sua fazione {PAWN_factionName}.</MessageStrippingWillAngerFaction>
 
   <!-- EN: Cannot shoot in melee. -->
   <MessageCantShootInMelee>Non può sparare in mischia.</MessageCantShootInMelee>
 
   <!-- EN: None of your {0} can accept this quest now. -->
-  <MessageNoColonistCanAcceptQuest>TODO</MessageNoColonistCanAcceptQuest>
+  <MessageNoColonistCanAcceptQuest>Nessuno dei tuoi {0} ora può accettare questa missione.</MessageNoColonistCanAcceptQuest>
   <!-- EN: Cannot accept this quest. -->
-  <MessageCannotAcceptQuest>TODO</MessageCannotAcceptQuest>
+  <MessageCannotAcceptQuest>Non si può accettare questa missione.</MessageCannotAcceptQuest>
   <!-- EN: {0_definite} has accepted a quest: {1} -->
-  <MessageQuestAccepted>TODO</MessageQuestAccepted>
+  <MessageQuestAccepted>{0_definite} ha accettato una missione: {1}</MessageQuestAccepted>
   <!-- EN: {0} is leaving. -->
-  <MessagePawnLeaving>TODO</MessagePawnLeaving>
+  <MessagePawnLeaving>{0} se ne sta andando.</MessagePawnLeaving>
   <!-- EN: {0} are leaving. -->
-  <MessagePawnsLeaving>TODO</MessagePawnsLeaving>
+  <MessagePawnsLeaving>{0} se ne stanno andando.</MessagePawnsLeaving>
 
   <!-- EN: The monument has been destroyed because you've built a disallowed building inside. -->
-  <MessageMonumentDestroyedBecauseOfDisallowedBuilding>TODO</MessageMonumentDestroyedBecauseOfDisallowedBuilding>
+  <MessageMonumentDestroyedBecauseOfDisallowedBuilding>Il monumento è stato distrutto perché hai costruito un edificio non consentito all'interno.</MessageMonumentDestroyedBecauseOfDisallowedBuilding>
 
   <!-- EN: Cannot apply: No reachable, un-reserved research bench available. -->
-  <MessageNoResearchBenchForTechprint>TODO</MessageNoResearchBenchForTechprint>
+  <MessageNoResearchBenchForTechprint>Non applicabile: nessun banco di ricerca raggiungibile, e non riservato.</MessageNoResearchBenchForTechprint>
 
   <!-- EN: No valid destination found for {0} -->
-  <NoValidDestinationFound>TODO</NoValidDestinationFound>
+  <NoValidDestinationFound>Nessuna destinazione valida trovata per {0}</NoValidDestinationFound>
   
   <!-- Research -->
   <!-- EN: Warning: Research will not begin until you build a research bench. -->
-  <MessageResearchMenuWithoutBench>TODO</MessageResearchMenuWithoutBench>
+  <MessageResearchMenuWithoutBench>Attenzione: la ricerca non inizierà finché non si costruisce un banco di ricerca.</MessageResearchMenuWithoutBench>
 
   <!-- EN: {0_indefinite} has triggered a proximity activator. -->
-  <MessageActivatorProximityTriggered>TODO</MessageActivatorProximityTriggered>
+  <MessageActivatorProximityTriggered>{0_indefinite} ha innescato un attivatore di prossimità.</MessageActivatorProximityTriggered>
 
   <!-- EN: {0_label} is currently hidden. -->
-  <MessageCannotSelectInvisibleStat>TODO</MessageCannotSelectInvisibleStat>
+  <MessageCannotSelectInvisibleStat>{0_label} è attualmente nascosto.</MessageCannotSelectInvisibleStat>
 
   <!-- UNUSED -->
   <MessagePartyCalledOff>La festa è stata annullata.</MessagePartyCalledOff>

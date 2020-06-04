@@ -17,7 +17,7 @@
   <!-- EN: Version {0} -->
   <VersionIndicator>Versione {0}</VersionIndicator>
   <!-- EN: Game version -->
-  <GameVersionIndicator>TODO</GameVersionIndicator>
+  <GameVersionIndicator>Versione del gioco</GameVersionIndicator>
   <!-- EN: development build -->
   <DevelopmentBuildLower>build sviluppata</DevelopmentBuildLower>
   <!-- EN: Compiled {0} -->
@@ -27,7 +27,7 @@
   
   <!-- ToCommaList() -->
   <!-- EN: {0} and {1} -->
-  <ToCommaListAnd>TODO</ToCommaListAnd>
+  <ToCommaListAnd>{0} e {1}</ToCommaListAnd>
   
   <!-- General-use words -->
   <!-- EN: Yes -->
@@ -35,9 +35,9 @@
   <!-- EN: No -->
   <No>No</No>
   <!-- EN: new -->
-  <New>TODO</New>
+  <New>nuovo</New>
   <!-- EN: Gender -->
-  <Gender>TODO</Gender>
+  <Gender>Genere</Gender>
   <!-- EN: min -->
   <min>min</min>
   <!-- EN: max -->
@@ -53,7 +53,7 @@
   <!-- EN: radius -->
   <radius>raggio</radius>
   <!-- EN: expired -->
-  <expired>TODO</expired>
+  <expired>scaduto</expired>
   <!-- EN: duration (days) -->
   <durationDays>durata (giorni)</durationDays>
   <!-- EN: interval (days) -->
@@ -79,9 +79,9 @@
   <!-- EN: Average -->
   <Average>Medio</Average>
   <!-- EN: Cause -->
-  <Cause>TODO</Cause>
+  <Cause>Causa</Cause>
   <!-- EN: etc -->
-  <Etc>TODO</Etc>
+  <Etc>ecc.</Etc>
   <!-- EN: ${0} -->
   <MoneyFormat>{0} €</MoneyFormat>
 
@@ -97,17 +97,17 @@
   <MeatHumanDesc>Carne cruda. Può essere cucinata in un pasto o mangiata cruda, sebbene la maggior parte delle persone detesti l'idea.</MeatHumanDesc>
 
   <!-- EN: techprint ({PROJECT_label}) -->
-  <TechprintLabel>TODO</TechprintLabel>
+  <TechprintLabel>schema ({PROJECT_label})</TechprintLabel>
   <!-- EN: This is a techprint for the research project '{PROJECT_label}'.
 \nThe physical form of techprints can range from scraps of paper with diagrams, all the way to advanced self-contained teaching machines. Regardless of form, they play the same role. They give your researchers the confidence that an idea is possible, and a rough idea of the designs used in more established societies.
 \nYour researchers need the foundational knowledge offered by techprints to know where to start on a given technology. Only after enough techprints have been applied can your researchers work out the fine details of how to make use of the technology in your particular situation.
 \nApplying techprints to a satisfied project fulfills half the remaining research progress. In addition, researchers always gain a boost to their intellectual skills when applying techprints, even on already-completed technologies. -->
-  <TechprintDesc>TODO</TechprintDesc>
+  <TechprintDesc>Questo è uno schema per il progetto di ricerca '{PROJECT_label}'.\nLa forma fisica degli schemi può variare da pezzi di carta con diagrammi, fino a macchinari didattici avanzati. Indipendentemente dalla forma, svolgono lo stesso ruolo. Offrono ai tuoi ricercatori un'idea approssimativa dei progetti utilizzati nelle società più affermate.\nI tuoi ricercatori hanno bisogno delle conoscenze di base offerte dagli schemi per sapere da dove iniziare una determinata tecnologia. Solo dopo aver applicato un numero sufficiente di schemi, i tuoi ricercatori possono elaborare i dettagli su come utilizzare la tecnologia nella tua particolare situazione.\nApplicando uno schema aggiuntivo ad un progetto soddisfatto completerà la metà dei progressi rimanenti della ricerca. Inoltre, i ricercatori ottengono sempre una spinta alle loro capacità intellettuali quando applicano gli schemi, anche su tecnologie già completate.</TechprintDesc>
   <!-- EN: Unlocks -->
-  <Unlocks>TODO</Unlocks>
+  <Unlocks>Sblocca</Unlocks>
 
   <!-- EN: {0} corpse -->
-  <CorpseLabel>Corpo di {0}</CorpseLabel>
+  <CorpseLabel>Cadavere di {0}</CorpseLabel>
   <!-- EN: Dead body of a {0}. -->
   <CorpseDesc>Cadavere di {0_gender ? un : una : uno} {0}.</CorpseDesc>
   <!-- EN: {1_label} (dead) -->
@@ -162,6 +162,6 @@
   <East>Est</East>
 
   <!-- EN: applying techprint ({0}) -->
-  <ApplyingTechprint>TODO</ApplyingTechprint>
+  <ApplyingTechprint>applicando schemi ({0})</ApplyingTechprint>
   
 </LanguageData>
