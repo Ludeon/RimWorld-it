@@ -28,7 +28,7 @@
   <!-- EN: Recovered from incompatible or corrupted mods errors -->
   <RecoveredFromErrorsDialogTitle>Ripristino errori da mod incompatibili o corrotte</RecoveredFromErrorsDialogTitle>
   <!-- EN: It seems that some of the active mods were causing errors.\n\nThey were incompatible with each other, designed for a different version of RimWorld, or corrupted.\n\nAll mods have been disabled and can be activated again in the mods dialog. -->
-  <RecoveredFromErrorsText>Sembra che alcune delle mod attive abbiano causato errori.\n\nErano incompatibili tra di loro, sviluppate per una versione differente di RimWorld o corrotte.\n\nTutte le mod sono state disattivate e possono essere riattivate dalla finestra delle mod.</RecoveredFromErrorsText>
+  <RecoveredFromErrorsText>Sembra che alcune delle mod attive abbiano causato degli errori.\n\nErano incompatibili tra di loro, sviluppate per una versione differente di RimWorld o corrotte.\n\nTutte le mod sono state disattivate e possono essere riattivate dalla finestra delle mod.</RecoveredFromErrorsText>
   
   <!-- Errors during loading -->
   <!-- EN: Error while loading assets -->
@@ -66,7 +66,7 @@
   <!-- EN: Loading all active mods -->
   <LoadingAllActiveMods>Caricamento tutte mod attive</LoadingAllActiveMods>
   <!-- EN: Loading defs -->
-  <LoadingDefs>Caricamento defs</LoadingDefs>
+  <LoadingDefs>Caricamento definizioni</LoadingDefs>
   <!-- EN: Loading assets -->
   <LoadingAssets>Caricamento risorse</LoadingAssets>
   <!-- EN: Initializing -->
@@ -126,7 +126,7 @@
   <!-- EN: Installed, but not active -->
   <ContentInstalledButNotActive>Installato, ma non attivo</ContentInstalledButNotActive>
   <!-- EN: Not installed -->
-  <ContentNotInstalled>Non Installato</ContentNotInstalled>
+  <ContentNotInstalled>Non installato</ContentNotInstalled>
   
   <!-- Player faction naming -->
   <!-- EN: Since it looks like you'll be here for a while, {0} thinks that you should give your faction a name. What should your faction be called? -->
@@ -222,7 +222,7 @@
   <!-- EN: SUSPENDED -->
   <SuspendedAllCaps>SOSPESO</SuspendedAllCaps>
   <!-- EN: Repeat: -->
-  <RepeatCount>Ripeti: </RepeatCount>
+  <RepeatCount>Ripeti:</RepeatCount>
   <!-- EN: Forever -->
   <Forever>Per sempre</Forever>
   <!-- EN: Details -->
@@ -253,11 +253,11 @@
   <!-- EN: Requires {0} {1} -->
   <BillRequires>Richiede {0} {1}</BillRequires>
   <!-- EN: Requires {0} nutrition -->
-  <BillRequiresNutrition>Richiede {0} cibo</BillRequiresNutrition>
+  <BillRequiresNutrition>Richiede {0} nutrimento</BillRequiresNutrition>
   <!-- EN: Note: Small-volume ingredients like gold require {0}x as much. -->
-  <BillRequiresMayVary>Nota: gli ingredienti di piccolo volume come oro richiedono x{0} di più.</BillRequiresMayVary>
+  <BillRequiresMayVary>Nota: gli ingredienti di piccolo volume come oro richiedono {0} di più.</BillRequiresMayVary>
   <!-- EN: This is a small-volume ingredient. This means that each 'unit' is only 1/{0} as much as a normal-volume ingredient. So, to fill the same ingredient requirement, you'll need {0}x as much as usual. -->
-  <ThisIsSmallVolume>Questo è un ingrediente di piccolo volume. Questo significa che ogni 'unità' conta per 1/{0} di un ingrediente di volume normale. Perciò, per soddisfare gli stessi requisiti, te ne servirà x{0} più del normale.</ThisIsSmallVolume>
+  <ThisIsSmallVolume>Questo è un ingrediente di piccolo volume. Questo significa che ogni 'unità' conta per 1/{0} di un ingrediente di volume normale. Perciò, per soddisfare gli stessi requisiti, te ne servirà {0} più del normale.</ThisIsSmallVolume>
   <!-- EN: ingredients -->
   <UsableIngredients>ingredienti</UsableIngredients>
   <!-- EN: To {0} -->
@@ -293,7 +293,7 @@
   <!-- EN: Accuracy -->
   <Accuracy>Precisione</Accuracy>
   <!-- EN: Burst shot count -->
-  <BurstShotCount>Numero di colpi di raffica</BurstShotCount>
+  <BurstShotCount>Numero di colpi singola raffica</BurstShotCount>
   <!-- EN: Warmup -->
   <WarmupTime>Tempo di ricarica</WarmupTime>
   <!-- EN: Melee warmup -->
@@ -351,7 +351,7 @@
   <!-- EN: Lifespan -->
   <LifeSpan>Aspettativa di vita</LifeSpan>
   <!-- EN: Nutrition -->
-  <Nutrition>Valore nutritivo</Nutrition>
+  <Nutrition>Valore nutrizionale</Nutrition>
   <!-- EN: Recreation -->
   <Joy>Piacere</Joy>
   <!-- EN: Food quality -->
@@ -363,7 +363,7 @@
   <!-- EN: Diet -->
   <Diet>Dieta</Diet>
   <!-- EN: Nutrition need per day -->
-  <NutritationEatenPerDay>Bisogno nutrizionale al giorno</NutritationEatenPerDay>
+  <NutritationEatenPerDay>Fabbisogno giornaliero</NutritationEatenPerDay>
   <!-- EN: Leather type -->
   <LeatherType>Tipo di pelle</LeatherType>
   <!-- EN: Body size -->
@@ -375,7 +375,7 @@
   <!-- EN: Covers -->
   <Covers>Copertura</Covers>
   <!-- EN: Created at -->
-  <CreatedAt>Creato presso</CreatedAt>
+  <CreatedAt>Realizzato al</CreatedAt>
   <!-- EN: Layer -->
   <Layer>Strato</Layer>
   <!-- EN: Cover effectiveness -->
@@ -451,15 +451,15 @@
   <!-- EN: Success rate multiplier -->
   <SurgerySuccessChanceFactor>Moltiplicatore tasso di successo</SurgerySuccessChanceFactor>
   <!-- EN: Death chance on fail -->
-  <SurgeryDeathOnFailChance>Probabilità di morte su fallimento</SurgeryDeathOnFailChance>
+  <SurgeryDeathOnFailChance>Mortalità in caso di fallimento</SurgeryDeathOnFailChance>
   <!-- EN: Work speed governed by -->
   <WorkSpeedStat>Velocità di lavoro regolata da</WorkSpeedStat>
   <!-- EN: Output quantity governed by -->
   <EfficiencyStat>Quantità prodotta regolata da</EfficiencyStat>
   <!-- EN: {0} skill required -->
-  <SkillRequiredToBuild>Abilità '{0}' richiesta</SkillRequiredToBuild>
+  <SkillRequiredToBuild>Abilità {0} richiesta</SkillRequiredToBuild>
   <!-- EN: Requires this level of {0} in order to build. -->
-  <SkillRequiredToBuildExplanation>Richiede questo livello di {0} per essere prodotto.</SkillRequiredToBuildExplanation>
+  <SkillRequiredToBuildExplanation>Richiede questo livello di {0} per poterlo costruire.</SkillRequiredToBuildExplanation>
   <!-- EN: Nuzzle interval -->
   <NuzzleInterval>Frequenza strofinamento</NuzzleInterval>
   <!-- EN: How often an animal will nuzzle friendly colonists, on average.\n\nNuzzling is a behavior shared by many animal species, where the animal presses its nose or muzzle against a friend as a sign of affection.\nMost humans find this cute and it will leave them in a good mood for a period of time. -->
@@ -499,9 +499,9 @@
   <!-- EN: ground -->
   <TargetGround>terreno</TargetGround>
   <!-- EN: Click to learn more. -->
-  <ClickToLearnMore>Clicca per saperne di più.</ClickToLearnMore>
+  <ClickToLearnMore>Premi per saperne di più.</ClickToLearnMore>
   <!-- EN: Click to view factions. -->
-  <ClickToViewFactions>Clicca per vedere le fazioni.</ClickToViewFactions>
+  <ClickToViewFactions>Premi per vedere le fazioni.</ClickToViewFactions>
   <!-- EN: meditation focus types -->
   <MeditationFocuses>tipi di meditazione</MeditationFocuses>
   <!-- EN: Unlocks meditation focus types -->
@@ -529,7 +529,7 @@
   
   <!-- Trade -->
   <!-- EN: Positive numbers buy.\nNegative numbers sell. -->
-  <PositiveBuysNegativeSells>Numero positivo acquisti.\nNumero negativo vendi.</PositiveBuysNegativeSells>
+  <PositiveBuysNegativeSells>Positivo acquisti.\nNegativo vendi.</PositiveBuysNegativeSells>
   <!-- EN: Price you pay to buy this. -->
   <BuyPriceDesc>Prezzo che paghi per acquistare.</BuyPriceDesc>
   <!-- EN: Price you receive for selling this. -->
@@ -543,7 +543,7 @@
   <!-- EN: Accept -->
   <AcceptButton>Accetta</AcceptButton>
   <!-- EN: Reset -->
-  <ResetButton>Ricomincia</ResetButton>
+  <ResetButton>Reimposta</ResetButton>
   <!-- EN: Cancel -->
   <CancelButton>Annulla</CancelButton>
   <!-- EN: Close -->
@@ -633,7 +633,7 @@
   <!-- EN: None of the assigned colonists are able to reach the {0}. -->
   <CaravanItemIsUnreachableSingle>Nessuno dei coloni assegnati è in grado di raggiungere il {0}.</CaravanItemIsUnreachableSingle>
   <!-- EN: None of the assigned colonists are able to reach {0}x {1}. -->
-  <CaravanItemIsUnreachableMulti>Nessuno dei coloni assegnati è in grado di raggiungere {0} x{1}.</CaravanItemIsUnreachableMulti>
+  <CaravanItemIsUnreachableMulti>Nessuno dei coloni assegnati è in grado di raggiungere {0} {1}.</CaravanItemIsUnreachableMulti>
   <!-- EN: The caravan can't carry that much. -->
   <TooBigCaravanMassUsage>La carovana non può trasportare così tanto.</TooBigCaravanMassUsage>
   <!-- EN: Includes carried items and equipped items. Carrying less than the maximum gives a speed bonus. -->
@@ -675,13 +675,13 @@
   <!-- EN: The number of days until this item starts to rot based on the average temperature in this area. -->
   <DaysUntilRotTip>Il numero di giorni prima che questo oggetto cominci a marcire a seconda della temperatura media in quest'area.</DaysUntilRotTip>
   <!-- EN: How much nutrition this food provides.\n\nFor reference: adult person needs {0} nutrition per day. -->
-  <ItemNutritionTip>Quanto nutrimento fornisce questo cibo.\n\nPer riferimento: un adulto necessita di {0} nutrimento giornaliero.</ItemNutritionTip>
+  <ItemNutritionTip>Quale valore nutrizionale fornisce questo cibo.\n\nPer riferimento: una persona adulta ha un fabbisogno giornaliero di {0}.</ItemNutritionTip>
   <!-- EN: This animal can graze food from the environment instead of eating carried food. Grazing is only possible in some biomes and temperature ranges. -->
   <AnimalCanGrazeTip>Questo animale può pascolare nei dintorni invece di mangiare il cibo trasportato. Il pascolo è possibile solo in alcuni biomi ed intervalli di temperature.</AnimalCanGrazeTip>
   <!-- EN: Nutrition foraged per day. The actual amount foraged is also affected by biome forageability.\n\n{0} -->
   <NutritionForagedPerDayTip>Nutrimento giornaliero procacciato. La quantità effettiva di cibo procacciato dipende anche dalla procacciabilità del bioma.\n\n{0}</NutritionForagedPerDayTip>
   <!-- EN: Nutrition eaten per day. For reference, simple meals have {0} nutrition. -->
-  <NutritionEatenPerDayTip>Nutrimento consumato al giorno. Per riferimento, pasti semplici hanno {0} nutrimento.\n\nPuò mangiare: {2}\n\nLegenda:\n{1}.</NutritionEatenPerDayTip>
+  <NutritionEatenPerDayTip>Valore del fabbisogno giornaliero. Per riferimento, i pasti semplici hanno un valore nutrizionale di {0}.</NutritionEatenPerDayTip>
   <!-- EN: Can eat -->
   <CanEat>Può mangiare</CanEat>
   <!-- EN: Legend -->
@@ -741,7 +741,7 @@
   <!-- EN: Faction type -->
   <FactionType>Tipo fazione</FactionType>
   <!-- EN: Total body size -->
-  <TotalBodySize>Taglia totale del copro</TotalBodySize>
+  <TotalBodySize>Taglia totale del corpo</TotalBodySize>
 
   <!-- Split caravan -->
   <!-- EN: Split caravan -->
@@ -775,7 +775,7 @@
   <!-- EN: There is no path between the shuttle and the {0}. -->
   <TransporterSingleItemIsUnreachableSingle>Non ci sono percorsi tra la navetta e {0}.</TransporterSingleItemIsUnreachableSingle>
   <!-- EN: There is no path between the transport pods and {0}x {1}. -->
-  <TransporterItemIsUnreachableMulti>Non ci sono percorsi tra le capsule di trasporto e {0}x {1}.</TransporterItemIsUnreachableMulti>
+  <TransporterItemIsUnreachableMulti>Non ci sono percorsi tra le capsule di trasporto e {0} {1}.</TransporterItemIsUnreachableMulti>
   <!-- EN: There is no path between the shuttle and {0}x {1}. -->
   <TransporterSingleItemIsUnreachableMulti>Non ci sono percorsi tra la navetta e {0}x {1}.</TransporterSingleItemIsUnreachableMulti>
   
@@ -815,21 +815,21 @@
   <!-- EN: Outfit is in use by {0}. -->
   <OutfitInUse>Vestiario utilizzato da {0}.</OutfitInUse>
   <!-- EN: No outfit selected -->
-  <NoOutfitSelected>Nessun vestiario selezionato.</NoOutfitSelected>
+  <NoOutfitSelected>Nessun vestiario selezionato</NoOutfitSelected>
   
   <!-- Drug policy management -->
   <!-- EN: Drug policy -->
-  <DrugPolicy>Regola droghe</DrugPolicy>
+  <DrugPolicy>Politica sulle droghe</DrugPolicy>
   <!-- EN: Select policy... -->
-  <SelectDrugPolicy>Scegli regola...</SelectDrugPolicy>
+  <SelectDrugPolicy>Scegli politica...</SelectDrugPolicy>
   <!-- EN: New policy -->
-  <NewDrugPolicy>Nuova regola</NewDrugPolicy>
+  <NewDrugPolicy>Nuova politica</NewDrugPolicy>
   <!-- EN: Delete policy... -->
-  <DeleteDrugPolicy>Cancellare regola...</DeleteDrugPolicy>
+  <DeleteDrugPolicy>Cancella politica...</DeleteDrugPolicy>
   <!-- EN: Drugs policy is in use by {0}. -->
-  <DrugPolicyInUse>La regola sulle droghe è utilizzato da {0}.</DrugPolicyInUse>
+  <DrugPolicyInUse>Questa politica sulle droghe è in effetto su {0}.</DrugPolicyInUse>
   <!-- EN: Food restriction is in use by {0}. -->
-  <FoodRestrictionInUse>Le limitazione sul cibo sono utilizzate da {0}.</FoodRestrictionInUse>
+  <FoodRestrictionInUse>Questa limitazione sul cibo è in effetto su {0}.</FoodRestrictionInUse>
   <!-- EN: Social drugs -->
   <SocialDrugs>Droghe sociali</SocialDrugs>
   <!-- EN: No drugs -->
@@ -839,7 +839,7 @@
   <!-- EN: Unrestricted -->
   <Unrestricted>Nessuna limitazione</Unrestricted>
   <!-- EN: No drug policy selected -->
-  <NoDrugPolicySelected>Nessuna regola sulle droghe selezionata</NoDrugPolicySelected>
+  <NoDrugPolicySelected>Nessuna politica sulle droghe selezionata</NoDrugPolicySelected>
   <!-- EN: Add drug... -->
   <AddDrug>Aggiungi droga...</AddDrug>
   <!-- EN: Drug -->
@@ -851,7 +851,7 @@
   <!-- EN: Only if mood below -->
   <MoodThresholdColumnLabel>Solo se l'umore è al di sotto di</MoodThresholdColumnLabel>
   <!-- EN: Only if recreation below -->
-  <JoyThresholdColumnLabel>Solo se il divertimento è al di sotto di</JoyThresholdColumnLabel>
+  <JoyThresholdColumnLabel>Solo se lo svago è al di sotto di</JoyThresholdColumnLabel>
   <!-- EN: Take to inventory -->
   <TakeToInventoryColumnLabel>Prendi da inventario</TakeToInventoryColumnLabel>
   <!-- EN: (no drugs) -->
@@ -887,7 +887,7 @@
 
   <!-- Food restriction management -->
   <!-- EN: Food restriction -->
-  <FoodRestriction>Limitazione cibo</FoodRestriction>
+  <FoodRestriction>Limitazione sul cibo</FoodRestriction>
   <!-- EN: Lavish -->
   <FoodRestrictionLavish>Prelibato</FoodRestrictionLavish>
   <!-- EN: Fine -->
@@ -901,13 +901,13 @@
   <!-- EN: Nothing -->
   <FoodRestrictionNothing>Niente</FoodRestrictionNothing>
   <!-- EN: Select food restriction -->
-  <SelectFoodRestriction>Seleziona limitazione cibo</SelectFoodRestriction>
+  <SelectFoodRestriction>Seleziona limitazione</SelectFoodRestriction>
   <!-- EN: New food restriction -->
-  <NewFoodRestriction>Nuova limitazione cibo</NewFoodRestriction>
+  <NewFoodRestriction>Nuova limitazione</NewFoodRestriction>
   <!-- EN: Delete food restriction -->
-  <DeleteFoodRestriction>Cancella limitazione cibo</DeleteFoodRestriction>
+  <DeleteFoodRestriction>Cancella limitazione</DeleteFoodRestriction>
   <!-- EN: No food restriction selected -->
-  <NoFoodRestrictionSelected>Nessuna limitazione cibo</NoFoodRestrictionSelected>
+  <NoFoodRestrictionSelected>Nessuna limitazione sul cibo selezionata</NoFoodRestrictionSelected>
 
   <!-- Medical settings -->
   <!-- EN: Defaults -->

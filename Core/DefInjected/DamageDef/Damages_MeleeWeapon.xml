@@ -4,7 +4,7 @@
   <!-- EN: bite -->
   <Bite.label>morso</Bite.label>
   <!-- EN: {0} has been bitten to death. -->
-  <Bite.deathMessage>{0} ha subito un morso mortale.</Bite.deathMessage>
+  <Bite.deathMessage>{0} ha subito un morso letale.</Bite.deathMessage>
   
   <!-- EN: blunt -->
   <Blunt.label>percosse</Blunt.label>
@@ -19,7 +19,7 @@
   <!-- EN: cut -->
   <Cut.label>taglio</Cut.label>
   <!-- EN: {0} has been cut to death. -->
-  <Cut.deathMessage>{0} è {PAWN_gender ? stato : stata} {PAWN_gender ? ucciso : uccisa} con un taglio.</Cut.deathMessage>
+  <Cut.deathMessage>{0} è {PAWN_gender ? morto : morta} {PAWN_gender ? squartato : squartata}.</Cut.deathMessage>
   
   <!-- EN: blunt -->
   <Poke.label>percosse</Poke.label>
@@ -27,14 +27,14 @@
   <Poke.deathMessage>{0} è {PAWN_gender ? stato : stata} {PAWN_gender ? picchiato : picchiata} a morte.</Poke.deathMessage>
   
   <!-- EN: scratch -->
-  <Scratch.label>dilaniamento</Scratch.label>
+  <Scratch.label>graffio</Scratch.label>
   <!-- EN: {0} has been torn to death. -->
   <Scratch.deathMessage>{0} è {PAWN_gender ? morto : morta} {PAWN_gender ? dilaniato : dilaniata}.</Scratch.deathMessage>
   
   <!-- EN: toxic scratch -->
-  <ScratchToxic.label>TODO</ScratchToxic.label>
+  <ScratchToxic.label>graffio velenoso</ScratchToxic.label>
   <!-- EN: {0} has been torn to death. -->
-  <ScratchToxic.deathMessage>TODO</ScratchToxic.deathMessage>
+  <ScratchToxic.deathMessage>{0} è {PAWN_gender ? morto : morta} {PAWN_gender ? dilaniato : dilaniata}.</ScratchToxic.deathMessage>
   
   <!-- EN: stab -->
   <Stab.label>pugnalata</Stab.label>
@@ -44,6 +44,6 @@
   <!-- EN: toxic bite -->
   <ToxicBite.label>morso velenoso</ToxicBite.label>
   <!-- EN: {0} has been bitten to death. -->
-  <ToxicBite.deathMessage>{0} ha subito un morso mortale.</ToxicBite.deathMessage>
+  <ToxicBite.deathMessage>{0} ha subito un morso letale.</ToxicBite.deathMessage>
   
 </LanguageData>
