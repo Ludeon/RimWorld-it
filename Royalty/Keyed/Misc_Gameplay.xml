@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- Royalty and throne -->
+  <!-- EN: Satisfies title -->
+  <ThroneMaxSatisfiedTitle>Befriedigt Titel</ThroneMaxSatisfiedTitle>
+  <!-- EN: ({0} impressiveness) -->
+  <ThroneRoomImpressivenessInfo>({0} Eindruck)</ThroneRoomImpressivenessInfo>
+  <!-- EN: Throne must be placed indoors. -->
+  <ThroneMustBePlacedInside>Der Thron muss drinnen aufgestellt werden.</ThroneMustBePlacedInside>
+  <!-- EN: Minimum title ({FACTION_name}): {TITLE} -->
+  <MinimumRoyalTitleInspectString>Minimaler Titel ({FACTION_name}): {TITLE}</MinimumRoyalTitleInspectString>
+  <!-- EN: Trading here requires title: {0} -->
+  <RequiresTradePermission>Der Handel hier erfordert Titel: {0}</RequiresTradePermission>
+  <!-- EN: Personal bedroom (partner allowed) -->
+  <RequirementPersonalBedroom>Persönliches Schlafgemach (Partner erlaubt)</RequirementPersonalBedroom>
+  
+  <!-- Generated neurotrainers -->
+  <!-- EN: psytrainer ({0}) -->
+  <PsycastNeurotrainerLabel>Psytrainer ({0})</PsycastNeurotrainerLabel>
+  <!-- EN: Use psytrainer to learn {0} psycast -->
+  <PsycastNeurotrainerUseLabel>Benutze Psytrainer, um die Psykraft '{0}' zu lernen</PsycastNeurotrainerUseLabel>
+  <!-- EN: A one-use super-dose of mechanites which trains a specific psychic power.\n\nThe dose is administered through the orbit of the eye. Once released into the brain, the mechanites form knowledge of a specific ability, transmuting themselves into neural tissue as needed. -->
+  <PsycastNeurotrainerDescription>Eine einmalig verwendbare Superdosis von Mechaniten, die eine bestimmte psychische Kraft freischalten.\n\nDie Dosis wird über die Augenhöhlen verabreicht. Einmal im Gehirn freigesetzt, wandeln sich die Mechaniten bei Bedarf in Nervengewebe um und vermitteln dabei dem Subjekt das Wissen über eine Kraft.</PsycastNeurotrainerDescription>
+  <!-- EN: {USER_labelShort} used neurotrainer to learn the {1} power. -->
+  <AbilityNeurotrainerUsed>{USER_labelShort} hat einen Neurotrainer verwendet, um die Kraft '{1}' zu lernen.</AbilityNeurotrainerUsed>
+  <!-- EN: Requires psylink -->
+  <PsycastNeurotrainerNoPsylink>Benötigt Psylink</PsycastNeurotrainerNoPsylink>
+  <!-- EN: {USER_labelShort} already knows {1}. -->
+  <PsycastNeurotrainerAbilityAlreadyLearned>{USER_labelShort} hat {1} schon gelernt.</PsycastNeurotrainerAbilityAlreadyLearned>
+
+  <!-- EN: whoever accepted the quest will receive {1} {0_royalFavorLabel} from {0_name} -->
+  <Reward_RoyalFavor>dem Kolonisten, der die Quest angenommen hat, {1} {0_royalFavorLabel} von der Fraktion '{0_name}' gewährt</Reward_RoyalFavor>
+  <!-- EN: you may choose one of the participating {2} to receive {1} {0_royalFavorLabel} from {0_name} -->
+  <Reward_RoyalFavor_ChoosePawn>kannst du einen der teilnehmenden {2} auswählen, um {1} {0_royalFavorLabel} von der Fraktion '{0_name}' zu erhalten</Reward_RoyalFavor_ChoosePawn>
+  
+  <!-- Ship landing beacons -->
+  <!-- EN: Not usable -->
+  <NotUsable>Unbrauchbar</NotUsable>
+  <!-- EN: unpowered -->
+  <Unpowered>nicht mit Strom betrieben</Unpowered>
+  <!-- EN: blocked by roof -->
+  <BlockedByRoof>blockiert durch Dach</BlockedByRoof>
+  <!-- EN: Too close to other beacon -->
+  <TooCloseToOtherBeacon>Zu dicht an einer anderen Bake</TooCloseToOtherBeacon>
+  
+  <!-- Meditation -->
+  <!-- EN: Psyfocus -->
+  <Psyfocus>Psyfokus</Psyfocus>
+  <!-- EN: Psyfocus -->
+  <PsyfocusLabelGizmo>Psyfokus</PsyfocusLabelGizmo>
+  <!-- EN: Psyfocus is a special type of mental structuring which is necessary to use psychic powers. Psyfocus dissipates over time, and must be built by regular meditation. Losing all psyfocus makes someone unable to use psychics, but has no other consequences.\n\nHigher levels of psyfocus permit higher-level powers, but also increase the rate of psyfocus dissipation -->
+  <PsyfocusDesc>Psyfokus ist eine spezielle Art von mentaler Neustrukturierung, die zum Wirken von psychischen Kräften notwendig ist. Psyfokus baut sich im Laufe der Zeit automatisch ab und muss durch regelmäßige Meditation erneuert werden. Der Verlust des gesamten Psyfokus bewirkt, dass keine Kräfte mehr gewirkt werden können, hat aber sonst keine weiteren Folgen.\n\nJe höher der Psyfokus, desto mehr Kräfte höherer Stufen können gewirkt werden und desto schneller baut sich der Psyfokus wieder ab</PsyfocusDesc>
+  <!-- EN: {0}-{1}% -->
+  <PsyfocusLevelInfoRange>{0}-{1}%</PsyfocusLevelInfoRange>
+  <!-- EN: Up to level {0} powers. -->
+  <PsyfocusLevelInfoPsycasts>Bis zu Kräfte der Stufe {0}.</PsyfocusLevelInfoPsycasts>
+  <!-- EN: Psyfocus falls at {0} per day. -->
+  <PsyfocusLevelInfoFallRate>Psyfokus fällt um {0} pro Tag.</PsyfocusLevelInfoFallRate>
+  <!-- EN: Meditation focus strength for {LASTUSER_labelShort} -->
+  <UserMeditationFocusStrength>Meditationsfokusstärke für {LASTUSER_labelShort}</UserMeditationFocusStrength>
+  <!-- EN: Focus effect impacted by -->
+  <MeditationFocusImpacted>Fokuseffekt beeinflusst durch</MeditationFocusImpacted>
+  <!-- EN: {1} per nearby animus stone (max {0}) -->
+  <MeditationFocusPerAnimusStoneAbstract>{1} pro nahem Animus-Stein (max. {0})</MeditationFocusPerAnimusStoneAbstract>
+  <!-- EN: {2} per nearby animus stone ({0} / {1}) -->
+  <MeditationFocusPerAnimusStone>{2} pro nahem Animus-Stein ({0} / {1})</MeditationFocusPerAnimusStone>
+  <!-- EN: Per nearby animus stone {2}, nature shrine {1} (max {0}) -->
+  <MeditationFocusPerAnimusStoneAndShrineAbstract>Pro nahem Animus-Stein {2}, Naturschrein {1} (max. {0})</MeditationFocusPerAnimusStoneAndShrineAbstract>
+  <!-- EN: Per nearby animus stone {3}, nature shrine {2} ({0} / {1}) -->
+  <MeditationFocusPerAnimusStoneAndShrine>Pro nahem Animus-Stein {3}, Naturschrein {2} ({0} / {1})</MeditationFocusPerAnimusStoneAndShrine>
+  <!-- EN: Max {1} per nearby sculpture depending on quality (max {0}) -->
+  <MeditationFocusPerSculptureAbstract>Max. {1} pro naher Skulptur je nach Qualität (max. {0})</MeditationFocusPerSculptureAbstract>
+  <!-- EN: Max {2} per nearby sculpture depending on quality ({0} / {1}) -->
+  <MeditationFocusPerSculpture>Max. {2} pro naher Skulptur je nach Qualität ({0} / {1})</MeditationFocusPerSculpture>
+  <!-- EN: Per nearby grave {1} if empty, {2} for human corpse (up to {0}) -->
+  <MeditationFocusPerGraveAbstract>Pro nahem Grab, {1} falls leer, {2} für menschliche Leiche (bis zu {0})</MeditationFocusPerGraveAbstract>
+  <!-- EN: Per nearby grave {2} if empty, {3} for human corpse ({0} / {1}) -->
+  <MeditationFocusPerGrave>Pro nahem Grab, {2} falls leer, {3} für menschliche Leiche ({0} / {1})</MeditationFocusPerGrave>
+  <!-- EN: {1} per nearby lit flame source (up to {0}) -->
+  <MeditationFocusPerFlameAbstract>{1} pro naher brennender Flammenquelle (bis zu {0})</MeditationFocusPerFlameAbstract>
+  <!-- EN: {2} per nearby lit flame source ({0} / {1}) -->
+  <MeditationFocusPerFlame>{2} pro naher brennender Flammenquelle ({0} / {1})</MeditationFocusPerFlame>
+  <!-- EN: Psyfocus gain rate: {0}/d -->
+  <PsyfocusPerDayOfMeditation>Psyfokuszunahmerate: {0}/d</PsyfocusPerDayOfMeditation>
+  <!-- EN: Desired psyfocus -->
+  <DesiredPsyfocus>Gewünschter Psyfokus</DesiredPsyfocus>
+  <!-- EN: Click to set desired psyfocus. -->
+  <DesiredPsyfocusDesc>Klicke hier, um den gewünschten Psyfokus einzustellen.</DesiredPsyfocusDesc>
+
+  <!-- Abilities -->
+  <!-- EN: must be drafted. -->
+  <AbilityDisabledUndrafted>muss im Kampfmodus sein.</AbilityDisabledUndrafted>
+  <!-- EN: ability on cooldown. It will be available in {0}. -->
+  <AbilityOnCooldown>Fähigkeit klingt gerade ab. Sie ist in {0} wieder einsatzbereit.</AbilityOnCooldown>
+  <!-- EN: ability already queued. -->
+  <AbilityAlreadyQueued>Fähigkeit bereits in der Warteschlange.</AbilityAlreadyQueued>
+  <!-- EN: no heat to dump. -->
+  <AbilityNoEntropyToDump>keine Hitze zum Transferieren verfügbar.</AbilityNoEntropyToDump>
+  <!-- EN: Ability ready: {0} -->
+  <AbilityReadyLabel>Fähigkeit bereit: {0}</AbilityReadyLabel>
+  <!-- EN: {0_nameDef} is ready to use {1}. -->
+  <AbilityReadyText>{0_nameDef} ist bereit, {1} zu verwenden.</AbilityReadyText>
+  
+  <!-- EN: Initiate a speech from the throne. {ORGANIZER_labelShort} will go to {ORGANIZER_possessive} throne and call all colonists to listen to a speech there. If all goes well, listeners will feel inspired, and gain respect for {ORGANIZER_labelShort}. If it goes poorly, the speech will do social damage. The outcome depends on {ORGANIZER_labelShort}'s social abilities. -->
+  <AbilitySpeechTooltip>Initiiere eine Thronrede. {ORGANIZER_labelShort} wird zu {ORGANIZER_possessive}em Thron gehen, alle Kolonisten zu sich rufen und eine Rede halten. Wenn alles gut geht, werden die Zuhörer inspiriert und Respekt für {ORGANIZER_labelShort} empfinden. Bei Misserfolg wird die Rede sozialen Schaden anrichten. Das Ergebnis hängt von {ORGANIZER_labelShort}'s sozialen Fähigkeiten ab.</AbilitySpeechTooltip>
+  <!-- EN: no throne assigned. -->
+  <AbilitySpeechDisabledNoThroneAssigned>kein Thron zugewiesen.</AbilitySpeechDisabledNoThroneAssigned>
+  <!-- EN: throne is not accessible. -->
+  <AbilitySpeechDisabledNoThroneIsNotAccessible>Thron ist nicht erreichbar.</AbilitySpeechDisabledNoThroneIsNotAccessible>
+  <!-- EN: throne not usable because it is undignified. -->
+  <AbilitySpeechDisabledNoThroneUndignified>Thron nicht nutzbar, weil er unwürdig ist.</AbilitySpeechDisabledNoThroneUndignified>
+  <!-- EN: already giving a speech. -->
+  <AbilitySpeechDisabledAlreadyGivingSpeech>hält bereits eine Rede.</AbilitySpeechDisabledAlreadyGivingSpeech>
+  <!-- EN: another gathering is in progress. -->
+  <AbilitySpeechDisabledAnotherGatheringInProgress>eine andere Versammlung findet gerade statt.</AbilitySpeechDisabledAnotherGatheringInProgress>
+  <!-- EN: Next speech ready in -->
+  <AbilitySpeechCooldown>Nächste Rede möglich in</AbilitySpeechCooldown>
+  <!-- EN: Outcome chances -->
+  <AbilitySpeechPossibleOutcomes>Erfolgsaussichten</AbilitySpeechPossibleOutcomes>
+  <!-- EN: {ORGANIZER_labelShort}'s {1} stat -->
+  <AbilitySpeechStatInfo>{ORGANIZER_labelShort}'s {1}</AbilitySpeechStatInfo>
+
+  <!-- EN: Total meditation today: {0} (progress multiplier {1}) -->
+  <TotalMeditationToday>Heutige Meditation insgesamt: {0} (Fortschrittsmultiplikator {1})</TotalMeditationToday>
+  <!-- EN: progress {0} -->
+  <ProgressToNextSubplant>Fortschritt {0}</ProgressToNextSubplant>
+  <!-- EN: Begin linking ritual -->
+  <BeginLinkingRitualFloatMenu>Beginne rituelle Bindung</BeginLinkingRitualFloatMenu>
+  <!-- EN: Need {0} {1} here (have {2}) -->
+  <BeginLinkingRitualNeedSubplants>{0}x {1} benötigt (nur {2} vorhanden)</BeginLinkingRitualNeedSubplants>
+  <!-- EN: Need {0} psylink focus type -->
+  <BeginLinkingRitualNeedFocus>{0}er Psylinkfokus-Typ benötigt</BeginLinkingRitualNeedFocus>
+  <!-- EN: Need a free, reachable spot within 3 cells for linking -->
+  <BeginLinkingRitualNeedLinkSpot>Freier, erreichbarer Platz von mindestens 3 Zellen benötigt</BeginLinkingRitualNeedLinkSpot>
+  <!-- EN: Linking ritual completed -->
+  <LetterLabelLinkingRitualCompleted>Rituelle Bindung abgeschlossen</LetterLabelLinkingRitualCompleted>
+  <!-- EN: {PAWN_labelShort} has completed the linking ritual with {LINKABLE_labelShort}.\n\n{PAWN_pronoun} now has an upgraded psylink, permitting the use of new psychic powers. -->
+  <LetterTextLinkingRitualCompleted>{PAWN_labelShort} hat die rituelle Bindung mit {LINKABLE_gender ? dem : der} {LINKABLE_labelShort} abgeschlossen.\n\n{PAWN_pronoun} verfügt nun über einen verbesserten Psylink und darf neue psychische Kräfte verwenden.</LetterTextLinkingRitualCompleted>
+
+  <!-- EN: Land shuttle here -->
+  <LandHere>Shuttle hier landen</LandHere>
+  <!-- EN: Destination is out of range. -->
+  <MessageShuttleDestinationIsTooFar>Ziel liegt außerhalb der Reichweite.</MessageShuttleDestinationIsTooFar>
+
+  <!-- EN: Do bestowing ceremony -->
+  <BeginCeremony>Verleihungszeremonie abhalten</BeginCeremony>
+  <!-- EN: The bestower is offended that {PAWN_definite}'s throneroom does not satisfy the requirements of the title of {TITLE}. The bestowing ceremony has been cancelled. -->
+  <BestowingCeremonyThroneroomRequirementsNotSatisfied>Der Titelverleiher ist empört, dass der Thronsaal von {PAWN_definite} nicht den Titelanforderungen {PAWN_gender ? eines : einer} {TITLE}{PAWN_gender ? s : } entspricht. Die Verleihungszeremonie wurde abgesagt.</BestowingCeremonyThroneroomRequirementsNotSatisfied>
+
+  <!-- EN: Not all required cargo is loaded yet! -->
+  <ShuttleRequiredItemsNotSatisfied>Die erforderliche Fracht wurde noch nicht vollständig verladen!</ShuttleRequiredItemsNotSatisfied>
+</LanguageData>
