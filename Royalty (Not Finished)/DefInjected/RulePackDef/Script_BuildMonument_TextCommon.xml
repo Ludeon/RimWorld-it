@@ -28,46 +28,29 @@
     <li>failLetterEndingCommon->You have failed the quest '[resolvedQuestName]'.\n\nYour relations with [asker_faction_name] have decreased by [goodwillPenalty].</li>
   -->
   <QuestConstructionDescriptionCommon.rulePack.rulesStrings>
-    <li>questDescription(askerIsNull==true)->Eine mysteriöse Nachricht ist eingetroffen. Es scheint, als wurde sie von einer Maschinen-Persona gesendet, die sich weigert, ihren Namen preiszugeben. In der Nachricht wird von dir verlangt, ein ganz bestimmtes Denkmal zu errichten.\n\n[commonEnding]</li>
-    <li>questDescription(asker_factionLeader==True)->[asker_faction_leaderTitle] [asker_nameFull] der Fraktion '[asker_faction_name]' ersucht dich, ein Denkmal zu errichten, [buildReason].\n\n[commonEnding]</li>
-    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_royalTitleInCurrentFaction] [asker_nameFull] der Fraktion '[asker_faction_name]' ersucht dich, ein Denkmal zu errichten, [buildReason].\n\n[commonEnding]</li>
-    <li>asker2(askerIsNull==true)->der Archotech</li>
+    <li>questDescription(askerIsNull==true)->È arrivato un messaggio misterioso. Sembra che sia stato trasmesso da un persona-macchina che rifiuta di nominarsi. Il messaggio chiede di costruire un monumento molto specifico.\n\n[commonEnding]</li>
+    <li>questDescription(asker_factionLeader==True)->[asker_faction_leaderTitle] [asker_nameFull] di [asker_faction_name] ti chiede di costruire un monumento, [buildReason].\n\n[commonEnding]</li>
+    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_royalTitleInCurrentFaction] [asker_nameFull] di [asker_faction_name] ti chiede di costruire un monumento, [buildReason].\n\n[commonEnding]</li>
+    <li>asker2(askerIsNull==true)->l'archotech</li>
     <li>asker2(asker_factionLeader==True)->[asker_nameDef]</li>
-    <li>asker2(asker_royalInCurrentFaction==True)->der [asker_royalTitleInCurrentFaction]</li>
-    <li>buildReason(p=0.5)->um [den_Dingen] [asker_possessive]es [PersonFamilyMasGen] zu gedenken</li>
-    <li>buildReason(p=0.5)->um [den_Dingen] [asker_possessive]er [PersonFamilyFemGen] zu gedenken</li>
-    <li>buildReason(p=0.25)->um [asker_possessive]en eigenen [PersonalCharacteristicsDat] zu gedenken</li>
-    <li>buildReason(p=0.25)->um [asker_possessive]em eigenen [PersonalCharacteristicMas] zu gedenken</li>
-    <li>buildReason(p=0.25)->um [asker_possessive]er eigenen [PersonalCharacteristicFem] zu gedenken</li>
-    <li>buildReason(p=0.25)->um [asker_possessive]em eigenen [PersonalCharacteristicNeu] zu gedenken</li>
-    <li>buildReason(p=0.25)->um die [PersonalCharacteristics] [asker_possessive]es Erzfeindes zu beleidigen</li>
-    <li>buildReason(p=0.25)->um den [PersonalCharacteristicMas] [asker_possessive]es Erzfeindes zu beleidigen</li>
-    <li>buildReason(p=0.25)->um die [PersonalCharacteristicFem] [asker_possessive]es Erzfeindes zu beleidigen</li>
-    <li>buildReason(p=0.25)->um das [PersonalCharacteristicNeu] [asker_possessive]es Erzfeindes zu beleidigen</li>
-    <li>buildReason->um den Leuten die Angst vor [der_Angst] zu nehmen</li>
-    <li>buildReason->um der Welt zu zeigen, wie [AdjectiveBadass] [asker_pronoun] ist</li>
-    <li>buildReason->um [asker_possessive]en [asker_faction_pawnsPlural] zu gedenken, die im Kampf gefallen sind</li>
-    <li>buildReason(p=0.5)->um [asker_possessive]en [PersonFamilyMasAcc] zu ehren</li>
-    <li>buildReason(p=0.5)->um [asker_possessive]e [PersonFamilyFemAcc] zu ehren</li>
-    <li>buildReason->um die Arbeit aller [PersonJobs] dieser Welt zu ehren</li>
-    <li>buildReason->um die Herrlichkeit [asker_possessive][glory] in alle Welt zu tragen</li>
-    <li>glory->es Ruhms</li>
-    <li>glory->er Kriegerehre</li>
-    <li>glory->er Siege</li>
-    <li>glory->es Throns</li>
-    <li>glory->es großartigen Schiffes</li>
-    <li>glory->es Reichtums</li>
-    <li>glory->er Familie</li>
-    <li>failLetterEndingCommon(askerIsNull==true,priority=1)->Die Quest '[resolvedQuestName]' ist fehlgeschlagen.</li>
-    <li>failLetterEndingCommon->Die Quest '[resolvedQuestName]' ist fehlgeschlagen.\n\nDeine Beziehung zur Fraktion '[asker_faction_name]' hat sich um [goodwillPenalty] Rufpunkte verschlechtert.</li>
-    <!-- gender-specific -->
-    <li>den_Dingen->den [PersonalCharacteristicsDat]</li>
-    <li>den_Dingen->dem [PersonalCharacteristicMas]</li>
-    <li>den_Dingen->der [PersonalCharacteristicFem]</li>
-    <li>den_Dingen->dem [PersonalCharacteristicNeu]</li>
-    <li>der_Angst->dem [ConceptAngstyMas]</li>
-    <li>der_Angst->der [ConceptAngstyFem]</li>
-    <li>der_Angst->dem [ConceptAngstyNeu]</li>
+    <li>asker2(asker_royalInCurrentFaction==True)->il [asker_royalTitleInCurrentFaction]</li>
+    <li>buildReason->per commemorare la [PersonalCharacteristic] di [asker_possessive] [PersonFamily]</li>
+    <li>buildReason->per commemorare la [asker_possessive] [PersonalCharacteristic]</li>
+    <li>buildReason->per offendere la [PersonalCharacteristic] dei suoi rivali</li>
+    <li>buildReason->per ridurre i sentimenti di [ConceptAngsty] tra le persone</li>
+    <li>buildReason->per esprimere quanto [asker pronoun] è [Adjective Badass]</li>
+    <li>buildReason->per commemorare i [asker_possessive] [asker_faction_pawnsPlural] caduti in battaglia</li>
+    <li>buildReason->per onorare [asker_possessive] [PersonFamily]</li>
+    <li>buildReason->per elogiare il lavoro di [PersonJob]</li>
+    <li>buildReason->per diffondere immagini della sua [glory] in tutto il paese</li>
+    <li>glory->gloria</li>
+    <li>glory->vittoria</li>
+    <li>glory->salute</li>
+    <li>glory->familia</li>
+    <li>glory->ricchezza</li>
+    <li>glory->grande armata</li>
+    <li>failLetterEndingCommon(askerIsNull==true,priority=1)->Hai fallito la missione "[resolvedQuestName]".</li>
+    <li>failLetterEndingCommon->Hai fallito la missione "[resolvedQuestName]".\n\nI tuoi rapporti con [asker_faction_name] sono stati diminuiti di [goodwillPenalty].</li>
   </QuestConstructionDescriptionCommon.rulePack.rulesStrings>
   
   <!-- EN:
@@ -100,44 +83,38 @@
     <li>construction->assembly</li>
   -->
   <QuestConstructionNameCommon.rulePack.rulesStrings>
-    <li>questName(p=6)->[constAdj][construction]</li>
-    <li>questName(p=0.5)->Ein [constAdj]er [constructionMas]</li>
-    <li>questName->Eine [constAdj]e [constructionFem]</li>
-    <li>questName->Ein [constAdj]es [constructionNeu]</li>
-    <li>questName(p=0.5)->Der [constAdj]e [constructionMas]</li>
-    <li>questName->Die [constAdj]e [constructionFem]</li>
-    <li>questName->Das [constAdj]e [constructionNeu]</li>
-    <li>constAdj(p=20)->[AdjectiveLarge]</li>
-    <li>constAdj->schrecklich</li>
-    <li>constAdj->groß</li>
-    <li>constAdj->großartig</li>
-    <li>constAdj->gefährlich</li>
-    <li>constAdj->monumental</li>
-    <li>constAdj->extravagant</li>
-    <li>constAdj->düster</li>
-    <li>constAdj->erschreckend</li>
-    <li>constAdj->furchtbar</li>
-    <li>constAdj->grausam</li>
-    <li>constAdj->fantastisch</li>
-    <li>constAdj->prophetisch</li>
-    <li>constAdj->erschütternd</li>
-    <li>constAdj->schimmernd</li>
-    <li>constAdj->glänzend</li>
-    <li>constAdj->scheinend</li>
-    <li>constAdj->erstaunlich</li>
-    <li>constAdj->unglaublich</li>
-    <li>construction(p=3)->e Konstruktion</li>
-    <li>construction(p=2)->e Struktur</li>
-    <li>construction(p=2)->es Gebäude</li>
-    <li>construction->es Denkmal</li>
-    <li>construction->es Bauwerk</li>
-    <li>construction->er Entwurf</li>
-    <li>constructionFem->Konstruktion</li>
-    <li>constructionFem->Struktur</li>
-    <li>constructionNeu->Gebäude</li>
-    <li>constructionNeu->Denkmal</li>
-    <li>constructionNeu->Bauwerk</li>
-    <li>constructionMas->Entwurf</li>
+    <li>questName->Un [constructionMas] [constAdjMas]</li>
+    <li>questName->Un [constructionMas] [constAdj]</li>
+    <li>questName->Una [constructionFem] [constAdjFem]</li>
+    <li>questName->Una [constructionFem] [constAdj]</li>
+    <li>questName->Il [constructionMas] [constAdjMas]</li>
+    <li>questName->Il [constructionMas] [constAdj]</li>
+    <li>questName->La [constructionFem] [constAdjFem]</li>
+    <li>questName->La [constructionFem] [constAdj]</li>
+<!--<li>constAdj(p=20)->[AdjectiveLarge]</li>-->
+    <li>constAdjMas->spaventoso</li>
+    <li>constAdjMas->grandioso</li>
+    <li>constAdjMas->pericoloso</li>
+    <li>constAdjMas->profetico</li>
+    <li>constAdjMas->maestoso</li>
+    <li>constAdjFem->spaventosa</li>
+    <li>constAdjFem->grandiosa</li>
+    <li>constAdjFem->pericolosa</li>
+    <li>constAdjFem->profetica</li>
+    <li>constAdjFem->maestosa</li>
+    <li>constAdj->enorme</li>
+    <li>constAdj->sorprendente</li>
+    <li>constAdj->terribile</li>
+    <li>constAdj->eccezionale</li>
+    <li>constAdj->incredibile</li>
+    <li>constAdj->scintillante</li>
+    <li>constAdj->splendente</li>
+    <li>constructionFem->costruzione</li>
+    <li>constructionFem->struttura</li>
+    <li>constructionFem->planimetria</li>
+    <li>constructionMas->monumento</li>
+    <li>constructionMas->edificio</li>
+    <li>constructionMas->palazzo</li>
   </QuestConstructionNameCommon.rulePack.rulesStrings>
   
 </LanguageData>
