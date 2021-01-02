@@ -2,7 +2,7 @@
 <LanguageData>
   
   <!-- EN: attended concert -->
-  <AttendedConcert.label>einem Konzert beigewohnt</AttendedConcert.label>
+  <AttendedConcert.label>assistito al concerto</AttendedConcert.label>
   <!-- EN:
     <li>tale_noun->[ATTENDER_nameDef] attending [ORGANIZER_nameDef]'s concert</li>
     <li>tale_noun->[ATTENDER_nameDef] listening to [ORGANIZER_nameDef]'s performance</li>
@@ -15,19 +15,19 @@
     <li>desc_sentence->[Quantity_adjphrase] [Animal]s listen attentively.</li>
   -->
   <AttendedConcert.rulePack.rulesStrings>
-    <li>tale_noun->[ATTENDER_nameDef] [ORGANIZER_nameDef]'s Konzert beiwohnte</li>
-    <li>tale_noun->[ATTENDER_nameDef] [ORGANIZER_nameDef]'s Auftritt zuhörte</li>
-    <li>image->[ATTENDER_nameFull], wie [ATTENDER_pronoun] ruhig zuhört [circumstance_group]</li>
-    <li>image->[ATTENDER_nameFull], wie [ATTENDER_pronoun] [ORGANIZER_nameFull]'s Auftritt genießt [circumstance_group]</li>
-    <li>image->[ATTENDER_nameFull], wie [ATTENDER_pronoun] zu der Musik wippt [circumstance_group]</li>
-    <li>image->[ATTENDER_nameFull], wie [ATTENDER_pronoun] sich in der Musik verliert [circumstance_group]</li>
-    <li>circumstance_phrase->, während [ATTENDER_pronoun] klatscht</li>
-    <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] tanzen mit.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [Animals] hören aufmerksam zu.</li>
+    <li>tale_noun->[ATTENDER_nameDef] assistendo al concerto di [ORGANIZER_nameDef]</li>
+    <li>tale_noun->[ATTENDER_nameDef] ascoltando lo spettacolo di [ORGANIZER_nameDef]</li>
+    <li>image->[ATTENDER_nameFull] ascoltando in silenzio, [circumstance_group]</li>
+    <li>image->[ATTENDER_nameFull] godendo lo spettacolo di [ORGANIZER_nameFull], [circumstance_group]</li>
+    <li>image->[ATTENDER_nameFull] ondeggiando al ritmo della musica, [circumstance_group]</li>
+    <li>image->[ATTENDER_nameFull] assorbito dal suono, [circumstance_group]</li>
+    <li>circumstance_phrase->mentre applaude</li>
+    <li>desc_sentence->[Quantity_adjphrase] [PersonJob] ballano insieme.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [Animal] ascoltano attentamente.</li>
   </AttendedConcert.rulePack.rulesStrings>
   
   <!-- EN: held concert -->
-  <HeldConcert.label>Konzert gegeben</HeldConcert.label>
+  <HeldConcert.label>tenuto un concerto</HeldConcert.label>
   <!-- EN:
     <li>tale_noun->[ORGANIZER_nameDef] performing a concert</li>
     <li>image->[ORGANIZER_nameFull] playing their signature song [circumstance_group]</li>
@@ -39,15 +39,14 @@
     <li>desc_sentence->[Quantity_adjphrase] [Animal]s listen nearby.</li>
   -->
   <HeldConcert.rulePack.rulesStrings>
-    <li>tale_noun->[ORGANIZER_nameDef] gibt ein Konzert</li>
-    <li>image->[ORGANIZER_nameFull] spielt das ganz spezielle Lied [circumstance_group]</li>
-    <li>image->[ORGANIZER_nameFull] fordert die Menge auf, mitzusingen</li>
-    <li>image->[ORGANIZER_nameFull] spielt einen inspirierendes Lied</li>
-    <li>image->[ORGANIZER_nameFull] führt ein kompliziertes Stück [circumstance_group] auf</li>
-    <li>circumstance_phrase->mit einem konzentrierten Ausdruck</li>
-    <li>circumstance_phrase->mit einem euphorischen Ausdruck</li>
-    <li>desc_sentence->[Quantity_adjphrase] [PersonJobs] verfolgen gebannt den Auftritt.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [Animals] hören aufmerksam zu.</li>
+    <li>tale_noun->[ORGANIZER_nameDef] sta tenendo un concerto</li>
+    <li>image->[ORGANIZER_nameFull] suonando la loro canzone [circumstance_group]</li>
+    <li>image->[ORGANIZER_nameFull] invitando il pubblico a cantare insieme</li>
+    <li>image->[ORGANIZER_nameFull] suonando una canzone stimolante</li>
+    <li>image->[ORGANIZER_nameFull] eseguendo un pezzo difficile [circumstance_group] auf</li>
+    <li>circumstance_phrase->con un'espressione intensa</li>
+    <li>desc_sentence->[Quantity_adjphrase] [PersonJob] ascoltano nelle vicinanze.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [Animal] ascoltano nelle vicinanze.</li>
   </HeldConcert.rulePack.rulesStrings>
   
 </LanguageData>
