@@ -54,65 +54,53 @@
     <li>lodgersLabelSingOrPlural(lodgersCount==1)->[lodgers0_nameDef]</li>
     <li>lodgersLabelSingOrPlural(lodgersCount>=2)->[lodgersLabelPlural]</li>
     <li>lodgersLabelSingOrPluralDef(lodgersCount==1)->[lodgers0_nameDef]</li>
-    <li>lodgersLabelSingOrPluralDef(lodgersCount>=2)->die [lodgersLabelPlural]</li>
-    <li>lodgersLabelSingOrPluralDefDat(lodgersCount==1)->von [lodgers0_nameDef]</li>
-    <li>lodgersLabelSingOrPluralDefDat(lodgersCount>=2)->der [lodgersLabelPlural]</li>
+    <li>lodgersLabelSingOrPluralDef(lodgersCount>=2)->i [lodgersLabelPlural]</li>
     <li>healthInfo-></li>
     <li>healthInfo(lodgersHaveBloodRotAndParalysis==true,priority=1)->\n\n[paralyzedInfo]\n\n[bloodRotInfo]</li>
     <li>healthInfo(lodgersAreParalyzed==true,priority=1)->\n\n[paralyzedInfo]</li>
     <li>healthInfo(lodgersHaveBloodRot==true,priority=1)->\n\n[bloodRotInfo]</li>
-    <li>paralyzedInfo(lodgersCount==1)->[lodgersLabelSingOrPluralDef] leidet an paralytischer Abasie und muss zu Bett gebracht werden.</li>
-    <li>paralyzedInfo(lodgersCount>=2)->[lodgersLabelSingOrPluralDef] leiden an paralytischer Abasie und müssen zu Bett gebracht werden.</li>
-    <li>bloodRotInfo(lodgersCount==1)->[lodgersLabelSingOrPluralDef] ist an Blutfäule erkrankt und muss täglich behandelt werden. Die Erkrankung kann mit hochqualitativer Behandlung und Medizin zwar verlangsamt, aber grundsätzlich nicht ganz geheilt werden. Wenn die Erkrankung schwere Ausmaße annimmt, wird [lodgersLabelSingOrPluralDef] sterben, also vergewissere dich, dass du genügend Medizin vorrätig hast.</li>
-    <li>bloodRotInfo(lodgersCount>=2)->[lodgersLabelSingOrPluralDef] sind an Blutfäule erkrankt und müssen täglich behandelt werden. Die Erkrankung kann mit hochqualitativer Behandlung und Medizin zwar verlangsamt, aber grundsätzlich nicht ganz geheilt werden. Wenn die Erkrankung schwere Ausmaße annimmt, werden [lodgersLabelSingOrPluralDef] sterben, also vergewissere dich, dass du genügend Medizin vorrätig hast.</li>
+    <li>paralyzedInfo(lodgersCount==1)->[lodgersLabelSingOrPluralDef] soffre di abasia paralitica e deve essere tenuto a letto.</li>
+    <li>paralyzedInfo(lodgersCount>=2)->[lodgersLabelSingOrPluralDef] soffrono di abasia paralitica e devono essere tenuti a letto.</li>
+    <li>bloodRotInfo(lodgersCount==1)->[lodgersLabelSingOrPluralDef] è malato di putrefazione sanguigna e questo richiederà un trattamento quotidiano. La malattia può essere rallentata con cure e medicine di alta qualità, ma generalmente non può essere curata completamente. Se la malattia diventa grave [lodgersLabelSingOrPluralDef] morirà, quindi assicurati di avere le scorte mediche necessarie.</li>
+    <li>bloodRotInfo(lodgersCount>=2)->[lodgersLabelSingOrPluralDef] sono malati di putrefazione sanguigna e questo richiederà un trattamento quotidiano. La malattia può essere rallentata con cure e medicine di alta qualità, ma generalmente non può essere curata completamente. Se la malattia diventa grave [lodgersLabelSingOrPluralDef] moriranno, quindi assicurati di avere le scorte mediche necessarie.</li>
     <li>minMoodInfo-></li>
-    <li>minMoodInfo(lodgersCountWithMoodThreshold>0,priority=1)->\n\ndu musst dafür sorgen, dass die Stimmung [lodgersLabelSingOrPluralDefDat] über [lodgersMoodThreshold_percent] bleibt.</li>
+    <li>minMoodInfo(lodgersCountWithMoodThreshold>0,priority=1)->\n\ndevi mantenere l'umore di [lodgersLabelSingOrPluralDef] al di sopra di [lodgersMoodThreshold_percent].</li>
     <li>workInfo-></li>
-    <li>workInfo(lodgersWillNotWork==true,lodgersCount==1,priority=1)->\n\n[lodgersLabelSingOrPluralDef] verweigert jegliche Arbeit.</li>
-    <li>workInfo(lodgersWillNotWork==true,lodgersCount>=2,priority=1)->\n\n[lodgersLabelSingOrPluralDef] verweigern jegliche Arbeit.</li>
+    <li>workInfo(lodgersWillNotWork==true,lodgersCount==1,priority=1)->\n\n[lodgersLabelSingOrPluralDef] non farà alcun lavoro.</li>
+    <li>workInfo(lodgersWillNotWork==true,lodgersCount>=2,priority=1)->\n\n[lodgersLabelSingOrPluralDef] non faranno alcun lavoro.</li>
     <li>commonDescEnding->[helpersParagraph]</li>
     <li>enemyGroupsParagraph->[threatDescriptionParagraph]</li>
-    <li>threatDescriptionParagraph(threatType==Raids,threatCount==1,threatSize==1)->wird (*Threat)ein Überfall(/Threat) in folgender Größenordnung stattfinden:\n\n[threatExample]</li>
-    <li>threatDescriptionParagraph(threatType==Raids,threatCount==1,threatSize>1)->wird (*Threat)ein Überfall(/Threat) mit [threatSize]-facher Stärke und in folgender Größenordnung stattfinden:\n\n[threatExample]</li>
-    <li>threatDescriptionParagraph(threatType==Raids,threatCount>1,threatSize==1)->werden (*Threat)[threatCount] Überfalle(/Threat) in folgender Größenordnung stattfinden:\n\n[threatExample]</li>
-    <li>threatDescriptionParagraph(threatType==Raids,threatCount>1,threatSize>1)->werden (*Threat)[threatCount] Überfalle(/Threat) mit [threatSize]-facher Stärke und in folgender Größenordnung stattfinden:\n\n[threatExample]</li>
-    <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==1,threatSize==1)->wird (*Threat)ein Mech-Cluster(/Threat) in der Nähe landen.</li>
-    <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==2,threatSize==1)->werden (*Threat)zwei Mech-Cluster(/Threat) in der Nähe landen.</li>
-    <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==1,threatSize>1)->wird (*Threat)ein Mech-Cluster(/Threat) von [threatSize]-facher Größe in der Nähe landen.</li>
-    <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==2,threatSize>1)->werden (*Threat)zwei Mech-Cluster(/Threat) von [threatSize]-facher Größe in der Nähe landen.</li>
-    <li>threatsInfoMechClustersSingleHuman->[lodgers0_nameDef] hat [recently] [mechViolation], und ist seitdem im Fadenkreuz eines im Orbit befindlichen Mechanoidenschwarms.</li>
-    <li>threatsInfoMechClustersMultiPrisoners->Die Gefangenen haben [recently] [mechViolation], und sind seitdem im Fadenkreuz eines im Orbit befindlichen Mechanoidenschwarms.</li>
-    <li>threatsInfoMechRaidsSingleHuman->[lodgers0_nameDef] hat [recently] [mechViolation], und ist seitdem im Fadenkreuz eines Mechanoidennestes.</li>
-    <li>threatsInfoMechRaidsMultiHuman->Sie haben [recently] [mechViolation], und sind seitdem im Fadenkreuz eines Mechanoidennestes.</li>
-    <li>recently->kürzlich</li>
-    <li>recently->vor Kurzem</li>
-    <li>recently->unlängst</li>
-    <li>mechViolation->– wie auch immer – eine Maschinen-Persona verärgert</li>
-    <li>mechViolation->schlimme Dinge mit einem antiken Supercomputer-Terminal angestellt</li>
-    <li>mechViolation->ein menschliches Kind getötet, das einem Archotech sehr viel bedeutet hat</li>
-    <li>mechViolation->versucht, einen Mechanoiden-Kontrollknoten zu hacken</li>
-    <li>mechViolation->versucht, etwas aus einer antiken Lagerstätte zu stehlen</li>
+    <li>threatDescriptionParagraph(threatType==Raids,threatCount==1,threatSize==1)->ci sarà (*Threat)un assalto(/Threat) di pressochè queste dimensioni:\n\n[threatExample]</li>
+    <li>threatDescriptionParagraph(threatType==Raids,threatCount==1,threatSize>1)->ci sarà (*Threat)un assalto(/Threat) di forza x[threatSize] di pressochè queste dimensioni:\n\n[threatExample]</li>
+    <li>threatDescriptionParagraph(threatType==Raids,threatCount>1,threatSize==1)->ci saranno (*Threat)[threatCount] assalti(/Threat) di pressochè queste dimensioni:\n\n[threatExample]</li>
+    <li>threatDescriptionParagraph(threatType==Raids,threatCount>1,threatSize>1)->ci saranno (*Threat)[threatCount] assalti(/Threat) di forza x[threatSize] di pressochè queste dimensioni:\n\n[threatExample]</li>
+    <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==1,threatSize==1)->(*Threat)un Mech-Cluster(/Threat) verrà schierato nelle vicinanze.</li>
+    <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==2,threatSize==1)->(*Threat)due Mech-Cluster(/Threat) verranno schierati nelle vicinanze.</li>
+    <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==1,threatSize>1)->(*Threat)un Mech-Cluster(/Threat) di forza x[threatSize] verrà schierato nelle vicinanze.</li>
+    <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==2,threatSize>1)->(*Threat)due Mech-Cluster(/Threat) di forza x[threatSize] verranno schierati nelle vicinanze.</li>
+    <li>threatsInfoMechClustersSingleHuman->[lodgers0_nameDef] ha [recently] [mechViolation], ed è stato preso di mira da uno sciame di meccanoidi in orbita.</li>
+    <li>threatsInfoMechClustersMultiPrisoners->I prigionieri hanno [recently] [mechViolation], e sono stati presi di mira da uno sciame di meccanoidi in orbita.</li>
+    <li>threatsInfoMechRaidsSingleHuman->[lodgers0_nameDef] ha [recently] [mechViolation], ed è stato preso di mira da un alveare meccanoide.</li>
+    <li>threatsInfoMechRaidsMultiHuman->Loro hanno [recently] [mechViolation], e sono stati presi di mira da un alveare meccanoide.</li>
+    <li>recently->da poco</li>
+    <li>recently->poco fa</li>
+    <li>mechViolation->in qualche modo fatto arrabbiare un persona-macchina</li>
+    <li>mechViolation->violato un antico terminale di supercomputer</li>
+    <li>mechViolation->ucciso un bambino umano, che era molto amico di un archotech</li>
+    <li>mechViolation->tentato di hackerare un nodo di controllo meccanoide</li>
+    <li>mechViolation->tentato di rubare da un antico sito di stoccaggio</li>
     <li>letterSubject->{SUBJECT_definite}</li>
-    <li>lodgersHasHave(lodgersCount==1)->hat</li>
-    <li>lodgersHasHave(lodgersCount>=2)->haben</li>
+    <li>lodgersHasHave(lodgersCount==1)->ha</li>
+    <li>lodgersHasHave(lodgersCount>=2)->hanno</li>
     <li>lodgersObjective(lodgersCount==1)->[lodgers0_objective]</li>
-    <li>lodgersObjective(lodgersCount>=2)->sie</li>
-    <li>lodgersIsAre(lodgersCount==1)->ist</li>
-    <li>lodgersIsAre(lodgersCount>=2)->sind</li>
-    <li>lodgersWill(lodgersCount==1)->wird</li>
-    <li>lodgersWill(lodgersCount>=2)->werden</li>
+    <li>lodgersObjective(lodgersCount>=2)->loro</li>
+    <li>lodgersIsAre(lodgersCount==1)->è</li>
+    <li>lodgersIsAre(lodgersCount>=2)->sono</li>
     <li>remainingWillNowLeave(lodgersCount==1)-></li>
-    <li>remainingWillNowLeave(lodgersCount>=2)->Alle verbleibenden [lodgersLabelPlural] werden dich nun verlassen. </li>
-    <li>failLetterEndingQuest->Die Quest '[resolvedQuestName]' ist fehlgeschlagen.</li>
+    <li>remainingWillNowLeave(lodgersCount>=2)->Eventuali [lodgersLabelPlural] rimanenti ora se ne andranno. </li>
+    <li>failLetterEndingQuest->Hai fallito la missione "[resolvedQuestName]".</li>
     <li>failLetterEndingCommon(askerIsNull==true,priority=1)->[failLetterEndingQuest]</li>
-    <li>failLetterEndingCommon->[failLetterEndingQuest]\n\nDeine Beziehung zur Fraktion '[asker_faction_name]' hat sich um [goodwillPenalty] Rufpunkte verschlechtert.</li>
-    <li>inappropriate(p=4)-></li>
-    <li>inappropriate->unangemessene </li>
-    <li>inappropriate->ungebührliche </li>
-    <li>inappropriate->verbotene </li>
-    <li>affair->Affäre</li>
-    <li>affair->Liaison</li>
-    <li>affair->Liebschaft</li>
+    <li>failLetterEndingCommon->[failLetterEndingQuest]\n\nI tuoi rapporti con [asker_faction_name] sono diminuiti di [goodwill Penalty].</li>
   </QuestHospitalityCommon.rulePack.rulesStrings>
   
 </LanguageData>
