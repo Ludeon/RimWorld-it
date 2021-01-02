@@ -447,17 +447,17 @@
   <!-- EN: Sealed -->
   <DormantCompSealed>Sigillato</DormantCompSealed>
   <!-- EN: Ready to drop mechanoids -->
-  <DormantCompBeacon>TODO</DormantCompBeacon>
+  <DormantCompBeacon>Pronto per rilasciare i meccanoidi</DormantCompBeacon>
   <!-- EN: Expired -->
-  <DormantCompExpired>Pronto per rilasciare i meccanoidi</DormantCompExpired>
+  <DormantCompExpired>Scaduto</DormantCompExpired>
   <!-- EN: Initiates in -->
   <InitiatesIn>Inizia in</InitiatesIn>
   <!-- EN: Activates in {0} -->
   <SendSignalOnCountdownCompTime>Si attiva in {0}</SendSignalOnCountdownCompTime>
   <!-- EN: Neural heat -->
-  <PsychicEntropy>TODO</PsychicEntropy>
+  <PsychicEntropy>Calore neurale</PsychicEntropy>
   <!-- EN: Heat -->
-  <PsychicEntropyShort>Calore neurale</PsychicEntropyShort>
+  <PsychicEntropyShort>Calore</PsychicEntropyShort>
   <!-- EN: {0} pain boost -->
   <PsychicEntropyPainFocus>{0} aumento del dolore</PsychicEntropyPainFocus>
   <!-- EN: radius {0} -->
@@ -595,9 +595,9 @@
 
   <!-- Job reports -->
   <!-- EN: hauling {THING_label} to {DESTINATION}. -->
-  <ReportHaulingTo>Trasporta {THING_label} a {DESTINATION}.</ReportHaulingTo>
+  <ReportHaulingTo>trasporta {THING_label} a {DESTINATION}.</ReportHaulingTo>
   <!-- EN: burying {THING_label} in {DESTINATION}. -->
-  <ReportHaulingToGrave>TODO</ReportHaulingToGrave>
+  <ReportHaulingToGrave>seppellisce {THING_label} a {DESTINATION}.</ReportHaulingToGrave>
   <!-- EN: hauling {1_label}. -->
   <ReportHauling>trasporta {1_label}.</ReportHauling>
   <!-- EN: hauling. -->
@@ -1239,13 +1239,13 @@
   <!-- EN: Neural heat: {0} / {1}\nFall rate: {2} / s ({3}s until zero) -->
   <PawnTooltipPsychicEntropyStats>Calore neurale: {0} / {1}\nTasso di ricaduta: {2} / s ({3}s fino a zero)</PawnTooltipPsychicEntropyStats>
   <!-- EN: Neural heat increases after performing a psycast. Surpassing the normal limit may cause a psychic breakdown lasting days.\n\nNeural heat dissipates naturally over time. This process can be accelerated by wearing eltex apparel or being in pain. -->
-  <PawnTooltipPsychicEntropyDesc>TODO</PawnTooltipPsychicEntropyDesc>
+  <PawnTooltipPsychicEntropyDesc>Il calore neurale aumenta dopo aver eseguito uno psycast. Il superamento del limite normale può causare un esaurimento psichico che può durare alcuni giorni.\n\nIl calore neurale si dissipa naturalmente nel tempo. Questo processo può essere accelerato indossando indumenti eltex o provando dolore.</PawnTooltipPsychicEntropyDesc>
   <!-- EN: Pain boost\n\nPain focuses the mind and speeds up neural heat dissipation.\n\nPain level: {0}\nBonus to heat recovery: {1} -->
-  <PawnTooltipPsychicEntropyPainFocus>TODO</PawnTooltipPsychicEntropyPainFocus>
+  <PawnTooltipPsychicEntropyPainFocus>Aumento del dolore\n\nIl dolore concentra la mente e accelera la dissipazione del calore neurale.\n\nLivello del dolore: {0} \nBonus per il recupero del calore: {1}</PawnTooltipPsychicEntropyPainFocus>
   <!-- EN: Toggle neural heat limiter. Exceeding your heat limit may cause a psychic breakdown lasting days. It won't cause permanent damage. -->
-  <PawnTooltipPsychicEntropyLimit>TODO</PawnTooltipPsychicEntropyLimit>
+  <PawnTooltipPsychicEntropyLimit>Attiva / disattiva il limitatore di calore neurale. Il superamento del limite di calore può causare un esaurimento psichico che può durare alcuni giorni. Non causerà danni permanenti.</PawnTooltipPsychicEntropyLimit>
   <!-- EN: Psyfocus: {0} -->
-  <PawnTooltipPsyfocus>TODO</PawnTooltipPsyfocus>
+  <PawnTooltipPsyfocus>Psyfocus: {0}</PawnTooltipPsyfocus>
 
   <!-- Pawn tooltip description -->
   <!-- EN: {0} {1} -->
@@ -1253,63 +1253,61 @@
 
   <!-- Rewards -->
   <!-- EN: a {0_age}-year-old {0_title} named {0_nameDef} will arrive in a transport pod {0_relationInfoInParentheses} -->
-  <Reward_Pawn_DropPod>TODO</Reward_Pawn_DropPod>
+  <Reward_Pawn_DropPod>un {0_title} di {0_age} anni di nome {0_nameDef} arriverà in una capsula di trasporto {0_relationInfoInParentheses}</Reward_Pawn_DropPod>
   <!-- EN: a {0_age}-year-old {0_title} named {0_nameDef} will arrive and join you {0_relationInfoInParentheses} -->
-  <Reward_Pawn_WalkIn>TODO</Reward_Pawn_WalkIn>
+  <Reward_Pawn_WalkIn>un {0_title} di {0_age} anni di nome {0_nameDef} arriverà e si unirà a te {0_relationInfoInParentheses}</Reward_Pawn_WalkIn>
   <!-- EN: a {0_age}-year-old {0_title} named {0_nameDef} will join you {0_relationInfoInParentheses} -->
-  <Reward_Pawn_Caravan>TODO</Reward_Pawn_Caravan>
-  <!-- EN: transport pods with the following resources will arrive (total value {1}):
-\n{0} -->
-  <Reward_Items>TODO</Reward_Items>
-  <!-- EN: you will receive (total value {1}):
-\n{0} -->
-  <Reward_Items_Caravan>TODO</Reward_Items_Caravan>
+  <Reward_Pawn_Caravan>un {0_title} di {0_age} anni di nome {0_nameDef} si unirà a te {0_relationInfoInParentheses}</Reward_Pawn_Caravan>
+  <!-- EN: transport pods with the following resources will arrive (total value {1}):\n{0} -->
+  <Reward_Items>arriveranno capsule di trasporto con le seguenti risorse (valore totale {1}): \n{0}</Reward_Items>
+  <!-- EN: you will receive (total value {1}):\n{0} -->
+  <Reward_Items_Caravan>riceverai (valore totale {1}):\n{0}</Reward_Items_Caravan>
   <!-- EN: your faction relations with {0_name} will improve by {1} -->
-  <Reward_Goodwill>TODO</Reward_Goodwill>
+  <Reward_Goodwill>i rapporti della tua fazione con {0_name} miglioreranno di {1}</Reward_Goodwill>
   <!-- EN: you will be taken to the stars -->
-  <Reward_PassageOffworld>TODO</Reward_PassageOffworld>
+  <Reward_PassageOffworld>sarai portato tra le stelle</Reward_PassageOffworld>
   <!-- EN: Passage offworld -->
-  <Reward_PassageOffworld_Label>TODO</Reward_PassageOffworld_Label>
+  <Reward_PassageOffworld_Label>Passaggio per il paradiso</Reward_PassageOffworld_Label>
   <!-- EN: you can loot everything from the camp -->
-  <Reward_CampLoot>TODO</Reward_CampLoot>
+  <Reward_CampLoot>puoi saccheggiare tutto dal campo</Reward_CampLoot>
   <!-- EN: Camp loot -->
-  <Reward_CampLoot_Label>TODO</Reward_CampLoot_Label>
+  <Reward_CampLoot_Label>Bottino da campo</Reward_CampLoot_Label>
   <!-- EN: value {0} -->
-  <TotalValue>TODO</TotalValue>
+  <TotalValue>valore {0}</TotalValue>
   
   <!-- Bladelink -->
   <!-- EN: Bonded to: {0} -->
-  <BondedWith>TODO</BondedWith>
+  <BondedWith>Associato a: {0}</BondedWith>
   <!-- EN: Not yet bonded -->
-  <NotBonded>TODO</NotBonded>
+  <NotBonded>Non ancora associato</NotBonded>
   <!-- EN: bonded to someone else -->
-  <BladelinkBondedToSomeoneElse>TODO</BladelinkBondedToSomeoneElse>
+  <BladelinkBondedToSomeoneElse>associato a qualcun'altro</BladelinkBondedToSomeoneElse>
 
   <!-- Biocoded weapons -->
   <!-- EN: biocoded {0} -->
-  <Biocoded>TODO</Biocoded>
+  <Biocoded>biocodificato {0}</Biocoded>
   <!-- EN: Biocoding: {0} -->
-  <CodedFor>TODO</CodedFor>
+  <CodedFor>Biocodifica: {0}</CodedFor>
   <!-- EN: biocoded -->
-  <BiocodedCodedForSomeoneElse>TODO</BiocodedCodedForSomeoneElse>
+  <BiocodedCodedForSomeoneElse>biocodificato</BiocodedCodedForSomeoneElse>
 
   <!-- Projectile interceptor -->
   <!-- EN: Intercepts {0} every {1} -->
-  <InterceptsProjectilesEvery>TODO</InterceptsProjectilesEvery>
+  <InterceptsProjectilesEvery>Intercetta {0} ogni {1}</InterceptsProjectilesEvery>
   <!-- EN: Intercepts {0} -->
-  <InterceptsProjectiles>TODO</InterceptsProjectiles>
+  <InterceptsProjectiles>Intercetta {0}</InterceptsProjectiles>
   <!-- EN: ground projectiles -->
-  <InterceptsProjectiles_GroundProjectiles>TODO</InterceptsProjectiles_GroundProjectiles>
+  <InterceptsProjectiles_GroundProjectiles>proiettili di terra</InterceptsProjectiles_GroundProjectiles>
   <!-- EN: aerial projectiles -->
-  <InterceptsProjectiles_AerialProjectiles>TODO</InterceptsProjectiles_AerialProjectiles>
+  <InterceptsProjectiles_AerialProjectiles>proiettili aerei</InterceptsProjectiles_AerialProjectiles>
 
   <!-- Condition causers -->
   <!-- EN: Affected gender -->
-  <AffectedGender>TODO</AffectedGender>
+  <AffectedGender>Genere colpito</AffectedGender>
 
   <!-- Hediff misc -->
   <!-- EN: Caused by: {0} -->
-  <CausedByHediff>TODO</CausedByHediff>
+  <CausedByHediff>Causato da: {0}</CausedByHediff>
   
   <!-- UNUSED -->
   <ItemStashContents>Contenuto: {0} ({1})</ItemStashContents>
