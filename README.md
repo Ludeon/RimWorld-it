@@ -17,7 +17,7 @@ TRADUTTORI:
 INSTALLAZIONE:
 ------------------
 1) Estrarre il contenuto dello zip in una cartella.
-2) Copiare il contenuto di ...\RimWorld-it\Core nella directory di installazione in ...\Data\Core\Languages\Italian
+2) Copiare il contenuto di ...\RimWorld-it\Core(v1.1) nella directory di installazione in ...\Data\Core\Languages\Italian
 3) Avviare il gioco
 4) Nelle opzioni di gioco, selezionare la lingua 'Italian'
 
@@ -28,5 +28,3 @@ Se individui errori, omissioni o per qualsiasi proposta di traduzione o migliora
 SEZIONE GENERALE: https://ludeon.com/forums/index.php?board=17.0
 
 SEZIONE TRADUZIONE ITALIANA: https://ludeon.com/forums/index.php?topic=4843.0
-
-GRUPPO DISCORD: https://discord.gg/GgG8V5
