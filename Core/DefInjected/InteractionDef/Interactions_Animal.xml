@@ -99,7 +99,7 @@
     <li>r_logentry(p=2)->[INITIATOR_nameDef] [nuzzled] [RECIPIENT_nameDef] [nuzzleadverb].</li>
     <li>r_logentry->[INITIATOR_nameDef] ha strusciato [nuzzleadverb] il proprio muso contro [rubbedpart] di [RECIPIENT_nameDef].</li>
     <li>nuzzled(p=2)->si è {INITIATOR_gender ? strusciato : strusciata : strusciato} contro</li>
-    <li>nuzzled->si è {0_gender ? rannicchiato : rannicchiata : rannicchiato} vicino</li>
+    <li>nuzzled->si è {PAWN_gender ? rannicchiato : rannicchiata : rannicchiato} vicino</li>
     <li>nuzzleadverb(p=4)-></li>
     <li>nuzzleadverb->delicatamente</li>
     <li>nuzzleadverb->in maniera incoraggiante</li>
