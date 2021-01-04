@@ -1,48 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN:
-    <li>image->a solitary [Character] [desc_pawn]</li>
-    <li>image->a solitary [Character] [desc_pawn] near a [TerrainFeature]</li>
-    <li>image->a solitary [Character] [desc_pawn] near a [Community]</li>
-    <li>image->a [Character] [desc_pawn] surrounded by [Character]s</li>
-    <li>image->[Character]s playing [Game]</li>
-    <li>image->a [Character] [desc_pawn] playing [Game] with [Quantity_adjphrase] [Character]s</li>
-    <li>image->a [Character] [desc_pawn] holding a [Weapon]</li>
-    <li>image->a [Character] [desc_pawn] eating a [Vegetable]</li>
-    <li>image->[Quantity_adjphrase] [PersonJob]s and [PersonJob]s eating [Vegetable]s together</li>
-    <li>image->the minor celebrity [NamePerson] [desc_pawn]</li>
-    <li>image->a [Character] wearing a [Apparel] [desc_pawn]</li>
-    <li>image->a [Community]</li>
-    <li>image->a [TerrainFeature]</li>
-    <li>image->a [Weapon]</li>
-    <li>image->a [TreeType] tree</li>
-    <li>image->a [NaturalObject]</li>
-    <li>image->[Quantity_adjphrase] [Weapon]s</li>
-    <li>image->[Quantity_adjphrase] [Vegetable]s</li>
-    <li>image->an empty [Apparel]</li>
-    <li>image->a [Shape]</li>
-    <li>image->a [Shape] surrounded by [Shape]s</li>
-    <li>image->an abstracted rendering of [ConceptAny]</li>
-    <li>image->a [AdjectiveAny] abstract shape</li>
-    <li>desc_pawn(p=12)-></li>
-    <li>desc_pawn->flying through the air</li>
-    <li>desc_pawn->suspended in the air</li>
-    <li>desc_pawn->moving to the left</li>
-    <li>desc_pawn->moving to the right</li>
-    <li>desc_pawn->sitting on a table</li>
-    <li>desc_pawn->seen through a looking glass</li>
-    <li>desc_pawn->rendered in silhouette</li>
-    <li>desc_pawn->riding on a [Animal] wearing a [Apparel]</li>
-    <li>desc_pawn->looking [AdjectiveAny]</li>
-    <li>desc_pawn->covered in [Gore]</li>
-  -->
   <TalelessImages.rulePack.rulesStrings>
-    <!--   <li>image->a solitary [Character] [desc_pawn]</li>  -->
+  <!-- EN:
+    <li>image->a solitary [Character] [desc_pawn]</li>  
+  -->
     <li>image->un [CharacterSingularMas] solitario [desc_pawn_mas]</li>
     <li>image->una [CharacterSingularFem] solitaria [desc_pawn_fem]</li>
     <li>image->un [CharacterSingularNeu] solitario [desc_pawn_mas]</li>
-    <!--   <li>image->a solitary [Character] [desc_pawn] near a [TerrainFeature]</li>  -->
+
+  <!-- EN: 
+    <li>image->a solitary [Character] [desc_pawn] near a [TerrainFeature]</li>  
+  -->
     <li>image->un [CharacterSingularMas] solitario [desc_pawn_mas] vicino ad un [TerrainFeatureSingularMas]</li>
     <li>image->una [CharacterSingularFem] solitaria [desc_pawn_fem] vicina ad un [TerrainFeatureSingularMas]</li>
     <li>image->un [CharacterSingularNeu] solitario [desc_pawn_mas] vicino ad un [TerrainFeatureSingularMas]</li>
@@ -52,27 +21,42 @@
     <li>image->un [CharacterSingularMas] solitario [desc_pawn_mas] vicino ad un [TerrainFeatureSingularNeu]</li>
     <li>image->una [CharacterSingularFem] solitaria [desc_pawn_fem] vicina ad un [TerrainFeatureSingularNeu]</li>
     <li>image->un [CharacterSingularNeu] solitario [desc_pawn_mas] vicino ad un [TerrainFeatureSingularNeu]</li>
-    <!--   <li>image->a solitary [Character] [desc_pawn] near a [Community]</li>  -->
+
+  <!-- EN:
+    <li>image->a solitary [Character] [desc_pawn] near a [Community]</li>  
+  -->
     <li>image->un [CharacterSingularMas] solitario [desc_pawn_mas] vicino ad un [CommunitySingularMas]</li>
     <li>image->una [CharacterSingularFem] solitaria [desc_pawn_fem] vicina ad un [CommunitySingularMas]</li>
     <li>image->un [CharacterSingularNeu] solitario [desc_pawn_mas] vicino ad un [CommunitySingularMas]</li>
     <li>image->un [CharacterSingularMas] solitario [desc_pawn_mas] vicino ad una [CommunitySingularFem]</li>
     <li>image->una [CharacterSingularFem] solitaria [desc_pawn_fem] vicina ad una [CommunitySingularFem]</li>
     <li>image->un [CharacterSingularNeu] solitario [desc_pawn_mas] vicino ad una [CommunitySingularFem]</li>
-    <!--   <li>image->a [Character] [desc_pawn] surrounded by [Character]s</li>  -->
+
+  <!-- EN:
+    <li>image->a [Character] [desc_pawn] surrounded by [Character]s</li>  
+  -->
     <li>image->un [CharacterSingularMas] [desc_pawn_mas] circondato da [CharacterPlural]</li>
     <li>image->una [CharacterSingularFem] [desc_pawn_fem] circondata da [CharacterPlural]</li>
     <li>image->un [CharacterSingularNeu] [desc_pawn_mas] circondato da [CharacterPlural]</li>
-    <!--   <li>image->[Character]s playing [Game]</li>  -->
+  
+  <!-- EN:  
+    <li>image->[Character]s playing [Game]</li>  
+  -->
     <li>image->[CharacterPlural] che giocano a [Game]</li>
-    <!--   <li>image->a [Character] [desc_pawn] playing [Game] with [Quantity_adjphrase] [Character]s</li>  -->
+
+  <!-- EN:  
+    <li>image->a [Character] [desc_pawn] playing [Game] with [Quantity_adjphrase] [Character]s</li>  
+  -->
     <li>image->un [CharacterSingularMas] [desc_pawn_mas] mentre gioca a [Game] con [Quantity_adjphraseMas] [CharacterPluralMas]</li>
     <li>image->una [CharacterSingularFem] [desc_pawn_fem] mentre gioca a [Game] con [Quantity_adjphraseMas] [CharacterPluralMas]</li>
     <li>image->un [CharacterSingularNeu] [desc_pawn_mas] mentre gioca a [Game] con [Quantity_adjphraseMas] [CharacterPluralMas]</li>
     <li>image->un [CharacterSingularMas] [desc_pawn_mas] mentre gioca a [Game] con [Quantity_adjphraseFem] [CharacterPluralFem]</li>
     <li>image->una [CharacterSingularFem] [desc_pawn_fem] mentre gioca a [Game] con [Quantity_adjphraseFem] [CharacterPluralFem]</li>
     <li>image->un [CharacterSingularNeu] [desc_pawn_mas] mentre gioca a [Game] con [Quantity_adjphraseFem] [CharacterPluralFem]</li>
-    <!--   <li>image->a [Character] [desc_pawn] holding a [Weapon]</li>  -->
+  
+  <!-- EN: 
+    <li>image->a [Character] [desc_pawn] holding a [Weapon]</li>  
+  -->
     <li>image->un [CharacterSingularMas] [desc_pawn_mas] che ha un [WeaponSingularMas]</li>
     <li>image->una [CharacterSingularFem] [desc_pawn_fem] che ha un [WeaponSingularMas]</li>
     <li>image->un [CharacterSingularNeu] [desc_pawn_mas] che ha un [WeaponSingularMas]</li>
@@ -82,74 +66,119 @@
     <li>image->un [CharacterSingularMas] [desc_pawn_mas] che ha un [WeaponSingularNeu]</li>
     <li>image->una [CharacterSingularFem] [desc_pawn_fem] che ha un [WeaponSingularNeu]</li>
     <li>image->un [CharacterSingularNeu] [desc_pawn_mas] che ha un [WeaponSingularNeu]</li>
-    <!--   <li>image->a [Character] [desc_pawn] eating a [Vegetable]</li>  -->
+  
+  <!-- EN:  
+    <li>image->a [Character] [desc_pawn] eating a [Vegetable]</li>  
+  -->
     <li>image->un [CharacterSingularMas] [desc_pawn_mas] che mangia un [VegetableSingularMas]</li>
     <li>image->una [CharacterSingularFem] [desc_pawn_fem] che mangia un [VegetableSingularMas]</li>
     <li>image->un [CharacterSingularNeu] [desc_pawn_mas] che mangia un [VegetableSingularMas]</li>
     <li>image->un [CharacterSingularMas] [desc_pawn_mas] che mangia una [VegetableSingularFem]</li>
     <li>image->una [CharacterSingularFem] [desc_pawn_fem] che mangia una [VegetableSingularFem]</li>
     <li>image->un [CharacterSingularNeu] [desc_pawn_mas] che mangia una [VegetableSingularFem]</li>
-    <!--   <li>image->[Quantity_adjphrase] [PersonJob]s and [PersonJob]s eating [Vegetable]s together</li>  -->
+  
+  <!-- EN:  
+    <li>image->[Quantity_adjphrase] [PersonJob]s and [PersonJob]s eating [Vegetable]s together</li>  
+  -->
     <li>image->[Quantity_adjphraseMas] [PersonJobPluralMas] e [PersonJobPluralMas] che mangiano [VegetablePluralMas] insieme</li>
-    <li>image->[Quantity_adjphraseMas] [PersonJobPluralMas] e [PersonJobPluralFem] che mangiano [VegetablePluralMas] insieme</li>
     <li>image->[Quantity_adjphraseMas] [PersonJobPluralMas] e [PersonJobPluralMas] che mangiano [VegetablePluralFem] insieme</li>
-    <li>image->[Quantity_adjphraseMas] [PersonJobPluralMas] e [PersonJobPluralFem] che mangiano [VegetablePluralFem] insieme</li>
     <li>image->[Quantity_adjphraseFem] [PersonJobPluralFem] e [PersonJobPluralFem] che mangiano [VegetablePluralMas] insieme</li>
-    <li>image->[Quantity_adjphraseFem] [PersonJobPluralFem] e [PersonJobPluralMas] che mangiano [VegetablePluralMas] insieme</li>
     <li>image->[Quantity_adjphraseFem] [PersonJobPluralFem] e [PersonJobPluralFem] che mangiano [VegetablePluralFem] insieme</li>
-    <li>image->[Quantity_adjphraseFem] [PersonJobPluralFem] e [PersonJobPluralMas] che mangiano [VegetablePluralFem] insieme</li>
-    <!--   <li>image->the minor celebrity [NamePerson] [desc_pawn]</li>  -->
+
+  <!-- EN:  
+    <li>image->the minor celebrity [NamePerson] [desc_pawn]</li>  
+  -->
     <li>image->la celebrità minore [NamePerson] [desc_pawn_fem]</li>
-    <!--   <li>image->a [Character] wearing a [Apparel] [desc_pawn]</li>  -->
+  
+  <!-- EN:  
+    <li>image->a [Character] wearing a [Apparel] [desc_pawn]</li>  
+  -->
     <li>image->un [CharacterSingularMas] [desc_pawn_mas] che indossa un [ApparelSingularMas]</li>
     <li>image->una [CharacterSingularFem] [desc_pawn_fem] che indossa un [ApparelSingularMas]</li>
     <li>image->un [CharacterSingularNeu] [desc_pawn_mas] che indossa un [ApparelSingularMas]</li>
     <li>image->un [CharacterSingularMas] [desc_pawn_mas] che indossa una [ApparelSingularFem]</li>
     <li>image->una [CharacterSingularFem] [desc_pawn_fem] che indossa una [ApparelSingularFem]</li>
     <li>image->un [CharacterSingularNeu] [desc_pawn_mas] che indossa una [ApparelSingularFem]</li>
-    <!--   <li>image->a [Community]</li>  -->
+  
+  <!-- EN:  
+    <li>image->a [Community]</li>  
+  -->
     <li>image->un [CommunitySingularMas]</li>
     <li>image->una [CommunitySingularFem]</li>
-    <!--   <li>image->a [TerrainFeature]</li>  -->
+
+  <!-- EN:  
+    <li>image->a [TerrainFeature]</li>  
+  -->
     <li>image->un [TerrainFeatureSingularMas]</li>
     <li>image->una [TerrainFeatureSingularFem]</li>
     <li>image->un [TerrainFeatureSingularNeu]</li>
-    <!--   <li>image->a [Weapon]</li>  -->
+
+  <!-- EN:  
+    <li>image->a [Weapon]</li>  
+  -->
     <li>image->un [WeaponSingularMas]</li>
     <li>image->una [WeaponSingularFem]</li>
     <li>image->un [WeaponSingularNeu]</li>
-    <!--   <li>image->a [TreeType] tree</li>  -->
+  
+  <!-- EN:  
+    <li>image->a [TreeType] tree</li>  
+  -->
     <li>image->un [TreeTypeSingularMas]</li>
     <li>image->una [TreeTypeSingularFem]</li>
     <li>image->un [TreeTypeSingularNeu]</li>
-    <!--   <li>image->a [NaturalObject]</li>  -->
+
+  <!-- EN:  
+    <li>image->a [NaturalObject]</li>  
+  -->
     <li>image->un [NaturalObjectSingularMas]</li>
     <li>image->una [NaturalObjectSingularFem]</li>
     <li>image->un [NaturalObjectSingularNeu]</li>
-    <!--   <li>image->[Quantity_adjphrase] [Weapon]s</li>  -->
+
+  <!-- EN:  
+    <li>image->[Quantity_adjphrase] [Weapon]s</li>  
+  -->
     <li>image->[Quantity_adjphraseMas] [WeaponPluralMas]</li>
     <li>image->[Quantity_adjphraseFem] [WeaponPluralFem]</li>
     <li>image->[Quantity_adjphraseMas] [WeaponPluralNeu]</li>
-    <!--   <li>image->[Quantity_adjphrase] [Vegetable]s</li>  -->
+
+  <!-- EN:  
+    <li>image->[Quantity_adjphrase] [Vegetable]s</li>  
+  -->
     <li>image->[Quantity_adjphraseMas] [VegetablePluralMas]</li>
     <li>image->[Quantity_adjphraseFem] [VegetablePluralFem]</li>
-    <!--   <li>image->an empty [Apparel]</li>  -->
+    
+  <!-- EN:  
+    <li>image->an empty [Apparel]</li> 
+  -->
     <li>image->un [ApparelSingularMas] vuoto</li>
     <li>image->una [ApparelSingularFem] vuota</li>
     <li>image->un [ApparelSingularNeu] vuoto</li>
-    <!--   <li>image->a [Shape]</li>  -->
+    
+  <!-- EN:  
+    <li>image->a [Shape]</li>  
+  -->
     <li>image->un [ShapeSingularMas]</li>
     <li>image->una [ShapeSingularFem]</li>
-    <!--   <li>image->a [Shape] surrounded by [Shape]s</li>  -->
+    
+  <!-- EN:  
+    <li>image->a [Shape] surrounded by [Shape]s</li>  
+  -->
     <li>image->un [ShapeSingularMas] circondato da [ShapePlural]</li>
     <li>image->una [ShapeSingularFem] circondata da [ShapePlural]</li>
-    <!--   <li>image->an abstracted rendering of [ConceptAny]</li>  -->
+  
+  <!-- EN:  
+    <li>image->an abstracted rendering of [ConceptAny]</li>  
+  -->
     <li>image->una rappresentazione astratta del [ConceptAnySingularMas]</li>
     <li>image->una rappresentazione astratta della [ConceptAnySingularFem]</li>
     <li>image->una rappresentazione astratta dell'[ConceptAnySingularNeu]</li>
-    <!--   <li>image->a [AdjectiveAny] abstract shape</li>  -->
+  
+  <!-- EN:  
+    <li>image->a [AdjectiveAny] abstract shape</li>  
+  -->
     <li>image->una forma astratta [AdjectiveAnySingularFem]</li>
-    <!--
+  
+  <!-- EN:
     <li>desc_pawn(p=12)-></li>
     <li>desc_pawn->flying through the air</li>
     <li>desc_pawn->suspended in the air</li>
