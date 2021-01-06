@@ -30,12 +30,10 @@ SEZIONE GENERALE: https://ludeon.com/forums/index.php?board=17.0
 
 SEZIONE TRADUZIONE ITALIANA: https://ludeon.com/forums/index.php?topic=4843.0
 
-GRUPPO DISCORD: https://discord.gg/GgG8V5
-
 MODIFICHE AVVENUTE ALLA VERSIONE INGLESE DEL GIOCO:
 -----------------
 Nel tempo sono state riviste molte frasi nel gioco inglese, è opportuno utilizzare la vecchia versione V1.1.2654 per controllare dove sono avvenute le modifiche e correggerle. Alcune modifiche inseriscono anche dei termini del tutto nuovi, e molte altre stravolgono interamente le frasi.
 
 VECCHIE VERSIONI:
 -----------------
-La cartella V1.1.2654 contiene la traduzione per la versione 1.1.2654 di RimWorld. Essa è stata mantenuta per chi avesse ancora questa vecchia versione installata sul proprio PC. Non serve per le versioni successive di RimWorld e in futuro (quando le modifiche saranno state tutte corrette) verrà cancellata.
+Il Branch Rimworld-1.1 contiene la traduzione per la versione 1.1.2654 di RimWorld. Essa è stata mantenuta per chi avesse ancora questa vecchia versione installata sul proprio PC. Non serve per le versioni successive di RimWorld e in futuro (quando le modifiche saranno state tutte corrette) verrà cancellata.
