@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
   <!-- Various -->
@@ -176,8 +176,8 @@
   <UsingBedrolls>usa {0} sacchi a pelo</UsingBedrolls>
   <!-- EN: Est. time to destination: {0} days -->
   <CaravanEstimatedTimeToDestination>Durata stimata a destinazione: {0} giorni</CaravanEstimatedTimeToDestination>
-  <!-- EN: Estimated days to arrive: {0} -->
-  <CaravanEstimatedDaysToDestination>Giorni stimati all'arrivo: {0}</CaravanEstimatedDaysToDestination>
+  <!-- EN: Route travel time: {0} days -->
+  <CaravanEstimatedDaysToDestination>Durata del percosro: {0} giorni</CaravanEstimatedDaysToDestination>
   <!-- EN: Immobilized: Too much weight. -->
   <CaravanImmobilizedByMass>Immobile: troppo carico.</CaravanImmobilizedByMass>
   <!-- EN: Out of food. -->
@@ -246,10 +246,10 @@
   <DeterioratingBecauseOf>In deterioramento a causa di</DeterioratingBecauseOf>
   <!-- EN: Map -->
   <Map>Mappa</Map>
-  <!-- EN: {0} until leaving -->
-  <ForceExitAndRemoveMapCountdown>{0} prima della partenza</ForceExitAndRemoveMapCountdown>
-  <!-- EN: Your colonists will automatically reform the caravan and leave this area in {0}. -->
-  <ForceExitAndRemoveMapCountdownTip>I tuoi coloni riorganizzeranno automaticamente la carovana e lasceranno quest'area in {0}.</ForceExitAndRemoveMapCountdownTip>
+  <!-- EN: {0} until enemies arrive -->
+  <CaravanDetectedRaidCountdown>Nemici in arrivo tra {0}</CaravanDetectedRaidCountdown>
+  <!-- EN: Enemy reinforcements will arrive in this area in {0}. -->
+  <CaravanDetectedRaidCountdownTip>I rinforzi nemici arriveranno in quest'area tra {0}.</CaravanDetectedRaidCountdownTip>
   <!-- EN: Room -->
   <Room>Stanza</Room>
   <!-- EN: Beauty here -->
@@ -368,18 +368,18 @@
   <CreatureFollowFieldwork>Segui il padrone mentre lavora sul campo</CreatureFollowFieldwork>
   <!-- EN: {0} with {1} -->
   <ProximitySingleGoodwillChange>{0} con {1}</ProximitySingleGoodwillChange>
-  <!-- EN: You can't re-enter for another {0} days. -->
-  <EnterCooldown>Non puoi rientrare per un altri {0} giorni.</EnterCooldown>
+  <!-- EN: Too dangerous to re-enter for {0}. -->
+  <EnterCooldown>Troppo pericoloso per rientrare (ancora per {0}).</EnterCooldown>
   <!-- EN: Caravan -->
   <Caravan>Carovana</Caravan>
   <!-- EN: there may be danger there. -->
   <HiddenOrNoSitePartDescription>qui potrebbe esserci un pericolo</HiddenOrNoSitePartDescription>
+  <!-- EN: The scanner is picking up activity around the lump. It's likely hostile. -->
+  <PreciousLumpHostileThreat>Lo scanner sta rilevando attività intorno al nodulo. Probabilmente è ostile.</PreciousLumpHostileThreat>
   <!-- EN: lump of {0} -->
   <PreciousLumpLabel>pezzo di {0}</PreciousLumpLabel>
   <!-- EN: no active research project -->
   <NoActiveResearchProjectToFinish>nessun progetto di ricerca attivo</NoActiveResearchProjectToFinish>
-  <!-- EN: Cannot research: No research bench -->
-  <CannotResearchNoBench>Impossibile eseguire la ricerca: nessun banco di ricerca</CannotResearchNoBench>
   <!-- EN: turret -->
   <Turret>torretta</Turret>
   <!-- EN: turrets -->
@@ -532,6 +532,8 @@
   <TextMote_Immune>Immune</TextMote_Immune>
   <!-- EN: {0} tended -->
   <TextMote_Tended>{0} curato</TextMote_Tended>
+  <!-- EN: level {0} -->
+  <TextMote_SkillUp>livello {0}</TextMote_SkillUp>
   <!-- EN: low mood -->
   <lowMood>morale basso</lowMood>
   <!-- EN: low opinion -->
@@ -620,6 +622,8 @@
   <WatchingAurora>guarda l'aurora.</WatchingAurora>
   <!-- EN: using {0} on {1}. -->
   <UsingVerb>usa {0} su {1}.</UsingVerb>
+  <!-- EN: using {0}. -->
+  <UsingVerbNoTarget>usa {0}.</UsingVerbNoTarget>
   <!-- EN: area -->
   <AreaLower>area</AreaLower>
   <!-- EN: cowering. -->
@@ -722,8 +726,8 @@
   <Faction>Fazione</Faction>
   <!-- EN: The faction {PAWN_labelShort} currently belongs to. -->
   <FactionDesc>La fazione a cui {PAWN_labelShort} attualmente appartiene.</FactionDesc>
-  <!-- EN: The faction {PAWN_labelShort} originally belongs to. {PAWN_pronoun} will rejoin their home faction when they depart from their current faction. -->
-  <ExtraFactionDesc>La fazione a cui {PAWN_labelShort} originariamente appartieneva. {PAWN_pronoun} si riunirà alla sua fazione originaria quando si allontanerà dalla sua fazione attuale.</ExtraFactionDesc>
+  <!-- EN: The faction {PAWN_labelShort} originally belongs to. -->
+  <ExtraFactionDesc>La fazione a cui {PAWN_labelShort} originariamente appartieneva.</ExtraFactionDesc>
   <!-- EN: Equipped -->
   <Equipped>Equipaggiato</Equipped>
   <!-- EN: nothing -->
@@ -1020,10 +1024,10 @@
   <HibernateWarningStandalonePacifist>Il reattore è pronto ad avviarsi. Il processo durerà circa 15 giorni.</HibernateWarningStandalonePacifist>
 
   <!-- Neurotrainer -->
-  <!-- EN: neurotrainer ({0}) -->
-  <SkillNeurotrainerLabel>neurotrainer ({0})</SkillNeurotrainerLabel>
-  <!-- EN: Use skill neurotrainer to learn {0} -->
-  <SkillNeurotrainerUseLabel>Usa il neurotrainer per imparare {0}</SkillNeurotrainerUseLabel>
+  <!-- EN: skilltrainer ({0}) -->
+  <SkillNeurotrainerLabel>skilltrainer ({0})</SkillNeurotrainerLabel>
+  <!-- EN: Use skilltrainer to learn {0} -->
+  <SkillNeurotrainerUseLabel>Usa lo skilltrainer per imparare {0}</SkillNeurotrainerUseLabel>
   <!-- EN: A one-use super-dose of mechanites which trains a specific skill.\n\nThe dose is administered through the orbit of the eye. Once released into the brain, the mechanites quickly improve the subject's skills in a specific area, transmuting themselves into neural tissue as needed. -->
   <SkillNeurotrainerDescription>Una super dose monouso di meccaniti che allena un'abilità specifica.\n\nLa dose viene somministrata attraverso l'orbita dell'occhio. Una volta rilasciati nel cervello, i meccaniti migliorano rapidamente le abilità del soggetto in un'area specifica, trasmutandosi nel tessuto neurale secondo necessità.</SkillNeurotrainerDescription>
   <!-- EN: {USER_labelShort} used {1} neurotrainer to go from level {2} to level {3}. -->
@@ -1163,6 +1167,10 @@
   <!-- EN: Deep drill resources exhausted. -->
   <DeepDrillExhaustedNoFallback>Risorse di profondità esaurite.</DeepDrillExhaustedNoFallback>
 
+  <!-- reloading ammo -->
+  <!-- EN: Remaining charges -->
+  <ChargesRemaining>Ricariche rimanenti</ChargesRemaining>
+  
   <!-- Learning helper -->
   <!-- EN: Learning helper -->
   <LearningHelper>Tutor</LearningHelper>
@@ -1238,8 +1246,8 @@
   <PawnTooltipNoDescNoPrimaryEquip>{0}\n{1}</PawnTooltipNoDescNoPrimaryEquip>
   <!-- EN: Neural heat: {0} / {1}\nFall rate: {2} / s ({3}s until zero) -->
   <PawnTooltipPsychicEntropyStats>Calore neurale: {0} / {1}\nTasso di ricaduta: {2} / s ({3}s fino a zero)</PawnTooltipPsychicEntropyStats>
-  <!-- EN: Neural heat increases after performing a psycast. Surpassing the normal limit may cause a psychic breakdown lasting days.\n\nNeural heat dissipates naturally over time. This process can be accelerated by wearing eltex apparel or being in pain. -->
-  <PawnTooltipPsychicEntropyDesc>Il calore neurale aumenta dopo aver eseguito uno psycast. Il superamento del limite normale può causare un esaurimento psichico che può durare alcuni giorni.\n\nIl calore neurale si dissipa naturalmente nel tempo. Questo processo può essere accelerato indossando indumenti eltex o provando dolore.</PawnTooltipPsychicEntropyDesc>
+  <!-- EN: Neural heat increases after using a psychic power. Surpassing the normal limit may cause a psychic breakdown lasting days.\n\nNeural heat dissipates naturally over time. This process can be accelerated by wearing eltex apparel or being in pain. -->
+  <PawnTooltipPsychicEntropyDesc>Il calore neurale aumenta dopo aver utilizzato poteri psichici. Il superamento del limite normale può causare un esaurimento psichico che può durare alcuni giorni.\n\nIl calore neurale si dissipa naturalmente nel tempo. Questo processo può essere accelerato indossando indumenti eltex o provando dolore.</PawnTooltipPsychicEntropyDesc>
   <!-- EN: Pain boost\n\nPain focuses the mind and speeds up neural heat dissipation.\n\nPain level: {0}\nBonus to heat recovery: {1} -->
   <PawnTooltipPsychicEntropyPainFocus>Aumento del dolore\n\nIl dolore concentra la mente e accelera la dissipazione del calore neurale.\n\nLivello del dolore: {0} \nBonus per il recupero del calore: {1}</PawnTooltipPsychicEntropyPainFocus>
   <!-- EN: Toggle neural heat limiter. Exceeding your heat limit may cause a psychic breakdown lasting days. It won't cause permanent damage. -->
@@ -1272,6 +1280,26 @@
   <Reward_CampLoot>puoi saccheggiare tutto dal campo</Reward_CampLoot>
   <!-- EN: Camp loot -->
   <Reward_CampLoot_Label>Bottino da campo</Reward_CampLoot_Label>
+  <!-- EN: the visitors will work and fight for you -->
+  <Reward_VisitorsHelp>i visitatori lavoreranno e combatteranno per te</Reward_VisitorsHelp>
+  <!-- EN: Visitors' help -->
+  <Reward_VisitorsHelp_Label>Aiuto dei visitatori</Reward_VisitorsHelp_Label>
+  <!-- EN: New psylink level -->
+  <Reward_BestowingCeremony_Label>Nuovo livello di psylink</Reward_BestowingCeremony_Label>
+  <!-- EN: {PAWNNAME} gains psylink -->
+  <Reward_BestowingCeremony>{PAWNNAME} ottiene psylink</Reward_BestowingCeremony>
+  <!-- EN: Shuttle loot -->
+  <Reward_ShuttleLoot_Label>Bottino della navetta</Reward_ShuttleLoot_Label>
+  <!-- EN: you can deconstruct and loot the shuttle -->
+  <Reward_ShuttleLoot>puoi smantellare la navetta e raccoglierne le parti</Reward_ShuttleLoot>
+  <!-- EN: Possible future reward -->
+  <Reward_PossibleFutureReward_Label>Possibile ricompensa futura</Reward_PossibleFutureReward_Label>
+  <!-- EN: a reward possibly granted in the future -->
+  <Reward_PossibleFutureReward>una ricompensa eventualmente concessa in futuro</Reward_PossibleFutureReward>
+  <!-- EN: {TITLE} title -->
+  <Reward_Title_Label>Titolo di {TITLE}</Reward_Title_Label>
+  <!-- EN: {PAWNNAME} gains {TITLE} title from {FACTION} -->
+  <Reward_Title>{PAWNNAME} ottiene il titolo di {TITLE} da {FACTION}</Reward_Title>
   <!-- EN: value {0} -->
   <TotalValue>valore {0}</TotalValue>
   
@@ -1282,6 +1310,12 @@
   <NotBonded>Non ancora associato</NotBonded>
   <!-- EN: bonded to someone else -->
   <BladelinkBondedToSomeoneElse>associato a qualcun'altro</BladelinkBondedToSomeoneElse>
+  <!-- EN: (existing bond) -->
+  <BladelinkAlreadyBonded>(legame esistente)</BladelinkAlreadyBonded>
+  <!-- EN: A person can only bond with one persona weapon at a time.\n\nTo equip and bond with {WEAPON_labelShort}, {PAWN_nameDef}'s currently bonded weapon {BONDEDWEAPON_labelShort} must first be destroyed. -->
+  <BladelinkAlreadyBondedDialog>Una persona può legarsi solo con un'arma alla volta.\n\nPer equipaggiare e legare con {WEAPON_labelShort}, l'arma attualmente legata con {PAWN_nameDef} ({BONDEDWEAPON_labelShort}) deve essere prima distrutta.</BladelinkAlreadyBondedDialog>
+  <!-- EN: {PAWN_nameDef} is already bonded to {BONDEDWEAPON_labelShort} -->
+  <BladelinkAlreadyBondedMessage>{PAWN_nameDef} è già legato con {BONDEDWEAPON_labelShort}</BladelinkAlreadyBondedMessage>
 
   <!-- Biocoded weapons -->
   <!-- EN: biocoded {0} -->
@@ -1310,6 +1344,9 @@
   <CausedByHediff>Causato da: {0}</CausedByHediff>
   
   <!-- UNUSED -->
+  <ForceExitAndRemoveMapCountdown>{0} prima della partenza</ForceExitAndRemoveMapCountdown>
+  <ForceExitAndRemoveMapCountdownTip>I tuoi coloni riorganizzeranno automaticamente la carovana e lasceranno quest'area in {0}.</ForceExitAndRemoveMapCountdownTip>
+  <CannotResearchNoBench>Impossibile eseguire la ricerca: nessun banco di ricerca</CannotResearchNoBench>
   <ItemStashContents>Contenuto: {0} ({1})</ItemStashContents>
   <KnownSiteThreat>Minaccia nota: {0}.</KnownSiteThreat>
   <KnownSiteThreats>Minacce note: {0}.</KnownSiteThreats>

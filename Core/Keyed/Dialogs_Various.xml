@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
   <!-- EN: Confirm -->
@@ -11,6 +11,8 @@
   <OK>OK</OK>
   <!-- EN: Close -->
   <Close>Chiudi</Close>
+  <!-- EN: Accept -->
+  <Accept>Accetta</Accept>
   
   <!-- Game updated to new version -->
   <!-- EN: RimWorld has been updated from version {0} to version {1}. -->
@@ -542,6 +544,8 @@
   <TraderCount>Quante copie di questo oggetto ha da scambiare il commerciante.</TraderCount>
   <!-- EN: Accept -->
   <AcceptButton>Accetta</AcceptButton>
+  <!-- EN: Load selected -->
+  <LoadSelected>Carica selezionato</LoadSelected>
   <!-- EN: Reset -->
   <ResetButton>Reimposta</ResetButton>
   <!-- EN: Cancel -->
@@ -614,12 +618,16 @@
   <!-- Form caravan -->
   <!-- EN: Form caravan -->
   <FormCaravan>Forma carovana</FormCaravan>
+  <!-- EN: Send -->
+  <Send>Invia</Send>
   <!-- EN: Number available to send with the caravan. -->
   <FormCaravanColonyThingCountTip>Numero disponibile da mandare con la carovana.</FormCaravanColonyThingCountTip>
   <!-- EN: People and animals -->
   <PawnsTab>Persone e animali</PawnsTab>
   <!-- EN: Items -->
   <ItemsTab>Oggetti</ItemsTab>
+  <!-- EN: Travel supplies -->
+  <FoodAndMedicineTab>Forniture da viaggio</FoodAndMedicineTab>
   <!-- EN: You must assign at least one non-downed colonist. -->
   <CaravanMustHaveAtLeastOneColonist>Devi assegnare almeno un colono non abbattuto.</CaravanMustHaveAtLeastOneColonist>
   <!-- EN: The chosen exit location ({0}) is inaccessible. -->
@@ -712,6 +720,8 @@
   <AnimalsSection>Animali</AnimalsSection>
   <!-- EN: Choose route -->
   <ChooseRouteButton>Scegli percorso</ChooseRouteButton>
+  <!-- EN: Change route -->
+  <ChangeRouteButton>Cambia percorso</ChangeRouteButton>
   <!-- EN: Abandon -->
   <AbandonButton>Abbandona</AbandonButton>
   <!-- EN: Movement speed -->
@@ -742,6 +752,8 @@
   <FactionType>Tipo fazione</FactionType>
   <!-- EN: Total body size -->
   <TotalBodySize>Taglia totale del corpo</TotalBodySize>
+  <!-- EN: Automatically select travel supplies -->
+  <AutomaticallySelectFoodAndMedicine>Invia automaticamente forniture da viaggio</AutomaticallySelectFoodAndMedicine>
 
   <!-- Split caravan -->
   <!-- EN: Split caravan -->
@@ -778,6 +790,8 @@
   <TransporterItemIsUnreachableMulti>Non ci sono percorsi tra le capsule di trasporto e {0} {1}.</TransporterItemIsUnreachableMulti>
   <!-- EN: There is no path between the shuttle and {0}x {1}. -->
   <TransporterSingleItemIsUnreachableMulti>Non ci sono percorsi tra la navetta e {0}x {1}.</TransporterSingleItemIsUnreachableMulti>
+  <!-- EN: Only {0} colonists maximum allowed. -->
+  <TransporterSingleTooManyColonists>Massimo {0} coloni consentiti.</TransporterSingleTooManyColonists>
   
   <!-- Comms -->
   <!-- EN: Social skill: {0} -->
@@ -852,8 +866,8 @@
   <MoodThresholdColumnLabel>Solo se l'umore è al di sotto di</MoodThresholdColumnLabel>
   <!-- EN: Only if recreation below -->
   <JoyThresholdColumnLabel>Solo se lo svago è al di sotto di</JoyThresholdColumnLabel>
-  <!-- EN: Take to inventory -->
-  <TakeToInventoryColumnLabel>Prendi da inventario</TakeToInventoryColumnLabel>
+  <!-- EN: Keep in inventory -->
+  <TakeToInventoryColumnLabel>Mantieni nell'inventario</TakeToInventoryColumnLabel>
   <!-- EN: (no drugs) -->
   <NoDrugsBrackets>(nessuna droga)</NoDrugsBrackets>
   <!-- EN: Every day -->
@@ -968,8 +982,8 @@
   <ConfirmCleanupTranslationFiles_Confirm>Si, ho un backup</ConfirmCleanupTranslationFiles_Confirm>
 
   <!-- Load transporters -->
-  <!-- EN: The caravan will be immobile if you send the pods to an empty tile. Continue anyway? -->
-  <TransportersCaravanWillBeImmobile>La carovana resterà immobile se mandi le capsule in una casella vuota. Continuare comunque?</TransportersCaravanWillBeImmobile>
+  <!-- EN: The caravan will be immobile if you launch to an empty tile. Continue anyway? -->
+  <TransportersCaravanWillBeImmobile>La carovana resterà immobile se invii in una casella vuota. Continuare comunque?</TransportersCaravanWillBeImmobile>
 
   <!-- Confirm cancel monument marker -->
   <!-- EN: Do you really want to remove this monument marker? -->
@@ -990,14 +1004,61 @@
   <AbilityCastingTime>Tempo di lancio</AbilityCastingTime>
   <!-- EN: No line of sight to target. -->
   <AbilityCannotHitTarget>Nessuna linea di tiro al bersaglio.</AbilityCannotHitTarget>
+  <!-- EN: Can't reach the target. -->
+  <AbilityCannotReachTarget>Impossibile raggiungere l'obbiettivo.</AbilityCannotReachTarget>
+  <!-- EN: Not enough free space. -->
+  <AbilityNotEnoughFreeSpace>Non abbastanza spazio libero.</AbilityNotEnoughFreeSpace>
   <!-- EN: {0} must target an empty area. -->
   <AbilityOccupiedCells>{0} deve indirizzare un'area vuota.</AbilityOccupiedCells>
   <!-- EN: {0} must target a walkable area. -->
   <AbilityUnwalkable>{0} deve indirizzare un'area percorribile.</AbilityUnwalkable>
   <!-- EN: {0} must target an unroofed area. -->
   <AbilityRoofed>{0} deve indirizzare un'area non protetta.</AbilityRoofed>
-  <!-- EN: {0} is mentally broken. -->
-  <AbilityCantApplyToMentallyBroken>{0} ha un crollo mentale.</AbilityCantApplyToMentallyBroken>
+  <!-- EN: {0_labelShort} is mentally broken. -->
+  <AbilityCantApplyToMentallyBroken>{0_labelShort} ha un crollo mentale.</AbilityCantApplyToMentallyBroken>
+  <!-- EN: {0_labelShort} is not mentally broken. -->
+  <AbilityCanOnlyApplyToMentallyBroken>{0_labelShort} non ha un crollo mentale.</AbilityCanOnlyApplyToMentallyBroken>
+  <!-- EN: {0} doesn't work on the '{1}' mental state. -->
+  <AbilityDoesntWorkOnMentalState>{0} non funziona con uno stato mentale "{1}".</AbilityDoesntWorkOnMentalState>
+  <!-- EN: {0_labelShort} has zero resistance. -->
+  <AbilityCantApplyNoResistance>{0_labelShort} ha zero di resistenza.</AbilityCantApplyNoResistance>
+  <!-- EN: Cannot use: {0} is asexual. -->
+  <AbilityCantApplyOnAsexual>Impossibile utilizzare: {0} è asessuale.</AbilityCantApplyOnAsexual>
+  <!-- EN: {1_labelShort} is the wrong gender for {0_labelShort}. -->
+  <AbilityCantApplyWrongAttractionGender>{1_labelShort} è il sesso sbagliato per {0_labelShort}.</AbilityCantApplyWrongAttractionGender>
+  <!-- EN: Psyfocus cost per mental break intensity -->
+  <PsyfocusCostPerMentalBreakIntensity>Costo di Psyfocus per intensità del crollo mentale</PsyfocusCostPerMentalBreakIntensity>
+  <!-- EN: {0_labelShort} is already inspired. -->
+  <AbilityAlreadyInspired>{0_labelShort} è già ispirato.</AbilityAlreadyInspired>
+  <!-- EN: {0_labelShort} can't get an inspiration right now. -->
+  <AbilityCantGetInspiredNow>{0_labelShort} non può trarre ispirazione in questo momento.</AbilityCantGetInspiredNow>
+  <!-- EN: {0_labelShort} is unconscious. -->
+  <AbilityCantApplyUnconscious>{0_labelShort} è incosciente.</AbilityCantApplyUnconscious>
+  <!-- EN: {0_labelShort} is asleep. -->
+  <AbilityCantApplyAsleep>{0_labelShort} sta dormendo.</AbilityCantApplyAsleep>
+  <!-- EN: This tile is impassable. -->
+  <AbilityWorldTileImpassable>Questa casella è intransitabile.</AbilityWorldTileImpassable>
+  <!-- EN: Skip to random ally -->
+  <AbilitySkipToRandomAlly>Vai ad alleato casuale</AbilitySkipToRandomAlly>
+  <!-- EN: Skip to join caravan -->
+  <AbilitySkipToJoinCaravan>Vai alla carovana</AbilitySkipToJoinCaravan>
+  <!-- EN: Need ally at target for navigation -->
+  <AbilityNeedAllyToSkip>Hai bisogno di alleato sul bersaglio per la navigazione</AbilityNeedAllyToSkip>
+  <!-- EN: No chunks to skip. -->
+  <AbilityNoChunkToSkip>Nessun blocco da saltare.</AbilityNoChunkToSkip>
+  <!-- EN: Induce psychic love in -->
+  <PsychicLoveInduceIn>Induce l'amore psichico in</PsychicLoveInduceIn>
+  <!-- EN: Psychic love for -->
+  <PsychicLoveFor>Amore psichico per</PsychicLoveFor>
+  <!-- EN: If you skip {PAWN_labelShort} to another map or a caravan, the associated quest will fail and {PAWN_pronoun} will leave immediately.\n\nDo you really want to farskip {PAWN_labelShort}? -->
+  <FarskipConfirmTeleportingLodger>Se lanci {PAWN_labelShort} su un'altra mappa o su una roulotte, la missione associata fallirà e {PAWN_pronoun} se ne andrà immediatamente.\n\nVuoi davvero lanciare {PAWN_labelShort}?</FarskipConfirmTeleportingLodger>
+  
+  <!-- EN: minor -->
+  <MentalBreakIntensityMinor>leggero</MentalBreakIntensityMinor>
+  <!-- EN: major -->
+  <MentalBreakIntensityMajor>grave</MentalBreakIntensityMajor>
+  <!-- EN: extreme -->
+  <MentalBreakIntensityExtreme>gravissimo</MentalBreakIntensityExtreme>
   
   <!-- UNUSED -->
   <ResearchMenuWithoutBench>Finché non costruisci un BANCO DA RICERCA i tuoi coloni non saranno in grado di fare ricerche.\n\nTuttavia puoi sempre dare un'occhiata ai progetti di ricerca.</ResearchMenuWithoutBench>

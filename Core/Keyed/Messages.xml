@@ -13,6 +13,9 @@
   <!-- EN: {0} from {1} have decided to steal what they can and leave. -->
   <MessageRaidersStealing>I {0} provenienti da {1} hanno deciso di rubare qualsiasi cosa potevano ed andarsene.</MessageRaidersStealing>
 
+  <!-- EN: {0} from {1} have arrived in the area of your caravan and are attacking. More are on the way and will arrive in {2}. -->
+  <MessageCaravanDetectedRaidArrived>{0} da {1} sono arrivati nell'area della tua carovana e stanno attaccando. Altri sono in arrivo e arriveranno tra {2}.</MessageCaravanDetectedRaidArrived>
+
   <!-- EN: {0} from {1} are leaving. -->
   <MessageRaidersLeaving>I {0} provenienti da {1} se ne stanno andando.</MessageRaidersLeaving>
   <!-- EN: {0} from {1} have given up and are leaving. -->
@@ -76,6 +79,8 @@
   <MessageTameSuccess>{RECRUITER_labelShort} ha addomesticato con successo {1} ({2} di probabilità).</MessageTameSuccess>
   <!-- EN: {RECRUITER_labelShort} successfully tamed {1} ({2} chance). It is now called {RECRUITEE_nameFull}. -->
   <MessageTameAndNameSuccess>{RECRUITER_labelShort} ha addomesticato con successo {1} ({2} di probabilità) e l'ha chiamat{RECRUITEE_gender ? o : a : o} {RECRUITEE_nameFull}.</MessageTameAndNameSuccess>
+  <!-- EN: {RECRUITEE} has joined your colony. -->
+  <MessageRecruitJoinOfferAccepted>{RECRUITEE} si è unit{RECRUITEE_gender ? o : a : o} alla tua colonia.</MessageRecruitJoinOfferAccepted>
 
   <!-- EN: The colony cannot afford this deal. -->
   <MessageColonyCannotAfford>La colonia non può permettersi questo scambio.</MessageColonyCannotAfford>
@@ -141,15 +146,6 @@
   <!-- EN: {1_labelShort} has collapsed due to extreme exhaustion. -->
   <MessageInvoluntarySleep>{1_labelShort} è collassat{1_gender ? o : a : o} per l'estrema stanchezza.</MessageInvoluntarySleep>
 
-  <!-- EN: {SURGEON_labelShort} has failed in a minor way while operating on {PATIENT_labelShort} ({RECIPE_label}). -->
-  <MessageMedicalOperationFailureMinor>{SURGEON_labelShort} ha fallito in maniera marginale operando {PATIENT_labelShort}.</MessageMedicalOperationFailureMinor>
-  <!-- EN: {SURGEON_labelShort} has failed catastrophically while operating on {PATIENT_labelShort} ({RECIPE_label}). -->
-  <MessageMedicalOperationFailureCatastrophic>{SURGEON_labelShort} ha fallito in maniera catastrofica operando {PATIENT_labelShort}.</MessageMedicalOperationFailureCatastrophic>
-  <!-- EN: {SURGEON_labelShort} has failed in a ridiculous way while operating on {PATIENT_labelShort} ({RECIPE_label}). -->
-  <MessageMedicalOperationFailureRidiculous>{SURGEON_labelShort} ha fallito in maniera ridicola operando {PATIENT_labelShort}.</MessageMedicalOperationFailureRidiculous>
-  <!-- EN: {SURGEON_labelShort} has committed a fatal error while operating on {PATIENT_labelShort} because of the special challenges of: {2} -->
-  <MessageMedicalOperationFailureFatal>{SURGEON_labelShort} ha commesso un errore fatale operando {PATIENT_labelShort} a causa della particolare difficoltà di: {2}</MessageMedicalOperationFailureFatal>
-
   <!-- EN: This operation will anger {0}. -->
   <MessageMedicalOperationWillAngerFaction>Questa operazione farà infuriare {0}.</MessageMedicalOperationWillAngerFaction>
 
@@ -194,7 +190,7 @@
   <!-- EN: {PAWN1_labelShort} started a social fight with {PAWN2_labelShort}. -->
   <MessageSocialFight>{PAWN1_labelShort} ha iniziato una rissa con {PAWN2_labelShort}.</MessageSocialFight>
   
-  <!-- EN: Colonists are gathering to celebrate {PAWN1_labelShort} and {PAWN2_labelShort}’s marriage. -->
+  <!-- EN: Colonists are gathering to celebrate {PAWN1_labelShort} and {PAWN2_labelShort}'s marriage. -->
   <MessageNewMarriageCeremony>I coloni si stanno radunando per celebrare il matrimonio tra {PAWN1_labelShort} e {PAWN2_labelShort}.</MessageNewMarriageCeremony>
   <!-- EN: {PAWN1_labelShort} and {PAWN2_labelShort} are beginning their marriage ceremony! -->
   <MessageMarriageCeremonyStarts>{PAWN1_labelShort} e {PAWN2_labelShort} stanno iniziando la loro cerimonia di matrimonio!</MessageMarriageCeremonyStarts>
@@ -453,9 +449,6 @@
   <!-- EN: Cannot build a roof over {0}. -->
   <MessageRoofIncompatibleWithPlant>Impossibile costruire un tetto sopra {0}.</MessageRoofIncompatibleWithPlant>
 
-  <!-- EN: Caravan will automatically travel to the first waypoint. -->
-  <MessageChoseRoute>La carovana si sposterà automaticamente verso la prima tappa.</MessageChoseRoute>
-
   <!-- EN: To leave the area, use the 'reform caravan' button in the world view. -->
   <MessagePlayerTriedToLeaveMapViaExitGrid_CanReform>Per lasciare l'area usa il pulsante 'riorganizza carovana' nella visuale del mondo.</MessagePlayerTriedToLeaveMapViaExitGrid_CanReform>
   <!-- EN: You can't leave the map now. -->
@@ -513,6 +506,18 @@
   <GoodwillChangedReason_RequestedMilitaryAid>richiesto aiuto militare</GoodwillChangedReason_RequestedMilitaryAid>
   <!-- EN: requested trader caravan -->
   <GoodwillChangedReason_RequestedTrader>carovana richiesta</GoodwillChangedReason_RequestedTrader>
+  <!-- EN: caused neuroquake echo -->
+  <GoodwillChangedReason_CausedNeuroquakeEcho>causato l'eco di un neuro-terremoto</GoodwillChangedReason_CausedNeuroquakeEcho>
+  <!-- EN: caused berserk on {PAWN_labelShort} -->
+  <GoodwillChangedReason_CausedBerserk>causato furia in {PAWN_labelShort}</GoodwillChangedReason_CausedBerserk>
+  <!-- EN: attacked {0_name} -->
+  <GoodwillChangeReason_AttackedFaction>attaccato {0_name}</GoodwillChangeReason_AttackedFaction>
+  <!-- EN: shuttle destroyed -->
+  <GoodwillChangeReason_ShuttleDestroyed>navetta distrutta</GoodwillChangeReason_ShuttleDestroyed>
+  <!-- EN: civilians lost -->
+  <GoodwillChangeReason_CiviliansLost>civili persi</GoodwillChangeReason_CiviliansLost>
+  <!-- EN: commander lost -->
+  <GoodwillChangeReason_CommanderLost>comandante perso</GoodwillChangeReason_CommanderLost>
 
   <!-- EN: {0} accept your gift but they don't appreciate it. -->
   <MessageGiftGivenButNotAppreciated>{0} accetta il tuo dono ma non lo apprezza.</MessageGiftGivenButNotAppreciated>
@@ -551,8 +556,8 @@
   <!-- EN: {0} couldn't reach its destination. -->
   <MessageCaravanArrivalActionNoLongerValid>{0} non può raggiungere la sua destinazione.</MessageCaravanArrivalActionNoLongerValid>
 
-  <!-- EN: You can't re-enter for another {0} days. -->
-  <MessageEnterCooldownBlocksEntering>Non puoi rientrare per altri {0} giorni.</MessageEnterCooldownBlocksEntering>
+  <!-- EN: Too dangerous to re-enter for {0}. -->
+  <MessageEnterCooldownBlocksEntering>Troppo pericoloso per rientrare (ancora per {0}).</MessageEnterCooldownBlocksEntering>
 
   <!-- EN: {0_labelShort} can now freely use "{1}". -->
   <MessagePermitCooldownFinished>{0_labelShort} ora può usare liberamente "{1}".</MessagePermitCooldownFinished>
@@ -616,7 +621,11 @@
   <!-- EN: {0_label} is currently hidden. -->
   <MessageCannotSelectInvisibleStat>{0_label} è attualmente nascosto.</MessageCannotSelectInvisibleStat>
 
+  <!-- EN: {PAWN_nameDef} is a prisoner -->
+  <MessagePrisonerCannotEquipWeapon>{PAWN_nameDef} è un prigioniero</MessagePrisonerCannotEquipWeapon>
+
   <!-- UNUSED -->
+  <MessageChoseRoute>La carovana si sposterà automaticamente verso la prima tappa.</MessageChoseRoute>
   <MessagePartyCalledOff>La festa è stata annullata.</MessagePartyCalledOff>
   <MessagePartyFinished>La festa è finita.</MessagePartyFinished>
   <MessageRescueeJoined>{1_labelShort} si è unit{1_gender ? o : a : o} al tuo gruppo dopo essere stat{1_gender ? o : a : o} salvat{1_gender ? o : a : o}!</MessageRescueeJoined>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
   <!-- Work tab -->
@@ -34,6 +34,8 @@
   <Priority3>Priorità normale</Priority3>
   <!-- EN: Low priority -->
   <Priority4>Priorità bassa</Priority4>
+  <!-- EN: {0}\n\nThe faction {1_nameDef} currently belongs to.\n\nClick to view faction. -->
+  <PawnFactionInfo>{0}\n\nLa fazione a cui appartiene {1_nameDef}.\n\nFai clic per visualizzare la fazione.</PawnFactionInfo>
   
   <!-- Assign tab -->
   <!-- EN: Manage outfits -->
@@ -90,6 +92,8 @@
   <EnemyOf>Nemico di: </EnemyOf>
   <!-- EN: Current goodwill and relations status with this faction. -->
   <CurrentGoodwillTip>Attuale opinione e stato relazione con questa fazione.</CurrentGoodwillTip>
+  <!-- EN: Current relations with this faction. -->
+  <CurrentRelationTip>Attuale relazione con questa fazione</CurrentRelationTip>
   <!-- EN: This faction is permanently hostile. They will raid your settlements and caravans. Relations with them will never improve for any reason. -->
   <CurrentGoodwillTip_PermanentEnemy>Questa fazione è permanentemente ostile. Assalteranno i tuoi insediamenti e le tue carovane. Le relazioni con loro non miglioreranno mai per nessuna ragione.</CurrentGoodwillTip_PermanentEnemy>
   <!-- EN: This faction is allied. They will send fighters to help you when they can. If relations fall below {0}, they will become neutral. -->
@@ -202,6 +206,8 @@
   <ResearchTechprintsFromFactions>Gli schemi tecnici sono disponibili presso queste fazioni tramite commercio e missioni:</ResearchTechprintsFromFactions>
   <!-- EN: Your faction tech level is {0}, but this project's tech level is {1}. Research speed will be multiplied by {2}. -->
   <TechLevelTooLow>Il livello tecnologico della tua fazione è {0}, ma il livello di questo progetto è {1}. La velocità di ricerca verrà moltiplicata per {2}.</TechLevelTooLow>
+  <!-- EN: Unlocked with -->
+  <UnlockedWith>Sbloccato con</UnlockedWith>
 
   <!-- Quests tab -->
   <!-- EN: Available -->
@@ -240,6 +246,10 @@
   <ShuttleDepartsIn>La navetta partirà tra {0}</ShuttleDepartsIn>
   <!-- EN: Shuttle departs on {0} -->
   <ShuttleDepartsOn>La navetta partirà il {0}</ShuttleDepartsOn>
+  <!-- EN: Guests depart in {0} -->
+  <GuestsDepartsIn>I visitatori partiranno tra {0}</GuestsDepartsIn>
+  <!-- EN: Guests depart on {0} -->
+  <GuestsDepartsOn>I visitatori partiranno il {0}</GuestsDepartsOn>
   <!-- EN: Finished {0} ago -->
   <QuestFinishedAgo>Terminata {0} fa</QuestFinishedAgo>
   <!-- EN: Accept quest -->
@@ -270,8 +280,16 @@
   <QuestBedroomRequirementsUnsatisfied>camere da letto disponibili che soddisfino le esigenze di</QuestBedroomRequirementsUnsatisfied>
   <!-- EN: a free bedroom that satisfies the title requirements of -->
   <QuestBedroomRequirementsUnsatisfiedSingle>una camera da letto disponibile che soddisfi le esigenze di</QuestBedroomRequirementsUnsatisfiedSingle>
-  <!-- EN: a colonist with the title of {0}. -->
+  <!-- EN: a throneroom that satisfies the requirements of {PAWN_definite}'s {TITLE} title -->
+  <QuestThroneRoomRequirementsUnsatisfied>una sala del trono disponibile che soddisfi i requisiti del titolo di {TITLE} di {PAWN_definite}</QuestThroneRoomRequirementsUnsatisfied>
+  <!-- EN: a throneroom that satisfies the requirements of {PAWN_definite}'s {TITLE} title -->
+  <QuestNoThroneRoom>una sala del trono disponibile che soddisfi i requisiti del titolo di {TITLE} di {PAWN_definite}</QuestNoThroneRoom>
+  <!-- EN: a colonist with the title of {0} -->
   <QuestNoColonistWithTitle>un colono con il titolo di {0}.</QuestNoColonistWithTitle>
+  <!-- EN: {PAWN_definite} to be in your home colony -->
+  <QuestPawnNotOnColonyMap>{PAWN_definite} per essere nella tua colonia</QuestPawnNotOnColonyMap>
+  <!-- EN: the map clear of enemies of the bestower's faction -->
+  <QuestRequiresNoDangerOnMap>la mappa libera dai nemici della fazione del assegnatore di titoli reali</QuestRequiresNoDangerOnMap>
   <!-- EN: Reward preferences -->
   <ChooseRewards>Preferenze per le ricompense</ChooseRewards>
   <!-- EN: Tell other factions what kinds of rewards you want in future quests. This doesn't affect quests that were already offered. -->
@@ -292,6 +310,10 @@
   <GoodwillTip>Le relazioni con {0_name} miglioreranno di {1}.\n\nRelazione corrente: {4} ({5}).\n\nSe le relazioni scendono al di sotto di {2}, la fazione diventa ostile e attacherà i tuoi insediamenti e carovane. Se le relazioni superano {3}, la fazione diventerà tua alleata e invierà combattenti per aiutarti quando possono. Altrimenti, la fazione rimarrà neutrale e commercierà con te liberamente.</GoodwillTip>
   <!-- EN: {0_labelShort} joins -->
   <PawnQuestReward>{0_labelShort} si unisce</PawnQuestReward>
+  <!-- EN: Betrayal offer: {0} targets remain -->
+  <QuestBetrayalOffer>Offerta di tradimento: {0} obbiettivi rimanenti</QuestBetrayalOffer>
+  <!-- EN: {0} will grant you a reward for killing all members of the {1}. -->
+  <QuestBetrayalOfferTip>{0} ti garantirà una ricompensa per aver ucciso tutti i membri di {1}.</QuestBetrayalOfferTip>
   
   <!-- Health tab -->
   <!-- EN: Creates need -->

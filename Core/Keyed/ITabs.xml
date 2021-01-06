@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
   <!-- ITab titles -->
@@ -112,6 +112,8 @@
   <ShouldTryToRecruit>Prova a reclutare</ShouldTryToRecruit>
   <!-- EN: Considered guilty (expires in {0}) -->
   <ConsideredGuilty>Considerat{PAWN_gender ? o:a} colpevole (termina in {0})</ConsideredGuilty>
+  <!-- EN: Considered guilty -->
+  <ConsideredGuiltyNoTimer>Considerat{PAWN_gender ? o:a} colpevole</ConsideredGuiltyNoTimer>
 
   <!-- Medical - general -->
   <!-- EN: Move speed -->
@@ -277,18 +279,10 @@
   <CopyLogTip>Copia log negli appunti.</CopyLogTip>
 
   <!-- Forming caravan tab -->
-  <!-- EN: Gathering animals -->
-  <FormingCaravanStatus_GatheringAnimals>Radunamento animali</FormingCaravanStatus_GatheringAnimals>
-  <!-- EN: Gathering animals (waiting) -->
-  <FormingCaravanStatus_GatheringAnimals_Pause>Radunamento animali (attesa)</FormingCaravanStatus_GatheringAnimals_Pause>
   <!-- EN: Gathering items -->
   <FormingCaravanStatus_GatheringItems>Radunamento oggetti</FormingCaravanStatus_GatheringItems>
   <!-- EN: Gathering items (waiting) -->
   <FormingCaravanStatus_GatheringItems_Pause>Radunamento oggetti (attesa)</FormingCaravanStatus_GatheringItems_Pause>
-  <!-- EN: Gathering slaves -->
-  <FormingCaravanStatus_GatheringSlaves>Radunamento schiavi</FormingCaravanStatus_GatheringSlaves>
-  <!-- EN: Gathering slaves (waiting) -->
-  <FormingCaravanStatus_GatheringSlaves_Pause>Radunamento schiavi (attesa)</FormingCaravanStatus_GatheringSlaves_Pause>
   <!-- EN: Gathering downed people -->
   <FormingCaravanStatus_GatheringDownedPawns>Radunamento persone abbattute</FormingCaravanStatus_GatheringDownedPawns>
   <!-- EN: Gathering downed people (waiting) -->
@@ -303,10 +297,10 @@
   <CaravanMembers>Membri</CaravanMembers>
   <!-- EN: Animals -->
   <CaravanAnimals>Animali</CaravanAnimals>
-  <!-- EN: Items to load -->
-  <ItemsToLoad>Oggetti da caricare</ItemsToLoad>
-  <!-- EN: Loaded items -->
-  <LoadedItems>Oggetti caricati</LoadedItems>
+  <!-- EN: To load -->
+  <ItemsToLoad>Da caricare</ItemsToLoad>
+  <!-- EN: Loaded -->
+  <LoadedItems>Caricato</LoadedItems>
   <!-- EN: pack animals -->
   <PackAnimalsCountLower>animali da soma</PackAnimalsCountLower>
   <!-- EN: mentally broken -->
@@ -329,5 +323,11 @@
   <QuestDismissed>Questa missione è qui perché è stata rifiutata.\n\nÈ possibile annullare la sua dismissione fino alla scadenza.</QuestDismissed>
   <!-- EN: Delete this quest and remove it from the quest list forever. -->
   <DeleteQuest>Elimina questa missione e rimuovila dall'elenco delle missioni per sempre.</DeleteQuest>
+
+  <!-- UNUSED -->
+  <FormingCaravanStatus_GatheringAnimals>Radunamento animali</FormingCaravanStatus_GatheringAnimals>
+  <FormingCaravanStatus_GatheringAnimals_Pause>Radunamento animali (attesa)</FormingCaravanStatus_GatheringAnimals_Pause>
+  <FormingCaravanStatus_GatheringSlaves>Radunamento schiavi</FormingCaravanStatus_GatheringSlaves>
+  <FormingCaravanStatus_GatheringSlaves_Pause>Radunamento schiavi (attesa)</FormingCaravanStatus_GatheringSlaves_Pause>
 
 </LanguageData>
