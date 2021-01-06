@@ -5,11 +5,14 @@
     <li>commonEnding->The monument is [monumentSize] in size and will require these resources (total value [monumentRequiredResourcesMarketValue_money]):\n\n[monumentRequiredResources]\n\nConstruction must be completed within [constructionTimeoutTicks_duration] of accepting the task.\n\nAfter completion, you'll have to protect the monument for [haveToProtectForTicks_duration]. If any piece of it is destroyed, [asker2]'s enforcement system will activate and [threatDescription]\n\nYou'll receive the rewards when you finish construction.</li>
   -->
   <BuildMonument_TimeProtect.questDescriptionRules.rulesStrings>
-    TODO
+    <li>commonEnding->Il monumento ha le dimensioni di [monumentSize] e richiederà queste risorse (valore totale [monumentRequiredResourcesMarketValue_money]):\n\n[monumentRequiredResources]\n\nLa costruzione deve essere completata entro [constructionTimeoutTicks_duration] dall'accettazione dell'attività.\n\nDopo il completamento, dovrai proteggere il monumento per [haveToProtectForTicks_duration]. Se una parte di essa viene distrutta, il sistema di controllo di [asker2] si attiverà e [threatDescription]\n\nRiceverai le ricompense al termine della costruzione.</li>
   </BuildMonument_TimeProtect.questDescriptionRules.rulesStrings>
   <!-- EN: Monument completed -->
-  <BuildMonument_TimeProtect.LetterLabelMonumentComplete.slateRef>TODO</BuildMonument_TimeProtect.LetterLabelMonumentComplete.slateRef>
+  <BuildMonument_TimeProtect.LetterLabelMonumentComplete.slateRef>Monumento completato</BuildMonument_TimeProtect.LetterLabelMonumentComplete.slateRef>
   <!-- EN: You completed construction of the monument.\n\nYou must now protect the monument for [haveToProtectForTicks_duration]. If any piece of it is destroyed, [asker2]'s enforcement system will activate and [threatDescription] -->
-  <BuildMonument_TimeProtect.LetterTextMonumentComplete.slateRef>TODO</BuildMonument_TimeProtect.LetterTextMonumentComplete.slateRef>
+  <BuildMonument_TimeProtect.LetterTextMonumentComplete.slateRef>Hai completato la costruzione del monumento.\n\nOra devi proteggere il monumento per [haveToProtectForTicks_duration]. Se una parte di essa viene distrutta, il sistema di controllo di [asker2] si attiverà e [threatDescription]</BuildMonument_TimeProtect.LetterTextMonumentComplete.slateRef>
+  
+  <!-- UNUSED -->
+  <BuildMonument_TimeProtect.questDescriptionRules.rulesStrings>\n    TODO\n  </BuildMonument_TimeProtect.questDescriptionRules.rulesStrings>
   
 </LanguageData>
