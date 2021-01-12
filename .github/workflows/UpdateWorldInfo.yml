@@ -51,10 +51,8 @@ jobs:
         Get-Content "$temp/all_females.txt", "Core/WordInfo/Gender/Female.txt" | Sort-Object -Unique | Set-Content "Core/WordInfo/Gender/Female.txt"
         # Sort the list of neuter words
         Get-Content "Core/WordInfo/Gender/Neuter.txt" | Sort-Object -Unique | Set-Content "Core/WordInfo/Gender/Neuter.txt"
-        # Sort the list of plural words
-        Get-Content "Core/WordInfo/Gender/Plural.txt" | Sort-Object -Unique | Set-Content "Core/WordInfo/Gender/Plural.txt"
         # Save a list of words already classified
-        Get-Content (Get-ChildItem -Path "Core/WordInfo/Gender/*" -Include "Male.txt", "Female.txt", "Neuter.txt", "Plural.txt") | Sort-Object -Unique | Set-Content "$temp/wordinfo.txt"
+        Get-Content (Get-ChildItem -Path "Core/WordInfo/Gender/*" -Include "Male.txt", "Female.txt", "Neuter.txt") | Sort-Object -Unique | Set-Content "$temp/wordinfo.txt"
         # Save a list of words not classified
         $objects = @{
           ReferenceObject  = (Get-Content -Path "$temp/wordinfo.txt")
@@ -62,7 +60,7 @@ jobs:
         }
         Compare-Object @objects -PassThru | Where-Object { $_.SideIndicator -eq "=>" } > "Core/WordInfo/Gender/new_words.txt"
         # Removes obsolete words from the lists
-        foreach ($gender in "Male", "Female", "Neuter", "Plural")
+        foreach ($gender in "Male", "Female", "Neuter")
         {
           $objects = @{
             ReferenceObject  = (Get-Content -Path "$temp/all.txt")
