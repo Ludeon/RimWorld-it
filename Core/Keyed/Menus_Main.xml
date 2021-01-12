@@ -110,7 +110,7 @@
   <WorldSeed>Seme</WorldSeed>
   <!-- EN: Randomize seed -->
   <RandomizeSeed>Seme casuale</RandomizeSeed>
-  <!-- EN: The planet is always the same diameter, but since it’s far larger than needed for play, we don’t generate the whole surface because it can take a very long time. This is the percentage of the surface that you want generated. -->
+  <!-- EN: The planet is always the same diameter, but since it's far larger than needed for play, we don't generate the whole surface because it can take a very long time. This is the percentage of the surface that you want generated. -->
   <PlanetCoverageTip>Il pianeta ha sempre lo stesso diametro ma, dal momento che è molto più grande di quanto serva per giocare, non generiamo l'intera superficie perché potrebbe richiedere troppo tempo. Questa è la percentuale di superficie che vuoi generare.</PlanetCoverageTip>
   <!-- EN: Factions -->
   <WorldFactionsTab>Fazioni</WorldFactionsTab>
@@ -204,12 +204,14 @@
   <ModUnsatisfiedDependency>Ciò richiede le seguenti mod per funzionare: {0}.</ModUnsatisfiedDependency>
   <!-- EN: This mod was not made for this version of RimWorld, and will probably not work correctly. -->
   <ModNotMadeForThisVersion>Questa mod non è stata creata per questa versione di RimWorld e probabilmente non funzionerà correttamente.</ModNotMadeForThisVersion>
+  <!-- EN: This mod is not made for this version of RimWorld. -->
+  <ModNotMadeForThisVersionShort>Questa mod non è stata creata per questa versione di RimWorld.</ModNotMadeForThisVersionShort>
   <!-- EN: This mod was made for a newer version of RimWorld than this, and will probably not work correctly. -->
   <ModNotMadeForThisVersion_Newer>Questa mod è stata creata per una versione più recente di RimWorld e probabilmente non funzionerà correttamente.</ModNotMadeForThisVersion_Newer>
   <!-- EN: Mod needs properly formatted supported version information in About.xml. Like this: <supportedVersions><li>{0}</li></supportedVersions> - <targetVersion> is deprecated. Check log for further information. -->
   <MessageModNeedsWellFormattedTargetVersion>La mod necessita di una versione di riferimento correttamente formattata in About.xml. Come questa: {0}.</MessageModNeedsWellFormattedTargetVersion>
   <!-- EN: Mod needs a unique, properly formatted packageId in About.xml. It must must meet following requirements:\n\n  - Alphanumeric characters and dot only.\n  - No spaces.\n  - At least one dot.\n  - No repeated dots in a row, or starting or ending with a dot.\n  - 60 characters or less.\n  - Cannot contain word "Ludeon".\n\nFor example:\n<packageId>AuthorName.ModName</packageId>\n<packageId>AuthorName.ModName.Specific</packageId> -->
-  <MessageModNeedsWellFormattedPackageId>La mod ha bisogno di un 'packageId' unico e correttamente formattato in 'About.xml'. Deve soddisfare i seguenti requisiti:\n\n  - Solamente lettere e punti.\n  - Nessuno spazio.\n - Almeno un punto.\n  - Nessuno punto ripetuto, all'inizio o alla fine di una riga.\n  - Massimo 60 caratteri.\n  - Non può contenere la parola "Ludeon".\n\nPer esempio:\n<packageId>NomeAutore.NomeMod</packageId>\n<packageId>NomeAutore.NomeMod.Specifica</packageId></MessageModNeedsWellFormattedPackageId>
+  <MessageModNeedsWellFormattedPackageId>La mod ha bisogno di un 'packageId' unico e correttamente formattato in 'About.xml'. Deve soddisfare i seguenti requisiti:\n\n  - Solamente lettere e punti.\n  - Nessuno spazio.\n - Almeno un punto.\n  - Nessuno punto ripetuto, all'inizio o alla fine di una riga.\n  - Massimo 60 caratteri.\n  - Non può contenere la parola "Ludeon".\n\nPer esempio:\nNomeAutore.NomeMod\nNomeAutore.NomeMod.Specifica</MessageModNeedsWellFormattedPackageId>
   <!-- EN: This mod has issues in LoadFolders.xml, that you need to resolve before uploading: -->
   <ModHadLoadFolderIssues>Questa mod presenta problemi in LoadFolders.xml, che devi risolvere prima di caricare:</ModHadLoadFolderIssues>
   <!-- EN: Folder {0} specified for version {1} doesn't exist. -->
@@ -224,6 +226,8 @@
   <ModLoadFolderOutOfOrder>Ordine versione non valido: {0} dovrebbe precedere {1}.</ModLoadFolderOutOfOrder>
   <!-- EN: Invalid version order: 'default' should be defined first. -->
   <ModLoadFolderOutOfOrderDefault>Ordine versione non valido: 'default' deve essere definito per primo.</ModLoadFolderOutOfOrderDefault>
+  <!-- EN: Using 'default' in load folders is deprecated. Please define folders for each version using the <v...> tags. -->
+  <ModLoadFolderDefaultDeprecated>L'utilizzo di "default" nelle cartelle di caricamento è deprecato. Definire le cartelle per ogni versione utilizzando i tags "v...".</ModLoadFolderDefaultDeprecated>
   <!-- EN: Version {0} is defined in load folders, but is not listed in 'supportedVersions' of mod's About.xml. -->
   <ModLoadFolderDefinesUnsupportedGameVersion>La versione {0} è definita nelle cartelle di caricamento, ma non è elencata in "supportVersions" di About.xml della mod.</ModLoadFolderDefinesUnsupportedGameVersion>
   <!-- EN: Drag to reorder -->
@@ -260,6 +264,8 @@
   <ConfirmContentAuthor>Naturalmente dovresti caricare solamente contenuti creati da te.\n\nHai creato tu questi contenuti?</ConfirmContentAuthor>
   <!-- EN: Incompatible -->
   <Incompatible>Incompatibile</Incompatible>
+  <!-- EN: Tag as translation -->
+  <TagAsTranslation>Etichetta come traduzione</TagAsTranslation>
   <!-- EN: Too many (max {0}):  -->
   <TooMany>Troppi (max {0}): </TooMany>
   <!-- EN: Can be updated on Workshop, since you are the author. -->
@@ -284,12 +290,165 @@
   <ReloadAnytimeModeInfo>Puoi salvare e caricare il gioco in qualsiasi momento.\n\nQuesta è una buona scelta se stai ancora imparando a giocare, se si adatta al tuo stile di gioco personale, se stai usando mod che potrebbero compromettere la tua partita o se hai intenzione di allenarti alla modalità difficile.</ReloadAnytimeModeInfo>
   <!-- EN: You can only save when quitting the game.\n\nSince RimWorld is a story generator, even losing all but one person is not the end of the game - it's part of the story. The game is designed to allow recovery after losses.\n\nPlaying out these terrible situations makes a story with both tragedy and triumph. It's the way RimWorld was designed to be played.\n\nThere's a reason Luke Skywalker didn't quit and reload when his family got killed - loss and recovery is dramatic. -->
   <PermadeathModeInfo>Puoi salvare solo quando esci dal gioco.\n\nDal momento che RimWorld è un generatore di storie, fintanto che rimane anche una sola persona il gioco non è finito... è parte della storia. Il gioco è pensato per permettere di riprendersi dopo le perdite.\n\nInscenare queste situazioni terribili rende una storia sia una tragedia che un trionfo. E' il modo in cui RimWorld è stato pensato per essere giocato.\n\nC'è un motivo se Luke Skywalker non è uscito e ha ricaricato quando la sua famiglia è stata uccisa... cadere e rialzarsi è drammatico.</PermadeathModeInfo>
-  <!-- EN: Storyteller and difficulty can be changed any time. -->
-  <CanChangeStorytellerSettingsDuringPlay>Narratore e difficoltà possono essere sempre cambiati.</CanChangeStorytellerSettingsDuringPlay>
-  <!-- EN: Merciless mode -->
-  <UnlockExtremeDifficulty>Modalità spietata</UnlockExtremeDifficulty>
-  <!-- EN: Merciless mode is a special game mode where every challenge is turned up to extreme levels.\n\nMerciless mode unlocks automatically when you reach specific milestones. However, you can unlock it now.\n\nThis option is only recommended once you've played a high-difficulty game or two and want to have a good chance at dying despite your best efforts. -->
-  <ConfirmUnlockExtremeDifficulty>La modalità spietata è una speciale modalità di gioco dove ogni sfida è portata ai massimi livelli.\n\nLa modalità spietata si sblocca automaticamente quando raggiungi determinati traguardi. Tuttavia la puoi sbloccare adesso.\n\nQuesta opzione è raccomandata solo dopo che hai giocato una o due volte a difficoltà elevata e vuoi avere buone probabilità di morire nonostante tutti i tuoi sforzi.</ConfirmUnlockExtremeDifficulty>
+  <!-- EN: Storyteller and playstyle can be changed any time. -->
+  <CanChangeStorytellerSettingsDuringPlay>Narratore e stile di gioco possono essere sempre cambiati.</CanChangeStorytellerSettingsDuringPlay>
+
+  <!-- custom difficulty settings -->
+  <!-- EN: Custom playstyle settings -->
+  <DifficultyCustomSectionLabel>Impostazioni dello stile di gioco personalizzate</DifficultyCustomSectionLabel>
+  <!-- EN: Set to standard playstyle... -->
+  <DifficultyReset>Imposta stile di gioco standard...</DifficultyReset>
+  
+  <!-- EN: Threats -->
+  <DifficultyThreatSection>Minacce</DifficultyThreatSection>
+  <!-- EN: Threat scale -->
+  <Difficulty_ThreatScale_Label>Grandezza delle minacce</Difficulty_ThreatScale_Label>
+  <!-- EN: Adjust the size of threats like raids and infestations, and the difficulty of quests. -->
+  <Difficulty_ThreatScale_Info>Modifica la dimensione delle minacce come incursioni, infestazioni e la difficoltà delle missioni.</Difficulty_ThreatScale_Info>
+  <!-- EN: Major threats -->
+  <Difficulty_AllowBigThreats_Label>Minacce maggiori</Difficulty_AllowBigThreats_Label>
+  <!-- EN: Allow major threats such as raids, infestations, manhunter packs, crashed mechanoid ships and more. -->
+  <Difficulty_AllowBigThreats_Info>Consenti minacce maggiori come incursioni, infestazioni, branchi di cacciatori di uomini, navi meccanoidi schiantate e altro ancora.</Difficulty_AllowBigThreats_Info>
+  <!-- EN: Quest threats -->
+  <Difficulty_AllowViolentQuests_Label>Minacce da missioni</Difficulty_AllowViolentQuests_Label>
+  <!-- EN: Allow quests to present with violent threats and challenges. If this is disabled, quests will be modified to be non-violent. -->
+  <Difficulty_AllowViolentQuests_Info>Consenti alle missioni di presentare minacce e sfide violente. Se questo è disabilitato, le missioni saranno modificate per essere non violente.</Difficulty_AllowViolentQuests_Info>
+  <!-- EN: Intro threats -->
+  <Difficulty_AllowIntroThreats_Label>Minacce introduttive</Difficulty_AllowIntroThreats_Label>
+  <!-- EN: Enable the fixed intro threats that appear near game start. -->
+  <Difficulty_AllowIntroThreats_Info>Abilita le minacce introduttive fisse che appaiono all'inizio del gioco.</Difficulty_AllowIntroThreats_Info>
+  <!-- EN: Predators hunt humans -->
+  <Difficulty_PredatorsHuntHumanlikes_Label>Predatori cacciano umani</Difficulty_PredatorsHuntHumanlikes_Label>
+  <!-- EN: Allow wild predators to hunt humans. -->
+  <Difficulty_PredatorsHuntHumanlikes_Info>Consenti ai predatori selvatici di cacciare gli umani.</Difficulty_PredatorsHuntHumanlikes_Info>
+  <!-- EN: Extreme weather -->
+  <Difficulty_AllowExtremeWeatherIncidents_Label>Clima estremo</Difficulty_AllowExtremeWeatherIncidents_Label>
+  <!-- EN: Allow extreme weather incidents such as toxic fallout, volcanic winters and flashstorms. -->
+  <Difficulty_AllowExtremeWeatherIncidents_Info>Consenti incidenti meteorologici estremi come ricadute tossiche, inverni vulcanici e tempeste di fulmini.</Difficulty_AllowExtremeWeatherIncidents_Info>
+
+  <!-- EN: Economy -->
+  <DifficultyEconomySection>Economia</DifficultyEconomySection>
+  <!-- EN: Trade price disadvantage -->
+  <Difficulty_TradePriceFactorLoss_Label>Svantaggio del prezzo commerciale</Difficulty_TradePriceFactorLoss_Label>
+  <!-- EN: When trading, buy prices are increased by this amount while sell prices are reduced by this amount. -->
+  <Difficulty_TradePriceFactorLoss_Info>Durante la negoziazione, i prezzi di acquisto vengono aumentati di questo importo mentre i prezzi di vendita vengono ridotti di questo importo.</Difficulty_TradePriceFactorLoss_Info>
+  <!-- EN: Harvest yield -->
+  <Difficulty_CropYieldFactor_Label>Resa del raccolto</Difficulty_CropYieldFactor_Label>
+  <!-- EN: Adjust the amount of materials produced when harvesting plants and crops. This includes harvesting plants and cutting trees. -->
+  <Difficulty_CropYieldFactor_Info>Regola la quantità di materiali prodotti durante la raccolta di piante e colture. Ciò include la raccolta delle piante e il taglio degli alberi.</Difficulty_CropYieldFactor_Info>
+  <!-- EN: Mining yield -->
+  <Difficulty_MineYieldFactor_Label>Resa mineraria</Difficulty_MineYieldFactor_Label>
+  <!-- EN: Adjust the amount of materials produced when mining. -->
+  <Difficulty_MineYieldFactor_Info>Regola la quantità di materiali prodotti durante l'estrazione mineraria.</Difficulty_MineYieldFactor_Info>
+  <!-- EN: Butchering yield -->
+  <Difficulty_ButcherYieldFactor_Label>Resa del banco da macellaio</Difficulty_ButcherYieldFactor_Label>
+  <!-- EN: Adjust the amount of materials produced when butchering. This includes meat, leather, and yield from shredding mechanoids. -->
+  <Difficulty_ButcherYieldFactor_Info>Regola la quantità di materiali prodotti durante la macellazione. Ciò include carne, cuoio e scarti prodotti dalla triturazione dei meccanoidi.</Difficulty_ButcherYieldFactor_Info>
+  <!-- EN: Research speed -->
+  <Difficulty_ResearchSpeedFactor_Label>Velocità di ricerca</Difficulty_ResearchSpeedFactor_Label>
+  <!-- EN: Adjust the speed of research. -->
+  <Difficulty_ResearchSpeedFactor_Info>Regola la velocità della ricerca.</Difficulty_ResearchSpeedFactor_Info>
+  <!-- EN: Quest rewards -->
+  <Difficulty_QuestRewardValueFactor_Label>Ricompense delle missioni</Difficulty_QuestRewardValueFactor_Label>
+  <!-- EN: Adjust the value of rewards given for quests.\n\nNote: Quest reward value is also automatically scaled to compensate for threat scale. If you adjust this setting, you'll be adding an additional multiplier. -->
+  <Difficulty_QuestRewardValueFactor_Info>Modifica il valore delle ricompense fornite per le missioni.\n\nNota: anche il valore della ricompensa delle missioni viene automaticamente ridimensionato per compensare la scala delle minacce. Se modifichi questa impostazione, aggiungerai un ulteriore moltiplicatore.</Difficulty_QuestRewardValueFactor_Info>
+  <!-- EN: Raid loot -->
+  <Difficulty_RaidLootPointsFactor_Label>Bottino dalle invasioni</Difficulty_RaidLootPointsFactor_Label>
+  <!-- EN: Adjust the value of loot carried by raiders.\n\nNote: Raid loot value is also automatically scaled to compensate for threat scale. If you adjust this setting, you'll be adding an additional multiplier. -->
+  <Difficulty_RaidLootPointsFactor_Info>Regola il valore del bottino trasportato dai predoni.\n\nNota: anche il valore del bottino dalle invasioni viene automaticamente ridimensionato per compensare la scala delle minacce. Se modifichi questa impostazione, aggiungerai un ulteriore moltiplicatore.</Difficulty_RaidLootPointsFactor_Info>
+  <!-- EN: Turret rearm cost -->
+  <Difficulty_MaintenanceCostFactor_Label>Costo di riarmo delle torretta</Difficulty_MaintenanceCostFactor_Label>
+  <!-- EN: Adjust the cost of rearming turrets. -->
+  <Difficulty_MaintenanceCostFactor_Info>Regola il costo del riarmo delle torrette.</Difficulty_MaintenanceCostFactor_Info>
+  <!-- EN: Scaria rot chance -->
+  <Difficulty_ScariaRotChance_Label>Probabilità di intossicazione da scaria</Difficulty_ScariaRotChance_Label>
+  <!-- EN: The probability that a corpse will immediately rot upon death, if the creature has the scaria disease.\n\nNote: The default settings are designed to exactly balance out the increase in animal count at higher difficulties, so all players get the same meat rewards. -->
+  <Difficulty_ScariaRotChance_Info>La probabilità che un cadavere marcisca immediatamente dopo la morte, se la creatura ha la malattia della scaria.\n\nNota: le impostazioni predefinite sono progettate per bilanciare esattamente l'aumento del numero di animali alle difficoltà più elevate, in modo che tutti i giocatori ottengano le stesse ricompense di carne.</Difficulty_ScariaRotChance_Info>
+  <!-- EN: Enemy death on downed -->
+  <Difficulty_EnemyDeathOnDownedChanceFactor_Label>Morte del nemico all'abbattimento</Difficulty_EnemyDeathOnDownedChanceFactor_Label>
+  <!-- EN: Adjust the extra chance that an enemy will immediately die when downed. This affects the chances to take prisoners, and thus colony population growth rates. -->
+  <Difficulty_EnemyDeathOnDownedChanceFactor_Info>Regola la possibilità che un nemico muoia immediatamente quando viene abbattuto. Ciò influisce sulle possibilità di fare prigionieri e quindi sui tassi di crescita della popolazione delle colonie.</Difficulty_EnemyDeathOnDownedChanceFactor_Info>
+
+  <!-- EN: General -->
+  <DifficultyGeneralSection>Generale</DifficultyGeneralSection>
+  <!-- EN: Colonist mood -->
+  <Difficulty_ColonistMoodOffset_Label>Umore dei coloni</Difficulty_ColonistMoodOffset_Label>
+  <!-- EN: A permanent mood offset applied to every colonist and prisoner. Colonists have a base mood of 50%. -->
+  <Difficulty_ColonistMoodOffset_Info>Un offset permanente dell'umore applicato a ogni colono e prigioniero. I coloni hanno uno stato d'animo di base del 50%.</Difficulty_ColonistMoodOffset_Info>
+  <!-- EN: Food poison chance -->
+  <Difficulty_FoodPoisonChanceFactor_Label>Possibilità di intossicazione alimentare</Difficulty_FoodPoisonChanceFactor_Label>
+  <!-- EN: Adjust the chance that a person will get food poisoning from eating a potentially-poisoned meal. -->
+  <Difficulty_FoodPoisonChanceFactor_Info>Regola la possibilità che una persona subisca un'intossicazione alimentare mangiando un pasto potenzialmente avvelenato.</Difficulty_FoodPoisonChanceFactor_Info>
+  <!-- EN: Animal revenge chance -->
+  <Difficulty_ManhunterChanceOnDamageFactor_Label>Possibilità di vendetta degli animali</Difficulty_ManhunterChanceOnDamageFactor_Label>
+  <!-- EN: Adjust the chance that injuring a wild animal will cause it to attack. -->
+  <Difficulty_ManhunterChanceOnDamageFactor_Info>Regola la possibilità che un animale selvatico, dopo essere stato ferito, attacchi il cacciatore.</Difficulty_ManhunterChanceOnDamageFactor_Info>
+  <!-- EN: Friendly fire -->
+  <Difficulty_FriendlyFireChanceFactor_Label>Fuoco amico</Difficulty_FriendlyFireChanceFactor_Label>
+  <!-- EN: Adjust the chance of friendly fire.\n\nNote: This setting only affects direct shots which were going to hit their target. It does not prevent damage from explosions, or from shots which were going to miss their target. -->
+  <Difficulty_FriendlyFireChanceFactor_Info>Regola la possibilità di danni da fuoco amico.\n\nNota: questa impostazione ha effetto solo sui colpi diretti che avrebbero colpito il bersaglio. Non previene i danni da esplosioni o da colpi che avrebbero mancato il bersaglio.</Difficulty_FriendlyFireChanceFactor_Info>
+  <!-- EN: Colonist instant kills -->
+  <Difficulty_AllowInstantKillChance_Label>Morte istantanea dei coloni</Difficulty_AllowInstantKillChance_Label>
+  <!-- EN: Adjust the chance that a colonist can die instantly due to an attack. The incoming damage is adjusted so it will down the colonist instead.\n\nThis only prevents some kinds of instant kills - colonists can still be downed and bleed to death, die from fire, explosions, disease, and so on. -->
+  <Difficulty_AllowInstantKillChance_Info>Modifica la possibilità che un colono muoia istantaneamente a causa di un attacco. Il danno in arrivo viene regolato in modo che incapaciterà invece il colono.\n\nQuesto previene solo alcuni tipi di uccisioni istantanee: i coloni possono comunque essere abbattuti e morire per dissanguamento, per il fuoco, esplosioni, malattie e così via.</Difficulty_AllowInstantKillChance_Info>
+  <!-- EN: Infection chance -->
+  <Difficulty_PlayerPawnInfectionChanceFactor_Label>Possibilità di infezione</Difficulty_PlayerPawnInfectionChanceFactor_Label>
+  <!-- EN: Adjust the chance that a wound will become infected. -->
+  <Difficulty_PlayerPawnInfectionChanceFactor_Info>Regola la possibilità che una ferita venga infettata.</Difficulty_PlayerPawnInfectionChanceFactor_Info>
+  <!-- EN: Disease frequency -->
+  <Difficulty_DiseaseIntervalFactor_Inverted_Label>Frequenza della malattia</Difficulty_DiseaseIntervalFactor_Inverted_Label>
+  <!-- EN: Adjust the frequency of random disease events. -->
+  <Difficulty_DiseaseIntervalFactor_Inverted_Info>Regola la frequenza di malattie casuali.</Difficulty_DiseaseIntervalFactor_Inverted_Info>
+  <!-- EN: Insect spawning rate -->
+  <Difficulty_EnemyReproductionRateFactor_Label>Tasso di nascita di insetti</Difficulty_EnemyReproductionRateFactor_Label>
+  <!-- EN: Adjust the rate at which existing insect hives spawn new insects. Lower values means more time between spawn events.\n\nThis does not affect whether infestations can occur - only the speed at which active hives produce insects. -->
+  <Difficulty_EnemyReproductionRateFactor_Info>Regola la velocità con cui gli alveari esistenti generano nuovi insetti. Valori più bassi significano più tempo tra eventi di nascita.\n\nQuesto non influisce sulla possibilità che possano verificarsi infestazioni, ma solo sulla velocità con cui gli alveari attivi producono insetti.</Difficulty_EnemyReproductionRateFactor_Info>
+  <!-- EN: Deep drilling infestations -->
+  <Difficulty_DeepDrillInfestationChanceFactor_Label>Infestazioni da perforazione profonda</Difficulty_DeepDrillInfestationChanceFactor_Label>
+  <!-- EN: Adjust the chance that deep drilling will trigger an infestation. -->
+  <Difficulty_DeepDrillInfestationChanceFactor_Info>Regola la possibilità che una perforazione profonda inneschi un'infestazione di insetti.</Difficulty_DeepDrillInfestationChanceFactor_Info>
+  <!-- EN: Map generation ancient threats -->
+  <Difficulty_PeacefulTemples_Inverted_Label>Mappe con generazione di antiche minacce</Difficulty_PeacefulTemples_Inverted_Label>
+  <!-- EN: Ancient structures may contain dangerous threats. -->
+  <Difficulty_PeacefulTemples_Inverted_Info>Le strutture antiche possono contenere minacce pericolose.</Difficulty_PeacefulTemples_Inverted_Info>
+  <!-- EN: Map generation natural hives -->
+  <Difficulty_AllowCaveHives_Label>Mappe con generazione di alveari naturali</Difficulty_AllowCaveHives_Label>
+  <!-- EN: Dormant insect hives may spawn in natural caves.\n\nThis setting only applies to map generation and does not affect active insects that may tunnel in during play. -->
+  <Difficulty_AllowCaveHives_Info>Alveari di insetti dormienti possono generarsi nelle caverne naturali.\n\nQuesta impostazione si applica solo alla generazione di mappe e non influisce sugli insetti attivi che possono entrare nei tunnel durante il gioco.</Difficulty_AllowCaveHives_Info>
+
+  <!-- EN: Player tools -->
+  <DifficultyPlayerToolsSection>Strumenti del giocatore</DifficultyPlayerToolsSection>
+  <!-- EN: Player can build traps -->
+  <Difficulty_AllowTraps_Label>Costruzione di trappole</Difficulty_AllowTraps_Label>
+  <!-- EN: Player can build traps like spike traps and IED traps. -->
+  <Difficulty_AllowTraps_Info>Il giocatore può costruire trappole come trappole a punta e trappole IED.</Difficulty_AllowTraps_Info>
+  <!-- EN: Player can build turrets -->
+  <Difficulty_AllowTurrets_Label>Costruzione di torrette</Difficulty_AllowTurrets_Label>
+  <!-- EN: Player can build static turrets like mini-turrets, autocannon turrets, and uranium slug turrets.\n\nYou can still use captured turrets even if this is disabled. -->
+  <Difficulty_AllowTurrets_Info>Il giocatore può costruire torrette statiche come mini-torrette, torrette a cannone automatico e torrette per proiettili all'uranio.\n\nPuoi comunque usare le torrette catturate anche se questa opzione è disabilitata.</Difficulty_AllowTurrets_Info>
+  <!-- EN: Player can build mortars -->
+  <Difficulty_AllowMortars_Label>Costruzione di mortai</Difficulty_AllowMortars_Label>
+  <!-- EN: Player can build mortars.\n\nYou can still use captured mortars even if this is disabled. -->
+  <Difficulty_AllowMortars_Info>Il giocatore può costruire mortai.\n\nPuoi comunque usare i mortai catturati anche se questa opzione è disabilitata.</Difficulty_AllowMortars_Info>
+  
+  <!-- EN: Adaptation -->
+  <DifficultyAdaptationSection>Adattamento</DifficultyAdaptationSection>
+  <!-- EN: Damage adaptation growth -->
+  <Difficulty_AdaptationGrowthRateFactorOverZero_Label>Crescita dell'adattamento dei danni</Difficulty_AdaptationGrowthRateFactorOverZero_Label>
+  <!-- EN: Adaptation means the storyteller makes the game more challenging over time as long as you are not taking losses. This is separate from the story effects of wealth and population.\n\nThis adjusts the rate of that challenge growth. -->
+  <Difficulty_AdaptationGrowthRateFactorOverZero_Info>Adattamento significa che il narratore rende il gioco più impegnativo nel tempo purché non subisca perdite. Questo è separato dagli effetti della storia della ricchezza e della popolazione.\n\nQuesto regola il tasso di crescita della sfida.</Difficulty_AdaptationGrowthRateFactorOverZero_Info>
+  <!-- EN: Damage adaptation effect -->
+  <Difficulty_AdaptationEffectFactor_Label>Effetto di adattamento dei danni</Difficulty_AdaptationEffectFactor_Label>
+  <!-- EN: Adaptation means the storyteller makes the game more challenging over time as long as you are not taking losses. This is separate from the story effects of wealth and population.\n\nThis adjusts the effect of that adaptation value on actual threats. -->
+  <Difficulty_AdaptationEffectFactor_Info>Adattamento significa che il narratore rende il gioco più impegnativo nel tempo purché non subisca perdite. Questo è separato dagli effetti della storia della ricchezza e della popolazione.\n\nQuesto regola l'effetto del valore di adattamento sulle minacce effettive.</Difficulty_AdaptationEffectFactor_Info>
+  <!-- EN: Wealth-independent progress mode -->
+  <Difficulty_FixedWealthMode_Label>Modalità di avanzamento indipendente dalla ricchezza</Difficulty_FixedWealthMode_Label>
+  <!-- EN: Play in a wealth-independent progress mode.\n\nIn normal mode, the storyteller scales threats according to colonist count, player wealth, and a variety of other factors. Wealth-independent mode removes the wealth factor and replaces it with a fixed progress curve based on time. The time is counted from the founding of each colony.\n\nThis is only recommended for those looking for a strict skill challenge. In wealth-independent mode, it may be nearly impossible to recover from serious losses unless you found a new settlement. It's also possible to get too far ahead of the curve and find the game too easy. -->
+  <Difficulty_FixedWealthMode_Info>Gioca in una modalità di progresso indipendente dalla ricchezza.\n\nIn modalità normale, il narratore scala le minacce in base al numero dei coloni, alla ricchezza dei giocatori e ad una varietà di altri fattori. La modalità indipendente dalla ricchezza rimuove il fattore di ricchezza e lo sostituisce con una curva di avanzamento fissa basata sul tempo. Il tempo viene calcolato dalla fondazione di ogni colonia.\n\nQuesto è consigliato solo a chi cerca una sfida di abilità rigorosa. In modalità indipendente dalla ricchezza, potrebbe essere quasi impossibile recuperare da gravi perdite a meno che non si trovi una nuova colonia. È anche possibile andare troppo avanti rispetto alla curva e trovare il gioco troppo facile.</Difficulty_FixedWealthMode_Info>
+  <!-- EN: Years until maximum threat -->
+  <Difficulty_FixedWealthTimeFactor_Label>Anni fino a massimo livello di minacce</Difficulty_FixedWealthTimeFactor_Label>
+  <!-- EN: The number of game years until the wealth-independent mode reaches its maximum threat level.\n\nNote that the storyteller will still scale threats according to colonist count and a variety of other factors. -->
+  <Difficulty_FixedWealthTimeFactor_Info>Il numero di anni di gioco prima che la modalità indipendente dalla ricchezza raggiunga il livello di minaccia massimo.\n\nNota che il narratore continuerà a ridimensionare le minacce in base al numero di coloni e a una varietà di altri fattori.</Difficulty_FixedWealthTimeFactor_Info>
 
   <!-- Site select -->
   <!-- EN: Select starting site -->
@@ -440,8 +599,8 @@
   <Next>Avanti</Next>
   <!-- EN: Back -->
   <Back>Indietro</Back>
-  <!-- EN: Show Materials -->
-  <ShowMaterials>Mostra materiali</ShowMaterials>
+  <!-- EN: Change material... -->
+  <ShowMaterials>Cambia materiale...</ShowMaterials>
   <!-- EN: Gameplay -->
   <Gameplay>Gameplay</Gameplay>
   <!-- EN: Really quit? You'll lose unsaved progress. -->
@@ -469,5 +628,9 @@
   <ClickForMoreInfo>Clicca per maggiori informazioni</ClickForMoreInfo>
   <!-- EN: No more information is available. -->
   <NoMoreInfoAvailable>Non sono disponibili ulteriori informazioni.</NoMoreInfoAvailable>
+
+  <!-- UNUSED -->
+  <UnlockExtremeDifficulty>Modalità spietata</UnlockExtremeDifficulty>
+  <ConfirmUnlockExtremeDifficulty>La modalità spietata è una speciale modalità di gioco dove ogni sfida è portata ai massimi livelli.\n\nLa modalità spietata si sblocca automaticamente quando raggiungi determinati traguardi. Tuttavia la puoi sbloccare adesso.\n\nQuesta opzione è raccomandata solo dopo che hai giocato una o due volte a difficoltà elevata e vuoi avere buone probabilità di morire nonostante tutti i tuoi sforzi.</ConfirmUnlockExtremeDifficulty>
 
 </LanguageData>

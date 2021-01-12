@@ -214,14 +214,14 @@
   <InteractionSpotWillOverlap>Il punto di interazione si sovrapporrà al punto di interazione di {1_labelShort}.</InteractionSpotWillOverlap>
   <!-- EN: Interaction spot overlaps with the interaction spot of {1_labelShort}. -->
   <InteractionSpotOverlaps>Il punto di interazione si sovrappone al punto di interazione di {1_labelShort}.</InteractionSpotOverlaps>
-  <!-- EN: Monuments cannot be placed over other buildings. -->
-  <MonumentOverlapsBuilding>I monumenti non possono essere collocati sopra altri edifici.</MonumentOverlapsBuilding>
-  <!-- EN: Monument cannot be placed adjacent to a building. -->
-  <MonumentAdjacentToBuilding>Il monumento non può essere posizionato adiacente ad un edificio.</MonumentAdjacentToBuilding>
-  <!-- EN: Monuments cannot be placed on incompatible terrain. -->
-  <MonumentBadTerrain>I monumenti non possono essere collocati su terreni incompatibili.</MonumentBadTerrain>
-  <!-- EN: Monuments cannot be placed over permanent obstructions. -->
-  <MonumentBlockedPermanently>I monumenti non possono essere posizionati sopra ostacoli permanenti.</MonumentBlockedPermanently>
+  <!-- EN: Cannot place monument over: {0}. -->
+  <CannotPlaceMonumentOver>Impossibile piazzare il monumento sopra: {0}.</CannotPlaceMonumentOver>
+  <!-- EN: Cannot build on: {0}. -->
+  <CannotPlaceMonumentOnTerrain>Impossibile costruire su: {0}.</CannotPlaceMonumentOnTerrain>
+  <!-- EN: Cannot place monument over: {0}. -->
+  <MonumentOverlapsBuilding>Impossibile piazzare il monumento sopra: {0}.</MonumentOverlapsBuilding>
+  <!-- EN: Monument cannot be placed adjacent to: {0}. -->
+  <MonumentAdjacentToBuilding>Il monumento non può essere posizionato adiacente a: {0}.</MonumentAdjacentToBuilding>
   
   <!-- Mouse attachments -->
   <!-- EN: Expand {0} or\nCreate new {1} -->
@@ -244,6 +244,8 @@
   <AllColonistsWithSkillHaveDisabledConstructingTip>Tutti i tuoi {0} che hanno questa abilità non sono assegnati a {1}.</AllColonistsWithSkillHaveDisabledConstructingTip>
 
   <!-- UNUSED -->
+  <MonumentBadTerrain>I monumenti non possono essere collocati su terreni incompatibili.</MonumentBadTerrain>
+  <MonumentBlockedPermanently>I monumenti non possono essere posizionati sopra ostacoli permanenti.</MonumentBlockedPermanently>
   <NoColonistWithConstructionSkillTip>Nessuno dei tuoi {0} ha questa abilità.</NoColonistWithConstructionSkillTip>
   <AllColonistsWithConstructionSkillHaveDisaledConstructingTip>Tutti i tuoi {0} che hanno questa abilità non sono assegnati a {1}.</AllColonistsWithConstructionSkillHaveDisaledConstructingTip>
 

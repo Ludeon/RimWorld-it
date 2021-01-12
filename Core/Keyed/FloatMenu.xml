@@ -41,6 +41,8 @@
   <CannotOrderNonControlledLower>impossibile dare ordini a persone che non controlli</CannotOrderNonControlledLower>
   <!-- EN: cannot attack self -->
   <CannotAttackSelf>non può attaccare sé stesso</CannotAttackSelf>
+  <!-- EN: cannot attack faction ally -->
+  <CannotAttackSameFactionMember>non può attaccare una fazione alleata</CannotAttackSameFactionMember>
 
   <!-- EN: Man {1_labelShort} -->
   <OrderManThing>Aziona {1_labelShort}</OrderManThing>
@@ -136,6 +138,8 @@
   <InstallImplantAlreadyMaxLevel>livello massimo</InstallImplantAlreadyMaxLevel>
   <!-- EN: Upgrade {0} to level {1} -->
   <UpgradeImplant>Aggiorna {0} al livello {1}</UpgradeImplant>
+  <!-- EN: violation of faction ally -->
+  <SurgeryViolationFellowFactionMember>violazione dell'alleanza con la fazione</SurgeryViolationFellowFactionMember>
   
   <!-- EN: Consume {1_labelShort} -->
   <ConsumeThing>Consuma {1_labelShort}</ConsumeThing>
@@ -190,6 +194,8 @@
   <IsReservedBy>{0} è riservato a {1}.</IsReservedBy>
   <!-- EN: Too heavy -->
   <TooHeavy>troppo pesante</TooHeavy>
+  <!-- EN: {0_labelShort} is in the same faction. -->
+  <SameFaction>{0_labelShort} è nella stessa fazione.</SameFaction>
 
   <!-- EN: incapable -->
   <Incapable>incapace</Incapable>
@@ -212,8 +218,19 @@
   <ForceWear>Obbliga a indossare {1_labelShort}</ForceWear>
   <!-- EN: Cannot wear {1_label} -->
   <CannotWear>Non può indossare {1_label}</CannotWear>
+  <!-- EN: Force equip {1_labelShort} -->
+  <ForceEquipApparel>Obbliga a munirsi di {1_labelShort}</ForceEquipApparel>
+  <!-- EN: Cannot equip {1_label} -->
+  <CannotEquipApparel>Non può munirsi di {1_label}</CannotEquipApparel>
   <!-- EN: missing body parts -->
   <CannotWearBecauseOfMissingBodyParts>parti del corpo mancanti</CannotWearBecauseOfMissingBodyParts>
+  
+  <!-- EN: Reload {GEAR_labelShort} with {AMMO_label} -->
+  <Reload>Ricarica {GEAR_labelShort} con {AMMO_label}</Reload>
+  <!-- EN: Full -->
+  <ReloadFull>Pieno</ReloadFull>
+  <!-- EN: Too few -->
+  <ReloadNotEnough>Troppi pochi</ReloadNotEnough>
   
   <!-- EN: Cannot pick up {1_label} -->
   <CannotPickUp>Non può raccogliere {1_label}</CannotPickUp>
@@ -374,6 +391,8 @@
   <DropAtEdge>Lascia al bordo</DropAtEdge>
   <!-- EN: Drop in center -->
   <DropInCenter>Lascia al centro</DropInCenter>
+  <!-- EN: Attack {0} -->
+  <AttackShuttle>Attacca {0}</AttackShuttle>
   <!-- EN: Attack {0}: Drop at edge -->
   <AttackAndDropAtEdge>Attacca {0}: Lascia al bordo</AttackAndDropAtEdge>
   <!-- EN: Attack {0}: Drop in center -->
@@ -420,6 +439,9 @@
 
   <!-- EN: apply {0} -->
   <ApplyTechprint>applica {0}</ApplyTechprint>
+
+  <!-- EN: Too dangerous -->
+  <EnterCooldownBlocksEntering>Troppo pericoloso</EnterCooldownBlocksEntering>
   
   <!-- UNUSED -->
   <ConstructionSkillTooLow>abilità costruzione troppo bassa</ConstructionSkillTooLow>
