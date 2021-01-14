@@ -276,22 +276,25 @@
     <li>damaged_targets->[recipient_part_damaged0_label], [recipient_part_damaged1_label], [recipient_part_damaged2_label], and [recipient_part_damaged3_label]</li>
   -->
   <Combat_WoundIncludes.rulePack.rulesStrings>
-    <li>destroyed_targets(recipient_part_destroyed_count==1)->{recipient_part_destroyed0_gender ? il : la : lo} [recipient_part_destroyed0_label]</li>
-    <li>destroyed_targets(recipient_part_destroyed_count==2)->{recipient_part_destroyed0_gender ? il : la : lo} [recipient_part_destroyed0_label] e {recipient_part_destroyed1_gender ? il : la : lo} [recipient_part_destroyed1_label]</li>
-    <li>destroyed_targets(recipient_part_destroyed_count==3)->{recipient_part_destroyed0_gender ? il : la : lo} [recipient_part_destroyed0_label], {recipient_part_destroyed1_gender ? il : la : lo} [recipient_part_destroyed1_label], e {recipient_part_destroyed2_gender ? il : la : lo} [recipient_part_destroyed2_label]</li>
-    <li>destroyed_targets->{recipient_part_destroyed0_gender ? il : la : lo} [recipient_part_destroyed0_label], {recipient_part_destroyed1_gender ? il : la : lo} [recipient_part_destroyed1_label], {recipient_part_destroyed2_gender ? il : la : lo} [recipient_part_destroyed2_label], e {recipient_part_destroyed3_gender ? il : la : lo} [recipient_part_destroyed3_label]</li>
-    <li>destroyed_targetsPos(recipient_part_destroyed_count==1)->{recipient_part_destroyed0_gender ? il : la : lo} {recipient_part_destroyed0_gender ? suo : sua : suo} [recipient_part_destroyed0_label]</li>
-    <li>destroyed_targetsPos(recipient_part_destroyed_count==2)->{recipient_part_destroyed0_gender ? il : la : lo} {recipient_part_destroyed0_gender ? suo : sua : suo} [recipient_part_destroyed0_label] e {recipient_part_destroyed1_gender ? il : la : lo} {recipient_part_destroyed1_gender ? suo : sua : suo} [recipient_part_destroyed1_label]</li>
-    <li>destroyed_targetsPos(recipient_part_destroyed_count==3)->{recipient_part_destroyed0_gender ? il : la : lo} {recipient_part_destroyed0_gender ? suo : sua : suo} [recipient_part_destroyed0_label], {recipient_part_destroyed1_gender ? il : la : lo} {recipient_part_destroyed1_gender ? suo : sua : suo} [recipient_part_destroyed1_label], e {recipient_part_destroyed2_gender ? il : la : lo} {recipient_part_destroyed2_gender ? suo : sua : suo} [recipient_part_destroyed2_label]</li>
-    <li>destroyed_targetsPos->{recipient_part_destroyed0_gender ? il : la : lo} {recipient_part_destroyed0_gender ? suo : sua : suo} [recipient_part_destroyed0_label], {recipient_part_destroyed1_gender ? il : la : lo} {recipient_part_destroyed1_gender ? suo : sua : suo} [recipient_part_destroyed1_label], {recipient_part_destroyed2_gender ? il : la : lo} {recipient_part_destroyed2_gender ? suo : sua : suo} [recipient_part_destroyed2_label], e {recipient_part_destroyed3_gender ? il : la : lo} {recipient_part_destroyed3_gender ? suo : sua : suo} [recipient_part_destroyed3_label]</li>
-    <li>damaged_targets(recipient_part_damaged_count==1)->{recipient_part_damaged0_gender ? il : la : lo} [recipient_part_damaged0_label]</li>
-    <li>damaged_targets(recipient_part_damaged_count==2)->{recipient_part_damaged0_gender ? il : la : lo} [recipient_part_damaged0_label] e {recipient_part_damaged1_gender ? il : la : lo} [recipient_part_damaged1_label]</li>
-    <li>damaged_targets(recipient_part_damaged_count==3)->{recipient_part_damaged0_gender ? il : la : lo} [recipient_part_damaged0_label], {recipient_part_damaged1_gender ? il : la : lo} [recipient_part_damaged1_label], e {recipient_part_damaged2_gender ? il : la : lo} [recipient_part_damaged2_label]</li>
-    <li>damaged_targets->{recipient_part_damaged0_gender ? il : la : lo} [recipient_part_damaged0_label], {recipient_part_damaged1_gender ? il : la : lo} [recipient_part_damaged1_label], {recipient_part_damaged2_gender ? il : la : lo} [recipient_part_damaged2_label], e {recipient_part_damaged3_gender ? il : la : lo} [recipient_part_damaged3_label]</li>
-    <li>damaged_targetsPos(recipient_part_damaged_count==1)->{recipient_part_damaged0_gender ? il : la : il} {recipient_part_damaged0_gender ? suo : sua : suo} [recipient_part_damaged0_label]</li>
-    <li>damaged_targetsPos(recipient_part_damaged_count==2)->{recipient_part_damaged0_gender ? il : la : il} {recipient_part_damaged0_gender ? suo : sua : suo} [recipient_part_damaged0_label] e {recipient_part_damaged1_gender ? il : la : il} {recipient_part_damaged1_gender ? suo : sua : suo} [recipient_part_damaged1_label]</li>
-    <li>damaged_targetsPos(recipient_part_damaged_count==3)->{recipient_part_damaged0_gender ? il : la : il} {recipient_part_damaged0_gender ? suo : sua : suo} [recipient_part_damaged0_label], {recipient_part_damaged1_gender ? il : la : il} {recipient_part_damaged1_gender ? suo : sua : suo} [recipient_part_damaged1_label], e {recipient_part_damaged2_gender ? il : la : il} {recipient_part_damaged2_gender ? suo : sua : suo} [recipient_part_damaged2_label]</li>
-    <li>damaged_targetsPos->{recipient_part_damaged0_gender ? il : la : il} {recipient_part_damaged0_gender ? suo : sua : suo} [recipient_part_damaged0_label], {recipient_part_damaged1_gender ? il : la : il} {recipient_part_damaged1_gender ? suo : sua : suo} [recipient_part_damaged1_label], {recipient_part_damaged2_gender ? il : la : il} {recipient_part_damaged2_gender ? suo : sua : suo} [recipient_part_damaged2_label], e {recipient_part_damaged3_gender ? il : la : il} {recipient_part_damaged3_gender ? suo : sua : suo} [recipient_part_damaged3_label]</li>
+    <li>destroyed_targets(recipient_part_destroyed_count==1)->[recipient_part_destroyed0_il_la_lo] [recipient_part_destroyed0_label]</li>
+    <li>destroyed_targets(recipient_part_destroyed_count==2)->[recipient_part_destroyed0_il_la_lo] [recipient_part_destroyed0_label] e [recipient_part_destroyed1_il_la_lo] [recipient_part_destroyed1_label]</li>
+    <li>destroyed_targets(recipient_part_destroyed_count==3)->[recipient_part_destroyed0_il_la_lo] [recipient_part_destroyed0_label], [recipient_part_destroyed1_il_la_lo] [recipient_part_destroyed1_label], e [recipient_part_destroyed2_il_la_lo] [recipient_part_destroyed2_label]</li>
+    <li>destroyed_targets->[recipient_part_destroyed0_il_la_lo] [recipient_part_destroyed0_label], [recipient_part_destroyed1_il_la_lo] [recipient_part_destroyed1_label], [recipient_part_destroyed2_il_la_lo] [recipient_part_destroyed2_label], e [recipient_part_destroyed3_il_la_lo] [recipient_part_destroyed3_label]</li>
+    
+    <li>destroyed_targetsPos(recipient_part_destroyed_count==1)->[recipient_part_destroyed0_il_suo_la_sua] [recipient_part_destroyed0_label]</li>
+    <li>destroyed_targetsPos(recipient_part_destroyed_count==2)->[recipient_part_destroyed0_il_suo_la_sua] [recipient_part_destroyed0_label] e [recipient_part_destroyed1_il_suo_la_sua] [recipient_part_destroyed1_label]</li>
+    <li>destroyed_targetsPos(recipient_part_destroyed_count==3)->[recipient_part_destroyed0_il_suo_la_sua] [recipient_part_destroyed0_label], [recipient_part_destroyed1_il_suo_la_sua] [recipient_part_destroyed1_label], e [recipient_part_destroyed2_il_suo_la_sua] [recipient_part_destroyed2_label]</li>
+    <li>destroyed_targetsPos->[recipient_part_destroyed0_il_suo_la_sua] [recipient_part_destroyed0_label], [recipient_part_destroyed1_il_suo_la_sua] [recipient_part_destroyed1_label], [recipient_part_destroyed2_il_suo_la_sua] [recipient_part_destroyed2_label], e [recipient_part_destroyed3_il_suo_la_sua] [recipient_part_destroyed3_label]</li>
+    
+    <li>damaged_targets(recipient_part_damaged_count==1)->[recipient_part_damaged0_il_la_lo] [recipient_part_damaged0_label]</li>
+    <li>damaged_targets(recipient_part_damaged_count==2)->[recipient_part_damaged0_il_la_lo] [recipient_part_damaged0_label] e [recipient_part_damaged1_il_la_lo] [recipient_part_damaged1_label]</li>
+    <li>damaged_targets(recipient_part_damaged_count==3)->[recipient_part_damaged0_il_la_lo] [recipient_part_damaged0_label], [recipient_part_damaged1_il_la_lo] [recipient_part_damaged1_label], e [recipient_part_damaged2_il_la_lo] [recipient_part_damaged2_label]</li>
+    <li>damaged_targets->[recipient_part_damaged0_il_la_lo] [recipient_part_damaged0_label], [recipient_part_damaged1_il_la_lo] [recipient_part_damaged1_label], [recipient_part_damaged2_il_la_lo] [recipient_part_damaged2_label], e [recipient_part_damaged3_il_la_lo] [recipient_part_damaged3_label]</li>
+    
+    <li>damaged_targetsPos(recipient_part_damaged_count==1)->[recipient_part_damaged0_il_suo_la_sua] [recipient_part_damaged0_label]</li>
+    <li>damaged_targetsPos(recipient_part_damaged_count==2)->[recipient_part_damaged0_il_suo_la_sua] [recipient_part_damaged0_label] e [recipient_part_damaged1_il_suo_la_sua] [recipient_part_damaged1_label]</li>
+    <li>damaged_targetsPos(recipient_part_damaged_count==3)->[recipient_part_damaged0_il_suo_la_sua] [recipient_part_damaged0_label], [recipient_part_damaged1_il_suo_la_sua] [recipient_part_damaged1_label], e [recipient_part_damaged2_il_suo_la_sua] [recipient_part_damaged2_label]</li>
+    <li>damaged_targetsPos->[recipient_part_damaged0_il_suo_la_sua] [recipient_part_damaged0_label], [recipient_part_damaged1_il_suo_la_sua] [recipient_part_damaged1_label], [recipient_part_damaged2_il_suo_la_sua] [recipient_part_damaged2_label], e [recipient_part_damaged3_il_suo_la_sua] [recipient_part_damaged3_label]</li>
     <li>expertly->abilmente</li>
     <li>expertly->espertamente</li>
     <li>expertly->magistralmente</li>
@@ -342,6 +345,54 @@
     <li>expertFem->geniale</li>
     <li>expertFem->magistrale</li>
     <li>expertFem->artistica</li>
+
+    <!-- Separation gender: il/la/lo  -->
+    <li>recipient_part_destroyed0_il_la_lo(recipient_part_destroyed0_gender == Male)->il</li>
+    <li>recipient_part_destroyed0_il_la_lo(recipient_part_destroyed0_gender == Female)->la</li>
+    <li>recipient_part_destroyed0_il_la_lo(recipient_part_destroyed0_gender == Neuter)->lo</li>
+    <li>recipient_part_destroyed1_il_la_lo(recipient_part_destroyed1_gender == Male)->il</li>
+    <li>recipient_part_destroyed1_il_la_lo(recipient_part_destroyed1_gender == Female)->la</li>
+    <li>recipient_part_destroyed1_il_la_lo(recipient_part_destroyed1_gender == Neuter)->lo</li>
+    <li>recipient_part_destroyed2_il_la_lo(recipient_part_destroyed2_gender == Male)->il</li>
+    <li>recipient_part_destroyed2_il_la_lo(recipient_part_destroyed2_gender == Female)->la</li>
+    <li>recipient_part_destroyed2_il_la_lo(recipient_part_destroyed2_gender == Neuter)->lo</li>
+    <li>recipient_part_destroyed3_il_la_lo(recipient_part_destroyed3_gender == Male)->il</li>
+    <li>recipient_part_destroyed3_il_la_lo(recipient_part_destroyed3_gender == Female)->la</li>
+    <li>recipient_part_destroyed3_il_la_lo(recipient_part_destroyed3_gender == Neuter)->lo</li>
+    
+    <!-- Separation gender: il suo/la sua  -->
+    <li>recipient_part_destroyed0_il_suo_la_sua(recipient_part_destroyed0_gender != Female)->il suo</li>
+    <li>recipient_part_destroyed0_il_suo_la_sua(recipient_part_destroyed0_gender == Female)->la sua</li>
+    <li>recipient_part_destroyed1_il_suo_la_sua(recipient_part_destroyed1_gender != Female)->il suo</li>
+    <li>recipient_part_destroyed1_il_suo_la_sua(recipient_part_destroyed1_gender == Female)->la sua</li>
+    <li>recipient_part_destroyed2_il_suo_la_sua(recipient_part_destroyed2_gender != Female)->il suo</li>
+    <li>recipient_part_destroyed2_il_suo_la_sua(recipient_part_destroyed2_gender == Female)->la sua</li>
+    <li>recipient_part_destroyed3_il_suo_la_sua(recipient_part_destroyed3_gender != Female)->il suo</li>
+    <li>recipient_part_destroyed3_il_suo_la_sua(recipient_part_destroyed3_gender == Female)->la sua</li>
+
+    <!-- Separation gender: il/la/lo  -->
+    <li>recipient_part_damaged0_il_la_lo(recipient_part_damaged0_gender == Male)->il</li>
+    <li>recipient_part_damaged0_il_la_lo(recipient_part_damaged0_gender == Female)->la</li>
+    <li>recipient_part_damaged0_il_la_lo(recipient_part_damaged0_gender == Neuter)->lo</li>
+    <li>recipient_part_damaged1_il_la_lo(recipient_part_damaged1_gender == Male)->il</li>
+    <li>recipient_part_damaged1_il_la_lo(recipient_part_damaged1_gender == Female)->la</li>
+    <li>recipient_part_damaged1_il_la_lo(recipient_part_damaged1_gender == Neuter)->lo</li>
+    <li>recipient_part_damaged2_il_la_lo(recipient_part_damaged2_gender == Male)->il</li>
+    <li>recipient_part_damaged2_il_la_lo(recipient_part_damaged2_gender == Female)->la</li>
+    <li>recipient_part_damaged2_il_la_lo(recipient_part_damaged2_gender == Neuter)->lo</li>
+    <li>recipient_part_damaged3_il_la_lo(recipient_part_damaged3_gender == Male)->il</li>
+    <li>recipient_part_damaged3_il_la_lo(recipient_part_damaged3_gender == Female)->la</li>
+    <li>recipient_part_damaged3_il_la_lo(recipient_part_damaged3_gender == Neuter)->lo</li>
+    
+    <!-- Separation gender: il suo/la sua  -->
+    <li>recipient_part_damaged0_il_suo_la_sua(recipient_part_damaged0_gender != Female)->il suo</li>
+    <li>recipient_part_damaged0_il_suo_la_sua(recipient_part_damaged0_gender == Female)->la sua</li>
+    <li>recipient_part_damaged1_il_suo_la_sua(recipient_part_damaged1_gender != Female)->il suo</li>
+    <li>recipient_part_damaged1_il_suo_la_sua(recipient_part_damaged1_gender == Female)->la sua</li>
+    <li>recipient_part_damaged2_il_suo_la_sua(recipient_part_damaged2_gender != Female)->il suo</li>
+    <li>recipient_part_damaged2_il_suo_la_sua(recipient_part_damaged2_gender == Female)->la sua</li>
+    <li>recipient_part_damaged3_il_suo_la_sua(recipient_part_damaged3_gender != Female)->il suo</li>
+    <li>recipient_part_damaged3_il_suo_la_sua(recipient_part_damaged3_gender == Female)->la sua</li>
   </Combat_WoundIncludes.rulePack.rulesStrings>
   
 </LanguageData>
