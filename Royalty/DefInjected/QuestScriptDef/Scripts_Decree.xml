@@ -5,7 +5,7 @@
     <li>questDescription->[decreeIntro]\n\nYou must build a monument. It is [monumentSize] in size and will require these resources (total value [monumentRequiredResourcesMarketValue_money]):\n\n[monumentRequiredResources]\n\n[decreeThreatInfo]\n\nYou must keep the monument safe for [keepMonumentTicks_duration] after completion, otherwise [asker_nameDef] will be unhappy.</li>
   -->
   <Decree_BuildMonument.questDescriptionRules.rulesStrings>
-    <li>questDescription->[decreeIntro]\n\nDevi costruire un monumento. Dev'essere [monumentSize] in grandezza e richiederà le seguenti risorse (Gesamtwert [monumentRequiredResourcesMarketValue_money]):\n\n[monumentRequiredResources]\n\n[decreeThreatInfo]\n\nDevi tenere il monumento al sicuro per [keepMonumentTicks_duration] dopo il completamento, altrimenti [asker_nameDef] sarà infelice.</li>
+    <li>questDescription->[decreeIntro]\n\nDevi costruire un monumento. Dev'essere [monumentSize] in grandezza e richiederà le seguenti risorse (valore totale [monumentRequiredResourcesMarketValue_money]):\n\n[monumentRequiredResources]\n\n[decreeThreatInfo]\n\nDevi tenere il monumento al sicuro per [keepMonumentTicks_duration] dopo il completamento, altrimenti [asker_nameDef] sarà infelice.</li>
   </Decree_BuildMonument.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->monument decree</li>
@@ -36,7 +36,7 @@
     <li>questDescription->[decreeIntro]\n\nYou must harvest [plantToHarvest_label] x[harvestItemCount].\n\nYou may need to plant and grow the [plantToHarvest_label] first.\n\n[decreeThreatInfo]</li>
   -->
   <Decree_HarvestCrop.questDescriptionRules.rulesStrings>
-    <li>questDescription->[decreeIntro]\n\nDevi raccogliere [harvestItemCount]x [plantToHarvest_label].\n\nAvrai bisogno di piantare e far crescere il [plantToHarvest_label] prima.\n\n[decreeThreatInfo]</li>
+    <li>questDescription->[decreeIntro]\n\nDevi raccogliere [harvestItemCount]x [plantToHarvest_label].\n\nAvrai bisogno di piantare e far crescere {plantToHarvest_gender ? il : la : lo} [plantToHarvest_label] prima.\n\n[decreeThreatInfo]</li>
   </Decree_HarvestCrop.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[plantToHarvest_label] harvest decree</li>
