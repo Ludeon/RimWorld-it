@@ -7,9 +7,9 @@
     <li>soldiers(requiredPawnCount==1)->[requiredPawnCount] soldier</li>
   -->
   <Mission_BanditCamp.questDescriptionRules.rulesStrings>
-    <li>questDescription->[enemiesCount] [enemiesLabel] haben ein Lager errichtet und belästigen Karawanen der Fraktion '[asker_faction_name]'. [asker_nameDef] plant einen Luftangriff auf das Lager. [asker_pronoun] möchte, dass du [soldiers] zur Verfügung stellst, um den Angriff durchzuführen.\n\n[asker_pronoun] wird ein Shuttle schicken, um deine Kämpfer abzuholen und sie zum Angriffsort zu bringen. Anschließend werden sie wieder nach Hause geflogen. Sie bekommen unterwegs Verpflegung.\n\nSobald der Angriff beginnt, musst du innerhalb von [timeoutTicks_duration] alle Feinde und Geschütztürme besiegen.</li>
-    <li>soldiers(requiredPawnCount>1)->[requiredPawnCount] Soldaten</li>
-    <li>soldiers(requiredPawnCount==1)->einen Soldaten</li>
+    <li>questDescription->[enemiesLabel] hanno allestito un accampamento e stanno attaccando le carovane di [asker_faction_name]. [asker_nameDef] sta pianificando un assalto aereo al campo, che è sorvegliato da [enemiesCount] [enemiesLabel]. [asker_pronoun] vuole che tu fornisca [soldiers] per portare a termine l'attacco.\n\n[asker_pronoun] invierà una navetta per prendere i tuoi combattenti, portarli sul luogo dell'attacco e portarli a casa in seguito. Gli sarà dato da mangiare lungo il percorso.\n\nUna volta iniziato l'attacco, devi sconfiggere tutti i nemici e le torrette entro [timeoutTicks_duration].</li>
+    <li>soldiers(requiredPawnCount>1)->[requiredPawnCount] soldati</li>
+    <li>soldiers(requiredPawnCount==1)->un soldato</li>
   </Mission_BanditCamp.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[questNameInner]</li>
@@ -29,14 +29,16 @@
     <li>work->job</li>
   -->
   <Mission_BanditCamp.questNameRules.rulesStrings>
-    <li>questName->[questNameInner]</li>
-    <li>questName->[asker_nameDef]'s [questNameInner]</li>
-    <li>questNameInner->Luftangriff</li>
-    <li>questNameInner(p=0.5)->Angriff auf das [targetNeu]</li>
-    <li>questNameInner(p=0.5)->Angriff auf die [targetFem]</li>
-    <li>targetNeu->Lager</li>
-    <li>targetFem->Basis</li>
-    <li>targetFem->Festung</li>
+    <li>questName->[attack] aereo</li>
+    <li>questName->[attack] aereo di [asker_nameDef]</li>
+    <li>questName->[attack] [target]</li>
+    <li>questName->[attack] [target] con [asker_nameDef]</li>
+    <li>attack->attacco</li>
+    <li>attack->assalto</li>
+    <li>target->dell'accampamento</li>
+    <li>target->del campo</li>
+    <li>target->della base</li>
+    <li>target->del forte</li>
   </Mission_BanditCamp.questNameRules.rulesStrings>
   
 </LanguageData>
