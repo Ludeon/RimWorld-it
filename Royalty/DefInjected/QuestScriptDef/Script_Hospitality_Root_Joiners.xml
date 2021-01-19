@@ -73,6 +73,10 @@
     <li>joinerEnding(lodgersCount>=2)->Sarai in grado di dirigere i [lodgersDef] nello stesso modo in cui dirigi i tuoi coloni.[specialNeedsExplanation]</li>
     <li>specialNeedsExplanation(asker_royalInCurrentFaction==True,priority=1)-> Dovrai soddisfare qualsiasi esigenza reale che i [lodgersLabelPlural] potrebbero avere.</li>
     <li>specialNeedsExplanation-></li>
+    <li>theirHisHer(lodgersCount==1)->[lodgers0_possessive]</li>
+    <li>theirHisHer(lodgersCount>=2)->loro</li>
+    <li>lodgersWasWere(lodgersCount==1)->era</li>
+    <li>lodgersWasWere(lodgersCount>=2)->erano</li>
     <li>goodwillForMood(lodgersCount==1,goodwillRewardForMood==true,priority=1)->\n\n[lodgersLabelSingOrPluralDef] apprezza alloggi di qualità. Otterrai buone relazioni con [asker_faction_name] se mantieni il suo umore medio al di sopra del 50%.</li>
     <li>goodwillForMood(lodgersCount>=2,goodwillRewardForMood==true,priority=1)->\n\n[lodgersLabelSingOrPluralDef] apprezzano alloggi di qualità. Otterrai buone relazioni con [asker_faction_name] se mantieni il loro umore medio al di sopra del 50%.</li>
     <li>goodwillForMood-></li>
