@@ -57,7 +57,7 @@
     <li>threatsInfoMechRaidsSingleAnimal->Per ragioni sconosciute, {PAWN_gender ? il : la : lo} [lodgersLabel] è stat{PANW_gender ? o : a} pres{PANW_gender ? o : a} di mira da un alveare meccanoide.</li>
     <li>threatsInfoMechRaidsMultiAnimal->Per ragioni sconosciute, i [lodgersLabelPlural] sono stati presi di mira da un alveare meccanoide.</li>
     <li>questDescription(askerIsNull==true,lodgersCount==1)->Un'organizzazione per il soccorso di animali vuole che tu ti prenda cura di {PANW_gender ? un : una : uno} [lodgersLabel] chiamato [lodgers0_nameDef] su [map_definite] per [shuttleDelayTicks_duration]. [healthInfo][threatsInfo1][commonDescEnding]</li>
-    <li>threatsInfo1(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\nGli attivisti per il soccorso di animali hanno salvato [lodgers0_nameDef] da una macellazione tenuta da [victimFaction_name]. Ora i [nemiciFaction_pawnsPlural] stanno arrivando per cercare vendetta. Se accetti [lodgers0_nameDef], [enemyGroupsParagraph]</li>
+    <li>threatsInfo1(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\nGli attivisti per il soccorso di animali hanno salvato [lodgers0_nameDef] da una macellazione tenuta da [victimFaction_name]. Ora i [enemyFaction_pawnsPlural] stanno arrivando per cercare vendetta. Se accetti [lodgers0_nameDef], [enemyGroupsParagraph]</li>
     <li>threatsInfo1(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\n[threatsInfoMechRaidsSingleAnimal] [enemyGroupsParagraph]</li>
     <li>threatsInfo1(generateThreats==true,threatType==MechClusters)->\n\n[threatsInfoMechClustersSingleAnimal] [enemyGroupsParagraph]</li>
     <li>threatsInfo1(generateThreats==false)-></li>
