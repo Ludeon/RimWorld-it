@@ -10,7 +10,7 @@
     <li>endingCommon(helpersCount>=1)->\n\n[pawnKindsParagraph][helpersParagraph]If you accept, the [enemyFaction_pawnsPlural] will arrive in [firstRaidDelayTicks_duration].</li>
   -->
   <ThreatReward_Raid_MiscReward.questDescriptionRules.rulesStrings>
-    <li>questDescription(asker_factionLeader==True)->[asker_nameFull], [asker_faction_leaderTitle] di [asker_faction_name], chiede se tu {PAWN_gender ? lo : la} puoi aiutare a salvare una delle sue carovane. La carovana è inseguita vicino a [map_definite] da (*Threat)[numGroupsOf] [enemyFaction_pawnsPlural](/Threat) di [enemyFaction_name]. [asker_nameDef] vuole che tu attiri la loro attenzione per allontanarli dalla carovana e condurli verso di te.[endingCommon]</li>
+    <li>questDescription(asker_factionLeader==True)->[asker_nameFull], [asker_faction_leaderTitle] di [asker_faction_name], ti chiede aiuto per salvare una delle sue carovane. La carovana è inseguita vicino a [map_definite] da (*Threat)[numGroupsOf] [enemyFaction_pawnsPlural](/Threat) di [enemyFaction_name]. [asker_nameDef] vuole che tu attiri la loro attenzione per allontanarli dalla carovana e condurli verso di te.[endingCommon]</li>
     <li>questDescription(asker_royalInCurrentFaction==True)->[asker_nameFull], [asker_royalTitleInCurrentFaction] di [asker_faction_name], ti sta facendo una richiesta.\n\n(*Threat)[groupsOf](/Threat) di [enemyFaction_name] hanno perseguitato le sue carovane nelle vicinanze. [asker_nameDef] chiede di inviare loro un messaggio di sfida, attirandoli ad attaccare la tua colonia eliminando la minaccia.[endingCommon]</li>
     <li>groupsOf(raidCount==1,priority=1)->[enemyFaction_pawnsPlural]</li>
     <li>groupsOf->[numGroupsOf]</li>
