@@ -59,9 +59,9 @@
     <li>healthInfo(lodgersHaveBloodRotAndParalysis==true,priority=1)->\n\n[paralyzedInfo]\n\n[bloodRotInfo]</li>
     <li>healthInfo(lodgersAreParalyzed==true,priority=1)->\n\n[paralyzedInfo]</li>
     <li>healthInfo(lodgersHaveBloodRot==true,priority=1)->\n\n[bloodRotInfo]</li>
-    <li>paralyzedInfo(lodgersCount==1)->[lodgersLabelSingOrPluralDef] soffre di abasia paralitica e deve essere tenuto a letto.</li>
-    <li>paralyzedInfo(lodgersCount>=2)->[lodgersLabelSingOrPluralDef] soffrono di abasia paralitica e devono essere tenuti a letto.</li>
-    <li>bloodRotInfo(lodgersCount==1)->[lodgersLabelSingOrPluralDef] è malato di putrefazione sanguigna e questo richiederà un trattamento quotidiano. La malattia può essere rallentata con cure e medicine di alta qualità, ma generalmente non può essere curata completamente. Se la malattia diventa grave [lodgersLabelSingOrPluralDef] morirà, quindi assicurati di avere le scorte mediche necessarie.</li>
+    <li>paralyzedInfo(lodgersCount==1)->[lodgersLabelSingOrPluralDef] soffre di abasia paralitica e deve restare a letto.</li>
+    <li>paralyzedInfo(lodgersCount>=2)->[lodgersLabelSingOrPluralDef] soffrono di abasia paralitica e devono restare a letto.</li>
+    <li>bloodRotInfo(lodgersCount==1)->[lodgersLabelSingOrPluralDef] soffre di putrefazione sanguigna e questo richiederà un trattamento quotidiano. La malattia può essere rallentata con cure e medicine di alta qualità, ma generalmente non può essere curata completamente. Se la malattia diventa grave [lodgersLabelSingOrPluralDef] morirà, quindi assicurati di avere le scorte mediche necessarie.</li>
     <li>bloodRotInfo(lodgersCount>=2)->[lodgersLabelSingOrPluralDef] sono malati di putrefazione sanguigna e questo richiederà un trattamento quotidiano. La malattia può essere rallentata con cure e medicine di alta qualità, ma generalmente non può essere curata completamente. Se la malattia diventa grave [lodgersLabelSingOrPluralDef] moriranno, quindi assicurati di avere le scorte mediche necessarie.</li>
     <li>minMoodInfo-></li>
     <li>minMoodInfo(lodgersCountWithMoodThreshold>0,priority=1)->\n\ndevi mantenere l'umore di [lodgersLabelSingOrPluralDef] al di sopra di [lodgersMoodThreshold_percent].</li>
@@ -80,7 +80,7 @@
     <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==2,threatSize>1)->(*Threat)due Mech-Cluster(/Threat) di forza x[threatSize] verranno schierati nelle vicinanze.</li>
     <li>threatsInfoMechClustersSingleHuman->[lodgers0_nameDef] ha [recently] [mechViolation], ed è stato preso di mira da uno sciame di meccanoidi in orbita.</li>
     <li>threatsInfoMechClustersMultiPrisoners->I prigionieri hanno [recently] [mechViolation], e sono stati presi di mira da uno sciame di meccanoidi in orbita.</li>
-    <li>threatsInfoMechRaidsSingleHuman->[lodgers0_nameDef] ha [recently] [mechViolation], ed è stato preso di mira da un alveare meccanoide.</li>
+    <li>threatsInfoMechRaidsSingleHuman->[lodgers0_nameDef] ha [recently] [mechViolation], ed è nel mirino di un alveare meccanoide.</li>
     <li>threatsInfoMechRaidsMultiHuman->Loro hanno [recently] [mechViolation], e sono stati presi di mira da un alveare meccanoide.</li>
     <li>recently->da poco</li>
     <li>recently->poco fa</li>
@@ -102,7 +102,7 @@
     <li>remainingWillNowLeave(lodgersCount>=2)->Eventuali [lodgersLabelPlural] rimanenti ora se ne andranno. </li>
     <li>failLetterEndingQuest->Hai fallito la missione "[resolvedQuestName]".</li>
     <li>failLetterEndingCommon(askerIsNull==true,priority=1)->[failLetterEndingQuest]</li>
-    <li>failLetterEndingCommon->[failLetterEndingQuest]\n\nI tuoi rapporti con [asker_faction_name] sono diminuiti di [goodwill Penalty].</li>
-  </QuestHospitalityCommon.rulePack.rulesStrings>
+    <li>failLetterEndingCommon->[failLetterEndingQuest]\n\nI tuoi rapporti con [asker_faction_name] sono diminuiti di [goodwillPenalty].</li>
+ </QuestHospitalityCommon.rulePack.rulesStrings>
   
 </LanguageData>
