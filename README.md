@@ -13,6 +13,8 @@ TRADUTTORI:
 - Rexlord
 - Lunatico9
 - MaBo974
+- Kaiser85
+- Kenciccio
 
 INSTALLAZIONE:
 ------------------

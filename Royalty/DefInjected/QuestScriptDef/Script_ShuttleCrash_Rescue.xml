@@ -28,7 +28,7 @@
   <ShuttleCrash_Rescue.questContentRules.rulesStrings>
     <li>failLetterEndingCommon->Hai fallito la missione "[resolvedQuestName]".</li>
     <li>successLetterEndingCommon->Hai completato con successo la missione "[resolvedQuestName]".</li>
-    <li>goodwillSomeCiviliansLost->Non tutti i [asker_faction_pawnSingular] [pawnLabel] sono stati salvati. [goodwillNegivelyAffected]</li>
+    <li>goodwillSomeCiviliansLost->Non tutti i [asker_faction_pawnSingular] [pawnLabel] sono stati salvati. [goodwillNegativelyAffected]</li>
     <li>goodwillAllCiviliansLost->Nessuno dei [asker_faction_pawnSingular] [pawnLabelPlural] è stato salvato. [goodwillNegativelyAffected]</li>
     <li>goodwillNegativelyAffected->Le tue relazioni con [asker_faction_name] sono quindi state influenzate negativamente per ogni [pawnLabel] rimasto.</li>
     <li>commanderLandingDesc->[asker_nameDef], il comandante che ha chiesto di far atterrare la sua navetta a [map_definite]</li>
@@ -71,13 +71,13 @@
   <ShuttleCrash_Rescue.questDescriptionRules.rulesStrings>
     <li>pawnLabelSingleOrPlural(civilians_count==1)->[pawnLabel]</li>
     <li>pawnLabelSingleOrPlural(civilians_count>=2)->[pawnLabelPlural]</li>
-    <li>questDescription->Una navetta di [asker_faction_name] ha subito danni e sta cercando un posto dove atterrare. Il suo comandante [asker_nameDef] vuole atterrare a [map_definite].\n\n[enemyFaction_pawnsPlural] di [enemyFaction_name] attaccherà il sito dello schianto della navetta nel tentativo di uccidere i suoi occupanti. Devi difenderli.\n\nLa navetta contiene [asker_nameDef][andOtherCivilians] e [soldier_count] [soldier0_kind]. Il comandante [andCivilians] devono essere salvati, ma i [soldier0_kind] possono essere sacrificati.\n\nDopo [rescueDelay_duration], una navetta di salvataggio arriverà a raccogliere i sopravvissuti. Dovrai caricarli sulla navetta e spedirli tutti entro [leaveDelay_duration].</li>
+    <li>questDescription->Una navetta di [asker_faction_name] ha subito danni e sta cercando un posto dove atterrare. Il suo comandante [asker_nameDef] vuole atterrare a [map_definite].\n\n[enemyFaction_pawnsPlural] di [enemyFaction_name] attaccheranno il sito dello schianto della navetta nel tentativo di uccidere i suoi occupanti. Devi difenderli.\n\nLa navetta contiene [asker_nameDef][andOtherCivilians] e [soldiers_count] [soldiers0_kind]. Il comandante [andCivilians], ma la scorta può essere sacrificata.\n\nDopo [rescueDelay_duration], una navetta di salvataggio arriverà a raccogliere i sopravvissuti. Dovrai fare in modo che salgano sulla navetta e partano entro [leaveDelay_duration].</li>
     <li>andOtherCivilians(civilians_count==1)-></li>
     <li>andOtherCivilians(civilians_count==2)->, {PAWN_gender ? un altro : un'altra} [pawnLabel],</li>
-    <li>andOtherCivilians(civilians_count>=3)->, [civilianCountMinusOne] altri [pawnLabelSingleOrPlural],</li>
-    <li>andCivilians(civilians_count==1)-></li>
-    <li>andCivilians(civilians_count==2)->e il [pawnLabel]</li>
-    <li>andCivilians(civilians_count>=3)->e i [pawnLabelPlural]</li>
+    <li>andOtherCivilians(civilians_count>=3)->, altri [civilianCountMinusOne] [pawnLabelSingleOrPlural],</li>
+    <li>andCivilians(civilians_count==1)->deve essere salvato</li>
+    <li>andCivilians(civilians_count==2)->e il [pawnLabel] devono essere salvati</li>
+    <li>andCivilians(civilians_count>=2)->e i [pawnLabelPlural] devono essere salvati</li>
   </ShuttleCrash_Rescue.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[shuttle] [crash]</li>
