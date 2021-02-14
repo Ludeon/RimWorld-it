@@ -8,7 +8,17 @@
   <Hospitality_Animals.questDescriptionAndNameRules.rulesStrings>
     <li>lodgersLabel->[lodgersPawnKind_label]</li>
     <li>lodgersLabelPlural->[lodgersPawnKind_labelPlural]</li>
-  </Hospitality_Animals.questDescriptionAndNameRules.rulesStrings>
+	<li>genere(lodgers0_gender!=Female)->o</li>
+	<li>genere(lodgers0_gender==Female)->a</li>	
+	<li>genereIndef(lodgers0_gender==Male)->un</li>
+	<li>genereIndef(lodgers0_gender==Neuter)->uno</li>
+	<li>genereIndef(lodgers0_gender==Female)->una</li>
+	<li>genereDef(lodgers0_gender==Male)->il</li>
+	<li>genereDef(lodgers0_gender==Neuter)->lo</li>
+	<li>genereDef(lodgers0_gender==Female)->la</li>
+  	<li>generePawn(PAWN_gender!=Female)->o</li>
+	<li>generePawn(PAWN_gender==Female)->a</li>
+</Hospitality_Animals.questDescriptionAndNameRules.rulesStrings>
   <!-- EN:
     <li>threatsInfoMechClustersSingleAnimal->For unknown reasons, the [lodgersLabel] has been targeted by an orbiting mechanoid swarm.</li>
     <li>threatsInfoMechClustersMultiAnimal->For unknown reasons, the [lodgersLabelPlural] have been targeted by an orbiting mechanoid swarm.</li>
@@ -52,20 +62,20 @@
     <li>letterSubject(priority=1)->{SUBJECT_definite} the [lodgersLabel]</li>
   -->
   <Hospitality_Animals.questDescriptionRules.rulesStrings>
-    <li>threatsInfoMechClustersSingleAnimal->Per ragioni sconosciute, {PAWN_gender ? il : la : lo} [lodgersLabel] è stat{PANW_gender ? o : a} pres{PANW_gender ? o : a} di mira da uno sciame meccanoide in orbita.</li>
+    <li>threatsInfoMechClustersSingleAnimal->Per ragioni sconosciute, [genereDef] [lodgersLabel] è stat[genere] pres[genere] di mira da uno sciame meccanoide in orbita.</li>
     <li>threatsInfoMechClustersMultiAnimal->Per ragioni sconosciute, i [lodgersLabelPlural] sono stati presi di mira da uno sciame meccanoide in orbita.</li>
-    <li>threatsInfoMechRaidsSingleAnimal->Per ragioni sconosciute, {PAWN_gender ? il : la : lo} [lodgersLabel] è stat{PANW_gender ? o : a} pres{PANW_gender ? o : a} di mira da un alveare meccanoide.</li>
+    <li>threatsInfoMechRaidsSingleAnimal->Per ragioni sconosciute, [genereDef] [lodgersLabel] è stat[genere] pres[genere] di mira da un alveare meccanoide.</li>
     <li>threatsInfoMechRaidsMultiAnimal->Per ragioni sconosciute, i [lodgersLabelPlural] sono stati presi di mira da un alveare meccanoide.</li>
-    <li>questDescription(askerIsNull==true,lodgersCount==1)->Un'organizzazione per il soccorso di animali vuole che tu ti prenda cura di {PANW_gender ? un : una : uno} [lodgersLabel] chiamato [lodgers0_nameDef] su [map_definite] per [shuttleDelayTicks_duration]. [healthInfo][threatsInfo1][commonDescEnding]</li>
+    <li>questDescription(askerIsNull==true,lodgersCount==1)->Un'organizzazione per il soccorso di animali vuole che tu ti prenda cura di [genereIndef] [lodgersLabel] chiamat[genere] [lodgers0_nameDef] su [map_definite], per [shuttleDelayTicks_duration]. [healthInfo][threatsInfo1][commonDescEnding]</li>
     <li>threatsInfo1(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\nGli attivisti per il soccorso di animali hanno salvato [lodgers0_nameDef] da una macellazione tenuta da [victimFaction_name]. Ora i [enemyFaction_pawnsPlural] stanno arrivando per cercare vendetta. Se accetti [lodgers0_nameDef], [enemyGroupsParagraph]</li>
     <li>threatsInfo1(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\n[threatsInfoMechRaidsSingleAnimal] [enemyGroupsParagraph]</li>
     <li>threatsInfo1(generateThreats==true,threatType==MechClusters)->\n\n[threatsInfoMechClustersSingleAnimal] [enemyGroupsParagraph]</li>
     <li>threatsInfo1(generateThreats==false)-></li>
-    <li>questDescription(askerIsNull==true,lodgersCount>=2)->Un'organizzazione per il soccorso di animali vuole che tu ti prenda cura di [lodgersCount] [lodgersLabelPlural] su [map_definite] per [shuttleDelayTicks_duration]. [healthInfo][threatsInfo2][commonDescEnding]</li>
+    <li>questDescription(askerIsNull==true,lodgersCount>=2)->Un'organizzazione per il soccorso di animali vuole che tu ti prenda cura di [lodgersCount] [lodgersLabelPlural] su [map_definite], per [shuttleDelayTicks_duration]. [healthInfo][threatsInfo2][commonDescEnding]</li>
     <li>victim->un bambino</li>
     <li>victim->una donna</li>
     <li>victim->un uomo</li>
-    <li>victim->un{PAWN_gender : o : a} [PersonJobGen]</li>
+    <li>victim->un[generePawn] [PersonJobGen]</li>
     <li>victim(generateThreats==true,threatType==Raids)->un caro amico del [enemyFaction_leaderTitle] della fazione [enemyFaction_name]</li>
     <li>threatsInfo2(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\nSfortunatamente, questi [lodgersLabelPlural] sono stati recentemente implicati nella morte di [victim]. Ora, [enemyFaction_pawnsPlural] di [enemyFaction_name] gli sta dando la caccia per compiere un rituale di vendetta. Se accetti [lodgersLabelPlural], [enemyGroupsParagraph]</li>
     <li>threatsInfo2(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\n[threatsInfoMechRaidsMultiAnimal] [enemyGroupsParagraph]</li>
@@ -81,17 +91,17 @@
     <li>threatsInfo4(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\n[threatsInfoMechRaidsMultiAnimal] [enemyGroupsParagraph]</li>
     <li>threatsInfo4(generateThreats==true,threatType==MechClusters)->\n\n[threatsInfoMechClustersMultiAnimal] [enemyGroupsParagraph]</li>
     <li>threatsInfo4(generateThreats==false)-></li>
-    <li>questDescription(asker_royalInCurrentFaction==True,lodgersCount==1,priority=1)->[asker_nameFull], un [asker_royalTitleInCurrentFaction] di [asker_faction_name], sta effettuando una richiesta. [asker_pronoun] vuole che tu ti prenda cura del suo animale domestico preferito, {lodgers0_gender ? un : una : uno} [lodgersLabel] di nome [lodgers0_nameDef], su [map_definite] per [shuttleDelayTicks_duration]. [healthInfo][threatsInfo5][commonDescEnding]</li>
-    <li>threatsInfo5(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\n[lodgers0_nameDef] è un regalo promesso al figlio di [asker_nameDef] per una cerimonia di matrimonio. Per cercare di impedire il matrimonio, [enemyFaction_name] invia [enemyFaction_pawnsPlural] ad uccidere [lodgers0_objective]. Se accetti [lodgers0_nameDef], [enemyGroupsParagraph]</li>
+    <li>questDescription(asker_royalInCurrentFaction==True,lodgersCount==1,priority=1)->[asker_nameFull], un [asker_royalTitleInCurrentFaction] di [asker_faction_name], sta effettuando una richiesta. [asker_pronoun] vuole che tu ti prenda cura del suo animale domestico preferito, [genereIndef] [lodgersLabel] di nome [lodgers0_nameDef], su [map_definite] per [shuttleDelayTicks_duration]. [healthInfo][threatsInfo5][commonDescEnding]</li>
+    <li>threatsInfo5(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\n[lodgers0_nameDef] è un regalo promesso al figlio di [asker_nameDef] per una cerimonia di matrimonio. Per cercare di impedire il matrimonio, [enemyFaction_name] invia [enemyFaction_pawnsPlural] ad uccider[lodgers0_objective]. Se accetti [lodgers0_nameDef], [enemyGroupsParagraph]</li>
     <li>threatsInfo5(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\n[threatsInfoMechRaidsSingleAnimal] [enemyGroupsParagraph]</li>
     <li>threatsInfo5(generateThreats==true,threatType==MechClusters)->\n\n[threatsInfoMechClustersSingleAnimal] [enemyGroupsParagraph]</li>
     <li>threatsInfo5(generateThreats==false)-></li>
-    <li>questDescription(asker_royalInCurrentFaction==True,lodgersCount>=2,priority=1)->[asker_nameFull], un [asker_royalTitleInCurrentFaction] di [asker_faction_name], sta effettuando una richiesta. [asker_pronoun] vuole che tu ti prenda cura di [lodgersCount] [lodgersLabelPlural] su [map_definite] per [shuttleDelayTicks_duration]. I [lodgersLabelPlural] sono gli animali domestici preferiti di [asker_nameDef] e [asker_pronoun] vuole che vedano il mondo al di fuori della [asker_possessive] corte reale. [healthInfo][threatsInfo6][commonDescEnding]</li>
+    <li>questDescription(asker_royalInCurrentFaction==True,lodgersCount>=2,priority=1)->[asker_nameFull], un [asker_royalTitleInCurrentFaction] di [asker_faction_name], sta effettuando una richiesta. [asker_pronoun] vuole che tu ti prenda cura di [lodgersCount] [lodgersLabelPlural] su [map_definite] per [shuttleDelayTicks_duration]. Essendo i suoi animali domestici preferiti, [asker_nameDef] vuole che vedano il mondo al di fuori della [asker_possessive] corte reale. [healthInfo][threatsInfo6][commonDescEnding]</li>
     <li>threatsInfo6(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\nSfortunatamente, [enemyFaction_name] sta dando la caccia ai [lodgersLabelPlural] per cercare di ferire [asker_nameDef] personalmente. Se accetti [lodgersLabelPlural], [enemyGroupsParagraph]</li>
     <li>threatsInfo6(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\n[threatsInfoMechRaidsMultiAnimal] [enemyGroupsParagraph]</li>
     <li>threatsInfo6(generateThreats==true,threatType==MechClusters)->\n\n[threatsInfoMechClustersMultiAnimal] [enemyGroupsParagraph]</li>
     <li>threatsInfo6(generateThreats==false)-></li>
-    <li>letterSubject(priority=1)->{SUBJECT_definite} {lodgers0_gender ? il : la : lo} [lodgersLabel]</li>
+    <li>letterSubject(priority=1)->{SUBJECT_definite} [genereDef] [lodgersLabel]</li>
   </Hospitality_Animals.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName(lodgersCount==1)->the [animalAdj] [lodgersLabel]</li>
@@ -116,35 +126,30 @@
     <li>animalAdj(generateThreats==true)->frightened</li>
   -->
   <Hospitality_Animals.questNameRules.rulesStrings>
-    <li>questName(lodgersCount==1)->{lodgers0_gender ? il : la} {lodgers0_gender ? [animalAdjMas] : [animalAdjFem]} [lodgersLabel]</li>
-    <li>questName(lodgersCount==1)->{lodgers0_gender ? un : una} {lodgers0_gender ? [animalAdjMas] : [animalAdjFem]} [lodgersLabel]</li>
-    <li>questName(lodgersCount==1)->{lodgers0_gender ? [animalAdjMas] : [animalAdjFem]} [lodgersLabel]</li>
+    <li>questName(lodgersCount==1)->[genereIndef] [aggettivo] [lodgersLabel]</li>
+    <li>questName(lodgersCount==1)->[genereIndef] [aggettivo] [lodgersLabel]</li>
+    <li>questName(lodgersCount==1)->[aggettivo] [lodgersLabel]</li>
     <li>questName(lodgersCount==1)->babysitter per [lodgersLabel]</li>
     <li>questName(lodgersCount==1)->una casa per [lodgers0_nameDef]</li>
-    <li>questName(lodgersCount==1)->pover{lodgers0_gender ? o : a} piccol{lodgers0_gender ? o : a} [lodgers0_nameDef]</li>
-    <li>questName(lodgersCount>=2)->i [animalAdjPlur] [lodgersLabelPlural]</li>
+    <li>questName(lodgersCount==1)->pover[genere] piccol[genere] [lodgers0_nameDef]</li>
+    <li>questName(lodgersCount>=2)->[animalAdjPlur] [lodgersLabelPlural]</li>
     <li>questName(lodgersCount>=2)->[animalAdjPlur] [lodgersLabelPlural]</li>
     <li>questName(lodgersCount>=2)->[animalAdjPlur] [lodgersLabelPlural]</li>
     <li>questName(lodgersCount>=2)->babysitter per [lodgers0_kindBase]</li>
     <li>questName(lodgersCount>=2)->una casa per [lodgersLabelPlural]</li>
-    <li>animalAdjMas->adorabile</li>
-    <li>animalAdjMas->innocente</li>
-    <li>animalAdjMas->fedele</li>
-    <li>animalAdjMas->amorevole</li>
-    <li>animalAdjMas->silenzioso</li>
-    <li>animalAdjMas->gentile</li>
-    <li>animalAdjMas->fiero</li>
-    <li>animalAdjMas(generateThreats==true)->cacciato</li>
-    <li>animalAdjMas(generateThreats==true)->spaventato</li>
-    <li>animalAdjFem->adorabile</li>
-    <li>animalAdjFem->innocente</li>
-    <li>animalAdjFem->fedele</li>
-    <li>animalAdjFem->amorevole</li>
-    <li>animalAdjFem->silenziosa</li>
-    <li>animalAdjFem->gentile</li>
-    <li>animalAdjFem->fiera</li>
-    <li>animalAdjFem(generateThreats==true)->cacciata</li>
-    <li>animalAdjFem(generateThreats==true)->spaventata</li>
+    <li>animalAdj->adorabile</li>
+    <li>animalAdj->innocente</li>
+    <li>animalAdj->fedele</li>
+    <li>animalAdj->amorevole</li>
+    <li>animalAdj(lodgers0_gender==Male)->silenzioso</li>
+    <li>animalAdj->gentile</li>
+    <li>animalAdj(lodgers0_gender==Male)->fiero</li>
+    <li>animalAdj(generateThreats==true,lodgers0_gender==Male)->cacciato</li>
+    <li>animalAdj(generateThreats==true,lodgers0_gender==Male)->spaventato</li>
+    <li>animalAdjFem(lodgers0_gender==Female)->silenziosa</li>
+    <li>animalAdjFem(lodgers0_gender==Female)->fiera</li>
+    <li>animalAdjFem(generateThreats==true,lodgers0_gender==Female)->cacciata</li>
+    <li>animalAdjFem(generateThreats==true,lodgers0_gender==Female)->spaventata</li>
     <li>animalAdjPlur->adorabili</li>
     <li>animalAdjPlur->innocenti</li>
     <li>animalAdjPlur->fedeli</li>
