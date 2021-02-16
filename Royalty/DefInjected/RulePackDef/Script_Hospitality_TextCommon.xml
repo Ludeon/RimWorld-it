@@ -54,17 +54,19 @@
     <li>lodgersLabelSingOrPlural(lodgersCount==1)->[lodgers0_nameDef]</li>
     <li>lodgersLabelSingOrPlural(lodgersCount>=2)->[lodgersLabelPlural]</li>
     <li>lodgersLabelSingOrPluralDef(lodgersCount==1)->[lodgers0_nameDef]</li>
-    <li>lodgersLabelSingOrPluralDef(lodgersCount>=2)->i [lodgersLabelPlural]</li>
+    <li>lodgersLabelSingOrPluralDef(lodgersCount>=2)->gli [lodgersLabelPlural]</li>
+    <li>lodgersLabelSingOrPluralPoss(lodgersCount==1)->di [lodgers0_nameDef]</li>
+    <li>lodgersLabelSingOrPluralPoss(lodgersCount>=2)->degli [lodgersLabelPlural]</li>
     <li>healthInfo-></li>
     <li>healthInfo(lodgersHaveBloodRotAndParalysis==true,priority=1)->\n\n[paralyzedInfo]\n\n[bloodRotInfo]</li>
     <li>healthInfo(lodgersAreParalyzed==true,priority=1)->\n\n[paralyzedInfo]</li>
     <li>healthInfo(lodgersHaveBloodRot==true,priority=1)->\n\n[bloodRotInfo]</li>
     <li>paralyzedInfo(lodgersCount==1)->[lodgersLabelSingOrPluralDef] soffre di abasia paralitica e deve restare a letto.</li>
     <li>paralyzedInfo(lodgersCount>=2)->[lodgersLabelSingOrPluralDef] soffrono di abasia paralitica e devono restare a letto.</li>
-    <li>bloodRotInfo(lodgersCount==1)->[lodgersLabelSingOrPluralDef] soffre di putrefazione sanguigna e questo richiederà un trattamento quotidiano. La malattia può essere rallentata con cure e medicine di alta qualità, ma generalmente non può essere curata completamente. Se la malattia diventa grave [lodgersLabelSingOrPluralDef] morirà, quindi assicurati di avere le scorte mediche necessarie.</li>
-    <li>bloodRotInfo(lodgersCount>=2)->[lodgersLabelSingOrPluralDef] sono malati di putrefazione sanguigna e questo richiederà un trattamento quotidiano. La malattia può essere rallentata con cure e medicine di alta qualità, ma generalmente non può essere curata completamente. Se la malattia diventa grave [lodgersLabelSingOrPluralDef] moriranno, quindi assicurati di avere le scorte mediche necessarie.</li>
+    <li>bloodRotInfo(lodgersCount==1)->[lodgersLabelSingOrPluralDef] soffre di putrefazione sanguigna e questo richiederà un trattamento quotidiano. La malattia può essere rallentata con cure e medicine di alta qualità, ma generalmente non può essere curata completamente. Se la malattia diventa grave, [lodgersLabelSingOrPluralDef] morirà, quindi assicurati di avere le scorte mediche necessarie.</li>
+    <li>bloodRotInfo(lodgersCount>=2)->[lodgersLabelSingOrPluralDef] sono malati di putrefazione sanguigna e questo richiederà un trattamento quotidiano. La malattia può essere rallentata con cure e medicine di alta qualità, ma generalmente non può essere curata completamente. Se la malattia diventa grave, [lodgersLabelSingOrPluralDef] moriranno, quindi assicurati di avere le scorte mediche necessarie.</li>
     <li>minMoodInfo-></li>
-    <li>minMoodInfo(lodgersCountWithMoodThreshold>0,priority=1)->\n\ndevi mantenere l'umore di [lodgersLabelSingOrPluralDef] al di sopra di [lodgersMoodThreshold_percent].</li>
+    <li>minMoodInfo(lodgersCountWithMoodThreshold>0,priority=1)->\n\ndevi mantenere l'umore [lodgersLabelSingOrPluralPoss] al di sopra di [lodgersMoodThreshold_percent].</li>
     <li>workInfo-></li>
     <li>workInfo(lodgersWillNotWork==true,lodgersCount==1,priority=1)->\n\n[lodgersLabelSingOrPluralDef] non farà alcun lavoro.</li>
     <li>workInfo(lodgersWillNotWork==true,lodgersCount>=2,priority=1)->\n\n[lodgersLabelSingOrPluralDef] non faranno alcun lavoro.</li>
