@@ -351,7 +351,7 @@
   <!-- EN: Persona Core Offer -->
   <LetterLabelAICoreOffer>Offerta nucleo IA</LetterLabelAICoreOffer>
   <!-- EN: {PAWN_definite} of {1} contacts you with an offer of information: the location of a persona core, which you'll need in order to build a spaceship. They inform you that this item is quite rare and usually its owners have it under heavy guard.\n\nCall them with your comms console if you're interested. -->
-  <LetterAICoreOffer>{PAWN_definite} di {1} ti contatta per offrirti delle informazioni: la posizione di un nucleo IA di cui avrai bisogno per poter costruire un'astronave. Vieni informato che questo oggetto è abbastanza raro e che solitamente i loro proprietari lo tengono sotto stretta sorveglianza.\n\nChiamali con la tua console di comunicazione se sei interessato.</LetterAICoreOffer>
+  <LetterAICoreOffer>{PAWN_definite} di {1} ti contatta per offrire delle informazioni: la posizione di un nucleo IA di cui avrai bisogno per poter costruire un'astronave. Vieni informato che questo oggetto è abbastanza raro e che solitamente i loro proprietari lo tengono sotto stretta sorveglianza.\n\nChiamali con la tua console di comunicazione se sei interessato.</LetterAICoreOffer>
 
   <!-- Crafting letters -->
   <!-- EN: Legendary Work -->
@@ -382,7 +382,7 @@
   <!-- EN: Reactor ready -->
   <LetterLabelHibernateComplete>Reattore pronto</LetterLabelHibernateComplete>
   <!-- EN: (*Name)Charlon Whitestone(/Name) has finished the reactor's hibernation recovery sequence. The reactor is now ready to power a liftoff. -->
-  <LetterHibernateComplete>Charlon Whitestone ha completato la sequenza di ripristino ibernazione del reattore. Il reattore adesso è pronto ad alimentare un decollo.</LetterHibernateComplete>
+  <LetterHibernateComplete>(*Name)Charlon Whitestone(/Name) ha completato la sequenza di ripristino ibernazione del reattore. Il reattore adesso è pronto ad alimentare un decollo.</LetterHibernateComplete>
   <!-- EN: The reactor's power up sequence is complete. It is now ready to power a liftoff. -->
   <LetterHibernateCompleteStandalone>La sequenza di accensione del reattore è completa. Adesso è pronto ad alimentare un decollo.</LetterHibernateCompleteStandalone>
 
@@ -396,7 +396,7 @@
   <!-- EN: Faction base proximity -->
   <LetterLabelFactionBaseProximity>Vicinanza di una base di fazione</LetterLabelFactionBaseProximity>
   <!-- EN: Because you are so close to other factions, they feel you're encroaching on their territory.\n\nFor the last quadrum, faction relations have been reduced by: -->
-  <LetterFactionBaseProximity>Dal momento che sei così vicino ad altre fazioni, queste hanno l'impressione che stai invadendo il loro territorio.\n\nNell'ultimo quadro le relazioni di fazione sono diminuite di:</LetterFactionBaseProximity>
+  <LetterFactionBaseProximity>Dal momento che sei così vicino ad altre fazioni, queste hanno l'impressione che tu stia invadendo il loro territorio.\n\nNell'ultimo quadro le relazioni di fazione sono diminuite di:</LetterFactionBaseProximity>
 
   <!-- Caravans battlefield victory -->
   <!-- EN: Caravan battle won -->
@@ -408,7 +408,7 @@
   <!-- EN: Rescuee joins -->
   <LetterLabelRescueQuestFinished>Persona soccorsa si unisce</LetterLabelRescueQuestFinished>
   <!-- EN: You have rescued {PAWN_nameDef} and {PAWN_pronoun} has joined your group.\n\nYou can take {PAWN_objective} with you by reforming the caravan in the World screen by selecting this area and choosing the "Reform caravan" option. -->
-  <LetterRescueQuestFinished>Ha salvato {PAWN_nameDef} e {PAWN_pronoun} ha deciso di unirsi al tuo gruppo.\n\nPuoi prenderl{PAWN_gender ? o : a : o} con te riorganizzando la carovana nella schermata del Mondo selezionando quest'area e scegliendo l'opzione "Riorganizza Carovana".</LetterRescueQuestFinished>
+  <LetterRescueQuestFinished>Hai salvato {PAWN_nameDef} e {PAWN_pronoun} ha deciso di unirsi al tuo gruppo.\n\nPuoi prenderl{PAWN_gender ? o : a : o} con te riorganizzando la carovana nella schermata del Mondo selezionando quest'area e scegliendo l'opzione "Riorganizza Carovana".</LetterRescueQuestFinished>
 
   <!-- Predator hunting colonist -->
   <!-- EN: {PREDATOR_labelShort} hunting {PREY_definite} -->
@@ -464,7 +464,7 @@
   <!-- EN: {PAWN_nameDef} joins -->
   <LetterLabelRescueeJoins>{PAWN_nameDef} si unisce</LetterLabelRescueeJoins>
   <!-- EN: {PAWN_nameDef} is thankful that you rescued {PAWN_objective}. {PAWN_pronoun} has decided that {PAWN_pronoun} would rather stay than leave, and is joining your colony. -->
-  <LetterRescueeJoins>{PAWN_nameDef} è grato che tu abbia salvato {PAWN_objective}. {PAWN_pronoun} ha deciso che {PAWN_pronoun} preferirebbe restare piuttosto che andarsene, e si unisce alla tua colonia.</LetterRescueeJoins>
+  <LetterRescueeJoins>{PAWN_nameDef} è grat{PAWN_gender ? o ; a ; o} che tu l'abbia salvat{PAWN_gender ? o ; a ; o} e ha deciso che preferirebbe restare piuttosto che andarsene, pertanto si unisce alla tua colonia.</LetterRescueeJoins>
 
   <!-- Pawns arrive and join -->
   <!-- EN: People join -->
@@ -492,9 +492,9 @@
   
   <!-- Colonist kidnapped -->
   <!-- EN: {PAWN_nameDef} kidnapped -->
-  <LetterLabelPawnsKidnapped>{PAWN_nameDef} rapito</LetterLabelPawnsKidnapped>
+  <LetterLabelPawnsKidnapped>{PAWN_nameDef} rapit{PAWN_gender ? o ; a ; o}</LetterLabelPawnsKidnapped>
   <!-- EN: {PAWN_nameDef} has been kidnapped by {FACTION_name}!\nHowever, {PAWN_pronoun} is not lost forever. An opportunity to rescue {PAWN_objective} may present itself in the coming days or years. -->
-  <LetterPawnsKidnapped>{PAWN_nameDef} è stato rapito da {FACTION_name}!\nTuttavia, {PAWN_pronoun} non è perso per sempre. Un'opportunità per salvare {PAWN_objective} potrebbe presentarsi nei prossimi giorni o anni.</LetterPawnsKidnapped>
+  <LetterPawnsKidnapped>{PAWN_nameDef} è {PAWN_gender ? sato rapito ; stata rapita ; stato rapito} da {FACTION_name}!\nTuttavia, {PAWN_pronoun} non è pers{PAWN_gender ? o ; a ; o} per sempre, in quanto nei prossimi giorni (oppure anni), potrebbe presentarsi un'opportunità per salvare{PAWN_objective}.</LetterPawnsKidnapped>
   
   <!-- Techprints -->
   <!-- EN: Techprint applied: {PROJECT_label} -->
@@ -520,11 +520,11 @@
   <!-- EN: Quest concluded -->
   <LetterQuestConcludedLabel>Missione conclusa</LetterQuestConcludedLabel>
   <!-- EN: You have successfully completed the quest '{0}'! -->
-  <LetterQuestCompletedSuccess>Hai completato con successo la ricerca '{0}'!</LetterQuestCompletedSuccess>
+  <LetterQuestCompletedSuccess>Hai completato con successo la missione '{0}'!</LetterQuestCompletedSuccess>
   <!-- EN: You have failed the quest '{0}'. -->
   <LetterQuestCompletedFail>Hai fallito la missione '{0}'.</LetterQuestCompletedFail>
   <!-- EN: You have concluded the quest '{0}'. -->
-  <LetterQuestCompletedConcluded>Hai concluso la ricerca '{0}'.</LetterQuestCompletedConcluded>
+  <LetterQuestCompletedConcluded>Hai concluso la missione '{0}'.</LetterQuestCompletedConcluded>
 
   <!-- Bladelink -->
   <!-- EN: Persona bond: {PAWN_labelShort} -->
