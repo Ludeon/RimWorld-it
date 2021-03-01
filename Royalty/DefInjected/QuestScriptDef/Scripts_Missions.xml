@@ -10,11 +10,11 @@
     <li>questDescription->[enemiesLabel] hanno allestito un accampamento e stanno attaccando le carovane di [asker_faction_name]. [asker_nameDef] sta pianificando un assalto aereo al campo, che è sorvegliato da [enemiesCount] [enemiesLabel]. [asker_pronoun] vuole che tu fornisca [requiredPawnCount] [soldiers] per portare a termine l'attacco.\n\nVerrà inviata una navetta per prelevare, condurre sul luogo dell'attacco e riportare a casa [soldiersPronome]. Gli saranno garantiti i pasti lungo il tragitto.\n\nUna volta iniziato l'attacco, devi sconfiggere tutti i nemici e le torrette entro [timeoutTicks_duration].</li>
     <li>soldiers(requiredPawnCount>1)->soldati</li>
     <li>soldiers(requiredPawnCount==1)->soldato</li>
-	<li>soldiersPronome(requiredPawnCount>1)->i tuoi soldati</li>
-	<li>soldiersPronome(requiredPawnCount==1)->il tuo soldato</li>
-<!-- 	<li>chi(requiredPawnCount>1)->i tuoi soldati</li>
-    <li>chi(requiredPawnCount==1)->il tuo soldato</li>
- --></Mission_BanditCamp.questDescriptionRules.rulesStrings>
+    <li>soldiersPronome(requiredPawnCount>1)->i tuoi soldati</li>
+    <li>soldiersPronome(requiredPawnCount==1)->il tuo soldato</li>
+    <!-- <li>chi(requiredPawnCount>1)->i tuoi soldati</li> -->
+    <!-- <li>chi(requiredPawnCount==1)->il tuo soldato</li> -->
+  </Mission_BanditCamp.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[questNameInner]</li>
     <li>questName->[asker_nameDef]'s [questNameInner]</li>

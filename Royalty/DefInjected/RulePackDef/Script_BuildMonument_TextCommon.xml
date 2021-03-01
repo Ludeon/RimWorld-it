@@ -28,18 +28,18 @@
     <li>failLetterEndingCommon->You have failed the quest '[resolvedQuestName]'.\n\nYour relations with [asker_faction_name] have decreased by [goodwillPenalty].</li>
   -->
   <QuestConstructionDescriptionCommon.rulePack.rulesStrings>
-	<li>PersonalCharacter->i [PersonalCharacteristicPluralMas]</li>
-	<li>PersonalCharacter->le [PersonalCharacteristicPluralFem]</li>
-	<li>PersonalCharacter->gli [PersonalCharacteristicPluralNeu]</li>
-	<li>PersonalCharacterPoss->i suoi [PersonalCharacteristicPluralMas]</li>
-	<li>PersonalCharacterPoss->le sue [PersonalCharacteristicPluralFem]</li>
-	<li>PersonFamilyInd->suo [PersonFamilySingularMas]</li>	
-	<li>PersonFamilyInd->sua [PersonFamilySingularFem]</li>	
-	<li>PersonFamilyPoss->di suo [PersonFamilySingularMas]</li>
-	<li>PersonFamilyPoss->di sua [PersonFamilySingularFem]</li>
-	<li>PersonFamilyPoss->dei suoi [PersonFamilyPluralMas]</li>
-	<li>PersonFamilyPoss->delle sue [PersonFamilyPluralFem]</li>
-	<li>questDescription(askerIsNull==true)->È arrivato un messaggio misterioso. Sembra che sia stato trasmesso da un androide che rifiuta di qualificarsi. Il messaggio chiede di costruire un monumento molto specifico.\n\n[commonEnding]</li>
+    <li>PersonalCharacter->i [PersonalCharacteristicPluralMas]</li>
+    <li>PersonalCharacter->le [PersonalCharacteristicPluralFem]</li>
+    <li>PersonalCharacter->gli [PersonalCharacteristicPluralNeu]</li>
+    <li>PersonalCharacterPoss->i suoi [PersonalCharacteristicPluralMas]</li>
+    <li>PersonalCharacterPoss->le sue [PersonalCharacteristicPluralFem]</li>
+    <li>PersonFamilyInd->suo [PersonFamilySingularMas]</li>
+    <li>PersonFamilyInd->sua [PersonFamilySingularFem]</li>
+    <li>PersonFamilyPoss->di suo [PersonFamilySingularMas]</li>
+    <li>PersonFamilyPoss->di sua [PersonFamilySingularFem]</li>
+    <li>PersonFamilyPoss->dei suoi [PersonFamilyPluralMas]</li>
+    <li>PersonFamilyPoss->delle sue [PersonFamilyPluralFem]</li>
+    <li>questDescription(askerIsNull==true)->È arrivato un messaggio misterioso. Sembra che sia stato trasmesso da un androide che rifiuta di qualificarsi. Il messaggio chiede di costruire un monumento molto specifico.\n\n[commonEnding]</li>
     <li>questDescription(asker_factionLeader==True)->[asker_nameFull], [asker_faction_leaderTitle] di [asker_faction_name], ti chiede di costruire un monumento [buildReason].\n\n[commonEnding]</li>
     <li>questDescription(asker_royalInCurrentFaction==True)->[asker_nameFull], [asker_royalTitleInCurrentFaction] di [asker_faction_name], ti chiede di costruire un monumento [buildReason].\n\n[commonEnding]</li>
     <li>asker2(askerIsNull==true)->dell'archotech</li>

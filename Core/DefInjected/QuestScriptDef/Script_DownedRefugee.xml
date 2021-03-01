@@ -8,10 +8,10 @@
     <li>pawnInvolvedInQuestInfo-></li>
   -->
   <OpportunitySite_DownedRefugee.questDescriptionRules.rulesStrings>
-	<li>genere(refugee_gender==Male)->o</li>
-	<li>genere(refugee_gender==Female)->a</li>
-	<li>generePoss(refugee_gender==Male)->il suo</li>
-	<li>generePoss(refugee_gender==Female)->la sua</li>
+    <li>genere(refugee_gender==Male)->o</li>
+    <li>genere(refugee_gender==Female)->a</li>
+    <li>generePoss(refugee_gender==Male)->il suo</li>
+    <li>generePoss(refugee_gender==Female)->la sua</li>
     <li>questDescription(askerIsNull==true)->[refugee_nameDef], [refugee_title] di [refugee_age] anni, ti contatta e chiede aiuto in quanto è ferit[genere] e incapace di muoversi.\n\n[refugee_pronoun] promette di unirsi a te se [refugee_objective] salvi.\n\n[refugee_nameDef] dice, inoltre, che [allSitePartsDescriptionsExceptFirst][pawnInvolvedInQuestInfo]</li>
     <li>questDescription(asker_factionLeader==True)->[asker_nameDef], [asker_faction_leaderTitle] di [asker_faction_name], dice che [generePoss] amic[genere] è stat[genere] ferit[genere] durante un viaggio. La vittima è [refugee_nameIndef], un [refugee_title] di [refugee_age] anni.\n\n[asker_nameDef] non ha nessuno da inviare per salvare [refugee_nameDef], ma dice che se riesci a raggiunger[refugee_objective] e salvar[refugee_objective], [refugee_pronoun] si unirà a te.\n\n[asker_nameDef] aggiunge che [allSitePartsDescriptionsExceptFirst][pawnInvolvedInQuestInfo]</li>
     <li>pawnInvolvedInQuestInfo(priority=1)->[refugee_pawnInvolvedInQuestInfo]</li>

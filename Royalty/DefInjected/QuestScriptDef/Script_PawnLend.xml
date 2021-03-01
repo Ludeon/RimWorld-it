@@ -17,8 +17,8 @@
     <li>pawnListHaveConjugation(colonistsToLendCount>1)->have</li>
   -->
   <PawnLend.questDescriptionRules.rulesStrings>
-	<li>generePron(asker_gender!=Female)->gli</li>
-	<li>generePron(asker_gender==Female)->le</li>	
+    <li>generePron(asker_gender!=Female)->gli</li>
+    <li>generePron(asker_gender==Female)->le</li>
     <li>questDescription(asker_factionLeader==True)->[asker_nameFull], [asker_faction_leaderTitle] di [asker_faction_name] ha bisogno di mani in più per [dutyDescription], perciò ti chiede di prestar[generePron] [colonistCountToLend] per [lendForDays] giorni.\n\n[willSendShuttle]</li>
     <li>disease->influenza</li>
     <li>disease->peste</li>

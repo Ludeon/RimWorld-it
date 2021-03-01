@@ -5,10 +5,10 @@
     <li>questDescription->[asker_nameFull], a [asker_royalTitleInCurrentFaction] of [asker_faction_name] is calling from nearby. [asker_possessive] guards were killed in an ambush. [asker_pronoun] escaped, but is now being followed by (*Threat)a manhunting [animalKindDef_label](/Threat).\n\n[asker_nameDef] wants you to keep [asker_objective] safe at [map_definite] for a few hours until [asker_possessive] shuttle can come pick [asker_objective] up.\n\n[asker_pronoun] will bestow [royalFavorReward] [asker_faction_royalFavorLabel] on whoever accepts this quest. This is enough [asker_faction_royalFavorLabel] to receive the royal title of Yeoman, and all benefits that come with it - including the first level of psychic powers.</li>
   -->
   <Intro_Wimp.questDescriptionRules.rulesStrings>
-	<li>genere(asker_gender==Male)->o</li>
-	<li>genere(asker_gender==Female)->a</li>
-	<li>genereInd(asker_gender==Male)->un</li>
-	<li>genereInd(asker_gender==Female)->una</li>
+    <li>genere(asker_gender==Male)->o</li>
+    <li>genere(asker_gender==Female)->a</li>
+    <li>genereInd(asker_gender==Male)->un</li>
+    <li>genereInd(asker_gender==Female)->una</li>
     <li>questDescription->[asker_nameFull], [genereInd] [asker_royalTitleInCurrentFaction] di [asker_faction_name], sta chiamando da qui vicino. Le sue guardie sono state uccise in un'imboscata. [asker_pronoun] è fuggit[genere], ma ora è inseguit[genere] da (*Threat)[animalKindDef_indefinite] caccia-uomini(/Threat).\n\n[asker_nameDef] vuole che tu [asker_objective] tenga al sicuro a [map_definite] per alcune ore fino a quando la sua navetta potrà venire a prenderl[genere].\n\n[asker_pronoun] concederà, a chiunque accetti questa missione, [royalFavorReward] [asker_faction_royalFavorLabel], abbastanza per ricevere il titolo reale di Yeoman e tutti i benefici che ne derivano, incluso il primo livello di poteri psichici.</li>
   </Intro_Wimp.questDescriptionRules.rulesStrings>
   <!-- EN:

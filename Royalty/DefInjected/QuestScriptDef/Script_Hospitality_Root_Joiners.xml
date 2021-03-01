@@ -68,12 +68,12 @@
     <li>allyAllies(lodgersCountMinusOne>=2)->allies</li>
   -->
   <Hospitality_Joiners.questDescriptionRules.rulesStrings>
-	<li>lodgersPronome(lodgers0_gender!=Female)->gli</li>
-	<li>lodgersPronome(lodgers0_gender==Female)->le</li>
-	<li>genere(lodgers0_gender==Female)->a</li>
-	<li>generePoss(lodgers0_gender==Female)->la sua</li>
- 	<li>genere(lodgers0_gender!=Female)->o</li>
- 	<li>generePoss(lodgers0_gender!=Female)->il suo</li>
+    <li>lodgersPronome(lodgers0_gender!=Female)->gli</li>
+    <li>lodgersPronome(lodgers0_gender==Female)->le</li>
+    <li>genere(lodgers0_gender==Female)->a</li>
+    <li>generePoss(lodgers0_gender==Female)->la sua</li>
+    <li>genere(lodgers0_gender!=Female)->o</li>
+    <li>generePoss(lodgers0_gender!=Female)->il suo</li>
     <li>joinerEnding(priority=1)-></li>
     <li>joinerEnding(lodgersCount==1)->Sarai in grado di dirigere [lodgersDef] nello stesso modo in cui dirigi i tuoi coloni.[specialNeedsExplanation]</li>
     <li>joinerEnding(lodgersCount>=2)->Sarai in grado di dirigere i [lodgersDef] nello stesso modo in cui dirigi i tuoi coloni.[specialNeedsExplanation]</li>
@@ -82,9 +82,9 @@
     <li>theirHisHer(lodgersCount==1)->[lodgers0_possessive]</li>
     <li>theirHisHer(lodgersCount>=2)->loro</li>
     <li>lodgersWasWere(lodgersCount==1)->era</li>
-    <li>lodgersWasWere(lodgersCount>=2)->erano</li>	
-	<li>goodwillForMood(lodgersCount==1,goodwillRewardForMood==true,priority=1)->\n\n[lodgersLabelSingOrPluralDef] apprezza alloggi di qualità. Otterrai buone relazioni con [asker_faction_name] se mantieni il suo umore medio al di sopra del 50%.</li>
-	<li>goodwillForMood(lodgersCount>=2,goodwillRewardForMood==true,priority=1)->\n\n[lodgersLabelSingOrPluralDef] apprezzano alloggi di qualità. Otterrai buone relazioni con [asker_faction_name] se mantieni il loro umore medio al di sopra del 50%.</li>
+    <li>lodgersWasWere(lodgersCount>=2)->erano</li>
+    <li>goodwillForMood(lodgersCount==1,goodwillRewardForMood==true,priority=1)->\n\n[lodgersLabelSingOrPluralDef] apprezza alloggi di qualità. Otterrai buone relazioni con [asker_faction_name] se mantieni il suo umore medio al di sopra del 50%.</li>
+    <li>goodwillForMood(lodgersCount>=2,goodwillRewardForMood==true,priority=1)->\n\n[lodgersLabelSingOrPluralDef] apprezzano alloggi di qualità. Otterrai buone relazioni con [asker_faction_name] se mantieni il loro umore medio al di sopra del 50%.</li>
     <li>goodwillForMood-></li>
     <li>questDescription(askerIsNull==true,lodgersCount==1)->[lodgers0_nameFull], [lodgers0_titleIndef], vuole che tu [lodgers0_objective] protegga su [map_definite] per [shuttleDelayTicks_duration]. [allLodgerInfo][threatsInfo1][commonDescEnding]\n\n[joinerEnding]</li>
     <!-- <li>threatsInfo1(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\n[lodgers0_nameDef], ha incautamente fatto si che [lodgers0_objective] scoprissero [wrongAct]. In cerca di vendetta, alcuni [enemyFaction_pawnsPlural] verranno a cercar[lodgers0_objective] fintanto che [lodgers0_pronoun] sarà con te. [enemyGroupsParagraph]</li> -->
