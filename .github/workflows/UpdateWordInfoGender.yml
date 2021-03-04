@@ -4,7 +4,7 @@ name: Update WordInfo
 # events but only for the master branch
 on:
   push:
-    branches: [ StoneNimRod ]
+    branches: [ main ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -46,11 +46,11 @@ jobs:
         # Save a list of all found words
         Get-Content "$temp/all*.txt" | Sort-Object -Unique | Set-Content "$temp/all.txt"
         # Merge found male words into the list of male words
-        Get-Content "$temp/all_males.txt", "Core/WordInfo/Gender/Male.txt" | Sort-Object -Unique | Set-Content "Core/WordInfo/Gender/Male.txt"
+        ### Get-Content "$temp/all_males.txt", "Core/WordInfo/Gender/Male.txt" | Sort-Object -Unique | Set-Content "Core/WordInfo/Gender/Male.txt"
         # Merge found female words into the list of female words
-        Get-Content "$temp/all_females.txt", "Core/WordInfo/Gender/Female.txt" | Sort-Object -Unique | Set-Content "Core/WordInfo/Gender/Female.txt"
+        ### Get-Content "$temp/all_females.txt", "Core/WordInfo/Gender/Female.txt" | Sort-Object -Unique | Set-Content "Core/WordInfo/Gender/Female.txt"
         # Sort the list of neuter words
-        Get-Content "Core/WordInfo/Gender/Neuter.txt" | Sort-Object -Unique | Set-Content "Core/WordInfo/Gender/Neuter.txt"
+        ### Get-Content "Core/WordInfo/Gender/Neuter.txt" | Sort-Object -Unique | Set-Content "Core/WordInfo/Gender/Neuter.txt"
         # Save a list of words already classified
         Get-Content (Get-ChildItem -Path "Core/WordInfo/Gender/*" -Include "Male.txt", "Female.txt", "Neuter.txt") | Sort-Object -Unique | Set-Content "$temp/wordinfo.txt"
         # Save a list of words not classified
@@ -69,7 +69,7 @@ jobs:
           Compare-Object @objects -IncludeEqual -ExcludeDifferent -PassThru > "Core/WordInfo/Gender/$gender.txt"
         }
         # Delete the temporary folder
-        Remove-Item -Recurse $temp
+        # Remove-Item -Recurse $temp
     - name: Commit
       run: |
         git config user.name "github-actions"
