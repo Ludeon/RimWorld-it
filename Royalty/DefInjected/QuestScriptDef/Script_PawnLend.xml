@@ -17,14 +17,14 @@
     <li>pawnListHaveConjugation(colonistsToLendCount>1)->have</li>
   -->
   <PawnLend.questDescriptionRules.rulesStrings>
-    <li>generePron(asker_gender!=Female)->gli</li>
-    <li>generePron(asker_gender==Female)->le</li>
-    <li>questDescription(asker_factionLeader==True)->[asker_nameFull], [asker_faction_leaderTitle] di [asker_faction_name] ha bisogno di mani in più per [dutyDescription], perciò ti chiede di prestar[generePron] [colonistCountToLend] per [lendForDays] giorni.\n\n[willSendShuttle]</li>
+    <li>asker_gender_Pron(asker_gender!=Female)->gli</li>
+    <li>asker_gender_Pron(asker_gender==Female)->le</li>
+    <li>questDescription(asker_factionLeader==True)->[asker_nameFull], [asker_faction_leaderTitle] di [asker_faction_name] ha bisogno di mani in più per [dutyDescription], perciò ti chiede di prestar[asker_gender_Pron] [colonistCountToLend] per [lendForDays] giorni.\n\n[willSendShuttle]</li>
     <li>disease->influenza</li>
     <li>disease->peste</li>
     <li>disease->malaria</li>
     <li>disease->una malattia infettiva</li>
-    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_nameFull], [asker_royalTitleInCurrentFaction] di [asker_faction_name] ha bisogno di mani in più per [dutyRoyalDescription], pertanto ti chiede di prestar[generePron] [colonistCountToLend] per servir[asker_objective] per [lendForDays] giorni.\n\n[willSendShuttle]</li>
+    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_nameFull], [asker_royalTitleInCurrentFaction] di [asker_faction_name] ha bisogno di mani in più per [dutyRoyalDescription], pertanto ti chiede di prestar[asker_gender_Pron] [colonistCountToLend] per servir[asker_objective] per [lendForDays] giorni.\n\n[willSendShuttle]</li>
     <li>colonistCountToLend(colonistsToLendCount==1)->1 colono</li>
     <li>colonistCountToLend(colonistsToLendCount>1)->[colonistsToLendCount] coloni</li>
     <li>willSendShuttle->[asker_pronoun] invierà una navetta a prendere [colonists].</li>
