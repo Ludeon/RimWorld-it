@@ -83,9 +83,10 @@
   -->
   <ThreatReward_Manhunters_Joiner.questDescriptionRules.rulesStrings>
     <li>questDescription(animalCount==1)->[joiner_nameDef], [joiner_titleIndef] di [joiner_age] anni, ti sta contattando da qui vicino. [joiner_pronoun] dice che (*Threat)un [animalKind_label] caccia-uomini(/Threat) [joiner_objective] sta cacciando!\n\n[joiner_pronoun] chiede protezione e vorrebbe unirsi a te su [map_definite].[joiner_relationInfo]\n\nSe accetti, chi [joiner_objective] sta cacciando [joiner_objective] seguirà tra [manhuntersDelayTicks_duration].\n\n[joiner_nameDef] non offre ulteriori informazioni su di sé, per via della troppa frenesia.</li>
-    <li>manhunterArrivalLetterEnd(animalCount==1)->{animalKind_gender ? Il : La : Lo} [animalKind_label] sta inseguendo [joiner_nameDef].</li>
+    <li>manhunterArrivalLetterEnd(animalCount==1)->Il/La [animalKind_label] sta inseguendo [joiner_nameDef].</li>
     <li>questDescription(animalCount>=2)->[joiner_nameDef], [joiner_titleIndef] di [joiner_age] anni, ti sta contattando da qui vicino. [joiner_pronoun] dice che (*Threat)un branco di [animalCount] [animalKind_labelPlural] caccia-uomini(/Threat) [joiner_objective] sta cacciando!\n\n[joiner_pronoun] chiede protezione e vorrebbe unirsi a te su [map_definite].[joiner_relationInfo]\n\nSe accetti, il branco [joiner_objective] seguirà tra [manhuntersDelayTicks_duration].\n\n[joiner_nameDef] non offre ulteriori informazioni su di sé, per via della troppa frenesia.</li>
-    <li>manhunterArrivalLetterEnd(animalCount>=2)->{animalKind_gender ? I : Le : Gli} [animalKind_labelPlural] stanno inseguendo [joiner_nameDef].</li>
+    <li>manhunterArrivalLetterEnd(animalCount>=2)->I/Le [animalKind_labelPlural] stanno inseguendo [joiner_nameDef].</li>
+    <li></li>
   </ThreatReward_Manhunters_Joiner.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName(animalCount==1)->[joiner_nameDef]'s [animalKind_label]</li>
