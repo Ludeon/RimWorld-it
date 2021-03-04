@@ -46,9 +46,11 @@ jobs:
         # Save a list of all found words
         Get-Content "$temp/all*.txt" | Sort-Object -Unique | Set-Content "$temp/all.txt"
         # Merge found male words into the list of male words
-        Get-Content "$temp/all_males.txt", "Core/WordInfo/Gender/Male.txt" | Sort-Object -Unique | Set-Content "Core/WordInfo/Gender/Male.txt"
+        Get-Content "Core/WordInfo/Gender/Male.txt" | Sort-Object -Unique | Set-Content "Core/WordInfo/Gender/Male.txt"
+        Get-Content "$temp/all_males.txt" | Sort-Object -Unique | Set-Content "Core/WordInfo/Gender/all_males.txt"
         # Merge found female words into the list of female words
-        Get-Content "$temp/all_females.txt", "Core/WordInfo/Gender/Female.txt" | Sort-Object -Unique | Set-Content "Core/WordInfo/Gender/Female.txt"
+        Get-Content "Core/WordInfo/Gender/Female.txt" | Sort-Object -Unique | Set-Content "Core/WordInfo/Gender/Female.txt"
+        Get-Content "$temp/all_females.txt" | Sort-Object -Unique | Set-Content "Core/WordInfo/Gender/all_females.txt"
         # Sort the list of neuter words
         Get-Content "Core/WordInfo/Gender/Neuter.txt" | Sort-Object -Unique | Set-Content "Core/WordInfo/Gender/Neuter.txt"
         # Save a list of words already classified
