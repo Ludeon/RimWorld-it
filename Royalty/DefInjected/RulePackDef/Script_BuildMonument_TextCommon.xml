@@ -28,20 +28,35 @@
     <li>failLetterEndingCommon->You have failed the quest '[resolvedQuestName]'.\n\nYour relations with [asker_faction_name] have decreased by [goodwillPenalty].</li>
   -->
   <QuestConstructionDescriptionCommon.rulePack.rulesStrings>
-    <li>questDescription(askerIsNull==true)->È arrivato un messaggio misterioso. Sembra che sia stato trasmesso da un persona-macchina che rifiuta di nominarsi. Il messaggio chiede di costruire un monumento molto specifico.\n\n[commonEnding]</li>
-    <li>questDescription(asker_factionLeader==True)->[asker_faction_leaderTitle] [asker_nameFull] di [asker_faction_name] ti chiede di costruire un monumento, [buildReason].\n\n[commonEnding]</li>
-    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_royalTitleInCurrentFaction] [asker_nameFull] di [asker_faction_name] ti chiede di costruire un monumento, [buildReason].\n\n[commonEnding]</li>
-    <li>asker2(askerIsNull==true)->l'archotech</li>
-    <li>asker2(asker_factionLeader==True)->[asker_nameDef]</li>
-    <li>asker2(asker_royalInCurrentFaction==True)->il [asker_royalTitleInCurrentFaction]</li>
-    <li>buildReason->per commemorare la [PersonalCharacteristic] di [asker_possessive] [PersonFamily]</li>
-    <li>buildReason->per commemorare la [asker_possessive] [PersonalCharacteristic]</li>
-    <li>buildReason->per offendere la [PersonalCharacteristic] dei suoi rivali</li>
-    <li>buildReason->per ridurre i sentimenti di [ConceptAngsty] tra le persone</li>
-    <li>buildReason->per esprimere quanto [asker pronoun] è [Adjective Badass]</li>
-    <li>buildReason->per commemorare i [asker_possessive] [asker_faction_pawnsPlural] caduti in battaglia</li>
-    <li>buildReason->per onorare [asker_possessive] [PersonFamily]</li>
-    <li>buildReason->per elogiare il lavoro di [PersonJob]</li>
+    <li>PersonalCharacter->i [PersonalCharacteristicPluralMas]</li>
+    <li>PersonalCharacter->le [PersonalCharacteristicPluralFem]</li>
+    <li>PersonalCharacter->gli [PersonalCharacteristicPluralNeu]</li>
+    <li>PersonalCharacterPoss->i suoi [PersonalCharacteristicPluralMas]</li>
+    <li>PersonalCharacterPoss->le sue [PersonalCharacteristicPluralFem]</li>
+    <li>PersonFamilyInd->suo [PersonFamilySingularMas]</li>
+    <li>PersonFamilyInd->sua [PersonFamilySingularFem]</li>
+    <li>PersonFamilyPoss->di suo [PersonFamilySingularMas]</li>
+    <li>PersonFamilyPoss->di sua [PersonFamilySingularFem]</li>
+    <li>PersonFamilyPoss->dei suoi [PersonFamilyPluralMas]</li>
+    <li>PersonFamilyPoss->delle sue [PersonFamilyPluralFem]</li>
+    <li>questDescription(askerIsNull==true)->È arrivato un messaggio misterioso. Sembra che sia stato trasmesso da un androide che rifiuta di qualificarsi. Il messaggio chiede di costruire un monumento molto specifico.\n\n[commonEnding]</li>
+    <li>questDescription(asker_factionLeader==True)->[asker_nameFull], [asker_faction_leaderTitle] di [asker_faction_name], ti chiede di costruire un monumento [buildReason].\n\n[commonEnding]</li>
+    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_nameFull], [asker_royalTitleInCurrentFaction] di [asker_faction_name], ti chiede di costruire un monumento [buildReason].\n\n[commonEnding]</li>
+    <li>asker2(askerIsNull==true)->dell'archotech</li>
+    <li>asker2(asker_factionLeader==True)->di [asker_nameDef]</li>
+    <li>asker2(asker_royalInCurrentFaction==True,asker_gender==Male)->del [asker_royalTitleInCurrentFaction]</li>
+    <li>asker2(asker_royalInCurrentFaction==True,asker_gender==Female)->della [asker_royalTitleInCurrentFaction]</li>
+    <li>buildReason->per commemorare [PersonalCharacter] [PersonFamilyPoss]</li>
+    <li>buildReason->per commemorare [PersonalCharacter]</li>
+    <li>buildReason->per offendere [PersonalCharacter] dei suoi rivali</li>
+    <li>buildReason->per ridurre i sentimenti di [ConceptAngstySingular] tra le persone</li>
+    <li>buildReason(asker_gender==Male)->per esprimere quanto lui sia [AdjectiveBadassSingularMas]</li>
+    <li>buildReason(asker_gender==Female)->per esprimere quanto lei sia [AdjectiveBadassSingularFem]</li>
+    <li>buildReason->per commemorare i suoi [asker_faction_pawnsPlural] caduti in battaglia</li>
+    <li>buildReason->per onorare [PersonFamilyInd]</li>
+    <li>buildReason->per elogiare il lavoro di [PersonJobSingularMas]</li>
+    <li>buildReason->per elogiare il lavoro di [PersonJobSingularFem]</li>
+    <li>buildReason->per elogiare il lavoro di [PersonJobSingularNeu]</li>
     <li>buildReason->per diffondere immagini della sua [glory] in tutto il paese</li>
     <li>glory->gloria</li>
     <li>glory->vittoria</li>

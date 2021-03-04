@@ -9,11 +9,15 @@
     <li>underArmedGuard-></li>
   -->
   <OpportunitySite_PrisonerWillingToJoin.questDescriptionRules.rulesStrings>
-    <li>questDescription->Un prigioniero tenuto da [siteFaction_name] è riuscito a rubare una radio e contattarti!\n\n[prisoner_nameDef] è trattenut{PAWN_gender ? o : a} in un campo vicino a [map_definite][underArmedGuard]. Salva [prisoner_objective] e [prisoner_pronoun] si unirà alla tua colonia. [prisoner_pronoun] è un [prisoner_title] di [prisoner_age] anni. [prisoner_pronoun] dice che [allSitePartsDescriptionsExceptFirst][formerColonistInfo][prisonerFullRelationInfo]\n\nSe perdi questa opportunità, potresti non avere più notizie da [prisoner_nameDef].</li>
+    <li>questDescription->[genereIndef] prigionier[genere] di [siteFaction_name] è riuscit[genere] a rubare una radio e contattarti!\n\n[prisoner_nameDef], [prisoner_title] di [prisoner_age] anni, è trattenut[genere] in un campo vicino a [map_definite][underArmedGuard]. Salva[prisoner_objective] e si unirà alla tua colonia. A quanto dice, [allSitePartsDescriptionsExceptFirst][formerColonistInfo][prisonerFullRelationInfo]\n\nSe perdi questa opportunità, potresti non avere più notizie da [prisoner_nameDef].</li>
     <li>formerColonistInfo(priority=1)->\n\n[prisoner_formerlyColonistInfo]</li>
     <li>formerColonistInfo-></li>
-    <li>underArmedGuard(allowViolentQuests==true,priority=1)-> controllata da una scorta armata</li>
+    <li>underArmedGuard(allowViolentQuests==true,priority=1)-> e controllat[genere] da una scorta armata</li>
     <li>underArmedGuard-></li>
+    <li>genere(prisoner_gender!=Female)->o</li>
+    <li>genereIndef(prisoner_gender!=Female)->un</li>
+    <li>genere(prisoner_gender==Female)->a</li>
+    <li>genereIndef(prisoner_gender==Female)->una</li>
   </OpportunitySite_PrisonerWillingToJoin.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[prisoner_nameDef]'s Salvation</li>

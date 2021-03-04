@@ -6,8 +6,10 @@
     <li>decreeThreatInfo->If you fail to fulfill this decree within [decreeDays] days, [asker_nameDef] will start to become unhappy. [asker_possessive] anger will increase over time until the decree is satisfied.</li>
   -->
   <DecreeSetup.questDescriptionRules.rulesStrings>
-    <li>decreeIntro->[asker_nameDef], il tuo [asker_bestRoyalTitle], ha emesso un decreto reale.</li>
-    <li>decreeThreatInfo->Se non rispetti questo decreto entro [decreeDays] giorni, [asker_nameDef] inizierà a diventare insoddisfatto. La sua rabbia aumenterà nel tempo fino a quando il decreto non sarà soddisfatto.</li>
+    <li>generePoss(asker_gender==Male)->il tuo</li>
+    <li>generePoss(asker_gender==Female)->la tua</li>
+    <li>decreeIntro->[asker_nameDef], [generePoss] [asker_bestRoyalTitle], ha emesso un decreto reale.</li>
+    <li>decreeThreatInfo->Se non rispetti questo decreto entro [decreeDays] giorni, [asker_nameDef] comincerà ad irritarsi. La sua rabbia aumenterà nel tempo fino a quando il decreto non sarà soddisfatto.</li>
   </DecreeSetup.questDescriptionRules.rulesStrings>
   <!-- EN: [asker_nameDef]'s decree forgotten -->
   <DecreeSetup.LetterLabelDecreeForgotten.slateRef>decreto di [asker_nameDef] dimenticato</DecreeSetup.LetterLabelDecreeForgotten.slateRef>

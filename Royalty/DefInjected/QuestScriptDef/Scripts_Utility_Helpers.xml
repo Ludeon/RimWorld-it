@@ -15,8 +15,13 @@
     <li>helpersIsAre(helpersCount>=2)->are</li>
   -->
   <Util_MaybeGenerateHelpers.questDescriptionRules.rulesStrings>
+    <li>artIndet(helpersCount==1,helperKind_gender==Male)->Un</li>
+    <li>artIndet(helpersCount==1,helperKind_gender==Female)->Una</li>
+    <li>artIndet(helpersCount==1,helperKind_gender==Neuter)->Uno</li>
+    <li>genere(helperKind_gender!=Female)->o</li>
+    <li>genere(helperKind_gender==Female)->a</li>
     <li>helpersParagraph(helpersCount==0)-></li>
-    <li>helpersParagraph(helpersCount==1)->\n\n{helperKind_gender ? Un : Una : Uno} [helperKind_label] sarà post{helperKind_gender ? o : a} sotto il tuo controllo. Dovrai nutrire ed ospitare [helpers0_objective], ma [helpers0_pronoun] potrà morire in battaglia senza alcuna conseguenza.\n\n</li>
+    <li>helpersParagraph(helpersCount==1)->\n\n[artIndet] sarà post[genere] sotto il tuo controllo. Dovrai nutrire ed ospitare [helpers0_objective], ma [helpers0_pronoun] potrà morire in battaglia senza alcuna conseguenza.\n\n</li>
     <li>helpersParagraph(helpersCount>=2)->\n\n[helpersCount] [helperKind_labelPlural] saranno posti sotto il tuo controllo. Dovrai nutrirli ed ospitarli, ma potranno morire in battaglia senza alcuna conseguenza.\n\n</li>
     <li>helpersArrivalLetterEnd(helpersCount==0)-></li>
     <li>helpersArrivalLetterEnd(helpersCount==1)->\n\n[helpersCount] [helpersLabelSingOrPlural] è stato inviato per assisterti.</li>

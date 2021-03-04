@@ -7,7 +7,12 @@ Puoi trovare ulteriori informazioni in questa pagina: http://ludeon.com/forums/i
 
 TRADUTTORI:
 ------------------
+### Attivi:
 - StoneNimRod
+- Kaiser85
+- Kenciccio
+
+### Vecchie Versioni:
 - Nephiro
 - Harkeidos
 - Rexlord

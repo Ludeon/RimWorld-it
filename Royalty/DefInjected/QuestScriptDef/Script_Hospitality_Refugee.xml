@@ -106,12 +106,12 @@
     <li>mutinyLetterText(lodgerCount==1)->[lodgersSingularOrPluralDef], [whoAskedToStay] si sta rivoltando contro di te!\n\nSembra che avesse pianificato questo tradimento da tempo.</li>
     <li>mutinyLetterText(lodgerCount>=2)->[lodgersSingularOrPluralDef], [whoAskedToStay] si stanno rivoltando contro di te!\n\nSembra che avessero pianificato questo tradimento da tempo.</li>
     <li>betrayalOfferLetterLabel->Offerta di tradimento: [factionOpponent_nameDef]</li>
-    <li>betrayalOffserLetterText(lodgerCount==1)->[factionOpponent_nameDef], un [factionOpponent_faction_pawnSingular] di [factionOpponent_faction_name], ha appreso che [asker_nameDef] [otherLodgers] è ospitato su [map_definite]. [factionOpponent_pronoun] è un nemico di [asker_nameDef] e vuole vedere [asker_objective] morto.\n\n[factionOpponent_pronoun] ti invierà la seguente ricompensa se uccidi tutti i membri di [faction_name] (valore totale [betrayalRewardMarketValue_money]):\n\n[betrayalRewards]</li>
-    <li>betrayalOffserLetterText(lodgerCount>=2)->[factionOpponent_nameDef], un [factionOpponent_faction_pawnSingular] di [factionOpponent_faction_name], ha appreso che [asker_nameDef] [otherLodgers] sono ospitati su [map_definite]. [factionOpponent_pronoun] è un nemico di [asker_nameDef] e vuole vedere [asker_objective] morti.\n\n[factionOpponent_pronoun] ti invierà la seguente ricompensa se uccidi tutti i membri di [faction_name] (valore totale [betrayalRewardMarketValue_money]):\n\n[betrayalRewards]</li>
+    <li>betrayalOffserLetterText(lodgerCount==1)->[factionOpponent_nameDef], un [factionOpponent_faction_pawnSingular] di [factionOpponent_faction_name], ha appreso che [asker_nameDef] [otherLodgers] è ospitato su [map_definite]. [factionOpponent_pronoun] è un nemico di [asker_nameDef] e vuole che muoia.\n\n[factionOpponent_pronoun] ti invierà la seguente ricompensa se uccidi tutti i membri di [faction_name] (valore totale [betrayalRewardMarketValue_money]):\n\n[betrayalRewards]</li>
+    <li>betrayalOffserLetterText(lodgerCount>=2)->[factionOpponent_nameDef], un [factionOpponent_faction_pawnSingular] di [factionOpponent_faction_name], ha appreso che [asker_nameDef] [otherLodgers] sono ospitati su [map_definite]. [factionOpponent_pronoun] è un nemico di [asker_nameDef] e vuole vedere[asker_objective] morti.\n\n[factionOpponent_pronoun] ti invierà la seguente ricompensa se uccidi tutti i membri di [faction_name] (valore totale [betrayalRewardMarketValue_money]):\n\n[betrayalRewards]</li>
     <li>betrayalOfferRewardLetterLabel->Ricompensa per tradimento: [factionOpponent_nameDef]</li>
     <li>betrayalOfferRewardLetterText->[factionOpponent_nameDef] ti aveva promesso una ricompensa se avessi ucciso [asker_nameDef] [otherMembers]. [factionOpponent_pronoun] ha ricevuto la notizia che questo è stato fatto e ti sta inviando quanto segue tramite delle capsule di trasporto (valore totale [betrayalRewardMarketValue_money]):\n\n[betrayalRewards].\n\n[questOver]</li>
     <li>betrayalOfferFailedLetterLabel->Ricompensa per tradimento ritirata</li>
-    <li>betrayalOfferFailedLetterText->[factionOpponent_nameDef] ha ricevuto la notizia che uno dei membri di [faction_name] non è più in [map_definite]. [factionOpponent_nameDef] voleva che tutti i membri di [faction_name] morissero e ha quindi ritirato la sua offerta.</li>
+    <li>betrayalOfferFailedLetterText->[factionOpponent_nameDef] ha ricevuto la notizia che uno dei membri di [faction_name] non è più a [map_definite]. [factionOpponent_nameDef] voleva che tutti i membri di [faction_name] morissero e ha quindi ritirato la sua offerta.</li>
     <li>otherLodgers(lodgerCount==1)-></li>
     <li>otherLodgers(lodgerCount==2)->e un altro [lodgersLabel]</li>
     <li>otherLodgers(lodgerCount>=3)->e altri [lodgersLabelPlural]</li>
@@ -119,7 +119,7 @@
     <li>otherMembers(lodgerCount>=2)->e tutti gli altri membri di [faction_name]</li>
     <li>lodgersLeavingLetterLabel(lodgerCount==1)->[lodgersLabelSingularOrPlural] se ne va</li>
     <li>lodgersLeavingLetterLabel(lodgerCount>=2)->[lodgersLabelSingularOrPlural] se ne vanno</li>
-    <li>lodgersLeavingLetterText->{FACTION_leaderNameDef} ti ringrazia per aver permesso a {FACTION_leaderObjective} di rimanere su [map_definite] per questi [questDurationTicks_duration]. {FACTION_leaderPronoun} ora se ne andrà con le sue persone.\n\n{FACTION_leaderNameDef} dice che {FACTION_leaderPronoun} non dimenticherà mai quello che hai fatto per loro.</li>
+    <li>lodgersLeavingLetterText->{FACTION_leaderNameDef} ti ringrazia per aver permesso a {FACTION_leaderObjective} di rimanere su [map_definite] per questi [questDurationTicks_duration]. {FACTION_leaderPronoun} ora se ne andrà con la sua gente.\n\n{FACTION_leaderNameDef} dice che non dimenticherà mai quello che hai fatto per loro.</li>
   </Hospitality_Refugee.questContentRules.rulesStrings>
   <!-- EN:
     <li>lodgersLabel->refugee</li>
@@ -165,23 +165,23 @@
   <Hospitality_Refugee.questDescriptionRules.rulesStrings>
     <!--<li>offer(lodgerCount==1)->offers</li>-->
     <!--<li>offer(lodgerCount>=2)->offer</li>-->
-    <!--<li>lodgersPronoun(lodgerCount==1)-></li>-->
-    <!--<li>lodgersPronoun(lodgerCount>=2)->loro</li>-->
+    <li>lodgersPronoun(lodgerCount==1)->[asker_pronoun]</li>
+    <li>lodgersPronoun(lodgerCount>=2)->loro</li>
     <!--<li>lodgersPreposition(lodgerCount==1)->[asker_objective]self</li>-->
     <!--<li>lodgersPreposition(lodgerCount>=2)->themselves</li>-->
-    <!--<li>lodgersObjective(lodgerCount==1)->[asker_objective]</li>-->
-    <!--<li>lodgersObjective(lodgerCount>=2)->them</li>-->
+    <li>lodgersObjective(lodgerCount==1)->[asker_objective]</li>
+    <li>lodgersObjective(lodgerCount>=2)->loro</li>
     <!--<li>lodgersPossessive(lodgerCount==1)->[asker_possessive]</li>-->
     <!--<li>lodgersPossessive(lodgerCount>=2)->their</li>-->
     <li>lodgersSingularOrPluralDef(lodgerCount==1)->[asker_nameDef]</li>
     <li>lodgersSingularOrPluralDef(lodgerCount>=2)->i [lodgersLabelPlural]</li>
-    <li>questDescription(lodgerCount==1)->[approachInfo] [claimInfo] [asker_nameDef] ti chiede il permesso di rimanere a [map_definite] per [questDurationTicks_duration] affinche possa riposarsi e riorganizzarsi.\n\nIn cambio, [asker_pronoun] si impegnerà a lavorare e combattere per te gratuitamente durante quel periodo.\n\n[joinInfo] [asker_pronoun] in seguito potrebbe anche ricompensarti per averl{PAWN_gender ? o : a} aiutat{PAWN_gender ? o : a}, ma non c'è modo di conoscere le sue vere intenzioni.\n\n[travelerInfo] Se lo desideri, puoi scegliere di uccidere, arrestare, vendere o mietere [lodgersObjective], senza conseguenze diplomatiche.</li>
-    <li>questDescription(lodgerCount>=2)->[approachInfo] [claimInfo] [asker_nameDef] ti chiedono il permesso di rimanere a [map_definite] per [questDurationTicks_duration] affinche possano riposarsi e riorganizzarsi.\n\nIn cambio, loro si impegneranno a lavorare e combattere per te gratuitamente durante quel periodo.\n\n[joinInfo] Loro in seguito potrebbero anche ricompensarti per averli aiutati, ma non c'è modo di conoscere le loro vere intenzioni.\n\n[travelerInfo] Se lo desideri, puoi scegliere di uccidere, arrestare, vendere o mietere [lodgersObjective], senza conseguenze diplomatiche.</li>
+    <li>questDescription(lodgerCount==1)->[approachInfo] [claimInfo] [asker_pronoun] ti chiede il permesso di rimanere a [map_definite] per [questDurationTicks_duration] affinché possa riposarsi e riorganizzarsi.\n\nIn cambio, si impegnerà a lavorare e combattere gratuitamente per la colonia durante quel periodo.\n\n[joinInfo] In seguito potrebbe anche ricompensarti per l'aiuto offerto, ma non c'è modo di conoscere le sue vere intenzioni.\n\n[travelerInfo] Se lo desideri, puoi scegliere di uccider[asker_objective], arrestar[asker_objective], vender[asker_objective] o espiantare i suoi organi senza conseguenze diplomatiche.</li>
+    <li>questDescription(lodgerCount>=2)->[approachInfo] [claimInfo] Ti chiedono il permesso di rimanere a [map_definite] per [questDurationTicks_duration] affinché possano riposarsi e riorganizzarsi.\n\nIn cambio, si impegneranno a lavorare e combattere gratuitamente per la colonia durante quel periodo.\n\n[joinInfo] In seguito potrebbero anche ricompensarti per averli aiutati, ma non c'è modo di conoscere le loro vere intenzioni.\n\n[travelerInfo] Se lo desideri, puoi scegliere di ucciderli, arrestarli, venderli come schiavi o espiantare i loro organi senza conseguenze diplomatiche.</li>
     <li>approachInfo(lodgerCount==1)->Un disperato [faction_pawnSingular] chiamato [asker_nameDef] si sta avvicinando.</li>
     <li>approachInfo(lodgerCount==2)->[asker_nameDef] ed un altro disperato [faction_pawnSingular] si stanno avvicinando.</li>
     <li>approachInfo(lodgerCount>=3)->[lodgerCount] disperati [faction_pawnsPlural] si stanno avvicinando. Il loro leader si chiama [asker_nameDef].</li>
     <li>claimInfo(lodgerCount==1)->[asker_nameDef] afferma di aver perso la sua casa in un recente attacco.</li>
-    <li>claimInfo(lodgerCount==1)->[asker_nameDef] afferma di essersi svegliato dal criptosonno tutto solo e senza amici.</li>
+    <li>claimInfo(lodgerCount==1)->[asker_nameDef] afferma di aver ripreso conoscenza dal criptosonno, in solitudine e senza amici.</li>
     <li>claimInfo(lodgerCount==1,asker_gender!=Female)->[asker_nameDef] sostiene di essere stato cacciato dalla sua casa dalla sua ex.</li>
     <li>claimInfo(lodgerCount==1,asker_gender==Female)->[asker_nameDef] sostiene di essere stata cacciata dalla sua casa dal suo ex.</li>
     <li>claimInfo(lodgerCount==1)->[asker_nameDef] sostiene di essere stato bandito dopo una discussione con il capo villaggio.</li>
@@ -192,10 +192,10 @@
     <li>claimInfo(lodgerCount>=2)->Dicono che una grande tempesta abbia bruciato la loro casa.</li>
     <li>claimInfo(lodgerCount>=2)->Dicono che la loro carovana sia caduta in un'imboscata e che sia stato preso tutto.</li>
     <li>claimInfo(lodgerCount>=2)->Dicono di essere stati banditi dalla loro città a causa di disaccordi morali.</li>
-    <li>joinInfo(lodgerCount==1)->Se rendi felice [asker_objective], [asker_pronoun] potrebbe offrirti di unirsi a te.</li>
+    <li>joinInfo(lodgerCount==1)->Se [asker_objective] rendi felice, potrebbe offrirti di unirsi a te.</li>
     <li>joinInfo(lodgerCount>=2)->Se li rendi felici, alcuni di loro potrebbero offrirsi di unirsi a te.</li>
-    <li>travelerInfo(lodgerCount==1)->Questo [faction_pawnSingular] non appartiene a nessuna fazione.</li>
-    <li>travelerInfo(lodgerCount>=2)->Questi [faction_pawnsPlural] non appartengono a nessuna fazione.</li>
+    <li>travelerInfo(lodgerCount==1)->Questo [faction_pawnSingular] non appartiene ad alcuna fazione.</li>
+    <li>travelerInfo(lodgerCount>=2)->Questi [faction_pawnsPlural] non appartengono ad alcuna fazione.</li>
   </Hospitality_Refugee.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName(lodgerCount==1)->[asker_nameDef] the [lodgerAdj]</li>

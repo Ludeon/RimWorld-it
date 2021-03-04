@@ -6,8 +6,8 @@
     <li>questDescription(asker_factionLeader==True)->[asker_nameDef], [asker_faction_leaderTitle] of [asker_faction_name], has informed us of a collection of valuable items worth [itemStashContentsValue] not far from us. The collection consists of:\n\n[itemStashContents]\n\n[asker_label] says that [allSitePartsDescriptionsExceptFirst]</li>
   -->
   <OpportunitySite_ItemStash.questDescriptionRules.rulesStrings>
-    <li>questDescription(askerIsNull==true)->Abbiamo intercettato alcuni messaggi su una raccolta di oggetti di valore del valore di [itemStashContentsValue] non lontano da [map_definite]. La raccolta è composta da:\n\n[itemStashContents]\n\nSembra che [allSitePartsDescriptionsExceptFirst]</li>
-    <li>questDescription(asker_factionLeader==True)->[asker_nameDef], [asker_faction_leaderTitle] di [asker_faction_name], ci ha informato di una raccolta di oggetti di valore del valore di [itemStashContentsValue] non lontano da noi. La raccolta è composta da:\n\n[itemStashContents]\n\n[asker_label] dice che [allSitePartsDescriptionsExceptFirst]</li>
+    <li>questDescription(askerIsNull==true)->Abbiamo intercettato alcuni messaggi su una raccolta di oggetti di valore che valgono [itemStashContentsValue] non lontano da [map_definite]. La raccolta è composta da:\n\n[itemStashContents]\n\nA quanto pare [allSitePartsDescriptionsExceptFirst]</li>
+    <li>questDescription(asker_factionLeader==True)->[asker_nameDef], [asker_faction_leaderTitle] di [asker_faction_name], ci ha informato di una raccolta di oggetti di valore che valgono [itemStashContentsValue] non lontano da noi. La raccolta è composta da:\n\n[itemStashContents]\n\n[asker_label] dice che [allSitePartsDescriptionsExceptFirst]</li>
   </OpportunitySite_ItemStash.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName(priority=1)->[asker_nameDef]'s [stash] of [treasure]</li>
@@ -24,11 +24,12 @@
   -->
   <OpportunitySite_ItemStash.questNameRules.rulesStrings>
     <li>questName(priority=1)->[stash] [treasure] di [asker_nameDef]</li>
-    <li>questName->[stash] of [treasure]</li>
+    <li>questName->[stash] [treasure]</li>
     <li>stash->Recesso</li>
     <li>stash->Raccolta</li>
     <li>stash->Collezione</li>
     <li>stash->Capanno</li>
+    <li>stash->Carico</li>
     <li>treasure->del tesoro</li>
     <li>treasure->di oggetti preziosi</li>
     <li>treasure->della fortuna</li>
