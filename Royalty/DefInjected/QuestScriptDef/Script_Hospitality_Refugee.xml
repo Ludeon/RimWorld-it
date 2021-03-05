@@ -179,7 +179,6 @@
     <li>questDescription(lodgerCount>=2)->[approachInfo] [claimInfo] Ti chiedono il permesso di rimanere a [map_definite] per [questDurationTicks_duration] affinché possano riposarsi e riorganizzarsi.\n\nIn cambio, si impegneranno a lavorare e combattere gratuitamente per la colonia durante quel periodo.\n\n[joinInfo] In seguito potrebbero anche ricompensarti per averli aiutati, ma non c'è modo di conoscere le loro vere intenzioni.\n\n[travelerInfo] Se lo desideri, puoi scegliere di ucciderli, arrestarli, venderli come schiavi o espiantare i loro organi senza conseguenze diplomatiche.</li>
     <li>approachInfo(lodgerCount==1,asker_gender!=Female)->Un disperato [faction_pawnSingular] chiamato [asker_nameDef] si sta avvicinando.</li>
     <li>approachInfo(lodgerCount==1,asker_gender==Female)->Una disperata [faction_pawnSingular] chiamata [asker_nameDef] si sta avvicinando.</li>
-    <li>approachInfo(lodgerCount==1)->Un disperato [faction_pawnSingular] chiamato [asker_nameDef] si sta avvicinando.</li>
     <li>approachInfo(lodgerCount==2)->[asker_nameDef] ed un altro disperato [faction_pawnSingular] si stanno avvicinando.</li>
     <li>approachInfo(lodgerCount>=3)->[lodgerCount] disperati [faction_pawnsPlural] si stanno avvicinando. Il loro leader si chiama [asker_nameDef].</li>
     <li>claimInfo(lodgerCount==1)->[asker_nameDef] afferma di aver perso la sua casa in un recente attacco.</li>

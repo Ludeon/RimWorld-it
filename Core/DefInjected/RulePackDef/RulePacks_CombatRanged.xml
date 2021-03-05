@@ -133,14 +133,14 @@
     <li>r_logentry(p=2)->Il [WEAPON_projectile_label] di [INITIATOR_definite] ha [missed] [ORIGINALTARGET_definite] e ha [destroyed_past] [destroyed_targets] di [RECIPIENT_definite].</li>
     <li>r_logentry(p=2)->Il [WEAPON_projectile_label] di [INITIATOR_definite] ha [missed] [ORIGINALTARGET_definite], [destroyed_present] [destroyed_targets] di [RECIPIENT_definite].</li>
     <li>r_logentry->[destroyed_targets] di [RECIPIENT_definite] viene [destroyed_past] dal [WEAPON_projectile_label] di [INITIATOR_definite].</li>
-    <!-- <li>r_logentry->[destroyed_targets] di [RECIPIENT_definite] viene [destroyed_past] dal [WEAPON_projectile_label] {WEAPON_projectile_gender ? [expertMas] : [expertFem] : [expertMas]} di [INITIATOR_definite].</li> -->
+    <li>r_logentry->[destroyed_targets] di [RECIPIENT_definite] viene [destroyed_past] dal [WEAPON_projectile_label] [expert] di [INITIATOR_definite].</li>
     <li>r_logentry->[destroyed_targets] di [RECIPIENT_definite] viene [destroyed_past] [destroyed_suffix] dal [WEAPON_projectile_label] di [INITIATOR_definite].</li>
     <li>r_logentry(recipient_part_destroyed_count==0)->Il [WEAPON_projectile_label] di [INITIATOR_definite] ha [damaged_past] [damaged_targets] di [RECIPIENT_definite].</li>
     <li>r_logentry(recipient_part_destroyed_count==0)->Il [WEAPON_projectile_label] di [INITIATOR_definite] ha [damaged_past] [expertly] [damaged_targets] di [RECIPIENT_definite].</li>
     <li>r_logentry(recipient_part_destroyed_count==0,p=2)->Il [WEAPON_projectile_label] di [INITIATOR_definite] ha [missed] [ORIGINALTARGET_definite] e ha [damaged_past] [damaged_targets] di [RECIPIENT_definite].</li>
     <li>r_logentry(recipient_part_destroyed_count==0,p=2)->Il [WEAPON_projectile_label] di [INITIATOR_definite] ha [missed] [ORIGINALTARGET_definite], [damaged_present] [damaged_targets] di [RECIPIENT_definite].</li>
     <li>r_logentry(recipient_part_destroyed_count==0)->[damaged_targets] di [RECIPIENT_definite] viene [damaged_past] dal [WEAPON_projectile_label] di [INITIATOR_definite].</li>
-    <li>r_logentry(recipient_part_destroyed_count==0)->[damaged_targets] di [RECIPIENT_definite] viene [damaged_past] dal [WEAPON_projectile_label] {WEAPON_projectile_gender ? [expertMas] : [expertFem] : [expertMas]} di [INITIATOR_definite].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0)->[damaged_targets] di [RECIPIENT_definite] viene [damaged_past] dal [WEAPON_projectile_label] [expert] di [INITIATOR_definite].</li>
     <li>r_logentry(p=3)->Il [WEAPON_projectile_label] di [INITIATOR_definite] ha [destroyed_past] [destroyed_targets] di [RECIPIENT_definite] e ha [damaged_past] [damaged_targetsPos].</li>
     <li>r_logentry(p=6)->Il [WEAPON_projectile_label] di [INITIATOR_definite] ha [missed] [ORIGINALTARGET_definite], [destroyed_present] [destroyed_targets] di [RECIPIENT_definite] e [damaged_present] [damaged_targetsPos].</li>
     <li>r_logentry(p=0.2)->[INITIATOR_definite] ha colpito [RECIPIENT_definite] con un [WEAPON_projectile_label].</li>
@@ -184,6 +184,8 @@
     <li>destroyed_suffix(recipient_flesh!=Mechanoid,p=0.2)->come carne tritata</li>
     <li>missed->mancato</li>
     <li>missed->mancato per poco</li>
+    <li>expert(WEAPON_projectile_gender==Female)->[expertFem]</li>
+    <li>expert(WEAPON_projectile_gender!=Female)->[expertMas]</li>
   </Combat_RangedDamage.rulePack.rulesStrings>
   
   <!-- EN:
@@ -267,14 +269,14 @@
     <li>verb_shot(p=0.2)->discharged</li>
   -->
   <Combat_RangedFire.rulePack.rulesStrings>
-	<li>arma(WEAPON_gender==Female)->la propria</li>
-	<li>arma(WEAPON_gender!=Female)->il proprio</li>
-    <li>r_logentry->[INITIATOR_definite] [shotat] [RECIPIENT_definite] con [arma] [WEAPON_label].</li>
-    <li>r_logentry->[INITIATOR_definite] [shot] [arma] [WEAPON_label] su [RECIPIENT_definite].</li>
+    <li>WEAPON_gender_Poss(WEAPON_gender==Female)->la propria</li>
+    <li>WEAPON_gender_Poss(WEAPON_gender!=Female)->il proprio</li>
+    <li>r_logentry->[INITIATOR_definite] [shotat] [RECIPIENT_definite] con [WEAPON_gender_Poss] [WEAPON_label].</li>
+    <li>r_logentry->[INITIATOR_definite] [shot] [WEAPON_gender_Poss] [WEAPON_label] su [RECIPIENT_definite].</li>
     <li>r_logentry->[INITIATOR_definite] [shotat] [RECIPIENT_definite].</li>
     <li>r_logentry->[INITIATOR_definite] [shot_a] [burst] di [WEAPON_projectile_label] su [RECIPIENT_definite].</li>
     <li>r_logentry(RECIPIENT_missing==True)->[INITIATOR_definite] [shot_a] [WEAPON_projectile_label].</li>
-    <li>r_logentry(RECIPIENT_missing==True)->[INITIATOR_definite] [shot] [arma] [WEAPON_label].</li>
+    <li>r_logentry(RECIPIENT_missing==True)->[INITIATOR_definite] [shot] [WEAPON_gender_Poss] [WEAPON_label].</li>
     <li>shot_a(p=2)->[verb_shot] con</li>
     <li>shot_a->[verb_shot] [adverb_shot] con</li>
     <li>shot(p=2)->[verb_shot]</li>

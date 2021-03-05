@@ -464,7 +464,7 @@
   <!-- EN: {PAWN_nameDef} joins -->
   <LetterLabelRescueeJoins>{PAWN_nameDef} si unisce</LetterLabelRescueeJoins>
   <!-- EN: {PAWN_nameDef} is thankful that you rescued {PAWN_objective}. {PAWN_pronoun} has decided that {PAWN_pronoun} would rather stay than leave, and is joining your colony. -->
-  <LetterRescueeJoins>{PAWN_nameDef} è grat{PAWN_gender ? o ; a ; o} che tu l'abbia salvat{PAWN_gender ? o ; a ; o} e ha deciso che preferirebbe restare piuttosto che andarsene, pertanto si unisce alla tua colonia.</LetterRescueeJoins>
+  <LetterRescueeJoins>{PAWN_nameDef} è grat{PAWN_gender ? o : a : o} che tu l'abbia salvat{PAWN_gender ? o : a : o} e ha deciso che preferirebbe restare piuttosto che andarsene, pertanto si unisce alla tua colonia.</LetterRescueeJoins>
 
   <!-- Pawns arrive and join -->
   <!-- EN: People join -->
@@ -492,9 +492,9 @@
   
   <!-- Colonist kidnapped -->
   <!-- EN: {PAWN_nameDef} kidnapped -->
-  <LetterLabelPawnsKidnapped>{PAWN_nameDef} rapit{PAWN_gender ? o ; a ; o}</LetterLabelPawnsKidnapped>
+  <LetterLabelPawnsKidnapped>{PAWN_nameDef} rapit{PAWN_gender ? o : a : o}</LetterLabelPawnsKidnapped>
   <!-- EN: {PAWN_nameDef} has been kidnapped by {FACTION_name}!\nHowever, {PAWN_pronoun} is not lost forever. An opportunity to rescue {PAWN_objective} may present itself in the coming days or years. -->
-  <LetterPawnsKidnapped>{PAWN_nameDef} è {PAWN_gender ? sato rapito ; stata rapita ; stato rapito} da {FACTION_name}!\nTuttavia, {PAWN_pronoun} non è pers{PAWN_gender ? o ; a ; o} per sempre, in quanto nei prossimi giorni (oppure anni), potrebbe presentarsi un'opportunità per salvare{PAWN_objective}.</LetterPawnsKidnapped>
+  <LetterPawnsKidnapped>{PAWN_nameDef} è {PAWN_gender ? stato rapito : stata rapita : stato rapito} da {FACTION_name}!\nTuttavia, {PAWN_pronoun} non è pers{PAWN_gender ? o : a : o} per sempre, in quanto nei prossimi giorni (oppure anni), potrebbe presentarsi un'opportunità per salvar{PAWN_objective}.</LetterPawnsKidnapped>
   
   <!-- Techprints -->
   <!-- EN: Techprint applied: {PROJECT_label} -->
