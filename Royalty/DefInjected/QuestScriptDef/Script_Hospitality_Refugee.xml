@@ -177,14 +177,19 @@
     <li>lodgersSingularOrPluralDef(lodgerCount>=2)->i [lodgersLabelPlural]</li>
     <li>questDescription(lodgerCount==1)->[approachInfo] [claimInfo] [asker_pronoun] ti chiede il permesso di rimanere a [map_definite] per [questDurationTicks_duration] affinché possa riposarsi e riorganizzarsi.\n\nIn cambio, si impegnerà a lavorare e combattere gratuitamente per la colonia durante quel periodo.\n\n[joinInfo] In seguito potrebbe anche ricompensarti per l'aiuto offerto, ma non c'è modo di conoscere le sue vere intenzioni.\n\n[travelerInfo] Se lo desideri, puoi scegliere di uccider[asker_objective], arrestar[asker_objective], vender[asker_objective] o espiantare i suoi organi senza conseguenze diplomatiche.</li>
     <li>questDescription(lodgerCount>=2)->[approachInfo] [claimInfo] Ti chiedono il permesso di rimanere a [map_definite] per [questDurationTicks_duration] affinché possano riposarsi e riorganizzarsi.\n\nIn cambio, si impegneranno a lavorare e combattere gratuitamente per la colonia durante quel periodo.\n\n[joinInfo] In seguito potrebbero anche ricompensarti per averli aiutati, ma non c'è modo di conoscere le loro vere intenzioni.\n\n[travelerInfo] Se lo desideri, puoi scegliere di ucciderli, arrestarli, venderli come schiavi o espiantare i loro organi senza conseguenze diplomatiche.</li>
+    <li>approachInfo(lodgerCount==1,asker_gender!=Female)->Un disperato [faction_pawnSingular] chiamato [asker_nameDef] si sta avvicinando.</li>
+    <li>approachInfo(lodgerCount==1,asker_gender==Female)->Una disperata [faction_pawnSingular] chiamata [asker_nameDef] si sta avvicinando.</li>
     <li>approachInfo(lodgerCount==1)->Un disperato [faction_pawnSingular] chiamato [asker_nameDef] si sta avvicinando.</li>
     <li>approachInfo(lodgerCount==2)->[asker_nameDef] ed un altro disperato [faction_pawnSingular] si stanno avvicinando.</li>
     <li>approachInfo(lodgerCount>=3)->[lodgerCount] disperati [faction_pawnsPlural] si stanno avvicinando. Il loro leader si chiama [asker_nameDef].</li>
     <li>claimInfo(lodgerCount==1)->[asker_nameDef] afferma di aver perso la sua casa in un recente attacco.</li>
     <li>claimInfo(lodgerCount==1)->[asker_nameDef] afferma di aver ripreso conoscenza dal criptosonno, in solitudine e senza amici.</li>
-    <li>claimInfo(lodgerCount==1,asker_gender!=Female)->[asker_nameDef] sostiene di essere stato cacciato dalla sua casa dalla sua ex.</li>
-    <li>claimInfo(lodgerCount==1,asker_gender==Female)->[asker_nameDef] sostiene di essere stata cacciata dalla sua casa dal suo ex.</li>
-    <li>claimInfo(lodgerCount==1)->[asker_nameDef] sostiene di essere stato bandito dopo una discussione con il capo villaggio.</li>
+    <li>claimInfo(lodgerCount==1,asker_gender!=Female)->[asker_nameDef] sostiene di essere stato cacciato di casa dalla sua ex.</li>
+    <li>claimInfo(lodgerCount==1,asker_gender!=Female)->[asker_nameDef] sostiene di essere stato cacciato di casa dal suo ex.</li>
+    <li>claimInfo(lodgerCount==1,asker_gender==Female)->[asker_nameDef] sostiene di essere stata cacciata di casa dal suo ex.</li>
+    <li>claimInfo(lodgerCount==1,asker_gender==Female)->[asker_nameDef] sostiene di essere stata cacciata di casa dalla sua ex.</li>
+    <li>claimInfo(lodgerCount==1,asker_gender!=Female)->[asker_nameDef] sostiene di essere stato bandito dopo una discussione con il capo villaggio.</li>
+    <li>claimInfo(lodgerCount==1,asker_gender==Female)->[asker_nameDef] sostiene di essere stata bandita dopo una discussione con il capo villaggio.</li>
     <li>claimInfo(lodgerCount>=2)->Affermano di aver perso la loro casa in un recente attacco.</li>
     <li>claimInfo(lodgerCount>=2)->Affermano di essere sfuggiti ad un'operazione di prelievo di organi.</li>
     <li>claimInfo(lodgerCount>=2)->Dicono di essere scappati da una carovana di schiavi.</li>
@@ -192,8 +197,8 @@
     <li>claimInfo(lodgerCount>=2)->Dicono che una grande tempesta abbia bruciato la loro casa.</li>
     <li>claimInfo(lodgerCount>=2)->Dicono che la loro carovana sia caduta in un'imboscata e che sia stato preso tutto.</li>
     <li>claimInfo(lodgerCount>=2)->Dicono di essere stati banditi dalla loro città a causa di disaccordi morali.</li>
-    <li>joinInfo(lodgerCount==1)->Se [asker_objective] rendi felice, potrebbe offrirti di unirsi a te.</li>
-    <li>joinInfo(lodgerCount>=2)->Se li rendi felici, alcuni di loro potrebbero offrirsi di unirsi a te.</li>
+    <li>joinInfo(lodgerCount==1)->Se [asker_objective] rendi felice, potrebbe decidere di unirsi a te.</li>
+    <li>joinInfo(lodgerCount>=2)->Se li rendi felici, alcuni di loro potrebbero decidere di unirsi a te.</li>
     <li>travelerInfo(lodgerCount==1)->Questo [faction_pawnSingular] non appartiene ad alcuna fazione.</li>
     <li>travelerInfo(lodgerCount>=2)->Questi [faction_pawnsPlural] non appartengono ad alcuna fazione.</li>
   </Hospitality_Refugee.questDescriptionRules.rulesStrings>
@@ -237,20 +242,20 @@
     <li>questName(p=2,lodgerCount>=2)->i [lodgerPlural] [lodgerAdjPlur]</li>
     <li>questName(lodgerCount>=2)->i [lodgerPlural] [lodgerAdjPlur] di [asker_nameDef]</li>
     <li>questName(lodgerCount>=2)->i [lodgerPlural] di [asker_nameDef]</li>
-    <li>lodgerAdjMas->stanco</li>
+    <li>lodgerAdjMas->fiacco</li>
     <li>lodgerAdjMas->perduto</li>
-    <li>lodgerAdjMas->indigente</li>
+    <li>lodgerAdjMas->bisognoso</li>
     <li>lodgerAdjMas->povero</li>
     <li>lodgerAdjMas->disperato</li>
     <li>lodgerAdjMas->triste</li>
     <li>lodgerAdjMas->polveroso</li>
     <li>lodgerAdjMas->senza speranza</li>
-    <li>lodgerAdjMas->sconosciuto</li>
+    <li>lodgerAdjMas->senza nome</li>
     <li>lodgerAdjMas->desolato</li>
-    <li>lodgerAdjMas->abbandonato</li>
+    <li>lodgerAdjMas->derelitto</li>
     <li>lodgerAdjFem->stanca</li>
     <li>lodgerAdjFem->perduta</li>
-    <li>lodgerAdjFem->indigente</li>
+    <li>lodgerAdjFem->bisognosa</li>
     <li>lodgerAdjFem->povera</li>
     <li>lodgerAdjFem->disperata</li>
     <li>lodgerAdjFem->triste</li>
@@ -258,18 +263,18 @@
     <li>lodgerAdjFem->senza speranza</li>
     <li>lodgerAdjFem->sconosciuta</li>
     <li>lodgerAdjFem->desolata</li>
-    <li>lodgerAdjFem->abbandonata</li>
-    <li>lodgerAdjPlur->stanchi</li>
+    <li>lodgerAdjFem->derelitta</li>
+    <li>lodgerAdjPlur->fiacchi</li>
     <li>lodgerAdjPlur->perduti</li>
-    <li>lodgerAdjPlur->indigenti</li>
+    <li>lodgerAdjPlur->bisgnosi</li>
     <li>lodgerAdjPlur->poveri</li>
     <li>lodgerAdjPlur->disperati</li>
     <li>lodgerAdjPlur->tristi</li>
     <li>lodgerAdjPlur->polverosi</li>
     <li>lodgerAdjPlur->senza speranza</li>
-    <li>lodgerAdjPlur->sconosciuti</li>
+    <li>lodgerAdjPlur->senza nome</li>
     <li>lodgerAdjPlur->desolati</li>
-    <li>lodgerAdjPlur->abbandonati</li>
+    <li>lodgerAdjPlur->derelitti</li>
     <li>lodgerSingleMas->viaggiatore</li>
     <li>lodgerSingleMas->profugo</li>
     <li>lodgerSingleMas->vagabondo</li>
