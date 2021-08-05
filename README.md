@@ -1,6 +1,6 @@
 RimWorld Italian
 ================
-Target Version: 1.2.2753
+Target Version: 1.2.3009 (OLD VERSION)
 
 Questi sono i file per la traduzione italiana di RimWorld.
 Puoi trovare ulteriori informazioni in questa pagina: http://ludeon.com/forums/index.php?topic=2933.0
@@ -22,8 +22,8 @@ TRADUTTORI:
 INSTALLAZIONE:
 ------------------
 1) Estrarre il contenuto dello zip in una cartella.
-2) Copiare il contenuto di ...\RimWorld-it\Core nella directory di installazione in ...\Data\Core\Languages\Italian
-3) Copiare il contenuto di ...\RimWorld-it\Royalty nella directory di installazione in ...\Data\Royalty\Languages\Italian
+2) Copiare il contenuto di ...\RimWorld-it\Core(v.1.2) nella directory di installazione in ...\Data\Core\Languages\Italian
+3) (solo per DLC Royalty) Copiare il contenuto di ...\RimWorld-it\Royalty(v.1.2) nella directory di installazione in ...\Data\Royalty\Languages\Italian
 4) Avviare il gioco
 5) Nelle opzioni di gioco, selezionare la lingua 'Italian'
 
@@ -41,4 +41,5 @@ Nel tempo sono state riviste molte frasi nel gioco inglese, è opportuno utilizz
 
 VECCHIE VERSIONI:
 -----------------
-Il Branch Rimworld-1.1 contiene la traduzione per la versione 1.1.2654 di RimWorld. Essa è stata mantenuta per chi avesse ancora questa vecchia versione installata sul proprio PC. Non serve per le versioni successive di RimWorld e in futuro (quando le modifiche saranno state tutte corrette) verrà cancellata.
+- Il Branch Rimworld-1.1 contiene la traduzione per la versione 1.1.* di RimWorld. Essa è stata mantenuta per chi avesse ancora questa vecchia versione installata sul proprio PC. Non serve per le versioni successive di RimWorld e in futuro (quando le modifiche saranno state tutte corrette) verrà cancellata.
+- Il Branch Rimworld-1.2 contiene la traduzione per la versione 1.2.* di RimWorld. Essa è stata mantenuta per chi avesse ancora questa vecchia versione installata sul proprio PC. Non serve per le versioni successive di RimWorld e in futuro (quando le modifiche saranno state tutte corrette) verrà cancellata.
