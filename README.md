@@ -21,12 +21,12 @@ TRADUTTORI:
 
 INSTALLAZIONE:
 ------------------
-1) Estrarre il contenuto dello zip in una cartella.
-2) Copiare il contenuto di ...\RimWorld-it\Core nella directory di installazione in ...\Data\Core\Languages\Italian
-3) (Solo per DLC Royalty) Copiare il contenuto di ...\RimWorld-it\Royalty nella directory di installazione in ...\Data\Royalty\Languages\Italian
-3) (Solo per DLC Ideology) Copiare il contenuto di ...\RimWorld-it\Ideology nella directory di installazione in ...\Data\Ideology\Languages\Italian
-4) Avviare il gioco
-5) Nelle opzioni di gioco, selezionare la lingua 'Italian'
+1) Scaricare la cartella zip dei files di traduzione (premendo il tasto verde *Code*)
+2) Estrarre il contenuto dello zip in una cartella.
+3) Copiare l'intera cartella *.\Core* nella directory di installazione di Rimworld in *...\Data\Core\Languages\\* e rinominarla come *Italian*
+4) (Solo per DLC Royalty) Copiare l'intera cartella di *.\Royalty* nella directory di installazione di Rimworld in *...\Data\Royalty\Languages\\* e rinominarla come *Italian*
+5) (Solo per DLC Ideology) Copiare l'intera cartella di *.\Ideology* nella directory di installazione di Rimworld in *...\Data\Ideology\Languages\\* e rinominarla come *Italian*
+7) Avviare il gioco e selezionare la lingua *Italian* (**non *Italian (Italiano)***)
 
 SEGNALAZIONE ERRORI:
 ------------------------------
