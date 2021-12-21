@@ -16,23 +16,17 @@ jobs:
       - name: git checkout
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           ref: ${{ github.event.pull_request.head.ref }}
           fetch-depth: 0
 
       - name: perform merge
         run: |
-          git config --global user.email "${GITHUB_ACTOR}"
-          git config --global user.name "${GITHUB_ACTOR}@users.noreply.github.com"
-          git status
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           git pull
           git checkout "$DEFAULT_BRANCH"
-          git status
-          git checkout "$GITHUB_HEAD_REF"
-          git merge "$DEFAULT_BRANCH" --no-edit
+          git merge "$GITHUB_HEAD_REF" --no-edit
           git push
-          git status
-
       - name: remove label
         if: always()
         uses: actions-ecosystem/action-remove-labels@v1
