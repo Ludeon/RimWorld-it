@@ -24,10 +24,10 @@ jobs:
         run: |
           git config --global user.name "${GITHUB_ACTOR}"
           git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-          git pull
+          # git pull
           git checkout "$DEFAULT_BRANCH"
           git merge "$GITHUB_HEAD_REF" --no-edit
-          git push
+          # git push
       - name: remove label
         if: always()
         uses: actions-ecosystem/action-remove-labels@v1
