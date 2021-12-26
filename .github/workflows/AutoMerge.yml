@@ -16,7 +16,7 @@ jobs:
       - name: git checkout
         uses: actions/checkout@v2
         with:
-          repository: ${{ github.event.pull_request.repository }}
+          repository: 'spappo94/RimWorld-it'
           ref: ${{ github.event.pull_request.head.ref }}
           fetch-depth: 0
 
