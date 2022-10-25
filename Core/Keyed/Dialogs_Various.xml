@@ -13,6 +13,22 @@
   <Close>Chiudi</Close>
   <!-- EN: Accept -->
   <Accept>Accetta</Accept>
+  <!-- EN: Cancel -->
+  <Cancel>TODO</Cancel>
+  <!-- EN: Reset -->
+  <Reset>Azzera</Reset>
+  <!-- EN: Reset all -->
+  <ResetAll>TODO</ResetAll>
+  <!-- EN: Disable -->
+  <Disable>TODO</Disable>
+  <!-- EN: Modify -->
+  <Modify>TODO</Modify>
+  <!-- EN: Settle here anyways? -->
+  <ConfirmSettle>TODO</ConfirmSettle>
+  <!-- EN: add -->
+  <Add>TODO</Add>
+  <!-- EN: Cannot shoot -->
+  <CannotShoot>TODO</CannotShoot>
   
   <!-- Game updated to new version -->
   <!-- EN: RimWorld has been updated from version {0} to version {1}. -->
@@ -25,6 +41,8 @@
   <GameUpdatedToNewVersionNonSteam>Dal momento che questa è una copia priva di DRM, puoi installare il gioco due volte in due cartelle diverse, per poter giocare sia alla vecchia che alla nuova versione.</GameUpdatedToNewVersionNonSteam>
   <!-- EN: If you wish to continue with the old version, you can opt in using Steam's "Betas" feature.\n\n  1. In the Steam library, right-click RimWorld.\n  2. Click Properties.\n  3. Click the Betas tab.\n  4. Select the version you want from the drop-down menu. -->
   <GameUpdatedToNewVersionSteam>Se desideri continuare con la vecchia versione puoi optare per usare la funzionalità "Beta" di Steam.\n\n  1. Nella libreria di Steam, clicca destro su RimWorld.\n  2. Clicca su Proprietà.\n  3. Clicca sulla scheda "Beta".\n  4. Seleziona la versione che desideri dal menù a discesa.\n\nLe vecchie versioni saranno probabilmente rimosse dalla lista: vogliamo solo evitare di interrompere partite in corso.\n\nConsidera che se i modders aggiornano le loro mod alla nuova versione del gioco, queste probabilmente smetteranno di funzionare sulla vecchia. Per evitare questo puoi disattivare gli aggiornamenti automatici.</GameUpdatedToNewVersionSteam>
+  <!-- EN: If you wish to continue with the old version, you can opt in using Steam's "Betas" feature. -->
+  <GameUpdatedToNewVersionSteamController>TODO</GameUpdatedToNewVersionSteamController>
   
   <!-- Recovered from errors caused by mods -->
   <!-- EN: Recovered from incompatible or corrupted mods errors -->
@@ -161,10 +179,28 @@
   <ZoneGainsName>La zona è ora chiamata {0}.</ZoneGainsName>
   
   <!-- Pawn naming -->
+  <!-- EN: Chosen name is invalid. -->
+  <NameInvalid>TODO</NameInvalid>
   <!-- EN: This person's nickname is now {0}. {PAWN_possessive} title is {PAWN_title}. -->
   <PawnGainsName>Il soprannome di questa persona è ora {0}. Il suo titolo è {PAWN_title}.</PawnGainsName>
   <!-- EN: The animal's name is now {0}. -->
   <AnimalGainsName>Il nome dell'animale è ora {0}.</AnimalGainsName>
+  <!-- EN: rename person -->
+  <RenamePerson>TODO</RenamePerson>
+  <!-- EN: mother -->
+  <Mother>TODO</Mother>
+  <!-- EN: father -->
+  <Father>TODO</Father>
+  <!-- EN: unknown -->
+  <Unknown>TODO</Unknown>
+  <!-- EN: first name -->
+  <FirstName>TODO</FirstName>
+  <!-- EN: nickname -->
+  <NickName>TODO</NickName>
+  <!-- EN: last name -->
+  <LastName>TODO</LastName>
+  <!-- EN: suggested -->
+  <Suggested>TODO</Suggested>
 
   <!-- Save game incompatible warning -->
   <!-- EN: Version mismatch -->
@@ -177,8 +213,12 @@
   <FileIncompatibleWarning>Questo file è stato salvato con la versione {0} del gioco \nLa versione attuale del gioco è la {1} \n\nIl caricamento di questo file potrebbe causare bug e crash.</FileIncompatibleWarning>
   <!-- EN: Mods mismatch -->
   <ModsMismatchWarningTitle>Disallineamento mod</ModsMismatchWarningTitle>
-  <!-- EN: This file was saved with a different set of mods active than those we are currently running. This may or may not cause problems, depending on exactly what these mods do.\n\nFile was saved with (in this order):\n\n{0}\n\nWe are running with (in this order):\n\n{1} -->
+  <!-- EN: This file was saved with a different set of mods active than those we are currently running. This may or may not cause problems, depending on exactly what these mods do. -->
   <ModsMismatchWarningText>Questo file è stato salvato con un gruppo di mod diverso da quello attualmente in uso. Questo potrebbe causare problemi oppure no, a seconda di cosa facciano esattamente queste mod.\n\nIl file è stato salvato con (in questo ordine):\n\n{0}\n\nSono in uso (in questo ordine):\n\n{1}</ModsMismatchWarningText>
+  <!-- EN: No mods have been added or removed, but the order of your mod list has changed. -->
+  <ModsMismatchOrderChanged>TODO</ModsMismatchOrderChanged>
+  <!-- EN: Are you sure you want to load the mod list from this save file? -->
+  <ConfirmLoadSaveList>TODO</ConfirmLoadSaveList>
 
   <!-- Resolution change dialog -->
   <!-- EN: You've changed your screen settings. Do the new ones work okay?\n\nAuto-reverting in {0}... -->
@@ -191,7 +231,19 @@
   <!-- Confirm permanently disable dev mode -->
   <!-- EN: Do you really want to permanently disable development mode on this computer?\n\nThis option is for people who want a pure play experience without the temptation to use development tools to gain advantage in normal play.\n\nDevelopment mode can be re-enabled, but doing so requires manually editing configuration files. You'll need to search the Internet to find out how. -->
   <ConfirmPermanentlyDisableDevMode>Vuoi disattivare permanentemente la modalità sviluppatore su questo computer?\n\nQuesta opzione è per chi vuole una pura esperienza di gioco senza la tentazione di usare gli strumenti da sviluppatore per ottenere dei vantaggi nel gioco normale.\n\nLa modalità sviluppatore può essere riattivata, ma farlo richiederà la modifica manuale dei file di configurazione. Dovrai cercare su Internet per sapere come fare.</ConfirmPermanentlyDisableDevMode>
-  
+
+  <!-- Confirm reset learning helper -->
+  <!-- EN: Are you sure you want to reset the learning helper?\n\nAll records of which concepts have been learned will be erased and the system will teach everything from scratch. -->
+  <ConfirmResetLearningHelper>TODO</ConfirmResetLearningHelper>
+
+  <!-- Backstory translation restart dialog -->
+  <!-- EN: Backstories are now implemented as a def and all legacy backstory translations have been imported into def translations. The file {0} has been imported and moved to {1}. It can now be deleted.\n\nRestart the game for changes to take effect. -->
+  <RestartAfterImportingLegacyBackstoryTanslations>TODO</RestartAfterImportingLegacyBackstoryTanslations>
+
+  <!-- Game start -->
+  <!-- EN: Must include exactly {SUMMARY} -->
+  <SelectedCharactersMustInclude>TODO</SelectedCharactersMustInclude>
+
   <!-- Advanced game start options -->
   <!-- EN: Warning: You will be landing in a frozen environment. It may be hard or nearly impossible to survive. If you are not intending to face an extreme challenge, choose a different site or season. -->
   <MapTemperatureDangerWarning>Attenzione: Atterrerai in un ambiente glaciale. Potrebbe essere difficile o quasi impossibile sopravvivere. Se non hai intenzione di affrontare una sfida estrema, scegli un sito o una stagione diversa.</MapTemperatureDangerWarning>
@@ -252,10 +304,10 @@
   <WorkAmount>Quantità di lavoro</WorkAmount>
   <!-- EN: Minimum skills: -->
   <MinimumSkills>Abilità minime:</MinimumSkills>
-  <!-- EN: Requires {0} {1} -->
+  <!-- EN: Requires -->
   <BillRequires>Richiede {0} {1}</BillRequires>
-  <!-- EN: Requires {0} nutrition -->
-  <BillRequiresNutrition>Richiede {0} nutrimento</BillRequiresNutrition>
+  <!-- EN: nutrition -->
+  <BillNutrition>TODO</BillNutrition>
   <!-- EN: Note: Small-volume ingredients like gold require {0}x as much. -->
   <BillRequiresMayVary>Nota: gli ingredienti di piccolo volume come oro richiedono {0} di più.</BillRequiresMayVary>
   <!-- EN: This is a small-volume ingredient. This means that each 'unit' is only 1/{0} as much as a normal-volume ingredient. So, to fill the same ingredient requirement, you'll need {0}x as much as usual. -->
@@ -292,6 +344,18 @@
   <ArmorPenetration>Penetrazione armatura</ArmorPenetration>
   <!-- EN: Armor penetration is the amount of armor this weapon will ignore each time it hits the target.\n\nIf armor penetration is greater than the target's armor, it is as though the target is unarmored. Otherwise, the armor penetration is subtracted from the target's armor. -->
   <ArmorPenetrationExplanation>La penetrazione armatura è la quantità di armatura che quest'arma ignorerà ogni volta che colpisce il bersaglio.\n\nSe la penetrazione armature è maggiore dell'armatura del bersaglio, considera come se il bersaglio fosse senza armatura. Altrimenti, la penetrazione armatura viene sottratta dall'armatura del bersaglio.</ArmorPenetrationExplanation>
+  <!-- EN: Building damage factor -->
+  <BuildingDamageFactor>TODO</BuildingDamageFactor>
+  <!-- EN: Damage to all buildings is multiplied by this value. -->
+  <BuildingDamageFactorExplanation>TODO</BuildingDamageFactorExplanation>
+  <!-- EN: Building damage factor (impassable) -->
+  <BuildingDamageFactorImpassable>TODO</BuildingDamageFactorImpassable>
+  <!-- EN: Damage to all impassable buildings is multiplied by this value. -->
+  <BuildingDamageFactorImpassableExplanation>TODO</BuildingDamageFactorImpassableExplanation>
+  <!-- EN: Building damage factor (passable) -->
+  <BuildingDamageFactorPassable>TODO</BuildingDamageFactorPassable>
+  <!-- EN: Damage to all passable buildings is multiplied by this value. -->
+  <BuildingDamageFactorPassableExplanation>TODO</BuildingDamageFactorPassableExplanation>
   <!-- EN: Accuracy -->
   <Accuracy>Precisione</Accuracy>
   <!-- EN: Burst shot count -->
@@ -300,6 +364,8 @@
   <WarmupTime>Tempo di ricarica</WarmupTime>
   <!-- EN: Melee warmup -->
   <MeleeWarmupTime>Tempo di ricarica in mischia</MeleeWarmupTime>
+  <!-- EN: Aiming time -->
+  <RangedWarmupTime>TODO</RangedWarmupTime>
   <!-- EN: Cooldown -->
   <CooldownTime>Tempo di recupero</CooldownTime>
   <!-- EN: Disarmed -->
@@ -370,6 +436,8 @@
   <LeatherType>Tipo di pelle</LeatherType>
   <!-- EN: Body size -->
   <BodySize>Taglia del corpo</BodySize>
+  <!-- EN: Growth -->
+  <Growth>TODO</Growth>
   <!-- EN: Recruit difficulty -->
   <RecruitDifficulty>Difficoltà di reclutamento</RecruitDifficulty>
   <!-- EN: Base price -->
@@ -394,12 +462,10 @@
   <WildnessExplanation>Le creature più feroci sono naturalmente più difficili da addomesticare, addestrare e gestire.</WildnessExplanation>
   <!-- EN: Training decay interval -->
   <TrainingDecayInterval>Tempo di recupero dell'addestramento</TrainingDecayInterval>
-  <!-- EN: Tameness will never decay. -->
+  <!-- EN: Tameness will never decay for animals of very low wildness. -->
   <TamenessWillNotDecay>Non smetterà mai di essere addomesticata.</TamenessWillNotDecay>
-  <!-- EN: Animal filth rate -->
-  <AnimalFilthRate>Tasso di sporcizia animale</AnimalFilthRate>
-  <!-- EN: Animals produce filth when moving around on constructed floors.\n\nThis is the average amount of such filth produced per {0} cells walked by this creature.\n\nLarger or less pet-like animals produce more filth. -->
-  <AnimalFilthRateExplanation>Gli animali producono sporcizia camminando sui pavimenti edificati. Questa è la quantità media di sporcizia prodotta per {0} celle percorse da questa creatura.\n\nGli animali più grandi o meno addomesticati producono più sporcizia.</AnimalFilthRateExplanation>
+  <!-- EN: Tameness will never decay for animals that can be kept behind fences. -->
+  <TamenessWillNotDecayFenceBlocked>TODO</TamenessWillNotDecayFenceBlocked>
   <!-- EN: Time -->
   <TimeRecordsCategory>Tempo</TimeRecordsCategory>
   <!-- EN: Misc -->
@@ -418,8 +484,12 @@
   <ToleranceFallRate>Tolleranza per tasso di decadenza</ToleranceFallRate>
   <!-- EN: New addiction min tolerance -->
   <MinimumToleranceForAddiction>Tolleranza minima per dipendenza</MinimumToleranceForAddiction>
-  <!-- EN: Safe dose interval -->
+  <!-- EN: Safe dose interval for adults -->
   <SafeDoseInterval>Intervallo sicuro della dose</SafeDoseInterval>
+  <!-- EN: age {0}-{1} -->
+  <AgeXToY>TODO</AgeXToY>
+  <!-- EN: age {0}+ -->
+  <AgePlus>TODO</AgePlus>
   <!-- EN: New addiction chance -->
   <Addictiveness>Dipendenza</Addictiveness>
   <!-- EN: Addiction initial severity -->
@@ -444,6 +514,8 @@
   <NeverSafe>Mai al sicuro</NeverSafe>
   <!-- EN: {0} / day -->
   <PerDay>{0} / giorno</PerDay>
+  <!-- EN: {0} / hour -->
+  <PerHour>TODO</PerHour>
   <!-- EN: Pack animal -->
   <PackAnimal>Animale da soma</PackAnimal>
   <!-- EN: Whether this animal is appropriate to use to carry items in a caravan over long distances. -->
@@ -468,7 +540,7 @@
   <NuzzleIntervalExplanation>Quanto spesso un animale si struscerà contro coloni amici, mediamente.\n\nStrusciarsi è un comportamento comune a molte specie animali, dove l'animale preme il suo naso o il muso contro un amico come segno di affetto. Molti umani lo trovano carino e li lascerà di buon umore per un periodo di tempo.</NuzzleIntervalExplanation>
   <!-- EN: Revenge chance on harm -->
   <HarmedRevengeChance>Probabilità di vendetta</HarmedRevengeChance>
-  <!-- EN: The chance this creature seeks revenge upon being harmed by an attacker at rifle range.\n\nThis chance increases if the attacker is closer. If attacked at very close range, the chance is three times greater.\nThis chance is applied each time damage is taken, so slower-firing, higher-damage weapons are less likely to trigger it.\nTo minimize the chance of a creature seeking revenge, attack it from rifle range with a slow-firing weapon. -->
+  <!-- EN: The chance this creature will attack when harmed.\n\nThis chance increases up to three times if the attacker is closer.\n\nThis chance is applied each time damage is taken. This means that so slower-firing, higher-damage weapons are less likely to trigger it while hunting. -->
   <HarmedRevengeChanceExplanation>La probabilità che questa creatura cerchi vendetta dopo essere stata ferita da un aggressore a distanza di fucile.\n\nQuesta probabilità aumenta se l'aggressore è più vicino. Se attaccato a brevissima distanza, la probabilità è tre volte maggiore.\n\nQuesta probabilità viene applicate ogni volta che il danno viene inflitto, per cui armi più lente e dai danni più elevati sono meno portate ad innescarla.\n\nPer ridurre la possibilità che una creatura cerchi vendetta, attaccala da lunga distanza con un'arma a bassa cadenza di fuoco.</HarmedRevengeChanceExplanation>
   <!-- EN: Revenge chance on tame fail -->
   <TameFailedRevengeChance>Probabilità vendetta su addomesticamento fallito</TameFailedRevengeChance>
@@ -480,8 +552,10 @@
   <TrapArmorPenetration>Penetrazione armatura trappola</TrapArmorPenetration>
   <!-- EN: Rearm cost -->
   <RearmCost>Costo ricarica</RearmCost>
-  <!-- EN: Resources needed to rearm this turret (affected by difficulty). -->
+  <!-- EN: Resources needed to rearm this turret -->
   <RearmCostExplanation>Risorse necessarie per ricaricare questa torretta (influenzato da difficoltà).</RearmCostExplanation>
+  <!-- EN: affected by difficulty -->
+  <RearmCostExplanationDifficulty>TODO</RearmCostExplanationDifficulty>
   <!-- EN: Shots before rearm -->
   <ShotsBeforeRearm>Colpi prima di ricarica</ShotsBeforeRearm>
   <!-- EN: How many shots this turret can fire before it has to be rearmed. -->
@@ -508,7 +582,7 @@
   <MeditationFocuses>tipi di meditazione</MeditationFocuses>
   <!-- EN: Unlocks meditation focus types -->
   <MeditationFocusesUnlocked>Sblocca tipi di meditazione</MeditationFocusesUnlocked>
-  <!-- EN: The types of meditation focus this person can use. When meditating, a person can focus on an obejct to boost their psyfocus gain - but only if that object offers a focus type they can use. Each person's meditation types are determined by their background, traits, social position, and so on. -->
+  <!-- EN: The types of meditation focus this person can use. When meditating, a person can focus on an object to boost their psyfocus gain - but only if that object offers a focus type they can use. Each person's meditation types are determined by their background, traits, social position, and so on. -->
   <MeditationFocusesPawnDesc>I tipi di meditazione che questa persona può utilizzare. Durante la meditazione, una persona può concentrarsi su un oggetto per aumentare il proprio guadagno di psyfocus, ma solo se quell'oggetto offre un tipo di concentrazione che può usare. I tipi di meditazione di ogni persona sono determinati dal loro passato, tratti, posizione sociale e così via.</MeditationFocusesPawnDesc>
   <!-- EN: The types of meditation focus this object offers. A meditating person can focus on this object to boost their psyfocus gain, but only if they are able to use one of its meditation types. Each person can use different meditation types depending on their background, traits, social position, and so on. -->
   <MeditationFocusesDesc>I tipi di meditazione che questo oggetto offre. Una persona in meditazione può concentrarsi su questo oggetto per aumentare il guadagno di psyfocus, ma solo se è in grado di utilizzare uno dei suoi tipi di meditazione. Ogni persona può usare diversi tipi di meditazione a seconda del proprio passato, tratti, posizione sociale e così via.</MeditationFocusesDesc>
@@ -592,6 +666,16 @@
   <YourNegotiatorBonus>Tuo bonus negoziazione</YourNegotiatorBonus>
   <!-- EN: Trading with faction base bonus -->
   <TradeWithFactionBaseBonus>Bonus commercio con base fazione</TradeWithFactionBaseBonus>
+  <!-- EN: Joins as slave -->
+  <JoinsAsSlave>TODO</JoinsAsSlave>
+  <!-- EN: Joins as colonist -->
+  <JoinsAsColonist>TODO</JoinsAsColonist>
+  <!-- EN: If purchased, this person will join your colony as a slave. -->
+  <JoinsAsSlaveDesc>TODO</JoinsAsSlaveDesc> <!--  -->
+  <!-- EN: If purchased, this person will join your colony as a colonist. -->
+  <JoinsAsColonistDesc>TODO</JoinsAsColonistDesc>
+  <!-- EN: Trading drugs bonus -->
+  <TradingDrugsBonus>TODO</TradingDrugsBonus>
   <!-- EN: minimum -->
   <minimum>minimo</minimum>
   <!-- EN: Final price -->
@@ -627,7 +711,7 @@
   <!-- EN: Items -->
   <ItemsTab>Oggetti</ItemsTab>
   <!-- EN: Travel supplies -->
-  <FoodAndMedicineTab>Forniture da viaggio</FoodAndMedicineTab>
+  <TravelSupplies>TODO</TravelSupplies>
   <!-- EN: You must assign at least one non-downed colonist. -->
   <CaravanMustHaveAtLeastOneColonist>Devi assegnare almeno un colono non abbattuto.</CaravanMustHaveAtLeastOneColonist>
   <!-- EN: The chosen exit location ({0}) is inaccessible. -->
@@ -636,8 +720,8 @@
   <CaravanCouldNotFindPackingSpot>Impossibile trovare un punto valido di rifornimento. Verifica che il punto di uscita scelto ({0}) sia accessibile.</CaravanCouldNotFindPackingSpot>
   <!-- EN: Warning: Some of the assigned colonists are unable to reach the exit location ({0}). -->
   <CaravanCouldNotFindReachableExitSpot>Attenzione: Alcuni dei coloni assegnati non sono in grado di raggiungere il punto di uscita ({0}).</CaravanCouldNotFindReachableExitSpot>
-  <!-- EN: {1_labelShort} is unreachable by any of the assigned colonists. -->
-  <CaravanPawnIsUnreachable>{1_labelShort} non è raggiungibile per nessuno dei coloni assegnati.</CaravanPawnIsUnreachable>
+  <!-- EN: {1_labelShort} is unable to reach the packing spot or the exit location when led by any of the assigned colonists. -->
+  <CaravanRoamerCannotReachSpots>TODO</CaravanRoamerCannotReachSpots>
   <!-- EN: None of the assigned colonists are able to reach the {0}. -->
   <CaravanItemIsUnreachableSingle>Nessuno dei coloni assegnati è in grado di raggiungere il {0}.</CaravanItemIsUnreachableSingle>
   <!-- EN: None of the assigned colonists are able to reach {0}x {1}. -->
@@ -660,6 +744,8 @@
   <DaysWorthOfFoodTooltip_OnlyFirstWaypoint>(viene presa in considerazione solo la prima tappa)</DaysWorthOfFoodTooltip_OnlyFirstWaypoint>
   <!-- EN: Your caravan only has {0} days worth of food and will become hungry quickly. -->
   <DaysWorthOfFoodWarningDialog>La tua carovana ha solo {0} giorni di autonomia di cibo e sarà presto affamata.</DaysWorthOfFoodWarningDialog>
+  <!-- EN: Some peoples' diets don't allow most of the food in your caravan. If they're forced to eat it due to hunger, they will become unhappy. -->
+  <DaysWorthOfFoodDietWarningDialog>TODO</DaysWorthOfFoodDietWarningDialog>
   <!-- EN: Your caravan has no food and will become hungry very quickly. -->
   <DaysWorthOfFoodWarningDialog_NoFood>La tua carovana non ha cibo e sarà molto presto affamata.</DaysWorthOfFoodWarningDialog_NoFood>
   <!-- EN: The average amount of food per day your people will forage. This value will change as you travel across biomes with different forage yield rates. -->
@@ -728,7 +814,11 @@
   <CaravanMovementSpeed>Velocità movimento</CaravanMovementSpeed>
   <!-- EN: tiles/day -->
   <TilesPerDay>caselle/giorno</TilesPerDay>
-  <!-- EN: Movement speed depends on the average speed of all people and animals, carried mass, and terrain movement difficulty. -->
+  <!-- EN: None - too heavy -->
+  <TilesPerDayImmobile>TODO</TilesPerDayImmobile>
+  <!-- EN: None -->
+  <TilesPerDayImmobileShort>TODO</TilesPerDayImmobileShort>
+  <!-- EN: Movement speed depends on carried mass, ridden animals, and terrain movement difficulty. -->
   <CaravanMovementSpeedTip>La velocità di movimento dipende dalla velocità media di tutte le persone e gli animali, il peso trasportato la difficoltà di movimento del terreno.</CaravanMovementSpeedTip>
   <!-- EN: Animals will be able to graze -->
   <AnimalsWillBeAbleToGraze>Gli animali potranno pascolare</AnimalsWillBeAbleToGraze>
@@ -753,7 +843,9 @@
   <!-- EN: Total body size -->
   <TotalBodySize>Taglia totale del corpo</TotalBodySize>
   <!-- EN: Automatically select travel supplies -->
-  <AutomaticallySelectFoodAndMedicine>Invia automaticamente forniture da viaggio</AutomaticallySelectFoodAndMedicine>
+  <AutomaticallySelectTravelSupplies>TODO</AutomaticallySelectTravelSupplies>
+  <!-- EN: This animal is sick. It is suffering from the following illnesses -->
+  <CaravanAnimalSick>TODO</CaravanAnimalSick>
 
   <!-- Split caravan -->
   <!-- EN: Split caravan -->
@@ -844,14 +936,6 @@
   <DrugPolicyInUse>Questa politica sulle droghe è in effetto su {0}.</DrugPolicyInUse>
   <!-- EN: Food restriction is in use by {0}. -->
   <FoodRestrictionInUse>Questa limitazione sul cibo è in effetto su {0}.</FoodRestrictionInUse>
-  <!-- EN: Social drugs -->
-  <SocialDrugs>Droghe sociali</SocialDrugs>
-  <!-- EN: No drugs -->
-  <NoDrugs>Niente droghe</NoDrugs>
-  <!-- EN: One drink per day -->
-  <OneDrinkPerDay>Una bevanda al giorno</OneDrinkPerDay>
-  <!-- EN: Unrestricted -->
-  <Unrestricted>Nessuna limitazione</Unrestricted>
   <!-- EN: No drug policy selected -->
   <NoDrugPolicySelected>Nessuna politica sulle droghe selezionata</NoDrugPolicySelected>
   <!-- EN: Add drug... -->
@@ -902,6 +986,8 @@
   <!-- Food restriction management -->
   <!-- EN: Food restriction -->
   <FoodRestriction>Limitazione cibo</FoodRestriction>
+  <!-- EN: Food -->
+  <FoodRestrictionShort>TODO</FoodRestrictionShort>
   <!-- EN: Lavish -->
   <FoodRestrictionLavish>Prelibato</FoodRestrictionLavish>
   <!-- EN: Fine -->
@@ -924,6 +1010,8 @@
   <NoFoodRestrictionSelected>Nessuna limitazione sul cibo selezionata</NoFoodRestrictionSelected>
 
   <!-- Medical settings -->
+  <!-- EN: Default medicine settings -->
+  <DefaultMedicineSettings>TODO</DefaultMedicineSettings>
   <!-- EN: Defaults -->
   <MedGroupDefaults>Default</MedGroupDefaults>
   <!-- EN: Colonist -->
@@ -972,7 +1060,7 @@
   <ConfirmSendNotCompletelyLoadedPods>Il gruppo di capsule non è completamente carico. Manca {1_labelShort}. Lanciare comunque?</ConfirmSendNotCompletelyLoadedPods>
 
   <!-- Settle near a faction base -->
-  <!-- EN: Since this location is within {0} tiles of another faction base, they will feel you are encroaching on their land and relations with those factions will worsen every {1} days.\n\nSettle here anyways? -->
+  <!-- EN: Since this location is within {0} tiles of another faction base, they will feel you are encroaching on their land and relations with those factions will worsen every {1} days. -->
   <ConfirmSettleNearFactionBase>Dal momento che questo luogo è a meno di {0} caselle dalla base di un'altra fazione, penseranno che stai invadendo la loro terra e le relazioni con la loro fazione peggioreranno ogni {1} giorni.\n\nFondare comunque qui?</ConfirmSettleNearFactionBase>
   
   <!-- Cleanup translation files -->
@@ -990,6 +1078,8 @@
   <ConfirmCancelMonumentMarker>Vuoi veramente rimuovere questo indicatore del monumento?</ConfirmCancelMonumentMarker>
 
   <!-- Abilities -->
+  <!-- EN: Cannot use {0} -->
+  <CannotUseAbility>TODO</CannotUseAbility>
   <!-- EN: Line of sight required -->
   <AbilityRequiresLOS>Linea di tiro richiesta</AbilityRequiresLOS>
   <!-- EN: Neural heat gain -->
@@ -1004,34 +1094,62 @@
   <AbilityCastingTime>Tempo di lancio</AbilityCastingTime>
   <!-- EN: No line of sight to target. -->
   <AbilityCannotHitTarget>Nessuna linea di tiro al bersaglio.</AbilityCannotHitTarget>
+  <!-- EN: Target is out of range. -->
+  <AbilityOutOfRange>TODO</AbilityOutOfRange>
   <!-- EN: Can't reach the target. -->
   <AbilityCannotReachTarget>Impossibile raggiungere l'obbiettivo.</AbilityCannotReachTarget>
   <!-- EN: Not enough free space. -->
   <AbilityNotEnoughFreeSpace>Non abbastanza spazio libero.</AbilityNotEnoughFreeSpace>
-  <!-- EN: {0} must target an empty area. -->
+  <!-- EN: Must target an empty area. -->
   <AbilityOccupiedCells>{0} deve indirizzare un'area vuota.</AbilityOccupiedCells>
-  <!-- EN: {0} must target a walkable area. -->
+  <!-- EN: Must target a walkable area. -->
   <AbilityUnwalkable>{0} deve indirizzare un'area percorribile.</AbilityUnwalkable>
-  <!-- EN: {0} must target an unroofed area. -->
+  <!-- EN: Must target an unroofed area. -->
   <AbilityRoofed>{0} deve indirizzare un'area non protetta.</AbilityRoofed>
   <!-- EN: {0_labelShort} is mentally broken. -->
   <AbilityCantApplyToMentallyBroken>{0_labelShort} ha un crollo mentale.</AbilityCantApplyToMentallyBroken>
   <!-- EN: {0_labelShort} is not mentally broken. -->
   <AbilityCanOnlyApplyToMentallyBroken>{0_labelShort} non ha un crollo mentale.</AbilityCanOnlyApplyToMentallyBroken>
+  <!-- EN: {0_labelShort} is not maddened. -->
+  <AbilityCanOnlyApplyToManhunter>TODO</AbilityCanOnlyApplyToManhunter>
+  <!-- EN: {0_labelShort} has scaria, which can only be treated medically. -->
+  <AbilityCantApplyToScaria>TODO</AbilityCantApplyToScaria>
   <!-- EN: {0} doesn't work on the '{1}' mental state. -->
   <AbilityDoesntWorkOnMentalState>{0} non funziona con uno stato mentale "{1}".</AbilityDoesntWorkOnMentalState>
   <!-- EN: {0_labelShort} has zero resistance. -->
   <AbilityCantApplyNoResistance>{0_labelShort} ha zero di resistenza.</AbilityCantApplyNoResistance>
+  <!-- EN: {0_labelShort} is downed. -->
+  <AbilityCantApplyDowned>TODO</AbilityCantApplyDowned>
   <!-- EN: Cannot use: {0} is asexual. -->
   <AbilityCantApplyOnAsexual>Impossibile utilizzare: {0} è asessuale.</AbilityCantApplyOnAsexual>
   <!-- EN: {1_labelShort} is the wrong gender for {0_labelShort}. -->
   <AbilityCantApplyWrongAttractionGender>{1_labelShort} è il sesso sbagliato per {0_labelShort}.</AbilityCantApplyWrongAttractionGender>
+  <!-- EN: {0_labelShort} is too young. -->
+  <AbilityCantApplyTooYoung>TODO</AbilityCantApplyTooYoung>
+  <!-- EN: Cannot target a baby. -->
+  <AbilityCantApplyOnBaby>TODO</AbilityCantApplyOnBaby>
   <!-- EN: Psyfocus cost per mental break intensity -->
   <PsyfocusCostPerMentalBreakIntensity>Costo di Psyfocus per intensità del crollo mentale</PsyfocusCostPerMentalBreakIntensity>
   <!-- EN: {0_labelShort} is already inspired. -->
   <AbilityAlreadyInspired>{0_labelShort} è già ispirato.</AbilityAlreadyInspired>
   <!-- EN: {0_labelShort} can't get an inspiration right now. -->
   <AbilityCantGetInspiredNow>{0_labelShort} non può trarre ispirazione in questo momento.</AbilityCantGetInspiredNow>
+  <!-- EN: {0_labelShort} must be of a different ideoligion than {1_labelShort}. -->
+  <AbilityMustBeNotSameIdeo>TODO</AbilityMustBeNotSameIdeo>
+  <!-- EN: {0_labelShort} must be of same ideoligion as {1_labelShort}. -->
+  <AbilityMustBeSameIdeo>TODO</AbilityMustBeSameIdeo>
+  <!-- EN: {0_labelShort} must be sick or injured. -->
+  <AbilityMustBeSickOrInjured>TODO</AbilityMustBeSickOrInjured>
+  <!-- EN: {0} can only counsel {1}s. -->
+  <AbilityMustBeSameIdeoCounsel>TODO</AbilityMustBeSameIdeoCounsel>
+  <!-- EN: {0_labelShort} is already considered guilty. -->
+  <AbilityMustBeNotGuilty>TODO</AbilityMustBeNotGuilty>
+  <!-- EN: Must target a human. -->
+  <AbilityMustBeHuman>TODO</AbilityMustBeHuman>
+  <!-- EN: Must target a non-wild human. -->
+  <AbilityMustBeHumanNonWild>TODO</AbilityMustBeHumanNonWild>
+  <!-- EN: Must target an animal. -->
+  <AbilityMustBeAnimal>TODO</AbilityMustBeAnimal>
   <!-- EN: {0_labelShort} is unconscious. -->
   <AbilityCantApplyUnconscious>{0_labelShort} è incosciente.</AbilityCantApplyUnconscious>
   <!-- EN: {0_labelShort} is asleep. -->
@@ -1059,5 +1177,161 @@
   <MentalBreakIntensityMajor>grave</MentalBreakIntensityMajor>
   <!-- EN: extreme -->
   <MentalBreakIntensityExtreme>gravissimo</MentalBreakIntensityExtreme>
-  
+
+  <!-- Auto slaughter -->
+  <!-- EN: Animal -->
+  <AutoSlaugtherHeaderColLabel>TODO</AutoSlaugtherHeaderColLabel>
+  <!-- EN: Current -->
+  <AutoSlaugtherHeaderColCurrent>TODO</AutoSlaugtherHeaderColCurrent>
+  <!-- EN: Max -->
+  <AutoSlaugtherHeaderColMax>TODO</AutoSlaugtherHeaderColMax>
+  <!-- EN: Total -->
+  <AutoSlaugtherHeaderColTotal>TODO</AutoSlaugtherHeaderColTotal>
+  <!-- EN: Other -->
+  <AutoSlaugtherHeaderColOther>TODO</AutoSlaugtherHeaderColOther> <!-- this is the count of the "cannot-auto-slaughter" animals -->
+  <!-- EN: Colonists first slaughter non-pregnant animals in order from oldest to youngest, then pregnant animals from most recent to least recent pregnancy. -->
+  <AutoSlaugtherTip>TODO</AutoSlaugtherTip>
+  <!-- EN: Male adult -->
+  <AnimalMaleAdult>TODO</AnimalMaleAdult>
+  <!-- EN: Male young -->
+  <AnimalMaleYoung>TODO</AnimalMaleYoung>
+  <!-- EN: Female adult -->
+  <AnimalFemaleAdult>TODO</AnimalFemaleAdult>
+  <!-- EN: Female young -->
+  <AnimalFemaleYoung>TODO</AnimalFemaleYoung>
+  <!-- EN: Pregnant -->
+  <AnimalPregnant>TODO</AnimalPregnant>
+  <!-- EN: Bonded -->
+  <AnimalBonded>TODO</AnimalBonded>
+  <!-- EN: Slaughter -->
+  <AllowSlaughter>TODO</AllowSlaughter>
+
+  <!-- EN: The animal to be automatically slaughtered. -->
+  <AutoSlaugtherHeaderTooltipLabel>TODO</AutoSlaugtherHeaderTooltipLabel>
+  <!-- EN: The current number of animals in the colony, both male and female. -->
+  <AutoSlaugtherHeaderTooltipCurrentTotal>TODO</AutoSlaugtherHeaderTooltipCurrentTotal>
+  <!-- EN: The maximum number of animals in the colony, both male and female.\n\nHandlers will automatically slaughter any extras. -->
+  <AutoSlaugtherHeaderTooltipMaxTotal>TODO</AutoSlaugtherHeaderTooltipMaxTotal>
+  <!-- EN: The current number of males of breeding age in the colony. -->
+  <AutoSlaugtherHeaderTooltipCurrentMales>TODO</AutoSlaugtherHeaderTooltipCurrentMales>
+  <!-- EN: The current number of baby and juvenile males in the colony. -->
+  <AutoSlaughterHeaderTooltipCurrentMalesYoung>TODO</AutoSlaughterHeaderTooltipCurrentMalesYoung>
+  <!-- EN: The maximum number of males of breeding age in the colony.\n\nHandlers will automatically slaughter any extras. -->
+  <AutoSlaugtherHeaderTooltipMaxMales>TODO</AutoSlaugtherHeaderTooltipMaxMales>
+  <!-- EN: The maximum number of baby and juvenile males in the colony.\n\nHandlers will automatically slaughter any extras. -->
+  <AutoSlaughterHeaderTooltipMaxMalesYoung>TODO</AutoSlaughterHeaderTooltipMaxMalesYoung>
+  <!-- EN: The current number of females of breeding age in the colony. -->
+  <AutoSlaugtherHeaderTooltipCurrentFemales>TODO</AutoSlaugtherHeaderTooltipCurrentFemales>
+  <!-- EN: The current number of baby and juvenile females in the colony. -->
+  <AutoSlaugtherHeaderTooltipCurrentFemalesYoung>TODO</AutoSlaugtherHeaderTooltipCurrentFemalesYoung>
+  <!-- EN: The maximum number of females in the colony.\n\nHandlers will automatically slaughter any extras. -->
+  <AutoSlaugtherHeaderTooltipMaxFemales>TODO</AutoSlaugtherHeaderTooltipMaxFemales>
+  <!-- EN: The maximum number of baby and juvenile females in the colony.\n\nHandlers will automatically slaughter any extras. -->
+  <AutoSlaughterHeaderTooltipMaxFemalesYoung>TODO</AutoSlaughterHeaderTooltipMaxFemalesYoung>
+  <!-- EN: The current number of pregnant animals in the colony. -->
+  <AutoSlaughterHeaderTooltipCurrentPregnant>TODO</AutoSlaughterHeaderTooltipCurrentPregnant>
+  <!-- EN: Allow pregnant animals to be slaughtered along with other females of the same species. -->
+  <AutoSlaughterHeaderTooltipAllowSlaughterPregnant>TODO</AutoSlaughterHeaderTooltipAllowSlaughterPregnant>
+  <!-- EN: The current number of bonded animals in the colony. -->
+  <AutoSlaughterHeaderTooltipCurrentBonded>TODO</AutoSlaughterHeaderTooltipCurrentBonded>
+  <!-- EN: Allow bonded animals to be slaughtered. -->
+  <AutoSlaughterHeaderTooltipAllowSlaughterBonded>TODO</AutoSlaughterHeaderTooltipAllowSlaughterBonded>
+
+  <!-- EN: Click to set an animal count limit. -->
+  <AutoSlaughterTooltipSetLimit>TODO</AutoSlaughterTooltipSetLimit>
+
+  <!-- Room requirements -->
+  <!-- EN: no beds allowed -->
+  <RoomRequirementNoBeds>nessun letto ammesso</RoomRequirementNoBeds>
+  <!-- EN: room area: {0} tiles -->
+  <RoomRequirementArea>Grandezza della stanza: {0} caselle</RoomRequirementArea>
+  <!-- EN: room impressiveness -->
+  <RoomRequirementImpressiveness>imponenza della stanza</RoomRequirementImpressiveness>
+  <!-- EN: all floored -->
+  <RoomRequirementAllFloored>tutto pavimentato</RoomRequirementAllFloored>
+  <!-- EN: all braziers must be lit -->
+  <RoomRequirementAllBraziersMustBeLit>tutti i bracieri devono essere accesi</RoomRequirementAllBraziersMustBeLit>
+  <!-- EN: all fine floored -->
+  <RoomRequirementAllFineFloored>tutto pavimentato raffinatamente</RoomRequirementAllFineFloored>
+  <!-- EN: no work facilities allowed -->
+  <RoomRequirementNoProductionFacilities>nessun banco di lavoro ammessa</RoomRequirementNoProductionFacilities>
+  <!-- EN: no altars allowed -->
+  <RoomRequirementNoAltars>TODO</RoomRequirementNoAltars>
+
+  <!-- EN: Lifestage max food factor -->
+  <LifeStageMaxFood>TODO</LifeStageMaxFood>
+
+  <!-- EN: Expand all -->
+  <ExpandAllCategories>TODO</ExpandAllCategories>
+  <!-- EN: Collapse all -->
+  <CollapseAllCategories>TODO</CollapseAllCategories>
+
+  <!-- EN: Dye can be farmed from tinctoria or purchased from traders. -->
+  <TooltipDyeExplanation>TODO</TooltipDyeExplanation>
+
+  <!-- EN: Zoom range {0} -->
+  <ZoomRange>TODO</ZoomRange>
+
+  <!-- Color picker -->
+  <!-- EN: color temperature -->
+  <ColorTemperature>TODO</ColorTemperature>
+  <!-- EN: choose a color -->
+  <ChooseAColor>TODO</ChooseAColor>
+  <!-- EN: red -->
+  <Red>TODO</Red>
+  <!-- EN: green -->
+  <Green>TODO</Green>
+  <!-- EN: blue -->
+  <Blue>TODO</Blue>
+  <!-- EN: hue -->
+  <Hue>TODO</Hue>
+  <!-- EN: sat -->
+  <Saturation>TODO</Saturation>
+  <!-- EN: value -->
+  <Value>Valore</Value>
+  <!-- EN: darklight -->
+  <Darklight>TODO</Darklight>
+  <!-- EN: not darklight -->
+  <NotDarklight>TODO</NotDarklight>
+  <!-- EN: current color -->
+  <CurrentColor>TODO</CurrentColor>
+  <!-- EN: old color -->
+  <OldColor>TODO</OldColor>
+  <!-- EN: Copy color -->
+  <CommandCopyColorLabel>TODO</CommandCopyColorLabel>
+  <!-- EN: Copy the current color to the clipboard. -->
+  <CommandCopyColorDesc>TODO</CommandCopyColorDesc>
+  <!-- EN: Paste color -->
+  <CommandPasteColorLabel>TODO</CommandPasteColorLabel>
+  <!-- EN: Overwrite the color with the color in the clipboard. -->
+  <CommandPasteColorDesc>TODO</CommandPasteColorDesc>
+  <!-- EN: The clipboard does not contain a valid color. -->
+  <ClipboardInvalidColor>TODO</ClipboardInvalidColor>
+  <!-- EN: Color copied to clipboard. -->
+  <ColorCopiedSuccessfully>TODO</ColorCopiedSuccessfully>
+  <!-- EN: Updated color from the clipboard. -->
+  <ColorPastedSuccessfully>TODO</ColorPastedSuccessfully>
+  <!-- EN: Change to normal light -->
+  <ToggleDarklightOff>TODO</ToggleDarklightOff>
+  <!-- EN: Change the light color to its normal color. -->
+  <ToggleDarklightOffDesc>TODO</ToggleDarklightOffDesc>
+  <!-- EN: Change to darklight -->
+  <ToggleDarklightOn>TODO</ToggleDarklightOn>
+  <!-- EN: Change the light color to darklight. -->
+  <ToggleDarklightOnDesc>TODO</ToggleDarklightOnDesc>
+  <!-- EN: Choose a color by setting the color temperature. Note: This only affects visual color, not heat output. -->
+  <ColorTemperatureTooltip>TODO</ColorTemperatureTooltip>
+
+  <!-- UNUSED -->
+  <BillRequiresNutrition>Richiede {0} nutrimento</BillRequiresNutrition>
+  <AnimalFilthRate>Tasso di sporcizia animale</AnimalFilthRate>
+  <AnimalFilthRateExplanation>Gli animali producono sporcizia camminando sui pavimenti edificati. Questa è la quantità media di sporcizia prodotta per {0} celle percorse da questa creatura.\n\nGli animali più grandi o meno addomesticati producono più sporcizia.</AnimalFilthRateExplanation>
+  <FoodAndMedicineTab>Forniture da viaggio</FoodAndMedicineTab>
+  <CaravanPawnIsUnreachable>{1_labelShort} non è raggiungibile per nessuno dei coloni assegnati.</CaravanPawnIsUnreachable>
+  <AutomaticallySelectFoodAndMedicine>Invia automaticamente forniture da viaggio</AutomaticallySelectFoodAndMedicine>
+  <SocialDrugs>Droghe sociali</SocialDrugs>
+  <NoDrugs>Niente droghe</NoDrugs>
+  <OneDrinkPerDay>Una bevanda al giorno</OneDrinkPerDay>
+  <Unrestricted>Nessuna limitazione</Unrestricted>
+
 </LanguageData>

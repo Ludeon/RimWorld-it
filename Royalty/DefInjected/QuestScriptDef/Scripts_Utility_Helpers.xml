@@ -1,53 +1,17 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN:
-    <li>helpersParagraph(helpersCount==0)-></li>
-    <li>helpersParagraph(helpersCount==1)->\n\nA [helperKind_label] will be placed under your control. You will have to feed and house [helpers0_objective], but [helpers0_pronoun] may die in battle without consequence.\n\n</li>
-    <li>helpersParagraph(helpersCount>=2)->\n\n[helpersCount] [helperKind_labelPlural] will be placed under your control. You will have to feed and house them, but they may die in battle without consequence.\n\n</li>
-    <li>helpersArrivalLetterEnd(helpersCount==0)-></li>
-    <li>helpersArrivalLetterEnd(helpersCount>=1)->\n\n[helpersCount] [helpersLabelSingOrPlural] [helpersHasHave] been sent to assist you.</li>
-    <li>helpersLabelSingOrPlural(helpersCount==1)->[helperKind_label]</li>
-    <li>helpersLabelSingOrPlural(helpersCount>=2)->[helperKind_labelPlural]</li>
-    <li>helpersHasHave(helpersCount==1)->has</li>
-    <li>helpersHasHave(helpersCount>=2)->have</li>
-    <li>helpersIsAre(helpersCount==1)->is</li>
-    <li>helpersIsAre(helpersCount>=2)->are</li>
-  -->
+  
   <Util_MaybeGenerateHelpers.questDescriptionRules.rulesStrings>
-    <li>helperKind_gender_Indef(helpersCount==1,helperKind_gender==Male)->Un</li>
-    <li>helperKind_gender_Indef(helpersCount==1,helperKind_gender==Female)->Una</li>
-    <li>helperKind_gender_Indef(helpersCount==1,helperKind_gender==Neuter)->Uno</li>
-    <li>helperKind_gender_o_a(helperKind_gender!=Female)->o</li>
-    <li>helperKind_gender_o_a(helperKind_gender==Female)->a</li>
-    <li>helpersParagraph(helpersCount==0)-></li>
-    <li>helpersParagraph(helpersCount==1)->\n\n[helperKind_gender_Indef] [helperKind_label] sarà post[helperKind_gender_o_a] sotto il tuo controllo. Dovrai nutrire ed ospitar[helpers0_objective], ma [helpers0_pronoun] potrà morire in battaglia senza alcuna conseguenza.\n\n</li>
-    <li>helpersParagraph(helpersCount>=2)->\n\n[helpersCount] [helperKind_labelPlural] saranno posti sotto il tuo controllo. Dovrai nutrirli ed ospitarli, ma potranno morire in battaglia senza alcuna conseguenza.\n\n</li>
-    <li>helpersArrivalLetterEnd(helpersCount==0)-></li>
-    <li>helpersArrivalLetterEnd(helpersCount==1)->\n\n[helpersCount] [helpersLabelSingOrPlural] è stato inviato per assisterti.</li>
-    <li>helpersArrivalLetterEnd(helpersCount>=2)->\n\n[helpersCount] [helpersLabelSingOrPlural] sono stati inviati per assisterti.</li>
-    <li>helpersLabelSingOrPlural(helpersCount==1)->[helperKind_label]</li>
-    <li>helpersLabelSingOrPlural(helpersCount>=2)->[helperKind_labelPlural]</li>
-    <li>helpers_va_vanno(helpersCount==1)->va</li>
-    <li>helpers_va_vanno(helpersCount>=2)->vanno</li>
-    <li>helpers_ha_hanno(helpersCount==1)->ha</li>
-    <li>helpers_ha_hanno(helpersCount>=2)->hanno</li>
-    <li>helpers_e_sono(helpersCount==1)->è</li>
-    <li>helpers_e_sono(helpersCount>=2)->sono</li>
-    <li>helpers_il_i(helpersCount==1)->Il</li>
-    <li>helpers_il_i(helpersCount>=2)->I</li>
-    <li>helpers_o_i(helpersCount==1)->o</li>
-    <li>helpers_o_i(helpersCount>=2)->i</li>
-  </Util_MaybeGenerateHelpers.questDescriptionRules.rulesStrings>
-  <!-- EN: [helpersLabelSingOrPlural] arrived -->
+    </Util_MaybeGenerateHelpers.questDescriptionRules.rulesStrings>
+  
   <Util_MaybeGenerateHelpers.LetterLabelHelpersArrived.value.slateRef>[helpersLabelSingOrPlural] arrivat[helpers_o_i]</Util_MaybeGenerateHelpers.LetterLabelHelpersArrived.value.slateRef>
-  <!-- EN: The [helpersLabelSingOrPlural] sent by [asker_nameDef] [helpersHasHave] arrived to aid you with the quest '[resolvedQuestName]'. -->
+  
   <Util_MaybeGenerateHelpers.LetterTextHelpersArrived.value.slateRef>[helpers_il_i] [helpersLabelSingOrPlural] inviato da [asker_nameDef] [helpers_e_sono] arrivat[helpers_o_i] per aiutarti con la missione "[resolvedQuestName]".</Util_MaybeGenerateHelpers.LetterTextHelpersArrived.value.slateRef>
-  <!-- EN: the [helpersLabelSingOrPlural] -->
+  
   <Util_MaybeGenerateHelpers.ArrivingPawnsLabelDefinite.value.slateRef>[helpers_il_i] [helpersLabelSingOrPlural]</Util_MaybeGenerateHelpers.ArrivingPawnsLabelDefinite.value.slateRef>
-  <!-- EN: [helpersLabelSingOrPlural] leaving -->
+  
   <Util_MaybeGenerateHelpers.LetterLabelHelpersLeaving.slateRef>[helpersLabelSingOrPlural] se ne [helpers_va_vanno]</Util_MaybeGenerateHelpers.LetterLabelHelpersLeaving.slateRef>
-  <!-- EN: The [helpersLabelSingOrPlural] sent by [asker_nameDef] to aid you [helpersHasHave] spent too much time with you, and [helpersIsAre] now leaving. -->
+  
   <Util_MaybeGenerateHelpers.LetterTextHelpersLeaving.slateRef>[helpers_il_i] [helpersLabelSingOrPlural] inviat[helpers_o_i] da [asker_nameDef] per aiutarti [helpers_ha_hanno] passato troppo tempo con te e ora se ne [helpers_va_vanno].</Util_MaybeGenerateHelpers.LetterTextHelpersLeaving.slateRef>
   
 </LanguageData>

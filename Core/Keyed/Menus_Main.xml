@@ -30,6 +30,8 @@
   <TranslationFilesTKeyUpdate>Aggiorna file di traduzione (TKey's)</TranslationFilesTKeyUpdate>
   <!-- EN: Cleaning translation files -->
   <CleaningTranslationFiles>Pulizia file di traduzione</CleaningTranslationFiles>
+  <!-- EN: Dev quicktest -->
+  <DevQuickTest>TODO</DevQuickTest>
   <!-- EN: Credits -->
   <Credits>Crediti</Credits>
   <!-- EN: Quit to main menu -->
@@ -78,8 +80,8 @@
   <WorldGenerate>Genera</WorldGenerate>
   <!-- EN: Save and finish -->
   <WorldSaveAndFinish>Salva e termina</WorldSaveAndFinish>
-  <!-- EN: Reset -->
-  <Reset>Azzera</Reset>
+  <!-- EN: Reset factions -->
+  <ResetFactions>TODO</ResetFactions>
   <!-- EN: Globe coverage -->
   <PlanetCoverage>Copertura globo</PlanetCoverage>
   <!-- EN: Overall rainfall -->
@@ -152,12 +154,66 @@
   <ConfirmDeleteMod>Sei sicuro di voler eliminare tutti i contenuti di {0}?</ConfirmDeleteMod>
   <!-- EN: Auto-sort mods -->
   <ResolveModOrder>Ordina automaticamente le mod</ResolveModOrder>
+  <!-- EN: Save and apply changes -->
+  <SaveModChanges>TODO</SaveModChanges>
+  <!-- EN: Mod changes have not been saved. Are you sure you want to continue? -->
+  <DiscardModChanges>TODO</DiscardModChanges>
+  <!-- EN: Cannot move {0}: It must be loaded after {1}. -->
+  <ModReorderConflict_MustLoadAfter>TODO</ModReorderConflict_MustLoadAfter>
+  <!-- EN: Cannot move {0}: It must be loaded before {1}. -->
+  <ModReorderConflict_MustLoadBefore>TODO</ModReorderConflict_MustLoadBefore>
   <!-- EN: Unsubscribe -->
   <Unsubscribe>Annulla sottoscrizione</Unsubscribe>
-  <!-- EN: Are you sure you want to unsubscribe from {0}? -->
+  <!-- EN: Are you sure you want to unsubscribe? -->
   <ConfirmUnsubscribe>Sei sicuro di voler annullare la sottoscrizione per {0}?</ConfirmUnsubscribe>
+  <!-- EN: Are you sure you want to unsubscribe from {0}? -->
+  <ConfirmUnsubscribeFrom>TODO</ConfirmUnsubscribeFrom>
+  <!-- EN: Are you sure you want to unsubscribe from:\n\n{0} -->
+  <ConfirmUnsubscribeFromMultiple>TODO</ConfirmUnsubscribeFromMultiple>
   <!-- EN: Author -->
   <Author>Autore</Author>
+  <!-- EN: Enabled -->
+  <Enabled>TODO</Enabled>
+  <!-- EN: Disabled -->
+  <Disabled>TODO</Disabled>
+  <!-- EN: Enable -->
+  <Enable>TODO</Enable>
+  <!-- EN: Disable -->
+  <Disable>TODO</Disable>
+  <!-- EN: Get mods from... -->
+  <GetMods>TODO</GetMods>
+  <!-- EN: Unsubscribe from... -->
+  <UnsubscribeMultiple>TODO</UnsubscribeMultiple>
+  <!-- EN: Save / load list... -->
+  <SaveLoadList>TODO</SaveLoadList>
+  <!-- EN: Save mod list -->
+  <SaveModList>TODO</SaveModList>
+  <!-- EN: Load mod list -->
+  <LoadModList>TODO</LoadModList>
+  <!-- EN: Added mods -->
+  <AddedModsList>TODO</AddedModsList>
+  <!-- EN: Missing mods -->
+  <MissingModsList>TODO</MissingModsList>
+  <!-- EN: Shared mods -->
+  <SharedModsList>TODO</SharedModsList>
+  <!-- EN: Website -->
+  <ModWebsite>TODO</ModWebsite>
+  <!-- EN: Open folder -->
+  <ModFolder>TODO</ModFolder>
+  <!-- EN: Mod options -->
+  <ModOptions>TODO</ModOptions>
+  <!-- EN: Workshop -->
+  <FromWorkshop>TODO</FromWorkshop>
+  <!-- EN: Forum -->
+  <FromForum>TODO</FromForum>
+  <!-- EN: Advanced... -->
+  <MoreActions>TODO</MoreActions>
+  <!-- EN: All selected mods -->
+  <AllSelectedMods>TODO</AllSelectedMods>
+  <!-- EN: All disabled mods -->
+  <AllDisabledMods>TODO</AllDisabledMods>
+  <!-- EN: All incompatible mods -->
+  <AllIncompatibleMods>TODO</AllIncompatibleMods>
   <!-- EN: Workshop page -->
   <WorkshopPage>Pagina del Workshop</WorkshopPage>
   <!-- EN: Upload to Steam Workshop -->
@@ -172,6 +228,8 @@
   <WorkshopUploadSucceeded>{0} caricato correttamente.</WorkshopUploadSucceeded>
   <!-- EN: Downloading -->
   <Downloading>Download</Downloading>
+  <!-- EN: Workshop ID -->
+  <WorkshopId>TODO</WorkshopId>
   <!-- EN: Display fulfilled requirements -->
   <ModDisplayFulfilledRequirements>Mostra i requisiti soddisfatti</ModDisplayFulfilledRequirements>
   <!-- EN: Click to select. -->
@@ -180,8 +238,10 @@
   <ModClickToGoToWebsite>Clicca per andare al sito web.</ModClickToGoToWebsite>
   <!-- EN: Source -->
   <Source>Fonte</Source>
-  <!-- EN: For game version(s) -->
+  <!-- EN: Game versions -->
   <ModTargetVersion>Per la versione: {0}</ModTargetVersion>
+  <!-- EN: Mod version -->
+  <ModVersion>TODO</ModVersion>
   <!-- EN: ID -->
   <ModPackageId>ID</ModPackageId>
   <!-- EN: This must be loaded before: {0}. -->
@@ -200,7 +260,7 @@
   <ModWithSameIdAlreadyActive>Un'altra mod attiva utilizza lo stesso ID: {0}.</ModWithSameIdAlreadyActive>
   <!-- EN: There is a cyclic mod dependency starting with {0}. -->
   <ModCyclicDependency>Esiste una dipendenza da mod ciclica che inizia con {0}.</ModCyclicDependency>
-  <!-- EN: This requires following mods to work: {0}. -->
+  <!-- EN: This requires the following mods to work: {0}. -->
   <ModUnsatisfiedDependency>Ciò richiede le seguenti mod per funzionare: {0}.</ModUnsatisfiedDependency>
   <!-- EN: This mod was not made for this version of RimWorld, and will probably not work correctly. -->
   <ModNotMadeForThisVersion>Questa mod non è stata creata per questa versione di RimWorld e probabilmente non funzionerà correttamente.</ModNotMadeForThisVersion>
@@ -270,6 +330,8 @@
   <TooMany>Troppi (max {0}): </TooMany>
   <!-- EN: Can be updated on Workshop, since you are the author. -->
   <CanBeUpdatedOnWorkshop>Può essere aggiornato sul Workshop, dal momento che sei l'autore.</CanBeUpdatedOnWorkshop>
+  <!-- EN: This scenario has been edited.\n\nDo you want to save it before proceeding? -->
+  <ScenarioChangedSavePrompt>TODO</ScenarioChangedSavePrompt>
   
   <!-- Select storyteller -->
   <!-- EN: Choose AI Storyteller -->
@@ -415,6 +477,10 @@
   <Difficulty_AllowCaveHives_Label>Mappe con generazione di alveari naturali</Difficulty_AllowCaveHives_Label>
   <!-- EN: Dormant insect hives may spawn in natural caves.\n\nThis setting only applies to map generation and does not affect active insects that may tunnel in during play. -->
   <Difficulty_AllowCaveHives_Info>Alveari di insetti dormienti possono generarsi nelle caverne naturali.\n\nQuesta impostazione si applica solo alla generazione di mappe e non influisce sugli insetti attivi che possono entrare nei tunnel durante il gioco.</Difficulty_AllowCaveHives_Info>
+  <!-- EN: Add unwavering prisoners -->
+  <Difficulty_UnwaveringPrisoners_Label>TODO</Difficulty_UnwaveringPrisoners_Label>
+  <!-- EN: This option adds additional capturable prisoners to the game who cannot be recruited due to unwavering loyalty.\n\nUnwavering prisoners are added on top of normal prisoners, so turning this off won't give more recruitable prisoners - it simply removes the unwavering ones.\n\nUnwavering prisoners can still be released for diplomatic gains, sold, enslaved, harvested for organs, or otherwise made use of. In general, they offer more options and resources, and make the game a bit richer and easier. -->
+  <Difficulty_UnwaveringPrisoners_Info>TODO</Difficulty_UnwaveringPrisoners_Info>
 
   <!-- EN: Player tools -->
   <DifficultyPlayerToolsSection>Strumenti del giocatore</DifficultyPlayerToolsSection>
@@ -430,16 +496,20 @@
   <Difficulty_AllowMortars_Label>Costruzione di mortai</Difficulty_AllowMortars_Label>
   <!-- EN: Player can build mortars.\n\nYou can still use captured mortars even if this is disabled. -->
   <Difficulty_AllowMortars_Info>Il giocatore può costruire mortai.\n\nPuoi comunque usare i mortai catturati anche se questa opzione è disabilitata.</Difficulty_AllowMortars_Info>
+  <!-- EN: Classic mortars -->
+  <Difficulty_ClassicMortars_Label>TODO</Difficulty_ClassicMortars_Label>
+  <!-- EN: Mortars will not require reinforced barrels to construct or reload, and are balanced for this ease of access. -->
+  <Difficulty_ClassicMortars_Info>TODO</Difficulty_ClassicMortars_Info>
   
   <!-- EN: Adaptation -->
   <DifficultyAdaptationSection>Adattamento</DifficultyAdaptationSection>
-  <!-- EN: Damage adaptation growth -->
+  <!-- EN: Adaptation growth rate -->
   <Difficulty_AdaptationGrowthRateFactorOverZero_Label>Crescita dell'adattamento dei danni</Difficulty_AdaptationGrowthRateFactorOverZero_Label>
-  <!-- EN: Adaptation means the storyteller makes the game more challenging over time as long as you are not taking losses. This is separate from the story effects of wealth and population.\n\nThis adjusts the rate of that challenge growth. -->
+  <!-- EN: Adaptation means the storyteller makes the game more challenging when you're doing well. An adaptation score grows over time, and is knocked down when you take damage.\n\nThis setting adjusts how fast the adaptation score grows over time. -->
   <Difficulty_AdaptationGrowthRateFactorOverZero_Info>Adattamento significa che il narratore rende il gioco più impegnativo nel tempo purché non subisca perdite. Questo è separato dagli effetti della storia della ricchezza e della popolazione.\n\nQuesto regola il tasso di crescita della sfida.</Difficulty_AdaptationGrowthRateFactorOverZero_Info>
-  <!-- EN: Damage adaptation effect -->
+  <!-- EN: Adaptation impact -->
   <Difficulty_AdaptationEffectFactor_Label>Effetto di adattamento dei danni</Difficulty_AdaptationEffectFactor_Label>
-  <!-- EN: Adaptation means the storyteller makes the game more challenging over time as long as you are not taking losses. This is separate from the story effects of wealth and population.\n\nThis adjusts the effect of that adaptation value on actual threats. -->
+  <!-- EN: Adaptation means the storyteller makes the game more challenging when you're doing well. An adaptation score grows over time, and is knocked down when you take damage.\n\nThis setting adjusts how much the adaptation score affects the difficulty. -->
   <Difficulty_AdaptationEffectFactor_Info>Adattamento significa che il narratore rende il gioco più impegnativo nel tempo purché non subisca perdite. Questo è separato dagli effetti della storia della ricchezza e della popolazione.\n\nQuesto regola l'effetto del valore di adattamento sulle minacce effettive.</Difficulty_AdaptationEffectFactor_Info>
   <!-- EN: Wealth-independent progress mode -->
   <Difficulty_FixedWealthMode_Label>Modalità di avanzamento indipendente dalla ricchezza</Difficulty_FixedWealthMode_Label>
@@ -449,6 +519,13 @@
   <Difficulty_FixedWealthTimeFactor_Label>Anni fino a massimo livello di minacce</Difficulty_FixedWealthTimeFactor_Label>
   <!-- EN: The number of game years until the wealth-independent mode reaches its maximum threat level.\n\nNote that the storyteller will still scale threats according to colonist count and a variety of other factors. -->
   <Difficulty_FixedWealthTimeFactor_Info>Il numero di anni di gioco prima che la modalità indipendente dalla ricchezza raggiunga il livello di minaccia massimo.\n\nNota che il narratore continuerà a ridimensionare le minacce in base al numero di coloni e a una varietà di altri fattori.</Difficulty_FixedWealthTimeFactor_Info>
+
+  <!-- EN: Ideology -->
+  <DifficultyIdeologySection>TODO</DifficultyIdeologySection>
+  <!-- EN: Low pop conversion boost -->
+  <Difficulty_LowPopConversionBoost_Label>TODO</Difficulty_LowPopConversionBoost_Label>
+  <!-- EN: With a single colonist of the player's starting ideoligion, conversion chance to their ideoligion is multiplied by this amount. Conversion attempts against them have their impact divided by that amount.\n\nWith two colonists of the player's starting ideoligion, the effect is halved.\n\nWith three or more colonists of the player's starting ideoligion, this has no effect. -->
+  <Difficulty_LowPopConversionBoost_Info>TODO</Difficulty_LowPopConversionBoost_Info>
 
   <!-- Site select -->
   <!-- EN: Select starting site -->
@@ -485,6 +562,8 @@
   <Elevation>Altitudine</Elevation>
   <!-- EN: Fertility -->
   <Fertility>Fertilità</Fertility>
+  <!-- EN: fertility -->
+  <FertilityLower>TODO</FertilityLower>
   <!-- EN: Average temperature -->
   <AvgTemp>Temperatura media</AvgTemp>
   <!-- EN: Rainfall -->
@@ -519,6 +598,10 @@
   <Forageability>Possibilità di procacciamento</Forageability>
   <!-- EN: None of the selected people can do the following jobs:\n\n{0}\n\nThis can make the game more difficult than usual. Are you sure you want to continue? -->
   <ConfirmRequiredWorkTypeDisabledForEveryone>Nessuna delle persone selezionate può svolgere i seguenti lavori:\n\n{0}\n\nQuesto può rendere il gioco più difficile del solito. Sei sicuro di voler continuare?</ConfirmRequiredWorkTypeDisabledForEveryone>
+  <!-- EN: temperature -->
+  <TemperatureLower>TODO</TemperatureLower>
+  <!-- EN: light -->
+  <LightLower>TODO</LightLower>
 
   <!-- Character chooser -->
   <!-- EN: Create characters -->
@@ -543,18 +626,22 @@
   <IncapableOf>Incapace di</IncapableOf>
   <!-- EN: Abilities -->
   <Abilities>Abilità</Abilities>
-  <!-- EN: Caused by backstory: {0} -->
-  <IncapableOfTooltipBackstory>Causato dal passato: {0}</IncapableOfTooltipBackstory>
-  <!-- EN: Caused by title: {0} -->
-  <IncapableOfTooltipTitle>Causato dal titolo: {0}</IncapableOfTooltipTitle>
-  <!-- EN: Caused by trait: {0} -->
-  <IncapableOfTooltipTrait>Causato dal tratto: {0}</IncapableOfTooltipTrait>
-  <!-- EN: Caused by: {0} -->
+  <!-- EN: Caused by -->
   <IncapableOfTooltipHediff>Causato da: {0}</IncapableOfTooltipHediff>
   <!-- EN: Disabled work types: -->
   <IncapableOfTooltipWorkTypes>Tipi di lavoro disabilitati:</IncapableOfTooltipWorkTypes>
-  <!-- EN: Caused by quest status: {0} -->
+  <!-- EN: Caused by backstory -->
+  <IncapableOfTooltipBackstory>Causato dal passato: {0}</IncapableOfTooltipBackstory>
+  <!-- EN: Caused by title -->
+  <IncapableOfTooltipTitle>Causato dal titolo: {0}</IncapableOfTooltipTitle>
+  <!-- EN: Caused by trait -->
+  <IncapableOfTooltipTrait>Causato dal tratto: {0}</IncapableOfTooltipTrait>
+  <!-- EN: Caused by quest status -->
   <IncapableOfTooltipQuest>Causato dallo stato della missione: {0}</IncapableOfTooltipQuest>
+  <!-- EN: Caused by role -->
+  <IncapableOfTooltipRole>TODO</IncapableOfTooltipRole>
+  <!-- EN: Caused by gene -->
+  <IncapableOfTooltipGene>TODO</IncapableOfTooltipGene>
   <!-- EN: Traits -->
   <Traits>Tratti</Traits>
   <!-- EN: Permanent mood effect -->
@@ -567,12 +654,12 @@
   <Adulthood>Maturità</Adulthood>
   <!-- EN: Childhood -->
   <Childhood>Infanzia</Childhood>
-  <!-- EN: Current -->
-  <Current>Attuale</Current>
   <!-- EN: male -->
   <Male>maschio</Male>
   <!-- EN: female -->
   <Female>femmina</Female>
+  <!-- EN: male and female -->
+  <MaleAndFemale>TODO</MaleAndFemale>
   <!-- EN: male -->
   <MaleAnimal>maschio</MaleAnimal>
   <!-- EN: female -->
@@ -583,12 +670,16 @@
   <Health>Salute</Health>
   <!-- EN: Relations -->
   <Relations>Relazioni</Relations>
+  <!-- EN: Possessions -->
+  <Possessions>TODO</Possessions>
   <!-- EN: Team skills -->
   <TeamSkills>Abilità di gruppo</TeamSkills>
   <!-- EN: Selected -->
   <StartingPawnsSelected>Selezionati</StartingPawnsSelected>
   <!-- EN: Left behind -->
   <StartingPawnsLeftBehind>Lasciati indietro</StartingPawnsLeftBehind>
+  <!-- EN: This colonist is considered guilty. You can freely banish, execute or arrest them, and others won't be bothered.\n\nGuilt expires in -->
+  <GuiltyDesc>TODO</GuiltyDesc>
   
   <!-- Misc -->
   <!-- EN: Start -->
@@ -624,9 +715,30 @@
   <!-- EN: Generating map for new encounter -->
   <GeneratingMapForNewEncounter>Generazione mappa per nuovo incontro</GeneratingMapForNewEncounter>
 
-  <!-- EN: Click for more info -->
+  <!-- EN: Click for more info. -->
   <ClickForMoreInfo>Clicca per maggiori informazioni</ClickForMoreInfo>
   <!-- EN: No more information is available. -->
   <NoMoreInfoAvailable>Non sono disponibili ulteriori informazioni.</NoMoreInfoAvailable>
+
+  <!-- Factions -->
+  <!-- EN: Factions -->
+  <Factions>TODO</Factions>
+  <!-- EN: max {0} basic factions allowed -->
+  <TotalFactionsAllowed>TODO</TotalFactionsAllowed>
+  <!-- EN: max {0} -->
+  <MaxFactionsForType>TODO</MaxFactionsForType>
+  <!-- EN: Select the factions in the world. You can select up to {0} factions total. -->
+  <FactionSelectionDesc>TODO</FactionSelectionDesc>
+  <!-- EN: Disabling {0} means less quest variety and other reduced content. -->
+  <FactionDisabledContentWarning>TODO</FactionDisabledContentWarning>
+  <!-- EN: Disabling {0} means less spontaneous threat variety. -->
+  <InsectsDisabledContentWarning>TODO</InsectsDisabledContentWarning>
+  <!-- EN: Disabling {0} means less quest and spontaneous threat variety. -->
+  <MechanoidsDisabledContentWarning>TODO</MechanoidsDisabledContentWarning>
+  <!-- EN: Without other factions, raids, trading, and quests won't occur as normal. -->
+  <FactionsDisabledWarning>TODO</FactionsDisabledWarning>
+
+  <!-- UNUSED -->
+  <Current>Attuale</Current>
 
 </LanguageData>

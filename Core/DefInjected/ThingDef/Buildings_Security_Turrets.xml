@@ -1,79 +1,134 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: mortar -->
+  
   <Artillery_Mortar.label>mortaio</Artillery_Mortar.label>
-  <!-- EN: Mortar launcher. Lobs bombs over walls. Very inaccurate but long-ranged. -->
+  
   <Artillery_Mortar.description>Un mortaio. Lancia bombe oltre le mura. Molto impreciso ma a lungo raggio.</Artillery_Mortar.description>
-  <!-- EN: mortar -->
+  
   <Artillery_Mortar.verbs.Verb_Shoot.label>mortaio</Artillery_Mortar.verbs.Verb_Shoot.label>
   
-  <!-- EN: autocannon shell -->
+  
   <Bullet_AutocannonTurret.label>proiettile di cannone automatico</Bullet_AutocannonTurret.label>
   
-  <!-- EN: mini-turret bullet -->
+  
   <Bullet_MiniTurret.label>proiettile di mini mitragliatore</Bullet_MiniTurret.label>
   
-  <!-- EN: uranium slug -->
+  
   <Bullet_TurretSniper.label>proiettile ad uranio</Bullet_TurretSniper.label>
   
-  <!-- EN: autocannon -->
+  
   <Gun_AutocannonTurret.label>cannone automatico</Gun_AutocannonTurret.label>
-  <!-- EN: A self-loading large-bore cannon designed to attach to a turret. -->
+  
   <Gun_AutocannonTurret.description>Un cannone di grosso calibro a caricamento automatico progettato per essere fissato ad una torretta.</Gun_AutocannonTurret.description>
-  <!-- EN: autocannon -->
+  
   <Gun_AutocannonTurret.verbs.Verb_Shoot.label>cannone automatico</Gun_AutocannonTurret.verbs.Verb_Shoot.label>
   
-  <!-- EN: mini-turret gun -->
+  
   <Gun_MiniTurret.label>mini mitragliatore</Gun_MiniTurret.label>
-  <!-- EN: A simple automatic gun made to be mounted on a turret. -->
+  
   <Gun_MiniTurret.description>Un semplice mitragliatore automatico creato per essere fissato ad una torretta.</Gun_MiniTurret.description>
-  <!-- EN: mini-turret gun -->
+  
   <Gun_MiniTurret.verbs.Verb_Shoot.label>mini mitragliatore</Gun_MiniTurret.verbs.Verb_Shoot.label>
   
-  <!-- EN: uranium slug cannon -->
+  
+  <Gun_RocketswarmLauncher.label>TODO</Gun_RocketswarmLauncher.label>
+  
+  <Gun_RocketswarmLauncher.description>TODO</Gun_RocketswarmLauncher.description>
+  
+  <Gun_RocketswarmLauncher.verbs.Verb_Shoot.label>TODO</Gun_RocketswarmLauncher.verbs.Verb_Shoot.label>
+  
+  
+  <Gun_TurretFoam.label>TODO</Gun_TurretFoam.label>
+  
+  <Gun_TurretFoam.description>TODO</Gun_TurretFoam.description>
+  
+  <Gun_TurretFoam.verbs.Verb_ArcSprayProjectile.label>TODO</Gun_TurretFoam.verbs.Verb_ArcSprayProjectile.label>
+  
+  
   <Gun_TurretSniper.label>cannone a proiettili di uranio</Gun_TurretSniper.label>
-  <!-- EN: A self-loading uranium slug cannon designed to attach to a turret. -->
-  <Gun_TurretSniper.description>Un cannone di precisione a caricamento automatico progettato per essere fissato ad una torretta. Preciso a distanza, non è buono nel puntare bersagli vicini.</Gun_TurretSniper.description>
-  <!-- EN: uranium slug cannon -->
+  
+  <Gun_TurretSniper.description>Un cannone di precisione a caricamento automatico progettato per essere fissato ad una torretta. Preciso a distanza, non &#232; buono nel puntare bersagli vicini.</Gun_TurretSniper.description>
+  
   <Gun_TurretSniper.verbs.Verb_Shoot.label>cannone a proiettili di uranio</Gun_TurretSniper.verbs.Verb_Shoot.label>
   
-  <!-- EN: autocannon turret -->
+  
+  <Proj_Foam.label>TODO</Proj_Foam.label>
+  
+  
+  <Proj_Rocket.label>TODO</Proj_Rocket.label>
+  
+  
   <Turret_Autocannon.label>torretta con cannone automatico</Turret_Autocannon.label>
-  <!-- EN: A heavy automatic turret. Its large-caliber shells do heavy damage over significant ranges, but its barrel must be refurbished after use. It cannot fire at close-up targets, and may explode when damaged. -->
-  <Turret_Autocannon.description>Una torretta pesante automatica. I suoi proiettili di grosso calibro causano grossi danni a notevoli distanze, ma la sua canna deve essere sostituita dopo l'uso. Non può sparare a bersagli vicini e può esplodere se danneggiata.</Turret_Autocannon.description>
-  <!-- EN: Barrel durability -->
+  
+  <Turret_Autocannon.description>Una torretta pesante automatica. I suoi proiettili di grosso calibro causano grossi danni a notevoli distanze, ma la sua canna deve essere sostituita dopo l'uso. Non pu&#242; sparare a bersagli vicini e pu&#242; esplodere se danneggiata.</Turret_Autocannon.description>
+  
   <Turret_Autocannon.comps.CompRefuelable.fuelGizmoLabel>Durata canna</Turret_Autocannon.comps.CompRefuelable.fuelGizmoLabel>
-  <!-- EN: Shots until barrel change -->
+  
   <Turret_Autocannon.comps.CompRefuelable.fuelLabel>Colpi prima della sostituzione canna</Turret_Autocannon.comps.CompRefuelable.fuelLabel>
-  <!-- EN: Cannot shoot: Needs new barrel -->
+  
   <Turret_Autocannon.comps.CompRefuelable.outOfFuelMessage>Impossibile sparare: Richiede nuova canna</Turret_Autocannon.comps.CompRefuelable.outOfFuelMessage>
   
-  <!-- EN: mini-turret -->
+  
+  <Turret_FoamTurret.label>TODO</Turret_FoamTurret.label>
+  
+  <Turret_FoamTurret.description>TODO</Turret_FoamTurret.description>
+  
+  <Turret_FoamTurret.comps.CompRefuelable.fuelGizmoLabel>TODO</Turret_FoamTurret.comps.CompRefuelable.fuelGizmoLabel>
+  
+  <Turret_FoamTurret.comps.CompRefuelable.fuelLabel>TODO</Turret_FoamTurret.comps.CompRefuelable.fuelLabel>
+  
+  <Turret_FoamTurret.comps.CompRefuelable.outOfFuelMessage>TODO</Turret_FoamTurret.comps.CompRefuelable.outOfFuelMessage>
+  
+  <Turret_FoamTurret.comps.CompActivable_FoamTurret.jobString>TODO</Turret_FoamTurret.comps.CompActivable_FoamTurret.jobString>
+  
+  <Turret_FoamTurret.comps.CompActivable_FoamTurret.onCooldownString>TODO</Turret_FoamTurret.comps.CompActivable_FoamTurret.onCooldownString>
+  
+  
   <Turret_MiniTurret.label>torretta con mini mitragliatore</Turret_MiniTurret.label>
-  <!-- EN: A portable automatic turret. Requires steel to refurbish its barrel after heavy use. May explode when damaged. Its dumb AI brain can't be directly controlled, so beware of friendly fire. -->
-  <Turret_MiniTurret.description>Una torretta automatica portatile. Richiede acciaio per rinnovare la sua canna dopo un uso intensivo. Può esplodere se danneggiata. La sua rudimentale IA non può essere controllata direttamente, quindi fai attenzione al fuoco amico.</Turret_MiniTurret.description>
-  <!-- EN: Barrel durability -->
+  
+  <Turret_MiniTurret.description>Una torretta automatica portatile. Richiede acciaio per rinnovare la sua canna dopo un uso intensivo. Pu&#242; esplodere se danneggiata. La sua rudimentale IA non pu&#242; essere controllata direttamente, quindi fai attenzione al fuoco amico.</Turret_MiniTurret.description>
+  
   <Turret_MiniTurret.comps.CompRefuelable.fuelGizmoLabel>Durata canna</Turret_MiniTurret.comps.CompRefuelable.fuelGizmoLabel>
-  <!-- EN: Shots until barrel change -->
+  
   <Turret_MiniTurret.comps.CompRefuelable.fuelLabel>Colpi prima della sostituzione canna</Turret_MiniTurret.comps.CompRefuelable.fuelLabel>
-  <!-- EN: Cannot shoot: Needs new barrel -->
+  
   <Turret_MiniTurret.comps.CompRefuelable.outOfFuelMessage>Impossibile sparare: Richiede nuova canna</Turret_MiniTurret.comps.CompRefuelable.outOfFuelMessage>
   
-  <!-- EN: mortar -->
-  <Turret_Mortar.label>mortaio</Turret_Mortar.label>
-  <!-- EN: A manned mortar that launches all kinds of shells. While it can inflict devastating damage, the mortar's inherent inaccuracy makes it more useful for attacking large fortifications than groups of enemies in the field. -->
-  <Turret_Mortar.description>Un mortaio manuale che lancia ogni tipo di bomba. Sebbene infligga danni devastanti, la scarsa precisione del mortaio lo rende più utile ad attaccare grosse fortificazioni che gruppi di nemici sul campo.</Turret_Mortar.description>
   
-  <!-- EN: uranium slug turret -->
+  <Turret_Mortar.label>mortaio</Turret_Mortar.label>
+  
+  <Turret_Mortar.description>Un mortaio manuale che lancia ogni tipo di bomba. Sebbene infligga danni devastanti, la scarsa precisione del mortaio lo rende pi&#249; utile ad attaccare grosse fortificazioni che gruppi di nemici sul campo.</Turret_Mortar.description>
+  
+  <Turret_Mortar.comps.CompRefuelable.fuelGizmoLabel>TODO</Turret_Mortar.comps.CompRefuelable.fuelGizmoLabel>
+  
+  <Turret_Mortar.comps.CompRefuelable.fuelLabel>TODO</Turret_Mortar.comps.CompRefuelable.fuelLabel>
+  
+  <Turret_Mortar.comps.CompRefuelable.outOfFuelMessage>TODO</Turret_Mortar.comps.CompRefuelable.outOfFuelMessage>
+  
+  
+  <Turret_RocketswarmLauncher.label>TODO</Turret_RocketswarmLauncher.label>
+  
+  <Turret_RocketswarmLauncher.description>TODO</Turret_RocketswarmLauncher.description>
+  
+  <Turret_RocketswarmLauncher.comps.CompRefuelable.fuelGizmoLabel>TODO</Turret_RocketswarmLauncher.comps.CompRefuelable.fuelGizmoLabel>
+  
+  <Turret_RocketswarmLauncher.comps.CompRefuelable.fuelLabel>TODO</Turret_RocketswarmLauncher.comps.CompRefuelable.fuelLabel>
+  
+  <Turret_RocketswarmLauncher.comps.CompRefuelable.outOfFuelMessage>TODO</Turret_RocketswarmLauncher.comps.CompRefuelable.outOfFuelMessage>
+  
+  <Turret_RocketswarmLauncher.comps.CompActivable_RocketswarmLauncher.jobString>TODO</Turret_RocketswarmLauncher.comps.CompActivable_RocketswarmLauncher.jobString>
+  
+  <Turret_RocketswarmLauncher.comps.CompActivable_RocketswarmLauncher.onCooldownString>TODO</Turret_RocketswarmLauncher.comps.CompActivable_RocketswarmLauncher.onCooldownString>
+  
+  
   <Turret_Sniper.label>torretta a proiettili di uranio</Turret_Sniper.label>
-  <!-- EN: An armor-piercing turret. Its ultra-dense uranium shells can punch through heavy armor, but it requires new uranium slugs to be loaded after use. It's more accurate at longer ranges, and can't fire at all close up. May explode when damaged. -->
-  <Turret_Sniper.description>Una torretta perforante a lungo raggio. I suoi proiettili di uranio estremamente pesanti possono trapassare armature pesanti a grandi distanze, ma richiede nuove ricariche di uranio dopo l'uso. E' più accurata a lunghe distanze e non può sparare per niente da vicino. Può esplodere se danneggiata.</Turret_Sniper.description>
-  <!-- EN: Uranium slugs -->
+  
+  <Turret_Sniper.description>Una torretta perforante a lungo raggio. I suoi proiettili di uranio estremamente pesanti possono trapassare armature pesanti a grandi distanze, ma richiede nuove ricariche di uranio dopo l'uso. E' pi&#249; accurata a lunghe distanze e non pu&#242; sparare per niente da vicino. Pu&#242; esplodere se danneggiata.</Turret_Sniper.description>
+  
   <Turret_Sniper.comps.CompRefuelable.fuelGizmoLabel>Durata canna</Turret_Sniper.comps.CompRefuelable.fuelGizmoLabel>
-  <!-- EN: Shots until rearm -->
+  
   <Turret_Sniper.comps.CompRefuelable.fuelLabel>Colpi prima della ricarica</Turret_Sniper.comps.CompRefuelable.fuelLabel>
-  <!-- EN: Cannot shoot: No slugs -->
+  
   <Turret_Sniper.comps.CompRefuelable.outOfFuelMessage>Impossibile sparare: Richiede ricarica</Turret_Sniper.comps.CompRefuelable.outOfFuelMessage>
   
 </LanguageData>

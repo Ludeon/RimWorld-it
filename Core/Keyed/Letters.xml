@@ -10,10 +10,12 @@
   <RejectLetter>Rifiuta</RejectLetter>
   <!-- EN: Read more -->
   <ReadMore>Leggi di più</ReadMore>
+  <!-- EN: You have {0} more letters -->
+  <MoreLetters>TODO</MoreLetters>
 
   <!-- EN: Summer -->
   <LetterLabelFirstSummerWarning>Estate</LetterLabelFirstSummerWarning>
-  <!-- EN: Summer has begun! But winter is coming.\n\nYour food crops won't grow in the winter cold. Be sure to store enough food to survive. You can build a walk-in refrigerator to prevent food from spoiling.\n\nBuy, steal, or make some parkas, or you'll freeze when you step outside. -->
+  <!-- EN: Summer has begun! But winter is coming.\n\nYour food crops won't grow in the winter cold. Be sure to store enough food to survive. You can build a walk-in refrigerator to prevent food from spoiling.\n\nTo prepare for winter, buy, steal, or make some parkas, or you'll freeze when you step outside. -->
   <FirstSummerWarning>L'estate è iniziata! Ma l'inverno sta arrivando.\n\nLe tue piante non cresceranno con il freddo invernale. Assicurati di mettere da parte abbastanza cibo per sopravvivere. Puoi costruire una stanza frigorifera per evitare che il cibo si deteriori.\n\nCompra, ruba o crea qualche eskimo o congelerai quando metterai piede fuori.</FirstSummerWarning>
 
   <!-- EN: Relations with {0} have broken down completely. They are now hostile to you. -->
@@ -40,10 +42,12 @@
   <goodwill>opinione</goodwill>
   <!-- EN: Neutral -->
   <Neutral>Neutrale</Neutral>
+  <!-- EN: neutral -->
+  <NeutralLower>TODO</NeutralLower>
   <!-- EN: Death -->
   <Death>Morte</Death>
 
-  <!-- EN: A {1_label} has short-circuited in the rain and started a fire. -->
+  <!-- EN: A {1_label} has short-circuited due to precipitation and started a fire. -->
   <ShortCircuitRain>Un {1_label} è andato in cortocircuito durante la pioggia ed ha preso fuoco.</ShortCircuitRain>
 
   <!-- EN: Area revealed -->
@@ -74,7 +78,9 @@
   <LetterLabelBirthday>Compleanno</LetterLabelBirthday>
   <!-- EN: It's {0}'s chronological birthday today! Biologically, {1} is {3} years old.\n\nChronologically, {1} just turned {2}.\n\nNote that since people don't age while in cryptosleep, chronological birthday is separate from biological birthday. -->
   <BirthdayChronological>Oggi è il compleanno di {0}! Dal punto di vista biologico, {1} ha {3} anni.\n\nDal punto di vista cronologico, {1} ha appena compiuto {2}.\n\nNota che, dal momento che le persone non invecchiano in criptosonno, il compleanno cronologico è diverso da quello biologico.</BirthdayChronological>
-  <!-- EN: {0_nameFull} has reached the biological age of {1}.\n\nUnfortunately, {0_nameFull} has gained the following diseases due to aging:\n{2} -->
+  <!-- EN: {0_nameFull} has reached the biological age of {1}. -->
+  <LetterBirthdayBiological>TODO</LetterBirthdayBiological>
+  <!-- EN: Unfortunately, {0_nameFull} has gained the following diseases due to aging -->
   <BirthdayBiologicalAgeInjuries>{0_nameFull} ha raggiunto l'età biologica di {1} anni.\n\nSfortunatamente, {0_nameFull} ha acquisito le seguenti malattie per colpa dell'invecchiamento:\n{2}</BirthdayBiologicalAgeInjuries>
 
   <!-- EN: Disease -->
@@ -417,24 +423,12 @@
   <LetterPredatorHuntingColonist>{PREDATOR} sta cacciando {PREY_definite} per nutrirsi!</LetterPredatorHuntingColonist>
 
   <!-- Disease -->
-  <!-- EN: {0} blocked {1} on: {2}. -->
+  <!-- EN: {0} blocked {1} on -->
   <LetterDisease_Blocked>{0} ha bloccato {1} su: {2}.</LetterDisease_Blocked>
   <!-- EN: Disease: {0} -->
   <LetterLabelTraitDisease>Malattia ({0})</LetterLabelTraitDisease>
   <!-- EN: {PAWN_label} has gotten sick from {1}.\n\nEnsure you have a medical bed and a doctor. Make sure that {PAWN_pronoun} gets proper treatment and spends as much time in bed as possible. -->
   <LetterTraitDisease>{PAWN_label} ha contratto {1_gender ? il : la : lo} {1}.\n\nAssicurati di avere un letto medico e un dottore. Accertati che {PAWN_pronoun} abbia cure adeguate e trascorra quanto più tempo possibile a letto.</LetterTraitDisease>
-
-  <!-- Surgery -->
-  <!-- EN: Surgery failed on {PATIENT_labelShort} -->
-  <LetterLabelSurgeryFailed>Intervento chirurgico fallito su {PATIENT_labelShort}</LetterLabelSurgeryFailed>
-  <!-- EN: {SURGEON_labelShort} has failed in a minor way while operating on {PATIENT_labelShort} ({RECIPE_label}). -->
-  <MessageMedicalOperationFailureMinor>{SURGEON_labelShort} ha fallito in maniera marginale operando {PATIENT_labelShort}.</MessageMedicalOperationFailureMinor> <!-- NewTemp rename to LetterTextOperationFailureMinor globally-->
-  <!-- EN: {SURGEON_labelShort} has failed catastrophically while operating on {PATIENT_labelShort} ({RECIPE_label}). -->
-  <MessageMedicalOperationFailureCatastrophic>{SURGEON_labelShort} ha fallito in maniera catastrofica operando {PATIENT_labelShort}.</MessageMedicalOperationFailureCatastrophic> <!-- NewTemp rename to LetterTextOperationFailureCatastrophic globally-->
-  <!-- EN: {SURGEON_labelShort} has failed in a ridiculous way while operating on {PATIENT_labelShort} ({RECIPE_label}). -->
-  <MessageMedicalOperationFailureRidiculous>{SURGEON_labelShort} ha fallito in maniera ridicola operando {PATIENT_labelShort}.</MessageMedicalOperationFailureRidiculous> <!-- NewTemp rename to LetterTextOperationFailureRidiculous globally-->
-  <!-- EN: {SURGEON_labelShort} has committed a fatal error while operating on {PATIENT_labelShort} because of the special challenges of: {2}. -->
-  <MessageMedicalOperationFailureFatal>{SURGEON_labelShort} ha commesso un errore fatale operando {PATIENT_labelShort} a causa della particolare difficoltà di: {2}</MessageMedicalOperationFailureFatal> <!-- NewTemp rename to LetterTextOperationFailureFatal globally-->
 
   <!-- Quests -->
   <!-- EN: A new quest has become available. It is called '{0}'. -->
@@ -453,6 +447,12 @@
   <LetterLabelQuestDropPodsArrived>Capsule arrivate</LetterLabelQuestDropPodsArrived>
   <!-- EN: Transport pods with the following contents have arrived:\n\n{0} -->
   <LetterQuestDropPodsArrived>Sono arrivate delle capsule di trasporto con i seguenti contenuti:\n\n{0}</LetterQuestDropPodsArrived>
+
+  <!-- Quest items added to caravan inventory -->
+  <!-- EN: {CARAVAN_label} received items -->
+  <LetterLabelQuestItemsAddedToCaravanInventory>TODO</LetterLabelQuestItemsAddedToCaravanInventory>
+  <!-- EN: {CARAVAN_label} has received the following items:\n\n{THINGS} -->
+  <LetterQuestItemsAddedToCaravanInventory>TODO</LetterQuestItemsAddedToCaravanInventory>
 
   <!-- Refugee joins -->
   <!-- EN: {PAWN_nameDef} joins -->
@@ -493,7 +493,8 @@
   <!-- Colonist kidnapped -->
   <!-- EN: {PAWN_nameDef} kidnapped -->
   <LetterLabelPawnsKidnapped>{PAWN_nameDef} rapit{PAWN_gender ? o : a : o}</LetterLabelPawnsKidnapped>
-  <!-- EN: {PAWN_nameDef} has been kidnapped by {FACTION_name}!\nHowever, {PAWN_pronoun} is not lost forever. An opportunity to rescue {PAWN_objective} may present itself in the coming days or years. -->
+  <!-- EN: {PAWN_nameDef} has been kidnapped by {FACTION_name}!
+\nHowever, {PAWN_pronoun} is not lost forever. An opportunity to rescue {PAWN_objective} may present itself in the coming days or years. -->
   <LetterPawnsKidnapped>{PAWN_nameDef} è {PAWN_gender ? stato rapito : stata rapita : stato rapito} da {FACTION_name}!\nTuttavia, {PAWN_pronoun} non è pers{PAWN_gender ? o : a : o} per sempre, in quanto nei prossimi giorni (oppure anni), potrebbe presentarsi un'opportunità per salvar{PAWN_objective}.</LetterPawnsKidnapped>
   
   <!-- Techprints -->
@@ -529,7 +530,8 @@
   <!-- Bladelink -->
   <!-- EN: Persona bond: {PAWN_labelShort} -->
   <LetterBladelinkWeaponBondedLabel>Legame stabilito: {PAWN_labelShort}</LetterBladelinkWeaponBondedLabel>
-  <!-- EN: {PAWN_labelShort} has established a bond with the persona of {WEAPON_labelShort}.\nFrom now on, {WEAPON_labelShort} will refuse to be wielded by anyone except {PAWN_labelShort}. -->
+  <!-- EN: {PAWN_labelShort} has established a bond with the persona of {WEAPON_labelShort}.
+\nFrom now on, {WEAPON_labelShort} will refuse to be wielded by anyone except {PAWN_labelShort}. -->
   <LetterBladelinkWeaponBonded>{PAWN_labelShort} ha stabilito un legame con il personaggio di {WEAPON_labelShort}.\nDa ora in poi, {WEAPON_labelShort} rifiuterà di essere esercitato da chiunque tranne {PAWN_labelShort}.</LetterBladelinkWeaponBonded>
   
   <!-- Mech cluster -->
@@ -542,5 +544,33 @@
   <LetterLabelSiteCountdownStarted>Carovana rintracciata</LetterLabelSiteCountdownStarted>
   <!-- EN: Your caravan has been detected. In {0}, reinforcing {1} from {2} will begin arriving in the area.\n\nReform your caravan and begin moving to avoid the {1}. A timer counting down to their arrival is now visible. -->
   <LetterTextSiteCountdownStarted>La tua carovana è stata rilevata. A {0}, i rinforzi {1} da {2} inizieranno ad arrivare nell'area.\n\nRiforma la tua carovana e inizia a muoverti per evitare i {1}. Ora è visibile un timer che esegue il conto alla rovescia fino al loro arrivo.</LetterTextSiteCountdownStarted>
+
+  <!-- EN: Unwavering prisoner -->
+  <LetterLabelUnrecruitablePawnCaptured>TODO</LetterLabelUnrecruitablePawnCaptured>
+  <!-- EN: {PAWN_nameDef} is unwaveringly loyal to their home and will refuse to be recruited entirely.\n\nYou can see whether someone is unwaveringly loyal by selecting them. -->
+  <LetterTextUnrecruitablePawnCaptured>TODO</LetterTextUnrecruitablePawnCaptured>
+  <!-- EN: enslave {PAWN_objective} -->
+  <OptionalEnslaveDesc>TODO</OptionalEnslaveDesc>
+
+  <!-- Lung rot -->
+  <!-- EN: {PAWN} has gotten sick from {1} due to long-term exposure to rot stink gas (which is given off by rotting corpses).\n\nEnsure you have a medical bed and a doctor. Make sure that {PAWN_definite} gets proper treatment. -->
+  <LetterTextLungRot>TODO</LetterTextLungRot>
+
+  <!-- Join Offer -->
+  <!-- EN: Join offer: {PAWN_nameDef} -->
+  <LetterJoinOfferLabel>Offerta di unione: {PAWN_nameDef}</LetterJoinOfferLabel>
+  <!-- EN: {PAWN_nameDef} wishes to join your faction. -->
+  <LetterJoinOfferTitle>{PAWN_nameDef} desidera entrare a far parte della tua fazione.</LetterJoinOfferTitle>
+  <!-- EN: {PAWN_nameDef} believes that {PAWN_pronoun} is happy at {MAP_definite}. {PAWN_pronoun} wishes to join you permanently. -->
+  <LetterJoinOfferText>{PAWN_nameDef} crede che {PAWN_pronoun} sia contento su {MAP_definite}. {PAWN_pronoun} desidera unirsi a te in modo permanente.</LetterJoinOfferText>
+  <!-- EN: Accept -->
+  <LetterJoinOfferAccept>Accetta</LetterJoinOfferAccept>
+
+  <!-- UNUSED -->
+  <LetterLabelSurgeryFailed>Intervento chirurgico fallito su {PATIENT_labelShort}</LetterLabelSurgeryFailed>
+  <MessageMedicalOperationFailureMinor>{SURGEON_labelShort} ha fallito in maniera marginale operando {PATIENT_labelShort}.</MessageMedicalOperationFailureMinor>
+  <MessageMedicalOperationFailureCatastrophic>{SURGEON_labelShort} ha fallito in maniera catastrofica operando {PATIENT_labelShort}.</MessageMedicalOperationFailureCatastrophic>
+  <MessageMedicalOperationFailureRidiculous>{SURGEON_labelShort} ha fallito in maniera ridicola operando {PATIENT_labelShort}.</MessageMedicalOperationFailureRidiculous>
+  <MessageMedicalOperationFailureFatal>{SURGEON_labelShort} ha commesso un errore fatale operando {PATIENT_labelShort} a causa della particolare difficoltà di: {2}</MessageMedicalOperationFailureFatal>
 
 </LanguageData>

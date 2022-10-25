@@ -1,52 +1,18 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN:
-    <li>questDescription->A nearby settlement, [settlement_label], has a special trade request. They would like to purchase:\n\n  [requestedThingCount]x [requestedThing_label] [qualityInfo](worth [requestedThingMarketValue_money])\n\nIf you want to make the trade, send a caravan with the requested items. The estimated travel time is [estimatedTravelTime_duration].</li>
-    <li>qualityInfo(requestedThingHasQuality==True,priority=1)->of normal+ quality </li>
-    <li>qualityInfo-></li>
-  -->
+  
   <TradeRequest.questDescriptionRules.rulesStrings>
-    <li>questDescription->Un vicino insediamento, [settlement_label], ti contatta per un affare speciale. Vorrebbero comprare:\n\n  [requestedThingCount]x [requestedThing_label] [qualityInfo](del valore di [requestedThingMarketValue_money])\n\nIn cambio, [allRewardsDescriptions]\n\nSe vuoi concludere l'affare, manda una carovana con gli oggetti richiesti. Il tempo di viaggio stimato è di [estimatedTravelTime_duration].</li>
-    <li>qualityInfo(requestedThingHasQuality==True,priority=1)->di qualità normale o superiore </li>
-    <li>qualityInfo-></li>
-  </TradeRequest.questDescriptionRules.rulesStrings>
-  <!-- EN:
-    <li>questName->Caravan to [settlement_label]</li>
-    <li>questName->Trade with [settlement_label]</li>
-    <li>questName->Selling to [settlement_label]</li>
-    <li>questName->Supplies for [settlement_label]</li>
-    <li>questName->A [special] [trade]</li>
-    <li>special->Special</li>
-    <li>special->Unique</li>
-    <li>special->Non-traditional</li>
-    <li>trade->Trade</li>
-    <li>trade->Exchange</li>
-    <li>trade->Deal</li>
-    <li>trade->Offer</li>
-  -->
+    </TradeRequest.questDescriptionRules.rulesStrings>
+  
   <TradeRequest.questNameRules.rulesStrings>
-    <li>questName->Carovana verso [settlement_label]</li>
-    <li>questName->Commercio con [settlement_label]</li>
-    <li>questName->Vendita per [settlement_label]</li>
-    <li>questName->Forniture per [settlement_label]</li>
-    <li>questName->[trade] [special]</li>
-    <li>questName->[trade] [special]</li>
-    <li>special->speciale</li>
-    <li>special->particolare</li>
-    <li>special->originale</li>
-    <li>trade->Un Commercio</li>
-    <li>trade->Uno Scambio</li>
-    <li>trade->Un Affare</li>
-    <li>trade->Una Trattativa</li>
-  </TradeRequest.questNameRules.rulesStrings>
-  <!-- EN: Quest failed: [resolvedQuestName] -->
+    </TradeRequest.questNameRules.rulesStrings>
+  
   <TradeRequest.LetterLabelQuestFailed.slateRef>Missione fallita: [resolvedQuestName]</TradeRequest.LetterLabelQuestFailed.slateRef>
-  <!-- EN: [faction_name] became hostile to you. -->
-  <TradeRequest.LetterTextQuestFailed.slateRef>[faction_name] ti è diventato ostile.</TradeRequest.LetterTextQuestFailed.slateRef>
-  <!-- EN: [asker_faction_royalFavorLabel] -->
+  
+  <TradeRequest.LetterTextQuestFailed.slateRef>[faction_name] ti &#232; diventato ostile.</TradeRequest.LetterTextQuestFailed.slateRef>
+  
   <TradeRequest.LetterLabelFavorReceiver.slateRef>[asker_faction_royalFavorLabel]</TradeRequest.LetterLabelFavorReceiver.slateRef>
-  <!-- EN: Who should be credited with [asker_faction_royalFavorLabel] for fulfilling the trade request? -->
+  
   <TradeRequest.LetterTextFavorReceiver.slateRef>Chi dovrebbe essere accreditato con [asker_faction_royalFavorLabel] per aver soddisfatto la richiesta di scambio?</TradeRequest.LetterTextFavorReceiver.slateRef>
   
 </LanguageData>

@@ -20,7 +20,7 @@
   <PsycastNeurotrainerLabel>psytrainer ({0})</PsycastNeurotrainerLabel>
   <!-- EN: Use psytrainer to learn {0} psycast -->
   <PsycastNeurotrainerUseLabel>Usa psytrainer per imparare {0} psycast</PsycastNeurotrainerUseLabel>
-  <!-- EN: A one-use super-dose of mechanites which trains a specific psychic power.\n\nThe dose is administered through the orbit of the eye. Once released into the brain, the mechanites form knowledge of a specific ability, transmuting themselves into neural tissue as needed. -->
+  <!-- EN: A one-use super-dose of mechanites which trains a specific psychic power.\n\nThe dose is administered through the orbit of the eye. Once released into the brain, the mechanites form knowledge of a specific ability, transmuting themselves into neural tissue as needed.\n\n{PSYCAST_label}\n\n{PSYCASTDESCRIPTION} -->
   <PsycastNeurotrainerDescription>Una superdose monouso di meccaniti che allena un potere psichico specifico.\n\nLa dose viene somministrata attraverso l'orbita dell'occhio. Una volta rilasciati nel cervello, i meccaniti formano la conoscenza di un'abilità specifica, trasmutandosi in tessuto neurale secondo necessità.</PsycastNeurotrainerDescription>
   <!-- EN: {USER_labelShort} used neurotrainer to learn the {1} power. -->
   <AbilityNeurotrainerUsed>{USER_labelShort} ha utilizzato il neurotrainer per apprendere l'abilità di {1}.</AbilityNeurotrainerUsed>
@@ -49,7 +49,7 @@
   <Psyfocus>Psyfocus</Psyfocus>
   <!-- EN: Psyfocus -->
   <PsyfocusLabelGizmo>Psyfocus</PsyfocusLabelGizmo>
-  <!-- EN: Psyfocus is a special type of mental structuring which is necessary to use psychic powers. Psyfocus dissipates over time, and must be built by regular meditation. Losing all psyfocus makes someone unable to use psychics, but has no other consequences.\n\nHigher levels of psyfocus permit higher-level powers, but also increase the rate of psyfocus dissipation -->
+  <!-- EN: Psyfocus is a special type of mental structuring which is necessary to use psychic powers. Psyfocus dissipates over time, and must be built by regular meditation. Losing all psyfocus makes someone unable to use psychic powers, but has no other consequences.\n\nHigher levels of psyfocus permit higher-level powers, but also increase the rate of psyfocus dissipation -->
   <PsyfocusDesc>Lo Psyfocus è un tipo speciale di strutturazione mentale necessaria per utilizzare i poteri psichici. Lo Psyfocus si dissolve nel tempo e deve essere costruito con una meditazione regolare. La perdita di tutto lo psyfocus rende qualcuno incapace di usare i psychics, ma non ha altre conseguenze.\n\nI livelli più alti di psyfocus consentono poteri di livello superiore, ma aumentano anche il tasso di dissipazione dello psyfocus</PsyfocusDesc>
   <!-- EN: {0}-{1}% -->
   <PsyfocusLevelInfoRange>{0}-{1}%</PsyfocusLevelInfoRange>
@@ -88,22 +88,6 @@
   <!-- EN: Click to set desired psyfocus. -->
   <DesiredPsyfocusDesc>Clicca per impostare lo psyfocus desiderato.</DesiredPsyfocusDesc>
 
-  <!-- Abilities -->
-  <!-- EN: must be drafted. -->
-  <AbilityDisabledUndrafted>deve essere redatto.</AbilityDisabledUndrafted>
-  <!-- EN: ability on cooldown. It will be available in {0}. -->
-  <AbilityOnCooldown>abilità in ricarica. Sarà disponibile tra {0}.</AbilityOnCooldown>
-  <!-- EN: ability already queued. -->
-  <AbilityAlreadyQueued>abilità già in coda.</AbilityAlreadyQueued>
-  <!-- EN: no heat to dump. -->
-  <AbilityNoEntropyToDump>nessun calore da scaricare.</AbilityNoEntropyToDump>
-  <!-- EN: Ability ready: {0} -->
-  <AbilityReadyLabel>Abilità pronta: {0}</AbilityReadyLabel>
-  <!-- EN: {0_nameDef} is ready to use {1}. -->
-  <AbilityReadyText>{0_nameDef} è pronto ad usare {1}.</AbilityReadyText>
-  
-  <!-- EN: Initiate a speech from the throne. {ORGANIZER_labelShort} will go to {ORGANIZER_possessive} throne and call all colonists to listen to a speech there. If all goes well, listeners will feel inspired, and gain respect for {ORGANIZER_labelShort}. If it goes poorly, the speech will do social damage. The outcome depends on {ORGANIZER_labelShort}'s social abilities. -->
-  <AbilitySpeechTooltip>Inizia un discorso dal trono. {ORGANIZER_labelShort} andrà sul suo trono e richiamerà tutti i coloni per ascoltare un discorso. Se tutto va bene, gli ascoltatori si sentiranno ispirati e guadagneranno rispetto per {ORGANIZER_labelShort}. Se va male, il discorso arrecherà danni sociali. Il risultato dipende dalle capacità sociali di {ORGANIZER_labelShort}.</AbilitySpeechTooltip>
   <!-- EN: no throne assigned. -->
   <AbilitySpeechDisabledNoThroneAssigned>nessun trono assegnato.</AbilitySpeechDisabledNoThroneAssigned>
   <!-- EN: throne is not accessible. -->
@@ -120,6 +104,15 @@
   <AbilitySpeechPossibleOutcomes>Possibilità di risultato</AbilitySpeechPossibleOutcomes>
   <!-- EN: {ORGANIZER_labelShort}'s {1} stat -->
   <AbilitySpeechStatInfo>Stat. di {1} di {ORGANIZER_labelShort}</AbilitySpeechStatInfo>
+  <!-- EN: Initiated at -->
+  <AbilitySpeechTargetsLabel>TODO</AbilitySpeechTargetsLabel>
+  <!-- EN: Dignified throne -->
+  <AbilitySpeechTargetDescThrone>TODO</AbilitySpeechTargetDescThrone>
+  
+  <!-- EN: no accessible altar. -->
+  <RitualDisabledNoAltar>TODO</RitualDisabledNoAltar>
+  <!-- EN: Bestowing Ceremony -->
+  <RitualBestowingCeremony>TODO</RitualBestowingCeremony>
 
   <!-- EN: Total meditation today: {0} (progress multiplier {1}) -->
   <TotalMeditationToday>Meditazione totale di oggi: {0} (moltiplicatore del progresso {1})</TotalMeditationToday>
@@ -131,23 +124,58 @@
   <BeginLinkingRitualNeedSubplants>Hai bisogno di {0} {1} (ne hai {2})</BeginLinkingRitualNeedSubplants>
   <!-- EN: Need {0} psylink focus type -->
   <BeginLinkingRitualNeedFocus>Hai bisogno {0} psylink focus</BeginLinkingRitualNeedFocus>
+  <!-- EN: Max psylink level -->
+  <BeginLinkingRitualMaxPsylinkLevel>TODO</BeginLinkingRitualMaxPsylinkLevel>
   <!-- EN: Need a free, reachable spot within 3 cells for linking -->
   <BeginLinkingRitualNeedLinkSpot>Hai bisogno di un punto libero e raggiungibile entro 3 celle per il collegamento</BeginLinkingRitualNeedLinkSpot>
   <!-- EN: Linking ritual completed -->
   <LetterLabelLinkingRitualCompleted>Rituale di collegamento completato</LetterLabelLinkingRitualCompleted>
   <!-- EN: {PAWN_labelShort} has completed the linking ritual with {LINKABLE_labelShort}.\n\n{PAWN_pronoun} now has an upgraded psylink, permitting the use of new psychic powers. -->
   <LetterTextLinkingRitualCompleted>{PAWN_labelShort} ha completato il rituale di collegamento con {LINKABLE_labelShort}.\n\n{PAWN_pronoun} ora ha uno psylink aggiornato, che consente l'uso di nuovi poteri psichici.</LetterTextLinkingRitualCompleted>
+  <!-- EN: Additionally, {0} anima grass has been restored. -->
+  <LetterTextLinkingRitualCompletedAnimaGrass>TODO</LetterTextLinkingRitualCompletedAnimaGrass>
 
   <!-- EN: Land shuttle here -->
   <LandHere>Atterra la navetta qui</LandHere>
   <!-- EN: Destination is out of range. -->
   <MessageShuttleDestinationIsTooFar>La destinazione è fuori portata.</MessageShuttleDestinationIsTooFar>
 
-  <!-- EN: Do bestowing ceremony -->
+  <!-- EN: Start bestowing ceremony for {0_labelShort} -->
   <BeginCeremony>Esegui cerimonia di conferimento</BeginCeremony>
+  <!-- EN: {PAWN_definite}'s throneroom does not satisfy the requirements of the title of {TITLE}. -->
+  <BestowingCeremonyThroneroomRequirementsNotSatisfiedShort>TODO</BestowingCeremonyThroneroomRequirementsNotSatisfiedShort>
   <!-- EN: The bestower is offended that {PAWN_definite}'s throneroom does not satisfy the requirements of the title of {TITLE}. The bestowing ceremony has been cancelled. -->
   <BestowingCeremonyThroneroomRequirementsNotSatisfied>Il cerimoniere reale è offeso dal fatto che la stanza del trono di {PAWN_definite} non soddisfa i requisiti del titolo di {TITLE}. La cerimonia di conferimento è stata annullata.</BestowingCeremonyThroneroomRequirementsNotSatisfied>
+  <!-- EN: bestowing ceremony -->
+  <BestowingCeremonyLabel>TODO</BestowingCeremonyLabel>
+  <!-- EN: Bestowing ceremony total quality was {0}, determined by these factors -->
+  <BestowingOutcomeQualitySpecific>TODO</BestowingOutcomeQualitySpecific>
+  
+  <!-- EN: No colonists that can link with anima tree right now. -->
+  <RitualTargetAnimaTreeNoPawnsToLink>TODO</RitualTargetAnimaTreeNoPawnsToLink>
+  <!-- EN: No colonists with the natural meditation focus type. -->
+  <RitualTargetAnimaTreeNoPawnsWithNatureFocus>TODO</RitualTargetAnimaTreeNoPawnsWithNatureFocus>
+  <!-- EN: Need at least {0} anima grass. -->
+  <RitualTargetAnimaTreeNotEnoughAnimaGrass>TODO</RitualTargetAnimaTreeNotEnoughAnimaGrass>
+  <!-- EN: an anima tree -->
+  <RitualTargetAnimaTreeInfo>TODO</RitualTargetAnimaTreeInfo>
+  <!-- EN: Must be a colonist with the natural meditation focus type who is below maximum psylink level. -->
+  <RitualTargetAnimaTreeMustBeCapableOfNature>TODO</RitualTargetAnimaTreeMustBeCapableOfNature>
+  <!-- EN: Must not be psychically deaf. -->
+  <RitualTargetAnimaTreeMustBePsychicallySensitive>TODO</RitualTargetAnimaTreeMustBePsychicallySensitive>
 
+  <!-- EN: The anima linking ceremony is more powerful with more participants. The more people participate, the less time the ceremony takes, and the more anima grass will grow.\n\nWith {0} additional participants, {1} anima grass will be restored at the end of the ceremony. -->
+  <AnimaLinkingExplanationBase>TODO</AnimaLinkingExplanationBase>
   <!-- EN: Not all required cargo is loaded yet! -->
   <ShuttleRequiredItemsNotSatisfied>Non tutto il carico richiesto è stato caricato!</ShuttleRequiredItemsNotSatisfied>
+
+  <!-- EN: no heat to dump. -->
+  <AbilityNoEntropyToDump>nessun calore da scaricare.</AbilityNoEntropyToDump>
+
+  <!-- EN: level {0} -->
+  <LevelNum>TODO</LevelNum> <!-- Psylink level as reported in health tab-->
+
+  <!-- UNUSED -->
+  <AbilitySpeechTooltip>Inizia un discorso dal trono. {ORGANIZER_labelShort} andrà sul suo trono e richiamerà tutti i coloni per ascoltare un discorso. Se tutto va bene, gli ascoltatori si sentiranno ispirati e guadagneranno rispetto per {ORGANIZER_labelShort}. Se va male, il discorso arrecherà danni sociali. Il risultato dipende dalle capacità sociali di {ORGANIZER_labelShort}.</AbilitySpeechTooltip>
+
 </LanguageData>

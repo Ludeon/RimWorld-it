@@ -8,7 +8,7 @@
   <HigherPriority>alta priorità</HigherPriority>
   <!-- EN: lower priority -->
   <LowerPriority>bassa priorità</LowerPriority>
-  <!-- EN: Relevant skills: {0}\nAverage of relevant skills: {1} / {2} -->
+  <!-- EN: Relevant skills: {0}\nAverage of relevant skills: {1} -->
   <RelevantSkills>Competenze pertinenti: {0}\nMedia delle competenze pertinenti: {1} / {2}</RelevantSkills>
   <!-- EN: Click to jump to: -->
   <ClickToJumpTo>Clicca per andare a:</ClickToJumpTo>
@@ -16,7 +16,7 @@
   <CannotDoThisWork>{1_labelShort} non può fare questo tipo di lavoro.</CannotDoThisWork>
   <!-- EN: (none) -->
   <NoneBrackets>(niente)</NoneBrackets>
-  <!-- EN: This colonist is not able to do any work of this type because of his health condition. -->
+  <!-- EN: This colonist is not able to do any work of this type because of their health condition. -->
   <IncapableOfWorkTypeBecauseOfCapacities>Questo colono non è capace di fare nessun lavoro di questo tipo a causa del suo stato di salute.</IncapableOfWorkTypeBecauseOfCapacities>
   <!-- EN: E -->
   <EmergencyWorkMarker>E</EmergencyWorkMarker>
@@ -36,6 +36,12 @@
   <Priority4>Priorità bassa</Priority4>
   <!-- EN: {0}\n\nThe faction {1_nameDef} currently belongs to.\n\nClick to view faction. -->
   <PawnFactionInfo>{0}\n\nLa fazione a cui appartiene {1_nameDef}.\n\nFai clic per visualizzare la fazione.</PawnFactionInfo>
+  <!-- EN: Disabled by {0} backstory -->
+  <WorkDisabledByBackstory>TODO</WorkDisabledByBackstory>
+  <!-- EN: Disabled by {0} trait -->
+  <WorkDisabledByTrait>TODO</WorkDisabledByTrait>
+  <!-- EN: Disabled by quest '{0}' -->
+  <WorkDisabledByQuest>TODO</WorkDisabledByQuest>
   
   <!-- Assign tab -->
   <!-- EN: Manage outfits -->
@@ -72,6 +78,10 @@
   <PregnantIconDesc>Incinta ({0} / {1})</PregnantIconDesc>
   <!-- EN: Bonded to -->
   <BondedTo>Legato a</BondedTo>
+  <!-- EN: Sterilize animal. -->
+  <SterilizeAnimal>TODO</SterilizeAnimal>
+  <!-- EN: Animal sterile. -->
+  <AnimalAlreadySterile>TODO</AnimalAlreadySterile>
   
   <!-- Wildlife tab -->
   <!-- EN: This creature is a predator. When hungry, it will hunt smaller creatures - possibly including people. -->
@@ -84,16 +94,20 @@
   <Hostile>Ostile</Hostile>
   <!-- EN: Ally -->
   <Ally>Alleato</Ally>
+  <!-- EN: hostile -->
+  <HostileLower>TODO</HostileLower>
+  <!-- EN: ally -->
+  <AllyLower>TODO</AllyLower>
   <!-- EN: defeated -->
   <DefeatedLower>sconfitto</DefeatedLower>
   <!-- EN: Enemy of {0} -->
   <HostileTo>Nemico di {0}</HostileTo>
   <!-- EN: Enemy of:  -->
   <EnemyOf>Nemico di: </EnemyOf>
-  <!-- EN: Current goodwill and relations status with this faction. -->
-  <CurrentGoodwillTip>Attuale opinione e stato relazione con questa fazione.</CurrentGoodwillTip>
-  <!-- EN: Current relations with this faction. -->
-  <CurrentRelationTip>Attuale relazione con questa fazione</CurrentRelationTip>
+  <!-- EN: Recent events -->
+  <RecentEvents>TODO</RecentEvents>
+  <!-- EN: Ongoing events -->
+  <OngoingEvents>TODO</OngoingEvents>
   <!-- EN: This faction is permanently hostile. They will raid your settlements and caravans. Relations with them will never improve for any reason. -->
   <CurrentGoodwillTip_PermanentEnemy>Questa fazione è permanentemente ostile. Assalteranno i tuoi insediamenti e le tue carovane. Le relazioni con loro non miglioreranno mai per nessuna ragione.</CurrentGoodwillTip_PermanentEnemy>
   <!-- EN: This faction is allied. They will send fighters to help you when they can. If relations fall below {0}, they will become neutral. -->
@@ -102,13 +116,7 @@
   <CurrentGoodwillTip_Neutral>Questa fazione è neutrale. Commerceranno e parleranno liberamente con te. Se le relazioni scendono sotto {0}, diventeranno ostili. Se le relazioni salgono oltre {1}, diventeranno alleati ed inizieranno a lavorare attivamente per aiutarti.</CurrentGoodwillTip_Neutral>
   <!-- EN: This faction is hostile. They will raid your settlements and caravans. If relations rise above {0}, they will become neutral. -->
   <CurrentGoodwillTip_Hostile>Questa fazione è ostile. Assalteranno i tuoi insediamenti e le tue carovane. Se le relazioni salgono oltre {0}, diventeranno neutrali.</CurrentGoodwillTip_Hostile>
-  <!-- EN: This faction has a natural goodwill range from {0} to {1}. -->
-  <CurrentGoodwillTip_NaturalGoodwill>Questa fazione ha un intervallo di opinione neutrale da {0} a {1}. Se l'opinione è oltre {1}, diminuirà di {3} al giorno. Se l'opinione è sotto {0}, salirà di {2} al giorno.</CurrentGoodwillTip_NaturalGoodwill>
-  <!-- EN: If goodwill is under {0}, it will rise by {1} per year. -->
-  <CurrentGoodwillTip_NaturalGoodwillRise>Se l'opinione è inferiore a {0}, aumenterà di {1} all'anno.</CurrentGoodwillTip_NaturalGoodwillRise>
-  <!-- EN: If goodwill is over {0}, it will fall by {1} per year. -->
-  <CurrentGoodwillTip_NaturalGoodwillFall>Se l'opinione è superiore a {0}, diminuirà di {1} all'anno.</CurrentGoodwillTip_NaturalGoodwillFall>
-  
+
   <!-- Social tab -->
   <!-- EN: Friend -->
   <Friend>Amico</Friend>
@@ -178,8 +186,10 @@
   <!-- Research tab -->
   <!-- EN: Research -->
   <Research>Ricerca</Research>
-  <!-- EN: Researched -->
-  <Researched>Ricercato</Researched>
+  <!-- EN: Study -->
+  <Study>TODO</Study>
+  <!-- EN: Study {0} -->
+  <StudyThing>TODO</StudyThing>
   <!-- EN: Unresearched -->
   <Unresearched>Non ricercato</Unresearched>
   <!-- EN: Finished -->
@@ -196,6 +206,8 @@
   <InsufficientTechprintsApplied>Schemi tecnici insufficienti ({0} / {1})</InsufficientTechprintsApplied>
   <!-- EN: Prerequisite(s) not completed -->
   <PrerequisitesNotCompleted>Prerequisiti non soddisfatti</PrerequisitesNotCompleted>
+  <!-- EN: Missing required research facilities -->
+  <MissingRequiredResearchFacilities>TODO</MissingRequiredResearchFacilities>
   <!-- EN: Required research bench -->
   <RequiredResearchBench>Banco da ricerca necessario</RequiredResearchBench>
   <!-- EN: Required research bench facilities -->
@@ -208,6 +220,12 @@
   <TechLevelTooLow>Il livello tecnologico della tua fazione è {0}, ma il livello di questo progetto è {1}. La velocità di ricerca verrà moltiplicata per {2}.</TechLevelTooLow>
   <!-- EN: Unlocked with -->
   <UnlockedWith>Sbloccato con</UnlockedWith>
+
+  <!-- Factions tab -->
+  <!-- EN: Factions -->
+  <FactionsTab>TODO</FactionsTab>
+  <!-- EN: No known factions -->
+  <NoFactions>TODO</NoFactions>
 
   <!-- Quests tab -->
   <!-- EN: Available -->
@@ -282,7 +300,7 @@
   <QuestBedroomRequirementsUnsatisfiedSingle>una camera da letto disponibile che soddisfi le esigenze di</QuestBedroomRequirementsUnsatisfiedSingle>
   <!-- EN: a throneroom that satisfies the requirements of {PAWN_definite}'s {TITLE} title -->
   <QuestThroneRoomRequirementsUnsatisfied>una sala del trono disponibile che soddisfi i requisiti del titolo di {TITLE} di {PAWN_definite}</QuestThroneRoomRequirementsUnsatisfied>
-  <!-- EN: a throneroom that satisfies the requirements of {PAWN_definite}'s {TITLE} title -->
+  <!-- EN: assign a throne for {PAWN_definite} -->
   <QuestNoThroneRoom>una sala del trono disponibile che soddisfi i requisiti del titolo di {TITLE} di {PAWN_definite}</QuestNoThroneRoom>
   <!-- EN: a colonist with the title of {0} -->
   <QuestNoColonistWithTitle>un colono con il titolo di {0}.</QuestNoColonistWithTitle>
@@ -290,6 +308,8 @@
   <QuestPawnNotOnColonyMap>{PAWN_definite} per essere nella tua colonia</QuestPawnNotOnColonyMap>
   <!-- EN: the map clear of enemies of the bestower's faction -->
   <QuestRequiresNoDangerOnMap>la mappa libera dai nemici della fazione del cerimoniere reale</QuestRequiresNoDangerOnMap>
+  <!-- EN: to finish the ongoing bestowing ceremony quest -->
+  <QuestCanNotStartUntilBestowingCeremonyFinished>TODO</QuestCanNotStartUntilBestowingCeremonyFinished>
   <!-- EN: Reward preferences -->
   <ChooseRewards>Preferenze per le ricompense</ChooseRewards>
   <!-- EN: Tell other factions what kinds of rewards you want in future quests. This doesn't affect quests that were already offered. -->
@@ -314,9 +334,31 @@
   <QuestBetrayalOffer>Offerta di tradimento: {0} obbiettivi rimanenti</QuestBetrayalOffer>
   <!-- EN: {0} will grant you a reward for killing all members of the {1}. -->
   <QuestBetrayalOfferTip>{0} ti garantirà una ricompensa per aver ucciso tutti i membri di {1}.</QuestBetrayalOfferTip>
-  
+  <!-- EN: a colony wealth of at least {0} -->
+  <QuestRequiredPlayerWealth>TODO</QuestRequiredPlayerWealth>
+  <!-- EN: alliance with {0} -->
+  <QuestAlliedTo>TODO</QuestAlliedTo>
+  <!-- EN: hostile to {0} -->
+  <QuestHostileTo>TODO</QuestHostileTo>
+  <!-- EN: neutral to {0} -->
+  <QuestNeutralTo>TODO</QuestNeutralTo>
+  <!-- EN: studied {0_labelShort} -->
+  <QuestRequiredThingStudied>TODO</QuestRequiredThingStudied>
+
   <!-- Health tab -->
   <!-- EN: Creates need -->
   <CreatesNeed>Crea bisogni</CreatesNeed>
+
+  <!-- Misc -->
+  <!-- EN: Click to edit -->
+  <ClickToEdit>TODO</ClickToEdit>
+
+  <!-- UNUSED -->
+  <CurrentGoodwillTip>Attuale opinione e stato relazione con questa fazione.</CurrentGoodwillTip>
+  <CurrentRelationTip>Attuale relazione con questa fazione</CurrentRelationTip>
+  <CurrentGoodwillTip_NaturalGoodwill>Questa fazione ha un intervallo di opinione neutrale da {0} a {1}. Se l'opinione è oltre {1}, diminuirà di {3} al giorno. Se l'opinione è sotto {0}, salirà di {2} al giorno.</CurrentGoodwillTip_NaturalGoodwill>
+  <CurrentGoodwillTip_NaturalGoodwillRise>Se l'opinione è inferiore a {0}, aumenterà di {1} all'anno.</CurrentGoodwillTip_NaturalGoodwillRise>
+  <CurrentGoodwillTip_NaturalGoodwillFall>Se l'opinione è superiore a {0}, diminuirà di {1} all'anno.</CurrentGoodwillTip_NaturalGoodwillFall>
+  <Researched>Ricercato</Researched>
 
 </LanguageData>

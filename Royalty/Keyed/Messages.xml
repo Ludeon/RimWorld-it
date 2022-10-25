@@ -4,8 +4,6 @@
   <!-- Shuttle landing zones -->
   <!-- EN: Shuttle could not land on pad: {0} -->
   <ShuttleBlocked>La navetta non è riuscita ad atterrare sulla piattaforma: {0}</ShuttleBlocked>
-  <!-- EN: blocked by {0_label}. -->
-  <BlockedBy>bloccato da {0_label}.</BlockedBy>
   <!-- EN: The shuttle has arrived. -->
   <MessageShuttleArrived>La navetta è arrivata.</MessageShuttleArrived>
   <!-- EN: The shuttle arrived, but since there were no colonists inside, the contents were lost. -->
@@ -18,15 +16,20 @@
   <!-- EN: Area must be walkable. -->
   <ShuttleCannotLand_Unwalkable>L'area deve essere pedonabile.</ShuttleCannotLand_Unwalkable>
 
-  <!-- EN: Warning: Anima tree has been marked for cutting. -->
-  <MessageWarningCutAnimaTree>Avvertenza: l'albero-anima è stato contrassegnato per venir tagliato.</MessageWarningCutAnimaTree>
-
-  <!-- EN: Select {TARGET_definite} and right-click the bestower to begin the bestowing ceremony. -->
+  <!-- EN: Select {BESTOWER_definite} and click 'Start bestowing ceremony' to commence the ceremony. -->
   <MessageBestowerWaiting>Seleziona {TARGET_definite} e fai clic con il pulsante destro sul cerimoniere reale per iniziare la cerimonia.</MessageBestowerWaiting>
   <!-- EN: Cannot reach bestower! -->
   <MessageBestowerUnreachable>Impossibile raggiungere il cerimoniere reale!</MessageBestowerUnreachable>
+  <!-- EN: {0} is busy. -->
+  <MessageBestowingTargetIsBusy>TODO</MessageBestowingTargetIsBusy>
   <!-- EN: The bestower is annoyed with the interference and has decided to leave. -->
   <MessageBestowingSpotUnreachable>Il cerimoniere reale è infastidito dall'interferenza e ha deciso di andarsene.</MessageBestowingSpotUnreachable>
+  <!-- EN: The bestower is leaving due to life-threatening danger. -->
+  <MessageBestowingDanger>TODO</MessageBestowingDanger>
+  <!-- EN: The bestower is leaving due to life-threatening temperature. -->
+  <MessageBestowingDangerTemperature>TODO</MessageBestowingDangerTemperature>
+  <!-- EN: The bestowing ceremony has been interrupted. -->
+  <MessageBestowingInterrupted>TODO</MessageBestowingInterrupted>
 
   <!-- EN: {PAWN_definite}'s bestowing ceremony has begun. -->
   <MessageBestowingCeremonyStarted>La cerimonia per conferimento del titolo reale a {PAWN_definite} è iniziata.</MessageBestowingCeremonyStarted>
@@ -37,5 +40,11 @@
   <MessagePermitTransportDrop>{FACTION_name} ha perso delle risorse nelle vicinanze.</MessagePermitTransportDrop>
   <!-- EN: {FACTION_name} has sent resources to {PAWN_nameDef}'s caravan. -->
   <MessagePermitTransportDropCaravan>{FACTION_name} ha inviato delle risorse alla carovana di {PAWN_nameDef}.</MessagePermitTransportDropCaravan>
+
+  <!-- EN: No orbiting mechanoids found. -->
+  <MessageNoFactionForVerbMechCluster>TODO</MessageNoFactionForVerbMechCluster>
+
+  <!-- UNUSED -->
+  <MessageWarningCutAnimaTree>Avvertenza: l'albero-anima è stato contrassegnato per venir tagliato.</MessageWarningCutAnimaTree>
 
 </LanguageData>

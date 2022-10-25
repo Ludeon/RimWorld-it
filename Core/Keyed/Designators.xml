@@ -21,6 +21,11 @@
   <!-- EN: Uninstall this so it can be moved, sold, or installed somewhere else. -->
   <DesignatorUninstallDesc>Smonta questo oggetto così da poterlo muovere, vendere o montare altrove.</DesignatorUninstallDesc>
 
+  <!-- EN: Extract tree -->
+  <DesignatorExtractTree>TODO</DesignatorExtractTree>
+  <!-- EN: Extract this tree while keeping it alive so it can be replanted somewhere else. -->
+  <DesignatorExtractTreeDesc>TODO</DesignatorExtractTreeDesc>
+
   <!-- EN: Harvest -->
   <DesignatorHarvest>Raccogli</DesignatorHarvest>
   <!-- EN: Marks plants to be harvested for their food or other products. -->
@@ -97,13 +102,13 @@
   <!-- EN: Colonists will ignore roofs in this area. -->
   <DesignatorAreaIgnoreRoofExpandDesc>I coloni ignoreranno i tetti in quest'area zona.</DesignatorAreaIgnoreRoofExpandDesc>
 
-  <!-- EN: Expand snow clear area -->
+  <!-- EN: Snow removal area -->
   <DesignatorAreaSnowClearExpand>Espandi zona senza neve</DesignatorAreaSnowClearExpand>
-  <!-- EN: Create a area which colonists will try to keep clear of snow. -->
+  <!-- EN: Create an area which colonists will try to keep clear of snow. -->
   <DesignatorAreaSnowClearExpandDesc>Crea un'area che i coloni cercheranno di tenere pulita dalla neve.</DesignatorAreaSnowClearExpandDesc>
-  <!-- EN: Clear snow clear Area -->
+  <!-- EN: Clear snow removal area -->
   <DesignatorAreaSnowClearClear>Rimuovi zona senza neve</DesignatorAreaSnowClearClear>
-  <!-- EN: Removes a snow clearing area. Colonists will no longer try to keep this area clear of snow. -->
+  <!-- EN: Removes a snow removal area. Colonists will no longer try to keep this area clear of snow. -->
   <DesignatorAreaSnowClearClearDesc>Rimuove una zona senza neve. I coloni non cercheranno più di tenere pulita dalla neve quest'area.</DesignatorAreaSnowClearClearDesc>
 
   <!-- EN: Expand allowed area -->
@@ -116,6 +121,8 @@
   <DesignatorClearAreaAllowedDesc>Rimuove porzioni di una zona autorizzata.\n\nLe zone autorizzate sono aree definite da assegnare a coloni o animali. I coloni non accetteranno di lavorare o soddisfare i loro bisogni al di fuori della loro area autorizzata.</DesignatorClearAreaAllowedDesc>
   <!-- EN: Manage areas... -->
   <ManageAreas>Gestisci zone...</ManageAreas>
+  <!-- EN: Manage auto-slaughter... -->
+  <ManageAutoSlaughter>TODO</ManageAutoSlaughter>
 
   <!-- EN: Create a zone where your colonists will try to grow a certain kind of plant. -->
   <DesignatorGrowingZoneDesc>Crea una zona dove i tuoi coloni proveranno a coltivare un certo tipo di pianta.</DesignatorGrowingZoneDesc>
@@ -171,6 +178,55 @@
   <!-- EN: Tame a wild animal. -->
   <DesignatorTameDesc>Addomestica un animale selvaggio.</DesignatorTameDesc>
 
+  <!-- EN: Release to wild -->
+  <DesignatorReleaseAnimalToWild>TODO</DesignatorReleaseAnimalToWild>
+  <!-- EN: Release an animal back into the wild. -->
+  <DesignatorReleaseAnimalToWildDesc>TODO</DesignatorReleaseAnimalToWildDesc>
+
+  <!-- EN: Study -->
+  <DesignatorStudy>TODO</DesignatorStudy>
+  <!-- EN: Study this object to learn more about it. -->
+  <DesignatorStudyDesc>TODO</DesignatorStudyDesc>
+
+  <!-- EN: Paint building... -->
+  <DesignatorPaintBuilding>TODO</DesignatorPaintBuilding>
+  <!-- EN: Designate walls and buildings to be painted using dye from tinctoria plants, which you can grow. Only certain buildings can be painted. -->
+  <DesignatorPaintBuildingDesc>TODO</DesignatorPaintBuildingDesc>
+  <!-- EN: Paint floor... -->
+  <DesignatorPaintFloor>TODO</DesignatorPaintFloor>
+  <!-- EN: Designate floors to be painted using dye from tinctoria plants, which you can grow. Only certain floors can be painted. -->
+  <DesignatorPaintFloorDesc>TODO</DesignatorPaintFloorDesc>
+
+  <!-- EN: Remove paint -->
+  <DesignatorRemovePaint>TODO</DesignatorRemovePaint>
+  <!-- EN: Remove paint from walls, buildings, and floors. -->
+  <DesignatorRemovePaintDesc>TODO</DesignatorRemovePaintDesc>
+  <!-- EN: Remove floor paint -->
+  <DesignatorRemoveFloorPaint>TODO</DesignatorRemoveFloorPaint> 
+  <!-- EN: Remove paint from floors. -->
+  <DesignatorRemoveFloorPaintDesc>TODO</DesignatorRemoveFloorPaintDesc> 
+  <!-- EN: Paint -->
+  <Paint>TODO</Paint>
+  <!-- EN: Color -->
+  <Color>TODO</Color>
+
+  <!-- EN: Color picker -->
+  <DesignatorEyedropper>TODO</DesignatorEyedropper>
+  <!-- EN: Grab existing color -->
+  <GrabExistingColor>TODO</GrabExistingColor>
+  <!-- EN: Grab a color from an existing building. -->
+  <DesignatorEyeDropperDesc_Paint>TODO</DesignatorEyeDropperDesc_Paint>
+  <!-- EN: Grab a color from an existing carpet. -->
+  <DesignatorEyeDropperDesc_Carpet>TODO</DesignatorEyeDropperDesc_Carpet>
+  <!-- EN: Select a painted building. -->
+  <SelectAPaintedBuilding>TODO</SelectAPaintedBuilding>
+  <!-- EN: Select colored carpet. -->
+  <SelectColoredFloor>TODO</SelectColoredFloor>
+  <!-- EN: Grab -->
+  <Grab>TODO</Grab>
+  <!-- EN: Grabbed color -->
+  <GrabbedColor>TODO</GrabbedColor>
+
   <!-- Failure messages -->
   <!-- EN: Unchosen material -->
   <UnchosenStuff>Materiale non scelto</UnchosenStuff>
@@ -222,6 +278,8 @@
   <MonumentOverlapsBuilding>Impossibile piazzare il monumento sopra: {0}.</MonumentOverlapsBuilding>
   <!-- EN: Monument cannot be placed adjacent to: {0}. -->
   <MonumentAdjacentToBuilding>Il monumento non può essere posizionato adiacente a: {0}.</MonumentAdjacentToBuilding>
+  <!-- EN: Cannot be planted here -->
+  <CannotBePlantedHere>TODO</CannotBePlantedHere>
   
   <!-- Mouse attachments -->
   <!-- EN: Expand {0} or\nCreate new {1} -->

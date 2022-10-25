@@ -1,25 +1,14 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN:
-    <li>questDescription(siteFaction==Pirate)->Pirates have set up an outpost near [map_definite] to harass you. [allSitePartsDescriptions]\n\nThe outpost will remain until you send a team there to attack and destroy it.</li>
-    <li>questDescription(siteFaction==Mechanoids)->A mechanoid cluster has landed not far from [map_definite]. [allSitePartsDescriptions]\n\nThe mech cluster will remain until you send a team there to attack and destroy it.</li>
-  -->
+  
   <ProblemCauser.questDescriptionRules.rulesStrings>
-    <li>questDescription(siteFaction==Pirate)->I pirati hanno creato un avamposto vicino a [map_definite] per infastidirti. [allSitePartsDescriptions]\n\nL'avamposto rimarrà sul posto finché non invierai una squadra ad attaccarlo e distruggerlo.</li>
-    <li>questDescription(siteFaction==Mechanoids)->Un mech cluster è atterrato non lontano da [map_definite]. [allSitePartsDescriptions]\n\nIl mech cluster rimarrà sul posto finché non invierai una squadra ad attaccarlo e distruggerlo.</li>
-  </ProblemCauser.questDescriptionRules.rulesStrings>
-  <!-- EN:
-    <li>questName(siteFaction==Pirate)->Pirates with a [problemCauserLabel]</li>
-    <li>questName(siteFaction==Mechanoids)->Mech cluster with a [problemCauserLabel]</li>
-  -->
+    </ProblemCauser.questDescriptionRules.rulesStrings>
+  
   <ProblemCauser.questNameRules.rulesStrings>
-    <li>questName(siteFaction==Pirate)->Pirati con un [problemCauserLabel]</li>
-    <li>questName(siteFaction==Mechanoids)->Mech cluster con un [problemCauserLabel]</li>
-  </ProblemCauser.questNameRules.rulesStrings>
-  <!-- EN: [problemCauserLabel] destroyed -->
+    </ProblemCauser.questNameRules.rulesStrings>
+  
   <ProblemCauser.LetterLabelSuccess.slateRef>[problemCauserLabel] distrutto</ProblemCauser.LetterLabelSuccess.slateRef>
-  <!-- EN: You have destroyed the [problemCauserLabel] that was affecting [map_definite]! -->
+  
   <ProblemCauser.LetterTextSuccess.slateRef>Hai distrutto {SUBJECT_gender ? il : la : lo} [problemCauserLabel] che stava agendo su [map_definite]!</ProblemCauser.LetterTextSuccess.slateRef>
   
 </LanguageData>

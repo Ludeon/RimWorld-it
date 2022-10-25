@@ -1,101 +1,30 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN:
-    <li>questDescription(asker_factionLeader==True)->[asker_faction_leaderTitle] [asker_nameFull] of [asker_faction_name] needs extra hands to help [dutyDescription].\n\n[asker_pronoun] is asking you to lend [asker_objective] [colonistCountToLend] for [lendForDays] days.\n\n[willSendShuttle]</li>
-    <li>disease->flu</li>
-    <li>disease->plague</li>
-    <li>disease->malaria</li>
-    <li>disease->infection</li>
-    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_royalTitleInCurrentFaction] [asker_nameFull] of [asker_faction_name] needs people to help [dutyRoyalDescription].\n\n[asker_pronoun] is asking you to lend [colonistCountToLend] to serve [asker_objective] for [lendForDays] days.\n\n[willSendShuttle]</li>
-    <li>colonistCountToLend(colonistsToLendCount==1)->1 colonist</li>
-    <li>colonistCountToLend(colonistsToLendCount>1)->[colonistsToLendCount] colonists</li>
-    <li>willSendShuttle->[asker_pronoun] will send a shuttle to pick up the [colonists].</li>
-    <li>colonists(colonistsToLendCount==1)->colonist</li>
-    <li>colonists(colonistsToLendCount>1)->colonists</li>
-    <li>pawnListHaveConjugation(colonistsToLendCount==1)->has</li>
-    <li>pawnListHaveConjugation(colonistsToLendCount>1)->have</li>
-  -->
+  
   <PawnLend.questDescriptionRules.rulesStrings>
-    <li>asker_gender_Pron(asker_gender!=Female)->gli</li>
-    <li>asker_gender_Pron(asker_gender==Female)->le</li>
-    <li>questDescription(asker_factionLeader==True)->[asker_nameFull], [asker_faction_leaderTitle] di [asker_faction_name] ha bisogno di mani in più per [dutyDescription], perciò ti chiede di prestar[asker_gender_Pron] [colonistCountToLend] per [lendForDays] giorni.\n\n[willSendShuttle]</li>
-    <li>disease->influenza</li>
-    <li>disease->peste</li>
-    <li>disease->malaria</li>
-    <li>disease->una malattia infettiva</li>
-    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_nameFull], [asker_royalTitleInCurrentFaction] di [asker_faction_name] ha bisogno di mani in più per [dutyRoyalDescription], pertanto ti chiede di prestar[asker_gender_Pron] [colonistCountToLend] per servir[asker_objective] per [lendForDays] giorni.\n\n[willSendShuttle]</li>
-    <li>colonistCountToLend(colonistsToLendCount==1)->1 colono</li>
-    <li>colonistCountToLend(colonistsToLendCount>1)->[colonistsToLendCount] coloni</li>
-    <li>willSendShuttle->[asker_pronoun] invierà una navetta a prendere [colonists].</li>
-    <li>colonists(colonistsToLendCount==1)->il colono</li>
-    <li>colonists(colonistsToLendCount>1)->i coloni</li>
-    <li>pawnHaveReturned(colonistsToLendCount==1)->è tornato</li>
-    <li>pawnHaveReturned(colonistsToLendCount>=2)->sono tornati</li>
-  </PawnLend.questDescriptionRules.rulesStrings>
-  <!-- EN:
-    <li>questName->[worker] Outsourcing</li>
-    <li>questName->Contract [worker]s</li>
-    <li>questName->Temporary Workers</li>
-    <li>questName->[worker] Lending</li>
-    <li>questName->[worker]s for [asker_faction_name]</li>
-    <li>questName->Provisional [worker]s</li>
-    <li>questName->Requesting [worker]s</li>
-    <li>worker->Colonist</li>
-    <li>worker->Worker</li>
-    <li>worker->Laborer</li>
-    <li>worker->Helper</li>
-  -->
+    </PawnLend.questDescriptionRules.rulesStrings>
+  
   <PawnLend.questNameRules.rulesStrings>
-    <li>questName->Esternalizzazione di [workers]</li>
-    <li>questName->Contratto di [workers]</li>
-    <li>questName->Lavoratori temporanei</li>
-    <li>questName->Prestito di [workers]</li>
-    <li>questName->[workers] per [asker_faction_name]</li>
-    <li>questName->[workers] provvisori</li>
-    <li>questName->Richiesta di [workers]</li>
-    <li>workers->Coloni</li>
-    <li>workers->Lavoratori</li>
-    <li>workers->Operai</li>
-    <li>workers->Aiutanti</li>
-  </PawnLend.questNameRules.rulesStrings>
-  <!-- EN: <rulesStrings><li>dutyDescription->gather the harvest</li><li>dutyDescription->fortify a settlement</li><li>dutyDescription->set up a settlement</li><li>dutyDescription->watch for raiders</li><li>dutyDescription->set up a hospital</li><li>dutyDescription->contain an outbreak of [disease]</li></rulesStrings> -->
+    </PawnLend.questNameRules.rulesStrings>
+  
   <PawnLend.DutyRulesAny.slateRef>
-    <rulesStrings>
-      <li>dutyDescription->raccogliere la piantagione</li>
-      <li>dutyDescription->fortificare un insediamento</li>
-      <li>dutyDescription->costruire un insediamento</li>
-      <li>dutyDescription->difendersi dai predoni</li>
-      <li>dutyDescription->costruire un ospedale</li>
-      <li>dutyDescription->contenere un focolaio di [malattia]</li>
-    </rulesStrings>
-  </PawnLend.DutyRulesAny.slateRef>
-  <!-- EN: {PAWNS} [pawnListHaveConjugation] returned after helping [asker_nameFull] of [asker_faction_name] to [dutyDescription]. -->
+    </PawnLend.DutyRulesAny.slateRef>
+  
   <PawnLend.LetterTextReturnAfterHelping.slateRef>{PAWNS} [pawnHaveReturned] dopo aver aiutato [asker_nameFull] di [asker_faction_name] a [dutyDescription].</PawnLend.LetterTextReturnAfterHelping.slateRef>
-  <!-- EN: <rulesStrings><li>dutyRoyalDescription->prepare a ceremony</li><li>dutyRoyalDescription->negotiate with a tribe</li><li>dutyRoyalDescription->explore a swamp</li><li>dutyRoyalDescription->translate a book</li><li>dutyRoyalDescription->set up a training ground</li><li>dutyRoyalDescription->harvest crops</li></rulesStrings> -->
+  
   <PawnLend.DutyRulesRoyal.slateRef>
-    <rulesStrings>
-      <li>dutyRoyalDescription->preparare una cerimonia</li>
-      <li>dutyRoyalDescription->negoziare con una tribù</li>
-      <li>dutyRoyalDescription->esplorare una palude</li>
-      <li>dutyRoyalDescription->tradurre un libro</li>
-      <li>dutyRoyalDescription->allestire un campo di allenamento</li>
-      <li>dutyRoyalDescription->raccogliere la piantagione</li>
-    </rulesStrings>
-  </PawnLend.DutyRulesRoyal.slateRef>
-  <!-- EN: {PAWNS} [pawnListHaveConjugation] returned after helping [asker_royalTitleInCurrentFaction] [asker_nameFull] of [asker_faction_name] to [dutyRoyalDescription]. -->
+    </PawnLend.DutyRulesRoyal.slateRef>
+  
   <PawnLend.LetterTextReturnAfterRoyalCourt.slateRef>{PAWNS} [pawnHaveReturned] dopo aver aiutato [asker_royalTitleInCurrentFaction], [asker_nameFull] di [asker_faction_name], a [dutyRoyalDescription].</PawnLend.LetterTextReturnAfterRoyalCourt.slateRef>
-  <!-- EN: Shuttle arrived -->
+  
   <PawnLend.LetterLabelShuttleArrived.slateRef>Navetta arrivata</PawnLend.LetterLabelShuttleArrived.slateRef>
-  <!-- EN: The shuttle has arrived to collect [colonistsToLendCount] of your colonists. -->
-  <PawnLend.LetterTextShuttleArrived.slateRef>La navetta è arrivata per prendere [colonistsToLendCount] dei tuoi coloni.</PawnLend.LetterTextShuttleArrived.slateRef>
-  <!-- EN: Shuttle destroyed -->
+  
+  <PawnLend.LetterTextShuttleArrived.slateRef>La navetta &#232; arrivata per prendere [colonistsToLendCount] dei tuoi coloni.</PawnLend.LetterTextShuttleArrived.slateRef>
+  
   <PawnLend.LetterLabelShuttleDestroyed.slateRef>Navetta distrutta</PawnLend.LetterLabelShuttleDestroyed.slateRef>
-  <!-- EN: The shuttle sent to collect colonists has been destroyed. -->
-  <PawnLend.LetterTextShuttleDestroyed.slateRef>La navetta inviata per raccogliere i coloni è stata distrutta.</PawnLend.LetterTextShuttleDestroyed.slateRef>
-  <!-- EN: Colonists returned -->
+  
+  <PawnLend.LetterTextShuttleDestroyed.slateRef>La navetta inviata per raccogliere i coloni &#232; stata distrutta.</PawnLend.LetterTextShuttleDestroyed.slateRef>
+  
   <PawnLend.LetterLabelColonistsReturned.slateRef>Coloni ritornati</PawnLend.LetterLabelColonistsReturned.slateRef>
-  <!-- EN: $returnLetterText -->
-  <PawnLend.root.nodes.ColonistsReturned.node.nodes.Letter.text.slateRef>$returnLetterText</PawnLend.root.nodes.ColonistsReturned.node.nodes.Letter.text.slateRef>
   
 </LanguageData>
