@@ -7,27 +7,27 @@
   <Intro_Wimp.questNameRules.rulesStrings>
     </Intro_Wimp.questNameRules.rulesStrings>
   
-  <Intro_Wimp.LetterLabelAnimalArrived.slateRef>[animalKindDef_label] &#232; arrivat{animalKindDef_gender ? o : a}</Intro_Wimp.LetterLabelAnimalArrived.slateRef>
+  <Intro_Wimp.LetterLabelAnimalArrived.slateRef>[animalKindDef_label] è arrivat{animalKindDef_gender ? o : a}</Intro_Wimp.LetterLabelAnimalArrived.slateRef>
   
-  <Intro_Wimp.LetterTextAnimalArrived.slateRef>{animalKindDef_gender ? Il : La : Lo} [animalKindDef_label] da cui [asker_nameDef] stava fuggendo &#232; arrivato.\n\nSi &#232; rivelato essere piuttosto gentile e per niente aggressivo.</Intro_Wimp.LetterTextAnimalArrived.slateRef>
+  <Intro_Wimp.LetterTextAnimalArrived.slateRef>{animalKindDef_gender ? Il : La : Lo} [animalKindDef_label] da cui [asker_nameDef] stava fuggendo è arrivato.\n\nSi è rivelato essere piuttosto gentile e per niente aggressivo.</Intro_Wimp.LetterTextAnimalArrived.slateRef>
   
   <Intro_Wimp.LetterLabelAngryAnimal.slateRef>[animalKindDef_label] caccia-uomini</Intro_Wimp.LetterLabelAngryAnimal.slateRef>
   
-  <Intro_Wimp.LetterTextAngryAnimal.slateRef>{animalKindDef_gender ? Il : La : Lo} [animalKindDef_label] che stava seguendo [asker_nameFull] &#232; arrivato nell'area.</Intro_Wimp.LetterTextAngryAnimal.slateRef>
+  <Intro_Wimp.LetterTextAngryAnimal.slateRef>{animalKindDef_gender ? Il : La : Lo} [animalKindDef_label] che stava seguendo [asker_nameFull] è arrivato nell'area.</Intro_Wimp.LetterTextAngryAnimal.slateRef>
   
   <Intro_Wimp.InspectStringDepartShuttle.slateRef>Deve partire con la navetta</Intro_Wimp.InspectStringDepartShuttle.slateRef>
   
   <Intro_Wimp.LetterLabelShuttleArrived.slateRef>Navetta arrivata</Intro_Wimp.LetterLabelShuttleArrived.slateRef>
   
-  <Intro_Wimp.LetterTextShuttleArrived.slateRef>La navetta &#232; arrivata per ritirare [asker_nameDef]</Intro_Wimp.LetterTextShuttleArrived.slateRef>
+  <Intro_Wimp.LetterTextShuttleArrived.slateRef>La navetta è arrivata per ritirare [asker_nameDef]</Intro_Wimp.LetterTextShuttleArrived.slateRef>
   
   <Intro_Wimp.LetterLabelGuestDied.slateRef>Ospite morto: {SUBJECT_definite}</Intro_Wimp.LetterLabelGuestDied.slateRef>
   
-  <Intro_Wimp.LetterTextGuestDied.slateRef>{SUBJECT_definite}, che eri stato incaricato di proteggere, &#232; mort[asker_gender_o_a]. [failLetterEndingCommon]</Intro_Wimp.LetterTextGuestDied.slateRef>
+  <Intro_Wimp.LetterTextGuestDied.slateRef>{SUBJECT_definite}, che eri stato incaricato di proteggere, è mort[asker_gender_o_a]. [failLetterEndingCommon]</Intro_Wimp.LetterTextGuestDied.slateRef>
   
   <Intro_Wimp.LetterLabelUnauthorizedSurgery.slateRef>Chirurgia non autorizzata: {SUBJECT_definite}</Intro_Wimp.LetterLabelUnauthorizedSurgery.slateRef>
   
-  <Intro_Wimp.LetterTextUnauthorizedSurgery.slateRef>Un intervento chirurgico non autorizzato &#232; stato eseguito su {SUBJECT_definite}, che eri stato incaricato di proteggere. A causa di questa violazione, [asker_pronoun] ora tenter&#224; di andarsene. [failLetterEndingCommon]</Intro_Wimp.LetterTextUnauthorizedSurgery.slateRef>
+  <Intro_Wimp.LetterTextUnauthorizedSurgery.slateRef>Un intervento chirurgico non autorizzato è stato eseguito su {SUBJECT_definite}, che eri stato incaricato di proteggere. A causa di questa violazione, [asker_pronoun] ora tenterà di andarsene. [failLetterEndingCommon]</Intro_Wimp.LetterTextUnauthorizedSurgery.slateRef>
   
   <Intro_Wimp.root.nodes.askerXenogermAbsorbed.node.nodes.Letter.label.slateRef>TODO</Intro_Wimp.root.nodes.askerXenogermAbsorbed.node.nodes.Letter.label.slateRef>
   
@@ -35,7 +35,7 @@
   
   <Intro_Wimp.LetterLabelCaptured.slateRef>Catturato: {SUBJECT_definite}</Intro_Wimp.LetterLabelCaptured.slateRef>
   
-  <Intro_Wimp.LetterTextCaptured.slateRef>{SUBJECT_definite}, che eri stato incaricato di proteggere, &#232; stat[asker_gender_o_a] arrestat[asker_gender_o_a]. [failLetterEndingCommon]</Intro_Wimp.LetterTextCaptured.slateRef>
+  <Intro_Wimp.LetterTextCaptured.slateRef>{SUBJECT_definite}, che eri stato incaricato di proteggere, è stat[asker_gender_o_a] arrestat[asker_gender_o_a]. [failLetterEndingCommon]</Intro_Wimp.LetterTextCaptured.slateRef>
   
   <Intro_Wimp.LetterLabelGuestLost.slateRef>Ospite perso: {SUBJECT_definite}</Intro_Wimp.LetterLabelGuestLost.slateRef>
   
@@ -43,14 +43,14 @@
   
   <Intro_Wimp.LetterLabelLodgerRanWild.slateRef>Ospite perso: {SUBJECT_definite}</Intro_Wimp.LetterLabelLodgerRanWild.slateRef>
   
-  <Intro_Wimp.LetterTextLodgerRanWild.slateRef>{SUBJECT_definite}, che eri stato incaricato di proteggere, &#232; impazzit[asker_gender_o_a] ed &#232; scappat[asker_gender_o_a]. [failLetterEndingCommon]</Intro_Wimp.LetterTextLodgerRanWild.slateRef>
+  <Intro_Wimp.LetterTextLodgerRanWild.slateRef>{SUBJECT_definite}, che eri stato incaricato di proteggere, è impazzit[asker_gender_o_a] ed è scappat[asker_gender_o_a]. [failLetterEndingCommon]</Intro_Wimp.LetterTextLodgerRanWild.slateRef>
   
   <Intro_Wimp.LetterLabelShuttleDestroyed.slateRef>Navetta distrutta</Intro_Wimp.LetterLabelShuttleDestroyed.slateRef>
   
-  <Intro_Wimp.LetterTextShuttleDestroyed.slateRef>[asker_nameDef] dovr&#224; partire a piedi, perch&#232; la navetta inviata per recuperar[asker_objective] &#232; stato distrutta.[failLetterEndingCommon]</Intro_Wimp.LetterTextShuttleDestroyed.slateRef>
+  <Intro_Wimp.LetterTextShuttleDestroyed.slateRef>[asker_nameDef] dovrà partire a piedi, perchè la navetta inviata per recuperar[asker_objective] è stato distrutta.[failLetterEndingCommon]</Intro_Wimp.LetterTextShuttleDestroyed.slateRef>
   
   <Intro_Wimp.LetterLabelQuestFailed.slateRef>Missione fallita: [resolvedQuestName]</Intro_Wimp.LetterLabelQuestFailed.slateRef>
   
-  <Intro_Wimp.LetterTextQuestFailed.slateRef>[asker_nameDef] dovr&#224; partire a piedi, perch&#232; la navetta inviata per recuperar[asker_objective] &#232; partita senza di [asker_pronoun].[failLetterEndingCommon]</Intro_Wimp.LetterTextQuestFailed.slateRef>
+  <Intro_Wimp.LetterTextQuestFailed.slateRef>[asker_nameDef] dovrà partire a piedi, perchè la navetta inviata per recuperar[asker_objective] è partita senza di [asker_pronoun].[failLetterEndingCommon]</Intro_Wimp.LetterTextQuestFailed.slateRef>
   
 </LanguageData>
