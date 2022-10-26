@@ -22,7 +22,7 @@ TRADUTTORI:
 
 INSTALLAZIONE:
 ------------------
-1) Scaricare la cartella zip dei files di traduzione (premendo il tasto verde *Code*)
+1) Scaricare la cartella zip dei files di traduzione (https://github.com/Ludeon/RimWorld-it/archive/refs/heads/master.zip)
 2) Estrarre il contenuto dello zip in una cartella.
 3) Copiare l'intera cartella *.\Core* nella directory di installazione di Rimworld in *...\Data\Core\Languages\\* e rinominarla come *Italiano*
 4) (Solo per DLC Royalty) Copiare l'intera cartella di *.\Royalty* nella directory di installazione di Rimworld in *...\Data\Royalty\Languages\\* e rinominarla come *Italiano*
