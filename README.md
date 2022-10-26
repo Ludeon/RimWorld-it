@@ -11,6 +11,7 @@ TRADUTTORI:
 - StoneNimRod
 - Kaiser85
 - Kenciccio
+- spappo94
 
 ### Vecchie Versioni:
 - Nephiro
