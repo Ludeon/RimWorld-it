@@ -14,21 +14,21 @@
   <!-- EN: Accept -->
   <Accept>Accetta</Accept>
   <!-- EN: Cancel -->
-  <Cancel>TODO</Cancel>
+  <Cancel>Cancella</Cancel>
   <!-- EN: Reset -->
   <Reset>Azzera</Reset>
   <!-- EN: Reset all -->
-  <ResetAll>TODO</ResetAll>
+  <ResetAll>Azzera tutto</ResetAll>
   <!-- EN: Disable -->
-  <Disable>TODO</Disable>
+  <Disable>Disabilita</Disable>
   <!-- EN: Modify -->
-  <Modify>TODO</Modify>
+  <Modify>Modifica</Modify>
   <!-- EN: Settle here anyways? -->
-  <ConfirmSettle>TODO</ConfirmSettle>
+  <ConfirmSettle>Stabilirsi qui, in ogni caso?</ConfirmSettle>
   <!-- EN: add -->
-  <Add>TODO</Add>
+  <Add>aggiungi</Add>
   <!-- EN: Cannot shoot -->
-  <CannotShoot>TODO</CannotShoot>
+  <CannotShoot>Non può sparare</CannotShoot>
   
   <!-- Game updated to new version -->
   <!-- EN: RimWorld has been updated from version {0} to version {1}. -->
@@ -42,7 +42,7 @@
   <!-- EN: If you wish to continue with the old version, you can opt in using Steam's "Betas" feature.\n\n  1. In the Steam library, right-click RimWorld.\n  2. Click Properties.\n  3. Click the Betas tab.\n  4. Select the version you want from the drop-down menu. -->
   <GameUpdatedToNewVersionSteam>Se desideri continuare con la vecchia versione puoi optare per usare la funzionalità "Beta" di Steam.\n\n  1. Nella libreria di Steam, clicca destro su RimWorld.\n  2. Clicca su Proprietà.\n  3. Clicca sulla scheda "Beta".\n  4. Seleziona la versione che desideri dal menù a discesa.\n\nLe vecchie versioni saranno probabilmente rimosse dalla lista: vogliamo solo evitare di interrompere partite in corso.\n\nConsidera che se i modders aggiornano le loro mod alla nuova versione del gioco, queste probabilmente smetteranno di funzionare sulla vecchia. Per evitare questo puoi disattivare gli aggiornamenti automatici.</GameUpdatedToNewVersionSteam>
   <!-- EN: If you wish to continue with the old version, you can opt in using Steam's "Betas" feature. -->
-  <GameUpdatedToNewVersionSteamController>TODO</GameUpdatedToNewVersionSteamController>
+  <GameUpdatedToNewVersionSteamController>Se si desidera continuare con la vecchia versione, è possibile accedere alla funzione "Beta" di Steam.</GameUpdatedToNewVersionSteamController>
   
   <!-- Recovered from errors caused by mods -->
   <!-- EN: Recovered from incompatible or corrupted mods errors -->
@@ -180,27 +180,27 @@
   
   <!-- Pawn naming -->
   <!-- EN: Chosen name is invalid. -->
-  <NameInvalid>TODO</NameInvalid>
+  <NameInvalid>Il nome scelto non è valido.</NameInvalid>
   <!-- EN: This person's nickname is now {0}. {PAWN_possessive} title is {PAWN_title}. -->
   <PawnGainsName>Il soprannome di questa persona è ora {0}. Il suo titolo è {PAWN_title}.</PawnGainsName>
   <!-- EN: The animal's name is now {0}. -->
   <AnimalGainsName>Il nome dell'animale è ora {0}.</AnimalGainsName>
   <!-- EN: rename person -->
-  <RenamePerson>TODO</RenamePerson>
+  <RenamePerson>rinomina persona</RenamePerson>
   <!-- EN: mother -->
-  <Mother>TODO</Mother>
+  <Mother>madre</Mother>
   <!-- EN: father -->
-  <Father>TODO</Father>
+  <Father>fratello</Father>
   <!-- EN: unknown -->
-  <Unknown>TODO</Unknown>
+  <Unknown>sconosciuto</Unknown>
   <!-- EN: first name -->
-  <FirstName>TODO</FirstName>
+  <FirstName>nome</FirstName>
   <!-- EN: nickname -->
-  <NickName>TODO</NickName>
+  <NickName>soprannome</NickName>
   <!-- EN: last name -->
-  <LastName>TODO</LastName>
+  <LastName>cognome</LastName>
   <!-- EN: suggested -->
-  <Suggested>TODO</Suggested>
+  <Suggested>suggerito</Suggested>
 
   <!-- Save game incompatible warning -->
   <!-- EN: Version mismatch -->
@@ -216,9 +216,9 @@
   <!-- EN: This file was saved with a different set of mods active than those we are currently running. This may or may not cause problems, depending on exactly what these mods do. -->
   <ModsMismatchWarningText>Questo file è stato salvato con un gruppo di mod diverso da quello attualmente in uso. Questo potrebbe causare problemi oppure no, a seconda di cosa facciano esattamente queste mod.\n\nIl file è stato salvato con (in questo ordine):\n\n{0}\n\nSono in uso (in questo ordine):\n\n{1}</ModsMismatchWarningText>
   <!-- EN: No mods have been added or removed, but the order of your mod list has changed. -->
-  <ModsMismatchOrderChanged>TODO</ModsMismatchOrderChanged>
+  <ModsMismatchOrderChanged>Non sono state aggiunte o rimosse mod, ma l'ordine dell'elenco delle mod è cambiato.</ModsMismatchOrderChanged>
   <!-- EN: Are you sure you want to load the mod list from this save file? -->
-  <ConfirmLoadSaveList>TODO</ConfirmLoadSaveList>
+  <ConfirmLoadSaveList>Sei sicuro di voler caricare la lista delle mod da questo file di salvataggio?</ConfirmLoadSaveList>
 
   <!-- Resolution change dialog -->
   <!-- EN: You've changed your screen settings. Do the new ones work okay?\n\nAuto-reverting in {0}... -->
@@ -234,15 +234,15 @@
 
   <!-- Confirm reset learning helper -->
   <!-- EN: Are you sure you want to reset the learning helper?\n\nAll records of which concepts have been learned will be erased and the system will teach everything from scratch. -->
-  <ConfirmResetLearningHelper>TODO</ConfirmResetLearningHelper>
+  <ConfirmResetLearningHelper>Siete sicuri di voler resettare l'aiuto all'apprendimento?\n\nTutte le registrazioni dei concetti appresi saranno cancellate e il sistema insegnerà tutto da capo.</ConfirmResetLearningHelper>
 
   <!-- Backstory translation restart dialog -->
   <!-- EN: Backstories are now implemented as a def and all legacy backstory translations have been imported into def translations. The file {0} has been imported and moved to {1}. It can now be deleted.\n\nRestart the game for changes to take effect. -->
-  <RestartAfterImportingLegacyBackstoryTanslations>TODO</RestartAfterImportingLegacyBackstoryTanslations>
+  <RestartAfterImportingLegacyBackstoryTanslations>Le storie secondarie sono ora implementate come defenitiva e tutte le traduzioni delle storie secondarie sono state importate nelle traduzioni definitiva. Il file {0} è stato importato e spostato in {1}. Ora può essere eliminato.\n\nRiavviare il gioco per rendere effettive le modifiche.</RestartAfterImportingLegacyBackstoryTanslations>
 
   <!-- Game start -->
   <!-- EN: Must include exactly {SUMMARY} -->
-  <SelectedCharactersMustInclude>TODO</SelectedCharactersMustInclude>
+  <SelectedCharactersMustInclude>Deve includere esattamente {SUMMARY}</SelectedCharactersMustInclude>
 
   <!-- Advanced game start options -->
   <!-- EN: Warning: You will be landing in a frozen environment. It may be hard or nearly impossible to survive. If you are not intending to face an extreme challenge, choose a different site or season. -->
@@ -307,7 +307,7 @@
   <!-- EN: Requires -->
   <BillRequires>Richiede {0} {1}</BillRequires>
   <!-- EN: nutrition -->
-  <BillNutrition>TODO</BillNutrition>
+  <BillNutrition>alimentazione</BillNutrition>
   <!-- EN: Note: Small-volume ingredients like gold require {0}x as much. -->
   <BillRequiresMayVary>Nota: gli ingredienti di piccolo volume come oro richiedono {0} di più.</BillRequiresMayVary>
   <!-- EN: This is a small-volume ingredient. This means that each 'unit' is only 1/{0} as much as a normal-volume ingredient. So, to fill the same ingredient requirement, you'll need {0}x as much as usual. -->
@@ -345,17 +345,17 @@
   <!-- EN: Armor penetration is the amount of armor this weapon will ignore each time it hits the target.\n\nIf armor penetration is greater than the target's armor, it is as though the target is unarmored. Otherwise, the armor penetration is subtracted from the target's armor. -->
   <ArmorPenetrationExplanation>La penetrazione armatura è la quantità di armatura che quest'arma ignorerà ogni volta che colpisce il bersaglio.\n\nSe la penetrazione armature è maggiore dell'armatura del bersaglio, considera come se il bersaglio fosse senza armatura. Altrimenti, la penetrazione armatura viene sottratta dall'armatura del bersaglio.</ArmorPenetrationExplanation>
   <!-- EN: Building damage factor -->
-  <BuildingDamageFactor>TODO</BuildingDamageFactor>
+  <BuildingDamageFactor>Fattore di danno all'edificio</BuildingDamageFactor>
   <!-- EN: Damage to all buildings is multiplied by this value. -->
-  <BuildingDamageFactorExplanation>TODO</BuildingDamageFactorExplanation>
+  <BuildingDamageFactorExplanation>I danni a tutti gli edifici vengono moltiplicati per questo valore.</BuildingDamageFactorExplanation>
   <!-- EN: Building damage factor (impassable) -->
-  <BuildingDamageFactorImpassable>TODO</BuildingDamageFactorImpassable>
+  <BuildingDamageFactorImpassable>Fattore di danno all'edificio (invalicabile)</BuildingDamageFactorImpassable>
   <!-- EN: Damage to all impassable buildings is multiplied by this value. -->
-  <BuildingDamageFactorImpassableExplanation>TODO</BuildingDamageFactorImpassableExplanation>
+  <BuildingDamageFactorImpassableExplanation>I danni a tutti gli edifici invalicabili vengono moltiplicati per questo valore.</BuildingDamageFactorImpassableExplanation>
   <!-- EN: Building damage factor (passable) -->
-  <BuildingDamageFactorPassable>TODO</BuildingDamageFactorPassable>
+  <BuildingDamageFactorPassable>Fattore di danno dell'edificio (passabile)</BuildingDamageFactorPassable>
   <!-- EN: Damage to all passable buildings is multiplied by this value. -->
-  <BuildingDamageFactorPassableExplanation>TODO</BuildingDamageFactorPassableExplanation>
+  <BuildingDamageFactorPassableExplanation>I danni a tutti gli edifici transitabili vengono moltiplicati per questo valore.</BuildingDamageFactorPassableExplanation>
   <!-- EN: Accuracy -->
   <Accuracy>Precisione</Accuracy>
   <!-- EN: Burst shot count -->
@@ -365,7 +365,7 @@
   <!-- EN: Melee warmup -->
   <MeleeWarmupTime>Tempo di ricarica in mischia</MeleeWarmupTime>
   <!-- EN: Aiming time -->
-  <RangedWarmupTime>TODO</RangedWarmupTime>
+  <RangedWarmupTime>Tempo di mira</RangedWarmupTime>
   <!-- EN: Cooldown -->
   <CooldownTime>Tempo di recupero</CooldownTime>
   <!-- EN: Disarmed -->
@@ -437,7 +437,7 @@
   <!-- EN: Body size -->
   <BodySize>Taglia del corpo</BodySize>
   <!-- EN: Growth -->
-  <Growth>TODO</Growth>
+  <Growth>Crescita</Growth>
   <!-- EN: Recruit difficulty -->
   <RecruitDifficulty>Difficoltà di reclutamento</RecruitDifficulty>
   <!-- EN: Base price -->
@@ -465,7 +465,7 @@
   <!-- EN: Tameness will never decay for animals of very low wildness. -->
   <TamenessWillNotDecay>Non smetterà mai di essere addomesticata.</TamenessWillNotDecay>
   <!-- EN: Tameness will never decay for animals that can be kept behind fences. -->
-  <TamenessWillNotDecayFenceBlocked>TODO</TamenessWillNotDecayFenceBlocked>
+  <TamenessWillNotDecayFenceBlocked>La mansuetudine non decadrà mai per gli animali che possono essere tenuti dietro un recinto.</TamenessWillNotDecayFenceBlocked>
   <!-- EN: Time -->
   <TimeRecordsCategory>Tempo</TimeRecordsCategory>
   <!-- EN: Misc -->
@@ -487,9 +487,9 @@
   <!-- EN: Safe dose interval for adults -->
   <SafeDoseInterval>Intervallo sicuro della dose</SafeDoseInterval>
   <!-- EN: age {0}-{1} -->
-  <AgeXToY>TODO</AgeXToY>
+  <AgeXToY>età {0}-{1}</AgeXToY>
   <!-- EN: age {0}+ -->
-  <AgePlus>TODO</AgePlus>
+  <AgePlus>età {0}+</AgePlus>
   <!-- EN: New addiction chance -->
   <Addictiveness>Dipendenza</Addictiveness>
   <!-- EN: Addiction initial severity -->
@@ -515,7 +515,7 @@
   <!-- EN: {0} / day -->
   <PerDay>{0} / giorno</PerDay>
   <!-- EN: {0} / hour -->
-  <PerHour>TODO</PerHour>
+  <PerHour>{0} / ora</PerHour>
   <!-- EN: Pack animal -->
   <PackAnimal>Animale da soma</PackAnimal>
   <!-- EN: Whether this animal is appropriate to use to carry items in a caravan over long distances. -->
@@ -555,7 +555,7 @@
   <!-- EN: Resources needed to rearm this turret -->
   <RearmCostExplanation>Risorse necessarie per ricaricare questa torretta (influenzato da difficoltà).</RearmCostExplanation>
   <!-- EN: affected by difficulty -->
-  <RearmCostExplanationDifficulty>TODO</RearmCostExplanationDifficulty>
+  <RearmCostExplanationDifficulty>colpiti da difficoltà</RearmCostExplanationDifficulty>
   <!-- EN: Shots before rearm -->
   <ShotsBeforeRearm>Colpi prima di ricarica</ShotsBeforeRearm>
   <!-- EN: How many shots this turret can fire before it has to be rearmed. -->
@@ -667,15 +667,15 @@
   <!-- EN: Trading with faction base bonus -->
   <TradeWithFactionBaseBonus>Bonus commercio con base fazione</TradeWithFactionBaseBonus>
   <!-- EN: Joins as slave -->
-  <JoinsAsSlave>TODO</JoinsAsSlave>
+  <JoinsAsSlave>Si unisce come schiavo</JoinsAsSlave>
   <!-- EN: Joins as colonist -->
-  <JoinsAsColonist>TODO</JoinsAsColonist>
+  <JoinsAsColonist>Si unisce come colono</JoinsAsColonist>
   <!-- EN: If purchased, this person will join your colony as a slave. -->
-  <JoinsAsSlaveDesc>TODO</JoinsAsSlaveDesc> <!--  -->
+  <JoinsAsSlaveDesc>Se acquistata, questa persona si unirà alla vostra colonia come schiavo.</JoinsAsSlaveDesc> <!--  -->
   <!-- EN: If purchased, this person will join your colony as a colonist. -->
-  <JoinsAsColonistDesc>TODO</JoinsAsColonistDesc>
+  <JoinsAsColonistDesc>Se acquistata, questa persona si unirà alla vostra colonia come colono.</JoinsAsColonistDesc>
   <!-- EN: Trading drugs bonus -->
-  <TradingDrugsBonus>TODO</TradingDrugsBonus>
+  <TradingDrugsBonus>Bonus per il commercio di farmaci</TradingDrugsBonus>
   <!-- EN: minimum -->
   <minimum>minimo</minimum>
   <!-- EN: Final price -->
@@ -711,7 +711,7 @@
   <!-- EN: Items -->
   <ItemsTab>Oggetti</ItemsTab>
   <!-- EN: Travel supplies -->
-  <TravelSupplies>TODO</TravelSupplies>
+  <TravelSupplies>Materiale da viaggio</TravelSupplies>
   <!-- EN: You must assign at least one non-downed colonist. -->
   <CaravanMustHaveAtLeastOneColonist>Devi assegnare almeno un colono non abbattuto.</CaravanMustHaveAtLeastOneColonist>
   <!-- EN: The chosen exit location ({0}) is inaccessible. -->
@@ -721,7 +721,7 @@
   <!-- EN: Warning: Some of the assigned colonists are unable to reach the exit location ({0}). -->
   <CaravanCouldNotFindReachableExitSpot>Attenzione: Alcuni dei coloni assegnati non sono in grado di raggiungere il punto di uscita ({0}).</CaravanCouldNotFindReachableExitSpot>
   <!-- EN: {1_labelShort} is unable to reach the packing spot or the exit location when led by any of the assigned colonists. -->
-  <CaravanRoamerCannotReachSpots>TODO</CaravanRoamerCannotReachSpots>
+  <CaravanRoamerCannotReachSpots>{1_labelShort} non riesce a raggiungere il punto di imballaggio o il luogo di uscita quando è guidato da uno qualsiasi dei coloni assegnati.</CaravanRoamerCannotReachSpots>
   <!-- EN: None of the assigned colonists are able to reach the {0}. -->
   <CaravanItemIsUnreachableSingle>Nessuno dei coloni assegnati è in grado di raggiungere il {0}.</CaravanItemIsUnreachableSingle>
   <!-- EN: None of the assigned colonists are able to reach {0}x {1}. -->
@@ -745,7 +745,7 @@
   <!-- EN: Your caravan only has {0} days worth of food and will become hungry quickly. -->
   <DaysWorthOfFoodWarningDialog>La tua carovana ha solo {0} giorni di autonomia di cibo e sarà presto affamata.</DaysWorthOfFoodWarningDialog>
   <!-- EN: Some peoples' diets don't allow most of the food in your caravan. If they're forced to eat it due to hunger, they will become unhappy. -->
-  <DaysWorthOfFoodDietWarningDialog>TODO</DaysWorthOfFoodDietWarningDialog>
+  <DaysWorthOfFoodDietWarningDialog>La dieta di alcune persone non consente di mangiare la maggior parte degli alimenti presenti nella roulotte. Se sono costretti a mangiarli per fame, diventeranno infelici.</DaysWorthOfFoodDietWarningDialog>
   <!-- EN: Your caravan has no food and will become hungry very quickly. -->
   <DaysWorthOfFoodWarningDialog_NoFood>La tua carovana non ha cibo e sarà molto presto affamata.</DaysWorthOfFoodWarningDialog_NoFood>
   <!-- EN: The average amount of food per day your people will forage. This value will change as you travel across biomes with different forage yield rates. -->
@@ -815,9 +815,9 @@
   <!-- EN: tiles/day -->
   <TilesPerDay>caselle/giorno</TilesPerDay>
   <!-- EN: None - too heavy -->
-  <TilesPerDayImmobile>TODO</TilesPerDayImmobile>
+  <TilesPerDayImmobile>Nessuno - troppo pesante</TilesPerDayImmobile>
   <!-- EN: None -->
-  <TilesPerDayImmobileShort>TODO</TilesPerDayImmobileShort>
+  <TilesPerDayImmobileShort>Nessuno</TilesPerDayImmobileShort>
   <!-- EN: Movement speed depends on carried mass, ridden animals, and terrain movement difficulty. -->
   <CaravanMovementSpeedTip>La velocità di movimento dipende dalla velocità media di tutte le persone e gli animali, il peso trasportato la difficoltà di movimento del terreno.</CaravanMovementSpeedTip>
   <!-- EN: Animals will be able to graze -->
@@ -843,9 +843,9 @@
   <!-- EN: Total body size -->
   <TotalBodySize>Taglia totale del corpo</TotalBodySize>
   <!-- EN: Automatically select travel supplies -->
-  <AutomaticallySelectTravelSupplies>TODO</AutomaticallySelectTravelSupplies>
+  <AutomaticallySelectTravelSupplies>Selezione automatica dei materiali di viaggio</AutomaticallySelectTravelSupplies>
   <!-- EN: This animal is sick. It is suffering from the following illnesses -->
-  <CaravanAnimalSick>TODO</CaravanAnimalSick>
+  <CaravanAnimalSick>Questo animale è malato. È affetto dalle seguenti malattie</CaravanAnimalSick>
 
   <!-- Split caravan -->
   <!-- EN: Split caravan -->
@@ -987,7 +987,7 @@
   <!-- EN: Food restriction -->
   <FoodRestriction>Limitazione cibo</FoodRestriction>
   <!-- EN: Food -->
-  <FoodRestrictionShort>TODO</FoodRestrictionShort>
+  <FoodRestrictionShort>Cibo</FoodRestrictionShort>
   <!-- EN: Lavish -->
   <FoodRestrictionLavish>Prelibato</FoodRestrictionLavish>
   <!-- EN: Fine -->
@@ -1011,7 +1011,7 @@
 
   <!-- Medical settings -->
   <!-- EN: Default medicine settings -->
-  <DefaultMedicineSettings>TODO</DefaultMedicineSettings>
+  <DefaultMedicineSettings>Impostazioni predefinite dei farmaci</DefaultMedicineSettings>
   <!-- EN: Defaults -->
   <MedGroupDefaults>Default</MedGroupDefaults>
   <!-- EN: Colonist -->
@@ -1079,7 +1079,7 @@
 
   <!-- Abilities -->
   <!-- EN: Cannot use {0} -->
-  <CannotUseAbility>TODO</CannotUseAbility>
+  <CannotUseAbility>Non è possibile usare {0}</CannotUseAbility>
   <!-- EN: Line of sight required -->
   <AbilityRequiresLOS>Linea di tiro richiesta</AbilityRequiresLOS>
   <!-- EN: Neural heat gain -->
@@ -1095,7 +1095,7 @@
   <!-- EN: No line of sight to target. -->
   <AbilityCannotHitTarget>Nessuna linea di tiro al bersaglio.</AbilityCannotHitTarget>
   <!-- EN: Target is out of range. -->
-  <AbilityOutOfRange>TODO</AbilityOutOfRange>
+  <AbilityOutOfRange>L'obiettivo è fuori portata.</AbilityOutOfRange>
   <!-- EN: Can't reach the target. -->
   <AbilityCannotReachTarget>Impossibile raggiungere l'obbiettivo.</AbilityCannotReachTarget>
   <!-- EN: Not enough free space. -->
@@ -1111,23 +1111,23 @@
   <!-- EN: {0_labelShort} is not mentally broken. -->
   <AbilityCanOnlyApplyToMentallyBroken>{0_labelShort} non ha un crollo mentale.</AbilityCanOnlyApplyToMentallyBroken>
   <!-- EN: {0_labelShort} is not maddened. -->
-  <AbilityCanOnlyApplyToManhunter>TODO</AbilityCanOnlyApplyToManhunter>
+  <AbilityCanOnlyApplyToManhunter>{0_labelShort} non è arrabbiato.</AbilityCanOnlyApplyToManhunter>
   <!-- EN: {0_labelShort} has scaria, which can only be treated medically. -->
-  <AbilityCantApplyToScaria>TODO</AbilityCantApplyToScaria>
+  <AbilityCantApplyToScaria>{0_labelShort} ha la scaria, che può essere trattata solo da un medico.</AbilityCantApplyToScaria>
   <!-- EN: {0} doesn't work on the '{1}' mental state. -->
   <AbilityDoesntWorkOnMentalState>{0} non funziona con uno stato mentale "{1}".</AbilityDoesntWorkOnMentalState>
   <!-- EN: {0_labelShort} has zero resistance. -->
   <AbilityCantApplyNoResistance>{0_labelShort} ha zero di resistenza.</AbilityCantApplyNoResistance>
   <!-- EN: {0_labelShort} is downed. -->
-  <AbilityCantApplyDowned>TODO</AbilityCantApplyDowned>
+  <AbilityCantApplyDowned>{0_labelShort} è stato abbattuto.</AbilityCantApplyDowned>
   <!-- EN: Cannot use: {0} is asexual. -->
   <AbilityCantApplyOnAsexual>Impossibile utilizzare: {0} è asessuale.</AbilityCantApplyOnAsexual>
   <!-- EN: {1_labelShort} is the wrong gender for {0_labelShort}. -->
   <AbilityCantApplyWrongAttractionGender>{1_labelShort} è il sesso sbagliato per {0_labelShort}.</AbilityCantApplyWrongAttractionGender>
   <!-- EN: {0_labelShort} is too young. -->
-  <AbilityCantApplyTooYoung>TODO</AbilityCantApplyTooYoung>
+  <AbilityCantApplyTooYoung>{0_labelShort} è troppo giovane.</AbilityCantApplyTooYoung>
   <!-- EN: Cannot target a baby. -->
-  <AbilityCantApplyOnBaby>TODO</AbilityCantApplyOnBaby>
+  <AbilityCantApplyOnBaby> Non può prendere di mira un bambino.</AbilityCantApplyOnBaby>
   <!-- EN: Psyfocus cost per mental break intensity -->
   <PsyfocusCostPerMentalBreakIntensity>Costo di Psyfocus per intensità del crollo mentale</PsyfocusCostPerMentalBreakIntensity>
   <!-- EN: {0_labelShort} is already inspired. -->
@@ -1135,21 +1135,21 @@
   <!-- EN: {0_labelShort} can't get an inspiration right now. -->
   <AbilityCantGetInspiredNow>{0_labelShort} non può trarre ispirazione in questo momento.</AbilityCantGetInspiredNow>
   <!-- EN: {0_labelShort} must be of a different ideoligion than {1_labelShort}. -->
-  <AbilityMustBeNotSameIdeo>TODO</AbilityMustBeNotSameIdeo>
+  <AbilityMustBeNotSameIdeo>{0_labelShort} deve essere di un'ideologia diversa da quella di {1_labelShort}.</AbilityMustBeNotSameIdeo>
   <!-- EN: {0_labelShort} must be of same ideoligion as {1_labelShort}. -->
-  <AbilityMustBeSameIdeo>TODO</AbilityMustBeSameIdeo>
+  <AbilityMustBeSameIdeo>{0_labelShort} deve essere della stessa ideologia di {1_labelShort}.</AbilityMustBeSameIdeo>
   <!-- EN: {0_labelShort} must be sick or injured. -->
-  <AbilityMustBeSickOrInjured>TODO</AbilityMustBeSickOrInjured>
+  <AbilityMustBeSickOrInjured>{0_labelShort} deve essere malato o ferito.</AbilityMustBeSickOrInjured>
   <!-- EN: {0} can only counsel {1}s. -->
-  <AbilityMustBeSameIdeoCounsel>TODO</AbilityMustBeSameIdeoCounsel>
+  <AbilityMustBeSameIdeoCounsel>{0} può solo consigliare i {1}.</AbilityMustBeSameIdeoCounsel>
   <!-- EN: {0_labelShort} is already considered guilty. -->
-  <AbilityMustBeNotGuilty>TODO</AbilityMustBeNotGuilty>
+  <AbilityMustBeNotGuilty>{0_labelShort} è già considerato colpevole.</AbilityMustBeNotGuilty>
   <!-- EN: Must target a human. -->
-  <AbilityMustBeHuman>TODO</AbilityMustBeHuman>
+  <AbilityMustBeHuman>Deve colpire un umano.</AbilityMustBeHuman>
   <!-- EN: Must target a non-wild human. -->
-  <AbilityMustBeHumanNonWild>TODO</AbilityMustBeHumanNonWild>
+  <AbilityMustBeHumanNonWild> Deve colpire un umano non selvatico.</AbilityMustBeHumanNonWild>
   <!-- EN: Must target an animal. -->
-  <AbilityMustBeAnimal>TODO</AbilityMustBeAnimal>
+  <AbilityMustBeAnimal>Deve essere mirato a un animale.</AbilityMustBeAnimal>
   <!-- EN: {0_labelShort} is unconscious. -->
   <AbilityCantApplyUnconscious>{0_labelShort} è incosciente.</AbilityCantApplyUnconscious>
   <!-- EN: {0_labelShort} is asleep. -->
@@ -1180,65 +1180,65 @@
 
   <!-- Auto slaughter -->
   <!-- EN: Animal -->
-  <AutoSlaugtherHeaderColLabel>TODO</AutoSlaugtherHeaderColLabel>
+  <AutoSlaugtherHeaderColLabel>Animale</AutoSlaugtherHeaderColLabel>
   <!-- EN: Current -->
-  <AutoSlaugtherHeaderColCurrent>TODO</AutoSlaugtherHeaderColCurrent>
+  <AutoSlaugtherHeaderColCurrent>Attuale</AutoSlaugtherHeaderColCurrent>
   <!-- EN: Max -->
-  <AutoSlaugtherHeaderColMax>TODO</AutoSlaugtherHeaderColMax>
+  <AutoSlaugtherHeaderColMax>Massimo</AutoSlaugtherHeaderColMax>
   <!-- EN: Total -->
-  <AutoSlaugtherHeaderColTotal>TODO</AutoSlaugtherHeaderColTotal>
+  <AutoSlaugtherHeaderColTotal>Totale</AutoSlaugtherHeaderColTotal>
   <!-- EN: Other -->
-  <AutoSlaugtherHeaderColOther>TODO</AutoSlaugtherHeaderColOther> <!-- this is the count of the "cannot-auto-slaughter" animals -->
+  <AutoSlaugtherHeaderColOther>Altro</AutoSlaugtherHeaderColOther> <!-- this is the count of the "cannot-auto-slaughter" animals -->
   <!-- EN: Colonists first slaughter non-pregnant animals in order from oldest to youngest, then pregnant animals from most recent to least recent pregnancy. -->
-  <AutoSlaugtherTip>TODO</AutoSlaugtherTip>
+  <AutoSlaugtherTip>I coloni macellano prima gli animali non gravidi in ordine dal più vecchio al più giovane, poi gli animali gravidi dalla gravidanza più recente a quella meno recente.</AutoSlaugtherTip>
   <!-- EN: Male adult -->
-  <AnimalMaleAdult>TODO</AnimalMaleAdult>
+  <AnimalMaleAdult>Maschio adulto</AnimalMaleAdult>
   <!-- EN: Male young -->
-  <AnimalMaleYoung>TODO</AnimalMaleYoung>
+  <AnimalMaleYoung>Maschio giovane</AnimalMaleYoung>
   <!-- EN: Female adult -->
-  <AnimalFemaleAdult>TODO</AnimalFemaleAdult>
+  <AnimalFemaleAdult>Femmina adulta</AnimalFemaleAdult>
   <!-- EN: Female young -->
-  <AnimalFemaleYoung>TODO</AnimalFemaleYoung>
+  <AnimalFemaleYoung>Femmina giovane</AnimalFemaleYoung>
   <!-- EN: Pregnant -->
-  <AnimalPregnant>TODO</AnimalPregnant>
+  <AnimalPregnant>Gravida</AnimalPregnant>
   <!-- EN: Bonded -->
-  <AnimalBonded>TODO</AnimalBonded>
+  <AnimalBonded>Legato</AnimalBonded>
   <!-- EN: Slaughter -->
-  <AllowSlaughter>TODO</AllowSlaughter>
+  <AllowSlaughter>Macellazione</AllowSlaughter>
 
   <!-- EN: The animal to be automatically slaughtered. -->
-  <AutoSlaugtherHeaderTooltipLabel>TODO</AutoSlaugtherHeaderTooltipLabel>
+  <AutoSlaugtherHeaderTooltipLabel>L'animale da macellare automaticamente.</AutoSlaugtherHeaderTooltipLabel>
   <!-- EN: The current number of animals in the colony, both male and female. -->
-  <AutoSlaugtherHeaderTooltipCurrentTotal>TODO</AutoSlaugtherHeaderTooltipCurrentTotal>
+  <AutoSlaugtherHeaderTooltipCurrentTotal>Il numero attuale di animali della colonia, sia maschi che femmine.</AutoSlaugtherHeaderTooltipCurrentTotal>
   <!-- EN: The maximum number of animals in the colony, both male and female.\n\nHandlers will automatically slaughter any extras. -->
-  <AutoSlaugtherHeaderTooltipMaxTotal>TODO</AutoSlaugtherHeaderTooltipMaxTotal>
+  <AutoSlaugtherHeaderTooltipMaxTotal>Il numero massimo di animali nella colonia, sia maschi che femmine.\n\nI gestori abbattono automaticamente gli animali in più.</AutoSlaugtherHeaderTooltipMaxTotal>
   <!-- EN: The current number of males of breeding age in the colony. -->
-  <AutoSlaugtherHeaderTooltipCurrentMales>TODO</AutoSlaugtherHeaderTooltipCurrentMales>
+  <AutoSlaugtherHeaderTooltipCurrentMales>Il numero attuale di maschi in età riproduttiva nella colonia.</AutoSlaugtherHeaderTooltipCurrentMales>
   <!-- EN: The current number of baby and juvenile males in the colony. -->
-  <AutoSlaughterHeaderTooltipCurrentMalesYoung>TODO</AutoSlaughterHeaderTooltipCurrentMalesYoung>
+  <AutoSlaughterHeaderTooltipCurrentMalesYoung>Il numero attuale di piccoli e giovani maschi nella colonia.</AutoSlaughterHeaderTooltipCurrentMalesYoung>
   <!-- EN: The maximum number of males of breeding age in the colony.\n\nHandlers will automatically slaughter any extras. -->
-  <AutoSlaugtherHeaderTooltipMaxMales>TODO</AutoSlaugtherHeaderTooltipMaxMales>
+  <AutoSlaugtherHeaderTooltipMaxMales>Il numero massimo di maschi in età riproduttiva nella colonia.\n\nI gestori abbattono automaticamente gli esemplari in più.</AutoSlaugtherHeaderTooltipMaxMales>
   <!-- EN: The maximum number of baby and juvenile males in the colony.\n\nHandlers will automatically slaughter any extras. -->
-  <AutoSlaughterHeaderTooltipMaxMalesYoung>TODO</AutoSlaughterHeaderTooltipMaxMalesYoung>
+  <AutoSlaughterHeaderTooltipMaxMalesYoung>Il numero massimo di piccoli e giovani maschi nella colonia.\n\nI gestori abbattono automaticamente gli esemplari in più.</AutoSlaughterHeaderTooltipMaxMalesYoung>
   <!-- EN: The current number of females of breeding age in the colony. -->
-  <AutoSlaugtherHeaderTooltipCurrentFemales>TODO</AutoSlaugtherHeaderTooltipCurrentFemales>
+  <AutoSlaugtherHeaderTooltipCurrentFemales>Il numero attuale di femmine in età riproduttiva nella colonia.</AutoSlaugtherHeaderTooltipCurrentFemales>
   <!-- EN: The current number of baby and juvenile females in the colony. -->
-  <AutoSlaugtherHeaderTooltipCurrentFemalesYoung>TODO</AutoSlaugtherHeaderTooltipCurrentFemalesYoung>
+  <AutoSlaugtherHeaderTooltipCurrentFemalesYoung>Il numero attuale di piccoli e giovani femmine nella colonia.</AutoSlaugtherHeaderTooltipCurrentFemalesYoung>
   <!-- EN: The maximum number of females in the colony.\n\nHandlers will automatically slaughter any extras. -->
-  <AutoSlaugtherHeaderTooltipMaxFemales>TODO</AutoSlaugtherHeaderTooltipMaxFemales>
+  <AutoSlaugtherHeaderTooltipMaxFemales>Il numero massimo di femmine nella colonia.\n\nI gestori abbattono automaticamente le femmine in più.</AutoSlaugtherHeaderTooltipMaxFemales>
   <!-- EN: The maximum number of baby and juvenile females in the colony.\n\nHandlers will automatically slaughter any extras. -->
-  <AutoSlaughterHeaderTooltipMaxFemalesYoung>TODO</AutoSlaughterHeaderTooltipMaxFemalesYoung>
+  <AutoSlaughterHeaderTooltipMaxFemalesYoung>Il numero massimo di piccoli e giovani femmine nella colonia.\n\nI gestori abbattono automaticamente le femmine in eccesso.</AutoSlaughterHeaderTooltipMaxFemalesYoung>
   <!-- EN: The current number of pregnant animals in the colony. -->
-  <AutoSlaughterHeaderTooltipCurrentPregnant>TODO</AutoSlaughterHeaderTooltipCurrentPregnant>
+  <AutoSlaughterHeaderTooltipCurrentPregnant>Il numero attuale di animali gravidi nella colonia.</AutoSlaughterHeaderTooltipCurrentPregnant>
   <!-- EN: Allow pregnant animals to be slaughtered along with other females of the same species. -->
-  <AutoSlaughterHeaderTooltipAllowSlaughterPregnant>TODO</AutoSlaughterHeaderTooltipAllowSlaughterPregnant>
+  <AutoSlaughterHeaderTooltipAllowSlaughterPregnant>Consentire la macellazione di animali gravidi insieme ad altre femmine della stessa specie.</AutoSlaughterHeaderTooltipAllowSlaughterPregnant>
   <!-- EN: The current number of bonded animals in the colony. -->
-  <AutoSlaughterHeaderTooltipCurrentBonded>TODO</AutoSlaughterHeaderTooltipCurrentBonded>
+  <AutoSlaughterHeaderTooltipCurrentBonded>Il numero attuale di animali legati nella colonia.</AutoSlaughterHeaderTooltipCurrentBonded>
   <!-- EN: Allow bonded animals to be slaughtered. -->
-  <AutoSlaughterHeaderTooltipAllowSlaughterBonded>TODO</AutoSlaughterHeaderTooltipAllowSlaughterBonded>
+  <AutoSlaughterHeaderTooltipAllowSlaughterBonded>Consentire la macellazione di animali legati.</AutoSlaughterHeaderTooltipAllowSlaughterBonded>
 
   <!-- EN: Click to set an animal count limit. -->
-  <AutoSlaughterTooltipSetLimit>TODO</AutoSlaughterTooltipSetLimit>
+  <AutoSlaughterTooltipSetLimit>Clicca per impostare un limite al numero di animali.</AutoSlaughterTooltipSetLimit>
 
   <!-- Room requirements -->
   <!-- EN: no beds allowed -->
@@ -1256,71 +1256,71 @@
   <!-- EN: no work facilities allowed -->
   <RoomRequirementNoProductionFacilities>nessun banco di lavoro ammessa</RoomRequirementNoProductionFacilities>
   <!-- EN: no altars allowed -->
-  <RoomRequirementNoAltars>TODO</RoomRequirementNoAltars>
+  <RoomRequirementNoAltars>non sono ammessi altari</RoomRequirementNoAltars>
 
   <!-- EN: Lifestage max food factor -->
-  <LifeStageMaxFood>TODO</LifeStageMaxFood>
+  <LifeStageMaxFood>Alimento per la fase di vita massima</LifeStageMaxFood>
 
   <!-- EN: Expand all -->
-  <ExpandAllCategories>TODO</ExpandAllCategories>
+  <ExpandAllCategories>Espandi tutto</ExpandAllCategories>
   <!-- EN: Collapse all -->
-  <CollapseAllCategories>TODO</CollapseAllCategories>
+  <CollapseAllCategories>Chiudi tutto</CollapseAllCategories>
 
   <!-- EN: Dye can be farmed from tinctoria or purchased from traders. -->
-  <TooltipDyeExplanation>TODO</TooltipDyeExplanation>
+  <TooltipDyeExplanation>Il colorante può essere coltivato dalla tintoria o acquistato dai commercianti.</TooltipDyeExplanation>
 
   <!-- EN: Zoom range {0} -->
-  <ZoomRange>TODO</ZoomRange>
+  <ZoomRange>Intervallo di zoom {0}</ZoomRange>
 
   <!-- Color picker -->
   <!-- EN: color temperature -->
-  <ColorTemperature>TODO</ColorTemperature>
+  <ColorTemperature>temperatura del colore</ColorTemperature>
   <!-- EN: choose a color -->
-  <ChooseAColor>TODO</ChooseAColor>
+  <ChooseAColor>scegli un colore</ChooseAColor>
   <!-- EN: red -->
-  <Red>TODO</Red>
+  <Red>rosso</Red>
   <!-- EN: green -->
-  <Green>TODO</Green>
+  <Green>verde</Green>
   <!-- EN: blue -->
-  <Blue>TODO</Blue>
+  <Blue>blu</Blue>
   <!-- EN: hue -->
-  <Hue>TODO</Hue>
+  <Hue>tonalità</Hue>
   <!-- EN: sat -->
-  <Saturation>TODO</Saturation>
+  <Saturation>Saturazione</Saturation>
   <!-- EN: value -->
   <Value>Valore</Value>
   <!-- EN: darklight -->
-  <Darklight>TODO</Darklight>
+  <Darklight>luce scura</Darklight>
   <!-- EN: not darklight -->
-  <NotDarklight>TODO</NotDarklight>
+  <NotDarklight>no luce scura</NotDarklight>
   <!-- EN: current color -->
-  <CurrentColor>TODO</CurrentColor>
+  <CurrentColor>colore attuale</CurrentColor>
   <!-- EN: old color -->
-  <OldColor>TODO</OldColor>
+  <OldColor>vecchio colore</OldColor>
   <!-- EN: Copy color -->
-  <CommandCopyColorLabel>TODO</CommandCopyColorLabel>
+  <CommandCopyColorLabel>Copia il colore</CommandCopyColorLabel>
   <!-- EN: Copy the current color to the clipboard. -->
-  <CommandCopyColorDesc>TODO</CommandCopyColorDesc>
+  <CommandCopyColorDesc>Copia il colore attuale negli appunti.</CommandCopyColorDesc>
   <!-- EN: Paste color -->
-  <CommandPasteColorLabel>TODO</CommandPasteColorLabel>
+  <CommandPasteColorLabel>Incolla il colore</CommandPasteColorLabel>
   <!-- EN: Overwrite the color with the color in the clipboard. -->
-  <CommandPasteColorDesc>TODO</CommandPasteColorDesc>
+  <CommandPasteColorDesc>Sovrascri il colore con quello presente negli appunti.</CommandPasteColorDesc>
   <!-- EN: The clipboard does not contain a valid color. -->
-  <ClipboardInvalidColor>TODO</ClipboardInvalidColor>
+  <ClipboardInvalidColor>Gli appunti non contengono un colore valido.</ClipboardInvalidColor>
   <!-- EN: Color copied to clipboard. -->
-  <ColorCopiedSuccessfully>TODO</ColorCopiedSuccessfully>
+  <ColorCopiedSuccessfully>Colore copiato negli appunti.</ColorCopiedSuccessfully>
   <!-- EN: Updated color from the clipboard. -->
-  <ColorPastedSuccessfully>TODO</ColorPastedSuccessfully>
+  <ColorPastedSuccessfully>Colore aggiornato dagli appunti.</ColorPastedSuccessfully>
   <!-- EN: Change to normal light -->
-  <ToggleDarklightOff>TODO</ToggleDarklightOff>
+  <ToggleDarklightOff>Passaggio alla luce normale</ToggleDarklightOff>
   <!-- EN: Change the light color to its normal color. -->
-  <ToggleDarklightOffDesc>TODO</ToggleDarklightOffDesc>
+  <ToggleDarklightOffDesc>Cambiare il colore della luce nel suo colore normale.</ToggleDarklightOffDesc>
   <!-- EN: Change to darklight -->
-  <ToggleDarklightOn>TODO</ToggleDarklightOn>
+  <ToggleDarklightOn>Passaggio alla luce scura</ToggleDarklightOn>
   <!-- EN: Change the light color to darklight. -->
-  <ToggleDarklightOnDesc>TODO</ToggleDarklightOnDesc>
+  <ToggleDarklightOnDesc>Cambiare il colore della luce in luce scura.</ToggleDarklightOnDesc>
   <!-- EN: Choose a color by setting the color temperature. Note: This only affects visual color, not heat output. -->
-  <ColorTemperatureTooltip>TODO</ColorTemperatureTooltip>
+  <ColorTemperatureTooltip>Scegliere un colore impostando la temperatura del colore. Nota: questa impostazione influisce solo sul colore visivo, non sulla potenza termica.</ColorTemperatureTooltip>
 
   <!-- UNUSED -->
   <BillRequiresNutrition>Richiede {0} nutrimento</BillRequiresNutrition>
