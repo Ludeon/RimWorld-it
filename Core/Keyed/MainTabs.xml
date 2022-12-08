@@ -37,11 +37,11 @@
   <!-- EN: {0}\n\nThe faction {1_nameDef} currently belongs to.\n\nClick to view faction. -->
   <PawnFactionInfo>{0}\n\nLa fazione a cui appartiene {1_nameDef}.\n\nFai clic per visualizzare la fazione.</PawnFactionInfo>
   <!-- EN: Disabled by {0} backstory -->
-  <WorkDisabledByBackstory>TODO</WorkDisabledByBackstory>
+  <WorkDisabledByBackstory>Disabilitato dal retroscena {0}</WorkDisabledByBackstory>
   <!-- EN: Disabled by {0} trait -->
-  <WorkDisabledByTrait>TODO</WorkDisabledByTrait>
+  <WorkDisabledByTrait>Disabilitato dalla caratteristica {0}</WorkDisabledByTrait>
   <!-- EN: Disabled by quest '{0}' -->
-  <WorkDisabledByQuest>TODO</WorkDisabledByQuest>
+  <WorkDisabledByQuest>Disabilitato dalla missione '{0}'</WorkDisabledByQuest>
   
   <!-- Assign tab -->
   <!-- EN: Manage outfits -->
@@ -79,9 +79,9 @@
   <!-- EN: Bonded to -->
   <BondedTo>Legato a</BondedTo>
   <!-- EN: Sterilize animal. -->
-  <SterilizeAnimal>TODO</SterilizeAnimal>
+  <SterilizeAnimal>Sterilizza l'animale.</SterilizeAnimal>
   <!-- EN: Animal sterile. -->
-  <AnimalAlreadySterile>TODO</AnimalAlreadySterile>
+  <AnimalAlreadySterile>Animale sterile.</AnimalAlreadySterile>
   
   <!-- Wildlife tab -->
   <!-- EN: This creature is a predator. When hungry, it will hunt smaller creatures - possibly including people. -->
@@ -95,9 +95,9 @@
   <!-- EN: Ally -->
   <Ally>Alleato</Ally>
   <!-- EN: hostile -->
-  <HostileLower>TODO</HostileLower>
+  <HostileLower>ostile</HostileLower>
   <!-- EN: ally -->
-  <AllyLower>TODO</AllyLower>
+  <AllyLower>alleato</AllyLower>
   <!-- EN: defeated -->
   <DefeatedLower>sconfitto</DefeatedLower>
   <!-- EN: Enemy of {0} -->
@@ -105,9 +105,9 @@
   <!-- EN: Enemy of:  -->
   <EnemyOf>Nemico di: </EnemyOf>
   <!-- EN: Recent events -->
-  <RecentEvents>TODO</RecentEvents>
+  <RecentEvents>Eventi recenti</RecentEvents>
   <!-- EN: Ongoing events -->
-  <OngoingEvents>TODO</OngoingEvents>
+  <OngoingEvents>Eventi in corso</OngoingEvents>
   <!-- EN: This faction is permanently hostile. They will raid your settlements and caravans. Relations with them will never improve for any reason. -->
   <CurrentGoodwillTip_PermanentEnemy>Questa fazione è permanentemente ostile. Assalteranno i tuoi insediamenti e le tue carovane. Le relazioni con loro non miglioreranno mai per nessuna ragione.</CurrentGoodwillTip_PermanentEnemy>
   <!-- EN: This faction is allied. They will send fighters to help you when they can. If relations fall below {0}, they will become neutral. -->
@@ -187,9 +187,9 @@
   <!-- EN: Research -->
   <Research>Ricerca</Research>
   <!-- EN: Study -->
-  <Study>TODO</Study>
+  <Study>Studio</Study>
   <!-- EN: Study {0} -->
-  <StudyThing>TODO</StudyThing>
+  <StudyThing>Studio {0}</StudyThing>
   <!-- EN: Unresearched -->
   <Unresearched>Non ricercato</Unresearched>
   <!-- EN: Finished -->
@@ -207,7 +207,7 @@
   <!-- EN: Prerequisite(s) not completed -->
   <PrerequisitesNotCompleted>Prerequisiti non soddisfatti</PrerequisitesNotCompleted>
   <!-- EN: Missing required research facilities -->
-  <MissingRequiredResearchFacilities>TODO</MissingRequiredResearchFacilities>
+  <MissingRequiredResearchFacilities>Mancano le strutture di ricerca necessarie</MissingRequiredResearchFacilities>
   <!-- EN: Required research bench -->
   <RequiredResearchBench>Banco da ricerca necessario</RequiredResearchBench>
   <!-- EN: Required research bench facilities -->
@@ -223,9 +223,9 @@
 
   <!-- Factions tab -->
   <!-- EN: Factions -->
-  <FactionsTab>TODO</FactionsTab>
+  <FactionsTab>Fazioni</FactionsTab>
   <!-- EN: No known factions -->
-  <NoFactions>TODO</NoFactions>
+  <NoFactions>Nessuna fazione conosciuta</NoFactions>
 
   <!-- Quests tab -->
   <!-- EN: Available -->
@@ -309,7 +309,7 @@
   <!-- EN: the map clear of enemies of the bestower's faction -->
   <QuestRequiresNoDangerOnMap>la mappa libera dai nemici della fazione del cerimoniere reale</QuestRequiresNoDangerOnMap>
   <!-- EN: to finish the ongoing bestowing ceremony quest -->
-  <QuestCanNotStartUntilBestowingCeremonyFinished>TODO</QuestCanNotStartUntilBestowingCeremonyFinished>
+  <QuestCanNotStartUntilBestowingCeremonyFinished>per concludere la cerimonia di conferimento in corso</QuestCanNotStartUntilBestowingCeremonyFinished>
   <!-- EN: Reward preferences -->
   <ChooseRewards>Preferenze per le ricompense</ChooseRewards>
   <!-- EN: Tell other factions what kinds of rewards you want in future quests. This doesn't affect quests that were already offered. -->
@@ -335,15 +335,15 @@
   <!-- EN: {0} will grant you a reward for killing all members of the {1}. -->
   <QuestBetrayalOfferTip>{0} ti garantirà una ricompensa per aver ucciso tutti i membri di {1}.</QuestBetrayalOfferTip>
   <!-- EN: a colony wealth of at least {0} -->
-  <QuestRequiredPlayerWealth>TODO</QuestRequiredPlayerWealth>
+  <QuestRequiredPlayerWealth> una ricchezza della colonia di almeno {0}</QuestRequiredPlayerWealth>
   <!-- EN: alliance with {0} -->
-  <QuestAlliedTo>TODO</QuestAlliedTo>
+  <QuestAlliedTo>alleanza con {0}</QuestAlliedTo>
   <!-- EN: hostile to {0} -->
-  <QuestHostileTo>TODO</QuestHostileTo>
+  <QuestHostileTo> ostile a {0}</QuestHostileTo>
   <!-- EN: neutral to {0} -->
-  <QuestNeutralTo>TODO</QuestNeutralTo>
+  <QuestNeutralTo>neutrale a {0}</QuestNeutralTo>
   <!-- EN: studied {0_labelShort} -->
-  <QuestRequiredThingStudied>TODO</QuestRequiredThingStudied>
+  <QuestRequiredThingStudied>studiato {0_labelShort}</QuestRequiredThingStudied>
 
   <!-- Health tab -->
   <!-- EN: Creates need -->
@@ -351,7 +351,7 @@
 
   <!-- Misc -->
   <!-- EN: Click to edit -->
-  <ClickToEdit>TODO</ClickToEdit>
+  <ClickToEdit>Clicca per modificare</ClickToEdit>
 
   <!-- UNUSED -->
   <CurrentGoodwillTip>Attuale opinione e stato relazione con questa fazione.</CurrentGoodwillTip>

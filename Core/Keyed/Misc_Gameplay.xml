@@ -25,13 +25,13 @@
   <!-- EN: Assigned colonist -->
   <AssignedColonist>Colono assegnato</AssignedColonist>
   <!-- EN: Uncomfortable room temperature -->
-  <BedUncomfortableTemperature>TODO</BedUncomfortableTemperature>
+  <BedUncomfortableTemperature>Temperatura ambientale non confortevole</BedUncomfortableTemperature>
   <!-- EN: Unsafe room temperature -->
-  <BedUnsafeTemperature>TODO</BedUnsafeTemperature>
+  <BedUnsafeTemperature>Temperatura ambiente non sicura</BedUnsafeTemperature>
   <!-- EN: Died on the {0} -->
   <DiedOn>Morto il {0}</DiedOn>
   <!-- EN: Nobody -->
-  <Nobody>TODO</Nobody>
+  <Nobody>Nessuno</Nobody>
   <!-- EN: Unowned -->
   <Unowned>Senza proprietario</Unowned>
   <!-- EN: Dead for {0} -->
@@ -67,7 +67,7 @@
   <!-- EN: Tend quality -->
   <TendQuality>Qualità della cura</TendQuality>
   <!-- EN: Total tend quality -->
-  <DisappearsAtTotalTendQuality>TODO</DisappearsAtTotalTendQuality>
+  <DisappearsAtTotalTendQuality>Qualità totale</DisappearsAtTotalTendQuality>
   <!-- EN: no {0} -->
   <MissingMedicalBillIngredient>nessun {0}</MissingMedicalBillIngredient>
   <!-- EN: Immunity -->
@@ -107,11 +107,11 @@
   <!-- EN: Renounce title -->
   <RenounceTitle>Rinuncia al titolo</RenounceTitle>
   <!-- EN: Execute -->
-  <Execute>TODO</Execute>
+  <Execute>Esecuzione</Execute>
   <!-- EN: Execute guilty colonist\n\nIf you toggle this on, a warden will proceed to execute this person. -->
-  <ExecuteColonist>TODO</ExecuteColonist>
+  <ExecuteColonist>Esecuzione dei coloni colpevoli\n\nSe si attiva questa opzione, un guardiano procederà all'esecuzione di questa persona.</ExecuteColonist>
   <!-- EN: {0_labelShort} is now marked for execution. The next available warden will go execute {0_objective}. -->
-  <MessageColonistMarkedForExecution>TODO</MessageColonistMarkedForExecution>
+  <MessageColonistMarkedForExecution>{0_labelShort} è ora contrassegnato per l'esecuzione. Il prossimo guardiano disponibile andrà a completare esecuzione di {0_objective}.</MessageColonistMarkedForExecution>
   <!-- EN: {0} of {1} -->
   <TitleOfFaction>{0} di {1}</TitleOfFaction>
   <!-- EN: This action will make {PAWN_nameDef} lose {PAWN_possessive} {TITLE} title. You will receive no compensation for renouncing the title.\n\nThis will have the following effects:\n\n{EFFECTS} -->
@@ -119,9 +119,9 @@
   <!-- EN: {PAWN_pronoun} will lose these permissions -->
   <RenounceTitleWillLoosePermits>{PAWN_possessive} perderà queste autorizzazioni</RenounceTitleWillLoosePermits>
   <!-- EN: {PAWN_nameDef} will lose {POINTS} unspent permit points with {FACTION_name}. -->
-  <RenounceTitleWillLosePermitPoints>TODO</RenounceTitleWillLosePermitPoints>
+  <RenounceTitleWillLosePermitPoints>{PAWN_nameDef} perderà {POINTS} punti permesso non spesi con {FACTION_name}.</RenounceTitleWillLosePermitPoints>
   <!-- EN: {PAWN_pronoun} will keep all {PAWN_possessive} psylink levels and psycasts. -->
-  <RenounceTitleWillKeepPsylinkLevels>TODO</RenounceTitleWillKeepPsylinkLevels>
+  <RenounceTitleWillKeepPsylinkLevels>{PAWN_pronoun} manterrà tutti i livelli psylink e gli psycast di {PAWN_possessive}.</RenounceTitleWillKeepPsylinkLevels>
   <!-- EN: unknown -->
   <UnknownLower>sconosciuto</UnknownLower>
   <!-- EN: On -->
@@ -143,7 +143,7 @@
   <!-- EN: Progress stopped until fertilized -->
   <ProgressStoppedUntilFertilized>Progresso arrestato fino a fertilizzazione</ProgressStoppedUntilFertilized>
   <!-- EN: Hatches in -->
-  <HatchesIn>TODO</HatchesIn>
+  <HatchesIn>Cappelli in</HatchesIn>
   <!-- EN: need {0} level {2}, have {1} -->
   <SkillTooLow>necessita {0} livello {2}, ha {1}</SkillTooLow>
   <!-- EN: Freezing -->
@@ -179,7 +179,7 @@
   <!-- EN: enemies -->
   <Enemies>nemici</Enemies>
   <!-- EN: people -->
-  <People>TODO</People>
+  <People>persone</People>
   <!-- EN: time passed -->
   <TimePassed>tempo trascorso</TimePassed>
   <!-- EN: current radius -->
@@ -263,13 +263,13 @@
   <!-- EN: outdoors -->
   <DeterioratingOutdoors>all'aperto</DeterioratingOutdoors>
   <!-- EN: raining -->
-  <DeterioratingRaining>TODO</DeterioratingRaining> 
+  <DeterioratingRaining>piovoso</DeterioratingRaining> 
   <!-- EN: protected -->
-  <Protected>TODO</Protected>
+  <Protected>protetto</Protected>
   <!-- EN: Deteriorating -->
   <DeterioratingBecauseOf>In deterioramento a causa di</DeterioratingBecauseOf>
   <!-- EN: Will deteriorate in {0}. -->
-  <DeteriorateInDuration>TODO</DeteriorateInDuration>
+  <DeteriorateInDuration>Si deteriorerà in {0}.</DeteriorateInDuration>
   <!-- EN: Map -->
   <Map>Mappa</Map>
   <!-- EN: {0} until enemies arrive -->
@@ -341,9 +341,9 @@
   <!-- EN: Products -->
   <Products>Prodotti</Products>
   <!-- EN: Requires -->
-  <Requires>TODO</Requires>
+  <Requires>Richiede</Requires>
   <!-- EN: {0}x any of -->
-  <NumAnyOf>TODO</NumAnyOf>
+  <NumAnyOf>{0}x qualsiasi di</NumAnyOf>
   <!-- EN: {0} of {1} -->
   <Relationship>{0} di {1}</Relationship>
   <!-- EN: Prisoner -->
@@ -361,15 +361,15 @@
   <!-- EN: resting -->
   <Carried>trasportato</Carried>
   <!-- EN: Rideable animals / people -->
-  <RideableAnimalsPerPeople>TODO</RideableAnimalsPerPeople>
+  <RideableAnimalsPerPeople>Animali / persone cavalcabili</RideableAnimalsPerPeople>
   <!-- EN: Multiplier from ridden animals -->
-  <MultiplierFromRiddenAnimals>TODO</MultiplierFromRiddenAnimals>
+  <MultiplierFromRiddenAnimals>Moltiplicatore di animali cavalcati</MultiplierFromRiddenAnimals>
   <!-- EN: Multiplier for carried mass: {0} -->
   <MultiplierForCarriedMass>Moltiplicatore massa trasportata: {0}</MultiplierForCarriedMass>
   <!-- EN: This animal is rideable. People in a caravan will ride the fastest available animals, improving the speed of the caravan as a whole. -->
-  <RideableAnimalTip>TODO</RideableAnimalTip>
+  <RideableAnimalTip>Questo animale è cavalcabile. I membri di una carovana cavalcheranno gli animali più veloci disponibili, migliorando la velocità dell'intera carovana.</RideableAnimalTip>
   <!-- EN: This caravan can't move because it carries too much. -->
-  <EncumberedCaravanTilesPerDayTip>TODO</EncumberedCaravanTilesPerDayTip>
+  <EncumberedCaravanTilesPerDayTip>Questa carovana non può muoversi perché trasporta troppo.</EncumberedCaravanTilesPerDayTip>
   <!-- EN: Caravan members speed -->
   <FinalCaravanPawnsMovementSpeed>Velocità membri carovana</FinalCaravanPawnsMovementSpeed>
   <!-- EN: Final speed -->
@@ -431,13 +431,13 @@
   <!-- EN: animals -->
   <AnimalsLower>alimali</AnimalsLower>
   <!-- EN: items -->
-  <ItemsLower>TODO</ItemsLower>
+  <ItemsLower>oggetti</ItemsLower>
   <!-- EN: {0} x{1} -->
   <FilthLabel>{0} x{1}</FilthLabel>
   <!-- EN: {0} of {1} x{2} -->
   <FilthLabelWithSource>{0} di {1} x{2}</FilthLabelWithSource>
   <!-- EN: Required -->
-  <Required>TODO</Required>
+  <Required>Richiesto</Required>
   <!-- EN: Warning: You cannot complete trade requests by using transport pods.\nIf you send the goods, the settlement will accept them as gifts but they will not reward you.\n\nFor trading, approach the settlement with a caravan!\n\nAre you sure you want to gift the loaded goods to the faction? -->
   <GiveGiftViaTransportPodsTradeRequestWarning>Attenzione: non è possibile completare le richieste commerciali utilizzando i contenitori di trasporto.\nSe si invia la merce, il destinatario li accetterà come regali ma non ti ricompenserà.\n\nPer commerciare, avvicinati al destinatario con una carovana!\n\nSei sei sicuro di voler regalare la merce caricata alla fazione?</GiveGiftViaTransportPodsTradeRequestWarning>
   <!-- EN: prisoner -->
@@ -507,59 +507,59 @@
   <!-- EN: Any of -->
   <AnyOf>Qualsiasi</AnyOf>
   <!-- EN: Requires {0} trait -->
-  <TraitRequired>TODO</TraitRequired>
+  <TraitRequired>Richiede il tratto {0}</TraitRequired>
   <!-- EN: Goodwill -->
   <Goodwill>Relazione</Goodwill>
   <!-- EN: Natural goodwill -->
-  <NaturalGoodwill>TODO</NaturalGoodwill>
+  <NaturalGoodwill>Avviamento naturale</NaturalGoodwill>
   <!-- EN: Natural goodwill range -->
-  <NaturalGoodwillRange>TODO</NaturalGoodwillRange>
+  <NaturalGoodwillRange>Gamma dell'avviamento naturale</NaturalGoodwillRange>
   <!-- EN: Natural goodwill is based on faction identities and beliefs. If current goodwill is far from natural goodwill, it will slowly shift towards natural goodwill over time.\n\nAll goodwill effects are multiplied by {0} when moving towards natural goodwill. -->
-  <NaturalGoodwillDescription>TODO</NaturalGoodwillDescription>
+  <NaturalGoodwillDescription>L'avvenimento naturale si basa sull'identità e sulle credenze della fazione. Se l'attuale avvenimento è lontana da quella naturale, col tempo si sposterà lentamente verso quella naturale.\n\nTutti gli effetti dell'avvenimento sono moltiplicati per {0} quando si spostano verso l'avvenimento naturale.</NaturalGoodwillDescription>
   <!-- EN: reducing resistance of {0_nameIndef} -->
   <JobReport_ReduceResistance>riduzione della resistenza di {0_nameIndef}</JobReport_ReduceResistance>
   <!-- EN: Too large -->
-  <TooLargeForBed>TODO</TooLargeForBed>
+  <TooLargeForBed>Troppo grande</TooLargeForBed>
   <!-- EN: Warning -->
-  <Warning>TODO</Warning>
+  <Warning>Attenzione</Warning>
   <!-- EN: Has subquest -->
-  <HasSubquest>TODO</HasSubquest>
+  <HasSubquest>Ha una richiesta secondaria</HasSubquest>
   <!-- EN: Subquest of -->
-  <SubquestOf>TODO</SubquestOf>
+  <SubquestOf>Sottoquestione di</SubquestOf>
   <!-- EN: Raid -->
-  <Raid>TODO</Raid>
+  <Raid>Raid</Raid>
   <!-- EN: Disabled by -->
-  <ApparelRequirementDisabledLabel>TODO</ApparelRequirementDisabledLabel>
+  <ApparelRequirementDisabledLabel>Disabilitato da</ApparelRequirementDisabledLabel>
   <!-- EN: Nudism -->
-  <Nudism>TODO</Nudism>
+  <Nudism>Nudismo</Nudism>
   <!-- EN: Study progress -->
-  <StudyProgress>TODO</StudyProgress>
+  <StudyProgress>Progressi dello studio</StudyProgress>
   <!-- EN: completed -->
-  <StudyCompleted>TODO</StudyCompleted>
+  <StudyCompleted>completato</StudyCompleted>
   <!-- EN: Attack this to destroy it. -->
-  <AttackToDestroy>TODO</AttackToDestroy>
+  <AttackToDestroy>Attaccatelo per distruggerlo.</AttackToDestroy>
   <!-- EN: Remove this by attacking it. -->
-  <RemoveByAttackingTooltip>TODO</RemoveByAttackingTooltip>
+  <RemoveByAttackingTooltip>Rimuovetelo attaccandolo.</RemoveByAttackingTooltip>
   <!-- EN: Food -->
-  <ThoughtFoodEatenFood>TODO</ThoughtFoodEatenFood>
+  <ThoughtFoodEatenFood>Cibo</ThoughtFoodEatenFood>
   <!-- EN: Ingredients -->
-  <ThoughtFoodEatenIngredients>TODO</ThoughtFoodEatenIngredients>
+  <ThoughtFoodEatenIngredients>Ingredienti</ThoughtFoodEatenIngredients>
   <!-- EN: Shield pack -->
-  <ShieldInbuilt>TODO</ShieldInbuilt>
+  <ShieldInbuilt>Pacchetto scudo</ShieldInbuilt>
   <!-- EN: Punctured - will explode soon. -->
-  <PuncturedWillExplode>TODO</PuncturedWillExplode>
+  <PuncturedWillExplode>Forato - esploderà presto.</PuncturedWillExplode>
   <!-- EN: Click to open research window -->
-  <ClickToOpenResearchTab>TODO</ClickToOpenResearchTab>
+  <ClickToOpenResearchTab>Clicca per aprire la finestra di ricerca</ClickToOpenResearchTab>
   <!-- EN: Target belongs to another faction. -->
-  <TargetBelongsToNPCFaction>TODO</TargetBelongsToNPCFaction>
+  <TargetBelongsToNPCFaction>L'obiettivo appartiene a un'altra fazione.</TargetBelongsToNPCFaction>
   <!-- EN: more -->
-  <MoreLower>TODO</MoreLower>
+  <MoreLower>di più</MoreLower>
   <!-- EN: Requires -->
-  <RequiredTechprintTip>TODO</RequiredTechprintTip>
+  <RequiredTechprintTip>Richiede</RequiredTechprintTip>
   <!-- EN: size -->
-  <Size>TODO</Size>
+  <Size>dimensione</Size>
   <!-- EN: cost -->
-  <Cost>TODO</Cost>
+  <Cost>costo</Cost>
 
   <!-- Scanning -->
   <!-- EN: User scanning speed -->
@@ -579,7 +579,7 @@
   <!-- EN: Contains {0} / {1} beer. -->
   <ContainsBeer>Contiene {0} / {1} birra.</ContainsBeer>
   <!-- EN: Contains -->
-  <Contains>TODO</Contains>
+  <Contains>Contiene</Contains>
   <!-- EN: Fermented -->
   <Fermented>Fermentato</Fermented>
   <!-- EN: Progress: {0} ({1} left) -->
@@ -649,88 +649,88 @@
 
   <!-- Animal pens -->
   <!-- EN: Unenclosed -->
-  <PenUnenclosedLabel>TODO</PenUnenclosedLabel>
+  <PenUnenclosedLabel>Non chiuso</PenUnenclosedLabel>
   <!-- EN: open door -->
-  <PenOpenDoorLabel>TODO</PenOpenDoorLabel>
+  <PenOpenDoorLabel>porta aperta</PenOpenDoorLabel>
   <!-- EN: Rename pen -->
-  <RenameAnimalPen>TODO</RenameAnimalPen>
+  <RenameAnimalPen>Rinomina recinto</RenameAnimalPen>
   <!-- EN: Pen marker {0} -->
-  <AnimalPenMarkerDefaultLabel>TODO</AnimalPenMarkerDefaultLabel>
+  <AnimalPenMarkerDefaultLabel>Recinto marcato {0}</AnimalPenMarkerDefaultLabel>
   <!-- EN: In pen -->
-  <InPen>TODO</InPen>
+  <InPen>Nel recinto</InPen>
   <!-- EN: not in a pen -->
-  <Unpenned>TODO</Unpenned>
+  <Unpenned>non nel recinto</Unpenned>
   <!-- EN: Animal pens can be created by building a pen marker inside an enclosed area. Your handlers will bring animals to an appropriate pen. Pens can be enclosed with fences, barricades, walls, and doors. -->
-  <UnpennedTooltip>TODO</UnpennedTooltip>
+  <UnpennedTooltip>I recinti per gli animali possono essere creati costruendo un marcatore all'interno di un'area chiusa. I conduttori porteranno gli animali in un recinto appropriato. I recinti possono essere chiusi con recinzioni, barricate, muri e porte.</UnpennedTooltip>
   <!-- EN: Roped by -->
-  <RopedByPawn>TODO</RopedByPawn>
+  <RopedByPawn>Condotto da</RopedByPawn>
   <!-- EN: Roped to -->
-  <RopedToThing>TODO</RopedToThing>
+  <RopedToThing>In sella a</RopedToThing>
   <!-- EN: Roped to spot. -->
-  <RopedToSpot>TODO</RopedToSpot>
+  <RopedToSpot>Rotta verso il punto</RopedToSpot>
   <!-- EN: Pen size -->
-  <PenSizeLabel>TODO</PenSizeLabel>
+  <PenSizeLabel>Dimensione del recinto</PenSizeLabel>
   <!-- EN: Very small pen -->
-  <PenSizeDesc_VerySmall>TODO</PenSizeDesc_VerySmall>
+  <PenSizeDesc_VerySmall>Recinto molto piccolo</PenSizeDesc_VerySmall>
   <!-- EN: Small pen -->
-  <PenSizeDesc_Small>TODO</PenSizeDesc_Small>
+  <PenSizeDesc_Small>Recinto piccolo</PenSizeDesc_Small>
   <!-- EN: Medium-sized pen -->
-  <PenSizeDesc_Medium>TODO</PenSizeDesc_Medium>
+  <PenSizeDesc_Medium>Recinto di media grandezza</PenSizeDesc_Medium>
   <!-- EN: Large pen -->
-  <PenSizeDesc_Large>TODO</PenSizeDesc_Large>
+  <PenSizeDesc_Large>Recinto grande</PenSizeDesc_Large>
   <!-- EN: Not enclosed - build fences -->
-  <PenSizeDesc_Unenclosed>TODO</PenSizeDesc_Unenclosed>
+  <PenSizeDesc_Unenclosed>Non chiuso - costruisci delle recinzioni</PenSizeDesc_Unenclosed>
   <!-- EN: {ANIMALDEF_label} capacity -->
-  <PenCapacityDesc>TODO</PenCapacityDesc>
+  <PenCapacityDesc>{ANIMALDEF_label} capacità</PenCapacityDesc>
   <!-- EN: Example animals -->
-  <PenExampleAnimals>TODO</PenExampleAnimals>
+  <PenExampleAnimals>Esempi di animali</PenExampleAnimals>
   <!-- EN: No exterior access - Animals cannot be moved in or out. -->
-  <NoExteriorAccess>TODO</NoExteriorAccess>
+  <NoExteriorAccess>Nessun accesso dall'esterno - Gli animali non possono essere spostati all'interno o all'esterno.</NoExteriorAccess>
 
   <!-- Cell Inspector -->
   <!-- EN: Beauty -->
-  <Beauty_Label>TODO</Beauty_Label>
+  <Beauty_Label>Estetica</Beauty_Label>
   <!-- EN: Zone -->
-  <Zone_Label>TODO</Zone_Label>
+  <Zone_Label>Zona</Zone_Label>
   <!-- EN: Roof -->
-  <Roof_Label>TODO</Roof_Label>
+  <Roof_Label>Tetto</Roof_Label>
   <!-- EN: Terrain -->
-  <Terrain_Label>TODO</Terrain_Label>
+  <Terrain_Label>Terreno</Terrain_Label>
   <!-- EN: Snow -->
-  <Snow_Label>TODO</Snow_Label>
+  <Snow_Label>Neve</Snow_Label>
   <!-- EN: Walk speed -->
-  <WalkSpeed_Label>TODO</WalkSpeed_Label>
+  <WalkSpeed_Label>Velocità di camminata</WalkSpeed_Label>
   <!-- EN: Fertility -->
-  <Fertility_Label>TODO</Fertility_Label>
+  <Fertility_Label>Fertilità</Fertility_Label>
   <!-- EN: Temperature -->
-  <Temperature_Label>TODO</Temperature_Label>
+  <Temperature_Label>Temperatura</Temperature_Label>
   <!-- EN: Light level -->
-  <LightLevel_Label>TODO</LightLevel_Label>
+  <LightLevel_Label>Livello di luce</LightLevel_Label>
   <!-- EN: Biome -->
-  <Biome_Label>TODO</Biome_Label>
+  <Biome_Label>Bioma</Biome_Label>
   <!-- EN: Hilliness -->
-  <Hilliness_Label>TODO</Hilliness_Label>
+  <Hilliness_Label>Collinosità</Hilliness_Label>
   <!-- EN: Road -->
-  <Road_Label>TODO</Road_Label>
+  <Road_Label>Strada</Road_Label>
   <!-- EN: River -->
-  <River_Label>TODO</River_Label> 
+  <River_Label>Fiume</River_Label> 
   <!-- EN: Movement difficulty -->
-  <MovementDifficulty_Label>TODO</MovementDifficulty_Label>
+  <MovementDifficulty_Label>Difficoltà di movimento</MovementDifficulty_Label>
   <!-- EN: Pollution -->
-  <Pollution_Label>TODO</Pollution_Label>
+  <Pollution_Label>Inquinamento</Pollution_Label>
   <!-- EN: Filth -->
-  <Filth_Label>TODO</Filth_Label>
+  <Filth_Label>Sporcizia</Filth_Label>
   
   <!-- EN: Faction -->
-  <Faction_Label>TODO</Faction_Label>
+  <Faction_Label>Fazione</Faction_Label>
   <!-- EN: Relationship -->
-  <Relationship_Label>TODO</Relationship_Label>
+  <Relationship_Label>Relazione</Relationship_Label>
   <!-- EN: Colonists -->
-  <CaravanColonists_Label>TODO</CaravanColonists_Label>
+  <CaravanColonists_Label>Coloni</CaravanColonists_Label>
   <!-- EN: Status -->
-  <CaravanStatus_Label>TODO</CaravanStatus_Label>
+  <CaravanStatus_Label>Stato</CaravanStatus_Label>
   <!-- EN: Time to destination -->
-  <CaravanTTD_Label>TODO</CaravanTTD_Label>
+  <CaravanTTD_Label>Tempo per raggiungere la destinazione</CaravanTTD_Label>
   
 
   <!-- Control -->
@@ -743,11 +743,11 @@
   <!-- EN: {1_labelShort} is not drafted. -->
   <IsNotDrafted>{1_labelShort} non è mobilitato.</IsNotDrafted>
   <!-- EN: {PAWN_nameDef} cannot use ranged weapons due to {PAWN_possessive} {APPAREL_label}. -->
-  <ApparelPreventsShooting>TODO</ApparelPreventsShooting>
+  <ApparelPreventsShooting>{PAWN_nameDef} non può usare le armi a distanza a causa di {PAWN_possessive} {APPAREL_label}.</ApparelPreventsShooting>
 
   <!-- Snow -->
   <!-- EN: Snow -->
-  <Snow>TODO</Snow>
+  <Snow>Neve</Snow>
   <!-- EN: No snow -->
   <SnowNone>Niente neve</SnowNone>
   <!-- EN: dusting -->
@@ -775,21 +775,21 @@
   <!-- EN: Not loaded -->
   <ShellNotLoaded>Non caricata</ShellNotLoaded>
   <!-- EN: Already active -->
-  <AlreadyActive>TODO</AlreadyActive>
+  <AlreadyActive>Già attivo</AlreadyActive>
   <!-- EN: Order activation -->
-  <OrderActivation>TODO</OrderActivation>
+  <OrderActivation>Ordina l'attivazione</OrderActivation>
   <!-- EN: Order a colonist to activate {THING_definite}. -->
-  <OrderActivationDesc>TODO</OrderActivationDesc>
+  <OrderActivationDesc>Ordina a un colono di attivare {THING_definite}.</OrderActivationDesc>
   <!-- EN: Must be activated by a colonist. -->
-  <MustBeActivatedByColonist>TODO</MustBeActivatedByColonist>
+  <MustBeActivatedByColonist>Deve essere attivato da un colono.</MustBeActivatedByColonist>
   <!-- EN: No nearby fire -->
-  <NoNearbyFire>TODO</NoNearbyFire>
+  <NoNearbyFire>Nessun incendio nelle vicinanze</NoNearbyFire>
   <!-- EN: No nearby fire. No fuel was used. -->
-  <NoNearbyFireNoFuelUsed>TODO</NoNearbyFireNoFuelUsed>
+  <NoNearbyFireNoFuelUsed>Nessun incendio nelle vicinanze. Non è stato utilizzato alcun combustibile.</NoNearbyFireNoFuelUsed>
   <!-- EN: Choose who should activate this. -->
-  <ChooseWhoShouldActivate>TODO</ChooseWhoShouldActivate>
+  <ChooseWhoShouldActivate>Scegliere chi deve attivarlo.</ChooseWhoShouldActivate>
   <!-- EN: No fuel -->
-  <NoFuel>TODO</NoFuel>
+  <NoFuel>Nessun carburante</NoFuel>
 
   <!-- Job reports -->
   <!-- EN: hauling {THING_label} to {DESTINATION}. -->
@@ -805,7 +805,7 @@
   <!-- EN: resting. -->
   <ReportResting>si riposa.</ReportResting>
   <!-- EN: laying down. -->
-  <ReportLayingDown>TODO</ReportLayingDown>
+  <ReportLayingDown>sdraiato.</ReportLayingDown>
   <!-- EN: watching the sunrise. -->
   <WatchingSunrise>ammira l'alba.</WatchingSunrise>
   <!-- EN: cloudwatching. -->
@@ -835,9 +835,9 @@
   <!-- EN: digging up corpse. -->
   <ReportDiggingUpCorpse>dissotterra un cadavere</ReportDiggingUpCorpse>
   <!-- EN: being carried by {0_labelShort}. -->
-  <CarriedBy>TODO</CarriedBy> 
+  <CarriedBy>trasportato da {0_labelShort}.</CarriedBy> 
   <!-- EN: inside {0_labelShort}. -->
-  <InContainer>TODO</InContainer> 
+  <InContainer>all'interno di {0_labelShort}.</InContainer>
 
   <!-- Lord job reports -->
   <!-- EN: Attending marriage ceremony -->
@@ -955,7 +955,7 @@
   <!-- EN: stun -->
   <StunLower>stordito</StunLower>
   <!-- EN: Slowed by damage -->
-  <SlowedByDamage>TODO</SlowedByDamage>
+  <SlowedByDamage>Rallentato dai danni</SlowedByDamage>
 
   <!-- Inspector general stuff -->
   <!-- EN: Select next thing in same square.\n\n(*SectionTitle)Shortcut key:(/SectionTitle) {0}\n\nYou can also do this by slowly clicking the same square again. -->
@@ -963,7 +963,7 @@
   <!-- EN: View information. -->
   <DefInfoTip>Visualizza informazioni su questo oggetto.</DefInfoTip>
   <!-- EN: Select next thing in same square.\n\nYou can also do this by slowly clicking the same square again. -->
-  <SelectNextInSquareTipController>TODO</SelectNextInSquareTipController>
+  <SelectNextInSquareTipController>Selezionare la cosa successiva nello stesso quadrato.\n\nÈ possibile farlo anche facendo di nuovo clic sullo stesso quadrato.</SelectNextInSquareTipController>
 
   <!-- Hostility response -->
   <!-- EN: Change how this person will react to nearby enemies when not drafted. -->
@@ -1039,13 +1039,13 @@
   <!-- EN: Ingredients -->
   <Ingredients>Ingredienti</Ingredients>
   <!-- EN: The ingredients used to make this meal. -->
-  <IngredientsDesc>TODO</IngredientsDesc>
+  <IngredientsDesc>Gli ingredienti utilizzati per la preparazione di questo pasto.</IngredientsDesc>
   <!-- EN: Dietary type -->
-  <DietaryType>TODO</DietaryType>
+  <DietaryType>Tipo di dieta</DietaryType>
   <!-- EN: The type of meal produced. Some people have preferences for specific types of meals. -->
-  <DietaryTypeDesc>TODO</DietaryTypeDesc>
+  <DietaryTypeDesc>Il tipo di pasto prodotto. Alcune persone hanno preferenze per determinati tipi di pasti.</DietaryTypeDesc>
   <!-- EN: only stacks with similar meals -->
-  <OnlyStacksWithCompatibleMeals>TODO</OnlyStacksWithCompatibleMeals>
+  <OnlyStacksWithCompatibleMeals>impila solo pasti simili</OnlyStacksWithCompatibleMeals>
 
   <!-- Plants -->
   <!-- EN: {0} grown -->
@@ -1067,9 +1067,9 @@
   <!-- EN: Mature. -->
   <Mature>Maturo.</Mature>
   <!-- EN: Average plant age -->
-  <AveragePlantAge>TODO</AveragePlantAge>
+  <AveragePlantAge>Età media della pianta</AveragePlantAge>
   <!-- EN: Oldest plant age -->
-  <OldestPlantAge>TODO</OldestPlantAge>
+  <OldestPlantAge>Età della pianta più vecchia</OldestPlantAge>
   <!-- EN: Growing period -->
   <OutdoorGrowingPeriod>Periodo di crescita</OutdoorGrowingPeriod>
   <!-- EN: Never -->
@@ -1085,15 +1085,15 @@
   <!-- EN: Dying because exposed to light -->
   <DyingBecauseExposedToLight>Sta morendo perché esposto alla luce</DyingBecauseExposedToLight>
   <!-- EN: Cut now -->
-  <AutoCutNow>TODO</AutoCutNow>
+  <AutoCutNow>Taglia ora</AutoCutNow>
   <!-- EN: harvesting -->
-  <HarvestGerund>TODO</HarvestGerund>
+  <HarvestGerund>raccogli</HarvestGerund>
   <!-- EN: cutting -->
-  <CutGerund>TODO</CutGerund>
+  <CutGerund>taglia</CutGerund>
   <!-- EN: Cut all blight -->
-  <CutAllBlight>TODO</CutAllBlight>
+  <CutAllBlight>Taglia tutta la peronospora</CutAllBlight>
   <!-- EN: Mark all blighted plants to be destroyed. Blighted plants will not yield any food or resources and should be destroyed before the blight spreads. -->
-  <CutAllBlightDesc>TODO</CutAllBlightDesc>
+  <CutAllBlightDesc>Contrassegnare tutte le piante malate da distruggere. Le piante malate non producono cibo o risorse e devono essere distrutte prima che la peronospora si diffonda.</CutAllBlightDesc>
 
   <!-- Zones -->
   <!-- EN: Zone -->
@@ -1135,7 +1135,7 @@
   <!-- EN: Toggle colonist bar.\n\nDisplays icons and basic status for all colonists along the top of the screen.\n\nYou can reorder the colonists in the colonist bar by right-click and dragging them. -->
   <ShowColonistBarToggleButton>Imposta barra coloni.\n\nMostra le icone e lo stato di tutti i coloni in alto sullo schermo.\n\nPuoi riordinare i coloni nella barra coloni cliccando con il destro e trascinandoli.</ShowColonistBarToggleButton>
   <!-- EN: Toggle colonist bar.\n\nDisplays icons and basic status for all colonists along the top of the screen.\n\nYou can reorder the colonists in the colonist bar by pressing the left trigger button and dragging them. -->
-  <ShowColonistBarToggleButtonController>TODO</ShowColonistBarToggleButtonController>
+  <ShowColonistBarToggleButtonController>Imposta barra coloni.\n\nVisualizza le icone e lo stato di base di tutti i coloni nella parte superiore dello schermo.\n\nÈ possibile riordinare i coloni nella barra dei coloni cliccando con il sinistro e trascinandoli.</ShowColonistBarToggleButtonController>
   <!-- EN: Toggle automatically expanding the home area around new constructions. -->
   <AutoHomeAreaToggleButton>Imposta estensione automatica della zona della base intorno a nuove costruzioni.</AutoHomeAreaToggleButton>
   <!-- EN: Toggle automatic rebuild of destroyed structures in the home area. -->
@@ -1159,7 +1159,7 @@
   <!-- EN: Toggle visibility of names of landforms. -->
   <ShowWorldFeaturesToggleButton>Imposta visualizzazione nomi del terreno.</ShowWorldFeaturesToggleButton>
   <!-- EN: Toggle heat overlay. This shows the air temperature in each room and outdoors.\n\nColonists will be unhappy if the temperature is too high or too low. Exposure to extreme temperatures can lead to hypothermia, frostbite, heatstroke, burns, and death. -->
-  <ShowTemperatureOverlayToggleButton>TODO</ShowTemperatureOverlayToggleButton>
+  <ShowTemperatureOverlayToggleButton>Attivare la sovrapposizione del calore. Mostra la temperatura dell'aria in ogni stanza e all'esterno.\n\nI coloni saranno scontenti se la temperatura è troppo alta o troppo bassa. L'esposizione a temperature estreme può portare a ipotermia, congelamento, colpo di calore, ustioni e morte.</ShowTemperatureOverlayToggleButton>
 
   <!-- Fire -->
   <!-- EN: fire on {1_label} -->
@@ -1195,7 +1195,7 @@
   <!-- EN: Cannot be placed under a roof. -->
   <MustPlaceUnroofed>Non può essere posizionato sotto una copertura.</MustPlaceUnroofed>
   <!-- EN: Must be placed under thick roof. -->
-  <MustPlaceUnderThickRoof>TODO</MustPlaceUnderThickRoof>
+  <MustPlaceUnderThickRoof>Deve essere posizionato sotto un tetto spesso.</MustPlaceUnderThickRoof>
   <!-- EN: Must place with head attached to ship structural beam. -->
   <MustPlaceHeadOnShipBeam>Deve essere posizionato con la parte frontale adiacente allo scafo dell'astronave.</MustPlaceHeadOnShipBeam>
   <!-- EN: Must be placed next to something that needs a hopper. -->
@@ -1215,7 +1215,7 @@
   <!-- EN: Cannot be placed next to traps. -->
   <CannotPlaceAdjacentTrap>Non può essere posizionato vicino alle trappole.</CannotPlaceAdjacentTrap>
   <!-- EN: Cannot be placed next to another building of the same type. -->
-  <CannotPlaceAdjacentSameDef>TODO</CannotPlaceAdjacentSameDef>
+  <CannotPlaceAdjacentSameDef>Non può essere collocato accanto a un altro edificio dello stesso tipo.</CannotPlaceAdjacentSameDef>
 
   <!-- Wind Turbine -->
   <!-- EN: Blocked by -->
@@ -1273,7 +1273,7 @@
   <!-- EN: Not installed -->
   <NotInstalled>Non installato</NotInstalled>
   <!-- EN: Extracted tree will die in {time} unless replanted. -->
-  <MinifiedTreeWillDieIn>TODO</MinifiedTreeWillDieIn>
+  <MinifiedTreeWillDieIn>L'albero estratto morirà in {time} a meno che non venga ripiantato.</MinifiedTreeWillDieIn>
 
   <!-- Art -->
   <!-- EN: Title -->
@@ -1291,7 +1291,7 @@
   <!-- EN: Quality -->
   <Quality>Qualità</Quality>
   <!-- EN: quality -->
-  <quality>TODO</quality>
+  <quality>qualità</quality>
   <!-- EN: An item's quality is how well-made it is. -->
   <QualityDescription>La qualità di un oggetto indica quanto è fatto bene.</QualityDescription>
   <!-- EN: Quality: {0} -->
@@ -1341,9 +1341,9 @@
   <!-- EN: inactive -->
   <InactiveFacility>inattivo</InactiveFacility>
   <!-- EN: Links to -->
-  <FacilityPotentiallyLinkedTo>TODO</FacilityPotentiallyLinkedTo>
+  <FacilityPotentiallyLinkedTo>Collegamenti a</FacilityPotentiallyLinkedTo>
   <!-- EN: Not linked to a building -->
-  <FacilityNoPotentialLinks>TODO</FacilityNoPotentialLinks>
+  <FacilityNoPotentialLinks>Non collegato a un edificio</FacilityNoPotentialLinks>
 
   <!-- Hediffs growth modes -->
   <!-- EN: {PAWN_labelShort}'s {1} is now growing. -->
@@ -1417,7 +1417,7 @@
   <!-- EN: Learning helper -->
   <LearningHelper>Tutor</LearningHelper>
   <!-- EN: In-game tutor that aims to teach you information about topics relevant to your colony's current state -->
-  <LearningHelperTooltip>TODO</LearningHelperTooltip>
+  <LearningHelperTooltip>Tutor di gioco che ha lo scopo di fornire informazioni su argomenti rilevanti per lo stato attuale della colonia.</LearningHelperTooltip>
   <!-- EN: Mark as learned -->
   <MarkLearned>Segna come letto</MarkLearned>
   <!-- EN: Already learned -->
@@ -1445,15 +1445,15 @@
   <!-- EN: Right mouse button: Add/remove waypoints. -->
   <RoutePlannerPressRMBToAddAndRemoveWaypoints>Clic destro: Aggiungi/Rimuovi tappa.</RoutePlannerPressRMBToAddAndRemoveWaypoints>
   <!-- EN: Left trigger button: Add/remove waypoints. -->
-  <RoutePlannerPressRMBToAddAndRemoveWaypointsController>TODO</RoutePlannerPressRMBToAddAndRemoveWaypointsController>
+  <RoutePlannerPressRMBToAddAndRemoveWaypointsController>Pulsante di attivazione sinistro: Aggiungere/rimuovere waypoint.</RoutePlannerPressRMBToAddAndRemoveWaypointsController>
   <!-- EN: ESC: Exit planning mode. -->
   <RoutePlannerPressEscapeToExit>ESC: Uscire dalla modalità pianificazione.</RoutePlannerPressEscapeToExit>
   <!-- EN: {Key:Cancel}: Exit planning mode. -->
-  <RoutePlannerPressEscapeToExitController>TODO</RoutePlannerPressEscapeToExitController>
+  <RoutePlannerPressEscapeToExitController>{Key:Cancel}: Esci dalla modalità di pianificazione.</RoutePlannerPressEscapeToExitController>
   <!-- EN: ESC: Return to the caravan formation dialog. -->
   <RoutePlannerPressEscapeToReturnToCaravanFormationDialog>ESC: Ritorna alla finestra di formazione della carovana.</RoutePlannerPressEscapeToReturnToCaravanFormationDialog>
   <!-- EN: {Key:Cancel}: Return to the caravan formation dialog. -->
-  <RoutePlannerPressEscapeToReturnToCaravanFormationDialogController>TODO</RoutePlannerPressEscapeToReturnToCaravanFormationDialogController>
+  <RoutePlannerPressEscapeToReturnToCaravanFormationDialogController>{Key:Cancel}: Torna alla finestra di dialogo della formazione della carovana.</RoutePlannerPressEscapeToReturnToCaravanFormationDialogController>
   <!-- EN: Est. travel time: {0} -->
   <EstimatedTimeToWaypoint>Tempo di viaggio stimato: {0}</EstimatedTimeToWaypoint>
   <!-- EN: Est. travel time (from previous waypoint): {0} -->
@@ -1597,165 +1597,165 @@
   
   <!-- Healing -->
   <!-- EN: {0_nameDef}'s {1} was cured. -->
-  <HealingCureHediff>TODO</HealingCureHediff>
+  <HealingCureHediff>Il {0_nomeDef} di {1} è stato curato.</HealingCureHediff>
   <!-- EN: {0_nameDef}'s {1} was restored. -->
-  <HealingRestoreBodyPart>TODO</HealingRestoreBodyPart>
+  <HealingRestoreBodyPart>Il {0_nomeDef} di {1} è stato ripristinato.</HealingRestoreBodyPart>
 
   <!-- EN: Caution: Placing a building here will anger {FACTION_name}! -->
-  <WarningBuildingCausesHostility>TODO</WarningBuildingCausesHostility>
+  <WarningBuildingCausesHostility>Attenzione: Se si posiziona un edificio in questo punto, si rischia di far arrabbiare {FACTION_name}!</WarningBuildingCausesHostility>
 
   <!-- EN: Choose landing site -->
-  <ChooseLandingSite>TODO</ChooseLandingSite>
+  <ChooseLandingSite>Scegliere il sito di destinazione</ChooseLandingSite>
   
   <!-- Rituals -->
   <!-- EN: ritual -->
-  <Ritual>TODO</Ritual>
+  <Ritual>rituale</Ritual>
 
   <!-- EN: Takes place at -->
-  <RitualTakesPlaceAt>TODO</RitualTakesPlaceAt>
+  <RitualTakesPlaceAt>Si svolge presso</RitualTakesPlaceAt>
   <!-- EN: Any {0} -->
-  <RitualTargetThingDefsInfo>TODO</RitualTargetThingDefsInfo>
+  <RitualTargetThingDefsInfo>Qualsiasi {0}</RitualTargetThingDefsInfo>
   <!-- EN: Attending {0} -->
-  <LordReportAttending>TODO</LordReportAttending>
+  <LordReportAttending>Presenti {0}</LordReportAttending>
   <!-- EN: {0} has been canceled. -->
-  <RitualCalledOff>TODO</RitualCalledOff>
+  <RitualCalledOff>{0} è stato annullato.</RitualCalledOff>
   <!-- EN: {0} was not completed because of lack of attendance. -->
-  <RitualNobodyAttended>TODO</RitualNobodyAttended>
+  <RitualNobodyAttended>{0} non è stato completato a causa della mancata partecipazione.</RitualNobodyAttended>
   <!-- EN: {0} has been completed. -->
-  <RitualFinished>TODO</RitualFinished>
+  <RitualFinished>{0} è stato completato.</RitualFinished>
   <!-- EN: ends in {0} -->
-  <RitualEndsIn>TODO</RitualEndsIn>
+  <RitualEndsIn>termina con {0}</RitualEndsIn>
   <!-- EN: Can start any time -->
-  <RitualStartAnyTime>TODO</RitualStartAnyTime>
+  <RitualStartAnyTime>Può iniziare in qualsiasi momento</RitualStartAnyTime>
   <!-- EN: Can start after event -->
-  <RitualStartEvent>TODO</RitualStartEvent>
+  <RitualStartEvent>Può iniziare dopo l'evento</RitualStartEvent>
   <!-- EN: Focus objects -->
-  <RitualFocusObjects>TODO</RitualFocusObjects>
+  <RitualFocusObjects>Oggetti da mettere a fuoco</RitualFocusObjects>
   <!-- EN: Participating roles -->
-  <RitualParticipatingRoles>TODO</RitualParticipatingRoles>
+  <RitualParticipatingRoles>Ruoli partecipanti</RitualParticipatingRoles>
   <!-- EN: Organizers -->
-  <Organizers>TODO</Organizers>
+  <Organizers>Organizzatori</Organizers>
   <!-- EN: Quality factors -->
-  <QualityFactors>TODO</QualityFactors>
+  <QualityFactors>Fattori di qualità</QualityFactors>
   <!-- EN: This condition may be fulfilled, depending on how things play out.\n\nIf it is fulfilled, the quality bonus will apply. -->
-  <QualityFactorTooltipUncertain>TODO</QualityFactorTooltipUncertain>
+  <QualityFactorTooltipUncertain>Questa condizione può essere soddisfatta, a seconda di come si svolgeranno le cose.\n\nSe è soddisfatta, si applica il bonus di qualità.</QualityFactorTooltipUncertain>
   <!-- EN: This condition is not fulfilled.\n\nThe quality bonus will not apply. -->
-  <QualityFactorTooltipNotFulfilled>TODO</QualityFactorTooltipNotFulfilled>
+  <QualityFactorTooltipNotFulfilled>Questa condizione non è soddisfatta.\n\nIl bonus qualità non verrà applicato.</QualityFactorTooltipNotFulfilled>
   <!-- EN: Spectators -->
-  <Spectators>TODO</Spectators>
+  <Spectators>Spettatori</Spectators>
   <!-- EN: Not participating -->
-  <NotParticipating>TODO</NotParticipating>
+  <NotParticipating>Non partecipano</NotParticipating>
   <!-- EN: Drag and drop or left/right click to move people. -->
-  <DragPawnsToRolesInfo>TODO</DragPawnsToRolesInfo>
+  <DragPawnsToRolesInfo>Trascinare e rilasciare o clicca con il tasto destro/sinistro per spostare le persone.</DragPawnsToRolesInfo>
   <!-- EN: Drag and drop or click to move people. -->
-  <DragPawnsToRolesInfoController>TODO</DragPawnsToRolesInfoController>
+  <DragPawnsToRolesInfoController>Trascinare e rilasciare o clicca per spostare le persone.</DragPawnsToRolesInfoController>
   <!-- EN: A slave. The human property of others. -->
-  <RitualBeginSlaveDesc>TODO</RitualBeginSlaveDesc>
+  <RitualBeginSlaveDesc>Uno schiavo. Una proprietà umana di altri.</RitualBeginSlaveDesc>
   <!-- EN: {0_labelShort} is sleeping. If included in the ritual, {0_pronoun} will wake up to participate. -->
-  <RitualBeginSleepingDesc>TODO</RitualBeginSleepingDesc>
+  <RitualBeginSleepingDesc>{0_labelShort} sta dormendo. Se incluso nel rituale, {0_pronoun} si sveglierà per partecipare.</RitualBeginSleepingDesc>
   <!-- EN: Some of the selected participants are sleeping. They will wake up once you start the ritual. -->
-  <RitualBeginSleepingWarning>TODO</RitualBeginSleepingWarning>
+  <RitualBeginSleepingWarning>Alcuni dei partecipanti selezionati stanno dormendo. Si sveglieranno una volta iniziato il rituale.</RitualBeginSleepingWarning>
   <!-- EN: This position is best done by a colonist holding the social role of {0}.\n\nIf someone without this role fills this position, you won't get the following bonus(es) -->
-  <RitualRoleRequiresSocialRole>TODO</RitualRoleRequiresSocialRole>
+  <RitualRoleRequiresSocialRole>Questa posizione è occupata al meglio da un colono che ricopre il ruolo sociale di {0}.\n\nSe qualcuno che non ha questo ruolo ricopre questa posizione, non otterrà i seguenti bonus</RitualRoleRequiresSocialRole>
   <!-- EN: No substitute available for the role of {0}. -->
-  <RitualRoleCantSubstitute>TODO</RitualRoleCantSubstitute>
+  <RitualRoleCantSubstitute>Non sono disponibili sostituti per il ruolo di {0}.</RitualRoleCantSubstitute>
   <!-- EN: {0} progress -->
-  <RitualOutcomeProgress>TODO</RitualOutcomeProgress>
+  <RitualOutcomeProgress>{0} progresso</RitualOutcomeProgress>
   <!-- EN: {0} quality depends on -->
-  <RitualOutcomeQualityAbstract>TODO</RitualOutcomeQualityAbstract>
+  <RitualOutcomeQualityAbstract>La qualità {0} dipende da</RitualOutcomeQualityAbstract>
   <!-- EN: {0} total quality was {1}, determined by these factors -->
-  <RitualOutcomeQualitySpecific>TODO</RitualOutcomeQualitySpecific>
+  <RitualOutcomeQualitySpecific>{0} la qualità totale era {1}, determinata da questi fattori</RitualOutcomeQualitySpecific>
   <!-- EN: Outcome chances at {0} quality -->
-  <RitualOutcomeChances>TODO</RitualOutcomeChances>
+  <RitualOutcomeChances>Possibilità di risultato con qualità {0}</RitualOutcomeChances>
   <!-- EN: Performed recently -->
-  <RitualOutcomePerformedRecently>TODO</RitualOutcomePerformedRecently>
+  <RitualOutcomePerformedRecently>Eseguito di recente</RitualOutcomePerformedRecently>
   <!-- EN: {0} expectations -->
-  <RitualQualityExpectations>TODO</RitualQualityExpectations>
+  <RitualQualityExpectations>{0} aspettative</RitualQualityExpectations>
   <!-- EN: Ritual ambience sound -->
-  <RitualAmbienceSound>TODO</RitualAmbienceSound>
+  <RitualAmbienceSound>Suono d'ambiente rituale</RitualAmbienceSound>
   <!-- EN: Total {0} quality is below {1}. Proceeding will most likely negatively impact your colony.\n\nAre you sure? -->
-  <RitualQualityLowWarning>TODO</RitualQualityLowWarning>
+  <RitualQualityLowWarning>La qualità totale {0} è inferiore a {1}. Procedere avrà probabilmente un impatto negativo sulla colonia.\n\nÈ sicuro?</RitualQualityLowWarning>
   <!-- EN: No reachable appropriate place to speak. -->
-  <AbilitySpeechDisabledNoSpot>TODO</AbilitySpeechDisabledNoSpot>
+  <AbilitySpeechDisabledNoSpot>Non c'è un luogo appropriato raggiungibile per parlare.</AbilitySpeechDisabledNoSpot>
   <!-- EN: {0_labelShort} is incapable of {1}. -->
-  <AbilityDisabledNoCapacity>TODO</AbilityDisabledNoCapacity>
+  <AbilityDisabledNoCapacity>{0_labelShort} è incapace di {1}.</AbilityDisabledNoCapacity>
   <!-- EN: Everyone participating in the ritual gains {0} mood for {1} days. -->
-  <RitualOutcomeExtraDesc_Mood>TODO</RitualOutcomeExtraDesc_Mood>
+  <RitualOutcomeExtraDesc_Mood>Chiunque partecipi al rituale guadagna {0} umore per {1} giorni.</RitualOutcomeExtraDesc_Mood>
   <!-- EN: This ritual has no quality offsets, so the best outcome is always expected -->
-  <RitualOutcomeNoQuality>TODO</RitualOutcomeNoQuality>
+  <RitualOutcomeNoQuality>Questo rituale non ha compensazioni di qualità, quindi ci si aspetta sempre il risultato migliore.</RitualOutcomeNoQuality>
   
   <!-- EN: Choose who should participate in {RITUAL_labelDef}. -->
-  <ChooseParticipants>TODO</ChooseParticipants>
+  <ChooseParticipants>Scegliere chi deve partecipare a {RITUAL_labelDef}.</ChooseParticipants>
   <!-- EN: Begin -->
-  <Begin>TODO</Begin>
+  <Begin>Inizia</Begin>
   <!-- EN: Begin {0} -->
-  <BeginRitual>TODO</BeginRitual>
+  <BeginRitual>Inizio {0}</BeginRitual>
   <!-- EN: Begin {0} for {1} -->
-  <BeginRitualFor>TODO</BeginRitualFor>
+  <BeginRitualFor>Iniziare {0} per {1}</BeginRitualFor>
   <!-- EN: {0} (out of {1}) -->
-  <QualityOutOf>TODO</QualityOutOf>
+  <QualityOutOf>{0} (su {1})</QualityOutOf>
   <!-- EN: {0} is a date-specific ritual. You'll be able to start it in {1}, on the {2}. -->
-  <DateRitualNoObligation>TODO</DateRitualNoObligation>
+  <DateRitualNoObligation>{0} è un rituale specifico per la data. Potrete iniziarlo nel {1}, il {2}.</DateRitualNoObligation>
 
   <!-- EN: Replace with -->
-  <PreceptReplaceWith>TODO</PreceptReplaceWith>
+  <PreceptReplaceWith>Sostituire con</PreceptReplaceWith>
   <!-- EN: Ritual seat of {IDEOS} -->
-  <RitualSeatOf>TODO</RitualSeatOf>
+  <RitualSeatOf>Sede rituale di {IDEOS}</RitualSeatOf>
   <!-- EN: Expected quality -->
-  <ExpectedRitualQuality>TODO</ExpectedRitualQuality>
+  <ExpectedRitualQuality>Qualità prevista</ExpectedRitualQuality>
   <!-- EN: Starting quality -->
-  <StartingQuality>TODO</StartingQuality>
+  <StartingQuality>Qualità di partenza</StartingQuality>
   <!-- EN: Expected duration -->
-  <ExpectedRitualDuration>TODO</ExpectedRitualDuration>
+  <ExpectedRitualDuration>Durata prevista</ExpectedRitualDuration>
   
   <!-- EN: {PAWN_labelShort}'s {1} -->
-  <RitualPredictedOutcomeDescPawnStat>TODO</RitualPredictedOutcomeDescPawnStat>
+  <RitualPredictedOutcomeDescPawnStat>{PAWN_labelShort} è {1}</RitualPredictedOutcomeDescPawnStat>
   <!-- EN: Room beauty -->
-  <RitualPredictedOutcomeDescRoomBeauty>TODO</RitualPredictedOutcomeDescRoomBeauty>
+  <RitualPredictedOutcomeDescRoomBeauty>Bellezza della camera</RitualPredictedOutcomeDescRoomBeauty>
   <!-- EN: Participants -->
-  <RitualPredictedOutcomeDescParticipantCount>TODO</RitualPredictedOutcomeDescParticipantCount>
+  <RitualPredictedOutcomeDescParticipantCount>Partecipanti</RitualPredictedOutcomeDescParticipantCount>
   <!-- EN: {PAWN_labelShort}'s expectations -->
-  <RitualPredictedOutcomeDescPawnExpectations>TODO</RitualPredictedOutcomeDescPawnExpectations>
+  <RitualPredictedOutcomeDescPawnExpectations>Aspettative di {PAWN_labelShort}</RitualPredictedOutcomeDescPawnExpectations>
   <!-- EN: Loved one present -->
-  <RitualOutcomeLovedOnePresentLabel>TODO</RitualOutcomeLovedOnePresentLabel>
+  <RitualOutcomeLovedOnePresentLabel>Presenza di una persona cara</RitualOutcomeLovedOnePresentLabel>
   <!-- EN: Any person that {PAWN_labelShort} considers their friend or more. -->
-  <RitualOutcomeLovedOnePresentTip>TODO</RitualOutcomeLovedOnePresentTip>
+  <RitualOutcomeLovedOnePresentTip>Qualsiasi persona che {PAWN_labelShort} considera un amico o più.</RitualOutcomeLovedOnePresentTip>
 
   <!-- EN: Any of these -->
-  <RitualOutcomeLabelAnyOfThese>TODO</RitualOutcomeLabelAnyOfThese>
+  <RitualOutcomeLabelAnyOfThese>Uno qualsiasi di questi</RitualOutcomeLabelAnyOfThese>
   <!-- EN: Replaces {PAWN_labelShort} -->
-  <RitualRoleReplaces>TODO</RitualRoleReplaces>
+  <RitualRoleReplaces>Sostituisce {PAWN_labelShort}</RitualRoleReplaces>
 
   <!-- EN: present -->
-  <Present>TODO</Present>
+  <Present>presente</Present>
   <!-- EN: {0} used -->
-  <Used>TODO</Used>
+  <Used>{0} usato</Used>
   <!-- EN: {0} starting quality -->
-  <StartingRitualQuality>TODO</StartingRitualQuality>
+  <StartingRitualQuality>{0} qualità di partenza</StartingRitualQuality>
 
   <!-- EN: up to {0} quality -->
-  <OutcomeBonusDesc_Quality>TODO</OutcomeBonusDesc_Quality>
+  <OutcomeBonusDesc_Quality>fino alla qualità {0}</OutcomeBonusDesc_Quality>
   <!-- EN: {0} quality -->
-  <OutcomeBonusDesc_QualitySingleOffset>TODO</OutcomeBonusDesc_QualitySingleOffset>
+  <OutcomeBonusDesc_QualitySingleOffset>{0} qualità</OutcomeBonusDesc_QualitySingleOffset>
   <!-- EN: {OUTCOMELABEL} {RITUALLABEL} -->
-  <OutcomeLetterLabel>TODO</OutcomeLetterLabel>
+  <OutcomeLetterLabel>{OUTCOMELABEL} {RITUALLABEL}</OutcomeLetterLabel>
   <!-- EN: {0} max -->
-  <MaxValue>TODO</MaxValue>
+  <MaxValue>{0} max</MaxValue>
 
   <!-- EN: {0} of -->
-  <ThingOf>TODO</ThingOf>
+  <ThingOf>{0} di </ThingOf>
   <!-- EN: {0} of {1} -->
-  <ThingOfSource>TODO</ThingOfSource>
+  <ThingOfSource>{0} di {1}</ThingOfSource>
   <!-- EN: {0} of {1} and {2} -->
-  <ThingOfTwoSources>TODO</ThingOfTwoSources>
+  <ThingOfTwoSources>{0} di {1} e {2}</ThingOfTwoSources>
 
   <!-- Gas types -->
   <!-- EN: blind smoke -->
-  <BlindSmoke>TODO</BlindSmoke>
+  <BlindSmoke>fumo accecante</BlindSmoke>
   <!-- EN: tox gas -->
-  <ToxGas>TODO</ToxGas>
+  <ToxGas>gas tossico</ToxGas>
   <!-- EN: rot stink -->
-  <RotStink>TODO</RotStink>
+  <RotStink>puzza di marcio</RotStink>
 
   <!-- Abilities -->
   <!-- EN: must be drafted. -->
@@ -1769,33 +1769,33 @@
   <!-- EN: {0_nameDef} is ready to use {1}. -->
   <AbilityReadyText>{0_nameDef} è pronto ad usare {1}.</AbilityReadyText>
   <!-- EN: {0_labelShort} is participating in {1}. -->
-  <AbilityDisabledInRitual>TODO</AbilityDisabledInRitual>
+  <AbilityDisabledInRitual>{0_labelShort} partecipa a {1}.</AbilityDisabledInRitual>
   <!-- EN: Charges -->
-  <Charges>TODO</Charges>
+  <Charges>Spese</Charges>
 
   <!-- EN: {0_nameDef} is in an aggressive mental state. -->
-  <PawnIsInMentalState>TODO</PawnIsInMentalState>
+  <PawnIsInMentalState>{0_nomeDef} è in uno stato mentale aggressivo.</PawnIsInMentalState>
 
   <!-- EN: Disabled work -->
-  <DisabledWorkLabel>TODO</DisabledWorkLabel>
+  <DisabledWorkLabel>Lavoro con disabilità</DisabledWorkLabel>
 
   <!-- Glowers -->
   <!-- EN: change color -->
-  <GlowerChangeColor>TODO</GlowerChangeColor>
+  <GlowerChangeColor>cambia colore</GlowerChangeColor>
   <!-- EN: Change the color of the light. -->
-  <GlowerChangeColorDescription>TODO</GlowerChangeColorDescription>
+  <GlowerChangeColorDescription>Cambiare il colore della luce.</GlowerChangeColorDescription>
   <!-- EN: You must research {0} to change light color. -->
-  <GlowerChangeColorNeedsResearch>TODO</GlowerChangeColorNeedsResearch>
+  <GlowerChangeColorNeedsResearch>È necessario ricercare {0} per cambiare il colore della luce.</GlowerChangeColorNeedsResearch>
 
   <!-- Shields -->
   <!-- EN: A personal shield that will attempt to stop incoming projectiles or shrapnel. It prevents the wearer from firing out, and shuts down instantly if hit by an EMP. -->
-  <ShieldPersonalTip>TODO</ShieldPersonalTip>
+  <ShieldPersonalTip>Uno scudo personale che tenta di fermare i proiettili o le schegge in arrivo. Impedisce a chi lo indossa di sparare e si spegne istantaneamente se colpito da un EMP.</ShieldPersonalTip>
 
   <!-- EN: {PAWN_nameDef} is so loyal to {PAWN_possessive} home that {PAWN_pronoun} will refuse to be recruited if taken prisoner. -->
-  <UnrecruitableDesc>TODO</UnrecruitableDesc>
+  <UnrecruitableDesc>{PAWN_nameDef} è così fedele alla casa {PAWN_possessive} che {PAWN_pronoun} rifiuterà di essere reclutato se fatto prigioniero.</UnrecruitableDesc>
 
   <!-- EN: Random -->
-  <Random>TODO</Random>
+  <Random>Casuale</Random>
 
   <!-- UNUSED -->
   <AverageCaravanMemberMoveSpeed>Velocità di movimento media persone</AverageCaravanMemberMoveSpeed>
