@@ -11,7 +11,7 @@
   <!-- EN: Read more -->
   <ReadMore>Leggi di più</ReadMore>
   <!-- EN: You have {0} more letters -->
-  <MoreLetters>TODO</MoreLetters>
+  <MoreLetters> Hai {0} lettere in più</MoreLetters>
 
   <!-- EN: Summer -->
   <LetterLabelFirstSummerWarning>Estate</LetterLabelFirstSummerWarning>
@@ -43,7 +43,7 @@
   <!-- EN: Neutral -->
   <Neutral>Neutrale</Neutral>
   <!-- EN: neutral -->
-  <NeutralLower>TODO</NeutralLower>
+  <NeutralLower>neutrale</NeutralLower>
   <!-- EN: Death -->
   <Death>Morte</Death>
 
@@ -79,7 +79,7 @@
   <!-- EN: It's {0}'s chronological birthday today! Biologically, {1} is {3} years old.\n\nChronologically, {1} just turned {2}.\n\nNote that since people don't age while in cryptosleep, chronological birthday is separate from biological birthday. -->
   <BirthdayChronological>Oggi è il compleanno di {0}! Dal punto di vista biologico, {1} ha {3} anni.\n\nDal punto di vista cronologico, {1} ha appena compiuto {2}.\n\nNota che, dal momento che le persone non invecchiano in criptosonno, il compleanno cronologico è diverso da quello biologico.</BirthdayChronological>
   <!-- EN: {0_nameFull} has reached the biological age of {1}. -->
-  <LetterBirthdayBiological>TODO</LetterBirthdayBiological>
+  <LetterBirthdayBiological>{0_nameFull} ha raggiunto l'età biologica di {1}.</LetterBirthdayBiological>
   <!-- EN: Unfortunately, {0_nameFull} has gained the following diseases due to aging -->
   <BirthdayBiologicalAgeInjuries>{0_nameFull} ha raggiunto l'età biologica di {1} anni.\n\nSfortunatamente, {0_nameFull} ha acquisito le seguenti malattie per colpa dell'invecchiamento:\n{2}</BirthdayBiologicalAgeInjuries>
 
@@ -450,9 +450,9 @@
 
   <!-- Quest items added to caravan inventory -->
   <!-- EN: {CARAVAN_label} received items -->
-  <LetterLabelQuestItemsAddedToCaravanInventory>TODO</LetterLabelQuestItemsAddedToCaravanInventory>
+  <LetterLabelQuestItemsAddedToCaravanInventory>{CARAVAN_label} oggetti ricevuti</LetterLabelQuestItemsAddedToCaravanInventory>
   <!-- EN: {CARAVAN_label} has received the following items:\n\n{THINGS} -->
-  <LetterQuestItemsAddedToCaravanInventory>TODO</LetterQuestItemsAddedToCaravanInventory>
+  <LetterQuestItemsAddedToCaravanInventory>{CARAVAN_label} ha ricevuto i seguenti oggetti:\n\n{THINGS}</LetterQuestItemsAddedToCaravanInventory>
 
   <!-- Refugee joins -->
   <!-- EN: {PAWN_nameDef} joins -->
@@ -546,15 +546,15 @@
   <LetterTextSiteCountdownStarted>La tua carovana è stata rilevata. A {0}, i rinforzi {1} da {2} inizieranno ad arrivare nell'area.\n\nRiforma la tua carovana e inizia a muoverti per evitare i {1}. Ora è visibile un timer che esegue il conto alla rovescia fino al loro arrivo.</LetterTextSiteCountdownStarted>
 
   <!-- EN: Unwavering prisoner -->
-  <LetterLabelUnrecruitablePawnCaptured>TODO</LetterLabelUnrecruitablePawnCaptured>
+  <LetterLabelUnrecruitablePawnCaptured>Prigioniero incrollabile</LetterLabelUnrecruitablePawnCaptured>
   <!-- EN: {PAWN_nameDef} is unwaveringly loyal to their home and will refuse to be recruited entirely.\n\nYou can see whether someone is unwaveringly loyal by selecting them. -->
-  <LetterTextUnrecruitablePawnCaptured>TODO</LetterTextUnrecruitablePawnCaptured>
+  <LetterTextUnrecruitablePawnCaptured>{PAWN_nomeDef} è incrollabilmente fedele alla propria casa e rifiuta completamente di essere reclutato.\n\nPer sapere se qualcuno è incrollabilmente fedele, basta selezionarlo.</LetterTextUnrecruitablePawnCaptured>
   <!-- EN: enslave {PAWN_objective} -->
-  <OptionalEnslaveDesc>TODO</OptionalEnslaveDesc>
+  <OptionalEnslaveDesc>schiavizzare {PAWN_objective}</OptionalEnslaveDesc>
 
   <!-- Lung rot -->
   <!-- EN: {PAWN} has gotten sick from {1} due to long-term exposure to rot stink gas (which is given off by rotting corpses).\n\nEnsure you have a medical bed and a doctor. Make sure that {PAWN_definite} gets proper treatment. -->
-  <LetterTextLungRot>TODO</LetterTextLungRot>
+  <LetterTextLungRot>{PAWN} si è ammalato da {1} a causa dell'esposizione prolungata al gas puzzolente della putrefazione (che viene emesso dai cadaveri in decomposizione).\n\nAssicuratevi di avere un letto medico e un dottore. Assicuratevi che {PAWN_definite} riceva le cure adeguate.</LetterTextLungRot>
 
   <!-- Join Offer -->
   <!-- EN: Join offer: {PAWN_nameDef} -->
