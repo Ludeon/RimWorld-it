@@ -10,6 +10,7 @@ TRADUTTORI:
 ### Attivi:
 - StoneNimRod
 - Kaiser85
+- Rexlord
 - Kenciccio
 - spappo94
 
