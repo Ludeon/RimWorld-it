@@ -1,53 +1,62 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <LanguageData>
-  <!-- EN: Auto-repair -->
-  <CommandAutoRepair>TODO</CommandAutoRepair>
-  <!-- EN: If active, a mechanitor will automatically repair this mechanoid. Repairing a mechanoid drains its energy. -->
-  <CommandAutoRepairDesc>TODO</CommandAutoRepairDesc>
+  
+  <CommandAutoRepair>Autoriparazione</CommandAutoRepair>
+  
+  <CommandAutoRepairDesc>Se attivato, un mechanitor riparerà automaticamente questo meccanoide. Riparare un meccanoide ne prosciuga l'energia.</CommandAutoRepairDesc>
 
-  <!-- EN: {0_labelShort} is deathresting. -->
-  <CommandDisabledDeathresting>TODO</CommandDisabledDeathresting>
+  
+  <CommandDisabledDeathresting>{0_labelShort} sta riposando a morte.</CommandDisabledDeathresting>
 
-  <!-- EN: Cancel vatgrowth -->
-  <CommandCancelGrowth>TODO</CommandCancelGrowth>
-  <!-- EN: Cancel vatgrowth for the current occupant. The occupant will be ejected. -->
-  <CommandCancelGrowthDesc>TODO</CommandCancelGrowthDesc>
+  
+  <CommandCancelGrowth>Annullare la crescita della vasca</CommandCancelGrowth>
+  
+  <CommandCancelGrowthDesc>Annulla la crescita della vasca per l'occupante attuale. L'occupante verrà espulso.</CommandCancelGrowthDesc>
 
-  <!-- EN: Select overseer -->
-  <CommandSelectOverseer>TODO</CommandSelectOverseer>
-  <!-- EN: Select the mechanitor who is the overseer of this mech. -->
-  <CommandSelectOverseerDesc>TODO</CommandSelectOverseerDesc>
-  <!-- EN: No overseer. -->
-  <CommandSelectOverseerDisabledDesc>TODO</CommandSelectOverseerDisabledDesc>
+  
+  <CommandSelectOverseer>Seleziona supervisore</CommandSelectOverseer>
+  
+  <CommandSelectOverseerDesc>Seleziona il mechanitor che è il supervisore di questo mech.</CommandSelectOverseerDesc>
+  
+  <CommandSelectOverseerDisabledDesc>Non sorvegliante.</CommandSelectOverseerDisabledDesc>
 
-  <!-- EN: Cancel extraction -->
-  <CommandCancelExtraction>TODO</CommandCancelExtraction>
-  <!-- EN: Cancel the extraction process. The contained person will be ejected. -->
-  <CommandCancelExtractionDesc>TODO</CommandCancelExtractionDesc>
+  
+  <CommandCancelExtraction>Annulla l'estrazione</CommandCancelExtraction>
+  
+  <CommandCancelExtractionDesc>Annulla il processo di estrazione. La persona contenuta verrà giustiziata.</CommandCancelExtractionDesc>
 
-  <!-- EN: Summon mech threat... -->
-  <CommandCallBossgroup>TODO</CommandCallBossgroup>
-  <!-- EN: Summon an enemy leader mechanoid along with escorts.\n\nIf you defeat the leader mechanoid, it will drop a special chip which you can use to advance your own mechanoid technology.\n\nThere are three leader mechanoid types, each summoned a different way, each dropping a different type of chip. -->
-  <CommandCallBossgroupDesc>TODO</CommandCallBossgroupDesc>
+  
+  <CommandCallBossgroup>Evoca minaccia mech...</CommandCallBossgroup>
+  
+  <CommandCallBossgroupDesc>Evoca un leader meccanoide nemico insieme alle scorte.\n\nSe sconfiggi il leader meccanoide, lascerà cadere un chip speciale che puoi utilizzare per far avanzare la tua tecnologia meccanoide.\n\nEsistono tre tipi di leader meccanoidi, ciascuno evocato in modo diverso modo, ognuno rilasciando un diverso tipo di chip.</CommandCallBossgroupDesc>
 
-  <!-- EN: Toggle auto load {0} -->
-  <CommandAutoLoad>TODO</CommandAutoLoad>
-  <!-- EN: If active, colonists will automatically load this with {0}. -->
-  <CommandAutoLoadDesc>TODO</CommandAutoLoadDesc>
+  
+  <CommandAutoLoad>Attiva/disattiva caricamento automatico {0}</CommandAutoLoad>
+  
+  <CommandAutoLoadDesc>Se attivo, i coloni lo caricheranno automaticamente con {0}.</CommandAutoLoadDesc>
 
-  <!-- EN: Eject contents -->
-  <CommandEjectContents>TODO</CommandEjectContents>
-  <!-- EN: Eject all contained {0} onto the ground. -->
-  <CommandEjectContentsDesc>TODO</CommandEjectContentsDesc>
+  
+  <CommandEjectContents>Espellere il contenuto</CommandEjectContents>
+  
+  <CommandEjectContentsDesc>Espelli tutto il contenuto di {0} sul terreno.</CommandEjectContentsDesc>
 
-  <!-- EN: Select all mechs -->
-  <CommandSelectAllMechs>TODO</CommandSelectAllMechs>
-  <!-- EN: Select all mechanoids controlled by this mechanitor. -->
-  <CommandSelectAllMechsDesc>TODO</CommandSelectAllMechsDesc>
+  
+  <CommandSelectAllMechs>Seleziona tutti i mech</CommandSelectAllMechs>
+  
+  <CommandSelectAllMechsDesc>Seleziona tutti i meccanoidi controllati da questo mechanitor.</CommandSelectAllMechsDesc>
 
-  <!-- EN: Turret enabled -->
-  <CommandToggleTurret>TODO</CommandToggleTurret>
-  <!-- EN: Toggle turret being able to fire at will.\n\nWhen disabled, the turret will not automatically fire. This is useful while sneaking up on enemies. -->
-  <CommandToggleTurretDesc>TODO</CommandToggleTurretDesc>
+  
+  <CommandToggleTurret>Torretta abilitata</CommandToggleTurret>
+  
+  <CommandToggleTurretDesc>Attiva/disattiva la torretta in grado di sparare a piacimento.\n\nSe disabilitata, la torretta non sparerà automaticamente. Questo è utile quando ci si avvicina di soppiatto ai nemici.</CommandToggleTurretDesc>
 
+  
+  <CommandCancelSubcoreScan>Annulla scansione</CommandCancelSubcoreScan>
+  
+  <CommandCancelSubcoreScanDesc>Annulla il processo di scansione. La persona contenuta verrà giustiziata.</CommandCancelSubcoreScanDesc>
+
+  
+  <ForceXenogermImplantation>Forzare l'impianto di xenogermi</ForceXenogermImplantation>
+  
+  <ForceXenogermImplantationDesc>Costringi questa persona a impiantare i suoi xenogeni in un altro individuo utilizzando uno speciale organo iniettore. Se i geni di questa persona sono attualmente in fase di ricrescita, morirà nel processo.\n\nUna volta impiantato, uno xenogerme sovrascriverà gli xenogeni del bersaglio. I geni germinali non saranno influenzati.</ForceXenogermImplantationDesc>
 </LanguageData>

@@ -1,15 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
 <LanguageData>
   
-  
-  <SparkSlaveRebellion.label>TODO</SparkSlaveRebellion.label>
+  <SparkSlaveRebellion.label>scatenare la ribellione degli schiavi</SparkSlaveRebellion.label>
   
   <SparkSlaveRebellion.logRulesInitiator.rulesStrings>
-    </SparkSlaveRebellion.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha suggerito di avviare una fuga.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha incoraggiato [RECIPIENT_nameDef] a recuperare la propria libertà.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato di porre fine alla schiavitù e avviare una fuga.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato di una vita al di là della servitù e ha incoraggiato [RECIPIENT_nameDef] a fuggire.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha sussurrato che la sicurezza era scarsa e che ora sarebbe stato un buon momento per fuggire.</li>
+  </SparkSlaveRebellion.logRulesInitiator.rulesStrings>
   
   
-  <Suppress.label>TODO</Suppress.label>
+  <Suppress.label>sopprimere</Suppress.label>
   
   <Suppress.logRulesInitiator.rulesStrings>
-    </Suppress.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha detto a [RECIPIENT_nameDef] che ci sarebbero state punizioni per ribellarsi.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha avvertito [RECIPIENT_nameDef] che la disobbedienza sarebbe stata punita.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha avvertito [RECIPIENT_nameDef] sulle violazioni di qualsiasi tipo.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha suggerito a [RECIPIENT_nameDef] di seguire gli ordini e non fare domande.</li>
+  </Suppress.logRulesInitiator.rulesStrings>
   
 </LanguageData>

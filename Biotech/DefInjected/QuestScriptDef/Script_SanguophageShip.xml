@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
   <!-- EN:
@@ -9,12 +9,22 @@
     <li>assaultBeginLetterLabel->Assault begun</li>
     <li>assaultBeginLetterText->The hostile sanguophage master and [sanguophage_possessive] thralls have initiated an assault on the colony!</li>
   -->
-  <SanguophageShip.questContentRules.rulesStrings>TODO</SanguophageShip.questContentRules.rulesStrings>
+  <SanguophageShip.questContentRules.rulesStrings>
+    <li>sanguophageShuttleCrashedLetterLabel->Navetta precipitata</li>
+    <li>sanguophageShuttleCrashedLetterText->Una navetta contenente un maestro sanguophage e [thrallCount] servitori è precipitata nelle vicinanze. Usciranno dall'astronave schiantata e si prepareranno a combattere.</li>
+    <li>reinforcementsArrivedLetterLabel->Rinforzi degli schiavi</li>
+    <li>reinforcementsArrivedLetterText->Gli schiavi stanno arrivando in capsule di sgancio per rinforzare il sanguophage precipitato.</li>
+    <li>assaultBeginLetterLabel->Inizio assalto</li>
+    <li>assaultBeginLetterText->Il maestro sanguophage ostile e i suoi schiavi hanno avviato un assalto sulla colonia!</li>
+  </SanguophageShip.questContentRules.rulesStrings>
   <!-- EN:
     <li>questDescription->You have intercepted a distress signal! A hostile shuttle carrying a sanguophage master and [thrallCount] thralls is having trouble with its engines. You can use signals to draw it down to a crash near [map_definite].\n\nOnce the ship has crashed, you can fight the sanguophage and [sanguophage_possessive] minions. If you can capture the master, you can force [sanguophage_objective] to turn one of your colonists into a sanguophage.\n\n[sanguophageInfo]</li>
     <li>sanguophageInfo->(*Gray)About sanguophages: Sanguophages are ageless, deathless super-humans powered by archotech-created archites in the bloodstream. They are beautiful and extremely intelligent. They can heal any injury, and never suffer from disease or poison. In combat, they can launch deadly spines and heal injured friends. The price is that sanguophages must consume hemogen derived from human blood to survive, and they must periodically deathrest for long periods. They're easily destroyed by fire, and slowed down by UV light.(/Gray)</li>
   -->
-  <SanguophageShip.questDescriptionRules.rulesStrings>TODO</SanguophageShip.questDescriptionRules.rulesStrings>
+  <SanguophageShip.questDescriptionRules.rulesStrings>
+    <li>questDescription->Hai intercettato un segnale di distress! Una navetta ostile che trasporta un maestro sanguophage e [thrallCount] schiavi sta avendo problemi con i suoi motori. Puoi usare segnali per farlo precipitare vicino a [map_definite].\n\nUna volta che la nave si sarà schiantata, potrai combattere il sanguophage e i suoi schiavi. Se riesci a catturare il maestro, puoi costringere [sanguophage_objective] a trasformare uno dei tuoi coloni in un sanguophage.\n\n[sanguophageInfo]</li>
+    <li>sanguophageInfo->(*Gray)Informazioni sui sanguophage: I sanguophage sono superumani senza età e immortali alimentati da architi creati dall'archotech nel flusso sanguigno. Sono belli e estremamente intelligenti. Possono curare qualsiasi ferita e non soffrono mai di malattie o veleni. In combattimento, possono lanciare spuntoni mortali e curare amici feriti. Il prezzo da pagare è che i sanguophage devono consumare emoglobina derivata dal sangue umano per sopravvivere e devono periodicamente riposarsi per lunghi periodi. Sono facilmente distrutti dal fuoco e rallentati dalla luce UV.(/Gray)</li>
+  </SanguophageShip.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[shipAdjective] [shipNoun]</li>
     <li>shipAdjective->sanguophage</li>
@@ -34,6 +44,24 @@
     <li>shipNoun->crash</li>
     <li>shipNoun->wreck</li>
   -->
-  <SanguophageShip.questNameRules.rulesStrings>TODO</SanguophageShip.questNameRules.rulesStrings>
+  <SanguophageShip.questNameRules.rulesStrings>
+    <li>questName->[shipAdjective] [shipNoun]</li>
+    <li>shipAdjective->sanguophage</li>
+    <li>shipAdjective->assetato di sangue</li>
+    <li>shipAdjective->sanguinoso</li>
+    <li>shipAdjective->ombra</li>
+    <li>shipAdjective->scuro</li>
+    <li>shipAdjective->carmesì</li>
+    <li>shipAdjective->rosso</li>
+    <li>shipAdjective->crosta</li>
+    <li>shipAdjective->emico</li>
+    <li>shipAdjective->sanguigno</li>
+    <li>shipNoun->nave</li>
+    <li>shipNoun->navetta</li>
+    <li>shipNoun->astronave</li>
+    <li>shipNoun->relitto</li>
+    <li>shipNoun->schianto</li>
+    <li>shipNoun->rovina</li>
+  </SanguophageShip.questNameRules.rulesStrings>
   
 </LanguageData>

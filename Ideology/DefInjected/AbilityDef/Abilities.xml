@@ -1,102 +1,103 @@
+<?xml version='1.0' encoding='utf-8'?>
 <LanguageData>
   
   
-  <AnimalCalm.label>Calma l'animale</AnimalCalm.label>
+  <AnimalCalm.label>Calma animale</AnimalCalm.label>
   
   <AnimalCalm.description>Usa metodi unici per connetterti con gli animali per calmare una bestia impazzita.</AnimalCalm.description>
   
   <AnimalCalm.comps.CompAbilityEffect_StopManhunter.successMessage>{INITIATOR_labelShort} ha calmato con successo {RECIPIENT_labelShort}.</AnimalCalm.comps.CompAbilityEffect_StopManhunter.successMessage>
   
   
-  <BerserkTrance.label>Furia incontrollabile</BerserkTrance.label>
+  <BerserkTrance.label>trance furiosa</BerserkTrance.label>
   
-  <BerserkTrance.description>L'incantatore si riempie di rabbia per le lamentele ideologiche. Questo rafforza il corpo oltre i limiti normali, ma significa anche perdere il controllo e attaccare ogni nemico nelle vicinanze con una rabbia inarrestabile. La furia durerà per 3 ore.</BerserkTrance.description>
+  <BerserkTrance.description>L'incantatore si riempie di rabbia per le lamentele ideologiche. Ciò rafforza il corpo oltre i limiti normali, ma significa anche perdere il controllo e attaccare ogni nemico nelle vicinanze con una rabbia inarrestabile. Lo stato furioso durerà 3 ore.</BerserkTrance.description>
   
   
-  <CombatCommand.label>Comando di combattimento</CombatCommand.label>
+  <CombatCommand.label>comando di combattimento</CombatCommand.label>
   
   <CombatCommand.description>Crea un'aura che potenzia le abilità di combattimento di tutti coloro che si trovano nelle vicinanze. L'effetto dura 24 ore e rimane attaccato al leader per tutta la durata.</CombatCommand.description>
   
   
-  <ConversionRitual.label>Rituale di conversione</ConversionRitual.label>
+  <ConversionRitual.label>conversione rituale</ConversionRitual.label>
   
-  <ConversionRitual.description>Cerca di persuadere qualcuno ad adottare le tue convinzioni. Se va bene, perderanno qualche certezza nella loro ideoligia e potrebbero convertirsi. Se si ritorce contro, acquisiranno certezza nelle loro vecchie credenze.\n\nPer iniziare questo rituale in un luogo specifico, seleziona un posto per rituale o un altare/ideogramma corrispondente.</ConversionRitual.description>
+  <ConversionRitual.description>Cerca di persuadere qualcuno ad adottare le tue convinzioni. Se va bene, perderanno qualche certezza nella loro ideoligione e potrebbero convertirsi. Se si ritorce contro, acquisiranno certezza nelle loro vecchie credenze.\n\nPer iniziare questo rituale in un luogo specifico, seleziona un punto rituale o un altare/ideogramma corrispondente.</ConversionRitual.description>
   
   
-  <Convert.label>Convertire</Convert.label>
+  <Convert.label>convertire</Convert.label>
   
-  <Convert.description>Tenta di convertire qualcuno all'ideoligia di chi parla. Ciò ridurrà la certezza del bersaglio nelle proprie convinzioni. La riduzione della certezza dipende dalla capacità di negoziazione dell'oratore.</Convert.description>
+  <Convert.description>Tentativo di convertire qualcuno all'ideoligione di chi parla. Ciò ridurrà la certezza del bersaglio nelle proprie convinzioni. La riduzione della certezza dipende dalla capacità di negoziazione del parlante.</Convert.description>
   
-  <Convert.comps.CompAbilityEffect_Convert.failMessage>{INITIATOR_labelShort} non è riuscito a convertire {RECIPIENT_labelShort}. {RECIPIENT_labelShort} è rimasto sconvolto dal tentativo, ma la sua certezza è scesa da {CERTTAINTYBEFORE} a {CERTTAINTYAFTER}.</Convert.comps.CompAbilityEffect_Convert.failMessage>
+  <Convert.comps.CompAbilityEffect_Convert.failMessage>{INITIATOR_labelShort} non è riuscito a convertire {RECIPIENT_labelShort}. {RECIPIENT_labelShort} è rimasto sconvolto dal tentativo, ma la certezza di {RECIPIENT_possessive} è scesa da {CERTAINTYBEFORE} a {CERTAINTYAFTER}.</Convert.comps.CompAbilityEffect_Convert.failMessage>
   
   <Convert.comps.CompAbilityEffect_Convert.successMessage>{INITIATOR_labelShort} ha convertito {RECIPIENT_labelShort} in {IDEO}.</Convert.comps.CompAbilityEffect_Convert.successMessage>
   
   
-  <Counsel.label>Consigliere</Counsel.label>
+  <Counsel.label>Consiglio</Counsel.label>
   
-  <Counsel.description>Offre consiglio a una persona per cancellare l'effetto di un triste ricordo. La possibilità di successo dipende dalle abilità sociali dell'oratore e dalla relazione con l'ascoltatore.</Counsel.description>
+  <Counsel.description>Offrire consigli a una persona per cancellare l'effetto di un ricordo triste. La possibilità di successo dipende dalle abilità sociali di chi parla e dal suo rapporto con l'ascoltatore.</Counsel.description>
   
-  <Counsel.comps.CompAbilityEffect_Counsel.failMessage>{INITIATOR_labelShort} non è riuscito a consigliare {RECIPIENT_labelShort}. Ora {RECIPIENT_labelShort} è sconvolto.</Counsel.comps.CompAbilityEffect_Counsel.failMessage>
+  <Counsel.comps.CompAbilityEffect_Counsel.failMessage>{INITIATOR_labelShort} ha fallito il tentativo di consigliare {RECIPIENT_labelShort}. {RECIPIENT_labelShort} è arrabbiato.</Counsel.comps.CompAbilityEffect_Counsel.failMessage>
   
-  <Counsel.comps.CompAbilityEffect_Counsel.successMessage>{INITIATOR_labelShort} ha consigliato con successo {RECIPIENT_labelShort}, annullando l'impatto sull'umore di {2}.</Counsel.comps.CompAbilityEffect_Counsel.successMessage>
+  <Counsel.comps.CompAbilityEffect_Counsel.successMessage>{INITIATOR_labelShort} ha fornito consulenza a {RECIPIENT_labelShort} con successo, annullando l'impatto sull'umore di {2}.</Counsel.comps.CompAbilityEffect_Counsel.successMessage>
   
-  <Counsel.comps.CompAbilityEffect_Counsel.successMessageNoNegativeThought>{INITIATOR_labelShort} ha consigliato con successo {RECIPIENT_labelShort}, aumentando il suo umore di {MOODBONUS}.</Counsel.comps.CompAbilityEffect_Counsel.successMessageNoNegativeThought>
-  
-  
-  <FarmingCommand.label>Comando agricolo</FarmingCommand.label>
-  
-  <FarmingCommand.description>Offri una guida sulle tecniche di coltivazione, aumentando le abilità di coltivazione per tutti quelli che si trovano nelle vicinanze. L'effetto rimane attivo per 24 ore.</FarmingCommand.description>
+  <Counsel.comps.CompAbilityEffect_Counsel.successMessageNoNegativeThought>{INITIATOR_labelShort} ha consigliato con successo {RECIPIENT_labelShort}, aumentando l'umore di {RECIPIENT_possessive} di {MOODBONUS}.</Counsel.comps.CompAbilityEffect_Counsel.successMessageNoNegativeThought>
   
   
-  <ImmunityDrive.label>Unità immunitaria</ImmunityDrive.label>
+  <FarmingCommand.label>comando agricolo</FarmingCommand.label>
   
-  <ImmunityDrive.description>Offri un supporto morale che dia energia al corpo, aumentando l'immunità di qualcuno per un giorno.</ImmunityDrive.description>
-  
-  
-  <LeaderSpeech.label>Discorso da leader</LeaderSpeech.label>
-  
-  <LeaderSpeech.description>Inizia un discorso da leader. Se va bene, gli ascoltatori otterranno un bonus sull'umore, rispetto per l'oratore e possibilmente nuove ispirazioni. Se va male, si verificherà un danno sociale.</LeaderSpeech.description>
+  <FarmingCommand.description>Offri indicazioni sulle tecniche agricole, aumentando le capacità agricole di tutti coloro che si trovano nelle vicinanze. L'effetto rimane attaccato all'incantatore per 24 ore.</FarmingCommand.description>
   
   
-  <MarksmanCommand.label>Comando tiratore scelto</MarksmanCommand.label>
+  <ImmunityDrive.label>Guida all'immunità</ImmunityDrive.label>
   
-  <MarksmanCommand.description>Richiama i colpi e migliora le abilità di tiro di tutti quelli che si trovano nelle vicinanze. L'effetto rimane attivo per 24 ore.</MarksmanCommand.description>
-  
-  
-  <MiningCommand.label>Comando minerario</MiningCommand.label>
-  
-  <MiningCommand.description>Offri indicazioni sulle tecniche di scavo, aumentando la velocità di scavo per tutti quelli che si trovano nelle vicinanze. L'effetto rimane attivo per 24 ore.</MiningCommand.description>
+  <ImmunityDrive.description>Offri supporto morale che dà energia al corpo, aumentando il guadagno immunitario di qualcuno per un giorno.</ImmunityDrive.description>
   
   
-  <PreachHealth.label>Predica la salute</PreachHealth.label>
+  <LeaderSpeech.label>discorso del leader</LeaderSpeech.label>
+  
+  <LeaderSpeech.description>Avviare un discorso da leader. Se va bene, gli ascoltatori otterranno un umore migliore, rispetto per chi parla e possibilmente nuove ispirazioni. Se va male, si verificheranno danni sociali.</LeaderSpeech.description>
+  
+  
+  <MarksmanCommand.label>comando del tiratore scelto</MarksmanCommand.label>
+  
+  <MarksmanCommand.description>Richiama i colpi e potenzia le abilità di tiro di tutti coloro che si trovano nelle vicinanze. L'effetto rimane attaccato all'incantatore per 24 ore.</MarksmanCommand.description>
+  
+  
+  <MiningCommand.label>comando minerario</MiningCommand.label>
+  
+  <MiningCommand.description>Offri indicazioni sulle tecniche di mining, aumentando la velocità di mining per tutti coloro che si trovano nelle vicinanze. L'effetto rimane attaccato all'incantatore per 24 ore.</MiningCommand.description>
+  
+  
+  <PreachHealth.label>predicare la salute</PreachHealth.label>
   
   <PreachHealth.description>Predica la forza morale a una persona malata o ferita attraverso i concetti della tua ideologia. Ciò migliorerà il loro tasso di guarigione delle ferite e il guadagno di immunità.</PreachHealth.description>
   
   
-  <ProductionCommand.label>Comando di produzione</ProductionCommand.label>
+  <ProductionCommand.label>comando di produzione</ProductionCommand.label>
   
-  <ProductionCommand.description>Offri indicazioni sulle tecniche di costruzione, potenziando le abilità di costruzione e creazione per tutti quelli che si trovano nelle vicinanze. L'effetto rimane attivo per 24 ore.</ProductionCommand.description>
-  
-  
-  <Reassure.label>Rassicurazione</Reassure.label>
-  
-  <Reassure.description>Aumenta la certezza di qualcuno nelle proprie convinzioni. La certezza ritrovata si basa sulla capacità di negoziazione dell'oratore.</Reassure.description>
-  
-  <Reassure.comps.CompAbilityEffect_Reassure.successMessage>{INITIATOR_labelShort} ha rassicurato {RECIPIENT_labelShort}, aumentando la sua certezza in {IDEO} da {BEFORECERTAINTY} a {AFTERCERTAINTY}.</Reassure.comps.CompAbilityEffect_Reassure.successMessage>
+  <ProductionCommand.description>Offri indicazioni sulle tecniche di costruzione, potenziando le abilità di costruzione e artigianato per tutti coloro che si trovano nelle vicinanze. L'effetto rimane attaccato all'incantatore per 24 ore.</ProductionCommand.description>
   
   
-  <ResearchCommand.label>Comando di ricerca</ResearchCommand.label>
+  <Reassure.label>rassicurare</Reassure.label>
   
-  <ResearchCommand.description>Fornisce suggerimenti e supporto mentale, aumentando la velocità di ricerca di tutti coloro che si trovano nelle vicinanze. L'effetto rimane attivo per 24 ore.</ResearchCommand.description>
+  <Reassure.description>Aumentare la certezza di qualcuno nelle proprie convinzioni. La certezza ritrovata si basa sulla capacità di negoziazione di chi parla.</Reassure.description>
   
-  
-  <Trial.label>Processo</Trial.label>
-  
-  <Trial.description>Accusa qualcuno di un terribile atto e avvia un processo in cui sarà condannato o scagionato. Se il bersaglio viene condannato, può essere liberamente imprigionato, giustiziato o bandito senza penalità. La possibilità di condanna dipende dalle capacità sociali dell'accusatore e dell'imputato.</Trial.description>
+  <Reassure.comps.CompAbilityEffect_Reassure.successMessage>{INITIATOR_labelShort} ha rassicurato {RECIPIENT labelShort}, aumentando la certezza di {RECIPIENT possessivo} in {VIDEO} da {BEFORECERTAINTY} a {AFTERCERTAINTY}.</Reassure.comps.CompAbilityEffect_Reassure.successMessage>
   
   
-  <WorkDrive.label>Guida lavorativa</WorkDrive.label>
+  <ResearchCommand.label>comando di ricerca</ResearchCommand.label>
   
-  <WorkDrive.description>Richiedi ad una persona a lavorare di più per un po' di tempo.</WorkDrive.description>
+  <ResearchCommand.description>Fornisci suggerimenti e supporto mentale, aumentando la velocità di ricerca di tutti coloro che si trovano nelle vicinanze. L'effetto rimane attaccato all'incantatore per 24 ore.</ResearchCommand.description>
+  
+  
+  <Trial.label>prove</Trial.label>
+  
+  <Trial.description>Accusa qualcuno di un atto illecito terribile e avvia un processo in cui verrà condannato o scagionato. Se l'obiettivo viene condannato, può essere liberamente imprigionato, giustiziato o bandito senza penalità. La possibilità di condanna dipende dalle capacità sociali dell'accusatore e dell'imputato.</Trial.description>
+  
+  
+  <WorkDrive.label>spinta al lavoro</WorkDrive.label>
+  
+  <WorkDrive.description>Invita una persona a lavorare di più per un po' di tempo.</WorkDrive.description>
   
 </LanguageData>

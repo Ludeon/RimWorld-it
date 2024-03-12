@@ -1,17 +1,24 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
   <!-- EN:
     <li>wastepacksLetterLabel->Wastepacks arrived</li>
     <li>wastepacksLetterText->The toxic wastepacks have been delivered.</li>
   -->
-  <PollutionDump.questContentRules.rulesStrings>TODO</PollutionDump.questContentRules.rulesStrings>
+  <PollutionDump.questContentRules.rulesStrings>
+    <li>wastepacksLetterLabel->I pacchi di rifiuti sono arrivati</li>
+    <li>wastepacksLetterText->I pacchi di rifiuti tossici sono stati consegnati.</li>
+  </PollutionDump.questContentRules.rulesStrings>
   <!-- EN:
     <li>questDescription(askerIsNull==True)->A machine persona in an orbiting ship has a special request. She wishes to offload an excess of toxic wastepacks and hopes that you will store them responsibly.\n\nIf you accept, she will deliver [wastepackCount] toxic wastepacks by transport pod.\n\nIf not kept frozen, toxic wastepacks will dissolve over time, polluting nearby terrain.</li>
     <li>questDescription(asker_royalInCurrentFaction==True)->[asker_nameFull], a [asker_royalTitleInCurrentFaction] of [asker_faction_name] has a special request. [asker_pronoun] has produced an abundance of toxic wastepacks that [asker_pronoun] does not wish to store.\n\nIf you accept, [asker_nameDef] will deliver [wastepackCount] toxic wastepacks by transport pod.\n\nIf not kept frozen, toxic wastepacks will dissolve over time, polluting nearby terrain.</li>
     <li>questDescription(asker_factionLeader==True)->[asker_faction_leaderTitle] [asker_nameFull] of [asker_faction_name] has a special request. Someone has dumped an abundance of toxic wastepacks near one of [asker_possessive] settlements and [asker_pronoun] is unable to safely store them.\n\nIf you accept, [asker_nameDef] will deliver [wastepackCount] toxic wastepacks by transport pod.\n\nIf not kept frozen, toxic wastepacks will dissolve over time, polluting nearby terrain.</li>
   -->
-  <PollutionDump.questDescriptionRules.rulesStrings>TODO</PollutionDump.questDescriptionRules.rulesStrings>
+  <PollutionDump.questDescriptionRules.rulesStrings>
+    <li>questDescription(askerIsNull==True)->Un'intelligenza artificiale su una nave in orbita ha una richiesta speciale. Desidera scaricare un eccesso di pacchi di rifiuti tossici e spera che tu li conservi in modo responsabile.\n\nSe accetti, ti consegnerà [wastepackCount] pacchi di rifiuti tossici tramite pod di trasporto.\n\nSe non vengono conservati congelati, i pacchi di rifiuti tossici si dissolveranno nel tempo, contaminando il terreno circostante.</li>
+    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_nameFull], un [asker_royalTitleInCurrentFaction] di [asker_faction_name], ha una richiesta speciale. [asker_pronoun] ha prodotto un'eccessiva quantità di pacchi di rifiuti tossici che [asker_pronoun] non desidera conservare.\n\nSe accetti, [asker_nameDef] consegnerà [wastepackCount] pacchi di rifiuti tossici tramite pod di trasporto.\n\nSe non vengono conservati congelati, i pacchi di rifiuti tossici si dissolveranno nel tempo, contaminando il terreno circostante.</li>
+    <li>questDescription(asker_factionLeader==True)->[asker_faction_leaderTitle] [asker_nameFull] di [asker_faction_name] ha una richiesta speciale. Qualcuno ha scaricato un'eccessiva quantità di pacchi di rifiuti tossici vicino a uno dei suoi insediamenti e [asker_pronoun] non è in grado di conservarli in sicurezza.\n\nSe accetti, [asker_nameDef] consegnerà [wastepackCount] pacchi di rifiuti tossici tramite pod di trasporto.\n\nSe non vengono conservati congelati, i pacchi di rifiuti tossici si dissolveranno nel tempo, contaminando il terreno circostante.</li>
+  </PollutionDump.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[waste] [dump]</li>
     <li>questName(askerIsNull==False)->[asker_faction_pawnSingular] [waste] [dump]</li>
@@ -25,6 +32,18 @@
     <li>dump->clearance</li>
     <li>dump->problem</li>
   -->
-  <PollutionDump.questNameRules.rulesStrings>TODO</PollutionDump.questNameRules.rulesStrings>
+  <PollutionDump.questNameRules.rulesStrings>
+    <li>questName->[dump] [waste]</li>
+    <li>questName(askerIsNull==False)->[asker_faction_pawnSingular] [waste] [dump]</li>
+    <li>questName(askerIsNull==False,asker_royalInCurrentFaction==False)->[dump] [waste] di [asker_nameDef]</li>
+    <li>waste->rifiuti</li>
+    <li>waste->inquinamento</li>
+    <li>waste->tossine</li>
+    <li>waste->pacchi di rifiuti</li>
+    <li>dump->scarico</li>
+    <li>dump->deposito</li>
+    <li>dump->smaltimento</li>
+    <li>dump->problema</li>
+  </PollutionDump.questNameRules.rulesStrings>
   
 </LanguageData>

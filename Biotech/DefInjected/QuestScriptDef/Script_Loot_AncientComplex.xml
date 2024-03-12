@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
   <!-- EN:
@@ -6,7 +6,11 @@
     <li>discoveryDesc(discovered==false)->learned</li>
     <li>discoveryDesc(discovered==true)->determined the location</li>
   -->
-  <OpportunitySite_AncientComplex_Mechanitor.questDescriptionRules.rulesStrings>TODO</OpportunitySite_AncientComplex_Mechanitor.questDescriptionRules.rulesStrings>
+  <OpportunitySite_AncientComplex_Mechanitor.questDescriptionRules.rulesStrings>
+    <li>questDescription-> Hai [discoveryDesc] di un antico complesso nelle vicinanze che contiene i resti di un mecanitor morto da tempo.\n\nI mecanitor possono creare, controllare e manipolare mecanoidi per il lavoro e il combattimento. Se riesci a penetrare nel complesso e raccogliere il cadavere del mecanitor, puoi estrarre il loro mecolink e trasformare uno dei tuoi coloni in un mecanitor.\n\nAttenzione: questi tipi di strutture possono contenere una varietà di minacce, e la tua attività nel complesso potrebbe attirare attenzione indesiderata.</li>
+    <li>discoveryDesc(discovered==false)-> appreso</li>
+    <li>discoveryDesc(discovered==true)-> determinata la posizione</li>
+  </OpportunitySite_AncientComplex_Mechanitor.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName(p=3)->[complexAdj] mechanitor [complex]</li>
     <li>questName->mechanitor [complex]</li>
@@ -25,6 +29,22 @@
     <li>complex->mechplex</li>
     <li>complex->mechsite</li>
   -->
-  <OpportunitySite_AncientComplex_Mechanitor.questNameRules.rulesStrings>TODO</OpportunitySite_AncientComplex_Mechanitor.questNameRules.rulesStrings>
+  <OpportunitySite_AncientComplex_Mechanitor.questNameRules.rulesStrings>
+    <li>questName(p=3)->Il [complex] [complexAdj] del mecanitor</li>
+    <li>questName->Il [complex] del mecanitor</li>
+    <li>complexAdj->segreto</li>
+    <li>complexAdj->antico</li>
+    <li>complexAdj->vecchio</li>
+    <li>complexAdj->nascosto</li>
+    <li>complexAdj->polveroso</li>
+    <li>complexAdj->pericoloso</li>
+    <li>complex->complesso</li>
+    <li>complex->tana</li>
+    <li>complex->base</li>
+    <li>complex->compound</li>
+    <li>complex->cripta</li>
+    <li>complex->mechplex</li>
+    <li>complex->mechsite</li>
+  </OpportunitySite_AncientComplex_Mechanitor.questNameRules.rulesStrings>
   
 </LanguageData>

@@ -1,45 +1,45 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <LanguageData>
   
-  <!-- EN:
-    <li>sanguophagesArriveLetterLabel->Sanguophages arrived</li>
-    <li>sanguophagesArriveLetterText->The [sanguophageCount] sanguophages are arriving at [map_definite] from different directions. They will meet and carry out their discussion in the colony.</li>
-    <li>argumentLetterLabel->Sanguophage argument</li>
-    <li>argumentLetterText->The sanguophages got into an argument and it has now escalated to violence!</li>
-    <li>successLetterLabel->Meeting complete</li>
-    <li>successLetterText->The sanguophages have completed their meeting and will now give you your reward.</li>
-    <li>raidArrivedLetterLabel->Sanguophage hunters</li>
-    <li>raidArrivedLetterText->A group of sanguophage hunters from [enemyFaction_name] are approaching!\n\nThey will attack the meeting sanguophages as well as those who hosted them.</li>
-  -->
-  <SanguophageMeetingHost.questContentRules.rulesStrings>TODO</SanguophageMeetingHost.questContentRules.rulesStrings>
-  <!-- EN:
-    <li>questDescription->A sanguophage named [asker_nameDef] is looking for a safe place to meet with [sanguophageCountMinusOne] other [sanguophageSingOrPlural] where they won't be tracked. Their leader [asker_nameDef] is asking for you to host the meeting at [map_definite].\n\nIf you accept, [sanguophageCount] sanguophages will arrive at [map_definite] from different directions. They will spend several hours discussing their own secret issues before departing. They promise to give you your reward before they leave.\n\nYou may betray the sanguophages and attack them. Downed sanguophages can be forced to turn one of your own colonists into a sanguophage.\n\n[sanguophageInfo]</li>
-    <li>sanguophageSingOrPlural(sanguophageCountMinusOne==1)->sanguophage</li>
-    <li>sanguophageSingOrPlural(sanguophageCountMinusOne>=2)->sanguophages</li>
-    <li>sanguophageInfo->(*Gray)About sanguophages: Sanguophages are ageless, deathless super-humans powered by archotech-created archites in the bloodstream. They are beautiful and extremely intelligent. They can heal any injury, and never suffer from disease or poison. In combat, they can launch deadly spines and heal injured friends. The price is that sanguophages must consume hemogen derived from human blood to survive, and they must periodically deathrest for long periods. They're easily destroyed by fire, and slowed down by UV light.(/Gray)</li>
-  -->
-  <SanguophageMeetingHost.questDescriptionRules.rulesStrings>TODO</SanguophageMeetingHost.questDescriptionRules.rulesStrings>
-  <!-- EN:
+  
+  <SanguophageMeetingHost.questContentRules.rulesStrings>
+    <li>sanguophagesArriveLetterLabel->Arrivo dei sanguifagi</li>
+    <li>sanguophagesArriveLetterText->I [sanguophageCount] sanguifagi stanno arrivando a [map_definite] da diverse direzioni. Si riuniranno e terranno una discussione nella colonia.</li>
+    <li>argumentLetterLabel->Conflitto sanguifago</li>
+    <li>argumentLetterText->I sanguifagi sono coinvolti in una discussione che è sfociata nella violenza.</li>
+    <li>successLetterLabel->Riunione conclusa</li>
+    <li>successLetterText->I sanguifagi hanno concluso la loro riunione e ora ti daranno la tua ricompensa.</li>
+    <li>raidArrivedLetterLabel->Cacciatori di sanguifagi</li>
+    <li>raidArrivedLetterText->Un gruppo di cacciatori di sanguifagi provenienti dalla fazione [enemyFaction_name] si sta avvicinando. Attaccheranno i sanguifagi riuniti e coloro che li hanno ospitati.</li>
+  </SanguophageMeetingHost.questContentRules.rulesStrings>
+  
+  <SanguophageMeetingHost.questDescriptionRules.rulesStrings>
+    <li>questDescription->Un sanguifago di nome [asker_nameDef] sta cercando un luogo sicuro per incontrare [sanguophageCountMinusOne] altri [sanguophageSingOrPlural] dove non saranno rintracciati. Il loro leader [asker_nameDef] ti chiede di organizzare l'incontro a [map_definite]. Se accetti, [sanguophageCount] sanguifagi arriveranno a [map_definite] da diverse direzioni. Trascorreranno diverse ore discutendo i loro affari segreti prima di partire. Promettono di darti la tua ricompensa prima di partire.\n\nPuoi tradire i sanguifagi e attaccarli. I sanguifagi abbattuti possono essere costretti a trasformare uno dei tuoi coloni in un sanguifago.\n\n[sanguophageInfo]</li>
+    <li>sanguophageSingOrPlural(sanguophageCountMinusOne==1)->sanguifago</li>
+    <li>sanguophageSingOrPlural(sanguophageCountMinusOne>=2)->sanguifagi</li>
+    <li>sanguophageInfo->(*Gray)Informazioni sui Sanguifagi: I Sanguifagi sono superumani senza età e senza morte, alimentati da architi creati dall'archeotecnologia nel flusso sanguigno. Sono belli e estremamente intelligenti. Possono curare qualsiasi ferita e non soffrono mai di malattie o veleni. In combattimento, possono lanciare spine mortali e curare gli alleati feriti. Il prezzo è che i sanguifagi devono consumare emoglobina derivata dal sangue umano per sopravvivere e devono periodicamente riposare per lunghi periodi. Sono facilmente distrutti dal fuoco e rallentati dalla luce ultravioletta.(/Gray)</li>
+  </SanguophageMeetingHost.questDescriptionRules.rulesStrings>
+  
+  <SanguophageMeetingHost.questNameRules.rulesStrings>
     <li>questName->[meetAdjective] [meetNoun]</li>
-    <li>meetAdjective->sanguophage</li>
-    <li>meetAdjective->bloodthirsty</li>
-    <li>meetAdjective->blood</li>
-    <li>meetAdjective->shadow</li>
-    <li>meetAdjective->dark</li>
-    <li>meetAdjective->crimson</li>
-    <li>meetAdjective->red</li>
-    <li>meetAdjective->scab</li>
-    <li>meetAdjective->hemic</li>
-    <li>meetAdjective->sanguine</li>
-    <li>meetNoun->meeting</li>
-    <li>meetNoun->host</li>
-    <li>meetNoun->gathering</li>
-    <li>meetNoun->reunion</li>
-    <li>meetNoun->assembly</li>
+    <li>meetAdjective->sanguifago</li>
+    <li>meetAdjective->assetato di sangue</li>
+    <li>meetAdjective->sanguinario</li>
+    <li>meetAdjective->sangue</li>
+    <li>meetAdjective->ombra</li>
+    <li>meetAdjective->oscurità</li>
+    <li>meetAdjective->carmesì</li>
+    <li>meetAdjective->rosso</li>
+    <li>meetAdjective->crosta</li>
+    <li>meetAdjective->emico</li>
+    <li>meetAdjective->sanguigno</li>
+    <li>meetNoun->riunione</li>
+    <li>meetNoun->ospite</li>
+    <li>meetNoun->raduno</li>
+    <li>meetNoun->assemblea</li>
     <li>meetNoun->conclave</li>
-    <li>meetNoun->congress</li>
-    <li>meetNoun->parley</li>
-  -->
-  <SanguophageMeetingHost.questNameRules.rulesStrings>TODO</SanguophageMeetingHost.questNameRules.rulesStrings>
+    <li>meetNoun->congresso</li>
+    <li>meetNoun->parlamento</li>
+  </SanguophageMeetingHost.questNameRules.rulesStrings>
   
 </LanguageData>
