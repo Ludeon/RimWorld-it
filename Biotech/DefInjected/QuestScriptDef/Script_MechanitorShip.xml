@@ -1,32 +1,32 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <LanguageData>
   
-  <!-- EN:
-    <li>mechanitorShuttleCrashedLetterLabel->Mechanitor ship</li>
-    <li>mechanitorShuttleCrashedLetterText->A mechanitor ship containing feral mechanoids has crashed nearby. The mechanoids will exit the crashed ship and prepare to fight.</li>
-    <li>assaultBeginLetterLabel->Mechanoid attack</li>
-    <li>assaultBeginLetterText->The feral mechanoids are coming to assault the colony!</li>
-    <li>mechlinkAvailableLetterLabel->[mechanitor_nameDef]'s mechlink available</li>
-    <li>mechlinkAvailableLetterText->The crashed ship contained the corpse of an ancient mechanitor.\n\nExtract [mechanitor_possessive] mechlink by selecting a colonist and right-clicking the corpse.</li>
-  -->
-  <MechanitorShip.questContentRules.rulesStrings>TODO</MechanitorShip.questContentRules.rulesStrings>
-  <!-- EN:
-    <li>questDescription->You have decrypted an ancient transponder, revealing the location of a mechanoid ship in orbit. The ship is badly damaged but you can signal it to land nearby.\n\nThe ship contains the remains of a long-dead mechanitor. Mechanitors can create and control mechanoids for work and combat. By extracting the deceased mechanitor's mechlink, you can turn one of your own colonists into a mechanitor.\n\nBeware - the ship also contains hostile mechanoids. The mechanoid group is composed of:\n\n[mechList]</li>
-  -->
-  <MechanitorShip.questDescriptionRules.rulesStrings>TODO</MechanitorShip.questDescriptionRules.rulesStrings>
-  <!-- EN:
+  
+  <MechanitorShip.questContentRules.rulesStrings>
+    <li>mechanitorShuttleCrashedLetterLabel->Navetta mecanitor</li>
+    <li>mechanitorShuttleCrashedLetterText->Una navetta mecanitor con mecanoidi selvaggi si è schiantata nelle vicinanze. I mecanoidi usciranno dal relitto della navetta e si prepareranno a combattere.</li>
+    <li>assaultBeginLetterLabel->Assalto mecanoidi</li>
+    <li>assaultBeginLetterText->I feroci mecanoidi stanno per attaccare la colonia!</li>
+    <li>mechlinkAvailableLetterLabel->Disponibile il mecolink di [mechanitor_nameDef]</li>
+    <li>mechlinkAvailableLetterText->Il relitto della navetta conteneva il cadavere di un antico mecanitor. Estrai il mecolink di [mechanitor_nameDef] selezionando un colon o e facendo clic destro sul cadavere.</li>
+  </MechanitorShip.questContentRules.rulesStrings>
+  
+  <MechanitorShip.questDescriptionRules.rulesStrings>
+    <li>questDescription->Hai decifrato un vecchio transponder, rivelando la posizione di una nave mecanitor in orbita. La nave è gravemente danneggiata, ma puoi inviare segnali per farla atterrare nelle vicinanze.\nLa nave contiene i resti di un mecanitor morto da tempo. I mecanitori possono creare e controllare mecanoidi per il lavoro e il combattimento. Estraendo il mecolink del mecanitor deceduto, puoi trasformare uno dei tuoi coloni in mecanitor.\nAttenzione, la nave contiene anche mecanoidi ostili. Il gruppo di mecanoidi è composto da:\n\n[mechList]</li>
+  </MechanitorShip.questDescriptionRules.rulesStrings>
+  
+  <MechanitorShip.questNameRules.rulesStrings>
     <li>questName->[shipAdjective] [shipNoun]</li>
-    <li>shipAdjective->mechanitor</li>
-    <li>shipAdjective->the overseer's</li>
-    <li>shipAdjective->ancient</li>
-    <li>shipAdjective->mechanoid</li>
-    <li>shipNoun->ship</li>
-    <li>shipNoun->shuttle</li>
-    <li>shipNoun->craft</li>
-    <li>shipNoun->wreck</li>
-    <li>shipNoun->wreckage</li>
-    <li>shipNoun->transport</li>
-  -->
-  <MechanitorShip.questNameRules.rulesStrings>TODO</MechanitorShip.questNameRules.rulesStrings>
+    <li>shipAdjective->mecanitor</li>
+    <li>shipAdjective->il supervisore</li>
+    <li>shipAdjective->antico</li>
+    <li>shipAdjective->mecanoide</li>
+    <li>shipNoun->nave</li>
+    <li>shipNoun->navetta</li>
+    <li>shipNoun->artigianato</li>
+    <li>shipNoun->naufragio</li>
+    <li>shipNoun->resti</li>
+    <li>shipNoun->trasporto</li>
+  </MechanitorShip.questNameRules.rulesStrings>
   
 </LanguageData>

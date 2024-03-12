@@ -1,163 +1,170 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <LanguageData>
 
-  <!-- EN: Not a mechanitor -->
-  <NotAMechanitor>TODO</NotAMechanitor>
-  <!-- EN: Not enough bandwidth -->
-  <NotEnoughBandwidth>TODO</NotEnoughBandwidth>
-  <!-- EN: Take control of {0} -->
-  <ControlMech>TODO</ControlMech>
-  <!-- EN: Cannot control {0} -->
-  <CannotControlMech>TODO</CannotControlMech>
-  <!-- EN: Already controlled by {0} -->
-  <CannotControlMechAlreadyControlled>TODO</CannotControlMechAlreadyControlled>
-  <!-- EN: Not enough bandwidth -->
-  <CannotControlMechNotEnoughBandwidth>TODO</CannotControlMechNotEnoughBandwidth>
-  <!-- EN: Never controllable -->
-  <CannotControlMechNeverControllable>TODO</CannotControlMechNeverControllable>
-  <!-- EN: Cannot disconnect from {0} -->
-  <CannotDisconnectMech>TODO</CannotDisconnectMech>
-  <!-- EN: Disconnect from {0} -->
-  <DisconnectMech>TODO</DisconnectMech>
-  <!-- EN: Permanently disassemble {0} -->
-  <DisassembleMech>TODO</DisassembleMech>
-  <!-- EN: Cannot permanently disassemble {0} -->
-  <CannotDisassembleMech>TODO</CannotDisassembleMech>
-  <!-- EN: Must be overseer -->
-  <MustBeOverseer>TODO</MustBeOverseer>
-  <!-- EN: Extract -->
-  <Extract>TODO</Extract>
-  <!-- EN: Out of command range -->
-  <OutOfCommandRange>TODO</OutOfCommandRange>
-  <!-- EN: Cannot go here -->
-  <CannotGoOutOfRange>TODO</CannotGoOutOfRange>
-  <!-- EN: Must be emptied -->
-  <WasteContainerFull>TODO</WasteContainerFull>
-  <!-- EN: Cannot repair mech {0} -->
-  <CannotRepairMech>TODO</CannotRepairMech>
+  
+  <NotAMechanitor>Non un meccanista</NotAMechanitor>
+  
+  <NotEnoughBandwidth>Larghezza di banda insufficiente</NotEnoughBandwidth>
+  
+  <ControlMech>Prendi il controllo di {0}</ControlMech>
+  
+  <CannotControlMech>Impossibile controllare {0}</CannotControlMech>
+  
+  <CannotControlMechAlreadyControlled>Già controllato da {0}</CannotControlMechAlreadyControlled>
+  
+  <CannotControlMechNotEnoughBandwidth>Larghezza di banda insufficiente</CannotControlMechNotEnoughBandwidth>
+  
+  <CannotControlMechNeverControllable>Mai controllabile</CannotControlMechNeverControllable>
+  
+  <CannotDisconnectMech>Impossibile disconnettersi da {0}</CannotDisconnectMech>
+  
+  <DisconnectMech>Disconnetti da {0}</DisconnectMech>
+  
+  <DisassembleMech>{0} smontato permanentemente</DisassembleMech>
+  
+  <CannotDisassembleMech>Impossibile smontare permanentemente {0}</CannotDisassembleMech>
+  
+  <MustBeOverseer>Deve essere supervisore</MustBeOverseer>
+  
+  <Extract>Estratto</Extract>
+  
+  <OutOfCommandRange>Fuori campo di comando</OutOfCommandRange>
+  
+  <CannotGoOutOfRange>Non posso andare qui</CannotGoOutOfRange>
+  
+  <WasteContainerFull>Deve essere svuotato</WasteContainerFull>
+  
+  <CannotRepairMech>Impossibile riparare il mech {0}</CannotRepairMech>
 
-  <!-- EN: Extract xenogerm from {PAWN_nameDef} -->
-  <ExtractXenogermFrom>TODO</ExtractXenogermFrom>
-  <!-- EN: Enter {0_labelShort} -->
-  <EnterBuilding>TODO</EnterBuilding>
-  <!-- EN: {PAWN_nameDef} has no genes -->
-  <PawnHasNoGenes>TODO</PawnHasNoGenes>
-  <!-- EN: {PAWN_nameDef} has no extractable genes. -->
-  <PawnHasNoNonArchiteGenes>TODO</PawnHasNoNonArchiteGenes>
-  <!-- EN: In xenogermination coma -->
-  <InXenogerminationComa>TODO</InXenogerminationComa>
-  <!-- EN: Occupied -->
-  <Occupied>TODO</Occupied>
-  <!-- EN: {PAWN_nameDef} was ejected from a growth vat -->
-  <OccupantEjectedFromGrowthVat>TODO</OccupantEjectedFromGrowthVat>
-  <!-- EN: {PAWN_nameDef} must be younger than {AGEYEARS} years old. -->
-  <TooOld>TODO</TooOld>
-  <!-- EN: {PAWN_nameDef} is too old. -->
-  <PawnIsTooOld>TODO</PawnIsTooOld>
-  <!-- EN: {PAWN_nameDef} is suffering from biostarvation. -->
-  <PawnBiostarving>TODO</PawnBiostarving>
-  <!-- EN: No available people -->
-  <NoViablePawns>TODO</NoViablePawns>
-  <!-- EN: No extractable people -->
-  <NoExtractablePawns>TODO</NoExtractablePawns>
-  <!-- EN: No implantable people -->
-  <NoImplantablePawns>TODO</NoImplantablePawns>
-  <!-- EN: Cannot enter {0_labelShort} -->
-  <CannotEnterBuilding>TODO</CannotEnterBuilding>
-  <!-- EN: {0_labelShort} is assigned to another person. -->
-  <AssignedToOtherPawn>TODO</AssignedToOtherPawn>
+  
+  <ExtractXenogermFrom>Estrai lo xenogerme da {PAWN_nameDef}</ExtractXenogermFrom>
+  
+  <EnterBuilding>Inserisci {0_labelShort}</EnterBuilding>
+  
+  <PawnHasNoGenes>{PAWN_nameDef} non ha geni</PawnHasNoGenes>
+  
+  <PawnHasNoNonArchiteGenes>{PAWN_nameDef} ha geni non estraibili.</PawnHasNoNonArchiteGenes>
+  
+  <InXenogerminationComa>In coma da xenogerminazione</InXenogerminationComa>
+  
+  <Occupied>Occupato</Occupied>
+  
+  <OccupantEjectedFromGrowthVat>{PAWN_nameDef} è stato espulso da una vasca di crescita</OccupantEjectedFromGrowthVat>
+  
+  <TooOld>{PAWN_nameDef} deve avere meno di {AGEYEARS} anni.</TooOld>
+  
+  <PawnIsTooOld>{PAWN_nameDef} è troppo vecchio.</PawnIsTooOld>
+  
+  <PawnBiostarving>{PAWN_nameDef} soffre di biofame.</PawnBiostarving>
+  
+  <NoViablePawns>Persone non disponibili</NoViablePawns>
+  
+  <NoExtractablePawns>Persone non estraibili</NoExtractablePawns>
+  
+  <NoImplantablePawns>Persone non impiantabili</NoImplantablePawns>
+  
+  <CannotEnterBuilding>Impossibile inserire {0_labelShort}</CannotEnterBuilding>
+  
+  <AssignedToOtherPawn>{0_labelShort} è assegnato a un'altra persona.</AssignedToOtherPawn>
 
-  <!-- EN: Absorb xenogerm of {PAWN_nameDef} -->
-  <AbsorbXenogerm>TODO</AbsorbXenogerm>
-  <!-- EN: Cannot absorb {PAWN_nameDef}'s xenogerm -->
-  <CannotAbsorbXenogerm>TODO</CannotAbsorbXenogerm>
-  <!-- EN: {PAWN_nameDef} is already {PAWN_xenotype} -->
-  <SameXenotype>TODO</SameXenotype>
-  <!-- EN: {PAWN_nameDef} suffering from xenogerm loss shock -->
-  <XenogermLossShockPresent>TODO</XenogermLossShockPresent>
-  <!-- EN: Carry to {0_labelShort} -->
-  <CarryToSpecificThing>TODO</CarryToSpecificThing>
-  <!-- EN: No reachable, un-reserved bed or deathrest casket in safe temperature. -->
-  <NoCasketOrBed>TODO</NoCasketOrBed>
-  <!-- EN: {PAWN_nameDef} is a temporary faction member. -->
-  <TemporaryFactionMember>TODO</TemporaryFactionMember>
+  
+  <AbsorbXenogerm>Assorbe lo xenogerme di {PAWN_nameDef}</AbsorbXenogerm>
+  
+  <CannotAbsorbXenogerm>Impossibile assorbire lo xenogerme di {PAWN_nameDef}</CannotAbsorbXenogerm>
+  
+  <SameXenotype>{PAWN_nameDef} è già {PAWN_xenotype}</SameXenotype>
+  
+  <XenogermLossShockPresent>{PAWN_nameDef} affetto da shock da perdita di xenogermi</XenogermLossShockPresent>
+  
+  <CarryToSpecificThing>Porta a {0_labelShort}</CarryToSpecificThing>
+  
+  <NoCasketOrBed>Letto non raggiungibile, non prenotato o bara funebre a temperatura sicura.</NoCasketOrBed>
+  
+  <TemporaryFactionMember>{PAWN_nameDef} è un membro temporaneo della fazione.</TemporaryFactionMember>
 
-  <!-- EN: Scanner not initiated -->
-  <SubcoreScannerNotInit>TODO</SubcoreScannerNotInit>
-  <!-- EN: Waiting for ingredients -->
-  <SubcoreScannerRequiresIngredients>TODO</SubcoreScannerRequiresIngredients>
-  <!-- EN: Occupied -->
-  <SubcoreScannerOccupied>TODO</SubcoreScannerOccupied>
-  <!-- EN: Enter {0} -->
-  <EnterSubcoreScanner>TODO</EnterSubcoreScanner>
+  
+  <SubcoreScannerNotInit>Scanner non avviato</SubcoreScannerNotInit>
+  
+  <SubcoreScannerRequiresIngredients>In attesa degli ingredienti</SubcoreScannerRequiresIngredients>
+  
+  <SubcoreScannerOccupied>Occupato</SubcoreScannerOccupied>
+  
+  <EnterSubcoreScanner>Inserisci {0}</EnterSubcoreScanner>
 
-  <!-- EN: Breastfeed {BABY_labelShort} -->
-  <BabyCareBreastfeed>TODO</BabyCareBreastfeed>
-  <!-- EN: Cannot breastfeed {BABY_labelShort} -->
-  <BabyCareBreastfeedUnable>TODO</BabyCareBreastfeedUnable>
-  <!-- EN: No baby-edible food -->
-  <NoBabyFood>TODO</NoBabyFood>
+  
+  <BabyCareBreastfeed>Allatta al seno {BABY_labelShort}</BabyCareBreastfeed>
+  
+  <BabyCareBreastfeedUnable>Non posso allattare {BABY_labelShort}</BabyCareBreastfeedUnable>
+  
+  <NoBabyFood>Alimento non commestibile per i bambini</NoBabyFood>
 
-  <!-- EN: play need full -->
-  <CannotInteractBabyPlayFull>TODO</CannotInteractBabyPlayFull>
+  
+  <CannotInteractBabyPlayFull>il gioco ha bisogno di essere pieno</CannotInteractBabyPlayFull>
 
-  <!-- EN: Feed on {PAWN_nameDef} -->
-  <BloodfeedOn>TODO</BloodfeedOn>
-  <!-- EN: Cannot feed on {PAWN_nameDef} -->
-  <CannotBloodfeedOn>TODO</CannotBloodfeedOn>
-  <!-- EN: Not enough blood. -->
-  <CannotFeedOnWouldKill>TODO</CannotFeedOnWouldKill>
+  
+  <BloodfeedOn>Nutriti con {PAWN_nameDef}</BloodfeedOn>
+  
+  <CannotBloodfeedOn>Impossibile nutrirsi di {PAWN_nameDef}</CannotBloodfeedOn>
+  
+  <CannotFeedOnWouldKill>Non abbastanza sangue.</CannotFeedOnWouldKill>
 
-  <!-- BreastfeedFailReason strings-->
-  <!-- EN: {MOM_labelShort} does not have enough milk -->
-  <BreastfeedFailReason_MomNotEnoughMilk>TODO</BreastfeedFailReason_MomNotEnoughMilk>
-  <!-- EN: {MOM_labelShort} cannot breastfeed right now -->
-  <BreastfeedFailReason_MomInMentalState>TODO</BreastfeedFailReason_MomInMentalState>
-  <!-- EN: {BABY_labelShort} is too full to suckle -->
-  <BreastfeedFailReason_BabyTooFull>TODO</BreastfeedFailReason_BabyTooFull>
-  <!-- EN: {BABY_labelShort} is forbidden to {MOM_labelShort} -->
-  <BreastfeedFailReason_BabyForbiddenToMom>TODO</BreastfeedFailReason_BabyForbiddenToMom>
-  <!-- EN: {BABY_labelShort} is forbidden to {HAULER_labelShort} -->
-  <BreastfeedFailReason_BabyForbiddenToHauler>TODO</BreastfeedFailReason_BabyForbiddenToHauler>
-  <!-- EN: {MOM_labelShort} is forbidden to {HAULER_labelShort} -->
-  <BreastfeedFailReason_MomForbiddenToHauler>TODO</BreastfeedFailReason_MomForbiddenToHauler>
-  <!-- EN: {MOM_labelShort} can breastfeed {BABY_labelShort} without help -->
-  <BreastfeedFailReason_MomIsMobile>TODO</BreastfeedFailReason_MomIsMobile>
-  <!-- EN: {HAULER_labelShort} cannot go from {BABY_labelShort} to {MOM_labelShort} -->
-  <BreastfeedFailReason_HaulerCannotReachMom>TODO</BreastfeedFailReason_HaulerCannotReachMom>
-  <!-- EN: {HAULER_labelShort} cannot reach {BABY_labelShort} -->
-  <BreastfeedFailReason_HaulerCannotReachBaby>TODO</BreastfeedFailReason_HaulerCannotReachBaby>
-  <!-- EN: No lactating {BABY_factionPawnsPlural} are assigned to {BABY_labelShort} -->
-  <BreastfeedFailReason_NoMomsAssignedToBaby>TODO</BreastfeedFailReason_NoMomsAssignedToBaby>
-  <!-- EN: {MOM_labelShort} is not assigned to childcare -->
-  <BreastfeedFailReason_MomNotAssignedToChildcare>TODO</BreastfeedFailReason_MomNotAssignedToChildcare>
+  
+  
+  <BreastfeedFailReason_MomNotEnoughMilk>{MOM_labelShort} non ha abbastanza latte</BreastfeedFailReason_MomNotEnoughMilk>
+  
+  <BreastfeedFailReason_MomInMentalState>{MOM_labelShort} non può allattare al seno in questo momento</BreastfeedFailReason_MomInMentalState>
+  
+  <BreastfeedFailReason_BabyTooFull>{BABY_labelShort} è troppo pieno per essere allattato</BreastfeedFailReason_BabyTooFull>
+  
+  <BreastfeedFailReason_BabyForbiddenToMom>{BABY_labelShort} è vietato a {MOM_labelShort}</BreastfeedFailReason_BabyForbiddenToMom>
+  
+  <BreastfeedFailReason_BabyForbiddenToHauler>{BABY_labelShort} è vietato a {HAULER_labelShort}</BreastfeedFailReason_BabyForbiddenToHauler>
+  
+  <BreastfeedFailReason_MomForbiddenToHauler>{MOM_labelShort} non è consentito a {HAULER_labelShort}</BreastfeedFailReason_MomForbiddenToHauler>
+  
+  <BreastfeedFailReason_MomIsMobile>{MOM_labelShort} può allattare {BABY_labelShort} senza aiuto</BreastfeedFailReason_MomIsMobile>
+  
+  <BreastfeedFailReason_HaulerCannotReachMom>{HAULER_labelShort} non può passare da {BABY_labelShort} a {MOM_labelShort}</BreastfeedFailReason_HaulerCannotReachMom>
+  
+  <BreastfeedFailReason_HaulerCannotReachBaby>{HAULER_labelShort} non può raggiungere {BABY_labelShort}</BreastfeedFailReason_HaulerCannotReachBaby>
+  
+  <BreastfeedFailReason_NoMomsAssignedToBaby>Nessun {BABY_factionPawnsPlural} in allattamento è assegnato a {BABY_labelShort}</BreastfeedFailReason_NoMomsAssignedToBaby>
+  
+  <BreastfeedFailReason_MomNotAssignedToChildcare>{MOM_labelShort} non è assegnato all'assistenza all'infanzia</BreastfeedFailReason_MomNotAssignedToChildcare>
+  
+  <BreastfeedFailReason_MomInsideContainer>{MOM_labelShort} è all'interno di un contenitore</BreastfeedFailReason_MomInsideContainer> 
+  
+  <BreastfeedFailReason_MomBeingCarried>{MOM_labelShort} è in fase di trasporto</BreastfeedFailReason_MomBeingCarried> 
 
-  <!-- EN: Order implantation into {PAWN_nameDef} -->
-  <OrderImplantationIntoPawn>TODO</OrderImplantationIntoPawn>
-  <!-- EN: Accept {0_xenotype} xenogerm -->
-  <AcceptXenogerm>TODO</AcceptXenogerm>
+  
+  <OrderImplantationIntoPawn>Ordina l'impianto in {PAWN_nameDef}</OrderImplantationIntoPawn>
+  
+  <AcceptXenogerm>Accetta xenogerme {0_xenotype}</AcceptXenogerm>
 
-  <!-- EN: Carry {PAWN_labelShort} to recharger -->
-  <CarryToRechargerOrdered>TODO</CarryToRechargerOrdered>
-  <!-- EN: Cannot carry {PAWN_labelShort} to recharger -->
-  <CannotCarryToRecharger>TODO</CannotCarryToRecharger>
-  <!-- EN: No available recharger -->
-  <CannotCarryToRechargerNoneAvailable>TODO</CannotCarryToRechargerNoneAvailable>
+  
+  <CarryToRechargerOrdered>Porta con te {PAWN_labelShort} per ricaricarti</CarryToRechargerOrdered>
+  
+  <CannotCarryToRecharger>Impossibile trasportare {PAWN_labelShort} per ricaricare</CannotCarryToRecharger>
+  
+  <CannotCarryToRechargerNoneAvailable>Ricaricatore non disponibile</CannotCarryToRechargerNoneAvailable>
 
-  <!-- EN: Cannot study -->
-  <CannotStudy>TODO</CannotStudy>
-  <!-- EN: already studied -->
-  <AlreadyStudied>TODO</AlreadyStudied>
-  <!-- EN: no reachable, un-reserved research bench available -->
-  <NoResearchBench>TODO</NoResearchBench>
+  
+  <CannotStudy>Non posso studiare</CannotStudy>
+  
+  <AlreadyStudied>già studiato</AlreadyStudied>
+  
+  <NoResearchBench>non raggiungibile, banco di ricerca disponibile senza prenotazione</NoResearchBench>
 
-  <!-- EN: Hemogen packs disabled by food restriction. -->
-  <NotAllowedHemogen>TODO</NotAllowedHemogen>
+  
+  <NotAllowedHemogen>Pacchetti di emogeno disabilitati da restrizioni alimentari.</NotAllowedHemogen>
 
-  <!-- EN: Eject genepack from gene bank -->
-  <EjectGenepackFromGeneBank>TODO</EjectGenepackFromGeneBank>
+  
+  <EjectGenepackFromGeneBank>Espelli il pacchetto genetico dalla banca genetica</EjectGenepackFromGeneBank>
 
-  <!-- EN: Resulting metabolism would be too low -->
-  <ResultingMetTooLow>TODO</ResultingMetTooLow>
+  
+  <ResultingMetTooLow>Il metabolismo risultante sarebbe troppo basso</ResultingMetTooLow>
+
+  
+  <RomanceOnCooldown>ha tentato una storia d'amore troppo recentemente</RomanceOnCooldown>
 
 </LanguageData>

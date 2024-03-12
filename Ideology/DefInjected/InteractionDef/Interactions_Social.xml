@@ -1,63 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
 <LanguageData>
   
   
-  <Convert_Failure.label>TODO</Convert_Failure.label>
+  <Convert_Failure.label>conversione non riuscita</Convert_Failure.label>
   
   <Convert_Failure.logRulesInitiator.rulesStrings>
-    </Convert_Failure.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha tentato di convertire [RECIPIENT_nameDef], ma ha fallito.</li>
+  </Convert_Failure.logRulesInitiator.rulesStrings>
   
   
-  <Convert_Success.label>TODO</Convert_Success.label>
+  <Convert_Success.label>conversione riuscita</Convert_Success.label>
   
   <Convert_Success.logRulesInitiator.rulesStrings>
-    </Convert_Success.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] è riuscito a convertire [RECIPIENT_nameDef].</li>
+  </Convert_Success.logRulesInitiator.rulesStrings>
   
   
-  <ConvertIdeoAttempt.label>TODO</ConvertIdeoAttempt.label>
+  <ConvertIdeoAttempt.label>tentativo di convertire l'ideologia</ConvertIdeoAttempt.label>
   
   <ConvertIdeoAttempt.logRulesInitiator.rulesStrings>
-    </ConvertIdeoAttempt.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha tentato di convertire [RECIPIENT_nameDef] alla propria ideologia.</li>
+  </ConvertIdeoAttempt.logRulesInitiator.rulesStrings>
   
   
-  <Counsel_Failure.label>TODO</Counsel_Failure.label>
+  <Counsel_Failure.label>consulenza fallita</Counsel_Failure.label>
   
   <Counsel_Failure.logRulesInitiator.rulesStrings>
-    </Counsel_Failure.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha tentato di confortare [RECIPIENT_nameDef], ma ha solo peggiorato le cose.</li>
+  </Counsel_Failure.logRulesInitiator.rulesStrings>
   
   
-  <Counsel_Success.label>TODO</Counsel_Success.label>
+  <Counsel_Success.label>consulenza di successo</Counsel_Success.label>
   
   <Counsel_Success.logRulesInitiator.rulesStrings>
-    </Counsel_Success.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha consigliato [RECIPIENT_nameDef] riguardo ai [problems].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha aiutato [RECIPIENT_nameDef] a riflettere su [problems]</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha dato consigli a [RECIPIENT_nameDef] per affrontare la negatività.</li>
+    <li>problems->i suoi problemi</li>
+    <li>problems->i suoi disordini</li>
+    <li>problems->i suoi pensieri dolorosi</li>
+    <li>problems->le sue recenti difficoltà</li>
+  </Counsel_Success.logRulesInitiator.rulesStrings>
   
   
-  <PreachHealth.label>TODO</PreachHealth.label>
+  <PreachHealth.label>predicazione della salute</PreachHealth.label>
   
   <PreachHealth.logRulesInitiator.rulesStrings>
-    </PreachHealth.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha rafforzato la salute di [RECIPIENT_nameDef] predicando su [preaching_topic].</li>
+    <li>preaching_topic->le ragioni per vivere</li>
+    <li>preaching_topic->gli obiettivi ideologici più grandi</li>
+    <li>preaching_topic->il proprio scopo dell'esistenza</li>
+  </PreachHealth.logRulesInitiator.rulesStrings>
   
   
-  <Reassure.label>TODO</Reassure.label>
+  <Reassure.label>rassicurare</Reassure.label>
   
   <Reassure.logRulesInitiator.rulesStrings>
-    </Reassure.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha rafforzato le convinzioni di [RECIPIENT_nameDef].</li>
+  </Reassure.logRulesInitiator.rulesStrings>
   
   
-  <Trial_Accuse.label>TODO</Trial_Accuse.label>
+  <Trial_Accuse.label>accusa</Trial_Accuse.label>
   
   <Trial_Accuse.logRulesInitiator.rulesStrings>
-    </Trial_Accuse.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha presentato alcune prove.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha appellato alle emozioni degli spettatori.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha accusato [RECIPIENT_nameDef] di [wrongdoing].</li>
+    <li>wrongdoing->sabotare la colonia</li>
+    <li>wrongdoing->essere pigro[RECIPIENT_o_a]</li>
+    <li>wrongdoing->mangiare troppo</li>
+    <li>wrongdoing->rubare</li>
+    <li>wrongdoing->essere una persona orribile</li>
+    <li>wrongdoing->non rispettare le idee sacre</li>
+    <li>wrongdoing->non rispettare le figure sacre</li>
+    <li>wrongdoing->eresia</li>
+    <li>wrongdoing->omicidio</li>
+    <li>wrongdoing->blasfemia</li>
+    <li>wrongdoing->tradimento</li>
+    <li>wrongdoing->pensieri di odio</li>
+    <li>wrongdoing->disloyalty</li>
+  </Trial_Accuse.logRulesInitiator.rulesStrings>
   
   
-  <Trial_Defend.label>TODO</Trial_Defend.label>
+  <Trial_Defend.label>difendere</Trial_Defend.label>
   
   <Trial_Defend.logRulesInitiator.rulesStrings>
-    </Trial_Defend.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha respinto l'accusa.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha presentato altre prove.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha dichiarato al giurato.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha chiesto pietà.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha paralizzato la procedura.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha respinto le accuse.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha definito il processo una farsa.</li>
+  </Trial_Defend.logRulesInitiator.rulesStrings>
   
   
-  <WorkDrive.label>TODO</WorkDrive.label>
+  <WorkDrive.label>spinta al lavoro</WorkDrive.label>
   
   <WorkDrive.logRulesInitiator.rulesStrings>
-    </WorkDrive.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha chiesto a [RECIPIENT_nameDef] di impegnarsi di più per il bene della colonia.</li>
+  </WorkDrive.logRulesInitiator.rulesStrings>
   
 </LanguageData>

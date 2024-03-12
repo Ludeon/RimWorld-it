@@ -13,6 +13,7 @@ TRADUTTORI:
 - Rexlord
 - Kenciccio
 - spappo94
+- Motty21D
 
 ### Vecchie Versioni:
 - Nephiro

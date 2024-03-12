@@ -1,91 +1,91 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <LanguageData>
   
-  <!-- EN: blood transfusion -->
-  <BloodTransfusion.label>TODO</BloodTransfusion.label>
-  <!-- EN: Use hemogen packs to reduce the effects of blood loss. Each hemogen pack used recovers 35% blood loss. The operation will also restore hemogen to hemogenic individuals. -->
-  <BloodTransfusion.description>TODO</BloodTransfusion.description>
-  <!-- EN: performing blood transfusion on TargetA. -->
-  <BloodTransfusion.jobString>TODO</BloodTransfusion.jobString>
   
-  <!-- EN: extract hemogen pack -->
-  <ExtractHemogenPack.label>TODO</ExtractHemogenPack.label>
-  <!-- EN: Extract a hemogen pack from the target. The operation will fail to produce a hemogen pack if the target does not have enough blood.\n\nHemogen packs can be administered to others to reduce blood loss or to satiate those who feed on blood. -->
-  <ExtractHemogenPack.description>TODO</ExtractHemogenPack.description>
-  <!-- EN: Extracting hemogen pack. -->
-  <ExtractHemogenPack.jobString>TODO</ExtractHemogenPack.jobString>
+  <BloodTransfusion.label>trasfusione di sangue</BloodTransfusion.label>
   
-  <!-- EN: extract ovum for IVF -->
-  <ExtractOvum.label>TODO</ExtractOvum.label>
-  <!-- EN: Extract an ovum into a storage capsule. It can then be fertilized by a man, and finally implanted into a mother to start a pregnancy. -->
-  <ExtractOvum.description>TODO</ExtractOvum.description>
-  <!-- EN: extracting ovum from TargetA. -->
-  <ExtractOvum.jobString>TODO</ExtractOvum.jobString>
+  <BloodTransfusion.description>Utilizzare impacchi di emogeno per ridurre gli effetti della perdita di sangue. Ciascun impacco di emogeno utilizzato recupera il 35% della perdita di sangue. L'operazione ripristinerà anche l'emogeno negli individui emogenici.</BloodTransfusion.description>
   
-  <!-- EN: implant embryo -->
-  <ImplantEmbryo.label>TODO</ImplantEmbryo.label>
-  <!-- EN: Implant an embryo in a surrogate mother to begin a pregnancy. -->
-  <ImplantEmbryo.description>TODO</ImplantEmbryo.description>
-  <!-- EN: Implanting embryo in TargetA. -->
-  <ImplantEmbryo.jobString>TODO</ImplantEmbryo.jobString>
+  <BloodTransfusion.jobString>eseguire una trasfusione di sangue su TargetA.</BloodTransfusion.jobString>
   
-  <!-- EN: implant IUD -->
-  <ImplantIUD.label>TODO</ImplantIUD.label>
-  <!-- EN: Implant a small metal device in the uterus to prevent pregnancies. It can later be removed, but there is a small chance of leaving the patient permanently sterile. This surgery terminates pregnancies in the first trimester. -->
-  <ImplantIUD.description>TODO</ImplantIUD.description>
-  <!-- EN: implanting a IUD in TargetA. -->
-  <ImplantIUD.jobString>TODO</ImplantIUD.jobString>
-  <!-- EN: {0} has successfully implanted an IUD in {1}. -->
-  <ImplantIUD.successfullyRemovedHediffMessage>TODO</ImplantIUD.successfullyRemovedHediffMessage>
   
-  <!-- EN: implant xenogerm -->
-  <ImplantXenogerm.label>TODO</ImplantXenogerm.label>
-  <!-- EN: Implant a xenogerm into a patient. This replaces any previous xenogerm they may have had. -->
-  <ImplantXenogerm.description>TODO</ImplantXenogerm.description>
-  <!-- EN: Implanting xenogerm. -->
-  <ImplantXenogerm.jobString>TODO</ImplantXenogerm.jobString>
+  <ExtractHemogenPack.label>estrarre il pacchetto di emogeno</ExtractHemogenPack.label>
   
-  <!-- EN: remove IUD -->
-  <RemoveIUD.label>TODO</RemoveIUD.label>
-  <!-- EN: Remove an implanted intrauterine device to allow normal pregnancy. If the surgery goes wrong, the patient will be rendered permanently sterile. -->
-  <RemoveIUD.description>TODO</RemoveIUD.description>
-  <!-- EN: removing IUD from TargetA. -->
-  <RemoveIUD.jobString>TODO</RemoveIUD.jobString>
-  <!-- EN: {0} has successfully removed {1}'s IUD. -->
-  <RemoveIUD.successfullyRemovedHediffMessage>TODO</RemoveIUD.successfullyRemovedHediffMessage>
+  <ExtractHemogenPack.description>Estrai un pacchetto di emogeno dal bersaglio. L'operazione non riuscirà a produrre un pacchetto di emogeno se il bersaglio non ha abbastanza sangue.\n\nI pacchetti di emogeno possono essere somministrati ad altri per ridurre la perdita di sangue o per saziare coloro che si nutrono di sangue.</ExtractHemogenPack.description>
   
-  <!-- EN: reverse vasectomy -->
-  <ReverseVasectomy.label>TODO</ReverseVasectomy.label>
-  <!-- EN: Attempt to reverse the vasectomy and make a man capable of fathering children again. Most vasectomy reversals succeed, but if the surgery goes wrong the man will be left permanently sterile. -->
-  <ReverseVasectomy.description>TODO</ReverseVasectomy.description>
-  <!-- EN: performing a vasectomy reversal on TargetA. -->
-  <ReverseVasectomy.jobString>TODO</ReverseVasectomy.jobString>
-  <!-- EN: {0} has successfully performed a vasectomy reversal on {1}. -->
-  <ReverseVasectomy.successfullyRemovedHediffMessage>TODO</ReverseVasectomy.successfullyRemovedHediffMessage>
+  <ExtractHemogenPack.jobString>Estrazione del pacchetto di emogeno.</ExtractHemogenPack.jobString>
   
-  <!-- EN: terminate pregnancy -->
-  <TerminatePregnancy.label>TODO</TerminatePregnancy.label>
-  <!-- EN: Terminate the pregnancy of an animal or human. -->
-  <TerminatePregnancy.description>TODO</TerminatePregnancy.description>
-  <!-- EN: terminating TargetA's pregnancy. -->
-  <TerminatePregnancy.jobString>TODO</TerminatePregnancy.jobString>
   
-  <!-- EN: perform tubal ligation -->
-  <TubalLigation.label>TODO</TubalLigation.label>
-  <!-- EN: Permanently render a patient sterile and unable to reproduce. -->
-  <TubalLigation.description>TODO</TubalLigation.description>
-  <!-- EN: performing tubal ligation on TargetA. -->
-  <TubalLigation.jobString>TODO</TubalLigation.jobString>
-  <!-- EN: {0} has successfully performed tubal ligation on {1}. -->
-  <TubalLigation.successfullyRemovedHediffMessage>TODO</TubalLigation.successfullyRemovedHediffMessage>
+  <ExtractOvum.label>estrarre l'ovulo per la fecondazione in vitro</ExtractOvum.label>
   
-  <!-- EN: perform vasectomy -->
-  <Vasectomy.label>TODO</Vasectomy.label>
-  <!-- EN: Cut the vas deferens to render the patient unable to reproduce. If the surgery goes wrong the patient will be left permanently sterile. -->
-  <Vasectomy.description>TODO</Vasectomy.description>
-  <!-- EN: performing a vasectomy on TargetA. -->
-  <Vasectomy.jobString>TODO</Vasectomy.jobString>
-  <!-- EN: {0} has successfully performed a vasectomy on {1}. -->
-  <Vasectomy.successfullyRemovedHediffMessage>TODO</Vasectomy.successfullyRemovedHediffMessage>
+  <ExtractOvum.description>Estrai un ovulo in una capsula di conservazione. Può quindi essere fecondato da un uomo e infine impiantato nella madre per iniziare una gravidanza.</ExtractOvum.description>
+  
+  <ExtractOvum.jobString>estrarre l'ovulo da TargetA.</ExtractOvum.jobString>
+  
+  
+  <ImplantEmbryo.label>embrione impiantato</ImplantEmbryo.label>
+  
+  <ImplantEmbryo.description>Impiantare un embrione in una madre surrogata per iniziare una gravidanza.</ImplantEmbryo.description>
+  
+  <ImplantEmbryo.jobString>Embrione impiantato in TargetA.</ImplantEmbryo.jobString>
+  
+  
+  <ImplantIUD.label>Impianto IUD</ImplantIUD.label>
+  
+  <ImplantIUD.description>Impiantare un piccolo dispositivo metallico nell'utero per prevenire gravidanze. Successivamente può essere rimosso, ma esiste una piccola possibilità di lasciare il paziente permanentemente sterile. Questo intervento interrompe la gravidanza nel primo trimestre.</ImplantIUD.description>
+  
+  <ImplantIUD.jobString>impiantare uno IUD in TargetA.</ImplantIUD.jobString>
+  
+  <ImplantIUD.successfullyRemovedHediffMessage>{0} ha impiantato con successo uno IUD in {1}.</ImplantIUD.successfullyRemovedHediffMessage>
+  
+  
+  <ImplantXenogerm.label>impianto di xenogermi</ImplantXenogerm.label>
+  
+  <ImplantXenogerm.description>Impiantare uno xenogerme in un paziente. Questo sostituisce qualsiasi xenogermo precedente che potrebbero aver avuto.</ImplantXenogerm.description>
+  
+  <ImplantXenogerm.jobString>Impianto di xenogerme.</ImplantXenogerm.jobString>
+  
+  
+  <RemoveIUD.label>rimuovere lo IUD</RemoveIUD.label>
+  
+  <RemoveIUD.description>Rimuovere un dispositivo intrauterino impiantato per consentire una gravidanza normale. Se l’intervento va storto, il paziente verrà reso permanentemente sterile.</RemoveIUD.description>
+  
+  <RemoveIUD.jobString>rimuovendo lo IUD da TargetA.</RemoveIUD.jobString>
+  
+  <RemoveIUD.successfullyRemovedHediffMessage>{0} ha rimosso con successo lo IUD di {1}.</RemoveIUD.successfullyRemovedHediffMessage>
+  
+  
+  <ReverseVasectomy.label>vasectomia inversa</ReverseVasectomy.label>
+  
+  <ReverseVasectomy.description>Tentare di invertire la vasectomia e rendere un uomo capace di generare nuovamente figli. La maggior parte delle inversioni di vasectomia hanno successo, ma se l’intervento va male l’uomo rimarrà permanentemente sterile.</ReverseVasectomy.description>
+  
+  <ReverseVasectomy.jobString>eseguendo una vasectomia inversa su TargetA.</ReverseVasectomy.jobString>
+  
+  <ReverseVasectomy.successfullyRemovedHediffMessage>{0} ha eseguito con successo una vasectomia inversa su {1}.</ReverseVasectomy.successfullyRemovedHediffMessage>
+  
+  
+  <TerminatePregnancy.label>interrompere la gravidanza</TerminatePregnancy.label>
+  
+  <TerminatePregnancy.description>Interrompere la gravidanza di un animale o di un essere umano.</TerminatePregnancy.description>
+  
+  <TerminatePregnancy.jobString>interrompere la gravidanza di TargetA.</TerminatePregnancy.jobString>
+  
+  
+  <TubalLigation.label>eseguire la legatura tubulare</TubalLigation.label>
+  
+  <TubalLigation.description>Rendere permanentemente un paziente sterile e incapace di riprodursi.</TubalLigation.description>
+  
+  <TubalLigation.jobString>eseguendo la legatura tubulare su TargetA.</TubalLigation.jobString>
+  
+  <TubalLigation.successfullyRemovedHediffMessage>{0} ha eseguito con successo la legatura tubulare su {1}.</TubalLigation.successfullyRemovedHediffMessage>
+  
+  
+  <Vasectomy.label>eseguire la vasectomia</Vasectomy.label>
+  
+  <Vasectomy.description>Tagliare il dotto deferente per rendere il paziente incapace di riprodursi. Se l’intervento va storto il paziente verrà lasciato permanentemente sterile.</Vasectomy.description>
+  
+  <Vasectomy.jobString>eseguendo una vasectomia su TargetA.</Vasectomy.jobString>
+  
+  <Vasectomy.successfullyRemovedHediffMessage>{0} ha eseguito con successo una vasectomia su {1}.</Vasectomy.successfullyRemovedHediffMessage>
   
 </LanguageData>

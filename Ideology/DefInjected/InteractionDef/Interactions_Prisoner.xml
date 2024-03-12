@@ -1,15 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  
-  <EnslaveAttempt.label>TODO</EnslaveAttempt.label>
-  
+  <EnslaveAttempt.label>intento di schiavitù</EnslaveAttempt.label>
   <EnslaveAttempt.logRulesInitiator.rulesStrings>
-    </EnslaveAttempt.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha detto a [RECIPIENT_nameDef] che [RECIPIENT_pronoun] deve lavorare per la colonia.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha informato [RECIPIENT_nameDef] che [RECIPIENT_pronoun] deve obbedire agli ordini e lavorare.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha ordinato a [RECIPIENT_nameDef] di prepararsi per una vita di lavoro forzato.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha spiegato a [RECIPIENT_nameDef] che [RECIPIENT_pronoun] deve lavorare o affrontare una punizione.</li>
+  </EnslaveAttempt.logRulesInitiator.rulesStrings>
   
-  
-  <ReduceWill.label>TODO</ReduceWill.label>
-  
+  <ReduceWill.label>tentativo di ridurre la volontà</ReduceWill.label>
   <ReduceWill.logRulesInitiator.rulesStrings>
-    </ReduceWill.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha detto a [RECIPIENT_nameDef] che [RECIPIENT_pronoun] [negative].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha spiegato che [RECIPIENT_nameDef] [negative].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha minacciato [RECIPIENT_nameDef] con [threat] se [RECIPIENT_pronoun] [refused].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha informato [RECIPIENT_nameDef] che [RECIPIENT_pronoun] [disillusionment].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha esiguto da [RECIPIENT_nameDef] di cedere alla colonia.</li>
+    <li>negative->non aveva futuro</li>
+    <li>negative->non aveva modo di fuggire</li>
+    <li>negative->non aveva futuro al di fuori della colonia</li>
+    <li>negative->non aveva i mezzi per fuggire</li>
+    <li>negative->doveva sottomettersi immediatamente</li>
+    <li>negative->doveva dimenticare le aspirazioni</li>
+    <li>negative->doveva sottomettersi alla colonia</li>
+    <li>threat->tortura</li>
+    <li>threat->punizione</li>
+    <li>threat->mutilazione</li>
+    <li>threat->morte</li>
+    <li>threat->isolamento</li>
+    <li>threat->smembramento</li>
+    <li>threat->traumi</li>
+    <li>threat->lacerazioni</li>
+    <li>threat->cannibalismo</li>
+    <li>threat->rimozione degli organi</li>
+    <li>threat->lungo confinamento</li>
+    <li>refused->ha cercato di fuggire</li>
+    <li>refused->ha insultato la colonia</li>
+    <li>refused->non ha lavorato</li>
+    <li>refused->ha rifiutato un ordine</li>
+    <li>refused->ha resistito al sottomettersi</li>
+    <li>refused->ha rifiutato di obbedire</li>
+    <li>refused->si è comportato in modo impertinente</li>
+    <li>disillusionment->doveva accettare la situazione</li>
+    <li>disillusionment->non aveva speranza in un altro futuro</li>
+    <li>disillusionment->sarebbe stato meglio sottomettersi</li>
+    <li>disillusionment->non sarebbe sopravvissuto da solo</li>
+    <li>disillusionment->non aveva altra scelta che sottomettersi</li>
+    <li>givein->cedere</li>
+    <li>givein->sottomettersi</li>
+    <li>givein->arrendersi</li>
+    <li>givein->cedere</li>
+  </ReduceWill.logRulesInitiator.rulesStrings>
   
 </LanguageData>

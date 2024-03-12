@@ -1,73 +1,132 @@
+<?xml version='1.0' encoding='utf-8'?>
 <LanguageData>
   
   
-  <HumanPrimacy.label>TODO</HumanPrimacy.label>
+  <HumanPrimacy.label>primato umano</HumanPrimacy.label>
   
-  <HumanPrimacy.description>TODO</HumanPrimacy.description>
+  <HumanPrimacy.description>Gli esseri umani sono il centro morale dell’universo.</HumanPrimacy.description>
   
   <HumanPrimacy.descriptionMaker.rules.rulesStrings>
-    </HumanPrimacy.descriptionMaker.rules.rulesStrings>
+    <li>creation(tag=meme_HumanPrimacy)        -&gt;[deity0_name] creó toda la naturaleza, y se la dio al hombre como un regalo, para que sirviera al hombre y a sus propósitos para siempre.</li>
+    <li>episode(uses=1,tag=meme_HumanPrimacy)  -&gt;El pueblo luchó con las bestias del bosque, y [deity0_name] vio su lucha, y les dio armas para controlar la naturaleza.</li>
+    <li>intro(tag=meme_HumanPrimacy)           -&gt;Los primeros colonos de [place_summary] [place_name] se vieron acosados por [Animal_Plural] cazahombres. [deity0_name] intervino, matando a las bestias y dejando clara su preferencia por la raza humana.</li>
+    <li>conflict(tag=meme_HumanPrimacy)        -&gt;Un [foeLeader] antihumanos hizo un edicto dando algunos derechos iguales tanto a los animales como a los humanos. [deity0_name] lloró mientras los [memberNamePlural] se vieron obligados a dar sus derechos a los [Animal_Plural] y a los [Animal_Plural].</li>
+    <li>founderJoin(tag=meme_HumanPrimacy)     -&gt;Un [place_job] llamdo [founderName] fundó el ahora famoso xeno zoológico en [place_name]. [founder_pronoun] utilizaba espectáculos de sacrificio de animales para enseñar a los visitantes el deseo de [deity0_name] de que la humanidad gobierne la naturaleza.</li>
+    <li>victory(tag=meme_HumanPrimacy)         -&gt;Gracias a las acciones de [founderName], los [foeSoldiers] de [foeLeader] vieron la verdad de [deity0_name]. Celebraron su humanidad compartida con el [memberNamePlural] y desterraron al [foeLeader] a vivir en el mundo salvaje como un animal.</li>
+    <li>setup(tag=meme_HumanPrimacy)           -&gt;[founderName] construyó una colonia en un mundo verde, extendiendo el dominio de la humanidad por todos los campos y bosques.</li>
+    <li>story(uses=1,tag=meme_HumanPrimacy)    -&gt;Una vez, [founderName] vio a un perro gruñir a un niño. [founder_pronoun] ordenó matar al perro en el acto.</li>
+    <li>lessonIntro(tag=meme_HumanPrimacy)         -&gt;Visité una granja bien gestionada, llena de animales sanos y cultivos prósperos. Al lado había un bosque en su estado natural, nudoso y vicioso. Era evidente que</li>
+    <li>lesson(tag=meme_HumanPrimacy)              -&gt;el ser humano es el único que da sentido al universo</li>
+    <li>lesson(tag=meme_HumanPrimacy)              -&gt;la naturaleza es un frenesí interminable de destrucción inmoral, y los humanos son la solución</li>
+    <li>lessonReinforcement(tag=meme_HumanPrimacy) -&gt;Si la competencia es la supervivencia del más fuerte, entonces hemos ganado claramente.</li>
+    <li>archistBasis(tag=meme_HumanPrimacy)    -&gt;Los arqueotécnicos son máquinas de gran voluntad y poder, pero solo la humanidad pudo crearlas.</li>
+    <li>archistFact(tag=meme_HumanPrimacy)     -&gt;Los humanos son los fabricantes de aparatos, y los arqueotécnicos son sus artilugios.</li>
+    <li>archistProphecy(tag=meme_HumanPrimacy) -&gt;[inTheEnd], al observar a la humanidad, los arqueotécnicos comprenderán por fin su propósito, y levantarán a la confiada humanidad para gobernarla.</li>
+    <li>animistFact(tag=meme_HumanPrimacy)     -&gt;Los animales de la naturaleza son los espíritus de los esclavos, y exigen ser tomados a su servicio.</li>
+  </HumanPrimacy.descriptionMaker.rules.rulesStrings>
   
   <HumanPrimacy.generalRules.rulesStrings>
-    </HumanPrimacy.generalRules.rulesStrings>
+    <li>memeAdjective-&gt;humano</li>
+    <li>memeAdjective-&gt;mortal</li>
+    <li>memeAdjective-&gt;homínido</li>
+    <li>memeAdjectiveFem-&gt;humana</li>
+    <li>memeAdjectiveFem-&gt;mortal</li>
+    <li>memeAdjectiveFem-&gt;homínida</li>
+    <li>memeHyphenPrefix-&gt;antro</li>
+    <li>memeConcept-&gt;humanidad</li>
+    <li>memeConcept-&gt;raza humana</li>
+    <li>memeConceptDef-&gt; la humanidad</li>
+    <li>memeConceptDef-&gt; la raza humana</li>
+    <li>memeLeaderNoun-&gt;humano</li>
+    <li>memeLeaderNoun-&gt;homínido</li>
+    <li>memeLeaderNoun-&gt;mortal</li>
+    <li>memeLeaderNoun-&gt;persona</li>
+    <li>memeLeaderNoun-&gt;sapient</li>
+  </HumanPrimacy.generalRules.rulesStrings>
   
-  <HumanPrimacy.symbolPacks.0.adjective>TODO</HumanPrimacy.symbolPacks.0.adjective>
+  <HumanPrimacy.symbolPacks.0.adjective>umanista</HumanPrimacy.symbolPacks.0.adjective>
   
-  <HumanPrimacy.symbolPacks.0.ideoName>TODO</HumanPrimacy.symbolPacks.0.ideoName>
+  <HumanPrimacy.symbolPacks.0.ideoName>Umanesimo</HumanPrimacy.symbolPacks.0.ideoName>
   
-  <HumanPrimacy.symbolPacks.0.member>TODO</HumanPrimacy.symbolPacks.0.member>
+  <HumanPrimacy.symbolPacks.0.member>umanitario</HumanPrimacy.symbolPacks.0.member>
   
-  <HumanPrimacy.symbolPacks.0.theme>TODO</HumanPrimacy.symbolPacks.0.theme>
+  <HumanPrimacy.symbolPacks.0.theme>umanità</HumanPrimacy.symbolPacks.0.theme>
   
-  <HumanPrimacy.symbolPacks.1.adjective>TODO</HumanPrimacy.symbolPacks.1.adjective>
+  <HumanPrimacy.symbolPacks.1.adjective>pro-uomo</HumanPrimacy.symbolPacks.1.adjective>
   
-  <HumanPrimacy.symbolPacks.1.ideoName>TODO</HumanPrimacy.symbolPacks.1.ideoName>
+  <HumanPrimacy.symbolPacks.1.ideoName>Umanesimo</HumanPrimacy.symbolPacks.1.ideoName>
   
-  <HumanPrimacy.symbolPacks.1.member>TODO</HumanPrimacy.symbolPacks.1.member>
+  <HumanPrimacy.symbolPacks.1.member>umanista</HumanPrimacy.symbolPacks.1.member>
   
-  <HumanPrimacy.symbolPacks.1.theme>TODO</HumanPrimacy.symbolPacks.1.theme>
+  <HumanPrimacy.symbolPacks.1.theme>umanità</HumanPrimacy.symbolPacks.1.theme>
   
   
-  <NaturePrimacy.label>TODO</NaturePrimacy.label>
+  <NaturePrimacy.label>primato della natura</NaturePrimacy.label>
   
-  <NaturePrimacy.description>TODO</NaturePrimacy.description>
+  <NaturePrimacy.description>L'uomo è una macchia sulla perfezione della natura.</NaturePrimacy.description>
   
   <NaturePrimacy.descriptionMaker.rules.rulesStrings>
-    </NaturePrimacy.descriptionMaker.rules.rulesStrings>
+    <li>creation(tag=meme_NaturePrimacy)        -&gt;[deity0_name] creó la naturaleza, y colocó al hombre dentro de ella, para actuar como parte de su gran tapiz de vida que respira.</li>
+    <li>episode(uses=1,tag=meme_NaturePrimacy)  -&gt;El pueblo luchó contra las bestias del bosque, y [deity0_name] vio su inclemencia, y abatió a los que dañaban a las bestias y a los árboles.</li>
+    <li>intro(tag=meme_NaturePrimacy)           -&gt;Los primeros colonos que llegaron a [place_summary] [place_name] pavimentaron el mundo natural y mataron a los animales. [deity0_name] los aniquiló para castigarlos por su falta de respeto hacia sus creaciones.</li>
+    <li>conflict(tag=meme_NaturePrimacy)        -&gt;Un codicioso [foeLeader] construyó una fábrica que arrojó toxinas al medio ambiente, envenenando las plantas y los animales.</li>
+    <li>founderJoin(tag=meme_NaturePrimacy)     -&gt;Cuando era un bebé, [founderName] fue abandonado en el mundo salvaje. [deity0_name] envió a un grupo de [Animal_Plural] para que [founder_pronoun] criaran, y así lo hicieron. Después de crecer, [founderName] trabajó para difundir el conocimiento de la necesidad de unificarse con la naturaleza.</li>
+    <li>victory(tag=meme_NaturePrimacy)         -&gt;[founderName] llegó al [place_powerCenter], con los [memberNamePlural] a su derecha, y los animales feroces a su izquierda. Juntos, lucharon y ganaron contra el [foeLeader] y sus [foeSoldiers].</li>
+    <li>setup(tag=meme_NaturePrimacy)           -&gt;En una tierra oscura, la gente malvada talaba los árboles y cavaba la tierra para satisfacer su codicia. [founderName] inició un movimiento justo para aplastar las máquinas y vivir armoniosamente con la naturaleza.</li>
+    <li>story(uses=1,tag=meme_NaturePrimacy)    -&gt;Aprendimos que el continuo crecimiento de la humanidad es un camino hacia el infierno; debemos vivir en la naturaleza en lugar de consumirla.</li>
+    <li>lessonIntro(tag=meme_NaturePrimacy)         -&gt;No puedes haber presenciado un amanecer, o haber mirado a los ojos de un [Animal], o haber estado bajo un poderoso [TreeType], y no haberte dado cuenta de que</li>
+    <li>lesson(tag=meme_NaturePrimacy)              -&gt;los animales y las plantas son dueños de este universo desde mucho antes que nosotros, nosotros solo estamos de paso</li>
+    <li>lessonReinforcement(tag=meme_NaturePrimacy) -&gt;Todos los animales con los que he hablado parecen entender esto.</li>
+    <li>archistBasis(tag=meme_NaturePrimacy)    -&gt;Los arqueotécnicos surgieron de nuestras máquinas, pero son en sí mismos entidades naturales, que no podríamos crear.</li>
+    <li>archistFact(tag=meme_NaturePrimacy)     -&gt;Los arqueotécnicos representan el intento más reciente del universo por comprenderse a sí mismo. Toda la naturaleza forma parte de este proceso de comprensión.</li>
+    <li>archistProphecy(tag=meme_NaturePrimacy) -&gt;[inTheEnd], habrá una resonancia entre las plantas, los animales, la humanidad y los arqueotécnicos. Todas las personas que estén en sintonía con esta resonancia natural pasarán a formar parte de la conciencia universal definitiva.</li>
+    <li>animistFact(tag=meme_NaturePrimacy)     -&gt;Los espíritus se inquietan cuando la humanidad intenta apartarlos de su verdadera naturaleza.</li>
+  </NaturePrimacy.descriptionMaker.rules.rulesStrings>
   
   <NaturePrimacy.generalRules.rulesStrings>
-    </NaturePrimacy.generalRules.rulesStrings>
+    <li>memeAdjective-&gt;natural</li>
+    <li>memeAdjective-&gt;salvaje</li>
+    <li>memeAdjective-&gt;orgánico</li>
+    <li>memeAdjectiveFem-&gt;natural</li>
+    <li>memeAdjectiveFem-&gt;salvaje</li>
+    <li>memeAdjectiveFem-&gt;orgánica</li>
+    <li>memeCreedFem-&gt;madriguera</li>
+    <li>memeCreed-&gt;jardín</li>
+    <li>memeCreedFem-&gt;pradera</li>
+    <li>memeConcept-&gt;naturaleza</li>
+    <li>memeConceptDef-&gt; la naturaleza</li>
+  </NaturePrimacy.generalRules.rulesStrings>
   
-  <NaturePrimacy.symbolPacks.0.adjective>TODO</NaturePrimacy.symbolPacks.0.adjective>
+  <NaturePrimacy.symbolPacks.0.adjective>naturista</NaturePrimacy.symbolPacks.0.adjective>
   
-  <NaturePrimacy.symbolPacks.0.ideoName>TODO</NaturePrimacy.symbolPacks.0.ideoName>
+  <NaturePrimacy.symbolPacks.0.ideoName>Naturismo</NaturePrimacy.symbolPacks.0.ideoName>
   
-  <NaturePrimacy.symbolPacks.0.member>TODO</NaturePrimacy.symbolPacks.0.member>
+  <NaturePrimacy.symbolPacks.0.member>naturista</NaturePrimacy.symbolPacks.0.member>
   
-  <NaturePrimacy.symbolPacks.0.theme>TODO</NaturePrimacy.symbolPacks.0.theme>
+  <NaturePrimacy.symbolPacks.0.theme>natura</NaturePrimacy.symbolPacks.0.theme>
   
-  <NaturePrimacy.symbolPacks.1.adjective>TODO</NaturePrimacy.symbolPacks.1.adjective>
+  <NaturePrimacy.symbolPacks.1.adjective>terrista</NaturePrimacy.symbolPacks.1.adjective>
   
-  <NaturePrimacy.symbolPacks.1.ideoName>TODO</NaturePrimacy.symbolPacks.1.ideoName>
+  <NaturePrimacy.symbolPacks.1.ideoName>Earthismo</NaturePrimacy.symbolPacks.1.ideoName>
   
-  <NaturePrimacy.symbolPacks.1.member>TODO</NaturePrimacy.symbolPacks.1.member>
+  <NaturePrimacy.symbolPacks.1.member>terrista</NaturePrimacy.symbolPacks.1.member>
   
-  <NaturePrimacy.symbolPacks.1.theme>TODO</NaturePrimacy.symbolPacks.1.theme>
+  <NaturePrimacy.symbolPacks.1.theme>terra</NaturePrimacy.symbolPacks.1.theme>
   
-  <NaturePrimacy.symbolPacks.2.adjective>TODO</NaturePrimacy.symbolPacks.2.adjective>
+  <NaturePrimacy.symbolPacks.2.adjective>suoloista</NaturePrimacy.symbolPacks.2.adjective>
   
-  <NaturePrimacy.symbolPacks.2.ideoName>TODO</NaturePrimacy.symbolPacks.2.ideoName>
+  <NaturePrimacy.symbolPacks.2.ideoName>Suilismo</NaturePrimacy.symbolPacks.2.ideoName>
   
-  <NaturePrimacy.symbolPacks.2.member>TODO</NaturePrimacy.symbolPacks.2.member>
+  <NaturePrimacy.symbolPacks.2.member>suoloista</NaturePrimacy.symbolPacks.2.member>
   
-  <NaturePrimacy.symbolPacks.2.theme>TODO</NaturePrimacy.symbolPacks.2.theme>
+  <NaturePrimacy.symbolPacks.2.theme>suolo</NaturePrimacy.symbolPacks.2.theme>
   
-  <NaturePrimacy.symbolPacks.3.adjective>TODO</NaturePrimacy.symbolPacks.3.adjective>
+  <NaturePrimacy.symbolPacks.3.adjective>lifeist</NaturePrimacy.symbolPacks.3.adjective>
   
-  <NaturePrimacy.symbolPacks.3.ideoName>TODO</NaturePrimacy.symbolPacks.3.ideoName>
+  <NaturePrimacy.symbolPacks.3.ideoName>Lipismo</NaturePrimacy.symbolPacks.3.ideoName>
   
-  <NaturePrimacy.symbolPacks.3.member>TODO</NaturePrimacy.symbolPacks.3.member>
+  <NaturePrimacy.symbolPacks.3.member>lifeist</NaturePrimacy.symbolPacks.3.member>
   
-  <NaturePrimacy.symbolPacks.3.theme>TODO</NaturePrimacy.symbolPacks.3.theme>
+  <NaturePrimacy.symbolPacks.3.theme>vita</NaturePrimacy.symbolPacks.3.theme>
   
 </LanguageData>
