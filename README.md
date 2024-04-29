@@ -10,7 +10,7 @@ TRADUTTORI:
 ### Attivi:
 - StoneNimRod
 - Kaiser85
-- Rexlord
+- Rexlord (alias Lagorn)
 - Kenciccio
 - spappo94
 - Motty21D
