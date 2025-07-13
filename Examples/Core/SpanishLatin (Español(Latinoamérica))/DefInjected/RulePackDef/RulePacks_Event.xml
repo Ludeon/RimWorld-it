@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>r_logentry->[INITIATOR_definite] used [ABILITY_label] on [SUBJECT_definite].</li>
+  -->
+  <Event_AbilityUsed.rulePack.rulesStrings>
+    <li>r_logentry->[INITIATOR_definite] ha usado [ABILITY_label] en [SUBJECT_definite].</li>
+  </Event_AbilityUsed.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>r_logentry->[INITIATOR_definite] used [ITEM_indefinite] on [SUBJECT_definite].</li>
+  -->
+  <Event_ItemUsed.rulePack.rulesStrings>
+    <li>r_logentry->[INITIATOR_definite] ha usado [ITEM_indefinite] en [SUBJECT_definite].</li>
+  </Event_ItemUsed.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>r_logentry->[SUBJECT_definite] was [stunned] by the attack.</li>
+    <li>r_logentry->[SUBJECT_definite] was [stunned] by [INITIATOR_definite]'s attack.</li>
+    <li>stunned(p=3)->stunned</li>
+    <li>stunned->staggered</li>
+    <li>stunned->dazed</li>
+    <li>stunned->disoriented</li>
+    <li>r_logentry->[SUBJECT_definite] [staggered].</li>
+    <li>r_logentry->[SUBJECT_definite] [staggered] from the attack.</li>
+    <li>r_logentry->[SUBJECT_definite] [staggered] from [INITIATOR_definite]'s attack.</li>
+    <li>staggered(p=3)->staggered</li>
+    <li>staggered->faltered</li>
+    <li>staggered->wobbled</li>
+    <li>staggered->wavered</li>
+    <li>r_logentry->[SUBJECT_definite] [stumbled] around blearily.</li>
+    <li>r_logentry->[SUBJECT_definite] [stumbled] around in confusion.</li>
+    <li>stumbled(p=3)->stumbled</li>
+    <li>stumbled->wavered</li>
+    <li>stumbled->wobbled</li>
+    <li>stumbled->staggered</li>
+  -->
+  <Event_Stun.rulePack.rulesStrings>
+    <li>r_logentry(SUBJECT_gender!=Female)->[SUBJECT_definite] estaba [stunned]o por el ataque.</li>
+    <li>r_logentry(SUBJECT_gender==Female)->[SUBJECT_definite] estaba [stunned]a por el ataque.</li>
+    <li>r_logentry(SUBJECT_gender!=Female)->[SUBJECT_definite] estaba [stunned]o por el ataque de [INITIATOR_definite].</li>
+    <li>r_logentry(SUBJECT_gender==Female)->[SUBJECT_definite] estaba [stunned]a por el ataque de [INITIATOR_definite].</li>
+    <!--Dejar como está sin la última vocal ya que se ha establecido una regla para eso. Zerstrick 16-10-2020-->
+    <li>stunned(p=3)->aturdid</li>
+    <li>stunned->pasmad</li>
+    <li>stunned->atontad</li>
+    <li>stunned->desorientad</li>
+    <li>r_logentry(SUBJECT_gender!=Female)->[SUBJECT_definite] está [staggered]o.</li>
+    <li>r_logentry(SUBJECT_gender==Female)->[SUBJECT_definite] está [staggered]a.</li>
+    <li>r_logentry(SUBJECT_gender!=Female)->[SUBJECT_definite] está [staggered]o por el ataque.</li>
+    <li>r_logentry(SUBJECT_gender==Female)->[SUBJECT_definite] está [staggered]a por el ataque.</li>
+    <li>r_logentry(SUBJECT_gender!=Female)->[SUBJECT_definite] está [staggered]o por el ataque de [INITIATOR_definite].</li>
+    <li>r_logentry(SUBJECT_gender==Female)->[SUBJECT_definite] está [staggered]a por el ataque de [INITIATOR_definite].</li>
+    <li>staggered(p=3)->pasmad</li>
+    <li>staggered->debilitad</li>
+    <li>staggered->tembloros</li>
+    <li>staggered->alterad</li>
+    <li>r_logentry(p=0.5,SUBJECT_gender!=Female)->[SUBJECT_definite] está [stumbled1]o por ahí.</li>
+    <li>r_logentry(p=0.5,SUBJECT_gender==Female)->[SUBJECT_definite] está [stumbled1]a por ahí.</li>
+    <li>r_logentry(p=3)->[SUBJECT_definite] está [stumbled] por ahí.</li>
+    <li>r_logentry(p=0.3,SUBJECT_gender!=Female)->[SUBJECT_definite] está [stumbled1]o en medio de la confusión.</li>
+    <li>r_logentry(p=0.3,SUBJECT_gender==Female)->[SUBJECT_definite] está [stumbled1]a en medio de la confusión.</li>
+    <li>r_logentry->[SUBJECT_definite] está [stumbled] en medio de la confusión.</li>
+    <li>stumbled(p=3)->trastabillando</li>
+    <li>stumbled1->desestabilizad</li>
+    <li>stumbled->temblado</li>
+    <li>stumbled->dando tropezones</li>
+  </Event_Stun.rulePack.rulesStrings>
+  
+</LanguageData>
