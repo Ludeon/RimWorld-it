@@ -28,8 +28,18 @@
   <Antialiasing>Anti-aliasing</Antialiasing>
 
   <!-- Gameplay -->
+  <!-- EN: Remember draw styles -->
+  <RememberDrawStyle>TODO</RememberDrawStyle>
+  <!-- EN: When enabled, draw styles won't reset to the default draw style when placing new buildings or zones. -->
+  <RememberDrawStyle_Tooltip>TODO</RememberDrawStyle_Tooltip>
+  <!-- EN: Zoom switches world map layers -->
+  <ZoomSwitchLayer>TODO</ZoomSwitchLayer>
+  <!-- EN: When enabled, zooming out on the world map will switch to an orbital view. Zooming in will show the planet again. -->
+  <ZoomSwitchLayer_Tooltip>TODO</ZoomSwitchLayer_Tooltip>
   <!-- EN: Screen-edge mouse scroll -->
   <EdgeScreenScroll>Scorrimento sui bordi</EdgeScreenScroll>
+  <!-- EN: Zoom to mouse -->
+  <ZoomToMouse>TODO</ZoomToMouse>
   <!-- EN: Pause on load -->
   <PauseOnLoad>Carica partita in pausa</PauseOnLoad>
   <!-- EN: Pause on urgent letter -->
@@ -62,12 +72,14 @@
   <DevelopmentMode>Modalità sviluppatore</DevelopmentMode>
   <!-- EN: Auto-reset mods config on crash -->
   <ResetModsConfigOnCrash>Auto reimposta mod dopo un crash</ResetModsConfigOnCrash>
-  <!-- EN: Simulate not owning Royalty -->
-  <SimulateNotOwningRoyalty>Simula non possedendo Royalty</SimulateNotOwningRoyalty>
-  <!-- EN: Simulate not owning Ideology -->
-  <SimulateNotOwningIdeology>Simulare di non possedere l'ideologia</SimulateNotOwningIdeology>
-  <!-- EN: Simulate not owning Biotech -->
-  <SimulateNotOwningBiotech>Simulare di non possedere Biotech</SimulateNotOwningBiotech>
+  <!-- EN: Quick start has no cryptosleep sickness -->
+  <DisableQuickStartCryptoSickness>TODO</DisableQuickStartCryptoSickness>
+  <!-- EN: Start game with dev palette on -->
+  <StartDevPaletteOn>TODO</StartDevPaletteOn>
+  <!-- EN: Open log on warnings -->
+  <OpenLogOnWarnings>TODO</OpenLogOnWarnings>
+  <!-- EN: Close log by pressing cancel -->
+  <CloseLogWindowOnEscape>TODO</CloseLogWindowOnEscape>
   <!-- EN: Verbose logging -->
   <LogVerbose>Log dettagliato</LogVerbose>
   <!-- EN: Save data folder -->
@@ -102,10 +114,14 @@
   <TemperatureMode>Scala temperatura</TemperatureMode>
   <!-- EN: Show realtime clock -->
   <ShowRealtimeClock>Mostra orologio reale</ShowRealtimeClock>
+  <!-- EN: Use 12 hour clock -->
+  <TwelveHourClockMode>TODO</TwelveHourClockMode>
   <!-- EN: Disable tiny font -->
   <DisableTinyText>Disattivare il carattere minuscolo</DisableTinyText>
   <!-- EN: Maximum number of colonies: {0} -->
   <MaxNumberOfPlayerSettlements>Numero massimo di colonie: {0}</MaxNumberOfPlayerSettlements>
+  <!-- EN: Autosaves count: {0} -->
+  <AutosavesCount>TODO</AutosavesCount>
   <!-- EN: Map mouse drag sensitivity -->
   <MapDragSensitivity>Sensibilità trascimento mouse sulla mappa</MapDragSensitivity>
   <!-- EN: Plant wind sway -->
@@ -160,6 +176,9 @@
   <SetBackgroundImage>Sfondo del menu</SetBackgroundImage>
 
   <!-- UNUSED -->
+  <SimulateNotOwningRoyalty>Simula non possedendo Royalty</SimulateNotOwningRoyalty>
+  <SimulateNotOwningIdeology>Simulare di non possedere l'ideologia</SimulateNotOwningIdeology>
+  <SimulateNotOwningBiotech>Simulare di non possedere Biotech</SimulateNotOwningBiotech>
   <OpenSaveGameDataFolder>Apri la cartella dei salvataggi</OpenSaveGameDataFolder>
   <ShowSaveGameDataLocation>Mostra il percorso della cartella dei salvataggi</ShowSaveGameDataLocation>
   <OpenLogFileFolder>Apri la cartella del log</OpenLogFileFolder>

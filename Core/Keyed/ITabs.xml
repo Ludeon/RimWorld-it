@@ -48,8 +48,14 @@
   <TabFormingCaravan>Carovana</TabFormingCaravan>
   <!-- EN: Contents -->
   <TabTransporterContents>Inventario</TabTransporterContents>
+  <!-- EN: Travel -->
+  <TabMapPortalContents>TODO</TabMapPortalContents>
   <!-- EN: Contents -->
   <TabCasketContents>Contenuto</TabCasketContents>
+  <!-- EN: Details -->
+  <TabBookContents>TODO</TabBookContents>
+  <!-- EN: Study -->
+  <TabStudyNotesContents>TODO</TabStudyNotesContents>
   <!-- EN: Auto-cut -->
   <TabWindTurbineAutoCut>Taglio automatico</TabWindTurbineAutoCut>
   
@@ -82,6 +88,8 @@
   <PasteBillTip>Incolla</PasteBillTip>
   <!-- EN: can't add more -->
   <PasteBillTip_LimitReached>impossibile aggiungere ancore</PasteBillTip_LimitReached>
+  <!-- EN: Finishes in -->
+  <FinishesIn>Finisce tra</FinishesIn>
 
   <!-- Guest/prisoner tab -->
   <!-- EN: Resistance -->
@@ -104,13 +112,13 @@
   <NotWhileAsleep>Non mentre dorme</NotWhileAsleep>
   <!-- EN: Breaking out now -->
   <CurrentlyPrisonBreaking>In uscita ora</CurrentlyPrisonBreaking>
-  <!-- EN: Multiplier for door count -->
+  <!-- EN: Door count -->
   <FactorForDoorCount>Moltiplicatore per il numero di porte</FactorForDoorCount>
-  <!-- EN: Multiplier for movement -->
+  <!-- EN: Movement -->
   <FactorForMovement> Moltiplicatore per il movimento</FactorForMovement>
   <!-- EN: Slave price -->
   <SlavePrice>Valore come schiavo</SlavePrice>
-  <!-- EN: The base market value of this {0} if sold. -->
+  <!-- EN: The base market value of this slave if sold. -->
   <SlavePriceDescription>Il valore di mercato di base di questo {0} se venduto.</SlavePriceDescription>
   <!-- EN: Gets food -->
   <GetsFood>Riceve cibo</GetsFood>
@@ -136,8 +144,8 @@
   <NonRecruitable>Fedeltà incrollabile</NonRecruitable>
   <!-- EN: This prisoner is so unwaveringly loyal to their home that they refuse to be recruited entirely. -->
   <NonRecruitableTip>Questo prigioniero è così incrollabilmente fedele alla propria casa che rifiuta completamente di essere reclutato.</NonRecruitableTip>
-  <!-- EN: Their loyalty extends to their beliefs and they cannot be converted. -->
-  <NonRecruitableTipCannotConvert>La loro lealtà si estende alle loro convinzioni e non possono essere convertiti.</NonRecruitableTipCannotConvert>
+  <!-- EN: What type of medicine can be given to this prisoner. -->
+  <MedicineQualityDescriptionPrisoner>TODO</MedicineQualityDescriptionPrisoner>
 
 
 
@@ -167,7 +175,7 @@
   <PainLevel>Dolore</PainLevel>
   <!-- EN: Injured -->
   <Injured>Ferito</Injured>
-  <!-- EN: Untended injury -->
+  <!-- EN: untended injury -->
   <UntendedInjury>Lesioni non intenzionali</UntendedInjury>
   <!-- EN: no health conditions -->
   <NoHealthConditions>nessun problema di salute</NoHealthConditions>
@@ -213,13 +221,19 @@
   <PainFactor>Dolore</PainFactor>
   <!-- EN: Prevents infection -->
   <PreventsInfection>Previene infezione</PreventsInfection>
-  <!-- EN: Self-tend -->
-  <SelfTend>Auto medicamento</SelfTend>
+  <!-- EN: Allow self-tend -->
+  <AllowSelfTend>TODO</AllowSelfTend>
   <!-- EN: {0} with self-tend enabled will automatically tend to themselves on the spot at {1} the normal efficiency. -->
-  <SelfTendTip>{0} con l'auto medicamento impostato si cureranno automaticamente da soli al {1} della normale efficienza.</SelfTendTip>
+  <AllowSelfTendTip>TODO</AllowSelfTendTip>
   <!-- EN: death in {0} -->
   <DeathIn>morte in {0}</DeathIn>
-  
+  <!-- EN: Allow medicine -->
+  <AllowMedicine>TODO</AllowMedicine>
+  <!-- EN: What type of medicine can be given to this person. -->
+  <MedicineQualityDescription>TODO</MedicineQualityDescription>
+  <!-- EN: What type of food can be given to this person. -->
+  <FoodRestrictionDescription>TODO</FoodRestrictionDescription>
+
   <!-- Medical - Body and activities condition -->
   <!-- EN: None -->
   <None>Nessuna</None>
@@ -255,7 +269,7 @@
   <Trainability>Intelligenza</Trainability>
   <!-- EN: Requires {0} trainability. -->
   <CannotTrainNotSmartEnough>Richiede intelligenza {0}.</CannotTrainNotSmartEnough>
-  <!-- EN: {1_labelShort} is too small to train this. -->
+  <!-- EN: {0} is too small to train this. -->
   <CannotTrainTooSmall>{1_labelShort} è troppo piccolo per imparare questo.</CannotTrainTooSmall>
 
   <!-- EN: Prerequisite needed: {0} -->
@@ -268,8 +282,8 @@
   <Lent>Prestato a {FACTION_name}, ritorna in {1}</Lent>
   <!-- EN: Missing -->
   <Missing>Sparito</Missing>
-  <!-- EN: Slave -->
-  <Slave>Schiavo</Slave>
+  <!-- EN: slave -->
+  <Slave>schiavo</Slave>
   <!-- EN: Faction leader -->
   <FactionLeader>Leader di fazione</FactionLeader>
   <!-- EN: Opinion of {0} -->
@@ -348,7 +362,7 @@
   <ConfirmRemoveItemDialog>Vuoi veramente rimuovere {0}?</ConfirmRemoveItemDialog>
   
   <!-- Quests tab -->
-  <!-- EN: Dismiss this quest and move it to the historical tab.\n\nThe quest can be un-dismissed at any time. Its effects and expiry times will proceed as normal. You won't recieve notifications about dismissed quests. -->
+  <!-- EN: Dismiss this quest and move it to the historical tab.\n\nThe quest can be un-dismissed at any time. Its effects and expiry times will proceed as normal. You won't receive notifications about dismissed quests. -->
   <DismissQuest>Rifiuta questa missione e spostala nella scheda storica.\n\nLa missione può essere ripristinata in qualsiasi momento. Gli effetti e i tempi di scadenza procederanno normalmente. Non riceverai notifiche sulle missioni respinte.</DismissQuest>
   <!-- EN: Un-dismiss this quest.\n\nThe quest will be returned to the available or active tab, and notifications will be re-enabled. -->
   <UnDismissQuest>Ripristina la missione.\n\nLa missione verrà riportata alla scheda disponibile/attiva e le notifiche verranno riattivate.</UnDismissQuest>
@@ -420,10 +434,25 @@
   <!-- EN: Pen is not enclosed now, so auto-cut won't occur. -->
   <AutocutUnenclosedPenTip>Il recinto non è chiuso, quindi il taglio automatico non si verifica.</AutocutUnenclosedPenTip>
 
-  <!-- EN: Auto-cut plants blocking wind turbine -->
+  <!-- EN: Auto-cut blocking plants -->
   <WindTurbineAutoCut_EnabledCheckbox>Le piante auto-tagliate bloccano la turbina eolica</WindTurbineAutoCut_EnabledCheckbox>
+  
+  <!-- Study tab  -->
+  <!-- EN: Study progress -->
+  <StudyNotesTab_StudyProgress>TODO</StudyNotesTab_StudyProgress>
+  <!-- EN: Ongoing -->
+  <StudyNotesTab_StudyProgressOngoing>TODO</StudyNotesTab_StudyProgressOngoing>
+  <!-- EN: Completed -->
+  <StudyNotesTab_StudyProgressCompleted>TODO</StudyNotesTab_StudyProgressCompleted>
+  <!-- EN: Toggle study -->
+  <StudyNotesTab_ToggleStudy>TODO</StudyNotesTab_ToggleStudy>
+  <!-- EN: No discoveries yet -->
+  <StudyNotesTab_NoDiscoveries>TODO</StudyNotesTab_NoDiscoveries>
 
   <!-- UNUSED -->
+  <NonRecruitableTipCannotConvert>La loro lealtà si estende alle loro convinzioni e non possono essere convertiti.</NonRecruitableTipCannotConvert>
+  <SelfTend>Auto medicamento</SelfTend>
+  <SelfTendTip>{0} con l'auto medicamento impostato si cureranno automaticamente da soli al {1} della normale efficienza.</SelfTendTip>
   <RecruitmentDifficulty>Difficoltà reclutamento</RecruitmentDifficulty>
   <RecruitmentChance>Probabilità reclutamento</RecruitmentChance>
   <RecruitmentChanceExplanation>Fattore di difficoltà di reclutamento: {0}\nFattore di umore: {1}\nProbabilità di base combinata: {2}</RecruitmentChanceExplanation>

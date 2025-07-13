@@ -295,6 +295,8 @@
   <LetterLabelFactionBaseDefeated>Base distrutta</LetterLabelFactionBaseDefeated>
   <!-- EN: The enemy settlement {0} has been destroyed.\n\nIn {1}, your caravan will be attacked by enemies. They will begin sending forces to attack the caravan, unless it reforms and leaves. -->
   <LetterFactionBaseDefeated>La base nemica {0} è stata distrutta.\n\nIn {1}, la carovana verrà attaccata dai nemici. Inizieranno a inviare forze per attaccare la carovana, a meno che non si riformi e se ne vada.</LetterFactionBaseDefeated>
+  <!-- EN: The enemy settlement {0} has been destroyed. -->
+  <LetterFactionBaseDefeatedNoRaids>TODO</LetterFactionBaseDefeatedNoRaids>
   <!-- EN: Since this was their last settlement, {0} has been defeated. -->
   <LetterFactionBaseDefeated_FactionDestroyed>Dato che questa era la loro ultima base, la fazione "{0}" è stata sconfitta.</LetterFactionBaseDefeated_FactionDestroyed>
 
@@ -413,8 +415,10 @@
   <!-- Rescue quest -->
   <!-- EN: Rescuee joins -->
   <LetterLabelRescueQuestFinished>Persona soccorsa si unisce</LetterLabelRescueQuestFinished>
-  <!-- EN: You have rescued {PAWN_nameDef} and {PAWN_pronoun} has joined your group.\n\nYou can take {PAWN_objective} with you by reforming the caravan in the World screen by selecting this area and choosing the "Reform caravan" option. -->
+  <!-- EN: You have rescued {PAWN_nameDef} and {PAWN_pronoun} has joined your group. -->
   <LetterRescueQuestFinished>Hai salvato {PAWN_nameDef} e {PAWN_pronoun} ha deciso di unirsi al tuo gruppo.\n\nPuoi prenderl{PAWN_gender ? o : a : o} con te riorganizzando la carovana nella schermata del Mondo selezionando quest'area e scegliendo l'opzione "Riorganizza Carovana".</LetterRescueQuestFinished>
+  <!-- EN: \n\nYou can now take {PAWN_objective} with you. To do so, open the World screen, select this site and choose the "Reform caravan" command. -->
+  <LetterRescueQuestFinishedCaravanExtra>TODO</LetterRescueQuestFinishedCaravanExtra>
 
   <!-- Predator hunting colonist -->
   <!-- EN: {PREDATOR_labelShort} hunting {PREY_definite} -->
@@ -431,16 +435,28 @@
   <LetterTraitDisease>{PAWN_label} ha contratto {1_gender ? il : la : lo} {1}.\n\nAssicurati di avere un letto medico e un dottore. Accertati che {PAWN_pronoun} abbia cure adeguate e trascorra quanto più tempo possibile a letto.</LetterTraitDisease>
 
   <!-- Quests -->
-  <!-- EN: A new quest has become available. It is called '{0}'. -->
-  <LetterQuestBecameAvailable>Una nuova missione è disponibile. Si chiama '{0}'.</LetterQuestBecameAvailable>
-  <!-- EN: If you don't accept the quest within {0}, it will expire. -->
-  <LetterQuestRequiresAcceptance>Se non accetti la missione entro {0}, essa scadrà.</LetterQuestRequiresAcceptance>
-  <!-- EN: A new quest has become active. It is called '{0}'. -->
-  <LetterQuestBecameActive>Una nuova missione è diventata attiva. Si chiama '{0}'.</LetterQuestBecameActive>
+  <!-- EN: Quest available: {0} -->
+  <LetterLabelQuestAvailableTitle>TODO</LetterLabelQuestAvailableTitle>
   <!-- EN: Quest active: {0} -->
-  <LetterQuestAutomaticallyAcceptedTitle>Missione attiva: {0}</LetterQuestAutomaticallyAcceptedTitle>
+  <LetterLabelQuestAutomaticallyAcceptedTitle>TODO</LetterLabelQuestAutomaticallyAcceptedTitle>
+  <!-- EN: {DISCOVEREDFROM} a new quest. -->
+  <LetterNewQuest>TODO</LetterNewQuest>
+  <!-- EN: A new quest is available. -->
+  <LetterNewQuestFromUnknown>TODO</LetterNewQuestFromUnknown>
+  <!-- EN: The quest is called '{0}'. -->
+  <LetterQuestIsNamed>TODO</LetterQuestIsNamed>
   <!-- EN: It will expire in {0}. -->
   <LetterQuestActiveNowTime>Scadrà tra {0}.</LetterQuestActiveNowTime>
+  <!-- EN: If you don't accept the quest within {0}, it will expire. -->
+  <LetterQuestRequiresAcceptance>Se non accetti la missione entro {0}, essa scadrà.</LetterQuestRequiresAcceptance>
+  <!-- EN: While reading {BOOK_labelNoParenthesis}, {READER_nameDef} discovered -->
+  <QuestDiscoveredFromBook>TODO</QuestDiscoveredFromBook>
+  <!-- EN: While talking with the trader {TRADER_nameDef}, {NEGOTIATOR_nameDef} learned of -->
+  <QuestDiscoveredFromTrader>TODO</QuestDiscoveredFromTrader>
+  <!-- EN: To show {RECEIVER_possessive} gratitude for your charity, the beggar {RECEIVER_nameDef} shared a secret with {GIVER_nameDef}.\n\nYou have learned of -->
+  <QuestDiscoveredFromBeggar>TODO</QuestDiscoveredFromBeggar>
+  <!-- EN: You have discovered -->
+  <QuestDiscoveredFromDebug>TODO</QuestDiscoveredFromDebug>
 
   <!-- Quest drop pods arrived -->
   <!-- EN: Pods arrived -->
@@ -566,7 +582,32 @@
   <!-- EN: Accept -->
   <LetterJoinOfferAccept>Accetta</LetterJoinOfferAccept>
 
+  <!-- Speeches -->
+  <!-- EN: {ORGANIZER_labelShort} has finished {ORGANIZER_possessive} speech. -->
+  <LetterFinishedSpeech>{ORGANIZER_labelShort} ha terminato il suo discorso.</LetterFinishedSpeech>
+  <!-- EN: It was truly atrocious - halting, full of awkward jokes and depressing stories. -->
+  <LetterTerribleSpeech>Era davvero atroce: esitante, pieno di battute imbarazzanti e storie deprimenti.</LetterTerribleSpeech>
+  <!-- EN: It was uninspiring - unoriginal, droning and lacking any sense of passion. -->
+  <LetterUninspiringSpeech>Era poco interessante: non originale, noioso e privo di passione.</LetterUninspiringSpeech>
+  <!-- EN: It was encouraging and well-delivered. -->
+  <LetterEncouragingSpeech>È stato incoraggiante e ben accettato.</LetterEncouragingSpeech>
+  <!-- EN: It was remarkably inspiring, full of intensity and purpose. -->
+  <LetterInspirationalSpeech>È stato straordinariamente stimolante, pieno di intensità e scopo.</LetterInspirationalSpeech>
+  <!-- EN: The following people were particularly moved by the speech and are now inspired: -->
+  <LetterSpeechInspiredListeners>Le seguenti persone sono state particolarmente commosse dal discorso e ora sono ispirate:</LetterSpeechInspiredListeners>
+  <!-- EN: Thanks to {SPEAKER_nameIndef}'s remarkable speech, {PAWN_nameIndef} has experienced an inspiration! -->
+  <LetterSpeechInspiration>Grazie all'eccezionale discorso di {SPEAKER_nameIndef}, {PAWN_nameIndef} ha avuto un'ispirazione!</LetterSpeechInspiration>
+  <!-- EN: Because the speech was interrupted after only {0} completed, it wasn't as effective. -->
+  <LetterSpeechInterrupted>Poiché il discorso è stato interrotto solamente al {0} del completamento, non è stato molto efficace.</LetterSpeechInterrupted>
+  <!-- EN: {0}'s speech was cancelled before reaching 50% completion. It had no effect. -->
+  <LetterSpeechCancelled>Il discorso di {ORGANIZER_bestRoyalTitleDef} è stato annullato prima di raggiungere il 50% di completamento. Non ha avuto effetto.</LetterSpeechCancelled>
+  <!-- EN: Speech cancelled -->
+  <LetterLabelSpeechCancelled>Discorso cancellato</LetterLabelSpeechCancelled>
+
   <!-- UNUSED -->
+  <LetterQuestBecameAvailable>Una nuova missione è disponibile. Si chiama '{0}'.</LetterQuestBecameAvailable>
+  <LetterQuestBecameActive>Una nuova missione è diventata attiva. Si chiama '{0}'.</LetterQuestBecameActive>
+  <LetterQuestAutomaticallyAcceptedTitle>Missione attiva: {0}</LetterQuestAutomaticallyAcceptedTitle>
   <LetterLabelSurgeryFailed>Intervento chirurgico fallito su {PATIENT_labelShort}</LetterLabelSurgeryFailed>
   <MessageMedicalOperationFailureMinor>{SURGEON_labelShort} ha fallito in maniera marginale operando {PATIENT_labelShort}.</MessageMedicalOperationFailureMinor>
   <MessageMedicalOperationFailureCatastrophic>{SURGEON_labelShort} ha fallito in maniera catastrofica operando {PATIENT_labelShort}.</MessageMedicalOperationFailureCatastrophic>

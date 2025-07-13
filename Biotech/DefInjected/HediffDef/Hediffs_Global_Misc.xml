@@ -1,121 +1,121 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  
+  <!-- EN: infant illness -->
   <InfantIllness.label>malattia infantile</InfantIllness.label>
-  
+  <!-- EN: Effects of various birth complications. If the baby can survive for 10 days, they will be strong enough to recover on their own.\n\nThe illness will wax and wane in strength over time, requiring different levels of tending and medicine to recover. -->
   <InfantIllness.description>Effetti di varie complicazioni alla nascita. Se il bambino riesce a sopravvivere per 10 giorni, sarà abbastanza forte da riprendersi da solo.\n\nLa malattia aumenterà e diminuirà di intensità nel tempo, richiedendo diversi livelli di cure e medicine per riprendersi.</InfantIllness.description>
-  
+  <!-- EN: {PAWN_labelShort}'s infant illness went from {1} to {2}. -->
   <InfantIllness.comps.HediffComp_RandomizeSeverityPhases.notifyMessage>La malattia infantile di {PAWN_labelShort} è passata da {1} a {2}.</InfantIllness.comps.HediffComp_RandomizeSeverityPhases.notifyMessage>
-  
+  <!-- EN: that are life threatening without exceptional medical care and glitterworld medicine. -->
   <InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.0.descriptionExtra>che sono in pericolo di vita senza cure mediche eccezionali e la medicina del mondo luccicante.</InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.0.descriptionExtra>
-  
+  <!-- EN: grave -->
   <InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.0.labelPrefix>serio</InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.0.labelPrefix>
-  
+  <!-- EN: that are life threatening without good medical care and standard medicine. -->
   <InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.1.descriptionExtra>che sono in pericolo di vita senza una buona assistenza medica e la medicina standard.</InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.1.descriptionExtra>
-  
+  <!-- EN: bad -->
   <InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.1.labelPrefix>Cattivo</InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.1.labelPrefix>
-  
+  <!-- EN: that can be life threatening without basic medicine and tending. -->
   <InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.2.descriptionExtra>che può essere pericoloso per la vita senza medicine e cure di base.</InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.2.descriptionExtra>
-  
+  <!-- EN: common -->
   <InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.2.labelPrefix>comune</InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.2.labelPrefix>
-  
+  <!-- EN: which make the baby slightly ill but, at this rate, they will recover on their own. -->
   <InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.3.descriptionExtra>il che fa ammalare leggermente il bambino ma, di questo passo, si riprenderà da solo.</InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.3.descriptionExtra>
-  
+  <!-- EN: mild -->
   <InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.3.labelPrefix>blando</InfantIllness.comps.HediffComp_RandomizeSeverityPhases.phases.3.labelPrefix>
-  
+  <!-- EN: Effects of various birth complications -->
   <InfantIllness.descriptionShort>Effetti di varie complicazioni alla nascita</InfantIllness.descriptionShort>
-  
+  <!-- EN: minor -->
   <InfantIllness.stages.minor.label>minore</InfantIllness.stages.minor.label>
-  
+  <!-- EN: major -->
   <InfantIllness.stages.major.label>maggiore</InfantIllness.stages.major.label>
-  
+  <!-- EN: extreme -->
   <InfantIllness.stages.extreme-0.label>estremo</InfantIllness.stages.extreme-0.label>
-  
+  <!-- EN: extreme -->
   <InfantIllness.stages.extreme-1.label>estremo</InfantIllness.stages.extreme-1.label>
   
-  
+  <!-- EN: lactating -->
   <Lactating.label>in allattamento</Lactating.label>
-  
+  <!-- EN: The condition of being able to breastfeed a baby. The breasts are actively producing and storing milk. The lactating state begins when a mother gives birth, and continues indefinitely as long as she breastfeeds a baby at least once every 10 days.\n\nPeople who are lactating will have a harder time becoming pregnant. -->
   <Lactating.description>La condizione di poter allattare un bambino. I seni producono e immagazzinano attivamente il latte. Lo stato di allattamento inizia quando una madre partorisce e continua indefinitamente finché allatta un bambino almeno una volta ogni 10 giorni.\n\nLe persone che allattano avranno più difficoltà a rimanere incinte.</Lactating.description>
-  
+  <!-- EN: {0} is no longer lactating due to not breastfeeding for 10 days. -->
   <Lactating.comps.HediffComp_MessageOnRemoval.message>{0} non allatta più perché non allatta da 10 giorni.</Lactating.comps.HediffComp_MessageOnRemoval.message>
-  
+  <!-- EN: milk fullness {CHARGEFACTOR_percentage} -->
   <Lactating.comps.HediffComp_Lactating.labelInBrackets>pienezza del latte {CHARGEFACTOR_percentage}</Lactating.comps.HediffComp_Lactating.labelInBrackets>
-  
+  <!-- EN: {0} is no longer lactating due to malnutrition. -->
   <Lactating.comps.HediffComp_RemoveIfOtherHediff.message>{0} non allatta più a causa della malnutrizione.</Lactating.comps.HediffComp_RemoveIfOtherHediff.message>
   
-  
+  <!-- EN: morning sickness -->
   <MorningSickness.label>nausea mattutina</MorningSickness.label>
-  
+  <!-- EN: This is a common side effect of pregnancy, and despite the name isn't limited to mornings. While this is ongoing, the person suffers from nausea, dizziness, and fuzzy thinking. -->
   <MorningSickness.description>Questo è un effetto collaterale comune della gravidanza e, nonostante il nome, non è limitato alla mattina. Mentre questo avviene, la persona soffre di nausea, vertigini e pensieri confusi.</MorningSickness.description>
   
-  
+  <!-- EN: ovum extracted -->
   <OvumExtracted.label>ovulo estratto</OvumExtracted.label>
-  
+  <!-- EN: This woman recently underwent an ovum extraction procedure. No more ova can be extracted until some time has passed. -->
   <OvumExtracted.description>Questa donna ha recentemente subito una procedura di estrazione di ovuli. Non sarà possibile estrarre più ovuli finché non sarà trascorso un po' di tempo.</OvumExtracted.description>
   
-  
+  <!-- EN: pollution stimulus -->
   <PollutionStimulus.label>stimolo all’inquinamento</PollutionStimulus.label>
-  
+  <!-- EN: This creature has been energized by exposure to pollution.\n\nThe pollution-stimulus response was originally engineered to help giant insects in their role as anti-mechanoid bioweapons. However, the gene has since been used to help people function in polluted areas as well. -->
   <PollutionStimulus.description>Questa creatura ha ricevuto energia dall'esposizione all'inquinamento.\n\nLa risposta allo stimolo dell'inquinamento è stata originariamente progettata per aiutare gli insetti giganti nel loro ruolo di armi biologiche anti-meccanoidi. Tuttavia, da allora il gene è stato utilizzato per aiutare le persone a funzionare anche in aree inquinate.</PollutionStimulus.description>
-  
+  <!-- EN: This creature has been energized by exposure to pollution. -->
   <PollutionStimulus.descriptionShort>Questa creatura è stata energizzata dall'esposizione all'inquinamento.</PollutionStimulus.descriptionShort>
-  
+  <!-- EN: minor -->
   <PollutionStimulus.stages.minor.label>minore</PollutionStimulus.stages.minor.label>
-  
+  <!-- EN: moderate -->
   <PollutionStimulus.stages.moderate.label>moderare</PollutionStimulus.stages.moderate.label>
-  
+  <!-- EN: maximum -->
   <PollutionStimulus.stages.maximum.label>massimo</PollutionStimulus.stages.maximum.label>
   
-  
+  <!-- EN: postpartum exhaustion -->
   <PostpartumExhaustion.label>esaurimento postpartum</PostpartumExhaustion.label>
-  
+  <!-- EN: General after-effects of giving birth. This mother needs some time to physically recover. -->
   <PostpartumExhaustion.description>Postumi generali del parto. Questa madre ha bisogno di un po' di tempo per riprendersi fisicamente.</PostpartumExhaustion.description>
   
-  
+  <!-- EN: labor (dilation) -->
   <PregnancyLabor.label>travaglio (dilatazione)</PregnancyLabor.label>
-  
+  <!-- EN: The condition of being about to give birth. Labor moves through multiple stages with different levels of pain and contractions. Each labor is different, and pain can rise and fall unpredictably over time. Labor ends when the baby is born. -->
   <PregnancyLabor.description>La condizione di essere in procinto di partorire. Il travaglio attraversa più fasi con diversi livelli di dolore e contrazioni. Ogni travaglio è diverso e il dolore può aumentare e diminuire in modo imprevedibile nel tempo. Il travaglio termina quando nasce il bambino.</PregnancyLabor.description>
-  
+  <!-- EN: {PAWN_labelShort}'s labor went from {1} to {2}. -->
   <PregnancyLabor.comps.HediffComp_RandomizeStageWithInterval.notifyMessage>Il travaglio di {PAWN_labelShort} è passato da {1} a {2}.</PregnancyLabor.comps.HediffComp_RandomizeStageWithInterval.notifyMessage>
-  
+  <!-- EN: mild -->
   <PregnancyLabor.stages.mild.label>blando</PregnancyLabor.stages.mild.label>
-  
+  <!-- EN: intense -->
   <PregnancyLabor.stages.intense.label>intenso</PregnancyLabor.stages.intense.label>
-  
+  <!-- EN: debilitating -->
   <PregnancyLabor.stages.debilitating.label>indebolimento</PregnancyLabor.stages.debilitating.label>
   
-  
+  <!-- EN: labor (pushing) -->
   <PregnancyLaborPushing.label>travaglio (spingere)</PregnancyLaborPushing.label>
-  
+  <!-- EN: The baby is descending the birth canal and the mother has a strong urge to push. The birth is imminent. -->
   <PregnancyLaborPushing.description>Il bambino sta discendendo il canale del parto e la madre ha un forte bisogno di spingere. La nascita è imminente.</PregnancyLaborPushing.description>
   
-  
+  <!-- EN: pregnancy mood -->
   <PregnancyMood.label>umore della gravidanza</PregnancyMood.label>
-  
+  <!-- EN: This common side effect of pregnancy represents a rising and falling mood caused by unbalanced hormones. -->
   <PregnancyMood.description>Questo effetto collaterale comune della gravidanza rappresenta un umore in aumento e in calo causato da ormoni squilibrati.</PregnancyMood.description>
   
-  
+  <!-- EN: pregnant -->
   <PregnantHuman.label>incinta</PregnantHuman.label>
-  
+  <!-- EN: A baby growing inside a woman, preparing to be born. In humans, pregnancy lasts for 18 days and is divided into 3 trimesters. As the pregnancy grows it will reduce the mother's mobility. For some mothers, pregnancy may induce nausea or mood swings that can be hard to deal with. -->
   <PregnantHuman.description>Un bambino che cresce dentro una donna e si prepara a nascere. Nell'uomo la gravidanza dura 18 giorni ed è divisa in 3 trimestri. Man mano che la gravidanza cresce, la mobilità della madre si ridurrà. Per alcune madri, la gravidanza può provocare nausea o sbalzi d’umore difficili da affrontare.</PregnantHuman.description>
-  
+  <!-- EN: {0_labelShort} pregnant -->
   <PregnantHuman.comps.HediffComp_MessageAfterTicks.letterLabel>{0_labelShort} incinta</PregnantHuman.comps.HediffComp_MessageAfterTicks.letterLabel>
-  
+  <!-- EN: {0_labelShort} is pregnant! -->
   <PregnantHuman.comps.HediffComp_MessageAfterTicks.letterText>{0_labelShort} è incinta!</PregnantHuman.comps.HediffComp_MessageAfterTicks.letterText>
-  
+  <!-- EN: pregnancy -->
   <PregnantHuman.labelNoun>gravidanza</PregnantHuman.labelNoun>
-  
+  <!-- EN: first trimester -->
   <PregnantHuman.stages.first_trimester.label>primo trimestre</PregnantHuman.stages.first_trimester.label>
-  
+  <!-- EN: second trimester -->
   <PregnantHuman.stages.second_trimester.label>secondo quarto</PregnantHuman.stages.second_trimester.label>
-  
+  <!-- EN: third trimester -->
   <PregnantHuman.stages.third_trimester.label>terzo trimestre</PregnantHuman.stages.third_trimester.label>
   
-  
+  <!-- EN: stillborn -->
   <Stillborn.label>nato morto</Stillborn.label>
-  
+  <!-- EN: This baby died due to non-specific complications during pregnancy. -->
   <Stillborn.description>Questo bambino è morto a causa di complicazioni non specifiche durante la gravidanza.</Stillborn.description>
   
 </LanguageData>

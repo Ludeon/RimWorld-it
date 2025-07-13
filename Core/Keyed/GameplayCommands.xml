@@ -102,24 +102,56 @@
   <AreYouSure>Sei sicuro di volerlo fare?</AreYouSure>
   <!-- EN: Changing bed use affects the whole room (since prisoners, slaves and colonists cannot sleep in the same room).\n\nThese people will lose ownership of their beds: -->
   <ChangingOwnerTypeBedWarning>Il cambio di utilizzo del letto riguarda l'intera stanza (poiché prigionieri, schiavi e coloni non possono dormire nella stessa stanza).\n\nQueste persone perderanno la proprietà dei loro letti:</ChangingOwnerTypeBedWarning>
-
-
+  
   <!-- EN: Detonate -->
   <CommandDetonateLabel>Fai esplodere</CommandDetonateLabel>
   <!-- EN: Start the countdown to detonation. -->
   <CommandDetonateDesc>Avviare il conto alla rovescia per la detonazione.</CommandDetonateDesc>
-
-  <!-- EN: Rename -->
-  <CommandRenameZoneLabel>Rinomina</CommandRenameZoneLabel>
-  <!-- EN: Rename this zone. -->
-  <CommandRenameZoneDesc>Rinomina questa zona.</CommandRenameZoneDesc>
-
+  
   <!-- EN: Hide -->
-  <CommandHideZoneLabel>Nascondi</CommandHideZoneLabel>
+  <CommandHideLabel>TODO</CommandHideLabel>
   <!-- EN: Unhide -->
-  <CommandUnhideZoneLabel>Mostra</CommandUnhideZoneLabel>
-  <!-- EN: Hide/unhide this zone. -->
+  <CommandUnhideLabel>TODO</CommandUnhideLabel>
+  
+  <!-- EN: Toggle this plan's visibility.\n\nRight-click to hide or unhide all zones. -->
+  <CommandHidePlanDesc>TODO</CommandHidePlanDesc>
+  <!-- EN: Hide/unhide this zone.\n\nRight-click to hide or unhide all zones. -->
   <CommandHideZoneDesc>Nasconde/mostra questa zona.</CommandHideZoneDesc>
+  
+  <!-- EN: Show all zones -->
+  <ShowAllZones>TODO</ShowAllZones>
+  <!-- EN: Hide all zones -->
+  <HideAllZones>TODO</HideAllZones>
+  <!-- EN: Show all {0} zones -->
+  <ShowAllZoneTypes>TODO</ShowAllZoneTypes>
+  <!-- EN: Hide all {0} zones -->
+  <HideAllZoneTypes>TODO</HideAllZoneTypes>
+  <!-- EN: planning -->
+  <Planning>TODO</Planning>
+  
+  <!-- EN: Change color -->
+  <CommandChangeColorPlanLabel>TODO</CommandChangeColorPlanLabel>
+  <!-- EN: Change the color of this plan. -->
+  <CommandChangeColorPlanDesc>TODO</CommandChangeColorPlanDesc>
+  
+  <!-- EN: Delete -->
+  <CommandDeletePlanLabel>TODO</CommandDeletePlanLabel>
+  <!-- EN: Delete this plan. -->
+  <CommandDeletePlanDesc>TODO</CommandDeletePlanDesc>
+  
+  <!-- EN: Copy -->
+  <CommandCopyPlanLabel>TODO</CommandCopyPlanLabel>
+  <!-- EN: Copy this plan. -->
+  <CommandCopyPlanDesc>TODO</CommandCopyPlanDesc>
+  
+  <!-- EN: Copy selection... -->
+  <CommandCopyPlanSelectionLabel>TODO</CommandCopyPlanSelectionLabel>
+  <!-- EN: Copy all plans within a selected area. -->
+  <CommandCopyPlanSelectionDesc>TODO</CommandCopyPlanSelectionDesc>
+  <!-- EN: Select area to copy -->
+  <CommandCopyPlanSelectionMouse>TODO</CommandCopyPlanSelectionMouse>
+  <!-- EN: Paste selected area -->
+  <CommandCopyPlanSelectionPasteMouse>TODO</CommandCopyPlanSelectionPasteMouse>
 
   <!-- EN: Delete -->
   <CommandDeleteZoneLabel>Cancella</CommandDeleteZoneLabel>
@@ -242,10 +274,16 @@
   <CommandSunLampMakeGrowingZoneLabel>Crea zona agricola</CommandSunLampMakeGrowingZoneLabel>
 
   <!-- Trap -->
-  <!-- EN: Auto Rearm -->
+  <!-- EN: Auto rearm -->
   <CommandAutoRearm>Riarmo automatico</CommandAutoRearm>
   <!-- EN: If this is on, this trap will automatically be replaced after it springs. -->
   <CommandAutoRearmDesc>Se attivato, questa trappola sarà automaticamente rimpiazzata dopo che è scattata.</CommandAutoRearmDesc>
+  
+  <!-- Firefoam popper -->
+  <!-- EN: Auto rebuild -->
+  <CommandAutoRebuild_Building>TODO</CommandAutoRebuild_Building>
+  <!-- EN: If this is on, {BUILDING_definite} will automatically be replaced after it detonates. -->
+  <CommandAutoRebuild_BuildingDesc>TODO</CommandAutoRebuild_BuildingDesc>
   
   <!-- Animal control -->
   <!-- EN: Animals attack -->
@@ -292,6 +330,8 @@
   <!-- Select mineral to scan for (long-range mineral scanner) -->
   <!-- EN: Tuned to -->
   <CommandSelectMineralToScanFor>Impostato su</CommandSelectMineralToScanFor>
+  <!-- EN: Select the mineral type to scan for. -->
+  <CommandSelectMineralToScanForDesc>TODO</CommandSelectMineralToScanForDesc>
 
   <!-- Build copy -->
   <!-- EN: Build copy -->
@@ -314,7 +354,17 @@
   <CommandReformCaravanDesc>Riformare un gruppo di coloni. I coloni lasceranno la loro zona attuale ed attenderanno nuovi ordini.</CommandReformCaravanDesc>
   <!-- EN: There are still some enemies in this area. -->
   <CommandReformCaravanFailHostilePawns>Ci sono ancora degli ostili in quest'area.</CommandReformCaravanFailHostilePawns>
-  
+
+  <!-- Send caravan -->
+  <!-- EN: Send caravan -->
+  <CommandSendCaravan>TODO</CommandSendCaravan>
+  <!-- EN: Send caravan... -->
+  <CommandSendCaravanMultiple>TODO</CommandSendCaravanMultiple>
+  <!-- EN: Send a caravan to this destination from a selected colony which can reach this location. -->
+  <CommandSendCaravanDesc>TODO</CommandSendCaravanDesc>
+  <!-- EN: Your settlements have no path to this location. -->
+  <CommandSendCaravanCantReach>TODO</CommandSendCaravanCantReach>
+
   <!-- Split caravan -->
   <!-- EN: Split -->
   <CommandSplitCaravan>Dividi</CommandSplitCaravan>
@@ -344,6 +394,16 @@
   <CommandSettleFailNoColonists>Non c'è nessuno per reclamare l'area.</CommandSettleFailNoColonists>
   <!-- EN: There are enemies in this area. -->
   <CommandSettleFailEnemies>Ci sono degli ostili in quest'area.</CommandSettleFailEnemies>
+  <!-- EN: Cannot settle here. -->
+  <CommandSettleFailGeneric>TODO</CommandSettleFailGeneric>
+
+  <!-- Camp -->
+  <!-- EN: Camp -->
+  <CommandCamp>TODO</CommandCamp>
+  <!-- EN: Set up a temporary camp that can quickly be abandoned. -->
+  <CommandCampDesc>TODO</CommandCampDesc>
+  <!-- EN: Cannot camp here. -->
+  <CommandCampFailExistingWorldObject>TODO</CommandCampFailExistingWorldObject>
   
   <!-- Abandon home -->
   <!-- EN: Abandon -->
@@ -370,6 +430,20 @@
   <CommandAddToCaravan>Aggiungi alla carovana</CommandAddToCaravan>
   <!-- EN: Add this person or animal to the forming caravan. -->
   <CommandAddToCaravanDesc>Aggiunge questa persona o animale alla carovana.</CommandAddToCaravanDesc>
+  
+  <!-- Force caravan depart -->
+  <!-- EN: Force caravan departure -->
+  <CommandForceCaravanDepart>TODO</CommandForceCaravanDepart>
+  <!-- EN: Force the caravan to depart immediately with only the currently-loaded items. Anyone unable to travel will be left behind. -->
+  <CommandForceCaravanDepartDesc>TODO</CommandForceCaravanDepartDesc>
+  <!-- EN: Are you sure you want to depart? -->
+  <ConfirmForceDepartIntro>TODO</ConfirmForceDepartIntro>
+  <!-- EN: The following items are still being loaded and will be left behind: -->
+  <ConfirmForceDepartItemsStillLoading>TODO</ConfirmForceDepartItemsStillLoading>
+  <!-- EN: The following people won't be a part of the caravan: -->
+  <ConfirmForceDepartPawnsNotLeaving>TODO</ConfirmForceDepartPawnsNotLeaving>
+  <!-- EN: The following items are loaded onto creatures who won't be a part of the caravan and will be left behind: -->
+  <ConfirmForceDepartItemsOnPawnsNotLeaving>TODO</ConfirmForceDepartItemsOnPawnsNotLeaving>
   
   <!-- Show map -->
   <!-- EN: Zoom in -->
@@ -420,27 +494,41 @@
   <!-- Refueling -->
   <!-- EN: Toggle automatic refuel -->
   <CommandToggleAllowAutoRefuel>Attiva/disattiva il rifornimento automatico</CommandToggleAllowAutoRefuel>
-  <!-- EN: Sets whether or not automatic refueling is allowed. -->
+  <!-- EN: This determines whether colonists will automatically refuel this. If enabled, colonists will fill this up to {0}.\n\nAutomatic refueling is currently {ONOFF}. -->
   <CommandToggleAllowAutoRefuelDesc>Imposta se consentire o meno il rifornimento automatico.</CommandToggleAllowAutoRefuelDesc>
-  
+  <!-- EN: This determines whether colonists will automatically refuel these buildings.\n\nAutomatic refueling is currently {ONOFF}. -->
+  <CommandToggleAllowAutoRefuelDescMult>TODO</CommandToggleAllowAutoRefuelDescMult>
+
   <!-- Cancel load -->
   <!-- EN: Cancel load -->
   <CommandCancelLoad>Annulla il caricamento</CommandCancelLoad>
   <!-- EN: Cancel loading this with people or items and eject everything already loaded. -->
   <CommandCancelLoadDesc>Annulla il caricamento di queste persone o oggetti e scarica tutto ciò che è già stato caricato.</CommandCancelLoadDesc>
-  
+  <!-- EN: Unload all -->
+  <CommandUnload>TODO</CommandUnload>
+  <!-- EN: Eject all contents from the {0}. -->
+  <CommandUnloadDesc>TODO</CommandUnloadDesc>
+
   <!-- Launch group -->
   <!-- EN: Launch -->
   <CommandLaunchGroup>Lancia</CommandLaunchGroup>
   <!-- EN: Take off and fly to a destination. -->
   <CommandLaunchGroupDesc>Decolla e vola verso una destinazione.</CommandLaunchGroupDesc>
+  <!-- EN: Must be loaded first. -->
+  <CommandLaunchGroupFailNotLoaded>TODO</CommandLaunchGroupFailNotLoaded>
   <!-- EN: Some transport pods in this loading group are not connected to a fueling port. -->
   <CommandLaunchGroupFailNotConnectedToFuelingPort>Alcune capsule di trasporto di questo gruppo non sono collegate ad un porto di rifornimento.</CommandLaunchGroupFailNotConnectedToFuelingPort>
-  <!-- EN: Some pod launchers in this group have no fuel. -->
-  <CommandLaunchGroupFailNoFuel>Alcuni lanciacapsule in questo gruppo non hanno carburante.</CommandLaunchGroupFailNoFuel>
-  <!-- EN: Some pod launchers are under a roof. -->
+  <!-- EN: Roof blocking launch. -->
   <CommandLaunchGroupFailUnderRoof>Alcuni lanciacapsule sono sotto una copertura.</CommandLaunchGroupFailUnderRoof>
-  
+  <!-- EN: Not enough fuel to launch. -->
+  <CommandLaunchGroupFailNoFuel>Alcuni lanciacapsule in questo gruppo non hanno carburante.</CommandLaunchGroupFailNoFuel>
+  <!-- EN: Over mass capacity. -->
+  <CommandLaunchGroupFailOverMassCapacity>TODO</CommandLaunchGroupFailOverMassCapacity>
+  <!-- EN: On cooldown. -->
+  <CommandLaunchGroupCooldown>TODO</CommandLaunchGroupCooldown>
+  <!-- EN: {0} / {1} kg -->
+  <MassUsageString>TODO</MassUsageString>
+
   <!-- Load transporter -->
   <!-- EN: Load launch group of {0} -->
   <CommandLoadTransporter>Carica gruppo di lancio con {0}</CommandLoadTransporter>
@@ -602,14 +690,14 @@
   <!-- Rituals -->
   <!-- EN: Leave {RITUAL_label} -->
   <CommandLeaveRitual>Lascia {RITUAL_label}</CommandLeaveRitual>
-  <!-- EN: Stop participating in the {RITUAL_labelDef}. The ritual will continue as long as it has at least one participant. -->
+  <!-- EN: Stop participating in the {RITUAL_labelDef}. The event will continue as long as it has at least one participant. -->
   <CommandLeaveRitualDesc> Smetti di partecipare al {RITUAL_labelDef}. Il rituale continuerà finché ci sarà almeno un partecipante.</CommandLeaveRitualDesc>
   <!-- EN: This is the last participant in the {RITUAL_labelDef}. -->
   <CommandLeaveLastParticipant>Questo è l'ultimo partecipante del {RITUAL_labelDef}.</CommandLeaveLastParticipant>
 
   <!-- EN: Cancel {RITUAL_label} -->
   <CommandCancelRitual>Cancella {RITUAL_label}</CommandCancelRitual>
-  <!-- EN: End the {RITUAL_labelDef} immediately. Ritual obligation will remain. You can restart the ritual later. -->
+  <!-- EN: End the {RITUAL_labelDef} immediately. You can restart the event later. -->
   <CommandCancelRitualDesc>Termina immediatamente il {RITUAL_labelDef}. L'obbligo del rituale rimane. È possibile riavviare il rituale in un secondo momento.</CommandCancelRitualDesc>
   <!-- EN: Are you sure you want to cancel {RITUAL_labelDef}? -->
   <CommandCancelRitualConfirm>Siete sicuri di voler annullare {RITUAL_labelDef}?</CommandCancelRitualConfirm>
@@ -629,6 +717,8 @@
   <UnlinkStorageSettingsDesc>Scollegare questo sistema dalle impostazioni di stoccaggio degli altri edifici, in modo che le sue impostazioni possano essere impostate in modo indipendente.</UnlinkStorageSettingsDesc>
   <!-- EN: Linked storage settings -->
   <LinkedStorageSettings>Impostazioni di stoccaggio collegate</LinkedStorageSettings>
+  <!-- EN: 1 building -->
+  <OneBuilding>TODO</OneBuilding>
   <!-- EN: {0} buildings -->
   <NumBuildings>{0} costruito</NumBuildings>
   <!-- EN: Stores -->
@@ -637,5 +727,48 @@
   <SelectAllLinked>Seleziona tutti i collegamenti</SelectAllLinked>
   <!-- EN: Select all storage buildings linked to this. -->
   <SelectAllLinkedDesc>Selezionare tutti gli edifici di stoccaggio collegati a questo.</SelectAllLinkedDesc>
+
+  <!-- EN: {0_labelShort} is unconscious. -->
+  <CommandDisabledUnconscious>{0_labelShort} è incosciente.</CommandDisabledUnconscious>
+
+  <!-- Study -->
+  <!-- EN: Toggle study -->
+  <CommandToggleStudy>TODO</CommandToggleStudy>
+  <!-- EN: Determines whether or not wardens will automatically study this. Forbidden things will never be studied. -->
+  <CommandToggleStudyDesc>TODO</CommandToggleStudyDesc>
+
+  <!-- Limited use count action -->
+  <!-- EN: No uses left. -->
+  <CommandNoUsesLeft>TODO</CommandNoUsesLeft>
+
+  <!-- Map Portal -->
+  <!-- EN: View {0} -->
+  <CommandViewPocketMapLabel>TODO</CommandViewPocketMapLabel>
+  <!-- EN: View the connected {0} map. -->
+  <CommandViewPocketMapDesc>TODO</CommandViewPocketMapDesc>
+  <!-- EN: View surface -->
+  <CommandViewSurface>TODO</CommandViewSurface>
+  <!-- EN: View the connected surface map. -->
+  <CommandViewSurfaceDesc>TODO</CommandViewSurfaceDesc>
+
+  <!-- Auto-build pod -->
+  <!-- EN: Auto build transport pod -->
+  <AutoBuildTransportPod>TODO</AutoBuildTransportPod>
+  <!-- EN: If on, your colonists will automatically build a new transport pod when possible. -->
+  <AutoBuildTransportPodDesc>TODO</AutoBuildTransportPodDesc>
   
+  <!-- Hacking gizmo -->
+  <!-- EN: Hack... -->
+  <HackGizmo>TODO</HackGizmo>
+  <!-- EN: Cannot hack -->
+  <CannotChooseHacker>TODO</CannotChooseHacker>
+  <!-- EN: Choose hacker -->
+  <CommandChooseHacker>TODO</CommandChooseHacker>
+  
+  <!-- UNUSED -->
+  <CommandRenameZoneLabel>Rinomina</CommandRenameZoneLabel>
+  <CommandRenameZoneDesc>Rinomina questa zona.</CommandRenameZoneDesc>
+  <CommandHideZoneLabel>Nascondi</CommandHideZoneLabel>
+  <CommandUnhideZoneLabel>Mostra</CommandUnhideZoneLabel>
+
 </LanguageData>

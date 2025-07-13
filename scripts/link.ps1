@@ -1,17 +1,20 @@
 # sudo pwsh.exe
 
-rm 'C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Data\Core\Languages\Italiano'
-rm 'C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Data\Royalty\Languages\Italiano'
-rm 'C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Data\Ideology\Languages\Italiano'
-rm 'C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Data\Biotech\Languages\Italiano'
-rm 'C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Data\Anomaly\Languages\Italiano'
-
+$installDir = 'C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Data'
 $basePath = 'C:\Users\montr\progetti\RimWorld-it'
+
+rm "$installDir\Core\Languages\Italiano"
+
+$dlcList = @('Royalty', 'Ideology', 'Biotech', 'Anomaly', 'Odyssey')
+
+foreach ($dlc in $dlcList) {
+    rm "$installDir\$dlc\Languages\Italiano"
+}
 
 echo $basePath\Core
 
-cmd /c mklink /d 'C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Data\Core\Languages\Italiano' $basePath\Core
-cmd /c mklink /d 'C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Data\Royalty\Languages\Italiano' $basePath\Royalty
-cmd /c mklink /d 'C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Data\Ideology\Languages\Italiano' $basePath\Ideology
-cmd /c mklink /d 'C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Data\Biotech\Languages\Italiano' $basePath\Biotech
-cmd /c mklink /d 'C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Data\Anomaly\Languages\Italiano' $basePath\Anomaly
+cmd /c mklink /d "$installDir\Core\Languages\Italiano" $basePath\Core
+
+foreach ($dlc in $dlcList) {
+    cmd /c mklink /d "$installDir\$dlc\Languages\Italiano" $basePath\$dlc
+}

@@ -16,6 +16,11 @@
   <!-- EN: Deconstruct this and reclaim part of its resources. -->
   <DesignatorDeconstructDesc>Smantella questo e recupera parte delle sue risorse.</DesignatorDeconstructDesc>
 
+  <!-- EN: Deconstruct conduit -->
+  <DesignatorDeconstructConduit>TODO</DesignatorDeconstructConduit>
+  <!-- EN: Deconstruct power conduits and reclaim part of their resources. -->
+  <DesignatorDeconstructConduitDesc>TODO</DesignatorDeconstructConduitDesc>
+
   <!-- EN: Uninstall -->
   <DesignatorUninstall>Smonta</DesignatorUninstall>
   <!-- EN: Uninstall this so it can be moved, sold, or installed somewhere else. -->
@@ -45,7 +50,7 @@
 
   <!-- EN: Hunt -->
   <DesignatorHunt>Caccia</DesignatorHunt>
-  <!-- EN: Mark animals to be hunted by your hunters. -->
+  <!-- EN: Mark animals to be hunted by your hunters.\n\nOnly hunters with suitable ranged weapons will hunt. -->
   <DesignatorHuntDesc>Marca gli animali che verranno cacciati dai tuoi cacciatori.</DesignatorHuntDesc>
 
   <!-- EN: Mine -->
@@ -53,14 +58,27 @@
   <!-- EN: Designate areas of rock to be mined out. -->
   <DesignatorMineDesc>Indica le aree di roccia da scavare.</DesignatorMineDesc>
 
+  <!-- EN: Mine vein -->
+  <DesignatorMineVein>TODO</DesignatorMineVein>
+  <!-- EN: Designate an area of rock to be mined. Colonists will continue to mine until all connected rock of the same type has been mined. -->
+  <DesignatorMineVeinDesc>TODO</DesignatorMineVeinDesc>
+
   <!-- EN: Smooth surface -->
   <DesignatorSmoothSurface>Spiana superficie</DesignatorSmoothSurface>
   <!-- EN: Designate rough stone terrain and walls to be smoothed. -->
   <DesignatorSmoothSurfaceDesc>Indica terreno e mura di roccia grezza da spianare.</DesignatorSmoothSurfaceDesc>
+  <!-- EN: Smooth walls -->
+  <DesignatorSmoothWalls>TODO</DesignatorSmoothWalls>
+  <!-- EN: Designate rough stone walls to be smoothed. -->
+  <DesignatorSmoothWallsDesc>TODO</DesignatorSmoothWallsDesc>
+  <!-- EN: Smooth terrain -->
+  <DesignatorSmoothFloors>TODO</DesignatorSmoothFloors>
+  <!-- EN: Designate rough stone terrain to be smoothed. -->
+  <DesignatorSmoothFloorsDesc>TODO</DesignatorSmoothFloorsDesc>
 
   <!-- EN: Plan -->
   <DesignatorPlan>Pianifica</DesignatorPlan>
-  <!-- EN: Place planning designations. These don't do anything except help you plan future expansions. -->
+  <!-- EN: Place planning designations. These don't do anything except help you plan future expansions.\n\nRight-click to hide or unhide all planning zones. -->
   <DesignatorPlanDesc>Traccia un piano di costruzione. Questo non serve a niente se non ad aiutarti a pianificare la futura espansione.</DesignatorPlanDesc>
 
   <!-- EN: Remove plans -->
@@ -155,7 +173,7 @@
 
   <!-- EN: Remove bridge -->
   <DesignatorRemoveBridge>Rimuovi ponte</DesignatorRemoveBridge>
-  <!-- EN: Remove bridges to reveal the terrain underneath. -->
+  <!-- EN: Deconstruct bridges to reclaim partial resources. -->
   <DesignatorRemoveBridgeDesc>Rimuove i ponti per scoprire il terreno sottostante.</DesignatorRemoveBridgeDesc>
 
   <!-- EN: Strip -->
@@ -168,6 +186,11 @@
   <!-- EN: Open containers. -->
   <DesignatorOpenDesc>Apre contenitori.</DesignatorOpenDesc>
   
+  <!-- EN: Eject fuel -->
+  <DesignatorEjectFuel>TODO</DesignatorEjectFuel>
+  <!-- EN: Eject all contained fuel onto the ground. -->
+  <DesignatorEjectFuelDesc>TODO</DesignatorEjectFuelDesc>
+
   <!-- EN: Slaughter -->
   <DesignatorSlaughter>Macella</DesignatorSlaughter>
   <!-- EN: Slaughter a tame animal. -->
@@ -177,6 +200,8 @@
   <DesignatorTame>Addomestica</DesignatorTame>
   <!-- EN: Tame a wild animal. -->
   <DesignatorTameDesc>Addomestica un animale selvaggio.</DesignatorTameDesc>
+  <!-- EN: Scaria infected animals can't be tamed. -->
+  <CantTameScaria>TODO</CantTameScaria>
 
   <!-- EN: Release to wild -->
   <DesignatorReleaseAnimalToWild>Rilascio in libertà</DesignatorReleaseAnimalToWild>
@@ -227,6 +252,16 @@
   <!-- EN: Grabbed color -->
   <GrabbedColor>Cattura colore</GrabbedColor>
 
+  <!-- EN: Expand plan -->
+  <DesignatorExpandPlan>TODO</DesignatorExpandPlan>
+  <!-- EN: New plan -->
+  <NewPlan>TODO</NewPlan>
+  
+  <!-- EN: Shrink plan -->
+  <DesignatorPlanShrinkSingular>TODO</DesignatorPlanShrinkSingular>
+  <!-- EN: Remove plans. -->
+  <DesignatorPlanShrinkDesc>TODO</DesignatorPlanShrinkDesc>
+
   <!-- Failure messages -->
   <!-- EN: Unchosen material -->
   <UnchosenStuff>Materiale non scelto</UnchosenStuff>
@@ -246,6 +281,10 @@
   <WouldBlockInteractionSpot>{0} bloccherà il punto di interazione di {1}.</WouldBlockInteractionSpot>
   <!-- EN: The terrain here is already {0}. -->
   <TerrainIsAlready>Questo terreno è già {0}.</TerrainIsAlready>
+  <!-- EN: There is already foundation here. -->
+  <FoundationAlreadyExists>TODO</FoundationAlreadyExists>
+  <!-- EN: The existing terrain here cannot be removed. -->
+  <TerrainUnremovable>TODO</TerrainUnremovable>
   <!-- EN: The surface is already marked for smoothing. -->
   <SurfaceBeingSmoothed>La superficie è già marcata per essere spianata.</SurfaceBeingSmoothed>
   <!-- EN: Identical thing already exists here. -->
@@ -287,6 +326,11 @@
   <!-- EN: Create new {0} -->
   <CreateNewZone>Crea una nuova {0}</CreateNewZone>
   
+  <!-- EN: Expand {0} or\nCreate new plan -->
+  <ExpandOrCreatePlan>TODO</ExpandOrCreatePlan>
+  <!-- EN: Create new plan -->
+  <CreateNewPlan>TODO</CreateNewPlan>
+  
   <!-- Desc helpers -->
   <!-- EN: Transmits power -->
   <TransmitsPower>Trasmette corrente</TransmitsPower>
@@ -300,5 +344,10 @@
   <NoColonistWithAllSkillsForConstructing>Nessuno dei tuoi {0} possiede tutte le abilità richieste.</NoColonistWithAllSkillsForConstructing>
   <!-- EN: All of your {0} who have this skill are not assigned to {1}. -->
   <AllColonistsWithSkillHaveDisabledConstructingTip>Tutti i tuoi {0} che hanno questa abilità non sono assegnati a {1}.</AllColonistsWithSkillHaveDisabledConstructingTip>
+
+  <!-- EN: Extract skull -->
+  <DesignatorExtractSkull>Estrai il cranio</DesignatorExtractSkull>
+  <!-- EN: Extract the skull from a corpse. -->
+  <DesignatorExtractSkullDesc>Estrai il teschio da un cadavere.</DesignatorExtractSkullDesc>
 
 </LanguageData>

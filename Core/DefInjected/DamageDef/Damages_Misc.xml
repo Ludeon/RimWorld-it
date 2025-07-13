@@ -1,43 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: acid burn -->
+  <AcidBurn.label>ustione da acido</AcidBurn.label>
+  <!-- EN: {0} has burned to death. -->
+  <AcidBurn.deathMessage>{0} sei morto bruciato.</AcidBurn.deathMessage>
   
+  <!-- EN: beam -->
+  <Beam.label>trave</Beam.label>
+  <!-- EN: {0} has been beamed to death. -->
+  <Beam.deathMessage>{0} sei stato teletrasportato a morte.</Beam.deathMessage>
+  
+  <!-- EN: bomb -->
   <Bomb.label>bomba</Bomb.label>
-  
+  <!-- EN: {0} has died in an explosion. -->
   <Bomb.deathMessage>{0} è {PAWN_gender ? morto : morta} in un'esplosione.</Bomb.deathMessage>
   
-  
+  <!-- EN: bomb -->
   <BombSuper.label>bomba</BombSuper.label>
-  
+  <!-- EN: {0} has died in an explosion. -->
   <BombSuper.deathMessage>{0} è {PAWN_gender ? morto : morta} in un'esplosione.</BombSuper.deathMessage>
   
+  <!-- EN: decayed organ -->
+  <Decayed.label>TODO</Decayed.label>
+  <!-- EN: {0} died from metabolic disruptions caused by organ decay. -->
+  <Decayed.deathMessage>TODO</Decayed.deathMessage>
   
+  <!-- EN: deterioration -->
   <Deterioration.label>deterioramento</Deterioration.label>
-  
+  <!-- EN: {0} has been killed. -->
   <Deterioration.deathMessage>{0} è {PAWN_gender ? stato : stata } {PAWN_gender ? ucciso : uccisa}.</Deterioration.deathMessage>
   
-  
+  <!-- EN: extinguish -->
   <Extinguish.label>spegnimento</Extinguish.label>
-  
+  <!-- EN: {0} has been killed. -->
   <Extinguish.deathMessage>{0} è {PAWN_gender ? stato : stata } {PAWN_gender ? ucciso : uccisa}.</Extinguish.deathMessage>
   
-  
+  <!-- EN: mining -->
   <Mining.label>estrazione</Mining.label>
-  
+  <!-- EN: {0} has been killed. -->
   <Mining.deathMessage>{0} è {PAWN_gender ? stato : stata } {PAWN_gender ? ucciso : uccisa}.</Mining.deathMessage>
   
+  <!-- EN: nerve -->
+  <Nerve.label>TODO</Nerve.label>
+  <!-- EN: {0} has been killed by nerve shock. -->
+  <Nerve.deathMessage>TODO</Nerve.deathMessage>
   
+  <!-- EN: nerve stun -->
+  <NerveStun.label>TODO</NerveStun.label>
+  <!-- EN: {0} has been killed. -->
+  <NerveStun.deathMessage>TODO</NerveStun.deathMessage>
+  
+  <!-- EN: rotting -->
   <Rotting.label>putrefazione</Rotting.label>
-  
+  <!-- EN: {0} has been killed. -->
   <Rotting.deathMessage>{0} è {PAWN_gender ? stato : stata } {PAWN_gender ? ucciso : uccisa}.</Rotting.deathMessage>
   
-  
+  <!-- EN: smoke -->
   <Smoke.label>fumo</Smoke.label>
-  
+  <!-- EN: {0} has been killed. -->
   <Smoke.deathMessage>{0} è {PAWN_gender ? stato : stata } {PAWN_gender ? ucciso : uccisa}.</Smoke.deathMessage>
   
-  
+  <!-- EN: thump -->
   <Thump.label>colpo</Thump.label>
-  
+  <!-- EN: {0} has been shot to death. -->
   <Thump.deathMessage>{0} è {PAWN_gender ? stato : stata } {PAWN_gender ? ucciso : uccisa} da un proiettile.</Thump.deathMessage>
+  
+  <!-- EN: vaporize -->
+  <Vaporize.label>vaporizzare</Vaporize.label>
+  <!-- EN: {0} has been vaporized by extreme heat. -->
+  <Vaporize.deathMessage>{0} è stato vaporizzato dal calore estremo.</Vaporize.deathMessage>
   
 </LanguageData>

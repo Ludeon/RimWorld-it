@@ -44,8 +44,6 @@
   <WorkDisabledByQuest>Disabilitato dalla missione '{0}'</WorkDisabledByQuest>
   
   <!-- Assign tab -->
-  <!-- EN: Manage outfits -->
-  <ManageOutfits>Gestisci il vestiario</ManageOutfits>
   <!-- EN: Unchangeable -->
   <Unchangeable>Immodificabile</Unchangeable>
   <!-- EN: Clr. forced -->
@@ -56,12 +54,16 @@
   <ApparelLockedLower>bloccato</ApparelLockedLower>
   <!-- EN: Forced apparel -->
   <ForcedApparel>Vestiario obbligato</ForcedApparel>
-  <!-- EN: Edit... -->
+  <!-- EN: Edit -->
   <AssignTabEdit>Modifica</AssignTabEdit>
+  <!-- EN: Manage apparel policies -->
+  <ManageApparelPolicies>TODO</ManageApparelPolicies>
   <!-- EN: Manage drug policies -->
   <ManageDrugPolicies>Gestisci politiche sulle droghe</ManageDrugPolicies>
-  <!-- EN: Manage food restrictions -->
-  <ManageFoodRestrictions>Gestisci limitazioni sul cibo</ManageFoodRestrictions>
+  <!-- EN: Manage food policies -->
+  <ManageFoodPolicies>TODO</ManageFoodPolicies>
+  <!-- EN: Manage reading policies -->
+  <ManageReadingPolicies>TODO</ManageReadingPolicies>
   
   <!-- Restrictions tab -->
   <!-- EN: Copy -->
@@ -198,14 +200,22 @@
   <InProgress>In corso</InProgress>
   <!-- EN: Locked -->
   <Locked>Bloccato</Locked>
-  <!-- EN: Research prerequisites -->
-  <ResearchPrerequisites>Prerequisiti di ricerca</ResearchPrerequisites>
+  <!-- EN: Prerequisites -->
+  <Prerequisites>TODO</Prerequisites>
   <!-- EN: Techprints required {0} / {1} -->
   <ResearchTechprintRequirement>Schemi tecnici richiesti {0} / {1}</ResearchTechprintRequirement>
   <!-- EN: Insufficient techprints applied ({0} / {1}) -->
   <InsufficientTechprintsApplied>Schemi tecnici insufficienti ({0} / {1})</InsufficientTechprintsApplied>
   <!-- EN: Prerequisite(s) not completed -->
   <PrerequisitesNotCompleted>Prerequisiti non soddisfatti</PrerequisitesNotCompleted>
+  <!-- EN: No project active. -->
+  <NoProjectSelected>TODO</NoProjectSelected>
+  <!-- EN: Active projects -->
+  <ActiveProjectPlural>TODO</ActiveProjectPlural>
+  <!-- EN: Active project -->
+  <ActiveProject>TODO</ActiveProject>
+  <!-- EN: Stop research -->
+  <StopResearch>TODO</StopResearch>
   <!-- EN: Missing required research facilities -->
   <MissingRequiredResearchFacilities>Mancano le strutture di ricerca necessarie</MissingRequiredResearchFacilities>
   <!-- EN: Required research bench -->
@@ -220,6 +230,10 @@
   <TechLevelTooLow>Il livello tecnologico della tua fazione è {0}, ma il livello di questo progetto è {1}. La velocità di ricerca verrà moltiplicata per {2}.</TechLevelTooLow>
   <!-- EN: Unlocked with -->
   <UnlockedWith>Sbloccato con</UnlockedWith>
+  <!-- EN: Research one or more of this project's prerequisites to discover it. -->
+  <UnknownResearchDescription>TODO</UnknownResearchDescription>
+  <!-- EN: unknown -->
+  <UnknownResearch>TODO</UnknownResearch>
 
   <!-- Factions tab -->
   <!-- EN: Factions -->
@@ -308,6 +322,8 @@
   <QuestPawnNotOnColonyMap>{PAWN_definite} per essere nella tua colonia</QuestPawnNotOnColonyMap>
   <!-- EN: the map clear of enemies of the bestower's faction -->
   <QuestRequiresNoDangerOnMap>la mappa libera dai nemici della fazione del cerimoniere reale</QuestRequiresNoDangerOnMap>
+  <!-- EN: that {PROJECT_label} has been researched. -->
+  <QuestRequiresResearch>TODO</QuestRequiresResearch>
   <!-- EN: to finish the ongoing bestowing ceremony quest -->
   <QuestCanNotStartUntilBestowingCeremonyFinished>per concludere la cerimonia di conferimento in corso</QuestCanNotStartUntilBestowingCeremonyFinished>
   <!-- EN: Reward preferences -->
@@ -344,16 +360,36 @@
   <QuestNeutralTo>neutrale a {0}</QuestNeutralTo>
   <!-- EN: studied {0_labelShort} -->
   <QuestRequiredThingStudied>studiato {0_labelShort}</QuestRequiredThingStudied>
+  <!-- EN: cannot accept {GERUND} {LAYER} -->
+  <QuestRequiredLayer>TODO</QuestRequiredLayer>
+  <!-- EN: cannot accept in space -->
+  <QuestNotSpace>TODO</QuestNotSpace>
 
   <!-- Health tab -->
   <!-- EN: Creates need -->
   <CreatesNeed>Crea bisogni</CreatesNeed>
+  <!-- EN: Change defaults... -->
+  <ChangeDefaults>TODO</ChangeDefaults>
 
   <!-- Misc -->
   <!-- EN: Click to edit -->
   <ClickToEdit>Clicca per modificare</ClickToEdit>
-
+  <!-- EN: Assign -->
+  <AssignButton>TODO</AssignButton>
+  <!-- EN: Unassign -->
+  <UnassignButton>TODO</UnassignButton>
+  
+  <!-- Books -->
+  <!-- EN: Mental break chance -->
+  <BookMentalBreakChance>TODO</BookMentalBreakChance>
+  
+  <!-- EN: Recreation gain multiplier -->
+  <BookJoyFactor>TODO</BookJoyFactor>
+  
   <!-- UNUSED -->
+  <ManageOutfits>Gestisci il vestiario</ManageOutfits>
+  <ManageFoodRestrictions>Gestisci limitazioni sul cibo</ManageFoodRestrictions>
+  <ResearchPrerequisites>Prerequisiti di ricerca</ResearchPrerequisites>
   <CurrentGoodwillTip>Attuale opinione e stato relazione con questa fazione.</CurrentGoodwillTip>
   <CurrentRelationTip>Attuale relazione con questa fazione</CurrentRelationTip>
   <CurrentGoodwillTip_NaturalGoodwill>Questa fazione ha un intervallo di opinione neutrale da {0} a {1}. Se l'opinione è oltre {1}, diminuirà di {3} al giorno. Se l'opinione è sotto {0}, salirà di {2} al giorno.</CurrentGoodwillTip_NaturalGoodwill>

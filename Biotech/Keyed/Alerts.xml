@@ -1,123 +1,123 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-  
+  <!-- EN: Uncontrolled mechs -->
   <AlertMechLacksOverseer>Mech incontrollati</AlertMechLacksOverseer>
-  
+  <!-- EN: One or more of your mechanoids is not controlled. Connect your mechanoids to a mechanitor with sufficient bandwidth to control them.\n\nIf left uncontrolled for more than a day, a mechanoid could go feral. When this happens they will join {0} and become hostile to you. If one mechanoid goes feral, it will bring other nearby mechanoids with it.\n\nFeral mechanoids cannot be resurrected at a gestator when killed. -->
   <AlertMechLacksOverseerDesc>Uno o più dei tuoi meccanoidi non sono controllati. Connetti i tuoi meccanoidi a un mechanitor con larghezza di banda sufficiente per controllarli.\n\nSe lasciato senza controllo per più di un giorno, un meccanoide potrebbe diventare selvaggio. Quando ciò accade, si uniranno a {0} e diventeranno ostili nei tuoi confronti. Se un meccanoide diventa feroce, porterà con sé altri meccanoidi vicini.\n\nI meccanoidi feroci non possono essere resuscitati su un Gestator quando vengono uccisi.</AlertMechLacksOverseerDesc>
-  
+  <!-- EN: The following mechanoids are uncontrolled -->
   <AlertMechLacksOverseerUncontrolled>I seguenti meccanoidi sono incontrollati</AlertMechLacksOverseerUncontrolled>
-  
+  <!-- EN: The following mechanoids are uncontrolled and could go feral at any moment -->
   <AlertMechLacksOverseerMayGoFeral>I seguenti meccanoidi sono incontrollati e potrebbero diventare selvaggi in qualsiasi momento</AlertMechLacksOverseerMayGoFeral>
 
-  
+  <!-- EN: {0} is low on resources -->
   <AlertWarqueenHasLowResources>{0} ha poche risorse</AlertWarqueenHasLowResources>
-  
+  <!-- EN: One or more {0} are low on resoures. They will be unable to produce mechs on command if they run out of resources. -->
   <AlertWarqueenHasLowResourcesDesc>Uno o più {0} hanno poche risorse. Non saranno in grado di produrre mech a comando se esauriscono le risorse.</AlertWarqueenHasLowResourcesDesc>
 
-  
+  <!-- EN: {PAWN} needs deathrest -->
   <AlertLowDeathrestPawn>{PAWN} ha bisogno di riposo mortale</AlertLowDeathrestPawn>
-  
+  <!-- EN: {NUMCULPRITS} colonists need deathrest -->
   <AlertLowDeathrestPawns>{NUMCULPRITS} coloni hanno bisogno di riposo mortale</AlertLowDeathrestPawns>
-  
+  <!-- EN: A colonist has not deathrested for a long time. If they go too long without deathrest, they will suffer from deathrest exhaustion.\n\nTo deathrest, select the colonist then right-click on their assigned bed or deathrest casket.\n\nThese people need deathrest:\n{CULPRITS} -->
   <AlertLowDeathrestDesc>Un colono non veniva ucciso da molto tempo. Se passano troppo tempo senza Deathrest, soffriranno di esaurimento Deathrest.\n\nPer Deathrest, seleziona il colono quindi fai clic con il pulsante destro del mouse sul letto assegnato o sulla bara Deathrest.\n\nQueste persone hanno bisogno di Deathrest:\n{CULPRITS}</AlertLowDeathrestDesc>
 
-  
+  <!-- EN: Low hemogen -->
   <AlertLowHemogen>Basso emogeno</AlertLowHemogen>
-  
+  <!-- EN: A colonist has low hemogen. At zero hemogen, they will develop a painful hemogen craving.\n\nFeed them hemogen packs to prevent this. You can obtain hemogen packs using the 'extract hemogen pack' medical operation on a non-hemogenic human.\n\nThe following colonists have low hemogen -->
   <AlertLowHemogenDesc>Un colono ha un basso livello di emogeno. A zero emogeno, svilupperanno un doloroso desiderio di emogeno.\n\nDai loro pacchetti di emogeno per prevenirlo. Puoi ottenere pacchetti di emogeno utilizzando l'operazione medica "Estrai pacchetto di emogeno" su un essere umano non emogenico.\n\nI seguenti coloni hanno un basso livello di emogeno</AlertLowHemogenDesc>
 
-  
+  <!-- EN: Recharger full -->
   <AlertRechargerFull>Caricatore pieno</AlertRechargerFull>
-  
+  <!-- EN: Some mech recharger(s) are storing their maximum number of toxic wastepacks. Mechs can't use these chargers until the toxic wastepacks are hauled away.\n\nSelect a colonist and right-click a recharger to unload it. -->
   <AlertRechargerFullDesc>Alcuni ricaricatori di mech stanno immagazzinando il numero massimo di contenitori di rifiuti tossici. I Mech non possono usare questi caricatori finché i contenitori di rifiuti tossici non vengono portati via.\n\nSeleziona un colono e fai clic con il pulsante destro del mouse su un caricatore per scaricarlo.</AlertRechargerFullDesc>
 
-  
+  <!-- EN: Need mech rechargers -->
   <AlertNeedMechChargers>Hai bisogno di ricaricatori meccanici</AlertNeedMechChargers>
-  
+  <!-- EN: You don't have rechargers for all your mechanoids. If a mech runs out of energy, it will fall into a dormant self-charging state and will recharge very slowly.\n\nBuild more of the following chargers:\n{0}\n\nNote: Only light mechanoids can use regular mech rechargers. Medium or heavier mechanoids require large mech rechargers. -->
   <AlertNeedMechChargersDesc>Non hai caricabatterie per tutti i tuoi meccanoidi. Se un mech esaurisce l'energia, cadrà in uno stato dormiente di autoricarica e si ricaricherà molto lentamente.\n\nCostruisci altri caricatori tra i seguenti:\n\n{0}\n\nNota: solo i meccanoidi leggeri possono utilizzare normali ricaricatori meccanici. I meccanoidi medi o più pesanti richiedono grandi ricaricatori mech.</AlertNeedMechChargersDesc>
-  
+  <!-- EN: Research basic mechtech or higher to build rechargers. -->
   <AlertNeedMechChargerBasicMechtech>Ricerca mechtech di base o superiore per costruire ricaricatori.</AlertNeedMechChargerBasicMechtech>
 
-  
+  <!-- EN: Reimplantation available -->
   <AlertReimplantationAvailable>Reimpianto disponibile</AlertReimplantationAvailable>
-  
+  <!-- EN: {0_nameDef} is waiting to reimplant {0_possessive} xenogerm into one of your colonists. -->
   <AlertReimplantationAvailableDesc>{0_nameDef} è in attesa di reimpiantare lo xenogerme {0_possessive} in uno dei tuoi coloni.</AlertReimplantationAvailableDesc>
 
-  
+  <!-- EN: Low baby food -->
   <AlertLowBabyFood>Alimenti per bambini bassi</AlertLowBabyFood>
-  
+  <!-- EN: You are dangerously low on baby food.\n\n    Babies needing food: {0}\n    Days worth of baby food in storage: {1}\n\nBuy, find or make some baby-edible food. This includes {2}. -->
   <AlertLowBabyFoodDesc>Sei pericolosamente a corto di alimenti per bambini.\n\n Bambini che hanno bisogno di cibo: {0}\n Giorni di alimenti per bambini in magazzino: {1}\n\nCompra, trova o prepara alimenti commestibili per bambini. Ciò include {2}.</AlertLowBabyFoodDesc>
-  
+  <!-- EN: No baby feeders -->
   <AlertNoBabyFeeder>Nessuna mangiatoia per bambini</AlertNoBabyFeeder>
-  
+  <!-- EN: No {FACTION_pawnsPlural} are assigned to feed these babies, or they're all downed.\n\nAssign one of your {FACTION_pawnsPlural} to childcare or assign a lactating {FACTION_pawnSingular} to feed these babies with Urgent priority in the babies' feeding tab, and ensure at least one of them is not downed. -->
   <AlertNoBabyFeederDesc>Nessun {FACTION_pawnsPlural} viene assegnato per nutrire questi bambini, altrimenti verranno tutti abbattuti.\n\nAssegna uno dei tuoi {FACTION_pawnsPlural} all'assistenza all'infanzia o assegna un {FACTION_pawnSingular} in allattamento per nutrire questi bambini con priorità Urgente nella scheda Alimentazione dei bambini e assicurati che almeno uno di essi non venga abbattuto.</AlertNoBabyFeederDesc>
-  
-  <AlertAbandonedBaby>Bambino abbandonato</AlertAbandonedBaby> 
-  
-  <AlertAbandonedBabyDesc>Ci sono bambini abbandonati nelle vicinanze senza che si prendano cura di loro. Se non adotti i bambini, è probabile che moriranno di fame.\n\nPer adottare un bambino, selezionalo e poi seleziona "{0}".</AlertAbandonedBabyDesc> 
+  <!-- EN: Abandoned baby -->
+  <AlertAbandonedBaby>Bambino abbandonato</AlertAbandonedBaby>
+  <!-- EN: There are abandoned babies nearby with no closeby caregivers.  If you don't adopt the babies, they'll probably starve to death.\n\nTo adopt a baby, select it and then select "{0}". -->
+  <AlertAbandonedBabyDesc>Ci sono bambini abbandonati nelle vicinanze senza che si prendano cura di loro. Se non adotti i bambini, è probabile che moriranno di fame.\n\nPer adottare un bambino, selezionalo e poi seleziona "{0}".</AlertAbandonedBabyDesc>
 
-  
+  <!-- EN: No baby food in caravan -->
   <AlertNoBabyFoodCaravan>Nessun cibo per bambini nella roulotte</AlertNoBabyFoodCaravan>
-  
+  <!-- EN: Babies on this caravan have no baby food and no lactating {FACTION_pawnsPlural} are set to feed them. -->
   <AlertNoBabyFoodCaravanDesc>I bambini su questa roulotte non hanno alimenti per bambini e non è previsto alcun allattamento da parte di {FACTION_pawnsPlural} per dar loro da mangiare.</AlertNoBabyFoodCaravanDesc>
 
-  
+  <!-- EN: Toxic buildup -->
   <AlertToxicBuildup>Accumulo tossico</AlertToxicBuildup>
-  
+  <!-- EN: These colonists have serious toxic buildup:\n\n{0}\n\nMove them away from toxic sources.\n\nToxic buildup can be caused by many things including toxic fallout, tox gas, and polluted terrain. -->
   <AlertToxicBuildupDesc>Questi coloni presentano un grave accumulo di sostanze tossiche:\n\n{0}\n\nAllontanali dalle fonti tossiche.\n\nL'accumulo di sostanze tossiche può essere causato da molte cose, tra cui ricadute tossiche, gas tossici e terreno inquinato.</AlertToxicBuildupDesc>
 
-  
+  <!-- EN: Need baby cribs -->
   <AlertNeedBabyCribs>Hai bisogno di culle per bambini</AlertNeedBabyCribs>
-  
+  <!-- EN: You have more babies than cribs.\n\nMake more cribs or, if you have no resources to spare, place some baby sleeping spots for free. -->
   <AlertNeedBabyCribsDesc>Hai più bambini che culle.\n\nCrea più culle o, se non hai risorse da spendere, posiziona gratuitamente dei posti letto per i bambini.</AlertNeedBabyCribsDesc>
-  
+  <!-- EN: Need slave cribs -->
   <AlertNeedSlaveCribs>Hai bisogno di culle per schiavi</AlertNeedSlaveCribs>
-  
+  <!-- EN: You have more slave babies than you have cribs marked for slave use.\n\nEither make more cribs or change a colonist crib to a slave crib.\n\nIf you have no resources, baby sleeping spots are free and can be placed instantly. -->
   <AlertNeedSlaveCribsDesc>Hai più bambini schiavi che culle contrassegnate per l'uso da schiavi.\n\nCrea più culle o trasforma una culla di coloni in una culla per schiavi.\n\nSe non hai risorse, i posti letto per bambini sono gratuiti e possono essere posizionati immediatamente .</AlertNeedSlaveCribsDesc>
 
-  
+  <!-- EN: Polluted terrain -->
   <AlertPollutedTerrain>Terreno inquinato</AlertPollutedTerrain>
-  
+  <!-- EN: A person or animal is suffering toxic buildup and is on polluted terrain. Any time someone is on polluted terrain, their toxic buildup will increase over time until they die.\n\nThese people or animals are affected:\n\n{0}\n\nKeep people off polluted terrain, or find a way to protect them from its effects. Certain apparel, implants and gene modifications can protect from toxic buildup. Polluted terrain cannot be covered using a floor, but it can be cleaned by hand and other methods. -->
   <AlertPollutedTerrainDesc>Una persona o un animale soffre di accumuli tossici e si trova su un terreno inquinato. Ogni volta che qualcuno si trova su un terreno inquinato, il suo accumulo di sostanze tossiche aumenterà nel tempo fino alla morte.\n\nQueste persone o animali ne sono colpiti:\n\n{0}\n\nTenere le persone lontane dal terreno inquinato o trovare un modo per proteggerli dai suoi effetti. Alcuni indumenti, impianti e modifiche genetiche possono proteggere dall’accumulo di sostanze tossiche. Il terreno inquinato non può essere coperto con un pavimento, ma può essere pulito a mano o con altri metodi.</AlertPollutedTerrainDesc>
 
-  
+  <!-- EN: Mechanoid missing part -->
   <AlertMechMissingBodyPart>Parte mancante del meccanoide</AlertMechMissingBodyPart>
-  
+  <!-- EN: Mechanoids missing parts -->
   <AlertMechsMissingBodyPart>Parti mancanti dei meccanoidi</AlertMechsMissingBodyPart>
-  
+  <!-- EN: One or more of your mechanoids are missing a body part. A mechanitor can repair lost parts.\n\nThe mechanoids with lost body parts are -->
   <AlertMechMissingBodyPartDesc>A uno o più dei tuoi meccanoidi manca una parte del corpo. Un mechanitor può riparare le parti perdute.\n\nI meccanoidi con parti del corpo perdute lo sono</AlertMechMissingBodyPartDesc>
 
-  
+  <!-- EN: Mechanoid repair needed -->
   <AlertMechNeedsRepair>È necessaria la riparazione del meccanoide</AlertMechNeedsRepair>
-  
+  <!-- EN: These mechanoids are damaged and need repair -->
   <AlertMechNeedsRepairDescPrefix>Questi meccanoidi sono danneggiati e necessitano di riparazione</AlertMechNeedsRepairDescPrefix>
-  
+  <!-- EN: Order a mechanitor to repair them, or select the mech and turn on auto-repair. Repairing a mechanoid requires energy. If a mechanoid's energy is so low it can't move, someone must carry it to a recharger. -->
   <AlertMechNeedsRepairDesc>Ordina a un mechanitor di ripararli oppure seleziona il mech e attiva la riparazione automatica. Riparare un meccanoide richiede energia. Se l'energia di un meccanoide è così bassa da non potersi muovere, qualcuno deve trasportarlo per ricaricarlo.</AlertMechNeedsRepairDesc>
   
-  
+  <!-- EN: {0} stopped -->
   <AlertToxifierGeneratorStopped>{0} si è fermato</AlertToxifierGeneratorStopped>
-  
+  <!-- EN: Your {0} is not producing power because it has no nearby fertile terrain to convert.\n\nClean polluted terrain with pollution pumps, or by assigning a pollution removal area. -->
   <AlertToxifierGeneratorStoppedDesc>Il tuo {0} non produce energia perché non ha terreno fertile nelle vicinanze da convertire.\n\nPulisci il terreno inquinato con pompe antinquinamento o assegnando un'area di rimozione dell'inquinamento.</AlertToxifierGeneratorStoppedDesc>
 
-  
+  <!-- EN: Psychic bond distance -->
   <AlertPsychicBondedPawnsSeparated>Distanza del legame psichico</AlertPsychicBondedPawnsSeparated>
-  
+  <!-- EN: Some colonists with psychic bonds have been separated and are feeling negative effects from the distance. To avoid this, people with a psychic bond must be in the same world tile, caravan, or vehicle. Additionally, they must not be in cryptosleep or similar suspended animation.\n\nThe following people are affected -->
   <AlertPsychicBondedPawnsSeparatedDesc>Alcuni coloni con legami psichici sono stati separati e avvertono gli effetti negativi della distanza. Per evitare ciò, le persone con un legame psichico devono trovarsi nella stessa tessera mondo, roulotte o veicolo. Inoltre, non devono essere in criptosonno o in un'animazione sospesa simile.\n\nSono interessate le seguenti persone</AlertPsychicBondedPawnsSeparatedDesc>
 
-  
+  <!-- EN: Gene bank needs power -->
   <AlertGenebankUnpowered>La banca genetica ha bisogno di energia</AlertGenebankUnpowered>
-  
+  <!-- EN: A gene bank is unpowered, so the genepacks inside it are slowly deteriorating. Restore power to the gene bank to prevent the genepacks from deteriorating.\n\nOnce the gene bank is powered, it will slowly reverse the deterioration of the genepacks inside it. -->
   <AlertGenebankUnpoweredDesc>Una banca genetica non è alimentata, quindi i pacchetti genetici al suo interno si stanno lentamente deteriorando. Ripristina l'energia alla banca dei geni per evitare che i pacchetti genetici si deteriorino.\n\nUna volta alimentata la banca dei geni, invertirà lentamente il deterioramento dei pacchetti genetici al suo interno.</AlertGenebankUnpoweredDesc>
 
-  
+  <!-- EN: {0} incoming -->
   <AlertBossgroupIncoming>{0} in arrivo</AlertBossgroupIncoming>
-  
+  <!-- EN: Signaled by your mechanitor, a hostile {0} is approaching with its combat escort. Be prepared, this won't be an easy fight. The hostile mechanoids will arrive in a few hours or days. -->
   <AlertBossgroupIncomingDesc>Segnalato dal tuo mechanitor, un {0} ostile si sta avvicinando con la sua scorta da combattimento. Preparatevi, non sarà una battaglia facile. I meccanoidi ostili arriveranno tra poche ore o giorni.</AlertBossgroupIncomingDesc>
 
-  
+  <!-- EN: Deathrest complete -->
   <AlertDeathrestComplete>Deathrest completato</AlertDeathrestComplete>
-  
+  <!-- EN: The following people have completed their deathrest and can wake up safely -->
   <AlertDeathrestCompleteDesc>Le seguenti persone hanno completato il loro riposo mortale e possono risvegliarsi in sicurezza</AlertDeathrestCompleteDesc>
 
 </LanguageData>

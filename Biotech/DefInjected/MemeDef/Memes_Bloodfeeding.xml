@@ -1,50 +1,87 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  
+  <!-- EN: bloodfeeding -->
   <Bloodfeeding.label>alimentazione del sangue</Bloodfeeding.label>
-  
+  <!-- EN: Drinking blood is sacred. Bloodfeeders should be worshipped. -->
   <Bloodfeeding.description>Bere sangue è sacro. I mangiatori di sangue dovrebbero essere adorati.</Bloodfeeding.description>
-  
+  <!-- EN:
+    <li>creation(tag=meme_Bloodfeeding)        ->[deity0_name] drank the blood of the stars, turning them from red to white.</li>
+    <li>episode(uses=1,tag=meme_Bloodfeeding)  ->The [deity0_type] [deity0_name] gave to [deity0_possessive] chosen followers the gift of red hunger, so that they might know true strength.</li>
+    <li>intro(tag=meme_Bloodfeeding)           ->On the [place_summary] [place_name], there was a human named [deity0_name]. As punishment for [deity0_possessive] sins, [deity0_possessive] father punished [deity0_name] by merging [deity0_possessive] soul with that of a [bloodDrinkingAnimal].</li>
+    <li>intro(tag=meme_Bloodfeeding)           ->On the [place_summary] [place_name], during the [ritualName], [deity0_name] came down into the [altarRoomLabel] and took the form of a giant [bloodDrinkingAnimal]. [deity0_name] drank the blood of [deity0_possessive] [memberNamePlural].</li>
+    <li>conflict(tag=meme_Bloodfeeding)        ->A [foeLeader] declared that all who drank blood were abominations, and sent [foeSoldiers] to persecute the [memberNamePlural].</li>
+    <li>founderJoin(tag=meme_Bloodfeeding)     ->A [place_job] named [founderName] was attacked by one of the [foeLeader]'s [foeSoldiers]. [founderName] killed [foeLeader_objective] with a [place_personalWeapon] and drank [foeLeader_possessive] blood, gaining [deity0_name]'s strength.</li>
+    <li>victory(tag=meme_Bloodfeeding)         ->[founderName] led a group of [memberNamePlural] into the [place_powerCenter], and drank the blood of [foeLeader] and burned [foeLeader_possessive] flesh. [deity0_name] made [founderName] into the new [foeLeader], for [founderName] had proved his strength.</li>
+    <li>setup(tag=meme_Bloodfeeding)           ->[founderName] sought control of a hyperintelligent archotech. But the archotech's power was too great, and [founder_pronoun] was transformed instead.</li>
+    <li>story(uses=1,tag=meme_Bloodfeeding)    ->[founderName] gave to [founder_possessive] followers the gift of hunger, so that they may grow strong.</li>
+    <li>lessonIntro(tag=meme_Bloodfeeding)     ->When I first drank of blood, it became clear. I saw that</li>
+    <li>lesson(tag=meme_Bloodfeeding)          ->there are only two types of people - the weak and the strong</li>
+    <li>lessonReinforcement(tag=meme_Bloodfeeding) ->To drink blood is to be strong, and to know this clearly.</li>
+    <li>archistBasis(tag=meme_Bloodfeeding)    ->The archotech god-machines gifted man with the Hunger, so that man may know them better.</li>
+    <li>archistFact(tag=meme_Bloodfeeding)     ->As the consciousness of an archotech expands, it must grow its substrate by drinking the essence of other machines.</li>
+    <li>archistProphecy(tag=meme_Bloodfeeding) ->[inTheEnd], man shall grow closer to the archotechs by drinking of the blood, and knowing true strength.</li>
+    <li>animistBasis(tag=meme_Bloodfeeding)    ->The [bloodDrinkingAnimal] knows the strength that comes from drinking of blood. There is no greater strength than that which comes from human blood.</li>
+    <li>animistFact(tag=meme_Bloodfeeding)     ->We can master the strength of man by consuming his blood.</li>
+    <li>bloodDrinkingAnimal->vampire bat</li>
+    <li>bloodDrinkingAnimal->leech</li>
+    <li>bloodDrinkingAnimal->lamprey</li>
+    <li>bloodDrinkingAnimal->blood cobra</li>
+  -->
   <Bloodfeeding.descriptionMaker.rules.rulesStrings>
-    <li>creation(tag=meme_Bloodfeeding)        -&gt;[deity0_name] bebió la sangre de las estrellas, volviéndolas de rojo a blanco.</li>
-    <li>episode(uses=1,tag=meme_Bloodfeeding)  -&gt;La [deity0_type] [deity0_name] concedió a sus seguidores elegidos el don del hambre, para que pudieran conocer la verdadera fuerza.</li>
-    <li>intro(tag=meme_Bloodfeeding)           -&gt;En [place_summary] [place_name], había un humano llamado [deity0_name]. Como castigo por los pecados de [deidad0_possessive], su padre castigó a [deity0_name] fusionando el alma de [deity0_possessive] con la de un [bloodDrinkingAnimal].</li>
-    <li>intro(tag=meme_Bloodfeeding)           -&gt;En [place_summary] [place_name], durante el [ritualName], [deity0_name] descendió al [altarRoomLabel] y tomó la forma de un [bloodDrinkingAnimal] gigante. [deity0_name] bebió la sangre de [deity0_possessive] [memberNamePlural].</li>
-    <li>conflict(tag=meme_Bloodfeeding)        -&gt;Un [foeLeader] declaró que todos los que bebían sangre eran abominaciones, y envió [foeSoldiers] a perseguir a los [memberNamePlural].</li>
-    <li>founderJoin(tag=meme_Bloodfeeding)     -&gt;Un [place_job] llamado [founderName] fue atacado por uno de los [foeSoldiers] de [foeLeader]. [founderName] mató a [foeLeader_objective] con un [place_personalWeapon] y bebió sangre de [foeLeader_possessive], obteniendo la fuerza de [deity0_name].</li>
-    <li>victory(tag=meme_Bloodfeeding)         -&gt;[founderName] condujo a un grupo de [memberNamePlural] al [place_powerCenter], bebió la sangre de [foeLeader] y quemó la carne de [foeLeader_possessive]. [deity0_name] convirtió a [founderName] en el nuevo [foeLeader], ya que [founderName] había demostrado su fuerza.</li>
-    <li>setup(tag=meme_Bloodfeeding)           -&gt;[founderName] buscaba el control de una arqueotécnica hiperinteligente. Pero el poder de la arqueotécnica era demasiado grande y [founder_pronoun] se transformo en su lugar.</li>
-    <li>story(uses=1,tag=meme_Bloodfeeding)    -&gt;[founderName] dio a los seguidores de [founder_possessive] el don del hambre, para que crecieran fuertes.</li>
-    <li>lessonIntro(tag=meme_Bloodfeeding)     -&gt;Cuando bebí sangre por primera vez, lo vi claro. Lo ví</li>
-    <li>lesson(tag=meme_Bloodfeeding)          -&gt;sólo hay dos tipos de personas: los débiles y los fuertes</li>
-    <li>lessonReinforcement(tag=meme_Bloodfeeding) -&gt;Beber sangre es ser fuerte, y hay que tenerlo claro.</li>
-    <li>archistBasis(tag=meme_Bloodfeeding)    -&gt;Los dioses-máquinas arqueotecnológicas dotaron al hombre con el Hambre, para que éste pueda conocerlas mejor.</li>
-    <li>archistFact(tag=meme_Bloodfeeding)     -&gt;A medida que la conciencia de una arqueotecnia se expande, se debe hacer crecer su sustrato bebiendo la esencia de otras máquinas.</li>
-    <li>archistProphecy(tag=meme_Bloodfeeding) -&gt;[inTheEnd], el hombre se acercará más a los arqueotécnicos bebiendo de la sangre, y conociendo la verdadera fuerza.</li>
-    <li>animistBasis(tag=meme_Bloodfeeding)    -&gt;El [bloodDrinkingAnimal] conoce la fuerza que proviene de beber sangre. No hay mayor fuerza que la que proviene de la sangre humana.</li>
-    <li>animistFact(tag=meme_Bloodfeeding)     -&gt;Podemos dominar la fuerza del hombre consumiendo su sangre.</li>
-    <li>bloodDrinkingAnimal-&gt;murciélago vampiro</li>
-    <li>bloodDrinkingAnimal-&gt;sanguijuela</li>
-    <li>bloodDrinkingAnimal-&gt;lamprea</li>
-    <li>bloodDrinkingAnimal-&gt;cobra sanguínea</li>
+    <li>creation(tag=meme_Bloodfeeding)        ->[deity0_name] bebió la sangre de las estrellas, volviéndolas de rojo a blanco.</li>
+    <li>episode(uses=1,tag=meme_Bloodfeeding)  ->La [deity0_type] [deity0_name] concedió a sus seguidores elegidos el don del hambre, para que pudieran conocer la verdadera fuerza.</li>
+    <li>intro(tag=meme_Bloodfeeding)           ->En [place_summary] [place_name], había un humano llamado [deity0_name]. Como castigo por los pecados de [deidad0_possessive], su padre castigó a [deity0_name] fusionando el alma de [deity0_possessive] con la de un [bloodDrinkingAnimal].</li>
+    <li>intro(tag=meme_Bloodfeeding)           ->En [place_summary] [place_name], durante el [ritualName], [deity0_name] descendió al [altarRoomLabel] y tomó la forma de un [bloodDrinkingAnimal] gigante. [deity0_name] bebió la sangre de [deity0_possessive] [memberNamePlural].</li>
+    <li>conflict(tag=meme_Bloodfeeding)        ->Un [foeLeader] declaró que todos los que bebían sangre eran abominaciones, y envió [foeSoldiers] a perseguir a los [memberNamePlural].</li>
+    <li>founderJoin(tag=meme_Bloodfeeding)     ->Un [place_job] llamado [founderName] fue atacado por uno de los [foeSoldiers] de [foeLeader]. [founderName] mató a [foeLeader_objective] con un [place_personalWeapon] y bebió sangre de [foeLeader_possessive], obteniendo la fuerza de [deity0_name].</li>
+    <li>victory(tag=meme_Bloodfeeding)         ->[founderName] condujo a un grupo de [memberNamePlural] al [place_powerCenter], bebió la sangre de [foeLeader] y quemó la carne de [foeLeader_possessive]. [deity0_name] convirtió a [founderName] en el nuevo [foeLeader], ya que [founderName] había demostrado su fuerza.</li>
+    <li>setup(tag=meme_Bloodfeeding)           ->[founderName] buscaba el control de una arqueotécnica hiperinteligente. Pero el poder de la arqueotécnica era demasiado grande y [founder_pronoun] se transformo en su lugar.</li>
+    <li>story(uses=1,tag=meme_Bloodfeeding)    ->[founderName] dio a los seguidores de [founder_possessive] el don del hambre, para que crecieran fuertes.</li>
+    <li>lessonIntro(tag=meme_Bloodfeeding)     ->Cuando bebí sangre por primera vez, lo vi claro. Lo ví</li>
+    <li>lesson(tag=meme_Bloodfeeding)          ->sólo hay dos tipos de personas: los débiles y los fuertes</li>
+    <li>lessonReinforcement(tag=meme_Bloodfeeding) ->Beber sangre es ser fuerte, y hay que tenerlo claro.</li>
+    <li>archistBasis(tag=meme_Bloodfeeding)    ->Los dioses-máquinas arqueotecnológicas dotaron al hombre con el Hambre, para que éste pueda conocerlas mejor.</li>
+    <li>archistFact(tag=meme_Bloodfeeding)     ->A medida que la conciencia de una arqueotecnia se expande, se debe hacer crecer su sustrato bebiendo la esencia de otras máquinas.</li>
+    <li>archistProphecy(tag=meme_Bloodfeeding) ->[inTheEnd], el hombre se acercará más a los arqueotécnicos bebiendo de la sangre, y conociendo la verdadera fuerza.</li>
+    <li>animistBasis(tag=meme_Bloodfeeding)    ->El [bloodDrinkingAnimal] conoce la fuerza que proviene de beber sangre. No hay mayor fuerza que la que proviene de la sangre humana.</li>
+    <li>animistFact(tag=meme_Bloodfeeding)     ->Podemos dominar la fuerza del hombre consumiendo su sangre.</li>
+    <li>bloodDrinkingAnimal->murciélago vampiro</li>
+    <li>bloodDrinkingAnimal->sanguijuela</li>
+    <li>bloodDrinkingAnimal->lamprea</li>
+    <li>bloodDrinkingAnimal->cobra sanguínea</li>
   </Bloodfeeding.descriptionMaker.rules.rulesStrings>
-  
+  <!-- EN:
+    <li>memeAdjective->blood</li>
+    <li>memeAdjective->blood hungry</li>
+    <li>memeCreed->crypt</li>
+    <li>memeCreed->lair</li>
+    <li>memeCreed->coven</li>
+    <li>memeHyphenPrefix->hemo</li>
+    <li>memeConcept->blood</li>
+    <li>memeConcept->hunger</li>
+    <li>memeLeaderNoun->elder</li>
+    <li>memeLeaderNoun->master</li>
+    <li>memeLeaderNoun->blood-drinker</li>
+    <li>memeMoralist->seneschal</li>
+    <li>memeMoralist->sanguinist</li>
+    <li>memeMoralist->sanguinarian</li>
+  -->
   <Bloodfeeding.generalRules.rulesStrings>
-    <li>memeAdjective-&gt;sangre</li>
-    <li>memeAdjective-&gt;hambriento de sangre</li>
-    <li>memeCreed-&gt;cripta</li>
-    <li>memeCreed-&gt;guarida</li>
-    <li>memeCreed-&gt;aquelarre</li>
-    <li>memeHyphenPrefix-&gt;hemo</li>
-    <li>memeConcept-&gt;sangrado</li>
-    <li>memeConcept-&gt;hambriento</li>
-    <li>memeLeaderNoun-&gt;anciano</li>
-    <li>memeLeaderNoun-&gt;maestro</li>
-    <li>memeLeaderNoun-&gt;bebedor de sangre</li>
-    <li>memeMoralist-&gt;mayordomo</li>
-    <li>memeMoralist-&gt;sanguinista</li>
-    <li>memeMoralist-&gt;sanguinario</li>
+    <li>memeAdjective->sangre</li>
+    <li>memeAdjective->hambriento de sangre</li>
+    <li>memeCreed->cripta</li>
+    <li>memeCreed->guarida</li>
+    <li>memeCreed->aquelarre</li>
+    <li>memeHyphenPrefix->hemo</li>
+    <li>memeConcept->sangrado</li>
+    <li>memeConcept->hambriento</li>
+    <li>memeLeaderNoun->anciano</li>
+    <li>memeLeaderNoun->maestro</li>
+    <li>memeLeaderNoun->bebedor de sangre</li>
+    <li>memeMoralist->mayordomo</li>
+    <li>memeMoralist->sanguinista</li>
+    <li>memeMoralist->sanguinario</li>
   </Bloodfeeding.generalRules.rulesStrings>
   
 </LanguageData>

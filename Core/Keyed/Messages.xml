@@ -13,6 +13,9 @@
   <!-- EN: {0} from {1} have decided to steal what they can and leave. -->
   <MessageRaidersStealing>I {0} provenienti da {1} hanno deciso di rubare qualsiasi cosa potevano ed andarsene.</MessageRaidersStealing>
 
+  <!-- EN: The mechanoids sense no more targets and are moving on. -->
+  <MechanoidsMovingOn>TODO</MechanoidsMovingOn>
+
   <!-- EN: {0} from {1} have arrived and are attacking! More are on the way and will arrive in {2}. -->
   <MessageCaravanDetectedRaidArrived>{0} da {1} sono arrivati nell'area della tua carovana e stanno attaccando. Altri sono in arrivo e arriveranno tra {2}.</MessageCaravanDetectedRaidArrived>
 
@@ -34,6 +37,10 @@
   <MessageVisitorsTrappedLeaving>I {0} provenienti da {1} sono rimasti intrappolati e si stanno scavando per fuggire.</MessageVisitorsTrappedLeaving>
   <!-- EN: {0} from {1} are leaving the map because of dangerous temperature. -->
   <MessageVisitorsDangerousTemperature>I {0} provenienti da {1} stanno lasciando la zona a causa delle temperature proibitive.</MessageVisitorsDangerousTemperature>
+  <!-- EN: {0} from {1} are leaving the map because of dangerous weather. -->
+  <MessageVisitorsAnomalousWeather>TODO</MessageVisitorsAnomalousWeather>
+  <!-- EN: {0} from {1} are leaving the map because of dangerous conditions. -->
+  <MessageVisitorsDangerousConditions>TODO</MessageVisitorsDangerousConditions>
 
   <!-- EN: {0} worn by {1_nameFull} deteriorated away to nothing. -->
   <MessageWornApparelDeterioratedAway>{0} indossat{0_gender ? o : a : o} da {1} si è deteriorato del tutto.</MessageWornApparelDeterioratedAway>
@@ -74,6 +81,10 @@
   <MessageAnimalManhuntsOnTameFailed>Attenzione: {ANIMAL_kindBasePlural} potrebbero attaccare in seguito ad un tentativo fallito di addomesticamento ({1} di probabilità).</MessageAnimalManhuntsOnTameFailed>
   <!-- EN: Only those with the insect sympathy trait can tame {INSECT_indefinite}. -->
   <MessageInsectTameDesignated>Solo chi possiede il tratto di simpatia per gli insetti può domare {INSECT_indefinite}.</MessageInsectTameDesignated>
+  <!-- EN: No colonists are assigned to hunt. -->
+  <MessageNoHuntersAvailable>TODO</MessageNoHuntersAvailable>
+  <!-- EN: No hunter has a valid hunting weapon. Equip a hunter with a suitable ranged weapon. -->
+  <MessageNoHuntersWithProperWeapon>TODO</MessageNoHuntersWithProperWeapon>
 
   <!-- EN: Warning: The {PAWN_labelShort} is hostile and will attack while your colonist tries to tame it. -->
   <MessageInsectsHostileOnTaming>Il {PAWN_labelShort} è ostile e attaccherà mentre il vostro colono cerca di domarlo.</MessageInsectsHostileOnTaming>
@@ -103,6 +114,8 @@
   <MessageMustDesignateHarvestable>Devi selezionare colture da raccogliere sufficientemente mature.</MessageMustDesignateHarvestable>
   <!-- EN: Must designate wood-yielding, sufficiently-grown plants. -->
   <MessageMustDesignateHarvestableWood>Devi selezionare colture da legno sufficientemente mature.</MessageMustDesignateHarvestableWood>
+  <!-- EN: Prevent cutting is enabled for this plant. -->
+  <MessageMustPlantCuttingForbidden>TODO</MessageMustPlantCuttingForbidden>
   <!-- EN: Must designate plants. -->
   <MessageMustDesignatePlants>Devi selezionare colture.</MessageMustDesignatePlants>
   <!-- EN: Must designate haulable items. Some items are always haulable and can't be designated. -->
@@ -125,6 +138,10 @@
   <MessageMustDesignateDeconstructibleMechCluster>Devi sconfiggere un gruppo di Mechanoidi prima di poterlo smantellare.</MessageMustDesignateDeconstructibleMechCluster>
   <!-- EN: Must designate rough stone surfaces. -->
   <MessageMustDesignateSmoothableSurface>Devi selezionare superfici di roccia grezza.</MessageMustDesignateSmoothableSurface>
+  <!-- EN: Must designate rough stone terrain. -->
+  <MessageMustDesignateSmoothableFloor>TODO</MessageMustDesignateSmoothableFloor>
+  <!-- EN: Must designate rough stone wall. -->
+  <MessageMustDesignateSmoothableWall>TODO</MessageMustDesignateSmoothableWall>
   <!-- EN: Nothing can remove thick roofs. -->
   <MessageNothingCanRemoveThickRoofs>I soffitti spessi non possono essere rimossi.</MessageNothingCanRemoveThickRoofs>
   <!-- EN: This is already in storage and will be moved to high-priority storage as necessary. -->
@@ -140,9 +157,15 @@
   <!-- EN: Must designate forbidden items. -->
   <MessageMustDesignateUnforbiddable>Devi selezionare oggetti vietati.</MessageMustDesignateUnforbiddable>
   <!-- EN: Cannot claim {CLAIMABLE_labelShort} while there are combat-capable {THREAT_factionPawnsPlural} nearby. -->
-  <MessageCannotClaimWhenThreatsAreNear>Non si può reclamare {CLAIMABLE_labelShort} quando ci sono {THREAT_factionPawnsPlural} con capacità di combattimento nelle vicinanze.</MessageCannotClaimWhenThreatsAreNear>
+  <MessageCannotClaimWhenPawnThreatsAreNear>TODO</MessageCannotClaimWhenPawnThreatsAreNear>
   <!-- EN: Cannot adopt {CLAIMABLE_labelShort} while there are combat-capable {THREAT_factionPawnsPlural} nearby. -->
+  <MessageCannotAdoptWhilePawnThreatsAreNear>TODO</MessageCannotAdoptWhilePawnThreatsAreNear>
+  <!-- EN: Cannot claim {CLAIMABLE_labelShort} while there is {THREAT} nearby. -->
+  <MessageCannotClaimWhenThreatsAreNear>Non si può reclamare {CLAIMABLE_labelShort} quando ci sono {THREAT_factionPawnsPlural} con capacità di combattimento nelle vicinanze.</MessageCannotClaimWhenThreatsAreNear>
+  <!-- EN: Cannot adopt {CLAIMABLE_labelShort} while there is {THREAT} nearby. -->
   <MessageCannotAdoptWhileThreatsAreNear>Non è possibile adottare {CLAIMABLE_labelShort} quando ci sono {THREAT_factionPawnsPlural} con capacità di combattimento nelle vicinanze.</MessageCannotAdoptWhileThreatsAreNear>
+  <!-- EN: Cannot remove foundation that supports a building. -->
+  <MessageCannotRemoveSupportingFoundation>TODO</MessageCannotRemoveSupportingFoundation>
 
   <!-- EN: {1_labelShort} has refused to be arrested! -->
   <MessageRefusedArrest>{1_labelShort} ha rifiutato di farsi arrestare!</MessageRefusedArrest>
@@ -186,7 +209,7 @@
   <!-- EN: {PAWN_labelShort} has exceeded the normal limit of neural heat. -->
   <MessageWentOverPsychicEntropyLimit>{PAWN_labelShort} ha superato il limite normale di calore neurale.</MessageWentOverPsychicEntropyLimit>
 
-  <!-- EN: No handler can tame {ANIMAL_kindBase} (requires level {1} in {2}, best handler {HANDLER_labelShort} has {4}). -->
+  <!-- EN: No handler capable of taming {ANIMAL_kindBase} (requires level {1} in {2}, best capable handler {HANDLER_labelShort} has {4}). -->
   <MessageNoHandlerSkilledEnough>Nessun istruttore può addomesticare {ANIMAL_kindBase} (livello richiesto {1} su {2}, il miglior istruttore {HANDLER_labelShort} ha {4}).</MessageNoHandlerSkilledEnough>
   
   <!-- EN: {EATEN_labelShort} has been eaten by {PREDATOR}. -->
@@ -202,7 +225,9 @@
   
   <!-- EN: The trade caravan from {0} is leaving. -->
   <MessageTraderCaravanLeaving>La carovana commerciale proveniente da {0} sta partendo.</MessageTraderCaravanLeaving>
-  
+  <!-- EN: The trade caravan from {0} has been dismissed. -->
+  <MessageTraderCaravanDismissed>TODO</MessageTraderCaravanDismissed>
+
   <!-- EN: {1_labelShort} is dead. -->
   <MessageCantSelectDeadPawn>{1_labelShort} è mort{1_gender ? o : a : o}.</MessageCantSelectDeadPawn>
   <!-- EN: {1_labelShort} is off the map. -->
@@ -268,6 +293,8 @@
   <MessagePawnLostWhileFormingCaravan>{0} è stato rimosso dalla carovana.</MessagePawnLostWhileFormingCaravan>
   <!-- EN: The caravan formation process has been terminated. -->
   <MessagePawnLostWhileFormingCaravan_AllLost>La formazione della carovana è stata annullata.</MessagePawnLostWhileFormingCaravan_AllLost>
+  <!-- EN: No colonist capable of forming caravan. The caravan formation process has been terminated. -->
+  <MessageForceSendingCaravan_AllLost>TODO</MessageForceSendingCaravan_AllLost>
   <!-- EN: The caravan formation process will continue when everyone recovers from their mental break. -->
   <MessageCaravanFormationPaused>La formazione della carovana proseguirà fino a quando tutti non si saranno ripresi dai loro crolli mentali.</MessageCaravanFormationPaused>
   <!-- EN: Your colonists will now continue forming a caravan. -->
@@ -329,9 +356,11 @@
   
   <!-- EN: Assigned items and people will now be loaded into the transport pods. -->
   <MessageTransportersLoadingProcessStarted>I tuoi coloni caricheranno gli oggetti selezionati nelle capsule di trasporto.</MessageTransportersLoadingProcessStarted>
-  <!-- EN: Assigned items and people will now be loaded into the shuttle. -->
+  <!-- EN: Assigned items and people will now be loaded into the transport pod. -->
   <MessageTransporterSingleLoadingProcessStarted>Gli oggetti e le persone assegnati verranno ora caricati sulla navetta.</MessageTransporterSingleLoadingProcessStarted>
-  
+  <!-- EN: Assigned items and people will now be loaded into the shuttle. -->
+  <MessageShuttleLoadingProcessStarted>TODO</MessageShuttleLoadingProcessStarted>
+
   <!-- EN: Your transport pods have arrived. -->
   <MessageTransportPodsArrived>Le tue capsule di trasporto sono arrivate.</MessageTransportPodsArrived>
   <!-- EN: Your transport pods have arrived, but since there were no colonists inside, the contents are lost. -->
@@ -341,14 +370,20 @@
   
   <!-- EN: Transport pod loading complete. Launch when ready. -->
   <MessageFinishedLoadingTransporters>I tuoi coloni hanno completato il caricamento delle capsule di trasporto.</MessageFinishedLoadingTransporters>
-  <!-- EN: Shuttle is loaded with required cargo and can launch when ready. -->
-  <MessageFinishedLoadingTransporterSingle>La navetta è caricata con il carico necessario ed è pronto a partire.</MessageFinishedLoadingTransporterSingle>
+  <!-- EN: {SHUTTLE_label} is loaded with required cargo and can launch when ready. -->
+  <MessageFinishedLoadingShuttle>TODO</MessageFinishedLoadingShuttle>
 
   <!-- EN: Your {1} can't finish loading the transport pods because some items or people became unavailable ({2_labelShort}). -->
   <MessageCantLoadMoreIntoTransporters>{1_gender ? Il : La : Lo} {1_gender ? tuo : tua : tuo} {1} non può completare il caricamento delle capsule di trasporto perché alcuni oggetti o persone non sono più disponibili ({2_labelShort}).</MessageCantLoadMoreIntoTransporters>
+  <!-- EN: Your {1} can't finish loading the shuttle because some items or people became unavailable ({2_labelShort}). -->
+  <MessageCantLoadMoreIntoShuttle>TODO</MessageCantLoadMoreIntoShuttle>
+  <!-- EN: Your {1} can't finish entering the {0} because some items or people became unavailable ({2_labelShort}). -->
+  <MessageCantLoadMoreIntoPortal>TODO</MessageCantLoadMoreIntoPortal>
   
   <!-- EN: Selected destination is invalid. -->
   <MessageTransportPodsDestinationIsInvalid>La destinazione selezionata non è valida.</MessageTransportPodsDestinationIsInvalid>
+  <!-- EN: {OBJECT_labelCap} is not a valid destination. -->
+  <MessageWorldObjectIsInvalid>TODO</MessageWorldObjectIsInvalid>
   <!-- EN: Each pod launcher would need at least {0}x chemfuel to send transport pods that far. -->
   <MessageTransportPodsDestinationIsTooFar>Ogni lanciacapsule ha bisogno di almeno {0}x di chemfuel per lanciare delle capsule di trasporto a quella distanza.</MessageTransportPodsDestinationIsTooFar>
   
@@ -394,9 +429,9 @@
   
   <!-- EN: {0} from {1} are attacking your {2}. -->
   <MessageDefendersAttacking>{0} provenienti da {1} stanno attaccando i tuoi {2}.</MessageDefendersAttacking>
-  <!-- EN: Mechanoids have been assembled and will defend their cluster. -->
+  <!-- EN: Mechanoids have been gestated and will defend their cluster. -->
   <MessageMechanoidsAssembled>I meccanoidi sono stati assemblati e difenderanno la loro base.</MessageMechanoidsAssembled>
-  <!-- EN: Remaining mechanoids to assemble -->
+  <!-- EN: Remaining mechanoids to gestate -->
   <MessageMechanoidsLeftToAssemble>Meccanoidi rimanenti da assemblare</MessageMechanoidsLeftToAssemble>
   <!-- EN: Mech drop beacon has summoned reinforcements in drop pods nearby. -->
   <MessageMechanoidsReinforcementsDrop>Il faro mech-drop ha chiamato rinforzi con capsule di trasporto nelle vicinanze.</MessageMechanoidsReinforcementsDrop>
@@ -563,6 +598,10 @@
   <MessageBillValidationPawnUnavailable>{0} non può più lavorare su "{1}" a {2}. La restrizione è stata rimossa.</MessageBillValidationPawnUnavailable>
   <!-- EN: {1}'s "{0}" can no longer count items in deleted stockpile {2}. -->
   <MessageBillValidationIncludeZoneDeleted>{0_gender ? Il : La : Lo} "{0}" di {1} non può più contare oggetti nel deposito eliminato {2}.</MessageBillValidationIncludeZoneDeleted>
+  <!-- EN: {1}'s "{0}" can no longer count items in deleted building {2}. -->
+  <MessageBillValidationIncludeBuildingDeleted>TODO</MessageBillValidationIncludeBuildingDeleted>
+  <!-- EN: {1}'s "{0}" can no longer count items in deleted storage group {2}. -->
+  <MessageBillValidationIncludeStorageGroupDeleted>TODO</MessageBillValidationIncludeStorageGroupDeleted>
   <!-- EN: {1}'s "{0}" can no longer count items in unavailable stockpile {2}. -->
   <MessageBillValidationIncludeZoneUnavailable>{0_gender ? Il : La : Lo} "{0}" di {1} non può più contare oggetti nel deposito non disponibile {2}.</MessageBillValidationIncludeZoneUnavailable>
   <!-- EN: {1}'s "{0}" can no longer deliver all products to stockpile {2}. -->
@@ -660,6 +699,12 @@
   <!-- EN: {0} assigned to {1_nameDef} was destroyed. -->
   <MessageBedDestroyed>{0} assegnato a {1_nomeDef} è stato distrutto.</MessageBedDestroyed>
 
+  <!-- Lord jobs -->
+  <!-- EN: You need {0_indefinite}. -->
+  <MessageLordJobNeedsAtLeastOneRolePawn>TODO</MessageLordJobNeedsAtLeastOneRolePawn>
+  <!-- EN: You need at least {1} {0}. -->
+  <MessageLordJobNeedsAtLeastNumRolePawn>TODO</MessageLordJobNeedsAtLeastNumRolePawn>
+
   <!-- Rituals -->
   <!-- EN: spectate -->
   <Spectate>spettatore</Spectate>
@@ -675,10 +720,6 @@
   <MessageRitualNeedsAtLeastOnePerson>È necessario almeno un partecipante.</MessageRitualNeedsAtLeastOnePerson>
   <!-- EN: You need at least one spectator. -->
   <MessageRitualNeedsAtLeastOneSpectator>È necessario almeno uno spettatore.</MessageRitualNeedsAtLeastOneSpectator>
-  <!-- EN: You need a {0}. -->
-  <MessageRitualNeedsAtLeastOneRolePawn>È necessario un {0}.</MessageRitualNeedsAtLeastOneRolePawn>
-  <!-- EN: You need at least {1} {0}. -->
-  <MessageRitualNeedsAtLeastNumRolePawn>È necessario almeno {1} {0}.</MessageRitualNeedsAtLeastNumRolePawn>
   <!-- EN: {0_labelShort} is downed. -->
   <MessageRitualPawnDowned>{0_labelShort} è stato abbattuto.</MessageRitualPawnDowned>
   <!-- EN: {0_labelShort} is currently escaping. -->
@@ -723,6 +764,8 @@
   <MessageRitualRoleMustBeCapableOfWardening>{0_labelShort} deve essere in grado di sorvegliare.</MessageRitualRoleMustBeCapableOfWardening>
   <!-- EN: {0} must be capable of {1}. -->
   <MessageRitualRoleMustBeCapableOfGeneric>{0} deve essere in grado di {1}.</MessageRitualRoleMustBeCapableOfGeneric>
+  <!-- EN: {0} must be capable of violence. -->
+  <MessageRitualRoleMustBeCapableOfViolence>TODO</MessageRitualRoleMustBeCapableOfViolence>
   <!-- EN: prisoners cannot {0}. -->
   <MessageRitualRoleMustNotBePrisonerToSpectate>i detenuti non possono {0}.</MessageRitualRoleMustNotBePrisonerToSpectate>
   <!-- EN: only {0} can {1}. -->
@@ -731,6 +774,8 @@
   <MessageRitualRoleMustHaveIdeoToDoRole>solo {0} può ricoprire il ruolo di {1}.</MessageRitualRoleMustHaveIdeoToDoRole>
   <!-- EN: must be colonist for the {0} role. -->
   <MessageRitualRoleMustBeColonist>deve essere un colono per il ruolo {0}.</MessageRitualRoleMustBeColonist>
+  <!-- EN: must not be a prisoner for the {0} role. -->
+  <MessageRitualRoleMustBeFree>TODO</MessageRitualRoleMustBeFree>
   <!-- EN: {0_labelShort} won't attend due to extreme temperature in the ritual area. -->
   <MessageRitualWontAttendExtremeTemperature>{0_labelShort} non parteciperà a causa della temperatura estrema nell'area del rituale.</MessageRitualWontAttendExtremeTemperature>
   <!-- EN: must be colonist and not enslaved for the {0} role. -->
@@ -751,6 +796,8 @@
   <MessageRitualRoleCannotBeChild>{0} non può essere un bambino.</MessageRitualRoleCannotBeChild>
   <!-- EN: {0} cannot be a baby. -->
   <MessageRitualRoleCannotBeBaby>{0} non può essere un cucciolo.</MessageRitualRoleCannotBeBaby>
+  <!-- EN: {0} is busy. -->
+  <MessageRitualRoleBusy>TODO</MessageRitualRoleBusy>
 
   <!-- EN: You must select a site to continue. -->
   <MessagePlayerMustSelectTile>Per continuare è necessario selezionare un sito.</MessagePlayerMustSelectTile>
@@ -759,6 +806,10 @@
   <CannotPlantThing>Non è possibile piantare {0_labelShort}</CannotPlantThing>
   <!-- EN: Need more fertile terrain. -->
   <MessageWarningNotEnoughFertility>Serve un terreno più fertile.</MessageWarningNotEnoughFertility>
+  <!-- EN: Temperature too extreme. -->
+  <CannotPlantExtremeTemp>TODO</CannotPlantExtremeTemp>
+  <!-- EN: Plants cannot grow on this terrain. -->
+  <CannotPlantMissingTerrainTag>TODO</CannotPlantMissingTerrainTag>
   <!-- EN: blocked by {0_label}. -->
   <BlockedBy>bloccato da {0_label}.</BlockedBy>
   <!-- EN: Cannot be planted next to {0_label}. -->
@@ -767,6 +818,8 @@
   <TooCloseToOtherPlant>Troppo vicino a {0_label}.</TooCloseToOtherPlant>
   <!-- EN: Too close to {0}'s planting location. -->
   <TooCloseToOtherSeedPlantCell>Troppo vicino al punto di impianto di {0}.</TooCloseToOtherSeedPlantCell>
+  <!-- EN: Cannot be placed on {0}. -->
+  <MessageCannotBePlacedOn>TODO</MessageCannotBePlacedOn>
 
   <!-- EN: Warning: {0} has been marked for cutting. -->
   <MessageWarningCutImportantPlant>Attenzione: {0} è stato contrassegnato per il taglio.</MessageWarningCutImportantPlant>
@@ -782,14 +835,42 @@
 
   <!-- EN: Storage settings linked for {0} buildings. -->
   <SettingsLinkedFor>Impostazioni di stoccaggio collegate per {0} edifici.</SettingsLinkedFor>
+  <!-- EN: Storage settings linked for 1 building. -->
+  <SettingsLinkedForSingular>TODO</SettingsLinkedForSingular>
   <!-- EN: Storage settings unlinked for {0} buildings. -->
   <SettingsUnlinkedFor>Impostazioni di stoccaggio scollegate per {0} edifici.</SettingsUnlinkedFor>
+  <!-- EN: Storage settings unlinked for 1 building. -->
+  <SettingsUnlinkedForSingular>TODO</SettingsUnlinkedForSingular>
   <!-- EN: Storage settings copied to clipboard. -->
   <StorageSettingsCopiedToClipboard>Impostazioni di stoccaggio copiate negli appunti.</StorageSettingsCopiedToClipboard>
   <!-- EN: Storage settings pasted from clipboard. -->
   <StorageSettingsPastedFromClipboard>Impostazioni di stoccaggio incollate dagli appunti.</StorageSettingsPastedFromClipboard>
+  
+  <!-- EN: {0_label} requires adjacent walls to function. -->
+  <MessageBuildingRequiresAdjacentWalls>TODO</MessageBuildingRequiresAdjacentWalls>
+
+  <!-- EN: Cannot skip: Refugee -->
+  <MessageLodgersCantFarskip>TODO</MessageLodgersCantFarskip>
+  
+  <!-- EN: {HACKER_nameDef}'s hacking has been detected. {HACKER_pronoun} has been locked out for {DURATION}. -->
+  <MessageHackerLockedOut>TODO</MessageHackerLockedOut>
+  <!-- EN: {HACKER_nameDef}'s hacking has been detected. {HACKER_pronoun} has been locked out permanently. -->
+  <MessageHackerLockedOutPermanently>TODO</MessageHackerLockedOutPermanently>
+  <!-- EN: {0_labelShort} can be hacked again. -->
+  <MessageHackableUnlocked>TODO</MessageHackableUnlocked>
+
+  <!-- EN: Cannot call shuttle -->
+  <CannotCallShuttle>Impossibile chiamare la navetta</CannotCallShuttle>
+  <!-- EN: The shuttle has arrived. -->
+  <MessageShuttleArrived>La navetta è arrivata.</MessageShuttleArrived>
+
+  <!-- EN: Warning: {THING_labelCap} will not function in this biome -->
+  <MessageGroundPenetratingScannerNoBedrock>TODO</MessageGroundPenetratingScannerNoBedrock>
 
   <!-- UNUSED -->
+  <MessageFinishedLoadingTransporterSingle>La navetta è caricata con il carico necessario ed è pronto a partire.</MessageFinishedLoadingTransporterSingle>
+  <MessageRitualNeedsAtLeastOneRolePawn>È necessario un {0}.</MessageRitualNeedsAtLeastOneRolePawn>
+  <MessageRitualNeedsAtLeastNumRolePawn>È necessario almeno {1} {0}.</MessageRitualNeedsAtLeastNumRolePawn>
   <MessageTooLowMedCare>L'intervento richiede {0} o superiore, ma le attuali capacità mediche di {PAWN_labelShort} sono "{2}".</MessageTooLowMedCare>
   <MessageNuzzledPawnGaveNameTo>{NAMER_nameFull} ha chiamato {1} {NAMEE_nameFull} dopo essere stat{NAMER_gender ? o : a : o} coccolat{NAMER_gender ? o : a : o}.</MessageNuzzledPawnGaveNameTo>
   <MessageSiteCountdownBecauseNoMoreEnemies>Hai sconfitto tutti i nemici. La carovana sarà riorganizzata automaticamente in {0}.</MessageSiteCountdownBecauseNoMoreEnemies>

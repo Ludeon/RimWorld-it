@@ -1,15 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  
-  <DecreeSetup.questDescriptionRules.rulesStrings>
-    </DecreeSetup.questDescriptionRules.rulesStrings>
-  
+  <!-- EN:
+    <li>decreeIntro->[asker_nameDef], your [asker_bestRoyalTitle], has issued a royal decree.</li>
+    <li>decreeThreatInfo->If you fail to fulfill this decree within [decreeDays] days, [asker_nameDef] will start to become unhappy. [asker_possessive] anger will increase over time until the decree is satisfied.</li>
+  -->
+  <DecreeSetup.questDescriptionRules.rulesStrings />
+  <!-- EN: [asker_nameDef]'s decree forgotten -->
   <DecreeSetup.LetterLabelDecreeForgotten.slateRef>decreto di [asker_nameDef] dimenticato</DecreeSetup.LetterLabelDecreeForgotten.slateRef>
-  
+  <!-- EN: [asker_nameDef] has forgotten about [asker_possessive] decree. -->
   <DecreeSetup.LetterTextDecreeForgotten.slateRef>[asker_nameDef] ha dimenticato il suo decreto.</DecreeSetup.LetterTextDecreeForgotten.slateRef>
-  
+  <!-- EN: Decree cancelled -->
   <DecreeSetup.LetterLabelDecreeCancelled.slateRef>Decreto annullato</DecreeSetup.LetterLabelDecreeCancelled.slateRef>
-  
+  <!-- EN: [asker_nameDef] has grudgingly cancelled the decree '[resolvedQuestName]' since it cannot be completed. -->
   <DecreeSetup.LetterTextDecreeCancelled.slateRef>[asker_nameDef] ha annullato a malincuore il decreto "[resolvedQuestName]" poiché non può essere completato.</DecreeSetup.LetterTextDecreeCancelled.slateRef>
+  
+  <!-- UNUSED -->
+  <DecreeSetup.questDescriptionRules.rulesStrings />
   
 </LanguageData>

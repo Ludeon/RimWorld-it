@@ -24,7 +24,7 @@
   <PsycastNeurotrainerDescription>Una superdose monouso di meccaniti che allena un potere psichico specifico.\n\nLa dose viene somministrata attraverso l'orbita dell'occhio. Una volta rilasciati nel cervello, i meccaniti formano la conoscenza di un'abilità specifica, trasmutandosi in tessuto neurale secondo necessità.</PsycastNeurotrainerDescription>
   <!-- EN: {USER_labelShort} used neurotrainer to learn the {1} power. -->
   <AbilityNeurotrainerUsed>{USER_labelShort} ha utilizzato il neurotrainer per apprendere l'abilità di {1}.</AbilityNeurotrainerUsed>
-  <!-- EN: Requires psylink -->
+  <!-- EN: requires psylink -->
   <PsycastNeurotrainerNoPsylink>Richiede psylink</PsycastNeurotrainerNoPsylink>
   <!-- EN: {USER_labelShort} already knows {1}. -->
   <PsycastNeurotrainerAbilityAlreadyLearned>{USER_labelShort} conosce già {1}.</PsycastNeurotrainerAbilityAlreadyLearned>
@@ -39,8 +39,6 @@
   <NotUsable>Non utilizzabile</NotUsable>
   <!-- EN: unpowered -->
   <Unpowered>scarico</Unpowered>
-  <!-- EN: blocked by roof -->
-  <BlockedByRoof>bloccato dal tetto</BlockedByRoof>
   <!-- EN: Too close to other beacon -->
   <TooCloseToOtherBeacon>Troppo vicino ad un altro faro</TooCloseToOtherBeacon>
   
@@ -96,16 +94,10 @@
   <AbilitySpeechDisabledNoThroneUndignified>trono non utilizzabile perché poco dignitoso.</AbilitySpeechDisabledNoThroneUndignified>
   <!-- EN: already giving a speech. -->
   <AbilitySpeechDisabledAlreadyGivingSpeech>già tenendo un discorso.</AbilitySpeechDisabledAlreadyGivingSpeech>
-  <!-- EN: another gathering is in progress. -->
-  <AbilitySpeechDisabledAnotherGatheringInProgress>è in corso un altro raduno.</AbilitySpeechDisabledAnotherGatheringInProgress>
-  <!-- EN: Next speech ready in -->
-  <AbilitySpeechCooldown>Prossimo discorso pronto tra</AbilitySpeechCooldown>
   <!-- EN: Outcome chances -->
   <AbilitySpeechPossibleOutcomes>Possibilità di risultato</AbilitySpeechPossibleOutcomes>
   <!-- EN: {ORGANIZER_labelShort}'s {1} stat -->
   <AbilitySpeechStatInfo>Stat. di {1} di {ORGANIZER_labelShort}</AbilitySpeechStatInfo>
-  <!-- EN: Initiated at -->
-  <AbilitySpeechTargetsLabel>TODO</AbilitySpeechTargetsLabel>
   <!-- EN: Dignified throne -->
   <AbilitySpeechTargetDescThrone>TODO</AbilitySpeechTargetDescThrone>
   
@@ -113,6 +105,8 @@
   <RitualDisabledNoAltar>TODO</RitualDisabledNoAltar>
   <!-- EN: Bestowing Ceremony -->
   <RitualBestowingCeremony>TODO</RitualBestowingCeremony>
+  <!-- EN: No suitable location near bestower -->
+  <BestowingSpotUnavailable>TODO</BestowingSpotUnavailable>
 
   <!-- EN: Total meditation today: {0} (progress multiplier {1}) -->
   <TotalMeditationToday>Meditazione totale di oggi: {0} (moltiplicatore del progresso {1})</TotalMeditationToday>
@@ -168,6 +162,8 @@
   <AnimaLinkingExplanationBase>TODO</AnimaLinkingExplanationBase>
   <!-- EN: Not all required cargo is loaded yet! -->
   <ShuttleRequiredItemsNotSatisfied>Non tutto il carico richiesto è stato caricato!</ShuttleRequiredItemsNotSatisfied>
+  <!-- EN: Cannot load {0_labelShort} -->
+  <CannotLoadIntoShuttle>TODO</CannotLoadIntoShuttle>
 
   <!-- EN: no heat to dump. -->
   <AbilityNoEntropyToDump>nessun calore da scaricare.</AbilityNoEntropyToDump>

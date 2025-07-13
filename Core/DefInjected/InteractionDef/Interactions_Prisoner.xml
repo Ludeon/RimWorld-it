@@ -1,3 +1,4 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
   <!-- EN: try to get to know -->
@@ -39,7 +40,7 @@
     <li>subject(p=8)->[TalkTopicLight]</li>
   -->
   <BuildRapport.logRulesInitiator.rulesStrings>
-	<li>r_logentry->[INITIATOR_nameDef] [toldastoryabout] [subject] a [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [toldastoryabout] [subject] a [RECIPIENT_nameDef].</li>
     <li>r_logentry->[INITIATOR_nameDef] ha detto a [RECIPIENT_nameDef] su [subject].</li>
     <li>r_logentry->[INITIATOR_nameDef] descritto [subject] a [RECIPIENT_nameDef].</li>
     <li>r_logentry->[INITIATOR_nameDef] incoraggiato [RECIPIENT_nameDef] a [talkabout] [subject].</li>
@@ -84,12 +85,12 @@
     <li>goodthing->free, fresh [Vegetable]s</li>
   -->
   <RecruitAttempt.logRulesInitiator.rulesStrings>
-	<li>r_logentry->[INITIATOR_nameDef] ha chiesto a [RECIPIENT_nameDef] di unirsi a noi.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha chiesto a [RECIPIENT_nameDef] di unirsi a noi.</li>
     <li>r_logentry->[INITIATOR_nameDef] ha promesso [goodthing] a [RECIPIENT_nameDef], e ha chiesto a [RECIPIENT_objective] di unirsi a noi.</li>
     <li>goodthing(p=15)->[ConceptPositive]</li>
     <li>goodthing->libero, fresco [Vegetable]</li>
   </RecruitAttempt.logRulesInitiator.rulesStrings>
-	
+  
   <!-- EN: spark jailbreak -->
   <SparkJailbreak.label>tentativo di evasione</SparkJailbreak.label>
   <!-- EN:
@@ -103,7 +104,7 @@
     <li>freedom->self-determination</li>
   -->
   <SparkJailbreak.logRulesInitiator.rulesStrings>
-	<li>r_logentry->[INITIATOR_nameDef] parlava della gioia della [freedom] e offriva una via di fuga.</li>
+    <li>r_logentry->[INITIATOR_nameDef] parlava della gioia della [freedom] e offriva una via di fuga.</li>
     <li>r_logentry->[INITIATOR_nameDef] ha parlato di quanto sia bella la [TerrainFeature] e ha offerto libertà.</li>
     <li>r_logentry->[INITIATOR_nameDef] ha mostrato un mezzo di fuga a [RECIPIENT_nameDef] e ha promesso [freedom].</li>
     <li>r_logentry->[INITIATOR_nameDef] ha detto a [RECIPIENT_nameDef] che la sicurezza è poco rigorosa e ha incoraggiato la fuga.</li>

@@ -1,3 +1,4 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
   <!-- EN: animal chat -->
@@ -27,7 +28,7 @@
     <li>tamed->whispered a story about [TalkTopicAny] to</li>
   -->
   <AnimalChat.logRulesInitiator.rulesStrings>
-  <li>r_logentry(p=5)->[INITIATOR_nameDef] [tamed] [RECIPIENT_nameDef].</li>
+    <li>r_logentry(p=5)->[INITIATOR_nameDef] [tamed] [RECIPIENT_nameDef].</li>
     <li>r_logentry->[INITIATOR_nameDef] si è seduto vicino a [RECIPIENT_nameDef] e ha parlato con [INITIATOR_objective] di [TalkTopicAny].</li>
     <li>r_logentry->[INITIATOR_nameDef] si è avvicinato a [RECIPIENT_nameDef] mentre sussurrava a [INITIATOR_objective] su [TalkTopicAny].</li>
     <li>r_logentry->[INITIATOR_nameDef] si è avvicinato a [RECIPIENT_nameDef] mentre parlava con [INITIATOR_objective] di [TalkTopicAny].</li>
@@ -80,7 +81,7 @@
     <li>rubbedpart->arm</li>
   -->
   <Nuzzle.logRulesInitiator.rulesStrings>
-  <li>r_logentry(p=2)->[INITIATOR_nameDef] [nuzzleadverb] [nuzzled] [RECIPIENT_nameDef].</li>
+    <li>r_logentry(p=2)->[INITIATOR_nameDef] [nuzzleadverb] [nuzzled] [RECIPIENT_nameDef].</li>
     <li>r_logentry->[INITIATOR_nameDef] [nuzzleadverb] ha strusciato il muso di [INITIATOR_possessive] contro il muso di [RECIPIENT_nameDef] [rubbedpart].</li>
     <li>nuzzled(p=2)->strusciata</li>
     <li>nuzzled->accoccolato a</li>
@@ -104,8 +105,8 @@
     <li>rubbedpart->mano</li>
     <li>rubbedpart->fianco</li>
     <li>rubbedpart->braccio</li>
-    </Nuzzle.logRulesInitiator.rulesStrings>
-
+  </Nuzzle.logRulesInitiator.rulesStrings>
+  
   <!-- EN: release to the wild -->
   <ReleaseToWild.label>liberazione in natura</ReleaseToWild.label>
   <!-- EN:
@@ -122,7 +123,7 @@
     <li>released->before letting [RECIPIENT_objective] go to live in freedom.</li>
   -->
   <ReleaseToWild.logRulesInitiator.rulesStrings>
-  <li>r_logentry->[farewell] [released]</li>
+    <li>r_logentry->[farewell] [released]</li>
     <li>farewell->[INITIATOR_nameDef] accarezza dolcemente [RECIPIENT_nameDef] per l'ultima volta</li>
     <li>farewell->[INITIATOR_nameDef] ha espresso parole calorose nei confronti di [RECIPIENT_nameDef]</li>
     <li>farewell->[INITIATOR_nameDef] ha rimosso il collare di [RECIPIENT_nameDef]</li>
@@ -155,7 +156,7 @@
     <li>r_logentry->[INITIATOR_nameDef] gave [RECIPIENT_nameDef] a first command.</li>
   -->
   <TameAttempt.logRulesInitiator.rulesStrings>
-  <li>r_logentry->[INITIATOR_nameDef] ha cercato di domare [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha cercato di domare [RECIPIENT_nameDef].</li>
     <li>r_logentry->[INITIATOR_nameDef] ha cercato di riportare [RECIPIENT_nameDef] sotto controllo.</li>
     <li>r_logentry->[INITIATOR_nameDef] ha tentato di mettere il collare [RECIPIENT_nameDef].</li>
     <li>r_logentry->[INITIATOR_nameDef] ha preteso l'obbedienza da [RECIPIENT_nameDef].</li>
@@ -170,7 +171,7 @@
     <li>r_logentry->[INITIATOR_nameDef] ha toccato una parte del corpo vulnerabile di [RECIPIENT_nameDef], chiedendo obbedienza.</li>
     <li>r_logentry->[INITIATOR_nameDef] ha puntato il dito a terra, chiedendo che [RECIPIENT_nameDef] venga.</li>
     <li>r_logentry->[INITIATOR_nameDef] ha dato a [RECIPIENT_nameDef] un primo comando.</li>
-    </TameAttempt.logRulesInitiator.rulesStrings>
+  </TameAttempt.logRulesInitiator.rulesStrings>
   
   <!-- EN: train attempt -->
   <TrainAttempt.label>tentativo di addestramento</TrainAttempt.label>
@@ -187,7 +188,7 @@
     <li>tried->attempted</li>
   -->
   <TrainAttempt.logRulesInitiator.rulesStrings>
-  <li>r_logentry->[INITIATOR_nameDef] [trained] [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [trained] [RECIPIENT_nameDef].</li>
     <li>trained(p=2)->[tried] per allenarsi</li>
     <li>trained->[tried] per mostrare un nuovo trucco a</li>
     <li>trained->[tried] alla disciplina</li>
@@ -197,6 +198,6 @@
     <li>trained->ha incoraggiato una nuova risposta da parte di</li>
     <li>tried->provato</li>
     <li>tried->tentato</li>
-    </TrainAttempt.logRulesInitiator.rulesStrings>
+  </TrainAttempt.logRulesInitiator.rulesStrings>
   
 </LanguageData>
