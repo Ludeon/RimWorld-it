@@ -11,3 +11,4 @@ Errori corretti:
 <MessageBedLostAssignment>{0} non è più assegnato a {1_nameDef}.</MessageBedLostAssignment>
 <MessageBedDestroyed>{0} assegnato a {1_nameDef} è stato distrutto.</MessageBedDestroyed>
 <LetterLabelGainedRoyalTitle>Titolo di {TITLE} ottenuto: {PAWN_labelShort}</LetterLabelGainedRoyalTitle>
+<CannotTrainTooSmall>{0} è troppo piccolo per imparare questo.</CannotTrainTooSmall>
