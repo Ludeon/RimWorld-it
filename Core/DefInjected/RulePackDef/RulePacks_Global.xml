@@ -50,10 +50,13 @@
     <li>PersonalCharacteristic(p=0.15)->sexual preferences</li>
     <li>PersonalCharacteristic(p=0.15)->sexual experience</li>
   -->
-  <GlobalUtility.rulePack.rulesStrings />
+  <GlobalUtility.rulePack.rulesStrings>
+    <li>o_a(lodgers0_gender==Female)->a</li>
+    <li>o_a(lodgers0_gender!=Female)->o</li>
+  </GlobalUtility.rulePack.rulesStrings>
   
   <!-- UNUSED -->
-  <GlobalUtility.rulePack.rulesStrings />
+  <!-- <GlobalUtility.rulePack.rulesStrings />-->
   
   <!-- EN:
     <li>TalkTopicAny->[TalkTopicLight]</li>
