@@ -1,5 +1,21 @@
 Modifiche 
 
+# Scopo di questo fork.
+Sono uno sviluppatore che ama RimWorld e mi sono accorto che molte delle traduzioni sono errate o creano problemi durante il gioco.
+Ho deciso di creare questo fork per aggiornare la traduzione base alla versione 1.6 e provare a correggere qualche errore per dare un contributo al gioco.
+Non ho la pretesa di essere un traduttore professionista, ma spero che il mio lavoro possa essere utile a qualcuno.
+
+Questa versione presenta tutte le chiavi di tutti i DLC corrette con il tool automatico presente nel gioco.
+
+## Modificice effettuate:
+- Ho scaricato la versione 1.4.3525 presente sul reporitory
+- Usato il tool per fixare ed aggiungere le chiavi mancanti
+
+### Amici che mi hanno aiutano durante questo lavoro:
+- Spappo
+
+
+
 RimWorld Italian
 ================
 Target Version: 1.4.3525
