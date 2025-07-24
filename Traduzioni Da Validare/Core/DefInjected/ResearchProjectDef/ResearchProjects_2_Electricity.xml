@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: air conditioning -->
+  <AirConditioning.label>aria condizionata</AirConditioning.label>
+  <!-- EN: Build coolers to make people comfortable in hot weather, or to construct freezers for storing perishable goods. -->
+  <AirConditioning.description>Costruisci refrigeratori per far sentire a proprio agio le persone al caldo o per creare freezer dove conservare merci deperibili.</AirConditioning.description>
+  <!-- EN:
+  <!-- EN:
+    <li>subject->air conditioning</li>
+    <li>subject_story->visited the hottest town on the planet</li>
+    <li>subject_story->worked at the ice caps, in an interstellar warehouse kept near to absolute zero</li>
+    <li>subject_story->learned all about air conditioning and freezers, then returned home</li>
+    <li>subject_gerund->building air conditioning units</li>
+  -->
+  <AirConditioning.generalRules.rulesStrings>
+    <li>subject->condizionamento dell'aria</li>
+    <li>subject_story->ha visitato la città più calda del pianeta</li>
+    <li>subject_story->ha lavorato alle calotte polari, in un magazzino interstellare mantenuto vicino allo zero assoluto</li>
+    <li>subject_story->ha imparato tutto su condizionatori e congelatori, poi è tornato a casa</li>
+    <li>subject_gerund->costruendo unità di condizionamento dell'aria</li>
+  </AirConditioning.generalRules.rulesStrings>
+  
+  <!-- EN: autodoor -->
+  <Autodoors.label>porta automatica</Autodoors.label>
+  <!-- EN: Build autodoors which automatically open when someone approaches, without slowing anyone down. -->
+  <Autodoors.description>Costruisci porte automatiche che si aprono automaticamente quando qualcuno si avvicina, senza rallentare nessuno.</Autodoors.description>
+  <!-- EN:
+    <li>subject->autodoors</li>
+    <li>subject->automatic doors</li>
+    <li>subject_story->was recruited by a robotics security firm, opening the door to a career as an automation tester</li>
+    <li>subject_story->prototyped unique models of autodoors</li>
+    <li>subject_story->worked very hard to ensure the doors made a satisfying 'hiss' when they opened or closed</li>
+    <li>subject_gerund->constructing autodoors</li>
+  -->
+  <Autodoors.generalRules.rulesStrings>
+    <li>subject->porte automatiche</li>
+    <li>subject->porte automatiche</li>
+    <li>subject_story->è stato assunto da una ditta di sicurezza robotica, aprendo la strada a una carriera come tester di automazioni</li>
+    <li>subject_story->ha prototipato modelli unici di porte automatiche</li>
+    <li>subject_story->ha lavorato duramente per assicurarsi che le porte emettessero un soddisfacente 'sibilo' all'apertura e chiusura</li>
+    <li>subject_gerund->costruendo porte automatiche</li>
+  </Autodoors.generalRules.rulesStrings>
+
+  <!-- EN: battery -->
+  <Batteries.label>batterie</Batteries.label>
+  <!-- EN: Build batteries for storing electricity. -->
+  <Batteries.description>Costruisci batterie per accumulare elettricità.</Batteries.description>
+  <!-- EN:
+    <li>subject->batteries</li>
+    <li>subject_story->discovered that an acid lake on the leaden shores of a deathworld worked as a natural battery</li>
+    <li>subject_story->was in charge of maintaining the life support if the colony lost power</li>
+    <li>subject_story->worked in the scrapworlds, repairing machines and batteries</li>
+    <li>subject_gerund->building batteries</li>
+  -->
+  <Batteries.generalRules.rulesStrings>
+    <li>subject->batterie</li>
+    <li>subject_story->ha scoperto che un lago acido sulle coste piombate di un deathworld funzionava come batteria naturale</li>
+    <li>subject_story->era responsabile del mantenimento del supporto vitale se la colonia perdeva energia</li>
+    <li>subject_story->ha lavorato negli scrapworlds, riparando macchine e batterie</li>
+    <li>subject_gerund->costruendo batterie</li>
+  </Batteries.generalRules.rulesStrings>
+
+  <!-- EN: biofuel refining -->
+  <BiofuelRefining.label>raffinazione biocombustibile</BiofuelRefining.label>
+  <!-- EN: Build biofuel refineries to make chemfuel from biological matter like wood or foodstuffs. -->
+  <BiofuelRefining.description>Costruisci raffinerie di biocombustibile per creare chemfuel da materia organica come legno o prodotti alimentari.</BiofuelRefining.description>
+  <!-- EN:
+    <li>subject->biofuel</li>
+    <li>subject_story->was trapped when a generation ship lost power. [ANYPAWN_pronoun] used [ANYPAWN_possessive] knowledge of refining to turn human remains into biofuel and restart the engines</li>
+    <li>subject_story->used automated biorefineries to begin the long terraforming process on an iceworld</li>
+    <li>subject_story->started a distillery to make moonshine but, realizing it was undrinkable, sold it as chemfuel instead</li>
+    <li>subject_gerund->refining biofuel</li>
+  -->
+  <BiofuelRefining.generalRules.rulesStrings>
+    <li>subject->biocombustibile</li>
+    <li>subject_story->è rimasto intrappolato quando una nave generazionale ha perso energia. [ANYPAWN_pronoun] ha usato la propria conoscenza della raffinazione per trasformare resti umani in biocombustibile e riavviare i motori</li>
+    <li>subject_story->ha usato biorefinerie automatiche per iniziare il lungo processo di terraformazione su un mondo ghiacciato</li>
+    <li>subject_story->ha avviato una distilleria per fare moonshine ma, rendendosi conto che era imbevibile, l'ha venduto come chemfuel</li>
+    <li>subject_gerund->raffinando biocombustibile</li>
+  </BiofuelRefining.generalRules.rulesStrings>
+  
+  <!-- EN: blowback operation -->
+  <BlowbackOperation.label>massa battente</BlowbackOperation.label>
+  <!-- EN: Craft low-power blowback-operated guns like autopistols and machine pistols. -->
+  <BlowbackOperation.description>Crea armi da fuoco a massa battente di bassa potenza come pistole automatiche e pistole mitragliatrici.</BlowbackOperation.description>
+  <!-- EN:
+    <li>subject->pistols</li>
+    <li>subject->blowback firearms</li>
+    <li>subject_story->utilized machine pistols in the trench fighting that overtook the planet</li>
+    <li>subject_story->sold low-powered autopistols to law enforcement in the orbitals</li>
+    <li>subject_story->crafted blowback-operated guns for near-sighted conscripts</li>
+    <li>subject_gerund->crafting blowback firearms</li>
+  -->
+  <BlowbackOperation.generalRules.rulesStrings>
+    <li>subject->pistole</li>
+    <li>subject->armi a massa battente</li>
+    <li>subject_story->ha utilizzato pistole mitragliatrici nelle battaglie di trincea che hanno invaso il pianeta</li>
+    <li>subject_story->ha venduto pistole automatiche a bassa potenza alle forze dell’ordine orbitali</li>
+    <li>subject_story->ha costruito armi a massa battente per coscritti miopi</li>
+    <li>subject_gerund->costruendo armi a massa battente</li>
+  </BlowbackOperation.generalRules.rulesStrings>
+  
+  <!-- EN: advanced lights -->
+  <ColoredLights.label>illuminazione colorata</ColoredLights.label>
+  <!-- EN: Build powerful outdoors lights. Additionally, customize the color of electric lights and reduce their power consumption by half. This does not affect sun lamps. -->
+  <ColoredLights.description>Realizza luci colorate a scopo decorativo. Unicamente estetico.</ColoredLights.description>
+  <!-- EN:
+    <li>subject->advanced lighting</li>
+    <li>subject_story->installed floodlights all around the prison world's many security perimeters</li>
+    <li>subject_story->made sure that the planet's dark side was well-lit</li>
+    <li>subject_story->moved into running concerts for interstellar troubadours, specializing in controlling the ship's massive lighting rigs</li>
+    <li>subject_gerund->building advanced lights</li>
+  -->
+  <ColoredLights.generalRules.rulesStrings>
+    <li>subject->illuminazione avanzata</li>
+    <li>subject_story->ha installato fari attorno ai numerosi perimetri di sicurezza del mondo-prigione</li>
+    <li>subject_story->si è assicurato che il lato oscuro del pianeta fosse ben illuminato</li>
+    <li>subject_story->ha organizzato concerti per trovatori interstellari, specializzandosi nel controllo dei grandi impianti di illuminazione della nave</li>
+    <li>subject_gerund->costruendo illuminazione avanzata</li>
+  </ColoredLights.generalRules.rulesStrings>
+  
+  <!-- EN: electricity -->
+  <Electricity.label>elettricità</Electricity.label>
+  <!-- EN: Harness the power of electricity for a hundred different tasks. -->
+  <Electricity.description>Imbriglia il potere dell'elettricità per centinaia di motivi diversi.</Electricity.description>
+  <!-- EN: Your colony has harnessed the power which outsiders call "electricity". It has the potential to transform every aspect of your people's way of life.\n\nYou have now unlocked the Power tab in the Architect menu from which you may build electric generators, power conduits, and other mechanisms to control this new force. The Power tab also displays the electric grid which connects electric generators and appliances. -->
+  <Electricity.discoveredLetterText>La tua colonia ha imbrigliato il potere che gli estranei chiamano "elettricità". Ha il potenziale di trasformare ogni aspetto dello stile di vita della tua gente.\n\nHai ora sbloccato la scheda Energia nel menu Architetto, da cui puoi costruire generatori elettrici, condotti di energia e altri meccanismi per controllare questa nuova forza. La scheda Energia mostra anche la rete elettrica che collega generatori elettrici e apparecchi.</Electricity.discoveredLetterText>
+  <!-- EN: About: Electricity -->
+  <Electricity.discoveredLetterTitle>Informazioni: Elettricità</Electricity.discoveredLetterTitle>
+  <!-- EN:
+    <li>subject->electricity</li>
+    <li>subject_story->was struck by lighting and became determined to harness it</li>
+    <li>subject_story->created the first generator and lightbulb on a medieval world</li>
+    <li>subject_story->was executed on a feudal world for the blasphemy of creating light</li>
+    <li>subject_gerund->harnessing electricity</li>
+  -->
+  <Electricity.generalRules.rulesStrings>
+    <li>subject->elettricità</li>
+    <li>subject_story->fu colpito da un fulmine e decise di imbrigliare la sua forza</li>
+    <li>subject_story->creò il primo generatore e la prima lampadina su un mondo medievale</li>
+    <li>subject_story->fu giustiziato su un mondo feudale per la blasfemia di aver creato la luce</li>
+    <li>subject_gerund->imbrigliare l'elettricità</li>
+  </Electricity.generalRules.rulesStrings>
+  
+  <!-- EN: firefoam -->
+  <Firefoam.label>schiuma estinguente</Firefoam.label>
+  <!-- EN: Construct firefoam poppers, automatic fire-safety devices which spread fire-retardant foam in response to encroaching flames. -->
+  <Firefoam.description>Realizza estintori a schiuma, dispositivi antincendio automatici che proiettano una schiuma estinguente in risposta alle fiamme.</Firefoam.description>
+  <!-- EN:
+    <li>subject->firefoam poppers</li>
+    <li>subject->fire safety devices</li>
+    <li>subject_story->headed up an agency promulgating fire safety to the whole population</li>
+    <li>subject_story->became a firefighter</li>
+    <li>subject_story->was saved by the poppers when an oil fire spiraled out of control</li>
+    <li>subject_gerund->constructing firefoam poppers</li>
+    <li>subject_gerund->suppressing fires with poppers</li>
+  -->
+  <Firefoam.generalRules.rulesStrings>
+    <li>subject->erogatori di schiuma estinguente</li>
+    <li>subject->dispositivi antincendio</li>
+    <li>subject_story->guidò un'agenzia che diffondeva la sicurezza antincendio a tutta la popolazione</li>
+    <li>subject_story->diventò un pompiere</li>
+    <li>subject_story->fu salvato dagli erogatori quando un incendio di petrolio sfuggì al controllo</li>
+    <li>subject_gerund->costruire erogatori di schiuma estinguente</li>
+    <li>subject_gerund->spegnere incendi con gli erogatori</li>
+  </Firefoam.generalRules.rulesStrings>
+  
+  <!-- EN: flak armor -->
+  <FlakArmor.label>armatura antiproiettile</FlakArmor.label>
+  <!-- EN: Craft clothing with metal armor sewn in to resist bullets and explosions. This weighty armor slows movement slightly. -->
+  <FlakArmor.description>Crea indumenti con inserti di protezione cuciti in mezzo per resistere a proiettili ed esplosioni. Questa pesante armatura rallenta leggermente il movimento.</FlakArmor.description>
+  <!-- EN:
+    <li>subject->flak armor</li>
+    <li>subject_story->supplied flak armor to the militias that ran the cities</li>
+    <li>subject_story->learned to sew metal plates into clothing, to protect kin from the roving gangs</li>
+    <li>subject_story->survived a rifle bullet thanks to the metal plate sewn into the breast pocket</li>
+    <li>subject_gerund->crafting flak armor</li>
+  -->
+  <FlakArmor.generalRules.rulesStrings>
+    <li>subject->armatura antiproiettile</li>
+    <li>subject_story->fornì armature antiproiettile alle milizie che governavano le città</li>
+    <li>subject_story->imparò a cucire placche metalliche negli indumenti, per proteggere i familiari dalle bande erranti</li>
+    <li>subject_story->sopravvisse a un colpo di fucile grazie alla piastra metallica cucita nella tasca del petto</li>
+    <li>subject_gerund->creare armature antiproiettile</li>
+  </FlakArmor.generalRules.rulesStrings>
+  
+  <!-- EN: foam turret -->
+  <FoamTurret.label>torretta schiumogena</FoamTurret.label>
+  <!-- EN: Produce a turret which can be activated to spray fire-extinguishing foam. -->
+  <FoamTurret.description>Produci una torretta che può essere attivata per spruzzare schiuma estinguente.</FoamTurret.description>
+  <!-- EN:
+    <li>subject->foam turrets</li>
+    <li>subject->fire suppression turrets</li>
+    <li>subject_story->redesigned gun turrets to put out fires, not create them</li>
+    <li>subject_story->incorporated heat sensors and foam ejectors into a standard turret chassis</li>
+    <li>subject_story->was praised after installing cheap foam turrets in public areas and saving many lives</li>
+    <li>subject_gerund->constructing fire suppression turrets</li>
+    <li>subject_gerund->suppressing fires with turrets</li>
+  -->
+  <FoamTurret.generalRules.rulesStrings>
+    <li>subject->torrette schiumogene</li>
+    <li>subject->torrette antincendio</li>
+    <li>subject_story->ripensò le torrette d'arma per spegnere incendi, non crearli</li>
+    <li>subject_story->incorporò sensori di calore ed erogatori di schiuma in uno chassis standard per torrette</li>
+    <li>subject_story->fu lodato dopo aver installato torrette schiumogene economiche in aree pubbliche, salvando molte vite</li>
+    <li>subject_gerund->costruire torrette antincendio</li>
+    <li>subject_gerund->spegnere incendi con le torrette</li>
+  </FoamTurret.generalRules.rulesStrings>
+  
+  <!-- EN: gas operation -->
+  <GasOperation.label>sottrazione di gas</GasOperation.label>
+  <!-- EN: Craft high-power guns like chain shotguns, LMGs, and heavy SMGs. -->
+  <GasOperation.description>Crea armi da fuoco ad elevata potenza come fucili , mitragliatrici leggere e mitragliatrici pesanti.</GasOperation.description>
+  <!-- EN:
+    <li>subject->heavy weaponry</li>
+    <li>subject->high-power firearms</li>
+    <li>subject_story->equipped the special weapons squads of the tyrant's guard with light machine guns</li>
+    <li>subject_story->supplied several planetary armies with heavy firearms</li>
+    <li>subject_story->designed new types of high-power gun, still known today</li>
+    <li>subject_gerund->crafting heavy firearms</li>
+  -->
+  <GasOperation.generalRules.rulesStrings>
+    <li>subject->armi pesanti</li>
+    <li>subject->armi da fuoco ad alta potenza</li>
+    <li>subject_story->equipaggiò le squadre armi speciali della guardia del tiranno con mitragliatrici leggere</li>
+    <li>subject_story->fornì diverse armate planetarie con armi pesanti</li>
+    <li>subject_story->progettò nuovi tipi di armi ad alta potenza, ancora conosciuti oggi</li>
+    <li>subject_gerund->creare armi pesanti</li>
+  </GasOperation.generalRules.rulesStrings>
+  
+  <!-- EN: geothermal power -->
+  <GeothermalPower.label>energia geotermica</GeothermalPower.label>
+  <!-- EN: Build geothermal power plants on top of steam geysers, for uninterrupted power. -->
+  <GeothermalPower.description>Costruisci centrali geotermiche al di sopra di geyser, per energia ininterrotta.</GeothermalPower.description>
+  <!-- EN:
+    <li>subject->geothermal power</li>
+    <li>subject_story->studied steam power and established geothermal plants throughout the region</li>
+    <li>subject_story->tapped the power of a dormant volcano to power the local grid</li>
+    <li>subject_story->argued with the local population who wanted to preserve the scenic geysers, not use them for power</li>
+    <li>subject_gerund->tapping geothermal energy</li>
+    <li>subject_gerund->building geothermal power plants</li>
+  -->
+  <GeothermalPower.generalRules.rulesStrings>
+    <li>subject->energia geotermica</li>
+    <li>subject_story->studiò la potenza del vapore e costruì centrali geotermiche in tutta la regione</li>
+    <li>subject_story->sfruttò l'energia di un vulcano dormiente per alimentare la rete locale</li>
+    <li>subject_story->discusso con la popolazione locale che voleva preservare i geyser panoramici, non usarli per energia</li>
+    <li>subject_gerund->sfruttare energia geotermica</li>
+    <li>subject_gerund->costruire centrali geotermiche</li>
+  </GeothermalPower.generalRules.rulesStrings>
+  
+  <!-- EN: gunsmithing -->
+  <Gunsmithing.label>armi da fuoco</Gunsmithing.label>
+  <!-- EN: Craft simple manually-operated guns like revolvers, pump shotguns, bolt-action rifles, and incendiary launchers. -->
+  <Gunsmithing.description>Crea semplici armi da fuoco manuali come revolver, fucili a pompa, fucili a otturatore e lanciadardi incendiari.</Gunsmithing.description>
+  <!-- EN:
+    <li>subject->simple firearms</li>
+    <li>subject_story->built a unique 12-shot revolver and won shoot-out after shoot-out</li>
+    <li>subject_story->specialized in simple gunsmithing, providing shotguns and rifles for hunters</li>
+    <li>subject_story->set up as a gunsmith, achieving fame across the sector</li>
+    <li>subject_gerund->gunsmithing</li>
+    <li>subject_gerund->crafting firearms</li>
+  -->
+  <Gunsmithing.generalRules.rulesStrings>
+    <li>subject->armi semplici</li>
+    <li>subject_story->costruì un revolver unico da 12 colpi e vinse sparatorie una dopo l'altra</li>
+    <li>subject_story->si specializzò nella fabbricazione di armi semplici, fornendo fucili e fucili a pompa ai cacciatori</li>
+    <li>subject_story->aprì una bottega da armaiolo, raggiungendo fama in tutto il settore</li>
+    <li>subject_gerund->lavorare come armaiolo</li>
+    <li>subject_gerund->fabbricare armi</li>
+  </Gunsmithing.generalRules.rulesStrings>
+  
+  <!-- EN: gun turrets -->
+  <GunTurrets.label>torrette automatiche</GunTurrets.label>
+  <!-- EN: Produce simple automated gun turrets. -->
+  <GunTurrets.description>Produci semplici torrette automatiche.</GunTurrets.description>
+  <!-- EN:
+    <li>subject->gun turrets</li>
+    <li>subject_story->worked on AI routines, to enable gun turrets to identify friends and foes</li>
+    <li>subject_story->designed a modular gun turret holster, capable of taking any weapon type</li>
+    <li>subject_story->disabled the enemy's turrets remotely, before leading the charge</li>
+    <li>subject_gerund->constructing automated gun turrets</li>
+  -->
+  <GunTurrets.generalRules.rulesStrings>
+    <li>subject->torrette automatiche</li>
+    <li>subject_story->lavorò su routine AI per permettere alle torrette di distinguere amici da nemici</li>
+    <li>subject_story->progettò un supporto modulare per torrette, capace di ospitare qualsiasi tipo di arma</li>
+    <li>subject_story->disattivò da remoto le torrette nemiche prima di guidare l’assalto</li>
+    <li>subject_gerund->costruire torrette automatiche</li>
+  </GunTurrets.generalRules.rulesStrings>
+  
+  <!-- EN: hydroponics -->
+  <Hydroponics.label>idroponica</Hydroponics.label>
+  <!-- EN: Build hydroponics basins to rapidly grow crops indoors regardless of the terrain or weather outside. -->
+  <Hydroponics.description>Costruisci vasche idroponiche per coltivare rapidamente piante all'interno, indipendentemente da terreno o condizione climatica.</Hydroponics.description>
+  <!-- EN:
+    <li>subject->hydroponics</li>
+    <li>subject_story->joined a generation ship crew as their crop specialist</li>
+    <li>subject_story->established a hydroponics facility to feed the hungry</li>
+    <li>subject_story->traveled around, teaching artificial plant growth to new colonists</li>
+    <li>subject_gerund->building hydroponics</li>
+    <li>subject_gerund->growing plants indoors</li>
+  -->
+  <Hydroponics.generalRules.rulesStrings>
+    <li>subject->idroponica</li>
+    <li>subject_story->entrò a far parte dell'equipaggio di una nave generazionale come specialista delle colture</li>
+    <li>subject_story->fondò un impianto idroponico per sfamare i bisognosi</li>
+    <li>subject_story->viaggiò insegnando la crescita artificiale delle piante ai nuovi coloni</li>
+    <li>subject_gerund->costruire sistemi idroponici</li>
+    <li>subject_gerund->coltivare piante in ambienti chiusi</li>
+  </Hydroponics.generalRules.rulesStrings>
+  
+  <!-- EN: IEDs -->
+  <IEDs.label>mine</IEDs.label>
+  <!-- EN: Build improvised traps from any kind of mortar shell. -->
+  <IEDs.description>Costruisci trappole improvvisate da ogni genere di bomba di mortaio.</IEDs.description>
+  <!-- EN:
+    <li>subject->improvised explosive traps</li>
+    <li>subject_story->disarmed the leftover shells of the war, sending them onto the new frontline as mines</li>
+    <li>subject_story->came under mortar fire, only surviving by crafting traps from the enemy's many dud shells</li>
+    <li>subject_story->advocated for the rights of small settlements, where unexploded munitions were a constant peril</li>
+    <li>subject_gerund->crafting improvised explosive traps</li>
+  -->
+  <IEDs.generalRules.rulesStrings>
+    <li>subject->trappole esplosive improvvisate</li>
+    <li>subject_story->disinnescò le bombe residue della guerra, trasformandole in mine per la nuova linea del fronte</li>
+    <li>subject_story->sopravvisse al fuoco di mortaio creando trappole con le molte bombe inesplose del nemico</li>
+    <li>subject_story->difese i diritti degli insediamenti piccoli, dove le munizioni inesplose erano un pericolo costante</li>
+    <li>subject_gerund->costruire trappole esplosive improvvisate</li>
+  </IEDs.generalRules.rulesStrings>
+  
+  <!-- EN: machining -->
+  <Machining.label>montaggio</Machining.label>
+  <!-- EN: Build machining tables to craft guns, grenades, flak armor, and to shred dead mechanoids for resources. -->
+  <Machining.description>Costruisci banchi di montaggio per realizzare armi da fuoco, granate, armature antiproiettile e per estrarre risorse disassemblando meccanoidi morti.</Machining.description>
+  <!-- EN:
+    <li>subject->machining</li>
+    <li>subject_story->gathered the remains of dead mechanoids and shredded them for resources</li>
+    <li>subject_story->quietly built an arsenal of self-made weapons in the basement of a suburban home</li>
+    <li>subject_story->built machining tables for many gunsmiths, despite being a pacifist</li>
+    <li>subject_gerund->building machining equipment</li>
+    <li>subject_gerund->machining</li>
+  -->
+  <Machining.generalRules.rulesStrings>
+    <li>subject->montaggio</li>
+    <li>subject_story->raccolse i resti di meccanoidi morti e li triturò per ottenere risorse</li>
+    <li>subject_story->costruì silenziosamente un arsenale di armi autoprodotte nel seminterrato di una casa suburbana</li>
+    <li>subject_story->realizzò banchi di montaggio per molti armaioli, nonostante fosse pacifista</li>
+    <li>subject_gerund->costruire attrezzature di montaggio</li>
+    <li>subject_gerund->montaggio</li>
+  </Machining.generalRules.rulesStrings>
+
+  <!-- EN: mortars -->
+  <Mortars.label>mortai</Mortars.label>
+  <!-- EN: Build mortars which can lob shells long distances - even over walls. -->
+  <Mortars.description>Costruisci mortai che possono lanciare bombe a lunghe distanze, anche oltre i muri.</Mortars.description>
+  <!-- EN:
+    <li>subject->artillery</li>
+    <li>subject->mortars</li>
+    <li>subject_story->was instrumental in the glasshouse siege that overthrew the town council</li>
+    <li>subject_story->developed a collapsible, lightweight mortar tube for the local police</li>
+    <li>subject_story->demolished the many derelict buildings from a distance, with explosive shells</li>
+    <li>subject_gerund->crafting mortars</li>
+    <li>subject_gerund->constructing simple artillery</li>
+  -->
+  <Mortars.generalRules.rulesStrings>
+    <li>subject->artiglieria</li>
+    <li>subject->mortai</li>
+    <li>subject_story->fu determinante nell’assedio della serra che rovesciò il consiglio cittadino</li>
+    <li>subject_story->sviluppò un tubo per mortaio pieghevole e leggero per la polizia locale</li>
+    <li>subject_story->demolì da lontano molti edifici fatiscenti con proiettili esplosivi</li>
+    <li>subject_gerund->costruire mortai</li>
+    <li>subject_gerund->costruire artiglieria semplice</li>
+  </Mortars.generalRules.rulesStrings>
+
+  <!-- EN: nutrient paste -->
+  <NutrientPaste.label>pasta nutriente</NutrientPaste.label>
+  <!-- EN: Build nutrient paste dispensers which efficiently produce edible meals from raw nutritive feedstocks, while requiring no labor at all. -->
+  <NutrientPaste.description>Costruisci il distributore di pasta nutriente per la produzione efficiente di pasti commestibili da materie prime alimentari, che non richiede nessun lavoro.</NutrientPaste.description>
+  <!-- EN:
+    <li>subject->nutrient paste</li>
+    <li>subject_story->worked in a factory canteen and devised nutrient paste as a way to avoid all labor</li>
+    <li>subject_story->lost [ANYPAWN_possessive] taste of smell to disease, so devised a cheap, flavorless nutrient paste</li>
+    <li>subject_story->advocated for the recycling of all organic matter into nutrient paste, even corpses</li>
+    <li>subject_gerund->building nutrient paste dispensers</li>
+  -->
+  <NutrientPaste.generalRules.rulesStrings>
+    <li>subject->pasta nutriente</li>
+    <li>subject_story->lavorò in una mensa di fabbrica e ideò la pasta nutriente per evitare ogni lavoro</li>
+    <li>subject_story->perse il gusto e l’olfatto a causa di una malattia, così ideò una pasta nutriente economica e insapore</li>
+    <li>subject_story->sostenne il riciclo di tutta la materia organica in pasta nutriente, anche i cadaveri</li>
+    <li>subject_gerund->costruire distributori di pasta nutriente</li>
+  </NutrientPaste.generalRules.rulesStrings>
+  
+  <!-- EN: packaged survival meal -->
+  <PackagedSurvivalMeal.label>razioni di sopravvivenza</PackagedSurvivalMeal.label>
+  <!-- EN: Produce packaged survival meals which never go bad. Great for traveling. -->
+  <PackagedSurvivalMeal.description>Produci razioni di sopravvivenza preconfezionate che non si guastano mai. Ottimo per i viaggi.</PackagedSurvivalMeal.description>
+  <!-- EN:
+    <li>subject->packaged survival meals</li>
+    <li>subject->non-perishable food</li>
+    <li>subject_story-> knew, when disaster struck, there were enough packaged meals to survive until rescuers arrived</li>
+    <li>subject_story->established a social kitchen, which donated survival meals to all outgoing vessels</li>
+    <li>subject_story->discovered survival meals in the mountains that were hundreds of years old</li>
+    <li>subject_gerund->preparing survival meals</li>
+  -->
+  <PackagedSurvivalMeal.generalRules.rulesStrings>
+    <li>subject->razioni di sopravvivenza preconfezionate</li>
+    <li>subject->cibo non deperibile</li>
+    <li>subject_story->sapeva che, in caso di disastro, c’erano abbastanza razioni per sopravvivere fino all’arrivo dei soccorsi</li>
+    <li>subject_story->fondò una cucina sociale che donava razioni di sopravvivenza a tutte le navi in partenza</li>
+    <li>subject_story->scoprì razioni di sopravvivenza sulle montagne vecchie di centinaia di anni</li>
+    <li>subject_gerund->preparare razioni di sopravvivenza</li>
+  </PackagedSurvivalMeal.generalRules.rulesStrings>
+
+  <!-- EN: prosthetics -->
+  <Prosthetics.label>prostetica</Prosthetics.label>
+  <!-- EN: Build inexpensive prosthetic body parts to replace lost limbs. Requires a skilled doctor to attach. -->
+  <Prosthetics.description>Costruisci parti del corpo protesiche di basso costo per rimpiazzare arti perduti. Necessitano di un medico esperto per essere impiantate.</Prosthetics.description>
+  <!-- EN:
+    <li>subject->prosthesis</li>
+    <li>subject_story->had a limb replaced with a prosthetic, to show how easy it was</li>
+    <li>subject_story->opened a prosthetics clinic</li>
+    <li>subject_story->began crafting bespoke fake limbs for the many war veterans in the area</li>
+    <li>subject_gerund->crafting prosthetics</li>
+  -->
+  <Prosthetics.generalRules.rulesStrings>
+    <li>subject->protesi</li>
+    <li>subject_story->si fece sostituire un arto con una protesi, per dimostrare quanto fosse semplice</li>
+    <li>subject_story->aprì una clinica di protesi</li>
+    <li>subject_story->iniziò a realizzare arti finti su misura per i numerosi veterani di guerra della zona</li>
+    <li>subject_gerund->realizzare protesi</li>
+  </Prosthetics.generalRules.rulesStrings>
+
+  <!-- EN: smokepop packs -->
+  <SmokepopBelt.label>composti fumogene</SmokepopBelt.label>
+  <!-- EN: Build smokepop packs which allow the wearer to deploy a defensive smokescreen. -->
+  <SmokepopBelt.description>Costruisci composti fumogeni che consentono a chi lo indossa di schierare una cortina fumogena difensiva.</SmokepopBelt.description>
+  <!-- EN:
+    <li>subject->smokescreen</li>
+    <li>subject_story->worked as a hauler for bands, using smokepops for special effects</li>
+    <li>subject_story->established a defensive smokepop perimeter around the local towns, to keep the wildlife back</li>
+    <li>subject_story->used smokepop packs to train new firefighters, without the peril of actual fire</li>
+    <li>subject_gerund->building smokepop packs</li>
+    <li>subject_gerund->deploying smokescreens</li>
+  -->
+  <SmokepopBelt.generalRules.rulesStrings>
+    <li>subject->cortine fumogene</li>
+    <li>subject_story->lavorò come trasportatore per band usando composti fumogeni per effetti speciali</li>
+    <li>subject_story->istituì un perimetro difensivo di cortine fumogene attorno alle città locali per tenere lontana la fauna selvatica</li>
+    <li>subject_story->usò composti fumogeni per addestrare nuovi vigili del fuoco senza il rischio del fuoco reale</li>
+    <li>subject_gerund->costruire composti fumogeni</li>
+    <li>subject_gerund->schierare cortine fumogene</li>
+  </SmokepopBelt.generalRules.rulesStrings>
+  
+<!-- EN: solar panel -->
+<SolarPanels.label>pannello solare</SolarPanels.label>
+<!-- EN: Build solar panels for electricity generation. -->
+<SolarPanels.description>Costruisci pannelli solari per la generazione di elettricità.</SolarPanels.description>
+<!-- EN:
+  <li>subject->solar panels</li>
+  <li>subject->solar energy</li>
+  <li>subject_story->established a multi-spectrum solar farm</li>
+  <li>subject_story->studied ways of maximizing the percentage of solar energy captured</li>
+  <li>subject_story->left on a sundiver to see a fly-by of a star's photosphere</li>
+  <li>subject_gerund->building solar panels</li>
+-->
+<SolarPanels.generalRules.rulesStrings>
+  <li>soggetto->pannelli solari</li>
+  <li>soggetto->energia solare</li>
+  <li>storia_soggetto->ha fondato una centrale solare multispettrale</li>
+  <li>storia_soggetto->ha studiato modi per massimizzare la percentuale di energia solare catturata</li>
+  <li>storia_soggetto->è partito su uno sundiver per osservare il passaggio ravvicinato della fotosfera di una stella</li>
+  <li>gerundio_soggetto->costruire pannelli solari</li>
+</SolarPanels.generalRules.rulesStrings>
+
+<!-- EN: sterile materials -->
+<SterileMaterials.label>materiali sterili</SterileMaterials.label>
+<!-- EN: Construct sterile tiles to make cleanrooms for safer and more effective medical treatment, research, and cooking. -->
+<SterileMaterials.description>Realizza piastrelle sterili per realizzare camere sterili che garantiscono una migliore sicurezza ed efficacia nella cura medica, nella ricerca e nella cucina.</SterileMaterials.description>
+<!-- EN:
+  <li>subject->sterile surfaces</li>
+  <li>subject_story->prevented many deaths by insisting on effective, consistent sterilization of all equipment</li>
+  <li>subject_story->started a kibble kitchen which, uniquely for the system, was known to be free of food poisoning</li>
+  <li>subject_story->established a decorative tile factory, with a sideline in medical equipment and sterile tiles</li>
+  <li>subject_gerund->sterilizing surfaces</li>
+  <li>subject_gerund->constructing sterilized surfaces</li>
+-->
+<SterileMaterials.generalRules.rulesStrings>
+  <li>soggetto->superfici sterili</li>
+  <li>storia_soggetto->ha evitato molte morti insistendo su una sterilizzazione efficace e costante di tutta l’attrezzatura</li>
+  <li>storia_soggetto->ha aperto una cucina per crocchette che, in modo unico per il sistema, era nota per essere priva di intossicazioni alimentari</li>
+  <li>storia_soggetto->ha fondato una fabbrica di piastrelle decorative, con un ramo secondario per attrezzature mediche e piastrelle sterili</li>
+  <li>gerundio_soggetto->sterilizzare superfici</li>
+  <li>gerundio_soggetto->costruire superfici sterilizzate</li>
+</SterileMaterials.generalRules.rulesStrings>
+
+<!-- EN: tube television -->
+<TubeTelevision.label>TV a tubo catodico</TubeTelevision.label>
+<!-- EN: Produce tube televisions for recreational watching. -->
+<TubeTelevision.description>Produci televisori a tubo catodico per uso ricreativo.</TubeTelevision.description>
+<!-- EN:
+  <li>subject->tube televisions</li>
+  <li>subject_story->designed a faux-retro television set that could pick up interstellar signals</li>
+  <li>subject_story->moved into broadcasting, producing programmes just for the archaic tube televisions</li>
+  <li>subject_story->ensured that everyone knew the dangers of cathode ray tubes</li>
+  <li>subject_gerund->producing tube televisions</li>
+-->
+<TubeTelevision.generalRules.rulesStrings>
+  <li>soggetto->televisori a tubo catodico</li>
+  <li>storia_soggetto->ha progettato un televisore finto-retro in grado di captare segnali interstellari</li>
+  <li>storia_soggetto->è passato alla trasmissione, producendo programmi solo per i televisori a tubo catodico arcaici</li>
+  <li>storia_soggetto->ha fatto in modo che tutti conoscessero i pericoli dei tubi catodici</li>
+  <li>gerundio_soggetto->produrre televisori a tubo catodico</li>
+</TubeTelevision.generalRules.rulesStrings>
+  
+<!-- EN: watermill generator -->
+<WatermillGenerator.label>generatore idroelettrico</WatermillGenerator.label>
+<!-- EN: Build watermill generators on rivers to generate a steady supply of power. -->
+<WatermillGenerator.description>Costruisci generatori idroelettrici su fiumi per generare una fornitura costante di energia.</WatermillGenerator.description>
+<!-- EN:
+  <li>subject->watermill generators</li>
+  <li>subject_story->watched twigs and leaves get pulled downstream and envisioned the power there</li>
+  <li>subject_story->hooked cabling up to an ancient flour mill on a feudalworld</li>
+  <li>subject_story->beached a paddle steamer on a ruinworld's shores and converted it into a watermill</li>
+  <li>subject_gerund->watermill generators</li>
+-->
+<WatermillGenerator.generalRules.rulesStrings>
+  <li>soggetto->generatori idroelettrici</li>
+  <li>storia_soggetto->ha visto rami e foglie trascinati a valle e ha immaginato l’energia lì presente</li>
+  <li>storia_soggetto->ha collegato cavi a un antico mulino per farina su un mondo feudale</li>
+  <li>storia_soggetto->ha arenato un battello a pale sulle coste di un mondo in rovina e l’ha convertito in un mulino ad acqua</li>
+  <li>gerundio_soggetto->generatori idroelettrici</li>
+</WatermillGenerator.generalRules.rulesStrings>
+  
+</LanguageData>
