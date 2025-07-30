@@ -13,3 +13,7 @@ Errori corretti:
 <LetterLabelGainedRoyalTitle>Titolo di {TITLE} ottenuto: {PAWN_labelShort}</LetterLabelGainedRoyalTitle>
 <CannotTrainTooSmall>{0} è troppo piccolo per imparare questo.</CannotTrainTooSmall>
 <Disease_MuscleParasites.letterText>
+
+PROGRESS:
+Core:       DefInjected ->  BackstoryDef    -> Offworld_Glitterworld_Adult
+Anomaly:    DefInjected ->  JobDef                 
