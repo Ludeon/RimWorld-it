@@ -7,13 +7,32 @@ Non ho la pretesa di essere un traduttore professionista, ma spero che il mio la
 
 Questa versione presenta tutte le chiavi di tutti i DLC corrette con il tool automatico presente nel gioco.
 
-## Modificice effettuate:
+### Modificice effettuate:
 - Ho scaricato la versione 1.4.3525 presente sul reporitory
-- Usato il tool per fixare ed aggiungere le chiavi mancanti
+- Usato il tool in gioco per fixare ed aggiungere le chiavi mancanti
 
 ### Amici che mi hanno aiutano durante questo lavoro:
 - Spappo
 
+### Ultimo report:
+```
+📄 report_20250730.txt - 19814
+┌─────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬────────┐
+│ (index) │ Tipo                                                                                                                 │ Errori │
+├─────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼────────┤
+│ 0       │ 'General load errors'                                                                                                │ 0      │
+│ 1       │ 'Def-injected translations load errors'                                                                              │ 412    │
+│ 2       │ 'Missing keyed translations'                                                                                         │ 1722   │
+│ 3       │ 'Def-injected translations missing'                                                                                  │ 17421  │
+│ 4       │ 'Unnecessary def-injected translations (marked as NoTranslate)'                                                      │ 0      │
+│ 5       │ 'Def-injected translations using old, renamed defs (fixed automatically but can break in the next RimWorld version)' │ 0      │
+│ 6       │ 'Argument count mismatches (may or may not be incorrect)'                                                            │ 33     │
+│ 7       │ 'Unnecessary keyed translations (will never be used)'                                                                │ 128    │
+│ 8       │ 'Keyed translations matching English (maybe ok)'                                                                     │ 95     │
+│ 9       │ 'Def-injected translations syntax suggestions'                                                                       │ 3      │
+│ 10      │ 'Backstories translation using obsolete format (def injection is now enabled for backstories)'                       │ 0      │
+└─────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴────────┘
+```
 
 
 RimWorld Italian

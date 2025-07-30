@@ -1,0 +1,26 @@
+devo tradurre il gioco RimWorld. rispetta la lore del gioco e scegli le traduzioni migliori.
+traduci in italiano solo le stringhe il cui contenuto è TODO.
+non modificare o rimuovere alcuna stringa XML già tradotta.
+non alterare nessun commento, nemmeno parzialmente.
+rispetta la formattazione e l'indentazione del file originale.
+riporta sempre la traduzione all'interno dello stesso tag, senza aggiungere o togliere tag XML, controlla eventuali errori di traduzione.
+le stringhe tra parentesi quadre [] sono variabili e NON vanno tradotte.
+quando un commento <!-- EN: contiene una lista di <li>, devi tradurre tutte le righe che contengono testo naturale, lasciando invariati i riferimenti tra parentesi quadre. Mantieni lo stesso numero di <li> del commento originale.
+le stringhe con \n\n devono essere copiate esattamente così nella traduzione, senza andare a capo.
+restituisci l'intero file completo, tradotto, senza mai troncare la risposta.
+se trovi tag vuoti contali come se fosse un TODO
+
+
+SCRIPT DI ISTRUZIONI PER LA TRADUZIONE DI FILE XML DI RIMWORLD
+* Traduci in italiano solo le stringhe il cui contenuto è TODO oppure è vuoto (cioè <tag /> o <tag></tag>), trattando entrambe le situazioni come stringhe da tradurre.
+* Non modificare o rimuovere alcuna stringa XML già tradotta.
+* Non alterare commenti (<!-- ... -->), nemmeno parzialmente, ricopiali sempre per intero.
+* Mantieni la formattazione originale, inclusa indentazione, newline (\n\n) e struttura XML.
+* Traduci sempre all'interno dello stesso tag.
+* Non aggiungere né rimuovere tag XML.
+* Le variabili tra parentesi quadre (es. [INITIATOR_possessive], [WEAPON_label]) non vanno tradotte.
+* Se un commento <!-- EN: contiene una lista di <li>, traduce ogni riga che contiene testo naturale, ma lascia invariati i riferimenti tra parentesi quadre ([]), e mantieni esattamente lo stesso numero di <li>.
+* Se trovi sequenze con \n\n, copiale esattamente così nella traduzione, senza andare a capo.
+* Restituisci sempre il file completo, senza troncamenti.
+* Se trovi tag vuoti, trattali come se fossero TODO e crea la lista all'interno del tag vuoto
+* Scrivi solo il testo tradotto in chat
