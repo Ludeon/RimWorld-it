@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-  
+
   <!-- EN: Mad {ANIMAL_labelShort} -->
   <LetterLabelAnimalInsanitySingle>{ANIMAL_labelShort} impazzit{ANIMAL_gender ? o : a : o}</LetterLabelAnimalInsanitySingle>
   <!-- EN: A local {ANIMAL_label} has gone mad. It will attack everyone it sees. -->
@@ -9,26 +9,26 @@
   <LetterLabelAnimalInsanityMultiple>{0} impazzit{0_gender ? o : a : o}</LetterLabelAnimalInsanityMultiple>
   <!-- EN: Some sort of psychic wave has swept over the landscape. Your colonists are okay, but...\n\nIt seems many of the {0} in the area have been driven insane. -->
   <AnimalInsanityMultiple>Una sorta di onda psichica si è abbattuta sul territorio. I tuoi coloni stanno bene, ma...\n\nSembra che molti {0_gender ? dei : delle : degli} {0} nell'area siano impazzit{0_gender ? i : e : i}.</AnimalInsanityMultiple>
-  
+
   <!-- EN: Blight: {PLANTDEF_labelPlural} -->
   <LetterLabelCropBlight>Piaga: {PLANTDEF_labelPlural}</LetterLabelCropBlight>
   <!-- EN: Blight has been discovered on the {PLANTDEF_labelPlural}!
 \nYou should cut or burn the affected plants before the blight spreads. -->
   <LetterCropBlight>Una piaga è stata scoperta sulle {PLANTDEF_labelPlural}!\nDovresti tagliare o bruciare le piante colpite prima che la piaga si diffonda.</LetterCropBlight>
-  
+
   <!-- EN: Miracle -->
   <LetterLabelMiracleHeal>Miracolo</LetterLabelMiracleHeal>
   <!-- EN: {0} has experienced a miraculous recovery! -->
   <MiracleHeal>{0} è guarit{0_gender ? o : a : o} miracolosamente!</MiracleHeal>
-  
+
   <!-- Enemy raids -->
   <!-- EN: One of the {LEADER_factionPawnsPlural} - {LEADER_labelShort}, is the leader of the faction. -->
   <EnemyRaidLeaderPresent>{LEADER_labelShort}, uno dei {LEADER_factionPawnsPlural}, è il capo della fazione.</EnemyRaidLeaderPresent>
-  
+
   <!-- Friendly raids -->
   <!-- EN: One of the {LEADER_factionPawnsPlural} - {LEADER_labelShort}, is the leader of the faction. -->
   <FriendlyRaidLeaderPresent>{LEADER_labelShort}, uno dei {LEADER_factionPawnsPlural}, è il capo della fazione.</FriendlyRaidLeaderPresent>
-  
+
   <!-- EN: Transport pod crash -->
   <LetterLabelRefugeePodCrash>Capsula di salvataggio</LetterLabelRefugeePodCrash>
   <!-- EN: {PAWN_titleIndef} named {PAWN_nameDef} is crashing in a transport pod nearby. If {PAWN_pronoun} survives the impact, {PAWN_pronoun} will be badly wounded. -->
@@ -41,17 +41,17 @@
   <RefugeePodCrash_Hostile>{PAWN_nameDef} fa parte della tua fazione nemica {PAWN_factionName}. Puoi catturarl{PAWN_gender ? o : a : o} per reclutamento o schiavitù.</RefugeePodCrash_Hostile>
   <!-- EN: {PAWN_nameDef} is from {PAWN_factionName}. If {PAWN_pronoun} returns home safely, {PAWN_pronoun} will spread goodwill between your factions.\n\nYou can also capture {PAWN_objective} for recruitment or slavery purposes, but this will anger {PAWN_possessive} faction. -->
   <RefugeePodCrash_NonHostile>{PAWN_nameDef} fa parte di {PAWN_factionName}. Se {PAWN_gender ? lo : la : lo} salvi e torna a casa incolume, diffonderà buona volontà tra le vostre fazioni.\n\nPuoi anche catturarl{PAWN_gender ? o : a : o} per reclutamento o schiavitù, ma questo farà infuriare la sua fazione.</RefugeePodCrash_NonHostile>
-  
+
   <!-- EN: Wanderer joins: {PAWN_nameDef} -->
   <LetterLabelWandererJoins>Viandante si unisce: {PAWN_nameDef}</LetterLabelWandererJoins>
   <!-- EN: A {PAWN_title} named {PAWN_nameDef} has arrived and wants to join the colony.\n\n[PAWN_pronoun] is willing to contribute, but will not leave voluntarily, claiming to have nowhere else to go. You can choose to turn {PAWN_objective} down and send {PAWN_objective} away. However, your colonists will be disturbed at sending someone away in need. -->
   <LetterWandererJoins>Un {PAWN_title} di nome {PAWN_nameDef} è arrivat{PAWN_gender ? o : a : o} e vuole unirsi alla colonia.\n\n[PAWN_pronoun] è disposto ad aiutare, ma non se ne andrà volontariamente, dicendo di non avere altri posti dove andare. Puoi decidere di rifiutare {PAWN_objective} e mandarl{PAWN_gender ? o : a : o} via, ma i coloni saranno turbati dal mandare via qualcuno in difficoltà.</LetterWandererJoins>
-  
+
   <!-- EN: Cargo pods -->
   <LetterLabelCargoPodCrash>Capsula di trasporto</LetterLabelCargoPodCrash>
   <!-- EN: You have detected a cluster of cargo pods crashing nearby.\n\nPerhaps you'll find something useful in the wreckage. -->
   <CargoPodCrash>Hai rilevato un gruppo di capsule di trasporto precipitate nelle vicinanze.\n\nForse troverai qualcosa di utile tra i rottami.</CargoPodCrash>
-  
+
   <!-- EN: an electrical conduit -->
   <AnElectricalConduit>un condotto elettrico</AnElectricalConduit>
   <!-- EN: A fault in {0} has caused a short circuit. -->
@@ -64,19 +64,19 @@
   <ShortCircuitWasLarge>Questa grande quantità di energia ha creato un'esplosione di dimensioni considerevoli.</ShortCircuitWasLarge>
   <!-- EN: That really is a huge explosion. Wow. -->
   <ShortCircuitWasHuge>Quella sì che è una grossa esplosione. Wow.</ShortCircuitWasHuge>
-  
+
   <!-- EN: A trade ship is passing nearby.\n\nThey are known as {0}. They are a {1}.\n\n{2} -->
   <TraderArrival>Una nave commerciale sta passando nelle vicinanze.\n\nSono conosciuti come {0}. Sono un {1}.\n\n{2}</TraderArrival>
   <!-- EN: They're affiliated with {FACTION_name}. -->
   <TraderArrivalFromFaction>Sono affiliati a {FACTION_name}.</TraderArrivalFromFaction>
   <!-- EN: They are not affiliated with any faction. -->
   <TraderArrivalNoFaction>Non sono affiliati a nessuna fazione.</TraderArrivalNoFaction>
-  
+
   <!-- EN: A {PAWN_title} from {1} is passing by. {PAWN_pronoun} is named {PAWN_nameFull}. -->
   <SingleTravelerPassing>{PAWN_gender ? Un : Una : Uno} {PAWN_title} proveniente da {1} è di passaggio. Si chiama {PAWN_nameFull}.</SingleTravelerPassing>
   <!-- EN: A group of travelers from {0} are passing by. -->
   <GroupTravelersPassing>Un gruppo di viaggiatori da {0} è di passaggio.</GroupTravelersPassing>
-  
+
   <!-- EN: Visitor -->
   <LetterLabelSingleVisitorArrives>Visitatore</LetterLabelSingleVisitorArrives>
   <!-- EN: {PAWN_titleIndef} from {1} is visiting the colony.\n\n{PAWN_pronoun} is named {PAWN_nameFull}.{3}{4} -->
@@ -95,7 +95,7 @@
   <GroupVisitorsArriveLeaderInfo>Uno dei visitatori, {1_labelShort}, è il leader della fazione.</GroupVisitorsArriveLeaderInfo>
   <!-- EN: Visitors from {0} are leaving. -->
   <VisitorsLeaving>I visitatori di {0} stanno andando via.</VisitorsLeaving>
-  
+
   <!-- EN: Manhunter pack -->
   <LetterLabelManhunterPackArrived>Branco sanguinario</LetterLabelManhunterPackArrived>
   <!-- EN: A pack of man-hunting {0} have entered the area! Driven insane by the disease known as scaria, they will roam the region, hunting for humanoid flesh.\n\nThey won't attack doors unless they see someone go through the door. Hide inside and you'll be safe. They also won't attack powered-off turrets, so turn your turrets off to save them.\n\nThe {0} will leave the area in one or two days. You can hide and wait them out, or fight them. -->
@@ -124,7 +124,7 @@
   <LetterLabelAgentRevealed>Agente</LetterLabelAgentRevealed>
   <!-- EN: {0} has been revealed as an agent of your enemy {1}.\n\nThey are attempting to escape now. -->
   <LetterAgentRevealed>{0} si è rivelat{0_gender ? o : a : o} un agente del tuo nemico {1}.\n\nSta cercando di scappare.</LetterAgentRevealed>
-  
+
   <!-- Beavers -->
   <!-- EN: Beavers! -->
   <LetterLabelBeaversArrived>Alfacastori!</LetterLabelBeaversArrived>
@@ -140,7 +140,7 @@
   <LetterAnimalSelfTameAndNameNumerical>{0} è diventat{0_gender ? o : a : o} domestic{0_gender ? o : a : o}. Ora è chiamat{0_gender ? o : a : o} {ANIMAL_nameFull}.</LetterAnimalSelfTameAndNameNumerical>
   <!-- EN: {0} has become tame. Colonists have decided to name it {ANIMAL_nameFull}. -->
   <LetterAnimalSelfTameAndName>{0} è diventat{0_gender ? o : a : o} domestic{0_gender ? o : a : o}. I coloni hanno deciso di chiamarl{0_gender ? o : a : o} {ANIMAL_nameFull}.</LetterAnimalSelfTameAndName>
-  
+
   <!-- Farm animals wander in -->
   <!-- EN: {0} join -->
   <LetterLabelFarmAnimalsWanderIn>{0} si uniscono</LetterLabelFarmAnimalsWanderIn>
@@ -160,7 +160,7 @@
   <LetterTraderCaravanArrival>Una carovana da {0} si sta avvicinando. Sono {1}.\n\nRimarranno nei pressi della colonia per qualche giorno prima di ripartire. Puoi attaccarli... ma questo farà infuriare la loro fazione!</LetterTraderCaravanArrival>
   <!-- EN: They will hang around the colony for some time before leaving. You can attack them - but this will anger their faction! -->
   <LetterCaravanArrivalCommonWarning>Resteranno nei dintorni della colonia per un po' prima di andarsene. Puoi attaccarli - ma questo farà arrabbiare la loro fazione!</LetterCaravanArrivalCommonWarning>
-  
+    
   <!-- Ransom demand -->
   <!-- EN: Ransom demand at {0} -->
   <RansomDemandTitle>Richiesta di riscatto a {0}</RansomDemandTitle>
@@ -178,7 +178,7 @@
   <EscapeShipFound>Hai raggiunto le coordinate inviate da (*Name)Charlon Whitestone(/Name) e hai scoperto l'astronave nascosta.\n\nIl reattore della nave è ancora in modalità di ibernazione profonda, quindi non può ancora decollare. Puoi avviarlo interagendo con il nucleo del computer.\n\nCharlon Whitestone ti avverte che il processo di avvio richiederà circa 15 giorni e la firma energetica sarà rilevabile a grande distanza. Questo tipo di energia indica capacità di volo interstellare e attirerà orde di predoni disperati e sciami di meccanoidi letali.\n\nSarai assalito con un'intensità mai vista. Assicurati che le tue difese siano pronte.</EscapeShipFound>
   <!-- EN: You've reached the coordinates sent by (*Name)Charlon Whitestone(/Name) and discovered the hidden starship.\n\nThe ship's reactor is still in deep hibernation mode, so it can't fly yet. You can start it up by interacting with the computer core.\n\n(*Name)Charlon Whitestone(/Name) warns you that the startup process will take about 15 days. -->
   <EscapeShipFoundPeaceful>Hai raggiunto le coordinate inviate da (*Name)Charlon Whitestone(/Name) e hai scoperto l'astronave nascosta.\n\nIl reattore della nave è ancora in modalità di ibernazione profonda, quindi non può ancora decollare. Puoi avviarlo interagendo con il computer.\n\n(*Name)Charlon Whitestone(/Name) ti avverte che il processo di avvio durerà circa 15 giorni.</EscapeShipFoundPeaceful>
-  
+
   <!-- Caravan meeting -->
   <!-- EN: Caravan meeting by {0} -->
   <CaravanMeetingTitle>Incontro della carovana con {0}</CaravanMeetingTitle>
@@ -206,7 +206,7 @@
   <NormalQualityOrBetter>qualità normale o migliore</NormalQualityOrBetter>
   <!-- EN: not tainted -->
   <NotTainted>non contaminato</NotTainted>
-  
+
   <!-- Caravan demand -->
   <!-- EN: Caravan demand by {0} -->
   <CaravanDemandTitle>Richiesta alla carovana da {0}</CaravanDemandTitle>
@@ -216,7 +216,7 @@
   <CaravanDemand_Give>Dai e passa</CaravanDemand_Give>
   <!-- EN: Refuse and fight -->
   <CaravanDemand_Fight>Rifiuta e combatti</CaravanDemand_Fight>
-  
+
   <!-- Site no longer hostile -->
   <!-- EN: Quest no longer available -->
   <LetterLabelSiteNoLongerHostile>Missione non più disponibile</LetterLabelSiteNoLongerHostile>
@@ -226,25 +226,25 @@
   <LetterSiteNoLongerHostile>Poiché non sei più ostile con {0}, il sito {1} non è più disponibile.</LetterSiteNoLongerHostile>
   <!-- EN: Because you are no longer hostile with {0}, the following sites are no longer available -->
   <LetterSiteNoLongerHostileMulti>Poiché non sei più ostile con {0}, i seguenti siti non sono più disponibili</LetterSiteNoLongerHostileMulti>
-  
+
   <!-- Quest asker faction hostile -->
   <!-- EN: Quest failed -->
   <LetterLabelQuestAskerFactionHostile>Missione fallita</LetterLabelQuestAskerFactionHostile>
   <!-- EN: The quest is now incompletable because {FACTION_name} is hostile. -->
   <LetterQuestAskerFactionHostile>La missione non può più essere completata perché {FACTION_name} è ostile.</LetterQuestAskerFactionHostile>
-  
+
   <!-- Quest asker captured -->
   <!-- EN: Quest failed -->
   <LetterLabelQuestAskerCaptured>Missione fallita</LetterLabelQuestAskerCaptured>
   <!-- EN: The quest is now incompletable because {SUBJECT_definite} has been captured. -->
   <LetterQuestAskerCaptured>La missione non può più essere completata perché {SUBJECT_definite} è stato catturato.</LetterQuestAskerCaptured>
-  
+
   <!-- Quest asker died -->
   <!-- EN: Quest failed -->
   <LetterLabelQuestAskerDied>Missione fallita</LetterLabelQuestAskerDied>
   <!-- EN: The quest is now incompletable because {SUBJECT_definite} has died. -->
   <LetterQuestAskerDied>La missione non può più essere completata perché {SUBJECT_definite} è morto.</LetterQuestAskerDied>
-  
+
   <!-- UNUSED -->
   <EscapeShipLostLabel>Astronave distrutta</EscapeShipLostLabel>
   <EscapeShipLost>(*Name)Charlon Whitestone(/Name) ti manda un messaggio.\n\nHa visto che hai perso il controllo dell'astronave. Per evitare che cada nelle mani sbagliate, è stato costretto ad attivare il meccanismo di autodistruzione della nave. Ora l'astronave è solo un cratere.\n\nDovrai trovare un altro modo per lasciare questo pianeta.</EscapeShipLost>

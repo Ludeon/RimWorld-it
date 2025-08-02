@@ -4,7 +4,9 @@
   <!-- EN:
     <li>questDescription->[asker_nameFull], [asker_faction_leaderTitle] of [asker_faction_name], has sent us a message. Apparently, [siteFaction_pawnsPlural] based in a nearby camp have been raiding their caravans. The camp is controlled by [siteFaction_name].\n\n[asker_nameDef] is asking us to destroy the camp, which means eliminating all enemies and turrets. [asker_label] says that [sitePart0_description].</li>
   -->
-  <OpportunitySite_BanditCamp.questDescriptionRules.rulesStrings />
+  <OpportunitySite_BanditCamp.questDescriptionRules.rulesStrings>
+    <li>questDescription->[asker_nameFull], [asker_faction_leaderTitle] di [asker_faction_name], ci ha inviato un messaggio. Sembra che [siteFaction_pawnsPlural], che si trovano in un campo nelle vicinanze, abbiano razziato le loro carovane. Il campo è controllato da [siteFaction_name].\n\n[asker_nameDef] ci chiede di distruggere il campo, il che significa eliminare tutti i nemici e le torrette. [asker_label] dice che [sitePart0_description].</li>
+  </OpportunitySite_BanditCamp.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->The [bandit] [camp]</li>
     <li>questName->[bandit] [camp]</li>
@@ -22,7 +24,23 @@
     <li>bandit->Robber</li>
     <li>bandit->Brigand</li>
   -->
-  <OpportunitySite_BanditCamp.questNameRules.rulesStrings />
+  <OpportunitySite_BanditCamp.questNameRules.rulesStrings>
+    <li>questName->Il [bandit] [camp]</li>
+    <li>questName->[bandit] [camp]</li>
+    <li>questName->[asker_nameDef] e il [camp]</li>
+    <li>camp->Campo</li>
+    <li>camp->Avamposto</li>
+    <li>camp->Covone</li>
+    <li>camp->Accampamento</li>
+    <li>bandit->Bandito</li>
+    <li>bandit->Razziatore</li>
+    <li>bandit->Fuorilegge</li>
+    <li>bandit->Disperato</li>
+    <li>bandit->Fuggiasco</li>
+    <li>bandit->Maraudatore</li>
+    <li>bandit->Rapinatore</li>
+    <li>bandit->Brigante</li>
+  </OpportunitySite_BanditCamp.questNameRules.rulesStrings>
   <!-- EN: Quest expired: [resolvedQuestName] -->
   <OpportunitySite_BanditCamp.LetterLabelQuestExpired.slateRef>Missione scaduta: [resolvedQuestName]</OpportunitySite_BanditCamp.LetterLabelQuestExpired.slateRef>
   <!-- EN: The bandit camp has packed up and moved on. The quest [resolvedQuestName] has expired. -->
@@ -43,5 +61,5 @@
   <!-- UNUSED -->
   <OpportunitySite_BanditCamp.questDescriptionRules.rulesStrings />
   <OpportunitySite_BanditCamp.questNameRules.rulesStrings />
-  
+
 </LanguageData>
