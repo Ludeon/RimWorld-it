@@ -11,16 +11,21 @@ restituisci l'intero file completo, tradotto, senza mai troncare la risposta.
 se trovi tag vuoti contali come se fosse un TODO
 
 
-SCRIPT DI ISTRUZIONI PER LA TRADUZIONE DI FILE XML DI RIMWORLD
-* Traduci in italiano solo le stringhe il cui contenuto è TODO oppure è vuoto (cioè <tag /> o <tag></tag>), trattando entrambe le situazioni come stringhe da tradurre.
-* Non modificare o rimuovere alcuna stringa XML già tradotta.
-* Non alterare commenti (<!-- ... -->), nemmeno parzialmente, ricopiali sempre per intero.
-* Mantieni la formattazione originale, inclusa indentazione, newline (\n\n) e struttura XML.
-* Traduci sempre all'interno dello stesso tag.
-* Non aggiungere né rimuovere tag XML.
-* Le variabili tra parentesi quadre (es. [INITIATOR_possessive], [WEAPON_label]) non vanno tradotte.
-* Se un commento <!-- EN: contiene una lista di <li>, traduce ogni riga che contiene testo naturale, ma lascia invariati i riferimenti tra parentesi quadre ([]), e mantieni esattamente lo stesso numero di <li>.
-* Se trovi sequenze con \n\n, copiale esattamente così nella traduzione, senza andare a capo.
-* Restituisci sempre il file completo, senza troncamenti.
-* Se trovi tag vuoti, trattali come se fossero TODO e crea la lista all'interno del tag vuoto
-* Scrivi solo il testo tradotto in chat
+Devo tradurre il gioco RimWorld.
+Rispetta la lore del gioco e scegli le traduzioni migliori.
+Traduci in italiano solo le stringhe il cui contenuto è TODO oppure è un elemento vuoto (cioè <tag /> o <tag></tag>),
+se è vuoto, inserisci all'interno il precedente contenuto del commento tradotto
+Non modificare o rimuovere alcuna stringa XML già tradotta.
+Non alterare commenti (<!-- ... -->), nemmeno parzialmente, ricopiali sempre per intero.
+Mantieni la formattazione originale, inclusa indentazione, newline (\n\n) e struttura XML.
+Traduci sempre all'interno dello stesso tag.
+Non aggiungere né rimuovere tag XML.
+Le variabili tra parentesi quadre (es. [INITIATOR_possessive], [WEAPON_label]) non vanno tradotte.
+Se un commento <!-- EN: contiene una lista di <li>, traduce ogni riga che contiene testo naturale, ma lascia invariati i riferimenti tra parentesi quadre ([]), e mantieni esattamente lo stesso numero di <li>.
+Se trovi sequenze con \n\n, copiale esattamente così nella traduzione, e nei commenti, senza andare a capo.
+Restituisci sempre il file completo, senza troncamenti.
+Se trovi tag vuoti, trattali come se fossero TODO e crea la lista all'interno del tag vuoto
+Scrivi solo il testo tradotto in chat
+Oltre ai TODO e ai tag vuoti, se una stringa è già tradotta ma la traduzione non rispetta fedelmente l'originale inglese (ad esempio tralascia il senso della frase, sbaglia la variabile, o cambia il significato), correggila e riscrivila correttamente.
+Se il testo tradotto è fedele e naturale in italiano, lascialo così com'è.
+dammi sempre l'output completo del file, senza tagli o omissioni in formato xml.
