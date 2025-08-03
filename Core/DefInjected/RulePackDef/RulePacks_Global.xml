@@ -94,9 +94,47 @@
     <li>talktopicheavyfile(p=0.15)->animal sexuality</li>
     <li>talktopicheavyfile(p=0.15)->sexual fetishes</li>
   -->
-  <TalkTopicsUtility.rulePack.rulesStrings />
+  <TalkTopicsUtility.rulePack.rulesStrings>
+    <li>TalkTopicAny->[TalkTopicLight]</li>
+    <li>TalkTopicAny->[TalkTopicHeavy]</li>
+    <li>TalkTopicHeavy->[talktopicheavyfile]</li>
+    <li>TalkTopicHeavy(p=0.08)->il legame tra [talktopicheavyfile] e [talktopicheavyfile]</li>
+    <li>TalkTopicHeavy(p=0.08)->la connessione tra [talktopicheavyfile] e [talktopicheavyfile]</li>
+    <li>TalkTopicHeavy(p=0.08)->la relazione tra [talktopicheavyfile] e [talktopicheavyfile]</li>
+    <li>TalkTopicLight(p=25)->[talktopiclightfile]</li>
+    <li>TalkTopicLight->[Vegetable]s</li>
+    <li>TalkTopicLight->mangiare [Vegetable]s</li>
+    <li>TalkTopicLight->cucinare con [Vegetable]s</li>
+    <li>TalkTopicLight->[Game]</li>
+    <li>TalkTopicLight->giocare a [Game]</li>
+    <li>TalkTopicLight->esercitarsi a [Game]</li>
+    <li>TalkTopicLight->imparare [Game]</li>
+    <li>TalkTopicLight->[Animal]s</li>
+    <li>TalkTopicLight->addestrare [Animal]s</li>
+    <li>TalkTopicLight->addomesticare [Animal]s</li>
+    <li>TalkTopicLight->combattere contro [Animal]s</li>
+    <li>TalkTopicLight->[Animal]s impazziti</li>
+    <li>TalkTopicLight->[Weapon]s</li>
+    <li>TalkTopicLight->usare [Weapon]s</li>
+    <li>TalkTopicLight->esercitarsi con [Weapon]s</li>
+    <li>TalkTopicLight->[TerrainFeature]s</li>
+    <li>TalkTopicLight->[NaturalObject]s</li>
+    <li>TalkTopicLight->alberi di tipo [TreeType]</li>
+    <li>TalkTopicLight->[PersonJob]s</li>
+    <li>TalkTopicLight->[PersonJob]s amichevoli</li>
+    <li>TalkTopicLight->[PersonJob]s ostili</li>
+    <li>TalkTopicLight->[Enemy]s</li>
+    <li>TalkTopicLight->combattere contro [Enemy]s</li>
+    <li>TalkTopicLight->[Apparel]s</li>
+    <li>TalkTopicLight->indossare [Apparel]s</li>
+    <li>TalkTopicLight->realizzare [Apparel]s</li>
+    <li>talktopicheavyfile(p=0.15)->sesso</li>
+    <li>talktopicheavyfile(p=0.15)->seduzione</li>
+    <li>talktopicheavyfile(p=0.15)->sessualità animale</li>
+    <li>talktopicheavyfile(p=0.15)->feticismi sessuali</li>
+  </TalkTopicsUtility.rulePack.rulesStrings>
   
   <!-- UNUSED -->
   <TalkTopicsUtility.rulePack.rulesStrings />
-  
+
 </LanguageData>
