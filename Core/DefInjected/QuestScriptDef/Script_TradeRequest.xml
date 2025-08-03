@@ -8,7 +8,13 @@
     <li>travelTime(canCaravan==True,priority=1)-> The estimated travel time is [estimatedTravelTime_duration].</li>
     <li>travelTime-></li>
   -->
-  <TradeRequest.questDescriptionRules.rulesStrings />
+  <TradeRequest.questDescriptionRules.rulesStrings>
+    <li>questDescription->Un insediamento vicino, [settlement_label], ha una richiesta di scambio speciale. Vorrebbero acquistare:\n\n  [requestedThingCount]x [requestedThing_label] [qualityInfo](valore [requestedThingMarketValue_money])\n\nSe vuoi effettuare lo scambio, invia una carovana con gli oggetti richiesti.[travelTime]</li>
+    <li>qualityInfo(requestedThingHasQuality==True,priority=1)->di qualità normale o superiore</li>
+    <li>qualityInfo-></li>
+    <li>travelTime(canCaravan==True,priority=1)-> Il tempo di viaggio stimato è [estimatedTravelTime_duration].</li>
+    <li>travelTime-></li>
+  </TradeRequest.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->Caravan to [settlement_label]</li>
     <li>questName->Trade with [settlement_label]</li>
@@ -23,7 +29,20 @@
     <li>trade->Deal</li>
     <li>trade->Offer</li>
   -->
-  <TradeRequest.questNameRules.rulesStrings />
+  <TradeRequest.questNameRules.rulesStrings>
+    <li>questName->Carovana per [settlement_label]</li>
+    <li>questName->Scambio con [settlement_label]</li>
+    <li>questName->Vendita a [settlement_label]</li>
+    <li>questName->Rifornimenti per [settlement_label]</li>
+    <li>questName->Uno [special] [trade]</li>
+    <li>special->Speciale</li>
+    <li>special->Unico</li>
+    <li>special->Non tradizionale</li>
+    <li>trade->Scambio</li>
+    <li>trade->Baratto</li>
+    <li>trade->Affare</li>
+    <li>trade->Offerta</li>
+  </TradeRequest.questNameRules.rulesStrings>
   <!-- EN: Quest failed: [resolvedQuestName] -->
   <TradeRequest.LetterLabelQuestFailed.slateRef>Missione fallita: [resolvedQuestName]</TradeRequest.LetterLabelQuestFailed.slateRef>
   <!-- EN: [faction_name] became hostile to you. -->
@@ -36,5 +55,5 @@
   <!-- UNUSED -->
   <TradeRequest.questDescriptionRules.rulesStrings />
   <TradeRequest.questNameRules.rulesStrings />
-  
+
 </LanguageData>

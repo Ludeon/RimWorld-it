@@ -37,9 +37,44 @@
     <li>desc_pawn->looking [AdjectiveAny]</li>
     <li>desc_pawn->covered in [Gore]</li>
   -->
-  <TalelessImages.rulePack.rulesStrings />
+  <TalelessImages.rulePack.rulesStrings>
+    <li>image>un [Character] solitario [desc_pawn]</li>
+    <li>image>un [Character] solitario [desc_pawn] vicino a una [TerrainFeature]</li>
+    <li>image>un [Character] solitario [desc_pawn] vicino a una [Community]</li>
+    <li>image>un [Character] [desc_pawn] circondato da [Character]</li>
+    <li>image>[Character] che giocano a [Game]</li>
+    <li>image>un [Character] [desc_pawn] che gioca a [Game] con [Quantity_adjphrase] [Character]</li>
+    <li>image>un [Character] [desc_pawn] che impugna un [Weapon]</li>
+    <li>image>un [Character] [desc_pawn] che mangia un [Vegetable]</li>
+    <li>image>[Quantity_adjphrase] [PersonJob] e [PersonJob] che mangiano insieme [Vegetable]</li>
+    <li>image>la celebrità minore [NamePerson] [desc_pawn]</li>
+    <li>image>un [Character] che indossa un [Apparel] [desc_pawn]</li>
+    <li>image>una [Community]</li>
+    <li>image>una [TerrainFeature]</li>
+    <li>image>un [Weapon]</li>
+    <li>image>un albero di tipo [TreeType]</li>
+    <li>image>un [NaturalObject]</li>
+    <li>image>[Quantity_adjphrase] [Weapon]</li>
+    <li>image>[Quantity_adjphrase] [Vegetable]</li>
+    <li>image>un [Apparel] vuoto</li>
+    <li>image>una [Shape]</li>
+    <li>image>una [Shape] circondata da [Shape]</li>
+    <li>image>una resa astratta di [ConceptAny]</li>
+    <li>image>una forma astratta [AdjectiveAny]</li>
+    <li>desc_pawn(p=12)></li>
+    <li>desc_pawn>che vola nell'aria</li>
+    <li>desc_pawn>sospeso nell'aria</li>
+    <li>desc_pawn>che si muove verso sinistra</li>
+    <li>desc_pawn>che si muove verso destra</li>
+    <li>desc_pawn>seduto su un tavolo</li>
+    <li>desc_pawn>visto attraverso una lente</li>
+    <li>desc_pawn>reso in silhouette</li>
+    <li>desc_pawn>a cavallo di un [Animal] che indossa un [Apparel]</li>
+    <li>desc_pawn>che appare [AdjectiveAny]</li>
+    <li>desc_pawn>coperto di [Gore]</li>
+  </TalelessImages.rulePack.rulesStrings>
   
   <!-- UNUSED -->
   <TalelessImages.rulePack.rulesStrings />
-  
+
 </LanguageData>
