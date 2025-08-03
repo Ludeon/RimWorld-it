@@ -4,7 +4,7 @@
   <!-- EN: aiming time -->
   <AimingDelayFactor.label>tempo di mira</AimingDelayFactor.label>
   <!-- EN: How long it takes to shoot after choosing a target. -->
-  <AimingDelayFactor.description>Quanto tempo ha bisogno per sparare dopo aver mirato un obiettivo.</AimingDelayFactor.description>
+  <AimingDelayFactor.description>Quanto tempo serve per sparare dopo aver scelto un obiettivo.</AimingDelayFactor.description>
   
   <!-- EN: incoming damage multiplier -->
   <IncomingDamageFactor.label>moltiplicatore di danno ricevuto</IncomingDamageFactor.label>
@@ -14,12 +14,12 @@
   <!-- EN: melee armor penetration -->
   <MeleeArmorPenetration.label>penetrazione armatura in mischia</MeleeArmorPenetration.label>
   <!-- EN: Average armor penetration of all attacks in melee combat.\n\nThis stat includes currently used weapon. -->
-  <MeleeArmorPenetration.description>La penetrazione media dell'armatura di tutti gli attacchi in mischia. Questo valore include l'arma usata al momento.</MeleeArmorPenetration.description>
+  <MeleeArmorPenetration.description>La penetrazione media dell'armatura di tutti gli attacchi in mischia. Questo valore include l'arma attualmente usata.</MeleeArmorPenetration.description>
   
   <!-- EN: melee cooldown -->
-  <MeleeCooldownFactor.label>TODO</MeleeCooldownFactor.label>
+  <MeleeCooldownFactor.label>moltiplicatore tempo di recupero in mischia</MeleeCooldownFactor.label>
   <!-- EN: A multiplier on the time this creature takes to recover after making a melee attack. -->
-  <MeleeCooldownFactor.description>TODO</MeleeCooldownFactor.description>
+  <MeleeCooldownFactor.description>Un moltiplicatore sul tempo che questa creatura impiega a recuperare dopo un attacco in mischia.</MeleeCooldownFactor.description>
   
   <!-- EN: melee damage factor -->
   <MeleeDamageFactor.label>fattore di danno corpo a corpo</MeleeDamageFactor.label>
@@ -29,7 +29,7 @@
   <!-- EN: melee dodge chance -->
   <MeleeDodgeChance.label>probabilità schivata in mischia</MeleeDodgeChance.label>
   <!-- EN: Chance to dodge a melee attack that would've otherwise hit.\n\nCharacters will not dodge while aiming or firing a ranged weapon. -->
-  <MeleeDodgeChance.description>La probabilità di schivare un attacco in mischia che sarebbe andato altrimenti a segno. I personaggi non schiveranno mentre mirano o sparano con un'arma da tiro.</MeleeDodgeChance.description>
+  <MeleeDodgeChance.description>La probabilità di schivare un attacco in mischia che altrimenti avrebbe colpito. I personaggi non schivano mentre mirano o sparano con un'arma a distanza.</MeleeDodgeChance.description>
   
   <!-- EN: melee DPS -->
   <MeleeDPS.label>DPS in mischia</MeleeDPS.label>
@@ -39,14 +39,14 @@
   <!-- EN: melee hit chance -->
   <MeleeHitChance.label>probabilità colpo in mischia</MeleeHitChance.label>
   <!-- EN: Chance to hit a target in melee.\n\nThe target can still dodge even if we would've hit. -->
-  <MeleeHitChance.description>La probabilità di colpire un bersaglio in mischia. Il bersaglio può ancora schivare anche se l'avessimo colpito.</MeleeHitChance.description>
+  <MeleeHitChance.description>La probabilità di colpire un bersaglio in mischia. Il bersaglio può comunque schivare anche se l'attacco avrebbe colpito.</MeleeHitChance.description>
   
   <!-- EN: Mortar miss radius multiplier -->
-  <MortarMissRadiusFactor.label>TODO</MortarMissRadiusFactor.label>
+  <MortarMissRadiusFactor.label>moltiplicatore raggio errore mortaio</MortarMissRadiusFactor.label>
   <!-- EN: A multiplier on the miss radius of a mortar used by this person. Smaller numbers means more accurate mortar shells. -->
-  <MortarMissRadiusFactor.description>TODO</MortarMissRadiusFactor.description>
+  <MortarMissRadiusFactor.description>Un moltiplicatore sul raggio di errore di un colpo di mortaio utilizzato da questa persona. Numeri più bassi indicano una maggiore precisione dei colpi di mortaio.</MortarMissRadiusFactor.description>
   <!-- EN: Mortar miss radius multiplier -->
-  <MortarMissRadiusFactor.labelForFullStatList>TODO</MortarMissRadiusFactor.labelForFullStatList>
+  <MortarMissRadiusFactor.labelForFullStatList>moltiplicatore raggio errore mortaio</MortarMissRadiusFactor.labelForFullStatList>
   
   <!-- EN: trap spring chance -->
   <PawnTrapSpringChance.label>probabilità attivazione della trappola</PawnTrapSpringChance.label>
@@ -56,38 +56,38 @@
   <!-- EN: ranged cooldown multiplier -->
   <RangedCooldownFactor.label>moltiplicatore di ricarica a distanza</RangedCooldownFactor.label>
   <!-- EN: A multiplier on the cooldown between bursts when using a ranged weapon. -->
-  <RangedCooldownFactor.description>Un moltiplicatore sul tempo di recupero tra le esplosioni quando si utilizza un'arma a distanza.</RangedCooldownFactor.description>
+  <RangedCooldownFactor.description>Un moltiplicatore sul tempo di recupero tra le raffiche quando si utilizza un'arma a distanza.</RangedCooldownFactor.description>
   
   <!-- EN: accuracy factor (long) -->
-  <ShootingAccuracyFactor_Long.label>TODO</ShootingAccuracyFactor_Long.label>
+  <ShootingAccuracyFactor_Long.label>fattore precisione tiro (lunga distanza)</ShootingAccuracyFactor_Long.label>
   <!-- EN: A multiplier on accuracy at a distance of 40 cells or more. -->
-  <ShootingAccuracyFactor_Long.description>TODO</ShootingAccuracyFactor_Long.description>
+  <ShootingAccuracyFactor_Long.description>Un moltiplicatore sulla precisione a una distanza di 40 celle o più.</ShootingAccuracyFactor_Long.description>
   
   <!-- EN: accuracy factor (medium) -->
-  <ShootingAccuracyFactor_Medium.label>TODO</ShootingAccuracyFactor_Medium.label>
+  <ShootingAccuracyFactor_Medium.label>fattore precisione tiro (media distanza)</ShootingAccuracyFactor_Medium.label>
   <!-- EN: A multiplier on accuracy at a distance of 25 cells. -->
-  <ShootingAccuracyFactor_Medium.description>TODO</ShootingAccuracyFactor_Medium.description>
+  <ShootingAccuracyFactor_Medium.description>Un moltiplicatore sulla precisione a una distanza di 25 celle.</ShootingAccuracyFactor_Medium.description>
   
   <!-- EN: accuracy factor (short) -->
-  <ShootingAccuracyFactor_Short.label>TODO</ShootingAccuracyFactor_Short.label>
+  <ShootingAccuracyFactor_Short.label>fattore precisione tiro (corta distanza)</ShootingAccuracyFactor_Short.label>
   <!-- EN: A multiplier on accuracy at a distance of 12 cells. -->
-  <ShootingAccuracyFactor_Short.description>TODO</ShootingAccuracyFactor_Short.description>
+  <ShootingAccuracyFactor_Short.description>Un moltiplicatore sulla precisione a una distanza di 12 celle.</ShootingAccuracyFactor_Short.description>
   
   <!-- EN: accuracy factor (close) -->
-  <ShootingAccuracyFactor_Touch.label>TODO</ShootingAccuracyFactor_Touch.label>
+  <ShootingAccuracyFactor_Touch.label>fattore precisione tiro (ravvicinata)</ShootingAccuracyFactor_Touch.label>
   <!-- EN: A multiplier on accuracy at a distance of 3 cells or less. -->
-  <ShootingAccuracyFactor_Touch.description>TODO</ShootingAccuracyFactor_Touch.description>
+  <ShootingAccuracyFactor_Touch.description>Un moltiplicatore sulla precisione a una distanza di 3 celle o meno.</ShootingAccuracyFactor_Touch.description>
   
   <!-- EN: shooting accuracy -->
   <ShootingAccuracyPawn.label>precisione di tiro</ShootingAccuracyPawn.label>
   <!-- EN: Base chance to not miss per cell of shot distance.\n\nChance to hit is also affected by many other factors.\n\nA hit chance explanation for any shot can be seen by selecting a shooter and mousing over a target. -->
-  <ShootingAccuracyPawn.description>Probabilità di base di non mancare misurata in celle di distanza di tiro. La probabilità di colpire è influenzata anche da molti altri fattori. Un'illustrazione della probabilità di colpire per ogni colpo può essere vista selezionando un tiratore e passando il mouse sopra un obiettivo.</ShootingAccuracyPawn.description>
+  <ShootingAccuracyPawn.description>Probabilità di base di non mancare per ogni cella di distanza del tiro. La probabilità di colpire è influenzata anche da molti altri fattori. Un'illustrazione della probabilità di colpire per ogni colpo può essere vista selezionando un tiratore e passando il mouse sopra un obiettivo.</ShootingAccuracyPawn.description>
   <!-- EN: shooting accuracy (people) -->
   <ShootingAccuracyPawn.labelForFullStatList>precisione di tiro (persone)</ShootingAccuracyPawn.labelForFullStatList>
   
   <!-- EN: stagger time multiplier -->
-  <StaggerDurationFactor.label>moltiplicatore temporale sfalsato</StaggerDurationFactor.label>
+  <StaggerDurationFactor.label>moltiplicatore durata stordimento</StaggerDurationFactor.label>
   <!-- EN: A multiplier on the duration of the stagger-slowdown that occurs when damage is taken. -->
-  <StaggerDurationFactor.description>Un moltiplicatore della durata del rallentamento sfalsato che si verifica quando si subisce un danno.</StaggerDurationFactor.description>
-  
+  <StaggerDurationFactor.description>Un moltiplicatore della durata del rallentamento da stordimento che si verifica quando si subisce un danno.</StaggerDurationFactor.description>
+
 </LanguageData>
