@@ -1,4 +1,5 @@
-﻿<LanguageData>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
   
   <!-- EN: collapse dodged -->
   <CollapseDodged.label>crollo schivato</CollapseDodged.label>
@@ -17,24 +18,10 @@
     <li>desc_sentence->[PAWN_pronoun] is scratched and bleeding.</li>
     <li>desc_sentence->[PAWN_pronoun] has lost [PAWN_possessive] balance.</li>
   -->
-  <CollapseDodged.rulePack.rulesStrings>
-    <li>tale_noun>[PAWN_nameDef] schiva un crollo</li>
-    <li>tale_noun>[PAWN_nameDef] quasi schiacciato da oggetti cadenti</li>
-    <li>image>[PAWN_nameFull] salta via da un crollo di detriti [circumstance_group]</li>
-    <li>image>[PAWN_nameFull] evita per un soffio un crollo [circumstance_group]</li>
-    <li>image>[PAWN_nameFull] evita un soffitto che sta cadendo [circumstance_group]</li>
-    <li>image>[PAWN_nameFull] sfugge alla morte certa sotto una roccia cadente [circumstance_group]</li>
-    <li>circumstance_phrase>che scompare dietro una cortina di detriti e polvere</li>
-    <li>circumstance_phrase>che polverizza tutto ciò che si trova sotto</li>
-    <li>circumstance_phrase>che impatta con una forza incredibile</li>
-    <li>desc_sentence>[PAWN_pronoun] suda per lo sforzo.</li>
-    <li>desc_sentence>[PAWN_pronoun] sembra terrorizzato.</li>
-    <li>desc_sentence>[PAWN_pronoun] è graffiato e sanguinante.</li>
-    <li>desc_sentence>[PAWN_pronoun] ha perso l'equilibrio.</li>
-  </CollapseDodged.rulePack.rulesStrings>
+  <CollapseDodged.rulePack.rulesStrings />
   
   <!-- UNUSED -->
-  <CollapseDodged.rulePack.rulesStrings></CollapseDodged.rulePack.rulesStrings>
+  <CollapseDodged.rulePack.rulesStrings />
   
   <!-- EN: launched ship -->
   <LaunchedShip.label>astronave lanciata</LaunchedShip.label>
@@ -61,32 +48,10 @@
     <li>desc_sentence->There is a [TerrainFeature] in the background.</li>
     <li>desc_sentence->A [PersonJob] watches silently from afar.</li>
   -->
-  <LaunchedShip.rulePack.rulesStrings>
-    <li>tale_noun>[PAWN_nameDef] fugge dal pianeta</li>
-    <li>tale_noun>[PAWN_nameDef] decolla su un'astronave</li>
-    <li>image>[PAWN_nameFull] viene lanciato verso le stelle [circumstance_group]</li>
-    <li>image>[PAWN_nameFull] corre verso il cielo [circumstance_group]</li>
-    <li>image>[PAWN_nameFull] accelera fino alla velocità di fuga [circumstance_group]</li>
-    <li>image>[PAWN_nameFull] pilota un razzo [circumstance_group]</li>
-    <li>circumstance_phrase>davanti a un [TerrainFeature]</li>
-    <li>circumstance_phrase>con forza incredibile</li>
-    <li>circumstance_phrase>tra una nuvola di polvere e rocce</li>
-    <li>circumstance_phrase>con i razzi che si accendono in modo spettacolare</li>
-    <li>circumstance_phrase>con un decollo di precisione</li>
-    <li>desc_sentence>[PAWN_pronoun] si concentra intensamente sui comandi.</li>
-    <li>desc_sentence>[PAWN_pronoun] ha gli occhi chiusi e sembra sicuro di sé.</li>
-    <li>desc_sentence>[PAWN_pronoun] dorme con gli occhi chiusi pacificamente.</li>
-    <li>desc_sentence>[PAWN_pronoun] sorride con gioia cupa.</li>
-    <li>desc_sentence>[PAWN_pronoun] sembra avere il pieno controllo della situazione.</li>
-    <li>desc_sentence>C'è una scia di fiamme che lambisce la parte posteriore della nave.</li>
-    <li>desc_sentence>Un [Animal] vicino guarda in alto, spaventato.</li>
-    <li>desc_sentence>Un [Animal] fugge dal lancio per la paura.</li>
-    <li>desc_sentence>C'è un [TerrainFeature] sullo sfondo.</li>
-    <li>desc_sentence>Un [PersonJob] osserva in silenzio da lontano.</li>
-  </LaunchedShip.rulePack.rulesStrings>
+  <LaunchedShip.rulePack.rulesStrings />
   
   <!-- UNUSED -->
-  <LaunchedShip.rulePack.rulesStrings></LaunchedShip.rulePack.rulesStrings>
+  <LaunchedShip.rulePack.rulesStrings />
   
   <!-- EN: social fight -->
   <SocialFight.label>colluttazione</SocialFight.label>
@@ -123,41 +88,9 @@
     <li>target->[INITIATOR_nameDef]</li>
     <li>target->[RESPONDER_nameDef]</li>
   -->
-  <SocialFight.rulePack.rulesStrings>
-    <li>tale_noun>[INITIATOR_nameDef] [fight_name_present] [RESPONDER_nameDef]</li>
-    <li>image>[INITIATOR_nameFull] insulta [RESPONDER_nameFull] [circumstance_group]</li>
-    <li>image>[INITIATOR_nameFull] provoca [RESPONDER_nameFull] [circumstance_group]</li>
-    <li>image>[INITIATOR_nameFull] minaccia [RESPONDER_nameFull] [circumstance_group]</li>
-    <li>image>[INITIATOR_nameFull] intimidisce [RESPONDER_nameFull] [circumstance_group]</li>
-    <li>image>[INITIATOR_nameFull] attacca [RESPONDER_nameFull] [circumstance_group]</li>
-    <li>image>[INITIATOR_nameFull] assale [RESPONDER_nameFull] [circumstance_group]</li>
-    <li>image>[INITIATOR_nameFull] prende a pugni [RESPONDER_nameFull] [circumstance_group]</li>
-    <li>image>[INITIATOR_nameFull] prende a calci [RESPONDER_nameFull] [circumstance_group]</li>
-    <li>image>[INITIATOR_nameFull] si ritrae impaurito da [RESPONDER_nameFull] [circumstance_group]</li>
-    <li>fight_name_present>assale</li>
-    <li>fight_name_present>attacca</li>
-    <li>fight_name_present>lotta</li>
-    <li>circumstance_phrase>mentre [RESPONDER_nameDef] insulta [INITIATOR_objective]</li>
-    <li>circumstance_phrase>mentre [RESPONDER_nameDef] provoca [INITIATOR_objective]</li>
-    <li>circumstance_phrase>mentre [RESPONDER_nameDef] minaccia [INITIATOR_objective]</li>
-    <li>circumstance_phrase>mentre [RESPONDER_nameDef] intimorisce [INITIATOR_objective]</li>
-    <li>circumstance_phrase>mentre [RESPONDER_nameDef] attacca [INITIATOR_objective]</li>
-    <li>circumstance_phrase>mentre [RESPONDER_nameDef] assale [INITIATOR_objective]</li>
-    <li>circumstance_phrase>mentre [RESPONDER_nameDef] prende a pugni [INITIATOR_objective]</li>
-    <li>circumstance_phrase>mentre [RESPONDER_nameDef] prende a calci [INITIATOR_objective]</li>
-    <li>circumstance_phrase>mentre [RESPONDER_nameDef] si ritrae da [INITIATOR_objective]</li>
-    <li>desc_sentence>[target] appare senza rimorso.</li>
-    <li>desc_sentence>[target] è consumato da una furia appassionata.</li>
-    <li>desc_sentence>[target] non mostra emozioni o espressioni.</li>
-    <li>desc_sentence>Il corpo di [target] è coperto di [Gore].</li>
-    <li>desc_sentence>[target] urla furiosamente.</li>
-    <li>desc_sentence>[target] è visibilmente ferito.</li>
-    <li>desc_sentence>Gli occhi di [target] brillano di [Color].</li>
-    <li>target>[INITIATOR_nameDef]</li>
-    <li>target>[RESPONDER_nameDef]</li>
-  </SocialFight.rulePack.rulesStrings>
+  <SocialFight.rulePack.rulesStrings />
   
   <!-- UNUSED -->
-  <SocialFight.rulePack.rulesStrings></SocialFight.rulePack.rulesStrings>
-
+  <SocialFight.rulePack.rulesStrings />
+  
 </LanguageData>

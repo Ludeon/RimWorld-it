@@ -31,9 +31,7 @@
   <!-- EN:
     <li>threatDescription->a mech cluster will land at [map_definite] containing:\n\n[allThreats]</li>
   -->
-  <Util_MechCluster.questDescriptionRules.rulesStrings>
-    <li>threatDescription->Un gruppo di mechanoidi atterrerà a [map_definite] contenente:\n\n[allThreats]</li>
-  </Util_MechCluster.questDescriptionRules.rulesStrings>
+  <Util_MechCluster.questDescriptionRules.rulesStrings />
   
   <!-- UNUSED -->
   <Util_MechCluster.questDescriptionRules.rulesStrings />
@@ -41,9 +39,7 @@
   <!-- EN:
     <li>threatDescription->[enemyFaction_pawnsPlural] from [enemyFaction_name] will attack you. Their group is composed of:\n\n[raidPawnKinds]\n\n[raidArrivalModeInfo]</li>
   -->
-  <Util_Raid.questDescriptionRules.rulesStrings>
-    <li>threatDescription->[enemyFaction_pawnsPlural] di [enemyFaction_name] ti attaccheranno. Il loro gruppo è composto da:\n\n[raidPawnKinds]\n\n[raidArrivalModeInfo]</li>
-  </Util_Raid.questDescriptionRules.rulesStrings>
+  <Util_Raid.questDescriptionRules.rulesStrings />
   
   <!-- UNUSED -->
   <Util_Raid.questDescriptionRules.rulesStrings />
@@ -58,18 +54,9 @@
     <li>numGroupsOf(raidCount==3)->three groups of</li>
     <li>numGroupsOf(raidCount>=4)->[raidCount] groups of</li>
   -->
-  <Util_RaidDelayRepeatable.questDescriptionRules.rulesStrings>
-    <li>pawnKindsParagraph(raidCount==1)->Il gruppo di [enemyFaction_pawnsPlural] è composto da: \n\n[raid0/raidPawnKinds]\n\n[raid0/raidArrivalModeInfo]</li>
-    <li>pawnKindsParagraph(raidCount==2)->Il primo gruppo di [enemyFaction_pawnsPlural] è composto da: \n\n[raid0/raidPawnKinds]\n\nUn secondo gruppo di dimensioni simili seguirà a breve.</li>
-    <li>pawnKindsParagraph(raidCount==3)->Il primo gruppo di [enemyFaction_pawnsPlural] è composto da: \n\n[raid0/raidPawnKinds]\n\nDue gruppi di dimensioni simili seguiranno a breve.</li>
-    <li>pawnKindsParagraph(raidCount>=4)->Il primo gruppo di [enemyFaction_pawnsPlural] è composto da: \n\n[raid0/raidPawnKinds]\n\n[raidCountMinusOne] gruppi di dimensioni simili seguiranno a breve.</li>
-    <li>numGroupsOf(raidCount==1)-></li>
-    <li>numGroupsOf(raidCount==2)->due gruppi di</li>
-    <li>numGroupsOf(raidCount==3)->tre gruppi di</li>
-    <li>numGroupsOf(raidCount>=4)->[raidCount] gruppi di</li>
-  </Util_RaidDelayRepeatable.questDescriptionRules.rulesStrings>
+  <Util_RaidDelayRepeatable.questDescriptionRules.rulesStrings />
   
   <!-- UNUSED -->
   <Util_RaidDelayRepeatable.questDescriptionRules.rulesStrings />
-
+  
 </LanguageData>

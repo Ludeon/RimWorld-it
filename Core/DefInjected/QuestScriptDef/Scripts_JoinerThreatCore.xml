@@ -6,11 +6,7 @@
     <li>introduction(childCount==1,priority=1)->A [joiner_age]-year-old child</li>
     <li>introduction->A [joiner_age]-year-old [joiner_title]</li>
   -->
-  <ThreatReward_Raid_Joiner.questDescriptionRules.rulesStrings>
-    <li>questDescription->[introduction] di nome [joiner_nameDef] sta chiamando da vicino. [joiner_pronoun] è inseguito da [enemyFaction_pawnsPlural] di [enemyFaction_name]!\n\n[joiner_pronoun] implora per la sicurezza e offre di unirsi a te a [map_definite].[joiner_relationInfo]\n\nSe accetti, dovrai respingere [enemyFaction_pawnsPluralDef] che sono sulle tracce di [joiner_possessive]. Il gruppo di [enemyFaction_pawnsPlural] è composto da:\n\n[raid/raidPawnKinds]\n\n[joiner_nameDef] è troppo agitato per fornire altre informazioni.</li>
-    <li>introduction(childCount==1,priority=1)->Un bambino di [joiner_age] anni</li>
-    <li>introduction->Un [joiner_title] di [joiner_age] anni</li>
-  </ThreatReward_Raid_Joiner.questDescriptionRules.rulesStrings>
+  <ThreatReward_Raid_Joiner.questDescriptionRules.rulesStrings />
   <!-- EN:
     <li>questName->Saving [runnerIndef]</li>
     <li>questName->The Salvation of [runnerIndef]</li>
@@ -26,21 +22,7 @@
     <li>runnerIndef->a Refugee</li>
     <li>runnerIndef(childCount==1,priority=1)->a child</li>
   -->
-  <ThreatReward_Raid_Joiner.questNameRules.rulesStrings>
-    <li>questName->Salvataggio di [runnerIndef]</li>
-    <li>questName->La salvezza di [runnerIndef]</li>
-    <li>questName->Aiutare [runnerIndef]</li>
-    <li>questName->Accogliere [runnerIndef]</li>
-    <li>questName->[enemyFaction_pawnsPlural] danno la caccia a [runnerIndef]</li>
-    <li>questName->[runnerIndef] in fuga</li>
-    <li>questName->[runnerIndef] cerca una casa</li>
-    <li>questName->[runnerIndef] inseguito da [enemyFaction_pawnsPlural]</li>
-    <li>questName->[runnerIndef] e [enemyFaction_pawnsPlural]</li>
-    <li>runnerIndef->[joiner_titleIndef]</li>
-    <li>runnerIndef->[joiner_nameIndef]</li>
-    <li>runnerIndef>un rifugiato</li>
-    <li>runnerIndef(childCount==1,priority=1)>un bambino</li>
-  </ThreatReward_Raid_Joiner.questNameRules.rulesStrings>
+  <ThreatReward_Raid_Joiner.questNameRules.rulesStrings />
   <!-- EN: {BASELABEL} chasing [../joiner_nameDef] -->
   <ThreatReward_Raid_Joiner.LetterLabelChasing.value.slateRef>{BASELABEL} inseguendo [../joiner_nameDef]</ThreatReward_Raid_Joiner.LetterLabelChasing.value.slateRef>
   <!-- EN: {BASETEXT}\n              \nThe [enemyFaction_pawnsPlural] have come to get [../joiner_nameDef]. -->
@@ -49,5 +31,5 @@
   <!-- UNUSED -->
   <ThreatReward_Raid_Joiner.questDescriptionRules.rulesStrings />
   <ThreatReward_Raid_Joiner.questNameRules.rulesStrings />
-
+  
 </LanguageData>

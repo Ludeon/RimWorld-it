@@ -22,7 +22,9 @@ Mantieni la formattazione originale, inclusa indentazione, newline (\n\n) e stru
 Traduci sempre all'interno dello stesso tag.
 Non aggiungere né rimuovere tag XML.
 Le variabili tra parentesi quadre (es. [INITIATOR_possessive], [WEAPON_label]) non vanno tradotte.
-Se un commento <!-- EN: contiene una lista di <li>, traduce ogni riga che contiene testo naturale, ma lascia invariati i riferimenti tra parentesi quadre ([]), e mantieni esattamente lo stesso numero di <li>.
+Se un commento <!-- EN: contiene una lista di <li>, seguito da un tag rulesStrings
+traduci ogni riga che contiene testo naturale, ma lascia invariati i riferimenti tra parentesi quadre ([]), e mantieni esattamente lo stesso numero di <li>.
+la freccia -> è fondamentale, non la cambiare.
 Se trovi sequenze con \n\n, copiale esattamente così nella traduzione, e nei commenti, senza andare a capo.
 Restituisci sempre il file completo, senza troncamenti.
 Se trovi tag vuoti, trattali come se fossero TODO e crea la lista all'interno del tag vuoto

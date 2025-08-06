@@ -33,38 +33,7 @@
     <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid)->[to] messy strips</li>
     <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid)->[to] an unrecognizable mess</li>
   -->
-  <Maneuver_Bite.rulePack.rulesStrings>
-    <li>damaged_inf->mordere</li>
-    <li>damaged_inf->azzannare</li>
-    <li>damaged_inf(p=0.5)->pizzicare</li>
-    <li>damaged_past->morso</li>
-    <li>damaged_past->azzannato</li>
-    <li>damaged_past->pizzicato</li>
-    <li>damaged_past->rosicchiato</li>
-    <li>damaged_past(deflected!=True)->lacerato</li>
-    <li>damaged_present->mordendo</li>
-    <li>damaged_present->azzannando</li>
-    <li>damaged_present->pizzicato</li>
-    <li>damaged_present->rosicchiando</li>
-    <li>damaged_present(deflected!=True)->lacerando</li>
-    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid)->esponendo la carne sottostante</li>
-    <li>flavortext_consequence(RECIPIENT_flesh==Mechanoid)->esponendo la meccanica sottostante</li>
-    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid)->lasciando squarci orribili nella pelle</li>
-    <li>flavortext_consequence(RECIPIENT_flesh==Mechanoid)->lasciando squarci orribili nel metallo</li>
-    <li>destroyed_past->strappato via</li>
-    <li>destroyed_past->lacerato via</li>
-    <li>destroyed_past->morso via</li>
-    <li>destroyed_present->strappando via</li>
-    <li>destroyed_present->lacerando via</li>
-    <li>destroyed_present->mordendo via</li>
-    <li>destroyed_suffix->[in] pezzi</li>
-    <li>destroyed_suffix->[in] frammenti</li>
-    <li>destroyed_suffix->[in] blocchi</li>
-    <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid)->[in] brandelli</li>
-    <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid)->[in] strisce</li>
-    <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid)->[in] strisce sanguinolente</li>
-    <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid)->[in] un ammasso irriconoscibile</li>
-  </Maneuver_Bite.rulePack.rulesStrings>
+  <Maneuver_Bite.rulePack.rulesStrings />
   
   <!-- UNUSED -->
   <Maneuver_Bite.rulePack.rulesStrings />
@@ -73,10 +42,7 @@
     <li>r_logentry->[INITIATOR_definite] tried to kick [TOOL_label] in [RECIPIENT_definite]'s eyes, but [RECIPIENT_definite] dodged out of the way.</li>
     <li>r_logentry->[INITIATOR_definite] tried to kick [TOOL_label] in [RECIPIENT_definite]'s eyes, but [RECIPIENT_definite] blocked it.</li>
   -->
-  <Maneuver_KickMaterialInEyes_MeleeDodge.rulePack.rulesStrings>
-    <li>r_logentry->[INITIATOR_definite] ha cercato di colpire gli occhi di [RECIPIENT_definite] con [TOOL_label], ma [RECIPIENT_definite] ha schivato.</li>
-    <li>r_logentry->[INITIATOR_definite] ha cercato di colpire gli occhi di [RECIPIENT_definite] con [TOOL_label], ma [RECIPIENT_definite] ha parato.</li>
-  </Maneuver_KickMaterialInEyes_MeleeDodge.rulePack.rulesStrings>
+  <Maneuver_KickMaterialInEyes_MeleeDodge.rulePack.rulesStrings />
   
   <!-- UNUSED -->
   <Maneuver_KickMaterialInEyes_MeleeDodge.rulePack.rulesStrings />
@@ -85,10 +51,7 @@
     <li>r_logentry->[INITIATOR_definite] kicked [TOOL_label] in [RECIPIENT_definite]'s eyes.</li>
     <li>r_logentry(p=0.2)->[INITIATOR_definite] kicked a spray of [TOOL_label] in [RECIPIENT_definite]'s eyes.</li>
   -->
-  <Maneuver_KickMaterialInEyes_MeleeHit.rulePack.rulesStrings>
-    <li>r_logentry->[INITIATOR_definite] ha lanciato [TOOL_label] negli occhi di [RECIPIENT_definite].</li>
-    <li>r_logentry(p=0.2)->[INITIATOR_definite] ha colpito con uno spruzzo di [TOOL_label] negli occhi di [RECIPIENT_definite].</li>
-  </Maneuver_KickMaterialInEyes_MeleeHit.rulePack.rulesStrings>
+  <Maneuver_KickMaterialInEyes_MeleeHit.rulePack.rulesStrings />
   
   <!-- UNUSED -->
   <Maneuver_KickMaterialInEyes_MeleeHit.rulePack.rulesStrings />
@@ -96,9 +59,7 @@
   <!-- EN:
     <li>r_logentry->[INITIATOR_definite] tried to kick [TOOL_label] in [RECIPIENT_definite]'s eyes, but missed.</li>
   -->
-  <Maneuver_KickMaterialInEyes_MeleeMiss.rulePack.rulesStrings>
-    <li>r_logentry->[INITIATOR_definite] ha cercato di colpire gli occhi di [RECIPIENT_definite] con [TOOL_label], ma ha mancato il bersaglio.</li>
-  </Maneuver_KickMaterialInEyes_MeleeMiss.rulePack.rulesStrings>
+  <Maneuver_KickMaterialInEyes_MeleeMiss.rulePack.rulesStrings />
   
   <!-- UNUSED -->
   <Maneuver_KickMaterialInEyes_MeleeMiss.rulePack.rulesStrings />
@@ -138,41 +99,7 @@
     <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid)->[to] a fine mist</li>
     <li>destroyed_suffix->[to] fragments</li>
   -->
-  <Maneuver_Poke.rulePack.rulesStrings>
-    <li>damaged_inf(p=2)->pungere</li>
-    <li>damaged_inf(p=2)->colpire</li>
-    <li>damaged_inf->spingere</li>
-    <li>damaged_inf->urtare</li>
-    <li>damaged_inf->pugnalare</li>
-    <li>damaged_past(p=2)->puntato</li>
-    <li>damaged_past(p=2)->colpito</li>
-    <li>damaged_past->spinto</li>
-    <li>damaged_past->urtato</li>
-    <li>damaged_past->pugnalato</li>
-    <li>damaged_present(p=2)->pungendo</li>
-    <li>damaged_present(p=2)->colpendo</li>
-    <li>damaged_present->spingendo</li>
-    <li>damaged_present->urtando</li>
-    <li>damaged_present->pugnalando</li>
-    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid)->lasciando un enorme livido</li>
-    <li>flavortext_consequence->lasciando la zona visibilmente deformata</li>
-    <li>flavortext_consequence->sbilanciando [RECIPIENT_objective]</li>
-    <li>flavortext_consequence->spostando [RECIPIENT_objective] di lato</li>
-    <li>destroyed_past->frantumato</li>
-    <li>destroyed_past->schiacciato</li>
-    <li>destroyed_past->annientato</li>
-    <li>destroyed_past->distrutto</li>
-    <li>destroyed_past->rotto</li>
-    <li>destroyed_present->frantumando</li>
-    <li>destroyed_present->schiacciando</li>
-    <li>destroyed_present->annientando</li>
-    <li>destroyed_present->distruggendo</li>
-    <li>destroyed_present->rompendo</li>
-    <li>destroyed_suffix->[in] pezzi</li>
-    <li>destroyed_suffix->[in] frammenti</li>
-    <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid)->[in] una polvere fine</li>
-    <li>destroyed_suffix->[in] scaglie</li>
-  </Maneuver_Poke.rulePack.rulesStrings>
+  <Maneuver_Poke.rulePack.rulesStrings />
   
   <!-- UNUSED -->
   <Maneuver_Poke.rulePack.rulesStrings />
@@ -190,19 +117,7 @@
     <li>destroyed_suffix->[to] fragments</li>
     <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid)->[to] a pile of gore</li>
   -->
-  <Maneuver_Scratch.rulePack.rulesStrings>
-    <li>woundname->ferita</li>
-    <li>woundname(p=0.3)->apertura</li>
-    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid)->e scoprendo la carne sottostante</li>
-    <li>flavortext_consequence(RECIPIENT_flesh==Mechanoid)->e scoprendo la meccanica sottostante</li>
-    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid)->e lasciando una [woundname] insanguinata</li>
-    <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid)->[in] strisce sanguinolente</li>
-    <li>destroyed_suffix->[in] strisce</li>
-    <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid)->[in] pezzi sanguinolenti</li>
-    <li>destroyed_suffix->[in] pezzi</li>
-    <li>destroyed_suffix->[in] frammenti</li>
-    <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid)->[in] una pozza di sangue</li>
-  </Maneuver_Scratch.rulePack.rulesStrings>
+  <Maneuver_Scratch.rulePack.rulesStrings />
   
   <!-- UNUSED -->
   <Maneuver_Scratch.rulePack.rulesStrings />
@@ -231,30 +146,7 @@
     <li>destroyed_present->shredding</li>
     <li>destroyed_present->ripping</li>
   -->
-  <Maneuver_Scratch_Damage.rulePack.rulesStrings>
-    <li>damaged_inf(p=4)->graffiare</li>
-    <li>damaged_inf(deflected!=True)->lacerare</li>
-    <li>damaged_inf(deflected!=True)->strappare</li>
-    <li>damaged_inf->tagliare</li>
-    <li>damaged_past(p=4)->graffiato</li>
-    <li>damaged_past(deflected!=True)->lacerato</li>
-    <li>damaged_past(deflected!=True)->strappato</li>
-    <li>damaged_past->tagliato</li>
-    <li>damaged_present->graffiando</li>
-    <li>damaged_present(deflected!=True)->lacerando</li>
-    <li>damaged_present(deflected!=True)->strappando</li>
-    <li>damaged_present->tagliando</li>
-    <li>destroyed_past->sbranato</li>
-    <li>destroyed_past->lacerato</li>
-    <li>destroyed_past->strappato</li>
-    <li>destroyed_past->dilaniato</li>
-    <li>destroyed_past->lacerato</li>
-    <li>destroyed_present->sbranando</li>
-    <li>destroyed_present->lacerando</li>
-    <li>destroyed_present->strappando</li>
-    <li>destroyed_present->dilaniando</li>
-    <li>destroyed_present->lacerando</li>
-  </Maneuver_Scratch_Damage.rulePack.rulesStrings>
+  <Maneuver_Scratch_Damage.rulePack.rulesStrings />
   
   <!-- UNUSED -->
   <Maneuver_Scratch_Damage.rulePack.rulesStrings />
@@ -298,45 +190,7 @@
     <li>destroyed_suffix(target_part_destroyed_count==1)->exposing its inner workings</li>
     <li>destroyed_suffix(target_part_destroyed_count==1)->slicing it in twain</li>
   -->
-  <Maneuver_Slash.rulePack.rulesStrings>
-    <li>damaged_inf(p=4)->tagliare</li>
-    <li>damaged_inf->affettare</li>
-    <li>damaged_inf->dare un colpo</li>
-    <li>damaged_inf->spaccare</li>
-    <li>damaged_inf->affettare</li>
-    <li>damaged_inf(deflected!=True)->squarciare</li>
-    <li>damaged_past(p=4)->tagliato</li>
-    <li>damaged_past->affettato</li>
-    <li>damaged_past->colpito</li>
-    <li>damaged_past->spaccato</li>
-    <li>damaged_past->affettato</li>
-    <li>damaged_past(deflected!=True)->squarciato</li>
-    <li>damaged_present->tagliando</li>
-    <li>damaged_present->affettando</li>
-    <li>damaged_present->affettando</li>
-    <li>damaged_present(deflected!=True)->squarciando</li>
-    <li>damaged_present(deflected!=True)->strappando</li>
-    <li>damaged_present(deflected!=True)->lacerando</li>
-    <li>woundname->ferita</li>
-    <li>woundname(p=0.3)->apertura</li>
-    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid)->esponendo la carne sottostante</li>
-    <li>flavortext_consequence(RECIPIENT_flesh==Mechanoid)->esponendo la meccanica sottostante</li>
-    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid)->lasciando una [woundname] insanguinata</li>
-    <li>destroyed_past->diviso a metà</li>
-    <li>destroyed_past->diviso</li>
-    <li>destroyed_past->dimezzato</li>
-    <li>destroyed_past->separato</li>
-    <li>destroyed_past->spaccato</li>
-    <li>destroyed_present->dividendo a metà</li>
-    <li>destroyed_present->dividendo</li>
-    <li>destroyed_present->dimezzando</li>
-    <li>destroyed_present->separando</li>
-    <li>destroyed_present->spaccando</li>
-    <li>destroyed_suffix->in pezzi ordinati</li>
-    <li>destroyed_suffix->pulitamente</li>
-    <li>destroyed_suffix(target_part_destroyed_count==1)->esponendo i suoi meccanismi interni</li>
-    <li>destroyed_suffix(target_part_destroyed_count==1)->dividendolo a metà</li>
-  </Maneuver_Slash.rulePack.rulesStrings>
+  <Maneuver_Slash.rulePack.rulesStrings />
   
   <!-- UNUSED -->
   <Maneuver_Slash.rulePack.rulesStrings />
@@ -351,16 +205,7 @@
     <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid)->[to] a fine mist</li>
     <li>destroyed_suffix->[to] fragments</li>
   -->
-  <Maneuver_Smash.rulePack.rulesStrings>
-    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid)->lasciando un enorme livido</li>
-    <li>flavortext_consequence->lasciando la zona visibilmente deformata</li>
-    <li>flavortext_consequence->sbilanciando [RECIPIENT_objective]</li>
-    <li>flavortext_consequence->spostando [RECIPIENT_objective] di lato</li>
-    <li>destroyed_suffix->[in] pezzi</li>
-    <li>destroyed_suffix->[in] frammenti</li>
-    <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid)->[in] una polvere fine</li>
-    <li>destroyed_suffix->[in] scaglie</li>
-  </Maneuver_Smash.rulePack.rulesStrings>
+  <Maneuver_Smash.rulePack.rulesStrings />
   
   <!-- UNUSED -->
   <Maneuver_Smash.rulePack.rulesStrings />
@@ -388,29 +233,7 @@
     <li>destroyed_present->crushing</li>
     <li>destroyed_present->breaking</li>
   -->
-  <Maneuver_Smash_Damage.rulePack.rulesStrings>
-    <li>damaged_inf->colpire</li>
-    <li>damaged_inf->spaccare</li>
-    <li>damaged_inf->schiacciare</li>
-    <li>damaged_inf->sbattere</li>
-    <li>damaged_inf->sferrare</li>
-    <li>damaged_inf->picchiare</li>
-    <li>damaged_past->colpito</li>
-    <li>damaged_past->spaccato</li>
-    <li>damaged_past->schiacciato</li>
-    <li>damaged_past->sbattuto</li>
-    <li>damaged_past->colpito</li>
-    <li>damaged_past->picchiato</li>
-    <li>damaged_present->spaccando</li>
-    <li>damaged_present->schiacciando</li>
-    <li>damaged_present(deflected!=True)->contundendo</li>
-    <li>destroyed_past->frantumato</li>
-    <li>destroyed_past->schiacciato</li>
-    <li>destroyed_past->rotto</li>
-    <li>destroyed_present->frantumando</li>
-    <li>destroyed_present->schiacciando</li>
-    <li>destroyed_present->rompendo</li>
-  </Maneuver_Smash_Damage.rulePack.rulesStrings>
+  <Maneuver_Smash_Damage.rulePack.rulesStrings />
   
   <!-- UNUSED -->
   <Maneuver_Smash_Damage.rulePack.rulesStrings />
@@ -447,40 +270,9 @@
     <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid,target_part_destroyed_count==1)->leaving it leaking gory fluids</li>
     <li>destroyed_suffix(target_part_destroyed_count==1)->leaving it leaking unrecognizable fluids</li>
   -->
-  <Maneuver_Stab.rulePack.rulesStrings>
-    <li>damaged_inf(p=4)->pugnalare</li>
-    <li>damaged_inf->colpire</li>
-    <li>damaged_inf(deflected!=True)->perforare</li>
-    <li>damaged_inf(deflected!=True)->trafiggere</li>
-    <li>damaged_inf(deflected!=True)->infilzare</li>
-    <li>damaged_past(p=4)->pugnalato</li>
-    <li>damaged_past->colpito</li>
-    <li>damaged_past(deflected!=True)->perforato</li>
-    <li>damaged_past(deflected!=True)->trafitto</li>
-    <li>damaged_past(deflected!=True)->infilzato</li>
-    <li>damaged_present(deflected!=True)->perforando</li>
-    <li>damaged_present(deflected!=True)->trafiggendo</li>
-    <li>damaged_present(deflected!=True)->penetrando</li>
-    <li>damaged_present(deflected!=True)->infilzando</li>
-    <li>woundname->foro</li>
-    <li>woundname->ferita</li>
-    <li>woundname->fessura</li>
-    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid)->lasciando una [woundname] sanguinante</li>
-    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid)->lasciando una [woundname] lacerata</li>
-    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid)->lasciando una [woundname] sanguinante</li>
-    <li>destroyed_past->impalato</li>
-    <li>destroyed_past->perforato</li>
-    <li>destroyed_past->infilzato</li>
-    <li>destroyed_present->impalando</li>
-    <li>destroyed_present->perforando</li>
-    <li>destroyed_present->infilzando</li>
-    <li>destroyed_suffix->da parte a parte</li>
-    <li>destroyed_suffix->lasciando un foro pulito</li>
-    <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid,target_part_destroyed_count==1)->lasciandolo perdere fluidi sanguinolenti</li>
-    <li>destroyed_suffix(target_part_destroyed_count==1)->lasciandolo perdere fluidi irriconoscibili</li>
-  </Maneuver_Stab.rulePack.rulesStrings>
+  <Maneuver_Stab.rulePack.rulesStrings />
   
   <!-- UNUSED -->
   <Maneuver_Stab.rulePack.rulesStrings />
-
+  
 </LanguageData>

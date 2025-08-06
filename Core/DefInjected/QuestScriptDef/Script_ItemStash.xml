@@ -5,10 +5,7 @@
     <li>questDescription(askerIsNull==true)->We've intercepted messages about a collection of valuable items worth [itemStashContentsValue] not far from [map_definite]. The collection consists of:\n\n[itemStashContents]\n\nIt seems that [allSitePartsDescriptionsExceptFirst]</li>
     <li>questDescription(asker_factionLeader==True)->[asker_nameDef], [asker_faction_leaderTitle] of [asker_faction_name], has informed us of a collection of valuable items worth [itemStashContentsValue] not far from us. The collection consists of:\n\n[itemStashContents]\n\n[asker_label] says that [allSitePartsDescriptionsExceptFirst]</li>
   -->
-  <OpportunitySite_ItemStash.questDescriptionRules.rulesStrings>
-    <li>questDescription(askerIsNull==true)->Abbiamo intercettato dei messaggi riguardo una raccolta di oggetti di valore per un totale di [itemStashContentsValue] non lontano da [map_definite]. La raccolta comprende:\n\n[itemStashContents]\n\nSembra che [allSitePartsDescriptionsExceptFirst]</li>
-    <li>questDescription(asker_factionLeader==True)->[asker_nameDef], [asker_faction_leaderTitle] di [asker_faction_name], ci ha informati riguardo una raccolta di oggetti di valore per un totale di [itemStashContentsValue] non lontano da qui. La raccolta comprende:\n\n[itemStashContents]\n\n[asker_label] dice che [allSitePartsDescriptionsExceptFirst]</li>
-  </OpportunitySite_ItemStash.questDescriptionRules.rulesStrings>
+  <OpportunitySite_ItemStash.questDescriptionRules.rulesStrings />
   <!-- EN:
     <li>questName(priority=1)->[asker_nameDef]'s [stash] of [treasure]</li>
     <li>questName->[stash] of [treasure]</li>
@@ -22,19 +19,7 @@
     <li>treasure->Goodies</li>
     <li>treasure->Supplies</li>
   -->
-  <OpportunitySite_ItemStash.questNameRules.rulesStrings>
-    <li>questName(priority=1)->[asker_nameDef] - [stash] di [treasure]</li>
-    <li>questName->[stash] di [treasure]</li>
-    <li>stash->Nascondiglio</li>
-    <li>stash->Rifugio</li>
-    <li>stash->Collezione</li>
-    <li>stash->Capanno</li>
-    <li>treasure->Tesori</li>
-    <li>treasure->Valori</li>
-    <li>treasure->Fortuna</li>
-    <li>treasure->Bottino</li>
-    <li>treasure->Rifornimenti</li>
-  </OpportunitySite_ItemStash.questNameRules.rulesStrings>
+  <OpportunitySite_ItemStash.questNameRules.rulesStrings />
   <!-- EN: Quest expired: [resolvedQuestName] -->
   <OpportunitySite_ItemStash.LetterLabelQuestExpired.slateRef>Missione scaduta: [resolvedQuestName]</OpportunitySite_ItemStash.LetterLabelQuestExpired.slateRef>
   <!-- EN: Intercepted communications indicate the item stash has been claimed by others. The quest [resolvedQuestName] has expired. -->
@@ -43,5 +28,5 @@
   <!-- UNUSED -->
   <OpportunitySite_ItemStash.questDescriptionRules.rulesStrings />
   <OpportunitySite_ItemStash.questNameRules.rulesStrings />
-
+  
 </LanguageData>

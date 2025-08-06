@@ -4,9 +4,7 @@
   <!-- EN:
     <li>questDescription->Using your long-range mineral scanner, [worker_definite] has found a lump of [targetMineable_label] nearby.\n\nUnfortunately, it won't last - others will mine it first in [timeoutTicks_duration] if we don't.[lumpThreatDescription]</li>
   -->
-  <LongRangeMineralScannerLump.questDescriptionRules.rulesStrings>
-    <li>questDescription->Usando il tuo scanner minerario a lunga distanza, [worker_definite] ha trovato un [lump] di [targetMineable_label] nelle vicinanze.\n\nPurtroppo non durerà: altri lo estrarranno tra [timeoutTicks_duration] se non lo facciamo noi per primi.[lumpThreatDescription]</li>
-  </LongRangeMineralScannerLump.questDescriptionRules.rulesStrings>
+  <LongRangeMineralScannerLump.questDescriptionRules.rulesStrings />
   <!-- EN:
     <li>questName->[lump] of [targetMineableThing_label]</li>
     <li>questName->[targetMineableThing_label] [lump]</li>
@@ -28,26 +26,7 @@
     <li>discovered->found</li>
     <li>discovered->scanned</li>
   -->
-  <LongRangeMineralScannerLump.questNameRules.rulesStrings>
-    <li>questName->[lump] di [targetMineableThing_label]</li>
-    <li>questName->[targetMineableThing_label] [lump]</li>
-    <li>questName>Il [lump] di [targetMineableThing_label]</li>
-    <li>questName>[adj] [targetMineableThing_label]</li>
-    <li>questName>[targetMineableThing_label] [discovered]</li>
-    <li>lump->giacimento</li>
-    <li>lump->deposito</li>
-    <li>lump->vena</li>
-    <li>lump->ammasso</li>
-    <li>lump->cumulo</li>
-    <li>adj->distante</li>
-    <li>adj->lontano</li>
-    <li>adj->sconosciuto</li>
-    <li>adj->scannerizzato</li>
-    <li>discovered->scoperto</li>
-    <li>discovered->individuato</li>
-    <li>discovered->trovato</li>
-    <li>discovered->scannerizzato</li>
-  </LongRangeMineralScannerLump.questNameRules.rulesStrings>
+  <LongRangeMineralScannerLump.questNameRules.rulesStrings />
   <!-- EN: Quest expired: [resolvedQuestName] -->
   <LongRangeMineralScannerLump.LetterLabelQuestExpired.slateRef>Missione scaduta: [resolvedQuestName]</LongRangeMineralScannerLump.LetterLabelQuestExpired.slateRef>
   <!-- EN: Others have mined the lump of [targetMineable_label]. The quest [resolvedQuestName] has expired. -->
@@ -56,5 +35,5 @@
   <!-- UNUSED -->
   <LongRangeMineralScannerLump.questDescriptionRules.rulesStrings />
   <LongRangeMineralScannerLump.questNameRules.rulesStrings />
-
+  
 </LanguageData>

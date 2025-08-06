@@ -15,20 +15,7 @@
     <li>died(SUBJECT_flesh==Mechanoid)->stopped functioning</li>
     <li>died(SUBJECT_flesh==Mechanoid)->lost power</li>
   -->
-  <Transition_Died.rulePack.rulesStrings>
-    <li>die(SUBJECT_flesh!=Mechanoid,p=2)->morire</li>
-    <li>die(SUBJECT_flesh!=Mechanoid)->perire</li>
-    <li>die(SUBJECT_flesh!=Mechanoid)->spirare</li>
-    <li>die(SUBJECT_flesh==Mechanoid)->spegnersi</li>
-    <li>die(SUBJECT_flesh==Mechanoid)->cessare di funzionare</li>
-    <li>die(SUBJECT_flesh==Mechanoid)->perdere potenza</li>
-    <li>died(SUBJECT_flesh!=Mechanoid,p=2)->è morto</li>
-    <li>died(SUBJECT_flesh!=Mechanoid)->è perito</li>
-    <li>died(SUBJECT_flesh!=Mechanoid)->è spirato</li>
-    <li>died(SUBJECT_flesh==Mechanoid)->si è spento</li>
-    <li>died(SUBJECT_flesh==Mechanoid)->ha smesso di funzionare</li>
-    <li>died(SUBJECT_flesh==Mechanoid)->ha perso potenza</li>
-  </Transition_Died.rulePack.rulesStrings>
+  <Transition_Died.rulePack.rulesStrings />
   
   <!-- UNUSED -->
   <Transition_Died.rulePack.rulesStrings />
@@ -62,35 +49,7 @@
     <li>everywhere->everywhere</li>
     <li>everywhere->far and wide</li>
   -->
-  <Transition_DiedExplosive.rulePack.rulesStrings>
-    <li>die(p=3)->esplode [flavor]</li>
-    <li>die(p=3)->esplode [flavorsuffix]</li>
-    <li>die->detona [flavor]</li>
-    <li>die->detona [flavorsuffix]</li>
-    <li>die->scoppia [flavor]</li>
-    <li>die->scoppia [flavorsuffix]</li>
-    <li>died(p=3)->è esploso [flavor]</li>
-    <li>died->è detonata [flavor]</li>
-    <li>died->è scoppiato [flavor]</li>
-    <li>flavor(p=0.2)->in una [fireball] chimica</li>
-    <li>flavor>in una [Color] [fireball]</li>
-    <li>flavor>in una [AdjectiveLarge] [fireball]</li>
-    <li>flavor(p=4)->in una [fireball]</li>
-    <li>flavor(p=4)-></li>
-    <li>flavorsuffix->, spargendo [pieces] [everywhere]</li>
-    <li>flavorsuffix(SUBJECT_flesh!=Mechanoid,p=2)->, spargendo [Gore] [everywhere]</li>
-    <li>flavorsuffix(SUBJECT_flesh!=Mechanoid)->, lasciando una piccola pila di [Gore]</li>
-    <li>flavorsuffix->, lasciando un piccolo cratere</li>
-    <li>flavorsuffix(p=4)-></li>
-    <li>fireball(p=3)->palla di fuoco</li>
-    <li>fireball->palla di fiamme</li>
-    <li>fireball->onda d'urto</li>
-    <li>fireball->conflagrazione</li>
-    <li>pieces>pezzi</li>
-    <li>pieces>frammenti</li>
-    <li>everywhere>ovunque</li>
-    <li>everywhere>dappertutto</li>
-  </Transition_DiedExplosive.rulePack.rulesStrings>
+  <Transition_DiedExplosive.rulePack.rulesStrings />
   
   <!-- UNUSED -->
   <Transition_DiedExplosive.rulePack.rulesStrings />
@@ -103,14 +62,7 @@
     <li>r_logentry->[SUBJECT_definite] [died].</li>
     <li>r_logentry->[SUBJECT_definite] [died] [flavorsuffix].</li>
   -->
-  <Transition_DiedInclude.rulePack.rulesStrings>
-    <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNoun] ha causato che [SUBJECT_definite] [die].</li>
-    <li>r_logentry(p=1.5)->[CULPRITHEDIFF_labelNounPretty] ha causato che [SUBJECT_definite] [die].</li>
-    <li>r_logentry->[SUBJECT_definite] [died] [duetoa] [CULPRITHEDIFF_labelNoun] [flavorsuffix].</li>
-    <li>r_logentry->[SUBJECT_definite] [died] [duetoa] [CULPRITHEDIFF_labelNounPretty] [flavorsuffix].</li>
-    <li>r_logentry->[SUBJECT_definite] [died].</li>
-    <li>r_logentry->[SUBJECT_definite] [died] [flavorsuffix].</li>
-  </Transition_DiedInclude.rulePack.rulesStrings>
+  <Transition_DiedInclude.rulePack.rulesStrings />
   
   <!-- UNUSED -->
   <Transition_DiedInclude.rulePack.rulesStrings />
@@ -145,36 +97,7 @@
     <li>collapsedmeta->[collapsed]</li>
     <li>collapsedmeta(p=0.5)->[collapsed] [helplessly]</li>
   -->
-  <Transition_Downed.rulePack.rulesStrings>
-    <li>r_logentry->[CULPRITHEDIFF_labelNoun] ha causato che [SUBJECT_definite] [collapsemeta].</li>
-    <li>r_logentry->[CULPRITHEDIFF_labelNounPretty] ha causato che [SUBJECT_definite] [collapsemeta].</li>
-    <li>r_logentry->[CULPRITHEDIFF_labelNoun] ha fatto sì che [SUBJECT_definite] [collapsemeta].</li>
-    <li>r_logentry->[CULPRITHEDIFF_labelNounPretty] ha fatto sì che [SUBJECT_definite] [collapsemeta].</li>
-    <li>r_logentry->[SUBJECT_definite] [collapsedmeta] [duetoa] [CULPRITHEDIFF_labelNoun].</li>
-    <li>r_logentry->[SUBJECT_definite] [collapsedmeta] [duetoa] [CULPRITHEDIFF_labelNounPretty].</li>
-    <li>r_logentry(p=0.1)->[SUBJECT_definite] [collapsedmeta].</li>
-    <li>collapse>crollare</li>
-    <li>collapse>cadere</li>
-    <li>collapse(SUBJECT_flesh!=Mechanoid)->afflosciarsi</li>
-    <li>collapse(SUBJECT_flesh==Mechanoid)->schiantarsi</li>
-    <li>collapse(SUBJECT_flesh==Mechanoid)->bloccarsi</li>
-    <li>collapse(SUBJECT_flesh==Mechanoid)->perdere potenza principale</li>
-    <li>collapsed>crollato</li>
-    <li>collapsed>caduto</li>
-    <li>collapsed(SUBJECT_flesh!=Mechanoid)->afflosciato</li>
-    <li>collapsed(SUBJECT_flesh==Mechanoid)->schiantato</li>
-    <li>collapsed(SUBJECT_flesh==Mechanoid)->bloccato</li>
-    <li>collapsed(SUBJECT_flesh==Mechanoid)->ha perso potenza principale</li>
-    <li>helplessly>in modo impotente</li>
-    <li>helplessly(SUBJECT_flesh!=Mechanoid)->privo di sensi</li>
-    <li>helplessly(SUBJECT_flesh!=Mechanoid)->debolmente</li>
-    <li>helplessly(SUBJECT_flesh!=Mechanoid)->fiaccamente</li>
-    <li>helplessly(SUBJECT_flesh==Mechanoid)->fuori controllo</li>
-    <li>collapsemeta->[collapse]</li>
-    <li>collapsemeta(p=0.5)->[collapse] [helplessly]</li>
-    <li>collapsedmeta->[collapsed]</li>
-    <li>collapsedmeta(p=0.5)->[collapsed] [helplessly]</li>
-  </Transition_Downed.rulePack.rulesStrings>
+  <Transition_Downed.rulePack.rulesStrings />
   
   <!-- UNUSED -->
   <Transition_Downed.rulePack.rulesStrings />
@@ -184,13 +107,9 @@
     <li>duetoa(p=0.5)->because of</li>
     <li>duetoa(p=0.5)->thanks to</li>
   -->
-  <Transition_Include.rulePack.rulesStrings>
-    <li>duetoa>a causa di</li>
-    <li>duetoa(p=0.5)->per via di</li>
-    <li>duetoa(p=0.5)->grazie a</li>
-  </Transition_Include.rulePack.rulesStrings>
+  <Transition_Include.rulePack.rulesStrings />
   
   <!-- UNUSED -->
   <Transition_Include.rulePack.rulesStrings />
-
+  
 </LanguageData>
