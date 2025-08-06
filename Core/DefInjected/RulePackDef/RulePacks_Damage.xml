@@ -14,10 +14,19 @@
     <li>destroyed_past->annihilated</li>
     <li>destroyed_past->detonated</li>
   -->
-  <Damage_Bomb.rulePack.rulesStrings />
-  
-  <!-- UNUSED -->
-  <Damage_Bomb.rulePack.rulesStrings />
+  <Damage_Bomb.rulePack.rulesStrings>
+    <li>damaged_past(p=2)->dilaniato</li>
+    <li>damaged_past(p=2)->esploso</li>
+    <li>damaged_past->ferito</li>
+    <li>damaged_past->danneggiato</li>
+    <li>damaged_past->lesionato</li>
+    <li>damaged_past->colpito</li>
+    <li>destroyed_past->frantumato</li>
+    <li>destroyed_past->schiacciato</li>
+    <li>destroyed_past->obliterato</li>
+    <li>destroyed_past->annientato</li>
+    <li>destroyed_past->detonato</li>
+  </Damage_Bomb.rulePack.rulesStrings>
   
   <!-- EN:
     <li>damaged_past->electrified</li>
@@ -25,10 +34,12 @@
     <li>damaged_past->zapped</li>
     <li>destroyed_past->damaged_past</li>
   -->
-  <Damage_EMP.rulePack.rulesStrings />
-  
-  <!-- UNUSED -->
-  <Damage_EMP.rulePack.rulesStrings />
+  <Damage_EMP.rulePack.rulesStrings>
+    <li>damaged_past->elettrificato</li>
+    <li>damaged_past->folgorato</li>
+    <li>damaged_past->fulminato</li>
+    <li>destroyed_past->damaged_past</li>
+  </Damage_EMP.rulePack.rulesStrings>
   
   <!-- EN:
     <li>damaged_past->extinguished</li>
@@ -37,10 +48,13 @@
     <li>damaged_past->quenched</li>
     <li>destroyed_past->damaged_past</li>
   -->
-  <Damage_Extinguish.rulePack.rulesStrings />
-  
-  <!-- UNUSED -->
-  <Damage_Extinguish.rulePack.rulesStrings />
+  <Damage_Extinguish.rulePack.rulesStrings>
+    <li>damaged_past->spento</li>
+    <li>damaged_past->sommerso</li>
+    <li>damaged_past->schiumato</li>
+    <li>damaged_past->estinto</li>
+    <li>destroyed_past->damaged_past</li>
+  </Damage_Extinguish.rulePack.rulesStrings>
   
   <!-- EN:
     <li>damaged_past(p=2)->blasted</li>
@@ -76,10 +90,40 @@
     <li>destroyed_present->annihilating</li>
     <li>destroyed_present->detonating</li>
   -->
-  <Damage_Flame.rulePack.rulesStrings />
-  
-  <!-- UNUSED -->
-  <Damage_Flame.rulePack.rulesStrings />
+  <Damage_Flame.rulePack.rulesStrings>
+    <li>damaged_past(p=2)->dilaniato</li>
+    <li>damaged_past(p=2)->bruciato</li>
+    <li>damaged_past(p=2)->ustionato</li>
+    <li>damaged_past(p=2)->scottato</li>
+    <li>damaged_past(p=2)->acceso</li>
+    <li>damaged_past(p=2)->carbonizzato</li>
+    <li>damaged_past->ferito</li>
+    <li>damaged_past->danneggiato</li>
+    <li>damaged_past->lesionato</li>
+    <li>damaged_past->colpito</li>
+    <li>damaged_present(p=2)->dilaniando</li>
+    <li>damaged_present(p=2)->bruciando</li>
+    <li>damaged_present(p=2)->ustionando</li>
+    <li>damaged_present(p=2)->scottando</li>
+    <li>damaged_present(p=2)->accendendo</li>
+    <li>damaged_present(p=2)->carbonizzando</li>
+    <li>damaged_present->ferendo</li>
+    <li>damaged_present->danneggiando</li>
+    <li>damaged_present->lesionando</li>
+    <li>damaged_present->colpendo</li>
+    <li>destroyed_past->cremato</li>
+    <li>destroyed_past->incenerito</li>
+    <li>destroyed_past->carbonizzato</li>
+    <li>destroyed_past->obliterato</li>
+    <li>destroyed_past->annientato</li>
+    <li>destroyed_past->detonato</li>
+    <li>destroyed_present->cremando</li>
+    <li>destroyed_present->incenerendo</li>
+    <li>destroyed_present->carbonizzando</li>
+    <li>destroyed_present->obliterando</li>
+    <li>destroyed_present->annientando</li>
+    <li>destroyed_present->detonando</li>
+  </Damage_Flame.rulePack.rulesStrings>
   
   <!-- EN:
     <li>damaged_past->smoked</li>
@@ -87,10 +131,12 @@
     <li>damaged_past->clouded</li>
     <li>destroyed_past->damaged_past</li>
   -->
-  <Damage_Smoke.rulePack.rulesStrings />
-  
-  <!-- UNUSED -->
-  <Damage_Smoke.rulePack.rulesStrings />
+  <Damage_Smoke.rulePack.rulesStrings>
+    <li>damaged_past->affumicato</li>
+    <li>damaged_past->annebbiato</li>
+    <li>damaged_past->oscurato</li>
+    <li>destroyed_past->damaged_past</li>
+  </Damage_Smoke.rulePack.rulesStrings>
   
   <!-- EN:
     <li>damaged_past->stunned</li>
@@ -99,9 +145,12 @@
     <li>damaged_past->dizzied</li>
     <li>destroyed_past->damaged_past</li>
   -->
-  <Damage_Stun.rulePack.rulesStrings />
-  
-  <!-- UNUSED -->
-  <Damage_Stun.rulePack.rulesStrings />
-  
+  <Damage_Stun.rulePack.rulesStrings>
+    <li>damaged_past->stordito</li>
+    <li>damaged_past->confuso</li>
+    <li>damaged_past->fermato</li>
+    <li>damaged_past->intontito</li>
+    <li>destroyed_past->damaged_past</li>
+  </Damage_Stun.rulePack.rulesStrings>
+
 </LanguageData>

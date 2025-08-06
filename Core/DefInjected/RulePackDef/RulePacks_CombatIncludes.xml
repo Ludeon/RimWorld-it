@@ -221,7 +221,56 @@
     <li>skillAdv(initiator_flesh==Mechanoid)->robotically</li>
     <li>skillAdv(initiator_flesh==Mechanoid)->directly</li>
   -->
-  <Combat_SkillIncludes.rulePack.rulesStrings>TODO</Combat_SkillIncludes.rulePack.rulesStrings>
+  <Combat_SkillIncludes.rulePack.rulesStrings>
+    <li>skillDescMelee->[wielding] [INITIATOR_possessive] [WEAPON_label] [skillAdv]</li>
+    <li>skillDescMelee->[using] [implement] [skillAdv]</li>
+    <li>wielding(p=4)->brandendo</li>
+    <li>wielding(p=3)->usando</li>
+    <li>wielding(p=2)->maneggiando</li>
+    <li>wielding->sventolando</li>
+    <li>wielding->manipolando</li>
+    <li>using(p=4)->usando</li>
+    <li>using->guidando</li>
+    <li>using->spingendo</li>
+    <li>using->utilizzando</li>
+    <li>using->muovendo</li>
+    <li>skillAdv(INITIATOR_skill&lt;=3)->incompetentemente</li>
+    <li>skillAdv(INITIATOR_skill&lt;=3)->goffamente</li>
+    <li>skillAdv(INITIATOR_skill&lt;=3)->casualmente</li>
+    <li>skillAdv(INITIATOR_skill&lt;=3)->alla cieca</li>
+    <li>skillAdv(INITIATOR_skill&lt;=3)->agitando a caso</li>
+    <li>skillAdv(INITIATOR_skill&lt;=4)->impacciatamente</li>
+    <li>skillAdv(INITIATOR_skill&lt;=4)->maldestramente</li>
+    <li>skillAdv(INITIATOR_skill&lt;=5)->paurosamente</li>
+    <li>skillAdv(INITIATOR_skill&lt;=5)->esitando</li>
+    <li>skillAdv(INITIATOR_skill&lt;=5)->scioccamente</li>
+    <li>skillAdv(INITIATOR_skill&lt;=6)->titubante</li>
+    <li>skillAdv(INITIATOR_skill&lt;=6)->con riluttanza</li>
+    <li>skillAdv(INITIATOR_skill&lt;=6)->lentamente</li>
+    <li>skillAdv(INITIATOR_skill&lt;=6)->con cautela</li>
+    <li>skillAdv(INITIATOR_skill&lt;=6)->inespertamente</li>
+    <li>skillAdv(INITIATOR_skill&lt;=6)->da dilettante</li>
+    <li>skillAdv(INITIATOR_skill&lt;=6)->timidamente</li>
+    <li>skillAdv(INITIATOR_skill&lt;=8)->con entusiasmo</li>
+    <li>skillAdv(INITIATOR_skill>=6,INITIATOR_skill&lt;=10)->con perizia</li>
+    <li>skillAdv(INITIATOR_skill>=6,INITIATOR_skill&lt;=10)->abilmente</li>
+    <li>skillAdv(INITIATOR_skill>=8)->professionalmente</li>
+    <li>skillAdv(INITIATOR_skill>=8)->con destrezza</li>
+    <li>skillAdv(INITIATOR_skill>=8)->in modo appropriato</li>
+    <li>skillAdv(INITIATOR_skill>=8)->con intelligenza</li>
+    <li>skillAdv(INITIATOR_skill>=8)->destamente</li>
+    <li>skillAdv(INITIATOR_skill>=8)->abilmente</li>
+    <li>skillAdv(INITIATOR_skill>=10)->abilmente</li>
+    <li>skillAdv(INITIATOR_skill>=10)->con destrezza</li>
+    <li>skillAdv(INITIATOR_skill>=12)->da esperto</li>
+    <li>skillAdv(INITIATOR_skill>=12)->con precisione</li>
+    <li>skillAdv(INITIATOR_skill>=14)->maestralmente</li>
+    <li>skillAdv(INITIATOR_skill>=16)->artisticamente</li>
+    <li>skillAdv(INITIATOR_skill>=16)->con grazia</li>
+    <li>skillAdv(initiator_flesh==Mechanoid)->meccanicamente</li>
+    <li>skillAdv(initiator_flesh==Mechanoid)->roboticamente</li>
+    <li>skillAdv(initiator_flesh==Mechanoid)->direttamente</li>
+  </Combat_SkillIncludes.rulePack.rulesStrings>
   
   <!-- EN:
     <li>destroyed_targets(recipient_part_destroyed_count==1)->[recipient_part_destroyed0_label]</li>
@@ -233,6 +282,15 @@
     <li>damaged_targets(recipient_part_damaged_count==3)->[recipient_part_damaged0_label], [recipient_part_damaged1_label], and [recipient_part_damaged2_label]</li>
     <li>damaged_targets->[recipient_part_damaged0_label], [recipient_part_damaged1_label], [recipient_part_damaged2_label], and [recipient_part_damaged3_label]</li>
   -->
-  <Combat_WoundIncludes.rulePack.rulesStrings>TODO</Combat_WoundIncludes.rulePack.rulesStrings>
+  <Combat_WoundIncludes.rulePack.rulesStrings>
+    <li>destroyed_targets(recipient_part_destroyed_count==1)->[recipient_part_destroyed0_label]</li>
+    <li>destroyed_targets(recipient_part_destroyed_count==2)->[recipient_part_destroyed0_label] e [recipient_part_destroyed1_label]</li>
+    <li>destroyed_targets(recipient_part_destroyed_count==3)->[recipient_part_destroyed0_label], [recipient_part_destroyed1_label] e [recipient_part_destroyed2_label]</li>
+    <li>destroyed_targets->[recipient_part_destroyed0_label], [recipient_part_destroyed1_label], [recipient_part_destroyed2_label] e [recipient_part_destroyed3_label]</li>
+    <li>damaged_targets(recipient_part_damaged_count==1)->[recipient_part_damaged0_label]</li>
+    <li>damaged_targets(recipient_part_damaged_count==2)->[recipient_part_damaged0_label] e [recipient_part_damaged1_label]</li>
+    <li>damaged_targets(recipient_part_damaged_count==3)->[recipient_part_damaged0_label], [recipient_part_damaged1_label] e [recipient_part_damaged2_label]</li>
+    <li>damaged_targets->[recipient_part_damaged0_label], [recipient_part_damaged1_label], [recipient_part_damaged2_label] e [recipient_part_damaged3_label]</li>
+  </Combat_WoundIncludes.rulePack.rulesStrings>
   
 </LanguageData>

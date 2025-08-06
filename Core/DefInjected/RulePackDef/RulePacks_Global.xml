@@ -51,6 +51,53 @@
     <li>PersonalCharacteristic(p=0.15)->sexual experience</li>
   -->
   <GlobalUtility.rulePack.rulesStrings>
+    <li>Trans->di</li>
+    <li>Trans->per</li>
+    <li>Trans->da</li>
+    <li>Trans->con</li>
+    <li>Character(p=6)->[PersonJob]</li>
+    <li>Character(p=4)->[Animal]</li>
+    <li>Character(p=3)->[Enemy]</li>
+    <li>Character->[Mechanoid]</li>
+    <li>Quantity_adjphrase->due</li>
+    <li>Quantity_adjphrase->tre</li>
+    <li>Quantity_adjphrase->quattro</li>
+    <li>Quantity_adjphrase->cinque</li>
+    <li>Quantity_adjphrase->sei</li>
+    <li>Quantity_adjphrase->sette</li>
+    <li>Quantity_adjphrase->otto</li>
+    <li>Quantity_adjphrase->nove</li>
+    <li>Quantity_adjphrase->dieci</li>
+    <li>Quantity_adjphrase->diversi</li>
+    <li>Quantity_adjphrase->un gruppo di</li>
+    <li>Quantity_adjphrase->un grande gruppo di</li>
+    <li>Quantity_adjphrase->dozzine di</li>
+    <li>Quantity_adjphrase->centinaia di</li>
+    <li>Quantity_adjphrase->un migliaio</li>
+    <li>Quantity_adjphrase->migliaia di</li>
+    <li>Shape->triangolo</li>
+    <li>Shape->quadrato</li>
+    <li>Shape->rettangolo</li>
+    <li>Shape->cono</li>
+    <li>Shape->linea</li>
+    <li>Shape->cuore</li>
+    <li>Shape->stella</li>
+    <li>Shape->cerchio</li>
+    <li>Shape->ellisse</li>
+    <li>AdjectiveAny->[AdjectiveBadass]</li>
+    <li>AdjectiveAny->[AdjectiveAngsty]</li>
+    <li>AdjectiveAny->[AdjectiveFriendly]</li>
+    <li>AdjectiveAny->[AdjectiveNatural]</li>
+    <li>ConceptAny->[ConceptPositive]</li>
+    <li>ConceptAny->[ConceptBadass]</li>
+    <li>ConceptAny->[ConceptAngsty]</li>
+    <li>PersonalCharacteristic(p=0.15)->genitali</li>
+    <li>PersonalCharacteristic(p=0.15)->peli pubici</li>
+    <li>PersonalCharacteristic(p=0.15)->peli corporei</li>
+    <li>PersonalCharacteristic(p=0.15)->abitudini igieniche</li>
+    <li>PersonalCharacteristic(p=0.15)->capacità sessuale</li>
+    <li>PersonalCharacteristic(p=0.15)->preferenze sessuali</li>
+    <li>PersonalCharacteristic(p=0.15)->esperienza sessuale</li>
     <li>o_a(lodgers0_gender==Female)->a</li>
     <li>o_a(lodgers0_gender!=Female)->o</li>
   </GlobalUtility.rulePack.rulesStrings>
@@ -94,9 +141,44 @@
     <li>talktopicheavyfile(p=0.15)->animal sexuality</li>
     <li>talktopicheavyfile(p=0.15)->sexual fetishes</li>
   -->
-  <TalkTopicsUtility.rulePack.rulesStrings />
-  
-  <!-- UNUSED -->
-  <TalkTopicsUtility.rulePack.rulesStrings />
-  
+  <TalkTopicsUtility.rulePack.rulesStrings>
+    <li>TalkTopicAny->[TalkTopicLight]</li>
+    <li>TalkTopicAny->[TalkTopicHeavy]</li>
+    <li>TalkTopicHeavy->[talktopicheavyfile]</li>
+    <li>TalkTopicHeavy(p=0.08)->il legame tra [talktopicheavyfile] e [talktopicheavyfile]</li>
+    <li>TalkTopicHeavy(p=0.08)->la connessione tra [talktopicheavyfile] e [talktopicheavyfile]</li>
+    <li>TalkTopicHeavy(p=0.08)->la relazione tra [talktopicheavyfile] e [talktopicheavyfile]</li>
+    <li>TalkTopicLight(p=25)->[talktopiclightfile]</li>
+    <li>TalkTopicLight->[Vegetable]s</li>
+    <li>TalkTopicLight->mangiare [Vegetable]s</li>
+    <li>TalkTopicLight->cucinare con [Vegetable]s</li>
+    <li>TalkTopicLight->[Game]</li>
+    <li>TalkTopicLight->giocare a [Game]</li>
+    <li>TalkTopicLight->allenarsi con [Game]</li>
+    <li>TalkTopicLight->imparare [Game]</li>
+    <li>TalkTopicLight->[Animal]s</li>
+    <li>TalkTopicLight->addestrare [Animal]s</li>
+    <li>TalkTopicLight->addomesticare [Animal]s</li>
+    <li>TalkTopicLight->combattere [Animal]s</li>
+    <li>TalkTopicLight->[Animal]s impazziti</li>
+    <li>TalkTopicLight->[Weapon]s</li>
+    <li>TalkTopicLight->usare [Weapon]s</li>
+    <li>TalkTopicLight->allenarsi con [Weapon]s</li>
+    <li>TalkTopicLight->[TerrainFeature]s</li>
+    <li>TalkTopicLight->[NaturalObject]s</li>
+    <li>TalkTopicLight->alberi di [TreeType]</li>
+    <li>TalkTopicLight->[PersonJob]s</li>
+    <li>TalkTopicLight->[PersonJob]s amichevoli</li>
+    <li>TalkTopicLight->[PersonJob]s ostili</li>
+    <li>TalkTopicLight->[Enemy]s</li>
+    <li>TalkTopicLight->combattere [Enemy]s</li>
+    <li>TalkTopicLight->[Apparel]s</li>
+    <li>TalkTopicLight->indossare [Apparel]s</li>
+    <li>TalkTopicLight->creare [Apparel]s</li>
+    <li>talktopicheavyfile(p=0.15)->sesso</li>
+    <li>talktopicheavyfile(p=0.15)->seduzione</li>
+    <li>talktopicheavyfile(p=0.15)->sessualità animale</li>
+    <li>talktopicheavyfile(p=0.15)->feticismi sessuali</li>
+  </TalkTopicsUtility.rulePack.rulesStrings>
+
 </LanguageData>

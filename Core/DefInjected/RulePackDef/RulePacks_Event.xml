@@ -36,9 +36,26 @@
     <li>stumbled->wobbled</li>
     <li>stumbled->staggered</li>
   -->
-  <Event_Stun.rulePack.rulesStrings />
-  
-  <!-- UNUSED -->
-  <Event_Stun.rulePack.rulesStrings />
-  
+  <Event_Stun.rulePack.rulesStrings>
+    <li>r_logentry->[SUBJECT_definite] è stato [stunned] dall'attacco.</li>
+    <li>r_logentry->[SUBJECT_definite] è stato [stunned] dall'attacco di [INITIATOR_definite].</li>
+    <li>stunned(p=3)->stordito</li>
+    <li>stunned->barcollante</li>
+    <li>stunned->intontito</li>
+    <li>stunned->disorientato</li>
+    <li>r_logentry->[SUBJECT_definite] ha [staggered].</li>
+    <li>r_logentry->[SUBJECT_definite] ha [staggered] dopo l'attacco.</li>
+    <li>r_logentry->[SUBJECT_definite] ha [staggered] dopo l'attacco di [INITIATOR_definite].</li>
+    <li>staggered(p=3)->barcollato</li>
+    <li>staggered->vacillato</li>
+    <li>staggered->ondeggiato</li>
+    <li>staggered->tentennato</li>
+    <li>r_logentry->[SUBJECT_definite] si è [stumbled] barcollando confusamente.</li>
+    <li>r_logentry->[SUBJECT_definite] si è [stumbled] barcollando in confusione.</li>
+    <li>stumbled(p=3)->inciampato</li>
+    <li>stumbled->tentennato</li>
+    <li>stumbled->ondeggiato</li>
+    <li>stumbled->barcollato</li>
+  </Event_Stun.rulePack.rulesStrings>
+
 </LanguageData>
