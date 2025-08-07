@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
+  
   <!-- EN: raw humanlike meat eaten -->
   <AteRawHumanlikeMeat.label>pasto di carne umana</AteRawHumanlikeMeat.label>
   <!-- EN:
@@ -181,6 +182,7 @@
     <li>desc_sentence->[PAWN_pronoun]->sembra aver perso una scarpa.</li>
     <li>desc_sentence->I capelli di [PAWN_possessive]->sono totalmente arruffati.</li>
   </Drunk.rulePack.rulesStrings>
+  
   <!-- EN: research project finished -->
   <FinishedResearchProject.label>progetto di ricerca terminato</FinishedResearchProject.label>
   <!-- EN:
@@ -314,10 +316,7 @@
     <li>desc_sentence->Una singola lacrima scende sul volto di [PAWN_possessive].</li>
   </MentalStateBerserk.rulePack.rulesStrings>
   
-  
   <!-- EN: gave up -->
-  <MentalStateGaveUp.label>rinuncia</MentalStateGaveUp.label>
-  <!-- EN: gave up in despair -->
   <MentalStateGaveUp.label>resa per disperazione</MentalStateGaveUp.label>
   <!-- EN:
     <li>tale_noun->[PAWN_nameDef] giving up in despair</li>
@@ -361,6 +360,73 @@
     <li>desc_sentence->[PAWN_pronoun] sembra aver perso una scarpa.</li>
     <li>desc_sentence->I capelli di [PAWN_possessive] sono completamente arruffati.</li>
   </MentalStateGaveUp.rulePack.rulesStrings>
+  
+  <!-- EN: read a book -->
+  <ReadBook.label>lettura di un libro</ReadBook.label>
+  <!-- EN:
+    <li>tale_noun->[PAWN_nameDef] finishing [THING_title]</li>
+    <li>image->[PAWN_nameFull] closing [THING_title] for the last time, a satisfied smile gracing [PAWN_possessive] face [circumstance_group]</li>
+    <li>image->[PAWN_nameFull] turning the pages of [THING_title], absorbing the knowledge within [circumstance_group]</li>
+    <li>image->[PAWN_nameFull] placing [THING_title] back on the shelf, a sense of accomplishment radiating from [PAWN_objective] [circumstance_group]</li>
+    <li>image->[PAWN_nameFull] sitting in quiet contemplation, reflecting on the profound truths within [THING_title] [circumstance_group]</li>
+    <li>circumstance_phrase->while relaxing in [PAWN_possessive] favorite reading nook</li>
+    <li>circumstance_phrase->with a cup of tea by [PAWN_possessive] side</li>
+    <li>circumstance_phrase->under the soft glow of a reading lamp</li>
+    <li>desc_sentence->[PAWN_nameDef] is surrounded by [PAWN_possessive] notes on [THING_title].</li>
+    <li>desc_sentence->[PAWN_nameDef]'s eyes sparkle with newfound wisdom.</li>
+    <li>desc_sentence->[PAWN_nameDef] is forever changed by the teachings of [THING_title].</li>
+    <li>desc_sentence->There is a sense that some secrets are yet to be uncovered.</li>
+  -->
+  <ReadBook.rulePack.rulesStrings>
+    <li>tale_noun->[PAWN_nameDef] finisce [THING_title]</li>
+    <li>image->[PAWN_nameFull] chiude [THING_title] per l'ultima volta, un sorriso soddisfatto illumina il volto di [PAWN_possessive] [circumstance_group]</li>
+    <li>image->[PAWN_nameFull] sfoglia le pagine di [THING_title], assorbendo la conoscenza contenuta [circumstance_group]</li>
+    <li>image->[PAWN_nameFull] ripone [THING_title] sullo scaffale, con un senso di realizzazione che emana da [PAWN_objective] [circumstance_group]</li>
+    <li>image->[PAWN_nameFull] seduto in silenziosa contemplazione, riflettendo sulle verità profonde contenute in [THING_title] [circumstance_group]</li>
+    <li>circumstance_phrase->mentre si rilassa nel suo angolo di lettura preferito</li>
+    <li>circumstance_phrase->con una tazza di tè accanto</li>
+    <li>circumstance_phrase->sotto la luce soffusa di una lampada da lettura</li>
+    <li>desc_sentence->[PAWN_nameDef] è circondato dagli appunti su [THING_title].</li>
+    <li>desc_sentence>Gli occhi di [PAWN_nameDef] brillano di una nuova saggezza.</li>
+    <li>desc_sentence->[PAWN_nameDef] è cambiato per sempre dagli insegnamenti di [THING_title].</li>
+    <li>desc_sentence->Sembra che alcuni segreti debbano ancora essere svelati.</li>
+  </ReadBook.rulePack.rulesStrings>
+  
+  
+  <!-- EN: struck mineable -->
+  <StruckMineable.label>colpito minerale</StruckMineable.label>
+  <!-- EN:
+    <li>tale_noun->[PAWN_nameDef] striking [THING_label]</li>
+    <li>image->[PAWN_nameFull] striking [THING_label] [circumstance_group]</li>
+    <li>circumstance_phrase->while mining</li>
+    <li>circumstance_phrase->while digging</li>
+    <li>circumstance_phrase->while tunnelling</li>
+    <li>circumstance_phrase->with a look of surprise</li>
+    <li>circumstance_phrase->with a satisfied expression</li>
+    <li>desc_sentence->[PAWN_nameDef] is wiping [PAWN_possessive] brow.</li>
+    <li>desc_sentence->[PAWN_nameDef] is jumping for joy.</li>
+    <li>desc_sentence->[PAWN_nameDef] is high-fiving a friend.</li>
+    <li>desc_sentence->[PAWN_nameDef] is screaming with happiness.</li>
+    <li>desc_sentence->[PAWN_nameDef] is laughing uncontrollably.</li>
+    <li>desc_sentence->[PAWN_nameDef] is sweaty and dirty from work.</li>
+    <li>desc_sentence->[PAWN_nameDef] is sweaty and dirty from work.</li>
+  -->
+  <StruckMineable.rulePack.rulesStrings>
+    <li>tale_noun->[PAWN_nameDef] colpisce [THING_label]</li>
+    <li>image->[PAWN_nameFull] colpisce [THING_label] [circumstance_group]</li>
+    <li>circumstance_phrase->mentre estrae</li>
+    <li>circumstance_phrase->mentre scava</li>
+    <li>circumstance_phrase->mentre scava un tunnel</li>
+    <li>circumstance_phrase->con un'espressione sorpresa</li>
+    <li>circumstance_phrase->con un'espressione soddisfatta</li>
+    <li>desc_sentence->[PAWN_nameDef] si sta asciugando la fronte.</li>
+    <li>desc_sentence->[PAWN_nameDef] salta di gioia.</li>
+    <li>desc_sentence->[PAWN_nameDef] dà il cinque a un amico.</li>
+    <li>desc_sentence->[PAWN_nameDef] urla di felicità.</li>
+    <li>desc_sentence->[PAWN_nameDef] ride in modo incontrollabile.</li>
+    <li>desc_sentence->[PAWN_nameDef] è sudato e sporco per il lavoro.</li>
+    <li>desc_sentence->[PAWN_nameDef] è sudato e sporco per il lavoro.</li>
+  </StruckMineable.rulePack.rulesStrings>
   
   
   <!-- EN: vomited -->
@@ -457,7 +523,6 @@
     <li>desc_sentence->[PAWN_nameDef] accarezza un cespuglio.</li>
   </WalkedNaked.rulePack.rulesStrings>
   
-  
   <!-- EN: on fire -->
   <WasOnFire.label>a fuoco</WasOnFire.label>
   <!-- EN:
@@ -500,6 +565,5 @@
     <li>desc_sentence->Una nube di fumo si alza da [PAWN_objective].</li>
     <li>desc_sentence->[PAWN_pronoun] è rappresentato/a artisticamente come un cadavere.</li>
   </WasOnFire.rulePack.rulesStrings>
-
-
+  
 </LanguageData>
