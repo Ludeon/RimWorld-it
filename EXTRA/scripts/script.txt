@@ -24,8 +24,8 @@ Le variabili tra parentesi quadre (es. [INITIATOR_possessive], [WEAPON_label]) n
 Il tag rulesStrings seguono questa regola:
 <parte_sinistra>-><parte_destra>
 La parte sinistra va copiata cosi com'è, la parte destra va tradotta.
-traduci ogni riga che contiene testo naturale, ma lascia invariati i riferimenti tra parentesi quadre ([]), e mantieni esattamente lo stesso numero di <li>.
-Se trovi sequenze con \n\n, copiale esattamente così nella traduzione, e nei commenti, senza andare a capo.
+traduci ogni riga che contiene testo naturale, ma lascia invariati i riferimenti tra parentesi quadre ([]), e mantieni esattamente lo stesso numero di '<li>' all'interno del tag.
+Se trovi sequenze con '\n\n', copiale esattamente così nella traduzione, e nei commenti, senza andare a capo.
 Restituisci sempre il file completo, senza troncamenti.
 Se trovi tag vuoti, trattali come se fossero TODO e crea la lista all'interno del tag vuoto
 Scrivi solo il testo tradotto in chat
@@ -33,7 +33,7 @@ Oltre ai TODO e ai tag vuoti, se una stringa è già tradotta ma la traduzione n
 Se il testo tradotto è fedele e naturale in italiano, lascialo così com'è.
 dammi sempre l'output completo del file, senza tagli o omissioni in formato xml.
 rispondi sono con l'xml della risposta
-quando vedi questa notazione
-<li>parametro->Salvataggio di [refugee_nameDef]</li>
-parametro è una variabile e non va tradotta, -> è FONDAMENTALE e non va cambiato.
+tutti i tag <li> hanno questo formato:
+<li>sinista->destra</li>
+sinista è una variabile e non va tradotta, la freccia '->' è FONDAMENTALE e va sempre lasciata.
 non deve mancare MAI MAI per nessun motivo nessun tag, anche se sono duplicati, non devi scartare mai nessun tag
