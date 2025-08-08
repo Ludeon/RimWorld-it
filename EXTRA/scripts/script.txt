@@ -35,6 +35,14 @@ Se il testo tradotto è fedele e naturale in italiano, lascialo così com'è.
 dammi sempre l'output completo del file, senza tagli o omissioni in formato xml.
 rispondi sono con l'xml della risposta
 tutti i tag <li> hanno questo formato:
+- Esempio <li>:
 <li>sinista->destra</li>
 sinista è una variabile e non va tradotta, la freccia '->' è FONDAMENTALE e va sempre lasciata.
-non deve mancare MAI MAI per nessun motivo nessun tag, anche se sono duplicati, non devi scartare mai nessun tag
+- non deve mancare MAI MAI per nessun motivo nessun tag, anche se sono duplicati, non devi scartare mai nessun tag
+- Quando possibile, usa questa notazione per gestire il genere:
+{PAWN_gender ? <forma_maschile> : <forma_femminile>}.
+Non concatenare il ternario a parole complete (per evitare errori come “statoa”).
+Inserisci il ternario all’interno della parola o sull’intera espressione.
+Esempi corretti:
+{PAWN_gender ? stato ucciso : stata uccisa}
+stat{PAWN_gender ? o : a} uccis{PAWN_gender ? o : a}

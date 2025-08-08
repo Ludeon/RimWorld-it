@@ -22,9 +22,9 @@
   <BombSuper.deathMessage>{0} è {PAWN_gender ? morto : morta} in un'esplosione.</BombSuper.deathMessage>
   
   <!-- EN: decayed organ -->
-  <Decayed.label>TODO</Decayed.label>
+  <Decayed.label>organo in decomposizione</Decayed.label>
   <!-- EN: {0} died from metabolic disruptions caused by organ decay. -->
-  <Decayed.deathMessage>TODO</Decayed.deathMessage>
+  <Decayed.deathMessage>{0} è {PAWN_gender ? morto : morta} a causa di disfunzioni metaboliche provocate dalla decomposizione di un organo.</Decayed.deathMessage>
   
   <!-- EN: deterioration -->
   <Deterioration.label>deterioramento</Deterioration.label>
@@ -42,14 +42,14 @@
   <Mining.deathMessage>{0} è {PAWN_gender ? stato : stata } {PAWN_gender ? ucciso : uccisa}.</Mining.deathMessage>
   
   <!-- EN: nerve -->
-  <Nerve.label>TODO</Nerve.label>
+  <Nerve.label>nervo</Nerve.label>
   <!-- EN: {0} has been killed by nerve shock. -->
-  <Nerve.deathMessage>TODO</Nerve.deathMessage>
+  <Nerve.deathMessage>{0} è {PAWN_gender ? morto : morta} a causa di uno shock ai nervi.</Nerve.deathMessage>
   
   <!-- EN: nerve stun -->
-  <NerveStun.label>TODO</NerveStun.label>
+  <NerveStun.label>stordimento nervoso</NerveStun.label>
   <!-- EN: {0} has been killed. -->
-  <NerveStun.deathMessage>TODO</NerveStun.deathMessage>
+  <NerveStun.deathMessage>{0} è {PAWN_gender ? "stato" : "stata"} {PAWN_gender ? "ucciso" : "uccisa"}.</NerveStun.deathMessage>
   
   <!-- EN: rotting -->
   <Rotting.label>putrefazione</Rotting.label>
