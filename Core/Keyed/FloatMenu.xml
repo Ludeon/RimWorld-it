@@ -23,7 +23,7 @@
   <NotAllowed>Non autorizzato</NotAllowed>
   
   <!-- EN: Attack {1_labelShort} -->
-  <Attack>TODO</Attack>
+  <Attack>Attacca {1_labelShort}</Attack>
   <!-- EN: Fire at {1_labelShort} -->
   <FireAt>Spara a {1_label}</FireAt>
   <!-- EN: Remove -->
@@ -46,7 +46,7 @@
   <!-- EN: cannot order characters you do not control -->
   <CannotOrderNonControlledLower>impossibile dare ordini a persone che non controlli</CannotOrderNonControlledLower>
   <!-- EN: cannot attack -->
-  <CannotAttack>TODO</CannotAttack>
+  <CannotAttack>non può attaccare</CannotAttack>
   <!-- EN: cannot attack self -->
   <CannotAttackSelf>non può attaccare sé stesso</CannotAttackSelf>
   <!-- EN: cannot attack faction ally -->
@@ -95,7 +95,7 @@
   <!-- EN: no reachable outside cell -->
   <NoReachableOutsideCell>nessuna cella esterna raggiungibile</NoReachableOutsideCell>
   <!-- EN: cannot exit map -->
-  <CannotExitMap>TODO</CannotExitMap>
+  <CannotExitMap>non può uscire dalla mappa</CannotExitMap>
   <!-- EN: missing required skill level -->
   <MissingRequiredSkillLevel>livello abilità richiesto mancante</MissingRequiredSkillLevel>
   <!-- EN: animal interacted too recently -->
@@ -167,7 +167,7 @@
   <!-- EN: incapable of mining -->
   <IncapableOfMining>incapace di estrazione</IncapableOfMining>
   <!-- EN: tree marked for extraction -->
-  <TreeMarkedForExtraction>TODO</TreeMarkedForExtraction>
+  <TreeMarkedForExtraction>albero segnato per l'estrazione</TreeMarkedForExtraction>
   <!-- EN: angers faction -->
   <AngersFaction>irrita fazione</AngersFaction>
   <!-- EN: no body part -->
@@ -181,7 +181,7 @@
   <!-- EN: max level -->
   <InstallImplantAlreadyMaxLevel>livello massimo</InstallImplantAlreadyMaxLevel>
   <!-- EN: requires min level {0} -->
-  <InstallImplantMinLevel>TODO</InstallImplantMinLevel>
+  <InstallImplantMinLevel>richiede livello minimo {0}</InstallImplantMinLevel>
   <!-- EN: psychically deaf -->
   <InstallImplantPsychicallyDeaf>sordo psichico</InstallImplantPsychicallyDeaf>
   <!-- EN: Upgrade {0} to level {1} -->
@@ -218,15 +218,15 @@
   <!-- EN: Capture {1_labelShort} -->
   <Capture>Cattura {1_label}</Capture>
   <!-- EN: capture {0_labelShort} -->
-  <CaptureLower>TODO</CaptureLower>
+  <CaptureLower>cattura {0_labelShort}</CaptureLower>
   <!-- EN: Cannot capture -->
   <CannotCapture>Non può catturare</CannotCapture>
   <!-- EN: unwaveringly loyal -->
   <Unrecruitable>incrollabilmente leale</Unrecruitable>
   <!-- EN: not recruitable -->
-  <UnrecruitableNoFaction>TODO</UnrecruitableNoFaction> 
+  <UnrecruitableNoFaction>non reclutabile</UnrecruitableNoFaction> 
   <!-- EN: Transfer {0_label} -->
-  <TransferEntity>TODO</TransferEntity> 
+  <TransferEntity>Trasferisci {0_label}</TransferEntity> 
 
   <!-- EN: Rescue {1_labelShort} -->
   <Rescue>Soccorri {1_label}</Rescue>
@@ -237,7 +237,7 @@
   <!-- EN: Cannot rescue -->
   <CannotRescue>Non può soccorrere</CannotRescue>
   <!-- EN: Cannot rescue {PAWN_labelShort} -->
-  <CannotRescuePawn>TODO</CannotRescuePawn>
+  <CannotRescuePawn>Non può soccorrere {PAWN_labelShort}</CannotRescuePawn>
 
   <!-- EN: Carry {1_labelShort} to cryptosleep casket -->
   <CarryToCryptosleepCasket>Porta {1_label} alla bara criptosonno</CarryToCryptosleepCasket>
@@ -258,15 +258,15 @@
   <!-- EN: No reachable, un-reserved, enclosed prisoner-marked bed in safe temperature. -->
   <NoPrisonerBed>Nessun letto assegnato a prigionieri raggiungibile, non riservato, al chiuso che sia a temperatura adeguata.</NoPrisonerBed>
   <!-- EN: No prisoner bed available. -->
-  <NoPrisonerBedShort>TODO</NoPrisonerBedShort>
+  <NoPrisonerBedShort>Nessun letto per prigionieri disponibile.</NoPrisonerBedShort>
   <!-- EN: No reachable, un-reserved non-prisoner bed in safe temperature. -->
   <NoNonPrisonerBed>Nessun letto non assegnato a prigionieri raggiungibile che sia a temperatura adeguata.</NoNonPrisonerBed>
   <!-- EN: No reachable, un-reserved animal bed in safe temperature. -->
   <NoAnimalBed>Nessuna cuccia raggiungibile, non riservata che sia a temperatura adeguata.</NoAnimalBed>
   <!-- EN: No reachable, unforbidden, un-reserved {0} -->
-  <NoItemReservedOrReachable>TODO</NoItemReservedOrReachable>
+  <NoItemReservedOrReachable>Nessun {0} raggiungibile, non vietato, non riservato</NoItemReservedOrReachable>
   <!-- EN: No unforbidden, un-reserved {0} -->
-  <NoItemReserved>TODO</NoItemReserved>
+  <NoItemReserved>Nessun {0} non vietato, non riservato</NoItemReserved>
   <!-- EN: Reserved by someone else. -->
   <Reserved>Riservato a qualcun altro.</Reserved>
   <!-- EN: Reserved by {1_labelShort} -->
@@ -300,19 +300,19 @@
   <!-- EN: Force wear {1_labelShort} -->
   <ForceWear>Obbliga a indossare {1_labelShort}</ForceWear>
   <!-- EN: Force target to wear {1_labelShort}... -->
-  <ForceTargetToWear>TODO</ForceTargetToWear>
+  <ForceTargetToWear>Obbliga obiettivo a indossare {1_labelShort}...</ForceTargetToWear>
   <!-- EN: Cannot wear {1_label} -->
   <CannotWear>Non può indossare {1_label}</CannotWear>
   <!-- EN: Cannot force target to wear {1_label} -->
-  <CannotForceTargetToWear>TODO</CannotForceTargetToWear>
+  <CannotForceTargetToWear>Non può obbligare l'obiettivo a indossare {1_label}</CannotForceTargetToWear>
   <!-- EN: Force equip {1_labelShort} -->
   <ForceEquipApparel>Obbliga a munirsi di {1_labelShort}</ForceEquipApparel>
   <!-- EN: Force target to equip {1_labelShort}... -->
-  <ForceTargetToEquipApparel>TODO</ForceTargetToEquipApparel>
+  <ForceTargetToEquipApparel>Obbliga obiettivo a munirsi di {1_labelShort}...</ForceTargetToEquipApparel>
   <!-- EN: Cannot equip {1_label} -->
   <CannotEquipApparel>Non può munirsi di {1_label}</CannotEquipApparel>
   <!-- EN: Cannot force target to equip {1_label} -->
-  <CannotForceTargetToEquipApparel>TODO</CannotForceTargetToEquipApparel>
+  <CannotForceTargetToEquipApparel>Non può obbligare l'obiettivo a munirsi di {1_label}</CannotForceTargetToEquipApparel>
   <!-- EN: missing body parts -->
   <CannotWearBecauseOfMissingBodyParts>parti del corpo mancanti</CannotWearBecauseOfMissingBodyParts>
   
@@ -388,7 +388,7 @@
   <!-- EN: Cannot carry {0_labelShort} -->
   <CannotCarry>Impossibile trasportare {0_label}</CannotCarry>
   <!-- EN: hostile -->
-  <CarriedPawnHostile>TODO</CarriedPawnHostile>
+  <CarriedPawnHostile>ostile</CarriedPawnHostile>
   <!-- EN: temporary faction member -->
   <QuestRelated>membro temporaneo della fazione</QuestRelated>
   <!-- EN: Cannot change outfits on temporary faction members -->
@@ -412,22 +412,22 @@
   <!-- EN: not injured -->
   <NotInjured>non ferito</NotInjured>
   <!-- EN: no doctor -->
-  <NoDoctor>TODO</NoDoctor>
+  <NoDoctor>nessun dottore</NoDoctor>
   <!-- EN: medical bed not for slaves -->
-  <NotForSlaves>TODO</NotForSlaves>
+  <NotForSlaves>letto medico non per schiavi</NotForSlaves>
   <!-- EN: Medical care disabled -->
-  <MedicalCareDisabled>TODO</MedicalCareDisabled>
+  <MedicalCareDisabled>Assistenza medica disattivata</MedicalCareDisabled>
   <!-- EN: occupied by {0} -->
   <SomeoneElseSleeping>occupato da {0}</SomeoneElseSleeping>
   
   <!-- EN: Trade with {0} -->
   <TradeWith>Commercia con {0}</TradeWith>
   <!-- EN: Dismiss trader -->
-  <DismissTrader>TODO</DismissTrader>
+  <DismissTrader>Congeda commerciante</DismissTrader>
   <!-- EN: Cannot trade -->
   <CannotTrade>Non può commerciare</CannotTrade>
   <!-- EN: Trader dismissed -->
-  <TraderDismissed>TODO</TraderDismissed>
+  <TraderDismissed>Commerciante congedato</TraderDismissed>
 
   <!-- EN: Open {0_label} -->
   <Open>Apri {0_label}</Open>
@@ -509,12 +509,12 @@
   <!-- EN: Prioritize {0} {1} -->
   <PrioritizeGeneric>Dai priorità a {0} {1}</PrioritizeGeneric>
   <!-- EN: Prioritize {0} -->
-  <PrioritizeGenericSimple>TODO</PrioritizeGenericSimple>
+  <PrioritizeGenericSimple>Dai priorità a {0}</PrioritizeGenericSimple>
 
   <!-- EN: Launch to {LOCATION_label} -->
-  <LaunchTo>TODO</LaunchTo>
+  <LaunchTo>Lancia verso {LOCATION_label}</LaunchTo>
   <!-- EN: Are you sure you want to launch? -->
-  <LaunchToConfirmation>TODO</LaunchToConfirmation>
+  <LaunchToConfirmation>Sei sicuro di voler lanciare?</LaunchToConfirmation>
   <!-- EN: Drop at edge -->
   <DropAtEdge>Lascia al bordo</DropAtEdge>
   <!-- EN: Drop in center -->
@@ -604,9 +604,9 @@
   <CannotEnter>Impossibile entrare</CannotEnter>
   
   <!-- EN: Cannot enter {0} -->
-  <CannotEnterPortal>TODO</CannotEnterPortal>
+  <CannotEnterPortal>Impossibile entrare in {0}</CannotEnterPortal>
   <!-- EN: closed -->
-  <PortalClosed>TODO</PortalClosed>
+  <PortalClosed>chiuso</PortalClosed>
 
   <!-- Romance partner -->
   <!-- EN: Cannot romance {0} -->
@@ -616,27 +616,27 @@
 
   <!-- Feeding -->
   <!-- EN: disliked food -->
-  <WarningFoodDisliked>TODO</WarningFoodDisliked>
+  <WarningFoodDisliked>cibo non gradito</WarningFoodDisliked>
   <!-- EN: Unsuitable food -->
-  <FoodNotSuitable>TODO</FoodNotSuitable>
+  <FoodNotSuitable>Cibo inadatto</FoodNotSuitable>
 
   <!-- EN: Unsuitable drug -->
-  <DrugNotSuitable>TODO</DrugNotSuitable>
+  <DrugNotSuitable>Droga inadatta</DrugNotSuitable>
   
   <!-- Books -->
   <!-- EN: Assign reading... -->
-  <AssignReading>TODO</AssignReading>
+  <AssignReading>Assegna lettura...</AssignReading>
   <!-- EN: Read {0} -->
-  <AssignReadNow>TODO</AssignReadNow>
+  <AssignReadNow>Leggi {0}</AssignReadNow>
   <!-- EN: Cannot read {0} -->
-  <AssignCannotReadNow>TODO</AssignCannotReadNow>
+  <AssignCannotReadNow>Non può leggere {0}</AssignCannotReadNow>
 
   <!-- EN: Prioritize extinguishing fires -->
-  <ExtinguishFiresNearby>TODO</ExtinguishFiresNearby>
+  <ExtinguishFiresNearby>Dai priorità allo spegnimento degli incendi</ExtinguishFiresNearby>
 
   <!-- Analysis -->
   <!-- EN: already analyzed -->
-  <AlreadyAnalyzed>TODO</AlreadyAnalyzed>
+  <AlreadyAnalyzed>già analizzato</AlreadyAnalyzed>
   <!-- EN: no reachable, un-reserved research bench available -->
   <NoResearchBench>non raggiungibile, banco di ricerca disponibile senza prenotazione</NoResearchBench>
 
@@ -644,11 +644,11 @@
   <!-- EN: Hack {0} -->
   <Hack>Hackera {0}</Hack>
   <!-- EN: Choose a colonist to hack this. -->
-  <HackDesc>TODO</HackDesc>
+  <HackDesc>Scegli un colono per hackerare questo.</HackDesc>
   <!-- EN: Cannot hack {0} -->
   <CannotHack>Impossibile hackerare {0}</CannotHack>
   <!-- EN: Locked out -->
-  <LockedOut>TODO</LockedOut>
+  <LockedOut>Bloccato</LockedOut>
   <!-- EN: Already hacked -->
   <AlreadyHacked>Già hackerato</AlreadyHacked>
   <!-- EN: Incapable of hacking -->
