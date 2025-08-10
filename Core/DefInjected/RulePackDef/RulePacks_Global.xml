@@ -172,13 +172,21 @@
     <li>TalkTopicLight->[PersonJob]s ostili</li>
     <li>TalkTopicLight->[Enemy]s</li>
     <li>TalkTopicLight->combattere [Enemy]s</li>
-    <li>TalkTopicLight->[Apparel]s</li>
-    <li>TalkTopicLight->indossare [Apparel]s</li>
-    <li>TalkTopicLight->creare [Apparel]s</li>
+    <li>TalkTopicLight->[Apparel_Plural]</li>
+    <li>TalkTopicLight->indossare [Apparel_Plural]</li>
+    <li>TalkTopicLight->creare [Apparel_Plural]</li>
     <li>talktopicheavyfile(p=0.15)->sesso</li>
     <li>talktopicheavyfile(p=0.15)->seduzione</li>
     <li>talktopicheavyfile(p=0.15)->sessualità animale</li>
     <li>talktopicheavyfile(p=0.15)->feticismi sessuali</li>
   </TalkTopicsUtility.rulePack.rulesStrings>
+  
+  <GlobalUtility.rulePack.rulesFiles>
+    <!-- Apparel -->
+    <li>Apparel->Words/Nouns/Apparel</li>
+    <li>Apparel_Plural->Words/Nouns/Apparel_Plural</li>
+    <li>Apparel_Plural_F->Words/Nouns/Apparel_Plural_Femminine</li>
+    <li>Apparel_Plural_M->Words/Nouns/Apparel_Plural_Masculine</li>
+  </GlobalUtility.rulePack.rulesFiles>
   
 </LanguageData>

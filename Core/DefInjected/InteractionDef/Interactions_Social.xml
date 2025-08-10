@@ -43,35 +43,36 @@
   <!-- EN: deep talk -->
   <DeepTalk.label>profonda conversazione</DeepTalk.label>
   <!-- EN:
-    <li>r_logentry->[INITIATOR_nameDef] and [RECIPIENT_nameDef] [talkedabout] [subject].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [talkedabout] [subject] with [RECIPIENT_nameDef].</li>
-    <li>talkedabout->communicated thoughts about</li>
-    <li>talkedabout->exchanged thoughts about</li>
-    <li>talkedabout->exchanged ideas about</li>
-    <li>talkedabout->shared views on</li>
-    <li>talkedabout->shared beliefs on</li>
-    <li>talkedabout->discussed the topic of</li>
-    <li>talkedabout->had a heartfelt conversation about</li>
-    <li>talkedabout->talked quietly about</li>
-    <li>talkedabout->talked deeply about</li>
-    <li>talkedabout->connected on the topic of</li>
-    <li>subject(INITIATOR_cubeInterest==false)->[TalkTopicHeavy]</li>
-    <li>subject(INITIATOR_cubeInterest==true)->[TalkTopicCube]</li>
-  -->
+  <li>r_logentry->[INITIATOR_nameDef] and [RECIPIENT_nameDef] [talkedabout] [subject].</li>
+  <li>r_logentry->[INITIATOR_nameDef] [talkedabout] [subject] with [RECIPIENT_nameDef].</li>
+  <li>talkedabout->communicated thoughts about</li>
+  <li>talkedabout->exchanged thoughts about</li>
+  <li>talkedabout->exchanged ideas about</li>
+  <li>talkedabout->shared views on</li>
+  <li>talkedabout->shared beliefs on</li>
+  <li>talkedabout->discussed the topic of</li>
+  <li>talkedabout->had a heartfelt conversation about</li>
+  <li>talkedabout->talked quietly about</li>
+  <li>talkedabout->talked deeply about</li>
+  <li>talkedabout->connected on the topic of</li>
+  <li>subject(INITIATOR_cubeInterest==false)->[TalkTopicHeavy]</li>
+  <li>subject(INITIATOR_cubeInterest==true)->[TalkTopicCube]</li>
+-->
   <DeepTalk.logRulesInitiator.rulesStrings>
     <li>r_logentry->[INITIATOR_nameDef] e [RECIPIENT_nameDef] [talkedabout] [subject].</li>
     <li>r_logentry->[INITIATOR_nameDef] [talkedabout] [subject] con [RECIPIENT_nameDef].</li>
     <li>talkedabout->ha comunicato pensieri su</li>
-    <li>talkedabout->si sono scambiati pensieri su</li>
-    <li>talkedabout->si sono scambiati idee su</li>
-    <li>talkedabout->opinioni condivise su</li>
-    <li>talkedabout->credenze condivise su</li>
-    <li>talkedabout->ha discusso il tema del</li>
-    <li>talkedabout->hanno avuto una conversazione sincera su</li>
-    <li>talkedabout->parlavano tranquillamente di</li>
-    <li>talkedabout->parlato profondamente di</li>
-    <li>talkedabout->collegati sul tema della</li>
-    <li>subject->[TalkTopicHeavy]</li>
+    <li>talkedabout->ha scambiato pensieri su</li>
+    <li>talkedabout->ha scambiato idee su</li>
+    <li>talkedabout->ha condiviso opinioni su</li>
+    <li>talkedabout->ha condiviso credenze su</li>
+    <li>talkedabout->ha discusso l’argomento di</li>
+    <li>talkedabout->ha avuto una conversazione sincera su</li>
+    <li>talkedabout->ha parlato tranquillamente di</li>
+    <li>talkedabout->ha parlato profondamente di</li>
+    <li>talkedabout->si è connesso sul tema di</li>
+    <li>subject(INITIATOR_cubeInterest==false)->[TalkTopicHeavy]</li>
+    <li>subject(INITIATOR_cubeInterest==true)->[TalkTopicCube]</li>
   </DeepTalk.logRulesInitiator.rulesStrings>
   
   <!-- EN: insult -->

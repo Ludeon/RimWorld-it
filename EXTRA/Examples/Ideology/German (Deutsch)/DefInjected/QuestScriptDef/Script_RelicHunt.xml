@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>questDescription(classicMode==True)->You've learned that a valuable relic is nearby.\n\nThe [relic_name] is one of [relicGlobalCount] ancient objects venerated by many people. If you could collect it, you could build a reliquary to make your colonists happy and attract wealthy pilgrims.</li>
+    <li>questDescription(classicMode==False)->You've learned that a relic of [ideo_name] is nearby.\n\nThe [relic_name] is an ancient object venerated by all [ideo_memberNamePlural]. If you could collect it, you could build a great reliquary to make [ideo_memberNamePlural] happy, attract wealthy pilgrims, and bring more people to [ideo_name].</li>
+    <li>questDescriptionPartBeforeDiscovery->First, you need to find the [relic_name]. Watch for opportunities to gather information about it.</li>
+  -->
+  <RelicHunt.questDescriptionRules.rulesStrings>
+    <li>questDescription(classicMode==True)->Du hast erfahren, dass eine wertvolle Reliquie in der Nähe ist.\n\nDie Reliquie namens [relic_name] ist einer von [relicGlobalCount] uralten Gegenständen, die von vielen Menschen verehrt werden. Wenn du es schaffst, die Reliquie zu bergen, kannst du einen großen Reliquienschrein bauen, der deine Kolonisten glücklich macht und reiche Pilger anlockt.</li>
+    <li>questDescription(classicMode==False)->Du hast erfahren, dass eine Reliquie von der Ideologie [ideo_name] in der Nähe ist.\n\nDie Reliquie namens [relic_name] ist ein uralter Gegenstand, der von allen Anhängern der Ideologie [ideo_name] verehrt wird. Wenn du es schaffst, die Reliquie zu bergen, kannst du einen großen Reliquienschrein bauen, der die Anhänger dieser Ideologie glücklich macht, reiche Pilger anlockt und mehr Menschen für diese Ideologie begeistert.</li>
+    <li>questDescriptionPartBeforeDiscovery->Zuerst musst du die Reliquie [relic_name] finden. Achte auf Möglichkeiten, Informationen über sie zu sammeln.</li>
+  </RelicHunt.questDescriptionRules.rulesStrings>
+  <!-- EN:
+    <li>questName->The [hunt] for the [item]</li>
+    <li>questName->The [itemAdj] [item]</li>
+    <li>questName(classicMode==False)->The [item] of [ideo_name]</li>
+    <li>hunt->hunt</li>
+    <li>hunt->search</li>
+    <li>hunt->quest</li>
+    <li>item(p=4)->[relic_name]</li>
+    <li>item->relic</li>
+    <li>item->artifact</li>
+    <li>itemAdj->ancient</li>
+    <li>itemAdj->revered</li>
+    <li>itemAdj->venerated</li>
+  -->
+  <RelicHunt.questNameRules.rulesStrings>
+    <li>questName->Die [hunt] nach der [item_fem]</li>
+    <li>questName->Die [hunt] nach dem [item_neu]</li>
+    <li>questName->Die [itemAdj]e [item_fem]</li>
+    <li>questName->Das [itemAdj]e [item_neu]</li>
+    <li>hunt->Jagd</li>
+    <li>hunt->Suche</li>
+    <li>hunt->Quest</li>
+    <li>item_fem->Reliquie [relic_name]</li>
+    <li>item_fem->Reliquie</li>
+    <li>item_neu->Artefakt</li>
+    <li>item_neu->Relikt</li>
+    <li>itemAdj->antik</li>
+    <li>itemAdj->ehrwürdig</li>
+    <li>itemAdj->heilig</li>
+  </RelicHunt.questNameRules.rulesStrings>
+  
+</LanguageData>
