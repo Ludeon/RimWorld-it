@@ -1,0 +1,759 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- Main menu -->
+  <!-- EN: Tutorial -->
+  <Tutorial>Tutorial</Tutorial>
+  <!-- EN: New colony -->
+  <NewColony>Neue Kolonie gründen</NewColony>
+  <!-- EN: Back to game -->
+  <BackToGame>Zurück zum Spiel</BackToGame>
+  <!-- EN: Review scenario -->
+  <ReviewScenario>Szenario-Einstellungen</ReviewScenario>
+  <!-- EN: Save -->
+  <Save>Speichern</Save>
+  <!-- EN: Load game -->
+  <LoadGame>Spiel laden</LoadGame>
+  <!-- EN: Options -->
+  <Options>Optionen</Options>
+  <!-- EN: Mod -->
+  <Mod>Mod</Mod>
+  <!-- EN: Mods -->
+  <Mods>Mods</Mods>
+  <!-- EN: Save translation report -->
+  <SaveTranslationReport>Übersetzungsreport erstellen</SaveTranslationReport>
+  <!-- EN: Generating translation report -->
+  <GeneratingTranslationReport>Erstellt Übersetzungsreport</GeneratingTranslationReport>
+  <!-- EN: Cleanup translation files -->
+  <CleanupTranslationFiles>Übersetzungsdateien bereinigen</CleanupTranslationFiles>
+  <!-- EN: Update translations files (TKey's) -->
+  <TranslationFilesTKeyUpdate>Übersetzungsdateien aktualisieren (TKeys)</TranslationFilesTKeyUpdate>
+  <!-- EN: Cleaning translation files -->
+  <CleaningTranslationFiles>Bereinigt Übersetzungsdateien</CleaningTranslationFiles>
+  <!-- EN: Dev quicktest -->
+  <DevQuickTest>Dev-Schnelltest</DevQuickTest>
+  <!-- EN: Credits -->
+  <Credits>Credits</Credits>
+  <!-- EN: Quit to main menu -->
+  <QuitToMainMenu>Zum Hauptmenü</QuitToMainMenu>
+  <!-- EN: Save and quit to menu -->
+  <SaveAndQuitToMainMenu>Speichern und zum Hauptmenü</SaveAndQuitToMainMenu>
+  <!-- EN: Quit to OS -->
+  <QuitToOS>Zum Desktop</QuitToOS>
+  <!-- EN: Save and quit to OS -->
+  <SaveAndQuitToOS>Speichern und zum Desktop</SaveAndQuitToOS>
+  <!-- EN: Fiction primer -->
+  <FictionPrimer>Fiction Primer</FictionPrimer>
+  <!-- EN: Ludeon blog -->
+  <LudeonBlog>Ludeon Blog</LudeonBlog>
+  <!-- EN: Forums -->
+  <Forums>Forum</Forums>
+  <!-- EN: Official wiki -->
+  <OfficialWiki>Offizielles Wiki</OfficialWiki>
+  <!-- EN: Tynan's twitter -->
+  <TynansTwitter>Tynans Twitter</TynansTwitter>
+  <!-- EN: Tynan's design book -->
+  <TynansDesignBook>Tynans Designbuch</TynansDesignBook>
+  <!-- EN: Help translate RimWorld -->
+  <HelpTranslate>Hilf beim Übersetzen von RimWorld</HelpTranslate>
+  <!-- EN: Buy soundtrack -->
+  <BuySoundtrack>Soundtrack kaufen</BuySoundtrack>
+  <!-- EN: Create world -->
+  <CreateWorld>Welt erstellen</CreateWorld>
+
+  <!-- Main menu translations info window -->
+  <!-- EN: All translations of RimWorld are fan-made. This fan-made translation was created by the following excellent volunteers:\n\n{0} -->
+  <TranslationThanks>Die meisten Übersetzungen stammen von engagierten Community-Mitgliedern.\n\nMitwirkende der deutschen Übersetzung:\n\nAktiv:\n- Harald 'Ragnar-F' Bootz\n\nInaktiv:\n- Markus 'Haplo' Keuneke\n- Alex 'TeiXeR' Weiß\n- Dominik 'TheEisbaer'\n\nUnd andere wunderbare Menschen!</TranslationThanks>
+  <!-- EN: You can contribute too. Click below to learn more (opens web browser). -->
+  <TranslationHowToContribute>Projekt: github.com/Ludeon/RimWorld-de</TranslationHowToContribute>
+  <!-- EN: Learn more -->
+  <LearnMore>Mitmachen</LearnMore>
+
+  <!-- Main menu dev build -->
+  <!-- EN: Warning: This is an unstable development build. This means we are running design experiments and doing technical development.\n\nSome things will be temporarily unbalanced on purpose. This is a classic game design method where we deliberately go too far with a balance change in order to better understand balance boundaries. We can then use that information to decide on the final balance points.\n\nThere will also be bugs, including game-breaking ones. Save compatibility may break any time.\n\nIf you're okay with all of this, thanks for testing! If you don't want to be subject to our experiments, please play the latest stable version. -->
+  <DevBuildWarning>Warnung: Dies ist eine instabile Entwicklerversion. Das bedeutet, dass wir mit dem Design experimentieren und technische Entwicklungen vornehmen.\n\nEinige Dinge werden mit Absicht zeitweise unausgeglichen sein. Das ist eine klassische Methode der Spieleentwicklung, bei der wir absichtlich die Grenzen überschreiten, um die Balance besser zu verstehen. Mit diesen Informationen können wir dann die endgültigen Einstellungen festlegen.\n\nEs wird auch Bugs geben, einschließlich solcher, die das Spiel unspielbar machen. Die Kompatibilität von Speicherständen kann jederzeit verloren gehen.\n\nWenn du mit all dem einverstanden bist, danke fürs Testen! Wenn du nicht an unseren Experimenten teilnehmen möchtest, spiel bitte mit der stabilen Version.</DevBuildWarning>
+
+  <!-- Create/review world -->
+  <!-- EN: Review world -->
+  <ReviewWorld>Weltkarte</ReviewWorld>
+  <!-- EN: Generate -->
+  <WorldGenerate>Generieren</WorldGenerate>
+  <!-- EN: Save and finish -->
+  <WorldSaveAndFinish>Speichern</WorldSaveAndFinish>
+  <!-- EN: Reset factions -->
+  <ResetFactions>Fraktion zurücksetzen</ResetFactions>
+  <!-- EN: Globe coverage -->
+  <PlanetCoverage>Planetare Abdeckung</PlanetCoverage>
+  <!-- EN: Overall rainfall -->
+  <PlanetRainfall>Niederschlag</PlanetRainfall>
+  <!-- EN: Overall temperature -->
+  <PlanetTemperature>Temperatur</PlanetTemperature>
+  <!-- EN: Population -->
+  <PlanetPopulation>Population</PlanetPopulation>
+  <!-- EN: Low -->
+  <PlanetRainfall_Low>Wenig</PlanetRainfall_Low>
+  <!-- EN: Normal -->
+  <PlanetRainfall_Normal>Normal</PlanetRainfall_Normal>
+  <!-- EN: High -->
+  <PlanetRainfall_High>Viel</PlanetRainfall_High>
+  <!-- EN: Low -->
+  <PlanetTemperature_Low>Kühl</PlanetTemperature_Low>
+  <!-- EN: Normal -->
+  <PlanetTemperature_Normal>Normal</PlanetTemperature_Normal>
+  <!-- EN: High -->
+  <PlanetTemperature_High>Heiß</PlanetTemperature_High>
+  <!-- EN: Sparse -->
+  <PlanetPopulation_Low>Spärlich</PlanetPopulation_Low>
+  <!-- EN: Normal -->
+  <PlanetPopulation_Normal>Normal</PlanetPopulation_Normal>
+  <!-- EN: Crowded -->
+  <PlanetPopulation_High>Überfüllt</PlanetPopulation_High>
+  <!-- EN: Seed -->
+  <WorldSeed>Seed</WorldSeed>
+  <!-- EN: Randomize seed -->
+  <RandomizeSeed>Zufälliger Seed</RandomizeSeed>
+  <!-- EN: The planet is always the same diameter, but since it's far larger than needed for play, we don't generate the whole surface because it can take a very long time. This is the percentage of the surface that you want generated. -->
+  <PlanetCoverageTip>Der Planet ist immer gleich groß. Da er aber sehr viel größer ist, als man zum Spielen braucht, generieren wir normalerweise nicht die ganze Oberfläche, da das sehr lange dauern kann. Der hier eingestellte Prozentsatz gibt an, wie viel von der Oberfläche des Planeten generiert wird.</PlanetCoverageTip>
+  <!-- EN: Factions -->
+  <WorldFactionsTab>Fraktionen</WorldFactionsTab>
+  <!-- EN: Advanced settings -->
+  <AdvancedSettings>Erweiterte Einstellungen</AdvancedSettings>
+
+  <!-- Select world -->
+  <!-- EN: Select world -->
+  <SelectWorld>Welt auswählen</SelectWorld>
+  <!-- EN: Select -->
+  <WorldChooseButton>Auswählen</WorldChooseButton>
+  <!-- EN: No world files found. Create a world first. -->
+  <NoWorldsFilesFound>Keine Weltdaten gefunden. Erstelle zuerst eine neue Welt.</NoWorldsFilesFound>
+  
+  <!-- Version info -->
+  <!-- EN: Version {0} is now available. Check ludeon.com for more info. -->
+  <BuildNowAvailable>Version {0} ist verfügbar. Auf Ludeon.com findest du weitere Informationen.</BuildNowAvailable>
+  <!-- EN: This is the latest version. -->
+  <BuildUpToDate>Diese Version ist aktuell.</BuildUpToDate>
+  <!-- EN: Error getting version info: {0} -->
+  <ErrorGettingVersionInfo>Fehler beim Abrufen der Versionsinfo: {0}</ErrorGettingVersionInfo>
+  <!-- EN: Loading version info... -->
+  <LoadingVersionInfo>Lädt Versionsinfo...</LoadingVersionInfo>
+
+  <!-- World generator -->
+  <!-- EN: Generate world -->
+  <GenerateWorld>Welt generieren</GenerateWorld>
+
+  <!-- Mods config -->
+  <!-- EN: Open Steam Workshop -->
+  <OpenSteamWorkshop>Steam Workshop öffnen</OpenSteamWorkshop>
+  <!-- EN: Get mods from forum -->
+  <GetModsFromForum>Mods aus dem Forum holen</GetModsFromForum>
+  <!-- EN: Open mods data folder -->
+  <OpenModsDataFolder>Mod-Daten-Verzeichnis öffnen</OpenModsDataFolder>
+  <!-- EN: Show mods data location -->
+  <ShowModsDataLocation>Mod-Daten-Standort anzeigen</ShowModsDataLocation>
+  <!-- EN: Are you sure you want to disable the core mod? The game won't work at all unless you have another mod that replaces all the core functionality.\n\nRemember, other mods can override defs in the core mod by using the same defName. -->
+  <ConfirmDisableCoreMod>Bist du sicher, dass du die Core-Mod deaktivieren willst? Das Spiel wird nur funktionieren, wenn du eine andere Mod hast, die alle Core-Funktionen ersetzt.\n\nDenke daran, dass andere Mods die Defs der Core-Mod durch Verwenden desselben DefNamens überschreiben können.</ConfirmDisableCoreMod>
+  <!-- EN: Are you sure you want to delete all the content for {0}? -->
+  <ConfirmDeleteMod>Bist du sicher, dass du alle Daten von {0} löschen willst?</ConfirmDeleteMod>
+  <!-- EN: Auto-sort mods -->
+  <ResolveModOrder>Mods autom. sortieren</ResolveModOrder>
+  <!-- EN: Save and apply changes -->
+  <SaveModChanges>Speichern &amp; Anwenden</SaveModChanges>
+  <!-- EN: Mod changes have not been saved. Are you sure you want to continue? -->
+  <DiscardModChanges>Mod-Änderungen wurden noch nicht gespeichert. Bist du sicher, dass du fortfahren willst?</DiscardModChanges>
+  <!-- EN: Cannot move {0}: It must be loaded after {1}. -->
+  <ModReorderConflict_MustLoadAfter>Kann {0} nicht verschieben: Die Mod muss nach {1} geladen werden.</ModReorderConflict_MustLoadAfter>
+  <!-- EN: Cannot move {0}: It must be loaded before {1}. -->
+  <ModReorderConflict_MustLoadBefore>Kann {0} nicht verschieben: Die Mod muss vor {1} geladen werden.</ModReorderConflict_MustLoadBefore>
+  <!-- EN: Unsubscribe -->
+  <Unsubscribe>Abo beenden</Unsubscribe>
+  <!-- EN: Are you sure you want to unsubscribe? -->
+  <ConfirmUnsubscribe>Bist du sicher, dass du das Abo beenden willst?</ConfirmUnsubscribe>
+  <!-- EN: Are you sure you want to unsubscribe from {0}? -->
+  <ConfirmUnsubscribeFrom>Bist du sicher, dass du {0} deabonnieren willst?</ConfirmUnsubscribeFrom>
+  <!-- EN: Are you sure you want to unsubscribe from:\n\n{0} -->
+  <ConfirmUnsubscribeFromMultiple>Bist du sicher, dass du die folgenden Mods deabonnieren willst?\n\n{0}</ConfirmUnsubscribeFromMultiple>
+  <!-- EN: Author -->
+  <Author>Autor</Author>
+  <!-- EN: Enabled -->
+  <Enabled>Aktiviert</Enabled>
+  <!-- EN: Disabled -->
+  <Disabled>Deaktiviert</Disabled>
+  <!-- EN: Enable -->
+  <Enable>Aktivieren</Enable>
+  <!-- EN: Disable -->
+  <Disable>Deaktivieren</Disable>
+  <!-- EN: Get mods from... -->
+  <GetMods>Mods beziehen aus...</GetMods>
+  <!-- EN: Unsubscribe from... -->
+  <UnsubscribeMultiple>Abo beenden bei...</UnsubscribeMultiple>
+  <!-- EN: Save / load list... -->
+  <SaveLoadList>Liste speichern/laden...</SaveLoadList>
+  <!-- EN: Save mod list -->
+  <SaveModList>Mod-Liste speichern</SaveModList>
+  <!-- EN: Load mod list -->
+  <LoadModList>Mod-Liste laden</LoadModList>
+  <!-- EN: Added mods -->
+  <AddedModsList>Hinzugefügte Mods</AddedModsList>
+  <!-- EN: Missing mods -->
+  <MissingModsList>Fehlende Mods</MissingModsList>
+  <!-- EN: Shared mods -->
+  <SharedModsList>Geteilte Mods</SharedModsList>
+  <!-- EN: Website -->
+  <ModWebsite>Webseite</ModWebsite>
+  <!-- EN: Open folder -->
+  <ModFolder>Ordner öffnen</ModFolder>
+  <!-- EN: Mod options -->
+  <ModOptions>Mod-Optionen</ModOptions>
+  <!-- EN: Workshop -->
+  <FromWorkshop>Workshop</FromWorkshop>
+  <!-- EN: Forum -->
+  <FromForum>Forum</FromForum>
+  <!-- EN: Advanced... -->
+  <MoreActions>Erweitert...</MoreActions>
+  <!-- EN: All selected mods -->
+  <AllSelectedMods>Alle ausgewählten Mods</AllSelectedMods>
+  <!-- EN: All disabled mods -->
+  <AllDisabledMods>Alle deaktivierten Mods</AllDisabledMods>
+  <!-- EN: All incompatible mods -->
+  <AllIncompatibleMods>Alle inkompatiblen Mods</AllIncompatibleMods>
+  <!-- EN: Workshop page -->
+  <WorkshopPage>Workshop-Seite</WorkshopPage>
+  <!-- EN: Upload to Steam Workshop -->
+  <UploadToSteamWorkshop>In Workshop hochladen</UploadToSteamWorkshop>
+  <!-- EN: Update on Steam Workshop -->
+  <UpdateOnSteamWorkshop>In Workshop aktualisieren</UpdateOnSteamWorkshop>
+  <!-- EN: Upload already in progress. -->
+  <UploadAlreadyInProgress>Wird bereits hochgeladen.</UploadAlreadyInProgress>
+  <!-- EN: Workshop submission failed.\n\nReason: {0} -->
+  <WorkshopSubmissionFailed>Übertragung zum Workshop fehlgeschlagen.\n\nUrsache: {0}</WorkshopSubmissionFailed>
+  <!-- EN: Successfully uploaded {0}. -->
+  <WorkshopUploadSucceeded>{0} erfolgreich hochgeladen.</WorkshopUploadSucceeded>
+  <!-- EN: Downloading -->
+  <Downloading>Lade herunter</Downloading>
+  <!-- EN: Workshop ID -->
+  <WorkshopId>Workshop-ID</WorkshopId>
+  <!-- EN: Display fulfilled requirements -->
+  <ModDisplayFulfilledRequirements>Erfüllte Anforderungen anzeigen</ModDisplayFulfilledRequirements>
+  <!-- EN: Click to select. -->
+  <ModClickToSelect>Klicke zum Auswählen.</ModClickToSelect>
+  <!-- EN: Click to go to website. -->
+  <ModClickToGoToWebsite>Klicke, um zur Webseite zu gelangen.</ModClickToGoToWebsite>
+  <!-- EN: Source -->
+  <Source>Quelle</Source>
+  <!-- EN: Game versions -->
+  <ModTargetVersion>Spielversionen</ModTargetVersion>
+  <!-- EN: Mod version -->
+  <ModVersion>Mod-Version</ModVersion>
+  <!-- EN: ID -->
+  <ModPackageId>ID</ModPackageId>
+  <!-- EN: This must be loaded before: {0}. -->
+  <ModMustLoadBefore>Diese Mod muss vor folgenden Mods geladen werden: {0}.</ModMustLoadBefore>
+  <!-- EN: This must be loaded after: {0}. -->
+  <ModMustLoadAfter>Diese Mod muss nach folgenden Mods geladen werden: {0}.</ModMustLoadAfter>
+  <!-- EN: Depends on: {0} -->
+  <ModDependsOn>Abhängig von: {0}</ModDependsOn>
+  <!-- EN: Incompatible with: {0} -->
+  <ModIncompatibleWith>Nicht kompatibel mit: {0}</ModIncompatibleWith>
+  <!-- EN: This mod is incompatible with: {0}. -->
+  <ModIncompatibleWithTip>Diese Mod ist nicht kompatibel mit: {0}.</ModIncompatibleWithTip>
+  <!-- EN: This mod is loading in the wrong order relative to another mod. Use the 'auto-sort' button, or re-order the mods manually. -->
+  <ModOrderingWarning>Diese Mod wird in falscher Reihenfolge relativ zu anderen Mods geladen. Benutze 'Mods autom. sortieren' oder ordne sie manuell.</ModOrderingWarning>
+  <!-- EN: Another active mod uses the same ID: {0}. -->
+  <ModWithSameIdAlreadyActive>Eine andere aktive Mod verwendet die gleiche ID: {0}.</ModWithSameIdAlreadyActive>
+  <!-- EN: There is a cyclic mod dependency starting with {0}. -->
+  <ModCyclicDependency>Es besteht eine zyklische Mod-Abhängigkeit, die mit {0} beginnt.</ModCyclicDependency>
+  <!-- EN: This requires the following mods to work: {0}. -->
+  <ModUnsatisfiedDependency>Diese Mod erfordert folgende Mods, um zu funktionieren: {0}.</ModUnsatisfiedDependency>
+  <!-- EN: This mod was not made for this version of RimWorld, and will probably not work correctly. -->
+  <ModNotMadeForThisVersion>Diese Mod wurde nicht für diese Version von RimWorld entwickelt und wird wahrscheinlich nicht richtig funktionieren.</ModNotMadeForThisVersion>
+  <!-- EN: This mod is not made for this version of RimWorld. -->
+  <ModNotMadeForThisVersionShort>Diese Mod wurde nicht für diese Version von RimWorld entwickelt.</ModNotMadeForThisVersionShort>
+  <!-- EN: This mod was made for a newer version of RimWorld than this, and will probably not work correctly. -->
+  <ModNotMadeForThisVersion_Newer>Diese Mod wurde für eine neuere Version von RimWorld entwickelt und wird wahrscheinlich nicht richtig funktionieren.</ModNotMadeForThisVersion_Newer>
+  <!-- EN: Mod needs properly formatted supported version information in About.xml. Like this: <supportedVersions><li>{0}</li></supportedVersions> - <targetVersion> is deprecated. Check log for further information. -->
+  <MessageModNeedsWellFormattedTargetVersion>Mod benötigt korrekt formatierte unterstützte Versionsinformationen in About.xml. Das targetVersion-Tag ist veraltet. Verwende stattdessen das supportedVersions-Tag in Verbindung mit li-Tags. Beispiele dafür findest du in fast jeder aktuellen Mod oder im Internet. Weitere Informationen findest du im Log.</MessageModNeedsWellFormattedTargetVersion>
+  <!-- EN: Mod needs a unique, properly formatted packageId in About.xml. It must must meet following requirements:\n\n  - Alphanumeric characters and dot only.\n  - No spaces.\n  - At least one dot.\n  - No repeated dots in a row, or starting or ending with a dot.\n  - 60 characters or less.\n  - Cannot contain word "Ludeon".\n\nFor example:\n<packageId>AuthorName.ModName</packageId>\n<packageId>AuthorName.ModName.Specific</packageId> -->
+  <MessageModNeedsWellFormattedPackageId>Mod benötigt eine eindeutige, korrekt formatierte Paket-ID in About.xml. Die ID muss folgende Anforderungen erfüllen:\n\n  - Nur alphanumerische Zeichen und Punkt.\n  - Keine Leerzeichen.\n  - Mindestens ein Punkt.\n  - Keine sich wiederholenden, direkt angrenzenden Punkte oder kein Punkt am Anfang oder Ende.\n  - 60 Zeichen oder weniger.\n  - Darf nicht das Wort "Ludeon" enthalten.\n\nZum Beispiel:\nAutorName.ModName\nAutorName.ModName.Spezifisch</MessageModNeedsWellFormattedPackageId>
+  <!-- EN: This mod has issues in LoadFolders.xml, that you need to resolve before uploading: -->
+  <ModHadLoadFolderIssues>Diese Mod hat Probleme in LoadFolders.xml, die vor dem Hochladen behoben werden müssen:</ModHadLoadFolderIssues>
+  <!-- EN: Folder {0} specified for version {1} doesn't exist. -->
+  <ModLoadFolderDoesntExist>Der für Version {1} angegebene Ordner {0} existiert nicht.</ModLoadFolderDoesntExist>
+  <!-- EN: Malformed version string '{0}'. Correct format is Major.Minor (e.g. 1.1) -->
+  <ModLoadFolderMalformedVersion>Fehlerhafte Versionszeichenkette '{0}'. Das korrekte Format ist Haupt.Neben (z.B. 1.1)</ModLoadFolderMalformedVersion>
+  <!-- EN: The list of load folders for version {0} is empty. -->
+  <ModLoadFolderListEmpty>Die Liste der zu ladenden Ordner für Version {0} ist leer.</ModLoadFolderListEmpty>
+  <!-- EN: Version {0} lists the same folder more than once: {1}. -->
+  <ModLoadFolderRepeatingFolder>Version {0} listet denselben Ordner mehr als einmal auf: {1}.</ModLoadFolderRepeatingFolder>
+  <!-- EN: Invalid version order: {0} should come before {1}. -->
+  <ModLoadFolderOutOfOrder>Ungültige Versionsreihenfolge: {0} sollte vor {1} stehen.</ModLoadFolderOutOfOrder>
+  <!-- EN: Invalid version order: 'default' should be defined first. -->
+  <ModLoadFolderOutOfOrderDefault>Ungültige Versionsreihenfolge: 'default' sollte zuerst definiert sein.</ModLoadFolderOutOfOrderDefault>
+  <!-- EN: Using 'default' in load folders is deprecated. Please define folders for each version using the <v...> tags. -->
+  <ModLoadFolderDefaultDeprecated>Die Nutzung von 'default' in den zu ladenden Ordnern ist veraltet. Bitte definiere für jede Version einen Ordner mithilfe des v...-Tags.</ModLoadFolderDefaultDeprecated>
+  <!-- EN: Version {0} is defined in load folders, but is not listed in 'supportedVersions' of mod's About.xml. -->
+  <ModLoadFolderDefinesUnsupportedGameVersion>Version {0} ist in den zu ladenden Ordnern definiert, aber nicht in 'supportedVersions' in About.xml der Mod aufgeführt.</ModLoadFolderDefinesUnsupportedGameVersion>
+  <!-- EN: Drag to reorder -->
+  <DragToReorder>Ziehe für Neuordnen</DragToReorder>
+
+  <!-- Select scenario -->
+  <!-- EN: Choose scenario -->
+  <ChooseScenario>Szenario auswählen</ChooseScenario>
+  <!-- EN: Custom -->
+  <ScenariosCustom>Benutzerdefiniert</ScenariosCustom>
+  <!-- EN: Steam Workshop -->
+  <ScenariosSteamWorkshop>Steam Workshop</ScenariosSteamWorkshop>
+  <!-- EN: Scenario editor -->
+  <ScenarioEditor>Szenario-Editor</ScenarioEditor>
+  <!-- EN: Delete -->
+  <Delete>Löschen</Delete>
+  
+  <!-- Scenario editor -->
+  <!-- EN: seed -->
+  <Seed>Seed</Seed>
+  <!-- EN: Load -->
+  <Load>Laden</Load>
+  <!-- EN: edit mode -->
+  <EditMode>Bearbeitungsmodus</EditMode>
+  <!-- EN: Summary -->
+  <Summary>Zusammenfassung</Summary>
+  <!-- EN: Add part -->
+  <AddPart>Eintrag hinzufügen</AddPart>
+  <!-- EN: All text fields must be filled. -->
+  <TextFieldsMustBeFilled>Alle Textfelder müssen ausgefüllt sein.</TextFieldsMustBeFilled>
+  <!-- EN: Are you sure you want to upload this to the Steam Workshop?\n\nYou must agree to the Steam Workshop terms of service. Find the full terms here:\n\nhttp://steamcommunity.com/sharedfiles/workshoplegalagreement -->
+  <ConfirmSteamWorkshopUpload>Bist du dir sicher, dass du das in den Steam Workshop hochladen willst?\n\nDu musst die Geschäftsbedingungen des Steam Workshops akzeptieren. Die Geschäftsbedingungen findest du hier:\n\nhttp://steamcommunity.com/sharedfiles/workshoplegalagreement</ConfirmSteamWorkshopUpload>
+  <!-- EN: Obviously you should only upload content that you created yourself.\n\nDid you create this content yourself? -->
+  <ConfirmContentAuthor>Du solltest nur Inhalte hochladen, die du selbst erstellt hast.\n\nHast du die Inhalte selbst erstellt?</ConfirmContentAuthor>
+  <!-- EN: Incompatible -->
+  <Incompatible>Inkompatibel</Incompatible>
+  <!-- EN: Tag as translation -->
+  <TagAsTranslation>Als Übersetzung kennzeichnen</TagAsTranslation>
+  <!-- EN: Too many (max {0}):  -->
+  <TooMany>Zu viele (max {0}): </TooMany>
+  <!-- EN: Can be updated on Workshop, since you are the author. -->
+  <CanBeUpdatedOnWorkshop>Da du der Autor bist, kann das im Workshop aktualisiert werden.</CanBeUpdatedOnWorkshop>
+  <!-- EN: This scenario has been edited.\n\nDo you want to save it before proceeding? -->
+  <ScenarioChangedSavePrompt>Dieses Szenario wurde bearbeitet.\n\nMöchtest du es speichern, bevor du fortfährst?</ScenarioChangedSavePrompt>
+  
+  <!-- Select storyteller -->
+  <!-- EN: Choose AI Storyteller -->
+  <ChooseAIStoryteller>Erzähler auswählen</ChooseAIStoryteller>
+  <!-- EN: The AI Storyteller creates events like pirate raids, resource drops, or animal attacks. Their choices will affect the story of your colony. You can change these settings at any time. -->
+  <HowStorytellersWork>Ein Erzähler generiert Ereignisse wie Piratenüberfälle, Rohstoffabwürfe oder Tierangriffe. Seine Entscheidungen beeinflussen die Geschichte deiner Kolonie. Du kannst diese Einstellungen jederzeit ändern.</HowStorytellersWork>
+  <!-- EN: Please choose a difficulty setting. -->
+  <MustChooseDifficulty>Bitte wähle einen Schwierigkeitsgrad aus.</MustChooseDifficulty>
+  <!-- EN: Difficulty -->
+  <Difficulty>Schwierigkeitsgrad</Difficulty>
+  <!-- EN: Commitment mode -->
+  <CommitmentMode>Hardcore-Modus</CommitmentMode>
+  <!-- EN: Reload anytime mode -->
+  <ReloadAnytimeMode>Laden-Erlaubt-Modus</ReloadAnytimeMode>
+  <!-- EN: Please choose commitment mode or reload anytime mode. -->
+  <MustChoosePermadeath>Bitte wähle den Hardcore-Modus oder den Laden-Erlaubt-Modus aus.</MustChoosePermadeath>
+  <!-- EN: You can save and load the game at any time.\n\nThis is a good choice if you're still learning the game, if it fits your personal playstyle, if you're using mods that may break your game, or if you intend to self-enforce commitment mode. -->
+  <ReloadAnytimeModeInfo>Du kannst das Spiel jederzeit speichern und laden.\n\nDieser Modus ist in folgenden Fällen empfehlenswert:\n\n- Du lernst das Spiel gerade erst kennen\n- Er passt zu deinem Spielstil\n- Du verwendest unsichere Mods\n- Du kannst dir den Hardcore-Modus selbst auferlegen</ReloadAnytimeModeInfo>
+  <!-- EN: You can only save when quitting the game.\n\nSince RimWorld is a story generator, even losing all but one person is not the end of the game - it's part of the story. The game is designed to allow recovery after losses.\n\nPlaying out these terrible situations makes a story with both tragedy and triumph. It's the way RimWorld was designed to be played.\n\nThere's a reason Luke Skywalker didn't quit and reload when his family got killed - loss and recovery is dramatic. -->
+  <PermadeathModeInfo>Du kannst nur speichern, wenn du das Spiel beendest.\n\nRimWorld ist ein Geschichtengenerator. Selbst wenn man alle bis auf eine Person verliert, ist das nicht das Ende des Spiels – es ist Teil der Geschichte.\n\nSich solchen Situationen zu stellen, macht die Geschichte aus. Eine Geschichte von Tragik und Triumph. RimWorld wurde für diese Spielweise entwickelt.\n\nEs hat schon seinen Grund, warum Luke Skywalker nach dem Tod seiner Familie nicht aufgegeben und neu geladen hat – Verlust und Erholung sind Teil des Dramas!</PermadeathModeInfo>
+  <!-- EN: Storyteller and playstyle can be changed any time. -->
+  <CanChangeStorytellerSettingsDuringPlay>Erzähler und Spielstil können jederzeit geändert werden.</CanChangeStorytellerSettingsDuringPlay>
+
+  <!-- custom difficulty settings -->
+  <!-- EN: Custom playstyle settings -->
+  <DifficultyCustomSectionLabel>Benutzerdefinierte Spielstil-Einstellungen</DifficultyCustomSectionLabel>
+  <!-- EN: Set to standard playstyle... -->
+  <DifficultyReset>Auf vordefinierten Spielstil setzen...</DifficultyReset>
+  
+  <!-- EN: Threats -->
+  <DifficultyThreatSection>Bedrohungen</DifficultyThreatSection>
+  <!-- EN: Threat scale -->
+  <Difficulty_ThreatScale_Label>Bedrohungsausmaß</Difficulty_ThreatScale_Label>
+  <!-- EN: Adjust the size of threats like raids and infestations, and the difficulty of quests. -->
+  <Difficulty_ThreatScale_Info>Passe die Größe von Bedrohungen wie Überfälle und Insektenplagen sowie die Schwierigkeit von Quests an.</Difficulty_ThreatScale_Info>
+  <!-- EN: Major threats -->
+  <Difficulty_AllowBigThreats_Label>Größere Bedrohungen</Difficulty_AllowBigThreats_Label>
+  <!-- EN: Allow major threats such as raids, infestations, manhunter packs, crashed mechanoid ships and more. -->
+  <Difficulty_AllowBigThreats_Info>Erlaube größere Bedrohungen wie Überfälle, Insektenplagen, menschenjagende Rudel, abgestürzte Mechanoidenschiffe und so weiter.</Difficulty_AllowBigThreats_Info>
+  <!-- EN: Quest threats -->
+  <Difficulty_AllowViolentQuests_Label>Quest-Bedrohungen</Difficulty_AllowViolentQuests_Label>
+  <!-- EN: Allow quests to present with violent threats and challenges. If this is disabled, quests will be modified to be non-violent. -->
+  <Difficulty_AllowViolentQuests_Info>Erlaube Quests mit gewaltsamen Bedrohungen und Herausforderungen. Wenn deaktiviert, werden die Quests immer gewaltfrei sein.</Difficulty_AllowViolentQuests_Info>
+  <!-- EN: Intro threats -->
+  <Difficulty_AllowIntroThreats_Label>Intro-Bedrohungen</Difficulty_AllowIntroThreats_Label>
+  <!-- EN: Enable the fixed intro threats that appear near game start. -->
+  <Difficulty_AllowIntroThreats_Info>Aktiviere die fixen Intro-Bedrohungen, die beim Start eines Spiels erscheinen.</Difficulty_AllowIntroThreats_Info>
+  <!-- EN: Predators hunt humans -->
+  <Difficulty_PredatorsHuntHumanlikes_Label>Raubtiere jagen Menschen</Difficulty_PredatorsHuntHumanlikes_Label>
+  <!-- EN: Allow wild predators to hunt humans. -->
+  <Difficulty_PredatorsHuntHumanlikes_Info>Erlaube wilden Raubtieren, Menschen zu jagen.</Difficulty_PredatorsHuntHumanlikes_Info>
+  <!-- EN: Extreme weather -->
+  <Difficulty_AllowExtremeWeatherIncidents_Label>Extremes Wetter</Difficulty_AllowExtremeWeatherIncidents_Label>
+  <!-- EN: Allow extreme weather incidents such as toxic fallout, volcanic winters and flashstorms. -->
+  <Difficulty_AllowExtremeWeatherIncidents_Info>Erlaube extreme Wetterereignisse wie giftige Fallouts, vulkanische Winter und Blitzstürme.</Difficulty_AllowExtremeWeatherIncidents_Info>
+
+  <!-- EN: Economy -->
+  <DifficultyEconomySection>Wirtschaft</DifficultyEconomySection>
+  <!-- EN: Trade price disadvantage -->
+  <Difficulty_TradePriceFactorLoss_Label>Handelspreisnachteil</Difficulty_TradePriceFactorLoss_Label>
+  <!-- EN: When trading, buy prices are increased by this amount while sell prices are reduced by this amount. -->
+  <Difficulty_TradePriceFactorLoss_Info>Beim Handel werden die Kaufpreise um diesen Betrag erhöht, während die Verkaufspreise um diesen Betrag gesenkt werden.</Difficulty_TradePriceFactorLoss_Info>
+  <!-- EN: Harvest yield -->
+  <Difficulty_CropYieldFactor_Label>Ernteertrag</Difficulty_CropYieldFactor_Label>
+  <!-- EN: Adjust the amount of materials produced when harvesting plants and crops. This includes harvesting plants and cutting trees. -->
+  <Difficulty_CropYieldFactor_Info>Passe die Menge an Ressourcen an, die bei der Ernte von Pflanzen und beim Fällen von Bäumen anfällt.</Difficulty_CropYieldFactor_Info>
+  <!-- EN: Mining yield -->
+  <Difficulty_MineYieldFactor_Label>Gesteinsabbauertrag</Difficulty_MineYieldFactor_Label>
+  <!-- EN: Adjust the amount of materials produced when mining. -->
+  <Difficulty_MineYieldFactor_Info>Passe die Menge an Ressourcen an, die beim Gesteinsabbau anfällt.</Difficulty_MineYieldFactor_Info>
+  <!-- EN: Butchering yield -->
+  <Difficulty_ButcherYieldFactor_Label>Schlachtertrag</Difficulty_ButcherYieldFactor_Label>
+  <!-- EN: Adjust the amount of materials produced when butchering. This includes meat, leather, and yield from shredding mechanoids. -->
+  <Difficulty_ButcherYieldFactor_Info>Passe die Menge an Ressourcen an, die beim Schlachten von Kreaturen oder Zerlegen von Mechanoiden anfällt. Mögliche Erträge sind zum Beispiel Fleisch und Leder.</Difficulty_ButcherYieldFactor_Info>
+  <!-- EN: Research speed -->
+  <Difficulty_ResearchSpeedFactor_Label>Forschungsgeschwindigkeit</Difficulty_ResearchSpeedFactor_Label>
+  <!-- EN: Adjust the speed of research. -->
+  <Difficulty_ResearchSpeedFactor_Info>Passe die Geschwindigkeit der Forschung an.</Difficulty_ResearchSpeedFactor_Info>
+  <!-- EN: Quest rewards -->
+  <Difficulty_QuestRewardValueFactor_Label>Questbelohnungen</Difficulty_QuestRewardValueFactor_Label>
+  <!-- EN: Adjust the value of rewards given for quests.\n\nNote: Quest reward value is also automatically scaled to compensate for threat scale. If you adjust this setting, you'll be adding an additional multiplier. -->
+  <Difficulty_QuestRewardValueFactor_Info>Passe den Reichtum der Belohnungen an, die für Quests angeboten werden.\n\nHinweis: Dieser Wert wird zudem automatisch skaliert, um das Bedrohungsausmaß zu kompensieren. Wenn du diese Einstellung anpasst, fügst du einen zusätzlichen Multiplikator hinzu.</Difficulty_QuestRewardValueFactor_Info>
+  <!-- EN: Raid loot -->
+  <Difficulty_RaidLootPointsFactor_Label>Raider-Inventar</Difficulty_RaidLootPointsFactor_Label>
+  <!-- EN: Adjust the value of loot carried by raiders.\n\nNote: Raid loot value is also automatically scaled to compensate for threat scale. If you adjust this setting, you'll be adding an additional multiplier. -->
+  <Difficulty_RaidLootPointsFactor_Info>Passe den Reichtum der Gegenstände an, die ein Raider mit sich führt.\n\nHinweis: Dieser Wert wird zudem automatisch skaliert, um das Bedrohungsausmaß zu kompensieren. Wenn du diese Einstellung anpasst, fügst du einen zusätzlichen Multiplikator hinzu.</Difficulty_RaidLootPointsFactor_Info>
+  <!-- EN: Turret rearm cost -->
+  <Difficulty_MaintenanceCostFactor_Label>Neubewaffnungskosten für Geschütztürme</Difficulty_MaintenanceCostFactor_Label>
+  <!-- EN: Adjust the cost of rearming turrets. -->
+  <Difficulty_MaintenanceCostFactor_Info>Passe die Kosten für die Neubewaffnung von Geschütztürmen an.</Difficulty_MaintenanceCostFactor_Info>
+  <!-- EN: Scaria rot chance -->
+  <Difficulty_ScariaRotChance_Label>Skariaverrottungschance</Difficulty_ScariaRotChance_Label>
+  <!-- EN: The probability that a corpse will immediately rot upon death, if the creature has the scaria disease.\n\nNote: The default settings are designed to exactly balance out the increase in animal count at higher difficulties, so all players get the same meat rewards. -->
+  <Difficulty_ScariaRotChance_Info>Die Wahrscheinlichkeit, dass eine Leiche sofort nach dem Tod verrottet, wenn die Kreatur an Skaria erkrankt ist.\n\nHinweis: Die Standardeinstellungen sind so ausgelegt, dass sie den Anstieg der Anzahl von Tieren bei höheren Schwierigkeitsgraden genau ausgleichen, so dass alle Spieler den gleichen Fleischertrag erhalten.</Difficulty_ScariaRotChance_Info>
+  <!-- EN: Enemy death on downed -->
+  <Difficulty_EnemyDeathOnDownedChanceFactor_Label>Feind stirbt, wenn er zu Boden geht</Difficulty_EnemyDeathOnDownedChanceFactor_Label>
+  <!-- EN: Adjust the extra chance that an enemy will immediately die when downed. This affects the chances to take prisoners, and thus colony population growth rates. -->
+  <Difficulty_EnemyDeathOnDownedChanceFactor_Info>Passe die zusätzliche Chance an, dass ein Feind sofort stirbt, wenn er zu Boden geht. Dies wirkt sich auf die Chancen aus, Gefangene zu machen, und somit auf die Populationswachstumsraten von Kolonien.</Difficulty_EnemyDeathOnDownedChanceFactor_Info>
+
+  <!-- EN: General -->
+  <DifficultyGeneralSection>Allgemein</DifficultyGeneralSection>
+  <!-- EN: Colonist mood -->
+  <Difficulty_ColonistMoodOffset_Label>Kolonistenstimmung</Difficulty_ColonistMoodOffset_Label>
+  <!-- EN: A permanent mood offset applied to every colonist and prisoner. Colonists have a base mood of 50%. -->
+  <Difficulty_ColonistMoodOffset_Info>Ein permanenter Offset auf die Stimmung aller Kolonisten und Gefangenen. Kolonisten haben eine Grundstimmung von 50%.</Difficulty_ColonistMoodOffset_Info>
+  <!-- EN: Food poison chance -->
+  <Difficulty_FoodPoisonChanceFactor_Label>Lebensmittelvergiftungschance</Difficulty_FoodPoisonChanceFactor_Label>
+  <!-- EN: Adjust the chance that a person will get food poisoning from eating a potentially-poisoned meal. -->
+  <Difficulty_FoodPoisonChanceFactor_Info>Passe die Chance an, dass eine Person durch den Verzehr einer potenziell vergifteten Mahlzeit eine Lebensmittelvergiftung bekommt.</Difficulty_FoodPoisonChanceFactor_Info>
+  <!-- EN: Animal revenge chance -->
+  <Difficulty_ManhunterChanceOnDamageFactor_Label>Tierrachechance</Difficulty_ManhunterChanceOnDamageFactor_Label>
+  <!-- EN: Adjust the chance that injuring a wild animal will cause it to attack. -->
+  <Difficulty_ManhunterChanceOnDamageFactor_Info>Passe die Chance an, dass die Verletzung eines Wildtiers zu einem Angriff führt.</Difficulty_ManhunterChanceOnDamageFactor_Info>
+  <!-- EN: Friendly fire -->
+  <Difficulty_FriendlyFireChanceFactor_Label>Freundbeschuss</Difficulty_FriendlyFireChanceFactor_Label>
+  <!-- EN: Adjust the chance of friendly fire.\n\nNote: This setting only affects direct shots which were going to hit their target. It does not prevent damage from explosions, or from shots which were going to miss their target. -->
+  <Difficulty_FriendlyFireChanceFactor_Info>Passe die Chance an, dass eine Person versehentlich von einem Verbündeten getroffen wird.\n\nHinweis: Diese Einstellung wirkt sich nur auf Direktschüsse aus, die ihr Ziel treffen würden. Sie verhindert nicht den Schaden durch Explosionen oder durch Schüsse, die ihr Ziel verfehlen würden.</Difficulty_FriendlyFireChanceFactor_Info>
+  <!-- EN: Colonist instant kills -->
+  <Difficulty_AllowInstantKillChance_Label>Sofortiger Tod eines Kolonisten</Difficulty_AllowInstantKillChance_Label>
+  <!-- EN: Adjust the chance that a colonist can die instantly due to an attack. The incoming damage is adjusted so it will down the colonist instead.\n\nThis only prevents some kinds of instant kills - colonists can still be downed and bleed to death, die from fire, explosions, disease, and so on. -->
+  <Difficulty_AllowInstantKillChance_Info>Passe die Chance an, dass ein Kolonist durch einen Angriff sofort stirbt. Der eingehende Schaden wird so angepasst, dass er den Kolonisten stattdessen zu Fall bringt.\n\nDies verhindert nicht alle Arten von sofortigem Tod – Kolonisten können immer noch zu Fall gebracht werden und verbluten, und durch Feuer, Explosionen, Krankheiten usw. sterben.</Difficulty_AllowInstantKillChance_Info>
+  <!-- EN: Infection chance -->
+  <Difficulty_PlayerPawnInfectionChanceFactor_Label>Infektionschance</Difficulty_PlayerPawnInfectionChanceFactor_Label>
+  <!-- EN: Adjust the chance that a wound will become infected. -->
+  <Difficulty_PlayerPawnInfectionChanceFactor_Info>Passe die Chance an, dass sich eine Wunde infiziert.</Difficulty_PlayerPawnInfectionChanceFactor_Info>
+  <!-- EN: Disease frequency -->
+  <Difficulty_DiseaseIntervalFactor_Inverted_Label>Erkrankungshäufigkeit</Difficulty_DiseaseIntervalFactor_Inverted_Label>
+  <!-- EN: Adjust the frequency of random disease events. -->
+  <Difficulty_DiseaseIntervalFactor_Inverted_Info>Passe die Häufigkeit von zufälligen Krankheitsfällen an.</Difficulty_DiseaseIntervalFactor_Inverted_Info>
+  <!-- EN: Insect spawning rate -->
+  <Difficulty_EnemyReproductionRateFactor_Label>Spawnrate von Insekten</Difficulty_EnemyReproductionRateFactor_Label>
+  <!-- EN: Adjust the rate at which existing insect hives spawn new insects. Lower values means more time between spawn events.\n\nThis does not affect whether infestations can occur - only the speed at which active hives produce insects. -->
+  <Difficulty_EnemyReproductionRateFactor_Info>Passe die Häufigkeit an, mit der bestehende Insektenkolonien neue Insekten hervorbringen. Je niedriger der Wert, desto länger dauert es, bis neue Insekten gespawnt werden.\n\nDies hat keinen Einfluss darauf, ob Insektenplagen auftreten können – nur auf die Geschwindigkeit, mit der aktive Insektenkolonien Insekten produzieren.</Difficulty_EnemyReproductionRateFactor_Info>
+  <!-- EN: Deep drilling infestations -->
+  <Difficulty_DeepDrillInfestationChanceFactor_Label>Insektenplagen bei Tiefenbohrung</Difficulty_DeepDrillInfestationChanceFactor_Label>
+  <!-- EN: Adjust the chance that deep drilling will trigger an infestation. -->
+  <Difficulty_DeepDrillInfestationChanceFactor_Info>Passe die Chance an, dass eine Tiefenbohrung eine Insektenplage auslöst.</Difficulty_DeepDrillInfestationChanceFactor_Info>
+  <!-- EN: Map generation ancient threats -->
+  <Difficulty_PeacefulTemples_Inverted_Label>Kartengenerierung: Antike Bedrohungen</Difficulty_PeacefulTemples_Inverted_Label>
+  <!-- EN: Ancient structures may contain dangerous threats. -->
+  <Difficulty_PeacefulTemples_Inverted_Info>Antike Strukturen können gefährliche Bedrohungen enthalten.</Difficulty_PeacefulTemples_Inverted_Info>
+  <!-- EN: Map generation natural hives -->
+  <Difficulty_AllowCaveHives_Label>Kartengenerierung: Natürliche Insektenkolonien</Difficulty_AllowCaveHives_Label>
+  <!-- EN: Dormant insect hives may spawn in natural caves.\n\nThis setting only applies to map generation and does not affect active insects that may tunnel in during play. -->
+  <Difficulty_AllowCaveHives_Info>Inaktive Insektenkolonien können in natürlichen Höhlen spawnen.\n\nDiese Einstellung gilt nur für die Kartengenerierung und hat keinen Einfluss auf aktive Insekten, die sich während des Spiels an die Oberfläche graben.</Difficulty_AllowCaveHives_Info>
+  <!-- EN: Add unwavering prisoners -->
+  <Difficulty_UnwaveringPrisoners_Label>Unbeugsame Gefangene hinzufügen</Difficulty_UnwaveringPrisoners_Label>
+  <!-- EN: This option adds additional capturable prisoners to the game who cannot be recruited due to unwavering loyalty.\n\nUnwavering prisoners are added on top of normal prisoners, so turning this off won't give more recruitable prisoners - it simply removes the unwavering ones.\n\nUnwavering prisoners can still be released for diplomatic gains, sold, enslaved, harvested for organs, or otherwise made use of. In general, they offer more options and resources, and make the game a bit richer and easier. -->
+  <Difficulty_UnwaveringPrisoners_Info>Diese Option fügt dem Spiel zusätzliche Charaktere hinzu, die zwar eingefangen, aber aufgrund ihrer absoluten Loyalität nicht rekrutiert werden können.\n\nUnbeugsame Gefangene werden zusätzlich zu den normalen Gefangenen hinzugefügt, d․h․ durch das Ausschalten dieser Option erhöht sich nicht die Anzahl rekrutierbarer Gefangener – es werden nur die Unbeugsamen entfernt.\n\nUnbeugsame Gefangene können weiterhin freigelassen, verkauft, versklavt, zur Organentnahme oder anderweitig benutzt werden. Generell bieten sie mehr Möglichkeiten und Ressourcen und machen das Spiel etwas reicher und einfacher.</Difficulty_UnwaveringPrisoners_Info>
+  <!-- EN: Nomadic mineable resources -->
+  <Difficulty_NomadicMineableResourcesFactor_Label>Menge abbaubarer Ressourcen späterer Karten</Difficulty_NomadicMineableResourcesFactor_Label>
+  <!-- EN: Adjust how many mineable resources are generated on maps after your first.\n\nNote: Your first colony map will always generate with the standard amount of resources. -->
+  <Difficulty_NomadicMineableResourcesFactor_Info>Passe die Menge der abbaubaren Ressourcen an, die auf allen Karten außer der Startkarte generiert werden.\n\nHinweis: Die Startkarte wird immer mit der Standardmenge an Ressourcen generiert.</Difficulty_NomadicMineableResourcesFactor_Info>
+
+  <!-- EN: Player tools -->
+  <DifficultyPlayerToolsSection>Spielerwerkzeuge</DifficultyPlayerToolsSection>
+  <!-- EN: Player can build traps -->
+  <Difficulty_AllowTraps_Label>Spieler darf Fallen bauen</Difficulty_AllowTraps_Label>
+  <!-- EN: Player can build traps like spike traps and IED traps. -->
+  <Difficulty_AllowTraps_Info>Spieler darf Fallen wie Stachelfallen und improvisierte Fallen bauen.</Difficulty_AllowTraps_Info>
+  <!-- EN: Player can build turrets -->
+  <Difficulty_AllowTurrets_Label>Spieler darf Geschütztürme bauen</Difficulty_AllowTurrets_Label>
+  <!-- EN: Player can build static turrets like mini-turrets, autocannon turrets, and uranium slug turrets.\n\nYou can still use captured turrets even if this is disabled. -->
+  <Difficulty_AllowTurrets_Info>Spieler darf stationäre Geschütztürme wie Minigeschütze, Autokanonentürme und Urangeschosstürme bauen.\n\nEroberte Geschütztürme können immer benutzt werden, unabhängig von dieser Einstellung.</Difficulty_AllowTurrets_Info>
+  <!-- EN: Player can build mortars -->
+  <Difficulty_AllowMortars_Label>Spieler darf Mörser bauen</Difficulty_AllowMortars_Label>
+  <!-- EN: Player can build mortars.\n\nYou can still use captured mortars even if this is disabled. -->
+  <Difficulty_AllowMortars_Info>Spieler darf Mörser bauen.\n\nEroberte Mörser können immer benutzt werden, unabhängig von dieser Einstellung.</Difficulty_AllowMortars_Info>
+  <!-- EN: Classic mortars -->
+  <Difficulty_ClassicMortars_Label>Klassische Mörser</Difficulty_ClassicMortars_Label>
+  <!-- EN: Mortars will not require reinforced barrels to construct or reload, and are balanced for this ease of access. -->
+  <Difficulty_ClassicMortars_Info>Zum Bauen oder Neubewaffnen von Mörsern werden keine verstärkten Läufe benötigt. Entsprechend sind sie für diese leichte Zugänglichkeit ausbalanciert.</Difficulty_ClassicMortars_Info>
+  
+  <!-- EN: Adaptation -->
+  <DifficultyAdaptationSection>Anpassung</DifficultyAdaptationSection>
+  <!-- EN: Adaptation growth rate -->
+  <Difficulty_AdaptationGrowthRateFactorOverZero_Label>Anpassungszunahmerate</Difficulty_AdaptationGrowthRateFactorOverZero_Label>
+  <!-- EN: Adaptation means the storyteller makes the game more challenging when you're doing well. An adaptation score grows over time, and is knocked down when you take damage.\n\nThis setting adjusts how fast the adaptation score grows over time. -->
+  <Difficulty_AdaptationGrowthRateFactorOverZero_Info>Anpassung bedeutet, dass der Erzähler das Spiel mit der Zeit schwieriger macht, solange der Spieler keine Verluste erleidet. Der Anpassungswert steigt mit der Zeit und wird reduziert, wenn der Spieler Schaden erleidet.\n\nMit dieser Einstellung wird festgelegt, wie schnell der Anpassungswert mit der Zeit zunimmt.</Difficulty_AdaptationGrowthRateFactorOverZero_Info>
+  <!-- EN: Adaptation impact -->
+  <Difficulty_AdaptationEffectFactor_Label>Anpassungsauswirkung</Difficulty_AdaptationEffectFactor_Label>
+  <!-- EN: Adaptation means the storyteller makes the game more challenging when you're doing well. An adaptation score grows over time, and is knocked down when you take damage.\n\nThis setting adjusts how much the adaptation score affects the difficulty. -->
+  <Difficulty_AdaptationEffectFactor_Info>Anpassung bedeutet, dass der Erzähler das Spiel mit der Zeit schwieriger macht, solange der Spieler keine Verluste erleidet. Der Anpassungswert steigt mit der Zeit und wird reduziert, wenn der Spieler Schaden erleidet.\n\nMit dieser Einstellung wird festgelegt, wie stark der Anpassungswert den Schwierigkeitsgrad beeinflusst.</Difficulty_AdaptationEffectFactor_Info>
+  <!-- EN: Wealth-independent progress mode -->
+  <Difficulty_FixedWealthMode_Label>Reichtumsunabhängiger Fortschrittsmodus</Difficulty_FixedWealthMode_Label>
+  <!-- EN: Play in a wealth-independent progress mode.\n\nIn normal mode, the storyteller scales threats according to colonist count, player wealth, and a variety of other factors. Wealth-independent mode removes the wealth factor and replaces it with a fixed progress curve based on time. The time is counted from the founding of each colony.\n\nThis is only recommended for those looking for a strict skill challenge. In wealth-independent mode, it may be nearly impossible to recover from serious losses unless you found a new settlement. It's also possible to get too far ahead of the curve and find the game too easy. -->
+  <Difficulty_FixedWealthMode_Info>Spiele in einem reichtumsunabhängigen Fortschrittsmodus. Im normalen Modus skaliert der Erzähler Bedrohungen nach Kolonistenzahl, Spielerreichtum und einer Reihe anderer Faktoren. Der reichtumsunabhängige Fortschrittsmodus entfernt den Reichtumsfaktor und ersetzt ihn mit einer fixen Fortschrittskurve, die auf Zeit basiert. Die Zeit wird ab der Gründung jeder Kolonie gezählt.\n\nDiese Einstellung ist nur für Spieler empfohlen, die eine strikte Herausforderung ihres Könnens suchen. Im reichtumsunabhängigen Fortschrittsmodus ist es praktisch nahezu unmöglich, sich von ernsthaften Verlusten zu erholen, es sei denn, du hast eine neue Siedlung gegründet. Man kann der Kurve auch zu weit voraus sein und das Spiel entsprechend als zu einfach empfinden.</Difficulty_FixedWealthMode_Info>
+  <!-- EN: Years until maximum threat -->
+  <Difficulty_FixedWealthTimeFactor_Label>Jahre bis zur maximalen Bedrohung</Difficulty_FixedWealthTimeFactor_Label>
+  <!-- EN: The number of game years until the wealth-independent mode reaches its maximum threat level.\n\nNote that the storyteller will still scale threats according to colonist count and a variety of other factors. -->
+  <Difficulty_FixedWealthTimeFactor_Info>Wie viele Spieljahre es dauert, bis der reichtumsunabhängige Modus seine maximale Bedrohungsstufe erreicht hat.\n\nBeachte, dass der Erzähler die Bedrohungen weiterhin nach der Kolonistenzahl und einer Reihe anderer Faktoren skaliert.</Difficulty_FixedWealthTimeFactor_Info>
+
+  <!-- EN: Ideology -->
+  <DifficultyIdeologySection>Ideology</DifficultyIdeologySection>
+  <!-- EN: Low pop conversion boost -->
+  <Difficulty_LowPopConversionBoost_Label>Bekehrungsboost bei geringer Population</Difficulty_LowPopConversionBoost_Label>
+  <!-- EN: With a single colonist of the player's starting ideoligion, conversion chance to their ideoligion is multiplied by this amount. Conversion attempts against them have their impact divided by that amount.\n\nWith two colonists of the player's starting ideoligion, the effect is halved.\n\nWith three or more colonists of the player's starting ideoligion, this has no effect. -->
+  <Difficulty_LowPopConversionBoost_Info>Wenn nur ein einziges Mitglied der Startideologie des Spielers vorhanden ist, wird die Bekehrungschance zu dessen Ideologie mit diesem Wert multipliziert. Bei Bekehrungsversuchen gegen das Mitglied wird die Wirkung um diesen Betrag dividiert.\n\nWenn zwei Mitglieder der Startideologie des Spielers vorhanden sind, wird der Effekt halbiert.\n\nWenn drei oder mehr Mitglieder der Startideologie des Spielers vorhanden sind, hat dies keinen Effekt.</Difficulty_LowPopConversionBoost_Info>
+
+  <!-- Site select -->
+  <!-- EN: Select starting site -->
+  <SelectStartingSite>Startplatz auswählen</SelectStartingSite>
+  <!-- EN: Select random site -->
+  <SelectRandomSite>Zufälliger Startplatz</SelectRandomSite>
+  <!-- EN: Select site -->
+  <SelectSite>Startplatz auswählen</SelectSite>
+  <!-- EN: Please select a site. -->
+  <MustSelectStartingSite>Bitte wähle einen Startplatz aus.</MustSelectStartingSite>
+  <!-- EN: You cannot land on this biome: {0} -->
+  <CannotLandBiome>Du kannst nicht auf diesem Biom landen: {0}</CannotLandBiome>
+  <!-- EN: Biome not implemented -->
+  <BiomeNotImplemented>Biom nicht implementiert</BiomeNotImplemented>
+  <!-- EN: You cannot land on impassable mountains. -->
+  <CannotLandImpassableMountains>Du kannst nicht auf unpassierbaren Bergen landen.</CannotLandImpassableMountains>
+  <!-- EN: {0} already have a base there. -->
+  <BaseAlreadyThere>Die Fraktion '{0}' hat hier bereits eine Basis.</BaseAlreadyThere>
+  <!-- EN: You already have a base there. -->
+  <YourBaseAlreadyThere>Du hast hier schon eine Basis.</YourBaseAlreadyThere>
+  <!-- EN: This tile is occupied. -->
+  <TileOccupied>Dieses Feld ist schon belegt.</TileOccupied>
+  <!-- EN: Settlements cannot be directly adjacent to each other. -->
+  <FactionBaseAdjacent>Siedlungen können nicht direkt aneinander angrenzen.</FactionBaseAdjacent>
+  <!-- EN: Biome -->
+  <Biome>Biom</Biome>
+  <!-- EN: Terrain -->
+  <Terrain>Gelände</Terrain>
+  <!-- EN: Road -->
+  <Road>Straße</Road>
+  <!-- EN: River -->
+  <River>Fluss</River>
+  <!-- EN: Elevation -->
+  <Elevation>Höhe</Elevation>
+  <!-- EN: Features -->
+  <TileMutators>Besonderheiten</TileMutators>
+  <!-- EN: Fertility -->
+  <Fertility>Fruchtbarkeit</Fertility>
+  <!-- EN: fertility -->
+  <FertilityLower>Fruchtbarkeit</FertilityLower>
+  <!-- EN: Average temperature -->
+  <AvgTemp>Durchschnittstemperatur</AvgTemp>
+  <!-- EN: Rainfall -->
+  <Rainfall>Niederschlag</Rainfall>
+  <!-- EN: Special features -->
+  <SpecialFeatures>Besonderheiten</SpecialFeatures>
+  <!-- EN: northern coast -->
+  <HasCoast0>nördliche Küste</HasCoast0>
+  <!-- EN: eastern coast -->
+  <HasCoast1>östliche Küste</HasCoast1>
+  <!-- EN: southern coast -->
+  <HasCoast2>südliche Küste</HasCoast2>
+  <!-- EN: western coast -->
+  <HasCoast3>westliche Küste</HasCoast3>
+  <!-- EN: caves -->
+  <HasCaves>Höhlen</HasCaves>
+  <!-- EN: Faction base -->
+  <FactionBase>Fraktionsbasis</FactionBase>
+  <!-- EN: Stone types -->
+  <StoneTypesHere>Gesteinsarten</StoneTypesHere>
+  <!-- EN: Time zone -->
+  <TimeZone>Zeitzone</TimeZone>
+  <!-- EN: Movement difficulty -->
+  <MovementDifficulty>Unwegsamkeit</MovementDifficulty>
+  <!-- EN: Animals can graze now -->
+  <AnimalsCanGrazeNow>Tiere können grasen</AnimalsCanGrazeNow>
+  <!-- EN: Average disease frequency -->
+  <AverageDiseaseFrequency>Krankheitshäufigkeit</AverageDiseaseFrequency>
+  <!-- EN: per year -->
+  <PerYear>pro Jahr</PerYear>
+  <!-- EN: Forageability -->
+  <Forageability>Nahrungsverfügbarkeit</Forageability>
+  <!-- EN: None of the selected people can do the following jobs:\n\n{0}\n\nThis can make the game more difficult than usual. Are you sure you want to continue? -->
+  <ConfirmRequiredWorkTypeDisabledForEveryone>Keine der ausgewählten Personen kann die folgenden Arbeiten erledigen:\n\n{0}\n\nDas kann das Spiel um einiges schwieriger machen. Bist du sicher, dass du fortfahren willst?</ConfirmRequiredWorkTypeDisabledForEveryone>
+  <!-- EN: temperature -->
+  <TemperatureLower>Temperatur</TemperatureLower>
+  <!-- EN: light -->
+  <LightLower>Licht</LightLower>
+
+  <!-- Character chooser -->
+  <!-- EN: Create characters -->
+  <CreateCharacters>Charaktere erstellen</CreateCharacters>
+  <!-- EN: The character's first name.\n\nThis is only displayed in certain menus. -->
+  <FirstNameDesc>Der Vorname des Charakters.\n\nDieser Name wird nur in einigen Menüs angezeigt.</FirstNameDesc>
+  <!-- EN: The character's short identifier.\n\nThis is displayed at all times. It can be the first or last name, or a completely separate nickname. -->
+  <ShortIdentifierDesc>Die Kurzbezeichnung des Charakters.\n\nDieser Name wird immer angezeigt. Hierbei kann es sich um den Vornamen, den Nachnamen oder einen völlig eigenständigen Spitznamen handeln.</ShortIdentifierDesc>
+  <!-- EN: The character's last name.\n\nThis is only displayed in certain menus. -->
+  <LastNameDesc>Der Nachname des Charakters.\n\nDieser Name wird nur in einigen Menüs angezeigt.</LastNameDesc>
+  <!-- EN: Randomize -->
+  <Randomize>Zufällig</Randomize>
+  <!-- EN: age {0} -->
+  <AgeIndicator>Alter {0}</AgeIndicator>
+  <!-- EN: {PAWN_race}, age {PAWN_ageFull} -->
+  <PawnSummary>{PAWN_race}, Alter {PAWN_ageFull}</PawnSummary>
+  <!-- EN: {PAWN_gender} {PAWN_race}, age {PAWN_ageFull} -->
+  <PawnSummaryWithGender>{PAWN_gender}, {PAWN_race}, Alter {PAWN_ageFull}</PawnSummaryWithGender>
+  <!-- EN: Backstory -->
+  <Backstory>Vorgeschichte</Backstory>
+  <!-- EN: Incapable of -->
+  <IncapableOf>Verweigert</IncapableOf>
+  <!-- EN: Abilities -->
+  <Abilities>Fähigkeiten</Abilities>
+  <!-- EN: Caused by -->
+  <IncapableOfTooltipHediff>Verursacht durch</IncapableOfTooltipHediff>
+  <!-- EN: Disabled work types: -->
+  <IncapableOfTooltipWorkTypes>Deaktivierte Arbeiten:</IncapableOfTooltipWorkTypes>
+  <!-- EN: Caused by backstory -->
+  <IncapableOfTooltipBackstory>Verursacht durch Vorgeschichte</IncapableOfTooltipBackstory>
+  <!-- EN: Caused by title -->
+  <IncapableOfTooltipTitle>Verursacht durch Titel</IncapableOfTooltipTitle>
+  <!-- EN: Caused by trait -->
+  <IncapableOfTooltipTrait>Verursacht durch Merkmal</IncapableOfTooltipTrait>
+  <!-- EN: Caused by quest status -->
+  <IncapableOfTooltipQuest>Verursacht durch Queststatus</IncapableOfTooltipQuest>
+  <!-- EN: Caused by role -->
+  <IncapableOfTooltipRole>Verursacht durch Rolle</IncapableOfTooltipRole>
+  <!-- EN: Caused by gene -->
+  <IncapableOfTooltipGene>Verursacht durch Gen</IncapableOfTooltipGene>
+  <!-- EN: Caused by -->
+  <IncapableOfTooltipMutant>Verursacht durch</IncapableOfTooltipMutant>
+  <!-- EN: Traits -->
+  <Traits>Merkmale</Traits>
+  <!-- EN: Permanent mood effect -->
+  <PermanentMoodEffect>Permanenter Stimmungseffekt</PermanentMoodEffect>
+  <!-- EN: Skills -->
+  <Skills>Fertigkeiten</Skills>
+  <!-- EN: none -->
+  <NoneLower>Nichts</NoneLower>
+  <!-- EN: Adulthood -->
+  <Adulthood>Erwachsen</Adulthood>
+  <!-- EN: Childhood -->
+  <Childhood>Kindheit</Childhood>
+  <!-- EN: male -->
+  <Male>männlich</Male>
+  <!-- EN: female -->
+  <Female>weiblich</Female>
+  <!-- EN: male and female -->
+  <MaleAndFemale>männlich und weiblich</MaleAndFemale>
+  <!-- EN: male -->
+  <MaleAnimal>Männchen</MaleAnimal>
+  <!-- EN: female -->
+  <FemaleAnimal>Weibchen</FemaleAnimal>
+  <!-- EN: Pain -->
+  <Pain>Schmerz</Pain>
+  <!-- EN: Health -->
+  <Health>Gesundheit</Health>
+  <!-- EN: Relations -->
+  <Relations>Verwandtschaft</Relations>
+  <!-- EN: Possessions -->
+  <Possessions>Besitz</Possessions>
+  <!-- EN: Team skills -->
+  <TeamSkills>Team-Fertigkeiten</TeamSkills>
+  <!-- EN: Selected -->
+  <StartingPawnsSelected>Ausgewählt</StartingPawnsSelected>
+  <!-- EN: Left behind -->
+  <StartingPawnsLeftBehind>Zurückgelassen</StartingPawnsLeftBehind>
+  <!-- EN: This person is considered guilty. Others won't be bothered if you banish, execute or arrest them.\n\nGuilt expires in -->
+  <GuiltyDesc>Diese Person wird als schuldig angesehen. Andere werden sich nicht daran stören, wenn du sie verbannst, hinrichtest oder inhaftierst.\n\nNoch schuldig für</GuiltyDesc>
+  
+  <!-- Misc -->
+  <!-- EN: Start -->
+  <Start>Start</Start>
+  <!-- EN: Advanced -->
+  <Advanced>Erweitert</Advanced>
+  <!-- EN: Next -->
+  <Next>Weiter</Next>
+  <!-- EN: Back -->
+  <Back>Zurück</Back>
+  <!-- EN: Change material... -->
+  <ShowMaterials>Material ändern...</ShowMaterials>
+  <!-- EN: Gameplay -->
+  <Gameplay>Spielmechanik</Gameplay>
+  <!-- EN: Really quit? You'll lose unsaved progress. -->
+  <ConfirmQuit>Bist du sicher, dass du aufhören willst?\nNicht gespeicherter Fortschritt geht verloren.</ConfirmQuit>
+  <!-- EN: Each person needs a valid name. -->
+  <EveryoneNeedsValidName>Jede Person braucht einen gültigen Namen.</EveryoneNeedsValidName>
+  <!-- EN: None of the selected people can do the following jobs -->
+  <RequiredWorkTypeDisabledForEveryone>Keine der ausgewählten Personen kann die folgenden Arbeiten erledigen</RequiredWorkTypeDisabledForEveryone>
+  <!-- EN: Quit -->
+  <Quit>Beenden</Quit>
+  <!-- EN: Ignore -->
+  <Ignore>Ignorieren</Ignore>
+  
+  <!-- Progress bar -->
+  <!-- EN: Generating world -->
+  <GeneratingWorld>Generiert Welt</GeneratingWorld>
+  <!-- EN: Generating planet -->
+  <GeneratingPlanet>Generiert Planet</GeneratingPlanet>
+  <!-- EN: Generating map -->
+  <GeneratingMap>Generiert Karte</GeneratingMap>
+  <!-- EN: Generating map for new encounter -->
+  <GeneratingMapForNewEncounter>Generiert Karte für neue Begegnung</GeneratingMapForNewEncounter>
+
+  <!-- EN: Click for more info. -->
+  <ClickForMoreInfo>Klicke für mehr Informationen.</ClickForMoreInfo>
+  <!-- EN: No more information is available. -->
+  <NoMoreInfoAvailable>Keine weiteren Informationen verfügbar.</NoMoreInfoAvailable>
+  <!-- EN: Best skill -->
+  <BestSkillLabel>Beste Fertigkeit</BestSkillLabel>
+  <!-- EN: {PAWN_nameDef}'s best stat -->
+  <BestSkillLetterLabel>{PAWN_nameDef}'s beste Fertigkeit</BestSkillLetterLabel>
+  <!-- EN: skill level {0} -->
+  <BestSkillInfoLevel>Stufe {0}</BestSkillInfoLevel>
+
+  <!-- Factions -->
+  <!-- EN: Factions -->
+  <Factions>Fraktionen</Factions>
+  <!-- EN: max {0} basic factions allowed -->
+  <TotalFactionsAllowed>max. {0} normale Fraktionen erlaubt</TotalFactionsAllowed>
+  <!-- EN: max {0} -->
+  <MaxFactionsForType>max. {0}</MaxFactionsForType>
+  <!-- EN: Select the factions in the world. You can select up to {0} factions total. -->
+  <FactionSelectionDesc>Lege fest, welche Fraktionen die Welt bevölkern sollen. Du kannst insgesamt bis zu {0} Fraktionen auswählen.</FactionSelectionDesc>
+  <!-- EN: Disabling {0} means less quest variety and other reduced content. -->
+  <FactionDisabledContentWarning>Eine Welt ohne {0} reduziert die Questvielfalt und andere Inhalte.</FactionDisabledContentWarning>
+  <!-- EN: Disabling {0} means less spontaneous threat variety. -->
+  <InsectsDisabledContentWarning>Eine Welt ohne {0} reduziert die Vielfalt an spontanen Bedrohungen.</InsectsDisabledContentWarning>
+  <!-- EN: Disabling {0} means less quest and spontaneous threat variety. -->
+  <MechanoidsDisabledContentWarning>Eine Welt ohne {0} reduziert die Vielfalt an Quests und spontanen Bedrohungen.</MechanoidsDisabledContentWarning>
+  <!-- EN: Without other factions, raids, trading, and quests won't occur as normal. -->
+  <FactionsDisabledWarning>Ohne andere Fraktionen werden Überfälle, Handel und Quests nicht wie gewohnt stattfinden.</FactionsDisabledWarning>
+  <!-- EN: Cannot be removed for this scenario. -->
+  <FactionRemovalDisabled>Kann für dieses Szenario nicht entfernt werden.</FactionRemovalDisabled>
+
+</LanguageData>

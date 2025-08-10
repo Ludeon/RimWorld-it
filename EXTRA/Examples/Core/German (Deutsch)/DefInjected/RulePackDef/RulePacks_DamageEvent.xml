@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>damage_source->the [roof] [collapsed] on</li>
+    <li>roof->roof</li>
+    <li>roof->roofing</li>
+    <li>roof->ceiling</li>
+    <li>collapsed->collapsed</li>
+    <li>collapsed->fell</li>
+    <li>collapsed->caved in</li>
+    <li>damaged_present->smashing</li>
+    <li>damaged_present->bashing</li>
+    <li>damaged_present->bruising</li>
+    <li>damaged_present->lacerating</li>
+    <li>destroyed_present->shattering</li>
+    <li>destroyed_present->crushing</li>
+    <li>destroyed_present->obliterating</li>
+    <li>destroyed_present->annihilating</li>
+    <li>destroyed_present->breaking</li>
+  -->
+  <DamageEvent_Ceiling.rulePack.rulesStrings>
+    <li>damage_source->[roof] [collapsed] auf</li>
+    <li>roof->das Dach</li>
+    <li>roof->die Überdachung</li>
+    <li>roof->die Decke</li>
+    <li>collapsed->stürzte</li>
+    <li>collapsed->fiel</li>
+    <li>collapsed->krachte</li>
+    <li>damaged_past->zerschlug</li>
+    <li>damaged_past->zerstrümmerte</li>
+    <li>damaged_past->zerdrückte</li>
+    <li>damaged_past->zerquetschte</li>
+    <li>damaged_past->zerfetzte</li>
+    <li>was_damaged->zerschlagen</li>
+    <li>was_damaged->zerstrümmert</li>
+    <li>was_damaged->zerdrückt</li>
+    <li>was_damaged->zerquetscht</li>
+    <li>was_damaged->zerfetzt</li>
+    <li>destroyed_past->zerschmetterte</li>
+    <li>destroyed_past->zertrümmerte</li>
+    <li>destroyed_past->vernichtete</li>
+    <li>destroyed_past->zerstörte</li>
+    <li>destroyed_past->zerbrach</li>
+    <li>was_destroyed->zerschmettert</li>
+    <li>was_destroyed->zertrümmert</li>
+    <li>was_destroyed->vernichtet</li>
+    <li>was_destroyed->zerstört</li>
+    <li>was_destroyed->zerbrochen</li>
+  </DamageEvent_Ceiling.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>damage_source->[fire] burned</li>
+    <li>fire(p=3)->fire</li>
+    <li>fire(p=3)->a fire</li>
+    <li>fire(p=3)->the fire</li>
+    <li>fire->heat</li>
+    <li>fire->a conflagration</li>
+    <li>fire->an inferno</li>
+    <li>damaged_present->scorching</li>
+    <li>damaged_present->broiling</li>
+    <li>damaged_present->searing</li>
+    <li>damaged_present->singeing</li>
+    <li>destroyed_present->charring</li>
+    <li>destroyed_present->roasting</li>
+    <li>destroyed_present->cooking</li>
+    <li>destroyed_present->cremating</li>
+  -->
+  <DamageEvent_Fire.rulePack.rulesStrings>
+    <li>damage_source->[fire] fraß sich durch</li>
+    <li>damage_source->[fire] verzehrte</li>
+    <li>damage_source2->[fire] setzte [RECIPIENT_nameDefAcc] in Brand</li>
+    <li>damage_source2->[fire] setzte [RECIPIENT_nameDefAcc] in Flammen</li>
+    <li>damage_source2->[fire] ging auf [RECIPIENT_nameDefAcc] über</li>
+    <li>damage_source2->[fire] brachte [RECIPIENT_nameDefAcc] zum Lodern</li>
+    <li>fire(p=3)->ein Feuer</li>
+    <li>fire->eine Feuersbrunst</li>
+    <li>fire->ein Inferno</li>
+    <li>damaged_past->versengte</li>
+    <li>damaged_past->grillte</li>
+    <li>damaged_past->verglühte</li>
+    <li>damaged_past->verbrannte</li>
+    <li>was_damaged->versengt</li>
+    <li>was_damaged->gegrillt</li>
+    <li>was_damaged->verglüht</li>
+    <li>was_damaged->verbrannt</li>
+    <li>destroyed_past->verkohlte</li>
+    <li>destroyed_past->röstete</li>
+    <li>destroyed_past->kochte</li>
+    <li>destroyed_past->vernichtete</li>
+    <li>was_destroyed->verkohlt</li>
+    <li>was_destroyed->geröstet</li>
+    <li>was_destroyed->gekocht</li>
+    <li>was_destroyed->vernichtet</li>
+  </DamageEvent_Fire.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>r_logentry->[damage_source] [RECIPIENT_nameDef], [destroyed_present] [RECIPIENT_possessive] [destroyed_targets].</li>
+    <li>r_logentry->[damage_source] [RECIPIENT_nameDef], [destroyed_present] [RECIPIENT_possessive] [destroyed_targets] and [damaged_present] [RECIPIENT_possessive] [damaged_targets].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0)->[damage_source] [RECIPIENT_nameDef], [damaged_present] [RECIPIENT_possessive] [damaged_targets].</li>
+    <li>r_logentry(p=0.1)->[damage_source] [RECIPIENT_nameDef].</li>
+  -->
+  <DamageEvent_Include.rulePack.rulesStrings>
+    <li>r_logentry->[damage_source] [RECIPIENT_nameDefAcc] und [destroyed_past] [destroyed_targets_acc_pron].</li>
+    <li>r_logentry->[damage_source2] und [destroyed_past] [destroyed_targets_acc_pron].</li>
+    <li>r_logentry->[damage_source] [RECIPIENT_nameDefAcc] und [destroyed_past] [destroyed_targets_acc_pron], und [damaged_past] [damaged_targets_acc_pron].</li>
+    <li>r_logentry->[damage_source2] und [destroyed_past] [destroyed_targets_acc_pron], und [damaged_past] [damaged_targets_acc_pron].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0)->[damage_source] [RECIPIENT_nameDefAcc] und [damaged_past] [damaged_targets_acc_pron].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0)->[damage_source2] und [damaged_past] [damaged_targets_acc_pron].</li>
+    <li>r_logentry(p=0.1)->[damage_source] [RECIPIENT_nameDefAcc].</li>
+    <li>r_logentry(p=0.1)->[damage_source2].</li>
+    <li>RECIPIENT_nameDefAcc->{replace: [RECIPIENT_nameDef]; ">der "-">den "}</li>
+  </DamageEvent_Include.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>damage_source->The [sky] opened up on</li>
+    <li>damage_source->A beam of incredible [power] [damaged_past]</li>
+    <li>damage_source->A column of [light] [damaged_past]</li>
+    <li>sky->sky</li>
+    <li>sky->clouds</li>
+    <li>sky->heavens</li>
+    <li>power->power</li>
+    <li>power->energy</li>
+    <li>power->heat</li>
+    <li>light->light</li>
+    <li>light->heat</li>
+    <li>light->flame</li>
+    <li>light(p=0.2)->incandescence</li>
+  -->
+  <DamageEvent_PowerBeam.rulePack.rulesStrings>
+    <li>damage_source->der Himmel öffnete sich über</li>
+    <li>damage_source->die Wolken öffneten sich über</li>
+    <li>damage_source->das Firmament öffnete sich über</li>
+    <li>damage_source->Ein Strahl von unglaublicher [power] [damaged_past]</li>
+    <li>damage_source->Eine [light] [damaged_past]</li>
+    <li>power->Kraft</li>
+    <li>power->Energie</li>
+    <li>power->Hitze</li>
+    <li>light->Lichtsäule</li>
+    <li>light->Hitzesäule</li>
+    <li>light->Flammensäule</li>
+    <li>light(p=0.2)->glühende Säule</li>
+  </DamageEvent_PowerBeam.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>damage_source->A [spiraling] tornado [enveloped]</li>
+    <li>destroyed_present(p=3)->tearing off</li>
+    <li>spiraling->spiraling</li>
+    <li>spiraling->whirling</li>
+    <li>spiraling->spinning</li>
+    <li>spiraling(p=10)-></li>
+    <li>enveloped(p=8)->enveloped</li>
+    <li>enveloped->engulfed</li>
+    <li>enveloped->surrounded</li>
+  -->
+  <DamageEvent_Tornado.rulePack.rulesStrings>
+    <li>damage_source->Ein [spiraling] Tornado [enveloped]</li>
+    <li>destroyed_past(p=3)->zerriss</li>
+    <li>was_destroyed(p=3)->zerrissen</li>
+    <li>spiraling->spiralförmiger</li>
+    <li>spiraling->wirbelnder</li>
+    <li>spiraling->sich drehender</li>
+    <li>spiraling(p=10)-></li>
+    <li>enveloped(p=8)->umhüllte</li>
+    <li>enveloped->verschlang</li>
+    <li>enveloped->umgab</li>
+  </DamageEvent_Tornado.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>damage_source->[spiketrap] stabbed</li>
+    <li>damage_source->[spiketrap] struck</li>
+    <li>damage_source->[spiketrap] launched at</li>
+    <li>spiketrap(p=3)->a spike trap</li>
+    <li>spiketrap(p=3)->the spike trap</li>
+    <li>spiketrap->spikes</li>
+    <li>spiketrap->a sharp trap</li>
+    <li>spiketrap->a spiky trap</li>
+    <li>damaged_present->perforating</li>
+    <li>damaged_present->spearing</li>
+    <li>damaged_present->penetrating</li>
+    <li>damaged_present->jabbing into</li>
+    <li>destroyed_present->tearing apart</li>
+    <li>destroyed_present->shredding</li>
+    <li>destroyed_present->eviscerating</li>
+    <li>destroyed_present->exploding</li>
+  -->
+  <DamageEvent_TrapSpike.rulePack.rulesStrings>
+    <li>damage_source->[spiketrap] durchbohrte</li>
+    <li>damage_source->[spiketrap] traf</li>
+    <li>damage_source->[spiketrap] erwischte</li>
+    <li>spiketrap(p=3)->eine Stachelfalle</li>
+    <li>spiketrap(p=3)->die Stachelfalle</li>
+    <li>spiketrap->eine spitze Falle</li>
+    <li>spiketrap->eine scharfe Falle</li>
+    <li>spiketrap->eine stachelige Falle</li>
+    <li>damaged_past->durchlöcherte</li>
+    <li>damaged_past->durchspießte</li>
+    <li>damaged_past->durchdrang</li>
+    <li>damaged_past->zerstach</li>
+    <li>was_damaged->durchlöchert</li>
+    <li>was_damaged->durchspießt</li>
+    <li>was_damaged->durchdrungen</li>
+    <li>was_damaged->zerstochen</li>
+    <li>destroyed_past->zerriss</li>
+    <li>destroyed_past->zerkleinerte</li>
+    <li>destroyed_past->zerfetzte</li>
+    <li>destroyed_past->zerbarst</li>
+    <li>was_destroyed->zerrissen</li>
+    <li>was_destroyed->zerkleinert</li>
+    <li>was_destroyed->zerfetzt</li>
+    <li>was_destroyed->zerborsten</li>
+  </DamageEvent_TrapSpike.rulePack.rulesStrings>
+  
+</LanguageData>

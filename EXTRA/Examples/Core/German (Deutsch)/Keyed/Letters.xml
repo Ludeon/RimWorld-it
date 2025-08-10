@@ -1,0 +1,607 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- Misc -->
+  <!-- EN: Jump to location -->
+  <JumpToLocation>Zum Ort springen</JumpToLocation>
+  <!-- EN: Postpone -->
+  <PostponeLetter>Aufschieben</PostponeLetter>
+  <!-- EN: Reject -->
+  <RejectLetter>Ablehnen</RejectLetter>
+  <!-- EN: Read more -->
+  <ReadMore>Weiterlesen</ReadMore>
+  <!-- EN: You have {0} more letters -->
+  <MoreLetters>Du hast {0} weitere Briefe</MoreLetters>
+
+  <!-- EN: Summer -->
+  <LetterLabelFirstSummerWarning>Sommer</LetterLabelFirstSummerWarning>
+  <!-- EN: Summer has begun! But winter is coming.\n\nYour food crops won't grow in the winter cold. Be sure to store enough food to survive. You can build a walk-in refrigerator to prevent food from spoiling.\n\nTo prepare for winter, buy, steal, or make some parkas, or you'll freeze when you step outside. -->
+  <FirstSummerWarning>Der Sommer hat begonnen! Aber der Winter naht.\n\nDeine Ernte wird der Winterkälte nicht lange standhalten können. Stelle sicher, dass du genug Nahrungsmittel hast.\n\nDu kannst einen begehbaren Kühlraum bauen, um die Haltbarkeit der Nahrung zu erhöhen.\n\nFür deine Kolonisten kannst du dicke Kleidung, wie z.B. Parkas, kaufen, stehlen oder herstellen, um sie vor der Kälte zu schützen.</FirstSummerWarning>
+
+  <!-- EN: Relations with {0} have broken down completely. They are now hostile to you. -->
+  <LetterRelationsChange_Hostile>Die Beziehung zur Fraktion {0} ist komplett zusammengebrochen. Sie ist jetzt dein Feind.</LetterRelationsChange_Hostile>  
+  <!-- EN: They will conduct periodic raids on your colony and caravans, and refuse to trade with you. If you want to improve relations, you can still offer them gifts using caravans or transport pods.\n\nThis happened because goodwill ({0}) has fallen below {1}. In order to restore neutral relations, goodwill must reach {2} again. -->
+  <LetterRelationsChange_HostileGoodwillDescription>Sie wird deine Kolonie und deine Karawanen regelmäßig angreifen und sich weigern, mit dir Handel zu treiben. Wenn du die Beziehungen verbessern willst, kannst du ihr immer noch Geschenke mit einer Karawane oder Transportkapsel schicken.\n\nDas ist passiert, weil dein Ruf ({0}) unter {1} gefallen ist. Um wieder neutral zu werden, muss dein Ruf auf {2} ansteigen.</LetterRelationsChange_HostileGoodwillDescription>  
+
+  <!-- EN: Relations with {0} have warmed. They now consider you neutral and will no longer attack you. -->
+  <LetterRelationsChange_NeutralFromHostile>Die Beziehung zur Fraktion {0} hat sich verbessert. Sie betrachtet dich nun als neutrale Fraktion und wird dich nicht mehr angreifen.</LetterRelationsChange_NeutralFromHostile>
+  <!-- EN: This happened because goodwill ({1}) has risen past {2}. If goodwill falls below {3}, {0} will become hostile again. If goodwill rises above {4}, they will become your ally and fight for you. -->
+  <LetterRelationsChange_NeutralFromHostileGoodwillDescription>Das ist passiert, weil dein Ruf ({1}) über {2} gestiegen ist. Fällt dein Ruf unter {3}, wird die Fraktion {0} wieder feindlich. Steigt dein Ruf über {4}, wird sie zu deinem Verbündeten und kämpft für dich.</LetterRelationsChange_NeutralFromHostileGoodwillDescription>
+  
+  <!-- EN: Relations with {0} have cooled. They now consider you neutral instead of allied. -->
+  <LetterRelationsChange_NeutralFromAlly>Die Beziehung zur Fraktion {0} hat sich verschlechtert. Sie betrachtet dich nur noch als neutrale Fraktion, nicht mehr als Verbündeten.</LetterRelationsChange_NeutralFromAlly>
+  <!-- EN: While they will still interact peacefully with you, they will no longer send fighters to help you when you are under threat.\n\nThis happened because goodwill ({1}) has fallen below {2}. If goodwill falls below {3}, {0} will become hostile. If goodwill rises above {4}, they will become allied once again. -->
+  <LetterRelationsChange_NeutralFromAllyGoodwillDescription>Sie wird zwar weiterhin friedlich mit dir interagieren, aber keine Kämpfer mehr zu deiner Unterstützung schicken.\n\nDas ist passiert, weil dein Ruf ({1}) unter {2} gefallen ist. Fällt dein Ruf unter {3}, wird die Fraktion {0} feindlich. Steigt dein Ruf über {4}, betrachtet sie dich wieder als Verbündeten.</LetterRelationsChange_NeutralFromAllyGoodwillDescription>
+  
+  <!-- EN: Relations with {0} have become very close. They now consider you an ally. -->
+  <LetterRelationsChange_Ally>Die Beziehung zur Fraktion {0} ist sehr eng geworden. Sie betrachtet dich jetzt als Verbündeten.</LetterRelationsChange_Ally>
+  <!-- EN: Allies will sometimes arrive to help fight your enemies when you are under attack. You can also call them for help at any time, at a cost of goodwill.\n\nYou've become allies because your goodwill ({0}) has risen past {1}. If goodwill falls below {2}, relations will return to neutral. -->
+  <LetterRelationsChange_AllyGoodwillDescription>Verbündete kommen dir manchmal zu Hilfe, wenn du angegriffen wirst. Du kannst sie auch jederzeit um Hilfe bitten, aber das kostet dich Ruf.\n\nIhr seid Verbündete geworden, weil dein Ruf ({0}) über {1} gestiegen ist. Fällt dein Ruf unter {2}, werden die Beziehungen wieder neutral.</LetterRelationsChange_AllyGoodwillDescription>
+
+  <!-- EN: goodwill -->
+  <goodwill>Ruf</goodwill>
+  <!-- EN: Neutral -->
+  <Neutral>Neutral</Neutral>
+  <!-- EN: neutral -->
+  <NeutralLower>neutral</NeutralLower>
+  <!-- EN: Death -->
+  <Death>Tod</Death>
+
+  <!-- EN: A {1_label} has short-circuited due to precipitation and started a fire. -->
+  <ShortCircuitRain>Der Niederschlag hat bei '{1_label}' einen Kurzschluss verursacht und einen Brand ausgelöst.</ShortCircuitRain>
+
+  <!-- EN: Area revealed -->
+  <LetterLabelAreaRevealed>Gebiet freigelegt</LetterLabelAreaRevealed>
+  <!-- EN: A new area has been revealed. -->
+  <AreaRevealed>Ein neues Gebiet wurde freigelegt.</AreaRevealed>
+  <!-- EN: A new area has been revealed. It contains ancient, hostile mechanoids. -->
+  <AreaRevealedWithMechanoids>Ein neues Gebiet wurde freigelegt. Es enthält antike, feindliche Mechanoiden.</AreaRevealedWithMechanoids>
+
+  <!-- EN: A roof has collapsed because it was too far from any support. -->
+  <RoofCollapsed>Ein Dach ist eingestürzt, weil es nicht mehr gestützt werden konnte.</RoofCollapsed>
+  <!-- EN: These things were crushed: -->
+  <TheseThingsCrushed>Folgende Dinge wurden von herabfallenden Trümmern erfasst:</TheseThingsCrushed>
+  <!-- EN: Nothing was crushed. -->
+  <NothingCrushed>Nichts wurde von herabfallenden Trümmern erfasst.</NothingCrushed>
+  <!-- EN: Roof collapse -->
+  <LetterLabelRoofCollapsed>Dacheinsturz</LetterLabelRoofCollapsed>
+
+  <!-- EN: {0} successfully recruited {1} ({2} chance). -->
+  <RecruitSuccess>{0} konnte {1} erfolgreich rekrutieren ({2} Chance).</RecruitSuccess>
+  <!-- EN: {0} failed to recruit {1} ({2} chance). -->
+  <RecruitFail>{0} konnte {1} nicht rekrutieren ({2} Chance).</RecruitFail>
+
+  <!-- EN: {PAWN_nameDef} is {RELATIVE_labelShort}'s {1}. If {PAWN_nameDef} dies, {RELATIVE_labelShort} will suffer from long-lasting grief. However, if you manage to rescue {PAWN_nameDef}, {RELATIVE_labelShort} will be very happy for a long time. -->
+  <RelatedPawnInvolvedInQuest>{PAWN_nameDef} ist {RELATIVE_labelShort}'s {1}. Wenn {PAWN_nameDef} stirbt, wird {RELATIVE_labelShort} sehr lange trauern. Wenn du es aber schaffst, {PAWN_nameDef} zu retten, wird {RELATIVE_labelShort} für lange Zeit sehr glücklich sein.</RelatedPawnInvolvedInQuest>
+
+  <!-- EN: Birthday -->
+  <LetterLabelBirthday>Geburtstag</LetterLabelBirthday>
+  <!-- EN: It's {0}'s chronological birthday today! Biologically, {1} is {3} years old.\n\nChronologically, {1} just turned {2}.\n\nNote that since people don't age while in cryptosleep, chronological birthday is separate from biological birthday. -->
+  <BirthdayChronological>Chronologisch hat {0} heute Geburtstag! Biologisch ist {1} {3} Jahre alt. Chronologisch wurde {1} {2}.\n\nHinweis: Da Menschen im Kryptoschlaf nicht altern, ist der chronologische Geburtstag vom biologischen Geburtstag getrennt.</BirthdayChronological>
+  <!-- EN: {0_nameFull} has reached the biological age of {1}. -->
+  <LetterBirthdayBiological>{0_nameFull} hat das biologische Alter von (*DateTime){1} Jahren(/DateTime) erreicht.</LetterBirthdayBiological>
+  <!-- EN: Unfortunately, {0_nameFull} has gained the following diseases due to aging -->
+  <BirthdayBiologicalAgeInjuries>Leider wurden bei {0_gender ? ihm : ihr} die folgenden altersbedingten Krankheiten festgestellt</BirthdayBiologicalAgeInjuries>
+
+  <!-- EN: Disease -->
+  <LetterLabelNewDisease>Krankheit</LetterLabelNewDisease>
+  <!-- EN: {PAWN} has gotten sick from {1}.\n\nEnsure you have a medical bed and a doctor. Make sure that {PAWN_definite} gets proper treatment and spends as much time in bed as possible. -->
+  <NewDisease>{PAWN} ist an {1} erkrankt.\n\nStelle sicher, dass du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {PAWN_definite} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um schnell wieder gesund zu werden.</NewDisease>
+  <!-- EN: {PAWN} has gotten sick from {3}. The infection is in {PAWN_possessive} {1}.\n\nEnsure you have a medical bed and a doctor. Make sure that {PAWN_definite} gets proper treatment and spends as much time in bed as possible. -->
+  <NewPartDisease>{PAWN}'s {1} hat {3_gender ? einen : eine : ein} {replace: {3}; "er "-"en "}.\n\nStelle sicher, dass du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {PAWN_definite} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um schnell wieder gesund zu werden.</NewPartDisease>
+  <!-- EN: {PAWN_labelShort} has developed an illness: {1} -->
+  <NewDiseaseAnimal>{PAWN_labelShort} ist an {1} erkrankt.</NewDiseaseAnimal>
+  <!-- EN: {PAWN_labelShort} has developed an illness: {3} in {PAWN_possessive} {1} -->
+  <NewPartDiseaseAnimal>{PAWN_labelShort} ist an {3} erkrankt. Körperteil: {1}</NewPartDiseaseAnimal>
+
+  <!-- EN: {0} was formerly part of your faction. -->
+  <PawnWasFormerlyColonist>{0} ist ein ehemaliges Mitglied deiner Fraktion.</PawnWasFormerlyColonist>
+  <!-- EN: You previously hosted {0}. -->
+  <PawnWasFormerlyLodger>Du warst zuvor Gastgeber von {0}.</PawnWasFormerlyLodger>
+  <!-- EN: {1_labelShort} has these relationships with your colonists: -->
+  <PawnHasTheseRelationshipsWithColonists>{1_labelShort} hat folgende Beziehungen zu deinen Kolonisten:</PawnHasTheseRelationshipsWithColonists>
+
+  <!-- EN: Ancient danger -->
+  <LetterLabelAncientShrineWarning>Antike Gefahr</LetterLabelAncientShrineWarning>
+  <!-- EN: As {PAWN_nameDef} draws near the ancient wall, a sense of foreboding overcomes {PAWN_objective}. {PAWN_pronoun} isn't sure why, but {PAWN_pronoun} feels that this dusty structure may contain great danger. -->
+  <AncientShrineWarning>Als {PAWN_nameDef} sich der antiken Wand nähert, überkommt {PAWN_objective} eine unheilvolle Vorahnung. {PAWN_pronoun} ist sich nicht sicher, warum, aber {PAWN_pronoun} spürt, dass in dieser verstaubten Ruine eine große Gefahr lauern könnte.</AncientShrineWarning>
+
+  <!-- EN: We have struck {0}! -->
+  <StruckMineable>Wir sind auf {0} gestoßen!</StruckMineable>
+
+  <!-- EN: {0} revenge -->
+  <LetterLabelAnimalManhunterRevenge>{0} rächt sich</LetterLabelAnimalManhunterRevenge>
+  <!-- EN: {1_indefinite} is attacking after being harmed!\n\nIt will hunt any humanoid it can reach. It will calm down when it goes to sleep. -->
+  <AnimalManhunterFromDamage>{1_kindBaseIndef} wurde verletzt und greift sofort an!\n\nDie Kreatur wird jeden Menschen in Sichtweite jagen. Sie wird sich erst beruhigen, wenn sie schlafen geht.</AnimalManhunterFromDamage>
+  <!-- EN: {1_indefinite} is attacking due to a botched taming attempt! -->
+  <AnimalManhunterFromTaming>{1_kindBaseIndef} greift wegen eines verbockten Zähmversuchs an!</AnimalManhunterFromTaming>
+  <!-- EN: Other {1_kindBasePlural} nearby have also become enraged! -->
+  <AnimalManhunterOthers>Andere nahe {1_kindBasePlural} sind auch aggressiv geworden!</AnimalManhunterOthers>
+
+  <!-- EN: {1_labelShort} hit trap -->
+  <LetterFriendlyTrapSprungLabel>{1_labelShort} hat Falle ausgelöst</LetterFriendlyTrapSprungLabel>
+  <!-- EN: {1_labelShort} has accidentally sprung a trap and taken damage from it. -->
+  <LetterFriendlyTrapSprung>{1_labelShort} hat versehentlich eine Falle ausgelöst und wurde verletzt.</LetterFriendlyTrapSprung>
+
+  <!-- EN: {PAWN_labelShort} has developed a health condition:\n\n  {1}\n\nThis was caused by:\n\n  {2} -->
+  <LetterHealthComplications>{PAWN_labelShort} hat einen neuen Gesundheitszustand:\n\n  {1}\n\nDie Ursache dafür war:\n\n  {2}</LetterHealthComplications>
+  <!-- EN: {PAWN_labelShort}: {1} -->
+  <LetterHealthComplicationsLabel>{PAWN_labelShort}: {1}</LetterHealthComplicationsLabel>
+  
+  <!-- EN: {PAWN_labelShort} has developed a health condition: {1}. -->
+  <LetterHediffFromRandomHediffGiver>{PAWN_labelShort} hat einen neuen Gesundheitszustand: {1}.</LetterHediffFromRandomHediffGiver>
+  <!-- EN: {PAWN_labelShort}: {1} -->
+  <LetterHediffFromRandomHediffGiverLabel>{PAWN_labelShort}: {1}</LetterHediffFromRandomHediffGiverLabel>
+
+  <!-- EN: {1} died: {0} -->
+  <LetterLeadersDeathLabel>Fraktionsführer gestorben: {0}</LetterLeadersDeathLabel>
+  <!-- EN: {OLDLEADER_nameFull}, {1} of {0}, has died. -->
+  <LetterLeadersDeath>{OLDLEADER_nameFull}, {1} der Fraktion {0}, ist gestorben.</LetterLeadersDeath>
+
+  <!-- EN: New {1}: {0} -->
+  <LetterLeaderChangedLabel>Neuer Fraktionsführer: {0}</LetterLeaderChangedLabel>
+  <!-- EN: {OLDLEADER_nameFull} is no longer {1} of {0}. -->
+  <LetterLeaderChanged>{OLDLEADER_nameFull} ist nicht länger {1} der Fraktion {0}.</LetterLeaderChanged>
+
+  <!-- EN: The new {0} is {NEWLEADER_nameFull}. -->
+  <LetterNewLeader>Ihr neuer Anführer heißt {NEWLEADER_nameFull}.</LetterNewLeader>
+
+  <!-- EN: The final straw was: {0} -->
+  <FinalStraw>Der auslösende Faktor war: {0}</FinalStraw>
+  <!-- EN: This happened because of poor mood. -->
+  <MentalStateReason_Mood>Dies geschah aufgrund von schlechter Laune.</MentalStateReason_Mood>
+  <!-- EN: This happened because of the trait: {0}. -->
+  <MentalStateReason_Trait>Dies geschah aufgrund des Merkmals '{0}'.</MentalStateReason_Trait>
+  <!-- EN: This happened because of: {0}. -->
+  <MentalStateReason_Hediff>Dies geschah aufgrund von: {0}.</MentalStateReason_Hediff>
+  <!-- EN: This happened because of {0_definite}'s death. -->
+  <MentalStateReason_BondedHumanDeath>Dies geschah, weil {0_definite} gestorben ist.</MentalStateReason_BondedHumanDeath>
+  <!-- EN: The last event was -->
+  <LastFactionRelationsEvent>Das letzte Ereignis war</LastFactionRelationsEvent>
+
+  <!-- EN: View related quest -->
+  <ViewRelatedQuest>Zeige zugehörige Quest</ViewRelatedQuest>
+  <!-- EN: View quest -->
+  <ViewQuest>Zeige Quest</ViewQuest>
+  <!-- EN: The last events in {PAWN_definite}'s life -->
+  <LastEventsInLife>Die letzten Ereignisse im Leben von {PAWN_definite}</LastEventsInLife>
+
+  <!-- EN: Thanks to high mood, [PAWN_nameIndef] has experienced an inspiration! -->
+  <LetterInspirationBeginThanksToHighMoodPart>Dank [PAWN_possessive]es hohen Stimmungswertes hat [PAWN_nameDef] eine Inspiration erfahren!</LetterInspirationBeginThanksToHighMoodPart>
+
+  <!-- Related pawns -->
+  <!-- EN: Relationship -->
+  <LetterLabelNoticedRelatedPawns>Verwandtschaft</LetterLabelNoticedRelatedPawns>
+  <!-- EN: There are people who have relationships with your {0} or prisoners in the arriving group of {1}.\n\nKeep in mind that even though they are related, they will still attack each other because of their bad factions relations.\n\nThese people are: -->
+  <LetterRelatedPawnsRaidEnemy>Unter den {lookup: {1}; decline_other; 6} befinden sich Personen, die verwandt mit deinen {lookup: {0}; decline_other; 6} oder Gefangenen sind.\n\nDenke daran, dass sie trotz ihrer Verwandtschaft gegeneinander kämpfen werden, weil ihre Fraktionen untereinander verfeindet sind.\n\nDiese Personen sind:</LetterRelatedPawnsRaidEnemy>
+  <!-- EN: There are people who have relationships with your {0} or prisoners in the arriving group of friendly {1}: -->
+  <LetterRelatedPawnsRaidFriendly>Unter den freundlichen {lookup: {1}; decline_other; 6} befinden sich Personen, die verwandt mit deinen {lookup: {0}; decline_other; 6} oder Gefangenen sind:</LetterRelatedPawnsRaidFriendly>
+  <!-- EN: There are people who have relationships with your {0} or prisoners in the arriving group: -->
+  <LetterRelatedPawnsNeutralGroup>In der ankommenden Gruppe befinden sich Personen, die verwandt mit deinen {lookup: {0}; decline_other; 6} oder Gefangenen sind:</LetterRelatedPawnsNeutralGroup>
+  <!-- EN: The orbital trader is selling people who have relationships with your {0} or prisoners: -->
+  <LetterRelatedPawnsTradeShip>Der Orbitalhändler verkauft Personen, die verwandt mit deinen {lookup: {0}; decline_other; 6} oder Gefangenen sind:</LetterRelatedPawnsTradeShip>
+  <!-- EN: The settlement is selling people who have relationships with your {0} or prisoners: -->
+  <LetterRelatedPawnsTradingWithSettlement>Die Siedlung verkauft Personen, die verwandt mit deinen {lookup: {0}; decline_other; 6} oder Gefangenen sind:</LetterRelatedPawnsTradingWithSettlement>
+  <!-- EN: The caravan is selling people who have relationships with your {0} or prisoners: -->
+  <LetterRelatedPawnsTradingWithOtherCaravan>Die Karawane verkauft Personen, die verwandt mit deinen {lookup: {0}; decline_other; 6} oder Gefangenen sind:</LetterRelatedPawnsTradingWithOtherCaravan>
+  <!-- EN: There are people who have relationships with your {0} or prisoners in the group: -->
+  <LetterRelatedPawnsGroupGeneric>In der Gruppe befinden sich Personen, die verwandt mit deinen {lookup: {0}; decline_other; 6} oder Gefangenen sind:</LetterRelatedPawnsGroupGeneric>
+  <!-- EN: There are people who have relationships with your {0} or prisoners in the area where your {0} have landed. -->
+  <LetterRelatedPawnsInMapWherePlayerLanded>Im Gebiet, wo deine {lookup: {0}; decline_other; 4} gelandet sind, befinden sich Personen, die verwandt mit deinen {lookup: {0}; decline_other; 6} oder Gefangenen sind.</LetterRelatedPawnsInMapWherePlayerLanded>
+  <!-- EN: There are people who have relationships with your {0} or prisoners in this settlement: -->
+  <LetterRelatedPawnsSettlement>In dieser Siedlung befinden sich Personen, die verwandt mit deinen {lookup: {0}; decline_other; 6} oder Gefangenen sind:</LetterRelatedPawnsSettlement>
+  <!-- EN: There are people who have relationships with your {0} or prisoners in this area: -->
+  <LetterRelatedPawnsSite>In diesem Gebiet befinden sich Personen, die verwandt mit deinen {lookup: {0}; decline_other; 6} oder Gefangenen sind:</LetterRelatedPawnsSite>
+
+  <!-- EN: relationship -->
+  <RelationshipAppendedLetterSuffix>Verwandtschaft</RelationshipAppendedLetterSuffix>
+  <!-- EN: {PAWN_nameDef} has a relationship with a colonist. {PAWN_pronoun} is {RELATIVE_labelShort}'s {1}. -->
+  <RelationshipAppendedLetterTextColonist>{PAWN_nameDef} ist verwandt mit einem deiner Kolonisten. {PAWN_pronoun} ist {RELATIVE_labelShort}'s {1}.</RelationshipAppendedLetterTextColonist>
+  <!-- EN: {PAWN_nameDef} has a relationship with one of your prisoners. {PAWN_pronoun} is {RELATIVE_labelShort}'s {1}. -->
+  <RelationshipAppendedLetterTextPrisoner>{PAWN_nameDef} ist verwandt mit einem deiner Gefangenen. {PAWN_pronoun} ist {RELATIVE_labelShort}'s {1}.</RelationshipAppendedLetterTextPrisoner>
+
+  <!-- Attempt romance / propose interaction -->
+  <!-- EN: Affair -->
+  <LetterLabelAffair>Affäre</LetterLabelAffair>
+  <!-- EN: {PAWN1_labelShort}, married to {SPOUSE_labelShort}, has begun an affair with {PAWN2_labelShort}. -->
+  <LetterAffair>{PAWN1_labelShort}, {PAWN1_gender ? der : die} mit {SPOUSE_labelShort} verheiratet ist, hat eine Affäre mit {PAWN2_labelShort} begonnen.</LetterAffair>
+  <!-- EN: New lovers -->
+  <LetterLabelNewLovers>Neue Liebhaber</LetterLabelNewLovers>
+  <!-- EN: {PAWN1_labelShort} and {PAWN2_labelShort} now want to sleep together. Consider assigning them a double bed. -->
+  <LetterNewLovers>{PAWN1_labelShort} und {PAWN2_labelShort} wollen nun zusammen schlafen. Erwäge, ihnen ein Doppelbett zuzuweisen.</LetterNewLovers>
+  <!-- EN: {PAWN1_labelShort} and {PAWN2_labelShort} are no longer in a relationship. -->
+  <LetterNoLongerLovers>{PAWN1_labelShort} und {PAWN2_labelShort} haben ihre Beziehung beendet.</LetterNoLongerLovers>
+  <!-- EN: {PAWN_labelShort} will change {PAWN_possessive} last name back to {PAWN_possessive} birth name. -->
+  <LetterNoLongerLovers_BackToBirthName>{PAWN_labelShort} wird {PAWN_possessive}en Nachnamen wieder in {PAWN_possessive}en Geburtsnamen ändern.</LetterNoLongerLovers_BackToBirthName>
+  <!-- EN: Breakup -->
+  <LetterLabelBreakup>Trennung</LetterLabelBreakup>
+  <!-- EN: Marriage is on! -->
+  <LetterLabelAcceptedProposal>Hochzeit steht an!</LetterLabelAcceptedProposal>
+  <!-- EN: Rejected proposal -->
+  <LetterLabelRejectedProposal>Heiratsantrag abgelehnt</LetterLabelRejectedProposal>
+  <!-- EN: At some point in the coming days or quadrums, they will have their marriage ceremony and invite all the colonists. Consider placing a marriage spot if you want to control where the ceremony occurs. -->
+  <LetterAcceptedProposal>Irgendwann in den kommenden Tagen oder Quartalen werden sie ihre Hochzeitszeremonie abhalten und alle Kolonisten dazu einladen. Platziere einen Hochzeitsplatz, wenn die Zeremonie an einem bestimmten Ort stattfinden soll.</LetterAcceptedProposal>
+  <!-- EN: {PAWN_label} will change {PAWN_possessive} last name to {1}. -->
+  <LetterAcceptedProposal_NameChange>{PAWN_label} wird {PAWN_possessive}en Nachnamen in {1} ändern.</LetterAcceptedProposal_NameChange>
+  <!-- EN: {INITIATOR_nameFull} is going to be unhappy about this. -->
+  <LetterRejectedProposal>{INITIATOR_nameFull} wird darüber nicht erfreut sein.</LetterRejectedProposal>
+
+  <!-- Generalized letter labels -->
+  <!-- EN: Hostile: {0} -->
+  <LetterLabelRelationsChange_Hostile>Feindlich: {0}</LetterLabelRelationsChange_Hostile>
+  <!-- EN: Allied: {0} -->
+  <LetterLabelRelationsChange_Ally>Verbündet: {0}</LetterLabelRelationsChange_Ally>
+  <!-- EN: Enemy now neutral: {0} -->
+  <LetterLabelRelationsChange_NeutralFromHostile>Feindlich, jetzt neutral: {0}</LetterLabelRelationsChange_NeutralFromHostile>
+  <!-- EN: Ally now neutral: {0} -->
+  <LetterLabelRelationsChange_NeutralFromAlly>Verbündet, jetzt neutral: {0}</LetterLabelRelationsChange_NeutralFromAlly>
+  <!-- EN: Zzztt... -->
+  <LetterLabelShortCircuit>Zzztt...</LetterLabelShortCircuit>
+
+  <!-- Bonded animals -->
+  <!-- EN: bonded -->
+  <LetterLabelSuffixBondedAnimalDied>gebunden</LetterLabelSuffixBondedAnimalDied>
+  <!-- EN: {ANIMAL_definite} was bonded to {HUMAN_labelShort}. It will affect {HUMAN_labelShort}'s mood. -->
+  <LetterPartBondedAnimalDied>{ANIMAL_definite} war an {HUMAN_labelShort} gebunden. Das wird die Stimmung von {HUMAN_labelShort} beeinträchtigen.</LetterPartBondedAnimalDied>
+  <!-- EN: It will affect mood of the following people:\n\n{0} -->
+  <LetterPartBondedAnimalDiedMulti>Es wird die Stimmung der folgenden Personen beeinträchtigen:\n\n{0}</LetterPartBondedAnimalDiedMulti>
+
+  <!-- Prison break -->
+  <!-- EN: Prison break -->
+  <LetterLabelPrisonBreak>Gefängnisausbruch</LetterLabelPrisonBreak>
+  <!-- EN: Prisoners have staged a breakout! They've somehow defeated the door locks and are making their way out. They may seek weapons, fight, or try to escape. These prisoners are involved:\n\n{0}\n\nPrisoners are more likely to attempt breakout when they are numerous and healthy. -->
+  <LetterPrisonBreak>Gefangene haben einen Ausbruchsversuch gestartet! Sie haben es irgendwie geschafft, die Türschlösser zu knacken, und bahnen sich einen Weg nach draußen. Es kann passieren, dass sie nach Waffen suchen, kämpfen oder versuchen zu fliehen. Folgende Gefangene sind daran beteiligt:\n\n{0}\n\nGefangene sind eher zu einem Ausbruchsversuch bereit, wenn viele von ihnen vorhanden und wohlauf sind.</LetterPrisonBreak>
+
+  <!-- Newly addicted -->
+  <!-- EN: {0} addiction -->
+  <LetterLabelNewlyAddicted>{0}-süchtig</LetterLabelNewlyAddicted>
+  <!-- EN: {PAWN_labelShort} has developed an addiction to {1}.\n\n{PAWN_pronoun} now has a need for {1}, visible on {PAWN_possessive} Needs tab. {PAWN_pronoun} will automatically consume the drug to fulfil {PAWN_possessive} need. If {PAWN_pronoun} cannot get any {1}, {PAWN_pronoun} will go into withdrawal. -->
+  <LetterNewlyAddicted>{PAWN_labelShort} wurde süchtig nach {1}.\n\n{PAWN_pronoun} benötigt jetzt {1}, sichtbar in {PAWN_possessive}em Bedürfnis-Tab. {PAWN_pronoun} wird die Droge automatisch konsumieren, um {PAWN_possessive}e Sucht zu befriedigen. Wenn {PAWN_pronoun} längere Zeit {1_gender ? keinen : keine : kein} {1} konsumiert, bekommt {PAWN_pronoun} Entzugserscheinungen.</LetterNewlyAddicted>
+
+  <!-- Drug binge -->
+  <!-- EN: {0} binge -->
+  <LetterLabelDrugBinge>{0}-Exzess</LetterLabelDrugBinge>
+  <!-- EN: {2_label} is binging on {1}. -->
+  <LetterDrugBinge>{2_labelShort} dröhnt sich mit {1} zu.</LetterDrugBinge>
+
+  <!-- Caravan destroyed -->
+  <!-- EN: Caravan destroyed -->
+  <LetterLabelAllCaravanColonistsDied>Karawane zerstört</LetterLabelAllCaravanColonistsDied>
+  <!-- EN: All members of {0} have died. -->
+  <LetterAllCaravanColonistsDied>Alle Mitglieder von {0} sind gestorben.</LetterAllCaravanColonistsDied>
+
+  <!-- Caravan entered map -->
+  <!-- EN: Caravan arrived at {0_label} -->
+  <LetterLabelCaravanEnteredMap>Karawane hat {lookup: {0_label}; decline; 3} erreicht</LetterLabelCaravanEnteredMap>
+  <!-- EN: {0} has arrived at {1_definite}. -->
+  <LetterCaravanEnteredMap>{0} hat {lookup: {1_label}; decline; 3} erreicht.</LetterCaravanEnteredMap>
+
+  <!-- Caravan entered enemy base -->
+  <!-- EN: Attack begun -->
+  <LetterLabelCaravanEnteredEnemyBase>Angriff gestartet</LetterLabelCaravanEnteredEnemyBase>
+  <!-- EN: {0} has arrived at {1} and is ready to begin the attack. -->
+  <LetterCaravanEnteredEnemyBase>{0} ist bei {1} angekommen und bereit, den Angriff zu starten.</LetterCaravanEnteredEnemyBase>
+
+  <!-- Transport pods landed in enemy base -->
+  <!-- EN: Attack begun -->
+  <LetterLabelTransportPodsLandedInEnemyBase>Angriff gestartet</LetterLabelTransportPodsLandedInEnemyBase>
+  <!-- EN: Your transport pods have arrived at {0}. -->
+  <LetterTransportPodsLandedInEnemyBase>Deine Transportkapseln sind bei {0} eingetroffen.</LetterTransportPodsLandedInEnemyBase>
+  <!-- EN: The shuttle has arrived at {0}. -->
+  <LetterShuttleLandedInEnemyBase>Die Raumfähre ist bei {0} eingetroffen.</LetterShuttleLandedInEnemyBase>
+
+  <!-- Faction base defeated -->
+  <!-- EN: Base destroyed -->
+  <LetterLabelFactionBaseDefeated>Basis zerstört</LetterLabelFactionBaseDefeated>
+  <!-- EN: The enemy settlement {0} has been destroyed.\n\nIn {1}, your caravan will be attacked by enemies. They will begin sending forces to attack the caravan, unless it reforms and leaves. -->
+  <LetterFactionBaseDefeated>Die feindliche Siedlung {0} wurde zerstört.\n\nIn (*DateTime){replace: {1}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime) werden Feinde deine Karawane angreifen. Sie werden damit beginnen, Truppen zu entsenden, um die Karawane anzugreifen, es sei denn, die Karawane formiert sich neu und zieht ab.</LetterFactionBaseDefeated>
+  <!-- EN: The enemy settlement {0} has been destroyed. -->
+  <LetterFactionBaseDefeatedNoRaids>Die feindliche Siedlung {0} wurde zerstört.</LetterFactionBaseDefeatedNoRaids>
+  <!-- EN: Since this was their last settlement, {0} has been defeated. -->
+  <LetterFactionBaseDefeated_FactionDestroyed>Dies war ihre letzte Siedlung. Die Fraktion {0} wurde besiegt.</LetterFactionBaseDefeated_FactionDestroyed>
+
+  <!-- Quest completed -->
+  <!-- EN: Quest completed -->
+  <LetterLabelDefeatAllEnemiesQuestCompleted>Quest abgeschlossen</LetterLabelDefeatAllEnemiesQuestCompleted>
+  <!-- EN: You have defeated the enemy outpost!\n\nThe payment from {0} has arrived, and faction relations have improved by {1}. -->
+  <LetterDefeatAllEnemiesQuestCompleted>Du hast den gegnerischen Außenposten besiegt!\n\nDie Bezahlung von der Fraktion {0} ist eingetroffen und der Ruf bei ihr hat sich um {1} Punkte verbessert.</LetterDefeatAllEnemiesQuestCompleted>
+
+  <!-- Long-range mineral scanner -->
+  <!-- EN: Distant resource scanned -->
+  <LetterLabelFoundPreciousLump>Ferne Ressource gescannt</LetterLabelFoundPreciousLump>
+  <!-- EN: Using your long-range mineral scanner, {WORKER_labelShort} has found a lump of {0} some distance away.\n\nUnfortunately, it won't last - others will mine it first in {1} days if we don't.\n\n{2}. -->
+  <LetterFoundPreciousLump>{WORKER_labelShort} hat mit dem Langstreckenscanner ein großes {0}vorkommen gefunden.\n\nAllerdings wird es nicht für immer da sein – andere werden es in {1} Tagen abbauen, wenn wir nichts unternehmen.\n\n{2}.</LetterFoundPreciousLump>
+
+  <!-- Ground penetrating scanner -->
+  <!-- EN: Scanned underground -->
+  <LetterLabelDeepScannerFoundLump>Untergrund gescannt</LetterLabelDeepScannerFoundLump>
+  <!-- EN: {FINDER_nameDef} has found a lump of buried {0} using the ground-penetrating scanner! -->
+  <LetterDeepScannerFoundLump>{FINDER_nameDef} hat mit dem Tiefenscanner ein unterirdisches {0}vorkommen gefunden!</LetterDeepScannerFoundLump>
+
+  <!-- Ambush -->
+  <!-- EN: Ambush -->
+  <LetterLabelAmbushInExistingMap>Hinterhalt</LetterLabelAmbushInExistingMap>
+  <!-- EN: Your {0} have been ambushed! -->
+  <LetterAmbushInExistingMap>Deine {lookup: {0}; decline_other; 4} sind in einen Hinterhalt geraten!</LetterAmbushInExistingMap>
+
+  <!-- Peace talks -->
+  <!-- EN: Peace talks disaster -->
+  <LetterLabelPeaceTalks_Disaster>Friedensgespräche (Desaster)</LetterLabelPeaceTalks_Disaster>
+  <!-- EN: The talks were a disaster. The delegates barely got past their initial greetings before the discussion broke down into insults and recriminations.\n\nAfter your caravan departed early, {0} from {1} caught up with it and attacked!\n\nRelations with {1}: {2}. -->
+  <LetterPeaceTalks_Disaster>Die Friedensgespräche waren desaströs. Kaum hatten die Delegierten ihre einleitenden Grußworte gesprochen, eskalierte die Diskussion in Beleidigungen und Anschuldigungen.\n\nAls deine Karawane vorzeitig abreiste, wurde sie von {lookup: {0}; decline_other; 3} der Fraktion {1} eingeholt und angegriffen!\n\nRufänderung bei {1}: {2}.</LetterPeaceTalks_Disaster>
+  <!-- EN: Peace talks backfire -->
+  <LetterLabelPeaceTalks_Backfire>Friedensgespräche (Fehlschlag)</LetterLabelPeaceTalks_Backfire>
+  <!-- EN: The talks have backfired. Despite trading some pleasantries, the delegates made no progress on substantive issues, and multiple statements were interpreted as insults.\n\nRelations with {0}: {1}. -->
+  <LetterPeaceTalks_Backfire>Die Friedensgespräche sind gescheitert. Obwohl Freundlichkeiten ausgetauscht wurden, konnten die Delegierten keinerlei Fortschritte bei den grundlegenden Problemen erzielen, und mehrere Standpunkte wurden als Beleidigungen aufgefasst.\n\nRufänderung bei {0}: {1}.</LetterPeaceTalks_Backfire>
+  <!-- EN: Peace talks flounder -->
+  <LetterLabelPeaceTalks_TalksFlounder>Friedensgespräche (Stillstand)</LetterLabelPeaceTalks_TalksFlounder>
+  <!-- EN: The talks floundered. Delegates managed to communicate clearly and with basic respect, but were not able to make progress on any genuine issues.\n\nRelations with {0} remain unchanged. -->
+  <LetterPeaceTalks_TalksFlounder>Die Friedensgespräche gerieten ins Stocken. Die Delegierten konnten sich klar und respektvoll verständigen, schafften es aber nicht, Fortschritte bei wichtigen Problemen zu erzielen.\n\nKeine Rufänderung bei {0}.</LetterPeaceTalks_TalksFlounder>
+  <!-- EN: Peace talks success -->
+  <LetterLabelPeaceTalks_Success>Friedensgespräche (Erfolg)</LetterLabelPeaceTalks_Success>
+  <!-- EN: The talks were a success. The delegates reached new mutual understanding on several substantial issues.\n\nRelations with {0} have improved by {1}. -->
+  <LetterPeaceTalks_Success>Die Friedensgespräche waren erfolgreich. Die Delegierten konnten bei mehreren wichtigen Problemen gegenseitiges Verständnis entwickeln.\n\nDein Ruf bei der Fraktion {0} hat sich um {1} Punkte verbessert.</LetterPeaceTalks_Success>
+  <!-- EN: Peace talks triumph -->
+  <LetterLabelPeaceTalks_Triumph>Friedensgespräche (Triumph)</LetterLabelPeaceTalks_Triumph>
+  <!-- EN: The talks were a great triumph! Delegates connected quickly on a personal level and came to truly see each others' perspective on the most difficult issues of the day.\n\nRelations with {0} have improved by {1}.\n\nAs your caravan departed, {0} offered you a gift:\n\n{2} -->
+  <LetterPeaceTalks_Triumph>Die Friedensgespräche waren triumphal! Die Delegierten fanden schnell einen persönlichen Draht zueinander und konnten die Standpunkte des jeweils anderen nachvollziehen, sodass es ein Leichtes war, selbst für die schwierigsten Probleme eine einvernehmliche Lösung zu finden.\n\nDein Ruf bei der Fraktion {0} hat sich um {1} Punkte verbessert.\n\nZum Abschied überreichte dir {0} ein Geschenk:\n\n{2}</LetterPeaceTalks_Triumph>
+  <!-- EN: {PAWN_labelShort}, your negotiator, has gained {1} social experience. -->
+  <PeaceTalksSocialXPGain>Dein Unterhändler {PAWN_labelShort} hat {1} soziale Erfahrungspunkte gesammelt.</PeaceTalksSocialXPGain>
+
+  <!-- Run wild mental break -->
+  <!-- EN: {0} is fed up with civilization.\n\n{PAWN_pronoun} realized that wild creatures are always free. So, {PAWN_pronoun} has decided to leave your faction and live with the animals.\n\nYou can attempt to tame or arrest {PAWN_objective} to get {PAWN_objective} back. -->
+  <LetterRunWildMentalBreak>{0} hat genug von der Zivilisation.\n\n{PAWN_pronoun} hat erkannt, dass wilde Tiere immer frei sind. Aus diesem Grund hat {PAWN_pronoun} beschlossen, deine Fraktion zu verlassen und bei den wilden Tieren zu leben.\n\nDu kannst versuchen, {PAWN_objective} zu zähmen oder zu inhaftieren, um {PAWN_objective} wieder zurückzubekommen.</LetterRunWildMentalBreak>
+
+  <!-- Catatonic mental break -->
+  <!-- EN: {0} has suffered a total mental breakdown and entered a catatonic state. {PAWN_pronoun} will recover in several days. -->
+  <LetterCatatonicMentalBreak>{0} hat einen kompletten Nervenzusammenbruch und ist in einem katatonischen Zustand. {PAWN_pronoun} wird sich in ein paar Tagen wieder erholen.</LetterCatatonicMentalBreak>
+
+  <!-- EN: Persona Core Offer -->
+  <LetterLabelAICoreOffer>Personakern-Angebot</LetterLabelAICoreOffer>
+  <!-- EN: {PAWN_definite} of {1} contacts you with an offer of information: the location of a persona core, which you'll need in order to build a spaceship. They inform you that this item is quite rare and usually its owners have it under heavy guard.\n\nCall them with your comms console if you're interested. -->
+  <LetterAICoreOffer>{PAWN_definite} von der Fraktion {1} kontaktiert dich mit einem Informationsangebot – {PAWN_pronoun} kennt den Standort eines Personakerns. Solche Kerne werden zum Bau von Raumschiffen benötigt. Dieses Objekt ist sehr selten und wird normalerweise schwer bewacht.\n\nKontaktiere {PAWN_objective} über die Funkanlage, wenn du interessiert bist.</LetterAICoreOffer>
+
+  <!-- Crafting letters -->
+  <!-- EN: Legendary Work -->
+  <LetterCraftedLegendaryLabel>Legendäre Arbeit</LetterCraftedLegendaryLabel>
+  <!-- EN: {WORKER_labelShort} has created a {CRAFTED_labelShort}.\n\nNews of this valuable artifact will spread across the world. -->
+  <LetterCraftedLegendaryMessage>{WORKER_labelShort} hat '{CRAFTED_labelShort}' hergestellt.\n\nDie Nachricht über dieses wertvolle Artefakt wird um die Welt gehen.</LetterCraftedLegendaryMessage>
+  <!-- EN: {WORKER_labelShort} has created a {CRAFTED_labelShort}.\n\n{0}\n\nNews of this valuable artifact will spread across the world. -->
+  <LetterCraftedLegendaryMessageArt>{WORKER_labelShort} hat '{CRAFTED_labelShort}' hergestellt.\n\n{0}\n\nDie Nachricht über dieses wertvolle Artefakt wird um die Welt gehen.</LetterCraftedLegendaryMessageArt>
+
+  <!-- EN: Masterwork -->
+  <LetterCraftedMasterworkLabel>Meisterwerk</LetterCraftedMasterworkLabel>
+  <!-- EN: {WORKER_labelShort} has created a {CRAFTED_labelShort}. -->
+  <LetterCraftedMasterworkMessage>{WORKER_labelShort} hat '{CRAFTED_labelShort}' hergestellt.</LetterCraftedMasterworkMessage>
+  <!-- EN: {WORKER_labelShort} has created a {CRAFTED_labelShort}.\n\n{0} -->
+  <LetterCraftedMasterworkMessageArt>{WORKER_labelShort} hat '{CRAFTED_labelShort}' hergestellt.\n\n{0}</LetterCraftedMasterworkMessageArt>
+
+  <!-- Pawns lost because map closed -->
+  <!-- EN: Caravan lost -->
+  <LetterLabelPawnsLostBecauseMapClosed_Caravan>Karawane verloren</LetterLabelPawnsLostBecauseMapClosed_Caravan>
+  <!-- EN: Your caravan has been lost. The following people and animals have been lost with it -->
+  <LetterPawnsLostBecauseMapClosed_Caravan>Deine Karawane ist verloren gegangen. Mit ihr sind folgende Personen und Tiere verschwunden</LetterPawnsLostBecauseMapClosed_Caravan>
+  <!-- EN: Inhabitants abandoned -->
+  <LetterLabelPawnsLostBecauseMapClosed_Home>Bewohner aufgegeben</LetterLabelPawnsLostBecauseMapClosed_Home>
+  <!-- EN: The following people and animals have been abandoned -->
+  <LetterPawnsLostBecauseMapClosed_Home>Die folgenden Personen und Tiere wurden aufgegeben</LetterPawnsLostBecauseMapClosed_Home>
+
+  <!-- Hibernate complete -->
+  <!-- EN: Reactor ready -->
+  <LetterLabelHibernateComplete>Reaktor einsatzbereit</LetterLabelHibernateComplete>
+  <!-- EN: (*Name)Charlon Whitestone(/Name) has finished the reactor's hibernation recovery sequence. The reactor is now ready to power a liftoff. -->
+  <LetterHibernateComplete>(*Name)Charlon Whitestone(/Name) hat die Sequenz zum Hochfahren des Reaktors abgeschlossen. Der Reaktor ist jetzt in der Lage, das Schiff einmalig vom Boden abzuheben.</LetterHibernateComplete>
+  <!-- EN: The reactor's power up sequence is complete. It is now ready to power a liftoff. -->
+  <LetterHibernateCompleteStandalone>Die Sequenz zum Hochfahren des Reaktors ist abgeschlossen. Er ist jetzt in der Lage, das Schiff einmalig vom Boden abzuheben.</LetterHibernateCompleteStandalone>
+
+  <!-- Visitors gave gift -->
+  <!-- EN: Gift from {0} -->
+  <LetterLabelVisitorsGaveGift>Geschenk von '{0}'</LetterLabelVisitorsGaveGift>
+  <!-- EN: {0} from {PAWN_factionName} have left a gift:\n\n{1} -->
+  <LetterVisitorsGaveGift>Die {lookup: {0}; decline_other; 4} der Fraktion {PAWN_factionName} haben ein Geschenk dagelassen:\n\n{1}</LetterVisitorsGaveGift>
+
+  <!-- Faction base proximity -->
+  <!-- EN: Faction base proximity -->
+  <LetterLabelFactionBaseProximity>Nähe zur Basis einer Fraktion</LetterLabelFactionBaseProximity>
+  <!-- EN: Because you are so close to other factions, they feel you're encroaching on their territory.\n\nFor the last quadrum, faction relations have been reduced by: -->
+  <LetterFactionBaseProximity>Da du so nahe an anderen Fraktionen bist, sehen sie das als Übergriff auf ihr Land an.\n\nIm letzten Quartal hat sich dein Ruf bei ihnen wie folgt verschlechtert:</LetterFactionBaseProximity>
+
+  <!-- Caravans battlefield victory -->
+  <!-- EN: Caravan battle won -->
+  <LetterLabelCaravansBattlefieldVictory>Karawanenkampf gewonnen</LetterLabelCaravansBattlefieldVictory>
+  <!-- EN: Your caravan has won the battle.\n\nYou can reform the caravan now in the World screen by selecting the battlefield and choosing the "Reform caravan" option.\n\nThere's no need to collect items manually, the reform caravan tool can do it instantly.\n\nIn {0}, your caravan will be attacked by enemies. They will begin sending forces to attack the caravan, unless it reforms and leaves. -->
+  <LetterCaravansBattlefieldVictory>Deine Karawane hat den Kampf gewonnen.\n\nDu kannst die Karawane jetzt neu formieren, indem du auf der Weltkarte das Schlachtfeld selektierst und die Option "Karawane neu formieren" auswählst.\n\nEs ist nicht notwendig, die Gegenstände manuell einzusammeln – das Karawane-Neu-Formieren-Tool kann das sofort erledigen.\n\nIn (*DateTime){replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime) werden Feinde deine Karawane angreifen. Sie werden damit beginnen, Truppen zu entsenden, um die Karawane anzugreifen, es sei denn, die Karawane formiert sich neu und zieht ab.</LetterCaravansBattlefieldVictory>
+
+  <!-- Rescue quest -->
+  <!-- EN: Rescuee joins -->
+  <LetterLabelRescueQuestFinished>Geretteter tritt bei</LetterLabelRescueQuestFinished>
+  <!-- EN: You have rescued {PAWN_nameDef} and {PAWN_pronoun} has joined your group. -->
+  <LetterRescueQuestFinished>Du hast {PAWN_nameDef} gerettet. {PAWN_pronoun} beschließt, deiner Gruppe beizutreten.</LetterRescueQuestFinished>
+  <!-- EN: \n\nYou can now take {PAWN_objective} with you. To do so, open the World screen, select this site and choose the "Reform caravan" command. -->
+  <LetterRescueQuestFinishedCaravanExtra>\n\nDu kannst {PAWN_objective} nun mitnehmen. Öffne dazu die Weltkarte, selektiere diesen Ort und klicke auf den Befehl "Karawane neu formieren".</LetterRescueQuestFinishedCaravanExtra>
+
+  <!-- Predator hunting colonist -->
+  <!-- EN: {PREDATOR_labelShort} hunting {PREY_definite} -->
+  <LetterLabelPredatorHuntingColonist>{PREDATOR_labelShort} jagt {PREY_definite}</LetterLabelPredatorHuntingColonist>
+  <!-- EN: {PREDATOR} is hunting {PREY_definite} for food! -->
+  <LetterPredatorHuntingColonist>{PREDATOR_kindBaseIndef} ist hungrig und macht Jagd auf {PREY_definite}!</LetterPredatorHuntingColonist>
+
+  <!-- Disease -->
+  <!-- EN: {0} blocked {1} on -->
+  <LetterDisease_Blocked>{0} blockierte {1} bei</LetterDisease_Blocked>
+  <!-- EN: Disease: {0} -->
+  <LetterLabelTraitDisease>Krankheit: {0}</LetterLabelTraitDisease>
+  <!-- EN: {PAWN_label} has gotten sick from {1}.\n\nEnsure you have a medical bed and a doctor. Make sure that {PAWN_pronoun} gets proper treatment and spends as much time in bed as possible. -->
+  <LetterTraitDisease>{PAWN_label} ist an {1} erkrankt.\n\nStelle sicher, dass du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {PAWN_pronoun} eine vernünftige Behandlung bekommt und so viel Zeit wie möglich im Bett verbringt, um schnell wieder gesund zu werden.</LetterTraitDisease>
+
+  <!-- Quests -->
+  <!-- EN: Quest available: {0} -->
+  <LetterLabelQuestAvailableTitle>Quest verfügbar: {0}</LetterLabelQuestAvailableTitle>
+  <!-- EN: Quest active: {0} -->
+  <LetterLabelQuestAutomaticallyAcceptedTitle>Quest aktiv: {0}</LetterLabelQuestAutomaticallyAcceptedTitle>
+  <!-- EN: {DISCOVEREDFROM} a new quest. -->
+  <LetterNewQuest>{replace: {DISCOVEREDFROM}; "|thing_nom|"-"eine neue Quest"; "|thing_gen|"-"einer neuen Quest"; "|thing_dat|"-"einer neuen Quest"; "|thing_acc|"-"eine neue Quest"; "|thing_nom_embedded|"-"eine neue Quest"; "|thing_gen_embedded|"-"einer neuen Quest"; "|thing_dat_embedded|"-"einer neuen Quest"; "|thing_acc_embedded|"-"eine neue Quest"}.</LetterNewQuest>
+  <!-- EN: A new quest is available. -->
+  <LetterNewQuestFromUnknown>Eine neue Quest ist verfügbar.</LetterNewQuestFromUnknown>
+  <!-- EN: The quest is called '{0}'. -->
+  <LetterQuestIsNamed>Die Quest heißt '{0}'.</LetterQuestIsNamed>
+  <!-- EN: It will expire in {0}. -->
+  <LetterQuestActiveNowTime>Die Quest läuft in (*DateTime){replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime) ab.</LetterQuestActiveNowTime>
+  <!-- EN: If you don't accept the quest within {0}, it will expire. -->
+  <LetterQuestRequiresAcceptance>Wenn du die Quest nicht innerhalb von (*DateTime){replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime) annimmst, wird sie verworfen.</LetterQuestRequiresAcceptance>
+  <!-- EN: While reading {BOOK_labelNoParenthesis}, {READER_nameDef} discovered -->
+  <QuestDiscoveredFromBook>Während {READER_nameDef} '{BOOK_labelNoParenthesis}' las, erfuhr {READER_pronoun} von |thing_dat|</QuestDiscoveredFromBook>
+  <!-- EN: While talking with the trader {TRADER_nameDef}, {NEGOTIATOR_nameDef} learned of -->
+  <QuestDiscoveredFromTrader>Beim Gespräch mit {TRADER_gender ? dem Händler : der Händlerin} {TRADER_nameDef} erfuhr {NEGOTIATOR_nameDef} von |thing_dat|</QuestDiscoveredFromTrader>
+  <!-- EN: To show {RECEIVER_possessive} gratitude for your charity, the beggar {RECEIVER_nameDef} shared a secret with {GIVER_nameDef}.\n\nYou have learned of -->
+  <QuestDiscoveredFromBeggar>Als Zeichen {RECEIVER_possessive}er Dankbarkeit für deine Wohltätigkeit hat {RECEIVER_gender ? der Bettler : die Bettlerin} {RECEIVER_nameDef} ein Geheimnis mit {GIVER_nameDef} geteilt.\n\nDu hast von |thing_dat_embedded| erfahren</QuestDiscoveredFromBeggar>
+  <!-- EN: You have discovered -->
+  <QuestDiscoveredFromDebug>Du hast |thing_acc_embedded| entdeckt</QuestDiscoveredFromDebug>
+
+  <!-- Quest drop pods arrived -->
+  <!-- EN: Pods arrived -->
+  <LetterLabelQuestDropPodsArrived>Kapseln eingetroffen</LetterLabelQuestDropPodsArrived>
+  <!-- EN: Transport pods with the following contents have arrived:\n\n{0} -->
+  <LetterQuestDropPodsArrived>Es sind Transportkapseln mit folgendem Inhalt eingetroffen:\n\n{0}</LetterQuestDropPodsArrived>
+
+  <!-- Quest items added to caravan inventory -->
+  <!-- EN: {CARAVAN_label} received items -->
+  <LetterLabelQuestItemsAddedToCaravanInventory>{CARAVAN_label} hat Gegenstände erhalten</LetterLabelQuestItemsAddedToCaravanInventory>
+  <!-- EN: {CARAVAN_label} has received the following items:\n\n{THINGS} -->
+  <LetterQuestItemsAddedToCaravanInventory>{CARAVAN_label} hat die folgenden Gegenstände erhalten:\n\n{THINGS}</LetterQuestItemsAddedToCaravanInventory>
+
+  <!-- Refugee joins -->
+  <!-- EN: {PAWN_nameDef} joins -->
+  <LetterLabelRefugeeJoins>{PAWN_nameDef} schließt sich an</LetterLabelRefugeeJoins>
+  <!-- EN: A {PAWN_title} named {PAWN_nameDef} has arrived and is joining the colony. -->
+  <LetterRefugeeJoins>{PAWN_nameDef} ist eingetroffen und schließt sich der Kolonie an. {PAWN_pronoun} ist {PAWN_titleIndef}.</LetterRefugeeJoins>
+  
+  <!-- Rescuee joins -->
+  <!-- EN: {PAWN_nameDef} joins -->
+  <LetterLabelRescueeJoins>{PAWN_nameDef} schließt sich an</LetterLabelRescueeJoins>
+  <!-- EN: {PAWN_nameDef} is thankful that you rescued {PAWN_objective}. {PAWN_pronoun} has decided that {PAWN_pronoun} would rather stay than leave, and is joining your colony. -->
+  <LetterRescueeJoins>{PAWN_nameDef} ist dir dankbar, dass du {PAWN_objective} gerettet hast. {PAWN_pronoun} hat sich entschieden, lieber zu bleiben als zu gehen, und schließt sich deiner Kolonie an.</LetterRescueeJoins>
+
+  <!-- Pawns arrive and join -->
+  <!-- EN: People join -->
+  <LetterLabelPawnsArriveAndJoin>Personen schließen sich an</LetterLabelPawnsArriveAndJoin>
+  <!-- EN: The following people have arrived and joined the colony:\n\n{0} -->
+  <LetterPawnsArriveAndJoin>Die folgenden Personen sind eingetroffen und haben sich der Kolonie angeschlossen:\n\n{0}</LetterPawnsArriveAndJoin>
+
+  <!-- Pawns arrive -->
+  <!-- EN: People arrived -->
+  <LetterLabelPawnsArrive>Personen sind eingetroffen</LetterLabelPawnsArrive>
+  <!-- EN: The following people have arrived:\n\n{0} -->
+  <LetterPawnsArrive>Die folgenden Personen sind eingetroffen:\n\n{0}</LetterPawnsArrive>
+
+  <!-- Pawn leaving -->
+  <!-- EN: {0} leaving -->
+  <LetterLabelPawnLeaving>{0} geht weg</LetterLabelPawnLeaving>
+  <!-- EN: {0} is leaving. -->
+  <LetterPawnLeaving>{0} geht weg.</LetterPawnLeaving>
+
+  <!-- Pawns leaving -->
+  <!-- EN: {0} leaving -->
+  <LetterLabelPawnsLeaving>{0} gehen weg</LetterLabelPawnsLeaving>
+  <!-- EN: {0} are leaving. -->
+  <LetterPawnsLeaving>{0} gehen weg.</LetterPawnsLeaving>
+  
+  <!-- Colonist kidnapped -->
+  <!-- EN: {PAWN_nameDef} kidnapped -->
+  <LetterLabelPawnsKidnapped>{PAWN_nameDef} wurde entführt</LetterLabelPawnsKidnapped>
+  <!-- EN: {PAWN_nameDef} has been kidnapped by {FACTION_name}!
+\nHowever, {PAWN_pronoun} is not lost forever. An opportunity to rescue {PAWN_objective} may present itself in the coming days or years. -->
+  <LetterPawnsKidnapped>{PAWN_nameDef} wurde von der Fraktion {FACTION_name} entführt!\n\nAber {PAWN_pronoun} ist nicht für immer verloren. Vielleicht ergibt sich in den nächsten Tagen oder Jahren die Gelegenheit, {PAWN_objective} zu retten.</LetterPawnsKidnapped>
+  
+  <!-- Techprints -->
+  <!-- EN: Techprint applied: {PROJECT_label} -->
+  <LetterTechprintAppliedLabel>Techplan angewendet: {PROJECT_label}</LetterTechprintAppliedLabel>
+  <!-- EN: A techprint has been applied to the research project: {PROJECT_label}. -->
+  <LetterTechprintAppliedPartIntro>Ein Techplan wurde auf das Forschungsprojekt '{PROJECT_label}' angewendet.</LetterTechprintAppliedPartIntro>
+  <!-- EN: You've completed the project's techprint requirements! Your researchers can now begin researching how to actually use the technology at your research benches. -->
+  <LetterTechprintAppliedPartJustUnlocked>Du hast die Techplan-Anforderungen des Projekts erfüllt! Deine Forscher können nun damit beginnen zu erforschen, wie die Technologie an deinen Forschertischen konkret genutzt werden kann.</LetterTechprintAppliedPartJustUnlocked>
+  <!-- EN: This project's techprint requirements are not yet satisfied. {0} techprints have been applied so far. The project requires {1} in total. -->
+  <LetterTechprintAppliedPartNotUnlockedYet>Die Techplan-Anforderungen dieses Projekts sind noch nicht erfüllt. Bisher wurden {0} Techpläne angewendet. Das Projekt erfordert insgesamt {1}.</LetterTechprintAppliedPartNotUnlockedYet>
+  <!-- EN: This project's techprint requirements were already satisfied. The extra techprint advanced your research efforts on {PROJECT_label}. Half the remaining research work, {0} points, has been completed. -->
+  <LetterTechprintAppliedPartAlreadyUnlocked>Die Techplan-Anforderungen dieses Projekts wurden bereits erfüllt. Der zusätzliche Techplan hat deine Forschungsbemühungen für {PROJECT_label} vorangetrieben. Die Hälfte der verbleibenden Forschungsarbeit, {0} Punkte, wurde abgeschlossen.</LetterTechprintAppliedPartAlreadyUnlocked>
+  <!-- EN: This project is already fully researched, so the techprint didn't advance your knowledge at all. -->
+  <LetterTechprintAppliedPartAlreadyResearched>Dieses Projekt ist bereits vollständig erforscht, daher hat der Techplan deinen Kenntnisstand überhaupt nicht vorangetrieben.</LetterTechprintAppliedPartAlreadyResearched>
+  <!-- EN: By applying the techprint, {PAWN_labelShort} gained {0} experience in the {1} skill. -->
+  <LetterTechprintAppliedPartExpAwarded>Durch die Anwendung des Techplans hat {PAWN_labelShort} {0} Erfahrung für {PAWN_possessive}e {1}-Fertigkeit erhalten.</LetterTechprintAppliedPartExpAwarded>
+  
+  <!-- Quest Completed -->
+  <!-- EN: Quest completed -->
+  <LetterQuestCompletedLabel>Quest abgeschlossen</LetterQuestCompletedLabel>
+  <!-- EN: Quest failed -->
+  <LetterQuestFailedLabel>Quest gescheitert</LetterQuestFailedLabel>
+  <!-- EN: Quest concluded -->
+  <LetterQuestConcludedLabel>Quest beendet</LetterQuestConcludedLabel>
+  <!-- EN: You have successfully completed the quest '{0}'! -->
+  <LetterQuestCompletedSuccess>Du hast die Quest '{0}' erfolgreich abgeschlossen!</LetterQuestCompletedSuccess>
+  <!-- EN: You have failed the quest '{0}'. -->
+  <LetterQuestCompletedFail>Die Quest '{0}' ist gescheitert.</LetterQuestCompletedFail>
+  <!-- EN: You have concluded the quest '{0}'. -->
+  <LetterQuestCompletedConcluded>Du hast die Quest '{0}' beendet.</LetterQuestCompletedConcluded>
+
+  <!-- Bladelink -->
+  <!-- EN: Persona bond: {PAWN_labelShort} -->
+  <LetterBladelinkWeaponBondedLabel>Personabindung: {PAWN_labelShort}</LetterBladelinkWeaponBondedLabel>
+  <!-- EN: {PAWN_labelShort} has established a bond with the persona of {WEAPON_labelShort}.
+\nFrom now on, {WEAPON_labelShort} will refuse to be wielded by anyone except {PAWN_labelShort}. -->
+  <LetterBladelinkWeaponBonded>{PAWN_labelShort} hat eine Bindung mit der Persona von {WEAPON_labelShort} hergestellt.\n\nVon nun an weigert sich {WEAPON_labelShort}, von jemand anderem als {PAWN_labelShort} geführt zu werden.</LetterBladelinkWeaponBonded>
+  
+  <!-- Mech cluster -->
+  <!-- EN: Mechanoids arrived -->
+  <LetterLabelMechClusterArrived>Mechanoiden eingetroffen</LetterLabelMechClusterArrived>
+  <!-- EN: Mechanoids have arrived. -->
+  <LetterMechClusterArrived>Mechanoiden sind eingetroffen.</LetterMechClusterArrived>
+
+  <!-- EN: Caravan detected -->
+  <LetterLabelSiteCountdownStarted>Karawane entdeckt</LetterLabelSiteCountdownStarted>
+  <!-- EN: Your caravan has been detected. In {0}, reinforcing {1} from {2} will begin arriving in the area.\n\nReform your caravan and begin moving to avoid the {1}. A timer counting down to their arrival is now visible. -->
+  <LetterTextSiteCountdownStarted>Deine Karawane wurde entdeckt. In (*DateTime){replace: {0}; "Tage"-"Tagen"; "Jahre"-"Jahren"}(/DateTime) werden {1} der Fraktion {2} als Verstärkung im Gebiet eintreffen.\n\nFormiere deine Karawane neu und setze sie in Bewegung, um die {lookup: {1}; decline_other; 4} zu meiden. Ein Countdown zeigt, wann mit ihrer Ankunft zu rechnen ist.</LetterTextSiteCountdownStarted>
+
+  <!-- EN: Unwavering prisoner -->
+  <LetterLabelUnrecruitablePawnCaptured>Unbeugsamer Gefangener</LetterLabelUnrecruitablePawnCaptured>
+  <!-- EN: {PAWN_nameDef} is unwaveringly loyal to their home and will refuse to be recruited entirely.\n\nYou can see whether someone is unwaveringly loyal by selecting them. -->
+  <LetterTextUnrecruitablePawnCaptured>{PAWN_nameDef} hat {PAWN_possessive}er Heimat absolute Treue geschworen und wird jegliche Rekrutierungsversuche abschmettern.\n\nDu kannst sehen, ob jemand absolut loyal ist, indem du ihn selektierst.</LetterTextUnrecruitablePawnCaptured>
+  <!-- EN: enslave {PAWN_objective} -->
+  <OptionalEnslaveDesc>versklave {PAWN_objective}</OptionalEnslaveDesc>
+
+  <!-- Lung rot -->
+  <!-- EN: {PAWN} has gotten sick from {1} due to long-term exposure to rot stink gas (which is given off by rotting corpses).\n\nEnsure you have a medical bed and a doctor. Make sure that {PAWN_definite} gets proper treatment. -->
+  <LetterTextLungRot>{PAWN} ist an {1} erkrankt, weil {PAWN_pronoun} über einen längeren Zeitraum stinkendem Verwesungsgeruch ausgesetzt war (der von verrottenden Leichen abgegeben wird).\n\nStelle sicher, dass du ein Krankenbett und einen Arzt hast. Sorge dafür, dass {PAWN_definite} eine vernünftige Behandlung bekommt, um schnell wieder gesund zu werden.</LetterTextLungRot>
+
+  <!-- Join Offer -->
+  <!-- EN: Join offer: {PAWN_nameDef} -->
+  <LetterJoinOfferLabel>Beitrittsangebot: {PAWN_nameDef}</LetterJoinOfferLabel>
+  <!-- EN: {PAWN_nameDef} wishes to join your faction. -->
+  <LetterJoinOfferTitle>{PAWN_nameDef} möchte deiner Fraktion beitreten.</LetterJoinOfferTitle>
+  <!-- EN: {PAWN_nameDef} believes that {PAWN_pronoun} is happy at {MAP_definite}. {PAWN_pronoun} wishes to join you permanently. -->
+  <LetterJoinOfferText>{PAWN_nameDef} glaubt, dass {PAWN_pronoun} in {MAP_label} ein glückliches Leben haben wird. {PAWN_pronoun} möchte deiner Kolonie dauerhaft beitreten.</LetterJoinOfferText>
+  <!-- EN: Accept -->
+  <LetterJoinOfferAccept>Akzeptieren</LetterJoinOfferAccept>
+
+  <!-- Speeches -->
+  <!-- EN: {ORGANIZER_labelShort} has finished {ORGANIZER_possessive} speech. -->
+  <LetterFinishedSpeech>{ORGANIZER_labelShort} hat {ORGANIZER_possessive}e Rede beendet.</LetterFinishedSpeech>
+  <!-- EN: It was truly atrocious - halting, full of awkward jokes and depressing stories. -->
+  <LetterTerribleSpeech>Sie war wirklich schrecklich – stockend, voller peinlicher Witze und deprimierender Geschichten.</LetterTerribleSpeech>
+  <!-- EN: It was uninspiring - unoriginal, droning and lacking any sense of passion. -->
+  <LetterUninspiringSpeech>Sie war nicht gerade inspirierend – unoriginell, langweilig und ohne jede Spur von Leidenschaft.</LetterUninspiringSpeech>
+  <!-- EN: It was encouraging and well-delivered. -->
+  <LetterEncouragingSpeech>Sie war ermutigend und gut vorgetragen.</LetterEncouragingSpeech>
+  <!-- EN: It was remarkably inspiring, full of intensity and purpose. -->
+  <LetterInspirationalSpeech>Sie war erstaunlich inspirierend, voller Intensität und Entschlossenheit.</LetterInspirationalSpeech>
+  <!-- EN: The following people were particularly moved by the speech and are now inspired: -->
+  <LetterSpeechInspiredListeners>Die folgenden Personen fanden die Rede besonders bewegend und sind nun inspiriert:</LetterSpeechInspiredListeners>
+  <!-- EN: Thanks to {SPEAKER_nameIndef}'s remarkable speech, {PAWN_nameIndef} has experienced an inspiration! -->
+  <LetterSpeechInspiration>Dank der beeindruckenden Rede von {SPEAKER_nameIndef} hat {PAWN_nameIndef} eine Inspiration erfahren!</LetterSpeechInspiration>
+  <!-- EN: Because the speech was interrupted after only {0} completed, it wasn't as effective. -->
+  <LetterSpeechInterrupted>Da die Rede nach nur {0} unterbrochen wurde, war sie nicht sehr effektiv.</LetterSpeechInterrupted>
+  <!-- EN: {0}'s speech was cancelled before reaching 50% completion. It had no effect. -->
+  <LetterSpeechCancelled>{0}'s Rede wurde unterbrochen, bevor diese zu 50% beendet werden konnte. Die Rede hatte keinen Effekt.</LetterSpeechCancelled>
+  <!-- EN: Speech cancelled -->
+  <LetterLabelSpeechCancelled>Rede abgebrochen</LetterLabelSpeechCancelled>
+
+</LanguageData>

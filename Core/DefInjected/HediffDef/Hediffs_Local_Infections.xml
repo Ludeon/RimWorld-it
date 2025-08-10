@@ -69,7 +69,7 @@
   <!-- EN: Long-term exposure to rot stink gas. Rot stink exposure has no direct health effects. However, serious rot stink exposure has a chance to result in a painful bacterial infection known as lung rot. When not exposed to rot stink gas, rot stink exposure will slowly decrease. -->
   <LungRotExposure.description>Esposizione a lungo termine al gas della puzza di marciume. L'esposizione alla puzza di marciume non ha effetti diretti sulla salute. Tuttavia, una grave esposizione alla puzza di marciume può provocare una dolorosa infezione batterica nota come marciume polmonare. Se non si è esposti al gas della puzza di marciume, l'esposizione alla puzza di marciume diminuisce lentamente.</LungRotExposure.description>
   <!-- EN: {PAWN_nameDef} is beginning to suffer from exposure to rot stink gas. Keep {PAWN_objective} away from rotting corpses and other sources of rot stink. -->
-  <LungRotExposure.comps.HediffComp_SurgeryInspectable.surgicalDetectionDesc>TODO</LungRotExposure.comps.HediffComp_SurgeryInspectable.surgicalDetectionDesc>
+  <LungRotExposure.comps.HediffComp_SurgeryInspectable.surgicalDetectionDesc>{PAWN_nameDef} sta iniziando a soffrire per l'esposizione al gas della puzza di marciume. Tieni {PAWN_objective} lontano da cadaveri in decomposizione e altre fonti di puzza di marciume.</LungRotExposure.comps.HediffComp_SurgeryInspectable.surgicalDetectionDesc>
   <!-- EN: minor -->
   <LungRotExposure.stages.minor.label>leggera</LungRotExposure.stages.minor.label>
   <!-- EN: major -->
@@ -107,21 +107,21 @@
   <Plague.stages.extreme-1.label>gravissima</Plague.stages.extreme-1.label>
   
   <!-- EN: scaria infection -->
-  <ScariaInfection.label>TODO</ScariaInfection.label>
+  <ScariaInfection.label>infezione da scaria</ScariaInfection.label>
   <!-- EN: An infection caused by scaria bacterium. If not treated, the infection will eventually drive the host into a berserk rage. -->
-  <ScariaInfection.description>TODO</ScariaInfection.description>
+  <ScariaInfection.description>Un'infezione causata dal batterio scaria. Se non trattata, alla fine spingerà l'ospite in una furia omicida.</ScariaInfection.description>
   <!-- EN: Scaria: {PAWN_nameDef} -->
-  <ScariaInfection.comps.HediffComp_GiveHediff.letterLabel>TODO</ScariaInfection.comps.HediffComp_GiveHediff.letterLabel>
+  <ScariaInfection.comps.HediffComp_GiveHediff.letterLabel>Scaria: {PAWN_nameDef}</ScariaInfection.comps.HediffComp_GiveHediff.letterLabel>
   <!-- EN: {PAWN_nameDef} has developed scaria from {PAWN_possessive} infection, driving {PAWN_objective} into a berserk rage. Scaria can be cured with a special medical operation, but {PAWN_nameDef} must first be downed. -->
-  <ScariaInfection.comps.HediffComp_GiveHediff.letterText>TODO</ScariaInfection.comps.HediffComp_GiveHediff.letterText>
+  <ScariaInfection.comps.HediffComp_GiveHediff.letterText>{PAWN_nameDef} ha sviluppato la scaria a partire dalla propria infezione, entrando in una furia omicida. La scaria può essere curata con un'operazione medica speciale, ma {PAWN_nameDef} deve prima essere messo fuori combattimento.</ScariaInfection.comps.HediffComp_GiveHediff.letterText>
   <!-- EN: a scaria infection -->
-  <ScariaInfection.labelNoun>TODO</ScariaInfection.labelNoun>
+  <ScariaInfection.labelNoun>un'infezione da scaria</ScariaInfection.labelNoun>
   <!-- EN: minor -->
-  <ScariaInfection.stages.minor.label>TODO</ScariaInfection.stages.minor.label>
+  <ScariaInfection.stages.minor.label>leggera</ScariaInfection.stages.minor.label>
   <!-- EN: major -->
-  <ScariaInfection.stages.major.label>TODO</ScariaInfection.stages.major.label>
+  <ScariaInfection.stages.major.label>grave</ScariaInfection.stages.major.label>
   <!-- EN: extreme -->
-  <ScariaInfection.stages.extreme.label>TODO</ScariaInfection.stages.extreme.label>
+  <ScariaInfection.stages.extreme.label>gravissima</ScariaInfection.stages.extreme.label>
   
   <!-- EN: sensory mechanites -->
   <SensoryMechanites.label>meccanite sensoriale</SensoryMechanites.label>
