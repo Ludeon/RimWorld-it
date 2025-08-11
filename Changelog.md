@@ -1,3 +1,3 @@
 PROGRESS:
-Core:       In Progress
+Core:       100%
 Anomaly:    Waiting...
