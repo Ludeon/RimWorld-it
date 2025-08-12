@@ -1,435 +1,809 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  
+  <!-- EN:
+    <li>place_name->Atura Station</li>
+    <li>place_adjective->Aturan</li>
+    <li>place_summary->orbital shipyard</li>
+    <li>place_community->shuttle dock</li>
+    <li>place_community->manufacturing ring</li>
+    <li>place_community->residential ring</li>
+    <li>place_powerCenter->central control room</li>
+    <li>place_job->construction drone operator</li>
+    <li>place_job->manager</li>
+    <li>place_job->test pilot</li>
+    <li>place_job->sales agent</li>
+    <li>place_job->3D printer technician</li>
+    <li>place_personalWeapon->taser</li>
+    <li>place_personalWeapon->arc welder</li>
+    <li>place_massWeapon->[anEMPAttack]</li>
+    <li>place_massWeapon->remote-controlled welding drones</li>
+    <li>place_foeLeader->crime boss</li>
+    <li>place_foeSoldiers->thugs</li>
+  -->
   <AturaStation.placeRules.rulesStrings>
-    <li>place_name-&gt;Estación de Atura</li>
-    <li>place_adjective-&gt;Aturano</li>
-    <li>place_summary-&gt;astillero orbital</li>
-    <li>place_community-&gt;muelle de enlace</li>
-    <li>place_community-&gt;anillo de fabricación</li>
-    <li>place_community-&gt;anillo residencial</li>
-    <li>place_powerCenter-&gt;cuarto central de control</li>
-    <li>place_job-&gt;operador de drones de construcción</li>
-    <li>place_job-&gt;gerente</li>
-    <li>place_job-&gt;piloto de pruebas</li>
-    <li>place_job-&gt;agente de ventas</li>
-    <li>place_job-&gt;técnico de impresoras 3D</li>
-    <li>place_personalWeapon-&gt;pistola eléctrica</li>
-    <li>place_personalWeapon-&gt;pistola soldadora</li>
-    <li>place_massWeapon-&gt;[anEMPAttack]</li>
-    <li>place_massWeapon-&gt;drones de soldadura por control remoto</li>
-    <li>place_foeLeader-&gt;jefe del crimen</li>
-    <li>place_foeSoldiers-&gt;esbirros</li>
+    <li>place_name->Stazione di Atura</li>
+    <li>place_adjective->Aturano</li>
+    <li>place_summary->cantiere navale orbitale</li>
+    <li>place_community->molo navetta</li>
+    <li>place_community->anello di produzione</li>
+    <li>place_community->anello residenziale</li>
+    <li>place_powerCenter->sala di controllo centrale</li>
+    <li>place_job->operatore di droni da costruzione</li>
+    <li>place_job->direttore</li>
+    <li>place_job->pilota collaudatore</li>
+    <li>place_job->agente di vendita</li>
+    <li>place_job->tecnico stampanti 3D</li>
+    <li>place_personalWeapon->storditore elettrico</li>
+    <li>place_personalWeapon->saldatrice ad arco</li>
+    <li>place_massWeapon->[unAttaccoEMP]</li>
+    <li>place_massWeapon->droni da saldatura telecomandati</li>
+    <li>place_foeLeader->boss del crimine</li>
+    <li>place_foeSoldiers->scagnozzi</li>
   </AturaStation.placeRules.rulesStrings>
   
-  
+  <!-- EN:
+    <li>place_name->Bagua 5</li>
+    <li>place_adjective->Bagucinquan</li>
+    <li>place_summary->junkyard planet</li>
+    <li>place_community->fortified scrapyard</li>
+    <li>place_community->rainwater processing plant</li>
+    <li>place_community->scrap-town</li>
+    <li>place_powerCenter->trader spaceport</li>
+    <li>place_job->scavenger</li>
+    <li>place_job->trader</li>
+    <li>place_job->tinkerer</li>
+    <li>place_job->guard</li>
+    <li>place_job->scrapper</li>
+    <li>place_personalWeapon->pipe rifle</li>
+    <li>place_personalWeapon->scrap-sword</li>
+    <li>place_massWeapon->a salvaged nuke</li>
+    <li>place_massWeapon->a rust virus</li>
+    <li>place_foeLeader->junk lord</li>
+    <li>place_foeSoldiers->metal-heads</li>
+  -->
   <Bagua5.placeRules.rulesStrings>
-    <li>place_name-&gt;Bagua 5</li>
-    <li>place_adjective-&gt;Bagucinquano</li>
-    <li>place_summary-&gt;planeta chatarrero</li>
-    <li>place_community-&gt;desguace fortificado</li>
-    <li>place_community-&gt;complejo de tratamiento de aguas pluviales</li>
-    <li>place_community-&gt;planeta chatarra</li>
-    <li>place_powerCenter-&gt;puerto de comercio espacial</li>
-    <li>place_job-&gt;carroñero</li>
-    <li>place_job-&gt;comerciante</li>
-    <li>place_job-&gt;mecánico</li>
-    <li>place_job-&gt;guardia</li>
-    <li>place_job-&gt;raspador</li>
-    <li>place_personalWeapon-&gt;escopeta de tubo</li>
-    <li>place_personalWeapon-&gt;espada-chatarra</li>
-    <li>place_massWeapon-&gt;un arma nuclear recuperada</li>
-    <li>place_massWeapon-&gt;un virus oxidado</li>
-    <li>place_foeLeader-&gt;señor de la chatarra</li>
-    <li>place_foeSoldiers-&gt;cabezas metálicas</li>
+    <li>place_name->Bagua 5</li>
+    <li>place_adjective->Bagucinquano</li>
+    <li>place_summary->pianeta discarica</li>
+    <li>place_community->deposito di rottami fortificato</li>
+    <li>place_community->impianto di trattamento acqua piovana</li>
+    <li>place_community->città della chatarra</li>
+    <li>place_powerCenter->spazioporto commerciale</li>
+    <li>place_job->spazzino</li>
+    <li>place_job->commerciante</li>
+    <li>place_job->riparatore</li>
+    <li>place_job->guardia</li>
+    <li>place_job->demolitore</li>
+    <li>place_personalWeapon->fucile a canna di tubo</li>
+    <li>place_personalWeapon->spada di rottami</li>
+    <li>place_massWeapon->una bomba nucleare recuperata</li>
+    <li>place_massWeapon->un virus della ruggine</li>
+    <li>place_foeLeader->signore della chatarra</li>
+    <li>place_foeSoldiers->teste di metallo</li>
   </Bagua5.placeRules.rulesStrings>
   
-  
+  <!-- EN:
+    <li>place_name->Boccocarro</li>
+    <li>place_adjective->Boccin</li>
+    <li>place_summary->cavernous shell-world</li>
+    <li>place_community->surface tunnel</li>
+    <li>place_community->fungus cavern</li>
+    <li>place_community->drip-well</li>
+    <li>place_powerCenter->speech-hall</li>
+    <li>place_job->miner</li>
+    <li>place_job->fungus grower</li>
+    <li>place_job->surface scavenger</li>
+    <li>place_job->community cook</li>
+    <li>place_job->frog-hunter</li>
+    <li>place_personalWeapon->pickaxe</li>
+    <li>place_personalWeapon->hydraulic crossbow</li>
+    <li>place_massWeapon->[seismicDevice]</li>
+    <li>place_massWeapon->a blackpowder bomb</li>
+    <li>place_foeLeader->mine hypervisor</li>
+    <li>place_foeSoldiers->abyssal marines</li>
+  -->
   <Boccocarro.placeRules.rulesStrings>
-    <li>place_name-&gt;Boccocarro</li>
-    <li>place_adjective-&gt;Bociano</li>
-    <li>place_summary-&gt;mundo de las cavernas</li>
-    <li>place_community-&gt;túnel superficial</li>
-    <li>place_community-&gt;subterráneo fúngico</li>
-    <li>place_community-&gt;pozo de goteo</li>
-    <li>place_powerCenter-&gt;salón de conferencias</li>
-    <li>place_job-&gt;minero</li>
-    <li>place_job-&gt;cultivador de hongos</li>
-    <li>place_job-&gt;carroñero de superficie</li>
-    <li>place_job-&gt;cocinero comunitario</li>
-    <li>place_job-&gt;cazador de ranas</li>
-    <li>place_personalWeapon-&gt;piqueta</li>
-    <li>place_personalWeapon-&gt;ballesta hidráulica</li>
-    <li>place_massWeapon-&gt;[seismicDevice]</li>
-    <li>place_massWeapon-&gt;una bomba de pólvora</li>
-    <li>place_foeLeader-&gt;hipervisor de minas</li>
-    <li>place_foeSoldiers-&gt;marines abisales</li>
+    <li>place_name->Boccocarro</li>
+    <li>place_adjective->Boccin</li>
+    <li>place_summary->mondo con guscio cavernoso</li>
+    <li>place_community->tunnel di superficie</li>
+    <li>place_community->caverna di funghi</li>
+    <li>place_community->pozzo a goccia</li>
+    <li>place_powerCenter->sala delle conferenze</li>
+    <li>place_job->minatore</li>
+    <li>place_job->coltivatore di funghi</li>
+    <li>place_job->carroñero di superficie</li>
+    <li>place_job->cuoco comunitario</li>
+    <li>place_job->cacciatore di rane</li>
+    <li>place_personalWeapon->piccone</li>
+    <li>place_personalWeapon->balestra idraulica</li>
+    <li>place_massWeapon->[dispositivoSismico]</li>
+    <li>place_massWeapon->una bomba a polvere nera</li>
+    <li>place_foeLeader->supervisore delle miniere</li>
+    <li>place_foeSoldiers->marines abissali</li>
   </Boccocarro.placeRules.rulesStrings>
   
-  
+  <!-- EN:
+    <li>place_name->Chelis</li>
+    <li>place_adjective->Chelisi</li>
+    <li>place_summary->arid world</li>
+    <li>place_community->moisture farm</li>
+    <li>place_community->parch-town</li>
+    <li>place_community->water center</li>
+    <li>place_powerCenter->high lifehall</li>
+    <li>place_job->water gatherer</li>
+    <li>place_job->lizardskinner</li>
+    <li>place_job->oasis seeker</li>
+    <li>place_job->cactus gatherer</li>
+    <li>place_job->scav-herder</li>
+    <li>place_personalWeapon->sand-arrow</li>
+    <li>place_personalWeapon->cactus-club</li>
+    <li>place_massWeapon->an archotech-induced sandstorm</li>
+    <li>place_massWeapon->a spikelizard stampede</li>
+    <li>place_foeLeader->chief</li>
+    <li>place_foeSoldiers->sand-warriors</li>
+  -->
   <Chelis.placeRules.rulesStrings>
-    <li>place_name-&gt;Chelis</li>
-    <li>place_adjective-&gt;Chelisio</li>
-    <li>place_summary-&gt;mundo árido</li>
-    <li>place_community-&gt;rancho de humedad</li>
-    <li>place_community-&gt;pueblo de parches</li>
-    <li>place_community-&gt;centro de aguas</li>
-    <li>place_powerCenter-&gt;salón de la alta vida</li>
-    <li>place_job-&gt;recolector de agua</li>
-    <li>place_job-&gt;desollador de reptiles</li>
-    <li>place_job-&gt;buscador de oasis</li>
-    <li>place_job-&gt;recolector de cactus</li>
-    <li>place_job-&gt;pastor carroñero</li>
-    <li>place_personalWeapon-&gt;flecha de arena</li>
-    <li>place_personalWeapon-&gt;porra de cactus</li>
-    <li>place_massWeapon-&gt;una tormenta de arena inducida por la arqueotecnología</li>
-    <li>place_massWeapon-&gt;una estampida de lagartipúas</li>
-    <li>place_foeLeader-&gt;jefe</li>
-    <li>place_foeSoldiers-&gt;guerreros de arena</li>
+    <li>place_name->Chelis</li>
+    <li>place_adjective->Chelisi</li>
+    <li>place_summary->mondo arido</li>
+    <li>place_community->fattoria di umidità</li>
+    <li>place_community->città arida</li>
+    <li>place_community->centro idrico</li>
+    <li>place_powerCenter->sala della vita alta</li>
+    <li>place_job->raccoglitore d'acqua</li>
+    <li>place_job->scuoiatore di lucertole</li>
+    <li>place_job->cercatore di oasi</li>
+    <li>place_job->raccoglitore di cactus</li>
+    <li>place_job->pastore di spazzini</li>
+    <li>place_personalWeapon->freccia di sabbia</li>
+    <li>place_personalWeapon->mazza di cactus</li>
+    <li>place_massWeapon->una tempesta di sabbia indotta da archeotecnologia</li>
+    <li>place_massWeapon->una carica di lucertole spinose</li>
+    <li>place_foeLeader->capo</li>
+    <li>place_foeSoldiers->guerrieri della sabbia</li>
   </Chelis.placeRules.rulesStrings>
   
-  
+  <!-- EN:
+    <li>place_name->Creticon</li>
+    <li>place_adjective->Creticonian</li>
+    <li>place_summary->blasted death-world</li>
+    <li>place_community->bunker</li>
+    <li>place_community->cavern</li>
+    <li>place_community->ice-shelter</li>
+    <li>place_powerCenter->director's bunker</li>
+    <li>place_job->water-recycler repairer</li>
+    <li>place_job->algae farmer</li>
+    <li>place_job->doctor</li>
+    <li>place_job->teacher</li>
+    <li>place_job->militia commander</li>
+    <li>place_job->shuttle pilot</li>
+    <li>place_personalWeapon->autopistol</li>
+    <li>place_personalWeapon->LMG</li>
+    <li>place_massWeapon->a shoulder-mounted nuclear missile</li>
+    <li>place_massWeapon->an orbital bombardment</li>
+    <li>place_massWeapon->chemical bombs</li>
+    <li>place_massWeapon->hacked mechanoids</li>
+    <li>place_foeLeader->warlord</li>
+    <li>place_foeSoldiers->mercenaries</li>
+  -->
   <Creticon.placeRules.rulesStrings>
-    <li>place_name-&gt;Creticon</li>
-    <li>place_adjective-&gt;Creticoniano</li>
-    <li>place_summary-&gt;mundo muerto devastado</li>
-    <li>place_community-&gt;búnker</li>
-    <li>place_community-&gt;túnel subterráneo</li>
-    <li>place_community-&gt;refugio de hielo</li>
-    <li>place_powerCenter-&gt;búnker del director</li>
-    <li>place_job-&gt;reparador de agua</li>
-    <li>place_job-&gt;agricultor de algas</li>
-    <li>place_job-&gt;médico</li>
-    <li>place_job-&gt;profesor</li>
-    <li>place_job-&gt;comandante de milicia</li>
-    <li>place_job-&gt;piloto de transbordador</li>
-    <li>place_personalWeapon-&gt;pistola automática</li>
-    <li>place_personalWeapon-&gt;LMG</li>
-    <li>place_massWeapon-&gt;un misil nuclear montado en el hombro</li>
-    <li>place_massWeapon-&gt;un bombardeo orbital</li>
-    <li>place_massWeapon-&gt;bombas químicas</li>
-    <li>place_massWeapon-&gt;mecanoides hackeados</li>
-    <li>place_foeLeader-&gt;señor de la guerra</li>
-    <li>place_foeSoldiers-&gt;mercenarios</li>
+    <li>place_name->Creticon</li>
+    <li>place_adjective->Creticoniano</li>
+    <li>place_summary->mondo morto devastato</li>
+    <li>place_community->bunker</li>
+    <li>place_community->caverna</li>
+    <li>place_community->rifugio di ghiaccio</li>
+    <li>place_powerCenter->bunker del direttore</li>
+    <li>place_job->riparatore di riciclatori d'acqua</li>
+    <li>place_job->coltivatore di alghe</li>
+    <li>place_job->medico</li>
+    <li>place_job->insegnante</li>
+    <li>place_job->comandante della milizia</li>
+    <li>place_job->pilota di navetta</li>
+    <li>place_personalWeapon->pistola automatica</li>
+    <li>place_personalWeapon->Mitragliatrice Leggera</li>
+    <li>place_massWeapon->un missile nucleare a spalla</li>
+    <li>place_massWeapon->un bombardamento orbitale</li>
+    <li>place_massWeapon->bombe chimiche</li>
+    <li>place_massWeapon->mechanoidi hackerati</li>
+    <li>place_foeLeader->signore della guerra</li>
+    <li>place_foeSoldiers->mercenari</li>
   </Creticon.placeRules.rulesStrings>
   
-  
+  <!-- EN:
+    <li>place_name->Filson</li>
+    <li>place_adjective->Filsoner</li>
+    <li>place_summary->rural farm-world</li>
+    <li>place_community->town hall</li>
+    <li>place_community->fertilizer processing plant</li>
+    <li>place_community->mega-granary</li>
+    <li>place_community->water-bore site</li>
+    <li>place_powerCenter->town hall</li>
+    <li>place_job->farm hand</li>
+    <li>place_job->fruit picker</li>
+    <li>place_job->transport driver</li>
+    <li>place_job->school teacher</li>
+    <li>place_job->soil engineer</li>
+    <li>place_personalWeapon->rifle</li>
+    <li>place_personalWeapon->scythe</li>
+    <li>place_massWeapon->fertilizer bombs</li>
+    <li>place_massWeapon->weaponized pesticide spray</li>
+    <li>place_massWeapon->space lens</li>
+    <li>place_foeLeader->landowner</li>
+    <li>place_foeSoldiers->militia</li>
+  -->
   <Filson.placeRules.rulesStrings>
-    <li>place_name-&gt;Filson</li>
-    <li>place_adjective-&gt;Filsoneriano</li>
-    <li>place_summary-&gt;mundo rural agrícola</li>
-    <li>place_community-&gt;ayuntamiento</li>
-    <li>place_community-&gt;planta de procesamiento de fertilizantes</li>
-    <li>place_community-&gt;megagranero</li>
-    <li>place_community-&gt;sitio de perforación de agua</li>
-    <li>place_powerCenter-&gt;ayuntamiento</li>
-    <li>place_job-&gt;peón agrícola</li>
-    <li>place_job-&gt;recolector de fruta</li>
-    <li>place_job-&gt;conductor de transporte</li>
-    <li>place_job-&gt;profesor de escuela</li>
-    <li>place_job-&gt;ingeniero de suelos</li>
-    <li>place_personalWeapon-&gt;carabina</li>
-    <li>place_personalWeapon-&gt;guadaña</li>
-    <li>place_massWeapon-&gt;bombas de fertilizantes</li>
-    <li>place_massWeapon-&gt;spray plaguicida armificado</li>
-    <li>place_massWeapon-&gt;lente espacial</li>
-    <li>place_foeLeader-&gt;latifundista</li>
-    <li>place_foeSoldiers-&gt;milicianos</li>
+    <li>place_name->Filson</li>
+    <li>place_adjective->Filsoner</li>
+    <li>place_summary->mondo agricolo rurale</li>
+    <li>place_community->municipio</li>
+    <li>place_community->impianto di lavorazione dei fertilizzanti</li>
+    <li>place_community->mega-granaio</li>
+    <li>place_community->sito di trivellazione dell'acqua</li>
+    <li>place_powerCenter->municipio</li>
+    <li>place_job->bracciante agricolo</li>
+    <li>place_job->raccoglitore di frutta</li>
+    <li>place_job->autista di trasporto</li>
+    <li>place_job->insegnante scolastico</li>
+    <li>place_job->ingegnere del suolo</li>
+    <li>place_personalWeapon->fucile</li>
+    <li>place_personalWeapon->falce</li>
+    <li>place_massWeapon->bombe di fertilizzante</li>
+    <li>place_massWeapon->spray pesticida armato</li>
+    <li>place_massWeapon->lente spaziale</li>
+    <li>place_foeLeader->proprietario terriero</li>
+    <li>place_foeSoldiers->milizia</li>
   </Filson.placeRules.rulesStrings>
   
-  
+  <!-- EN:
+    <li>place_name->Ilwaba</li>
+    <li>place_adjective->Ilwaban</li>
+    <li>place_summary->regrown ruin-world</li>
+    <li>place_community->skyscraper village</li>
+    <li>place_community->highway trade-post</li>
+    <li>place_community->blast-land oasis</li>
+    <li>place_powerCenter->house of regrowth</li>
+    <li>place_job->crete-farmer</li>
+    <li>place_job->path-maker</li>
+    <li>place_job->artifact hunter</li>
+    <li>place_job->tunnelwalker</li>
+    <li>place_job->artifact restorer</li>
+    <li>place_personalWeapon->scrap-sword</li>
+    <li>place_personalWeapon->jag-dagger</li>
+    <li>place_massWeapon->a dug-up nuke</li>
+    <li>place_massWeapon->an ancient poison bomb</li>
+    <li>place_foeLeader->crypto-leader</li>
+    <li>place_foeSoldiers->crypto-soldiers</li>
+  -->
   <Ilwaba.placeRules.rulesStrings>
-    <li>place_name-&gt;Ilwaba</li>
-    <li>place_adjective-&gt;Ilguabaniano</li>
-    <li>place_summary-&gt;mundo de ruinas reedificado</li>
-    <li>place_community-&gt;pueblo del rascacielos</li>
-    <li>place_community-&gt;puesto de carretera</li>
-    <li>place_community-&gt;oasis de tierra devastada</li>
-    <li>place_powerCenter-&gt;hogar de repoblación</li>
-    <li>place_job-&gt;agricultor de creta</li>
-    <li>place_job-&gt;creador de caminos</li>
-    <li>place_job-&gt;cazador de artefactos</li>
-    <li>place_job-&gt;caminante del túnel</li>
-    <li>place_job-&gt;restaurador de artefactos</li>
-    <li>place_personalWeapon-&gt;espada-chatarra</li>
-    <li>place_personalWeapon-&gt;daga jag</li>
-    <li>place_massWeapon-&gt;una bomba nuclear desenterrada</li>
-    <li>place_massWeapon-&gt;una antigua bomba venenosa</li>
-    <li>place_foeLeader-&gt;cripto líder</li>
-    <li>place_foeSoldiers-&gt;cripto soldados</li>
+    <li>place_name->Ilwaba</li>
+    <li>place_adjective->Ilwaban</li>
+    <li>place_summary->mondo di rovine ricostruito</li>
+    <li>place_community->villaggio nei grattacieli</li>
+    <li>place_community->avamposto commerciale autostradale</li>
+    <li>place_community->oasi in terra devastata</li>
+    <li>place_powerCenter->casa della ricrescita</li>
+    <li>place_job->coltivatore di creta</li>
+    <li>place_job->costruttore di sentieri</li>
+    <li>place_job->cacciatore di artefatti</li>
+    <li>place_job->camminatore di tunnel</li>
+    <li>place_job->restauratore di artefatti</li>
+    <li>place_personalWeapon->spada di rottami</li>
+    <li>place_personalWeapon->pugnale seghettato</li>
+    <li>place_massWeapon->una bomba nucleare dissotterrata</li>
+    <li>place_massWeapon->un'antica bomba velenosa</li>
+    <li>place_foeLeader->cripto-leader</li>
+    <li>place_foeSoldiers->cripto-soldati</li>
   </Ilwaba.placeRules.rulesStrings>
   
-  
+  <!-- EN:
+    <li>place_name->Iwamura</li>
+    <li>place_adjective->Iwamurian</li>
+    <li>place_summary->stony asteroid</li>
+    <li>place_community->market capsule</li>
+    <li>place_community->warehouse capsule</li>
+    <li>place_community->docking pier</li>
+    <li>place_powerCenter->station bridge</li>
+    <li>place_job->life-support engineer</li>
+    <li>place_job->merchant</li>
+    <li>place_job->flight controller</li>
+    <li>place_job->zero-g athlete</li>
+    <li>place_job->radio host</li>
+    <li>place_personalWeapon->charge rifle</li>
+    <li>place_personalWeapon->welding torch</li>
+    <li>place_massWeapon->an aerosolized toxin</li>
+    <li>place_massWeapon->[anEMPAttack]</li>
+    <li>place_massWeapon->a life-support sabotage virus</li>
+    <li>place_foeLeader->mega-corp CEO</li>
+    <li>place_foeSoldiers->rent-a-cops</li>
+  -->
   <Iwamura.placeRules.rulesStrings>
-    <li>place_name-&gt;Iwamura</li>
-    <li>place_adjective-&gt;Iwamuriano</li>
-    <li>place_summary-&gt;asteroide pétreo</li>
-    <li>place_community-&gt;mercado cápsula</li>
-    <li>place_community-&gt;almacén cápsula</li>
-    <li>place_community-&gt;muelle de atraque</li>
-    <li>place_powerCenter-&gt;puente de la estación</li>
-    <li>place_job-&gt;ingeniero de soporte vital</li>
-    <li>place_job-&gt;comerciante</li>
-    <li>place_job-&gt;controlador de vuelo</li>
-    <li>place_job-&gt;atleta de gravedad cero</li>
-    <li>place_job-&gt;anfitrión de radio</li>
-    <li>place_personalWeapon-&gt;pistola de cargas</li>
-    <li>place_personalWeapon-&gt;pistola de soldadura</li>
-    <li>place_massWeapon-&gt;una toxina en aerosol</li>
-    <li>place_massWeapon-&gt;[anEMPAttack]</li>
-    <li>place_massWeapon-&gt;un virus saboteador de soporte vital</li>
-    <li>place_foeLeader-&gt;CEO de una mega corporación</li>
-    <li>place_foeSoldiers-&gt;policías alquilados</li>
+    <li>place_name->Iwamura</li>
+    <li>place_adjective->Iwamuriano</li>
+    <li>place_summary->asteroide roccioso</li>
+    <li>place_community->capsula-mercato</li>
+    <li>place_community->capsula-magazzino</li>
+    <li>place_community->molo di attracco</li>
+    <li>place_powerCenter->ponte della stazione</li>
+    <li>place_job->ingegnere del supporto vitale</li>
+    <li>place_job->commerciante</li>
+    <li>place_job->controllore di volo</li>
+    <li>place_job->atleta a gravità zero</li>
+    <li>place_job->conduttore radiofonico</li>
+    <li>place_personalWeapon->fucile a carica</li>
+    <li>place_personalWeapon->torcia per saldatura</li>
+    <li>place_massWeapon->una tossina aerosolizzata</li>
+    <li>place_massWeapon->[anEMPAttack]</li>
+    <li>place_massWeapon->un virus per sabotaggio del supporto vitale</li>
+    <li>place_foeLeader->CEO di mega-corporazione</li>
+    <li>place_foeSoldiers->guardie a contratto</li>
   </Iwamura.placeRules.rulesStrings>
   
-  
+  <!-- EN:
+    <li>place_name->Kemia</li>
+    <li>place_adjective->Kemian</li>
+    <li>place_summary->toxic war-world</li>
+    <li>place_community->slum</li>
+    <li>place_community->tunnel colony</li>
+    <li>place_community->undertown</li>
+    <li>place_powerCenter->city lordhouse</li>
+    <li>place_job->street sweeper</li>
+    <li>place_job->cleanup engineer</li>
+    <li>place_job->protein farmer</li>
+    <li>place_job->taxi driver</li>
+    <li>place_job->weapons builder</li>
+    <li>place_personalWeapon->gas bomb</li>
+    <li>place_personalWeapon->toxic flamethrower</li>
+    <li>place_massWeapon->nuclear dirty bombs</li>
+    <li>place_massWeapon->a bio-engineered plague</li>
+    <li>place_massWeapon->penetrating toxic bombs</li>
+    <li>place_foeLeader->poison lord</li>
+    <li>place_foeSoldiers->venom-soldiers</li>
+  -->
   <Kemia.placeRules.rulesStrings>
-    <li>place_name-&gt;Kemia</li>
-    <li>place_adjective-&gt;Keminiano</li>
-    <li>place_summary-&gt;mundo bélico tóxico</li>
-    <li>place_community-&gt;barrio</li>
-    <li>place_community-&gt;pueblo de túneles</li>
-    <li>place_community-&gt;pueblo marginal</li>
-    <li>place_powerCenter-&gt;hogar señorial</li>
-    <li>place_job-&gt;barrendero</li>
-    <li>place_job-&gt;ingeniero de limpieza</li>
-    <li>place_job-&gt;productor de proteínas</li>
-    <li>place_job-&gt;taxista</li>
-    <li>place_job-&gt;constructor de armas</li>
-    <li>place_personalWeapon-&gt;bomba de gas</li>
-    <li>place_personalWeapon-&gt;pistola de fuego tóxico</li>
-    <li>place_massWeapon-&gt;bombas nucleares sucias</li>
-    <li>place_massWeapon-&gt;una plaga biomodificada</li>
-    <li>place_massWeapon-&gt;bombas tóxicas penetrantes</li>
-    <li>place_foeLeader-&gt;señor del veneno</li>
-    <li>place_foeSoldiers-&gt;soldados venenosos</li>
+    <li>place_name->Kemia</li>
+    <li>place_adjective->Kemiano</li>
+    <li>place_summary->mondo di guerra tossico</li>
+    <li>place_community->baraccopoli</li>
+    <li>place_community->colonia di tunnel</li>
+    <li>place_community->città sotterranea</li>
+    <li>place_powerCenter->palazzo del signore cittadino</li>
+    <li>place_job->spazzino</li>
+    <li>place_job->ingegnere delle pulizie</li>
+    <li>place_job->allevatore di proteine</li>
+    <li>place_job->taxista</li>
+    <li>place_job->costruttore di armi</li>
+    <li>place_personalWeapon->bomba a gas</li>
+    <li>place_personalWeapon->lanciafiamme tossico</li>
+    <li>place_massWeapon->bombe sporche nucleari</li>
+    <li>place_massWeapon->una piaga bioingegnerizzata</li>
+    <li>place_massWeapon->bombe tossiche perforanti</li>
+    <li>place_foeLeader->signore del veleno</li>
+    <li>place_foeSoldiers->soldati velenosi</li>
   </Kemia.placeRules.rulesStrings>
   
-  
+  <!-- EN:
+    <li>place_name->Lutuni</li>
+    <li>place_adjective->Lutuni</li>
+    <li>place_summary->rainforest paradise</li>
+    <li>place_community->augmentation clinic</li>
+    <li>place_community->hyper-yacht</li>
+    <li>place_community->zero-g stadium</li>
+    <li>place_powerCenter->space elevator complex</li>
+    <li>place_job->tourist guide</li>
+    <li>place_job->zero-g performer</li>
+    <li>place_job->luciferium distributor</li>
+    <li>place_job->virtual celebrity</li>
+    <li>place_job->shuttle pilot</li>
+    <li>place_personalWeapon->vibro-knife</li>
+    <li>place_personalWeapon->charge pistol</li>
+    <li>place_massWeapon->a structural disintegration bacterium</li>
+    <li>place_massWeapon->a smuggled orbital bombardment targeter</li>
+    <li>place_foeLeader->entertainment mogul</li>
+    <li>place_foeSoldiers->enforcers</li>
+  -->
   <Lutuni.placeRules.rulesStrings>
-    <li>place_name-&gt;Lutuni</li>
-    <li>place_adjective-&gt;Lutuniano</li>
-    <li>place_summary-&gt;paraíso selvático</li>
-    <li>place_community-&gt;hopital de aumentos</li>
-    <li>place_community-&gt;hiper yate</li>
-    <li>place_community-&gt;estadio de gravedad cero</li>
-    <li>place_powerCenter-&gt;complejo de ascensores espaciales</li>
-    <li>place_job-&gt;guía turístico</li>
-    <li>place_job-&gt;intérprete de gravedad cero</li>
-    <li>place_job-&gt;distribuidor de luciferio</li>
-    <li>place_job-&gt;celebridad virtual</li>
-    <li>place_job-&gt;piloto de transbordador</li>
-    <li>place_personalWeapon-&gt;vibrocuchilla</li>
-    <li>place_personalWeapon-&gt;pistola de cargas</li>
-    <li>place_massWeapon-&gt;una bacteria de desintegración estructural</li>
-    <li>place_massWeapon-&gt;un bombardeo orbital de contrabando</li>
-    <li>place_foeLeader-&gt;magnate del entretenimiento</li>
-    <li>place_foeSoldiers-&gt;ejecutores</li>
+    <li>place_name->Lutuni</li>
+    <li>place_adjective->Lutuniano</li>
+    <li>place_summary->paradiso della giungla</li>
+    <li>place_community->clinica per aumenti</li>
+    <li>place_community->iper-yacht</li>
+    <li>place_community->stadio a gravità zero</li>
+    <li>place_powerCenter->complesso dell'ascensore spaziale</li>
+    <li>place_job->guida turistica</li>
+    <li>place_job->performer a gravità zero</li>
+    <li>place_job->distributore di luciferium</li>
+    <li>place_job->celebrità virtuale</li>
+    <li>place_job->pilota di navetta</li>
+    <li>place_personalWeapon->coltello a vibrazione</li>
+    <li>place_personalWeapon->pistola a carica</li>
+    <li>place_massWeapon->un batterio di disintegrazione strutturale</li>
+    <li>place_massWeapon->un puntatore per bombardamento orbitale di contrabbando</li>
+    <li>place_foeLeader->magnate dell'intrattenimento</li>
+    <li>place_foeSoldiers->scagnozzi</li>
   </Lutuni.placeRules.rulesStrings>
   
-  
+  <!-- EN:
+    <li>place_name->Novaroma</li>
+    <li>place_adjective->Novaroman</li>
+    <li>place_summary->planetoid</li>
+    <li>place_community->ministry of permits</li>
+    <li>place_community->gated suburb</li>
+    <li>place_community->over-city</li>
+    <li>place_community->under-city</li>
+    <li>place_powerCenter->megacity overhall</li>
+    <li>place_job->clerk</li>
+    <li>place_job->official</li>
+    <li>place_job->food courier</li>
+    <li>place_job->taxi driver</li>
+    <li>place_job->retail worker</li>
+    <li>place_personalWeapon->revolver</li>
+    <li>place_personalWeapon->knife</li>
+    <li>place_massWeapon->[seismicDevice]</li>
+    <li>place_massWeapon->cluster bombs</li>
+    <li>place_massWeapon->a nuclear suitcase-bomb</li>
+    <li>place_foeLeader->high-underlord</li>
+    <li>place_foeSoldiers->undertroops</li>
+  -->
   <Novaroma.placeRules.rulesStrings>
-    <li>place_name-&gt;Novaroma</li>
-    <li>place_adjective-&gt;Novaromaniano</li>
-    <li>place_summary-&gt;planetoide</li>
-    <li>place_community-&gt;ministerio de permisos</li>
-    <li>place_community-&gt;suburbio privado</li>
-    <li>place_community-&gt;centro urbano superficial</li>
-    <li>place_community-&gt;centro urbano subterráneo</li>
-    <li>place_powerCenter-&gt;megacentro de la ciudad</li>
-    <li>place_job-&gt;secretario</li>
-    <li>place_job-&gt;oficial</li>
-    <li>place_job-&gt;repartidor de alimentos</li>
-    <li>place_job-&gt;taxista</li>
-    <li>place_job-&gt;trabajador minorista</li>
-    <li>place_personalWeapon-&gt;pistola recortada</li>
-    <li>place_personalWeapon-&gt;cuchilla</li>
-    <li>place_massWeapon-&gt;[seismicDevice]</li>
-    <li>place_massWeapon-&gt;bombas nucleares</li>
-    <li>place_massWeapon-&gt;un maletín de bomba nuclear</li>
-    <li>place_foeLeader-&gt;gran señor de los bajos fondos</li>
-    <li>place_foeSoldiers-&gt;tropas de los bajos fondos</li>
+    <li>place_name->Novaroma</li>
+    <li>place_adjective->Novaromano</li>
+    <li>place_summary->planetoide</li>
+    <li>place_community->ministero dei permessi</li>
+    <li>place_community->sobborgo recintato</li>
+    <li>place_community->città superiore</li>
+    <li>place_community->città sotterranea</li>
+    <li>place_powerCenter->sala di comando della megalopoli</li>
+    <li>place_job->impiegato</li>
+    <li>place_job->funzionario</li>
+    <li>place_job->corriere alimentare</li>
+    <li>place_job->taxista</li>
+    <li>place_job->commesso</li>
+    <li>place_personalWeapon->rivoltella</li>
+    <li>place_personalWeapon->coltello</li>
+    <li>place_massWeapon->[seismicDevice]</li>
+    <li>place_massWeapon->bombe a grappolo</li>
+    <li>place_massWeapon->una bomba nucleare in valigetta</li>
+    <li>place_foeLeader->signore supremo del sottosuolo</li>
+    <li>place_foeSoldiers->truppe sotterranee</li>
   </Novaroma.placeRules.rulesStrings>
   
-  
+  <!-- EN:
+    <li>place_name->Nuchadus</li>
+    <li>place_adjective->Nuchadean</li>
+    <li>place_summary->dim volcano-world</li>
+    <li>place_community->basalt island</li>
+    <li>place_community->caldera laketown</li>
+    <li>place_community->dirigible village</li>
+    <li>place_powerCenter->thermal fortress</li>
+    <li>place_job->seismologist</li>
+    <li>place_job->lava-snail farmer</li>
+    <li>place_job->tank-tread repairer</li>
+    <li>place_job->airborne scout</li>
+    <li>place_personalWeapon->obsidian dagger</li>
+    <li>place_personalWeapon->harpoon rifle</li>
+    <li>place_massWeapon->an archotech-induced volcano eruption</li>
+    <li>place_massWeapon->a chem-warfare bomb</li>
+    <li>place_foeLeader->lava lord</li>
+    <li>place_foeSoldiers->stygian soldiers</li>
+  -->
   <Nuchadus.placeRules.rulesStrings>
-    <li>place_name-&gt;Nuchadus</li>
-    <li>place_adjective-&gt;Nuchadiano</li>
-    <li>place_summary-&gt;mundo volcánico tenue</li>
-    <li>place_community-&gt;islote basalto</li>
-    <li>place_community-&gt;pueblo isleño</li>
-    <li>place_community-&gt;pueblo dirigido</li>
-    <li>place_powerCenter-&gt;castillo termal</li>
-    <li>place_job-&gt;sismólogo</li>
-    <li>place_job-&gt;agricultor de lava-caracol</li>
-    <li>place_job-&gt;reparador de neumáticos</li>
-    <li>place_job-&gt;explorador aéreo</li>
-    <li>place_personalWeapon-&gt;daga de obsidiana</li>
-    <li>place_personalWeapon-&gt;pistola larga arponera</li>
-    <li>place_massWeapon-&gt;una erupción volcánica inducida por la arqueotecnología</li>
-    <li>place_massWeapon-&gt;una bomba química</li>
-    <li>place_foeLeader-&gt;lord de la lava</li>
-    <li>place_foeSoldiers-&gt;soldados estigios</li>
+    <li>place_name->Nuchadus</li>
+    <li>place_adjective->Nuchadiano</li>
+    <li>place_summary->mondo vulcanico crepuscolare</li>
+    <li>place_community->isola di basalto</li>
+    <li>place_community->città lacustre nella caldera</li>
+    <li>place_community->villaggio di dirigibili</li>
+    <li>place_powerCenter->fortezza termale</li>
+    <li>place_job->sismologo</li>
+    <li>place_job->allevatore di lumache laviche</li>
+    <li>place_job->riparatore di cingoli</li>
+    <li>place_job->esploratore aereo</li>
+    <li>place_personalWeapon->pugnale d'ossidiana</li>
+    <li>place_personalWeapon->fucile arpione</li>
+    <li>place_massWeapon->un'eruzione vulcanica indotta da archeotecnologia</li>
+    <li>place_massWeapon->una bomba chimica</li>
+    <li>place_foeLeader->signore della lava</li>
+    <li>place_foeSoldiers->soldati stigiani</li>
   </Nuchadus.placeRules.rulesStrings>
   
-  
+  <!-- EN:
+    <li>place_name->Oubanyen</li>
+    <li>place_adjective->Oubanyeni</li>
+    <li>place_summary->steamy jungle-world</li>
+    <li>place_community->tree-top village</li>
+    <li>place_community->shaman cave</li>
+    <li>place_community->hill-top ziggurat</li>
+    <li>place_powerCenter->city temple</li>
+    <li>place_job->shaman</li>
+    <li>place_job->hunter</li>
+    <li>place_job->fisher</li>
+    <li>place_job->gatherer</li>
+    <li>place_job->goat-herd</li>
+    <li>place_personalWeapon->pila</li>
+    <li>place_personalWeapon->ikwa</li>
+    <li>place_massWeapon->a lethal psychic drone</li>
+    <li>place_massWeapon->a neurotoxin bomb</li>
+    <li>place_foeLeader->tree-harvester</li>
+    <li>place_foeSoldiers->henchmen</li>
+  -->
   <Oubanyen.placeRules.rulesStrings>
-    <li>place_name-&gt;Oubanyen</li>
-    <li>place_adjective-&gt;Oubanyeniano</li>
-    <li>place_summary-&gt;mundo selvático húmedo</li>
-    <li>place_community-&gt;pueblo de cima árborea</li>
-    <li>place_community-&gt;refugio del chamán</li>
-    <li>place_community-&gt;zigurat en la cima de una colina</li>
-    <li>place_powerCenter-&gt;templo de la ciudad</li>
-    <li>place_job-&gt;chamán</li>
-    <li>place_job-&gt;cazador</li>
-    <li>place_job-&gt;pescador</li>
-    <li>place_job-&gt;recolector</li>
-    <li>place_job-&gt;cabrero</li>
-    <li>place_personalWeapon-&gt;jabalinas</li>
-    <li>place_personalWeapon-&gt;ikwa</li>
-    <li>place_massWeapon-&gt;un zumbador psíquico letal</li>
-    <li>place_massWeapon-&gt;una bomba de neurotoxinas</li>
-    <li>place_foeLeader-&gt;cosechador de árboles</li>
-    <li>place_foeSoldiers-&gt;esbirros</li>
+    <li>place_name->Oubanyen</li>
+    <li>place_adjective->Oubanyeniano</li>
+    <li>place_summary->mondo di giungla afosa</li>
+    <li>place_community->villaggio tra le cime degli alberi</li>
+    <li>place_community->grotta dello sciamano</li>
+    <li>place_community->ziggurat in cima alla collina</li>
+    <li>place_powerCenter->tempio cittadino</li>
+    <li>place_job->sciamano</li>
+    <li>place_job->cacciatore</li>
+    <li>place_job->pescatore</li>
+    <li>place_job->raccoglitore</li>
+    <li>place_job->capraio</li>
+    <li>place_personalWeapon->pila</li>
+    <li>place_personalWeapon->ikwa</li>
+    <li>place_massWeapon->un drone psichico letale</li>
+    <li>place_massWeapon->una bomba al neurotossico</li>
+    <li>place_foeLeader->taglialegna di alberi</li>
+    <li>place_foeSoldiers->scagnozzi</li>
   </Oubanyen.placeRules.rulesStrings>
   
-  
+  <!-- EN:
+    <li>place_name->Rhydell</li>
+    <li>place_adjective->Rhydellian</li>
+    <li>place_summary->savage forest moon</li>
+    <li>place_community->converted dropship</li>
+    <li>place_community->low-shielded encampment</li>
+    <li>place_community->communication center</li>
+    <li>place_powerCenter->armored habitat</li>
+    <li>place_job->frontier botanist</li>
+    <li>place_job->trophy hunter</li>
+    <li>place_job->medic</li>
+    <li>place_job->camp cook</li>
+    <li>place_job->biolab engineer</li>
+    <li>place_personalWeapon->sniper rifle</li>
+    <li>place_personalWeapon->machete</li>
+    <li>place_massWeapon->a plant-derived neurotoxin gas</li>
+    <li>place_massWeapon->an orbital laser strike</li>
+    <li>place_foeLeader->deepcorp executive</li>
+    <li>place_foeSoldiers->deepcorp enforcers</li>
+  -->
   <Rhydell.placeRules.rulesStrings>
-    <li>place_name-&gt;Rhydell</li>
-    <li>place_adjective-&gt;Rhydelliano</li>
-    <li>place_summary-&gt;mundo forestal salvaje</li>
-    <li>place_community-&gt;transbordador convertido</li>
-    <li>place_community-&gt;campamento de bajo blindaje</li>
-    <li>place_community-&gt;centro de comunicaciones</li>
-    <li>place_powerCenter-&gt;hábitat acorazado</li>
-    <li>place_job-&gt;botánico fronterizo</li>
-    <li>place_job-&gt;cazador de trofeos</li>
-    <li>place_job-&gt;médico</li>
-    <li>place_job-&gt;cocinero de campamento</li>
-    <li>place_job-&gt;ingeniero de biolaboratorio</li>
-    <li>place_personalWeapon-&gt;pistola de largo alcance</li>
-    <li>place_personalWeapon-&gt;bayoneta</li>
-    <li>place_massWeapon-&gt;un gas neurotóxico de origen vegetal</li>
-    <li>place_massWeapon-&gt;un ataque orbital con láser</li>
-    <li>place_foeLeader-&gt;ejecutivo de deepcorp</li>
-    <li>place_foeSoldiers-&gt;ejecutores de deepcorp</li>
+    <li>place_name->Rhydell</li>
+    <li>place_adjective->Rhydelliano</li>
+    <li>place_summary->luna forestale selvaggia</li>
+    <li>place_community->nave da sbarco convertita</li>
+    <li>place_community->accampamento a bassa protezione</li>
+    <li>place_community->centro di comunicazione</li>
+    <li>place_powerCenter->habitat corazzato</li>
+    <li>place_job->botanico di frontiera</li>
+    <li>place_job->cacciatore di trofei</li>
+    <li>place_job->medico</li>
+    <li>place_job->cuoco da campo</li>
+    <li>place_job->ingegnere di biolaboratorio</li>
+    <li>place_personalWeapon->fucile di precisione</li>
+    <li>place_personalWeapon->machete</li>
+    <li>place_massWeapon->un gas neurotossico di origine vegetale</li>
+    <li>place_massWeapon->un attacco laser orbitale</li>
+    <li>place_foeLeader->dirigente della deepcorp</li>
+    <li>place_foeSoldiers->esecutori della deepcorp</li>
   </Rhydell.placeRules.rulesStrings>
   
-  
+  <!-- EN:
+    <li>place_name->Rogia</li>
+    <li>place_adjective->Rogian</li>
+    <li>place_summary->glitter-tech world</li>
+    <li>place_community->medical institute</li>
+    <li>place_community->space elevator</li>
+    <li>place_community->robotics factory</li>
+    <li>place_powerCenter->planetary capitol</li>
+    <li>place_job->starforce cadet</li>
+    <li>place_job->artisan farmer</li>
+    <li>place_job->social-media prodigy</li>
+    <li>place_job->zero-g athlete</li>
+    <li>place_job->glitter-tech smuggler</li>
+    <li>place_personalWeapon->charge lance</li>
+    <li>place_personalWeapon->persona monosword</li>
+    <li>place_massWeapon->antimatter warheads</li>
+    <li>place_massWeapon->a weaponized computer virus</li>
+    <li>place_massWeapon->remote-controlled mechanoid workers</li>
+    <li>place_foeLeader->corrupt bureaucrat</li>
+    <li>place_foeSoldiers->bionic guards</li>
+  -->
   <Rogia.placeRules.rulesStrings>
-    <li>place_name-&gt;Rogia</li>
-    <li>place_adjective-&gt;Rogianiano</li>
-    <li>place_summary-&gt;mundo brillotec</li>
-    <li>place_community-&gt;instituto médico</li>
-    <li>place_community-&gt;elevador espacial</li>
-    <li>place_community-&gt;edificio de construcción de robots</li>
-    <li>place_powerCenter-&gt;capitolio planetario</li>
-    <li>place_job-&gt;cadete de la fuerza estelar</li>
-    <li>place_job-&gt;agricultor artesano</li>
-    <li>place_job-&gt;prodigio de las redes sociales</li>
-    <li>place_job-&gt;atleta de gravedad cero</li>
-    <li>place_job-&gt;contrabandista tecno brillante</li>
-    <li>place_personalWeapon-&gt;lanza de cargas</li>
-    <li>place_personalWeapon-&gt;monoespada con IA</li>
-    <li>place_massWeapon-&gt;ojivas antimateria</li>
-    <li>place_massWeapon-&gt;un virus informático armado</li>
-    <li>place_massWeapon-&gt;trabajadores mecanoides teledirigidos</li>
-    <li>place_foeLeader-&gt;burócrata corrupto</li>
-    <li>place_foeSoldiers-&gt;guardias biónicos</li>
+    <li>place_name->Rogia</li>
+    <li>place_adjective->Rogiano</li>
+    <li>place_summary->mondo glitter-tech</li>
+    <li>place_community->istituto medico</li>
+    <li>place_community->ascensore spaziale</li>
+    <li>place_community->fabbrica di robotica</li>
+    <li>place_powerCenter->capitale planetaria</li>
+    <li>place_job->cadetto della forza stellare</li>
+    <li>place_job->agricoltore artigianale</li>
+    <li>place_job->prodigio dei social media</li>
+    <li>place_job->atleta a gravità zero</li>
+    <li>place_job->contrabbandiere di glitter-tech</li>
+    <li>place_personalWeapon->lancia a carica</li>
+    <li>place_personalWeapon->monospada senziente</li>
+    <li>place_massWeapon->testate all'antimateria</li>
+    <li>place_massWeapon->un virus informatico armato</li>
+    <li>place_massWeapon->mechanoidi operai teleguidati</li>
+    <li>place_foeLeader->funzionario corrotto</li>
+    <li>place_foeSoldiers->guardie bioniche</li>
   </Rogia.placeRules.rulesStrings>
   
-  
+  <!-- EN:
+    <li>place_name->Wavia</li>
+    <li>place_adjective->Wavian</li>
+    <li>place_summary->oceanic planet</li>
+    <li>place_community->trading atoll</li>
+    <li>place_community->floating village</li>
+    <li>place_community->seaweed refinery</li>
+    <li>place_powerCenter->capitol bridge</li>
+    <li>place_job->fisher</li>
+    <li>place_job->pearl diver</li>
+    <li>place_job->sail maker</li>
+    <li>place_job->captain</li>
+    <li>place_job->sea-grass gatherer</li>
+    <li>place_personalWeapon->harpoon</li>
+    <li>place_personalWeapon->barbed net</li>
+    <li>place_massWeapon->a high-yield torpedo</li>
+    <li>place_massWeapon->a baited [seaBeast]</li>
+    <li>place_foeLeader->whaler admiral</li>
+    <li>place_foeSoldiers->whaler-marines</li>
+    <li>seaBeast->deep-kraken</li>
+    <li>seaBeast->Wavian leviathan</li>
+  -->
   <Wavia.placeRules.rulesStrings>
-    <li>place_name-&gt;Wavia</li>
-    <li>place_adjective-&gt;Waviano</li>
-    <li>place_summary-&gt;planeta oceánico</li>
-    <li>place_community-&gt;atolón comercial</li>
-    <li>place_community-&gt;pueblo flotante</li>
-    <li>place_community-&gt;complejo de refinería de algas</li>
-    <li>place_powerCenter-&gt;puente del capitolio</li>
-    <li>place_job-&gt;pescador</li>
-    <li>place_job-&gt;buzo de perlas</li>
-    <li>place_job-&gt;fabricante de velas</li>
-    <li>place_job-&gt;capitán</li>
-    <li>place_job-&gt;recolector de hierba marina</li>
-    <li>place_personalWeapon-&gt;lanza de cargas</li>
-    <li>place_personalWeapon-&gt;red de púas</li>
-    <li>place_massWeapon-&gt;un torpedo de alta potencia</li>
-    <li>place_massWeapon-&gt;un cebo para [seaBeast]</li>
-    <li>place_foeLeader-&gt;almirante ballenero</li>
-    <li>place_foeSoldiers-&gt;marines balleneros</li>
-    <li>seaBeast-&gt;kraken de las profundidades</li>
-    <li>seaBeast-&gt;leviatán waviano</li>
+    <li>place_name->Wavia</li>
+    <li>place_adjective->Waviano</li>
+    <li>place_summary->pianeta oceanico</li>
+    <li>place_community->atollo commerciale</li>
+    <li>place_community->villaggio galleggiante</li>
+    <li>place_community->raffineria di alghe</li>
+    <li>place_powerCenter->ponte del capitolio</li>
+    <li>place_job->pescatore</li>
+    <li>place_job->sommozzatore di perle</li>
+    <li>place_job->velaio</li>
+    <li>place_job->capitano</li>
+    <li>place_job->raccoglitore di alghe marine</li>
+    <li>place_personalWeapon->arpione</li>
+    <li>place_personalWeapon->rete spinata</li>
+    <li>place_massWeapon->un siluro ad alto potenziale</li>
+    <li>place_massWeapon->un [seaBeast] adescato</li>
+    <li>place_foeLeader->ammiraglio baleniere</li>
+    <li>place_foeSoldiers->marines balenieri</li>
+    <li>seaBeast->kraken degli abissi</li>
+    <li>seaBeast->leviatano waviano</li>
   </Wavia.placeRules.rulesStrings>
   
-  
+  <!-- EN:
+    <li>place_name->Xanides</li>
+    <li>place_adjective->Xanidian</li>
+    <li>place_summary->exploited mineral-planet</li>
+    <li>place_community->strip mine</li>
+    <li>place_community->ore refinery</li>
+    <li>place_community->nutrient paste cafeteria</li>
+    <li>place_powerCenter->oxygen depot</li>
+    <li>place_job->miner</li>
+    <li>place_job->supervisor</li>
+    <li>place_job->technician</li>
+    <li>place_job->mechanic</li>
+    <li>place_job->life support engineer</li>
+    <li>place_personalWeapon->electro-baton</li>
+    <li>place_personalWeapon->autopistol</li>
+    <li>place_massWeapon->blasting charges</li>
+    <li>place_massWeapon->[anEMPAttack]</li>
+    <li>place_foeLeader->mine-corp boss</li>
+    <li>place_foeSoldiers->mine-corp troops</li>
+  -->
   <Xanides.placeRules.rulesStrings>
-    <li>place_name-&gt;Xanides</li>
-    <li>place_adjective-&gt;Xanidiano</li>
-    <li>place_summary-&gt;planeta mineral explotado</li>
-    <li>place_community-&gt;complejo minero</li>
-    <li>place_community-&gt;complejo de refinería de minerales</li>
-    <li>place_community-&gt;restaurante de pasta nutritiva</li>
-    <li>place_powerCenter-&gt;depósito de oxígeno</li>
-    <li>place_job-&gt;minero</li>
-    <li>place_job-&gt;supervisor</li>
-    <li>place_job-&gt;técnico</li>
-    <li>place_job-&gt;mecánico</li>
-    <li>place_job-&gt;ingeniero de soporte vital</li>
-    <li>place_personalWeapon-&gt;batuta eléctrica</li>
-    <li>place_personalWeapon-&gt;pistola automática</li>
-    <li>place_massWeapon-&gt;cargas explosivas</li>
-    <li>place_massWeapon-&gt;[anEMPAttack]</li>
-    <li>place_foeLeader-&gt;jefe de compañía minera</li>
-    <li>place_foeSoldiers-&gt;soldados de compañía minera</li>
+    <li>place_name->Xanides</li>
+    <li>place_adjective->Xanidiano</li>
+    <li>place_summary->pianeta minerario sfruttato</li>
+    <li>place_community->miniera a cielo aperto</li>
+    <li>place_community->raffineria di minerali</li>
+    <li>place_community->mensa di pasta nutritiva</li>
+    <li>place_powerCenter->deposito di ossigeno</li>
+    <li>place_job->minatore</li>
+    <li>place_job->supervisore</li>
+    <li>place_job->tecnico</li>
+    <li>place_job->meccanico</li>
+    <li>place_job->ingegnere del supporto vitale</li>
+    <li>place_personalWeapon->manganello elettrico</li>
+    <li>place_personalWeapon->pistola automatica</li>
+    <li>place_massWeapon->cariche esplosive</li>
+    <li>place_massWeapon->[anEMPAttack]</li>
+    <li>place_foeLeader->capo della corporazione mineraria</li>
+    <li>place_foeSoldiers->soldati della corporazione mineraria</li>
   </Xanides.placeRules.rulesStrings>
   
-  
+  <!-- EN:
+    <li>place_name->Yttak</li>
+    <li>place_adjective->Yttaki</li>
+    <li>place_summary->ice-moon prison</li>
+    <li>place_community->meal hall</li>
+    <li>place_community->guard barracks</li>
+    <li>place_community->detention center</li>
+    <li>place_powerCenter->warden's office complex</li>
+    <li>place_job->detainee</li>
+    <li>place_job->guard</li>
+    <li>place_job->escapee</li>
+    <li>place_job->maintenance worker</li>
+    <li>place_job->transport driver</li>
+    <li>place_personalWeapon->shiv</li>
+    <li>place_personalWeapon->SMG</li>
+    <li>place_massWeapon->an improvised chemical bomb</li>
+    <li>place_massWeapon->an orbital laser strike</li>
+    <li>place_foeLeader->prison warden</li>
+    <li>place_foeSoldiers->corrupt guards</li>
+  -->
   <Yttak.placeRules.rulesStrings>
-    <li>place_name-&gt;Yttak</li>
-    <li>place_adjective-&gt;Yttakiano</li>
-    <li>place_summary-&gt;mundo prisión de hielo</li>
-    <li>place_community-&gt;comedor</li>
-    <li>place_community-&gt;cuartel de la guardia</li>
-    <li>place_community-&gt;centro de detención</li>
-    <li>place_powerCenter-&gt;complejo de oficinas del director</li>
-    <li>place_job-&gt;detenido</li>
-    <li>place_job-&gt;guardia</li>
-    <li>place_job-&gt;escapista</li>
-    <li>place_job-&gt;empleado de mantenimiento</li>
-    <li>place_job-&gt;conductor de transporte</li>
-    <li>place_personalWeapon-&gt;navaja</li>
-    <li>place_personalWeapon-&gt;ametralladora pequeña</li>
-    <li>place_massWeapon-&gt;una bomba química improvisada</li>
-    <li>place_massWeapon-&gt;un ataque láser orbital</li>
-    <li>place_foeLeader-&gt;alcaide de la prisión</li>
-    <li>place_foeSoldiers-&gt;guardias corruptos</li>
+    <li>place_name->Yttak</li>
+    <li>place_adjective->Yttakiano</li>
+    <li>place_summary->prigione su luna di ghiaccio</li>
+    <li>place_community->mensa</li>
+    <li>place_community->caserma delle guardie</li>
+    <li>place_community->centro di detenzione</li>
+    <li>place_powerCenter->complesso uffici del direttore</li>
+    <li>place_job->detenuto</li>
+    <li>place_job->guardia</li>
+    <li>place_job->evaso</li>
+    <li>place_job->addetto alla manutenzione</li>
+    <li>place_job->autista di trasporti</li>
+    <li>place_personalWeapon->coltello improvvisato</li>
+    <li>place_personalWeapon->mitra</li>
+    <li>place_massWeapon->una bomba chimica improvvisata</li>
+    <li>place_massWeapon->un attacco laser orbitale</li>
+    <li>place_foeLeader->direttore della prigione</li>
+    <li>place_foeSoldiers->guardie corrotte</li>
   </Yttak.placeRules.rulesStrings>
   
-  
+  <!-- EN:
+    <li>place_name->Zoutera</li>
+    <li>place_adjective->Zoutin</li>
+    <li>place_summary->grassy dino-world</li>
+    <li>place_community->trading outpost</li>
+    <li>place_community->tent village</li>
+    <li>place_community->mammoth burial ground</li>
+    <li>place_powerCenter->hill-top fort</li>
+    <li>place_job->dino-rider</li>
+    <li>place_job->muffalo-herder</li>
+    <li>place_job->hunter</li>
+    <li>place_job->toughleather maker</li>
+    <li>place_personalWeapon->bamboo staff</li>
+    <li>place_personalWeapon->hunt-bomb arrows</li>
+    <li>place_massWeapon->a stampeding herd of [megaFauna]</li>
+    <li>place_massWeapon->a fertilizer bomb</li>
+    <li>place_foeLeader->tusk-king</li>
+    <li>place_foeSoldiers->tusk-warriors</li>
+    <li>megaFauna->ankylosaurs</li>
+    <li>megaFauna->blue mammoths</li>
+    <li>megaFauna->novoraptors</li>
+  -->
   <Zoutera.placeRules.rulesStrings>
-    <li>place_name-&gt;Zoutera</li>
-    <li>place_adjective-&gt;Zoutiniano</li>
-    <li>place_summary-&gt;dinomundo de hierba</li>
-    <li>place_community-&gt;puesto comercial</li>
-    <li>place_community-&gt;pueblo de carpas</li>
-    <li>place_community-&gt;cementerio de mamuts</li>
-    <li>place_powerCenter-&gt;fuerte en la cima de una colina</li>
-    <li>place_job-&gt;dinojinete</li>
-    <li>place_job-&gt;pastor de múfalos</li>
-    <li>place_job-&gt;cazador</li>
-    <li>place_job-&gt;fabricante de cuero duro</li>
-    <li>place_personalWeapon-&gt;vara de bambú</li>
-    <li>place_personalWeapon-&gt;flecha bomba de cacería</li>
-    <li>place_massWeapon-&gt;una manada en estampida de [megaFauna]</li>
-    <li>place_massWeapon-&gt;una bomba de fertilizante</li>
-    <li>place_foeLeader-&gt;rey colmillo</li>
-    <li>place_foeSoldiers-&gt;guerreros colmillo</li>
-    <li>megaFauna-&gt;anquilosáuridos</li>
-    <li>megaFauna-&gt;mamuts azules</li>
-    <li>megaFauna-&gt;novoraptores</li>
+    <li>place_name->Zoutera</li>
+    <li>place_adjective->Zoutiniano</li>
+    <li>place_summary->mondo erboso con dinosauri</li>
+    <li>place_community->avamposto commerciale</li>
+    <li>place_community->villaggio di tende</li>
+    <li>place_community->cimitero dei mammut</li>
+    <li>place_powerCenter->forte sulla cima di una collina</li>
+    <li>place_job->cavaliere di dinosauri</li>
+    <li>place_job->pastore di mufali</li>
+    <li>place_job->cacciatore</li>
+    <li>place_job->fabbricante di cuoio duro</li>
+    <li>place_personalWeapon->bastone di bambù</li>
+    <li>place_personalWeapon->frecce-bomba da caccia</li>
+    <li>place_massWeapon->una mandria in fuga di [megaFauna]</li>
+    <li>place_massWeapon->una bomba di fertilizzante</li>
+    <li>place_foeLeader->re delle zanne</li>
+    <li>place_foeSoldiers->guerrieri delle zanne</li>
+    <li>megaFauna->anchilosauri</li>
+    <li>megaFauna->mammut blu</li>
+    <li>megaFauna->novoraptor</li>
   </Zoutera.placeRules.rulesStrings>
   
 </LanguageData>
