@@ -102,28 +102,6 @@
   <!-- EN: {FACTION_name} has detected {PAWN_labelShort}'s illegal use of: {CULPRIT} (detection chance {CHANCE}).\n\nAccording to the laws of {FACTION_name}, only those who hold the title of {TITLE} are allowed to use {CULPRIT}.\n\nAs a penalty, your faction relations have fallen by {GOODWILL}. -->
   <LetterLawViolationDetectedForbiddenThingUse>{FACTION_name} ha rilevato l'uso illegale di {PAWN_labelShort} di: {CULPRIT} (possibilità di rilevamento {CHANCE}).\n\nSecondo le leggi di {FACTION_name}, solo coloro che detengono il titolo di {TITLE} possono usare {CULPRIT}.\n\nCome penalità, le tue relazioni con la fazione sono diminuite di {GOODWILL}.</LetterLawViolationDetectedForbiddenThingUse>
 
-  <!-- Throne Speech -->
-  <!-- EN: {ORGANIZER_labelShort} has finished {ORGANIZER_possessive} speech. -->
-  <LetterFinishedSpeech>{ORGANIZER_labelShort} ha terminato il suo discorso.</LetterFinishedSpeech>
-  <!-- EN: It was truly atrocious - halting, full of awkward jokes and depressing stories. -->
-  <LetterTerribleSpeech>Era davvero atroce: esitante, pieno di battute imbarazzanti e storie deprimenti.</LetterTerribleSpeech>
-  <!-- EN: It was uninspiring - unoriginal, droning and lacking any sense of passion. -->
-  <LetterUninspiringSpeech>Era poco interessante: non originale, noioso e privo di passione.</LetterUninspiringSpeech>
-  <!-- EN: It was encouraging and well-delivered. -->
-  <LetterEncouragingSpeech>È stato incoraggiante e ben accettato.</LetterEncouragingSpeech>
-  <!-- EN: It was remarkably inspiring, full of intensity and purpose. -->
-  <LetterInspirationalSpeech>È stato straordinariamente stimolante, pieno di intensità e scopo.</LetterInspirationalSpeech>
-  <!-- EN: The following people were particularly moved by the speech and are now inspired: -->
-  <LetterSpeechInspiredListeners>Le seguenti persone sono state particolarmente commosse dal discorso e ora sono ispirate:</LetterSpeechInspiredListeners>
-  <!-- EN: Thanks to {SPEAKER_nameIndef}'s remarkable speech, {PAWN_nameIndef} has experienced an inspiration! -->
-  <LetterSpeechInspiration>Grazie all'eccezionale discorso di {SPEAKER_nameIndef}, {PAWN_nameIndef} ha avuto un'ispirazione!</LetterSpeechInspiration>
-  <!-- EN: Because the speech was interrupted after only {0} completed, it wasn't as effective. -->
-  <LetterSpeechInterrupted>Poiché il discorso è stato interrotto solamente al {0} del completamento, non è stato molto efficace.</LetterSpeechInterrupted>
-  <!-- EN: {0}'s speech was cancelled before reaching 50% completion. It had no effect. -->
-  <LetterSpeechCancelled>Il discorso di {ORGANIZER_bestRoyalTitleDef} è stato annullato prima di raggiungere il 50% di completamento. Non ha avuto effetto.</LetterSpeechCancelled>
-  <!-- EN: Speech cancelled -->
-  <LetterLabelSpeechCancelled>Discorso cancellato</LetterLabelSpeechCancelled>
-
   <!-- Wild decree mental break -->
   <!-- EN: Wild decree -->
   <WildDecree>Decreto selvaggio</WildDecree>
@@ -162,16 +140,16 @@
   <LetterTextBestowingCeremonyExpired>{TARGET_definite} non si è presentato alla cerimonia di conferimento. La cerimonia è stata annullata.</LetterTextBestowingCeremonyExpired>
 
   <!-- EN: {TARGET_definite}'s title changed -->
-  <LetterLabelBestowingCeremonyTitleUpdated>TODO</LetterLabelBestowingCeremonyTitleUpdated>
+  <LetterLabelBestowingCeremonyTitleUpdated></LetterLabelBestowingCeremonyTitleUpdated>
   <!-- EN: {TARGET_definite} has gained new title since the bestowing ceremony was scheduled. In order for bestowing to match the new title, another ceremony will be scheduled soon.\n\nThe new bestowing ceremony will include the psylink rewards for all titles which were not yet awarded. -->
-  <LetterTextBestowingCeremonyTitleUpdated>TODO</LetterTextBestowingCeremonyTitleUpdated>
+  <LetterTextBestowingCeremonyTitleUpdated></LetterTextBestowingCeremonyTitleUpdated>
   
   <!-- EN: {PAWN_labelShort} received {1} honor as a sign of respect from {FACTION_name}, for gathering {3} spectators. -->
-  <LetterPartBestowingExtraHonor>TODO</LetterPartBestowingExtraHonor>
+  <LetterPartBestowingExtraHonor></LetterPartBestowingExtraHonor>
   <!-- EN: {PAWN_labelShort} received no extra honor since there weren't many spectators. -->
-  <LetterPartNoExtraHonor>TODO</LetterPartNoExtraHonor>
+  <LetterPartNoExtraHonor></LetterPartNoExtraHonor>
   <!-- EN: All viewers of the ceremony received a mood bonus. -->
-  <LetterPartMoodBonus>TODO</LetterPartMoodBonus>
+  <LetterPartMoodBonus></LetterPartMoodBonus>
 
   <!-- EN: Who should be credited with {0} for defeating the bandit camp? -->
   <LetterTextHonorAward_BanditCamp>Chi dovrebbe essere accreditato con {0} per aver sconfitto il campo dei banditi?</LetterTextHonorAward_BanditCamp>
@@ -184,8 +162,8 @@
 
   <!-- Wanderer joins -->
   <!-- EN: Transport pod crash: {0_nameDef} -->
-  <LetterLabelWandererJoinsAbasia>TODO</LetterLabelWandererJoinsAbasia>
+  <LetterLabelWandererJoinsAbasia></LetterLabelWandererJoinsAbasia>
   <!-- EN: A {0_title} named {0_nameDef} is crashing in a transport pod nearby.\n\n{0_nameDef} is suffering from {1_label} and will be unable to walk.\n\n{0_pronoun} will recover naturally after many days. There is also a chance of a lucky quick recovery. {1_label} can also be cured by a special operation which requires a large amount of glitterworld medicine.\n\n{0_pronoun} is willing to contribute once {0_pronoun} has recovered, but will not leave voluntarily. If you don't want {0_nameDef}, you can banish {0_objective}, sell {0_objective} into slavery or leave {0_objective} to die. However, your other colonists may find this disturbing. -->
-  <LetterTextWandererJoinsAbasia>TODO</LetterTextWandererJoinsAbasia>
+  <LetterTextWandererJoinsAbasia></LetterTextWandererJoinsAbasia>
 
 </LanguageData>
