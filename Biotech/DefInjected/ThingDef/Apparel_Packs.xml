@@ -1,25 +1,29 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  
+  <!-- EN: bandwidth pack -->
   <Apparel_PackBandwidth.label>pacchetto di larghezza di banda</Apparel_PackBandwidth.label>
+  <!-- EN: A backpack containing bandwidth-expansion computer and antenna. It can increase a mechanitor's maximum total bandwidth. -->
+  <Apparel_PackBandwidth.description>Uno zaino contenente un computer per l'espansione della larghezza di banda e un'antenna. Può aumentare la larghezza di banda totale massima di un meccanista.</Apparel_PackBandwidth.description>
   
-  <Apparel_PackBandwidth.description>Uno zaino contenente un computer per l'espansione della larghezza di banda e un'antenna. Può aumentare la larghezza di banda totale massima di un mechanitor.</Apparel_PackBandwidth.description>
-  
-  
+  <!-- EN: control pack -->
   <Apparel_PackControl.label>pacchetto di controllo</Apparel_PackControl.label>
+  <!-- EN: A backpack containing mech control assist computers. It allows a mechanitor to control one additional control group. -->
+  <Apparel_PackControl.description>Uno zaino contenente computer di assistenza al controllo dei mech. Permette a un meccanista di controllare un gruppo di controllo aggiuntivo.</Apparel_PackControl.description>
   
-  <Apparel_PackControl.description>Uno zaino contenente computer di assistenza al controllo dei mech. Permette a un mechanitor di controllare un gruppo di controllo aggiuntivo.</Apparel_PackControl.description>
-  
-  
+  <!-- EN: tox pack -->
   <Apparel_PackTox.label>pacchetto tossicologico</Apparel_PackTox.label>
-  
+  <!-- EN: A reusable backpack containing canisters of reagents and a mechanism that uses them to generate tox gas. When the wearer activates the pack, it will begin spreading tox gas and continue for several seconds until it runs out of reagents.\n\nOnce used, it must be reloaded with chemfuel before it can be used again.\n\nTox gas burns the lungs and eyes, causing a temporary shortness of breath and reduction in sight. Continued exposure to tox gas results in toxic buildup which can be lethal. -->
   <Apparel_PackTox.description>Uno zaino riutilizzabile contenente contenitori di reagenti e un meccanismo che li utilizza per generare gas tossico. Quando chi lo indossa attiva lo zaino, inizierà a diffondere gas tossico e continuerà per diversi secondi finché non esaurirà i reagenti.\n\nUna volta utilizzato, deve essere ricaricato con combustibile chimico prima di poter essere utilizzato nuovamente.\n\nIl gas tossico brucia i polmoni e gli occhi, causando una temporanea mancanza di respiro e riduzione della vista. L'esposizione continua al gas tossico provoca un accumulo tossico che può essere letale.</Apparel_PackTox.description>
-  
-  <Apparel_PackTox.comps.CompReloadable.chargeNoun>pacchetto tossicologico</Apparel_PackTox.comps.CompReloadable.chargeNoun>
-  
-  <Apparel_PackTox.comps.CompReloadable.cooldownGerund>in fase di raffreddamento</Apparel_PackTox.comps.CompReloadable.cooldownGerund>
-  
+  <!-- EN: tox pack -->
+  <Apparel_PackTox.comps.CompApparelReloadable.chargeNoun>pacchetto tossicologico</Apparel_PackTox.comps.CompApparelReloadable.chargeNoun>
+  <!-- EN: on cooldown -->
+  <Apparel_PackTox.comps.CompApparelReloadable.cooldownGerund>in ricarica</Apparel_PackTox.comps.CompApparelReloadable.cooldownGerund>
+  <!-- EN: deploy tox pack -->
   <Apparel_PackTox.verbs.deploy_tox_pack.label>distribuire il pacchetto tossicologico</Apparel_PackTox.verbs.deploy_tox_pack.label>
+  
+  <!-- UNUSED -->
+  <Apparel_PackTox.comps.CompReloadable.chargeNoun>pacchetto tossicologico</Apparel_PackTox.comps.CompReloadable.chargeNoun>
+  <Apparel_PackTox.comps.CompReloadable.cooldownGerund>in fase di raffreddamento</Apparel_PackTox.comps.CompReloadable.cooldownGerund>
   
 </LanguageData>

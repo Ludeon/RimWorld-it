@@ -1,99 +1,100 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  
+  <!-- EN: bio-starvation -->
   <BioStarvation.label>bio-fame</BioStarvation.label>
-  
+  <!-- EN: This person was in a growth vat which wasn't functioning properly due to lack of power or nutrition feedstock. This has left their body in a state of bio-starvation. -->
   <BioStarvation.description>Questa persona si trovava in una vasca di coltivazione che non funzionava correttamente a causa della mancanza di energia o di materia prima nutritiva. Ciò ha lasciato il loro corpo in uno stato di bio-fame.</BioStarvation.description>
   
-  
+  <!-- EN: deathresting -->
   <Deathrest.label>riposo a morte</Deathrest.label>
-  
+  <!-- EN: A deep coma-like sleep that lasts several days and restores the body's resources. Certain genes create a need for deathrest. Deathrest can also be enhanced with various support buildings that give special bonuses to the deathrester. -->
   <Deathrest.description>Un sonno profondo simile al coma che dura diversi giorni e ripristina le risorse del corpo. Alcuni geni creano il bisogno di riposo mortale. Deathrest può anche essere potenziato con vari edifici di supporto che danno bonus speciali al Deathrester.</Deathrest.description>
   
-  
+  <!-- EN: deathrest exhaustion -->
   <DeathrestExhaustion.label>esaurimento mortale</DeathrestExhaustion.label>
-  
+  <!-- EN: This person desperately needs to deathrest to rebalance their metabolism. -->
   <DeathrestExhaustion.description>Questa persona ha un disperato bisogno di riposo mortale per riequilibrare il proprio metabolismo.</DeathrestExhaustion.description>
   
-  
+  <!-- EN: chemical dependency -->
   <GeneticDrugNeed.label>dipendenza chimica</GeneticDrugNeed.label>
-  
+  <!-- EN: This person has a genetically-induced biochemical dependency on a specific drug. Without regular doses of the drug, their body cannot maintain itself in a healthy state and they will suffer degrading health and mood until they die.\n\nTakes effect after age: 13. -->
   <GeneticDrugNeed.description>Questa persona ha una dipendenza biochimica geneticamente indotta da un farmaco specifico. Senza dosi regolari del farmaco, il loro corpo non può mantenersi in uno stato sano e soffriranno di un peggioramento della salute e dell'umore fino alla morte.\n\nHa effetto dopo l'età: 13 anni.</GeneticDrugNeed.description>
-  
+  <!-- EN: deficiency -->
   <GeneticDrugNeed.stages.deficiency.label>carenza di carenza</GeneticDrugNeed.stages.deficiency.label>
+  <GeneticDrugNeed.stages.deficiency.overrideLabel>coma da carenza</GeneticDrugNeed.stages.deficiency.overrideLabel>
+  <!-- EN: deficiency coma -->
+  <GeneticDrugNeed.stages.3.overrideLabel>coma da carenza</GeneticDrugNeed.stages.3.overrideLabel>
   
-  <GeneticDrugNeed.stages.2.overrideLabel>coma da carenza</GeneticDrugNeed.stages.2.overrideLabel>
-  
-  
+  <!-- EN: hemogen craving -->
   <HemogenCraving.label>desiderio di emogeno</HemogenCraving.label>
-  
+  <!-- EN: Due to a lack of hemogen, this person's body is breaking down hemogen reserves in their bone marrow. This causes disorientation and a painful craving for human blood. -->
   <HemogenCraving.description>A causa della mancanza di emogeno, il corpo di questa persona sta distruggendo le riserve di emogeno nel midollo osseo. Ciò provoca disorientamento e un doloroso desiderio di sangue umano.</HemogenCraving.description>
-  
+  <!-- EN: minor -->
   <HemogenCraving.stages.minor.label>minore</HemogenCraving.stages.minor.label>
-  
+  <!-- EN: moderate -->
   <HemogenCraving.stages.moderate.label>moderare</HemogenCraving.stages.moderate.label>
-  
+  <!-- EN: major -->
   <HemogenCraving.stages.major.label>maggiore</HemogenCraving.stages.major.label>
   
-  
+  <!-- EN: interrupted deathrest -->
   <InterruptedDeathrest.label>riposo mortale interrotto</InterruptedDeathrest.label>
-  
+  <!-- EN: Deathrest was interrupted while this person's metabolism was still out of balance. They will be sick for days while regaining equilibrium. -->
   <InterruptedDeathrest.description>Deathrest è stato interrotto mentre il metabolismo di questa persona era ancora fuori equilibrio. Staranno male per giorni mentre riacquistano l'equilibrio.</InterruptedDeathrest.description>
   
-  
+  <!-- EN: psychic bond -->
   <PsychicBond.label>legame psichico</PsychicBond.label>
-  
+  <!-- EN: This person has a psychic bond with another person based on the psychic bonding gene. The bond itself grants some limited psychic awareness, allowing it to connect even with the psychically deaf. -->
   <PsychicBond.description>Questa persona ha un legame psichico con un'altra persona basato sul gene del legame psichico. Il legame stesso garantisce una consapevolezza psichica limitata, permettendogli di connettersi anche con le persone psichicamente sorde.</PsychicBond.description>
-  
+  <!-- EN: This person's bonded individual is nearby. -->
   <PsychicBond.stages.0.extraTooltip>L'individuo legato a questa persona si trova nelle vicinanze.</PsychicBond.stages.0.extraTooltip>
-  
+  <!-- EN: psychic bond -->
   <PsychicBond.stages.0.overrideLabel>legame psichico</PsychicBond.stages.0.overrideLabel>
-  
+  <!-- EN: This person feels separated from their bonded individual. -->
   <PsychicBond.stages.1.extraTooltip>Questa persona si sente separata dal suo individuo legato.</PsychicBond.stages.1.extraTooltip>
-  
+  <!-- EN: psychic bond distance -->
   <PsychicBond.stages.1.overrideLabel>distanza del legame psichico</PsychicBond.stages.1.overrideLabel>
   
-  
+  <!-- EN: psychic bond torn -->
   <PsychicBondTorn.label>legame psichico lacerato</PsychicBondTorn.label>
-  
+  <!-- EN: This person had a psychic bond with another, but the bond was torn when their partner died. -->
   <PsychicBondTorn.description>Questa persona aveva un legame psichico con un'altra, ma il legame si è spezzato quando il suo partner è morto.</PsychicBondTorn.description>
   
-  
+  <!-- EN: regeneration coma -->
   <RegenerationComa.label>coma rigenerativo</RegenerationComa.label>
-  
+  <!-- EN: Had this person not been genetically deathless, they would have already died from their health conditions. Instead, they have fallen into a regeneration coma, during which they will regenerate their body. -->
   <RegenerationComa.description>Se questa persona non fosse stata geneticamente immortale, sarebbe già morta a causa delle sue condizioni di salute. Invece, sono caduti in un coma rigenerativo, durante il quale rigenereranno il loro corpo.</RegenerationComa.description>
   
-  
+  <!-- EN: Scanning sickness -->
   <ScanningSickness.label>Malattia da scansione</ScanningSickness.label>
-  
+  <!-- EN: This person was scanned by a softscanner to produce a mechanoid subcore. The high-energy scanning device has caused disturbances in their brain chemistry which will take time to resolve themselves. There won't be any long-term damage. -->
   <ScanningSickness.description>Questa persona è stata scansionata da un softscanner per produrre un sottonucleo meccanoide. Il dispositivo di scansione ad alta energia ha causato disturbi nella chimica del cervello che richiederanno tempo per risolversi. Non ci saranno danni a lungo termine.</ScanningSickness.description>
   
-  
+  <!-- EN: vat growing -->
   <VatGrowing.label>coltivazione in tino</VatGrowing.label>
-  
+  <!-- EN: The growth vat is stimulating this person's body to increase the rate of cell division and aging. -->
   <VatGrowing.description>La vasca di crescita stimola il corpo di questa persona ad aumentare il tasso di divisione cellulare e di invecchiamento.</VatGrowing.description>
   
-  
+  <!-- EN: vat learning -->
   <VatLearning.label>apprendimento dell'iva</VatLearning.label>
-  
+  <!-- EN: The growth vat is electrically stimulating this person's brain to induce skill development. This process is not very effective, and will only partially replace the skills missed from not growing in the outside world. -->
   <VatLearning.description>La vasca di crescita stimola elettricamente il cervello di questa persona per indurre lo sviluppo delle abilità. Questo processo non è molto efficace e sostituirà solo parzialmente le competenze perse a causa della mancata crescita nel mondo esterno.</VatLearning.description>
   
-  
+  <!-- EN: xenogermination coma -->
   <XenogerminationComa.label>Coma di xenogerminazione</XenogerminationComa.label>
-  
+  <!-- EN: A xenogerm was implanted in this person. The xenogerm needs time to integrate itself into the host and modify the genes and chemistry of various tissues throughout the body. During this time, the person cannot safely wake up, so the xenogerm keeps them in a coma.\n\nThe duration of this coma can be reduced by implanting a xenogerm with better medical facilities and more skilled doctors. -->
   <XenogerminationComa.description>In questa persona è stato impiantato uno xenogerma. Lo xenogerme ha bisogno di tempo per integrarsi nell'ospite e modificare i geni e la chimica dei vari tessuti del corpo. Durante questo periodo, la persona non può svegliarsi in sicurezza, quindi lo xenogerme la mantiene in coma.\n\nLa durata di questo coma può essere ridotta impiantando uno xenogerme in strutture mediche migliori e medici più qualificati.</XenogerminationComa.description>
   
-  
+  <!-- EN: gene loss shock -->
   <XenogermLossShock.label>shock da perdita genetica</XenogermLossShock.label>
-  
+  <!-- EN: This person's genes were recently removed or expelled. This has destabilized the person's metabolism and hormones, leaving them temporarily weak and drowsy, with a weakened immune system. -->
   <XenogermLossShock.description>I geni di questa persona sono stati recentemente rimossi o espulsi. Ciò ha destabilizzato il metabolismo e gli ormoni della persona, lasciandola temporaneamente debole e sonnolenta, con un sistema immunitario indebolito.</XenogermLossShock.description>
   
-  
+  <!-- EN: genes regrowing -->
   <XenogermReplicating.label>geni in ricrescita</XenogermReplicating.label>
-  
+  <!-- EN: This person's genetic material is regrowing. This process doesn't have any direct health effects. However, extracting their genes while they are regrowing will kill them. -->
   <XenogermReplicating.description>Il materiale genetico di questa persona sta ricrescendo. Questo processo non ha effetti diretti sulla salute. Tuttavia, estrarre i loro geni mentre stanno ricrescendo li ucciderà.</XenogermReplicating.description>
-  
+  <!-- EN: {PAWN_nameDef}'s genes have finished regrowing. -->
   <XenogermReplicating.comps.HediffComp_Disappears.messageOnDisappear>I geni di {PAWN_nameDef} hanno finito di ricrescere.</XenogermReplicating.comps.HediffComp_Disappears.messageOnDisappear>
   
 </LanguageData>

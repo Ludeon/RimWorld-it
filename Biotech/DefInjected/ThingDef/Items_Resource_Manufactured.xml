@@ -1,72 +1,114 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  
+  <!-- EN: tox shell -->
   <Bullet_Shell_Tox.label>guscio tossico</Bullet_Shell_Tox.label>
   
-  
+  <!-- EN: deathrest capacity serum -->
   <DeathrestCapacitySerum.label>siero della capacità di riposo mortale</DeathrestCapacitySerum.label>
-  
+  <!-- EN: A serum that permanently increases the number of deathrest buildings a person can connect to during deathrest.\n\nThe serum can only be ingested by individuals with the deathrest gene. -->
   <DeathrestCapacitySerum.description>Un siero che aumenta permanentemente il numero di edifici Deathrest a cui una persona può connettersi durante Deathrest.\n\nIl siero può essere ingerito solo da individui con il gene Deathrest.</DeathrestCapacitySerum.description>
-  
+  <!-- EN: Ingest {0_label} -->
   <DeathrestCapacitySerum.comps.CompUsable.useLabel>Importa {0_label}</DeathrestCapacitySerum.comps.CompUsable.useLabel>
   
-  
+  <!-- EN: nano structuring chip -->
   <NanostructuringChip.label>chip di nanostrutturazione</NanostructuringChip.label>
+  <!-- EN: A molecular-restructing mechanoid micro-organ. It is necessary to produce certain advanced mechanoids and equipment.\n\nA mechanitor can study this chip to help unlock higher tiers of mechtech research. -->
+  <NanostructuringChip.description>Un microrganismo meccanoide che esegue la ricostruzione molecolare. È necessario produrre alcuni meccanoidi e attrezzature avanzati.\n\nUn meccanista può studiare questo chip per sbloccare livelli più alti di ricerca mechtech.</NanostructuringChip.description>
+  <!-- EN: Analyze the nano structuring chip. -->
+  <NanostructuringChip.comps.CompAnalyzableUnlockResearch.activateDescString>Analizza il chip di nanostrutturazione.</NanostructuringChip.comps.CompAnalyzableUnlockResearch.activateDescString>
+  <!-- EN: Analyze... -->
+  <NanostructuringChip.comps.CompAnalyzableUnlockResearch.activateLabelString>Analizza...</NanostructuringChip.comps.CompAnalyzableUnlockResearch.activateLabelString>
+  <!-- EN: By studying the nano structuring chip, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology. -->
+  <NanostructuringChip.comps.CompAnalyzableUnlockResearch.completedLetter>Studiando il chip di nanostrutturazione, {PAWN_labelShort} ha acquisito le conoscenze necessarie per il progetto di ricerca {RESEARCH}.\n\nI tuoi ricercatori possono ora utilizzare i banchi di ricerca per iniziare a studiare come usare effettivamente la tecnologia.</NanostructuringChip.comps.CompAnalyzableUnlockResearch.completedLetter>
+  <!-- EN: Nano structuring chip studied: {RESEARCH} unlocked -->
+  <NanostructuringChip.comps.CompAnalyzableUnlockResearch.completedLetterLabel>Chip di nanostrutturazione studiato: {RESEARCH} sbloccato</NanostructuringChip.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+  <!-- EN: Choose who should analyze this -->
+  <NanostructuringChip.comps.CompAnalyzableUnlockResearch.guiLabelString>Scegli chi deve analizzarlo</NanostructuringChip.comps.CompAnalyzableUnlockResearch.guiLabelString>
+  <!-- EN: Can be analyzed by a colonist. -->
+  <NanostructuringChip.comps.CompAnalyzableUnlockResearch.inspectString>Può essere analizzato da un colono.</NanostructuringChip.comps.CompAnalyzableUnlockResearch.inspectString>
+  <!-- EN: Analyze nano structuring chip -->
+  <NanostructuringChip.comps.CompAnalyzableUnlockResearch.jobString>Analizza chip di nanostrutturazione</NanostructuringChip.comps.CompAnalyzableUnlockResearch.jobString>
   
-  <NanostructuringChip.description>Un microrganismo meccanoide che esegue la ricostruzione molecolare. È necessario produrre alcuni meccanoidi e attrezzature avanzati.\n\nUn mechanitor può studiare questo chip per sbloccare livelli più alti di ricerca mechtech.</NanostructuringChip.description>
-  
+  <!-- UNUSED -->
   <NanostructuringChip.comps.CompStudiable.completedLetterText>Studiando {PARENT_label}, {STUDIER_labelShort} hai acquisito le informazioni necessarie per i progetti di ricerca {RESEARCH}.\n\nI tuoi ricercatori possono ora utilizzare i banchi di ricerca per iniziare a ricercare come utilizzare effettivamente la tecnologia.</NanostructuringChip.comps.CompStudiable.completedLetterText>
-  
   <NanostructuringChip.comps.CompStudiable.completedLetterTitle>{PARENT_label} ha studiato: {RESEARCH} sbloccato</NanostructuringChip.comps.CompStudiable.completedLetterTitle>
   
-  
+  <!-- EN: powerfocus chip -->
   <PowerfocusChip.label>chip powerfocus</PowerfocusChip.label>
+  <!-- EN: An energy-focusing mechanoid micro-organ. It is necessary to produce certain advanced types of mechanoids and equipment.\n\nA mechanitor can study this chip to help unlock higher tiers of mechtech research. -->
+  <PowerfocusChip.description>Un microrganismo meccanoide che focalizza l'energia. È necessario produrre alcuni tipi avanzati di meccanoidi e attrezzature.\n\nUn meccanista può studiare questo chip per sbloccare livelli più alti di ricerca mechtech.</PowerfocusChip.description>
+  <!-- EN: Analyze the powerfocus chip. -->
+  <PowerfocusChip.comps.CompAnalyzableUnlockResearch.activateDescString>Analizza il chip di concentrazione energetica.</PowerfocusChip.comps.CompAnalyzableUnlockResearch.activateDescString>
+  <!-- EN: Analyze... -->
+  <PowerfocusChip.comps.CompAnalyzableUnlockResearch.activateLabelString>Analizza...</PowerfocusChip.comps.CompAnalyzableUnlockResearch.activateLabelString>
+  <!-- EN: By studying the powerfocus chip, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology. -->
+  <PowerfocusChip.comps.CompAnalyzableUnlockResearch.completedLetter>Studiando il chip di concentrazione energetica, {PAWN_labelShort} ha acquisito le conoscenze necessarie per il progetto di ricerca {RESEARCH}.\n\nI tuoi ricercatori possono ora utilizzare i banchi di ricerca per iniziare a studiare come usare effettivamente la tecnologia.</PowerfocusChip.comps.CompAnalyzableUnlockResearch.completedLetter>
+  <!-- EN: Powerfocus chip studied: {RESEARCH} unlocked -->
+  <PowerfocusChip.comps.CompAnalyzableUnlockResearch.completedLetterLabel>Chip di concentrazione energetica studiato: {RESEARCH} sbloccato</PowerfocusChip.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+  <!-- EN: Choose who should analyze this -->
+  <PowerfocusChip.comps.CompAnalyzableUnlockResearch.guiLabelString>Scegli chi deve analizzarlo</PowerfocusChip.comps.CompAnalyzableUnlockResearch.guiLabelString>
+  <!-- EN: Can be analyzed by a colonist. -->
+  <PowerfocusChip.comps.CompAnalyzableUnlockResearch.inspectString>Può essere analizzato da un colono.</PowerfocusChip.comps.CompAnalyzableUnlockResearch.inspectString>
+  <!-- EN: Analyze powerfocus chip -->
+  <PowerfocusChip.comps.CompAnalyzableUnlockResearch.jobString>Analizza chip di concentrazione energetica</PowerfocusChip.comps.CompAnalyzableUnlockResearch.jobString>
   
-  <PowerfocusChip.description>Un microrganismo meccanoide che focalizza l'energia. È necessario produrre alcuni tipi avanzati di meccanoidi e attrezzature.\n\nUn mechanitor può studiare questo chip per sbloccare livelli più alti di ricerca mechtech.</PowerfocusChip.description>
-  
+  <!-- UNUSED -->
   <PowerfocusChip.comps.CompStudiable.completedLetterText>Studiando {PARENT_label}, {STUDIER_labelShort} hai acquisito le informazioni necessarie per i progetti di ricerca {RESEARCH}.\n\nI tuoi ricercatori possono ora utilizzare i banchi di ricerca per iniziare a ricercare come utilizzare effettivamente la tecnologia.</PowerfocusChip.comps.CompStudiable.completedLetterText>
-  
   <PowerfocusChip.comps.CompStudiable.completedLetterTitle>{PARENT_label} ha studiato: {RESEARCH} sbloccato</PowerfocusChip.comps.CompStudiable.completedLetterTitle>
   
-  
+  <!-- EN: tox shell -->
   <Shell_Toxic.label>guscio tossico</Shell_Toxic.label>
-  
+  <!-- EN: An artillery shell containing reagents that, when combined, generate deadly tox gas. When fired, it will stick into the ground and release tox gas for some time before expiring.\n\nTox gas burns the lungs and eyes, causing a temporary shortness of breath and reduction in sight. Continued exposure to tox gas results in toxic buildup that can be lethal. -->
   <Shell_Toxic.description>Un proiettile di artiglieria contenente reagenti che, se combinati, generano gas tossici mortali. Quando viene sparato, si conficca nel terreno e rilascia gas tossico per un po' di tempo prima di esaurirsi.\n\nIl gas tossico brucia i polmoni e gli occhi, causando una temporanea mancanza di respiro e riduzione della vista. L'esposizione continua al gas tossico provoca un accumulo tossico che può essere letale.</Shell_Toxic.description>
   
-  
+  <!-- EN: tox shell -->
   <Shell_Toxic_Releasing.label>guscio tossico</Shell_Toxic_Releasing.label>
   
-  
+  <!-- EN: tox shell -->
   <Shell_Toxic_Releasing_Water.label>guscio tossico</Shell_Toxic_Releasing_Water.label>
   
-  
+  <!-- EN: signal chip -->
   <SignalChip.label>chip di segnale</SignalChip.label>
+  <!-- EN: A mechanoid-band synchronization micro-organ. It is necessary to produce certain advanced types of mechanoids and equipment.\n\nA mechanitor can study this chip to help unlock higher tiers of mechtech research. -->
+  <SignalChip.description>Un microrganismo di sincronizzazione a banda meccanoide. È necessario produrre alcuni tipi avanzati di meccanoidi e attrezzature.\n\nUn meccanista può studiare questo chip per sbloccare livelli più alti di ricerca mechtech.</SignalChip.description>
+  <!-- EN: Analyze the signal chip. -->
+  <SignalChip.comps.CompAnalyzableUnlockResearch.activateDescString>Analizza il chip di segnale.</SignalChip.comps.CompAnalyzableUnlockResearch.activateDescString>
+  <!-- EN: Analyze... -->
+  <SignalChip.comps.CompAnalyzableUnlockResearch.activateLabelString>Analizza...</SignalChip.comps.CompAnalyzableUnlockResearch.activateLabelString>
+  <!-- EN: By studying the signal chip, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology. -->
+  <SignalChip.comps.CompAnalyzableUnlockResearch.completedLetter>Studiando il chip di segnale, {PAWN_labelShort} ha acquisito le conoscenze necessarie per il progetto di ricerca {RESEARCH}.\n\nI tuoi ricercatori possono ora utilizzare i banchi di ricerca per iniziare a studiare come usare effettivamente la tecnologia.</SignalChip.comps.CompAnalyzableUnlockResearch.completedLetter>
+  <!-- EN: Signal chip studied: {RESEARCH} unlocked -->
+  <SignalChip.comps.CompAnalyzableUnlockResearch.completedLetterLabel>Chip di segnale studiato: {RESEARCH} sbloccato</SignalChip.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+  <!-- EN: Choose who should analyze this -->
+  <SignalChip.comps.CompAnalyzableUnlockResearch.guiLabelString>Scegli chi deve analizzarlo</SignalChip.comps.CompAnalyzableUnlockResearch.guiLabelString>
+  <!-- EN: Can be analyzed by a colonist. -->
+  <SignalChip.comps.CompAnalyzableUnlockResearch.inspectString>Può essere analizzato da un colono.</SignalChip.comps.CompAnalyzableUnlockResearch.inspectString>
+  <!-- EN: Analyze signal chip -->
+  <SignalChip.comps.CompAnalyzableUnlockResearch.jobString>Analizza chip di segnale</SignalChip.comps.CompAnalyzableUnlockResearch.jobString>
   
-  <SignalChip.description>Un microrganismo di sincronizzazione a banda meccanoide. È necessario produrre alcuni tipi avanzati di meccanoidi e attrezzature.\n\nUn mechanitor può studiare questo chip per sbloccare livelli più alti di ricerca mechtech.</SignalChip.description>
-  
+  <!-- UNUSED -->
   <SignalChip.comps.CompStudiable.completedLetterText>Studiando {PARENT_label}, {STUDIER_labelShort} hai acquisito le informazioni necessarie per i progetti di ricerca {RESEARCH}.\n\nI tuoi ricercatori possono ora utilizzare i banchi di ricerca per iniziare a ricercare come utilizzare effettivamente la tecnologia.</SignalChip.comps.CompStudiable.completedLetterText>
-  
   <SignalChip.comps.CompStudiable.completedLetterTitle>{PARENT_label} ha studiato: {RESEARCH} sbloccato</SignalChip.comps.CompStudiable.completedLetterTitle>
   
-  
+  <!-- EN: basic subcore -->
   <SubcoreBasic.label>sottonucleo di base</SubcoreBasic.label>
-  
+  <!-- EN: The simplest possible mechanoid brain, this is a tiny psychodynamic substrate unit housing a dull subpersona. Since this is only a basic-tier subcore, it can only drive the simplest of mechanoids.\n\nLike all mechanoid subcores, it contains a subpersona with a psychic presence, albeit a very faint one. -->
   <SubcoreBasic.description>Il cervello meccanoide più semplice possibile, questa è una minuscola unità di substrato psicodinamico che ospita un subpersona ottuso. Poiché questo è solo un sottonucleo di livello base, può guidare solo i meccanoidi più semplici.\n\nCome tutti i sottonuclei meccanoidi, contiene un sottopersona con una presenza psichica, anche se molto debole.</SubcoreBasic.description>
   
-  
+  <!-- EN: high subcore -->
   <SubcoreHigh.label>sottonucleo alto</SubcoreHigh.label>
-  
+  <!-- EN: A high-tier mechanoid brain, this is a psychodynamic substrate unit which supports a sophisticated subpersona. This particular subcore is of the strongest tier, and can power complex ultra-heavy mechanoids.\n\nThe subpersona inside this core approaches a live human in its complexity, though it is of a very different nature. Like any such mind, it has a noticeable psychic presence.\n\nThis subcore could only have been produced by rich pattern transfer from another sophisticated mind. The only way to do this without huge facilities is to ripscan a living person's brain, killing them in the process. -->
   <SubcoreHigh.description>Un cervello meccanoide di alto livello, questa è un'unità substrato psicodinamico che supporta un sofisticato subpersona. Questo particolare sottonucleo è del livello più forte e può alimentare complessi meccanoidi ultrapesanti.\n\nIl subpersona all'interno di questo nucleo si avvicina a un essere umano vivo nella sua complessità, sebbene sia di natura molto diversa. Come ogni mente di questo tipo, ha una notevole presenza psichica.\n\nQuesto sottonucleo potrebbe essere stato prodotto solo tramite un ricco trasferimento di schemi da un'altra mente sofisticata. L'unico modo per farlo senza enormi strutture è eseguire la scansione del cervello di una persona vivente, uccidendola nel processo.</SubcoreHigh.description>
   
-  
+  <!-- EN: standard subcore -->
   <SubcoreRegular.label>sottonucleo standard</SubcoreRegular.label>
-  
+  <!-- EN: A standard-tier mechanoid brain, this is a psychodynamic substrate unit supporting a thinking subpersona. This particular subcore is strong enough to drive standard-tier mechanoids.\n\nMechanoids are more than robots, and this is more than a silicon computer. Its thinking, psychically-present subpersona makes it more adaptable than silicon systems. However, this also means it can only be produced by analog pattern transfer from another thinking mind. -->
   <SubcoreRegular.description>Un cervello meccanoide di livello standard, questa è un'unità substrato psicodinamico che supporta il pensiero subpersonale. Questo particolare sottonucleo è abbastanza forte da guidare meccanoidi di livello standard.\n\nI meccanoidi sono più che robot, e questo è più di un computer al silicio. La sua subpersona pensante e psichicamente presente lo rende più adattabile dei sistemi di silicio. Tuttavia, ciò significa anche che può essere prodotto solo mediante trasferimento di modelli analogici da un’altra mente pensante.</SubcoreRegular.description>
   
-  
+  <!-- EN: toxic wastepack -->
   <Wastepack.label>pacco di rifiuti tossici</Wastepack.label>
-  
+  <!-- EN: A compacted package of toxic waste that will slowly dissolve if not frozen. The surface is heat-sealed for safe transport. Wastepacks will pollute the surrounding terrain if they dissolve, deteriorate, or are otherwise destroyed.\n\nToxic wastepacks are flammable. If burned or damaged, they will release tox gas. -->
   <Wastepack.description>Un pacchetto compatto di rifiuti tossici che si dissolverà lentamente se non congelato. La superficie è termosaldata per un trasporto sicuro. I pacchi di rifiuti inquineranno il terreno circostante se si dissolvono, si deteriorano o vengono distrutti in altro modo.\n\nI pacchi di rifiuti tossici sono infiammabili. Se bruciati o danneggiati, rilasceranno gas tossico.</Wastepack.description>
   
 </LanguageData>
