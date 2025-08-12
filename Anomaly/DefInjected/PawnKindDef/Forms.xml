@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: blind healer -->
+  <Blindhealer.label>guaritore cieco</Blindhealer.label>
+  <!-- EN: A blind healer is approaching the colony. -->
+  <Blindhealer.letterLabel>Un{PAWN_gender? guaritore :’a guaritrice : guaritore/trice} cieco si avvicina alla colonia.</Blindhealer.letterLabel>
+  <!-- EN: A small, withered {PAWN_genderNoun} stands in front of you. Where {PAWN_possessive} eyes should be, there are only scar-crusted holes in {PAWN_possessive} flesh. Yet, even without eyes, {PAWN_pronoun} somehow looks at you with kindness. {PAWN_pronoun} says that {PAWN_pronoun} knows that {PAWN_possessive} skills are needed here and wants to stay for a while. -->
+  <Blindhealer.letterPrompt>Davanti a voi si erge un{PAWN_gender ? piccolo :’a piccola : piccolo/a} {PAWN_genderNoun} rinsecchito. Al posto degli occhi, solo due cavità coperte di cicatrici. Eppure, anche senza vedere, {PAWN_pronoun} vi guarda con gentilezza. Dice di sapere che le sue abilità servono qui e desidera restare per un po'.</Blindhealer.letterPrompt>
+
+  <!-- EN: drifter -->
+  <CreepDrifter.label>vagabondo</CreepDrifter.label>
+  <!-- EN: A visitor is approaching the colony. -->
+  <CreepDrifter.letterLabel>Un visitatore si avvicina alla colonia.</CreepDrifter.letterLabel>
+  <!-- EN: The weary-looking drifter stretches {PAWN_possessive} legs. {PAWN_pronoun} seems very tired.\n\n{PAWN_pronoun} asks to stay in your colony for a while - at least until {PAWN_pronoun} has recovered {PAWN_possessive} strength. -->
+  <CreepDrifter.letterPrompt>Il{PAWN_gender ? vagabondo :’a vagabonda : vagabondo/a} dall’aria stanca si stiracchia.\n\n{PAWN_pronoun} chiede di poter restare nella vostra colonia per un po', almeno finché non avrà recuperato le forze.</CreepDrifter.letterPrompt>
+
+  <!-- EN: cult escapee -->
+  <CultEscapee.label>fuggitivo del culto</CultEscapee.label>
+  <!-- EN: A mangled figure is approaching the colony. -->
+  <CultEscapee.letterLabel>Una figura mutilata si avvicina alla colonia.</CultEscapee.letterLabel>
+  <!-- EN: The mangled stranger stares at you with empty eyes and speaks in a broken voice. {PAWN_pronoun} claims to have escaped from a terrible cult and begs to join your colony. -->
+  <CultEscapee.letterPrompt>Lo sguardo vuoto vi fissa. Con voce rotta, {PAWN_pronoun} afferma di essere fuggito da un culto terribile e vi supplica di unirsi alla vostra colonia.</CultEscapee.letterPrompt>
+
+  <!-- EN: dark scholar -->
+  <DarkScholar.label>studioso oscuro</DarkScholar.label>
+  <!-- EN: A dark scholar covered with twisted scars is approaching the colony. -->
+  <DarkScholar.letterLabel>Uno studioso oscuro{PAWN_gender ? coperto : coperta : coperto/a} di cicatrici contorte si avvicina alla colonia.</DarkScholar.letterLabel>
+  <!-- EN: The dark scholar slouches in place, lifeless and silent. Only {PAWN_possessive} eyes seem alive, as if {PAWN_pronoun} could look inside you.\n\n{PAWN_pronoun} says that this is where {PAWN_pronoun} belongs and asks to stay for a while. {PAWN_possessive} tone indicates that {PAWN_pronoun} will not take 'no' for an answer. -->
+  <DarkScholar.letterPrompt>Lo studioso oscuro resta immobile e silenzioso come una statua. Solo i suoi occhi sembrano vivi, come se potessero leggervi dentro.\n\n{PAWN_pronoun} dice che questo è il suo posto e chiede di restare per un po'. Il tono non lascia spazio a un rifiuto.</DarkScholar.letterPrompt>
+
+  <!-- EN: deal maker -->
+  <DealMaker.label>negoziatore</DealMaker.label>
+  <!-- EN: A stunningly good-looking stranger is approaching the colony. -->
+  <DealMaker.letterLabel>Un{PAWN_gender ? affascinante straniero :’affascinante straniera : affascinante straniero/a} si avvicina alla colonia.</DealMaker.letterLabel>
+  <!-- EN: A stunningly good-looking stranger stands in front of you. {PAWN_possessive} face beams with confidence as {PAWN_pronoun} opens {PAWN_possessive} hands in a gesture of fellowship.\n\n{PAWN_pronoun} says {PAWN_pronoun} is here to make a deal and will help you in exchange for simple hospitality. This is {PAWN_possessive} purpose and {PAWN_pronoun} always fulfills {PAWN_possessive} purpose. -->
+  <DealMaker.letterPrompt>Davanti a voi si presenta un individuo affascinante, il volto colmo di sicurezza mentre apre le mani in segno di pace.\n\n{PAWN_pronoun} dice di essere qui per concludere un affare: vi aiuterà in cambio della vostra ospitalità. Questa è la sua missione, e {PAWN_pronoun} la compie sempre.</DealMaker.letterPrompt>
+
+  <!-- EN: leathery stranger -->
+  <LeatheryStranger.label>sconosciuto dalla pelle coriacea</LeatheryStranger.label>
+  <!-- EN: A ragged stranger with leathery skin is approaching your colony. -->
+  <LeatheryStranger.letterLabel>Un{PAWN_gender ? sconosciuto :’sconosciuta : sconosciuto/a} in abiti logori e dalla pelle coriacea si avvicina alla colonia.</LeatheryStranger.letterLabel>
+  <!-- EN: The leathery stranger stares into space and speaks in a monotone, as though {PAWN_pronoun} hardly sees anyone or anything. {PAWN_pronoun} refuses to leave, insisting {PAWN_pronoun} is only interested in your colony. {PAWN_pronoun} says that {PAWN_pronoun} can help. -->
+  <LeatheryStranger.letterPrompt>Con lo sguardo perso nel vuoto, l'{PAWN_gender ? sconosciuto : sconosciuta : sconosciuto/a} parla con voce monotona, come se non vedesse nulla attorno. Rifiuta di andarsene, insiste che solo la vostra colonia gli/le interessa. Dice di potervi aiutare.</LeatheryStranger.letterPrompt>
+
+  <!-- EN: lone genius -->
+  <LoneGenius.label>genio solitario</LoneGenius.label>
+  <!-- EN: A lone figure is approaching the colony. -->
+  <LoneGenius.letterLabel>Una figura solitaria si avvicina alla colonia.</LoneGenius.letterLabel>
+  <!-- EN: The strange figure keeps muttering about some scientific breakthrough. All {PAWN_pronoun} needs is a laboratory. If you let {PAWN_objective} stay, {PAWN_pronoun} will share {PAWN_possessive} vast knowledge with you. It's hard to tell whether {PAWN_pronoun}'s insane or a genius - or both. -->
+  <LoneGenius.letterPrompt>La strana figura continua a borbottare di una svolta scientifica. Tutto ciò che le serve è un laboratorio. Se le permettete di restare, condividerà con voi il suo immenso sapere. È difficile dire se sia pazza, geniale... o entrambe le cose.</LoneGenius.letterPrompt>
+
+  <!-- EN: timeless one -->
+  <TimelessOne.label>eterno</TimelessOne.label>
+  <!-- EN: A teenager is approaching the colony. {PAWN_pronoun} has a strange air of confidence around {PAWN_objective}. -->
+  <TimelessOne.letterLabel>Un{PAWN_gender ? adolescente :’adolescente : adolescente} si avvicina alla colonia, con un'aria di sorprendente sicurezza.</TimelessOne.letterLabel>
+  <!-- EN: {PAWN_nameDef} is barely more than a child but in {PAWN_possessive} thoughtful eyes you sense an ancient wisdom. When {PAWN_pronoun} speaks, the words seem to come from an unnatural knowledge of endless time. {PAWN_pronoun} says that the stars brought {PAWN_objective} here to fulfill {PAWN_possessive} destiny. {PAWN_pronoun} wants to stay with you and help. -->
+  <TimelessOne.letterPrompt>{PAWN_nameDef} è poco più che un bambino, ma nei suoi occhi pensierosi si legge una saggezza antica. Quando parla, le sue parole sembrano provenire da una conoscenza innaturale di tempi infiniti. Dice che le stelle lo hanno condotto fin qui per compiere il suo destino. Vuole restare con voi e aiutarvi.</TimelessOne.letterPrompt>
+  
+</LanguageData>

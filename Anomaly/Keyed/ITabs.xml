@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- ITab_Entity -->
+  <!-- EN: Escape interval -->
+  <HoldingPlatformEscapeMTBDays>Intervallo di fuga</HoldingPlatformEscapeMTBDays>
+  <!-- EN: The average time between escapes. This is affected by containment strength, the type of entity, the entity's movement capability, and the duration of the entity's imprisonment. Some entities are also suppressed by cold. -->
+  <HoldingPlatformEscapeMTBDaysDesc>Tempo medio tra un'evasione e l'altra. Dipende dalla forza del contenimento, dal tipo di entità, dalla sua capacità di movimento e dalla durata della prigionia. Alcune entità sono anche inibite dal freddo.</HoldingPlatformEscapeMTBDaysDesc>
+  <!-- EN: Entity -->
+  <TabEntity>Entità</TabEntity>
+  <!-- EN: Study interval -->
+  <StudyInterval>Intervallo di studio</StudyInterval>
+  <!-- EN: How often this entity can be studied. -->
+  <StudyIntervalDesc>Frequenza con cui questa entità può essere studiata.</StudyIntervalDesc>
+  <!-- EN: Maintain only -->
+  <EntityStudyMode_MaintainOnly>Solo sorveglianza</EntityStudyMode_MaintainOnly>
+  <!-- EN: Wardens will not perform special actions on this entity, but other interactions are still available. -->
+  <EntityStudyMode_MaintainOnlyDesc>I guardiani non eseguiranno azioni speciali sull'entità, ma altre interazioni restano disponibili.</EntityStudyMode_MaintainOnlyDesc>
+  <!-- EN: Study -->
+  <EntityStudyMode_Study>Studio</EntityStudyMode_Study>
+  <!-- EN: Researchers will study the entity. -->
+  <EntityStudyMode_StudyDesc>I ricercatori studieranno l'entità.</EntityStudyMode_StudyDesc>
+  <!-- EN: Release -->
+  <EntityStudyMode_Release>Rilascia</EntityStudyMode_Release>
+  <!-- EN: A warden will release the entity from the holding platform. Entities may be hostile when released. -->
+  <EntityStudyMode_ReleaseDesc>Un guardiano rilascerà l'entità dalla piattaforma di contenimento. Le entità rilasciate potrebbero essere ostili.</EntityStudyMode_ReleaseDesc>
+  <!-- EN: Execute -->
+  <EntityStudyMode_Execute>Elimina</EntityStudyMode_Execute>
+  <!-- EN: A warden will execute the restrained entity. -->
+  <EntityStudyMode_ExecuteDesc>Un guardiano eseguirà l'eliminazione dell'entità contenuta.</EntityStudyMode_ExecuteDesc>
+  <!-- EN: Extract bioferrite -->
+  <EntityStudyMode_Extract>Estrai bioferrite</EntityStudyMode_Extract>
+  <!-- EN: Doctors will extract bioferrite from the captured entity whenever possible. This extraction method is simple, but inefficient. Can't be done if the entity is attached to a bioferrite harvester. -->
+  <EntityStudyMode_ExtractDesc>I medici estrarranno bioferrite dall'entità catturata quando possibile. Il metodo è semplice ma inefficiente. Non può essere effettuato se l'entità è collegata a un estrattore di bioferrite.</EntityStudyMode_ExtractDesc>
+  <!-- EN: Requires bioferrite extraction. -->
+  <RequiresBioferriteExtraction>Richiede l'estrazione di bioferrite.</RequiresBioferriteExtraction>
+  <!-- EN: Blocked by bioferrite harvester. -->
+  <BioferriteHarvesterAttached>Bloccato da un estrattore di bioferrite.</BioferriteHarvesterAttached>
+  <!-- EN: Can't be executed. -->
+  <CantBeExecuted>Impossibile eseguire.</CantBeExecuted>
+  <!-- EN: Knowledge gain -->
+  <StudyKnowledgeGain>Guadagno conoscenze</StudyKnowledgeGain>
+  <!-- EN: Amount of knowledge gained per study interval. Better containment helps the researcher focus on study instead of safety, yielding more knowledge. -->
+  <StudyKnowledgeGainDesc>Quantità di conoscenza acquisita per ogni intervallo di studio. Un contenimento migliore permette al ricercatore di concentrarsi sull'analisi anziché sulla sicurezza, fornendo più conoscenze.</StudyKnowledgeGainDesc>
+  <!-- EN: What type of medicine can be given to this entity. -->
+  <MedicineQualityDescriptionEntity>Tipo di medicinale somministrabile a questa entità.</MedicineQualityDescriptionEntity>
+
+  <!-- EN: Electroharvester -->
+  <FactorForElectroharvester>Elettro-raccoglitore</FactorForElectroharvester>
+  <!-- EN: Long captivity -->
+  <FactorForDaysInCaptivity>Prigionia prolungata</FactorForDaysInCaptivity>
+  <!-- EN: Cold containment bonus -->
+  <FactorForColdCaptivity>Bonus contenimento freddo</FactorForColdCaptivity>
+  <!-- EN: Incapable of escaping -->
+  <IncapableOfEscaping>Fuga impossibile</IncapableOfEscaping>
+  <!-- EN: Entity downed -->
+  <EntityDowned>Entità abbattuta</EntityDowned>
+  <!-- EN: Containment strength -->
+  <FactorContainmentStrength>Forza di contenimento</FactorContainmentStrength>
+  <!-- EN: Electroharvester -->
+  <FactorElectroharvester>Elettro-raccoglitore</FactorElectroharvester>
+  <!-- EN: Activity -->
+  <FactorActivity>Attività</FactorActivity>
+
+</LanguageData>

@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: creepy words -->
+  <CreepyWords.label>parole inquietanti</CreepyWords.label>
+  <!-- EN:
+    <li>r_logentry->[INITIATOR_nameDef] [rambled] about [subjectInsane].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [rambled] [darkSpeechAdverb] about [subjectInsane].</li>
+  -->
+  <CreepyWords.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] [rambled] riguardo a [subjectInsane].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [rambled] [darkSpeechAdverb] a proposito di [subjectInsane].</li>
+  </CreepyWords.logRulesInitiator.rulesStrings>
+  
+  <!-- EN: strange chat -->
+  <DisturbingChat.label>conversazione inquietante</DisturbingChat.label>
+  <!-- EN:
+    <li>r_logentry->[INITIATOR_nameDef] [disturbed] [RECIPIENT_nameDef] by [talkingAbout] [subjectDisturbing].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [spoke] [darkSpeechAdverb] to [RECIPIENT_nameDef] about [subjectDisturbing].</li>
+    <li>spoke->spoke</li>
+    <li>spoke->muttered</li>
+    <li>spoke->stammered</li>
+    <li>spoke->whined</li>
+    <li>spoke->grunted</li>
+    <li>spoke->mumbled</li>
+    <li>spoke(p=5)->[rambled]</li>
+    <li>subjectDisturbing->[subjectDarkStudy]</li>
+    <li>subjectDisturbing->[subjectInsane]</li>
+    <li>disturbed->disturbed</li>
+    <li>disturbed->horrified</li>
+    <li>disturbed->frightened</li>
+    <li>disturbed->upset</li>
+    <li>disturbed->perturbed</li>
+    <li>disturbed->unsettled</li>
+    <li>disturbed->disconcerted</li>
+    <li>disturbed->unnerved</li>
+    <li>disturbed->alarmed</li>
+    <li>disturbed->distressed</li>
+    <li>disturbed->dismayed</li>
+    <li>maybeDarkSpeechAdverb-></li>
+    <li>maybeDarkSpeechAdverb->[darkSpeechAdverb]</li>
+    <li>talkingAbout->describing</li>
+    <li>talkingAbout->explaining</li>
+    <li>talkingAbout->moaning [maybeDarkSpeechAdverb] about</li>
+    <li>talkingAbout->talking [maybeDarkSpeechAdverb] about</li>
+    <li>talkingAbout->ranting [maybeDarkSpeechAdverb] about</li>
+    <li>talkingAbout->going into detail about</li>
+  -->
+  <DisturbingChat.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] [disturbed] [RECIPIENT_nameDef] [talkingAbout] [subjectDisturbing].</li>
+    <li>r_logentry->[INITIATOR_nameDef] [spoke] [RECIPIENT_nameDef] [darkSpeechAdverb] a proposito di [subjectDisturbing].</li>
+    <li>spoke->ha parlato con</li>
+    <li>spoke->ha sussurrato qualcosa a</li>
+    <li>spoke->ha balbettato qualcosa a</li>
+    <li>spoke->ha gemuto qualcosa a</li>
+    <li>spoke->ha ringhiato qualcosa davanti a</li>
+    <li>spoke->ha detto cose sconnesse a</li>
+    <li>spoke(p=5)->[rambled]</li>
+    <li>subjectDisturbing->[subjectDarkStudy]</li>
+    <li>subjectDisturbing->[subjectInsane]</li>
+    <li>disturbed->ha turbato</li>
+    <li>disturbed->ha inorridito</li>
+    <li>disturbed->ha spaventato</li>
+    <li>disturbed->ha infastidito</li>
+    <li>disturbed->ha sconvolto</li>
+    <li>disturbed->ha disturbato</li>
+    <li>disturbed->ha disorientato</li>
+    <li>disturbed->ha irritato</li>
+    <li>disturbed->ha allarmato</li>
+    <li>disturbed->ha angosciato</li>
+    <li>disturbed->ha costernato</li>
+    <li>maybeDarkSpeechAdverb-></li>
+    <li>maybeDarkSpeechAdverb->[darkSpeechAdverb]</li>
+    <li>talkingAbout->parlando di</li>
+    <li>talkingAbout->cercando di discutere di</li>
+    <li>talkingAbout->lamentandosi [maybeDarkSpeechAdverb] a proposito di</li>
+    <li>talkingAbout->evocando [maybeDarkSpeechAdverb] l’argomento</li>
+    <li>talkingAbout->lanciandosi in un monologo [maybeDarkSpeechAdverb] su</li>
+    <li>talkingAbout->cercando di discutere in dettaglio</li>
+ </DisturbingChat.logRulesInitiator.rulesStrings>
+
+ <!-- EN: inhuman rambling -->
+ <InhumanRambling.label>deliri inumani</InhumanRambling.label>
+ <!-- EN:
+  <li>r_logentry->[INITIATOR_nameDef] [rambled] about [subjectInsane].</li>
+  <li>r_logentry->[INITIATOR_nameDef] [rambled] [darkSpeechAdverb] about [subjectInsane].</li>
+-->
+ <InhumanRambling.logRulesInitiator.rulesStrings>
+  <li>r_logentry->[INITIATOR_nameDef] [rambled] a proposito di [subjectInsane].</li>
+  <li>r_logentry->[INITIATOR_nameDef] [rambled] [darkSpeechAdverb] riguardo a [subjectInsane].</li>
+ </InhumanRambling.logRulesInitiator.rulesStrings>
+
+ <!-- EN: interrogate identity -->
+ <InterrogateIdentity.label>interrogativi sull’identità</InterrogateIdentity.label>
+  <!-- EN:
+    <li>askedAbout->interrogated [RECIPIENT_nameDef] about</li>
+    <li>askedAbout->asked [RECIPIENT_nameDef] about</li>
+    <li>askedAbout->pressed [RECIPIENT_nameDef] for details about</li>
+    <li>askedAbout->inquired [RECIPIENT_nameDef] about</li>
+    <li>askedAbout->grilled [RECIPIENT_nameDef] on</li>
+    <li>askedAbout->pushed [RECIPIENT_nameDef] for answers about</li>
+    <li>askedAbout->asked [RECIPIENT_nameDef] tricky questions about</li>
+    <li>askedAbout->tried to catch [RECIPIENT_nameDef] off-guard with questions about</li>
+    <li>askedAbout->screamed at [RECIPIENT_nameDef], demanding information about</li>
+    <li>askedAbout->bombarded [RECIPIENT_nameDef] with inquiries about</li>
+    <li>askedAbout->confronted [RECIPIENT_nameDef] regarding</li>
+    <li>askedAbout->pestered [RECIPIENT_nameDef] about</li>
+    <li>askedAbout->probed [RECIPIENT_nameDef] on the subject of</li>
+    <li>identityTopic->[RECIPIENT_possessive] previous work</li>
+    <li>identityTopic->[RECIPIENT_possessive] previous relationships with other factions</li>
+    <li>identityTopic->[RECIPIENT_possessive] birth</li>
+    <li>identityTopic->[RECIPIENT_possessive] upbringing</li>
+    <li>identityTopic->[RECIPIENT_possessive] parents</li>
+    <li>identityTopic->[RECIPIENT_possessive] old friends</li>
+    <li>identityTopic->[RECIPIENT_possessive] romantic history</li>
+    <li>identityTopic->[RECIPIENT_possessive] likes and dislikes</li>
+    <li>identityTopic->[RECIPIENT_possessive] emotional responses to disturbing situations</li>
+    <li>identityTopic->[RECIPIENT_possessive] food preferences</li>
+    <li>identityTopic->[RECIPIENT_possessive] deepest fears</li>
+    <li>identityTopic->[RECIPIENT_possessive] cherished memories</li>
+    <li>identityTopic->[RECIPIENT_possessive] personal regrets</li>
+    <li>identityTopic->[RECIPIENT_possessive] dreams and aspirations</li>
+    <li>identityTopic->[RECIPIENT_possessive] reasons for joining [RECIPIENT_possessive] current faction</li>
+    <li>identityTopic->[RECIPIENT_possessive] role in a past significant event</li>
+    <li>identityTopic->[RECIPIENT_possessive] hobbies and pastimes</li>
+    <li>identityTopic->[RECIPIENT_possessive] moral values and principles</li>
+    <li>identityTopic->[RECIPIENT_possessive] motivations</li>
+    <li>identityTopic->reasons behind [RECIPIENT_possessive] major decisions</li>
+    <li>identityTopic->past traumatic experiences</li>
+    <li>identityTopic->human thought processes</li>
+    <li>identityTopic->childhood experiences</li>
+    <li>identityTopic->school experiences</li>
+    <li>identityTopic->cultural experiences</li>
+    <li>r_logentry->[INITIATOR_nameDef] [askedAbout] [identityTopic].</li>
+  -->
+ <InterrogateIdentity.logRulesInitiator.rulesStrings>
+    <li>askedAbout->ha interrogato [RECIPIENT_nameDef] riguardo</li>
+    <li>askedAbout->ha messo in discussione [RECIPIENT_nameDef] a proposito di</li>
+    <li>askedAbout->ha incalzato [RECIPIENT_nameDef] affinché parlasse</li>
+    <li>askedAbout->ha invitato [RECIPIENT_nameDef] a raccontare</li>
+    <li>askedAbout->ha sottoposto [RECIPIENT_nameDef] a un interrogatorio su</li>
+    <li>askedAbout->ha spinto [RECIPIENT_nameDef] a dire tutto riguardo</li>
+    <li>askedAbout->ha posto domande delicate a [RECIPIENT_nameDef] su</li>
+    <li>askedAbout->ha cercato di incastrare [RECIPIENT_nameDef] facendo domande su</li>
+    <li>askedAbout->ha urlato in faccia a [RECIPIENT_nameDef], esigendo risposte su</li>
+    <li>askedAbout->ha bombardato [RECIPIENT_nameDef] di domande su</li>
+    <li>askedAbout->ha affrontato [RECIPIENT_nameDef] a proposito di</li>
+    <li>askedAbout->ha assillato [RECIPIENT_nameDef] riguardo</li>
+    <li>askedAbout->ha sondato [RECIPIENT_nameDef] sulla questione</li>
+    <li>identityTopic->[RECIPIENT_possessive]del suo lavoro precedente</li>
+    <li>identityTopic->[RECIPIENT_possessive]delle sue precedenti relazioni con altre fazioni</li>
+    <li>identityTopic->[RECIPIENT_possessive]della sua nascita</li>
+    <li>identityTopic->[RECIPIENT_possessive]della sua giovinezza</li>
+    <li>identityTopic->[RECIPIENT_possessive]dei suoi genitori</li>
+    <li>identityTopic->[RECIPIENT_possessive]dei suoi vecchi amici</li>
+    <li>identityTopic->[RECIPIENT_possessive]delle sue relazioni sentimentali passate</li>
+    <li>identityTopic->[RECIPIENT_possessive]delle sue passioni e dei suoi odi</li>
+    <li>identityTopic->[RECIPIENT_possessive]delle sue reazioni emotive in situazioni difficili</li>
+    <li>identityTopic->[RECIPIENT_possessive]dei suoi gusti culinari</li>
+    <li>identityTopic->[RECIPIENT_possessive]delle sue paure più grandi</li>
+    <li>identityTopic->[RECIPIENT_possessive]dei suoi ricordi più preziosi</li>
+    <li>identityTopic->[RECIPIENT_possessive]dei suoi rimpianti</li>
+    <li>identityTopic->[RECIPIENT_possessive]dei suoi sogni e aspirazioni</li>
+    <li>identityTopic->[RECIPIENT_possessive]delle sue ragioni per unirsi alla fazione attuale</li>
+    <li>identityTopic->[RECIPIENT_possessive]del suo ruolo in un evento passato importante</li>
+    <li>identityTopic->[RECIPIENT_possessive]dei suoi hobby e passatempi</li>
+    <li>identityTopic->[RECIPIENT_possessive]dei suoi valori morali e dei suoi principi</li>
+    <li>identityTopic->[RECIPIENT_possessive]delle sue motivazioni</li>
+    <li>identityTopic->dei ragionamenti dietro le sue decisioni più importanti</li>
+    <li>identityTopic->di esperienze traumatiche passate</li>
+    <li>identityTopic->dei processi del pensiero umano</li>
+    <li>identityTopic->di esperienze d’infanzia</li>
+    <li>identityTopic->di esperienze scolastiche</li>
+    <li>identityTopic->di esperienze culturali</li>
+    <li>r_logentry->[INITIATOR_nameDef] [askedAbout] [identityTopic].</li>
+</InterrogateIdentity.logRulesInitiator.rulesStrings>
+
+<!-- EN: occult teaching -->
+<OccultTeaching.label>insegnamenti occulti</OccultTeaching.label>
+  <!-- EN:
+    <li>r_logentry->[INITIATOR_nameDef] explained [INITIATOR_possessive] theories about [subjectDarkStudy] to [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] shared [INITIATOR_possessive] ideas about [subjectDarkStudy] with [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] spoke about [subjectDarkStudy].</li>
+    <li>r_logentry->[INITIATOR_nameDef] went over the subject of [subjectDarkStudy].</li>
+    <li>r_logentry->[INITIATOR_nameDef] taught a lesson on [subjectDarkStudy].</li>
+  -->
+<OccultTeaching.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha spiegato le sue teorie riguardo [subjectDarkStudy] a [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha condiviso le sue idee su [subjectDarkStudy] con [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato di [subjectDarkStudy].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha affrontato la questione di [subjectDarkStudy].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha tenuto una lezione su [subjectDarkStudy].</li>
+</OccultTeaching.logRulesInitiator.rulesStrings>
+
+<!-- EN: prisoner study -->
+<PrisonerStudyAnomaly.label>studio sul prigioniero</PrisonerStudyAnomaly.label>
+<!-- EN:
+  <li>r_logentry->[INITIATOR_nameDef] asked [RECIPIENT_nameDef] about [subjectDarkStudy].</li>
+  <li>r_logentry->[INITIATOR_nameDef] inquired about [subjectDarkStudy].</li>
+  <li>r_logentry->[RECIPIENT_nameDef] mumbled about [subjectInsane].</li>
+-->
+<PrisonerStudyAnomaly.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha interrogato [RECIPIENT_nameDef] su [subjectDarkStudy].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha cercato di saperne di più riguardo [subjectDarkStudy].</li>
+    <li>r_logentry->[RECIPIENT_nameDef] ha farfugliato qualcosa su [subjectInsane].</li>
+</PrisonerStudyAnomaly.logRulesInitiator.rulesStrings>
+  
+</LanguageData>
