@@ -1,3 +1,16 @@
+Traduzione DLC Anomaly e Odyssey 
+
+Sono uno sviluppatore alle prime armi ma mi sono già cimentato in un paio di progetti di traduzione in passato. Sono davvero molto legato a questo gioco, così ho deciso di imbarcarmi nella traduzione degli ultimi due DLC.
+Le varie terminologie sono state scelte cercando di rispecchiare il più fedelmente il mood del gioco e la traduzione del gioco base, sono aperto a qualsiasi suggerimento per migliorarle in futuro. Le traduzioni sono complete al 100% e non sono presenti TODO.
+
+Completamento traduzione Royalty, Ideology e Biotech
+
+Nelle traduzioni dei 3 DLC sopracitati erano presenti una grande quantità di TODO e, in Ideology, diverse centinaia di righe in lingua spagnola. Ho provveduto a completare tutti i TODO e a tradurre tutto ciò che era in spagnolo all'ìitaliano.
+Attualmente anche queste traduzioni quindi ora sono complete al 100%
+
+
+
+
 RimWorld Italian
 ================
 Target Version: 1.4.3525
