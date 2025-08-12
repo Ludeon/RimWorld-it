@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>r_weapon_name(p=2)->[weapon_adjective] [weapon_noun]</li>
+    <li>r_weapon_name(p=0.5)->The [weapon_type] of [badass_concept]</li>
+    <li>r_weapon_name(p=0.5)->The [weapon_adjective] [weapon_type]</li>
+    <li>r_weapon_name(p=0.5)->[badass_concept]'s [weapon_type]</li>
+    <li>r_weapon_name(p=0.3)->[ANYPAWN_nameIndef]'s [weapon_noun]</li>
+    <li>r_weapon_name(p=0.3)->[ANYPAWN_nameIndef]'s [weapon_adjective] [weapon_noun]</li>
+    <li>r_weapon_name(p=0.3)->The [badass_concept] of [ANYPAWN_nameIndef]</li>
+    <li>weapon_noun(p=2)->[weapon_type]</li>
+    <li>weapon_noun->[badass_noun]</li>
+    <li>weapon_noun->[badass_concept]</li>
+    <li>weapon_adjective(p=2)->[trait_adjective]</li>
+    <li>weapon_adjective->[badass_adjective]</li>
+    <li>badass_adjective->grim</li>
+    <li>badass_adjective->eternal</li>
+    <li>badass_adjective->night</li>
+    <li>badass_adjective->grave</li>
+    <li>badass_adjective->exceptional</li>
+    <li>badass_adjective->deadly</li>
+    <li>badass_adjective->infamous</li>
+    <li>badass_adjective->custom</li>
+    <li>badass_adjective->deadly</li>
+    <li>badass_adjective->thunderous</li>
+    <li>badass_adjective->cursed</li>
+    <li>badass_adjective->great</li>
+    <li>badass_noun->reaper</li>
+    <li>badass_noun->end</li>
+    <li>badass_noun->howl</li>
+    <li>badass_noun->tempest</li>
+    <li>badass_noun->phantom</li>
+    <li>badass_noun->widow</li>
+    <li>badass_noun->titan</li>
+    <li>badass_noun->juggernaut</li>
+    <li>badass_noun->serpent</li>
+    <li>badass_noun->anvil</li>
+    <li>badass_noun->killer</li>
+    <li>badass_noun->lover</li>
+    <li>badass_noun->beast</li>
+    <li>badass_noun->fang</li>
+    <li>badass_noun->arm</li>
+    <li>badass_noun->horn</li>
+    <li>badass_concept->justice</li>
+    <li>badass_concept->revenge</li>
+    <li>badass_concept->vengeance</li>
+    <li>badass_concept->pain</li>
+    <li>badass_concept->agony</li>
+    <li>badass_concept->torment</li>
+    <li>badass_concept->legend</li>
+    <li>badass_concept->delight</li>
+    <li>badass_concept->regret</li>
+    <li>badass_concept->pride</li>
+    <li>badass_concept->conceit</li>
+    <li>badass_concept->honor</li>
+    <li>badass_concept->fury</li>
+    <li>badass_concept->reckoning</li>
+    <li>badass_concept->serenity</li>
+    <li>badass_concept->love</li>
+    <li>badass_concept->laughter</li>
+  -->
+  <NamerUniqueWeapon.rulePack.rulesStrings>
+    <!-- Tipo di arma femminile/maschile? -->
+    <li>r_weapon_name(p=2)->[weapon_noun] [weapon_adjective]</li>
+    <li>r_weapon_name(p=0.5)->La/Il [weapon_type] di [badass_concept]</li>
+    <li>r_weapon_name(p=0.5)->La/Il [weapon_type] [weapon_adjective]</li>
+    <li>r_weapon_name(p=0.5)->[badass_concept] del/della [weapon_type]</li>
+    <li>r_weapon_name(p=0.3)->[ANYPAWN_nameIndef] del/della [weapon_noun]</li>
+    <li>r_weapon_name(p=0.3)->[ANYPAWN_nameIndef] del/della [weapon_noun] [weapon_adjective]</li>
+    <li>r_weapon_name(p=0.3)->Il/La [badass_concept] di [ANYPAWN_nameIndef]</li>
+    <li>weapon_noun(p=2)->[weapon_type]</li>
+    <li>weapon_noun->[badass_noun]</li>
+    <li>weapon_noun->[badass_concept]</li>
+    <li>weapon_adjective(p=2)->[trait_adjective]</li>
+    <li>weapon_adjective->[badass_adjective]</li>
+    <li>badass_adjective_indef->oscuro</li>
+    <li>badass_adjective->eterno</li>
+    <li>badass_adjective_feminine->eterna</li>
+    <li>badass_adjective_feminine->notturna</li>
+    <li>badass_adjective_feminine->funebre</li>
+    <li>badass_adjective->eccezionale</li>
+    <li>badass_adjective_feminine->eccezionale</li>
+    <li>badass_adjective->fatale</li>
+    <li>badass_adjective_feminine->fatale</li>
+    <li>badass_adjective_indef->infame</li>
+    <li>badass_adjective_indef->su misura</li>
+    <li>badass_adjective->fatale</li>
+    <li>badass_adjective_feminine->fatale</li>
+    <li>badass_adjective->fragoroso</li>
+    <li>badass_adjective_feminine->fragorosa</li>
+    <li>badass_adjective->maledetto</li>
+    <li>badass_adjective_feminine->maledetta</li>
+    <li>badass_adjective->grande</li>
+    <li>badass_adjective_feminine->grande</li>
+    <li>badass_noun->mietitore</li>
+    <li>badass_noun_feminin->mietitrice</li>
+    <li>badass_noun->fine</li>
+    <li>badass_noun_feminin->fine</li>
+    <li>badass_noun_vowel->urlo</li>
+    <li>badass_noun_feminin->tempesta</li>
+    <li>badass_noun->fantasma</li>
+    <li>badass_noun->vedovo</li>
+    <li>badass_noun_feminin->vedova</li>
+    <li>badass_noun->titano</li>
+    <li>badass_noun_feminin->titana</li>
+    <li>badass_noun->mastodonte</li>
+    <li>badass_noun->serpente</li>
+    <li>badass_noun_feminin_vowel->incudine</li>
+    <li>badass_noun->assassino</li>
+    <li>badass_noun_feminin->assassina</li>
+    <li>badass_noun_vowel->amante</li>
+    <li>badass_noun_feminin_vowel->amante</li>
+    <li>badass_noun_feminin->bestia</li>
+    <li>badass_noun->uncino</li>
+    <li>badass_noun->braccio</li>
+    <li>badass_noun_feminin->corno</li>
+    <li>badass_concept->giustizia</li>
+    <li>badass_concept->vendetta</li>
+    <li>badass_concept->dolore</li>
+    <li>badass_concept->agonia</li>
+    <li>badass_concept->tormento</li>
+    <li>badass_concept->leggenda</li>
+    <li>badass_concept->piacere</li>
+    <li>badass_concept->rimpianto</li>
+    <li>badass_concept->orgoglio</li>
+    <li>badass_concept->vanità</li>
+    <li>badass_concept->onore</li>
+    <li>badass_concept->furore</li>
+    <li>badass_concept->giudizio</li>
+    <li>badass_concept->serenità</li>
+    <li>badass_concept->amore</li>
+    <li>badass_concept->risata</li>
+  </NamerUniqueWeapon.rulePack.rulesStrings>
+  
+</LanguageData>

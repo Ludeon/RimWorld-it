@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- Gravship -->
+  <!-- EN: Gravship -->
+  <Gravship>Nave gravitazionale</Gravship>
+  <!-- EN: no grav engine -->
+  <CannotLaunchNoEngine>motore a gravitoni mancante</CannotLaunchNoEngine>
+  <!-- EN: not enough fuel -->
+  <CannotLaunchNotEnoughFuel>carburante insufficiente</CannotLaunchNotEnoughFuel>
+  <!-- EN: Cannot reach this destination -->
+  <CannotLaunchDestination>Impossibile raggiungere questa destinazione</CannotLaunchDestination>
+  <!-- EN: Cannot land on the same tile -->
+  <CannotLandOnSameTile>Impossibile atterrare sulla stessa cella</CannotLandOnSameTile>
+  <!-- EN: Connected substructure -->
+  <ConnectedSubstructure>Sottostruttura collegata</ConnectedSubstructure>
+  <!-- EN: Substructure blueprints placed -->
+  <SubstructureBlueprintsCount>Piani di sottostruttura posizionati</SubstructureBlueprintsCount>
+  <!-- EN: not connected to grav engine -->
+  <CannotLaunchDisconnected>non collegato al motore a gravitoni</CannotLaunchDisconnected>
+  <!-- EN: no substructure -->
+  <CannotLaunchNoSubstructure>nessuna sottostruttura</CannotLaunchNoSubstructure>
+  <!-- EN: no unblocked functioning thrusters -->
+  <CannotLaunchNoThrusters>nessun propulsore funzionante e libero</CannotLaunchNoThrusters>
+  <!-- EN: engine cooldown: {0} -->
+  <CannotLaunchOnCooldown>motore in raffreddamento per {0}</CannotLaunchOnCooldown>
+  <!-- EN: Choose where to land -->
+  <ChooseWhereToLand>Scegli dove atterrare</ChooseWhereToLand>
+  <!-- EN: Send a colonist to inspect this. -->
+  <GravEngineNotInspected>Manda un colono a ispezionare questo.</GravEngineNotInspected>
+  <!-- EN: Choose who should inspect {0_definite} -->
+  <ChooseWhoShouldInspect>Scegli chi deve ispezionare {0_definite}</ChooseWhoShouldInspect>
+  <!-- EN: Cannot launch gravship -->
+  <CannotPilotGravship>Impossibile lanciare la nave gravitazionale</CannotPilotGravship>
+  <!-- EN: Launch gravship -->
+  <PilotGravship>Lancia la nave gravitazionale</PilotGravship>
+  <!-- EN: {0} {1_label} -->
+  <FuelAmount>{0} {1_label}</FuelAmount>
+  <!-- EN: gravship name -->
+  <GravshipName>nome della nave gravitazionale</GravshipName>
+  <!-- EN: gravship range -->
+  <GravshipRange>portata della nave gravitazionale</GravshipRange>
+  <!-- EN: stored chemfuel -->
+  <StoredChemfuel>chemfuel immagazzinato</StoredChemfuel>
+  <!-- EN: thruster blocked -->
+  <ThrusterBlocked>propulsore bloccato</ThrusterBlocked>
+  <!-- EN: fuel consumption -->
+  <FuelConsumption>consumo di carburante</FuelConsumption>
+  <!-- EN: {0} chemfuel per tile -->
+  <FuelPerTile>{0} chemfuel per cella</FuelPerTile>
+  <!-- EN: Heavy weapons systems: Requires signal jammer to approach -->
+  <RequiresSignalJammer>Sistemi d’armi pesanti: richiede un disturbatore di segnale per avvicinarsi</RequiresSignalJammer>
+  <!-- EN: {0} landing site -->
+  <GravshipLandingSite>sito di atterraggio {0}</GravshipLandingSite>
+  <!-- EN: Confirm landing area -->
+  <ConfirmLandingArea>Conferma la zona di atterraggio</ConfirmLandingArea>
+  <!-- EN: Blocked by {0_label} -->
+  <GravshipBlockedBy>Bloccato da {0_label}</GravshipBlockedBy>
+  <!-- EN: Can't place in undiscovered area -->
+  <GravshipBlockedByFog>Impossibile posizionare in un’area non scoperta</GravshipBlockedByFog>
+  <!-- EN: Blocked by roof -->
+  <GravshipBlockedByRoof>Bloccato dal tetto</GravshipBlockedByRoof>
+  <!-- EN: Can't place outside map bounds -->
+  <GravshipOutOfBounds>Impossibile posizionare fuori dai limiti della mappa</GravshipOutOfBounds>
+  <!-- EN: Can't place close to the map edge -->
+  <GravshipInNoBuildArea>Impossibile posizionare vicino al bordo della mappa</GravshipInNoBuildArea>
+  <!-- EN: Can't place in blocked area -->
+  <GravshipInBlockedArea>Impossibile posizionare in un’area bloccata</GravshipInBlockedArea>
+  <!-- EN: Can't place on {0_label} -->
+  <GravshipBlockedByTerrain>Impossibile posizionare su {0_label}</GravshipBlockedByTerrain>
+  <!-- EN: Must be connected to solid ground -->
+  <GravshipMustBeConnectedToLand>Deve essere collegato a un terreno solido</GravshipMustBeConnectedToLand>
+  <!-- EN: Confirm landing zone to continue -->
+  <ConfirmLandingToContinue>Conferma la zona di atterraggio per continuare</ConfirmLandingToContinue>
+  <!-- EN: a valid pilot console -->
+  <RitualTargetPilotConsole>una console di pilotaggio valida</RitualTargetPilotConsole>
+  <!-- EN: Based on the gravship's launch, there was a {0_percentage} chance of a negative outcome. -->
+  <GravshipOutcomeChanceLetterExtra>In base al lancio della nave gravitazionale, c’era una probabilità del {0_percentage} di un esito negativo.</GravshipOutcomeChanceLetterExtra>
+  <!-- EN: The following thrusters were affected -->
+  <ThrustersBrokeDown>I seguenti propulsori sono stati danneggiati</ThrustersBrokeDown>
+  <!-- EN: No path to gravship -->
+  <NoPathToGravship>Nessun percorso verso la nave gravitazionale</NoPathToGravship>
+  <!-- EN: No path to pilot console -->
+  <NoPathToPilotConsole>Nessun percorso verso la console di pilotaggio</NoPathToPilotConsole>
+  <!-- EN: Pilot console is not accessible from gravship -->
+  <PilotConsoleInaccessible>Console di pilotaggio non accessibile dalla nave gravitazionale</PilotConsoleInaccessible>
+  <!-- EN: Launch date -->
+  <LaunchDate>Data di lancio</LaunchDate>
+  <!-- EN: Warning: {0} will be blocked by {1}. -->
+  <WarningThrusterBlocked>Avviso: {0} sarà bloccato da {1}.</WarningThrusterBlocked>
+  <!-- EN: Warning: {0} will be blocked due to being indoors. -->
+  <WarningThrusterInside>Avviso: {0} sarà bloccato perché si trova all’interno.</WarningThrusterInside>
+  <!-- EN: Max per gravship -->
+  <GravFacilityMaxSimultaneousConnections>Massimo per nave gravitazionale</GravFacilityMaxSimultaneousConnections>
+  <!-- EN: Not connected to gravship -->
+  <ShieldNotConnectedToGravship>Non collegato alla nave gravitazionale</ShieldNotConnectedToGravship>
+  <!-- EN: Gravship launch called off -->
+  <GravshipLaunchInterrupted>Lancio della nave gravitazionale annullato</GravshipLaunchInterrupted>
+  <!-- EN: Not connected to grav engine. -->
+  <NotConnectedToGravEngine>Non collegato al motore a gravitoni.</NotConnectedToGravEngine>
+  <!-- EN: Not functional -->
+  <ThrusterNotFunctional>Non funzionante</ThrusterNotFunctional>
+  <!-- EN: not connected to grav engine -->
+  <ThrusterNotConnected>Non collegato al motore a gravitoni</ThrusterNotConnected>
+  <!-- EN: blocked by {0_label} -->
+  <ThrusterBlockedBy>bloccato da {0_label}</ThrusterBlockedBy>
+  <!-- EN: must be outside -->
+  <MustBeOutside>deve essere all’esterno</MustBeOutside>
+  <!-- EN: blocked by substructure -->
+  <BlockedBySubstructure>bloccato dalla sottostruttura</BlockedBySubstructure>
+
+  <!-- Map generation -->
+  <!-- EN: Landmark -->
+  <Landmark>Punto di riferimento</Landmark>
+  <!-- EN: {ANIMALKIND_label} habitat -->
+  <AnimalHabitat>habitat dei {ANIMALKIND_labelPlural}</AnimalHabitat>
+  <!-- EN: {0} grove -->
+  <PlantGrove>boscaglia di {0}</PlantGrove>
+  <!-- EN: {0} -->
+  <WildPlants>{0}</WildPlants>
+  <!-- EN: {MINERAL_label} rich -->
+  <MineralRich>ricco di {MINERAL_label}</MineralRich>
+  <!-- EN: This area has more {MINERAL_label} deposits than normal. -->
+  <MineralRichDescription>Quest’area contiene più giacimenti di {MINERAL_label} del normale.</MineralRichDescription>
+
+  <!-- Insect Lair -->
+  <!-- EN: Cave entrance -->
+  <CaveEntranceLetter>Ingresso della grotta</CaveEntranceLetter>
+  <!-- EN: The gravcore energy signature is coming from a nearby cave network. The entrance is guarded by insect hives.\n\nExplore the cave network to find the gravcore. -->
+  <CaveEntranceLetterText>La firma energetica del nucleo a gravitoni proviene da una rete di grotte vicina. L’ingresso è sorvegliato da alveari di insetti.\n\nEsplora la rete di grotte per trovare il cuore a gravitoni.</CaveEntranceLetterText>
+  <!-- EN: Insect ambush -->
+  <InsectAmbushLetter>Agguato di insetti</InsectAmbushLetter>
+  <!-- EN: Insects are tunneling up from underneath the ground. Be prepared! -->
+  <InsectAmbushLetterText>Insetti stanno scavando dal sottosuolo. Preparati!</InsectAmbushLetterText>
+  <!-- EN: Muffled chittering -->
+  <LetterLabelInsectQueenWarning>Frinire ovattato</LetterLabelInsectQueenWarning>
+  <!-- EN: Behind a nearby wall, {PAWN_nameDef} can hear muffled pulsations accompanied by a low chittering noise. Something massive lies behind the wall. -->
+  <LetterInsectQueenWarning>Dietro una parete vicina, {PAWN_nameDef} può sentire pulsazioni ovattate accompagnate da un debole frinire. Qualcosa di enorme si nasconde dietro il muro.</LetterInsectQueenWarning>
+  
+  <!-- Overlay -->
+  <!-- EN: Toggle vacuum overlay. This displays which areas have vacuum and identifies leaks.\n\nWithout the right equipment, exposure to vacuum can be deadly. -->
+  <ShowVacuumOverlayToggleButton>Mostra sovrapposizione del vuoto. Indica quali aree sono in vuoto e identifica le perdite.\n\nSenza l’equipaggiamento adeguato, l’esposizione al vuoto può essere letale.</ShowVacuumOverlayToggleButton>
+  <!-- EN: vacuum -->
+  <Vacuum>vuoto</Vacuum>
+  
+  <!-- World -->
+  <!-- EN: No discovered orbital locations. -->
+  <CannotSelectOrbitReason>Nessuna posizione orbitale scoperta.</CannotSelectOrbitReason>
+  <!-- EN: Dying from vacuum exposure -->
+  <DyingBecauseExposedToVacuum>Muore per esposizione al vuoto</DyingBecauseExposedToVacuum>
+  <!-- EN: Vacstone with traces of {RESOURCE_label} -->
+  <TracesOfPreciousResource>Vacolite con tracce di {RESOURCE_label}</TracesOfPreciousResource>
+  <!-- EN: Requires signal jammer -->
+  <TransportPodDestinationRequiresSignalJammer>Richiede un disturbatore di segnale</TransportPodDestinationRequiresSignalJammer>
+  <!-- EN: cannot function in vacuum. -->
+  <CannotFunctionInVacuum>non può funzionare nel vuoto.</CannotFunctionInVacuum>
+  <!-- EN: Gravship -->
+  <GravshipOnTileInspectString>Nave gravitazionale</GravshipOnTileInspectString>
+  
+  <!-- Ruins -->
+  <!-- EN: Hack to open. -->
+  <HackableDoorLocked>Hackerare per aprire.</HackableDoorLocked>
+  
+  <!-- Fishing -->
+  <!-- EN: Fish -->
+  <Fish>Pesce</Fish>
+  <!-- EN: fishing -->
+  <Fishing>pescare</Fishing>
+  <!-- EN: Cannot fish -->
+  <CannotFish>Impossibile pescare</CannotFish>
+  <!-- EN: blocked -->
+  <FishingSpotBlocked>bloccato</FishingSpotBlocked>
+  <!-- EN: frozen -->
+  <FishingSpotFrozen>ghiacciato</FishingSpotFrozen>
+  <!-- EN: below minimum fish population -->
+  <FishingSpotUnderTargetPopulation>sotto la popolazione minima di pesci</FishingSpotUnderTargetPopulation>
+  <!-- EN: stored fish exceed fishing zone settings -->
+  <FishingSpotOverTargetResourceCount>la quantità di pesci immagazzinati supera i limiti impostati per la zona di pesca</FishingSpotOverTargetResourceCount>
+  <!-- EN: Fishing -->
+  <TabFishing>Pesca</TabFishing>
+  <!-- EN: Fish population -->
+  <FishPopulation>Popolazione di pesci</FishPopulation>
+  <!-- EN: Population declining -->
+  <FishPopulationDecline>Popolazione in calo</FishPopulationDecline>
+  <!-- EN: very low -->
+  <FishPopulation_VeryLow>molto bassa</FishPopulation_VeryLow>
+  <!-- EN: low -->
+  <FishPopulation_Low>bassa</FishPopulation_Low> 
+  <!-- EN: moderate -->
+  <FishPopulation_Moderate>moderata</FishPopulation_Moderate>
+  <!-- EN: healthy -->
+  <FishPopulation_Healthy>sana</FishPopulation_Healthy>
+
+  <!-- Sand -->
+  <!-- EN: Windswept sand -->
+  <Sand>Sabbia spazzata dal vento</Sand>
+  <!-- EN: No sand -->
+  <SandNone>Nessuna sabbia</SandNone>
+  <!-- EN: dusting -->
+  <SandDusting>leggera copertura di sabbia</SandDusting>
+  <!-- EN: thin -->
+  <SandThin>sottile</SandThin>
+  <!-- EN: medium -->
+  <SandMedium>media</SandMedium>
+  <!-- EN: thick -->
+  <SandThick>spessa</SandThick>
+  <!-- EN: Windswept sand -->
+  <Sand_Label>Sabbia spazzata dal vento</Sand_Label>
+  <!-- EN: clearing sand. -->
+  <JobClearingSand>Rimozione della sabbia.</JobClearingSand>
+  <!-- EN: clearing sand -->
+  <ClearingSandGerund>sta rimuovendo sabbia</ClearingSandGerund>
+
+  <!-- Stockpile -->
+  <!-- EN: medicine stockpile -->
+  <StockpileMedicine>scorta di medicinali</StockpileMedicine>
+  <!-- EN: chemfuel stockpile -->
+  <StockpileChemfuel>scorta di chemfuel</StockpileChemfuel>
+  <!-- EN: component stockpile -->
+  <StockpileComponent>scorta di componenti</StockpileComponent>
+  <!-- EN: weapons stockpile -->
+  <StockpileWeapons>scorta di armi</StockpileWeapons>
+  <!-- EN: drug stockpile -->
+  <StockpileDrugs>scorta di droghe</StockpileDrugs>
+  
+  <!-- Outfit Stand -->
+  <!-- EN: equip outfit -->
+  <SwapOutfit>indossare l'outfit</SwapOutfit>
+  <!-- EN: equip outfit... -->
+  <SwapOutfitGizmo>indossare l'outfit...</SwapOutfitGizmo>
+  <!-- EN: Order a colonist to wear all apparel on the stand. The colonist will place any unequipped clothing back on the stand. -->
+  <SwapOutfitDesc>Ordina a un colono di indossare tutti i vestiti sul supporto. Il colono rimetterà sul supporto qualsiasi indumento non indossato.</SwapOutfitDesc>
+  <!-- EN: cannot equip outfit -->
+  <CannotSwapOutfit>impossibile indossare l'outfit</CannotSwapOutfit>
+  <!-- EN: outfit stand is empty -->
+  <OutfitStandEmpty>il porta-abiti è vuoto</OutfitStandEmpty>
+  <!-- EN: Remove this from the outfit stand. -->
+  <EjectApparelTooltip>Rimuovi questo dal porta-abiti.</EjectApparelTooltip>
+  
+  <!-- Orbital mechanoid platform -->
+  <!-- EN: Ancient grav engine -->
+  <LetterAncientGravEngineDiscoveredLabel>Antico motore a gravitoni</LetterAncientGravEngineDiscoveredLabel>
+  <!-- EN: You've discovered an ancient grav engine. Destroy it to obtain a gravcore. -->
+  <LetterAncientGravEngineDiscovered>Hai scoperto un antico motore a gravitoni. Distruggilo per ottenere un gravcore.</LetterAncientGravEngineDiscovered>
+
+  <!-- EN: Gravship -->
+  <PlayerPawnsArriveMethod_Gravship>Astronave gravitazionale</PlayerPawnsArriveMethod_Gravship>
+
+  <!-- Misc -->
+  <!-- EN: Toggle displaying expanding icons for landmarks. -->
+  <ShowExpandingLandmarksToggleButton>Attiva/disattiva la visualizzazione delle icone espandibili per i punti di riferimento.</ShowExpandingLandmarksToggleButton>
+
+  <!-- Mechive -->
+  <!-- EN: Before {PAWN_nameDef} stands the cerebrex core - a massive brain-like neural mesh that commands mechanoids across the planet.\n\nWith its stabilizers destroyed, {PAWN_nameDef} can now access it directly... but what should {PAWN_pronoun} do with that power? -->
+  <CerebrexCoreDialog>Davanti a {PAWN_nameDef} si trova il nucleo cerebrex — una massiccia rete neurale simile a un cervello che comanda i mechanoidi in tutto il pianeta.\n\nCon i suoi stabilizzatori distrutti, {PAWN_nameDef} può ora accedervi direttamente... ma cosa dovrebbe farne di quel potere?</CerebrexCoreDialog>
+  <!-- EN: Destroy the core -->
+  <CerebrexCoreOption_Destroy>Distruggi il nucleo</CerebrexCoreOption_Destroy>
+  <!-- EN: Scavenge technology -->
+  <CerebrexCoreOption_Scavenge>Recupera la tecnologia</CerebrexCoreOption_Scavenge>
+  <!-- EN: Postpone -->
+  <CerebrexCoreOption_Postpone>Rimanda</CerebrexCoreOption_Postpone>
+  <!-- EN: Stabilizers remaining -->
+  <StabilizersRemaining>Stabilizzatori rimanenti</StabilizersRemaining>
+  <!-- EN: Gestating mechanoids. -->
+  <ProducingMechanoids>Gestazione di meccanoidi.</ProducingMechanoids>
+
+  <!-- EN: {PAWN_nameDef} begins to tear apart the hair-thin cerebral mesh inside the cerebrex core. The mesh twists and groans, as if alive. Electricity arcs among the latticework frame - then in an instant, all goes dark and lifeless.\n\nThe mechanoid whirring stops. Here, and all across the planet, mechanoids begin to permanently deactivate, no longer under the control of the mechhive.\n\nThe mechanoid threat is over. But your story continues... -->
+  <OdysseyDestroyedCredits>{PAWN_nameDef} inizia a lacerare la rete cerebrale sottile come un capello all'interno del nucleo cerebrex. La rete si contorce e geme, come se fosse viva. Archi elettrici attraversano la struttura reticolare — poi, in un istante, tutto diventa buio e senza vita.\n\nIl ronzio dei mechanoidi si interrompe. Qui, e in tutto il pianeta, i mechanoidi iniziano a disattivarsi definitivamente, non essendo più sotto il controllo dell'alveare meccanoide.\n\nLa minaccia mechanoide è finita. Ma la tua storia continua...</OdysseyDestroyedCredits>
+  <!-- EN: {PAWN_nameDef} begins working to free a processing node buried within the core. The latticework frame convulses as if in agony. As {PAWN_nameDef} pulls the node free, the mesh begins to mend, repairing the damage. The core rebuilds its defences and closes.\n\nTurning the node over, {PAWN_nameDef} recoils as it sparks to life, pulsing in time with the core. In {PAWN_possessive} hand, {PAWN_nameDef} holds a weapon of untold power.\n\nThe story continues... -->
+  <OdysseyScavengedCredits>{PAWN_nameDef} inizia a liberare un nodo di elaborazione sepolto nel nucleo. La struttura reticolare si contrae come in preda all'agonia. Mentre {PAWN_nameDef} estrae il nodo, la rete comincia a ripararsi, sanando i danni. Il nucleo ricostruisce le sue difese e si chiude.\n\nGirando il nodo, {PAWN_nameDef} indietreggia mentre questo prende vita, pulsando in sincronia con il nucleo. Nella mano di {PAWN_nameDef}, {PAWN_possessive} stringe un'arma di potere inimmaginabile.\n\nLa storia continua...</OdysseyScavengedCredits>
+
+  <!-- EN: {0} stabilizers remaining -->
+  <CoreNotInteractableStabilizersRemaining>{0} stabilizzatori rimanenti</CoreNotInteractableStabilizersRemaining>
+  <!-- EN: Deactivated -->
+  <CoreNotInteractableDeactivated>Disattivato</CoreNotInteractableDeactivated>
+
+  <!-- EN: Shuttle fuel -->
+  <CaravanShuttleFuel>Carburante della navetta</CaravanShuttleFuel>
+
+  <!-- EN: Passively scanning for orbital signals. -->
+  <OrbitalScannerScanning>Scansione passiva dei segnali orbitali.</OrbitalScannerScanning>
+  <!-- EN: Locating orbital signal -->
+  <OrbitalScannerLocating>Localizzazione del segnale orbitale</OrbitalScannerLocating>
+
+  <!-- EN: Traits -->
+  <WeaponTraits>Caratteristiche dell'arma</WeaponTraits>
+  <!-- EN: Unique weapon -->
+  <UniqueWeapon>Arma unica</UniqueWeapon>
+
+  <!-- EN: Reforming a caravan will abandon your shuttle. Are you sure you want to continue?\n\nTo leave with your shuttle, select the shuttle, then select 'launch'. -->
+  <ConfirmLoseShuttle>Riformare una carovana comporterà l'abbandono della tua navetta. Sei sicuro di voler continuare?\n\nPer partire con la tua navetta, seleziona la navetta e poi seleziona "lancia".</ConfirmLoseShuttle>
+
+  <!-- EN: Discover a quest -->
+  <BookHasQuest>Scoprire una missione</BookHasQuest>
+  <!-- EN: discovered -->
+  <DiscoveredQuest>scoperta</DiscoveredQuest>
+
+  <!-- EN: Your orbital scanner has detected -->
+  <QuestDiscoveredFromOrbitalScanner>Il tuo scanner orbitale ha rilevato</QuestDiscoveredFromOrbitalScanner>
+  <!-- EN: {HACKER_nameDef} hacked an uplink and discovered -->
+  <QuestDiscoveredFromUplink>{HACKER_nameDef} ha violato un uplink e ha scoperto</QuestDiscoveredFromUplink>
+
+  <!-- Special Trainables -->
+  <!-- EN: Attack -->
+  <AnimalAttackTarget>Attaccare</AnimalAttackTarget>
+  <!-- EN: Command this animal to attack a specific target that its master can see. -->
+  <AnimalAttackTargetDesc>Ordina a questo animale di attaccare un bersaglio specifico che il suo padrone può vedere.</AnimalAttackTargetDesc>
+  <!-- EN: Animals attack target -->
+  <AnimalsAttackTarget>Animali attaccano il bersaglio</AnimalsAttackTarget>
+  <!-- EN: Direct all mastered animals to attack a specific target. -->
+  <AnimalsAttackTargetDesc>Dirigi tutti gli animali addestrati ad attaccare un bersaglio specifico.</AnimalsAttackTargetDesc>
+  <!-- EN: Cancel attack -->
+  <CancelAttack>Annulla attacco</CancelAttack>
+  <!-- EN: Clear this animal's current target. -->
+  <CancelAttackDesc>Cancella l'attuale bersaglio di questo animale.</CancelAttackDesc>
+  <!-- EN: This animal does not have a master -->
+  <NoMaster>Questo animale non ha un padrone</NoMaster>
+  <!-- EN: This animal's master is not on this map -->
+  <MasterNotSpawned>Il padrone di questo animale non è su questa mappa</MasterNotSpawned>
+  <!-- EN: Not in range of master. -->
+  <MessageNotInRangeOfMaster>Fuori dalla portata del padrone.</MessageNotInRangeOfMaster>
+  <!-- EN: {ANIMAL_nameDef} found {FOOD_label} while foraging. -->
+  <MessageAnimalForagedFood>{ANIMAL_nameDef} ha trovato {FOOD_label} mentre cercava cibo.</MessageAnimalForagedFood>
+  <!-- EN: Forage trained -->
+  <ForageTrained>Addestrato alla ricerca di cibo</ForageTrained>
+  <!-- EN: Allow foraging -->
+  <ForageEnabled>Permetti la ricerca di cibo</ForageEnabled>
+  <!-- EN: Allow digging -->
+  <DigEnabled>Permetti di scavare</DigEnabled>
+
+  <!-- EN: Sealing the ancient stockpile entrance is permanent. Anything or anyone left below will be lost forever.{0}\n\nAre you sure you want to continue? -->
+  <ConfirmSealHatch>Sigillare l'ingresso della scorta antica è permanente. Qualsiasi cosa o persona rimasta sotto andrà persa per sempre.{0}\n\nSei sicuro di voler continuare?</ConfirmSealHatch>
+  <!-- EN: Cannot seal -->
+  <CannotChooseSealer>Impossibile sigillare</CannotChooseSealer>
+  <!-- EN: Sealed -->
+  <Sealed>Sigillato</Sealed>
+  <!-- EN: Permanently sealed. -->
+  <HatchSealed>Sigillato in modo permanente.</HatchSealed>
+  <!-- EN: Unlocked. -->
+  <HatchUnlocked>Sbloccato.</HatchUnlocked>
+
+  <!-- EN: A short-lived momentum repulsor surface that blocks projectiles. It works against normal shots and mortars. It shuts down instantly if hit by an EMP. -->
+  <GravshipShieldTip>Una superficie di repulsione a breve durata che blocca i proiettili. Funziona contro i colpi normali e i mortai. Si disattiva istantaneamente se colpita da un EMP.</GravshipShieldTip>
+
+</LanguageData>
