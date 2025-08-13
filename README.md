@@ -1,56 +1,24 @@
-Modifiche 
-
-# Scopo di questo fork.
-Sono uno sviluppatore che ama RimWorld e mi sono accorto che molte delle traduzioni sono errate o creano problemi durante il gioco.
-Ho deciso di creare questo fork per aggiornare la traduzione base alla versione 1.6 e provare a correggere qualche errore per dare un contributo al gioco.
-Non ho la pretesa di essere un traduttore professionista, ma spero che il mio lavoro possa essere utile a qualcuno.
-
-Questa versione presenta tutte le chiavi di tutti i DLC corrette con il tool automatico presente nel gioco.
-
-### Modificice effettuate:
-- Ho scaricato la versione 1.4.3525 presente sul reporitory
-- Usato il tool in gioco per fixare ed aggiungere le chiavi mancanti
-
-### Amici che mi hanno aiutano durante questo lavoro:
-- Spappo
-
-### Ultimo report:
-```
-📄 report_20250804.txt - 18439
-┌─────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬────────┐
-│ (index) │ Tipo                                                                                                                 │ Errori │
-├─────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼────────┤
-│ 0       │ 'General load errors'                                                                                                │ 0      │
-│ 1       │ 'Def-injected translations load errors'                                                                              │ 390    │
-│ 2       │ 'Missing keyed translations'                                                                                         │ 2650   │
-│ 3       │ 'Def-injected translations missing'                                                                                  │ 15151  │
-│ 4       │ 'Unnecessary def-injected translations (marked as NoTranslate)'                                                      │ 0      │
-│ 5       │ 'Def-injected translations using old, renamed defs (fixed automatically but can break in the next RimWorld version)' │ 0      │
-│ 6       │ 'Argument count mismatches (may or may not be incorrect)'                                                            │ 20     │
-│ 7       │ 'Unnecessary keyed translations (will never be used)'                                                                │ 128    │
-│ 8       │ 'Keyed translations matching English (maybe ok)'                                                                     │ 97     │
-│ 9       │ 'Def-injected translations syntax suggestions'                                                                       │ 3      │
-│ 10      │ 'Backstories translation using obsolete format (def injection is now enabled for backstories)'                       │ 0      │
-└─────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴────────┘
-```
-
-
 RimWorld Italian
 ================
-Target Version: 1.4.3525
+Target Version: 1.6.4543
 
 Questi sono i file per la traduzione italiana di RimWorld.
 Puoi trovare ulteriori informazioni in questa pagina: http://ludeon.com/forums/index.php?topic=2933.0
 
 TRADUTTORI:
 ------------------
+### Attivi (v.1.6):
+- b4p3p
+- PuchRM89
+- spappo94
+
 ### Attivi:
 - StoneNimRod
 - Kaiser85
 - Rexlord (alias Lagorn)
 - Kenciccio
-- spappo94
 - Motty21D
+
 
 ### Vecchie Versioni:
 - Nephiro
@@ -68,6 +36,13 @@ INSTALLAZIONE:
 5) (Solo per DLC Ideology) Copiare l'intera cartella di *.\Ideology* nella directory di installazione di Rimworld in *...\Data\Ideology\Languages\\* e rinominarla come *Italiano*
 5) (Solo per DLC Biotech) Copiare l'intera cartella di *.\Biotech* nella directory di installazione di Rimworld in *...\Data\Biotech\Languages\\* e rinominarla come *Italiano*
 7) Avviare il gioco e selezionare la lingua *Italiano* (**non *Italian (Italiano)***)
+
+INSTALLAZIONE STEAM:
+------------------
+1) Scaricare la cartella zip dei files di traduzione
+2) Lanciare lo script install.ps1
+
+N.B. Se non si dispone di PowerShell, è possibile installare la traduzione manualmente seguendo le istruzioni di installazione copiando tutte le cartelle di traduzione nella cartella di installazione di RimWorld, come descritto sopra.
 
 SEGNALAZIONE ERRORI:
 ------------------------------
