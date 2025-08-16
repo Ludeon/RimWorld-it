@@ -2,7 +2,7 @@
 <LanguageData>
   
   <!-- EN: closed the void node -->
-  <ClosedTheVoid.label>TODO</ClosedTheVoid.label>
+  <ClosedTheVoid.label>ha chiuso il nodo del vuoto</ClosedTheVoid.label>
   <!-- EN:
     <li>tale_noun->[PAWN_nameDef] closing the void node.</li>
     <li>image->[PAWN_nameFull] sealing the connection to the void, ensuring the safety of the colony [circumstance_group]</li>
@@ -14,10 +14,20 @@
     <li>desc_sentence->The other colonists are shown [side_position], anxiously awaiting [PAWN_nameDef]'s return.</li>
     <li>desc_sentence->[PAWN_nameDef]'s face betrays that [PAWN_pronoun] is agonising over the choice before [PAWN_objective].</li>
   -->
-  <ClosedTheVoid.rulePack.rulesStrings>TODO</ClosedTheVoid.rulePack.rulesStrings>
+  <ClosedTheVoid.rulePack.rulesStrings>
+    <li>tale_noun->[PAWN_nameDef] chiude il nodo del vuoto.</li>
+    <li>image->[PAWN_nameFull] sigilla il collegamento con il vuoto, garantendo la sicurezza della colonia [circumstance_group]</li>
+    <li>image->[PAWN_nameFull] si erge con fierezza davanti al nodo del vuoto, {pawn_gender ? determinato : determinata : determinato/a} a proteggere la colonia [circumstance_group]</li>
+    <li>circumstance_phrase->mentre un’energia malefica crepita nell’aria</li>
+    <li>circumstance_phrase->mentre il nodo del vuoto emette un bagliore inquietante</li>
+    <li>circumstance_phrase->mentre il vuoto sussurra in lontananza</li>
+    <li>desc_sentence->Il metallo grigio incombe da ogni lato.</li>
+    <li>desc_sentence->Si vedono gli altri coloni [side_position], in ansiosa attesa del ritorno di [PAWN_nameDef].</li>
+    <li>desc_sentence->Il volto di [PAWN_nameDef] tradisce il tormento che lo/la assale di fronte alla decisione che [PAWN_pronoun] deve prendere.</li>
+  </ClosedTheVoid.rulePack.rulesStrings>
   
   <!-- EN: embraced the void -->
-  <EmbracedTheVoid.label>TODO</EmbracedTheVoid.label>
+  <EmbracedTheVoid.label>ha abbracciato il vuoto</EmbracedTheVoid.label>
   <!-- EN:
     <li>tale_noun->[PAWN_nameDef] embracing the void</li>
     <li>image->[PAWN_nameFull] harnessing the forbidden knowledge of the void, transcending mortal limitations, [circumstance_group]</li>
@@ -30,10 +40,21 @@
     <li>desc_sentence->[PAWN_nameDef]'s eyes begin to gleam with an otherworldly glow.</li>
     <li>desc_sentence->The other colonists are shown [side_position], questioning the wisdom of [PAWN_nameDef]'s choice.</li>
   -->
-  <EmbracedTheVoid.rulePack.rulesStrings>TODO</EmbracedTheVoid.rulePack.rulesStrings>
+  <EmbracedTheVoid.rulePack.rulesStrings>
+    <li>tale_noun->[PAWN_nameDef] abbraccia il vuoto</li>
+    <li>image->[PAWN_nameFull] sfrutta il sapere proibito del vuoto per trascendere i limiti dei mortali [circumstance_group]</li>
+    <li>image->[PAWN_nameFull] cede al richiamo del vuoto [circumstance_group]</li>
+    <li>image->[PAWN_nameFull] si abbandona ai sinistri sussurri del vuoto [circumstance_group]</li>
+    <li>circumstance_phrase->mentre viticci di energia nera si avvolgono attorno alle sue braccia e gambe</li>
+    <li>circumstance_phrase->in un vortice di energia</li>
+    <li>circumstance_phrase->con un sorriso inquietante</li>
+    <li>desc_sentence->Un’aura di potere minaccioso emana da [PAWN_nameDef], segno del suo patto con il vuoto.</li>
+    <li>desc_sentence->Una luce innaturale comincia a brillare negli occhi di [PAWN_nameDef].</li>
+    <li>desc_sentence->Si vedono gli altri coloni [side_position], chiedendosi se [PAWN_nameDef] abbia fatto la scelta giusta.</li>
+  </EmbracedTheVoid.rulePack.rulesStrings>
   
   <!-- EN: performed a psychic ritual -->
-  <PerformedPsychicRitual.label>TODO</PerformedPsychicRitual.label>
+  <PerformedPsychicRitual.label>ha eseguito un rituale psichico</PerformedPsychicRitual.label>
   <!-- EN:
     <li>tale_noun->[PAWN_nameDef] leading a psychic ritual</li>
     <li>image->[PAWN_nameFull] channeling energy that dances around [PAWN_objective] as [PAWN_pronoun] weaves a potent psychic ritual, [circumstance_group]</li>
@@ -49,6 +70,20 @@
     <li>desc_sentence->The monolith shimmers in the background.</li>
     <li>desc_sentence->The surrounding candles flicker and sputter in the swirling energy.</li>
   -->
-  <PerformedPsychicRitual.rulePack.rulesStrings>TODO</PerformedPsychicRitual.rulePack.rulesStrings>
+  <PerformedPsychicRitual.rulePack.rulesStrings>
+    <li>tale_noun->[PAWN_nameDef] conduce un rituale psichico</li>
+    <li>image->[PAWN_nameFull] canalizza l’energia che lo circonda per compiere un potente rituale psichico [circumstance_group]</li>
+    <li>image->[PAWN_nameFull] recita incantazioni occulte e attinge a forze misteriose per eseguire un rituale psichico [circumstance_group]</li>
+    <li>image->[PAWN_nameFull] si concentra intensamente per compiere un rituale psichico [circumstance_group]</li>
+    <li>image->[PAWN_nameFull] traccia simboli complessi nell’aria e sfrutta energie nascoste per eseguire un rituale psichico [circumstance_group]</li>
+    <li>circumstance_phrase->, mentre si concentra sul libro posato davanti a {PAWN_gender ? lui : lei : lui/lei}</li>
+    <li>circumstance_phrase->, mostrando la sua determinazione incrollabile e la padronanza delle arti psichiche</li>
+    <li>circumstance_phrase-> con un sorriso crudele</li>
+    <li>circumstance_phrase->, mentre lotta per far sentire la propria voce sopra il ruggito dell’energia</li>
+    <li>desc_sentence->Si vedono gli incantatori [side_position], intenti a fornire il loro sostegno.</li>
+    <li>desc_sentence->L’aria scintilla attorno a [PAWN_nameDef] mentre [PAWN_pronoun] termina il rituale psichico.</li>
+    <li>desc_sentence->Il monolite brilla sullo sfondo.</li>
+    <li>desc_sentence->La fiamma delle candele vacilla e si spegne nel vortice di energia.</li>
+  </PerformedPsychicRitual.rulePack.rulesStrings>
   
 </LanguageData>

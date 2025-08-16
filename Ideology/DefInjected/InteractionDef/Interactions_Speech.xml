@@ -2,7 +2,7 @@
 <LanguageData>
   
   <!-- EN: role acceptance speech -->
-  <Speech_AcceptRole.label>TODO</Speech_AcceptRole.label>
+  <Speech_AcceptRole.label>discorso di accettazione del ruolo</Speech_AcceptRole.label>
   <!-- EN:
     <li>r_logentry->[INITIATOR_nameDef] [spokeof] [speechtopic].</li>
     <li>speechtopic->[INITIATOR_possessive] new role in the community</li>
@@ -29,10 +29,35 @@
     <li>speechtopic->taking responsibility</li>
     <li>speechtopic->putting a role above [INITIATOR_possessive] personal desires</li>
   -->
-  <Speech_AcceptRole.logRulesInitiator.rulesStrings>TODO</Speech_AcceptRole.logRulesInitiator.rulesStrings>
+  <Speech_AcceptRole.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato di [speechtopic].</li>
+    <li>speechtopic->il suo nuovo ruolo nella comunità</li>
+    <li>speechtopic->la responsabilità del suo nuovo ruolo</li>
+    <li>speechtopic->l'importanza del suo nuovo ruolo</li>
+    <li>speechtopic->le sue buone qualità</li>
+    <li>speechtopic->i suoi punti di forza e come sfruttarli</li>
+    <li>speechtopic->le sue mancanze</li>
+    <li>speechtopic->le sue debolezze e come superarle</li>
+    <li>speechtopic->il suo desiderio di servire la comunità</li>
+    <li>speechtopic->la sua dedizione alle sue convinzioni</li>
+    <li>speechtopic->le sue convinzioni sul futuro</li>
+    <li>speechtopic->il suo desiderio di servire uno scopo più grande</li>
+    <li>speechtopic->la sua [PersonalCharacteristic] e come si relaziona al ruolo</li>
+    <li>speechtopic->come la sua [PersonalCharacteristic] lo rende adatto al ruolo</li>
+    <li>speechtopic->come userà la sua [PersonalCharacteristic] per superare gli ostacoli</li>
+    <li>speechtopic->gratitudine</li>
+    <li>speechtopic->mostrare riconoscenza</li>
+    <li>speechtopic->lo scopo della vita</li>
+    <li>speechtopic->il futuro della colonia</li>
+    <li>speechtopic->migliorare la colonia</li>
+    <li>speechtopic->prendere decisioni sotto stress</li>
+    <li>speechtopic->la struttura sociale della comunità</li>
+    <li>speechtopic->assumersi responsabilità</li>
+    <li>speechtopic->mettere il ruolo al di sopra dei desideri personali</li>
+  </Speech_AcceptRole.logRulesInitiator.rulesStrings>
   
   <!-- EN: blinding speech -->
-  <Speech_Blinding.label>TODO</Speech_Blinding.label>
+  <Speech_Blinding.label>discorso sull'accecamento</Speech_Blinding.label>
   <!-- EN:
     <li>r_logentry->[INITIATOR_nameDef] [spokeof] [speechtopic].</li>
     <li>speechtopic->blindness</li>
@@ -49,10 +74,25 @@
     <li>speechtopic->the true layers of reality under the visual</li>
     <li>speechtopic->psychic connections</li>
   -->
-  <Speech_Blinding.logRulesInitiator.rulesStrings>TODO</Speech_Blinding.logRulesInitiator.rulesStrings>
+  <Speech_Blinding.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato di [speechtopic].</li>
+    <li>speechtopic->cecità</li>
+    <li>speechtopic->la purezza della cecità</li>
+    <li>speechtopic->il significato spirituale dei non vedenti</li>
+    <li>speechtopic->mondi nascosti oltre la vista</li>
+    <li>speechtopic->la falsità della nostra realtà visiva</li>
+    <li>speechtopic->la tecnica dell'accecamento</li>
+    <li>speechtopic->la maledizione della vista</li>
+    <li>speechtopic->la gelatina all'interno del bulbo oculare</li>
+    <li>speechtopic->crescere vedente</li>
+    <li>speechtopic->crescere cieco</li>
+    <li>speechtopic->esplorare senza vedere o muoversi</li>
+    <li>speechtopic->i veri strati della realtà sotto il visivo</li>
+    <li>speechtopic->connessioni psichiche</li>
+  </Speech_Blinding.logRulesInitiator.rulesStrings>
   
   <!-- EN: conversion speech -->
-  <Speech_Conversion.label>TODO</Speech_Conversion.label>
+  <Speech_Conversion.label>discorso di conversione</Speech_Conversion.label>
   <!-- EN:
     <li>r_logentry->[INITIATOR_nameDef] [spokeof] [speechtopic].</li>
     <li>speechtopic->uniting for the greater good</li>
@@ -71,10 +111,27 @@
     <li>speechtopic->false other beliefs</li>
     <li>speechtopic->progress towards the future</li>
   -->
-  <Speech_Conversion.logRulesInitiator.rulesStrings>TODO</Speech_Conversion.logRulesInitiator.rulesStrings>
+  <Speech_Conversion.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato di [speechtopic].</li>
+    <li>speechtopic->unirsi per il bene comune</li>
+    <li>speechtopic->l'errore dell'apostasia</li>
+    <li>speechtopic->scegliere le giuste credenze</li>
+    <li>speechtopic->la struttura morale dell'universo</li>
+    <li>speechtopic->giusto e sbagliato</li>
+    <li>speechtopic->lo scopo della vita</li>
+    <li>speechtopic->il significato della vita</li>
+    <li>speechtopic->la storia dell'umanità</li>
+    <li>speechtopic->il futuro dell'umanità</li>
+    <li>speechtopic->amore e odio</li>
+    <li>speechtopic->paura e sicurezza</li>
+    <li>speechtopic->la giustezza dell'appartenenza</li>
+    <li>speechtopic->unirsi e appartenere</li>
+    <li>speechtopic->false credenze altrui</li>
+    <li>speechtopic->progresso verso il futuro</li>
+  </Speech_Conversion.logRulesInitiator.rulesStrings>
   
   <!-- EN: celebration speech -->
-  <Speech_DateRitual.label>TODO</Speech_DateRitual.label>
+  <Speech_DateRitual.label>discorso di celebrazione</Speech_DateRitual.label>
   <!-- EN:
     <li>r_logentry->[INITIATOR_nameDef] [praised] [praisetopic].</li>
     <li>praisetopic->the joy of ideological celebrations</li>
@@ -86,10 +143,19 @@
     <li>praisetopic->sharing ideas</li>
     <li>praisetopic->[INITIATOR_possessive] own group</li>
   -->
-  <Speech_DateRitual.logRulesInitiator.rulesStrings>TODO</Speech_DateRitual.logRulesInitiator.rulesStrings>
+  <Speech_DateRitual.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha lodato [praisetopic].</li>
+    <li>praisetopic->la gioia delle celebrazioni ideologiche</li>
+    <li>praisetopic->il pensiero corretto</li>
+    <li>praisetopic->la struttura morale dell'universo</li>
+    <li>praisetopic->[INITIATOR_possessive] credenze</li>
+    <li>praisetopic->lo stare insieme</li>
+    <li>praisetopic->la condivisione di idee</li>
+    <li>praisetopic->[INITIATOR_possessive] proprio gruppo</li>
+  </Speech_DateRitual.logRulesInitiator.rulesStrings>
   
   <!-- EN: duel speech -->
-  <Speech_Duel.label>TODO</Speech_Duel.label>
+  <Speech_Duel.label>discorso del duello</Speech_Duel.label>
   <!-- EN:
     <li>r_logentry->[INITIATOR_nameDef] [praised] [praisetopic].</li>
     <li>praisetopic->death by blade</li>
@@ -108,10 +174,27 @@
     <li>praisetopic->anger and hope</li>
     <li>praisetopic->rage and strength</li>
   -->
-  <Speech_Duel.logRulesInitiator.rulesStrings>TODO</Speech_Duel.logRulesInitiator.rulesStrings>
+  <Speech_Duel.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha lodato [praisetopic].</li>
+    <li>praisetopic->la morte per lama</li>
+    <li>praisetopic->la morte dolorosa</li>
+    <li>praisetopic->la morte onorevole</li>
+    <li>praisetopic->il combattimento onorevole</li>
+    <li>praisetopic->coraggio e lotta</li>
+    <li>praisetopic->[AdjectiveBadass] armi e combattenti</li>
+    <li>praisetopic->la purezza del conflitto fisico</li>
+    <li>praisetopic->l'amore attraverso la morte</li>
+    <li>praisetopic->scacciare l'odio per la salute</li>
+    <li>praisetopic->forza sugli altri</li>
+    <li>praisetopic->il conflitto insito nell'universo</li>
+    <li>praisetopic->sangue e polvere</li>
+    <li>praisetopic->vita e dramma</li>
+    <li>praisetopic->rabbia e speranza</li>
+    <li>praisetopic->furore e forza</li>
+  </Speech_Duel.logRulesInitiator.rulesStrings>
   
   <!-- EN: exceution speech -->
-  <Speech_Execution.label>TODO</Speech_Execution.label>
+  <Speech_Execution.label>discorso di esecuzione</Speech_Execution.label>
   <!-- EN:
     <li>r_logentry->[INITIATOR_nameDef] [spokeof] [speechtopic].</li>
     <li>speechtopic->life and death</li>
@@ -124,10 +207,21 @@
     <li>speechtopic->capital punishment and its history</li>
     <li>speechtopic->the reasons for the execution</li>
   -->
-  <Speech_Execution.logRulesInitiator.rulesStrings>TODO</Speech_Execution.logRulesInitiator.rulesStrings>
+  <Speech_Execution.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato di [speechtopic].</li>
+    <li>speechtopic->la vita e la morte</li>
+    <li>speechtopic->la necessità della giustizia</li>
+    <li>speechtopic->i metodi di esecuzione</li>
+    <li>speechtopic->la morte e la crudeltà</li>
+    <li>speechtopic->l'uccisione misericordiosa</li>
+    <li>speechtopic->la misericordia di un'uccisione corretta</li>
+    <li>speechtopic->il simbolismo della morte</li>
+    <li>speechtopic->la pena capitale e la sua storia</li>
+    <li>speechtopic->le ragioni dell'esecuzione</li>
+  </Speech_Execution.logRulesInitiator.rulesStrings>
   
   <!-- EN: funeral speech -->
-  <Speech_Funeral.label>TODO</Speech_Funeral.label>
+  <Speech_Funeral.label>discorso funebre</Speech_Funeral.label>
   <!-- EN:
     <li>r_logentry->[INITIATOR_nameDef] [spokeof] [speechtopic].</li>
     <li>speechtopic->the nobility of sacrifice</li>
@@ -143,10 +237,24 @@
     <li>speechtopic->life and joy</li>
     <li>speechtopic->carrying forward unfinished work</li>
   -->
-  <Speech_Funeral.logRulesInitiator.rulesStrings>TODO</Speech_Funeral.logRulesInitiator.rulesStrings>
+  <Speech_Funeral.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato di [speechtopic].</li>
+    <li>speechtopic->la nobiltà del sacrificio</li>
+    <li>speechtopic->la morte</li>
+    <li>speechtopic->la vita dopo la morte</li>
+    <li>speechtopic->la morte e la famiglia</li>
+    <li>speechtopic->il concetto di una vita buona</li>
+    <li>speechtopic->la morte come via verso la dignità</li>
+    <li>speechtopic->gli inizi e le fini</li>
+    <li>speechtopic->cosa accade dopo la morte</li>
+    <li>speechtopic->celebrare il prossimo passo</li>
+    <li>speechtopic->amici assenti</li>
+    <li>speechtopic->vita e gioia</li>
+    <li>speechtopic->portare avanti il lavoro incompiuto</li>
+  </Speech_Funeral.logRulesInitiator.rulesStrings>
   
   <!-- EN: leader speech -->
-  <Speech_Leader.label>TODO</Speech_Leader.label>
+  <Speech_Leader.label>discorso del leader</Speech_Leader.label>
   <!-- EN:
     <li>r_logentry->[INITIATOR_nameDef] [spokeof] [speechtopic].</li>
     <li>speechtopic->searching for [Vegetable]s</li>
@@ -183,10 +291,45 @@
     <li>speechtopic(p=0.25)->strong hands and hearts</li>
     <li>speechtopic(p=0.25)->the right to survive</li>
   -->
-  <Speech_Leader.logRulesInitiator.rulesStrings>TODO</Speech_Leader.logRulesInitiator.rulesStrings>
+  <Speech_Leader.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato di [speechtopic].</li>
+    <li>speechtopic->la ricerca di [Vegetable]</li>
+    <li>speechtopic->come essere [AdjectiveFriendly]</li>
+    <li>speechtopic->evitare [AnimalBadass]</li>
+    <li>speechtopic->come la vita assomiglia a [Game]</li>
+    <li>speechtopic->la mente come [Weapon]</li>
+    <li>speechtopic->esplorare tra [TerrainFeature] e [TerrainFeature]</li>
+    <li>speechtopic->promesse verso [Direction]</li>
+    <li>speechtopic->come essere più simili a [Animal]</li>
+    <li>speechtopic->il simbolismo di [NaturalObject] e [NaturalObject]</li>
+    <li>speechtopic->come tutti siano [PersonFamily] e [PersonFamily]</li>
+    <li>speechtopic->come essere un buon [PersonAlly]</li>
+    <li>speechtopic->la necessità di [PersonJob]</li>
+    <li>speechtopic->evitare [PersonBadass]</li>
+    <li>speechtopic->sconfiggere [Enemy] attraverso [ConceptPositive]</li>
+    <li>speechtopic->vedere [Gore] durante il combattimento</li>
+    <li>speechtopic->la storia di [Mechanoid]</li>
+    <li>speechtopic->il significato di [ConceptPositive]</li>
+    <li>speechtopic->il [ConceptPositive] della colonia</li>
+    <li>speechtopic->come essere [AdjectiveBadass] senza essere [AdjectiveBadass]</li>
+    <li>speechtopic->quanto [AdjectiveBadass] sia la colonia</li>
+    <li>speechtopic->[AdjectiveNatural] [TerrainFeature]</li>
+    <li>speechtopic->il [AdjectiveLarge] potenziale della colonia</li>
+    <li>speechtopic->il [PersonalCharacteristic] di ogni colono</li>
+    <li>speechtopic->il terribile [PersonalCharacteristic] dei nemici della colonia</li>
+    <li>speechtopic(p=0.25)->restare uniti come gruppo</li>
+    <li>speechtopic(p=0.25)->il percorso avanti attraverso la tragedia</li>
+    <li>speechtopic(p=0.25)->la comunità e la sua importanza</li>
+    <li>speechtopic(p=0.25)->sopravvivenza contro lusso</li>
+    <li>speechtopic(p=0.25)->felicità attraverso le difficoltà</li>
+    <li>speechtopic(p=0.25)->soddisfazione attraverso la sofferenza</li>
+    <li>speechtopic(p=0.25)->la morte come motivatore</li>
+    <li>speechtopic(p=0.25)->mani e cuori forti</li>
+    <li>speechtopic(p=0.25)->il diritto di sopravvivere</li>
+  </Speech_Leader.logRulesInitiator.rulesStrings>
   
   <!-- EN: role removal speech -->
-  <Speech_RemoveRole.label>TODO</Speech_RemoveRole.label>
+  <Speech_RemoveRole.label>discorso di rimozione del ruolo</Speech_RemoveRole.label>
   <!-- EN:
     <li>r_logentry->[INITIATOR_nameDef] [spokeof] [speechtopic].</li>
     <li>speechtopic->[INITIATOR_possessive] past role in the community</li>
@@ -208,10 +351,30 @@
     <li>speechtopic->better candidates</li>
     <li>speechtopic->putting community goals above [INITIATOR_possessive] personal ambitions</li>
   -->
-  <Speech_RemoveRole.logRulesInitiator.rulesStrings>TODO</Speech_RemoveRole.logRulesInitiator.rulesStrings>
+  <Speech_RemoveRole.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato di [speechtopic].</li>
+    <li>speechtopic->del suo ruolo passato nella comunità</li>
+    <li>speechtopic->della responsabilità del suo vecchio ruolo</li>
+    <li>speechtopic->della difficoltà del suo vecchio ruolo</li>
+    <li>speechtopic->delle sue mancanze</li>
+    <li>speechtopic->delle sue debolezze e di come superarle</li>
+    <li>speechtopic->della sua frustrazione verso la comunità</li>
+    <li>speechtopic->della sua dedizione alle proprie convinzioni</li>
+    <li>speechtopic->delle sue convinzioni sul futuro</li>
+    <li>speechtopic->del suo desiderio di perseguire i propri obiettivi</li>
+    <li>speechtopic->della sua mancanza di [PersonalCharacteristic]</li>
+    <li>speechtopic->del suo passato</li>
+    <li>speechtopic->mostrando umiltà</li>
+    <li>speechtopic->dello scopo della vita</li>
+    <li>speechtopic->del futuro della colonia</li>
+    <li>speechtopic->di come migliorare la colonia</li>
+    <li>speechtopic->della struttura sociale della comunità</li>
+    <li>speechtopic->dell'esistenza di candidati migliori</li>
+    <li>speechtopic->di mettere gli obiettivi della comunità sopra le proprie ambizioni personali</li>
+  </Speech_RemoveRole.logRulesInitiator.rulesStrings>
   
   <!-- EN: sacrifice speech -->
-  <Speech_Sacrifice.label>TODO</Speech_Sacrifice.label>
+  <Speech_Sacrifice.label>discorso di sacrificio</Speech_Sacrifice.label>
   <!-- EN:
     <li>r_logentry->[INITIATOR_nameDef] [spokeof] [speechtopic].</li>
     <li>r_logentry(p=0.2)->[INITIATOR_nameDef] [crazy].</li>
@@ -235,10 +398,32 @@
     <li>crazy->brandished a blade</li>
     <li>crazy->muttered repetitively</li>
   -->
-  <Speech_Sacrifice.logRulesInitiator.rulesStrings>TODO</Speech_Sacrifice.logRulesInitiator.rulesStrings>
+  <Speech_Sacrifice.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato di [speechtopic].</li>
+    <li>r_logentry(p=0.2)->[INITIATOR_nameDef] [crazy].</li>
+    <li>speechtopic->del significato e del vero valore della morte</li>
+    <li>speechtopic->delle espressioni di dolore</li>
+    <li>speechtopic->della crudeltà controllata</li>
+    <li>speechtopic->del calore del sangue</li>
+    <li>speechtopic->del significato della morte</li>
+    <li>speechtopic->dell'amore e della morte</li>
+    <li>speechtopic->della simbolizzazione del dolore</li>
+    <li>speechtopic->delle lame e della carne</li>
+    <li>speechtopic->dell'arte del taglio</li>
+    <li>speechtopic->della seduzione del sangue</li>
+    <li>speechtopic->della musica delle urla</li>
+    <li>speechtopic->delle viscere sul pavimento</li>
+    <li>crazy->ha urlato in modo maniacale</li>
+    <li>crazy->ha iniziato un canto</li>
+    <li>crazy->ha cantato verso il cielo</li>
+    <li>crazy->ha sputato nell'occhio del sacrificato</li>
+    <li>crazy->ha ghignato</li>
+    <li>crazy->ha brandito una lama</li>
+    <li>crazy->ha borbottato ripetutamente</li>
+  </Speech_Sacrifice.logRulesInitiator.rulesStrings>
   
   <!-- EN: scarification speech -->
-  <Speech_Scarification.label>TODO</Speech_Scarification.label>
+  <Speech_Scarification.label>discorso sulla scarificazione</Speech_Scarification.label>
   <!-- EN:
     <li>r_logentry->[INITIATOR_nameDef] [spokeof] [speechtopic].</li>
     <li>r_logentry(p=0.2)->[INITIATOR_nameDef] [crazy].</li>
@@ -260,10 +445,30 @@
     <li>crazy->brandished a blade</li>
     <li>crazy->muttered repetitively</li>
   -->
-  <Speech_Scarification.logRulesInitiator.rulesStrings>TODO</Speech_Scarification.logRulesInitiator.rulesStrings>
+  <Speech_Scarification.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato di [speechtopic].</li>
+    <li>r_logentry(p=0.2)->[INITIATOR_nameDef] [crazy].</li>
+    <li>speechtopic->dell'incidere il dolore sul corpo</li>
+    <li>speechtopic->delle espressioni di dolore</li>
+    <li>speechtopic->della crudeltà controllata</li>
+    <li>speechtopic->del calore del sangue</li>
+    <li>speechtopic->del significato della cicatrice</li>
+    <li>speechtopic->dell'amore e del dolore</li>
+    <li>speechtopic->della simbolizzazione del dolore</li>
+    <li>speechtopic->delle lame e della carne</li>
+    <li>speechtopic->dell'arte del taglio</li>
+    <li>speechtopic->della seduzione del sangue</li>
+    <li>speechtopic->della musica delle urla</li>
+    <li>crazy->ha urlato in modo maniacale</li>
+    <li>crazy->ha iniziato un canto</li>
+    <li>crazy->ha cantato verso il cielo</li>
+    <li>crazy->ha ghignato</li>
+    <li>crazy->ha brandito una lama</li>
+    <li>crazy->ha borbottato ripetutamente</li>
+  </Speech_Scarification.logRulesInitiator.rulesStrings>
   
   <!-- EN: tree connection speech -->
-  <Speech_TreeConnection.label>TODO</Speech_TreeConnection.label>
+  <Speech_TreeConnection.label>discorso di connessione con l'albero</Speech_TreeConnection.label>
   <!-- EN:
     <li>r_logentry->[INITIATOR_nameDef] [spokeof] [speechtopic].</li>
     <li>speechtopic->the trees and the people</li>
@@ -279,6 +484,20 @@
     <li>speechtopic->plant life and eternity</li>
     <li>speechtopic->connecting with nature</li>
   -->
-  <Speech_TreeConnection.logRulesInitiator.rulesStrings>TODO</Speech_TreeConnection.logRulesInitiator.rulesStrings>
+  <Speech_TreeConnection.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato di [speechtopic].</li>
+    <li>speechtopic->degli alberi e delle persone</li>
+    <li>speechtopic->degli alberi e dei poteri psichici</li>
+    <li>speechtopic->delle driadi</li>
+    <li>speechtopic->del ciclo vitale dei Gauranlen</li>
+    <li>speechtopic->della presenza spirituale degli alberi Gauranlen</li>
+    <li>speechtopic->della dendro-patia psichica</li>
+    <li>speechtopic->di quanto siano carine le driadi</li>
+    <li>speechtopic->della nobiltà delle driadi</li>
+    <li>speechtopic->dell'età degli alberi</li>
+    <li>speechtopic->del ruolo dell'umanità sotto gli alberi</li>
+    <li>speechtopic->della vita vegetale e dell'eternità</li>
+    <li>speechtopic->del connettersi con la natura</li>
+  </Speech_TreeConnection.logRulesInitiator.rulesStrings>
   
 </LanguageData>

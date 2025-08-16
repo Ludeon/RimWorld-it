@@ -112,7 +112,117 @@
     <li>cubeEmotion->charmed</li>
     <li>cubeEmotion->aggravated</li>
   -->
-  <ArtDescription_CubeSculpture.rulePack.rulesStrings>TODO</ArtDescription_CubeSculpture.rulePack.rulesStrings>
+  <ArtDescription_CubeSculpture.rulePack.rulesStrings>
+    <li>r_art_description->[cubeWork] [cubeDepicts] [aCube]. [cube_style_group]</li>
+    <li>cube_style_group(p=2)->[cubeDescSentence]. [cubeExtraSentence].</li>
+    <li>cube_style_group(p=3)->[cubeDescSentence].</li>
+    <li>cube_style_group-></li>
+    <li>cubeDescSentence(p=3)->[cubeLocation], [aPawn] sta [worshipsTheCube]</li>
+    <li>cubeDescSentence(p=3)->[cubeLocation], [pawnsPlural] stanno [worshippingTheCube]</li>
+    <li>cubeDescSentence->Fa venire voglia di [worshippingTheCube]</li>
+    <li>cubeDescSentence->Al centro di [cubeWork], si intravedono sagome che stanno [worshippingTheCube]</li>
+    <li>cubeWork->questa creazione</li>
+    <li>cubeWork->questa scultura</li>
+    <li>cubeWork->quest'opera d'arte</li>
+    <li>cubeWork->questo pezzo</li>
+    <li>aCube->un cubo astratto</li>
+    <li>aCube->un cubo perfetto</li>
+    <li>aCube->un cubo storto</li>
+    <li>aCube->un cubo stilizzato</li>
+    <li>aCube->un cubo moltiplicatore</li>
+    <li>aCube->un cubo grezzo</li>
+    <li>aCube->un cubo deformato</li>
+    <li>aCube->un cubo terrificante</li>
+    <li>aCube->un cubo tenebroso</li>
+    <li>cubeLocation->al centro</li>
+    <li>cubeLocation->su ogni faccia</li>
+    <li>cubeLocation->al centro di ogni faccia</li>
+    <li>cubeLocation->in cima alla sagoma principale</li>
+    <li>cubeLocation->sotto la sagoma principale</li>
+    <li>cubeLocation->dietro la sagoma principale</li>
+    <li>cubeLocation->vicino agli spigoli</li>
+    <li>cubeLocation->lungo i bordi</li>
+    <li>cubeLocation->lungo gli spigoli</li>
+    <li>cubeDepicts->raffigura</li>
+    <li>cubeDepicts->mostra</li>
+    <li>cubeDepicts->illustra</li>
+    <li>cubeDepicts->rappresenta</li>
+    <li>aPawn->un autoritratto dell’artista</li>
+    <li>aPawn->un thrumbo</li>
+    <li>aPawn->un volto umano emaciato con troppi occhi</li>
+    <li>aPawn->uno dei tuoi coloni</li>
+    <li>aPawn->un neandertaliano</li>
+    <li>aPawn->un capo di un mondo avanzato</li>
+    <li>aPawn->una figura indistinta</li>
+    <li>aPawn->uno sciamano tribale</li>
+    <li>aPawn->un sanguifago incappucciato</li>
+    <li>aPawn->una principessa medievale</li>
+    <li>aPawn->il capo di una comunità lontana ([Community])</li>
+    <li>aPawn->una donna brandendo un'arma ([Weapon])</li>
+    <li>aPawn->una processione di figure in tunica</li>
+    <li>pawnsPlural->i tuoi coloni</li>
+    <li>pawnsPlural->dei predoni</li>
+    <li>pawnsPlural->i membri di una congrega tribale</li>
+    <li>pawnsPlural->numerosi meccanoidi</li>
+    <li>pawnsPlural->dei pirati</li>
+    <li>pawnsPlural->dei contadini</li>
+    <li>pawnsPlural->dei [Animal] in [AnimalGroup]</li>
+    <li>pawnsPlural->i membri della comunità [Community]</li>
+    <li>pawnsPlural->[Quantity_adjphrase] persone stanno</li>
+    <li>worshippingTheCube->venerarlo</li>
+    <li>worshippingTheCube->inchinarsi davanti a lui</li>
+    <li>worshippingTheCube->inginocchiarsi davanti a lui</li>
+    <li>worshippingTheCube->girargli intorno</li>
+    <li>worshippingTheCube->cantare le sue lodi</li>
+    <li>worshippingTheCube->tremare di paura davanti a lui</li>
+    <li>worshippingTheCube->suplicarlo</li>
+    <li>worshippingTheCube->piangere davanti a lui</li>
+    <li>worshippingTheCube->giocare con lui</li>
+    <li>worshippingTheCube->diventargli amico</li>
+    <li>worshippingTheCube->osservarlo</li>
+    <li>worshippingTheCube->non pensare ad altro che a lui</li>
+    <li>worshippingTheCube->offrirgli un sacrificio</li>
+    <li>worshippingTheCube->fargli un'offerta</li>
+    <li>worshippingTheCube->maledirlo</li>
+    <li>worshippingTheCube->rispettarlo</li>
+    <li>worshippingTheCube->seppellirlo</li>
+    <li>worshippingTheCube->metterlo su un piedistallo</li>
+    <li>worshippingTheCube->copiarlo</li>
+    <li>worshippingTheCube->portarlo in un altro mondo</li>
+    <li>worshipsTheCube->venerarlo</li>
+    <li>worshipsTheCube->inchinarsi davanti a lui</li>
+    <li>worshipsTheCube->inginocchiarsi davanti a lui</li>
+    <li>worshipsTheCube->girargli intorno</li>
+    <li>worshipsTheCube->cantare le sue lodi</li>
+    <li>worshipsTheCube->tremare di paura davanti a lui</li>
+    <li>worshipsTheCube->suplicarlo</li>
+    <li>worshipsTheCube->piangere davanti a lui</li>
+    <li>worshipsTheCube->giocare con lui</li>
+    <li>worshipsTheCube->diventargli amico</li>
+    <li>worshipsTheCube->osservarlo</li>
+    <li>worshipsTheCube->non pensare ad altro che a lui</li>
+    <li>worshipsTheCube->offrirgli un sacrificio</li>
+    <li>worshipsTheCube->fargli un'offerta</li>
+    <li>worshipsTheCube->maledirlo</li>
+    <li>worshipsTheCube->attaccarlo</li>
+    <li>worshipsTheCube->seppellirlo</li>
+    <li>worshipsTheCube->metterlo su un piedistallo</li>
+    <li>worshipsTheCube->copiarlo</li>
+    <li>worshipsTheCube->portarlo in un altro mondo</li>
+    <li>cubeExtraSentence->Il cubo sembra [cubeEmotion] la scena</li>
+    <li>cubeExtraSentence->[pawnsPlural] si avvicinano per fare lo stesso</li>
+    <li>cubeExtraSentence->[aPawn] si avvicina per fare lo stesso</li>
+    <li>cubeExtraSentence->[aPawn] guarda la scena con tristezza</li>
+    <li>cubeExtraSentence->[pawnsPlural] si preparano a rubare il cubo</li>
+    <li>cubeExtraSentence->Il cubo sembra brillare dolcemente</li>
+    <li>cubeEmotion->restare impassibile davanti a</li>
+    <li>cubeEmotion->rapito da</li>
+    <li>cubeEmotion->infastidito da</li>
+    <li>cubeEmotion->indifferente a</li>
+    <li>cubeEmotion->furioso per</li>
+    <li>cubeEmotion->incantato da</li>
+    <li>cubeEmotion->seccato da</li>
+  </ArtDescription_CubeSculpture.rulePack.rulesStrings>
   
   <!-- EN:
     <li>r_art_description->This [voidStrange] sculpture [voidVerbphrase]. [voidDesc]</li>
@@ -148,6 +258,39 @@
     <li>voidDesc->An abstracted shape resembling an animal appears to rip off one of its own limbs.</li>
     <li>voidDesc->Hundreds of tiny abstract figure-like objects swarm over a large distorted globe.</li>
   -->
-  <ArtDescription_VoidSculpture.rulePack.rulesStrings>TODO</ArtDescription_VoidSculpture.rulePack.rulesStrings>
+  <ArtDescription_VoidSculpture.rulePack.rulesStrings>
+    <li>r_art_description->Questa scultura [voidStrange] [voidVerbphrase]. [voidDesc]</li>
+    <li>voidStrange->strana</li>
+    <li>voidStrange->sconvolgente</li>
+    <li>voidStrange->disturbante</li>
+    <li>voidStrange->scioccante</li>
+    <li>voidStrange->contorta</li>
+    <li>voidStrange->deforme</li>
+    <li>voidStrange->disumana</li>
+    <li>voidStrange->singolare</li>
+    <li>voidVerbphrase->si accartoccia assumendo una forma inquietante</li>
+    <li>voidVerbphrase->trema come se volesse colpire l’osservatore</li>
+    <li>voidVerbphrase->sembra alterarsi sotto lo sguardo dell’osservatore</li>
+    <li>voidVerbphrase->sembra emanare un’aura di rabbia</li>
+    <li>voidVerbphrase->trasmette un senso di depressione e tristezza</li>
+    <li>voidVerbphrase->provoca timore e dubbio</li>
+    <li>voidVerbphrase->si allunga bruscamente e in modo casuale in direzioni diverse</li>
+    <li>voidVerbphrase->sembra tremare finché non la si guarda fissamente</li>
+    <li>voidVerbphrase->dà l’impressione di respirare</li>
+    <li>voidVerbphrase->non assomiglia a nessuna creatura vivente</li>
+    <li>voidVerbphrase->è chiaramente una metafora della sofferenza</li>
+    <li>voidDesc->Decine di appendici simili a dita afferrano dolorosamente una figura centrale.</li>
+    <li>voidDesc->Masse di materiale si schiacciano l’una contro l’altra in una cacofonia di forme allungate.</li>
+    <li>voidDesc->Segmenti affilati sono attorcigliati insieme e ricordano un volto pietrificato in un urlo di terrore.</li>
+    <li>voidDesc->Protuberanze simili a braccia si afferrano tra loro come per autodistruggersi.</li>
+    <li>voidDesc->Gli aghi che perforano la superficie sembrano pronti a colpire chiunque si muova nelle vicinanze.</li>
+    <li>voidDesc->La superficie si contrae e vortica, passando da una texture organica a linee rigide e bordi taglienti di macchinari.</li>
+    <li>voidDesc->Sembra che abbia cercato di autodistruggersi con grande violenza e si tenga insieme solo per miracolo.</li>
+    <li>voidDesc->Quella che sembra una mano dà l’impressione di poter colpire in qualsiasi momento.</li>
+    <li>voidDesc->Due figure sembrano torturarsi a vicenda, dilaniando la carne della rivale con dita ricurve e dentellate.</li>
+    <li>voidDesc->Una forma complessa emerge dalla bocca di un volto urlante.</li>
+    <li>voidDesc->Una forma astratta simile a un animale sembra volersi strappare un arto.</li>
+    <li>voidDesc->Centinaia di piccoli oggetti dalle sagome astratte brulicano attorno a un grande globo deformato.</li>
+ </ArtDescription_VoidSculpture.rulePack.rulesStrings>
   
 </LanguageData>

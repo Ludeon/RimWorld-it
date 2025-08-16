@@ -4,7 +4,7 @@
   <!-- EN: basic mechtech -->
   <BasicMechtech.label>mechtech di base</BasicMechtech.label>
   <!-- EN: The technology needed for your mechanitor to create and control basic-tier mechanoids. -->
-  <BasicMechtech.description>La tecnologia necessaria al tuo mechanitor per creare e controllare meccanoidi di livello base.</BasicMechtech.description>
+  <BasicMechtech.description>La tecnologia necessaria al tuo meccanista per creare e controllare meccanoidi di livello base.</BasicMechtech.description>
   <!-- EN:
     <li>subject->mechanoids</li>
     <li>subject_story->authored a children's book covering the basic types of mechanoid</li>
@@ -13,12 +13,19 @@
     <li>subject_story->was mining an ancient exostrider wreck and found a mechlink preserved in the wreckage</li>
     <li>subject_gerund->creating basic mechanoids</li>
   -->
-  <BasicMechtech.generalRules.rulesStrings>TODO</BasicMechtech.generalRules.rulesStrings>
+  <BasicMechtech.generalRules.rulesStrings>
+    <li>subject->meccanoidi</li>
+    <li>subject_story->ha scritto un libro per bambini sui tipi base di meccanoide</li>
+    <li>subject_story->è stato/a impiantato/a con un prototipo di mechlink</li>
+    <li>subject_story->ha replicato autonomamente tecniche biomeccaniche di base</li>
+    <li>subject_story->stava estraendo in una carcassa di antico exostrider e ha trovato un mechlink conservato nei resti</li>
+    <li>subject_gerund->creare meccanoidi di base</li>
+  </BasicMechtech.generalRules.rulesStrings>
   
   <!-- EN: high mechtech -->
-  <HighMechtech.label>alta tecnologia meccanizzata</HighMechtech.label>
+  <HighMechtech.label>mech di alto livello</HighMechtech.label>
   <!-- EN: The technology needed for your mechanitor to create and control high-tier mechanoids.\n\nYou can get powerfocus chips by using a mechanitor to summon a war queen threat. -->
-  <HighMechtech.description>La tecnologia necessaria al tuo mechanitor per creare e controllare meccanoidi di alto livello.\n\nPuoi ottenere chip powerfocus usando un mechanitor per evocare una minaccia regina della guerra.</HighMechtech.description>
+  <HighMechtech.description>La tecnologia necessaria al tuo meccanista per creare e controllare meccanoidi di alto livello.\n\nPuoi ottenere chip powerfocus usando un meccanista per evocare una minaccia regina della guerra.</HighMechtech.description>
   <!-- EN:
     <li>subject->high tier mechanoids</li>
     <li>subject_story->survived a War Queen assault on an Imperial world</li>
@@ -27,12 +34,19 @@
     <li>subject_story->built prototype mechanoid micro-organs for an offworld client</li>
     <li>subject_gerund->creating high-tier mechanoids</li>
   -->
-  <HighMechtech.generalRules.rulesStrings>TODO</HighMechtech.generalRules.rulesStrings>
+  <HighMechtech.generalRules.rulesStrings>
+    <li>subject->meccanoidi di alto livello</li>
+    <li>subject_story->ha sopravvissuto a un assalto della Regina della Guerra su un mondo imperiale</li>
+    <li>subject_story->ha comprato un chip powerfocus da un mercante che non ne conosceva il valore</li>
+    <li>subject_story->ha interrogato meccanisti catturati in raid planetari</li>
+    <li>subject_story->ha costruito micro-organi meccanoidi prototipali per un cliente di un altro mondo</li>
+    <li>subject_gerund->creare meccanoidi di alto livello</li>
+  </HighMechtech.generalRules.rulesStrings>
   
   <!-- EN: standard mechtech -->
   <StandardMechtech.label>mechtech standard</StandardMechtech.label>
   <!-- EN: The technology needed for your mechanitor to create and control standard-tier mechanoids.\n\nYou can get signal chips by using a mechanitor to summon a diabolus threat. -->
-  <StandardMechtech.description>La tecnologia necessaria al tuo mechanitor per creare e controllare meccanoidi di livello standard.\n\nPuoi ottenere chip di segnale usando un mechanitor per evocare una minaccia diabolus.</StandardMechtech.description>
+  <StandardMechtech.description>La tecnologia necessaria al tuo meccanista per creare e controllare meccanoidi di livello standard.\n\nPuoi ottenere chip di segnale usando un meccanista per evocare una minaccia diabolus.</StandardMechtech.description>
   <!-- EN:
     <li>subject->mechanoids</li>
     <li>subject_story->acquired a signal chip in shady circumstances</li>
@@ -41,12 +55,19 @@
     <li>subject_story->collated reports of mechanoid attacks, looking for commonalities</li>
     <li>subject_gerund->creating standard mechanoids</li>
   -->
-  <StandardMechtech.generalRules.rulesStrings>TODO</StandardMechtech.generalRules.rulesStrings>
+  <StandardMechtech.generalRules.rulesStrings>
+    <li>subject->meccanoidi</li>
+    <li>subject_story->ha ottenuto un chip di segnale in circostanze losche</li>
+    <li>subject_story->ha trovato un chip di segnale intatto in un relitto di diabolus</li>
+    <li>subject_story->ha sopravvissuto a un assalto dell’alveare meccanoide</li>
+    <li>subject_story->ha raccolto rapporti sugli attacchi dei meccanoidi, cercando somiglianze</li>
+    <li>subject_gerund->creare meccanoidi standard</li>
+  </StandardMechtech.generalRules.rulesStrings>
   
   <!-- EN: ultra mechtech -->
-  <UltraMechtech.label>ultrameccanico</UltraMechtech.label>
+  <UltraMechtech.label>ultra mechtech</UltraMechtech.label>
   <!-- EN: The advanced technology needed for your mechanitor to create and control ultra-tier mechanoids, including large mechs and ultra-tier mechanitor gear.\n\nYou can get nano structuring chips by using a mechanitor to summon an apocriton threat. -->
-  <UltraMechtech.description>La tecnologia avanzata necessaria al tuo mechanitor per creare e controllare mechanitor di livello ultra, inclusi mech di grandi dimensioni e attrezzature mechanitor di livello ultra.\n\nPuoi ottenere chip nanostrutturanti utilizzando un mechanitor per evocare una minaccia apocriton.</UltraMechtech.description>
+  <UltraMechtech.description>La tecnologia avanzata necessaria al tuo meccanista per creare e controllare meccanisti di livello ultra, inclusi mech di grandi dimensioni e attrezzature meccanista di livello ultra.\n\nPuoi ottenere chip nanostrutturanti utilizzando un meccanista per evocare una minaccia apocriton.</UltraMechtech.description>
   <!-- EN:
     <li>subject->ultra-tier mechanoids</li>
     <li>subject_story->found a powered-down apocriton in the wreckage of a deadworld</li>
@@ -55,7 +76,14 @@
     <li>subject_story->found an ascension diary next to an inert archonexus</li>
     <li>subject_gerund->creating ultra-tier mechanoids</li>
   -->
-  <UltraMechtech.generalRules.rulesStrings>TODO</UltraMechtech.generalRules.rulesStrings>
+  <UltraMechtech.generalRules.rulesStrings>
+    <li>subject->meccanoidi di livello ultra</li>
+    <li>subject_story->ha trovato un apocriton spento tra i resti di un mondo morto</li>
+    <li>subject_story->ha osservato un apocriton resuscitare mech da una distanza sicura</li>
+    <li>subject_story->ha attinto al profondo odio psichico che gli apocriton provano verso l’umanità</li>
+    <li>subject_story->ha trovato un diario di ascensione accanto a un archonexus inattivo</li>
+    <li>subject_gerund->creare meccanoidi di livello ultra</li>
+  </UltraMechtech.generalRules.rulesStrings>
   
   <!-- EN: wastepack atomizer -->
   <WastepackAtomizer.label>atomizzatore per rifiuti</WastepackAtomizer.label>
@@ -69,6 +97,13 @@
     <li>subject_story->observed a toxicworld from orbit</li>
     <li>subject_gerund->constructing wastepack atomizers</li>
   -->
-  <WastepackAtomizer.generalRules.rulesStrings>TODO</WastepackAtomizer.generalRules.rulesStrings>
+  <WastepackAtomizer.generalRules.rulesStrings>
+    <li>subject->atomizzazione dei rifiuti tossici</li>
+    <li>subject_story->ha studiato lo smaltimento sicuro dei rifiuti atomici</li>
+    <li>subject_story->ha reclutato squadre usa e getta per missioni di smaltimento solare dei rifiuti</li>
+    <li>subject_story->ha ideato la teoria per la destabilizzazione atomica partendo dai principi fondamentali</li>
+    <li>subject_story->ha osservato un mondo tossico dall’orbita</li>
+    <li>subject_gerund->costruire atomizzatori per rifiuti</li>
+  </WastepackAtomizer.generalRules.rulesStrings>
   
 </LanguageData>

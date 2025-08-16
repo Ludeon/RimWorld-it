@@ -2,77 +2,101 @@
 <LanguageData>
   
   <!-- EN: advanced gravtech -->
-  <AdvancedGravtech.label>TODO</AdvancedGravtech.label>
+  <AdvancedGravtech.label>gravtech avanzata</AdvancedGravtech.label>
   <!-- EN: Build advanced gravship parts. -->
-  <AdvancedGravtech.description>TODO</AdvancedGravtech.description>
+  <AdvancedGravtech.description>Costruisci parti avanzate di astronave gravitazionale.</AdvancedGravtech.description>
   <!-- EN:
     <li>subject->advanced gravtech</li>
     <li>subject_story->researched advanced gravship components</li>
     <li>subject_gerund->researching signal jamming</li>
   -->
-  <AdvancedGravtech.generalRules.rulesStrings>TODO</AdvancedGravtech.generalRules.rulesStrings>
+  <AdvancedGravtech.generalRules.rulesStrings>
+    <li>subject->tecnologia gravtech avanzata</li>
+    <li>subject_story->ha studiato componenti avanzati di astronave gravitazionale</li>
+    <li>subject_gerund->ricercando il disturbo dei segnali</li>
+  </AdvancedGravtech.generalRules.rulesStrings>
   
   <!-- EN: basic gravtech -->
-  <BasicGravtech.label>TODO</BasicGravtech.label>
-  <!-- EN: Build a gravship and use it to travel the planet. Without a grav anchor, launching a gravship will abandon your current map. -->
-  <BasicGravtech.description>TODO</BasicGravtech.description>
+  <BasicGravtech.label>gravtech di base</BasicGravtech.label>
+  <!-- EN: Build a gravship and use it to travel the planet. Launching a gravship will abandon your current map. You won't be able to return. -->
+  <BasicGravtech.description>Costruisci un'astronave gravitazionale e usala per viaggiare sul pianeta. Il lancio di un'astronave comporterà l'abbandono della mappa attuale e non sarà possibile tornare.</BasicGravtech.description>
   <!-- EN:
     <li>subject->gravship</li>
     <li>subject_story->flew a gravship for a tourism company</li>
     <li>subject_gerund->constructing gravships</li>
   -->
-  <BasicGravtech.generalRules.rulesStrings>TODO</BasicGravtech.generalRules.rulesStrings>
+  <BasicGravtech.generalRules.rulesStrings>
+    <li>subject->astronave gravitazionale</li>
+    <li>subject_story->ha pilotato un'astronave gravitazionale per una compagnia turistica</li>
+    <li>subject_gerund->costruendo astronavi gravitazionali</li>
+  </BasicGravtech.generalRules.rulesStrings>
   
   <!-- EN: beam weapons -->
-  <BeamWeapons.label>TODO</BeamWeapons.label>
+  <BeamWeapons.label>armi a fascio</BeamWeapons.label>
   <!-- EN: Construct weapons that use gamma ray beams to burn through armor and ignite targets. -->
-  <BeamWeapons.description>TODO</BeamWeapons.description>
+  <BeamWeapons.description>Costruisci armi che utilizzano fasci di raggi gamma per perforare le armature e incendiare i bersagli.</BeamWeapons.description>
   <!-- EN:
     <li>subject->beam weapons</li>
     <li>subject_story->made gamma-ray beam weaponry</li>
     <li>subject_gerund->making beam weapons</li>
   -->
-  <BeamWeapons.generalRules.rulesStrings>TODO</BeamWeapons.generalRules.rulesStrings>
+  <BeamWeapons.generalRules.rulesStrings>
+    <li>subject->armi a fascio</li>
+    <li>subject_story->ha realizzato armi a fascio di raggi gamma</li>
+    <li>subject_gerund->realizzando armi a fascio</li>
+  </BeamWeapons.generalRules.rulesStrings>
   
   <!-- EN: fishing -->
-  <Fishing.label>TODO</Fishing.label>
+  <Fishing.label>pesca</Fishing.label>
   <!-- EN: Place zones where your colonists can go fishing. -->
-  <Fishing.description>TODO</Fishing.description>
+  <Fishing.description>Crea aree dove i tuoi coloni possono andare a pescare.</Fishing.description>
   <!-- EN: Fishing zone -->
-  <Fishing.customUnlockTexts.0>TODO</Fishing.customUnlockTexts.0>
+  <Fishing.customUnlockTexts.0>Zona di pesca</Fishing.customUnlockTexts.0>
   <!-- EN:
     <li>subject->fishing</li>
     <li>subject_story->fished for a living</li>
     <li>subject_gerund->fishing</li>
   -->
-  <Fishing.generalRules.rulesStrings>TODO</Fishing.generalRules.rulesStrings>
+  <Fishing.generalRules.rulesStrings>
+    <li>subject->pesca</li>
+    <li>subject_story->ha pescato per vivere</li>
+    <li>subject_gerund->pescando</li>
+  </Fishing.generalRules.rulesStrings>
   
   <!-- EN: heavy bridges -->
-  <HeavyBridges.label>TODO</HeavyBridges.label>
+  <HeavyBridges.label>ponti massicci</HeavyBridges.label>
   <!-- EN: Build heavy bridges that support heavy buildings. You can use this to build whole colonies on the water. -->
-  <HeavyBridges.description>TODO</HeavyBridges.description>
+  <HeavyBridges.description>Costruisci ponti massicci in grado di sostenere edifici pesanti. Puoi usarli per costruire intere colonie sull'acqua.</HeavyBridges.description>
   <!-- EN:
     <li>subject->construction</li>
     <li>subject_story->built bridges</li>
     <li>subject_gerund->constructing</li>
   -->
-  <HeavyBridges.generalRules.rulesStrings>TODO</HeavyBridges.generalRules.rulesStrings>
-  
+  <HeavyBridges.generalRules.rulesStrings>
+    <li>subject->costruzione</li>
+    <li>subject_story->ha costruito ponti</li>
+    <li>subject_gerund->costruendo</li>
+  </HeavyBridges.generalRules.rulesStrings>
+
   <!-- EN: hunter drone -->
-  <HunterDrones.label>TODO</HunterDrones.label>
+  <HunterDrones.label>drone cacciatore</HunterDrones.label>
   <!-- EN: Build traps and wearable packs that release hunter drones. These explosive drones pursue hostiles and detonate when within range. -->
-  <HunterDrones.description>TODO</HunterDrones.description>
+  <HunterDrones.description>Costruisci trappole e zaini indossabili che rilasciano droni cacciatori. Questi droni esplosivi inseguono i nemici e si autodetonano quando sono a portata.</HunterDrones.description>
   <!-- EN:
     <li>subject->hunter drones</li>
     <li>subject_story->made self-detonating drones</li>
     <li>subject_gerund->making hunter drones</li>
   -->
-  <HunterDrones.generalRules.rulesStrings>TODO</HunterDrones.generalRules.rulesStrings>
+  <HunterDrones.generalRules.rulesStrings>
+    <li>subject->droni cacciatori</li>
+    <li>subject_story->ha costruito droni autodetonanti</li>
+    <li>subject_gerund->costruendo droni cacciatori</li>
+  </HunterDrones.generalRules.rulesStrings>
   
   <!-- EN: orbital tech -->
-  <OrbitalTech.label>TODO</OrbitalTech.label>
+  <OrbitalTech.label>tecnologia orbitale</OrbitalTech.label>
   <!-- EN: Construct buildings and apparel that can protect against the harsh vacuum of space. -->
-  <OrbitalTech.description>TODO</OrbitalTech.description>
+  <OrbitalTech.description>Costruisci edifici e indumenti che possono proteggere dalle dure condizioni del vuoto spaziale.</OrbitalTech.description>
   <!-- EN:
     <li>subject->orbital apparel</li>
     <li>subject_story->assembled liners for vacsuits</li>
@@ -83,12 +107,21 @@
     <li>subject_gerund->assembling rebreathers</li>
     <li>subject_gerund->testing vacsuits</li>
   -->
-  <OrbitalTech.generalRules.rulesStrings>TODO</OrbitalTech.generalRules.rulesStrings>
+  <OrbitalTech.generalRules.rulesStrings>
+    <li>subject->abbigliamento orbitale</li>
+    <li>subject_story->ha assemblato fodere per tute pressurizzate</li>
+    <li>subject_story->ha testato tute pressurizzate</li>
+    <li>subject_story->ha sviluppato la tecnologia dei respiratori</li>
+    <li>subject_story->ha studiato gli effetti delle radiazioni spaziali sui tessuti umani</li>
+    <li>subject_gerund->assemblando tute pressurizzate</li>
+    <li>subject_gerund->assemblando respiratori</li>
+    <li>subject_gerund->testando tute pressurizzate</li>
+  </OrbitalTech.generalRules.rulesStrings>
   
   <!-- EN: shuttle -->
-  <Shuttles.label>TODO</Shuttles.label>
+  <Shuttles.label>navetta</Shuttles.label>
   <!-- EN: Build a shuttle which can be used for long distance travel or to reach orbit. This requires a shuttle engine which can be bought from orbital traders, salvaged from other shuttles, or obtained through quests. -->
-  <Shuttles.description>TODO</Shuttles.description>
+  <Shuttles.description>Costruisci una navetta che può essere usata per viaggi a lunga distanza o per raggiungere l'orbita. Ciò richiede un motore di navetta che può essere acquistato dai commercianti orbitali, recuperato da altre navette o ottenuto tramite missioni.</Shuttles.description>
   <!-- EN:
     <li>subject->shuttles</li>
     <li>subject_story->flew in a shuttle</li>
@@ -96,21 +129,31 @@
     <li>subject_gerund->engineering shuttles</li>
     <li>subject_gerund->piloting shuttles</li>
   -->
-  <Shuttles.generalRules.rulesStrings>TODO</Shuttles.generalRules.rulesStrings>
+  <Shuttles.generalRules.rulesStrings>
+    <li>subject->navette</li>
+    <li>subject_story->ha viaggiato in una navetta</li>
+    <li>subject_story->ha progettato una navetta</li>
+    <li>subject_gerund->progettando navette</li>
+    <li>subject_gerund->pilotando navette</li>
+  </Shuttles.generalRules.rulesStrings>
   
   <!-- EN: standard gravtech -->
-  <StandardGravtech.label>TODO</StandardGravtech.label>
+  <StandardGravtech.label>gravtech intermedia</StandardGravtech.label>
   <!-- EN: Build complex gravship parts. -->
-  <StandardGravtech.description>TODO</StandardGravtech.description>
+  <StandardGravtech.description>Costruisci parti complesse di astronave gravitazionale.</StandardGravtech.description>
   <!-- EN: You now have the technology to build large thrusters. These require vacstone blocks which can be obtained from orbital asteroids.\n\nYou can travel to orbital locations using transport pods, shuttles, or a gravship. Make sure to equip your colonists with vacsuits or other advanced armors to survive in space. -->
-  <StandardGravtech.discoveredLetterText>TODO</StandardGravtech.discoveredLetterText>
+  <StandardGravtech.discoveredLetterText>Ora possiedi la tecnologia per costruire grandi propulsori. Questi richiedono blocchi di vaccolite che possono essere ottenuti da asteroidi orbitali.\n\nPuoi viaggiare verso località orbitali usando capsule di trasporto, navette o un'astronave gravitazionale. Assicurati che i tuoi coloni siano equipaggiati con tute pressurizzate o altre armature avanzate per sopravvivere nello spazio.</StandardGravtech.discoveredLetterText>
   <!-- EN: About: Getting vacstone -->
-  <StandardGravtech.discoveredLetterTitle>TODO</StandardGravtech.discoveredLetterTitle>
+  <StandardGravtech.discoveredLetterTitle>Informazioni: ottenere vaccolite</StandardGravtech.discoveredLetterTitle>
   <!-- EN:
     <li>subject->gravtech</li>
     <li>subject_story->researched complex gravship components</li>
     <li>subject_gerund->researching gravships</li>
   -->
-  <StandardGravtech.generalRules.rulesStrings>TODO</StandardGravtech.generalRules.rulesStrings>
+  <StandardGravtech.generalRules.rulesStrings>
+    <li>subject->tecnologia gravtech</li>
+    <li>subject_story->ha studiato componenti complessi di astronave gravitazionale</li>
+    <li>subject_gerund->ricercando astronavi gravitazionali</li>
+  </StandardGravtech.generalRules.rulesStrings>
   
 </LanguageData>

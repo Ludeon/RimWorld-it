@@ -6,7 +6,11 @@
     <li>questDescription(classicMode==False)->You've learned that a relic of [ideo_name] is nearby.\n\nThe [relic_name] is an ancient object venerated by all [ideo_memberNamePlural]. If you could collect it, you could build a great reliquary to make [ideo_memberNamePlural] happy, attract wealthy pilgrims, and bring more people to [ideo_name].</li>
     <li>questDescriptionPartBeforeDiscovery->First, you need to find the [relic_name]. Watch for opportunities to gather information about it.</li>
   -->
-  <RelicHunt.questDescriptionRules.rulesStrings>TODO</RelicHunt.questDescriptionRules.rulesStrings>
+  <RelicHunt.questDescriptionRules.rulesStrings>
+    <li>questDescription(classicMode==True)->Hai saputo che una preziosa reliquia si trova nelle vicinanze.\n\nIl [relic_name] è uno dei [relicGlobalCount] oggetti antichi venerati da molte persone. Se riuscissi a ottenerlo, potresti costruire un reliquiario per rendere felici i tuoi coloni e attirare ricchi pellegrini.</li>
+    <li>questDescription(classicMode==False)->Hai saputo che una reliquia di [ideo_name] si trova nelle vicinanze.\n\nIl [relic_name] è un oggetto antico venerato da tutti i [ideo_memberNamePlural]. Se riuscissi a ottenerlo, potresti costruire un grande reliquiario per rendere felici i [ideo_memberNamePlural], attirare ricchi pellegrini e portare più persone a [ideo_name].</li>
+    <li>questDescriptionPartBeforeDiscovery->Per prima cosa, devi trovare il [relic_name]. Cerca opportunità per raccogliere informazioni a riguardo.</li>
+  </RelicHunt.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->The [hunt] for the [item]</li>
     <li>questName->The [itemAdj] [item]</li>
@@ -21,6 +25,19 @@
     <li>itemAdj->revered</li>
     <li>itemAdj->venerated</li>
   -->
-  <RelicHunt.questNameRules.rulesStrings>TODO</RelicHunt.questNameRules.rulesStrings>
+  <RelicHunt.questNameRules.rulesStrings>
+    <li>questName->La [hunt] per il [item]</li>
+    <li>questName->Il [itemAdj] [item]</li>
+    <li>questName(classicMode==False)->Il [item] di [ideo_name]</li>
+    <li>hunt->caccia</li>
+    <li>hunt->ricerca</li>
+    <li>hunt->missione</li>
+    <li>item(p=4)->[relic_name]</li>
+    <li>item->reliquia</li>
+    <li>item->manufatto</li>
+    <li>itemAdj->antico</li>
+    <li>itemAdj->riverito</li>
+    <li>itemAdj->venerato</li>
+  </RelicHunt.questNameRules.rulesStrings>
   
 </LanguageData>

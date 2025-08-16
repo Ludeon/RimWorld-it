@@ -6,7 +6,11 @@
     <li>otherGenesInfo(geneCount==1)-></li>
     <li>otherGenesInfo(geneCount>=2)-> +[geneCountMinusOne]</li>
   -->
-  <NamerGenepack.rulePack.rulesStrings>TODO</NamerGenepack.rulePack.rulesStrings>
+  <NamerGenepack.rulePack.rulesStrings>
+    <li>r_name->pacchetto genico ([geneWord][otherGenesInfo])</li>
+    <li>otherGenesInfo(geneCount==1)-></li>
+    <li>otherGenesInfo(geneCount>=2)-> +[geneCountMinusOne]</li>
+  </NamerGenepack.rulePack.rulesStrings>
   
   <!-- EN:
     <li>r_name(p=1)->[anyPrefix][anySuffix]</li>
@@ -72,6 +76,69 @@
     <li>commonSuffix->ur</li>
     <li>commonSuffix->ux</li>
   -->
-  <NamerXenotype.rulePack.rulesStrings>TODO</NamerXenotype.rulePack.rulesStrings>
+  <NamerXenotype.rulePack.rulesStrings>
+    <li>r_name(p=1)->[anyPrefisso][anySuffisso]</li>
+    <li>r_name(p=0.1)->[nomeCompleto]</li>
+    <li>anyPrefisso(p=2)->[genePrefisso]</li>
+    <li>anyPrefisso->[prefissoComune]</li>
+    <li>anySuffisso->[geneSuffisso]</li>
+    <li>anySuffisso(p=3)->[suffissoComune]</li>
+    <li>prefissoComune->xeno</li>
+    <li>prefissoComune->alt</li>
+    <li>prefissoComune->ab</li>
+    <li>prefissoComune->out</li>
+    <li>prefissoComune->sub</li>
+    <li>prefissoComune->exo</li>
+    <li>prefissoComune->tube</li>
+    <li>prefissoComune->lab</li>
+    <li>prefissoComune->pod</li>
+    <li>prefissoComune->an</li>
+    <li>prefissoComune->bon</li>
+    <li>prefissoComune->cel</li>
+    <li>prefissoComune->del</li>
+    <li>prefissoComune->ech</li>
+    <li>prefissoComune->fil</li>
+    <li>prefissoComune->gor</li>
+    <li>prefissoComune->hor</li>
+    <li>prefissoComune->ich</li>
+    <li>prefissoComune->jack</li>
+    <li>prefissoComune->kol</li>
+    <li>prefissoComune->lox</li>
+    <li>prefissoComune->mack</li>
+    <li>prefissoComune->nor</li>
+    <li>prefissoComune->os</li>
+    <li>prefissoComune->per</li>
+    <li>prefissoComune->quin</li>
+    <li>prefissoComune->rax</li>
+    <li>prefissoComune->sil</li>
+    <li>prefissoComune->tel</li>
+    <li>prefissoComune->ultra</li>
+    <li>prefissoComune->vox</li>
+    <li>prefissoComune->whis</li>
+    <li>prefissoComune->xen</li>
+    <li>prefissoComune->yon</li>
+    <li>prefissoComune->zel</li>
+    <li>suffissoComune->kind</li>
+    <li>suffissoComune->man</li>
+    <li>suffissoComune->an</li>
+    <li>suffissoComune->ar</li>
+    <li>suffissoComune->dol</li>
+    <li>suffissoComune->dal</li>
+    <li>suffissoComune(p=3)->er</li>
+    <li>suffissoComune(p=2)->en</li>
+    <li>suffissoComune->ex</li>
+    <li>suffissoComune->id</li>
+    <li>suffissoComune->in</li>
+    <li>suffissoComune->il</li>
+    <li>suffissoComune->ist</li>
+    <li>suffissoComune->on</li>
+    <li>suffissoComune->ol</li>
+    <li>suffissoComune->ox</li>
+    <li>suffissoComune->ox</li>
+    <li>suffissoComune->ub</li>
+    <li>suffissoComune->ul</li>
+    <li>suffissoComune->ur</li>
+    <li>suffissoComune->ux</li>
+  </NamerXenotype.rulePack.rulesStrings>
   
 </LanguageData>

@@ -22,19 +22,19 @@
   <!-- EN: tiles -->
   <TilesLower>piastrelle</TilesLower>
   <!-- EN: 1 mech -->
-  <CaravanMech>1 meccanico</CaravanMech>
+  <CaravanMech>1 mech</CaravanMech>
   <!-- EN: {0} mechs -->
   <CaravanMechsCount>{0} mech</CaravanMechsCount>
   <!-- EN: {BOSS} with {APPAREL} -->
-  <BossWithApparel>{BOSS} con [APPAREL}</BossWithApparel>
+  <BossWithApparel>{BOSS} con {APPAREL}</BossWithApparel>
   <!-- EN: Resulting from gene -->
-  <ComesFromGene>TODO</ComesFromGene>
+  <ComesFromGene>Risultante da un gene</ComesFromGene>
 
   <!-- Job reports -->
   <!-- EN: removing {0}. -->
   <ReportRemovingMechlink>rimuovendo {0}.</ReportRemovingMechlink>
   <!-- EN: from {TEACHER_labelShort} -->
-  <ReportTakingLessonFrom>TODO</ReportTakingLessonFrom>
+  <ReportTakingLessonFrom>da {TEACHER_labelShort}</ReportTakingLessonFrom>
 
   <!-- Areas -->
   <!-- EN: Pollution clear -->
@@ -52,7 +52,7 @@
   <!-- EN: bandwidth -->
   <BandwidthLower>larghezza di banda</BandwidthLower>
   <!-- EN: A mechanitor can only oversee a mech if there is enough bandwidth to do so. Each mech consumes a different amount of bandwidth.\n\nGain more bandwidth by constructing band nodes and tuning the mechanitor to them, or by equipping special mechanitor apparel. -->
-  <BandwidthGizmoTip>Un mechanitor può supervisionare un mech solo se ha abbastanza larghezza di banda per farlo. Ogni mech consuma una quantità diversa di larghezza di banda.\n\nOttieni più larghezza di banda costruendo nodi di banda e sintonizzando il mechanitor su di essi o equipaggiando speciali indumenti da mechanitor.</BandwidthGizmoTip>
+  <BandwidthGizmoTip>Un meccanista può supervisionare un mech solo se ha abbastanza larghezza di banda per farlo. Ogni mech consuma una quantità diversa di larghezza di banda.\n\nOttieni più larghezza di banda costruendo nodi di banda e sintonizzando il meccanista su di essi o equipaggiando speciali indumenti da meccanista.</BandwidthGizmoTip>
   <!-- EN: Control group -->
   <ControlGroup>Gruppo di controllo</ControlGroup>
   <!-- EN: Current mode -->
@@ -68,9 +68,9 @@
   <!-- EN: Retune -->
   <BandNodeRetuneTo>Risintonizzare</BandNodeRetuneTo>
   <!-- EN: Tune this band node to a mechanitor. Tuning will take {0} to complete. -->
-  <BandNodeTuningDesc>Sintonizza questo nodo della banda su un mechanitor. Il completamento dell'ottimizzazione richiederà {0}.</BandNodeTuningDesc>
+  <BandNodeTuningDesc>Sintonizza questo nodo della banda su un meccanista. Il completamento dell'ottimizzazione richiederà {0}.</BandNodeTuningDesc>
   <!-- EN: Retune this band node to another mechanitor. Retuning will take {0} to complete. -->
-  <BandNodeRetuningDesc>Risintonizza questo nodo della banda su un altro mechanitor. Il completamento della risintonizzazione richiederà {0}.</BandNodeRetuningDesc>
+  <BandNodeRetuningDesc>Risintonizza questo nodo della banda su un altro meccanista. Il completamento della risintonizzazione richiederà {0}.</BandNodeRetuningDesc>
   <!-- EN: Removing {0} will change {1_labelShort}'s bandwidth from {2} to {3}. This will mean the following mechs will no longer be under control -->
   <DropThingBandwidthApparel>La rimozione di {0} modificherà la larghezza di banda di {1_labelShort} da {2} a {3}. Ciò significa che i seguenti mech non saranno più sotto controllo</DropThingBandwidthApparel>
   <!-- EN: no mechs -->
@@ -82,7 +82,7 @@
   <!-- EN: Loading mech gestation resources -->
   <LoadingMechGestator>Caricamento delle risorse di gestazione del mech</LoadingMechGestator>
   <!-- EN: Time left this cycle -->
-  <GestatingInspect>TODO</GestatingInspect>
+  <GestatingInspect>Tempo rimanente in questo ciclo</GestatingInspect>
   <!-- EN: Initiating mech gestation cycle -->
   <InitMechGestationCycle>Inizio del ciclo di gestazione del mech</InitMechGestationCycle>
   <!-- EN: Initiating mech birth -->
@@ -104,7 +104,7 @@
   <!-- EN: Summon {0} threat -->
   <Summon>Evoca {0} minaccia</Summon>
   <!-- EN: Mechanoids disabled -->
-  <MechsDisabled>TODO</MechsDisabled>
+  <MechsDisabled>Meccanoidi disabilitati</MechsDisabled>
   <!-- EN: No reachable {0} -->
   <NoReachableBossgroupCaller>Irraggiungibile {0}</NoReachableBossgroupCaller>
   <!-- EN: No reservable {0} -->
@@ -482,7 +482,7 @@
   <!-- EN: Gestated {0} -->
   <GestatedMech>Gestata {0}</GestatedMech>
   <!-- EN: Requires {PAWN_nameDef} to continue gestating -->
-  <GestatingMechRequiresMechanitor>TODO</GestatingMechRequiresMechanitor>
+  <GestatingMechRequiresMechanitor>Richiede {PAWN_nameDef} per continuare la gestazione</GestatingMechRequiresMechanitor>
   <!-- EN: Requires {PAWN_nameDef} to complete -->
   <GestatedMechRequiresMechanitor>Richiede {PAWN_nameDef} per essere completato</GestatedMechRequiresMechanitor>
   <!-- EN: Gestation complete -->
@@ -517,7 +517,7 @@
   <!-- EN: available in {0}. -->
   <BossgroupAvailableIn>disponibile in {0}.</BossgroupAvailableIn>
   <!-- EN: requires mechanitor -->
-  <RequiresMechanitor>richiede meccanitore</RequiresMechanitor>
+  <RequiresMechanitor>richiede meccanista</RequiresMechanitor>
 
   <!-- Abilities -->
   <!-- EN: {0_labelShort} is not hemogenic. -->
@@ -757,7 +757,7 @@
 
   <!-- Remote mech shield -->
   <!-- EN: A remote shield projected by a mechanitor. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks or heat. It prevents the wearer from firing out, and shuts down instantly if hit by EMP -->
-  <RemoteMechShieldTip>Uno scudo remoto proiettato da un mechanitor. Tenterà di fermare i proiettili o le schegge in arrivo, ma non fa nulla contro gli attacchi in mischia o il calore. Impedisce a chi lo indossa di sparare e si spegne immediatamente se colpito da EMP</RemoteMechShieldTip>
+  <RemoteMechShieldTip>Uno scudo remoto proiettato da un meccanista. Tenterà di fermare i proiettili o le schegge in arrivo, ma non fa nulla contro gli attacchi in mischia o il calore. Impedisce a chi lo indossa di sparare e si spegne immediatamente se colpito da EMP</RemoteMechShieldTip>
 
   <!-- Thoughtdef fallbacks -->
   <!-- EN: my child is happy -->
@@ -766,9 +766,9 @@
   <MyChildIsSad>mio figlio è triste</MyChildIsSad> 
   
   <!-- EN: Genetic {CHEMICAL_label} dependency -->
-  <GeneticChemicalDependency_Label>TODO</GeneticChemicalDependency_Label>
+  <GeneticChemicalDependency_Label>Dipendenza genetica da {CHEMICAL_label}</GeneticChemicalDependency_Label>
   <!-- EN: I need {CHEMICAL_label} because of my genetic deficiency. It's been so long since I've had any. -->
-  <GeneticChemicalDependency_Desc>TODO</GeneticChemicalDependency_Desc>
+  <GeneticChemicalDependency_Desc>Ho bisogno di {CHEMICAL_label} a causa della mia carenza genetica. È passato così tanto tempo dall’ultima volta che ne ho avuta.</GeneticChemicalDependency_Desc>
 
   <!-- UNUSED -->
   <LearningDesireTooltip_CurrentDesire>Desiderio di apprendimento attuale di {0_nameDef}:</LearningDesireTooltip_CurrentDesire>

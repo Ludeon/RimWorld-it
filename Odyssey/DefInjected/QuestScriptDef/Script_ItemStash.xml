@@ -4,7 +4,9 @@
   <!-- EN:
     <li>questDescription->[discoveryMethod] the location of a collection of valuable items worth [itemStashContentsValue]. The collection consists of:\n\n[itemStashContents]\n\nIt seems that [allSitePartsDescriptionsExceptFirst]</li>
   -->
-  <OpportunitySite_ItemStash_Giver.questDescriptionRules.rulesStrings>TODO</OpportunitySite_ItemStash_Giver.questDescriptionRules.rulesStrings>
+  <OpportunitySite_ItemStash_Giver.questDescriptionRules.rulesStrings>
+    <li>questDescription->[discoveryMethod] la posizione di una collezione di oggetti di valore dal valore di [itemStashContentsValue]. La collezione è composta da:\n\n[itemStashContents]\n\nSembra che [allSitePartsDescriptionsExceptFirst]</li>
+  </OpportunitySite_ItemStash_Giver.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[stash] of [treasure]</li>
     <li>stash->Stash</li>
@@ -17,7 +19,18 @@
     <li>treasure->Goodies</li>
     <li>treasure->Supplies</li>
   -->
-  <OpportunitySite_ItemStash_Giver.questNameRules.rulesStrings>TODO</OpportunitySite_ItemStash_Giver.questNameRules.rulesStrings>
+  <OpportunitySite_ItemStash_Giver.questNameRules.rulesStrings>
+    <li>questName->[stash] di [treasure]</li>
+    <li>stash->Nascondiglio</li>
+    <li>stash->Cache</li>
+    <li>stash->Collezione</li>
+    <li>stash->Capanna</li>
+    <li>treasure->Tesoro</li>
+    <li>treasure->Beni preziosi</li>
+    <li>treasure->Fortuna</li>
+    <li>treasure->Cianfrusaglie</li>
+    <li>treasure->Provviste</li>
+  </OpportunitySite_ItemStash_Giver.questNameRules.rulesStrings>
   <!-- EN:
     <li>subject->loot stashes</li>
     <li>subject->secret treasures</li>
@@ -28,10 +41,19 @@
     <li>questMapText->loot here</li>
     <li>questMapText->hidden valuables</li>
   -->
-  <OpportunitySite_ItemStash_Giver.questSubjectRules.rulesStrings>TODO</OpportunitySite_ItemStash_Giver.questSubjectRules.rulesStrings>
+  <OpportunitySite_ItemStash_Giver.questSubjectRules.rulesStrings>
+    <li>subject->nascondigli di bottino</li>
+    <li>subject->tesori segreti</li>
+    <li>subject->oggetti preziosi</li>
+    <li>questMapFeature->disegno di un forziere</li>
+    <li>questMapFeature->capanna di rifornimento</li>
+    <li>questMapText->nascondiglio di oggetti segreti</li>
+    <li>questMapText->bottino qui</li>
+    <li>questMapText->oggetti preziosi nascosti</li>
+  </OpportunitySite_ItemStash_Giver.questSubjectRules.rulesStrings>
   <!-- EN: Quest expired: [resolvedQuestName] -->
-  <OpportunitySite_ItemStash_Giver.LetterLabelQuestExpired.slateRef>TODO</OpportunitySite_ItemStash_Giver.LetterLabelQuestExpired.slateRef>
+  <OpportunitySite_ItemStash_Giver.LetterLabelQuestExpired.slateRef>Missione scaduta: [resolvedQuestName]</OpportunitySite_ItemStash_Giver.LetterLabelQuestExpired.slateRef>
   <!-- EN: Intercepted communications indicate the item stash has been claimed by others. The quest [resolvedQuestName] has expired. -->
-  <OpportunitySite_ItemStash_Giver.LetterTextQuestExpired.slateRef>TODO</OpportunitySite_ItemStash_Giver.LetterTextQuestExpired.slateRef>
+  <OpportunitySite_ItemStash_Giver.LetterTextQuestExpired.slateRef>Le comunicazioni intercettate indicano che il nascondiglio di oggetti è stato reclamato da altri. La missione [resolvedQuestName] è scaduta.</OpportunitySite_ItemStash_Giver.LetterTextQuestExpired.slateRef>
   
 </LanguageData>

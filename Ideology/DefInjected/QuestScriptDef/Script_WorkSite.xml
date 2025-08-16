@@ -6,7 +6,11 @@
     <li>raidConsequences(faction_temporary==false)->If you do, [faction_name] will become hostile if they are not already.</li>
     <li>raidConsequences(faction_temporary==true)->Since [faction_name] is just a small, independent group, you can attack them without any broader diplomatic consequences.</li>
   -->
-  <OpportunitySite_WorkSite.questDescriptionRules.rulesStrings>TODO</OpportunitySite_WorkSite.questDescriptionRules.rulesStrings>
+  <OpportunitySite_WorkSite.questDescriptionRules.rulesStrings>
+    <li>questDescription->Hai rilevato un [siteLabel] nelle vicinanze controllato da [faction_name].\n\nSe vuoi, puoi razziare il campo per raccogliere il bottino ([loot]). [raidConsequences]\n\nIl campo si smonterà e si sposterà in [timeout_duration].</li>
+    <li>raidConsequences(faction_temporary==false)->Se lo fai, [faction_name] diventeranno ostili se non lo sono già.</li>
+    <li>raidConsequences(faction_temporary==true)->Poiché [faction_name] è solo un piccolo gruppo indipendente, puoi attaccarli senza alcuna conseguenza diplomatica più ampia.</li>
+  </OpportunitySite_WorkSite.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[site_label] [detected]</li>
     <li>detected->detected</li>
@@ -19,6 +23,17 @@
     <li>detected->revealed</li>
     <li>detected->uncovered</li>
   -->
-  <OpportunitySite_WorkSite.questNameRules.rulesStrings>TODO</OpportunitySite_WorkSite.questNameRules.rulesStrings>
+  <OpportunitySite_WorkSite.questNameRules.rulesStrings>
+    <li>questName->[site_label] [detected]</li>
+    <li>detected->individuato</li>
+    <li>detected->scoperto</li>
+    <li>detected->nelle vicinanze</li>
+    <li>detected->trovato</li>
+    <li>detected->identificato</li>
+    <li>detected->notato</li>
+    <li>detected->osservato</li>
+    <li>detected->rivelato</li>
+    <li>detected->scoperto</li>
+  </OpportunitySite_WorkSite.questNameRules.rulesStrings>
   
 </LanguageData>

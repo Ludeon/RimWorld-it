@@ -4,7 +4,9 @@
   <!-- EN:
     <li>questDescription->[discoveryMethod] an ancient complex nearby that is said to contain treasure.\n\nYou can break in to collect the loot inside.\n\nBe warned - these kinds of structures can contain a variety of threats. In addition, your activity at the complex might draw unwanted attention.</li>
   -->
-  <OpportunitySite_AncientComplex_Giver.questDescriptionRules.rulesStrings>TODO</OpportunitySite_AncientComplex_Giver.questDescriptionRules.rulesStrings>
+  <OpportunitySite_AncientComplex_Giver.questDescriptionRules.rulesStrings>
+    <li>questDescription->[discoveryMethod] un complesso antico vicino che si dice contenga tesori.\n\nPuoi irrompere per raccogliere il bottino al suo interno.\n\nFai attenzione, perché questo tipo di strutture può ospitare diverse minacce. Inoltre, la tua attività nel complesso potrebbe attirare attenzioni indesiderate.</li>
+  </OpportunitySite_AncientComplex_Giver.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName(p=3)->[complexAdj] [complex] [finalWord]</li>
     <li>questName->[complex] [finalWord]</li>
@@ -30,7 +32,42 @@
     <li>finalWord->caper</li>
     <li>finalWord->booty</li>
   -->
-  <OpportunitySite_AncientComplex_Giver.questNameRules.rulesStrings>TODO</OpportunitySite_AncientComplex_Giver.questNameRules.rulesStrings>
+  <OpportunitySite_AncientComplex_Giver.questNameRules.rulesStrings>
+    <li>questName(p=3)->[finalWord] del [complex] [complexAdj]</li>
+    <li>questName(p=3)->[finalWord] della [complexFem] [complexAdjFem]</li>
+    <li>questName(p=3)->[finalWordVar] al [complex] [complexAdj]</li>
+    <li>questName(p=3)->[finalWordVar] alla [complexFem] [complexAdjFem]</li>
+    <li>questName->[finalWord] del [complex] </li>
+    <li>questName->[finalWord] della [complexFem] </li>
+    <li>questName->[finalWordVar] al [complex] </li>
+    <li>questName->[finalWordVar] alla [complexFem] </li>
+    <li>complexAdj->segreto</li>
+    <li>complexAdj->misterioso</li>
+    <li>complexAdj->antico</li>
+    <li>complexAdj->vecchio</li>
+    <li>complexAdj->nascosto</li>
+    <li>complexAdj->mortale</li>
+    <li>complexAdjFem->segreta</li>
+    <li>complexAdjFem->misteriosa</li>
+    <li>complexAdjFem->antica</li>
+    <li>complexAdjFem->vecchia</li>
+    <li>complexAdjFem->nascosta</li>
+    <li>complexAdjFem->mortale</li>
+    <li>complex->complesso</li>
+    <li>complexFem->installazione</li>
+    <li>complexFem->struttura</li>
+    <li>finalWord->il tesoro</li>
+    <li>finalWord->le ricchezze</li>
+    <li>finalWord->la collezione</li>
+    <li>finalWord->la riserva</li>
+    <li>finalWord->il bottino</li>
+    <li>finalWordVar->furto</li>
+    <li>finalWordVar->saccheggio</li>
+    <li>finalWordVar->incursione</li>
+    <li>finalWordVar->ruberia</li>
+    <li>finalWordVar->rapina</li>
+    <li>finalWordVar->colpo</li>
+  </OpportunitySite_AncientComplex_Giver.questNameRules.rulesStrings>
   <!-- EN:
     <li>subject->complexes</li>
     <li>subject->complex</li>
@@ -40,6 +77,14 @@
     <li>questMapText->ancient treasures</li>
     <li>questMapText->missing scavengers</li>
   -->
-  <OpportunitySite_AncientComplex_Giver.questSubjectRules.rulesStrings>TODO</OpportunitySite_AncientComplex_Giver.questSubjectRules.rulesStrings>
+  <OpportunitySite_AncientComplex_Giver.questSubjectRules.rulesStrings>
+    <li>subject->complessi</li>
+    <li>subject->complesso</li>
+    <li>subject->segnale del complesso</li>
+    <li>questMapFeature->complesso piccolo</li>
+    <li>questMapFeature->struttura</li>
+    <li>questMapText->tesori antichi</li>
+    <li>questMapText->sciacalli scomparsi</li>
+  </OpportunitySite_AncientComplex_Giver.questSubjectRules.rulesStrings>
   
 </LanguageData>

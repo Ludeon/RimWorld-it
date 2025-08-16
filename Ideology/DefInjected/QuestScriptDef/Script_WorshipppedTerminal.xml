@@ -4,13 +4,19 @@
   <!-- EN:
     <li>terminalHackedMessage->Terminal hacked. You've collected the information and can now leave.</li>
   -->
-  <Hack_WorshippedTerminal.questContentRules.rulesStrings>TODO</Hack_WorshippedTerminal.questContentRules.rulesStrings>
+  <Hack_WorshippedTerminal.questContentRules.rulesStrings>
+    <li>terminalHackedMessage->Terminal hackerato. Hai raccolto le informazioni e ora puoi andartene.</li>
+  </Hack_WorshippedTerminal.questContentRules.rulesStrings>
   <!-- EN:
     <li>questDescription->You've learned of an ancient terminal that contains information about the [relic_name]. However, the terminal is surrounded by a tribal village, and the locals venerate it. They aren't part of any major faction.\n\n[visitInfo]</li>
     <li>visitInfo(allowViolentQuests==true)->They are willing to let you visit on the pretense of worshiping it, but they will attack when you touch it.\n\nYou can attack the village from the outside, or enter peacefully and try to quickly escape with the data from the terminal.\n\nBeware - If you spend over [timer_duration] in the village or build anything near it, the locals will attack, and call reinforcements.</li>
     <li>visitInfo(allowViolentQuests==false)->They are willing to let you visit.</li>
   -->
-  <Hack_WorshippedTerminal.questDescriptionRules.rulesStrings>TODO</Hack_WorshippedTerminal.questDescriptionRules.rulesStrings>
+  <Hack_WorshippedTerminal.questDescriptionRules.rulesStrings>
+    <li>questDescription->Hai saputo di un terminale antico che contiene informazioni su [relic_name]. Tuttavia, il terminale è circondato da un villaggio tribale e i locali lo venerano. Non fanno parte di alcuna fazione importante.\n\n[visitInfo]</li>
+    <li>visitInfo(allowViolentQuests==true)->Sono disposti a lasciarti visitare con il pretesto di adorarlo, ma ti attaccheranno quando lo toccherai.\n\nPuoi attaccare il villaggio dall'esterno oppure entrare pacificamente e tentare di fuggire rapidamente con i dati dal terminale.\n\nAttenzione: se rimani nel villaggio per più di [timer_duration] o costruisci qualcosa nelle vicinanze, i locali attaccheranno e chiameranno rinforzi.</li>
+    <li>visitInfo(allowViolentQuests==false)->Sono disposti a lasciartelo visitare.</li>
+  </Hack_WorshippedTerminal.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->The [adj] [terminalName]</li>
     <li>adj->worshipped</li>
@@ -29,6 +35,23 @@
     <li>terminalName->database</li>
     <li>terminalName->silicon</li>
   -->
-  <Hack_WorshippedTerminal.questNameRules.rulesStrings>TODO</Hack_WorshippedTerminal.questNameRules.rulesStrings>
+  <Hack_WorshippedTerminal.questNameRules.rulesStrings>
+    <li>questName->Il [adj] [terminalName]</li>
+    <li>adj->venerato</li>
+    <li>adj->adorato</li>
+    <li>adj->antico</li>
+    <li>adj->del villaggio</li>
+    <li>adj->del villaggio tribale</li>
+    <li>adj->tribale</li>
+    <li>adj->segreto</li>
+    <li>terminalName(p=4)->terminale</li>
+    <li>terminalName->macchina</li>
+    <li>terminalName->dispositivo</li>
+    <li>terminalName->schermo</li>
+    <li>terminalName->computer</li>
+    <li>terminalName->banca dati</li>
+    <li>terminalName->database</li>
+    <li>terminalName->silicio</li>
+  </Hack_WorshippedTerminal.questNameRules.rulesStrings>
   
 </LanguageData>

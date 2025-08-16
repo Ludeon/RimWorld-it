@@ -2,17 +2,17 @@
 <LanguageData>
   
   <!-- EN: aggressive -->
-  <AggressiveRejection.label>rifiuto aggressivo</AggressiveRejection.label>
+  <AggressiveRejection.label>aggressivo</AggressiveRejection.label>
   <!-- EN: Upon being rejected, {PAWN_nameDef} flew into a murderous rage and began to attack! -->
-  <AggressiveRejection.letterDesc>Alla fine del rifiuto, {PAWN_nameDef} è precipitato in una furia omicida e ha iniziato ad attaccare!</AggressiveRejection.letterDesc>
+  <AggressiveRejection.letterDesc>Dopo essere stato {PAWN_gender ? respinto : respinta : respinto(a)}, {PAWN_nameDef} è {PAWN_gender ? andato : andata : andato(a)} su tutte le furie e ha iniziato ad attaccare!</AggressiveRejection.letterDesc>
   <!-- EN: {PAWN_nameDef} hostile -->
   <AggressiveRejection.letterLabel>{PAWN_nameDef} ostile</AggressiveRejection.letterLabel>
   
   <!-- EN: departure -->
   <Departure.label>partenza</Departure.label>
   <!-- EN: {PAWN_nameDef} is disappointed by the way that you have treated {PAWN_objective}. {PAWN_pronoun} has decided to leave. -->
-  <Departure.letterDesc>{PAWN_nameDef} è deluso dal modo in cui hai trattato {PAWN_objective}. {PAWN_pronoun} ha deciso di andarsene.</Departure.letterDesc>
+  <Departure.letterDesc>{PAWN_gender ? Deluso : Delusa : Deluso(a)} dal modo in cui è stato trattato, {PAWN_nameDef} ha deciso di andarsene.</Departure.letterDesc>
   <!-- EN: {PAWN_nameDef} departure -->
-  <Departure.letterLabel>partenza di {PAWN_nameDef}</Departure.letterLabel>
+  <Departure.letterLabel>Partenza di {PAWN_nameDef}</Departure.letterLabel>
   
 </LanguageData>

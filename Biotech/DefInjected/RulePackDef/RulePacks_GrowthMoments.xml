@@ -167,51 +167,167 @@
   -->
   <GrowthMomentFlavor.rulePack.rulesStrings>
     <li>r_root->[firstSentence] [secondSentence]</li>
-    <!-- Tier 4 -->
-    <li>firstSentence(tierSection==4)->[PAWN_pronoun] ha dimostrato un [adjGood] [nounGrowth] e possiede un [adjGood] [nounAttitudeGood] per [nounFuture].</li>
-    <li>firstSentence(tierSection==4)->[PAWN_pronoun] ha sviluppato numerose nuove passioni grazie a [situationLearning].</li>
-    <li>firstSentence(tierSection==4)->Grazie a [situationLearning], [PAWN_pronoun] ha scoperto molte nuove passioni.</li>
+    <li>firstSentence(tierSection==4)->[PAWN_pronoun] ha dimostrato un eccellente [nounGrowth] e ha [adjGood] [nounAttitudeGood] per [nounFuture].</li>
+    <li>firstSentence(tierSection==4)->[PAWN_pronoun] ha sviluppato diverse nuove passioni grazie a [situationLearning].</li>
+    <li>firstSentence(tierSection==4)->Grazie a [situationLearning], [PAWN_pronoun] ha acquisito diverse nuove passioni.</li>
     <li>firstSentence(tierSection==4)->Nell’ultimo anno, [PAWN_pronoun] ha mostrato un eccellente [nounGrowth].</li>
-    <li>secondSentence(tierSection==4)->[PAWN_nameDef] vuole dedicare più tempo a [situationLearning] e a [situationFun].</li>
-    <li>secondSentence(tierSection==4)->[PAWN_nameDef] apprezza [situationLearning], ma soprattutto ama [situationFun].</li>
-    <li>secondSentence(tierSection==4)->[PAWN_nameDef] si diverte con [situationLearning] e sogna [situationAspirational].</li>
-    <li>secondSentence(tierSection==4)->[PAWN_nameDef] spera che, grazie a [situationLearning], [PAWN_pronoun] possa arrivare a [situationAspirational].</li>
-    <!-- Tier 3 -->
-    <li>firstSentence(tierSection==3)->Di recente, [PAWN_pronoun] ha mostrato un [adjGood] [nounAttitudeGood] per [nounFuture].</li>
-    <li>firstSentence(tierSection==3)->[PAWN_pronoun] prova [nounAttitudeGood] pensando a [nounFuture].</li>
-    <li>firstSentence(tierSection==3)->[PAWN_pronoun] si è appassionato a nuove attività, tra cui [situationLearning].</li>
-    <li>firstSentence(tierSection==3)->[PAWN_pronoun] ha dimostrato un ottimo [nounGrowth].</li>
-    <li>secondSentence(tierSection==3)->[PAWN_nameDef] è grato/a che [PAWN_pronoun] raramente provi [feelingBad] e voglia passare più tempo in [situationFun].</li>
-    <li>secondSentence(tierSection==3)->[PAWN_nameDef] apprezza [situationLearning], ma [PAWN_pronoun] è più felice durante [situationFun].</li>
-    <li>secondSentence(tierSection==3)->Quando sarà più grande, [PAWN_nameDef] vuole dedicare il suo tempo a [taskWork].</li>
+    <li>secondSentence(tierSection==4)->[PAWN_nameDef] vuole trascorrere più tempo [situationLearning] e [situationFun].</li>
+    <li>secondSentence(tierSection==4)->[PAWN_nameDef] apprezza [situationLearning] ma soprattutto ama [situationFun].</li>
+    <li>secondSentence(tierSection==4)->[PAWN_nameDef] apprezza [situationLearning] e sogna di [situationAspirational].</li>
+    <li>secondSentence(tierSection==4)->[PAWN_nameDef] spera che, grazie a [situationLearning], possa arrivare a [situationAspirational].</li>
+    <li>firstSentence(tierSection==3)->Di recente, [PAWN_pronoun] ha mostrato [adjGood] [nounAttitudeGood] per [nounFuture].</li>
+    <li>firstSentence(tierSection==3)->[PAWN_pronoun] si sente [nounAttitudeGood] per [nounFuture].</li>
+    <li>firstSentence(tierSection==3)->[PAWN_pronoun] si è interessato a diverse nuove attività, tra cui [situationLearning].</li>
+    <li>firstSentence(tierSection==3)->[PAWN_pronoun] ha dimostrato un eccellente [nounGrowth].</li>
+    <li>secondSentence(tierSection==3)->[PAWN_nameDef] è grato che raramente si senta [feelingBad] ed è interessato/a a passare più tempo [situationFun].</li>
+    <li>secondSentence(tierSection==3)->[PAWN_nameDef] apprezza [situationLearning] ma è più felice quando [situationFun].</li>
+    <li>secondSentence(tierSection==3)->Quando sarà più grande, [PAWN_nameDef] vorrà dedicare il proprio tempo a [taskWork].</li>
     <li>secondSentence(tierSection==3)->Soprattutto, [PAWN_nameDef] ama [situationFun].</li>
-    <!-- Tier 2 -->
-    <li>firstSentence(tierSection==2)->[PAWN_pronoun] ha mostrato un po’ di [nounGrowth] e vuole continuare con [situationLearning].</li>
-    <li>firstSentence(tierSection==2)->[PAWN_pronoun] prova un certo [nounAttitudeGood] nel voler imparare di più.</li>
-    <li>firstSentence(tierSection==2)->Entusiasta per [nounFuture], [PAWN_pronoun] vorrebbe dedicare tempo a [situationLearning].</li>
+    <li>firstSentence(tierSection==2)->[PAWN_pronoun] ha mostrato un po’ di [nounGrowth] e vuole continuare [situationLearning].</li>
+    <li>firstSentence(tierSection==2)->[PAWN_pronoun] ha un po’ di [nounAttitudeGood] per apprendere di più.</li>
+    <li>firstSentence(tierSection==2)->Entusiasta per [nounFuture], [PAWN_pronoun] vorrebbe trascorrere tempo [situationLearning].</li>
     <li>firstSentence(tierSection==2)->[PAWN_pronoun] ha sviluppato una nuova passione grazie a [situationLearning].</li>
-    <li>secondSentence(tierSection==2)->[PAWN_nameDef] si diverte con [situationFun].</li>
-    <li>secondSentence(tierSection==2)->[PAWN_nameDef] spera di avere più tempo per [situationFun].</li>
-    <li>secondSentence(tierSection==2)->[PAWN_nameDef] trova che [taskWork] sia noioso.</li>
+    <li>secondSentence(tierSection==2)->[PAWN_nameDef] apprezza [situationFun].</li>
+    <li>secondSentence(tierSection==2)->[PAWN_nameDef] spera di passare più tempo [situationFun].</li>
+    <li>secondSentence(tierSection==2)->[PAWN_nameDef] pensa che [taskWork] sia noioso.</li>
     <li>secondSentence(tierSection==2)->In particolare, [PAWN_nameDef] vorrebbe concentrarsi su [situationLearning].</li>
-    <!-- Tier 1 -->
     <li>firstSentence(tierSection==1)->[PAWN_pronoun] ha mostrato poco [nounGrowth] e ha basse aspettative per [nounFuture].</li>
-    <li>firstSentence(tierSection==1)->Anche se ottimista per [nounFuture], [PAWN_pronoun] ha mostrato scarso [nounGrowth].</li>
+    <li>firstSentence(tierSection==1)->Pur essendo ottimista riguardo a [nounFuture], [PAWN_pronoun] ha mostrato poco [nounGrowth].</li>
     <li>firstSentence(tierSection==1)->[PAWN_pronoun] spera che le cose migliorino in [nounFuture].</li>
-    <li>firstSentence(tierSection==1)->[PAWN_pronoun] ha dimostrato poco [nounGrowth], lamentandosi che [situationLearning] è noioso.</li>
-    <li>secondSentence(tierSection==1)->[PAWN_nameDef] vorrebbe passare più tempo in [situationFun], ma è troppo preoccupato/a per [situationBad].</li>
-    <li>secondSentence(tierSection==1)->[PAWN_nameDef] si sente spesso [feelingBad] mentre fa [situationFun].</li>
-    <li>secondSentence(tierSection==1)->[PAWN_nameDef] ha uno strano timore che [situationFun] possa portare a [situationBad].</li>
-    <li>secondSentence(tierSection==1)->[PAWN_nameDef] ha incubi ricorrenti su [situationBad].</li>
-    <!-- Tier 0 -->
-    <li>firstSentence(tierSection==0)->[PAWN_pronoun] spesso desidera [situationLearning], ma raramente ha l’opportunità di farlo.</li>
+    <li>firstSentence(tierSection==1)->[PAWN_pronoun] ha mostrato un minimo [nounGrowth], lamentandosi che [situationLearning] è noioso.</li>
+    <li>secondSentence(tierSection==1)->[PAWN_nameDef] vorrebbe trascorrere più tempo [situationFun] ma è troppo impegnato/a a preoccuparsi di [situationBad].</li>
+    <li>secondSentence(tierSection==1)->[PAWN_nameDef] spesso si sente [feelingBad] mentre [situationFun].</li>
+    <li>secondSentence(tierSection==1)->[PAWN_nameDef] ha una strana paura che, [situationFun], possa finire in [situationBad].</li>
+    <li>secondSentence(tierSection==1)->[PAWN_nameDef] ha frequenti incubi su [situationBad].</li>
+    <li>firstSentence(tierSection==0)->[PAWN_pronoun] spesso vuole essere [situationLearning] ma raramente ne ha la possibilità.</li>
     <li>firstSentence(tierSection==0)->[PAWN_pronoun] non ha mostrato alcun [nounGrowth].</li>
-    <li>firstSentence(tierSection==0)->[PAWN_pronoun] non ha sviluppato nuove passioni e prova poco [nounAttitudeGood] per [nounFuture].</li>
-    <li>firstSentence(tierSection==0)->[PAWN_pronoun] ha mostrato scarso interesse per l’apprendimento e detesta in particolare [situationLearning].</li>
+    <li>firstSentence(tierSection==0)->[PAWN_pronoun] non è riuscito a sviluppare nuove passioni e ha poco [nounAttitudeGood] per [nounFuture].</li>
+    <li>firstSentence(tierSection==0)->[PAWN_pronoun] ha mostrato scarso interesse per l’apprendimento e in particolare non gradisce [situationLearning].</li>
     <li>secondSentence(tierSection==0)->[PAWN_nameDef] è interessato solo a [situationFun].</li>
-    <li>secondSentence(tierSection==0)->[PAWN_nameDef] è costantemente frenato/a dalla paura di [situationBad].</li>
-    <li>secondSentence(tierSection==0)->[PAWN_nameDef] vive nel terrore di essere ferito/a gravemente a causa di [situationBad].</li>
-    <li>secondSentence(tierSection==0)->[PAWN_nameDef] sogna spesso di essere [situationFun] e finire in [situationBad].</li>
+    <li>secondSentence(tierSection==0)->[PAWN_nameDef] è costantemente frenato dalla paura di [situationBad].</li>
+    <li>secondSentence(tierSection==0)->[PAWN_nameDef] vive nella paura di essere gravemente ferito/a a causa di [situationBad].</li>
+    <li>secondSentence(tierSection==0)->[PAWN_nameDef] ha un incubo ricorrente in cui [PAWN_pronoun] è [situationFun] e questo porta a [situationBad].</li>
+    <li>adjGood->ottimo</li>
+    <li>adjGood->insaziabile</li>
+    <li>adjGood->intenso</li>
+    <li>adjGood->vivace</li>
+    <li>adjGood->autentico</li>
+    <li>adjGood->illimitato</li>
+    <li>adjGood->immenso</li>
+    <li>adjGood->lodevole</li>
+    <li>adjGood->infinito</li>
+    <li>adjGood->puro</li>
+    <li>adjGood->impressionante</li>
+    <li>feelingBad->solo</li>
+    <li>feelingBad->spaventato</li>
+    <li>feelingBad->ferito</li>
+    <li>feelingBad->gravemente malato</li>
+    <li>feelingBad->malato</li>
+    <li>nounAttitudeGood->entusiasmo</li>
+    <li>nounAttitudeGood->eccitazione</li>
+    <li>nounAttitudeGood->ottimismo</li>
+    <li>nounFuture->le prossime settimane</li>
+    <li>nounFuture->i prossimi mesi</li>
+    <li>nounFuture->il prossimo anno</li>
+    <li>nounFuture->il futuro</li>
+    <li>nounGrowth->crescita personale</li>
+    <li>nounGrowth->sviluppo personale</li>
+    <li>situationFun->esplorare la natura selvaggia con [friendNamePlural]</li>
+    <li>situationFun->giocare a [Game]</li>
+    <li>situationFun->giocare a [Game] con gli amici</li>
+    <li>situationFun->giocare con un [friendNameSingular]</li>
+    <li>situationFun->chiacchierare con un [friendNameSingular]</li>
+    <li>situationFun->spettegolare su [friendNamePlural]</li>
+    <li>situationFun->fare amicizia</li>
+    <li>situationFun->stare fuori al sole</li>
+    <li>situationFun->osservare il cielo notturno alla ricerca di meteoriti</li>
+    <li>situationFun->parlare alla radio di [topicLearning]</li>
+    <li>situationFun->chiacchierare alla radio con estranei</li>
+    <li>situationFun->disegnare immagini di [friendNamePlural] sul pavimento</li>
+    <li>situationFun->sognare ad occhi aperti su [topicLearning]</li>
+    <li>situationFun->correre nella natura</li>
+    <li>situationFun->vivere avventure con [friendNamePlural]</li>
+    <li>situationFun->trovare tesori nascosti</li>
+    <li>situationFun->disegnare immagini di [enemyNamePlural]</li>
+    <li>situationFun->disegnare immagini di un [friendNameSingular]</li>
+    <li>situationFun->scrivere una storia su un [friendNameSingular] che caccia [enemyNamePlural]</li>
+    <li>situationFun->fingere di combattere contro [enemyNamePlural]</li>
+    <li>situationFun->raccontare storie su [enemyNamePlural]</li>
+    <li>situationLearning->osservare gli altri [taskWork]</li>
+    <li>situationLearning->imparare a [taskWork]</li>
+    <li>situationLearning->imparare su [topicLearning]</li>
+    <li>situationLearning->studiare [topicLearning]</li>
+    <li>situationLearning->leggere su [topicLearning]</li>
+    <li>situationLearning->svolgere lavori significativi</li>
+    <li>situationAspirational->fare la differenza nel mondo</li>
+    <li>situationAspirational->diventare molto ricco/a</li>
+    <li>situationAspirational->salvare il mondo</li>
+    <li>situationAspirational->aiutare gli altri</li>
+    <li>situationAspirational->diventare molto famoso/a</li>
+    <li>situationAspirational->lasciare questo pianeta</li>
+    <li>situationBad->essere attaccato da [enemyNamePlural]</li>
+    <li>situationBad->essere rapito da [enemyNamePlural]</li>
+    <li>situationBad->essere cacciato da un [enemyNameSingular]</li>
+    <li>situationBad->essere inseguito da un [enemyNameSingular]</li>
+    <li>situationBad->inalare gas tossico</li>
+    <li>situationBad->contrarre la putrefazione polmonare</li>
+    <li>situationBad->contrarre la peste</li>
+    <li>situationBad->prendere un'intossicazione alimentare</li>
+    <li>situationBad->vedere morire i propri cari</li>
+    <li>situationBad->mangiare senza un tavolo</li>
+    <li>topicLearning->l'universo</li>
+    <li>topicLearning->scienza</li>
+    <li>topicLearning->culture diverse</li>
+    <li>topicLearning->archotechs</li>
+    <li>topicLearning->economia planetaria</li>
+    <li>topicLearning->psicologia</li>
+    <li>topicLearning->biologia degli insetti</li>
+    <li>topicLearning->gestazione dei mechanoidi</li>
+    <li>topicLearning->modifica genetica</li>
+    <li>topicLearning->ingegneria aerospaziale</li>
+    <li>topicLearning->estrazione mineraria</li>
+    <li>taskWork->preparare pasti</li>
+    <li>taskWork->addestrare animali</li>
+    <li>taskWork->prendersi cura di persone malate</li>
+    <li>taskWork->aiutare [friendNamePlural]</li>
+    <li>taskWork->cacciare i muffalo</li>
+    <li>taskWork->coltivare cibo</li>
+    <li>taskWork->confezionare vestiti</li>
+    <li>friendNamePlural->amici</li>
+    <li>friendNamePlural->persone care</li>
+    <li>friendNamePlural->[friendAdj] animali</li>
+    <li>friendNamePlural->[friendAdj] mechanoidi</li>
+    <li>friendNamePlural->[friendAdj] bambini</li>
+    <li>friendNamePlural->amici immaginari</li>
+    <li>friendNameSingular->amico</li>
+    <li>friendNameSingular->cane</li>
+    <li>friendNameSingular->[friendAdj] gatto</li>
+    <li>friendNameSingular->bambino</li>
+    <li>friendNameSingular->[friendAdj] bambino</li>
+    <li>friendNameSingular->membro della famiglia</li>
+    <li>friendAdj->gentile</li>
+    <li>friendAdj->premuroso</li>
+    <li>friendAdj->amichevole</li>
+    <li>friendAdj->birichino</li>
+    <li>friendAdj->divertente</li>
+    <li>enemyNamePlural->predoni</li>
+    <li>enemyNamePlural->[AdjectiveBadass] predoni</li>
+    <li>enemyNamePlural->sconosciuti misteriosi</li>
+    <li>enemyNamePlural->[AdjectiveBadass] insetti</li>
+    <li>enemyNamePlural->boomalopi assassini</li>
+    <li>enemyNamePlural->bevitori di sangue segreti</li>
+    <li>enemyNamePlural->dei macchina</li>
+    <li>enemyNamePlural->mechanoidi ferali</li>
+    <li>enemyNamePlural->esseri psichici con poteri terribili</li>
+    <li>enemyNameSingular->[AdjectiveBadass] [Enemy]</li>
+    <li>enemyNameSingular->[AdjectiveBadass] [AnimalBadass]</li>
+    <li>enemyNameSingular->[AnimalBadass]</li>
+    <li>enemyNameSingular->[Mechanoid]</li>
+    <li>enemyNameSingular->[AdjectiveBadass] waster</li>
+    <li>enemyNameSingular->sconosciuto</li>
+    <li>enemyNameSingular->sanguofago</li>
+    <li>enemyNameSingular->donna senza occhi</li>
+    <li>enemyNameSingular->uomo con un uncino al posto della mano</li>
   </GrowthMomentFlavor.rulePack.rulesStrings>
   
 </LanguageData>

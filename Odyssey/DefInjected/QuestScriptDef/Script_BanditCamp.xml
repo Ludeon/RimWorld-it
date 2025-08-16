@@ -4,7 +4,9 @@
   <!-- EN:
     <li>questDescription->[discoveryMethod] the location of a camp controlled by [siteFaction_name]. The camp contains hostile [siteFaction_pawnsPlural], but you don't know what defenses they have.</li>
   -->
-  <OpportunitySite_BanditCamp_Giver.questDescriptionRules.rulesStrings>TODO</OpportunitySite_BanditCamp_Giver.questDescriptionRules.rulesStrings>
+  <OpportunitySite_BanditCamp_Giver.questDescriptionRules.rulesStrings>
+    <li>questDescription->[discoveryMethod] la posizione di un campo controllato da [siteFaction_name]. Il campo contiene [siteFaction_pawnsPlural] ostili, ma non sai quali difese possiedano.</li>
+  </OpportunitySite_BanditCamp_Giver.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->The [bandit] [camp]</li>
     <li>questName->[bandit] [camp]</li>
@@ -22,7 +24,23 @@
     <li>bandit->Robber</li>
     <li>bandit->Brigand</li>
   -->
-  <OpportunitySite_BanditCamp_Giver.questNameRules.rulesStrings>TODO</OpportunitySite_BanditCamp_Giver.questNameRules.rulesStrings>
+  <OpportunitySite_BanditCamp_Giver.questNameRules.rulesStrings>
+    <li>questName->Il [camp] del [bandit]</li>
+    <li>questName->[bandit] [camp]</li>
+    <li>questName->[asker_nameDef] e il [camp]</li>
+    <li>camp->Campo</li>
+    <li>camp->Avamposto</li>
+    <li>camp->Covo</li>
+    <li>camp->Accampamento</li>
+    <li>bandit->Bandito</li>
+    <li>bandit->Predone</li>
+    <li>bandit->Fuorilegge</li>
+    <li>bandit->Desperado</li>
+    <li>bandit->Fuggitivo</li>
+    <li>bandit->Saccheggiatore</li>
+    <li>bandit->Ladro</li>
+    <li>bandit->Brigante</li>
+  </OpportunitySite_BanditCamp_Giver.questNameRules.rulesStrings>
   <!-- EN:
     <li>subject->bandit camps</li>
     <li>subject->outlaws</li>
@@ -35,14 +53,25 @@
     <li>questMapText->trespassers get skinned</li>
     <li>questMapText->traders beware - outlaws</li>
   -->
-  <OpportunitySite_BanditCamp_Giver.questSubjectRules.rulesStrings>TODO</OpportunitySite_BanditCamp_Giver.questSubjectRules.rulesStrings>
+  <OpportunitySite_BanditCamp_Giver.questSubjectRules.rulesStrings>
+    <li>subject->campi di banditi</li>
+    <li>subject->fuorilegge</li>
+    <li>subject->avvistamenti di predoni</li>
+    <li>questMapFeature->piccolo campo</li>
+    <li>questMapFeature->avamposto di banditi</li>
+    <li>questMapFeature->accampamento di predoni</li>
+    <li>questMapText->gente pericolosa</li>
+    <li>questMapText->bottino del campo</li>
+    <li>questMapText->gli intrusi verranno scorticati vivi</li>
+    <li>questMapText->attenzione commercianti — fuorilegge</li>
+  </OpportunitySite_BanditCamp_Giver.questSubjectRules.rulesStrings>
   <!-- EN: Quest expired: [resolvedQuestName] -->
-  <OpportunitySite_BanditCamp_Giver.LetterLabelQuestExpired.slateRef>TODO</OpportunitySite_BanditCamp_Giver.LetterLabelQuestExpired.slateRef>
+  <OpportunitySite_BanditCamp_Giver.LetterLabelQuestExpired.slateRef>Missione scaduta: [resolvedQuestName]</OpportunitySite_BanditCamp_Giver.LetterLabelQuestExpired.slateRef>
   <!-- EN: The bandit camp has packed up and moved on. The quest [resolvedQuestName] has expired. -->
-  <OpportunitySite_BanditCamp_Giver.LetterTextQuestExpired.slateRef>TODO</OpportunitySite_BanditCamp_Giver.LetterTextQuestExpired.slateRef>
+  <OpportunitySite_BanditCamp_Giver.LetterTextQuestExpired.slateRef>Il campo di banditi ha smontato e si è spostato. La missione [resolvedQuestName] è scaduta.</OpportunitySite_BanditCamp_Giver.LetterTextQuestExpired.slateRef>
   <!-- EN: Quest failed: [resolvedQuestName] -->
-  <OpportunitySite_BanditCamp_Giver.LetterLabelQuestFailed.slateRef>TODO</OpportunitySite_BanditCamp_Giver.LetterLabelQuestFailed.slateRef>
+  <OpportunitySite_BanditCamp_Giver.LetterLabelQuestFailed.slateRef>Missione fallita: [resolvedQuestName]</OpportunitySite_BanditCamp_Giver.LetterLabelQuestFailed.slateRef>
   <!-- EN: After being discovered, the bandit camp has dispersed. The quest [resolvedQuestName] has ended. -->
-  <OpportunitySite_BanditCamp_Giver.LetterTextQuestFailed.slateRef>TODO</OpportunitySite_BanditCamp_Giver.LetterTextQuestFailed.slateRef>
+  <OpportunitySite_BanditCamp_Giver.LetterTextQuestFailed.slateRef>Dopo essere stato scoperto, il campo di banditi si è disperso. La missione [resolvedQuestName] è terminata.</OpportunitySite_BanditCamp_Giver.LetterTextQuestFailed.slateRef>
   
 </LanguageData>

@@ -2,28 +2,28 @@
 <LanguageData>
   
   <!-- EN: deadlife dust -->
-  <DeadlifeDust.label>Polvere di vita morta</DeadlifeDust.label>
+  <DeadlifeDust.label>polvere della morte vivente</DeadlifeDust.label>
   <!-- EN: {0} has been killed. -->
-  <DeadlifeDust.deathMessage>{0} è stato ucciso.</DeadlifeDust.deathMessage>
+  <DeadlifeDust.deathMessage>{0} è mort{PAWN_gender ? o : a}.</DeadlifeDust.deathMessage>
   
   <!-- EN: digestion -->
-  <Digested.label>Digestione</Digested.label>
+  <Digested.label>digestione</Digested.label>
   <!-- EN: {0} died from being digested. -->
-  <Digested.deathMessage>{0} è morto a causa della digestione.</Digested.deathMessage>
+  <Digested.deathMessage>{0} è mort{PAWN_gender ? o : a} dopo essere stat{PAWN_gender ? o : a} digerit{PAWN_gender ? o : a}.</Digested.deathMessage>
   
   <!-- EN: energy bolt -->
-  <EnergyBolt.label>scarica energetica</EnergyBolt.label>
+  <EnergyBolt.label>dardo energetico</EnergyBolt.label>
   <!-- EN: {0} has been killed by an energy bolt. -->
-  <EnergyBolt.deathMessage>{0} è stato ucciso da una scarica energetica.</EnergyBolt.deathMessage>
+  <EnergyBolt.deathMessage>{0} è stat{PAWN_gender ? o : a} uccis{PAWN_gender ? o : a} da un dardo energetico.</EnergyBolt.deathMessage>
   
   <!-- EN: vaporize -->
   <NociosphereVaporize.label>vaporizzazione</NociosphereVaporize.label>
   <!-- EN: {0} has been vaporized by extreme heat. -->
-  <NociosphereVaporize.deathMessage>{0} è stato vaporizzato da un calore estremo.</NociosphereVaporize.deathMessage>
+  <NociosphereVaporize.deathMessage>{0} è stat{PAWN_gender ? o : a} vaporizzat{PAWN_gender ? o : a} dal calore estremo.</NociosphereVaporize.deathMessage>
   
   <!-- EN: psychic -->
   <Psychic.label>psichico</Psychic.label>
   <!-- EN: {0} has been killed by a psychic attack. -->
-  <Psychic.deathMessage>{0} è stato ucciso da un attacco psichico.</Psychic.deathMessage>
+  <Psychic.deathMessage>{0} è stat{PAWN_gender ? o : a} uccis{PAWN_gender ? o : a} da un attacco psichico.</Psychic.deathMessage>
   
 </LanguageData>

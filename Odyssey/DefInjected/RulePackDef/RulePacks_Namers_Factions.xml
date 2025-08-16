@@ -37,7 +37,67 @@
     <li>spaceCollectiveNoun->Marauders</li>
     <li>spaceCollectiveNoun->Reapers</li>
   -->
-  <NamerFactionSalvagers.rulePack.rulesStrings>TODO</NamerFactionSalvagers.rulePack.rulesStrings>
+  <NamerFactionSalvagers.rulePack.rulesStrings>
+    <li>r_name->Les récupérateurs [spaceAdj]</li>
+    <li>r_name->Les charognards [spaceAdj]</li>
+    <li>r_name->[spaceAdj] [AnimalBadass]</li>
+    <li>r_name->Les [AnimalBadass] [spaceAdj]</li>
+    <li>r_name->Les [Enemy] [spaceAdj]</li>
+    <li>r_name->Les [spaceNoun_feminine] [Enemy_Feminine]</li>
+    <li>r_name->Les [spaceNoun_feminine_vowel] [Enemy_Feminine]</li>
+    <li>r_name->Les [spaceNoun_vowel] [Enemy]</li>
+    <li>r_name->Les [spaceNoun] de [groupname]</li>
+    <li>r_name->Les [groupname] [spaceAdj]</li>
+    <li>r_name->Les [spaceNoun_feminine] [ColorBadass_Feminine]</li>
+    <li>r_name->Les [spaceNoun_feminine_vowel] [ColorBadass_Feminine]</li>
+    <li>r_name->L'[spaceNoun_vowel] [ColorBadass]</li>
+    <li>r_name->La [spaceNoun_feminine] [AdjectiveBadass_Feminine]</li>
+    <li>r_name->La [spaceNoun_feminine_vowel] [AdjectiveBadass_Feminine]</li>
+    <li>r_name->L'[spaceNoun_vowel] [AdjectiveBadass]</li>
+    <li>r_name->Les [spaceCollectiveNoun_plurial] [ColorBadass_Plural] </li>
+    <li>r_name->Les [spaceCollectiveNoun_plurial] [AdjectiveBadass_Plural] </li>
+    <li>r_name->La [spaceCollectiveNoun_feminine] [ColorBadass_Feminine]</li>
+    <li>r_name->La [spaceCollectiveNoun_feminine] [AdjectiveBadass_Feminine] </li>
+    <li>r_name->L'[spaceCollectiveNoun_feminine_vowel] [ColorBadass_Feminine]</li>
+    <li>r_name->L'[spaceCollectiveNoun_feminine_vowel] [AdjectiveBadass_Feminine] </li>
+    <li>r_name->Les [spaceCollectiveNoun_feminine_plurial] [ColorBadass_FemPlural]</li>
+    <li>r_name->Les [spaceCollectiveNoun_feminine_plurial] [AdjectiveBadass_FemPlural] </li>
+    <li>r_name->Les [spaceNoun] de [ConceptBadass]</li>
+    <li>r_name(p=2)->La [spaceNoun_feminine] de [NamePerson]</li>
+    <li>r_name(p=2)->l'[spaceNounAny_vowel] de [NamePerson]</li>
+    <li>r_name(p=2)->La [spaceCollectiveNoun_feminine] de [NamePerson]</li>
+    <li>r_name(p=2)->les [spaceCollectiveNounAny_plurial] de [NamePerson]</li>
+    <li>r_name(p=2)->les [spaceCollectiveNoun_plurial] [spaceAdj] de [NamePerson]</li>
+    <li>r_name(p=2)->les [spaceCollectiveNoun_feminine_plurial] [spaceAdj_feminine] de [NamePerson]</li>
+    <li>spaceAdjAny->[spaceAdj]</li>
+    <li>spaceAdjAny->[spaceAdj_indef]</li>
+    <li>spaceAdj->Orbitaux</li>
+    <li>spaceAdj_feminine->Orbitales</li>
+    <li>spaceAdj_indef->Cosmiques</li>
+    <li>spaceAdj->Astraux</li>
+    <li>spaceAdj_feminine->Astrales</li>
+    <li>spaceAdj_indef->Solaires</li>
+    <li>spaceAdj_indef->Célestes</li>
+    <li>spaceNounAny_vowel->[spaceNoun_feminine_vowel]</li>
+    <li>spaceNounAny_vowel->[spaceNoun_vowel]</li>
+    <li>spaceNoun_feminine_vowel->Étoile</li>
+    <li>spaceNoun_feminine->Lune</li>
+    <li>spaceNoun_feminine->Comète</li>
+    <li>spaceNoun_vowel->Astéroïde</li>
+    <li>spaceNoun_feminine_vowel->Éclipse</li>
+    <li>spaceCollectiveNounAny_plurial->[spaceCollectiveNoun_plurial]</li>
+    <li>spaceCollectiveNounAny_plurial->[spaceCollectiveNoun_feminine_plurial]</li>
+    <li>spaceCollectiveNoun_feminine_vowel->Armada</li>
+    <li>spaceCollectiveNoun_feminine->Flotte</li>
+    <li>spaceCollectiveNoun_feminine->Flottille</li>
+    <li>spaceCollectiveNoun_plurial->Corsaires</li>
+    <li>spaceCollectiveNoun_plurial->Pirates</li>
+    <li>spaceCollectiveNoun_feminine_plurial->Pirates</li>
+    <li>spaceCollectiveNoun_plurial->Maraudeurs</li>
+    <li>spaceCollectiveNoun_feminine_plurial->Maraudeuses</li>
+    <li>spaceCollectiveNoun_plurial->Faucheurs</li>
+    <li>spaceCollectiveNoun_feminine_plurial->Faucheuses</li>
+  </NamerFactionSalvagers.rulePack.rulesStrings>
   
   <!-- EN:
     <li>r_name->[tradeAdj] [tradeNoun]</li>
@@ -66,7 +126,32 @@
     <li>tradeNoun->emporium</li>
     <li>tradeNoun->nexus</li>
   -->
-  <NamerFactionTradersGuild.rulePack.rulesStrings>TODO</NamerFactionTradersGuild.rulePack.rulesStrings>
+  <NamerFactionTradersGuild.rulePack.rulesStrings>
+    <li>r_name->[tradeNoun] [tradeAdj]</li>
+    <li>tradeAdj->du marchand</li>
+    <li>tradeAdj->l'orbite</li>
+    <li>tradeAdj->commerce</li>
+    <li>tradeAdj->de l'espace</li>
+    <li>tradeAdj->cosmique</li>
+    <li>tradeAdj->céleste</li>
+    <li>tradeAdj->né de la faille</li>
+    <li>tradeAdj->exo</li>
+    <li>tradeNoun->guilde</li>
+    <li>tradeNoun->consortium</li>
+    <li>tradeNoun->syndicat</li>
+    <li>tradeNoun->alliance</li>
+    <li>tradeNoun->cartel</li>
+    <li>tradeNoun->coalition</li>
+    <li>tradeNoun->fédération</li>
+    <li>tradeNoun->conglomérat</li>
+    <li>tradeNoun->corporation</li>
+    <li>tradeNoun->entreprise</li>
+    <li>tradeNoun->réseau</li>
+    <li>tradeNoun->échange</li>
+    <li>tradeNoun->bazaar</li>
+    <li>tradeNoun->magasin</li>
+    <li>tradeNoun->nexus</li>
+  </NamerFactionTradersGuild.rulePack.rulesStrings>
   
   <!-- EN:
     <li>r_name->[platAdj] [platform]</li>
@@ -105,6 +190,42 @@
     <li>platform->dock</li>
     <li>platform->ring</li>
   -->
-  <NamerSettlementTradersGuild.rulePack.rulesStrings>TODO</NamerSettlementTradersGuild.rulePack.rulesStrings>
+  <NamerSettlementTradersGuild.rulePack.rulesStrings>
+    <li>r_name->[platform] [platAdj]</li>
+    <li>platAdj->lumière des étoiles</li>
+    <li>platAdj->soleil</li>
+    <li>platAdj->nébuleuse</li>
+    <li>platAdj->poussière d'étoiles</li>
+    <li>platAdj->orion</li>
+    <li>platAdj->horizon</li>
+    <li>platAdj->galaxie</li>
+    <li>platAdj->cosmos</li>
+    <li>platAdj->vide</li>
+    <li>platAdj->astéroïde</li>
+    <li>platAdj->comète</li>
+    <li>platAdj->éclipse</li>
+    <li>platAdj->quasar</li>
+    <li>platAdj->pulsar</li>
+    <li>platAdj->météore</li>
+    <li>platAdj->zénith</li>
+    <li>platAdj->lunaire</li>
+    <li>platAdj->solaire</li>
+    <li>platAdj->céleste</li>
+    <li>platAdj->rayon de lune</li>
+    <li>platAdj->éclat de soleil</li>
+    <li>platAdj->champ stellaire</li>
+    <li>platAdj->cosmique</li>
+    <li>platAdj->astral</li>
+    <li>platAdj->aurore</li>
+    <li>platAdj->luminaire</li>
+    <li>platAdj->couronne</li>
+    <li>platform->plateforme</li>
+    <li>platform->station</li>
+    <li>platform->centre</li>
+    <li>platform->station</li>
+    <li>platform->base</li>
+    <li>platform->quai</li>
+    <li>platform->anneau</li>
+  </NamerSettlementTradersGuild.rulePack.rulesStrings>
   
 </LanguageData>
