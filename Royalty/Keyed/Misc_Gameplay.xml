@@ -19,13 +19,13 @@
   <!-- EN: psytrainer ({0}) -->
   <PsycastNeurotrainerLabel>psytrainer ({0})</PsycastNeurotrainerLabel>
   <!-- EN: Use psytrainer to learn {0} psycast -->
-  <PsycastNeurotrainerUseLabel>Usa psytrainer per imparare {0} psycast</PsycastNeurotrainerUseLabel>
+  <PsycastNeurotrainerUseLabel>Usa il psytrainer per imparare il potere psionico {0}</PsycastNeurotrainerUseLabel>
   <!-- EN: A one-use super-dose of mechanites which trains a specific psychic power.\n\nThe dose is administered through the orbit of the eye. Once released into the brain, the mechanites form knowledge of a specific ability, transmuting themselves into neural tissue as needed.\n\n{PSYCAST_label}\n\n{PSYCASTDESCRIPTION} -->
-  <PsycastNeurotrainerDescription>Una superdose monouso di meccaniti che allena un potere psichico specifico.\n\nLa dose viene somministrata attraverso l'orbita dell'occhio. Una volta rilasciati nel cervello, i meccaniti formano la conoscenza di un'abilità specifica, trasmutandosi in tessuto neurale secondo necessità.</PsycastNeurotrainerDescription>
+  <PsycastNeurotrainerDescription>Una superdose monouso di meccaniti che addestra un potere psichico specifico.\n\nLa dose viene somministrata attraverso l'orbita dell'occhio. Una volta rilasciati nel cervello, i meccaniti formano la conoscenza di un'abilità specifica, trasmutandosi in tessuto neurale secondo necessità.\n\n{PSYCAST_label}\n\n{PSYCASTDESCRIPTION}</PsycastNeurotrainerDescription>
   <!-- EN: {USER_labelShort} used neurotrainer to learn the {1} power. -->
-  <AbilityNeurotrainerUsed>{USER_labelShort} ha utilizzato il neurotrainer per apprendere l'abilità di {1}.</AbilityNeurotrainerUsed>
+  <AbilityNeurotrainerUsed>{USER_labelShort} ha utilizzato il neurotrainer per apprendere il potere {1}.</AbilityNeurotrainerUsed>
   <!-- EN: requires psylink -->
-  <PsycastNeurotrainerNoPsylink>Richiede psylink</PsycastNeurotrainerNoPsylink>
+  <PsycastNeurotrainerNoPsylink>Richiede collegamento psionico</PsycastNeurotrainerNoPsylink>
   <!-- EN: {USER_labelShort} already knows {1}. -->
   <PsycastNeurotrainerAbilityAlreadyLearned>{USER_labelShort} conosce già {1}.</PsycastNeurotrainerAbilityAlreadyLearned>
 
@@ -133,9 +133,9 @@
   <LandHere>Atterra la navetta qui</LandHere>
   <!-- EN: Destination is out of range. -->
   <MessageShuttleDestinationIsTooFar>La destinazione è fuori portata.</MessageShuttleDestinationIsTooFar>
-
+  
   <!-- EN: Start bestowing ceremony for {0_labelShort} -->
-  <BeginCeremony>Esegui cerimonia di conferimento</BeginCeremony>
+  <BeginCeremony>Inizia la cerimonia di conferimento per {0_labelShort}</BeginCeremony>
   <!-- EN: {PAWN_definite}'s throneroom does not satisfy the requirements of the title of {TITLE}. -->
   <BestowingCeremonyThroneroomRequirementsNotSatisfiedShort>La sala del trono di {PAWN_definite} non soddisfa i requisiti del titolo di {TITLE}.</BestowingCeremonyThroneroomRequirementsNotSatisfiedShort>
   <!-- EN: The bestower is offended that {PAWN_definite}'s throneroom does not satisfy the requirements of the title of {TITLE}. The bestowing ceremony has been cancelled. -->
