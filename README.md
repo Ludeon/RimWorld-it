@@ -15,7 +15,7 @@ TRADUTTORI:
 - PuchRM89
 - spappo94
 
-### Attivi:
+### Attivi (v.1.4):
 - StoneNimRod
 - Kaiser85
 - Rexlord (alias Lagorn)
