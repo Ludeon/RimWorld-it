@@ -1,11 +1,12 @@
+*** Traduzione completa al 100% ***
+================
+
 RimWorld Italian
 ================
 Target Version: 1.6.4543
 
 Questi sono i file per la traduzione italiana di RimWorld.
 Puoi trovare ulteriori informazioni in questa pagina: http://ludeon.com/forums/index.php?topic=2933.0
-
-Traduzione completa al 100%
 
 TRADUTTORI:
 ------------------
