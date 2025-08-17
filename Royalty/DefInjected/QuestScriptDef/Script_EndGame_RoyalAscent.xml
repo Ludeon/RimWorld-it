@@ -8,7 +8,14 @@
     <li>threatsInfo(allowViolentQuests==true,priority=1)->\n\nOthers will take the opportunity to try to kill the [asker_faction_leaderTitle], and will attack with great intensity. Be prepared to defend.</li>
     <li>threatsInfo-></li>
   -->
-  <EndGame_RoyalAscent.questDescriptionRules.rulesStrings />
+  <EndGame_RoyalAscent.questDescriptionRules.rulesStrings>
+    <li>questDescription->[intro][asker_faction_leaderTitle] di [asker_faction_name] effettuerà una visita consuetudinaria a qualsiasi Arconte del suo dominio su richiesta. Invitalo, soddisfa i suoi bisogni reali per [shuttleDelayTicks_duration] e tutti voi potrete salire sulla navetta per raggiungere la flottiglia imperiale. Potrai quindi unirti alla corte imperiale o fuggire verso una nuova vita tra le stelle.\n\nOttenere il titolo di Arconte significa completare missioni per guadagnare [asker_faction_royalFavorLabel] con [asker_faction_name]. Potrebbero volerci anni per raggiungere finalmente questo titolo.\n\nDurante la sua visita dovrai mantenere il suo umore sopra [lodgersMoodThreshold_percent]. Ciò significa fornirgli privilegi regali come una camera da letto sontuosa.[threatsInfo]\n\n[asker_faction_leaderTitle] porterà con sé quattro delle sue guardie personali e le metterà sotto il tuo comando. Dovrai ospitarle, ma [asker_faction_leaderTitle] non si lamenterà se moriranno o saranno infelici.\n\nDovrai mantenere i visitatori a [map_definite] e non mandarli altrove. Se fallisci questa missione o migri, avrai un'altra occasione più avanti.</li>
+    <li>intro(sameQuestsCount==0)->Hai scoperto un modo per fuggire da questo pianeta!\n\n</li>
+    <li>intro(sameQuestsCount>=1)->Ti è stata data un'altra possibilità di ascesa reale.\n\n</li>
+    <li>threatsInfo(allowViolentQuests==true,priority=1)->\n\nAltri coglieranno l'occasione per tentare di uccidere [asker_faction_leaderTitle] e attaccheranno con grande intensità. Preparati a difenderti.</li>
+    <li>threatsInfo-></li>
+  </EndGame_RoyalAscent.questDescriptionRules.rulesStrings>
+  
   <!-- EN:
     <li>questName(sameQuestsCount==0)->Royal Ascent</li>
     <li>questName(sameQuestsCount>=1)->Royal [titleEnd]</li>
@@ -19,7 +26,17 @@
     <li>titleEnd->Host</li>
     <li>titleEnd->Victory</li>
   -->
-  <EndGame_RoyalAscent.questNameRules.rulesStrings />
+  <EndGame_RoyalAscent.questNameRules.rulesStrings>
+    <li>questName(sameQuestsCount==0)->Ascesa reale</li>
+    <li>questName(sameQuestsCount>=1)->[titleEnd] reale</li>
+    <li>titleEnd->Ascesa</li>
+    <li>titleEnd->Ascendenza</li>
+    <li>titleEnd->Visitatore</li>
+    <li>titleEnd->Ospite</li>
+    <li>titleEnd->Ospitante</li>
+    <li>titleEnd->Vittoria</li>
+  </EndGame_RoyalAscent.questNameRules.rulesStrings>
+
   <!-- EN: Quest failed: [resolvedQuestName] -->
   <EndGame_RoyalAscent.LetterLabelFactionBecameHostile.slateRef>Missione fallita: [resolvedQuestName]</EndGame_RoyalAscent.LetterLabelFactionBecameHostile.slateRef>
   <!-- EN: [faction_name] became hostile to you.  -->
@@ -76,9 +93,5 @@
   <EndGame_RoyalAscent.LetterLabelShuttleSentUnsatisfied.slateRef>Missione fallita: [resolvedQuestName]</EndGame_RoyalAscent.LetterLabelShuttleSentUnsatisfied.slateRef>
   <!-- EN: The shuttle sent to collect the [asker_faction_leaderTitle] has departed without [asker_objective]. [asker_pronoun] will now leave on foot. [failLetterEndingCommon] -->
   <EndGame_RoyalAscent.LetterTextShuttleSentUnsatisfied.slateRef>La navetta inviata per ritirare il [asker_faction_leaderTitle] è partita senza [asker_objective]. [asker_pronoun] partirà quindi a piedi. [failLetterEndingCommon]</EndGame_RoyalAscent.LetterTextShuttleSentUnsatisfied.slateRef>
-  
-  <!-- UNUSED -->
-  <EndGame_RoyalAscent.questDescriptionRules.rulesStrings />
-  <EndGame_RoyalAscent.questNameRules.rulesStrings />
   
 </LanguageData>

@@ -40,7 +40,6 @@
     <li>questDescription(asker_royalInCurrentFaction==True)->[asker_nameFull], un [asker_royalTitleInCurrentFaction] di [asker_faction_name], ha difficoltà ad atterrare vicino a [map_definite] a causa di ripetute infestazioni. [asker_pronoun] vuole attirare gli insetti da te affinché tu li elimini. Questo provocherà (*Threat)un’infestazione di [hivesCount] nidi(/Threat).[helpersParagraph]</li>
     <li>infestationArrivalLetterText(asker_royalInCurrentFaction==True)->L’infestazione è stata attirata su di te da [asker_nameFull], un [asker_royalTitleInCurrentFaction] di [asker_faction_name].</li>
   </ThreatReward_Infestation_ItemPod.questDescriptionRules.rulesStrings>
-  
   <!-- EN:
     <li>questName->Pods and [insects]</li>
     <li>questName->[asker_nameDef]'s [insects]</li>
@@ -157,7 +156,6 @@
     <li>askerEnemies->[asker_possessive] nemici</li>
     <li>askerEnemies(priority=-1)->i suoi nemici</li>
   </ThreatReward_SiteThreat_ItemPod.questDescriptionRules.rulesStrings>
-  
   <!-- EN:
     <li>questName->[asker_nameDef]'s [site/site_label]</li>
     <li>questName->[site/site_label] for [asker_nameDef]</li>
@@ -170,7 +168,6 @@
     <li>questName->[site/site_label] a pagamento</li>
     <li>questName->[site/site_label] su commissione</li>
   </ThreatReward_SiteThreat_ItemPod.questNameRules.rulesStrings>
-
   <!-- EN: [defaultSiteAppearedLetterText]\n\nThis site was set up as a response to your insulting signals. -->
   <ThreatReward_SiteThreat_ItemPod.LetterTextSiteAppeared.value.slateRef>[defaultSiteAppearedLetterText]\n\nQuesto accampamento è stato costruito come risposta ai tuoi segnali offensivi.</ThreatReward_SiteThreat_ItemPod.LetterTextSiteAppeared.value.slateRef>
   
