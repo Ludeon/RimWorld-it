@@ -31,48 +31,56 @@
   <Hospitality_Util_Worker.LetterLabelUnauthorizedSurgery.slateRef>Chirurgia non autorizzata: {SUBJECT_definite}</Hospitality_Util_Worker.LetterLabelUnauthorizedSurgery.slateRef>
   <!-- EN: Unauthorized, violating surgery has been performed on [letterSubject]. [remainingWillNowLeave][failLetterEndingCommon] -->
   <Hospitality_Util_Worker.LetterTextUnauthorizedSurgery.slateRef>Su [letterSubject] è stato eseguito un intervento chirurgico non autorizzato. [remainingWillNowLeave][failLetterEndingCommon]</Hospitality_Util_Worker.LetterTextUnauthorizedSurgery.slateRef>
-  <!-- EN: Guest lost: {SUBJECT_definite} -->
-  <Hospitality_Util_Worker.root.nodes.lodgersLeftMap.node.nodes.Letter.label.slateRef>Ospite perso: {SUBJECT_definite}</Hospitality_Util_Worker.root.nodes.lodgersLeftMap.node.nodes.Letter.label.slateRef>
-  <!-- EN: [letterSubject], who you were charged to protect, is gone. [remainingWillNowLeave][failLetterEndingCommon] -->
-  <Hospitality_Util_Worker.root.nodes.lodgersLeftMap.node.nodes.Letter.text.slateRef>[letterSubject], che eri stato incaricato di proteggere, se n'è andato. [remainingWillNowLeave][failLetterEndingCommon]</Hospitality_Util_Worker.root.nodes.lodgersLeftMap.node.nodes.Letter.text.slateRef>
+  <!-- EN: Xenogerm absorbed: {SUBJECT_definite} -->
+  <Hospitality_Util_Worker.root.nodes.lodgersXenogermAbsorbed.node.nodes.Letter.label.slateRef>Xenogerm assorbito: {SUBJECT_definite}</Hospitality_Util_Worker.root.nodes.lodgersXenogermAbsorbed.node.nodes.Letter.label.slateRef>
+  <!-- EN: {SUBJECT_definite}, who you were charged to protect, has had {SUBJECT_possessive} xenogerm forcibly absorbed. [remainingWillNowLeave][failLetterEndingCommon] -->
+  <Hospitality_Util_Worker.root.nodes.lodgersXenogermAbsorbed.node.nodes.Letter.text.slateRef>{SUBJECT_definite}, che avevi l’incarico di proteggere, ha subìto l’assorbimento forzato del suo xenogerm. [remainingWillNowLeave][failLetterEndingCommon]</Hospitality_Util_Worker.root.nodes.lodgersXenogermAbsorbed.node.nodes.Letter.text.slateRef>
   <!-- EN: Guest lost: {SUBJECT_definite} -->
   <Hospitality_Util_Worker.LetterLabelGuestLost.slateRef>Ospite perso: {SUBJECT_definite}</Hospitality_Util_Worker.LetterLabelGuestLost.slateRef>
   <!-- EN: [letterSubject], who you were charged to protect, is gone. [remainingWillNowLeave][failLetterEndingCommon] -->
   <Hospitality_Util_Worker.LetterTextGuestLost.slateRef>[letterSubject], che eri stato incaricato di proteggere, se n'è andato. [remainingWillNowLeave][failLetterEndingCommon]</Hospitality_Util_Worker.LetterTextGuestLost.slateRef>
   <!-- EN: Guest lost: {SUBJECT_definite} -->
-  <Hospitality_Util_Worker.root.nodes.lodgersRanWild.node.nodes.Letter.label.slateRef>Ospite perso: {SUBJECT_definite}</Hospitality_Util_Worker.root.nodes.lodgersRanWild.node.nodes.Letter.label.slateRef>
-  <!-- EN: [letterSubject], who you were charged to protect, has run wild. [remainingWillNowLeave][failLetterEndingCommon] -->
-  <Hospitality_Util_Worker.root.nodes.lodgersRanWild.node.nodes.Letter.text.slateRef>[letterSubject], che eri stato incaricato di proteggere, è impazzito. [remainingWillNowLeave][failLetterEndingCommon]</Hospitality_Util_Worker.root.nodes.lodgersRanWild.node.nodes.Letter.text.slateRef>
+  <Hospitality_Util_Worker.root.nodes.lodgersLeftBehind.node.nodes.Letter.label.slateRef>Ospite perso: {SUBJECT_definite}</Hospitality_Util_Worker.root.nodes.lodgersLeftBehind.node.nodes.Letter.label.slateRef>
+  <!-- EN: [letterSubject], who you were charged to protect, is gone. [remainingWillNowLeave][failLetterEndingCommon] -->
+  <Hospitality_Util_Worker.root.nodes.lodgersLeftBehind.node.nodes.Letter.text.slateRef>[letterSubject], che avevi l’incarico di proteggere, non c’è più. [remainingWillNowLeave][failLetterEndingCommon]</Hospitality_Util_Worker.root.nodes.lodgersLeftBehind.node.nodes.Letter.text.slateRef>
   <!-- EN: Guest lost: {SUBJECT_definite} -->
-  <Hospitality_Util_Worker.root.nodes.AnySignal.node.node.nodes.Letter.label.slateRef>Ospite smarrito: {SUBJECT_definite}</Hospitality_Util_Worker.root.nodes.AnySignal.node.node.nodes.Letter.label.slateRef>
+  <Hospitality_Util_Worker.LetterLabelLodgerRanWild.slateRef>Ospite perso: {SUBJECT_definite}</Hospitality_Util_Worker.LetterLabelLodgerRanWild.slateRef>
+  <!-- EN: [letterSubject], who you were charged to protect, has run wild. [remainingWillNowLeave][failLetterEndingCommon] -->
+  <Hospitality_Util_Worker.LetterTextLodgerRanWild.slateRef>[letterSubject], che eri stato incaricato di proteggere, è impazzito. [remainingWillNowLeave][failLetterEndingCommon]</Hospitality_Util_Worker.LetterTextLodgerRanWild.slateRef>
+  <!-- EN: Guest lost: {SUBJECT_definite} -->
+  <Hospitality_Util_Worker.LetterLabelGuestJoinedOtherFaction.slateRef>Ospite smarrito: {SUBJECT_definite}</Hospitality_Util_Worker.LetterLabelGuestJoinedOtherFaction.slateRef>
   <!-- EN: [letterSubject], who you were charged to protect, has joined another faction. [remainingWillNowLeave][failLetterEndingCommon] -->
-  <Hospitality_Util_Worker.root.nodes.AnySignal.node.node.nodes.Letter.text.slateRef>[letterSubject], che eri stato incaricato di proteggere, si è unito a un'altra fazione. [remainingWillNowLeave][failLetterEndingCommon]</Hospitality_Util_Worker.root.nodes.AnySignal.node.node.nodes.Letter.text.slateRef>
+  <Hospitality_Util_Worker.LetterTextGuestJoinedOtherFaction.slateRef>[letterSubject], che eri stato incaricato di proteggere, si è unito a un'altra fazione. [remainingWillNowLeave][failLetterEndingCommon]</Hospitality_Util_Worker.LetterTextGuestJoinedOtherFaction.slateRef>
   <!-- EN: Quest failed: [resolvedQuestName] -->
-  <Hospitality_Util_Worker.root.nodes.IsNull-1.elseNode.node.nodes.Letter.label.slateRef>Missione fallita: [resolvedQuestName]</Hospitality_Util_Worker.root.nodes.IsNull-1.elseNode.node.nodes.Letter.label.slateRef>
+  <Hospitality_Util_Worker.LetterLabelAskerFactionHostile.slateRef>Missione fallita: [resolvedQuestName]</Hospitality_Util_Worker.LetterLabelAskerFactionHostile.slateRef>
   <!-- EN: [asker_faction_name] are now hostile towards you. [failLetterEndingQuest] -->
-  <Hospitality_Util_Worker.root.nodes.IsNull-1.elseNode.node.nodes.Letter.text.slateRef>[asker_faction_name] ora ti sono ostili. [failLetterEndingQuest]</Hospitality_Util_Worker.root.nodes.IsNull-1.elseNode.node.nodes.Letter.text.slateRef>
+  <Hospitality_Util_Worker.LetterTextAskerFactionHostile.slateRef>[asker_faction_name] ora ti sono ostili. [failLetterEndingQuest]</Hospitality_Util_Worker.LetterTextAskerFactionHostile.slateRef>
   <!-- EN: Shuttle destroyed -->
-  <Hospitality_Util_Worker.root.nodes.pickupShipThingDestroyed.node.nodes.Letter.label.slateRef>Navetta distrutta</Hospitality_Util_Worker.root.nodes.pickupShipThingDestroyed.node.nodes.Letter.label.slateRef>
-  <!-- EN: The shuttle sent to collect [lodgersLabelSingOrPluralDef] has been destroyed. [lodgersLabelSingOrPluralDef] will now leave on foot. [failLetterEndingCommon] -->
-  <Hospitality_Util_Worker.root.nodes.pickupShipThingDestroyed.node.nodes.Letter.text.slateRef>La navetta inviata per raccogliere [lodgersLabelSingOrPluralDef] è stata distrutta. [lodgersLabelSingOrPluralDef] ora partirà a piedi. [failLetterEndingCommon]</Hospitality_Util_Worker.root.nodes.pickupShipThingDestroyed.node.nodes.Letter.text.slateRef>
-  <!-- EN: Shuttle left behind -->
   <Hospitality_Util_Worker.LetterLabelShuttleDestroyed.slateRef>Navetta distrutta</Hospitality_Util_Worker.LetterLabelShuttleDestroyed.slateRef>
+  <!-- EN: The shuttle sent to collect [lodgersLabelSingOrPluralDef] has been destroyed. [lodgersLabelSingOrPluralDef] will now leave on foot. [failLetterEndingCommon] -->
+  <Hospitality_Util_Worker.LetterTextShuttleDestroyed.slateRef>La navetta inviata per raccogliere [lodgersLabelSingOrPluralDef] è stata distrutta. [lodgersLabelSingOrPluralDef] ora partirà a piedi. [failLetterEndingCommon]</Hospitality_Util_Worker.LetterTextShuttleDestroyed.slateRef>
+  <!-- EN: Shuttle left behind -->
+  <Hospitality_Util_Worker.LetterLabelShuttleLeftBehind.slateRef>Navetta lasciata indietro</Hospitality_Util_Worker.LetterLabelShuttleLeftBehind.slateRef>
   <!-- EN: The shuttle sent to collect [lodgersLabelSingOrPluralDef] has been left behind. [lodgersLabelSingOrPluralDef] will now leave on foot. -->
-  <Hospitality_Util_Worker.LetterTextShuttleDestroyed.slateRef>La navetta inviata a recuperare [lodgersLabelSingOrPluralDef] è stata distrutta. [lodgersLabelSingOrPluralDef] partir{lodgersCount > 1 ? anno : à} quindi a piedi.</Hospitality_Util_Worker.LetterTextShuttleDestroyed.slateRef>
+  <Hospitality_Util_Worker.LetterTextShuttleLeftBehind.slateRef>La navetta inviata per raccogliere [lodgersLabelSingOrPluralDef] è stata lasciata indietro. [lodgersLabelSingOrPluralDef] partiranno ora a piedi.</Hospitality_Util_Worker.LetterTextShuttleLeftBehind.slateRef>
   <!-- EN: Quest completed -->
-  <Hospitality_Util_Worker.root.nodes.pickupShipThingSentSatisfied.node.nodes.IsTrue.node.nodes.GoodwillForAverageMoodSuccess.node.nodes.Letter.label.slateRef>Missione completata</Hospitality_Util_Worker.root.nodes.pickupShipThingSentSatisfied.node.nodes.IsTrue.node.nodes.GoodwillForAverageMoodSuccess.node.nodes.Letter.label.slateRef>
+  <Hospitality_Util_Worker.LetterLabelGoodwillSuccessQuestCompleted.slateRef>Missione completata</Hospitality_Util_Worker.LetterLabelGoodwillSuccessQuestCompleted.slateRef>
   <!-- EN: You have successfully completed the quest '[resolvedQuestName]'!\n\n[lodgersLabelSingOrPluralDef] said [lodgersPronoun] [lodgersWasWere] willing to reward quality accommodation. The average mood of [lodgersLabelSingOrPluralDef] was {AVERAGEMOOD} during [theirHisHer] stay, so your goodwill with [asker_faction_name] has increased by {GOODWILL} -->
-  <Hospitality_Util_Worker.root.nodes.pickupShipThingSentSatisfied.node.nodes.IsTrue.node.nodes.GoodwillForAverageMoodSuccess.node.nodes.Letter.text.slateRef>Hai completato con successo la missione '[resolvedQuestName]'!\n\n[lodgersLabelSingOrPluralDef] ha detto che [lodgersPronoun] [lodgersWasWere] disposto a ricompensare un alloggio di qualità. L'umore medio di [lodgersLabelSingOrPluralDef] è stato {AVERAGEMOOD} durante il soggiorno, quindi la tua reputazione con [asker_faction_name] è aumentata di {GOODWILL}</Hospitality_Util_Worker.root.nodes.pickupShipThingSentSatisfied.node.nodes.IsTrue.node.nodes.GoodwillForAverageMoodSuccess.node.nodes.Letter.text.slateRef>
+  <Hospitality_Util_Worker.LetterTextGoodwillSuccessQuestCompleted.slateRef>Hai completato con successo la missione '[resolvedQuestName]'!\n\n[lodgersLabelSingOrPluralDef] ha detto che [lodgersPronoun] [lodgersWasWere] disposto a ricompensare un alloggio di qualità. L'umore medio di [lodgersLabelSingOrPluralDef] è stato {AVERAGEMOOD} durante il soggiorno, quindi la tua reputazione con [asker_faction_name] è aumentata di {GOODWILL}</Hospitality_Util_Worker.LetterTextGoodwillSuccessQuestCompleted.slateRef>
   <!-- EN: Quest completed -->
-  <Hospitality_Util_Worker.root.nodes.pickupShipThingSentSatisfied.node.nodes.IsTrue.node.nodes.GoodwillForAverageMoodFailed.node.nodes.Letter.label.slateRef>Missione completata</Hospitality_Util_Worker.root.nodes.pickupShipThingSentSatisfied.node.nodes.IsTrue.node.nodes.GoodwillForAverageMoodFailed.node.nodes.Letter.label.slateRef>
+  <Hospitality_Util_Worker.LetterLabelGoodwillFailedQuestCompleted.slateRef>Missione completata</Hospitality_Util_Worker.LetterLabelGoodwillFailedQuestCompleted.slateRef>
   <!-- EN: You have successfully completed the quest '[resolvedQuestName]'!\n\nWhile [lodgersLabelSingOrPluralDef] [lodgersWasWere] willing to reward quality accommodation, [theirHisHer] average mood was only {AVERAGEMOOD} during [theirHisHer] stay. You will receive no faction goodwill reward. -->
-  <Hospitality_Util_Worker.root.nodes.pickupShipThingSentSatisfied.node.nodes.IsTrue.node.nodes.GoodwillForAverageMoodFailed.node.nodes.Letter.text.slateRef>Hai completato con successo la missione '[resolvedQuestName]'!\n\nSebbene [lodgersLabelSingOrPluralDef] [lodgersWasWere] disposto a ricompensare un alloggio di qualità, il loro umore medio è stato solo {AVERAGEMOOD} durante il soggiorno. Non riceverai alcun aumento di reputazione con la fazione.</Hospitality_Util_Worker.root.nodes.pickupShipThingSentSatisfied.node.nodes.IsTrue.node.nodes.GoodwillForAverageMoodFailed.node.nodes.Letter.text.slateRef>
+  <Hospitality_Util_Worker.LetterTextGoodwillFailedQuestCompleted.slateRef>Hai completato con successo la missione '[resolvedQuestName]'!\n\nSebbene [lodgersLabelSingOrPluralDef] [lodgersWasWere] disposto a ricompensare un alloggio di qualità, il loro umore medio è stato solo {AVERAGEMOOD} durante il soggiorno. Non riceverai alcun aumento di reputazione con la fazione.</Hospitality_Util_Worker.LetterTextGoodwillFailedQuestCompleted.slateRef>
   <!-- EN: Quest failed: [resolvedQuestName] -->
-  <Hospitality_Util_Worker.root.nodes.pickupShipThingSentUnsatisfied.node.nodes.Letter.label.slateRef>Missione fallita: [resolvedQuestName]</Hospitality_Util_Worker.root.nodes.pickupShipThingSentUnsatisfied.node.nodes.Letter.label.slateRef>
+  <Hospitality_Util_Worker.LetterLabelQuestFailed.slateRef>Missione fallita: [resolvedQuestName]</Hospitality_Util_Worker.LetterLabelQuestFailed.slateRef>
   <!-- EN: The shuttle sent to collect [lodgersLabelSingOrPluralDef] has departed. [lodgersLabelSingOrPluralDef] will now leave on foot. [failLetterEndingCommon] -->
-  <Hospitality_Util_Worker.root.nodes.pickupShipThingSentUnsatisfied.node.nodes.Letter.text.slateRef>La navetta inviata per raccogliere [lodgersLabelSingOrPluralDef] è partita. [lodgersLabelSingOrPluralDef] ora partirà a piedi. [failLetterEndingCommon]</Hospitality_Util_Worker.root.nodes.pickupShipThingSentUnsatisfied.node.nodes.Letter.text.slateRef>
+  <Hospitality_Util_Worker.LetterTextQuestFailed.slateRef>La navetta inviata per raccogliere [lodgersLabelSingOrPluralDef] è partita. [lodgersLabelSingOrPluralDef] ora partirà a piedi. [failLetterEndingCommon]</Hospitality_Util_Worker.LetterTextQuestFailed.slateRef>
   
   <!-- UNUSED -->
+  <Hospitality_Util_Worker.LetterLabelGuestLost.slateRef>Ospite perso: {SUBJECT_definite}</Hospitality_Util_Worker.LetterLabelGuestLost.slateRef>
+  <Hospitality_Util_Worker.LetterTextGuestLost.slateRef>[letterSubject], che eri stato incaricato di proteggere, se n'è andato. [remainingWillNowLeave][failLetterEndingCommon]</Hospitality_Util_Worker.LetterTextGuestLost.slateRef>
+  <Hospitality_Util_Worker.LetterLabelShuttleDestroyed.slateRef>Navetta distrutta</Hospitality_Util_Worker.LetterLabelShuttleDestroyed.slateRef>
+  <Hospitality_Util_Worker.LetterTextShuttleDestroyed.slateRef>La navetta inviata a recuperare [lodgersLabelSingOrPluralDef] è stata distrutta. [lodgersLabelSingOrPluralDef] partir{lodgersCount > 1 ? anno : à} quindi a piedi.</Hospitality_Util_Worker.LetterTextShuttleDestroyed.slateRef>
   <Hospitality_Util_Worker.LetterLabelLodgerRanWild.slateRef>Ospite perso: {SUBJECT_definite}</Hospitality_Util_Worker.LetterLabelLodgerRanWild.slateRef>
   <Hospitality_Util_Worker.LetterTextLodgerRanWild.slateRef>[letterSubject], che eri stato incaricato di proteggere, è impazzito e se ne è andato. [remainingWillNowLeave][failLetterEndingCommon]</Hospitality_Util_Worker.LetterTextLodgerRanWild.slateRef>
   <Hospitality_Util_Worker.LetterLabelGuestJoinedOtherFaction.slateRef>Ospite perso: {SUBJECT_definite}</Hospitality_Util_Worker.LetterLabelGuestJoinedOtherFaction.slateRef>

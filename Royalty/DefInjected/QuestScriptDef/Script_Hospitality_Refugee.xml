@@ -177,7 +177,6 @@
     <li>otherMembers(lodgerCount>=2)-> e tutti gli altri membri di [faction_name]</li>
     <li>questOver->La missione '[resolvedQuestName]' è terminata.</li>
   </RefugeeBetrayal.questContentRules.rulesStrings>
-
   <!-- EN:
     <li>lodgersLabel->refugee</li>
     <li>lodgersLabelPlural->refugees</li>
@@ -210,7 +209,6 @@
     <li>areIs(lodgerCount==1)->è</li>
     <li>areIs(lodgerCount>=2)->sono</li>
   </RefugeeBetrayal.questDescriptionRules.rulesStrings>
-
   <!-- EN:
     <li>questName->Betrayal offer: [factionOpponent_nameDef]</li>
   -->
@@ -224,19 +222,19 @@
   -->
   <RefugeeDelayedReward.questContentRules.rulesStrings>
     <li>rewardLetterLabel->Ricompensa per ospitalità</li>
-    <li>rewardLetterText->[rewardGiver_nameDef] ti ha contattato. [rewardDelayTicks_duration] fa, hai aiutato [rewardGiver_objective] in circostanze disperate.\n\nDa allora, [rewardGiver_pronoun] si è ripreso e ora vuole ricompensarti adeguatamente per il tuo aiuto. [rewardGiver_pronoun] ti sta inviando quanto segue tramite capsula di atterraggio:\n\n[listOfRewards]</li>
+    <li>rewardLetterText->[rewardGiver_nameDef] ti ha contattato. [rewardDelayTicks_duration] fa, hai aiutato [rewardGiver_objective] in circostanze disperate.\n\nDa allora, [rewardGiver_pronoun] si è ripres{rewardGiver_gender ? o : a}, e ora vuole ricompensarti adeguatamente per il tuo aiuto. [rewardGiver_pronoun] ti sta inviando quanto segue tramite capsula di atterraggio:\n\n[listOfRewards]</li>
   </RefugeeDelayedReward.questContentRules.rulesStrings>
   <!-- EN:
     <li>questDescription->a delayed reward for refugee quest</li>
   -->
   <RefugeeDelayedReward.questDescriptionRules.rulesStrings>
-    <li>questDescription->una ricompensa in ritardo per la missione dei rifugiati</li>
+    <li>questDescription->una ricompensa ritardata per la missione rifugiati</li>
   </RefugeeDelayedReward.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->Refugee delayed reward</li>
   -->
   <RefugeeDelayedReward.questNameRules.rulesStrings>
-    <li>questName->Ricompensa in ritardo per il rifugiato</li>
+    <li>questName->Ricompensa ritardata rifugiati</li>
   </RefugeeDelayedReward.questNameRules.rulesStrings>
   
   <!-- UNUSED -->

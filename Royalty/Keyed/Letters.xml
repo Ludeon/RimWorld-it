@@ -138,18 +138,18 @@
   <LetterLabelBestowingCeremonyExpired>La cerimonia di conferimento è scaduta</LetterLabelBestowingCeremonyExpired>
   <!-- EN: {TARGET_definite} did not show up to the bestowing ceremony. The ceremony has been cancelled. -->
   <LetterTextBestowingCeremonyExpired>{TARGET_definite} non si è presentato alla cerimonia di conferimento. La cerimonia è stata annullata.</LetterTextBestowingCeremonyExpired>
-
+  
   <!-- EN: {TARGET_definite}'s title changed -->
-  <LetterLabelBestowingCeremonyTitleUpdated></LetterLabelBestowingCeremonyTitleUpdated>
+  <LetterLabelBestowingCeremonyTitleUpdated>Il titolo di {TARGET_definite} è cambiato</LetterLabelBestowingCeremonyTitleUpdated>
   <!-- EN: {TARGET_definite} has gained new title since the bestowing ceremony was scheduled. In order for bestowing to match the new title, another ceremony will be scheduled soon.\n\nThe new bestowing ceremony will include the psylink rewards for all titles which were not yet awarded. -->
-  <LetterTextBestowingCeremonyTitleUpdated></LetterTextBestowingCeremonyTitleUpdated>
+  <LetterTextBestowingCeremonyTitleUpdated>{TARGET_definite} ha ottenuto un nuovo titolo da quando la cerimonia di investitura è stata programmata. Perché l’investitura corrisponda al nuovo titolo, un’altra cerimonia verrà presto organizzata.\n\nLa nuova cerimonia di investitura includerà le ricompense di psylink per tutti i titoli che non erano ancora stati conferiti.</LetterTextBestowingCeremonyTitleUpdated>
   
   <!-- EN: {PAWN_labelShort} received {1} honor as a sign of respect from {FACTION_name}, for gathering {3} spectators. -->
-  <LetterPartBestowingExtraHonor></LetterPartBestowingExtraHonor>
+  <LetterPartBestowingExtraHonor>{PAWN_labelShort} ha ricevuto {1} onore come segno di rispetto da {FACTION_name}, per aver radunato {3} spettatori.</LetterPartBestowingExtraHonor>
   <!-- EN: {PAWN_labelShort} received no extra honor since there weren't many spectators. -->
-  <LetterPartNoExtraHonor></LetterPartNoExtraHonor>
+  <LetterPartNoExtraHonor>{PAWN_labelShort} non ha ricevuto onore extra poiché non c’erano molti spettatori.</LetterPartNoExtraHonor>
   <!-- EN: All viewers of the ceremony received a mood bonus. -->
-  <LetterPartMoodBonus></LetterPartMoodBonus>
+  <LetterPartMoodBonus>Tutti gli spettatori della cerimonia hanno ricevuto un bonus all’umore.</LetterPartMoodBonus>
 
   <!-- EN: Who should be credited with {0} for defeating the bandit camp? -->
   <LetterTextHonorAward_BanditCamp>Chi dovrebbe essere accreditato con {0} per aver sconfitto il campo dei banditi?</LetterTextHonorAward_BanditCamp>
@@ -159,11 +159,11 @@
   <LetterLabelShuttleCrashed>Navetta schiantata</LetterLabelShuttleCrashed>
   <!-- EN: A shuttle has crashed nearby -->
   <LetterTextShuttleCrashed>Una navetta si è schiantata nelle vicinanze</LetterTextShuttleCrashed>
-
+  
   <!-- Wanderer joins -->
   <!-- EN: Transport pod crash: {0_nameDef} -->
-  <LetterLabelWandererJoinsAbasia></LetterLabelWandererJoinsAbasia>
+  <LetterLabelWandererJoinsAbasia>Incidente di capsula di trasporto: {0_nameDef}</LetterLabelWandererJoinsAbasia>
   <!-- EN: A {0_title} named {0_nameDef} is crashing in a transport pod nearby.\n\n{0_nameDef} is suffering from {1_label} and will be unable to walk.\n\n{0_pronoun} will recover naturally after many days. There is also a chance of a lucky quick recovery. {1_label} can also be cured by a special operation which requires a large amount of glitterworld medicine.\n\n{0_pronoun} is willing to contribute once {0_pronoun} has recovered, but will not leave voluntarily. If you don't want {0_nameDef}, you can banish {0_objective}, sell {0_objective} into slavery or leave {0_objective} to die. However, your other colonists may find this disturbing. -->
-  <LetterTextWandererJoinsAbasia></LetterTextWandererJoinsAbasia>
+  <LetterTextWandererJoinsAbasia>Un{0_title} di nome {0_nameDef} si è schiantat{0_gender ? o : a} in una capsula di trasporto nelle vicinanze.\n\n{0_nameDef} soffre di {1_label} e non potrà camminare.\n\n{0_pronoun} si riprenderà naturalmente dopo molti giorni. C’è anche la possibilità di una rapida guarigione fortuita. {1_label} può anche essere curata con un’operazione speciale che richiede una grande quantità di medicine del glitterworld.\n\n{0_pronoun} è disposto{0_gender ? o : a} a contribuire una volta recuperato{0_gender ? o : a}, ma non se ne andrà volontariamente. Se non vuoi {0_nameDef}, puoi bandir{0_objective}, venderl{0_objective} come schiav{0_gender ? o : a} o lasciarl{0_objective} morire. Tuttavia, gli altri coloni potrebbero trovare questo inquietante.</LetterTextWandererJoinsAbasia>
 
 </LanguageData>
