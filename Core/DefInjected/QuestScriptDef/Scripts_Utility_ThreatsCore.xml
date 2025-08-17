@@ -5,18 +5,18 @@
   <Util_GenerateSite.root.singleSitePartRules.slateRef>
     <rulesStrings>
       <li>root(priority=1,sitePart==ClimateAdjuster)->c'è (*Threat)una macchina regolatrice del clima(/Threat) che sta modificando la temperatura regionale di [temperatureOffset]</li>
-      <li>root(priority=1,sitePart==PsychicDroner)->c'è (*Threat)una macchina dironatore psichico(/Threat) sintonizzata sul genere [affectedGender]</li>
+      <li>root(priority=1,sitePart==PsychicDroner)->c'è (*Threat)una macchina dronatore psichico(/Threat) sintonizzata sul genere [affectedGender]</li>
       <li>root(priority=1,sitePart==PsychicSuppressor)->c'è (*Threat)una macchina soppressore psichico(/Threat) sintonizzata sul genere [affectedGender]</li>
       <li>root(priority=1,sitePart==WeatherController)->c'è (*Threat)una macchina che controlla il meteo(/Threat) che forza il clima dell'intera regione su [weather_label]</li>
       <li>root(priority=1,sitePart==SmokeSpewer)->c'è (*Threat)una macchina che emette fumo(/Threat) che diffonde fumo su tutta la regione</li>
       <li>root(priority=1,sitePart==SunBlocker)->c'è (*Threat)una macchina oscuratrice solare(/Threat) che oscura l'intera regione</li>
       <li>root(priority=1,sitePart==EMIDynamo)->c'è (*Threat)un generatore EMI(/Threat) che può disattivare i dispositivi elettrici in tutta la regione</li>
       <li>root(priority=1,sitePart==ToxicSpewer)->c'è (*Threat)una macchina che emette tossine(/Threat) che ricopre tutta la regione di veleno</li>
-      <li>root(priority=1,sitePart==RaidSource)->c'è una zona militare presidiata da (*Threat)[enemiesCount] [enemiesLabel](/Threat) che lanceranno incursioni contro di te ogni [mtbDays]</li>
+      <li>root(priority=1,sitePart==RaidSource)->c'è una zona militare presidiata da (*Threat)[enemiesCount] [enemiesLabel](/Threat) che lancerà incursioni contro di te ogni [mtbDays]</li>
       <li>root(priority=1,sitePart==Outpost)->c'è un avamposto nemico nel sito difeso da (*Threat)[enemiesCount] [enemiesLabel](/Threat)</li>
       <li>root(priority=1,sitePart==BanditCamp)->c'è un campo di banditi nel sito difeso da (*Threat)[enemiesCount] [enemiesLabel](/Threat)</li>
-      <li>root(priority=1,sitePart==Manhunters,count==1)->(*Threat)un [kindLabel] assassino(/Threat) si aggira nelle vicinanze</li>
-      <li>root(priority=1,sitePart==Manhunters,count>1)->(*Threat)[count] [kindLabel] assassini(/Threat) si aggirano nelle vicinanze</li>
+      <li>root(priority=1,sitePart==Manhunters,count==1)->(*Threat)un [kindLabel] predatore d'uomini(/Threat) si aggira nelle vicinanze</li>
+      <li>root(priority=1,sitePart==Manhunters,count>1)->(*Threat)[count] [kindLabel] predatori d'uomini(/Threat) si aggirano nelle vicinanze</li>
       <li>root(priority=1,sitePart==SleepingMechanoids,count==1)->(*Threat)un mechanoide(/Threat) sta dormendo nelle vicinanze</li>
       <li>root(priority=1,sitePart==SleepingMechanoids,count>1)->(*Threat)[count] mechanoidi(/Threat) stanno dormendo nelle vicinanze</li>
       <li>root(priority=1,sitePart==Turrets)->(*Threat)[threatsInfo](/Threat) difendono il sito</li>
@@ -31,7 +31,9 @@
   <!-- EN:
     <li>threatDescription->a mech cluster will land at [map_definite] containing:\n\n[allThreats]</li>
   -->
-  <Util_MechCluster.questDescriptionRules.rulesStrings />
+  <Util_MechCluster.questDescriptionRules.rulesStrings>
+    <li>threatDescription->Un gruppo di mechanoidi atterrerà in [map_definite] contenente:\n\n[allThreats]</li>
+  </Util_MechCluster.questDescriptionRules.rulesStrings>
   
   <!-- UNUSED -->
   <Util_MechCluster.questDescriptionRules.rulesStrings />
@@ -39,7 +41,9 @@
   <!-- EN:
     <li>threatDescription->[enemyFaction_pawnsPlural] from [enemyFaction_name] will attack you. Their group is composed of:\n\n[raidPawnKinds]\n\n[raidArrivalModeInfo]</li>
   -->
-  <Util_Raid.questDescriptionRules.rulesStrings />
+  <Util_Raid.questDescriptionRules.rulesStrings>
+    <li>threatDescription->[enemyFaction_pawnsPlural] di [enemyFaction_name] ti attaccheranno. Il loro gruppo è composto da:\n\n[raidPawnKinds]\n\n[raidArrivalModeInfo]</li>
+  </Util_Raid.questDescriptionRules.rulesStrings>
   
   <!-- UNUSED -->
   <Util_Raid.questDescriptionRules.rulesStrings />
@@ -54,7 +58,16 @@
     <li>numGroupsOf(raidCount==3)->three groups of</li>
     <li>numGroupsOf(raidCount>=4)->[raidCount] groups of</li>
   -->
-  <Util_RaidDelayRepeatable.questDescriptionRules.rulesStrings />
+  <Util_RaidDelayRepeatable.questDescriptionRules.rulesStrings>
+    <li>pawnKindsParagraph(raidCount==1)->Il gruppo di [enemyFaction_pawnsPlural] è composto da:\n\n[raid0/raidPawnKinds]\n\n[raid0/raidArrivalModeInfo]</li>
+    <li>pawnKindsParagraph(raidCount==2)->Il primo gruppo di [enemyFaction_pawnsPlural] è composto da:\n\n[raid0/raidPawnKinds]\n\nUn secondo gruppo di dimensioni simili seguirà poco dopo.</li>
+    <li>pawnKindsParagraph(raidCount==3)->Il primo gruppo di [enemyFaction_pawnsPlural] è composto da:\n\n[raid0/raidPawnKinds]\n\nDue gruppi di dimensioni simili seguiranno poco dopo.</li>
+    <li>pawnKindsParagraph(raidCount>=4)->Il primo gruppo di [enemyFaction_pawnsPlural] è composto da:\n\n[raid0/raidPawnKinds]\n\n[raidCountMinusOne] gruppi di dimensioni simili seguiranno poco dopo.</li>
+    <li>numGroupsOf(raidCount==1)-></li>
+    <li>numGroupsOf(raidCount==2)->due gruppi di</li>
+    <li>numGroupsOf(raidCount==3)->tre gruppi di</li>
+    <li>numGroupsOf(raidCount>=4)->[raidCount] gruppi di</li>
+  </Util_RaidDelayRepeatable.questDescriptionRules.rulesStrings>
   
   <!-- UNUSED -->
   <Util_RaidDelayRepeatable.questDescriptionRules.rulesStrings />

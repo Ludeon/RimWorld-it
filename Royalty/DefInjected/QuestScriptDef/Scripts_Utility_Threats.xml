@@ -4,7 +4,9 @@
   <!-- EN:
     <li>threatDescription->[gameConditionDescriptionFuture].</li>
   -->
-  <Util_GameConditionNegativeRandom.questDescriptionRules.rulesStrings />
+  <Util_GameConditionNegativeRandom.questDescriptionRules.rulesStrings>
+    <li>threatDescription->[gameConditionDescriptionFuture].</li>
+  </Util_GameConditionNegativeRandom.questDescriptionRules.rulesStrings>
   
   <!-- UNUSED -->
   <Util_GameConditionNegativeRandom.questDescriptionRules.rulesStrings />
@@ -12,7 +14,9 @@
   <!-- EN:
     <li>threatDescription->(*Threat)[hivesCount] insect hives(/Threat) will burrow up from underground.</li>
   -->
-  <Util_Infestation.questDescriptionRules.rulesStrings />
+  <Util_Infestation.questDescriptionRules.rulesStrings>
+    <li>threatDescription->(*Threat)[hivesCount] tane di insetti(/Threat) emergerann[o_a] dal sottosuolo.</li>
+  </Util_Infestation.questDescriptionRules.rulesStrings>
   
   <!-- UNUSED -->
   <Util_Infestation.questDescriptionRules.rulesStrings />
@@ -20,7 +24,9 @@
   <!-- EN:
     <li>threatDescription->a pack of (*Threat)[animalCount] manhunting [animalKind_labelPlural](/Threat) will arrive.</li>
   -->
-  <Util_ManhunterPack.questDescriptionRules.rulesStrings />
+  <Util_ManhunterPack.questDescriptionRules.rulesStrings>
+    <li>threatDescription->arriverà un branco di (*Threat)[animalCount] [animalKind_labelPlural] cacciatori di uomini(/Threat).</li>
+  </Util_ManhunterPack.questDescriptionRules.rulesStrings>
   
   <!-- UNUSED -->
   <Util_ManhunterPack.questDescriptionRules.rulesStrings />
@@ -30,7 +36,11 @@
     <li>defaultSiteAppearedLetterText->A new site has appeared nearby.\n\n[allSitePartsDescriptions]</li>
     <li>defaultSiteAppearedLetterLabel->Site appeared: [site_label]</li>
   -->
-  <Util_SpawnSiteThreat.questDescriptionRules.rulesStrings />
+  <Util_SpawnSiteThreat.questDescriptionRules.rulesStrings>
+    <li>threatDescription->apparirà un nuovo sito nelle vicinanze, dove [allSitePartsDescriptions] Questa minaccia rimarrà finché non andrai a distruggerla.</li>
+    <li>defaultSiteAppearedLetterText->È apparso un nuovo sito nelle vicinanze.\n\n[allSitePartsDescriptions]</li>
+    <li>defaultSiteAppearedLetterLabel->Sito apparso: [site_label]</li>
+  </Util_SpawnSiteThreat.questDescriptionRules.rulesStrings>
   
   <!-- UNUSED -->
   <Util_SpawnSiteThreat.questDescriptionRules.rulesStrings />

@@ -8,7 +8,13 @@
     <li>questDescription(asker_royalInCurrentFaction==True)->[asker_nameDef], a [asker_royalTitleInCurrentFaction] of [asker_faction_name], is making a request. [commonMainPart]</li>
     <li>commonMainPart->A mechanoid swarm has been attacking [asker_possessive] settlements. [asker_pronoun] wants you to signal the mechs to distract them while [asker_pronoun] clears the hive. If you do, (*Threat)a mechanoid cluster(/Threat) will land at [map_definite].[dangersDescription]\n\nThe mechanoid cluster will be initially dormant. It may have a countdown activator, or it may stay dormant forever until disturbed.[helpersParagraph]</li>
   -->
-  <ThreatReward_MechPods_MiscReward.questDescriptionRules.rulesStrings />
+  <ThreatReward_MechPods_MiscReward.questDescriptionRules.rulesStrings>
+    <li>dangersDescription(priority=1)->\n\nLe capsule contengono questi pericoli:\n\n[allThreats]</li>
+    <li>dangersDescription-></li>
+    <li>questDescription(asker_factionLeader==True)->[asker_nameDef], [asker_faction_leaderTitle] di [asker_faction_name], ha una richiesta. [commonMainPart]</li>
+    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_nameDef], un [asker_royalTitleInCurrentFaction] di [asker_faction_name], ha una richiesta. [commonMainPart]</li>
+    <li>commonMainPart->Uno sciame di mechanoidi ha attaccato gli insediamenti di [asker_possessive]. [asker_pronoun] vuole che tu invii un segnale ai mechanoidi per distrarli mentre [asker_pronoun] elimina l’alveare. Se lo farai, (*Threat)un cluster di mechanoidi(/Threat) atterrerà presso [map_definite].[dangersDescription]\n\nIl cluster sarà inizialmente dormiente. Potrebbe avere un attivatore a conto alla rovescia, oppure potrebbe rimanere inattivo per sempre finché non verrà disturbato.[helpersParagraph]</li>
+  </ThreatReward_MechPods_MiscReward.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[menace] cluster</li>
     <li>questName->[menace] pods</li>
@@ -24,7 +30,20 @@
     <li>menace->terror</li>
     <li>menace->fear</li>
   -->
-  <ThreatReward_MechPods_MiscReward.questNameRules.rulesStrings />
+  <ThreatReward_MechPods_MiscReward.questNameRules.rulesStrings>
+    <li>questName->[menace] cluster</li>
+    <li>questName->[menace] capsule</li>
+    <li>questName->[nameBased]</li>
+    <li>nameBased->i mech di [asker_nameDef]</li>
+    <li>nameBased->i mechanoidi di [asker_nameDef]</li>
+    <li>nameBased->il cluster di mechanoidi di [asker_nameDef]</li>
+    <li>nameBased->i mech di [asker_nameDef] [menace]</li>
+    <li>menace->minaccia</li>
+    <li>menace->flagello</li>
+    <li>menace->pericolo</li>
+    <li>menace->terrore</li>
+    <li>menace->paura</li>
+  </ThreatReward_MechPods_MiscReward.questNameRules.rulesStrings>
   
   <!-- UNUSED -->
   <ThreatReward_MechPods_MiscReward.questDescriptionRules.rulesStrings />

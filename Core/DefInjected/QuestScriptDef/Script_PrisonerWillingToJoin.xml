@@ -8,7 +8,13 @@
     <li>underArmedGuard(allowViolentQuests==true,priority=1)-> under armed guard</li>
     <li>underArmedGuard-></li>
   -->
-  <OpportunitySite_PrisonerWillingToJoin.questDescriptionRules.rulesStrings />
+  <OpportunitySite_PrisonerWillingToJoin.questDescriptionRules.rulesStrings>
+    <li>questDescription->Un prigioniero detenuto da [siteFaction_name] è riuscito a rubare una radio e a contattarti!\n\n[prisoner_nameDef] è tenut{prisoner_gender ? o : a} in un campo vicino a [map_definite][underArmedGuard]. Se riuscirai a salvare [prisoner_objective], [prisoner_pronoun] si unirà alla tua colonia. [prisoner_pronoun] è un [prisoner_title] di [prisoner_age] anni. [prisoner_pronoun] dice che [allSitePartsDescriptionsExceptFirst][formerColonistInfo][prisonerFullRelationInfo]\n\nSe perdi questa occasione, potresti non avere mai più notizie di [prisoner_nameDef].</li>
+    <li>formerColonistInfo(priority=1)->\n\n[prisoner_formerlyColonistInfo]</li>
+    <li>formerColonistInfo-></li>
+    <li>underArmedGuard(allowViolentQuests==true,priority=1)-> sotto sorveglianza armata</li>
+    <li>underArmedGuard-></li>
+  </OpportunitySite_PrisonerWillingToJoin.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[prisoner_nameDef]'s Salvation</li>
     <li>questName->[prisoner_nameDef]'s Rescue</li>
@@ -17,7 +23,14 @@
     <li>questName->Saving [prisoner_nameDef]</li>
     <li>questName->Breaking [prisoner_nameDef] Out</li>
   -->
-  <OpportunitySite_PrisonerWillingToJoin.questNameRules.rulesStrings />
+  <OpportunitySite_PrisonerWillingToJoin.questNameRules.rulesStrings>
+    <li>questName->La salvezza di [prisoner_nameDef]</li>
+    <li>questName->Il salvataggio di [prisoner_nameDef]</li>
+    <li>questName->L'evasione di [prisoner_nameDef]</li>
+    <li>questName->Salvataggio di [prisoner_nameDef]</li>
+    <li>questName->Liberare [prisoner_nameDef]</li>
+    <li>questName->Far evadere [prisoner_nameDef]</li>
+  </OpportunitySite_PrisonerWillingToJoin.questNameRules.rulesStrings>
   
   <!-- UNUSED -->
   <OpportunitySite_PrisonerWillingToJoin.questDescriptionRules.rulesStrings />

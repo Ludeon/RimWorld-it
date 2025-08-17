@@ -31,12 +31,46 @@
     <li>mapRemovedLetterLabel->Quest failed: [resolvedQuestName]</li>
     <li>mapRemovedLetterText->The map was left behind before the crashed [asker_faction_pawnsPlural] could be collected. The [asker_faction_pawnsPlural] will now leave on foot.\n\n[failLetterEndingCommon]</li>
   -->
-  <ShuttleCrash_Rescue.questContentRules.rulesStrings />
+  <ShuttleCrash_Rescue.questContentRules.rulesStrings>
+    <li>failLetterEndingCommon->Hai fallito la missione '[resolvedQuestName]'.</li>
+    <li>successLetterEndingCommon->Hai completato con successo la missione '[resolvedQuestName]'.</li>
+    <li>goodwillSomeCiviliansLost->Non tutti i [pawnLabel] di [asker_faction_pawnSingular] sono stati salvati. [goodwillNegativelyAffected]</li>
+    <li>goodwillAllCiviliansLost->Nessuno dei [pawnLabelPlural] di [asker_faction_pawnSingular] è stato salvato. [goodwillNegativelyAffected]</li>
+    <li>goodwillNegativelyAffected->La tua reputazione con [asker_faction_name] è peggiorata per ogni [pawnLabel] perso.</li>
+    <li>commanderLandingDesc->[asker_nameDef], il comandante che ha chiesto di atterrare con la sua navetta a [map_definite]</li>
+    <li>raidArrivedLetterLabel->Incursione: [enemyFaction_name]</li>
+    <li>raidArrivedLetterText->[enemyFaction_pawnsPlural] di [enemyFaction_name] sono arrivati. Attaccheranno i [asker_faction_pawnsPlural] precipitati a [map_definite].\n\nDifendi i [asker_faction_pawnsPlural] finché non arriverà la navetta di soccorso tra [rescueShuttleAfterRaidDelay_duration].</li>
+    <li>rescueShuttleArrivedLetterLabel->Navetta di soccorso arrivata</li>
+    <li>rescueShuttleArrivedLetterText->La navetta di soccorso è arrivata per raccogliere i [pawnLabelSingleOrPlural] precipitati. Assicurati che siano a bordo prima che parta tra [leaveDelay_duration]:\n\n[civilians]</li>
+    <li>questCompletedSuccessLetterLabel->Missione completata: [resolvedQuestName]</li>
+    <li>questCompletedSuccessLetterText->[commanderLandingDesc] è fuggito. [asker_pronoun] è grato per l'aiuto ricevuto a [map_definite].\n\n[successLetterEndingCommon]</li>
+    <li>questCompletedCiviliansLostSuccessLetterLabel->Missione completata: [resolvedQuestName]</li>
+    <li>questCompletedCiviliansLostSuccessLetterText->[commanderLandingDesc] è fuggito.\n\n[goodwillSomeCiviliansLost]\n\n[successLetterEndingCommon]</li>
+    <li>askerLostLetterLabel->Missione fallita: [resolvedQuestName]</li>
+    <li>askerLostLetterText->[commanderLandingDesc] non era a bordo quando la navetta è partita.\n\n[goodwillSomeCiviliansLost]\n\n[failLetterEndingCommon]</li>
+    <li>allLostLetterLabel->Missione fallita: [resolvedQuestName]</li>
+    <li>allLostLetterText->La navetta di soccorso per i [asker_faction_pawnsPlural] precipitati è partita senza nessuno a bordo.\n\n[goodwillAllCiviliansLost]\n\n[failLetterEndingCommon]</li>
+    <li>askerDiedLetterLabel->Missione fallita: [resolvedQuestName]</li>
+    <li>askerDiedLetterText->[commanderLandingDesc] è morto.\n\n[failLetterEndingCommon]</li>
+    <li>civilianDiedLetterLabel->Missione fallita: [resolvedQuestName]</li>
+    <li>civilianDiedLetterText->Un civile è morto.\n\n[failLetterEndingCommon]</li>
+    <li>shuttleDestroyedLetterLabel->Missione fallita: [resolvedQuestName]</li>
+    <li>shuttleDestroyedLetterText->La navetta inviata a raccogliere i [asker_faction_pawnsPlural] precipitati è stata distrutta. I [asker_faction_pawnsPlural] ora partiranno a piedi.\n\n[failLetterEndingCommon]</li>
+    <li>shuttleLeftBehindLetterLabel->Missione fallita: [resolvedQuestName]</li>
+    <li>shuttleLeftBehindLetterText->La navetta inviata a raccogliere i [asker_faction_pawnsPlural] precipitati è stata abbandonata. I [asker_faction_pawnsPlural] ora partiranno a piedi.\n\n[failLetterEndingCommon]</li>
+    <li>mapRemovedLetterLabel->Missione fallita: [resolvedQuestName]</li>
+    <li>mapRemovedLetterText->La mappa è stata abbandonata prima che i [asker_faction_pawnsPlural] precipitati potessero essere raccolti. I [asker_faction_pawnsPlural] ora partiranno a piedi.\n\n[failLetterEndingCommon]</li>
+  </ShuttleCrash_Rescue.questContentRules.rulesStrings>
+  
   <!-- EN:
     <li>pawnLabel->civilian</li>
     <li>pawnLabelPlural->civilians</li>
   -->
-  <ShuttleCrash_Rescue.questDescriptionAndNameRules.rulesStrings />
+  <ShuttleCrash_Rescue.questDescriptionAndNameRules.rulesStrings>
+    <li>pawnLabel->civile</li>
+    <li>pawnLabelPlural->civili</li>
+  </ShuttleCrash_Rescue.questDescriptionAndNameRules.rulesStrings>
+  
   <!-- EN:
     <li>pawnLabelSingleOrPlural(civilians_count==1)->[pawnLabel]</li>
     <li>pawnLabelSingleOrPlural(civilians_count>=2)->[pawnLabelPlural]</li>
@@ -50,7 +84,20 @@
     <li>soldierCountKinds(soldiers_count==1)->[soldiers_count] [soldiers0_kind]</li>
     <li>soldierCountKinds(soldiers_count>1)->[soldiers_count] [soldiers0_kindPlural]</li>
   -->
-  <ShuttleCrash_Rescue.questDescriptionRules.rulesStrings />
+  <ShuttleCrash_Rescue.questDescriptionRules.rulesStrings>
+    <li>pawnLabelSingleOrPlural(civilians_count==1)->[pawnLabel]</li>
+    <li>pawnLabelSingleOrPlural(civilians_count>=2)->[pawnLabelPlural]</li>
+    <li>questDescription->Una navetta di [asker_faction_name] ha subito danni e cerca un luogo dove atterrare. Il suo comandante [asker_nameDef] vuole atterrare a [map_definite].\n\n[enemyFaction_pawnsPlural] di [enemyFaction_name] attaccheranno il sito dello schianto della navetta nel tentativo di ucciderne gli occupanti. Devi difenderli.\n\nLa navetta contiene [asker_nameDef][andOtherCivilians] e [soldierCountKinds]. Il comandante [andCivilians] deve essere salvato, ma i [soldiers0_kindPlural] possono essere sacrificati.\n\nDopo [rescueDelay_duration] arriverà una navetta di soccorso per raccogliere i sopravvissuti. Dovrai farli salire tutti a bordo entro [leaveDelay_duration].</li>
+    <li>andOtherCivilians(civilians_count==1)-></li>
+    <li>andOtherCivilians(civilians_count==2)->, un altro [pawnLabel],</li>
+    <li>andOtherCivilians(civilians_count>=3)->, altri [civilianCountMinusOne] [pawnLabelSingleOrPlural],</li>
+    <li>andCivilians(civilians_count==1)-></li>
+    <li>andCivilians(civilians_count==2)->e [pawnLabel]</li>
+    <li>andCivilians(civilians_count>=3)->e [pawnLabelPlural]</li>
+    <li>soldierCountKinds(soldiers_count==1)->[soldiers_count] [soldiers0_kind]</li>
+    <li>soldierCountKinds(soldiers_count>1)->[soldiers_count] [soldiers0_kindPlural]</li>
+  </ShuttleCrash_Rescue.questDescriptionRules.rulesStrings>
+  
   <!-- EN:
     <li>questName->[shuttle] [crash]</li>
     <li>questName->[asker_faction_pawnSingular] [shuttle] [crash]</li>
@@ -72,7 +119,27 @@
     <li>landing->descent</li>
     <li>landing->approach</li>
   -->
-  <ShuttleCrash_Rescue.questNameRules.rulesStrings />
+  <ShuttleCrash_Rescue.questNameRules.rulesStrings>
+    <li>questName->[shuttle] [crash]</li>
+    <li>questName->[shuttle] [crash] di [asker_faction_pawnSingular]</li>
+    <li>questName->[shuttle] [damaged]</li>
+    <li>questName->[shuttle] [damaged] di [asker_nameDef]</li>
+    <li>questName->[landing] [emergency]</li>
+    <li>questName->[landing] [emergency] di [asker_nameDef]</li>
+    <li>shuttle->navetta</li>
+    <li>shuttle->trasporto</li>
+    <li>shuttle->astronave</li>
+    <li>crash->precipitata</li>
+    <li>crash->abbattuta</li>
+    <li>damaged->danneggiata</li>
+    <li>damaged->in avaria</li>
+    <li>damaged->guasta</li>
+    <li>emergency->d'emergenza</li>
+    <li>emergency->forzato</li>
+    <li>landing->atterraggio</li>
+    <li>landing->discesa</li>
+    <li>landing->avvicinamento</li>
+  </ShuttleCrash_Rescue.questNameRules.rulesStrings>
   
   <!-- UNUSED -->
   <ShuttleCrash_Rescue.questContentRules.rulesStrings />

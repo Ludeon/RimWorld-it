@@ -9,12 +9,13 @@ You must provide a complete localization of RimWorld into Italian. Follow these 
 - Never alter or partially change comments (<!-- ... -->). Always copy them exactly.
 - Translate only inside the same tag where the original text is.
 - Do not translate variables inside square brackets (e.g., [INITIATOR_possessive], [WEAPON_label]).
-- For <rulesStrings> tags, use the format:
-  <li>left->right</li>
-  - Copy the left side exactly.
-  - Translate only the right side.
-  - Keep the same number of <li> items.
-  - Leave square-bracket references ([]) unchanged.
+- For <rulesStrings> tags:
+  - Each <li> MUST be in the exact form: <li>LEFT->RIGHT</li>.
+  - Use the literal arrow "->" (never ">", never "-&gt;").
+  - Copy the LEFT side exactly.
+  - Translate only the RIGHT side.
+  - Keep exactly the same number of <li> items.
+  - SELF-CHECK: before returning, ensure every <rulesStrings>/<li> contains exactly one "->". If any <li> is missing it (e.g., "<li>introduction>…</li>"), fix it to "<li>introduction->…</li>" before output.
 - If you find \n\n, copy it exactly (both in comments and text).
 - For empty tags, treat them as TODO and insert the translated list inside.
 - Gender handling must use ternary notation:

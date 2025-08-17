@@ -9,7 +9,14 @@
     <li>endingCommon(helpersCount==0)->\n\n[pawnKindsParagraph]\n\nIf you accept, the [enemyFaction_pawnsPlural] will arrive in [firstRaidDelayTicks_duration].</li>
     <li>endingCommon(helpersCount>=1)->\n\n[pawnKindsParagraph][helpersParagraph]If you accept, the [enemyFaction_pawnsPlural] will arrive in [firstRaidDelayTicks_duration].</li>
   -->
-  <ThreatReward_Raid_MiscReward.questDescriptionRules.rulesStrings />
+  <ThreatReward_Raid_MiscReward.questDescriptionRules.rulesStrings>
+    <li>questDescription(asker_factionLeader==True)->[asker_nameFull], [asker_faction_leaderTitle] di [asker_faction_name], vuole che tu aiuti a salvare una delle sue carovane. La carovana è inseguita vicino a [map_definite] da (*Threat)[numGroupsOf] [enemyFaction_pawnsPlural](/Threat) di [enemyFaction_name]. [asker_nameDef] vuole che tu segnali i [enemyFaction_pawnsPlural] per allontanarli dalla carovana — e attirarli verso di te.[endingCommon]</li>
+    <li>questDescription(asker_royalInCurrentFaction==True)->[asker_nameFull], un [asker_royalTitleInCurrentFaction] di [asker_faction_name], ti sta facendo una richiesta.\n\n(*Threat)[groupsOf](/Threat) di [enemyFaction_name] hanno molestato le carovane di [asker_possessive] nella zona. [asker_nameDef] ti chiede di inviare loro un messaggio di sfida, attirandoli ad attaccarti ed eliminando tu stesso la minaccia.[endingCommon]</li>
+    <li>groupsOf(raidCount==1,priority=1)->[enemyFaction_pawnsPlural]</li>
+    <li>groupsOf->[numGroupsOf] [enemyFaction_pawnsPlural]</li>
+    <li>endingCommon(helpersCount==0)->\n\n[pawnKindsParagraph]\n\nSe accetti, i [enemyFaction_pawnsPlural] arriveranno tra [firstRaidDelayTicks_duration].</li>
+    <li>endingCommon(helpersCount>=1)->\n\n[pawnKindsParagraph][helpersParagraph]Se accetti, i [enemyFaction_pawnsPlural] arriveranno tra [firstRaidDelayTicks_duration].</li>
+  </ThreatReward_Raid_MiscReward.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[enemyFaction_pawnsPlural] of Fortune</li>
     <li>questName->[violence] of Fortune</li>
@@ -32,7 +39,28 @@
     <li>violence->Hostility</li>
     <li>violence->Warfare</li>
   -->
-  <ThreatReward_Raid_MiscReward.questNameRules.rulesStrings />
+  <ThreatReward_Raid_MiscReward.questNameRules.rulesStrings>
+    <li>questName->[enemyFaction_pawnsPlural] della Fortuna</li>
+    <li>questName->[violence] della Fortuna</li>
+    <li>questName->[violence] a pagamento</li>
+    <li>questName->[violence] per profitto</li>
+    <li>questName->[violence] ricompensata</li>
+    <li>questName->[violence] pagata</li>
+    <li>questName->[violence] compensata</li>
+    <li>questName(reward==royalFavor)->[enemyFaction_pawnsPlural] per favore</li>
+    <li>questName(reward==royalFavor)->[violence] per favore</li>
+    <li>violence->Violenza</li>
+    <li>violence->Battaglia</li>
+    <li>violence->Combattimento</li>
+    <li>violence->Guerra</li>
+    <li>violence->Scontro</li>
+    <li>violence->Spargimento di sangue</li>
+    <li>violence->Attacco</li>
+    <li>violence->Difesa</li>
+    <li>violence->Conflitto</li>
+    <li>violence->Ostilità</li>
+    <li>violence->Guerra armata</li>
+  </ThreatReward_Raid_MiscReward.questNameRules.rulesStrings>
   
   <!-- UNUSED -->
   <ThreatReward_Raid_MiscReward.questDescriptionRules.rulesStrings />

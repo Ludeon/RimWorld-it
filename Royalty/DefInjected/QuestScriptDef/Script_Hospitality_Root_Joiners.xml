@@ -5,7 +5,10 @@
     <li>lodgersLabel->guest</li>
     <li>lodgersLabelPlural->[asker_faction_pawnsPlural]</li>
   -->
-  <Hospitality_Joiners.questDescriptionAndNameRules.rulesStrings />
+  <Hospitality_Joiners.questDescriptionAndNameRules.rulesStrings>
+    <li>lodgersLabel->ospite</li>
+    <li>lodgersLabelPlural->[asker_faction_pawnsPlural]</li>
+  </Hospitality_Joiners.questDescriptionAndNameRules.rulesStrings>
   <!-- EN:
     <li>lodgersDef(lodgersCount==1)->[lodgers0_nameDef]</li>
     <li>lodgersDef(lodgersCount>=2)->the [lodgersLabelPlural]</li>
@@ -64,7 +67,65 @@
     <li>allyAllies(lodgersCountMinusOne==1)->ally</li>
     <li>allyAllies(lodgersCountMinusOne>=2)->allies</li>
   -->
-  <Hospitality_Joiners.questDescriptionRules.rulesStrings />
+  <Hospitality_Joiners.questDescriptionRules.rulesStrings>
+    <li>lodgersDef(lodgersCount==1)->[lodgers0_nameDef]</li>
+    <li>lodgersDef(lodgersCount>=2)->i [lodgersLabelPlural]</li>
+    <li>joinerEnding(priority=1)-></li>
+    <li>joinerEnding->Potrai dirigere [lodgersDef] allo stesso modo in cui dirigi i tuoi coloni.[specialNeedsExplanation]</li>
+    <li>specialNeedsExplanation(asker_royalInCurrentFaction==True,priority=1)-> Dovrai soddisfare eventuali bisogni reali speciali che i [lodgersLabelPlural] potrebbero avere.</li>
+    <li>specialNeedsExplanation-></li>
+    <li>theirHisHer(lodgersCount==1)->[lodgers0_possessive]</li>
+    <li>theirHisHer(lodgersCount>=2)->i loro</li>
+    <li>lodgersPronoun(lodgersCount==1)->[lodgers0_pronoun]</li>
+    <li>lodgersPronoun(lodgersCount>=2)->essi</li>
+    <li>lodgersWasWere(lodgersCount==1)->era</li>
+    <li>lodgersWasWere(lodgersCount>=2)->erano</li>
+    <li>appreciateAppreciates(lodgersCount==1)->apprezza</li>
+    <li>appreciateAppreciates(lodgersCount>=2)->apprezzano</li>
+    <li>goodwillForMood(goodwillRewardForMood==true,priority=1)->\n\n[lodgersLabelSingOrPluralDef] [appreciateAppreciates] un alloggio di qualità. Guadagnerai favore con [asker_faction_name] se manterrai [theirHisHer] umore medio sopra il 50%.</li>
+    <li>goodwillForMood-></li>
+    <li>questDescription(askerIsNull==true,lodgersCount==1)->Un [lodgers0_title] di nome [lodgers0_nameFull] vuole che tu protegga [lodgers0_objective] a [map_definite] per [shuttleDelayTicks_duration]. [allLodgerInfo][threatsInfo1][commonDescEnding]\n\n[joinerEnding]</li>
+    <li>threatsInfo1(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\n[lodgers0_nameDef] è stato recentemente sorpreso a [wrongAct]. In cerca di vendetta, [enemyFaction_pawnsPlural] verranno per [lodgers0_objective] finché [lodgers0_pronoun] sarà con te. [enemyGroupsParagraph]</li>
+    <li>threatsInfo1(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\n[threatsInfoMechRaidsSingleHuman] [enemyGroupsParagraph]</li>
+    <li>threatsInfo1(generateThreats==true,threatType==MechClusters)->\n\n[threatsInfoMechClustersSingleHuman] [enemyGroupsParagraph]</li>
+    <li>threatsInfo1(generateThreats==false)-></li>
+    <li>wrongAct->insultare il [PersonalCharacteristic] di [enemyFaction_leader_nameDef], [enemyFaction_leaderTitle] di [enemyFaction_name]</li>
+    <li>wrongAct->rubare bestiame da [enemyFaction_name]</li>
+    <li>wrongAct->rubare cibo da [enemyFaction_name]</li>
+    <li>wrongAct->rubare artefatti spirituali da [enemyFaction_name]</li>
+    <li>wrongAct->sabotare le capsule criptosonno di [enemyFaction_name]</li>
+    <li>questDescription(askerIsNull==true,lodgersCount>=2)->Un gruppo di [lodgersCount] viaggiatori vuole che tu li ospiti a [map_definite] per [shuttleDelayTicks_duration]. [allLodgerInfo][threatsInfo2][commonDescEnding]\n\n[joinerEnding]</li>
+    <li>threatsInfo2(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\nQuesti viaggiatori sono stati recentemente invitati a una cerimonia importante con [enemyFaction_name], ma si sono presentati ubriachi e hanno profanato il rituale. [enemyFaction_name] sta ora inviando incursioni contro di loro. [enemyGroupsParagraph]</li>
+    <li>threatsInfo2(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\n[threatsInfoMechRaidsMultiHuman] [enemyGroupsParagraph]</li>
+    <li>threatsInfo2(generateThreats==true,threatType==MechClusters)->\n\nI viaggiatori hanno recentemente [mechViolation], e sono stati presi di mira da uno sciame di mechanoidi orbitante. [enemyGroupsParagraph]</li>
+    <li>threatsInfo2(generateThreats==false)-></li>
+    <li>questDescription(asker_factionLeader==True,lodgersCount==1,generateThreats==false,priority=1)->[asker_nameFull], [asker_faction_leaderTitle] di [asker_faction_name] chiede un favore. Il suo amico [lodgers0_nameFull] è interessato a conoscere altre culture, e [asker_pronoun] vuole che tu ospiti [lodgers0_objective] a [map_definite] per [shuttleDelayTicks_duration]. [allLodgerInfo][goodwillForMood][commonDescEnding]\n\n[joinerEnding]</li>
+    <li>questDescription(asker_factionLeader==True,lodgersCount==1,generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid,priority=1)->[asker_nameFull], [asker_faction_leaderTitle] di [asker_faction_name] chiede un favore. Il suo amico, un [lodgers0_title] di [lodgers0_age] anni di nome [lodgers0_nameDef], è stato sorpreso a scrivere insulti feroci sul [PersonalCharacteristic] di [enemyFaction_leader_nameFull]. [asker_nameDef] ti chiede di proteggere [lodgers0_nameDef] per [shuttleDelayTicks_duration], finché [asker_pronoun] non potrà ristabilire i rapporti con [enemyFaction_name]. Poiché [enemyFaction_leader_nameDef] è il [enemyFaction_leaderTitle] di [enemyFaction_name], [enemyFaction_leader_pronoun] ha inviato gruppi di [enemyFaction_pawnsPlural] per cacciare l’insultatore [lodgers0_nameDef].\n\n[threatDescriptionParagraph][allLodgerInfo][goodwillForMood][commonDescEnding]\n\n[joinerEnding]</li>
+    <li>questDescription(asker_factionLeader==True,lodgersCount==1,generateThreats==true,threatType==Raids,enemyFaction==Mechanoid,priority=1)->[asker_nameFull], [asker_faction_leaderTitle] di [asker_faction_name] chiede un favore. Il suo amico, un [lodgers0_title] di [lodgers0_age] anni di nome [lodgers0_nameDef], recentemente [mechViolation]. [asker_nameDef] ti chiede di proteggere [lodgers0_nameDef] per [shuttleDelayTicks_duration], finché [asker_pronoun] non potrà placare l’alveare dei mechanoidi.\n\n[threatDescriptionParagraph][allLodgerInfo][goodwillForMood][commonDescEnding]\n\n[joinerEnding]</li>
+    <li>questDescription(asker_factionLeader==True,lodgersCount==1,generateThreats==true,threatType==MechClusters,priority=1)->[asker_nameFull], [asker_faction_leaderTitle] di [asker_faction_name] chiede un favore. Il suo amico, un [lodgers0_title] di [lodgers0_age] anni di nome [lodgers0_nameDef], recentemente [mechViolation]. [asker_nameDef] ti chiede di proteggere [lodgers0_nameDef] per [shuttleDelayTicks_duration].\n\n[threatDescriptionParagraph][allLodgerInfo][goodwillForMood][commonDescEnding]\n\n[joinerEnding]</li>
+    <li>questDescription(asker_factionLeader==True,lodgersCount>=2,generateThreats==false,priority=1)->[asker_nameFull], [asker_faction_leaderTitle] di [asker_faction_name], ha recentemente salvato [lodgersCount] [asker_faction_pawnsPlural] da una prigione nemica. [asker_pronoun] vuole che tu li protegga a [map_definite] finché [asker_pronoun] non potrà inviare una navetta per recuperarli tra [shuttleDelayTicks_duration]. [allLodgerInfo][goodwillForMood][commonDescEnding]\n\n[joinerEnding]</li>
+    <li>questDescription(asker_factionLeader==True,lodgersCount>=2,generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid,priority=1)->[asker_nameFull], [asker_faction_leaderTitle] di [asker_faction_name], ha recentemente salvato [lodgersCount] [asker_faction_pawnsPlural] dalle prigioni di [enemyFaction_name]. [asker_nameDef] vuole che tu li protegga a [map_definite] per [shuttleDelayTicks_duration] finché [asker_pronoun] non potrà inviare una navetta per recuperarli. I [asker_faction_pawnsPlural] conoscono segreti riguardo al [secretInfo] di [enemyFaction_name], quindi verranno cacciati.\n\n[threatDescriptionParagraph][allLodgerInfo][goodwillForMood][commonDescEnding]\n\n[joinerEnding]</li>
+    <li>questDescription(asker_factionLeader==True,lodgersCount>=2,generateThreats==true,threatType==Raids,enemyFaction==Mechanoid,priority=1)->[asker_nameFull], [asker_faction_leaderTitle] di [asker_faction_name], ha recentemente salvato [lodgersCount] [asker_faction_pawnsPlural] da un vault di criptosonno. [asker_nameDef] vuole che tu li protegga a [map_definite] per [shuttleDelayTicks_duration] finché [asker_pronoun] non potrà inviare una navetta per recuperarli. I [asker_faction_pawnsPlural] saranno cacciati dai mechanoidi.\n\n[threatDescriptionParagraph][allLodgerInfo][goodwillForMood][commonDescEnding]\n\n[joinerEnding]</li>
+    <li>questDescription(asker_factionLeader==True,lodgersCount>=2,generateThreats==true,threatType==MechClusters,priority=1)->[asker_nameFull], [asker_faction_leaderTitle] di [asker_faction_name], ha recentemente salvato [lodgersCount] [asker_faction_pawnsPlural] da un recinto di prigionia dei mechanoidi. [asker_nameDef] vuole che tu li protegga a [map_definite] per [shuttleDelayTicks_duration] finché [asker_pronoun] non potrà inviare una navetta per recuperarli. I mech stanno tracciando i loro ex prigionieri.\n\n[threatDescriptionParagraph][allLodgerInfo][goodwillForMood][commonDescEnding]\n\n[joinerEnding]</li>
+    <li>secretInfo->capacità militari</li>
+    <li>secretInfo->trasgressioni morali</li>
+    <li>secretInfo->ricerca sulle armi</li>
+    <li>secretInfo->campi di prigionia</li>
+    <li>secretInfo->[enemyFaction_leaderTitle]</li>
+    <li>questDescription(asker_royalInCurrentFaction==True,lodgersCount==1)->[asker_nameFull], un [asker_royalTitleInCurrentFaction] di [asker_faction_name], sta fuggendo da una situazione politica difficile e vuole nascondersi a [map_definite] per [shuttleDelayTicks_duration]. [threatsInfo5][allLodgerInfo][goodwillForMood][commonDescEnding]\n\n[joinerEnding]</li>
+    <li>threatsInfo5(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\nI nemici di [asker_nameDef] hanno assoldato [enemyFaction_name] per cacciare [asker_objective]. [enemyGroupsParagraph]</li>
+    <li>threatsInfo5(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\nI nemici di [asker_nameDef] hanno provocato i mechanoidi a cacciare [asker_objective]. [enemyGroupsParagraph]</li>
+    <li>threatsInfo5(generateThreats==true,threatType==MechClusters)->\n\nI nemici di [asker_nameDef] hanno in qualche modo provocato i mechanoidi a cacciare [asker_objective]. [enemyGroupsParagraph]</li>
+    <li>threatsInfo5(generateThreats==false)-></li>
+    <li>questDescription(asker_royalInCurrentFaction==True,lodgersCount>=2)->[asker_nameFull], un [asker_royalTitleInCurrentFaction] di [asker_faction_name], vuole soggiornare a [map_definite] per [shuttleDelayTicks_duration] con [lodgersCountMinusOne] [allyAllies] di corte. [threatsInfo6][allLodgerInfo][goodwillForMood][commonDescEnding]\n\n[joinerEnding]</li>
+    <li>threatsInfo6(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->[asker_nameDef] e i suoi [allyAllies] sono stati presi di mira per la morte e hanno bisogno di un luogo sicuro dove stare finché non potranno epurare la loro corte. Tuttavia, i nemici di [asker_nameDef] hanno assoldato [enemyFaction_name] per cacciare [asker_objective].\n\n[enemyGroupsParagraph]</li>
+    <li>threatsInfo6(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->[asker_nameDef] e i suoi [allyAllies] sono stati presi di mira per la morte e hanno bisogno di un luogo sicuro dove stare finché non potranno epurare la loro corte. Tuttavia, i nemici di [asker_nameDef] hanno provocato [enemyFaction_name] a cacciare [asker_objective].\n\n[enemyGroupsParagraph]</li>
+    <li>threatsInfo6(generateThreats==true,threatType==MechClusters)->[asker_nameDef] e i suoi [allyAllies] sono stati presi di mira per la morte e hanno bisogno di un luogo sicuro dove stare finché non potranno epurare la loro corte. Tuttavia, i nemici di [asker_nameDef] hanno in qualche modo provocato i mechanoidi a cacciare [asker_objective].\n\n[enemyGroupsParagraph]</li>
+    <li>threatsInfo6(generateThreats==false)-></li>
+    <li>allyAllies(lodgersCountMinusOne==1)->alleato</li>
+    <li>allyAllies(lodgersCountMinusOne>=2)->alleati</li>
+  </Hospitality_Joiners.questDescriptionRules.rulesStrings>
+  
   <!-- EN:
     <li>questName->shelter for [lodgerIndef]</li>
     <li>questName->hospitality for [lodgerIndef]</li>
@@ -95,7 +156,36 @@
     <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount>=2)->nobles</li>
     <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount>=2)->aristocrats</li>
   -->
-  <Hospitality_Joiners.questNameRules.rulesStrings />
+  <Hospitality_Joiners.questNameRules.rulesStrings>
+    <li>questName->rifugio per [lodgerIndef]</li>
+    <li>questName->ospitalità per [lodgerIndef]</li>
+    <li>questName->ospitando [lodgerIndef]</li>
+    <li>questName->[lodgerIndef] ha bisogno di aiuto</li>
+    <li>questName(generateThreats==true,priority=1)->proteggere [lodgerIndef]</li>
+    <li>questName(generateThreats==true,priority=1)->mettere al sicuro [lodgerIndef]</li>
+    <li>questName(generateThreats==true,priority=1)->sicurezza per [lodgerIndef]</li>
+    <li>questName(generateThreats==true,priority=1)->[lodgerIndef] sotto minaccia</li>
+    <li>questName(generateThreats==true,priority=1)->[lodgerIndef] in pericolo</li>
+    <li>questName(generateThreats==true,priority=1)->[lodgerIndef] con nemici</li>
+    <li>questName(generateThreats==true,priority=1)->[lodgerIndef] nel mirino</li>
+    <li>lodgerIndef(askerIsNull==true,lodgersCount==1)->[lodgers0_label]</li>
+    <li>lodgerIndef(askerIsNull==true,lodgersCount==1)->un [lodgers0_title]</li>
+    <li>lodgerIndef(askerIsNull==true,lodgersCount>=2)->viaggiatori</li>
+    <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1)->[lodgers0_label]</li>
+    <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1)->un [lodgers0_title]</li>
+    <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1)->un amico</li>
+    <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1)->un alleato</li>
+    <li>lodgerIndef(asker_factionLeader==True,lodgersCount>=2)->amici</li>
+    <li>lodgerIndef(asker_factionLeader==True,lodgersCount>=2)->alleati</li>
+    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1,p=3)->un [asker_royalTitleInCurrentFaction]</li>
+    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1)->[asker_label]</li>
+    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1)->un reale</li>
+    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1)->un nobile</li>
+    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1)->un aristocratico</li>
+    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount>=2)->reali</li>
+    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount>=2)->nobili</li>
+    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount>=2)->aristocratici</li>
+  </Hospitality_Joiners.questNameRules.rulesStrings>
   
   <!-- UNUSED -->
   <Hospitality_Joiners.questDescriptionAndNameRules.rulesStrings />

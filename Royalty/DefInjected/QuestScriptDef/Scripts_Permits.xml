@@ -5,7 +5,10 @@
     <li>questName->Laborers</li>
     <li>questDescription-></li>
   -->
-  <Permit_CallLaborers.questDescriptionAndNameRules.rulesStrings />
+  <Permit_CallLaborers.questDescriptionAndNameRules.rulesStrings>
+    <li>questName->Lavoratori</li>
+    <li>questDescription-></li>
+  </Permit_CallLaborers.questDescriptionAndNameRules.rulesStrings>
   <!-- EN: Laborers arrived -->
   <Permit_CallLaborers.LetterLabelLaborersArrived.slateRef>Lavoratori arrivati</Permit_CallLaborers.LetterLabelLaborersArrived.slateRef>
   <!-- EN: The laborers from [permitFaction_name] have arrived. A shuttle will come to collect them in [laborersDurationDays] days. -->
@@ -15,11 +18,11 @@
   <!-- EN: Shuttle arrived -->
   <Permit_CallLaborers.LetterLabelShuttleArrived.slateRef>Navetta arrivata</Permit_CallLaborers.LetterLabelShuttleArrived.slateRef>
   <!-- EN: A shuttle has arrived to collect the laborers from [permitFaction_name]. -->
-  <Permit_CallLaborers.LetterTextShuttleArrivedForLaborers.slateRef>È arrivata una navetta per ritirare i lavoratori da [permitFaction_name].</Permit_CallLaborers.LetterTextShuttleArrivedForLaborers.slateRef>
+  <Permit_CallLaborers.LetterTextShuttleArrivedForLaborers.slateRef>È arrivata una navetta per ritirare i lavoratori di [permitFaction_name].</Permit_CallLaborers.LetterTextShuttleArrivedForLaborers.slateRef>
   <!-- EN: Laborer died: {SUBJECT_definite} -->
   <Permit_CallLaborers.LetterLabelLaborerDied.slateRef>Lavoratore morto: {SUBJECT_definite}</Permit_CallLaborers.LetterLabelLaborerDied.slateRef>
   <!-- EN: A laborer sent to you by [permitFaction_name] has died. Your goodwill with [permitFaction_name] has fallen by [goodwillPenaltyPawn]. -->
-  <Permit_CallLaborers.LetterTextLaborerDied.slateRef>Un lavoratore ricevuto da [permitFaction_name] è morto. La tua reputazione con [permitFaction_name] è diminuita di [goodwillPenaltyPawn].</Permit_CallLaborers.LetterTextLaborerDied.slateRef>
+  <Permit_CallLaborers.LetterTextLaborerDied.slateRef>Un lavoratore inviato da [permitFaction_name] è morto. La tua reputazione con [permitFaction_name] è diminuita di [goodwillPenaltyPawn].</Permit_CallLaborers.LetterTextLaborerDied.slateRef>
   <!-- EN: Laborer abandoned: {SUBJECT_definite} -->
   <Permit_CallLaborers.LetterLabelLaborerLeftBehind.slateRef>Lavoratore abbandonato: {SUBJECT_definite}</Permit_CallLaborers.LetterLabelLaborerLeftBehind.slateRef>
   <!-- EN: A laborer sent to you by [permitFaction_name] has been left behind. Any remaining laborers will now leave. -->
