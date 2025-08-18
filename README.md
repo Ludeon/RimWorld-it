@@ -40,20 +40,33 @@ INSTALLAZIONE:
 5) (Solo per DLC Biotech) Copiare l'intera cartella di *.\Biotech* nella directory di installazione di Rimworld in *...\Data\Biotech\Languages\\* e rinominarla come *Italiano*
 7) Avviare il gioco e selezionare la lingua *Italiano* (**non *Italian (Italiano)***)
 
-INSTALLAZIONE STEAM:
+INSTALLAZIONE STEAM (nuova):
 ------------------
 1) Scaricare la cartella zip dei files di traduzione
-2) Lanciare lo script install.ps1
+2) Usare gli script nella cartella scripts:
+    - install_copy.ps1: per copiare tutte le traduzioni nella cartella di installazione di RimWorld.
+    - install_link.ps1: per creare un collegamento simbolico alla cartella di traduzione, in modo da non doverla copiare ogni volta che si aggiorna la traduzione.
 
 N.B. Se non si dispone di PowerShell, è possibile installare la traduzione manualmente seguendo le istruzioni di installazione copiando tutte le cartelle di traduzione nella cartella di installazione di RimWorld, come descritto sopra.
 
 SEGNALAZIONE ERRORI:
 ------------------------------
-Se individui errori, omissioni o per qualsiasi proposta di traduzione o miglioramento, non esitare ad intervenire sul forum dedicato ai traduttori:
+Il forum è attualmente non è utilizzato.
+Tutta la comunità si è spostata su Discord
+
+Per segnalare errori, omissioni o per qualsiasi proposta di traduzione o miglioramento, puoi aprire una issue su GitHub.
+I traduttori che hanno accesso al repository potranno correggere direttamente gli errori segnalati.
+
+#### <u>Riferimenti forum</u>
 
 SEZIONE GENERALE: https://ludeon.com/forums/index.php?board=17.0
 
 SEZIONE TRADUZIONE ITALIANA: https://ludeon.com/forums/index.php?topic=4843.0
+
+DIVENTA UN TRADUTTORE:
+------------------------------
+Per poter modificare la traduzione e diventare un traduttore unisciti al canale discord ufficiale, presentati e verrrai spostato nella sezione sviluppo
+
 
 VECCHIE VERSIONI:
 -----------------
