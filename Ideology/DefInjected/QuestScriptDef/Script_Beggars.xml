@@ -63,19 +63,21 @@
     <li>groupLabelPlural(allChildren==true,priority=1)->bambini</li>
     <li>groupLabelSingle->viaggiatore</li>
     <li>groupLabelSingle(childCount>=1,priority=1)->bambino</li>
-    <li>travelerInfo(beggarCount==1)->Questo [groupLabelSingle] è</li>
-    <li>travelerInfo(beggarCount>=2)->Questi [groupLabelPlural] sono</li>
+    <li>travelerInfo(beggarCount==1)->Questo [groupLabelSingle]</li>
+    <li>travelerInfo(beggarCount>=2)->Questi [groupLabelPlural]</li>
     <li>beggingForInfo->per x[requestedThingCount] [requestedThing_label]</li>
-    <li>traverObjective(beggarCount==1)->[beggars0_objective]</li>
+    <li>traverObjectiveArt(beggarCount==1)->{beggars0_gender ? gli : le }</li>
+    <li>traverObjective(beggarCount==1)->{beggars0_gender ? lui : lei }</li>
     <li>traverObjective(beggarCount>=2)->loro</li>
-    <li>questDescription->[approachInfo]. [requestInfo]. [claimInfo].\n\n[interactionInfo].\n\n[moveOnInfo].\n\n[travelerInfo] non appartiene a nessuna fazione. Se lo desideri, puoi scegliere di uccidere, arrestare, vendere o prelevare organi da [traverObjective], senza conseguenze diplomatiche.</li>
+    <li>questDescription(beggarCount==1)->[approachInfo]. [requestInfo]. [claimInfo].\n\n[interactionInfo].\n\n[moveOnInfo].\n\n[travelerInfo] non appartiene a nessuna fazione. Se lo desideri, puoi scegliere di uccidere, arrestare, vendere o prelevare organi da [traverObjective], senza conseguenze diplomatiche.</li>
+    <li>questDescription(beggarCount>=2)->[approachInfo]. [requestInfo]. [claimInfo].\n\n[interactionInfo].\n\n[moveOnInfo].\n\n[travelerInfo] non appartengono a nessuna fazione. Se lo desideri, puoi scegliere di uccidere, arrestare, vendere o prelevare organi da [traverObjective], senza conseguenze diplomatiche.</li>
     <li>approachInfo(beggarCount==1)->Un povero [groupLabelSingle] di nome [beggars0_nameDef] si sta avvicinando in cerca di aiuto</li>
     <li>approachInfo(beggarCount>=2)->Un gruppo di poveri [groupLabelPlural] si sta avvicinando in cerca di aiuto</li>
     <li>approachInfo(beggarCount>=2,childCount==1,priority=1)->Un gruppo di poveri [groupLabelPlural] con un bambino si sta avvicinando in cerca di aiuto</li>
     <li>approachInfo(beggarCount>=2,childCount>=2,allChildren==false,priority=1)->Un gruppo di poveri [groupLabelPlural] con alcuni bambini si sta avvicinando in cerca di aiuto</li>
     <li>requestInfo(beggarCount==1)->[beggars0_nameDef] sta chiedendo [beggingForInfo]</li>
     <li>requestInfo(beggarCount>=2)->I [groupLabelPlural] stanno chiedendo [beggingForInfo]</li>
-    <li>claimInfo(beggarCount==1,requestedThingDefName==Silver)->[beggars0_nameDef] vuole l'argento per pagare un debito a una banda di pirati che sta dando la caccia a [beggars0_objective]</li>
+    <li>claimInfo(beggarCount==1,requestedThingDefName==Silver)->[beggars0_nameDef] vuole l'argento per pagare un debito a una banda di pirati che [traverObjectiveArt] sta dando la caccia</li>
     <li>claimInfo(beggarCount==1,requestedThingDefName==Silver,childCount==1,priority=1)->[beggars0_nameDef] vuole l'argento per comprare la libertà della sorella maggiore che è stata ridotta in schiavitù dai pirati</li>
     <li>claimInfo(beggarCount==1,requestedThingDefName==MedicineHerbal)->[beggars0_nameDef] ha bisogno della medicina per aiutare un viaggiatore ferito nelle vicinanze</li>
     <li>claimInfo(beggarCount==1,requestedThingDefName==MedicineHerbal,childCount==1,priority=1)->[beggars0_nameDef] ha bisogno della medicina per aiutare il fratellino che è ferito nelle vicinanze</li>
@@ -90,8 +92,8 @@
     <li>claimInfo(beggarCount>=2,requestedThingDefName==Penoxycyline)->Vogliono [requestedThing_label] per poter viaggiare in sicurezza mentre cercano un nuovo posto da chiamare casa</li>
     <li>claimInfo(beggarCount>=2,requestedThingDefName==Beer)->Vogliono [requestedThing_label] per affogare i loro dispiaceri dopo aver perso la casa in un terribile attacco</li>
     <li>claimInfo(beggarCount>=2,requestedThingDefName==Beer,allChildren==true,priority=1)->Sperano di usare la [requestedThing_label] per liberare un amico dagli schiavisti facendoli ubriacare prima di organizzare una fuga</li>
-    <li>interactionInfo(beggarCount==1)->Puoi dare oggetti a [beggars0_nameDef] selezionando un colono e facendo clic destro su [beggars0_objective]</li>
-    <li>interactionInfo(beggarCount>=2)->Puoi dare oggetti ai [groupLabelPlural] selezionando un colono e facendo clic destro su [beggars0_nameDef]</li>
+    <li>interactionInfo(beggarCount==1)->Puoi dare oggetti a [beggars0_nameDef] selezionando un colono e facendo clic destro su di [traverObjective]</li>
+    <li>interactionInfo(beggarCount>=2)->Puoi dare oggetti ai [groupLabelPlural] selezionando un colono e facendo clic destro su di [traverObjective]</li>
     <li>moveOnInfo(beggarCount==1)->[beggars0_nameDef] se ne andrà dopo [visitDurationTicks_duration]</li>
     <li>moveOnInfo(beggarCount>=2)->I [groupLabelPlural] se ne andranno dopo [visitDurationTicks_duration]</li>
   </Beggars.questDescriptionRules.rulesStrings>
@@ -117,7 +119,7 @@
     <li>seekingPlural->hope for</li>
     <li>seekingPlural->desire</li>
     <li>seekingPlural->need</li>
-    <li>alms->alms</li>
+    <li>alms->alms</li>s
     <li>alms->aid</li>
     <li>alms->charity</li>
     <li>alms->resources</li>
