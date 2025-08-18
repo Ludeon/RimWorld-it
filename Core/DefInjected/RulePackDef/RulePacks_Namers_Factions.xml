@@ -51,6 +51,15 @@
   </NamerFactionMechanoid.rulePack.rulesStrings>
   
   <!-- EN:
+  <li>political_union_outlander->Words/Nouns/PoliticalUnions_Outlander</li>
+  <li>political_adjective->Words/Adjectives/PoliticalUnions</li>
+  -->
+  <NamerFactionOutlander.rulePack.rulesFiles>
+    <li>political_union_outlander->Words/Nouns/PoliticalUnions_Outlander</li>
+    <li>political_adjective->Words/Adjectives/PoliticalUnions</li>
+  </NamerFactionOutlander.rulePack.rulesFiles>
+  
+  <!-- EN:
     <li>r_name(p=3)->[nearnameinitial]</li>
     <li>r_name->[nearnameinitial] [political_union_outlander]</li>
     <li>r_name->[nearnameinitial] [political_adjective] [political_union_outlander]</li>
@@ -68,6 +77,13 @@
     <li>nearnameinitial(p=3)->[PlaceOutlander]</li>
     <li>nearnameinitial->[Direction] [PlaceOutlander]</li>
   </NamerFactionOutlander.rulePack.rulesStrings>
+  
+  <!-- EN:
+  <li>groupname->Words/Nouns/GroupNames</li>
+  -->
+  <NamerFactionPirate.rulePack.rulesFiles>
+    <li>groupname->Words/Nouns/GroupNames</li>
+  </NamerFactionPirate.rulePack.rulesFiles>
   
   <!-- EN:
     <li>r_name->The [AnimalBadass]s</li>
@@ -99,16 +115,16 @@
     <li>r_name->[ConceptBadass] [groupname]</li>
   -->
   <NamerFactionPirate.rulePack.rulesStrings>
-    <li>r_name->I [AnimalBadass]</li>
-    <li>r_name->Gli Uomini [AnimalBadass]</li>
-    <li>r_name->I [AnimalBadass] di [ConceptBadass]</li>
-    <li>r_name->I [PersonBadass] di [ConceptBadass]</li>
+    <li>r_name->I [AnimalBadassI]</li>
+    <li>r_name->Gli Uomini [AnimalBadassGliUomini]</li>
+    <li>r_name->I [AnimalBadassI] di [ConceptBadassDi]</li>
+    <li>r_name->I [PersonBadass] di [ConceptBadassDi]</li>
     <li>r_name->I [PersonBadass]</li>
     <li>r_name->I [Enemy]</li>
-    <li>r_name->Gli Uomini [Weapon]</li>
-    <li>r_name->Le [Weapon]</li>
-    <li>r_name->Le [Weapon] [AnimalBadass]</li>
-    <li>r_name->Le [Weapon] [Enemy]</li>
+    <li>r_name->Gli Uomini [WeaponGliUomini]</li>
+    <li>r_name->Le [WeaponLe]</li>
+    <li>r_name->Le [WeaponLe] [AnimalBadassLe]</li>
+    <li>r_name->Le [WeaponLe] [EnemyWeapons]</li>
     <li>r_name->Le [ColorBadass] [Weapon]</li>
     <li>r_name->I [ColorBadass] [AnimalBadass]</li>
     <li>r_name->I [ColorBadass] [PersonBadass]</li>
@@ -128,6 +144,10 @@
     <li>r_name->[ConceptBadass] [groupname]</li>
   </NamerFactionPirate.rulePack.rulesStrings>
   
+  <NamerFactionTribal.rulePack.rulesFiles>
+    <li>political_union_tribal->Words/Nouns/PoliticalUnions_Tribal</li>
+  </NamerFactionTribal.rulePack.rulesFiles>
+  
   <!-- EN:
     <li>r_name->[WordTribal] [political_union_tribal]</li>
     <li>r_name->The [WordTribal] [political_union_tribal]</li>
@@ -138,11 +158,11 @@
   -->
   <NamerFactionTribal.rulePack.rulesStrings>
     <li>r_name->[WordTribal] [political_union_tribal]</li>
-    <li>r_name>->I [WordTribal] [political_union_tribal]</li>
+    <li>r_name->I [WordTribal] [political_union_tribal]</li>
     <li>r_name->I [Color] [TerrainFeature] [political_union_tribal]</li>
     <li>r_name->[political_union_tribal] dei [WordTribal]</li>
     <li>r_name->I [Color] [Animal] [WordTribal]</li>
-    <li>r_name>->Il [political_union_tribal] del [TerrainFeature]</li>
+    <li>r_name->Il [political_union_tribal] del [TerrainFeature]</li>
   </NamerFactionTribal.rulePack.rulesStrings>
   
   <!-- EN:
@@ -158,6 +178,15 @@
   <NamerInitialSettlementTribe.rulePack.rulesStrings>
     <li>r_name->Villaggio</li>
   </NamerInitialSettlementTribe.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>townname_fixed->Names/OutlanderTown</li>
+    <li>concept_positive->Words/Nouns/Concepts_Positive</li>
+  -->
+  <NamerSettlementOutlander.rulePack.rulesFiles>
+    <li>townname_fixed->Names/OutlanderTown</li>
+    <li>concept_positive->Words/Nouns/Concepts_Positive</li>
+  </NamerSettlementOutlander.rulePack.rulesFiles>
   
   <!-- EN:
     <li>r_name(p=12)->[townname_wordgen]</li>
