@@ -2,10 +2,20 @@
 <LanguageData>
   
   <!-- EN:
-    <li>questDescription->[asker_nameFull], a [asker_royalTitleInCurrentFaction] of [asker_faction_name] is calling from nearby. [asker_possessive] guards were killed in an ambush. [asker_pronoun] escaped, but is now being followed by (*Threat)a manhunting [animalKindDef_label](/Threat).\n\n[asker_nameDef] wants you to keep [asker_objective] safe at [map_definite] for a few hours until [asker_possessive] shuttle can come pick [asker_objective] up.\n\n[asker_pronoun] will bestow [royalFavorReward] [asker_faction_royalFavorLabel] on whoever accepts this quest. This is enough [asker_faction_royalFavorLabel] to receive the royal title of Novice, and all benefits that come with it - including the first level of psychic powers.</li>
+    <li>questDescription->[asker_nameFull], a [asker_royalTitleInCurrentFaction] of [asker_faction_name] is calling from nearby. [asker_possessive] guards were killed in an ambush. [asker_pronoun] escaped, but is now being followed by (*Threat)a manhunting [animalKindDef_label](/Threat).\n\n
+        [asker_nameDef] wants you to keep [asker_objective] safe at [map_definite] for a few hours until
+        [asker_possessive] shuttle can come pick [asker_objective] up.\n\n
+        [asker_pronoun] will bestow [royalFavorReward] [asker_faction_royalFavorLabel] on whoever accepts this quest.
+        This is enough [asker_faction_royalFavorLabel] to receive the royal title of Novice, and all benefits that come with it - including the first level of psychic powers.</li>
   -->
   <Intro_Wimp.questDescriptionRules.rulesStrings>
-    <li>questDescription->[asker_nameFull], un [asker_royalTitleInCurrentFaction] di [asker_faction_name], sta chiamando da vicino. Le guardie di [asker_possessive] sono stat{asker_gender ? i uccisi : e uccise} in un'imboscata. [asker_pronoun] è riuscit{asker_gender ? o : a} a fuggire, ma ora è inseguit{asker_gender ? o : a} da (*Threat)un [animalKindDef_label] da caccia all'uomo(/Threat).\n\n[asker_nameDef] vuole che tu mantenga [asker_objective] al sicuro a [map_definite] per alcune ore, finché la navetta di [asker_possessive] non potrà venire a prenderl[asker_objective].\n\n[asker_pronoun] conferirà [royalFavorReward] [asker_faction_royalFavorLabel] a chiunque accetti questa missione. È sufficiente [asker_faction_royalFavorLabel] per ricevere il titolo reale di Novizio, e tutti i benefici che ne derivano – incluso il primo livello di poteri psionici.</li>
+    <li>asker_gender_o_a(asker_gender==Female)->a</li>
+    <li>asker_gender_o_a(asker_gender!=Female)->o</li>
+    <li>asker_gender_un_una(asker_gender==Female)->una</li>
+    <li>asker_gender_un_una(asker_gender!=Female)->un</li>
+    <li>asker_gender_lo_la(asker_gender==Female)->la</li>
+    <li>asker_gender_lo_la(asker_gender!=Female)->lo</li>
+    <li>questDescription->[asker_nameFull], [asker_gender_un_una] [asker_royalTitleInCurrentFaction] della fazione di [asker_faction_name], sta chiamando da qui vicino. Le guardie di [asker_possessive] sono state uccise in un'imboscata. [asker_pronoun] è riuscit[asker_gender_o_a] a fuggire, ma ora è inseguit[asker_gender_o_a] da (*Threat)un [animalKindDef_label] da caccia all'uomo(/Threat).\n\n[asker_nameDef] vuole che tu [asker_gender_lo_la] mantenga al sicuro a [map_definite] per alcune ore, finché la sua navetta non potrà venire a prenderl[asker_gender_o_a].\n\n [asker_pronoun] conferirà [royalFavorReward] [asker_faction_royalFavorLabel] a chiunque accetti questa missione.\nÈ abbastanza [asker_faction_royalFavorLabel] per ricevere il titolo reale di Novizio, e tutti i benefici che ne derivano (incluso il primo livello di poteri psionici.)</li>
   </Intro_Wimp.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->the [adjAny] [asker_royalTitleInCurrentFaction]</li>
@@ -15,11 +25,13 @@
     <li>adjAny->ambushed</li>
   -->
   <Intro_Wimp.questNameRules.rulesStrings>
+    <li>asker_gender_o_a(asker_gender==Female)->a</li>
+    <li>asker_gender_o_a(asker_gender!=Female)->o</li>
     <li>questName->[asker_royalTitleInCurrentFaction] [adjAny]</li>
-    <li>adjAny->braccato</li>
+    <li>adjAny->braccat[asker_gender_o_a]</li>
     <li>adjAny->in fuga</li>
-    <li>adjAny->solitario</li>
-    <li>adjAny->assalito</li>
+    <li>adjAny->solitari[asker_gender_o_a]</li>
+    <li>adjAny->assalit[asker_gender_o_a]</li>
   </Intro_Wimp.questNameRules.rulesStrings>
   <!-- EN: [animalKindDef_label] arrived -->
   <Intro_Wimp.LetterLabelAnimalArrived.slateRef>[animalKindDef_label] è arrivat{animalKindDef_gender ? o : a}</Intro_Wimp.LetterLabelAnimalArrived.slateRef>

@@ -52,6 +52,10 @@
     <li>letterSubject(priority=1)->{SUBJECT_definite} the [lodgersLabel]</li>
   -->
   <Hospitality_Animals.questDescriptionRules.rulesStrings>
+    <li>asker_gender_o_a(asker_gender==Female)->a</li>
+    <li>asker_gender_o_a(asker_gender!=Female)->o</li>
+    <li>asker_gender_un_una(asker_gender!=Female)->un</li>
+    <li>asker_gender_un_una(asker_gender!=Female)->una</li>
     <li>threatsInfoMechClustersSingleAnimal->Per ragioni sconosciute, il [lodgersLabel] è stato preso di mira da uno sciame di mechanoidi in orbita.</li>
     <li>threatsInfoMechClustersMultiAnimal->Per ragioni sconosciute, i [lodgersLabelPlural] sono stati presi di mira da uno sciame di mechanoidi in orbita.</li>
     <li>threatsInfoMechRaidsSingleAnimal->Per ragioni sconosciute, il [lodgersLabel] è stato preso di mira da un alveare di mechanoidi.</li>
@@ -81,12 +85,12 @@
     <li>threatsInfo4(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\n[threatsInfoMechRaidsMultiAnimal] [enemyGroupsParagraph]</li>
     <li>threatsInfo4(generateThreats==true,threatType==MechClusters)->\n\n[threatsInfoMechClustersMultiAnimal] [enemyGroupsParagraph]</li>
     <li>threatsInfo4(generateThreats==false)-></li>
-    <li>questDescription(asker_royalInCurrentFaction==True,lodgersCount==1,priority=1)->[asker_nameFull], un [asker_royalTitleInCurrentFaction] di [asker_faction_name], fa una richiesta. [asker_pronoun] vuole che tu ti prenda cura del suo animale preferito, il [lodgersLabel] [lodgers0_nameDef], a [map_definite] per [shuttleDelayTicks_duration]. [healthInfo][threatsInfo5][commonDescEnding]</li>
+    <li>questDescription(asker_royalInCurrentFaction==True,lodgersCount==1,priority=1)->[asker_nameFull], [asker_gender_un_una] [asker_royalTitleInCurrentFaction] della fazione di [asker_faction_name], fa una richiesta. [asker_pronoun] vuole che tu ti prenda cura del suo animale preferito, [lodgersLabel] [lodgers0_nameDef], a [map_definite] per [shuttleDelayTicks_duration]. [healthInfo][threatsInfo5][commonDescEnding]</li>
     <li>threatsInfo5(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\n[lodgers0_nameDef] è un dono promesso al figlio di [asker_nameDef] per una cerimonia di matrimonio. Per impedire il matrimonio, [enemyFaction_name] sta inviando [enemyFaction_pawnsPlural] contro [lodgers0_objective]. Se accetti [lodgers0_nameDef], [enemyGroupsParagraph]</li>
     <li>threatsInfo5(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\n[threatsInfoMechRaidsSingleAnimal] [enemyGroupsParagraph]</li>
     <li>threatsInfo5(generateThreats==true,threatType==MechClusters)->\n\n[threatsInfoMechClustersSingleAnimal] [enemyGroupsParagraph]</li>
     <li>threatsInfo5(generateThreats==false)-></li>
-    <li>questDescription(asker_royalInCurrentFaction==True,lodgersCount>=2,priority=1)->[asker_nameFull], un [asker_royalTitleInCurrentFaction] di [asker_faction_name], fa una richiesta. [asker_pronoun] vuole che tu ti prenda cura di [lodgersCount] [lodgersLabelPlural] a [map_definite] per [shuttleDelayTicks_duration]. I [lodgersLabelPlural] sono gli animali preferiti di [asker_nameDef], e [asker_pronoun] vuole che vedano il mondo fuori dalla sua corte reale. [healthInfo][threatsInfo6][commonDescEnding]</li>
+    <li>questDescription(asker_royalInCurrentFaction==True,lodgersCount>=2,priority=1)->[asker_nameFull], [asker_gender_un_una] [asker_royalTitleInCurrentFaction] della fazione di [asker_faction_name], fa una richiesta. [asker_pronoun] vuole che tu ti prenda cura di [lodgersCount] [lodgersLabelPlural] a [map_definite] per [shuttleDelayTicks_duration]. I [lodgersLabelPlural] sono gli animali preferiti di [asker_nameDef], e [asker_pronoun] vuole che vedano il mondo fuori dalla sua corte reale. [healthInfo][threatsInfo6][commonDescEnding]</li>
     <li>threatsInfo6(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\nSfortunatamente, [enemyFaction_name] sta cacciando i [lodgersLabelPlural] per colpire personalmente [asker_nameDef]. Se accetti i [lodgersLabelPlural], [enemyGroupsParagraph]</li>
     <li>threatsInfo6(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\n[threatsInfoMechRaidsMultiAnimal] [enemyGroupsParagraph]</li>
     <li>threatsInfo6(generateThreats==true,threatType==MechClusters)->\n\n[threatsInfoMechClustersMultiAnimal] [enemyGroupsParagraph]</li>

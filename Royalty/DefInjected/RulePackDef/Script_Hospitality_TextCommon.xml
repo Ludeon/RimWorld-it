@@ -56,6 +56,10 @@
     <li>allLodgerInfo->[healthInfo][minMoodInfo][workInfo][includesChildren]</li>
     <li>lodgersLabelSingOrPlural(lodgersCount==1)->[lodgers0_nameDef]</li>
     <li>lodgersLabelSingOrPlural(lodgersCount>=2)->[lodgersLabelPlural]</li>
+    <li>lodgers_o_i(lodgersCount==1)->o</li>
+    <li>lodgers_o_i(lodgersCount>=2)->i</li>
+    <li>lodgersIsAre(lodgersCount==1)->è</li>
+    <li>lodgersIsAre(lodgersCount>=2)->sono</li>
     <li>lodgersLabelSingOrPluralDef(lodgersCount==1)->[lodgers0_nameDef]</li>
     <li>lodgersLabelSingOrPluralDef(lodgersCount>=2)->i [lodgersLabelPlural]</li>
     <li>includesChildren(priority=-999)-></li>
