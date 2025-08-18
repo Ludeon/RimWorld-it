@@ -2044,76 +2044,76 @@
   -->
   <Description_SkillBook.rulePack.rulesStrings>
     <li>subject->[subject_primary]</li>
-    <li>desc->[discussione].\n\n[aneddoto]. [produzione].\n\n[frase_sulla_qualità].</li>
+    <li>desc->[discussion].\n\n[anecdote]. [production].\n\n[quality_statement].</li>
     <li>discussion->Questo [textbook] fornisce [useful_information] su [subject][detail]</li>
-    <li>discussion->Questo [textbook] stabilisce l'autorità dell'autore sull'argomento [subject][detail]</li>
+    <li>discussion->Questo [textbook] stabilisce l'autorità dell'autore sulla materia [subject][detail]</li>
     <li>discussion->Chi cerca [understanding_synonym] [subject] si rivolge a questo [notable_adjective] [textbook][detail]</li>
     <li>discussion->Un [textbook] standardizzato su [subject][detail]</li>
     <li>discussion->Una prima edizione del [textbook] dell'autore su [subject][detail]</li>
-    <li>detail->. Il [precis_synonym] si concentra sugli aspetti più avanzati della materia</li>
+    <li>detail->. Il [precis_synonym] si concentra sugli aspetti più complessi della materia</li>
     <li>detail->. È un [precis_synonym] conciso di un argomento complesso</li>
-    <li>detail->. Il [precis_synonym] dice che, quando [ANYPAWN_label] scrisse questo libro, era all'avanguardia nel campo</li>
-    <li>detail->. Una citazione sul [note_location] recita: "I veri [students] di [subject] non possono ignorare il libro di [ANYPAWN_label]"</li>
+    <li>detail->. Il [precis_synonym] dice che, quando [ANYPAWN_label] scrisse questo, era all'avanguardia nel campo</li>
+    <li>detail->. Una citazione sul [note_location] dice: 'I veri [students] di [subject] non possono ignorare il libro di [ANYPAWN_label]'</li>
     <li>students->studenti</li>
     <li>students->appassionati</li>
     <li>students->praticanti</li>
-    <li>detail->. Ti guida attraverso l'argomento passo dopo passo</li>
-    <li>detail(quality[less_than]4)->, anche se l'autore va troppo di fretta sull'argomento</li>
-    <li>detail(quality[greater_than]3)->. È un trattato completo sull'argomento</li>
-    <li>detail->. L'autore afferma nel suo [precis_synonym] che esistono copie contraffatte di questo libro, ma questa non lo è</li>
-    <li>detail(quality[less_than]4)->, anche se forse tentare di comunicare le idee tramite un dialogo immaginario è stato un errore</li>
+    <li>detail->. Ti accompagna passo dopo passo attraverso l'argomento</li>
+    <li>detail(quality[less_than]4)->, anche se l'autore tratta l'argomento troppo in fretta</li>
+    <li>detail(quality[greater_than]3)->. È un trattamento completo dell'argomento</li>
+    <li>detail->. L'autore afferma nel suo [precis_synonym] che esistono copie fraudolente di questo libro, ma che questa non lo è</li>
+    <li>detail(quality[less_than]4)->, anche se forse il tentativo di comunicare le idee tramite un dialogo immaginario è stato un errore</li>
     <li>detail->. La retorica dell'autore nel [precis_synonym] non distrae dai concetti principali</li>
-    <li>production->Il [precis_synonym] dice che questo libro è stato stampato a mano su [worldname]</li>
-    <li>production->Il [precis_synonym] dice che l'Università di [worldname] lo ha reso un testo di riferimento</li>
-    <li>production->Il [precis_synonym] dice che, anche se queste note furono scritte per uso personale di [ANYPAWN_label], sono state ampiamente condivise</li>
-    <li>production->Le parti utili di questo [textbook] sono nascoste tra dettagli biografici</li>
-    <li>production->Una [note] scritta a mano sul [note_location] afferma che la tipografia di [worldname] chiuse dopo le rivolte di [worldname], rendendo queste edizioni successive rare</li>
-    <li>production->Una [note] incisa dice che la maggior parte delle copie di questo [textbook] sono andate perdute durante l'Incidente di [worldname]</li>
-    <li>production->Il [precis_synonym] chiarisce che i lettori con conoscenze sulle tecniche di diffusione di informazioni archotech tendono a evitare questa serie di [textbook], senza però spiegarne il motivo</li>
-    <li>production->Dal [note_location], è chiaro che i proseliti di [subject] su [worldname] spesero una fortuna per stampare copie di questo libro e distribuirlo largamente</li>
-    <li>production->Il [note_location] spiega che le prime copie di questo libro furono scritte a mano da [ANYPAWN_label] [ANYPAWN_objective] stesso</li>
-    <li>production->La Duchessa di [worldname] sponsorizzò questo [textbook], a condizione che fosse distribuito gratuitamente</li>
+    <li>production->Il [precis_synonym] dice che fu stampato a mano su [worldname]</li>
+    <li>production->Il [precis_synonym] dice che l'Università di [worldname] lo adottò come testo ufficiale</li>
+    <li>production->Il [precis_synonym] dice che, sebbene queste note fossero state scritte per uso personale di [ANYPAWN_label], furono ampiamente condivise</li>
+    <li>production->Le parti utili di questo [textbook] sono nascoste tra i dettagli biografici</li>
+    <li>production->Un [note] scritto a mano sul [note_location] dice che la tipografia di [worldname] chiuse dopo le rivolte di [worldname], quindi queste edizioni successive sono rare</li>
+    <li>production->Un [note] inciso dice che la maggior parte delle copie di questo [textbook] andò persa durante l'Incidente di [worldname]</li>
+    <li>production->Il [precis_synonym] chiarisce che i lettori con conoscenze sulle tecniche di diffusione dell'informazione archotech tendono a evitare questa serie di [textbook] - ma non spiega perché</li>
+    <li>production->Dal [note_location] si capisce che i proseliti di [subject] di [worldname] spesero una fortuna per stampare copie di questo libro e poi distribuirle ampiamente</li>
+    <li>production->Il [note_location] spiega che le prime copie di questo libro furono scritte a mano dallo stesso [ANYPAWN_label]</li>
+    <li>production->La Duchessa di [worldname] sponsorizzò questo [textbook], a condizione che fosse liberamente disponibile</li>
     <li>production->Una nota dice che una sottoscrizione dei librai di [coreworld] produsse la prima edizione di questo [textbook]</li>
-    <li>production->Nella parte posteriore del libro, l'editore pubblicizza una collana più ampia che tratta tutti gli argomenti necessari per sopravvivere al rim</li>
-    <li>production->Forse gli editori avrebbero potuto essere più scrupolosi nei loro doveri redazionali, vista la grammatica trascurata</li>
+    <li>production->Alla fine del libro, l'editore pubblicizza una serie più ampia che affronta tutte le materie necessarie per la sopravvivenza sul margine</li>
+    <li>production->Forse gli editori avrebbero potuto essere più scrupolosi nei loro doveri editoriali, vista la grammatica scadente</li>
     <li>quality_statement->[exterior_quality] [page_quality]</li>
-    <li>anecdote->Considerato il grande divario tra l'anno di nascita di [ANYPAWN_nameFull] e la data di pubblicazione di questo libro, è improbabile che [ANYPAWN_pronoun] abbia vissuto abbastanza da vederlo pubblicato</li>
-    <li>anecdote->Sul [note_location], qualcuno ha incollato una recensione feroce del libro</li>
-    <li>anecdote->Il [precis_synonym] indica che questo libro è passato attraverso il sistema di biblioteche pubbliche di [urbworld]</li>
+    <li>anecdote->Dato l'ampio divario tra l'anno di nascita di [ANYPAWN_nameFull] e la data di pubblicazione di questo libro, è improbabile che [ANYPAWN_pronoun] abbia vissuto abbastanza da vederlo pubblicato</li>
+    <li>anecdote->Sul [note_location], qualcuno ha incollato una recensione sprezzante del libro</li>
+    <li>anecdote->Il [precis_synonym] indica che questo libro passò attraverso il sistema bibliotecario pubblico di [urbworld]</li>
     <li>anecdote->Secondo il [note_location], [ANYPAWN_nameFull] era noto per essere un maestro di molte discipline</li>
-    <li>anecdote->Secondo il [note_location], gli abitanti di [worldname] parlano ancora di [ANYPAWN_nameFull] e ricordano il suo amore per [subject]</li>
-    <li>anecdote->Secondo il [note_location], un bizzarro incidente di intreccio uccise l'autore, [ANYPAWN_nameFull], poco dopo la pubblicazione</li>
+    <li>anecdote->Secondo il [note_location], la gente di [worldname] parla ancora di [ANYPAWN_nameFull] e ricorda il suo amore per [subject]</li>
+    <li>anecdote->Secondo il [note_location], un incidente di intreccio anomalo uccise l'autore, [ANYPAWN_nameFull], poco dopo la pubblicazione</li>
     <li>anecdote->Secondo il [precis_synonym], [ANYPAWN_nameFull] trascorse i suoi giorni insegnando all'accademia su [coreworld]. Questo libro è tratto dalle sue lezioni</li>
-    <li>anecdote->Secondo il [precis_synonym], la conoscenza di [ANYPAWN_nameFull] su [subject] era così rinomata che la gente lo fermava per strada per fargli domande</li>
+    <li>anecdote->Secondo il [precis_synonym], la conoscenza di [ANYPAWN_nameFull] su [subject] era così rinomata che la gente lo fermava per strada per interrogarlo al riguardo</li>
     <li>anecdote->Secondo il [note_location], [ANYPAWN_nameFull] era povero e vendette i diritti di questa serie per pochissimo</li>
     <li>anecdote->Secondo il [note_location], [ANYPAWN_nameFull] era cieco dalla nascita, quindi non vide mai il suo libro</li>
-    <li>anecdote->Secondo il [note_location], la prima bozza del [textbook] di [ANYPAWN_nameFull] conteneva tristemente cinquanta pagine di digressioni. Furono eliminate per la seconda edizione</li>
-    <li>anecdote->Secondo il [note_location], la reputazione di [ANYPAWN_nameFull] era così pessima che [ANYPAWN_pronoun] pubblicò questo libro con uno pseudonimo</li>
-    <li>anecdote->Secondo il [note_location], da bambino [ANYPAWN_nameFull] era così svogliato che i genitori disperavano. Questo textbook è la dimostrazione della sua abilità</li>
-    <li>anecdote->Secondo il [precis_synonym], fu durante il suo quarto matrimonio che [ANYPAWN_nameFull] concepì l'idea di un [textbook] su [subject]. (Questo portò al suo quarto divorzio)</li>
+    <li>anecdote->Secondo il [note_location], la prima bozza del [textbook] di [ANYPAWN_nameFull] conteneva tristemente cinquanta pagine di digressioni. Furono eliminate nella seconda edizione</li>
+    <li>anecdote->Secondo il [note_location], la reputazione di [ANYPAWN_nameFull] era così pessima che [ANYPAWN_pronoun] pubblicò questo libro sotto pseudonimo</li>
+    <li>anecdote->Secondo il [note_location], da bambino [ANYPAWN_nameFull] era così svogliato che i suoi genitori disperavano. Questo [textbook] è la rivendicazione della sua abilità</li>
+    <li>anecdote->Secondo il [precis_synonym], fu durante il quarto matrimonio di [ANYPAWN_nameFull] che [ANYPAWN_pronoun] concepì l'idea di un [textbook] su [subject]. (Questo portò al suo quarto divorzio)</li>
+    <li>textbook->prontuario</li>
     <li>textbook->manuale</li>
     <li>textbook->libro di testo</li>
-    <li>textbook->testo</li>
     <li>textbook(p=6)->libro</li>
     <li>textbook->quaderno di esercizi</li>
-    <li>textbook->libro di consultazione</li>
+    <li>textbook->libro di riferimento</li>
     <li>textbook->compendio</li>
     <li>textbook->guida</li>
     <li>textbook->opuscolo</li>
     <li>textbook->programma</li>
-    <li>textbook->libro del corso</li>
+    <li>textbook->corso</li>
     <li>textbook->libro di riferimento</li>
     <li>textbook->libro scolastico</li>
     <li>textbook->enciclopedia</li>
-    <li>textbook->manuale tascabile</li>
-    <li>textbook->libro professionale</li>
+    <li>textbook->manuale pratico</li>
+    <li>textbook->libro commerciale</li>
     <li>textbook->opera</li>
-    <li>precis_synonym->sunto</li>
+    <li>precis_synonym->compendio</li>
     <li>precis_synonym->frontespizio</li>
     <li>precis_synonym->abstract</li>
     <li>precis_synonym->sinossi</li>
     <li>precis_synonym->schema</li>
-    <li>precis_synonym->digest</li>
+    <li>precis_synonym->sintesi</li>
     <li>note_location->copertina anteriore</li>
     <li>note_location->copertina posteriore</li>
     <li>note_location->aletta anteriore</li>
@@ -2129,24 +2129,24 @@
     <li>note->nota</li>
     <li>note->addendum</li>
     <li>note->postfazione</li>
-    <li>note->afterword</li>
+    <li>note->epilogo</li>
     <li>note->appendice</li>
     <li>note->coda</li>
     <li>note->nota a piè di pagina</li>
     <li>note->nota finale</li>
-    <li>useful_information->curiosità utili</li>
     <li>useful_information->informazioni utili</li>
-    <li>useful_information->fatti interessanti</li>
-    <li>useful_information->intuizioni preziose</li>
-    <li>useful_information->spunti pratici</li>
+    <li>useful_information->dettagli interessanti</li>
+    <li>useful_information->spunti preziosi</li>
+    <li>useful_information->approfondimenti pratici</li>
     <li>useful_information->consigli utili</li>
     <li>useful_information->dettagli informativi</li>
+    <li>useful_information->spunti di informazioni utili</li>
     <li>understanding_synonym->conoscenza di</li>
-    <li>understanding_synonym->auto-miglioramento in</li>
-    <li>understanding_synonym->una comprensione di</li>
-    <li>understanding_synonym->studio su</li>
+    <li>understanding_synonym->miglioramento personale in</li>
+    <li>understanding_synonym->comprensione di</li>
+    <li>understanding_synonym->studio di</li>
     <li>understanding_synonym->erudizione in</li>
-    <li>understanding_synonym->esperienza in</li>
+    <li>understanding_synonym->competenza in</li>
     <li>understanding_synonym->una filosofia di</li>
     <li>understanding_synonym->l'etica di</li>
     <li>notable_adjective->famoso</li>
@@ -2156,7 +2156,7 @@
     <li>notable_adjective->comune</li>
     <li>notable_adjective->familiare</li>
     <li>notable_adjective->senza tempo</li>
-    <li>notable_adjective->sbilenco</li>
+    <li>notable_adjective->sbilanciato</li>
     <li>notable_adjective->armonioso</li>
     <li>notable_adjective->elegante</li>
     <li>notable_adjective->semplice</li>
@@ -2172,28 +2172,28 @@
     <li>exterior_quality(quality[less_than]5,quality[greater_than]1)->Questo libro di testo ha visto giorni migliori, ma</li>
     <li>exterior_quality(quality[less_than]5,quality[greater_than]1)->Nonostante sia un libro scolastico di seconda mano,</li>
     <li>exterior_quality(quality[less_than]5,quality[greater_than]1)->Questo libro ha avuto molti proprietari, ma</li>
-    <li>exterior_quality(quality[less_than]2)->La copertina di questo libro sembra attraente ma</li>
+    <li>exterior_quality(quality[less_than]2)->La parte frontale di questo libro sembra attraente ma</li>
     <li>exterior_quality(quality[less_than]2)->Qualcuno ha strappato via il primo terzo del libro e</li>
-    <li>exterior_quality(quality[less_than]2)->La copertina è impregnata di un liquido dall'odore forte e</li>
+    <li>exterior_quality(quality[less_than]2)->La copertina è intrisa di un liquido dall'odore forte e</li>
     <li>exterior_quality(quality[less_than]2)->A prima vista il libro sembra a posto, ma</li>
     <li>page_quality->le pagine [page_condition]</li>
     <li>page_condition(quality[greater_than]4)->[page_excellent]</li>
     <li>page_condition(quality[less_than]5,quality[greater_than]1)->[page_decent]</li>
     <li>page_condition(quality[less_than]2)->[page_awful]</li>
-    <li>page_excellent->sono in condizioni eccezionali, come se non fossero mai state toccate</li>
+    <li>page_excellent->sono in condizioni straordinarie, come se non fossero mai state toccate</li>
     <li>page_excellent->sono in ottime condizioni</li>
     <li>page_excellent->sono intatte</li>
     <li>page_excellent->sono luminose e pulite</li>
-    <li>page_excellent->sono particolarmente ben conservate</li>
+    <li>page_excellent->sono eccezionalmente ben conservate</li>
     <li>page_decent->sono in condizioni decenti</li>
-    <li>page_decent->sono leggibili, anche se spiegazzate</li>
+    <li>page_decent->sono leggibili, seppur stropicciate</li>
     <li>page_decent->sono perfettamente leggibili</li>
-    <li>page_decent->sono in buone condizioni, sebbene leggermente segnate</li>
-    <li>page_awful->sembrano scritte su pergamena sgretolata</li>
+    <li>page_decent->sono decenti, seppur leggermente segnate</li>
+    <li>page_awful->sembrano scritte su pergamena sbriciolata</li>
     <li>page_awful->sono gravemente danneggiate</li>
     <li>page_awful->sono macchiate da una sostanza scura</li>
     <li>page_awful->sono illeggibili</li>
-    <li>page_awful->sono annotate con una calligrafia incomprensibile</li>
+    <li>page_awful->sono state annotate con una grafia indecifrabile</li>
     <li>worldname->[glitterworld]</li>
     <li>worldname->[urbworld]</li>
     <li>worldname->[deadworld]</li>
@@ -2397,5 +2397,6 @@
     <li>warworld->Cimbria XII</li>
     <li>warworld->Barkitos</li>
   </Description_SkillBook.rulePack.rulesStrings>
-  
+
+
 </LanguageData>
