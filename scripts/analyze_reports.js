@@ -1,7 +1,9 @@
+// node analyze_reports.js
+
 const fs = require('fs');
 const path = require('path');
 
-const logsDir = path.join(__dirname, '..', 'EXTRA', 'reports');
+const logsDir = path.join(__dirname, '..', 'reports');
 
 const regex = /^=+ (.+?) \((\d+)\) =+$/gm;
 
@@ -10,8 +12,8 @@ const allFiles = fs.readdirSync(logsDir)
 
 // Ordina i file per data 'YYYYMMDD'
 const files = allFiles.sort((a, b) => {
-    const dateA = a.match(/report_(\d{8})(?:_(\d+))?\.txt/);
-    const dateB = b.match(/report_(\d{8})(?:_(\d+))?\.txt/);
+    const dateA = a.match(/(.)*(\d{8})(?:_(\d+))?\.txt/);
+    const dateB = b.match(/(.)*(\d{8})(?:_(\d+))?\.txt/);
     // Ordina prima per data, poi per numero intero (se presente)
     const cmp = dateA[1].localeCompare(dateB[1]);
     if (cmp !== 0) return cmp;
