@@ -25,17 +25,17 @@
   <Collectivist.descriptionMaker.rules.rulesStrings>
     <li>creation(tag=meme_Collectivist)        ->[deity0_name] creò tutti gli uomini e le donne da un unico grande stampo, e coloro che si deviarono [deity0_pronoun] li gettò nel fuoco affinché i fedeli potessero vivere in armonia.</li>
     <li>episode(uses=1,tag=meme_Collectivist)  ->[deity0_name] disse a tutti: "Nessuno di voi è al di sopra del gruppo. Lavorate insieme o perite insieme".</li>
-    <li>intro(tag=meme_Collectivist)           ->Gli abitanti di [place_summary] [place_name] lavorarono insieme in armonia e costruirono un grande [altarName] per onorare [deity0_name], che insegnò loro il vero valore de[memeConceptDef].</li>
+    <li>intro(tag=meme_Collectivist)           ->Gli abitanti di [place_summary] [place_name] lavorarono insieme in armonia e costruirono un grande [altarName] per onorare [deity0_name], che insegnò loro il vero valore di [memeConcept].</li>
     <li>conflict(tag=meme_Collectivist)        ->Il [foeLeader] non sopportava la famiglia dei [memberNamePlural], e inviò i suoi [foeSoldiers] a [place_community] per metterli gli uni contro gli altri.</li>
-    <li>founderJoin(tag=meme_Collectivist)     ->Un [place_job] chiamato [founderName] si gettò [founder_pronoun] stesso in un rogo per protestare contro il suo [foeLeader], ma i [memberNamePlural] [founder_objective] lo tirarono fuori e lo nominarono loro leader per la sua devozione al gruppo.</li>
-    <li>victory(tag=meme_Collectivist)         ->Le azioni di [founderName] unirono il popolo. Marciarono all'unisono verso la dimora del [foeLeader]. Quelli in prima linea si lasciarono uccidere dai [foeSoldiers], ma l'insieme non poté essere fermato, e catturarono il [foeLeader].</li>
+    <li>founderJoin(tag=meme_Collectivist)     ->Un [place_job] chiamato [founderName] si gettò tra le fiamme per protestare contro il [foeLeader], ma i [memberNamePlural] lo tirarono fuori e lo nominarono loro leader per la sua devozione al gruppo.</li>
+    <li>victory(tag=meme_Collectivist)         ->Le azioni di [founderName] unirono il popolo. Marciarono all’unisono verso la dimora del [foeLeader]. Quelli in prima linea si lasciarono uccidere dai [foeSoldiers], ma l’insieme non poté essere fermato, e catturarono il [foeLeader].</li>
     <li>setup(tag=meme_Collectivist)           ->In un mondo di "si salvi chi può", [founderName] iniziò una nuova famiglia di estranei, riunendo molte persone diverse.</li>
     <li>story(uses=1,tag=meme_Collectivist)    ->Alcuni falsi credenti cercarono di infrangere le regole e decidere le proprie vie. [founderName] li punì severamente.</li>
     <li>lessonIntro(tag=meme_Collectivist)     ->Il [place_job] smise di contribuire ma continuò a mangiare dal magazzino comune. Lo uccisi con una [place_personalWeapon]. La gente si sorprese, ma spiegai loro che</li>
     <li>lesson(tag=meme_Collectivist)          ->la mia morte, e la tua, non significheranno nulla, finché il nostro popolo sopravvivrà</li>
-    <li>lessonReinforcement(tag=meme_Collectivist) ->Se morirò insegnando questo all'universo, sarà il mio più grande trionfo.</li>
+    <li>lessonReinforcement(tag=meme_Collectivist) ->Se morirò insegnando questo all’universo, sarà il mio più grande trionfo.</li>
     <li>archistBasis(tag=meme_Collectivist)    ->Gli archeotecnici sono tutti aspetti di una supermente.</li>
-    <li>archistFact(tag=meme_Collectivist)     ->Gli archeotecnici non sono interessati a giudicarci uno per uno. Attendono un unico popolo che possa dimostrare il nostro valore agendo moralmente come un tutt'uno.</li>
+    <li>archistFact(tag=meme_Collectivist)     ->Gli archeotecnici non sono interessati a giudicarci uno per uno. Attendono un unico popolo che possa dimostrare il nostro valore agendo moralmente come un tutt’uno.</li>
     <li>archistProphecy(tag=meme_Collectivist) ->[inTheEnd], gli archeotecnici partiranno quando troveranno un popolo che si presenti come degno compagno della coscienza del Dio-macchina.</li>
     <li>animistFact(tag=meme_Collectivist)     ->Ogni spirito è semplicemente un aspetto di tutti gli altri, e coloro che tentano di restare soli cadono rapidamente.</li>
   </Collectivist.descriptionMaker.rules.rulesStrings>
@@ -58,30 +58,30 @@
   <Collectivist.generalRules.rulesStrings>
     <li>memeAdjective->unitario</li>
     <li>memeAdjective->armonioso</li>
-    <li>memeAdjective->solidario</li>
-    <li>memeAdjective->unificado</li>
-    <li>memeAdjective->indivisible</li>
-    <li>memeAdjective->colectivo</li>
+    <li>memeAdjective->solidale</li>
+    <li>memeAdjective->unificato</li>
+    <li>memeAdjective->indivisibile</li>
+    <li>memeAdjective->collettivo</li>
     <li>memeAdjectiveFem->unitaria</li>
-    <li>memeAdjectiveFen->armoniosa</li>
-    <li>memeAdjectiveFem->solidaria</li>
-    <li>memeAdjectiveFem->unificada</li>
-    <li>memeAdjectiveFem->indivisible</li>
-    <li>memeAdjectiveFem->colectiva</li>
-    <li>memeCreed->colectivo</li>
-    <li>memeCreedFem->cooperativa</li>
-    <li>memeCreedFem->comunidad</li>
-    <li>memeCreedFem->familia</li>
-    <li>memeConcept->familia</li>
-    <li>memeConceptDef-> la familia</li>
+    <li>memeAdjectiveFem->armoniosa</li>
+    <li>memeAdjectiveFem->solidale</li>
+    <li>memeAdjectiveFem->unificata</li>
+    <li>memeAdjectiveFem->indivisibile</li>
+    <li>memeAdjectiveFem->collettiva</li>
+    <li>memeCreed->collettivo</li>
+    <li>memeCreed->cooperativo</li>
+    <li>memeCreed->comune</li>
+    <li>memeCreed->famiglia</li>
+    <li>memeConcept->famiglia</li>
+    <li>memeConceptDef-> la famiglia</li>
     <li>memeLeaderNoun->presidente</li>
-    <li>memeLeaderNoun->secretario</li>
-    <li>memeMoralist->comisario</li>
+    <li>memeLeaderNoun->segretario</li>
+    <li>memeMoralist->commissario</li>
   </Collectivist.generalRules.rulesStrings>
   <!-- EN: solidaritist -->
   <Collectivist.symbolPacks.0.adjective>solidarista</Collectivist.symbolPacks.0.adjective>
   <!-- EN: solidaritor -->
-  <Collectivist.symbolPacks.0.member>solidarietà</Collectivist.symbolPacks.0.member>
+  <Collectivist.symbolPacks.0.member>solidaritista</Collectivist.symbolPacks.0.member>
   <!-- EN: solidarity -->
   <Collectivist.symbolPacks.0.theme>solidarietà</Collectivist.symbolPacks.0.theme>
   <!-- EN: unitary -->
@@ -97,11 +97,11 @@
   <!-- EN: harmony -->
   <Collectivist.symbolPacks.2.theme>armonia</Collectivist.symbolPacks.2.theme>
   <!-- EN: oneist -->
-  <Collectivist.symbolPacks.3.adjective>oneista</Collectivist.symbolPacks.3.adjective>
+  <Collectivist.symbolPacks.3.adjective>unoista</Collectivist.symbolPacks.3.adjective>
   <!-- EN: oneist -->
-  <Collectivist.symbolPacks.3.member>oneista</Collectivist.symbolPacks.3.member>
+  <Collectivist.symbolPacks.3.member>unoista</Collectivist.symbolPacks.3.member>
   <!-- EN: oneness -->
-  <Collectivist.symbolPacks.3.theme>unità</Collectivist.symbolPacks.3.theme>
+  <Collectivist.symbolPacks.3.theme>unicità</Collectivist.symbolPacks.3.theme>
   
   <!-- EN: individualist -->
   <Individualist.label>individualista</Individualist.label>
@@ -160,10 +160,10 @@
     <li>memeAdjectiveFem->libera</li>
     <li>memeAdjectiveFem->aperta</li>
     <li>memeAdjectiveFem->liberale</li>
-    <li>memeConcept->individualità</li>
+    <li>memeConcept->sé</li>
     <li>memeConcept->indipendenza</li>
     <li>memeConcept->libertà</li>
-    <li>memeConceptDef-> l’individualità</li>
+    <li>memeConceptDef-> il sé</li>
     <li>memeConceptDef-> l’indipendenza</li>
     <li>memeConceptDef-> la libertà</li>
   </Individualist.generalRules.rulesStrings>
@@ -194,8 +194,8 @@
   <!-- EN: Autonomism -->
   <Individualist.symbolPacks.3.ideoName>Autonomismo</Individualist.symbolPacks.3.ideoName>
   <!-- EN: autonomor -->
-  <Individualist.symbolPacks.3.member>autosufficienza</Individualist.symbolPacks.3.member>
+  <Individualist.symbolPacks.3.member>autonomista</Individualist.symbolPacks.3.member>
   <!-- EN: autonomy -->
   <Individualist.symbolPacks.3.theme>autonomia</Individualist.symbolPacks.3.theme>
-  
+
 </LanguageData>

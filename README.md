@@ -47,7 +47,12 @@ INSTALLAZIONE STEAM (nuova):
     - install_copy.ps1: per copiare tutte le traduzioni nella cartella di installazione di RimWorld.
     - install_link.ps1: per creare un collegamento simbolico alla cartella di traduzione, in modo da non doverla copiare ogni volta che si aggiorna la traduzione.
 
-N.B. Se non si dispone di PowerShell, è possibile installare la traduzione manualmente seguendo le istruzioni di installazione copiando tutte le cartelle di traduzione nella cartella di installazione di RimWorld, come descritto sopra.
+N.B. 
+- Se non si dispone di PowerShell, è possibile installare la traduzione manualmente seguendo le istruzioni di installazione copiando tutte le cartelle di traduzione nella cartella di installazione di RimWorld, come descritto sopra.
+
+Consigli dello sviluppatore:
+- Si consiglia di utilizzare il comando git clone sul repository ufficiale e di usare lo script install_link.ps1 . 
+in caso di aggiornamenti sarà necessario solo dare il comando `git pull` per aggiornare la traduzione.
 
 SEGNALAZIONE ERRORI:
 ------------------------------
