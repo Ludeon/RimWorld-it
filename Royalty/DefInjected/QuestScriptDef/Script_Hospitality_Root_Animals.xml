@@ -126,19 +126,28 @@
     <li>questName(lodgersCount==1)->accudire il [lodgersLabel]</li>
     <li>questName(lodgersCount==1)->prendersi cura di [lodgers0_nameDef]</li>
     <li>questName(lodgersCount==1)->il povero [lodgers0_nameDef]</li>
-    <li>questName(lodgersCount>=2)->i [animalAdj] [lodgersLabelPlural]</li>
-    <li>questName(lodgersCount>=2)->[animalAdj] [lodgersLabelPlural]</li>
+    <li>questName(lodgersCount>=2)->i [animalAdjPlural] [lodgersLabelPlural]</li>
+    <li>questName(lodgersCount>=2)->[animalAdjPlural] [lodgersLabelPlural]</li>
     <li>questName(lodgersCount>=2)->accudire i [lodgersLabelPlural]</li>
     <li>questName(lodgersCount==2)->prendersi cura dei [lodgersLabelPlural]</li>
     <li>animalAdj->adorabile</li>
-    <li>animalAdj->dagli occhi dolci</li>
+    <li>animalAdj->tenero</li>
     <li>animalAdj->leale</li>
     <li>animalAdj->affettuoso</li>
     <li>animalAdj->tranquillo</li>
     <li>animalAdj->gentile</li>
     <li>animalAdj->fiero</li>
+    <li>animalAdjPlural->adorabili</li>
+    <li>animalAdjPlural->teneri</li>
+    <li>animalAdjPlural->leali</li>
+    <li>animalAdjPlural->affettuosi</li>
+    <li>animalAdjPlural->tranquilli</li>
+    <li>animalAdjPlural->gentili</li>
+    <li>animalAdjPlural->fieri</li>
     <li>animalAdj(generateThreats==true)->braccato</li>
     <li>animalAdj(generateThreats==true)->spaventato</li>
+    <li>animalAdjPlural(generateThreats==true)->braccati</li>
+    <li>animalAdjPlural(generateThreats==true)->spaventati</li>
   </Hospitality_Animals.questNameRules.rulesStrings>
   
 </LanguageData>

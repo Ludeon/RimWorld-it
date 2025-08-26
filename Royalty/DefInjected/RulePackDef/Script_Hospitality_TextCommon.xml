@@ -53,13 +53,21 @@
     <li>failLetterEndingCommon->[failLetterEndingQuest]\n\nYour relations with [asker_faction_name] have decreased by [goodwillPenalty].</li>
   -->
   <QuestHospitalityCommon.rulePack.rulesStrings>
-    <li>allLodgerInfo->[healthInfo][minMoodInfo][workInfo][includesChildren]</li>
-    <li>lodgersLabelSingOrPlural(lodgersCount==1)->[lodgers0_nameDef]</li>
-    <li>lodgersLabelSingOrPlural(lodgersCount>=2)->[lodgersLabelPlural]</li>
     <li>lodgers_o_i(lodgersCount==1)->o</li>
     <li>lodgers_o_i(lodgersCount>=2)->i</li>
     <li>lodgersIsAre(lodgersCount==1)->è</li>
     <li>lodgersIsAre(lodgersCount>=2)->sono</li>
+    <li>lodgersDeveDevono(lodgersCount==1)->deve</li>
+    <li>lodgersDeveDevono(lodgersCount>=2)->devono</li>
+    <li>lodgersAAnno(lodgersCount==1)->à</li>
+    <li>lodgersAAnno(lodgersCount>=2)->anno</li>
+    <li>lodgersHasHave(lodgersCount==1)->ha</li>
+    <li>lodgersHasHave(lodgersCount>=2)->hanno</li>
+    <li>areIs(lodgersCount==1)->è</li>
+    <li>areIs(lodgersCount>=2)->sono</li>
+    <li>allLodgerInfo->[healthInfo][minMoodInfo][workInfo][includesChildren]</li>
+    <li>lodgersLabelSingOrPlural(lodgersCount==1)->[lodgers0_nameDef]</li>
+    <li>lodgersLabelSingOrPlural(lodgersCount>=2)->[lodgersLabelPlural]</li>
     <li>lodgersLabelSingOrPluralDef(lodgersCount==1)->[lodgers0_nameDef]</li>
     <li>lodgersLabelSingOrPluralDef(lodgersCount>=2)->i [lodgersLabelPlural]</li>
     <li>includesChildren(priority=-999)-></li>
@@ -69,12 +77,12 @@
     <li>healthInfo(lodgersHaveBloodRotAndParalysis==true,priority=1)->\n\n[paralyzedInfo]\n\n[bloodRotInfo]</li>
     <li>healthInfo(lodgersAreParalyzed==true,priority=1)->\n\n[paralyzedInfo]</li>
     <li>healthInfo(lodgersHaveBloodRot==true,priority=1)->\n\n[bloodRotInfo]</li>
-    <li>paralyzedInfo->[lodgersLabelSingOrPluralDef] [areIs] affett{lodgersCount==1 ? o : i} da abasia paralitica e devon{lodgersCount==1 ? o essere : o essere} tenut{lodgersCount==1 ? o : i} a letto.</li>
-    <li>bloodRotInfo->[lodgersLabelSingOrPluralDef] [areIs] malat{lodgersCount==1 ? o : i} di necrosi sanguigna e necessiterann{lodgersCount==1 ? o : o} di cure quotidiane. La malattia può essere rallentata con cure e medicine di alta qualità, ma generalmente non può essere curata del tutto. Se la malattia diventa grave, [lodgersLabelSingOrPluralDef] morirann{lodgersCount==1 ? o : o}, quindi assicurati di avere le forniture mediche necessarie.</li>
+    <li>paralyzedInfo->[lodgersLabelSingOrPluralDef] [areIs] affett[lodgers_o_i] da abasia paralitica e [lodgersDeveDevono] essere tenut[lodgers_o_i] a letto.</li>
+    <li>bloodRotInfo->[lodgersLabelSingOrPluralDef] [areIs] malat[lodgers_o_i] di necrosi sanguigna e necessiter[lodgersAAnno] di cure quotidiane. La malattia può essere rallentata con cure e medicine di alta qualità, ma generalmente non può essere curata del tutto. Se la malattia diventa grave, [lodgersLabelSingOrPluralDef] morir[lodgersAAnno], quindi assicurati di avere le forniture mediche necessarie.</li>
     <li>minMoodInfo-></li>
     <li>minMoodInfo(lodgersCountWithMoodThreshold>0,priority=1)->\n\nDevi mantenere l'umore di [lodgersLabelSingOrPluralDef] sopra [lodgersMoodThreshold_percent].</li>
     <li>workInfo-></li>
-    <li>workInfo(lodgersWillNotWork==true,priority=1)->\n\n[lodgersLabelSingOrPluralDef] non svolgerann{lodgersCount==1 ? o : o} alcun lavoro.</li>
+    <li>workInfo(lodgersWillNotWork==true,priority=1)->\n\n[lodgersLabelSingOrPluralDef] non svolger[lodgersAAnno] alcun lavoro.</li>
     <li>commonDescEnding->[helpersParagraph]</li>
     <li>enemyGroupsParagraph->[threatDescriptionParagraph]</li>
     <li>threatDescriptionParagraph(threatType==Raids,threatCount==1,threatSize==1)->ci sarà (*Threat)un'incursione(/Threat) di circa queste dimensioni:\n\n[threatExample]</li>
@@ -85,9 +93,9 @@
     <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==2,threatSize==1)->(*Threat)due cluster di mechanoid(/Threat) si dispiegheranno nelle vicinanze.</li>
     <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==1,threatSize>1)->(*Threat)un cluster di mechanoid(/Threat) di dimensione [threatSize]x si dispiegherà nelle vicinanze.</li>
     <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==2,threatSize>1)->(*Threat)due cluster di mechanoid(/Threat) di dimensione [threatSize]x si dispiegheranno nelle vicinanze.</li>
-    <li>threatsInfoMechClustersSingleHuman->[lodgers0_nameDef] recentemente [mechViolation], ed è stat{lodgersCount==1 ? o : i} preso di mira da uno sciame di mechanoid in orbita.</li>
+    <li>threatsInfoMechClustersSingleHuman->[lodgers0_nameDef] recentemente [mechViolation], ed è stat[lodgers_o_i] preso di mira da uno sciame di mechanoid in orbita.</li>
     <li>threatsInfoMechClustersMultiPrisoners->I prigionieri hanno recentemente [mechViolation] e sono stat{i} presi di mira da uno sciame di mechanoid in orbita.</li>
-    <li>threatsInfoMechRaidsSingleHuman->[lodgers0_nameDef] recentemente [mechViolation], ed è stat{lodgersCount==1 ? o : i} preso di mira da un alveare di mechanoid.</li>
+    <li>threatsInfoMechRaidsSingleHuman->[lodgers0_nameDef] recentemente [mechViolation], ed è stat[lodgers_o_i] preso di mira da un alveare di mechanoid.</li>
     <li>threatsInfoMechRaidsMultiHuman->Hanno recentemente [mechViolation] e sono stat{i} presi di mira da un alveare di mechanoid.</li>
     <li>mechViolation->in qualche modo ha fatto infuriare una personalità meccanica</li>
     <li>mechViolation->ha violato un antico terminale di supercomputer</li>
@@ -95,12 +103,8 @@
     <li>mechViolation->ha tentato di hackerare un nodo di controllo dei mechanoid</li>
     <li>mechViolation->ha tentato di rubare da un antico sito di stoccaggio</li>
     <li>letterSubject->{SUBJECT_definite}</li>
-    <li>lodgersHasHave(lodgersCount==1)->ha</li>
-    <li>lodgersHasHave(lodgersCount>=2)->hanno</li>
     <li>lodgersObjective(lodgersCount==1)->[lodgers0_objective]</li>
     <li>lodgersObjective(lodgersCount>=2)->loro</li>
-    <li>areIs(lodgersCount==1)->è</li>
-    <li>areIs(lodgersCount>=2)->sono</li>
     <li>remainingWillNowLeave(lodgersCount==1)-></li>
     <li>remainingWillNowLeave(lodgersCount>=2)->I [lodgersLabelPlural] rimasti ora se ne andranno. </li>
     <li>failLetterEndingQuest->Hai fallito la missione '[resolvedQuestName]'.</li>
