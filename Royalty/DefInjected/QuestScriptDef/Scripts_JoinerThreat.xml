@@ -202,17 +202,17 @@
     <li>joinersEnemies->[joiner_possessive] enemies</li>
   -->
   <ThreatReward_SiteThreat_Joiner.questDescriptionRules.rulesStrings>
-    <li>questDescription->[introduction] di nome [joiner_nameFull] sta chiamando da vicino. [joiner_pronoun] si sta nascondendo da [threat]. [joiner_pronoun] vuole fuggire dal suo nascondiglio e unirsi a te in [map_definite].[joiner_relationInfo]\n\nSe accetti [joiner_objective], [joinersEnemies] allestiranno un sito nelle vicinanze per molestarti. [site/allSitePartsDescriptions]\n\nLa minaccia rimarrà finché non andrai a distruggerla.</li>
+    <li>questDescription->[introduction] di nome [joiner_nameFull] ti sta chiamando nei paraggi. [joiner_pronoun] si sta nascondendo dai [threat]. [joiner_pronoun] vuole fuggire dal suo nascondiglio e unirsi a te in [map_definite].[joiner_relationInfo]\n\nSe accetti i [joinersEnemies] allestiranno un sito nelle vicinanze per molestarti. [site/allSitePartsDescriptions]\n\nLa minaccia rimarrà finché non andrai a distruggerla.</li>
     <li>introduction(childCount==1,priority=1)->Un bambino di [joiner_age] anni</li>
     <li>introduction->Un [joiner_title] di [joiner_age] anni</li>
     <li>threat(priority=1,site/Outpost_exists==True)->[site/enemyFaction_pawnsPlural] di [site/enemyFaction_name]</li>
     <li>threat(priority=1,site/MechCluster_exists==True)->mechanoidi</li>
     <li>threat(priority=1,site/SleepingMechanoids_exists==True)->mechanoidi</li>
-    <li>threat->[joiner_possessive] nemici</li>
+    <li>threat->suoi nemici</li>
     <li>joinersEnemies(priority=1,site/Outpost_exists==True)->[site/enemyFaction_name]</li>
     <li>joinersEnemies(priority=1,site/MechCluster_exists==True)->mechanoidi</li>
     <li>joinersEnemies(priority=1,site/SleepingMechanoids_exists==True)->mechanoidi</li>
-    <li>joinersEnemies->[joiner_possessive] nemici</li>
+    <li>joinersEnemies->suoi nemici</li>
   </ThreatReward_SiteThreat_Joiner.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[joiner_nameDef]'s [site/site_label]</li>
@@ -220,9 +220,9 @@
     <li>questName->the [site/site_label] and [joiner_nameDef]</li>
   -->
   <ThreatReward_SiteThreat_Joiner.questNameRules.rulesStrings>
-    <li>questName->[site_label] di [joiner_nameDef]</li>
-    <li>questName->[joiner_nameDef] e il [site_label]</li>
-    <li>questName->il [site_label] e [joiner_nameDef]</li>
+    <li>questName->[site/site_label] di [joiner_nameDef]</li>
+    <li>questName->[joiner_nameDef] e il [site/site_label]</li>
+    <li>questName->il [site/site_label] e [joiner_nameDef]</li>
   </ThreatReward_SiteThreat_Joiner.questNameRules.rulesStrings>
   <!-- EN: Since you accepted [../joiner_nameDef], [../threat] have set up a nearby site to harass you.\n                    \n[allSitePartsDescriptions] -->
   <ThreatReward_SiteThreat_Joiner.LetterTextSiteAppeared.value.slateRef>Dato che hai accettato [../joiner_nameDef], [../threat] ha allestito un accampamento nelle vicinanze per perseguitarti.\n                    \n[allSitePartsDescriptions]</ThreatReward_SiteThreat_Joiner.LetterTextSiteAppeared.value.slateRef>

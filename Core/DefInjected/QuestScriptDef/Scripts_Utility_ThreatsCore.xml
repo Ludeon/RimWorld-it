@@ -15,8 +15,8 @@
       <li>root(priority=1,sitePart==RaidSource)->c'è una zona militare presidiata da (*Threat)[enemiesCount] [enemiesLabel](/Threat) che lancerà incursioni contro di te ogni [mtbDays]</li>
       <li>root(priority=1,sitePart==Outpost)->c'è un avamposto nemico nel sito difeso da (*Threat)[enemiesCount] [enemiesLabel](/Threat)</li>
       <li>root(priority=1,sitePart==BanditCamp)->c'è un campo di banditi nel sito difeso da (*Threat)[enemiesCount] [enemiesLabel](/Threat)</li>
-      <li>root(priority=1,sitePart==Manhunters,count==1)->(*Threat)un [kindLabel] predatore d'uomini(/Threat) si aggira nelle vicinanze</li>
-      <li>root(priority=1,sitePart==Manhunters,count>1)->(*Threat)[count] [kindLabel] predatori d'uomini(/Threat) si aggirano nelle vicinanze</li>
+      <li>root(priority=1,sitePart==Manhunters,count==1)->(*Threat)un [kindLabel] predatore d'uomini(/Threat) che si aggira nelle vicinanze</li>
+      <li>root(priority=1,sitePart==Manhunters,count>1)->(*Threat)[count] [kindLabel] predatori d'uomini(/Threat) che si aggirano nelle vicinanze</li>
       <li>root(priority=1,sitePart==SleepingMechanoids,count==1)->(*Threat)un mechanoide(/Threat) sta dormendo nelle vicinanze</li>
       <li>root(priority=1,sitePart==SleepingMechanoids,count>1)->(*Threat)[count] mechanoidi(/Threat) stanno dormendo nelle vicinanze</li>
       <li>root(priority=1,sitePart==Turrets)->(*Threat)[threatsInfo](/Threat) difendono il sito</li>
