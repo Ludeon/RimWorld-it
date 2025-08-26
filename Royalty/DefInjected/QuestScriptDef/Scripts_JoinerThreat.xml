@@ -23,6 +23,8 @@
     <li>introduction->A [joiner_age]-year-old [joiner_title]</li>
   -->
   <ThreatReward_GameCondition_Joiner.questDescriptionRules.rulesStrings>
+    <li>helpers_o_a(joiner_gender==Female)->a</li>
+    <li>helpers_o_a(joiner_gender!=Female)->o</li>
     <li>questDescription->[introduction] di nome [joiner_nameFull] chiede aiuto! [joiner_pronoun] si sta nascondendo da [hidingFrom]. [joiner_pronoun] vuole fuggire e unirsi a te a [map_definite].[joiner_relationInfo]\n\n[condDesc]\n\nDisperat[helpers_o_a] di restare nascosto, [joiner_nameDef] afferma di non poter dirti di più su [joiner_objective].</li>
     <li>hidingFrom(gameCondition==ToxicFallout)->un branco di lupi affamati</li>
     <li>condDesc(gameCondition==ToxicFallout)->Tuttavia, [joiner_nameDef] può eliminare i lupi solo incendiando una massiccia discarica chimica tossica nelle vicinanze. Seguiranno [gameConditionDuration_duration] di ricaduta tossica.</li>
