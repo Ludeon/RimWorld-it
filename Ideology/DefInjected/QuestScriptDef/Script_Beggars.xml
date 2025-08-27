@@ -61,17 +61,23 @@
   <Beggars.questDescriptionRules.rulesStrings>
     <li>groupLabelPlural->viaggiatori</li>
     <li>groupLabelPlural(allChildren==true,priority=1)->bambini</li>
-    <li>groupLabelSingle->viaggiatore</li>
+    <li>groupLabelSingle->{beggars0_gender ? viaggiatore : viaggiatrice }</li>
     <li>groupLabelSingle(childCount>=1,priority=1)->bambino</li>
     <li>travelerInfo(beggarCount==1)->Questo [groupLabelSingle]</li>
     <li>travelerInfo(beggarCount>=2)->Questi [groupLabelPlural]</li>
-    <li>beggingForInfo->per x[requestedThingCount] [requestedThing_label]</li>
+    <li>beggingForInfo->[requestedThingCount] [requestedThing_label]</li>
     <li>traverObjectiveArt(beggarCount==1)->{beggars0_gender ? gli : le }</li>
     <li>traverObjective(beggarCount==1)->{beggars0_gender ? lui : lei }</li>
     <li>traverObjective(beggarCount>=2)->loro</li>
+    <li>traverUnUna(beggarCount==1)->{beggars0_gender ? Un : Una }</li>
+    <li>traver_o_a(beggarCount==1)->{beggars0_gender ? o : a }</li>
+    <li>item_la_le(requestedThingCount==1)->la</li>
+    <li>item_la_le(requestedThingCount>1)->le</li>
+    <li>item_a_e(requestedThingCount==1)->a</li>
+    <li>item_a_e(requestedThingCount>1)->e</li>
     <li>questDescription(beggarCount==1)->[approachInfo]. [requestInfo]. [claimInfo].\n\n[interactionInfo].\n\n[moveOnInfo].\n\n[travelerInfo] non appartiene a nessuna fazione. Se lo desideri, puoi scegliere di uccidere, arrestare, vendere o prelevare organi da [traverObjective], senza conseguenze diplomatiche.</li>
     <li>questDescription(beggarCount>=2)->[approachInfo]. [requestInfo]. [claimInfo].\n\n[interactionInfo].\n\n[moveOnInfo].\n\n[travelerInfo] non appartengono a nessuna fazione. Se lo desideri, puoi scegliere di uccidere, arrestare, vendere o prelevare organi da [traverObjective], senza conseguenze diplomatiche.</li>
-    <li>approachInfo(beggarCount==1)->Un povero [groupLabelSingle] di nome [beggars0_nameDef] si sta avvicinando in cerca di aiuto</li>
+    <li>approachInfo(beggarCount==1)->[traverUnUna] pover[traver_o_a] [groupLabelSingle] di nome [beggars0_nameDef] si sta avvicinando in cerca di aiuto</li>
     <li>approachInfo(beggarCount>=2)->Un gruppo di poveri [groupLabelPlural] si sta avvicinando in cerca di aiuto</li>
     <li>approachInfo(beggarCount>=2,childCount==1,priority=1)->Un gruppo di poveri [groupLabelPlural] con un bambino si sta avvicinando in cerca di aiuto</li>
     <li>approachInfo(beggarCount>=2,childCount>=2,allChildren==false,priority=1)->Un gruppo di poveri [groupLabelPlural] con alcuni bambini si sta avvicinando in cerca di aiuto</li>
@@ -81,7 +87,7 @@
     <li>claimInfo(beggarCount==1,requestedThingDefName==Silver,childCount==1,priority=1)->[beggars0_nameDef] vuole l'argento per comprare la libertà della sorella maggiore che è stata ridotta in schiavitù dai pirati</li>
     <li>claimInfo(beggarCount==1,requestedThingDefName==MedicineHerbal)->[beggars0_nameDef] ha bisogno della medicina per aiutare un viaggiatore ferito nelle vicinanze</li>
     <li>claimInfo(beggarCount==1,requestedThingDefName==MedicineHerbal,childCount==1,priority=1)->[beggars0_nameDef] ha bisogno della medicina per aiutare il fratellino che è ferito nelle vicinanze</li>
-    <li>claimInfo(beggarCount==1,requestedThingDefName==MedicineIndustrial)->[beggars0_nameDef] vuole la medicina per salvare il suo fedele animale domestico ferito lungo la strada</li>
+    <li>claimInfo(beggarCount==1,requestedThingDefName==MedicineIndustrial)->[beggars0_nameDef] vuole [item_la_le] medicin[item_a_e] per salvare il suo fedele animale domestico ferito lungo la strada</li>
     <li>claimInfo(beggarCount==1,requestedThingDefName==Penoxycyline)->[beggars0_nameDef] ha bisogno di [requestedThing_label] per vaccinare un amico malaticcio contro malattie mortali</li>
     <li>claimInfo(beggarCount==1,requestedThingDefName==Beer)->[beggars0_nameDef] lo vuole per affogare i suoi dispiaceri dopo aver perso un compagno di viaggio in un terribile incidente</li>
     <li>claimInfo(beggarCount==1,requestedThingDefName==Beer,childCount==1,priority=1)->[beggars0_nameDef] vuole la [requestedThing_label] per alleviare la sofferenza di uno zio gravemente malato</li>

@@ -53,6 +53,8 @@
     <li>failLetterEndingCommon->[failLetterEndingQuest]\n\nYour relations with [asker_faction_name] have decreased by [goodwillPenalty].</li>
   -->
   <QuestHospitalityCommon.rulePack.rulesStrings>
+    <li>lodgers_o_a_i(lodgersCount==1)->{lodgers0_gender ? o : a }</li>
+    <li>lodgers_o_a_i(lodgersCount>1)->i</li>
     <li>lodgers_o_i(lodgersCount==1)->o</li>
     <li>lodgers_o_i(lodgersCount>=2)->i</li>
     <li>lodgersIsAre(lodgersCount==1)->è</li>
@@ -77,8 +79,8 @@
     <li>healthInfo(lodgersHaveBloodRotAndParalysis==true,priority=1)->\n\n[paralyzedInfo]\n\n[bloodRotInfo]</li>
     <li>healthInfo(lodgersAreParalyzed==true,priority=1)->\n\n[paralyzedInfo]</li>
     <li>healthInfo(lodgersHaveBloodRot==true,priority=1)->\n\n[bloodRotInfo]</li>
-    <li>paralyzedInfo->[lodgersLabelSingOrPluralDef] [areIs] affett[lodgers_o_i] da abasia paralitica e [lodgersDeveDevono] essere tenut[lodgers_o_i] a letto.</li>
-    <li>bloodRotInfo->[lodgersLabelSingOrPluralDef] [areIs] malat[lodgers_o_i] di necrosi sanguigna e necessiter[lodgersAAnno] di cure quotidiane. La malattia può essere rallentata con cure e medicine di alta qualità, ma generalmente non può essere curata del tutto. Se la malattia diventa grave, [lodgersLabelSingOrPluralDef] morir[lodgersAAnno], quindi assicurati di avere le forniture mediche necessarie.</li>
+    <li>paralyzedInfo->[lodgersLabelSingOrPluralDef] [areIs] affett[lodgers_o_a_i] da abasia paralitica e [lodgersDeveDevono] essere tenut[lodgers_o_i] a letto.</li>
+    <li>bloodRotInfo->[lodgersLabelSingOrPluralDef] [areIs] malat[lodgers_o_a_i] di necrosi sanguigna e necessiter[lodgersAAnno] di cure quotidiane. La malattia può essere rallentata con cure e medicine di alta qualità, ma generalmente non può essere curata del tutto. Se la malattia diventa grave, [lodgersLabelSingOrPluralDef] morir[lodgersAAnno], quindi assicurati di avere le forniture mediche necessarie.</li>
     <li>minMoodInfo-></li>
     <li>minMoodInfo(lodgersCountWithMoodThreshold>0,priority=1)->\n\nDevi mantenere l'umore di [lodgersLabelSingOrPluralDef] sopra [lodgersMoodThreshold_percent].</li>
     <li>workInfo-></li>

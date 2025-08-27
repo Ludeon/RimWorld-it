@@ -1,0 +1,22 @@
+* traduci questi nomi al singolare in italiano
+* restituisci una lista in formato testo
+* controlla che ci siano tutte le parole anche se duplicate
+
+=============
+Singolare
+=============
+* per ogni parola, cerca l’articolo corretto (il, lo, la, l’)
+* applica rigorosamente queste regole:
+  * **l’** = tutti i singolari (maschili e femminili) che iniziano per vocale (a, e, i, o, u) → *l’accento, l’aspetto, l’idea, l’origine, l’amante*
+  * **lo** = maschili singolari che iniziano con **s+consonante**, **z**, **ps**, **gn**, **x**, **y** → *lo sguardo, lo zaino, lo psicologo*
+  * **il** = maschili singolari che iniziano con altra consonante
+  * **la** = femminili singolari che iniziano con consonante
+* fai un **controllo finale automatico**: se un nome singolare inizia per vocale, spostalo nel gruppo **//l’** (esempi di test: *accento → l’*, *aspetto → l’*; *sguardo → lo*; *voce → la*).
+* rispetta eventuali **generi lessicali** particolari (es.: *la fronte* = “forehead”).
+* non lasciare ambiguità né eccezioni; correggi gli errori di collocazione degli articoli.
+* restituisci una lista in formato testo per essere copiata nei vari file
+* non ricopiare l'articolo scelto
+* inserisci un commento iniziale con l'articolo scelto per il gruppo → ( es: //il )
+* controlla sempre alla fine se ci sono tutte le parole
+* usa sempre il singolare per le parole
+* salta i gruppi vuoti
