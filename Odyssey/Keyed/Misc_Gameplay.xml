@@ -108,6 +108,14 @@
   <MustBeOutside>deve essere all’esterno</MustBeOutside>
   <!-- EN: blocked by substructure -->
   <BlockedBySubstructure>bloccato dalla sottostruttura</BlockedBySubstructure>
+  <!-- EN: {PAWN_nameDef} cannot board {1} -->
+  <FailedToBoardGravship>{PAWN_nameDef} non può salire su {1}</FailedToBoardGravship>
+  <!-- EN: {PAWN_nameDef} cannot exit {1} -->
+  <FailedToLeaveGravship>{PAWN_nameDef} non può uscire da {1}</FailedToLeaveGravship>
+  <!-- EN: View range -->
+  <ViewRange>Mostra raggio</ViewRange>
+  <!-- EN: View the gravship’s current range on the world map. -->
+  <ViewRangeDesc>Mostra il raggio attuale del vascello gravitazionale sulla mappa del mondo.</ViewRangeDesc>
 
   <!-- Map generation -->
   <!-- EN: Landmark -->
@@ -287,6 +295,8 @@
   <!-- EN: Unique weapon -->
   <UniqueWeapon>Arma unica</UniqueWeapon>
 
+  <!-- EN: Reforming a caravan will abandon your gravship. Are you sure you want to continue?\n\nTo leave with your gravship, select the gravship's pilot console, then select 'launch'. -->
+  <ConfirmLoseGravship>Riformare una carovana comporterà l'abbandono del tuo vascello gravitazionale. Sei sicuro di voler continuare?\n\nPer partire con il tuo vascello gravitazionale, seleziona la console di pilotaggio del vascello e poi seleziona "lancia".</ConfirmLoseGravship>
   <!-- EN: Reforming a caravan will abandon your shuttle. Are you sure you want to continue?\n\nTo leave with your shuttle, select the shuttle, then select 'launch'. -->
   <ConfirmLoseShuttle>Riformare una carovana comporterà l'abbandono della tua navetta. Sei sicuro di voler continuare?\n\nPer partire con la tua navetta, seleziona la navetta e poi seleziona "lancia".</ConfirmLoseShuttle>
 
@@ -303,8 +313,8 @@
   <!-- Special Trainables -->
   <!-- EN: Attack -->
   <AnimalAttackTarget>Attaccare</AnimalAttackTarget>
-  <!-- EN: Command this animal to attack a specific target that its master can see. -->
-  <AnimalAttackTargetDesc>Ordina a questo animale di attaccare un bersaglio specifico che il suo padrone può vedere.</AnimalAttackTargetDesc>
+  <!-- EN: Command this animal to attack a specific target. -->
+  <AnimalAttackTargetDesc>Ordina a questo animale di attaccare un bersaglio specifico.</AnimalAttackTargetDesc>
   <!-- EN: Animals attack target -->
   <AnimalsAttackTarget>Animali attaccano il bersaglio</AnimalsAttackTarget>
   <!-- EN: Direct all mastered animals to attack a specific target. -->
@@ -328,18 +338,11 @@
   <!-- EN: Allow digging -->
   <DigEnabled>Permetti di scavare</DigEnabled>
 
-  <!-- EN: Sealing the ancient stockpile entrance is permanent. Anything or anyone left below will be lost forever.{0}\n\nAre you sure you want to continue? -->
-  <ConfirmSealHatch>Sigillare l'ingresso della scorta antica è permanente. Qualsiasi cosa o persona rimasta sotto andrà persa per sempre.{0}\n\nSei sicuro di voler continuare?</ConfirmSealHatch>
-  <!-- EN: Cannot seal -->
-  <CannotChooseSealer>Impossibile sigillare</CannotChooseSealer>
-  <!-- EN: Sealed -->
-  <Sealed>Sigillato</Sealed>
-  <!-- EN: Permanently sealed. -->
-  <HatchSealed>Sigillato in modo permanente.</HatchSealed>
   <!-- EN: Unlocked. -->
   <HatchUnlocked>Sbloccato.</HatchUnlocked>
 
   <!-- EN: A short-lived momentum repulsor surface that blocks projectiles. It works against normal shots and mortars. It shuts down instantly if hit by an EMP. -->
   <GravshipShieldTip>Una superficie di repulsione a breve durata che blocca i proiettili. Funziona contro i colpi normali e i mortai. Si disattiva istantaneamente se colpita da un EMP.</GravshipShieldTip>
+  
 
 </LanguageData>

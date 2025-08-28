@@ -252,14 +252,12 @@
   <Hospitality_Refugee.questNameRules.rulesStrings>
     <li>asker_o_a(asker_gender==Female)->a</li>
     <li>asker_o_a(asker_gender!=Female)->o</li>
-    
     <li>asker_e_i(lodgerCount==1)->e</li>
     <li>asker_e_i(lodgerCount>=2)->i</li>
-    
     <li>asker_a_o_i(asker_gender==Female)->a</li>
     <li>asker_a_o_i(asker_gender!=Female)->o</li>
     <li>asker_a_o_i(lodgerCount>=2)->i</li>
-    
+    <!-- CORE -->
     <li>questName(lodgerCount==1)->[asker_nameDef] il [lodgerAdj]</li>
     <li>questName(lodgerCount==1)->[lodgerAdj] [lodgerSingle]</li>
     <li>questName(p=2,lodgerCount>=2)->[lodgerAdj] [lodgerPlural]</li>

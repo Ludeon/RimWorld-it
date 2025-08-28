@@ -858,23 +858,12 @@
   <MessageHackerLockedOutPermanently>L'hacking di {HACKER_nameDef} è stato rilevato. {HACKER_pronoun} è stato bloccato in modo permanente.</MessageHackerLockedOutPermanently>
   <!-- EN: {0_labelShort} can be hacked again. -->
   <MessageHackableUnlocked>{0_labelShort} può essere nuovamente hackerato.</MessageHackableUnlocked>
-
-  <!-- EN: Cannot call shuttle -->
-  <CannotCallShuttle>Impossibile chiamare la navetta</CannotCallShuttle>
+  <!-- EN: Shuttle cannot land here -->
+  <ShuttleCannotLand>La navetta non può atterrare qui</ShuttleCannotLand>
   <!-- EN: The shuttle has arrived. -->
   <MessageShuttleArrived>La navetta è arrivata.</MessageShuttleArrived>
-
+  
   <!-- EN: Warning: {THING_labelCap} will not function in this biome -->
   <MessageGroundPenetratingScannerNoBedrock>Attenzione: {THING_labelCap} non funzionerà in questo bioma</MessageGroundPenetratingScannerNoBedrock>
-
-  <!-- UNUSED -->
-  <MessageFinishedLoadingTransporterSingle>La navetta è caricata con il carico necessario ed è pronto a partire.</MessageFinishedLoadingTransporterSingle>
-  <MessageRitualNeedsAtLeastOneRolePawn>È necessario un {0}.</MessageRitualNeedsAtLeastOneRolePawn>
-  <MessageRitualNeedsAtLeastNumRolePawn>È necessario almeno {1} {0}.</MessageRitualNeedsAtLeastNumRolePawn>
-  <MessageTooLowMedCare>L'intervento richiede {0} o superiore, ma le attuali capacità mediche di {PAWN_labelShort} sono "{2}".</MessageTooLowMedCare>
-  <MessageNuzzledPawnGaveNameTo>{NAMER_nameFull} ha chiamato {1} {NAMEE_nameFull} dopo essere stat{NAMER_gender ? o : a : o} coccolat{NAMER_gender ? o : a : o}.</MessageNuzzledPawnGaveNameTo>
-  <MessageSiteCountdownBecauseNoMoreEnemies>Hai sconfitto tutti i nemici. La carovana sarà riorganizzata automaticamente in {0}.</MessageSiteCountdownBecauseNoMoreEnemies>
-  <MessageSiteCountdownBecauseNoEnemiesInitially>La carovana sarà riorganizzata automaticamente in {0}. Puoi riorganizzarla adesso nella schermata del Mondo.</MessageSiteCountdownBecauseNoEnemiesInitially>
-  <GoodwillChangedReason_NaturallyOverTime>tendenza naturale a raggiungere {0} nel tempo</GoodwillChangedReason_NaturallyOverTime>
-
+  
 </LanguageData>
