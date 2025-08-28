@@ -53,13 +53,12 @@
     <li>lodgers_lo_la_li(lodgersCount>1)->li</li>
     <li>personal_characteristic(p=54)->la sua [PersonalCharacteristic_Female]</li>
     <li>personal_characteristic(p=36)->il suo [PersonalCharacteristic_Male]</li>
-    
+    <!-- CORE -->
     <li>questDescription(askerIsNull==true,lodgersCount==1)->Un capitano di una nave in orbita vuole che tu sorvegli un prigioniero di nome [lodgers0_nameFull] a [map_definite] per [shuttleDelayTicks_duration]. [allLodgerInfo][threatsInfo1][commonDescEnding]</li>
     <li>threatsInfo1(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\n[lodgers0_nameDef] ha recentemente insultato il figlio prediletto di [enemyFaction_leader_nameFull], [enemyFaction_leaderTitle] di [enemyFaction_name]. [enemyFaction_leader_nameDef] manderà [enemyFaction_pawnsPlural] per vendicarsi di chiunque protegga [lodgers0_objective]. [enemyGroupsParagraph]</li>
     <li>threatsInfo1(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\n[threatsInfoMechRaidsSingleHuman] [enemyGroupsParagraph]</li>
     <li>threatsInfo1(generateThreats==true,threatType==MechClusters)->\n\n[threatsInfoMechClustersSingleHuman] [enemyGroupsParagraph]</li>
     <li>threatsInfo1(generateThreats==false)-></li>
-    
     <li>questDescription(askerIsNull==true,lodgersCount>=2)->Un capitano di una nave in orbita vuole che tu sorvegli [lodgersCount] prigionieri a [map_definite] per [shuttleDelayTicks_duration]. [allLodgerInfo][threatsInfo2][commonDescEnding]</li>
     <li>threatsInfo2(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\nI prigionieri hanno commesso una serie di omicidi contro [enemyFaction_pawnsPlural] di [enemyFaction_name], e le famiglie delle vittime manderanno incursioni per vendicarsi. [enemyGroupsParagraph]</li>
     <li>threatsInfo2(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\nI prigionieri hanno recentemente [mechViolation] e sono stati presi di mira da un alveare di mechanoidi. [enemyGroupsParagraph]</li>
@@ -84,7 +83,7 @@
     <li>threatsInfo5(generateThreats==true,threatType==MechClusters)->\n\n[threatsInfoMechClustersSingleHuman] [enemyGroupsParagraph]</li>
     <li>threatsInfo5(generateThreats==false)-></li>
     
-    <li>questDescription(asker_royalInCurrentFaction==True,lodgersCount>=2)->[asker_nameFull], un [asker_royalTitleInCurrentFaction] di [asker_faction_name], cerca il tuo aiuto. Gli archeologi reali di [asker_nameDef] hanno recentemente estratto [lodgersCount] prigionieri da un antico deposito di criptosonno e intendono interrogarli. Per tenerli segreti ai rivali di corte, [asker_nameDef] vuole che tu [lodgers_lo_la_li] custodisca per [shuttleDelayTicks_duration]. [allLodgerInfo][threatsInfo6][commonDescEnding]</li>
+    <li>questDescription(asker_royalInCurrentFaction==True,lodgersCount>=2)->[asker_nameFull], [asker_un_una] [asker_royalTitleInCurrentFaction] di [asker_faction_name], cerca il tuo aiuto. Gli archeologi reali di [asker_nameDef] hanno recentemente estratto [lodgersCount] prigionieri da un antico deposito di criptosonno e intendono interrogarli. Per tenerli segreti ai rivali di corte, [asker_nameDef] vuole che tu [lodgers_lo_la_li] custodisca per [shuttleDelayTicks_duration]. [allLodgerInfo][threatsInfo6][commonDescEnding]</li>
     <li>threatsInfo6(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\nSfortunatamente, [enemyFaction_pawnsPlural] di [enemyFaction_name] veneravano il deposito da cui i prigionieri sono stati estratti. Manderanno incursioni per vendicarsi di chiunque li trattenga. [enemyGroupsParagraph]</li>
     <li>threatsInfo6(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\nSfortunatamente, [enemyFaction_pawnsPlural] di [enemyFaction_name] sorvegliavano il deposito da cui i prigionieri sono stati estratti. Manderanno mechanoidi per dare la caccia ai dormienti perduti. [enemyGroupsParagraph]</li>
     <li>threatsInfo6(generateThreats==true,threatType==MechClusters)->\n\n[threatsInfoMechClustersMultiPrisoners] [enemyGroupsParagraph]</li>
