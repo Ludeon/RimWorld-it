@@ -276,7 +276,7 @@
   <Description_Tome.rulePack.rulesStrings>
     <li>desc->[inThisBook], [author] [experiencesWithMonsters]. [specificHorrorStory] [writingQualitySentence].</li>
     <li>inThisBook->In [bookTypeSingle] [writingQualityAdjective]</li>
-    <li>inThisBook->In [bookTypePlural] [writingQualityAdjective]</li>
+    <li>inThisBook->In [bookTypePlural] [writingQualityAdjectivePlural]</li>
     <li>bookTypeSingle->questo rapporto</li>
     <li>bookTypeSingle->questo almanacco</li>
     <li>bookTypeSingle->questa analisi</li>
@@ -322,32 +322,32 @@
     <li>bookTypePlural->queste rivelazioni</li>
     <li>author(p=3)->l'autore</li>
     <li>author(p=3)->[anAuthorDesc], che esercita la professione di [PersonJob]</li>
-    <li>author->[anAuthorDesc] uno scienziato</li>
-    <li>author->[anAuthorDesc] una veggente</li>
-    <li>author->[anAuthorDesc] uno specialista dell'occulto</li>
-    <li>author->[anAuthorDesc] un fanatico</li>
-    <li>author->[anAuthorDesc] un fedele di setta</li>
-    <li>author->[anAuthorDesc] una fedele di setta in fuga</li>
-    <li>author->[anAuthorDesc] una venditrice di antiquariato</li>
-    <li>author->[anAuthorDesc] un predatore di tombe</li>
-    <li>author->[anAuthorDesc] un'esperta del vuoto</li>
-    <li>author->[anAuthorDesc] un vagabondo</li>
-    <li>author->[anAuthorDesc] uno scettico</li>
-    <li>author->[anAuthorDesc] una studiosa</li>
-    <li>author->[anAuthorDesc] una cacciatrice</li>
-    <li>author->[anAuthorDesc] un investigatore</li>
-    <li>author->[anAuthorDesc] un saggio</li>
-    <li>author->[anAuthorDesc] una credente</li>
-    <li>author->[anAuthorDesc] un profeta</li>
-    <li>author->[anAuthorDesc] un'erede</li>
-    <li>author->[anAuthorDesc] un nobile</li>
-    <li>author->[anAuthorDesc] una traduttrice</li>
-    <li>author->[anAuthorDesc] un monaco</li>
-    <li>author->[anAuthorDesc] un clone</li>
-    <li>author->[anAuthorDesc] una scrittrice</li>
-    <li>author->[anAuthorDesc] un agente</li>
-    <li>author->[anAuthorDesc] un'eroina</li>
-    <li>author->[anAuthorDesc] uno scrittore</li>
+    <li>author->uno scienziato [anAuthorDesc]</li>
+    <li>author->una veggente [anAuthorDesc]</li>
+    <li>author->uno specialista dell'occulto [anAuthorDesc]</li>
+    <li>author->un fanatico [anAuthorDesc]</li>
+    <li>author->un fedele di setta [anAuthorDesc]</li>
+    <li>author->una fedele di setta in fuga [anAuthorDesc]</li>
+    <li>author->una venditrice di antiquariato [anAuthorDesc]</li>
+    <li>author->un predatore di tombe [anAuthorDesc]</li>
+    <li>author->un'esperta del vuoto [anAuthorDesc]</li>
+    <li>author->un vagabondo [anAuthorDesc]</li>
+    <li>author->uno scettico [anAuthorDesc]</li>
+    <li>author->una studiosa [anAuthorDesc]</li>
+    <li>author->una cacciatrice [anAuthorDesc]</li>
+    <li>author->un investigatore [anAuthorDesc]</li>
+    <li>author->un saggio [anAuthorDesc]</li>
+    <li>author->una credente [anAuthorDesc]</li>
+    <li>author->un profeta [anAuthorDesc]</li>
+    <li>author->un'erede [anAuthorDesc]</li>
+    <li>author->un nobile [anAuthorDesc]</li>
+    <li>author->una traduttrice [anAuthorDesc]</li>
+    <li>author->un monaco [anAuthorDesc]</li>
+    <li>author->un clone [anAuthorDesc]</li>
+    <li>author->una scrittrice [anAuthorDesc]</li>
+    <li>author->un agente [anAuthorDesc]</li>
+    <li>author->un'eroina [anAuthorDesc]</li>
+    <li>author->uno scrittore [anAuthorDesc]</li>
     <li>anAuthorDesc(p=2)-></li>
     <li>anAuthorDesc->di giovanissima età</li>
     <li>anAuthorDesc->di mezza età</li>
@@ -368,6 +368,7 @@
     <li>anAuthorDesc->tra i più onesti</li>
     <li>anAuthorDesc->dalla moralità dubbia</li>
     <li>anAuthorDesc->con un'aura tenebrosa</li>
+    <!-- Maschile Plurale -->
     <li>tellsAStoryOf->racconta la storia dei</li>
     <li>tellsAStoryOf->evoca i</li>
     <li>tellsAStoryOf->parla dei</li>
@@ -381,22 +382,51 @@
     <li>tellsAStoryOf->tiene la cronaca dei</li>
     <li>tellsAStoryOf->descrive i</li>
     <li>tellsAStoryOf->svela i</li>
-    <li>experiencesWithMonsters->[tellsAStoryOf] esperienze che [ANYPAWN_pronoun] ha condiviso con [entities]</li>
-    <li>experiencesWithMonsters->[tellsAStoryOf] infiltrazioni in una setta segreta che aveva stabilito un rifugio sotto [TerrainFeature]</li>
-    <li>experiencesWithMonsters->[tellsAStoryOf] anni passati a dare la caccia a un misterioso cubo dorato</li>
-    <li>experiencesWithMonsters->[tellsAStoryOf] meditazioni profonde sotto la guida di un gran servitore di una setta arcaica</li>
-    <li>experiencesWithMonsters->[tellsAStoryOf] calamità abbattutesi su di lui sotto l'influenza psichica di un'entità chiamata Horax</li>
-    <li>experiencesWithMonsters->[tellsAStoryOf] scavi archeologici effettuati in un sito lontano e la sorte degli scienziati che hanno perso la ragione uno dopo l'altro</li>
+    <!-- Maschile -->
+    <li>tellsAStoryMas->racconta la storia degli</li>
+    <li>tellsAStoryMas->evoca gli</li>
+    <li>tellsAStoryMas->parla degli</li>
+    <li>tellsAStoryMas->descrive gli</li>
+    <li>tellsAStoryMas->dettaglia gli</li>
+    <li>tellsAStoryMas->si concentra sul tema degli</li>
+    <li>tellsAStoryMas->esplora in dettaglio gli</li>
+    <li>tellsAStoryMas->racconta gli</li>
+    <li>tellsAStoryMas->ricorda gli</li>
+    <li>tellsAStoryMas->riporta gli</li>
+    <li>tellsAStoryMas->tiene la cronaca degli</li>
+    <li>tellsAStoryMas->descrive gli</li>
+    <li>tellsAStoryMas->svela gli</li>
+    <!-- Femminile -->
+    <li>tellsAStoryFem->racconta la storia delle</li>
+    <li>tellsAStoryFem->evoca le</li>
+    <li>tellsAStoryFem->parla delle</li>
+    <li>tellsAStoryFem->descrive le</li>
+    <li>tellsAStoryFem->dettaglia le</li>
+    <li>tellsAStoryFem->si concentra sul tema delle</li>
+    <li>tellsAStoryFem->esplora in dettaglio le</li>
+    <li>tellsAStoryFem->racconta le</li>
+    <li>tellsAStoryFem->ricorda le</li>
+    <li>tellsAStoryFem->riporta le</li>
+    <li>tellsAStoryFem->tiene la cronaca delle</li>
+    <li>tellsAStoryFem->descrive le</li>
+    <li>tellsAStoryFem->svela le</li>
+    
+    <li>experiencesWithMonsters->[tellsAStoryFem] esperienze che [ANYPAWN_pronoun] ha condiviso con [entities]</li>
+    <li>experiencesWithMonsters->[tellsAStoryFem] infiltrazioni in una setta segreta che aveva stabilito un rifugio sotto [TerrainFeature]</li>
+    <li>experiencesWithMonsters->[tellsAStoryMas] anni passati a dare la caccia a un misterioso cubo dorato</li>
+    <li>experiencesWithMonsters->[tellsAStoryFem] meditazioni profonde sotto la guida di un gran servitore di una setta arcaica</li>
+    <li>experiencesWithMonsters->[tellsAStoryFem] calamità abbattutesi su di lui sotto l'influenza psichica di un'entità chiamata Horax</li>
+    <li>experiencesWithMonsters->[tellsAStoryMas] scavi archeologici effettuati in un sito lontano e la sorte degli scienziati che hanno perso la ragione uno dopo l'altro</li>
     <li>experiencesWithMonsters->[tellsAStoryOf] membri di una tribù che erano giunti a venerare la divinità oscura di un culto di sangue e piacere</li>
     <li>experiencesWithMonsters->tenta di descrivere una tribù che pratica mutilazioni rituali con lame arrugginite alla luce dei falò</li>
-    <li>experiencesWithMonsters->[tellsAStoryOf] lezioni di un insegnante alle prese con un'allieva dotata di conoscenze assassine impossibili</li>
+    <li>experiencesWithMonsters->[tellsAStoryFem] lezioni di un insegnante alle prese con un'allieva dotata di conoscenze assassine impossibili</li>
     <li>experiencesWithMonsters->[tellsAStoryOf] tentativi di uno scienziato deciso a usare antiche archeotecnologie per riportare in vita la sua defunta moglie</li>
-    <li>experiencesWithMonsters->[tellsAStoryOf] spedizioni condotte da una squadra venuta da altrove che sopravvive, tra l’altro, a piogge di sangue e a un cielo nero come l’inchiostro deciso a schiacciarli come insetti</li>
-    <li>experiencesWithMonsters->[tellsAStoryOf] indagini di un gruppo unito in un antico pozzo infestato da terrificanti creature di carne</li>
-    <li>experiencesWithMonsters->[tellsAStoryOf] sforzi dello sciamano di una tribù per porre fine agli assalti notturni di animali resuscitati contro il suo villaggio</li>
+    <li>experiencesWithMonsters->[tellsAStoryFem] spedizioni condotte da una squadra venuta da altrove che sopravvive, tra l’altro, a piogge di sangue e a un cielo nero come l’inchiostro deciso a schiacciarli come insetti</li>
+    <li>experiencesWithMonsters->[tellsAStoryFem] indagini di un gruppo unito in un antico pozzo infestato da terrificanti creature di carne</li>
+    <li>experiencesWithMonsters->[tellsAStoryMas] sforzi dello sciamano di una tribù per porre fine agli assalti notturni di animali resuscitati contro il suo villaggio</li>
     <li>experiencesWithMonsters->[tellsAStoryOf] miti tribali che evocano un’antica divinità della collera alla quale nessuno poteva sfuggire finché gli eroi non la bandirono in una minuscola prigione di pietra</li>
-    <li>experiencesWithMonsters->[tellsAStoryOf] esperimenti brutali condotti su [entity] in cattività</li>
-    <li>experiencesWithMonsters->[tellsAStoryOf] visioni ricorrenti in cui [vision]</li>
+    <li>experiencesWithMonsters->[tellsAStoryMas] esperimenti brutali condotti su [entity] in cattività</li>
+    <li>experiencesWithMonsters->[tellsAStoryFem] visioni ricorrenti in cui [vision]</li>
     <li>vision->oscure sagome sfiorano la sua mente e rubano i suoi ricordi</li>
     <li>vision->[ANYPAWN_pronoun]la vittima è braccata da un suo doppio e non riesce a sfuggire ai suoi tormenti, ovunque vada</li>
     <li>vision->[ANYPAWN_pronoun]la sfortunata vittima è fatta a pezzi da [entity]</li>
@@ -466,46 +496,89 @@
     <li>adjectiveEvil->criptici</li>
     <li>adjectiveEvil->infernali</li>
     <li>adjectiveEvil->aberranti</li>
-    <li>writingQualityAdjective(quality==0)->senza filo logico</li>
-    <li>writingQualityAdjective(quality==0)->privo di qualsiasi coerenza</li>
-    <li>writingQualityAdjective(quality==0)->di un’assurda futilità</li>
-    <li>writingQualityAdjective(quality==0)->di qualità atroce</li>
-    <li>writingQualityAdjective(quality==0)->di una puerilità sorprendente</li>
-    <li>writingQualityAdjective(quality==1)->privo di qualsiasi convinzione</li>
-    <li>writingQualityAdjective(quality==1)->con scarabocchi frettolosi</li>
-    <li>writingQualityAdjective(quality==1)->di una noia mortale</li>
-    <li>writingQualityAdjective(quality==1)->senza reale coerenza</li>
-    <li>writingQualityAdjective(quality==1)->senza un piano preciso</li>
-    <li>writingQualityAdjective(quality==2)->di grande confusione</li>
-    <li>writingQualityAdjective(quality==2)->senza ispirazione</li>
-    <li>writingQualityAdjective(quality==2)->che evoca una certa mediocrità</li>
-    <li>writingQualityAdjective(quality==2)->senza carattere</li>
-    <li>writingQualityAdjective(quality==2)->di una marcata banalità</li>
-    <li>writingQualityAdjective(quality==2)->di livello appena passabile</li>
-    <li>writingQualityAdjective(quality==3)->dalla scrittura monotona</li>
-    <li>writingQualityAdjective(quality==3)->dalla scrittura piacevole</li>
-    <li>writingQualityAdjective(quality==3)->dall’organizzazione notevole</li>
-    <li>writingQualityAdjective(quality==3)->che testimonia una vera riflessione</li>
-    <li>writingQualityAdjective(quality==3)->di una certa facilità di accesso</li>
-    <li>writingQualityAdjective(quality==3)->dal carattere ordinario</li>
+    <!--writingQualityAdjective-->
+    <li>writingQualityAdjective(quality==0)->sconclusionato</li>
+    <li>writingQualityAdjective(quality==0)->incoerente</li>
+    <li>writingQualityAdjective(quality==0)->senza senso</li>
+    <li>writingQualityAdjective(quality==0)->terribile</li>
+    <li>writingQualityAdjective(quality==0)->puerile</li>
+    <li>writingQualityAdjective(quality==1)->debole</li>
+    <li>writingQualityAdjective(quality==1)->scarabocchiato grossolanamente</li>
+    <li>writingQualityAdjective(quality==1)->noioso</li>
+    <li>writingQualityAdjective(quality==1)->incoerente</li>
+    <li>writingQualityAdjective(quality==1)->confuso e prolisso</li>
+    <li>writingQualityAdjective(quality==2)->disordinato</li>
+    <li>writingQualityAdjective(quality==2)->poco ispirato</li>
+    <li>writingQualityAdjective(quality==2)->mediocre</li>
+    <li>writingQualityAdjective(quality==2)->ordinario</li>
+    <li>writingQualityAdjective(quality==2)->banale</li>
+    <li>writingQualityAdjective(quality==2)->accettabile</li>
+    <li>writingQualityAdjective(quality==3)->piatto</li>
+    <li>writingQualityAdjective(quality==3)->ben scritto</li>
+    <li>writingQualityAdjective(quality==3)->ben organizzato</li>
+    <li>writingQualityAdjective(quality==3)->riflessivo</li>
+    <li>writingQualityAdjective(quality==3)->leggibile</li>
+    <li>writingQualityAdjective(quality==3)->non eccezionale</li>
     <li>writingQualityAdjective(quality==4)->divertente</li>
-    <li>writingQualityAdjective(quality==4)->senza difficoltà particolare</li>
-    <li>writingQualityAdjective(quality==4)->emozionante</li>
-    <li>writingQualityAdjective(quality==4)->con una struttura precisa</li>
-    <li>writingQualityAdjective(quality==4)->con una vera forza di convinzione</li>
-    <li>writingQualityAdjective(quality==4)->con idee rispettabili</li>
-    <li>writingQualityAdjective(quality==5)->di qualità</li>
-    <li>writingQualityAdjective(quality==5)->che rappresenta un traguardo certo</li>
-    <li>writingQualityAdjective(quality==5)->che testimonia una percezione compiuta</li>
-    <li>writingQualityAdjective(quality==5)->senza difetti</li>
+    <li>writingQualityAdjective(quality==4)->scorrevole</li>
+    <li>writingQualityAdjective(quality==4)->emotivamente espressivo</li>
+    <li>writingQualityAdjective(quality==4)->precisamente strutturato</li>
+    <li>writingQualityAdjective(quality==4)->persuasivo</li>
+    <li>writingQualityAdjective(quality==4)->rispettabile</li>
+    <li>writingQualityAdjective(quality==5)->solido</li>
+    <li>writingQualityAdjective(quality==5)->realizzato con abilità</li>
+    <li>writingQualityAdjective(quality==5)->acutamente percettivo</li>
+    <li>writingQualityAdjective(quality==5)->eccellente</li>
     <li>writingQualityAdjective(quality==5)->di prima classe</li>
-    <li>writingQualityAdjective(quality==5)->dall’ispirazione evidente</li>
-    <li>writingQualityAdjective(quality==6)->con idee brillanti</li>
-    <li>writingQualityAdjective(quality==6)->di una perspicacia infallibile</li>
-    <li>writingQualityAdjective(quality==6)->di qualità senza eguali</li>
-    <li>writingQualityAdjective(quality==6)->dalla scrittura impeccabile</li>
-    <li>writingQualityAdjective(quality==6)->di mano di maestro</li>
-    <li>writingQualityAdjective(quality==6)->di qualità squisita</li>
+    <li>writingQualityAdjective(quality==5)->ispirato</li>
+    <li>writingQualityAdjective(quality==6)->ingegnoso</li>
+    <li>writingQualityAdjective(quality==6)->terribilmente perspicace</li>
+    <li>writingQualityAdjective(quality==6)->senza pari</li>
+    <li>writingQualityAdjective(quality==6)->di prima classe</li>
+    <li>writingQualityAdjective(quality==6)->magistrale</li>
+    <li>writingQualityAdjective(quality==6)->squisito</li>
+    <!--writingQualityAdjectivePlural-->
+    <li>writingQualityAdjectivePlural(quality==0)->sconclusionati</li>
+    <li>writingQualityAdjectivePlural(quality==0)->incoerenti</li>
+    <li>writingQualityAdjectivePlural(quality==0)->senza senso</li>
+    <li>writingQualityAdjectivePlural(quality==0)->terribili</li>
+    <li>writingQualityAdjectivePlural(quality==0)->puerili</li>
+    <li>writingQualityAdjectivePlural(quality==1)->deboli</li>
+    <li>writingQualityAdjectivePlural(quality==1)->scarabocchiati grossolanamente</li>
+    <li>writingQualityAdjectivePlural(quality==1)->noiosi</li>
+    <li>writingQualityAdjectivePlural(quality==1)->incoerenti</li>
+    <li>writingQualityAdjectivePlural(quality==1)->confusi e prolissi</li>
+    <li>writingQualityAdjectivePlural(quality==2)->disordinati</li>
+    <li>writingQualityAdjectivePlural(quality==2)->poco ispirati</li>
+    <li>writingQualityAdjectivePlural(quality==2)->mediocri</li>
+    <li>writingQualityAdjectivePlural(quality==2)->ordinari</li>
+    <li>writingQualityAdjectivePlural(quality==2)->banali</li>
+    <li>writingQualityAdjectivePlural(quality==2)->accettabili</li>
+    <li>writingQualityAdjectivePlural(quality==3)->piatti</li>
+    <li>writingQualityAdjectivePlural(quality==3)->ben scritti</li>
+    <li>writingQualityAdjectivePlural(quality==3)->ben organizzati</li>
+    <li>writingQualityAdjectivePlural(quality==3)->riflessivi</li>
+    <li>writingQualityAdjectivePlural(quality==3)->leggibili</li>
+    <li>writingQualityAdjectivePlural(quality==3)->non eccezionali</li>
+    <li>writingQualityAdjectivePlural(quality==4)->divertenti</li>
+    <li>writingQualityAdjectivePlural(quality==4)->scorrevoli</li>
+    <li>writingQualityAdjectivePlural(quality==4)->emotivamente espressivi</li>
+    <li>writingQualityAdjectivePlural(quality==4)->precisamente strutturati</li>
+    <li>writingQualityAdjectivePlural(quality==4)->persuasivi</li>
+    <li>writingQualityAdjectivePlural(quality==4)->rispettabili</li>
+    <li>writingQualityAdjectivePlural(quality==5)->solidi</li>
+    <li>writingQualityAdjectivePlural(quality==5)->realizzati con abilità</li>
+    <li>writingQualityAdjectivePlural(quality==5)->acutamente percettivi</li>
+    <li>writingQualityAdjectivePlural(quality==5)->eccellenti</li>
+    <li>writingQualityAdjectivePlural(quality==5)->di prima classe</li>
+    <li>writingQualityAdjectivePlural(quality==5)->ispirati</li>
+    <li>writingQualityAdjectivePlural(quality==6)->ingegnosi</li>
+    <li>writingQualityAdjectivePlural(quality==6)->terribilmente perspicaci</li>
+    <li>writingQualityAdjectivePlural(quality==6)->senza pari</li>
+    <li>writingQualityAdjectivePlural(quality==6)->di prima classe</li>
+    <li>writingQualityAdjectivePlural(quality==6)->magistrali</li>
+    <li>writingQualityAdjectivePlural(quality==6)->squisiti</li>
+    <!--writingQualitySentence-->
     <li>writingQualitySentence(quality[greater_than]4)->Il testo [excellentDesc]</li>
     <li>writingQualitySentence(quality[less_than]5,quality[greater_than]1)->Il testo [decentDesc]</li>
     <li>writingQualitySentence(quality[less_than]2)->Il testo [awfulDesc]</li>

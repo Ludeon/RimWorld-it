@@ -209,8 +209,8 @@
     <li>bookType->epic poem</li>
   -->
   <Description_Novel.rulePack.rulesStrings>
-    <li>desc->Questo [writingQualityAdjective] [bookType] [follows] un [PersonJob] mentre [protagHe] [storyStruggles]. [writingQualitySentence]. [maybe_date]</li>
-    <li>desc->In questo [writingQualityAdjective] [bookType], l'[author] [tellsAStoryOf] le [storySource] di [ANYPAWN_possessive]. [writingQualitySentence]. [maybe_date]</li>
+    <li>desc->Questo [bookType] [writingQualityAdjective] [follows] un [PersonJob] mentre [storyStruggles]. [writingQualitySentence]. [maybe_date]</li>
+    <li>desc->In questo [bookType] [writingQualityAdjective], [author] [tellsAStoryOf] le [storySource] di [ANYPAWN_possessive]. [writingQualitySentence]. [maybe_date]</li>
     <li>follows->segue</li>
     <li>follows->racconta</li>
     <li>follows->narra la storia di</li>
@@ -304,14 +304,17 @@
     <li>tellsAStoryOf->dipinge un quadro vivido di</li>
     <li>tellsAStoryOf->intesse l'arazzo di</li>
     <li>tellsAStoryOf->esplora la cronaca di</li>
-    <li>author->autore</li>
+    <!-- author -->
+    <li>author->l'autore</li>
     <li>author->[authorTitle] [ANYPAWN_nameIndef]</li>
     <li>author(p=2)->[authorTitle] senza nome</li>
-    <li>authorTitle->autore</li>
-    <li>authorTitle->scriba</li>
-    <li>authorTitle->scrittore</li>
-    <li>authorTitle->poeta</li>
-    <li>authorTitle->narratore</li>
+    <!-- authorTitle -->
+    <li>authorTitle->l'autore</li>
+    <li>authorTitle->lo scriba</li>
+    <li>authorTitle->lo scrittore</li>
+    <li>authorTitle->il poeta</li>
+    <li>authorTitle->il narratore</li>
+    <!-- storySource -->
     <li>storySource->esperienze personali</li>
     <li>storySource->giovinezza</li>
     <li>storySource->infanzia</li>
@@ -346,13 +349,15 @@
     <li>storySource->tempo trascorso come nomade</li>
     <li>storySource->fascino per i viaggi nel tempo</li>
     <li>storySource->connessione con un artefatto leggendario</li>
-    <li>writingQualityAdjective(quality==6)->scritto in modo straordinario</li>
+    <!-- writing quality -->
+    <li>writingQualityAdjective(quality==6)->straordinariamente ben scritto</li>
     <li>writingQualityAdjective(quality==5)->intelligente e perspicace</li>
     <li>writingQualityAdjective(quality==4)->riflessivo ed eloquente</li>
     <li>writingQualityAdjective(quality==3)->ben scritto</li>
     <li>writingQualityAdjective(quality==2)->mediocre</li>
     <li>writingQualityAdjective(quality==1)->scritto male</li>
-    <li>writingQualityAdjective(quality==0)->quasi incoerente</li>
+    <li>writingQualityAdjective(quality==0)->quasi incomprensibile</li>
+    <!-- writingQualitySentence -->
     <li>writingQualitySentence(quality[greater_than]4)->È [excellentDesc] [excellentExtra]</li>
     <li>writingQualitySentence(quality[less_than]5,quality[greater_than]1)->È [decentDesc] [decentExtra]</li>
     <li>writingQualitySentence(quality[less_than]2)->È [awfulDesc] [awfulExtra]</li>
@@ -408,12 +413,19 @@
     <li>date_form->molti secoli fa</li>
     <li>date_form->il [date]</li>
     <li>date_form->in [date_season]</li>
+    <!--EN -->
+    <!--<li>bookType(p=4)->novel</li>-->
+    <!--<li>bookType(p=2)->novella</li>-->
+    <!--<li>bookType->story</li>-->
+    <!--<li>bookType->narrative</li>-->
+    <!--<li>bookType->biography</li>-->
+    <!--<li>bookType->epic poem</li>-->
     <li>bookType(p=4)->romanzo</li>
-    <li>bookType(p=2)->novella</li>
-    <li>bookType->racconto</li>
-    <li>bookType->narrazione</li>
-    <li>bookType->biografia</li>
-    <li>bookType->poema epico</li>
+    <li>bookType(p=2)->racconto</li>
+    <li>bookType->saggio</li>
+    <li>bookType->resoconto</li>
+    <li>bookType->poema</li>
+    <li>bookType->epopea</li>
   </Description_Novel.rulePack.rulesStrings>
   
   <!-- EN:
