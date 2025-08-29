@@ -5,198 +5,286 @@
   <AcidBurn.label>ustione da acido</AcidBurn.label>
   <!-- EN: An acid burn. -->
   <AcidBurn.description>Un'ustione da acido.</AcidBurn.description>
+  <!-- EN: tended -->
+  <AcidBurn.comps.HediffComp_TendDuration.labelSolidTendedWell>curata</AcidBurn.comps.HediffComp_TendDuration.labelSolidTendedWell>
+  <!-- EN: bandaged -->
+  <AcidBurn.comps.HediffComp_TendDuration.labelTendedWell>fasciata</AcidBurn.comps.HediffComp_TendDuration.labelTendedWell>
+  <!-- EN: tended -->
+  <AcidBurn.comps.HediffComp_TendDuration.labelTendedWellInner>curata</AcidBurn.comps.HediffComp_TendDuration.labelTendedWellInner>
   <!-- EN: acid burn scar -->
-  <AcidBurn.comps.HediffComp_GetsPermanent.permanentLabel>cicatrice da ustione da acido</AcidBurn.comps.HediffComp_GetsPermanent.permanentLabel>
+  <AcidBurn.comps.HediffComp_GetsPermanent.permanentLabel>cicatrice da ustione acida</AcidBurn.comps.HediffComp_GetsPermanent.permanentLabel>
   <!-- EN: Dissolved off -->
-  <AcidBurn.injuryProps.destroyedLabel>Dissolto</AcidBurn.injuryProps.destroyedLabel>
+  <AcidBurn.injuryProps.destroyedLabel>Dissolto/a</AcidBurn.injuryProps.destroyedLabel>
   <!-- EN: an acid burn -->
   <AcidBurn.labelNoun>un'ustione da acido</AcidBurn.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <AcidBurn.labelNounPretty>{0} nel {1}</AcidBurn.labelNounPretty>
+  <AcidBurn.labelNounPretty>la {0} in {1_gender ? il : la} {1}</AcidBurn.labelNounPretty>
   
   <!-- EN: beam burn -->
-  <BeamWound.label>bruciatura del raggio</BeamWound.label>
+  <BeamWound.label>ustione da raggio</BeamWound.label>
   <!-- EN: A beam burn. -->
   <BeamWound.description>Un'ustione da raggio.</BeamWound.description>
+  <!-- EN: set -->
+  <BeamWound.comps.HediffComp_TendDuration.labelSolidTendedWell>stabilizzata</BeamWound.comps.HediffComp_TendDuration.labelSolidTendedWell>
+  <!-- EN: bandaged -->
+  <BeamWound.comps.HediffComp_TendDuration.labelTendedWell>fasciata</BeamWound.comps.HediffComp_TendDuration.labelTendedWell>
+  <!-- EN: sutured -->
+  <BeamWound.comps.HediffComp_TendDuration.labelTendedWellInner>suturata</BeamWound.comps.HediffComp_TendDuration.labelTendedWellInner>
   <!-- EN: permanent beam injury -->
   <BeamWound.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>lesione permanente da raggio</BeamWound.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>
   <!-- EN: old beam wound -->
-  <BeamWound.comps.HediffComp_GetsPermanent.permanentLabel>vecchia ferita da raggio</BeamWound.comps.HediffComp_GetsPermanent.permanentLabel>
+  <BeamWound.comps.HediffComp_GetsPermanent.permanentLabel>cicatrice da raggio</BeamWound.comps.HediffComp_GetsPermanent.permanentLabel>
   <!-- EN: Burned off -->
-  <BeamWound.injuryProps.destroyedLabel>Bruciato</BeamWound.injuryProps.destroyedLabel>
+  <BeamWound.injuryProps.destroyedLabel>Bruciato/a</BeamWound.injuryProps.destroyedLabel>
   <!-- EN: Burned out -->
-  <BeamWound.injuryProps.destroyedOutLabel>Bruciato</BeamWound.injuryProps.destroyedOutLabel>
+  <BeamWound.injuryProps.destroyedOutLabel>Carbonizzato/a</BeamWound.injuryProps.destroyedOutLabel>
   <!-- EN: a beam burn -->
   <BeamWound.labelNoun>un'ustione da raggio</BeamWound.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <BeamWound.labelNounPretty>{0} nel {1}</BeamWound.labelNounPretty>
+  <BeamWound.labelNounPretty>la {0} in {1_gender ? il : la} {1}</BeamWound.labelNounPretty>
   
   <!-- EN: bite -->
   <Bite.label>morso</Bite.label>
   <!-- EN: A bite wound. -->
   <Bite.description>Una ferita da morso.</Bite.description>
+  <!-- EN: set -->
+  <Bite.comps.HediffComp_TendDuration.labelSolidTendedWell>ingessata</Bite.comps.HediffComp_TendDuration.labelSolidTendedWell>
+  <!-- EN: bandaged -->
+  <Bite.comps.HediffComp_TendDuration.labelTendedWell>fasciata</Bite.comps.HediffComp_TendDuration.labelTendedWell>
+  <!-- EN: sutured -->
+  <Bite.comps.HediffComp_TendDuration.labelTendedWellInner>suturata</Bite.comps.HediffComp_TendDuration.labelTendedWellInner>
   <!-- EN: bite scar -->
   <Bite.comps.HediffComp_GetsPermanent.permanentLabel>cicatrice da morso</Bite.comps.HediffComp_GetsPermanent.permanentLabel>
   <!-- EN: Bitten off -->
-  <Bite.injuryProps.destroyedLabel>strappato a morsi</Bite.injuryProps.destroyedLabel>
+  <Bite.injuryProps.destroyedLabel>Morsicato/a</Bite.injuryProps.destroyedLabel>
   <!-- EN: Bitten out -->
-  <Bite.injuryProps.destroyedOutLabel>strappato a morsi</Bite.injuryProps.destroyedOutLabel>
+  <Bite.injuryProps.destroyedOutLabel>Mangiato/a</Bite.injuryProps.destroyedOutLabel>
   <!-- EN: a bite wound -->
   <Bite.labelNoun>una ferita da morso</Bite.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <Bite.labelNounPretty>{0} su {1}</Bite.labelNounPretty>
+  <Bite.labelNounPretty>la {0} in {1_gender ? il : la} {1}</Bite.labelNounPretty>
   
   <!-- EN: bruise -->
-  <Bruise.label>contusione</Bruise.label>
+  <Bruise.label>livido</Bruise.label>
   <!-- EN: A bruise. -->
-  <Bruise.description>Una contusione.</Bruise.description>
+  <Bruise.description>Un livido.</Bruise.description>
+  <!-- EN: set -->
+  <Bruise.comps.HediffComp_TendDuration.labelSolidTendedWell>stabilizzato</Bruise.comps.HediffComp_TendDuration.labelSolidTendedWell>
+  <!-- EN: bandaged -->
+  <Bruise.comps.HediffComp_TendDuration.labelTendedWell>fasciato</Bruise.comps.HediffComp_TendDuration.labelTendedWell>
+  <!-- EN: tended -->
+  <Bruise.comps.HediffComp_TendDuration.labelTendedWellInner>curato</Bruise.comps.HediffComp_TendDuration.labelTendedWellInner>
+  <!-- EN: Destroyed -->
+  <Bruise.injuryProps.destroyedLabel>Distrutto/a</Bruise.injuryProps.destroyedLabel>
   <!-- EN: a bruise -->
-  <Bruise.labelNoun>una contusione</Bruise.labelNoun>
+  <Bruise.labelNoun>un livido</Bruise.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <Bruise.labelNounPretty>{0} su {1}</Bruise.labelNounPretty>
+  <Bruise.labelNounPretty>{0} in {1_gender ? il : la} {1}</Bruise.labelNounPretty>
   
   <!-- EN: burn -->
   <Burn.label>ustione</Burn.label>
   <!-- EN: A burn. -->
   <Burn.description>Un'ustione.</Burn.description>
+  <!-- EN: tended -->
+  <Burn.comps.HediffComp_TendDuration.labelSolidTendedWell>curata</Burn.comps.HediffComp_TendDuration.labelSolidTendedWell>
+  <!-- EN: bandaged -->
+  <Burn.comps.HediffComp_TendDuration.labelTendedWell>fasciata</Burn.comps.HediffComp_TendDuration.labelTendedWell>
+  <!-- EN: tended -->
+  <Burn.comps.HediffComp_TendDuration.labelTendedWellInner>curata</Burn.comps.HediffComp_TendDuration.labelTendedWellInner>
   <!-- EN: burn scar -->
   <Burn.comps.HediffComp_GetsPermanent.permanentLabel>cicatrice da ustione</Burn.comps.HediffComp_GetsPermanent.permanentLabel>
   <!-- EN: Burned off -->
-  <Burn.injuryProps.destroyedLabel>Bruciato</Burn.injuryProps.destroyedLabel>
+  <Burn.injuryProps.destroyedLabel>Bruciato/a</Burn.injuryProps.destroyedLabel>
   <!-- EN: Burned out -->
-  <Burn.injuryProps.destroyedOutLabel>Carbonizzato</Burn.injuryProps.destroyedOutLabel>
+  <Burn.injuryProps.destroyedOutLabel>Carbonizzato/a</Burn.injuryProps.destroyedOutLabel>
   <!-- EN: a burn -->
   <Burn.labelNoun>un'ustione</Burn.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <Burn.labelNounPretty>{0} su {1}</Burn.labelNounPretty>
+  <Burn.labelNounPretty>la {0} in {1_gender ? il : la} {1}</Burn.labelNounPretty>
   
   <!-- EN: chemical burn -->
   <ChemicalBurn.label>ustione chimica</ChemicalBurn.label>
   <!-- EN: A chemical burn. -->
   <ChemicalBurn.description>Un'ustione chimica.</ChemicalBurn.description>
+  <!-- EN: tended -->
+  <ChemicalBurn.comps.HediffComp_TendDuration.labelSolidTendedWell>curata</ChemicalBurn.comps.HediffComp_TendDuration.labelSolidTendedWell>
+  <!-- EN: bandaged -->
+  <ChemicalBurn.comps.HediffComp_TendDuration.labelTendedWell>fasciata</ChemicalBurn.comps.HediffComp_TendDuration.labelTendedWell>
+  <!-- EN: tended -->
+  <ChemicalBurn.comps.HediffComp_TendDuration.labelTendedWellInner>curata</ChemicalBurn.comps.HediffComp_TendDuration.labelTendedWellInner>
   <!-- EN: chemical burn scar -->
   <ChemicalBurn.comps.HediffComp_GetsPermanent.permanentLabel>cicatrice da ustione chimica</ChemicalBurn.comps.HediffComp_GetsPermanent.permanentLabel>
   <!-- EN: Burned off (chemical) -->
-  <ChemicalBurn.injuryProps.destroyedLabel>Bruciato (chimica)</ChemicalBurn.injuryProps.destroyedLabel>
+  <ChemicalBurn.injuryProps.destroyedLabel>Bruciato (chimico)</ChemicalBurn.injuryProps.destroyedLabel>
   <!-- EN: Burned out (chemical) -->
-  <ChemicalBurn.injuryProps.destroyedOutLabel>Bruciato (chimica)</ChemicalBurn.injuryProps.destroyedOutLabel>
+  <ChemicalBurn.injuryProps.destroyedOutLabel>Carbonizzato (chimico)</ChemicalBurn.injuryProps.destroyedOutLabel>
   <!-- EN: a chemical burn -->
   <ChemicalBurn.labelNoun>un'ustione chimica</ChemicalBurn.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <ChemicalBurn.labelNounPretty>{0} su {1}</ChemicalBurn.labelNounPretty>
+  <ChemicalBurn.labelNounPretty>la {0} in {1_gender ? il : la} {1}</ChemicalBurn.labelNounPretty>
   
   <!-- EN: crack -->
   <Crack.label>frattura</Crack.label>
   <!-- EN: A crack. -->
   <Crack.description>Una frattura.</Crack.description>
+  <!-- EN: set -->
+  <Crack.comps.HediffComp_TendDuration.labelSolidTendedWell>stabilizzata</Crack.comps.HediffComp_TendDuration.labelSolidTendedWell>
+  <!-- EN: set -->
+  <Crack.comps.HediffComp_TendDuration.labelTendedWell>stabilizzata</Crack.comps.HediffComp_TendDuration.labelTendedWell>
+  <!-- EN: set -->
+  <Crack.comps.HediffComp_TendDuration.labelTendedWellInner>stabilizzata</Crack.comps.HediffComp_TendDuration.labelTendedWellInner>
   <!-- EN: permanent crack -->
   <Crack.comps.HediffComp_GetsPermanent.permanentLabel>frattura permanente</Crack.comps.HediffComp_GetsPermanent.permanentLabel>
+  <!-- EN: Shattered -->
+  <Crack.injuryProps.destroyedLabel>Frantumato/a</Crack.injuryProps.destroyedLabel>
   <!-- EN: a crack wound -->
-  <Crack.labelNoun>una frattura</Crack.labelNoun>
+  <Crack.labelNoun>una ferita da frattura</Crack.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <Crack.labelNounPretty>{0} su {1}</Crack.labelNounPretty>
+  <Crack.labelNounPretty>la {0} in {1_gender ? il : la} {1}</Crack.labelNounPretty>
   
   <!-- EN: crush -->
   <Crush.label>schiacciamento</Crush.label>
   <!-- EN: A crushing wound. -->
   <Crush.description>Una ferita da schiacciamento.</Crush.description>
+  <!-- EN: set -->
+  <Crush.comps.HediffComp_TendDuration.labelSolidTendedWell>stabilizzato</Crush.comps.HediffComp_TendDuration.labelSolidTendedWell>
+  <!-- EN: bandaged -->
+  <Crush.comps.HediffComp_TendDuration.labelTendedWell>fasciato</Crush.comps.HediffComp_TendDuration.labelTendedWell>
+  <!-- EN: sutured -->
+  <Crush.comps.HediffComp_TendDuration.labelTendedWellInner>suturato</Crush.comps.HediffComp_TendDuration.labelTendedWellInner>
   <!-- EN: mangled scar -->
   <Crush.comps.HediffComp_GetsPermanent.permanentLabel>cicatrice da schiacciamento</Crush.comps.HediffComp_GetsPermanent.permanentLabel>
+  <!-- EN: Crushed -->
+  <Crush.injuryProps.destroyedLabel>Schiacciato/a</Crush.injuryProps.destroyedLabel>
   <!-- EN: a crush wound -->
   <Crush.labelNoun>una ferita da schiacciamento</Crush.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <Crush.labelNounPretty>{0} su {1}</Crush.labelNounPretty>
+  <Crush.labelNounPretty>{0} in {1_gender ? il : la} {1}</Crush.labelNounPretty>
   
   <!-- EN: cut -->
   <Cut.label>taglio</Cut.label>
   <!-- EN: A cut. -->
   <Cut.description>Un taglio.</Cut.description>
+  <!-- EN: set -->
+  <Cut.comps.HediffComp_TendDuration.labelSolidTendedWell>stabilizzato</Cut.comps.HediffComp_TendDuration.labelSolidTendedWell>
+  <!-- EN: bandaged -->
+  <Cut.comps.HediffComp_TendDuration.labelTendedWell>fasciato</Cut.comps.HediffComp_TendDuration.labelTendedWell>
+  <!-- EN: sutured -->
+  <Cut.comps.HediffComp_TendDuration.labelTendedWellInner>suturato</Cut.comps.HediffComp_TendDuration.labelTendedWellInner>
   <!-- EN: cut scar -->
   <Cut.comps.HediffComp_GetsPermanent.permanentLabel>cicatrice da taglio</Cut.comps.HediffComp_GetsPermanent.permanentLabel>
   <!-- EN: Cut off -->
-  <Cut.injuryProps.destroyedLabel>Tagliato</Cut.injuryProps.destroyedLabel>
+  <Cut.injuryProps.destroyedLabel>Tagliato/a</Cut.injuryProps.destroyedLabel>
   <!-- EN: Cut out -->
-  <Cut.injuryProps.destroyedOutLabel>Mozzato</Cut.injuryProps.destroyedOutLabel>
+  <Cut.injuryProps.destroyedOutLabel>Reciso/a</Cut.injuryProps.destroyedOutLabel>
   <!-- EN: a cut -->
   <Cut.labelNoun>un taglio</Cut.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <Cut.labelNounPretty>{0} su {1}</Cut.labelNounPretty>
+  <Cut.labelNounPretty>{0} in {1_gender ? il : la} {1}</Cut.labelNounPretty>
   
   <!-- EN: decayed organ -->
-  <Decayed.label>organo in decomposizione</Decayed.label>
+  <Decayed.label>organo in necrosi</Decayed.label>
   <!-- EN: This organ has completely decayed. -->
-  <Decayed.description>Questo organo è completamente in decomposizione.</Decayed.description>
+  <Decayed.description>Questo organo è andato completamente in necrosi.</Decayed.description>
+  <!-- EN: Decayed -->
+  <Decayed.injuryProps.destroyedLabel>Necrotico</Decayed.injuryProps.destroyedLabel>
   <!-- EN: a decayed organ -->
-  <Decayed.labelNoun>un organo in decomposizione</Decayed.labelNoun>
+  <Decayed.labelNoun>un organo necrotico</Decayed.labelNoun>
   <!-- EN: decayed {1} -->
-  <Decayed.labelNounPretty>{1} in decomposizione</Decayed.labelNounPretty>
+  <Decayed.labelNounPretty>{1} necrotico/a</Decayed.labelNounPretty>
   
   <!-- EN: electrical burn -->
   <ElectricalBurn.label>ustione elettrica</ElectricalBurn.label>
   <!-- EN: An electical burn. -->
   <ElectricalBurn.description>Un'ustione elettrica.</ElectricalBurn.description>
+  <!-- EN: tended -->
+  <ElectricalBurn.comps.HediffComp_TendDuration.labelSolidTendedWell>curata</ElectricalBurn.comps.HediffComp_TendDuration.labelSolidTendedWell>
+  <!-- EN: bandaged -->
+  <ElectricalBurn.comps.HediffComp_TendDuration.labelTendedWell>fasciata</ElectricalBurn.comps.HediffComp_TendDuration.labelTendedWell>
+  <!-- EN: tended -->
+  <ElectricalBurn.comps.HediffComp_TendDuration.labelTendedWellInner>curata</ElectricalBurn.comps.HediffComp_TendDuration.labelTendedWellInner>
   <!-- EN: electrical burn scar -->
   <ElectricalBurn.comps.HediffComp_GetsPermanent.permanentLabel>cicatrice da ustione elettrica</ElectricalBurn.comps.HediffComp_GetsPermanent.permanentLabel>
   <!-- EN: Burned off -->
-  <ElectricalBurn.injuryProps.destroyedLabel>Bruciato</ElectricalBurn.injuryProps.destroyedLabel>
+  <ElectricalBurn.injuryProps.destroyedLabel>Bruciato/a</ElectricalBurn.injuryProps.destroyedLabel>
   <!-- EN: Burned out -->
-  <ElectricalBurn.injuryProps.destroyedOutLabel>Carbonizzato</ElectricalBurn.injuryProps.destroyedOutLabel>
+  <ElectricalBurn.injuryProps.destroyedOutLabel>Carbonizzato/a</ElectricalBurn.injuryProps.destroyedOutLabel>
   <!-- EN: an electrical burn -->
   <ElectricalBurn.labelNoun>un'ustione elettrica</ElectricalBurn.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <ElectricalBurn.labelNounPretty>{0} su {1}</ElectricalBurn.labelNounPretty>
+  <ElectricalBurn.labelNounPretty>la {0} in {1_gender ? il : la} {1}</ElectricalBurn.labelNounPretty>
   
   <!-- EN: cut -->
   <ExecutionCut.label>taglio</ExecutionCut.label>
   <!-- EN: A cut made during execution. -->
-  <ExecutionCut.description>Un taglio effettuato durante l'esecuzione.</ExecutionCut.description>
+  <ExecutionCut.description>Un taglio inflitto durante un'esecuzione.</ExecutionCut.description>
   <!-- EN: Cut off -->
-  <ExecutionCut.injuryProps.destroyedLabel>Tagliato</ExecutionCut.injuryProps.destroyedLabel>
+  <ExecutionCut.injuryProps.destroyedLabel>Tagliato/a</ExecutionCut.injuryProps.destroyedLabel>
   <!-- EN: Cut out -->
-  <ExecutionCut.injuryProps.destroyedOutLabel>Mozzato</ExecutionCut.injuryProps.destroyedOutLabel>
+  <ExecutionCut.injuryProps.destroyedOutLabel>Reciso/a</ExecutionCut.injuryProps.destroyedOutLabel>
   <!-- EN: a cut -->
   <ExecutionCut.labelNoun>un taglio</ExecutionCut.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <ExecutionCut.labelNounPretty>{0} su {1}</ExecutionCut.labelNounPretty>
+  <ExecutionCut.labelNounPretty>{0} in {1_gender ? il : la} {1}</ExecutionCut.labelNounPretty>
   
   <!-- EN: frostbite -->
-  <Frostbite.label>assideramento</Frostbite.label>
+  <Frostbite.label>congelamento</Frostbite.label>
   <!-- EN: Frozen tissue caused by exposure to cold without adequate protection. Frostbite is very painful, and frostbitten body parts are often lost. -->
-  <Frostbite.description>Tessuto congelato causato dall'esposizione al freddo senza una protezione adeguata. L'assideramento è molto doloroso e spesso provoca la perdita di parti del corpo.</Frostbite.description>
+  <Frostbite.description>Tessuto congelato a causa dell'esposizione al freddo senza un'adeguata protezione. Il congelamento è molto doloroso e le parti del corpo colpite spesso vanno perse.</Frostbite.description>
+  <!-- EN: tended -->
+  <Frostbite.comps.HediffComp_TendDuration.labelSolidTendedWell>ingessata</Frostbite.comps.HediffComp_TendDuration.labelSolidTendedWell>
+  <!-- EN: bandaged -->
+  <Frostbite.comps.HediffComp_TendDuration.labelTendedWell>fasciata</Frostbite.comps.HediffComp_TendDuration.labelTendedWell>
+  <!-- EN: tended -->
+  <Frostbite.comps.HediffComp_TendDuration.labelTendedWellInner>suturata</Frostbite.comps.HediffComp_TendDuration.labelTendedWellInner>
   <!-- EN: frostbite scar -->
-  <Frostbite.comps.HediffComp_GetsPermanent.permanentLabel>cicatrice da assideramento</Frostbite.comps.HediffComp_GetsPermanent.permanentLabel>
+  <Frostbite.comps.HediffComp_GetsPermanent.permanentLabel>cicatrice da congelamento</Frostbite.comps.HediffComp_GetsPermanent.permanentLabel>
   <!-- EN: Lost to frostbite -->
-  <Frostbite.injuryProps.destroyedLabel>Perso per assideramento</Frostbite.injuryProps.destroyedLabel>
+  <Frostbite.injuryProps.destroyedLabel>Perso/a per congelamento</Frostbite.injuryProps.destroyedLabel>
   <!-- EN: {0} in the {1} -->
-  <Frostbite.labelNounPretty>{0} su {1}</Frostbite.labelNounPretty>
+  <Frostbite.labelNounPretty>la {0} in {1_gender ? il : la} {1}</Frostbite.labelNounPretty>
   
   <!-- EN: gunshot -->
-  <Gunshot.label>colpo d'arma da fuoco</Gunshot.label>
+  <Gunshot.label>colpo di arma da fuoco</Gunshot.label>
   <!-- EN: A gunshot wound. -->
   <Gunshot.description>Una ferita da arma da fuoco.</Gunshot.description>
+  <!-- EN: set -->
+  <Gunshot.comps.HediffComp_TendDuration.labelSolidTendedWell>stabilizzata</Gunshot.comps.HediffComp_TendDuration.labelSolidTendedWell>
+  <!-- EN: bandaged -->
+  <Gunshot.comps.HediffComp_TendDuration.labelTendedWell>fasciata</Gunshot.comps.HediffComp_TendDuration.labelTendedWell>
+  <!-- EN: sutured -->
+  <Gunshot.comps.HediffComp_TendDuration.labelTendedWellInner>suturata</Gunshot.comps.HediffComp_TendDuration.labelTendedWellInner>
   <!-- EN: permanent gunshot injury -->
-  <Gunshot.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>cicatrice permanente da arma da fuoco</Gunshot.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>
+  <Gunshot.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>ferita permanente da arma da fuoco</Gunshot.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>
   <!-- EN: old gunshot -->
-  <Gunshot.comps.HediffComp_GetsPermanent.permanentLabel>vecchia ferita da arma da fuoco</Gunshot.comps.HediffComp_GetsPermanent.permanentLabel>
+  <Gunshot.comps.HediffComp_GetsPermanent.permanentLabel>cicatrice da arma da fuoco</Gunshot.comps.HediffComp_GetsPermanent.permanentLabel>
   <!-- EN: Shot off -->
-  <Gunshot.injuryProps.destroyedLabel>Colpito</Gunshot.injuryProps.destroyedLabel>
+  <Gunshot.injuryProps.destroyedLabel>Distrutto/a</Gunshot.injuryProps.destroyedLabel>
   <!-- EN: Shot out -->
-  <Gunshot.injuryProps.destroyedOutLabel>Mozzato</Gunshot.injuryProps.destroyedOutLabel>
+  <Gunshot.injuryProps.destroyedOutLabel>Perso/a</Gunshot.injuryProps.destroyedOutLabel>
   <!-- EN: a gunshot wound -->
   <Gunshot.labelNoun>una ferita da arma da fuoco</Gunshot.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <Gunshot.labelNounPretty>{0} su {1}</Gunshot.labelNounPretty>
+  <Gunshot.labelNounPretty>{0} in {1_gender ? il : la} {1}</Gunshot.labelNounPretty>
   
   <!-- EN: wound -->
-  <Misc.label>vario</Misc.label>
+  <Misc.label>ferita</Misc.label>
   <!-- EN: Miscellaneous injuries. -->
-  <Misc.description>Lesioni varie.</Misc.description>
+  <Misc.description>Ferite varie.</Misc.description>
+  <!-- EN: set -->
+  <Misc.comps.HediffComp_TendDuration.labelSolidTendedWell>ingessata</Misc.comps.HediffComp_TendDuration.labelSolidTendedWell>
+  <!-- EN: bandaged -->
+  <Misc.comps.HediffComp_TendDuration.labelTendedWell>fasciata</Misc.comps.HediffComp_TendDuration.labelTendedWell>
+  <!-- EN: sutured -->
+  <Misc.comps.HediffComp_TendDuration.labelTendedWellInner>suturata</Misc.comps.HediffComp_TendDuration.labelTendedWellInner>
   <!-- EN: scar -->
-  <Misc.comps.HediffComp_GetsPermanent.permanentLabel>sfregio</Misc.comps.HediffComp_GetsPermanent.permanentLabel>
+  <Misc.comps.HediffComp_GetsPermanent.permanentLabel>cicatrice</Misc.comps.HediffComp_GetsPermanent.permanentLabel>
+  <!-- EN: Destroyed -->
+  <Misc.injuryProps.destroyedLabel>Distrutto/a</Misc.injuryProps.destroyedLabel>
   <!-- EN: an injury -->
   <Misc.labelNoun>una ferita</Misc.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <Misc.labelNounPretty>{0} su {1}</Misc.labelNounPretty>
+  <Misc.labelNounPretty>la {0} in {1_gender ? il : la} {1}</Misc.labelNounPretty>
   
   <!-- EN: missing body part -->
   <MissingBodyPart.label>parte del corpo mancante</MissingBodyPart.label>
@@ -205,62 +293,86 @@
   <!-- EN: a missing body part -->
   <MissingBodyPart.labelNoun>una parte del corpo mancante</MissingBodyPart.labelNoun>
   <!-- EN: missing a {1} -->
-  <MissingBodyPart.labelNounPretty>mancante {1}</MissingBodyPart.labelNounPretty>
+  <MissingBodyPart.labelNounPretty>la mancanza {1_gender ? del : della} {1}</MissingBodyPart.labelNounPretty>
   
   <!-- EN: scratch -->
   <Scratch.label>graffio</Scratch.label>
   <!-- EN: A scratch or tear. -->
   <Scratch.description>Un graffio o uno strappo.</Scratch.description>
+  <!-- EN: set -->
+  <Scratch.comps.HediffComp_TendDuration.labelSolidTendedWell>stabilizzato</Scratch.comps.HediffComp_TendDuration.labelSolidTendedWell>
+  <!-- EN: bandaged -->
+  <Scratch.comps.HediffComp_TendDuration.labelTendedWell>fasciato</Scratch.comps.HediffComp_TendDuration.labelTendedWell>
+  <!-- EN: sutured -->
+  <Scratch.comps.HediffComp_TendDuration.labelTendedWellInner>suturato</Scratch.comps.HediffComp_TendDuration.labelTendedWellInner>
   <!-- EN: scratch scar -->
   <Scratch.comps.HediffComp_GetsPermanent.permanentLabel>cicatrice da graffio</Scratch.comps.HediffComp_GetsPermanent.permanentLabel>
   <!-- EN: Torn off -->
-  <Scratch.injuryProps.destroyedLabel>Lacerato</Scratch.injuryProps.destroyedLabel>
+  <Scratch.injuryProps.destroyedLabel>Lacerato/a</Scratch.injuryProps.destroyedLabel>
   <!-- EN: Torn out -->
-  <Scratch.injuryProps.destroyedOutLabel>Strappato</Scratch.injuryProps.destroyedOutLabel>
+  <Scratch.injuryProps.destroyedOutLabel>Strappato/a</Scratch.injuryProps.destroyedOutLabel>
   <!-- EN: a scratch -->
   <Scratch.labelNoun>un graffio</Scratch.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <Scratch.labelNounPretty>{0} su {1}</Scratch.labelNounPretty>
+  <Scratch.labelNounPretty>{0} in {1_gender ? il : la} {1}</Scratch.labelNounPretty>
   
   <!-- EN: shredded -->
-  <Shredded.label>dilaniamento</Shredded.label>
+  <Shredded.label>strappo</Shredded.label>
   <!-- EN: A part of the body has been shredded and torn. -->
-  <Shredded.description>Una parte del corpo è stata dilaniata e strappata.</Shredded.description>
+  <Shredded.description>Una parte del corpo è stata strappata e lacerata.</Shredded.description>
+  <!-- EN: set -->
+  <Shredded.comps.HediffComp_TendDuration.labelSolidTendedWell>stabilizzato</Shredded.comps.HediffComp_TendDuration.labelSolidTendedWell>
+  <!-- EN: bandaged -->
+  <Shredded.comps.HediffComp_TendDuration.labelTendedWell>fasciato</Shredded.comps.HediffComp_TendDuration.labelTendedWell>
+  <!-- EN: sutured -->
+  <Shredded.comps.HediffComp_TendDuration.labelTendedWellInner>suturato</Shredded.comps.HediffComp_TendDuration.labelTendedWellInner>
   <!-- EN: shredded scar -->
-  <Shredded.comps.HediffComp_GetsPermanent.permanentLabel>cicatrice da dilaniamento</Shredded.comps.HediffComp_GetsPermanent.permanentLabel>
+  <Shredded.comps.HediffComp_GetsPermanent.permanentLabel>cicatrice da strappo</Shredded.comps.HediffComp_GetsPermanent.permanentLabel>
   <!-- EN: Torn off -->
-  <Shredded.injuryProps.destroyedLabel>Dilaniato</Shredded.injuryProps.destroyedLabel>
+  <Shredded.injuryProps.destroyedLabel>Lacerato/a</Shredded.injuryProps.destroyedLabel>
   <!-- EN: Torn out -->
-  <Shredded.injuryProps.destroyedOutLabel>Maciullato</Shredded.injuryProps.destroyedOutLabel>
+  <Shredded.injuryProps.destroyedOutLabel>Strappato/a</Shredded.injuryProps.destroyedOutLabel>
   <!-- EN: a shredded wound -->
-  <Shredded.labelNoun>una ferita da dilaniamento</Shredded.labelNoun>
+  <Shredded.labelNoun>una ferita strappata</Shredded.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <Shredded.labelNounPretty>{0} su {1}</Shredded.labelNounPretty>
+  <Shredded.labelNounPretty>{0} in {1_gender ? il : la} {1}</Shredded.labelNounPretty>
   
   <!-- EN: stab -->
   <Stab.label>pugnalata</Stab.label>
   <!-- EN: A stab wound. -->
-  <Stab.description>Una pugnalata.</Stab.description>
+  <Stab.description>Una ferita da pugnalata.</Stab.description>
+  <!-- EN: set -->
+  <Stab.comps.HediffComp_TendDuration.labelSolidTendedWell>stabilizzata</Stab.comps.HediffComp_TendDuration.labelSolidTendedWell>
+  <!-- EN: bandaged -->
+  <Stab.comps.HediffComp_TendDuration.labelTendedWell>fasciata</Stab.comps.HediffComp_TendDuration.labelTendedWell>
+  <!-- EN: sutured -->
+  <Stab.comps.HediffComp_TendDuration.labelTendedWellInner>suturata</Stab.comps.HediffComp_TendDuration.labelTendedWellInner>
   <!-- EN: stab scar -->
   <Stab.comps.HediffComp_GetsPermanent.permanentLabel>cicatrice da pugnalata</Stab.comps.HediffComp_GetsPermanent.permanentLabel>
   <!-- EN: Cut off -->
-  <Stab.injuryProps.destroyedLabel>Tagliato</Stab.injuryProps.destroyedLabel>
+  <Stab.injuryProps.destroyedLabel>Perforato/a</Stab.injuryProps.destroyedLabel>
   <!-- EN: Cut out -->
-  <Stab.injuryProps.destroyedOutLabel>Mozzato</Stab.injuryProps.destroyedOutLabel>
+  <Stab.injuryProps.destroyedOutLabel>Reciso/a</Stab.injuryProps.destroyedOutLabel>
   <!-- EN: a stab wound -->
-  <Stab.labelNoun>una pugnalata</Stab.labelNoun>
+  <Stab.labelNoun>una ferita da pugnalata</Stab.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <Stab.labelNounPretty>{0} su {1}</Stab.labelNounPretty>
+  <Stab.labelNounPretty>la {0} in {1_gender ? il : la} {1}</Stab.labelNounPretty>
   
   <!-- EN: surgical cut -->
   <SurgicalCut.label>taglio chirurgico</SurgicalCut.label>
   <!-- EN: A cut made during surgery. -->
   <SurgicalCut.description>Un taglio effettuato durante un intervento chirurgico.</SurgicalCut.description>
+  <!-- EN: set -->
+  <SurgicalCut.comps.HediffComp_TendDuration.labelSolidTendedWell>stabilizzato</SurgicalCut.comps.HediffComp_TendDuration.labelSolidTendedWell>
+  <!-- EN: bandaged -->
+  <SurgicalCut.comps.HediffComp_TendDuration.labelTendedWell>fasciato</SurgicalCut.comps.HediffComp_TendDuration.labelTendedWell>
+  <!-- EN: sutured -->
+  <SurgicalCut.comps.HediffComp_TendDuration.labelTendedWellInner>suturato</SurgicalCut.comps.HediffComp_TendDuration.labelTendedWellInner>
   <!-- EN: surgical scar -->
   <SurgicalCut.comps.HediffComp_GetsPermanent.permanentLabel>cicatrice chirurgica</SurgicalCut.comps.HediffComp_GetsPermanent.permanentLabel>
   <!-- EN: a surgical cut -->
   <SurgicalCut.labelNoun>un taglio chirurgico</SurgicalCut.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <SurgicalCut.labelNounPretty>{0} su {1}</SurgicalCut.labelNounPretty>
-  
+  <SurgicalCut.labelNounPretty>{0} in {1_gender ? il : la} {1}</SurgicalCut.labelNounPretty>
+
 </LanguageData>
