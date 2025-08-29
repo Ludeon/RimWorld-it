@@ -1,7 +1,8 @@
 # sudo pwsh.exe
 
 $installDir = 'C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Data'
-$basePath = 'C:\Users\montr\progetti\RimWorld-it\EXTRA\Examples'
+$basePath = (Get-Location).Path
+$basePath = "$basePath\EXTRA\Examples"
 $langs = @('English', 'German (Deutsch)', 'Spanish (Español(Castellano))')
 $dlcList = @('Core', 'Anomaly', 'Biotech', 'Ideology', 'Royalty', 'Odyssey')
 
