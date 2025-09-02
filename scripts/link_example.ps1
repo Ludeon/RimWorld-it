@@ -11,6 +11,7 @@ foreach ($dlc in $dlcList) {
     foreach ($lang in $langs) {
 
         $sourcePath = "$installDir\$dlc\Languages\$lang"
+        $sourceDef = "$installDir\$dlc\Defs"
         $targetPath = "$basePath\$dlc\$lang"
 
         Write-Host "* Folder: $targetPath"
@@ -31,6 +32,16 @@ foreach ($dlc in $dlcList) {
             # Crea il link simbolico
             cmd /c mklink /d "$targetPath" "$sourcePath"
             Write-Host "Creato link: $targetPath -> $sourcePath"
+
+            # Crea il link simbolico per la cartella Defs
+            $targetDef = "$basePath\$dlc\Defs"
+            if (Test-Path $targetDef)
+            {
+                Remove-Item $targetDef -Force -Recurse
+            }
+            cmd /c mklink /d "$targetDef" "$sourceDef"
+            Write-Host "Creato link: $targetDef -> $sourceDef"
+
         }
 
         # Verifica se esiste un file tar nella cartella Examples

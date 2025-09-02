@@ -23,9 +23,8 @@
     <li>introduction->A [joiner_age]-year-old [joiner_title]</li>
   -->
   <ThreatReward_GameCondition_Joiner.questDescriptionRules.rulesStrings>
-    <li>helpers_o_a(joiner_gender==Female)->a</li>
-    <li>helpers_o_a(joiner_gender!=Female)->o</li>
-    <li>questDescription->[introduction] di nome [joiner_nameFull] chiede aiuto! [joiner_pronoun] si sta nascondendo da [hidingFrom]. [joiner_pronoun] vuole fuggire e unirsi a te a [map_definite].[joiner_relationInfo]\n\n[condDesc]\n\nDisperat[helpers_o_a] di restare nascosto, [joiner_nameDef] afferma di non poter dirti di più su [joiner_objective].</li>
+    <li>joiner_o_a->{joiner_gender ? o : a }</li>
+    <li>questDescription->[introduction] di nome [joiner_nameFull] chiede aiuto! [joiner_pronoun] si sta nascondendo da [hidingFrom]. [joiner_pronoun] vuole fuggire e unirsi a te a [map_definite].[joiner_relationInfo]\n\n[condDesc]\n\nDisperat[joiner_o_a] di restare nascosto, [joiner_nameDef] afferma di non poter dirti di più su [joiner_objective].</li>
     <li>hidingFrom(gameCondition==ToxicFallout)->un branco di lupi affamati</li>
     <li>condDesc(gameCondition==ToxicFallout)->Tuttavia, [joiner_nameDef] può eliminare i lupi solo incendiando una massiccia discarica chimica tossica nelle vicinanze. Seguiranno [gameConditionDuration_duration] di ricaduta tossica.</li>
     <li>hidingFrom(gameCondition==VolcanicWinter)->una banda di cannibali</li>
@@ -42,8 +41,8 @@
     <li>condDesc(gameCondition==PsychicDrone)->Se [joiner_pronoun] si unisce a te, la mente meccanica colpirà [map_definite] con un drone psichico di livello [psychicDroneLevel] per [gameConditionDuration_duration], riducendo l’umore di tutt[psychicDroneGender].</li>
     <li>hidingFrom(gameCondition==PsychicSuppression)->una macchina ostile che [joiner_pronoun] ha recentemente risvegliato</li>
     <li>condDesc(gameCondition==PsychicSuppression)->Se [joiner_pronoun] si unisce a te, la macchina colpirà [map_definite] con onde di soppressione psichica per [gameConditionDuration_duration], riducendo la coscienza di tutt[psychicSuppressorGender].</li>
-    <li>introduction(childCount==1,priority=1)->Un bambin[helpers_o_a] di [joiner_age] anni</li>
-    <li>introduction->Un[helpers_o_a] [joiner_title] di [joiner_age] anni</li>
+    <li>introduction(childCount==1,priority=1)->Un bambin[joiner_o_a] di [joiner_age] anni</li>
+    <li>introduction->Un[joiner_o_a] [joiner_title] di [joiner_age] anni</li>
   </ThreatReward_GameCondition_Joiner.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[joiner_nameDef]'s [gameCondition_label]</li>
@@ -62,9 +61,10 @@
     <li>introduction->A [joiner_age]-year-old [joiner_title]</li>
   -->
   <ThreatReward_Infestation_Joiner.questDescriptionRules.rulesStrings>
-    <li>questDescription->[introduction] di nome [joiner_nameDef] sta chiamando da vicino. [joiner_pronoun] dice di aver avvelenato una colonia sotterranea di insetti, ma ora è impregnat[helpers_o_a] di feromoni e gli insetti gli stanno dando la caccia!\n\n[joiner_pronoun] implora protezione e offre di unirsi a te a [map_definite].[joiner_relationInfo]\n\nSe accetti, (*Threat)un’infestazione di [hivesCount] alveari(/Threat) inizierà tra [infestationDelayTicks_duration].\n\n[joiner_nameDef] è troppo agitato per fornirti altre informazioni.</li>
-    <li>introduction(childCount==1,priority=1)->Un bambin[helpers_o_a] di [joiner_age] anni</li>
-    <li>introduction->Un[helpers_o_a] [joiner_title] di [joiner_age] anni</li>
+    <li>joiner_o_a->{joiner_gender ? o : a }</li>
+    <li>questDescription->[introduction] di nome [joiner_nameDef] sta chiamando da vicino. [joiner_pronoun] dice di aver avvelenato una colonia sotterranea di insetti, ma ora è impregnat[joiner_o_a] di feromoni e gli insetti gli stanno dando la caccia!\n\n[joiner_pronoun] implora protezione e offre di unirsi a te a [map_definite].[joiner_relationInfo]\n\nSe accetti, (*Threat)un’infestazione di [hivesCount] alveari(/Threat) inizierà tra [infestationDelayTicks_duration].\n\n[joiner_nameDef] è troppo agitato per fornirti altre informazioni.</li>
+    <li>introduction(childCount==1,priority=1)->Un bambin[joiner_o_a] di [joiner_age] anni</li>
+    <li>introduction->Un[joiner_o_a] [joiner_title] di [joiner_age] anni</li>
   </ThreatReward_Infestation_Joiner.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[joiner_nameDef]'s infestation</li>
@@ -94,12 +94,13 @@
     <li>introduction->A [joiner_age]-year-old [joiner_title]</li>
   -->
   <ThreatReward_Manhunters_Joiner.questDescriptionRules.rulesStrings>
+    <li>joiner_o_a->{joiner_gender ? o : a }</li>
     <li>questDescription(animalCount==1)->[introduction] di nome [joiner_nameDef] sta chiamando da vicino. [joiner_pronoun] dice che (*Threat)un [animalKind_label] predatore d’uomini(/Threat) sta dando la caccia a [joiner_objective]!\n\n[joiner_pronoun] implora protezione e offre di unirsi a te a [map_definite].[joiner_relationInfo]\n\nSe accetti [joiner_nameDef], il [animalKind_label] predatore d’uomini arriverà tra [manhuntersDelayTicks_duration].\n\n[joiner_nameDef] è troppo agitato per dare altre informazioni.</li>
     <li>manhunterArrivalLetterEnd(animalCount==1)->Il [animalKind_label] sta inseguendo [joiner_nameDef].</li>
     <li>questDescription(animalCount>=2)->[introduction] di nome [joiner_nameDef] sta chiamando da vicino. [joiner_pronoun] dice che (*Threat)un branco di [animalCount] [animalKind_labelPlural] predatori d’uomini(/Threat) sta dando la caccia a [joiner_objective]!\n\n[joiner_pronoun] implora protezione e offre di unirsi a te a [map_definite].[joiner_relationInfo]\n\nSe accetti [joiner_nameDef], i [animalKind_labelPlural] predatori d’uomini arriveranno tra [manhuntersDelayTicks_duration].\n\n[joiner_nameDef] è troppo agitato per dare altre informazioni.</li>
     <li>manhunterArrivalLetterEnd(animalCount>=2)->I [animalKind_labelPlural] stanno inseguendo [joiner_nameDef].</li>
-    <li>introduction(childCount==1,priority=1)->Un bambin[helpers_o_a] di [joiner_age] anni</li>
-    <li>introduction->Un[helpers_o_a] [joiner_title] di [joiner_age] anni</li>
+    <li>introduction(childCount==1,priority=1)->Un bambin[joiner_o_a] di [joiner_age] anni</li>
+    <li>introduction->Un[joiner_o_a] [joiner_title] di [joiner_age] anni</li>
   </ThreatReward_Manhunters_Joiner.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName(animalCount==1)->[joiner_nameDef]'s [animalKind_label]</li>
@@ -128,9 +129,10 @@
     <li>introduction->A [joiner_age]-year-old [joiner_title]</li>
   -->
   <ThreatReward_MysteryThreat_Joiner.questDescriptionRules.rulesStrings>
+    <li>joiner_o_a->{joiner_gender ? o : a }</li>
     <li>questDescription->[introduction] di nome [joiner_nameDef] sta chiamando da vicino. [joiner_pronoun] implora di unirsi a te a [map_definite].[joiner_relationInfo]\n\nC’è qualche tipo di minaccia che segue [joiner_nameDef], ma [joiner_pronoun] non vuole dire di cosa si tratta né quando potrebbe arrivare. [joiner_pronoun] non vuole nemmeno dirti altro su [joiner_objective].</li>
-    <li>introduction(childCount==1,priority=1)->Un bambin[helpers_o_a] di [joiner_age] anni</li>
-    <li>introduction->Un[helpers_o_a] [joiner_title] di [joiner_age] anni</li>
+    <li>introduction(childCount==1,priority=1)->Un bambin[joiner_o_a] di [joiner_age] anni</li>
+    <li>introduction->Un[joiner_o_a] [joiner_title] di [joiner_age] anni</li>
   </ThreatReward_MysteryThreat_Joiner.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[joiner_nameDef]'s [problem]</li>
@@ -169,9 +171,10 @@
     <li>introduction->A [joiner_age]-year-old [joiner_title]</li>
   -->
   <ThreatReward_RaidMultiFaction_Joiner.questDescriptionRules.rulesStrings>
+    <li>joiner_o_a->{joiner_gender ? o : a }</li>
     <li>questDescription->[introduction] di nome [joiner_nameDef] sta chiamando da vicino. [joiner_pronoun] ammette di aver profanato un rituale di pace tra [raid1/enemyFaction_name] e [raid2/enemyFaction_name]. Ora entrambi stanno inseguendo [joiner_objective]!\n\n[joiner_pronoun] implora protezione e offre di unirsi a te a [map_definite].[joiner_relationInfo]\n\nSe accetti [joiner_nameDef], sia [raid1/enemyFaction_name] che [raid2/enemyFaction_name] ti attaccheranno tra [raidDelayTicks_duration].\n\n[joiner_nameDef] è troppo agitato per fornirti altre informazioni.</li>
-    <li>introduction(childCount==1,priority=1)->Un bambin[helpers_o_a] di [joiner_age] anni</li>
-    <li>introduction->Un[helpers_o_a] [joiner_title] di [joiner_age] anni</li>
+    <li>introduction(childCount==1,priority=1)->Un bambin[joiner_o_a] di [joiner_age] anni</li>
+    <li>introduction->Un[joiner_o_a] [joiner_title] di [joiner_age] anni</li>
   </ThreatReward_RaidMultiFaction_Joiner.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[joiner_nameDef]'s Many Friends</li>
