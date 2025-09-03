@@ -39,22 +39,22 @@
   <!-- EN: leathery stranger -->
   <LeatheryStranger.label>sconosciuto dalla pelle coriacea</LeatheryStranger.label>
   <!-- EN: A ragged stranger with leathery skin is approaching your colony. -->
-  <LeatheryStranger.letterLabel>Un{PAWN_gender ? sconosciuto :’sconosciuta : sconosciuto/a} in abiti logori e dalla pelle coriacea si avvicina alla colonia.</LeatheryStranger.letterLabel>
+  <LeatheryStranger.letterLabel>{PAWN_gender ? Uno sconosciuto : Una sconosciuta} in abiti logori e dalla pelle coriacea si avvicina alla colonia.</LeatheryStranger.letterLabel>
   <!-- EN: The leathery stranger stares into space and speaks in a monotone, as though {PAWN_pronoun} hardly sees anyone or anything. {PAWN_pronoun} refuses to leave, insisting {PAWN_pronoun} is only interested in your colony. {PAWN_pronoun} says that {PAWN_pronoun} can help. -->
-  <LeatheryStranger.letterPrompt>Con lo sguardo perso nel vuoto, l'{PAWN_gender ? sconosciuto : sconosciuta : sconosciuto/a} parla con voce monotona, come se non vedesse nulla attorno. Rifiuta di andarsene, insiste che solo la vostra colonia gli/le interessa. Dice di potervi aiutare.</LeatheryStranger.letterPrompt>
+  <LeatheryStranger.letterPrompt>{PAWN_gender ? Lo sconosciuto : La sconosciuta}, con lo sguardo perso nel vuoto, parla con voce monotona, come se non vedesse quasi nessuno o nulla. Rifiuta di andarsene, insiste che {PAWN_pronoun} è interessat{PAWN_gender ? o : a} solo alla vostra colonia. Dice che vi può aiutare.</LeatheryStranger.letterPrompt>
   
   <!-- EN: lone genius -->
   <LoneGenius.label>genio solitario</LoneGenius.label>
   <!-- EN: A lone figure is approaching the colony. -->
   <LoneGenius.letterLabel>Una figura solitaria si avvicina alla colonia.</LoneGenius.letterLabel>
   <!-- EN: The strange figure keeps muttering about some scientific breakthrough. All {PAWN_pronoun} needs is a laboratory. If you let {PAWN_objective} stay, {PAWN_pronoun} will share {PAWN_possessive} vast knowledge with you. It's hard to tell whether {PAWN_pronoun}'s insane or a genius - or both. -->
-  <LoneGenius.letterPrompt>La strana figura continua a borbottare di una svolta scientifica. Tutto ciò che le serve è un laboratorio. Se le permettete di restare, condividerà con voi il suo immenso sapere. È difficile dire se sia pazza, geniale... o entrambe le cose.</LoneGenius.letterPrompt>
+  <LoneGenius.letterPrompt>La strana figura continua a borbottare di una svolta scientifica. Tutto ciò che le serve è un laboratorio. Se le permettete di restare, condividerà con voi il suo immenso sapere. È difficile dire se sia pazz{PAWN_gender ? 0 : a}, geniale... o entrambe le cose.</LoneGenius.letterPrompt>
   
   <!-- EN: timeless one -->
-  <TimelessOne.label>eterno</TimelessOne.label>
+  <TimelessOne.label>senza tempo</TimelessOne.label>
   <!-- EN: A teenager is approaching the colony. {PAWN_pronoun} has a strange air of confidence around {PAWN_objective}. -->
-  <TimelessOne.letterLabel>Un{PAWN_gender ? adolescente :’adolescente : adolescente} si avvicina alla colonia, con un'aria di sorprendente sicurezza.</TimelessOne.letterLabel>
+  <TimelessOne.letterLabel>Un adolescente si avvicina alla colonia, {PAWN_pronoun} ha un'aria stranamente sicura di sé.</TimelessOne.letterLabel>
   <!-- EN: {PAWN_nameDef} is barely more than a child but in {PAWN_possessive} thoughtful eyes you sense an ancient wisdom. When {PAWN_pronoun} speaks, the words seem to come from an unnatural knowledge of endless time. {PAWN_pronoun} says that the stars brought {PAWN_objective} here to fulfill {PAWN_possessive} destiny. {PAWN_pronoun} wants to stay with you and help. -->
-  <TimelessOne.letterPrompt>{PAWN_nameDef} è poco più che un bambino, ma nei suoi occhi pensierosi si legge una saggezza antica. Quando parla, le sue parole sembrano provenire da una conoscenza innaturale di tempi infiniti. Dice che le stelle lo hanno condotto fin qui per compiere il suo destino. Vuole restare con voi e aiutarvi.</TimelessOne.letterPrompt>
-  
+  <TimelessOne.letterPrompt>{PAWN_nameDef} è poco più che {PAWN_gender ? una bambina : un bambino }, ma nei suoi occhi pensierosi si percepisce una saggezza antica. Quando {PAWN_pronoun} parla, le parole sembrano provenire da una conoscenza innaturale di tempi infiniti. {PAWN_pronoun} dice che le stelle {PAWN_objective} hanno condotto fin qui per compiere il suo destino. {PAWN_pronoun} vuole restare con voi e aiutarvi.</TimelessOne.letterPrompt>
+
 </LanguageData>
