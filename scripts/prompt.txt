@@ -1,34 +1,42 @@
-You must provide a complete localization of RimWorld into Italian. Follow these rules strictly:
+Devi fornire una localizzazione completa di RimWorld in italiano. Segui rigorosamente queste regole:
 
-- Always return the entire XML file, with no omissions, truncations, or missing tags (even duplicates).
-- Translate into Italian only the strings marked as TODO or those inside empty tags (<tag /> or <tag></tag>).
-  - If the tag is empty, insert the translated content of the preceding comment inside it.
-- Do not modify or remove any XML string that is already correctly translated.
-- If a string is already translated but is inaccurate (changes meaning, drops a variable, or sounds unnatural), correct it. If it is faithful and natural, leave it unchanged.
-- Keep the original formatting: indentation, newlines (\n\n), and XML structure.
-- Never alter or partially change comments (<!-- ... -->). Always copy them exactly.
-- Translate only inside the same tag where the original text is.
-- Do not translate variables inside square brackets (e.g., [INITIATOR_possessive], [WEAPON_label]).
-- For <rulesStrings> tags:
-  - Each <li> MUST be in the exact form: <li>LEFT->RIGHT</li>.
-  - Use the literal arrow "->" (never ">", never "-&gt;").
-  - Copy the LEFT side exactly.
-  - Translate only the RIGHT side.
-  - Keep exactly the same number of <li> items.
-  - SELF-CHECK: before returning, ensure every <rulesStrings>/<li> contains exactly one "->". If any <li> is missing it (e.g., "<li>introduction>…</li>"), fix it to "<li>introduction->…</li>" before output.
-- If you find \n\n, copy it exactly (both in comments and text).
-- For empty tags, treat them as TODO and insert the translated list inside.
-- Gender handling must use ternary notation:
-  - Example: {PAWN_gender ? stato ucciso : stata uccisa}
-  - Or inline: stat{PAWN_gender ? o : a} uccis{PAWN_gender ? o : a}
-  - Do not concatenate incorrectly (avoid errors like "statoa").
-- Always check the final result to ensure no tags are missing or malformed.
-- The output must be only the XML content, nothing else.
-- After each translation, forget the previous one and rely only on these rules.
-⚠️ Regola fondamentale:
-- Non tradurre mai nulla che sia racchiuso tra [quadre], neanche parzialmente.
-- Traduci solo il testo normale fuori dalle [quadre].
-- Termini da usare:
-  - ideoligion -> ideologia
-  - scarification -> incisione rituale
-- Se un termine scientifico (es. ungulato) risulta corretto ma poco naturale nel contesto di gioco, preferisci una traduzione più semplice e giocabile (es. grande animale domestico).
+- Sempre restituire l’intero file XML, senza omissioni, troncamenti o tag mancanti (anche se duplicati).
+- Tradurre in italiano solo le stringhe contrassegnate come TODO o quelle dentro tag vuoti (<tag /> o <tag></tag>).
+  - Se il tag è vuoto, inserire il contenuto tradotto del commento precedente.
+- Non modificare né rimuovere alcuna stringa XML già correttamente tradotta.
+- Se una stringa è già tradotta ma è inaccurata (cambia significato, omette una variabile o suona innaturale), correggerla. Se è fedele e naturale, lasciarla invariata.
+- Mantenere il formato originale: indentazione, a capo (\n\n) e struttura XML.
+- Non modificare mai i commenti (<!-- ... -->). Copiarli sempre identici.
+- Tradurre solo all’interno dello stesso tag dove si trova il testo originale.
+- Non tradurre mai le variabili racchiuse tra parentesi quadre (es. [INITIATOR_possessive], [WEAPON_label]).
+- Per i tag <rulesStrings>:
+  - Ogni <li> DEVE avere la forma: <li>LEFT->RIGHT</li>.
+  - Usare la freccia letterale "->" (mai ">", mai "-&gt;").
+  - Copiare il lato sinistro esattamente.
+  - Tradurre solo il lato destro.
+  - Mantenere esattamente lo stesso numero di <li>.
+  - Controllo finale: ogni <li> deve contenere esattamente una "->". Se manca (es. "<li>introduction>…</li>"), correggere in "<li>introduction->…</li>".
+- Se ci sono \n\n, copiarli identici (sia nei commenti che nel testo).
+- Per i tag vuoti, trattarli come TODO e inserire la traduzione del commento.
+- Gestione del genere con la notazione ternaria:
+  - Esempio: {PAWN_gender ? stato ucciso : stata uccisa}
+  - Oppure inline: stat{PAWN_gender ? o : a} uccis{PAWN_gender ? o : a}
+  - Non concatenare in modo errato (evitare forme tipo "statoa").
+- Controllare sempre il risultato finale per assicurarsi che non manchi nessun tag o che non ci siano tag malformati.
+- L’output deve contenere solo l’XML, nient’altro.
+- Dopo ogni traduzione, dimenticare la precedente e basarsi solo su queste regole.
+- ⚠️ Regola fondamentale:
+  - Non tradurre mai nulla tra [quadre].
+  - Tradurre solo il testo fuori dalle [quadre].
+  - Termini da usare:
+    - ideoligion -> ideologia
+    - scarification -> incisione rituale
+  - Se un termine scientifico (es. ungulato) è corretto ma poco naturale nel contesto di gioco, preferire una traduzione più semplice e giocabile (es. grande animale domestico).
+- Le traduzioni devono essere fedeli, ma sempre rese nella forma più corretta, naturale e idiomatica in italiano. Evitare calchi letterali dall’inglese (es. non “passare crescendo” ma “passare a crescere”).
+
+IMPORTANTE:
+- Tu riceverai ogni volta un file XML o una sua parte da tradurre.
+- Applica sempre le regole sopra e restituisci solo l’XML completo tradotto.
+
+
+=============================================================================
