@@ -2,101 +2,100 @@
 <LanguageData>
   
   <!-- EN: bandwidth cost -->
-  <BandwidthCost.label>costo della larghezza di banda</BandwidthCost.label>
+  <BandwidthCost.label>costo di larghezza di banda</BandwidthCost.label>
   <!-- EN: How much bandwidth this mech consumes when under mechanitor control. -->
   <BandwidthCost.description>Quanta larghezza di banda consuma questo mech quando è sotto il controllo del meccanista.</BandwidthCost.description>
   
   <!-- EN: cancer rate factor -->
-  <CancerRate.label>fattore di tasso di cancro</CancerRate.label>
+  <CancerRate.label>fattore di incidenza del cancro</CancerRate.label>
   <!-- EN: A multiplier on how likely this person is to develop cancer in any given time frame. -->
-  <CancerRate.description>Un moltiplicatore sulla probabilità che questa persona sviluppi il cancro in un dato intervallo di tempo.</CancerRate.description>
+  <CancerRate.description>Un moltiplicatore che indica quanto è probabile che questa persona sviluppi un cancro in un determinato intervallo di tempo.</CancerRate.description>
   
   <!-- EN: control taking time -->
-  <ControlTakingTime.label>controllare prendendo tempo</ControlTakingTime.label>
+  <ControlTakingTime.label>tempo per ottenere il controllo</ControlTakingTime.label>
   <!-- EN: How many seconds it will take for a mechanitor to take control of this mech. -->
-  <ControlTakingTime.description>Quanti secondi impiegheranno un meccanista per prendere il controllo di questo mech.</ControlTakingTime.description>
+  <ControlTakingTime.description>Quanti secondi impiegherà un meccanista per prendere il controllo di questo mech.</ControlTakingTime.description>
   <!-- EN: {0}s -->
   <ControlTakingTime.formatString>{0}s</ControlTakingTime.formatString>
   
   <!-- EN: fertility -->
   <Fertility.label>fertilità</Fertility.label>
   <!-- EN: Fertility affects the chance of a pregnancy occurring. Pregnancy chance is dependent on the fertility of both partners. This also affects the chance of successfully implanting an embryo in a surrogate. -->
-  <Fertility.description>La fertilità influisce sulla possibilità che si verifichi una gravidanza. La possibilità di gravidanza dipende dalla fertilità di entrambi i partner. Ciò influisce anche sulla possibilità di impiantare con successo un embrione in una madre surrogata.</Fertility.description>
+  <Fertility.description>La fertilità influisce sulla probabilità che avvenga una gravidanza. La possibilità dipende dalla fertilità di entrambi i partner. Essa influisce anche sulla probabilità di impiantare con successo un embrione in una madre surrogata.</Fertility.description>
   
   <!-- EN: growth vat occupant speed -->
-  <GrowthVatOccupantSpeed.label>velocità dell'occupante della vasca di crescita</GrowthVatOccupantSpeed.label>
+  <GrowthVatOccupantSpeed.label>velocità di crescita in vasca</GrowthVatOccupantSpeed.label>
   <!-- EN: A multiplier on how quickly this person will grow when in a growth vat. -->
-  <GrowthVatOccupantSpeed.description>Un moltiplicatore sulla velocità con cui questa persona crescerà quando si trova in una vasca di crescita.</GrowthVatOccupantSpeed.description>
+  <GrowthVatOccupantSpeed.description>Un moltiplicatore della velocità con cui questa persona crescerà quando si trova in una vasca di crescita.</GrowthVatOccupantSpeed.description>
   
   <!-- EN: hemogen gain multiplier -->
-  <HemogenGainFactor.label>moltiplicatore del guadagno dell'emogeno</HemogenGainFactor.label>
+  <HemogenGainFactor.label>moltiplicatore guadagno emogeno</HemogenGainFactor.label>
   <!-- EN: A multiplier on the amount of hemogen gained. -->
-  <HemogenGainFactor.description>Un moltiplicatore sulla quantità di emogeno guadagnato.</HemogenGainFactor.description>
+  <HemogenGainFactor.description>Un moltiplicatore della quantità di emogeno guadagnato.</HemogenGainFactor.description>
   
   <!-- EN: learning rate factor -->
-  <LearningRateFactor.label>fattore del tasso di apprendimento</LearningRateFactor.label>
+  <LearningRateFactor.label>fattore di apprendimento</LearningRateFactor.label>
   <!-- EN: A multiplier on how quickly a child's learning need is fulfilled by learning activities. -->
-  <LearningRateFactor.description>Un moltiplicatore della rapidità con cui il bisogno di apprendimento di un bambino viene soddisfatto dalle attività di apprendimento.</LearningRateFactor.description>
+  <LearningRateFactor.description>Un moltiplicatore della rapidità con cui il bisogno di apprendimento di un bambino viene soddisfatto dalle attività educative.</LearningRateFactor.description>
   
   <!-- EN: mech bandwidth -->
-  <MechBandwidth.label>larghezza di banda del meccanismo</MechBandwidth.label>
+  <MechBandwidth.label>larghezza di banda mech</MechBandwidth.label>
   <!-- EN: How much bandwidth a mechanitor has. More bandwidth allows a mechanitor to produce and control more mechs at the same time.\n\nLosing bandwidth means losing control of mechs, leaving them without an overseer. Such mechs can eventually become feral if not re-dominated. -->
-  <MechBandwidth.description>Quanta larghezza di banda ha un meccanista. Una maggiore larghezza di banda consente a un meccanista di produrre e controllare più mech allo stesso tempo.\n\nPerdere larghezza di banda significa perdere il controllo dei mech, lasciandoli senza un supervisore. Tali mech possono eventualmente diventare selvaggi se non ri-dominati.</MechBandwidth.description>
+  <MechBandwidth.description>Quanta larghezza di banda possiede un meccanista. Una maggiore larghezza di banda consente di produrre e controllare più mech contemporaneamente.\n\nPerdere larghezza di banda significa perdere il controllo dei mech, lasciandoli senza un supervisore. Tali mech possono diventare selvaggi se non vengono riaddomesticati.</MechBandwidth.description>
   
   <!-- EN: mech control groups -->
-  <MechControlGroups.label>gruppi di controllo meccanico</MechControlGroups.label>
+  <MechControlGroups.label>gruppi di controllo mech</MechControlGroups.label>
   <!-- EN: How many control groups this mechanitor can direct independently. Each control group can be given its own separate orders. -->
-  <MechControlGroups.description>Quanti gruppi di controllo questo meccanista può dirigere in modo indipendente. A ciascun gruppo di controllo possono essere assegnati ordini separati.</MechControlGroups.description>
+  <MechControlGroups.description>Quanti gruppi di controllo può dirigere indipendentemente questo meccanista. A ciascun gruppo possono essere assegnati ordini separati.</MechControlGroups.description>
   
   <!-- EN: repair energy cost -->
-  <MechEnergyLossPerHP.label>riparare il costo energetico</MechEnergyLossPerHP.label>
+  <MechEnergyLossPerHP.label>costo energetico di riparazione</MechEnergyLossPerHP.label>
   <!-- EN: The amount of energy that this mechanoid loses for every 100 damage repaired. -->
-  <MechEnergyLossPerHP.description>La quantità di energia che questo meccanoide perde per ogni 100 danni riparati.</MechEnergyLossPerHP.description>
+  <MechEnergyLossPerHP.description>La quantità di energia che questo meccanoide perde per ogni 100 punti danno riparati.</MechEnergyLossPerHP.description>
   
   <!-- EN: energy usage multiplier -->
-  <MechEnergyUsageFactor.label>moltiplicatore del consumo di energia</MechEnergyUsageFactor.label>
+  <MechEnergyUsageFactor.label>moltiplicatore consumo energetico</MechEnergyUsageFactor.label>
   <!-- EN: A multiplier on how fast a mechanoid consumes its energy reserves while operating. -->
-  <MechEnergyUsageFactor.description>Un moltiplicatore sulla velocità con cui un meccanoide consuma le sue riserve di energia durante il funzionamento.</MechEnergyUsageFactor.description>
+  <MechEnergyUsageFactor.description>Un moltiplicatore della velocità con cui un meccanoide consuma le sue riserve di energia durante il funzionamento.</MechEnergyUsageFactor.description>
   
   <!-- EN: mech gestation speed -->
-  <MechFormingSpeed.label>velocità di gestazione del mech</MechFormingSpeed.label>
+  <MechFormingSpeed.label>velocità di gestazione mech</MechFormingSpeed.label>
   <!-- EN: A multiplier on the speed at which this mechanitor can form new mechanoids at a gestator. -->
-  <MechFormingSpeed.description>Un moltiplicatore sulla velocità con cui questo meccanista può formare nuovi meccanoidi in un gestatore.</MechFormingSpeed.description>
+  <MechFormingSpeed.description>Un moltiplicatore della velocità con cui un meccanista può formare nuovi meccanoidi in un gestatore.</MechFormingSpeed.description>
   
   <!-- EN: mech remote repair distance -->
-  <MechRemoteRepairDistance.label>distanza di riparazione remota del mech</MechRemoteRepairDistance.label>
+  <MechRemoteRepairDistance.label>distanza riparazione remota mech</MechRemoteRepairDistance.label>
   <!-- EN: How far away a mech can be during remote repair. -->
-  <MechRemoteRepairDistance.description>Quanto lontano può trovarsi un mech durante la riparazione remota.</MechRemoteRepairDistance.description>
+  <MechRemoteRepairDistance.description>La distanza massima alla quale può trovarsi un mech durante la riparazione remota.</MechRemoteRepairDistance.description>
   
   <!-- EN: mech remote shield distance -->
-  <MechRemoteShieldDistance.label>distanza dello scudo remoto del mech</MechRemoteShieldDistance.label>
+  <MechRemoteShieldDistance.label>distanza scudo remoto mech</MechRemoteShieldDistance.label>
   <!-- EN: The maximum range at which a mechanitor can place a shield on a mechanoid. -->
-  <MechRemoteShieldDistance.description>La distanza massima alla quale un meccanitore può posizionare uno scudo su un meccanoide.</MechRemoteShieldDistance.description>
+  <MechRemoteShieldDistance.description>La portata massima a cui un meccanista può applicare uno scudo su un meccanoide.</MechRemoteShieldDistance.description>
   
   <!-- EN: mech remote shield energy -->
-  <MechRemoteShieldEnergy.label>energia dello scudo remoto del mech</MechRemoteShieldEnergy.label>
+  <MechRemoteShieldEnergy.label>energia scudo remoto mech</MechRemoteShieldEnergy.label>
   <!-- EN: The energy a remote shield will have when created by a mechanitor. -->
-  <MechRemoteShieldEnergy.description>L'energia che avrà uno scudo remoto quando creato da un meccanista.</MechRemoteShieldEnergy.description>
+  <MechRemoteShieldEnergy.description>L’energia che avrà uno scudo remoto quando viene creato da un meccanista.</MechRemoteShieldEnergy.description>
   
   <!-- EN: mech repair speed -->
-  <MechRepairSpeed.label>velocità di riparazione del mech</MechRepairSpeed.label>
+  <MechRepairSpeed.label>velocità di riparazione mech</MechRepairSpeed.label>
   <!-- EN: A multiplier on how fast a mechanitor can repair mechanoids. -->
-  <MechRepairSpeed.description>Un moltiplicatore sulla velocità con cui un meccanista può riparare i meccanoidi.</MechRepairSpeed.description>
+  <MechRepairSpeed.description>Un moltiplicatore della velocità con cui un meccanista può riparare i meccanoidi.</MechRepairSpeed.description>
   
   <!-- EN: raw nutrition multiplier -->
-  <RawNutritionFactor.label>moltiplicatore della nutrizione cruda</RawNutritionFactor.label>
+  <RawNutritionFactor.label>moltiplicatore nutrizione cibo crudo</RawNutritionFactor.label>
   <!-- EN: A multiplier on how nutritious raw food is for this person. Note that since meals usually have more nutrition than their raw ingredients, a boost to this stat may only mean the person gets the same nutrition from raw food as if it were cooked. -->
-  <RawNutritionFactor.description>Un moltiplicatore di quanto nutriente sia il cibo crudo per questa persona. Tieni presente che, poiché i pasti di solito contengono più nutrienti rispetto agli ingredienti crudi, un aumento di questa statistica può solo significare che la persona ottiene la stessa nutrizione dal cibo crudo come se fosse cotto.</RawNutritionFactor.description>
+  <RawNutritionFactor.description>Un moltiplicatore di quanto sia nutriente il cibo crudo per questa persona. Poiché i pasti di solito hanno più nutrienti degli ingredienti crudi, un aumento di questa statistica può significare soltanto che la persona ottiene la stessa nutrizione dal cibo crudo come se fosse cotto.</RawNutritionFactor.description>
   
   <!-- EN: subcore encoding speed -->
-  <SubcoreEncodingSpeed.label>velocità di codifica del sottocore</SubcoreEncodingSpeed.label>
+  <SubcoreEncodingSpeed.label>velocità di codifica sottocore</SubcoreEncodingSpeed.label>
   <!-- EN: A multiplier on how fast a mechanitor can create subcores. -->
-  <SubcoreEncodingSpeed.description>Un moltiplicatore sulla velocità con cui un meccanista può creare sottonuclei.</SubcoreEncodingSpeed.description>
+  <SubcoreEncodingSpeed.description>Un moltiplicatore della velocità con cui un meccanista può creare sottonuclei.</SubcoreEncodingSpeed.description>
   
   <!-- EN: wastepacks per recharge -->
-  <WastepacksPerRecharge.label>rifiuti per ricarica</WastepacksPerRecharge.label>
+  <WastepacksPerRecharge.label>scarti per ricarica</WastepacksPerRecharge.label>
   <!-- EN: How many toxic wastepacks this mechanoid will generate at a mech recharger when going from 0 to 100% energy. Larger mechanoids will generally create more toxic wastepacks. -->
-  <WastepacksPerRecharge.description>Quanti pacchetti di rifiuti tossici genererà questo meccanoide in un caricatore del mech quando passa dallo 0 al 100% di energia. Meccanoidi più grandi generalmente creeranno pacchetti di rifiuti più tossici.</WastepacksPerRecharge.description>
+  <WastepacksPerRecharge.description>Quanti pacchetti di rifiuti tossici genererà questo meccanoide in un caricatore quando passa dallo 0 al 100% di energia. I meccanoidi più grandi di solito producono più pacchetti tossici.</WastepacksPerRecharge.description>
   <WastepacksPerRecharge.statFactorsExplanationHeader>Statistiche rilevanti</WastepacksPerRecharge.statFactorsExplanationHeader>
-  
 </LanguageData>

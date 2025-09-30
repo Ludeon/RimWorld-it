@@ -579,16 +579,16 @@
   <ChooseStuffForRelic>Scegliere</ChooseStuffForRelic>
   <!-- EN: Made from stuff -->
   <RelicStuff>Fatto di roba</RelicStuff>
-
+  
   <!-- Bioscuplter pod -->
   <!-- EN: Cycle -->
-  <BiosculpterPodCycleLabel>ciclo</BiosculpterPodCycleLabel>
+  <BiosculpterPodCycleLabel>Ciclo</BiosculpterPodCycleLabel>
   <!-- EN: loading ingredients -->
-  <BiosculpterPodCycleLabelLoading>caricamento degli ingredienti</BiosculpterPodCycleLabelLoading>
+  <BiosculpterPodCycleLabelLoading>caricamento ingredienti</BiosculpterPodCycleLabelLoading>
   <!-- EN: (and biotuning) -->
-  <BiosculpterPodCycleWillBiotune>(e biotuning)</BiosculpterPodCycleWillBiotune>
+  <BiosculpterPodCycleWillBiotune>(e biosintonizzazione)</BiosculpterPodCycleWillBiotune>
   <!-- EN: Begin {0} cycle -->
-  <BiosculpterPodCycleCommand>Inizia il ciclo {0}</BiosculpterPodCycleCommand>
+  <BiosculpterPodCycleCommand>Avvia ciclo {0}</BiosculpterPodCycleCommand>
   <!-- EN: Duration -->
   <BiosculpterPodCycleDuration>Durata</BiosculpterPodCycleDuration>
   <!-- EN: Duration (transhumanists) -->
@@ -596,58 +596,58 @@
   <!-- EN: Ready for cycle selection -->
   <BiosculpterPodCycleSelection>Pronto per la selezione del ciclo</BiosculpterPodCycleSelection>
   <!-- EN: On standby for {CYCLE} cycle with {PAWN_labelShort} -->
-  <BiosculpterPodCycleStandby>In attesa per {CYCLE} ciclo con {PAWN_labelShort}</BiosculpterPodCycleStandby>
+  <BiosculpterPodCycleStandby>In attesa per il ciclo {CYCLE} con {PAWN_labelShort}</BiosculpterPodCycleStandby>
   <!-- EN: Nutrition loaded, no power -->
-  <BiosculpterPodCycleSelectionNoPower>Carica di nutrizione, non di energia</BiosculpterPodCycleSelectionNoPower>
+  <BiosculpterPodCycleSelectionNoPower>Nutrimento caricato, nessuna energia</BiosculpterPodCycleSelectionNoPower>
   <!-- EN: Ends in -->
-  <BiosculpterCycleTimeRemaining>Finisce dentro</BiosculpterCycleTimeRemaining>
+  <BiosculpterCycleTimeRemaining>Termina tra</BiosculpterCycleTimeRemaining>
   <!-- EN: accelerated for transhumanists -->
   <BiosculpterCycleAccelerated>accelerato per i transumanisti</BiosculpterCycleAccelerated>
   <!-- EN: Paused: No power (interrupt in {TIME}) -->
-  <BiosculpterCycleNoPowerInterrupt>In pausa: nessuna alimentazione (interruzione in {TIME})</BiosculpterCycleNoPowerInterrupt>
+  <BiosculpterCycleNoPowerInterrupt>In pausa: nessuna energia (interruzione tra {TIME})</BiosculpterCycleNoPowerInterrupt>
   <!-- EN: Biotuned to -->
   <BiosculpterBiotunedTo>Biosintonizzato su</BiosculpterBiotunedTo>
   <!-- EN: Interrupt cycle -->
-  <BiosculpterInteruptCycle>Ciclo di interruzione</BiosculpterInteruptCycle>
+  <BiosculpterInteruptCycle>Interrompi ciclo</BiosculpterInteruptCycle>
   <!-- EN: Interrupt the current cycle. The occupant will be ejected without benefiting from the effects of the cycle, and will suffer from short-term biosculpter sickness. -->
-  <BiosculpterInteruptCycleDesc>Interrompere il ciclo corrente. L'occupante verrà espulso senza beneficiare degli effetti del ciclo e soffrirà di malattia da bioscultore a breve termine.</BiosculpterInteruptCycleDesc>
+  <BiosculpterInteruptCycleDesc>Interrompe il ciclo corrente. L’occupante verrà espulso senza beneficiare degli effetti e soffrirà di una malattia da bioscultore a breve termine.</BiosculpterInteruptCycleDesc>
   <!-- EN: {PAWN_labelShort} will enter biosculpter and begin a {CYCLE} cycle. -->
-  <BiosculpterEnteringMessage>{PAWN_labelShort} entrerà nel biosculpter e inizierà un ciclo {CYCLE}.</BiosculpterEnteringMessage>
+  <BiosculpterEnteringMessage>{PAWN_labelShort} entrerà nel bioscultore e inizierà un ciclo {CYCLE}.</BiosculpterEnteringMessage>
   <!-- EN: {PAWN_labelShort} will collect {INGREDIENTS}, and begin a {CYCLE} cycle. -->
   <BiosculpterLoadingStartedMessage>{PAWN_labelShort} raccoglierà {INGREDIENTS} e inizierà un ciclo {CYCLE}.</BiosculpterLoadingStartedMessage>
   <!-- EN: {PAWN_labelShort} will collect {INGREDIENTS}, place {DOWNED_labelShort} inside the biosculpter, and begin a {CYCLE} cycle. -->
-  <BiosculpterCarryStartedMessage>{PAWN_labelShort} raccoglierà {INGREDIENTS}, posizionerà {DOWNED_labelShort} all'interno del bioscultore e inizierà un ciclo {CYCLE}.</BiosculpterCarryStartedMessage>
+  <BiosculpterCarryStartedMessage>{PAWN_labelShort} raccoglierà {INGREDIENTS}, collocherà {DOWNED_labelShort} nel bioscultore e inizierà un ciclo {CYCLE}.</BiosculpterCarryStartedMessage>
   <!-- EN: {0} nutrition -->
-  <NumNutrition>{0} nutrizione</NumNutrition>
+  <NumNutrition>{0} nutrimento</NumNutrition>
   <!-- EN: {PAWN_labelShort} was ejected from a biosculpter pod due to lack of power. -->
-  <BiosculpterNoPowerEjectedMessage>{PAWN_labelShort} è stato espulso da una capsula bioscultore a causa della mancanza di energia.</BiosculpterNoPowerEjectedMessage>
+  <BiosculpterNoPowerEjectedMessage>{PAWN_labelShort} è stato espulso da una capsula bioscultore per mancanza di energia.</BiosculpterNoPowerEjectedMessage>
   <!-- EN: {PAWN_labelShort} completed healing cycle. -->
-  <BiosculpterHealCompletedMessage>{PAWN_labelShort} ciclo di guarigione completato.</BiosculpterHealCompletedMessage>
+  <BiosculpterHealCompletedMessage>{PAWN_labelShort} ha completato il ciclo di guarigione.</BiosculpterHealCompletedMessage>
   <!-- EN: {PAWN_labelShort} completed healing cycle, and {PAWN_possessive} {HEDIFF_label} was cured. -->
-  <BiosculpterHealCompletedWithCureMessage>{PAWN_labelShort} ha completato il ciclo di guarigione e {PAWN_possessive} {HEDIFF_label} è stato guarito.</BiosculpterHealCompletedWithCureMessage>
+  <BiosculpterHealCompletedWithCureMessage>{PAWN_labelShort} ha completato il ciclo di guarigione e {PAWN_possessive} {HEDIFF_label} è stato curato.</BiosculpterHealCompletedWithCureMessage>
   <!-- EN: {PAWN_labelShort} completed {PAWN_possessive} age reversal cycle. -->
-  <BiosculpterAgeReversalCompletedMessage>{PAWN_labelShort} ha completato {PAWN_possessive} ciclo di inversione dell'età.</BiosculpterAgeReversalCompletedMessage>
+  <BiosculpterAgeReversalCompletedMessage>{PAWN_labelShort} ha completato il suo ciclo di inversione dell’età.</BiosculpterAgeReversalCompletedMessage>
   <!-- EN: {PAWN_pronoun} expects the next age reversal in {DEADLINE} days. -->
-  <AgeReversalExpectationDeadline>{PAWN_pronoun} prevede il prossimo inversione di età tra {DEADLINE} giorni.</AgeReversalExpectationDeadline>
+  <AgeReversalExpectationDeadline>{PAWN_pronoun} prevede la prossima inversione di età tra {DEADLINE} giorni.</AgeReversalExpectationDeadline>
   <!-- EN: {PAWN_labelShort}'s pleasure cycle is complete. -->
   <BiosculpterPleasureCompletedMessage>Il ciclo del piacere di {PAWN_labelShort} è completo.</BiosculpterPleasureCompletedMessage>
   <!-- EN: Cleanliness speed factor -->
-  <BiosculpterCleanlinessSpeedFactor>Fattore di velocità della pulizia</BiosculpterCleanlinessSpeedFactor>
+  <BiosculpterCleanlinessSpeedFactor>Fattore velocità pulizia</BiosculpterCleanlinessSpeedFactor>
   <!-- EN: Biotuned speed factor -->
-  <BiosculpterBiotunedSpeedFactor>Fattore di velocità biosintonizzato</BiosculpterBiotunedSpeedFactor>
+  <BiosculpterBiotunedSpeedFactor>Fattore velocità biosintonizzazione</BiosculpterBiotunedSpeedFactor>
   <!-- EN: These conditions will be healed -->
-  <HealingCycleWillHeal>Queste condizioni saranno guarite</HealingCycleWillHeal>
+  <HealingCycleWillHeal>Queste condizioni saranno curate</HealingCycleWillHeal>
   <!-- EN: One of these conditions will be healed -->
-  <HealingCycleOneWillHeal>Una di queste condizioni sarà guarita</HealingCycleOneWillHeal>
+  <HealingCycleOneWillHeal>Una di queste condizioni sarà curata</HealingCycleOneWillHeal>
   <!-- EN: Missing required research -->
   <MissingRequiredResearch>Ricerca richiesta mancante</MissingRequiredResearch>
   <!-- EN: Requires -->
   <BiosculpterRequiresIngredients>Richiede</BiosculpterRequiresIngredients>
   <!-- EN: On completion of the {CYCLE} cycle, the following will occur -->
-  <OnCompletionOfCycle>Al completamento del ciclo {CYCLE}, si verificherà quanto segue</OnCompletionOfCycle>
+  <OnCompletionOfCycle>Al termine del ciclo {CYCLE}, accadrà quanto segue</OnCompletionOfCycle>
   <!-- EN: {PAWN_nameDef} does not have any conditions that can be healed by a {CYCLE} cycle.\n\nDo you want to continue? -->
-  <BiosculpterNoCoditionsToHeal>{PAWN_nameDef} non presenta alcuna condizione che possa essere curata con un ciclo {CYCLE}.\n\nVuoi continuare?</BiosculpterNoCoditionsToHeal>
-
+  <BiosculpterNoCoditionsToHeal>{PAWN_nameDef} non ha condizioni curabili con un ciclo {CYCLE}.\n\nVuoi continuare?</BiosculpterNoCoditionsToHeal>
+  
   <!-- EN: basic -->
   <Basic>DI BASE</Basic>
   <!-- EN: Change the style this will be built in. This is purely visual and has no gameplay impact. -->
