@@ -528,14 +528,14 @@
   <CommandLaunchGroupCooldown>In raffreddamento.</CommandLaunchGroupCooldown>
   <!-- EN: {0} / {1} kg -->
   <MassUsageString>{0} / {1} kg</MassUsageString>
-
+  
   <!-- Load transporter -->
   <!-- EN: Load launch group of {0} -->
-  <CommandLoadTransporter>Carica gruppo di lancio con {0}</CommandLoadTransporter>
+  <CommandLoadTransporter>Carica gruppo di {0} POD</CommandLoadTransporter>
   <!-- EN: Defines the selected transporter(s) as a launch group. Opens the loading dialog so you can decide who and what should be loaded inside. -->
-  <CommandLoadTransporterDesc>Imposta il trasporto(i) selezionato(i) come un gruppo di lancio. Apre la finestra di dialogo del caricamento affinché tu possa decidere chi e cosa deve essere caricato all'interno.</CommandLoadTransporterDesc>
+  <CommandLoadTransporterDesc>Imposta i pod selezionati come gruppo di lancio. Apre la finestra di caricamento così puoi decidere chi e cosa caricare all’interno.</CommandLoadTransporterDesc>
   <!-- EN: The transport pod is not connected to a fueling port. -->
-  <CommandLoadTransporterFailNotConnectedToFuelingPort>La capsula di trasporto non è collegata ad un porto di rifornimento.</CommandLoadTransporterFailNotConnectedToFuelingPort>
+  <CommandLoadTransporterFailNotConnectedToFuelingPort>La capsula di trasporto non è collegata a una porta di rifornimento.</CommandLoadTransporterFailNotConnectedToFuelingPort>
   <!-- EN: The pod launcher has no fuel. -->
   <CommandLoadTransporterFailNoFuel>Il lanciacapsule non ha carburante.</CommandLoadTransporterFailNoFuel>
   
@@ -543,19 +543,19 @@
   <!-- EN: Load -->
   <CommandLoadTransporterSingle>Carica</CommandLoadTransporterSingle>
   <!-- EN: Opens the loading dialog so you can decide who and what should be loaded inside. -->
-  <CommandLoadTransporterSingleDesc>Apre la finestra di dialogo di caricamento in modo da poter decidere chi e cosa deve essere caricato all'interno.</CommandLoadTransporterSingleDesc>
+  <CommandLoadTransporterSingleDesc>Apre la finestra di caricamento così puoi decidere chi e cosa caricare all’interno.</CommandLoadTransporterSingleDesc>
   
   <!-- Transporters set to load -->
   <!-- EN: Set to load -->
-  <CommandSetToLoadTransporter>Imposta per caricare</CommandSetToLoadTransporter>
+  <CommandSetToLoadTransporter>Imposta per il carico</CommandSetToLoadTransporter>
   <!-- EN: Opens the loading dialog so you can decide who and what should be loaded inside. -->
-  <CommandSetToLoadTransporterDesc>Apre la finestra di dialogo di caricamento in modo da poter decidere chi e cosa deve essere caricato all'interno.</CommandSetToLoadTransporterDesc>
+  <CommandSetToLoadTransporterDesc>Apre la finestra di caricamento così puoi decidere chi e cosa caricare all’interno.</CommandSetToLoadTransporterDesc>
   
   <!-- Autoload transporters -->
   <!-- EN: Autoload -->
   <CommandAutoloadTransporters>Caricamento automatico</CommandAutoloadTransporters>
   <!-- EN: Toggle loading all required cargo automatically as soon as they become available. -->
-  <CommandAutoloadTransportersDesc>Attiva/disattiva il caricamento automatico di tutte le merci necessarie non appena diventano disponibili.</CommandAutoloadTransportersDesc>
+  <CommandAutoloadTransportersDesc>Attiva/Disattiva il caricamento automatico di tutte le merci necessarie non appena diventano disponibili.</CommandAutoloadTransportersDesc>
   
   <!-- Select previous transporter -->
   <!-- EN: Select previous in launch group -->
@@ -579,25 +579,25 @@
   <!-- EN: Designate open/close -->
   <CommandDesignateOpenCloseVentLabel>Imposta aperto/chiuso</CommandDesignateOpenCloseVentLabel>
   <!-- EN: Designate this vent to be opened or closed. A colonist will come soon to perform the task. -->
-  <CommandDesignateOpenCloseVentDesc>Imposta se questa ventola deve essere aperta o chiusa. Un colono arriverà al più presto per eseguire l'ordine.</CommandDesignateOpenCloseVentDesc>
+  <CommandDesignateOpenCloseVentDesc>Designa questo sfiatatoio per l’apertura o la chiusura. Un colono arriverà a breve per eseguire il compito.</CommandDesignateOpenCloseVentDesc>
   
   <!-- Remove waypoint -->
   <!-- EN: Remove -->
   <CommandRemoveWaypointLabel>Rimuovi</CommandRemoveWaypointLabel>
   <!-- EN: Remove this waypoint. -->
   <CommandRemoveWaypointDesc>Rimuove questa tappa.</CommandRemoveWaypointDesc>
-
+  
   <!-- Pause caravan -->
   <!-- EN: Rest -->
   <CommandPauseCaravan>Accampati</CommandPauseCaravan>
   <!-- EN: Start resting. This has the following benefits:\n\n  - People can interact socially\n  - Forage for food {0} times faster\n  - Visibility multiplied by {1} -->
-  <CommandToggleCaravanPauseDesc>Accampati. Questo fornisce i seguenti benefici:\n\n  - Le persone possono interagire socialmente\n  - Il procacciamento di cibo è {0} volte più veloce\n  - La visibilità è moltiplicata per {1}</CommandToggleCaravanPauseDesc>
+  <CommandToggleCaravanPauseDesc>Inizia a riposare. Questo offre i seguenti benefici:\n\n  - Le persone possono interagire socialmente\n  - Il procacciamento di cibo è {0} volte più veloce\n  - La visibilità è moltiplicata per {1}</CommandToggleCaravanPauseDesc>
   
   <!-- Show sellable items -->
   <!-- EN: Show what will buy -->
-  <CommandShowSellableItems>Mostra merci acquistabili</CommandShowSellableItems>
+  <CommandShowSellableItems>Mostra cosa comprerà</CommandShowSellableItems>
   <!-- EN: Show everything this trader wants to buy. -->
-  <CommandShowSellableItemsDesc>Mostra tutto quello che questo commerciante vuole acquistare.</CommandShowSellableItemsDesc>
+  <CommandShowSellableItemsDesc>Mostra tutto ciò che questo commerciante vuole acquistare.</CommandShowSellableItemsDesc>
 
   <!-- Attack settlement -->
   <!-- EN: Attack -->
