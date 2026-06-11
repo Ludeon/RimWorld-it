@@ -76,10 +76,19 @@ e il plurale giusti:
 Regola pratica per popolarle: genere dalla desinenza (**-o → M**, **-a → F**), con i **-e**
 ambigui da decidere a mano. Candidato per un tool `rwit wordinfo` (auto-manutenzione).
 
-### Bug dati già individuati (da correggere in revisione)
-- `Female.txt`: **`anima grass`**, **`anima tree`** → inglese non tradotto ("anima
-  d'erba"/"anima d'albero"? Da verificare il termine corretto in gioco).
-- `Neuter.txt`: **`psychic shock lance`**, **`psylink neuroformer`** → inglese non tradotto.
+### Voci in inglese: di solito sono conseguenze, non bug del file gender
+Una voce inglese in `Gender/*.txt` riflette quasi sempre un'**etichetta di origine non
+tradotta altrove** (l'oggetto/pianta ha ancora il `.label` inglese): in quel caso la voce
+gender è *corretta* e va sistemata **alla fonte** (il `.label` nel DefInjected), non qui.
+Casi visti:
+- `Female.txt`: `anima grass`, `anima tree` → verificare/tradurre il `.label` della pianta
+  (Ideology); la voce gender seguirà.
+- `Neuter.txt`: `psylink neuroformer` → idem (item Royalty).
+- ✅ Rimosso `psychic shock lance` da `Neuter.txt`: residuo morto, l'italiano corretto
+  `lancia di shock psichico` è già in `Female.txt` (l'item Core è tradotto).
+- `Male.txt`: `jump-pack` è l'etichetta reale tenuta in inglese (`Apparel_PackJump`) → ok.
+
+Candidato a un tool `rwit wordinfo` che riconcili le liste gender con i `.label` tradotti.
 
 ---
 
