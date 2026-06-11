@@ -1,31 +1,15 @@
-// ============================================================================
-//  LanguageWorker_Italian — improved version (proposal)
-// ============================================================================
+// LanguageWorker_Italian — improved article and plural handling.
 //
-//  Base: Verse.LanguageWorker_Italian, decompiled from Assembly-CSharp.dll
-//        (RimWorld 1.6.4850). See docs/GENERAZIONE-NOMI-E-GRAMMATICA.md for the
-//        original behaviour and its limitations.
-//
-//  NOTE on deployment:
-//      A language pack is data only: this .cs is NOT loaded by the game just by
-//      sitting in the repo. The game uses the LanguageWorker_Italian compiled into
-//      its assembly. This file is meant to be merged upstream into the game
-//      (replacing the stock worker), or shipped via a companion mod (a Harmony
-//      patch overriding the methods, or a differently-named class referenced by
-//      LanguageInfo.xml's languageWorkerClass).
-//
-//  IMPROVEMENTS over the stock worker:
-//   1. Definite article "lo": now also for gn, ps, pn, x, y, i+vowel
-//      (lo gnomo, lo psicologo, lo pneumatico, lo xilofono, lo yogurt, lo iato).
-//      The stock worker produced "il psicologo" / "il gnomo" (incorrect).
-//   2. PLURAL articles (previously ignored entirely): i/gli/le and the partitives
-//      dei/degli/delle.
+// Changes over the previous version:
+//   1. Definite article "lo" now also applies to words starting with gn, ps, pn,
+//      x, y, and i+vowel (lo gnomo, lo psicologo, lo pneumatico, lo xilofono,
+//      lo yogurt, lo iato). Previously these produced "il psicologo" / "il gnomo".
+//   2. Plural articles are now handled (previously they fell through to the
+//      singular forms): i/gli/le and the partitives dei/degli/delle.
 //   3. Feminine plurals: -ca -> -che, -ga -> -ghe (amica -> amiche, collega ->
 //      colleghe) and -cia/-gia -> -cie/-gie or -ce/-ge depending on the preceding
-//      letter (camicia -> camicie, faccia -> facce). Irregular plurals are still
-//      handled by the explicit lists (TryLookupPluralForm) + WordInfo/Gender.
-//
-// ============================================================================
+//      letter (camicia -> camicie, faccia -> facce). Irregular plurals remain
+//      handled by TryLookupPluralForm and the WordInfo gender data.
 
 using Verse;
 
