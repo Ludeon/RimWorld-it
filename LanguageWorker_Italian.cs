@@ -1,15 +1,23 @@
 // LanguageWorker_Italian — improved article and plural handling.
+// Updated: 2026-06-12
 //
 // Changes over the previous version:
 //   1. Definite article "lo" now also applies to words starting with gn, ps, pn,
 //      x, y, and i+vowel (lo gnomo, lo psicologo, lo pneumatico, lo xilofono,
 //      lo yogurt, lo iato). Previously these produced "il psicologo" / "il gnomo".
-//   2. Plural articles are now handled (previously they fell through to the
+//   2. Mute "h" before a vowel is treated as a vowel sound for elision, so foreign
+//      words elide correctly (l'hotel, un'hostess, gli hotel).
+//   3. Plural articles are now handled (previously they fell through to the
 //      singular forms): i/gli/le and the partitives dei/degli/delle.
-//   3. Feminine plurals: -ca -> -che, -ga -> -ghe (amica -> amiche, collega ->
-//      colleghe) and -cia/-gia -> -cie/-gie or -ce/-ge depending on the preceding
-//      letter (camicia -> camicie, faccia -> facce). Irregular plurals remain
-//      handled by TryLookupPluralForm and the WordInfo gender data.
+//   4. Plurals:
+//      - words ending in -io collapse to a single -i (figlio -> figli,
+//        occhio -> occhi, studio -> studi); the previous code produced "figlii".
+//      - masculine -ca/-ga -> -chi/-ghi (duca -> duchi, collega -> colleghi);
+//        feminine -ca/-ga -> -che/-ghe (amica -> amiche, collega -> colleghe).
+//      - feminine -cia/-gia -> -cie/-gie or -ce/-ge depending on the preceding
+//        letter (camicia -> camicie, faccia -> facce).
+//      Irregular plurals remain handled by TryLookupPluralForm and the WordInfo
+//      gender data.
 
 using Verse;
 
@@ -22,6 +30,18 @@ namespace Verse
         public bool IsVowel(char ch)
         {
             return Vowels.IndexOf(ch) >= 0;
+        }
+
+        // True if the word begins with a vowel sound for elision purposes:
+        // an actual vowel, or a mute "h" followed by a vowel (hotel, hostess).
+        private bool StartsWithVowelSound(string str)
+        {
+            char c = str[0];
+            if (IsVowel(c))
+                return true;
+            if ((c == 'h' || c == 'H') && str.Length >= 2 && IsVowel(str[1]))
+                return true;
+            return false;
         }
 
         // True if a masculine word requires "lo / uno / gli / degli":
@@ -50,17 +70,15 @@ namespace Verse
             if (str.NullOrEmpty() || name)
                 return str;
 
-            char c = str[0];
-
             if (plural)   // partitive: dei / degli / delle
             {
                 if (gender == Gender.Female)
                     return "delle " + str;
-                return ((MasculineNeedsLo(str) || IsVowel(c)) ? "degli " : "dei ") + str;
+                return ((MasculineNeedsLo(str) || StartsWithVowelSound(str)) ? "degli " : "dei ") + str;
             }
 
             if (gender == Gender.Female)
-                return (IsVowel(c) ? "un'" : "una ") + str;
+                return (StartsWithVowelSound(str) ? "un'" : "una ") + str;
             if (MasculineNeedsLo(str))
                 return "uno " + str;
             return "un " + str;
@@ -71,20 +89,18 @@ namespace Verse
             if (str.NullOrEmpty() || name)
                 return str;
 
-            char c = str[0];
-
             if (plural)   // i / gli / le
             {
                 if (gender == Gender.Female)
                     return "le " + str;
-                return ((MasculineNeedsLo(str) || IsVowel(c)) ? "gli " : "i ") + str;
+                return ((MasculineNeedsLo(str) || StartsWithVowelSound(str)) ? "gli " : "i ") + str;
             }
 
             if (gender == Gender.Female)
-                return (IsVowel(c) ? "l'" : "la ") + str;
+                return (StartsWithVowelSound(str) ? "l'" : "la ") + str;
             if (MasculineNeedsLo(str))
                 return "lo " + str;
-            if (IsVowel(c))
+            if (StartsWithVowelSound(str))
                 return "l'" + str;
             return "il " + str;
         }
@@ -107,6 +123,10 @@ namespace Verse
             if (!IsVowel(last))     // truncated or foreign words (città, gas, computer): invariant
                 return str;
 
+            // -io -> -i, collapsing the double i (figlio -> figli, occhio -> occhi)
+            if (str.EndsWith("io"))
+                return str.Substring(0, str.Length - 2) + "i";
+
             if (gender == Gender.Female)
             {
                 // -ca -> -che, -ga -> -ghe (keeps the hard sound)
@@ -126,7 +146,12 @@ namespace Verse
                 return str.Substring(0, str.Length - 1) + "e";
             }
 
-            // masculine: -o/-e + vowel -> -i
+            // masculine -ca/-ga -> -chi/-ghi (duca -> duchi, collega -> colleghi)
+            if (str.EndsWith("ca"))
+                return str.Substring(0, str.Length - 2) + "chi";
+            if (str.EndsWith("ga"))
+                return str.Substring(0, str.Length - 2) + "ghi";
+            // masculine generic: final vowel -> -i
             return str.Substring(0, str.Length - 1) + "i";
         }
     }
