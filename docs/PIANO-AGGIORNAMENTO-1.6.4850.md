@@ -9,28 +9,55 @@
 tutto committato. Per riprendere: `git checkout aggiornamento-1.6.4850`.
 
 **Fatto finora (committato)**:
-1. Tooling Python `rwit` (sostituisce i vecchi script).
-2. Docs per contributor (`docs/`) + `CLAUDE.md` tracciato e ripulito.
+1. Tooling Python `rwit` (sostituisce i vecchi script); vecchi prompt GPT-3.5 eliminati
+   (regole ora nei docs).
+2. Docs per contributor (`docs/`) + `CLAUDE.md` tracciato e ripulito + policy "repo pubblico,
+   niente dati personali" (il personale sta in `CLAUDE.local.md`, gitignored).
 3. Sync 1.6.4850 (commenti EN + whitespace) + 2 bug fix reali.
-4. Workstream nomi/grammatica: `LanguageWorker_Italian.cs` in **root**, decompilato e
-   **migliorato** (articoli lo/gli, h muta, plurali -io/-ca/-ga; 16/16 test ok). Da
-   deployare a Ludeon (PR upstream) o via mod per avere effetto in gioco.
+4. `LanguageWorker_Italian.cs` in **root**, decompilato e **migliorato** (articoli lo/gli,
+   h muta, plurali -io/-ca/-ga; 16/16 test). Commenti in inglese (pronto per PR upstream).
 5. Pulizia load-error (backstory obsolete + inject di def rimosse).
 
-**PROSSIMO PASSO (deciso)** → workstream **log generato** (§5.2-ter), il vero punto debole:
-- (a) aggiungere le **parti del corpo** a `WordInfo/Gender` (braccio M, gamba F, mano F…);
-- (b) convertire il pack-template **`Combat_Deflect`** con i vincoli di genere
-  `(X_gender==Male/Female)` + suffissi `[X_definite]`, usando il pack **francese** come
-  modello (file: `RimWorld-fr/Core/DefInjected/RulePackDef/RulePacks_CombatMelee.xml`);
-- (c) **l'utente verifica in Dev mode** (log di combattimento su pawn M e F);
-- (d) se regge, scalare a CombatMelee/Ranged/Damage/Maneuvers + Interactions sociali.
+**Come funziona la grammatica (capito in questa sessione — vedi GENERAZIONE-NOMI…)**:
+- Articoli/plurali a runtime = **`LanguageWorker`** (codice) che **legge i DATI**:
+  `WordInfo/Gender/` (genere) e `WordInfo/plural.txt` (plurali, lookup keyed `parola;plurale`).
+- `WordInfo/` è **auto-caricato** (nessuna registrazione XML). I file `Strings/` invece
+  vanno montati con **`<rulesFiles>`** (`simbolo->PercorsoRelativo`) per essere usati come
+  `[simbolo]` nelle rulesStrings.
+- Italiano: **manca `WordInfo/plural.txt`** (ce l'ha il tedesco, auto-generato) → oggi i
+  plurali cadono sull'euristica del `.cs`. Il file posizionale `AnimalsPlural.txt` è cosa
+  diversa (e fragile) e NON è ciò che usa `Pluralize`.
+
+**Strategia corpus (fonte e cosa tradurre)**:
+- **Fonte di verità = INGLESE del gioco** (`Data/<DLC>/Languages/English/Strings`): definisce
+  *cosa* esiste; la worklist si ricava per **diff IT-vs-EN**.
+- **Nomi propri** (`Strings/Names/`) = pool: si **tengono in inglese** (già fatto, contenuti
+  identici). **Liste-parola** (`Strings/Words/` Adjectives/Verbs/Nouns) = si **traducono**.
+- **`WordInfo/Gender` + `plural.txt`** = specifici dell'italiano, derivati dai **nostri**
+  label tradotti (ideale: Morph-it!), NON copiati da EN/DE.
+- **Tedesco = modello del meccanismo** (plural.txt, dati), non fonte dei nomi.
+
+**PROSSIMO PASSO (deciso) — tutto lavoro su FILE DI TESTO, niente `.cs`**:
+1. **`WordInfo/Gender`**: aggiungere le **parti del corpo** (braccio M, gamba F, mano F…).
+2. **`WordInfo/plural.txt`** (nuovo, stile tedesco `singolare;plurale`): plurali irregolari,
+   prima le parti del corpo (braccio→braccia, dito→dita, ginocchio→ginocchia, osso→ossa,
+   labbro→labbra). Auto-caricato, robusto, niente XML.
+3. **Pack-template `Combat_Deflect`**: vincoli di genere `(X_gender==Male/Female)` + suffissi
+   `[X_definite]`, modello = `RimWorld-fr/Core/DefInjected/RulePackDef/RulePacks_CombatMelee.xml`.
+4. **L'utente verifica in Dev mode** (log di combattimento su pawn M e F).
+5. Se regge → scalare: CombatMelee → CombatRanged → Damage → Maneuvers → Interactions sociali.
+6. **Strings mancanti**: diff IT-vs-EN dà ~13 file assenti in Core (pool nomi + alcune
+   `Words/Adjectives|Verbs`). Verificare per file se è gap reale (inglese che trapela) o
+   ristrutturato in varianti di genere; tradurre le liste-parola mancanti.
 
 **Lavoro aperto minore** (task tracciati): `rwit clean` (rename + 95 keyed inutili),
-revisione ampia iterativa, valutare PR upstream del worker.
+revisione ampia iterativa, valutare PR upstream del worker, costruire `rwit wordinfo`
+(genera `WordInfo/plural.txt`/`Gender` da Morph-it!) e `rwit validate`.
 
-**Repo di riferimento** (cartelle sorelle in `progetti/rimworld/`): `RimWorld-fr` (modello
-per genere/WordInfo), `RimWorld-Spanish`, `RimWorld-de`. Decompilatore: `scripts/.tools/ilspycmd.exe`
-(gitignored). Report del gioco: `docs/TranslationReport.txt`.
+**Repo di riferimento** (cartelle sorelle, `origin` = ufficiale Ludeon, **tutti allineati**):
+`RimWorld-fr` (apr), `RimWorld-de` (giu — il più completo, ha `WordInfo/plural.txt`),
+`RimWorld-Spanish` (mag). Decompilatore: `scripts/.tools/ilspycmd.exe` (gitignored).
+Report del gioco: `docs/TranslationReport.txt`.
 
 ## 1. Contesto
 
@@ -115,18 +142,29 @@ Vedi [`GENERAZIONE-NOMI-E-GRAMMATICA.md`](GENERAZIONE-NOMI-E-GRAMMATICA.md).
   (gn/ps/pn/x/y/i+vocale), articoli al plurale, plurali femminili `-ca/-ga/-cia/-gia`.
   Logica verificata con harness. ⚠️ Da deployare (PR upstream o mod) per avere effetto.
 - [ ] WordInfo/Gender: inglese rimasto (vedi nota: si sistema al `.label`), generi dubbi (-e).
-- [ ] Strings: coerenza singolare/plurale × M/F e commenti `//articolo`.
+- [ ] **`WordInfo/plural.txt`** (nuovo, stile tedesco `singolare;plurale`): plurali irregolari.
+  Auto-caricato dal motore, robusto (keyed). È ciò che usa davvero `Pluralize`.
+- [ ] Strings: coerenza singolare/plurale × M/F (file posizionali — stesso conteggio righe).
+
+**Strategia corpus**: fonte = inglese del gioco (diff IT-vs-EN per la worklist); nomi propri
+`Strings/Names/` si tengono in inglese, liste-parola `Strings/Words/` si traducono;
+`WordInfo` derivato dai nostri label (Morph-it!), non copiato da EN/DE.
 
 ### 5.2-ter Log generato (combattimento/sociale) — obiettivo prioritario
 Vedi [`GENERAZIONE-NOMI-E-GRAMMATICA.md`](GENERAZIONE-NOMI-E-GRAMMATICA.md) §5.
 Causa radice misurata: **it 1 vincolo di genere vs fr 122 / es 100 / de 95** → log con
-genere/articoli sbagliati. Strategia: vincoli `(X_gender==Male/Female)` + suffissi
-`[X_definite]` + parti del corpo in WordInfo. Funziona già col worker di serie.
-- [ ] Aggiungere le parti del corpo a `WordInfo/Gender` (verificare in gioco il match).
-- [ ] Pack-template `Combat_Deflect` con i vincoli di genere (template = pack fr/es).
+genere/articoli sbagliati. Strategia (tutto su FILE DI TESTO, niente `.cs`): vincoli
+`(X_gender==Male/Female)` + suffissi `[X_definite]` + `WordInfo/Gender` e `plural.txt`.
+Funziona già col worker di serie.
+- [ ] Parti del corpo in `WordInfo/Gender` (genere) e `WordInfo/plural.txt` (plurali irregolari:
+  braccio→braccia, dito→dita, ginocchio→ginocchia, osso→ossa, labbro→labbra).
+- [ ] Pack-template `Combat_Deflect` con i vincoli di genere (template = pack fr).
 - [ ] Verifica in Dev mode (log di combattimento) su pawn M e F.
 - [ ] Scalare: CombatMelee → CombatRanged → Damage → Maneuvers → Interactions sociali.
-- [ ] Tooling: `rwit compare` (it↔fr↔es↔de), `rwit validate` (lint articoli a mano).
+- [ ] Strings mancanti (diff IT-vs-EN, ~13 file in Core): tradurre le `Words/Adjectives|Verbs`
+  reali; i pool di nomi propri si possono lasciare (fallback inglese) o copiare.
+- [ ] Tooling: `rwit wordinfo` (genera Gender/plural da Morph-it!), `rwit compare`
+  (it↔fr↔es↔de), `rwit validate` (lint articoli a mano + allineamento file posizionali).
 
 ### 5.3 Pulizia (priorità 🧹)
 - [x] Backstory obsolete: 6 file interamente UNUSED eliminati (`Gambler_*`, `Marshal_Adult`,

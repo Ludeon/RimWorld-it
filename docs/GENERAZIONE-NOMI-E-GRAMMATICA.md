@@ -195,6 +195,18 @@ schiera
 Le regole degli articoli (l'/lo/il/la, singolare, generi lessicali particolari) sono in
 [`SINTASSI-TRADUZIONE.md`](SINTASSI-TRADUZIONE.md) §6.
 
+### Cosa tradurre e da dove (fonte = inglese)
+La **fonte di verità** è l'inglese del gioco (`Data/<DLC>/Languages/English/Strings`):
+definisce *quali* file/simboli esistono. La worklist si ricava per **diff IT-vs-EN** (se un
+file manca nella nostra lingua, il gioco usa l'inglese → può trapelare). Per tipo di lista:
+- **Nomi propri** (`Strings/Names/`: animali, persone, città, celestiali) = **pool**:
+  si **tengono in inglese** (Abby, Akira…). Non si traducono; al più si cura/arricchisce.
+- **Liste-parola** (`Strings/Words/`: Adjectives, Verbs, Nouns, colori…) = **si traducono**
+  (red→rosso): vengono assemblate in frasi italiane.
+- **`WordInfo/Gender` e `plural.txt`** = specifici dell'italiano, derivati dai **nostri**
+  label tradotti (ideale: Morph-it!), **non** copiati da EN/DE.
+- **Tedesco** = modello del **meccanismo** (ha `WordInfo/plural.txt`), non fonte dei nomi.
+
 ---
 
 ## 4. `rulesStrings` / `RulePackDef` — la grammatica che assembla tutto
