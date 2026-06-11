@@ -22,6 +22,7 @@ Tutta la documentazione operativa è in `docs/` (tracciata):
 - [`docs/RIFERIMENTI.md`](docs/RIFERIMENTI.md) — repo di altre lingue (fr/es/de), strategia WordInfo, link Ludeon.
 - [`docs/VALIDAZIONE.md`](docs/VALIDAZIONE.md) — validazione file, integrità (la traduzione NON tocca le priorità eventi), foglio `VALIDAZIONE-FILE.csv`.
 - [`docs/GENERAZIONE-NOMI-E-GRAMMATICA.md`](docs/GENERAZIONE-NOMI-E-GRAMMATICA.md) — come il gioco genera nomi/articoli/plurali e il **log di combattimento/sociale** (LanguageWorker + WordInfo + Strings + rulesStrings, con la strategia di fix per il genere). Codice in [`LanguageWorker_Italian.cs`](LanguageWorker_Italian.cs) (versione migliorata, root).
+- [`docs/TOOLING-LOCALE.md`](docs/TOOLING-LOCALE.md) — strategia per gli strumenti locali/offline: Morph-it! per la morfologia, embedding per la coerenza, LLM locale solo come finder/triage (mai traduttore).
 - `docs/PIANO-AGGIORNAMENTO-<versione>.md` — piano della sessione di aggiornamento in corso.
 
 Regole operative di traduzione: [`scripts/prompt.txt`](scripts/prompt.txt) e
