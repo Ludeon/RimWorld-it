@@ -1,30 +1,29 @@
 // ============================================================================
-//  LanguageWorker_Italian — versione MIGLIORATA (proposta)
+//  LanguageWorker_Italian — improved version (proposal)
 // ============================================================================
 //
-//  Base: Verse.LanguageWorker_Italian decompilato da Assembly-CSharp.dll
-//        (RimWorld 1.6.4850). Vedi docs/GENERAZIONE-NOMI-E-GRAMMATICA.md per il
-//        comportamento originale e i suoi limiti.
+//  Base: Verse.LanguageWorker_Italian, decompiled from Assembly-CSharp.dll
+//        (RimWorld 1.6.4850). See docs/GENERAZIONE-NOMI-E-GRAMMATICA.md for the
+//        original behaviour and its limitations.
 //
-//  ⚠️  DEPLOYMENT — leggere prima di aspettarsi effetti in gioco:
-//      Un language pack è SOLO DATI: questo .cs NON viene caricato dal gioco per
-//      il solo fatto di stare nel repo. Il gioco usa il suo LanguageWorker_Italian
-//      compilato nella DLL. Per far valere queste migliorie:
-//        (a) PR upstream a Ludeon (lo compilano loro nel gioco) — consigliato per
-//            la traduzione ufficiale; questo file è già pronto allo scopo; oppure
-//        (b) mod companion con assembly compilato: o una patch Harmony che fa
-//            override dei metodi di Verse.LanguageWorker_Italian, o una classe con
-//            NOME DIVERSO referenziata da LanguageInfo.xml (languageWorkerClass).
+//  NOTE on deployment:
+//      A language pack is data only: this .cs is NOT loaded by the game just by
+//      sitting in the repo. The game uses the LanguageWorker_Italian compiled into
+//      its assembly. This file is meant to be merged upstream into the game
+//      (replacing the stock worker), or shipped via a companion mod (a Harmony
+//      patch overriding the methods, or a differently-named class referenced by
+//      LanguageInfo.xml's languageWorkerClass).
 //
-//  MIGLIORIE rispetto al worker di serie:
-//   1. Articolo determinativo "lo": ora anche per gn, ps, pn, x, y, i+vocale
+//  IMPROVEMENTS over the stock worker:
+//   1. Definite article "lo": now also for gn, ps, pn, x, y, i+vowel
 //      (lo gnomo, lo psicologo, lo pneumatico, lo xilofono, lo yogurt, lo iato).
-//      Il worker di serie dava "il psicologo" / "il gnomo" (sbagliato).
-//   2. Articoli al PLURALE (prima ignorati del tutto): i/gli/le e partitivi dei/degli/delle.
-//   3. Plurali femminili: -ca→-che, -ga→-ghe (amica→amiche, collega→colleghe) e
-//      -cia/-gia→-cie/-gie o -ce/-ge a seconda della lettera precedente
-//      (camicia→camicie, faccia→facce). I plurali irregolari restano gestiti
-//      dalle liste esplicite (TryLookupPluralForm) + WordInfo/Gender.
+//      The stock worker produced "il psicologo" / "il gnomo" (incorrect).
+//   2. PLURAL articles (previously ignored entirely): i/gli/le and the partitives
+//      dei/degli/delle.
+//   3. Feminine plurals: -ca -> -che, -ga -> -ghe (amica -> amiche, collega ->
+//      colleghe) and -cia/-gia -> -cie/-gie or -ce/-ge depending on the preceding
+//      letter (camicia -> camicie, faccia -> facce). Irregular plurals are still
+//      handled by the explicit lists (TryLookupPluralForm) + WordInfo/Gender.
 //
 // ============================================================================
 
@@ -41,8 +40,8 @@ namespace Verse
             return Vowels.IndexOf(ch) >= 0;
         }
 
-        // Vero se la parola maschile richiede "lo / uno / gli / degli":
-        // s impura (s+consonante), z, x, y, ps, pn, gn, i + vocale (semiconsonante).
+        // True if a masculine word requires "lo / uno / gli / degli":
+        // impure s (s + consonant), z, x, y, ps, pn, gn, i + vowel (semivowel).
         private bool MasculineNeedsLo(string str)
         {
             char c0 = char.ToLower(str[0]);
@@ -51,13 +50,13 @@ namespace Verse
 
             if (c0 == 'z' || c0 == 'x' || c0 == 'y')
                 return true;
-            if (c0 == 's' && !secondIsVowel)        // s impura
+            if (c0 == 's' && !secondIsVowel)        // impure s
                 return true;
             if (c0 == 'p' && (c1 == 's' || c1 == 'n'))  // ps, pn
                 return true;
             if (c0 == 'g' && c1 == 'n')              // gn
                 return true;
-            if (c0 == 'i' && secondIsVowel)          // i + vocale: lo iato, lo ione
+            if (c0 == 'i' && secondIsVowel)          // i + vowel: lo iato, lo ione
                 return true;
             return false;
         }
@@ -69,7 +68,7 @@ namespace Verse
 
             char c = str[0];
 
-            if (plural)   // partitivo: dei / degli / delle
+            if (plural)   // partitive: dei / degli / delle
             {
                 if (gender == Gender.Female)
                     return "delle " + str;
@@ -121,29 +120,29 @@ namespace Verse
                 return str;
 
             char last = str[str.Length - 1];
-            if (!IsVowel(last))     // parole tronche o straniere (città, gas, computer): invariate
+            if (!IsVowel(last))     // truncated or foreign words (città, gas, computer): invariant
                 return str;
 
             if (gender == Gender.Female)
             {
-                // -ca -> -che, -ga -> -ghe (mantiene il suono duro)
+                // -ca -> -che, -ga -> -ghe (keeps the hard sound)
                 if (str.EndsWith("ca"))
                     return str.Substring(0, str.Length - 2) + "che";
                 if (str.EndsWith("ga"))
                     return str.Substring(0, str.Length - 2) + "ghe";
-                // -cia / -gia: vocale prima -> -cie/-gie ; consonante prima -> -ce/-ge
+                // -cia / -gia: vowel before -> -cie/-gie ; consonant before -> -ce/-ge
                 if (str.EndsWith("cia") || str.EndsWith("gia"))
                 {
                     char before = (str.Length >= 4) ? str[str.Length - 4] : '\0';
-                    char cg = str[str.Length - 3];   // 'c' o 'g'
+                    char cg = str[str.Length - 3];   // 'c' or 'g'
                     string stem = str.Substring(0, str.Length - 3) + cg;
                     return stem + (IsVowel(before) ? "ie" : "e");
                 }
-                // generico -a -> -e
+                // generic -a -> -e
                 return str.Substring(0, str.Length - 1) + "e";
             }
 
-            // maschile: -o/-e + vocale -> -i
+            // masculine: -o/-e + vowel -> -i
             return str.Substring(0, str.Length - 1) + "i";
         }
     }
