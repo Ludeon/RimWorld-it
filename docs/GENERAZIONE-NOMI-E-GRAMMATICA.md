@@ -14,6 +14,14 @@ l'italiano, e cosa possiamo (e non possiamo) modificare. Tre pezzi che lavorano 
             └────────────────── chiamato dal motore di grammatica ──────────────┘
 ```
 
+> **Dati vs codice — dove lavorare.** La manutenzione quotidiana sta nei **file di testo**
+> (DATI): `WordInfo/Gender` (il genere di ogni parola) e le coppie singolare/plurale per gli
+> irregolari. Il `LanguageWorker` (CODICE) **legge** quei dati e applica articolo/plurale;
+> da genere + ortografia decide solo il caso `lo`/`il` che i dati da soli non possono
+> risolvere. Col worker **già nel gioco** + i dati giusti, gran parte della grammatica
+> funziona **senza toccare il `.cs`** (che resta una proposta upstream, non manutenzione
+> quotidiana).
+
 ---
 
 ## 1. `LanguageWorker_Italian` (codice, dentro la DLL del gioco)
@@ -131,6 +139,28 @@ Badass_Plural_Feminine.txt           Badass_Plural_Masculine.txt   (aggettivi)
 
 Così "muffalo→muffali", "cobra→cobra" vengono da `AnimalsPlural.txt` (lookup), non
 dall'euristica del codice.
+
+### ⚠️ I file accoppiati sono POSIZIONALI (singolare ↔ plurale)
+Le coppie come `Animals.txt` / `AnimalsPlural.txt` (e `..._Singular_*` / `..._Plural_*`) NON
+vengono accoppiate confrontando le parole: sono **sincronizzate per posizione di riga**.
+La riga *N* del file plurale è il plurale della riga *N* del singolare.
+
+```
+Animals.txt        riga 1: muffalo   riga 24: ape   riga 67: oca
+AnimalsPlural.txt  riga 1: muffali   riga 24: api   riga 67: oche
+```
+
+Conseguenze pratiche:
+- I due file **devono avere lo stesso numero di righe** (escl. commenti/vuote); da noi
+  178 = 178. Verificato: nessun disallineamento.
+- **Fragilità**: se aggiungi/rimuovi/riordini **una** riga in un solo file dei due, tutte
+  le righe sotto **scalano** e ogni animale successivo prende il plurale sbagliato
+  (muffalo→"api"), **in silenzio**. Modifica sempre entrambi i file alla stessa posizione.
+- L'inglese **non ha** `AnimalsPlural.txt` (il plurale regolare `+s` lo fa il suo
+  LanguageWorker): il file dei plurali è una **necessità italiana** per i plurali
+  irregolari → è il posto giusto dove mettere gli irregolari (incl. parti del corpo:
+  braccio→braccia, dito→dita…).
+- Candidato a controllo `rwit validate`: stesso conteggio righe e coerenza delle coppie.
 
 ### Convenzione: commento-articolo a inizio file
 I file di nomi iniziano con un commento che fissa l'articolo del gruppo, es.:
