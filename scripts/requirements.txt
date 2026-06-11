@@ -1,0 +1,13 @@
+# Dipendenze per gli strumenti di traduzione (scripts/rwit).
+#
+# Setup (dalla radice del repo):
+#   python -m venv .venv
+#   .venv\Scripts\pip install -r scripts\requirements.txt
+#
+# Uso:
+#   .venv\Scripts\python scripts\rwit --help
+
+lxml>=6.0
+rich>=14.0
+typer>=0.12
+requests>=2.32

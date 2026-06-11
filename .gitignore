@@ -1,8 +1,16 @@
 .idea/
 .github/
-CLAUDE.md
+CLAUDE.local.md
 .claude
 EXTRA/
 reports/
 /dist/
 /About/
+
+# Python (strumenti di traduzione)
+.venv/
+__pycache__/
+*.pyc
+
+# tool-path locale per decompilatore (ilspycmd) — non committare
+scripts/.tools/
