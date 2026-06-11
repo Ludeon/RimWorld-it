@@ -27,10 +27,15 @@ l'italiano, e cosa possiamo (e non possiamo) modificare. Tre pezzi che lavorano 
 > (base decompilata da RimWorld 1.6.4850 con ILSpy).
 
 ### Versione migliorata (root del repo) e come deployarla
-Il file in root corregge i limiti del worker di serie (vedi sotto):
+Il file in root (aggiornato 2026-06-12) corregge i limiti del worker di serie:
 - articolo `lo`/`gli` anche per gn, ps, pn, x, y, i+vocale (lo gnomo, lo psicologo);
+- **h muta** trattata come vocale per l'elisione (l'hotel, un'hostess, gli hotel);
 - articoli al **plurale** (i/gli/le, partitivi dei/degli/delle) — il worker di serie li ignorava;
+- **fix bug**: plurali `-io` ora collassano a `-i` (figlio→figli, occhio→occhi; prima "figlii");
+- plurali maschili `-ca/-ga→-chi/-ghi` (duca→duchi, collega→colleghi);
 - plurali femminili `-ca→-che`, `-ga→-ghe`, `-cia/-gia→-cie/-gie | -ce/-ge`.
+
+Tutto verificato con harness di test C# (16/16 casi ok).
 
 ⚠️ **Non basta che stia nel repo**: un language pack è solo dati e NON carica `.cs`. Per
 farlo valere serve una **PR upstream a Ludeon** (lo compilano nel gioco) oppure un **mod

@@ -3,6 +3,35 @@
 > Branch di lavoro: **`aggiornamento-1.6.4850`** (separato da `master`, si fonde solo a rilascio pronto).
 > Documento di sessione. Stato e decisioni aggiornati man mano.
 
+## 0. RIPARTENZA — riprendere da qui (ultimo aggiornamento 2026-06-12)
+
+**Branch attivo**: `aggiornamento-1.6.4850` (mai pushare su master). Working tree pulito,
+tutto committato. Per riprendere: `git checkout aggiornamento-1.6.4850`.
+
+**Fatto finora (committato)**:
+1. Tooling Python `rwit` (sostituisce i vecchi script).
+2. Docs per contributor (`docs/`) + `CLAUDE.md` tracciato e ripulito.
+3. Sync 1.6.4850 (commenti EN + whitespace) + 2 bug fix reali.
+4. Workstream nomi/grammatica: `LanguageWorker_Italian.cs` in **root**, decompilato e
+   **migliorato** (articoli lo/gli, h muta, plurali -io/-ca/-ga; 16/16 test ok). Da
+   deployare a Ludeon (PR upstream) o via mod per avere effetto in gioco.
+5. Pulizia load-error (backstory obsolete + inject di def rimosse).
+
+**PROSSIMO PASSO (deciso)** → workstream **log generato** (§5.2-ter), il vero punto debole:
+- (a) aggiungere le **parti del corpo** a `WordInfo/Gender` (braccio M, gamba F, mano F…);
+- (b) convertire il pack-template **`Combat_Deflect`** con i vincoli di genere
+  `(X_gender==Male/Female)` + suffissi `[X_definite]`, usando il pack **francese** come
+  modello (file: `RimWorld-fr/Core/DefInjected/RulePackDef/RulePacks_CombatMelee.xml`);
+- (c) **l'utente verifica in Dev mode** (log di combattimento su pawn M e F);
+- (d) se regge, scalare a CombatMelee/Ranged/Damage/Maneuvers + Interactions sociali.
+
+**Lavoro aperto minore** (task tracciati): `rwit clean` (rename + 95 keyed inutili),
+revisione ampia iterativa, valutare PR upstream del worker.
+
+**Repo di riferimento** (cartelle sorelle in `progetti/rimworld/`): `RimWorld-fr` (modello
+per genere/WordInfo), `RimWorld-Spanish`, `RimWorld-de`. Decompilatore: `scripts/.tools/ilspycmd.exe`
+(gitignored). Report del gioco: `docs/TranslationReport.txt`.
+
 ## 1. Contesto
 
 Il gioco è stato aggiornato a **1.6.4850**. La cartella lingua "Italiano" dentro
