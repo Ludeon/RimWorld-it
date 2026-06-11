@@ -210,6 +210,26 @@ i pezzi sopra usando `[riferimenti]` e pesi `(p=N)`:
   va **copiato identico** (vedi [`SINTASSI-TRADUZIONE.md`](SINTASSI-TRADUZIONE.md) §4 e la
   nota integrità in [`VALIDAZIONE.md`](VALIDAZIONE.md)).
 
+### Come un file `Strings/` diventa disponibile: `<rulesFiles>`
+Un `rulePack` ha due liste: `<rulesStrings>` (regole inline) e **`<rulesFiles>`**, che
+**monta un file di `Strings/` sotto un simbolo**. Esempio dai Def del gioco
+(`Core/Defs/RulePackDefs/RulePacks_Common.xml`):
+```xml
+<rulePack>
+  <rulesFiles>
+    <li>tribal_word_file->Words/Foreign/Tribal</li>   <!-- → Strings/Words/Foreign/Tribal.txt -->
+    <li>place_end->WordParts/PlaceEndings</li>          <!-- → Strings/WordParts/PlaceEndings.txt -->
+  </rulesFiles>
+</rulePack>
+```
+- Sintassi: `<li>simbolo->PercorsoRelativo</li>`, **relativo a `Strings/`, senza `.txt`**.
+  Poi `[simbolo]` nelle rulesStrings pesca una riga a caso da quel file.
+- Nelle traduzioni si può **ridichiarare** `rulesFiles` in DefInjected per puntare ai file
+  `Strings/` italiani (es. `Odyssey/.../Script_SpaceSites.xml`).
+- ⚠️ **Differenza chiave**: i file di **`Strings/`** vanno registrati con `rulesFiles`; i
+  file di **`WordInfo/`** (`Gender/`, `plural.txt`) NO — li carica il motore in automatico
+  per lingua. Quindi il futuro `WordInfo/plural.txt` non richiede nulla negli XML.
+
 ### Esempio end-to-end (descrizione di una mappa)
 1. Una `RulePackDef` ha `title->[mapType] [mapNoun] di [subject]`.
 2. `[mapType]` risolve a "deserto", `[mapNoun]` a "distese", `[subject]` a "Vetro".
