@@ -23,8 +23,19 @@ l'italiano, e cosa possiamo (e non possiamo) modificare. Tre pezzi che lavorano 
 
 > Gli sviluppatori **l'hanno fornita**: esiste nell'`Assembly-CSharp.dll` accanto a
 > French, German, Spanish… Mancava solo il **file `.cs` di riferimento** nel nostro repo.
-> Ora c'è: [`Notes/LanguageWorker_Italian.cs`](../Notes/LanguageWorker_Italian.cs)
-> (decompilato da RimWorld 1.6.4850 con ILSpy, come i `.cs` di fr/es).
+> Ora c'è, in versione **migliorata**, nella root: [`LanguageWorker_Italian.cs`](../LanguageWorker_Italian.cs)
+> (base decompilata da RimWorld 1.6.4850 con ILSpy).
+
+### Versione migliorata (root del repo) e come deployarla
+Il file in root corregge i limiti del worker di serie (vedi sotto):
+- articolo `lo`/`gli` anche per gn, ps, pn, x, y, i+vocale (lo gnomo, lo psicologo);
+- articoli al **plurale** (i/gli/le, partitivi dei/degli/delle) — il worker di serie li ignorava;
+- plurali femminili `-ca→-che`, `-ga→-ghe`, `-cia/-gia→-cie/-gie | -ce/-ge`.
+
+⚠️ **Non basta che stia nel repo**: un language pack è solo dati e NON carica `.cs`. Per
+farlo valere serve una **PR upstream a Ludeon** (lo compilano nel gioco) oppure un **mod
+companion** (patch Harmony sui metodi, o classe con nome diverso in `languageWorkerClass`).
+Logica verificata con un harness di test (articoli e plurali corretti).
 
 ### Cosa fa
 - **Articolo indeterminativo** `WithIndefiniteArticle` → un / uno / una / un'
@@ -149,9 +160,61 @@ i pezzi sopra usando `[riferimenti]` e pesi `(p=N)`:
 
 ---
 
-## 5. Piano di revisione di quest'area
+## 5. Grammatica del log generato (combattimento/sociale) — il problema storico
 
-- [ ] Salvare/aggiornare il riferimento `Notes/LanguageWorker_Italian.cs` a ogni versione.
+I log di combattimento e le interazioni sociali sono **generati** dalle `rulesStrings`
+(`RulePacks_Combat*`, `RulePacks_Damage*`, `RulePacks_Maneuvers`, `Interactions_*`).
+È la parte storicamente **più sbagliata** della traduzione italiana.
+
+### Causa radice (misurata)
+Il motore offre un meccanismo per il genere; l'italiano non l'ha quasi mai usato. Vincoli
+`_gender==Male/Female` nelle rulesStrings di combattimento:
+
+| Lingua | Vincoli di genere |
+|--------|-------------------|
+| Francese | 122 |
+| Spagnolo | 100 |
+| Tedesco | 95 |
+| **Italiano** | **1** |
+
+Le regole italiane hanno articoli/participi **fissi** (`nella [recipient_part0_label]`,
+`colpito`) giusti solo per un genere → frasi come "X ha colpito Y nella braccio" o
+participi al maschile per soggetti femminili. In più **`WordInfo/Gender` non ha quasi
+nessuna parte del corpo** (braccio, gamba, mano… assenti), quindi neppure la via
+automatica `[parte_definite]` può mettere l'articolo giusto.
+
+### I due strumenti del motore per risolvere
+1. **Vincolo di genere sulla regola** (lato sinistro), come fa il francese:
+   ```xml
+   <li>r_logentry(p=0.1,RECIPIENT_gender==Male)->[INITIATOR_definite] [damaged_past] nel [recipient_part0_label] ...</li>
+   <li>r_logentry(p=0.1,RECIPIENT_gender==Female)->[INITIATOR_definite] [damaged_past] nella [recipient_part0_label] ...</li>
+   ```
+   Sintassi: `nomeRegola(p=PESO, SIMBOLO_gender==Male|Female)`. Il resolver sceglie la
+   variante che combacia col genere dell'entità risolta.
+2. **Suffissi `[X_definite]` / `[X_indefinite]`**: il motore applica l'articolo corretto
+   via `LanguageWorker` + `WordInfo/Gender`. Es. `[recipient_part0_definite]` → "il braccio"
+   / "la gamba" automaticamente, **se** la parte è nel WordInfo col genere giusto.
+   (L'italiano usa 456 di questi suffissi, il francese 617: c'è margine.)
+
+### Strategia di fix
+- Sostituire gli articoli scritti a mano davanti a `[X_label]` con `[X_definite]`/`[X_indefinite]`.
+- Dove serve accordo di participio/aggettivo, sdoppiare la regola con i vincoli
+  `(SIMBOLO_gender==Male/Female)` — **template = i pack francese/spagnolo** (stessi simboli).
+- Popolare `WordInfo/Gender` con le parti del corpo e i nomi usati nei log.
+- Verificare **in gioco** (Dev mode: generatori del log di combattimento/interazioni) su
+  un pawn maschio e uno femmina.
+- Ordine per impatto: CombatMelee → CombatRanged → Damage → DamageEvent → Maneuvers →
+  Interactions sociali → Battles/Tales.
+
+Tooling di supporto previsto: `rwit compare` (affianca it/fr/es/de sulle stesse rulesStrings),
+`rwit validate` (lint: niente articolo a mano prima di `[X_label]`, vincoli ben formati).
+
+## 6. Piano di revisione di quest'area
+
+- [ ] Aggiornare `LanguageWorker_Italian.cs` (root) a ogni versione del gioco; valutarne
+  il deploy (PR upstream o mod companion) per attivare le migliorie.
+- [ ] **Log generato**: applicare la strategia di fix §5 (vincoli di genere + `[X_definite]`),
+  partendo da un pack-template (es. `Combat_Deflect`) verificato in gioco.
 - [ ] **WordInfo/Gender**: tradurre l'inglese rimasto (`anima grass/tree`, `psychic shock
   lance`, `psylink neuroformer`), verificare i generi dubbi (-e), svuotare `new_words.txt`
   riclassificando.
