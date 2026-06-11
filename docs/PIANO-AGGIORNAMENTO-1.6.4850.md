@@ -79,15 +79,25 @@ Ordine suggerito (per impatto/visibilità):
 Per ogni file: variabili `[VAR]`/`{VAR}` intatte, `->` nelle rulesStrings, `\n\n`
 preservati, ternaria genere valida, commenti `<!-- EN: -->` invariati.
 
-### 5.2-bis Nomi, plurali e grammatica (nuovo workstream)
+### 5.2-bis Nomi, plurali e grammatica (workstream)
 Vedi [`GENERAZIONE-NOMI-E-GRAMMATICA.md`](GENERAZIONE-NOMI-E-GRAMMATICA.md).
-- [x] Decompilato e salvato il riferimento `Notes/LanguageWorker_Italian.cs` (esisteva già
-  nella DLL del gioco; mancava solo il `.cs` come per fr/es).
-- [ ] WordInfo/Gender: tradurre inglese rimasto (`anima grass/tree`, `psychic shock lance`,
-  `psylink neuroformer`), verificare generi dubbi (-e), gestire `new_words.txt`.
+- [x] Decompilato `LanguageWorker_Italian` dalla DLL (esisteva già nel gioco).
+- [x] **Spostato in root e migliorato** `LanguageWorker_Italian.cs`: articoli `lo`/`gli`
+  (gn/ps/pn/x/y/i+vocale), articoli al plurale, plurali femminili `-ca/-ga/-cia/-gia`.
+  Logica verificata con harness. ⚠️ Da deployare (PR upstream o mod) per avere effetto.
+- [ ] WordInfo/Gender: inglese rimasto (vedi nota: si sistema al `.label`), generi dubbi (-e).
 - [ ] Strings: coerenza singolare/plurale × M/F e commenti `//articolo`.
-- [ ] Valutare PR upstream/mod per i limiti del worker (articolo `lo` per gn/ps/x/y,
-  plurali `-ca/-ga/-co/-go`).
+
+### 5.2-ter Log generato (combattimento/sociale) — obiettivo prioritario
+Vedi [`GENERAZIONE-NOMI-E-GRAMMATICA.md`](GENERAZIONE-NOMI-E-GRAMMATICA.md) §5.
+Causa radice misurata: **it 1 vincolo di genere vs fr 122 / es 100 / de 95** → log con
+genere/articoli sbagliati. Strategia: vincoli `(X_gender==Male/Female)` + suffissi
+`[X_definite]` + parti del corpo in WordInfo. Funziona già col worker di serie.
+- [ ] Aggiungere le parti del corpo a `WordInfo/Gender` (verificare in gioco il match).
+- [ ] Pack-template `Combat_Deflect` con i vincoli di genere (template = pack fr/es).
+- [ ] Verifica in Dev mode (log di combattimento) su pawn M e F.
+- [ ] Scalare: CombatMelee → CombatRanged → Damage → Maneuvers → Interactions sociali.
+- [ ] Tooling: `rwit compare` (it↔fr↔es↔de), `rwit validate` (lint articoli a mano).
 
 ### 5.3 Pulizia (priorità 🧹)
 - [x] Backstory obsolete: 6 file interamente UNUSED eliminati (`Gambler_*`, `Marshal_Adult`,
