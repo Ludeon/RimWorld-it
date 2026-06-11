@@ -535,7 +535,7 @@
   <!-- EN: captured {1_labelShort} -->
   <GoodwillChangedReason_CapturedPawn>catturato {1_labelShort}</GoodwillChangedReason_CapturedPawn>
   <!-- EN: {1_labelShort} crushed -->
-  <GoodwillChangedReason_PawnCrushed>{1_labelShort} distrutto</GoodwillChangedReason_PawnCrushed>
+  <GoodwillChangedReason_PawnCrushed>{1_labelShort} {1_gender ? schiacciato : schiacciata : schiacciato}</GoodwillChangedReason_PawnCrushed>
   <!-- EN: {1_labelShort} died -->
   <GoodwillChangedReason_PawnDied>{1_labelShort} morto</GoodwillChangedReason_PawnDied>
   <!-- EN: {0_labelShort} stripped -->
