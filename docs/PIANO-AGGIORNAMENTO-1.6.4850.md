@@ -90,12 +90,18 @@ Vedi [`GENERAZIONE-NOMI-E-GRAMMATICA.md`](GENERAZIONE-NOMI-E-GRAMMATICA.md).
   plurali `-ca/-ga/-co/-go`).
 
 ### 5.3 Pulizia (priorità 🧹)
-- [ ] Rimuovere 91 load errors: backstory obsolete (`ExMilitary9`, `Gambler_*`,
-  `Sadist_*`, `Mate_*`, `Solid_*`…) e inject non più validi
-  (`CompReloadable.chargeNoun`, `CompStudiable.*`, `SmokepopBeltRadius`,
-  `left_shoulder`/`left_sight_sensor`…).
-- [ ] Rimuovere 95 keyed inutili (sezione "Unnecessary keyed" del report).
-- [ ] Rivedere 109 keyed = inglese: tenere simboli/unità/sigle, tradurre il resto.
+- [x] Backstory obsolete: 6 file interamente UNUSED eliminati (`Gambler_*`, `Marshal_Adult`,
+  `Mate_Child`, `Sadist_*`) + voci singole `ArtSlave57`/`ModDesigner85` (~70 load error).
+- [x] Inject-error di def **rimosse** (verificate assenti nei Def 1.6.4850): `SmokepopBeltRadius`,
+  `GeneticChemicalDependency`, `ChooseIdeo` (Tutor.xml eliminato), `ActivateThing`,
+  `CompStudiable` (chip), `left_shoulder` (Lancer).
+- [ ] **Da gestire con verifica (def RINOMINATE/SPOSTATE, non rimosse → no cancellazione cieca)**:
+  `NoInteraction` (ora SlaveInteractionModeDef), `CompReloadable.chargeNoun`, `CompStatEntry`,
+  sensori `Bodies_Mechanoid_Light`. Candidate a `rwit clean` con conferma.
+- [ ] **95 keyed inutili**: NON rimosse in blocco — alcune sono in realtà referenziate
+  (es. `Credit_Translator` usato da `LanguageInfo.xml`). Richiede risoluzione DLC + cross-check
+  usi → lavoro per `rwit clean`, non cancellazione di massa.
+- [ ] Rivedere 109 keyed = inglese: la maggior parte va tenuta (simboli/unità/sigle).
 
 ## 6. Documentazione per i futuri sviluppatori (questa sessione)
 
@@ -106,8 +112,8 @@ Decisione: **CLAUDE.md tracciato e ripulito** + docs/ Claude Code compliant.
 - `docs/SINTASSI-TRADUZIONE.md`: sintassi ammessa nelle traduzioni (ternaria genere,
   variabili, rulesStrings, `\n\n`, elisione, errori comuni).
 - `docs/RIFERIMENTI.md`: repo di riferimento (fr/es/de), strategia WordInfo, link Ludeon.
-- `docs/VALIDAZIONE.md` + `docs/VALIDAZIONE-FILE.csv`: tracciamento validazione dei 1819
-  file e nota di integrità (la traduzione **non** può alterare le priorità degli eventi:
+- `docs/VALIDAZIONE.md` + `docs/VALIDAZIONE-FILE.csv`: tracciamento validazione dei file
+  (1812 dopo la pulizia) e nota di integrità (la traduzione **non** può alterare le priorità eventi:
   0 campi-peso evento nel repo; gli unici pesi sono i `(p=N)` delle rulesStrings, da
   preservare sul lato sinistro).
 - `docs/PIANO-AGGIORNAMENTO-1.6.4850.md`: questo file.
@@ -118,9 +124,14 @@ Decisione: **CLAUDE.md tracciato e ripulito** + docs/ Claude Code compliant.
 |------|-------|
 | Branch `aggiornamento-1.6.4850` creato | ✅ |
 | Analisi diff gioco | ✅ |
-| Docs per futuri sviluppatori | 🔄 in corso |
-| CLAUDE.md tracciato e ripulito | 🔄 in corso |
-| Bug certi | ⬜ da fare |
-| Revisione ampia | ⬜ da fare |
-| Pulizia load errors / keyed | ⬜ da fare |
-| Merge su master | ⬜ a rilascio |
+| Docs per futuri sviluppatori (6 doc + Notes) | ✅ |
+| CLAUDE.md tracciato e ripulito | ✅ |
+| Bug certi (2 fix reali; 1 falso positivo annullato) | ✅ |
+| Workstream nomi/grammatica (LanguageWorker decompilato + doc) | ✅ |
+| Pulizia load errors (backstory + inject di def rimosse) | ✅ |
+| Pulizia rename/keyed inutili (→ `rwit clean`) | ⬜ tooling |
+| Revisione ampia traduzioni (iterativa, per DLC) | 🔄 in corso |
+| Merge su master | ⬜ a rilascio (mai push diretto) |
+
+> Commit sul branch: tooling · docs+Notes · sync+fix · wordinfo · pulizia backstory ·
+> pulizia inject-error. Working tree allineato.
