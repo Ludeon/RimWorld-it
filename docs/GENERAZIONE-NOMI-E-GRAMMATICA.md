@@ -157,10 +157,33 @@ Conseguenze pratiche:
   le righe sotto **scalano** e ogni animale successivo prende il plurale sbagliato
   (muffalo→"api"), **in silenzio**. Modifica sempre entrambi i file alla stessa posizione.
 - L'inglese **non ha** `AnimalsPlural.txt` (il plurale regolare `+s` lo fa il suo
-  LanguageWorker): il file dei plurali è una **necessità italiana** per i plurali
-  irregolari → è il posto giusto dove mettere gli irregolari (incl. parti del corpo:
-  braccio→braccia, dito→dita…).
+  LanguageWorker): è un file **solo italiano**. Serve alla resa dei simboli plurali nelle
+  rulesStrings, ma **NON** è ciò che usa `Pluralize` (vedi sotto).
 - Candidato a controllo `rwit validate`: stesso conteggio righe e coerenza delle coppie.
+
+### ✅ Il vero meccanismo dei plurali: `WordInfo/plural.txt` (keyed, generico)
+Decompilando il `LanguageWorker` di base si vede che `Pluralize → TryLookupPluralForm`
+legge un **dizionario keyed**, non i file posizionali:
+```csharp
+var table = LanguageDatabase.activeLanguage.WordInfo.GetLookupTable("plural"); // WordInfo/plural.txt
+string key = str.ToLower();           // lookup PER PAROLA, non per posizione
+plural = table[key][1];
+```
+- È **generico** (funziona col worker di serie, per qualsiasi lingua) e **robusto**
+  (chiave→valore: non si disallinea come i file posizionali).
+- Formato (come il tedesco): righe `Singolare;Plurale`, con commenti `//`. Es. tedesco:
+  ```
+  // Ingame pluralization use this file automatically.
+  Ladung;Ladungen
+  ```
+- **Stato**: il tedesco ha `WordInfo/plural.txt` (+ `plural_decline.txt`), autogenerato.
+  **L'italiano NON ce l'ha** (solo `Gender/`) → oggi il nostro `Pluralize` cade sempre
+  sull'euristica del `.cs`.
+- **Raccomandazione**: gli irregolari italiani (incl. parti del corpo: braccio→braccia,
+  dito→dita, ginocchio→ginocchia, osso→ossa, labbra…) vanno messi in un
+  **`WordInfo/plural.txt`** keyed (modello tedesco), non nel fragile `AnimalsPlural.txt`.
+  Da generare con `rwit wordinfo` (l'equivalente di `update-wordinfo-plural.ps1` tedesco),
+  idealmente da Morph-it!. Nessun `.cs` da deployare.
 
 ### Convenzione: commento-articolo a inizio file
 I file di nomi iniziano con un commento che fissa l'articolo del gruppo, es.:
