@@ -108,7 +108,15 @@ naturalezza e fluidità, evitare i calchi letterali dall'inglese
 
 ---
 
-## 6. Git e branch
+## 6. Repository pubblico — niente dati personali
+
+Non committare dati personali o d'ambiente in file tracciati (hardware, percorsi con
+username, email, token, contesto personale). Il contesto personale va in `CLAUDE.local.md`
+(gitignored). Per un controllo automatico si può usare uno scanner standard (es. **gitleaks**
+via il framework [pre-commit](https://pre-commit.com), o la **push protection** di GitHub),
+da configurare se/quando serve.
+
+## 7. Git e branch
 
 - Si lavora su un **branch dedicato** (es. `aggiornamento-<versione>`), si fonde su
   `master` solo a revisione completata.

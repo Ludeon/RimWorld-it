@@ -6,6 +6,13 @@ Guida per Claude Code (claude.ai/code) e per i contributor di questo repository.
 > Non inserire qui percorsi personali o note di sessione: per quelli usa
 > `CLAUDE.local.md` (gitignored) o `docs/`.
 
+## Privacy — repository pubblico
+
+Questo repository è pubblico: non committare dati personali o d'ambiente in file tracciati
+(hardware, percorsi con username, email, token, contesto personale non utile alla
+traduzione). Il contesto personale va in `CLAUDE.local.md` (gitignored); per i percorsi del
+gioco usare meccanismi generici (`Path.home()`, `RIMWORLD_DATA`).
+
 ## Panoramica
 
 Traduzione **italiana** di RimWorld (gioco base + DLC). È un language pack:
