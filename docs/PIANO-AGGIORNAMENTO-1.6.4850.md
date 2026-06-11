@@ -120,6 +120,11 @@ Per separare il rumore dal lavoro vero e rendere la review pulita:
   in `Core/Keyed/Misc_Gameplay.xml` (`GiveGiftViaTransportPodsTradeRequestWarning`).
 - [ ] Verificare gli 8 argument mismatch legacy (stile posizionale `{0}`): perlopiù ok,
   confermare che non rompano.
+- [ ] 🔴 **Lingua sbagliata (francese)**: ~14 stringhe in **Anomaly** (copia dal repo FR):
+  `Anomaly/Keyed/Misc_Gameplay.xml` (×10) e `Anomaly/DefInjected/ThoughtDef/Precepts_PsychicRituals.xml`
+  (×4). Da ritradurre in italiano (fonte: commento `<!-- EN: -->` / inglese del gioco).
+  Nessuno spagnolo rilevato. Trovare il resto con un language-ID (`rwit lang-check`, vedi
+  [`TOOLING-LOCALE.md`](TOOLING-LOCALE.md) §3a).
 
 ### 5.2 Revisione ampia (decisa con il maintainer)
 Passata di qualità file per file, per DLC, su naturalezza/idiomi/coerenza terminologica.

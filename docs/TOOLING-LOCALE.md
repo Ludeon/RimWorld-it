@@ -27,10 +27,18 @@ Un **embedding model** (es. `bge-m3`, `multilingual-e5`) per trovare lo stesso t
 tradotto in modi diversi e le stringhe quasi-duplicate da uniformare. Deterministico, leggero.
 → futuro `rwit coherence`.
 
-### 3. Triage qualità → LLM locale piccolo come *finder*
-Via `Ollama`, un modello istruito 7–8B (es. `qwen2.5:7b-instruct`, `llama3.1:8b`) per compiti
-a **recall**, poi verificati:
-- flag di stringhe in **lingua sbagliata / non tradotte**;
+### 3a. Lingua sbagliata → rilevatore di lingua DETERMINISTICO (non serve LLM)
+Per trovare stringhe in lingua sbagliata (es. **francese** copiato per errore) lo strumento
+giusto **non è un LLM** ma un **language-ID** deterministico: `fastText lid.176`, `lingua`,
+o `langdetect`. **Zero token, zero allucinazioni, microsecondi a stringa**, offline.
+- Scansiona ogni valore tradotto; segnala quelli non `it` (whitelist: pool di nomi propri,
+  simboli/unità, termini tenuti in inglese).
+- Caso reale trovato: **~14 stringhe francesi in Anomaly** (`Keyed/Misc_Gameplay.xml`,
+  `DefInjected/ThoughtDef/Precepts_PsychicRituals.xml`). → futuro `rwit lang-check`.
+
+### 3b. Triage fine → LLM locale piccolo come *finder*
+Solo per casi sfumati che il language-ID non risolve (stringhe corte/miste). Via `Ollama`,
+modello 7–8B, a **recall** e poi verificato:
 - **round-trip** IT→EN con confronto al commento `<!-- EN: -->` per segnalare divergenze;
 - candidati di **disaccordo di genere** nei log generati.
 
