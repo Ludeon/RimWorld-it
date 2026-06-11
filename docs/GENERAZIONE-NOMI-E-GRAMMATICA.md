@@ -139,8 +139,8 @@ I file di nomi iniziano con un commento che fissa l'articolo del gruppo, es.:
 moltitudine
 schiera
 ```
-Vedi le regole in [`scripts/prompt_nomi.txt`](../scripts/prompt_nomi.txt) (l'/lo/il/la,
-singolare, generi lessicali particolari).
+Le regole degli articoli (l'/lo/il/la, singolare, generi lessicali particolari) sono in
+[`SINTASSI-TRADUZIONE.md`](SINTASSI-TRADUZIONE.md) §6.
 
 ---
 

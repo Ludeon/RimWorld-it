@@ -97,8 +97,8 @@ Per separare il rumore dal lavoro vero e rendere la review pulita:
 ### 5.2 Revisione ampia (decisa con il maintainer)
 Passata di qualità file per file, per DLC, su naturalezza/idiomi/coerenza terminologica.
 Criterio: correggere **anche le imprecisioni**, non solo gli errori
-(es. "crushed" → "schiacciati", non "distrutti"). Vedi `docs/SINTASSI-TRADUZIONE.md`
-per le regole formali e `scripts/prompt.txt` per le regole di traduzione.
+(es. "crushed" → "schiacciati", non "distrutti"). Vedi `docs/SINTASSI-TRADUZIONE.md` e
+`docs/CONTRIBUTING.md` per le regole.
 
 Ordine suggerito (per impatto/visibilità):
 1. `Core/Keyed` (UI sempre a schermo)

@@ -1,8 +1,8 @@
 # Sintassi delle traduzioni — RimWorld italiano
 
 Guida di riferimento alla sintassi che si può (e si deve) usare nei file di traduzione.
-Vale per `DefInjected/`, `Keyed/` e le `rulesStrings`. Le regole di processo stanno in
-`scripts/prompt.txt`; questo file documenta la **sintassi del motore di RimWorld**.
+Vale per `DefInjected/`, `Keyed/` e le `rulesStrings`. Le regole operative stanno in
+`CONTRIBUTING.md`; questo file documenta la **sintassi del motore di RimWorld**.
 
 ---
 
@@ -167,8 +167,6 @@ Quando devi scegliere un articolo a mano (es. nelle liste nomi), regole rapide:
 - **la** = femminili con consonante
 - Rispetta i generi lessicali particolari (es. *la fronte*).
 
-Vedi `scripts/prompt_nomi.txt` per il flusso completo sui nomi.
-
 ---
 
 ## 7. Terminologia (lore RimWorld)
@@ -182,7 +180,7 @@ Termini fissati per coerenza:
 
 Principio: fedeltà **+ naturalezza**. Evitare calchi letterali; preferire la forma più
 idiomatica e "giocabile" (es. un termine scientifico corretto ma rigido → versione più
-semplice nel contesto di gioco). Vedi anche la lista in `scripts/prompt.txt`.
+semplice nel contesto di gioco).
 
 ---
 

@@ -32,8 +32,8 @@ Tutta la documentazione operativa è in `docs/` (tracciata):
 - [`docs/TOOLING-LOCALE.md`](docs/TOOLING-LOCALE.md) — strategia per gli strumenti locali/offline: Morph-it! per la morfologia, embedding per la coerenza, LLM locale solo come finder/triage (mai traduttore).
 - `docs/PIANO-AGGIORNAMENTO-<versione>.md` — piano della sessione di aggiornamento in corso.
 
-Regole operative di traduzione: [`scripts/prompt.txt`](scripts/prompt.txt) e
-[`scripts/prompt_nomi.txt`](scripts/prompt_nomi.txt).
+Regole operative di traduzione: [`docs/SINTASSI-TRADUZIONE.md`](docs/SINTASSI-TRADUZIONE.md)
+e [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md).
 
 ## Struttura del repo
 
