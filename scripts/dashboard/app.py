@@ -89,6 +89,11 @@ TR = {
     "ng_gen": {"en": "🎲 Generate", "it": "🎲 Genera", "es": "🎲 Generar", "fr": "🎲 Générer", "de": "🎲 Generieren"},
     "ng_none": {"en": "No rulepack matches the filter.", "it": "Nessun rulepack corrisponde al filtro.",
                 "es": "Ningún rulepack coincide.", "fr": "Aucun rulepack ne correspond.", "de": "Kein Rulepack passt."},
+    "ng_prev": {"en": "◀ Prev", "it": "◀ Prec", "es": "◀ Ant", "fr": "◀ Préc", "de": "◀ Zurück"},
+    "ng_next": {"en": "Next ▶", "it": "Succ ▶", "es": "Sig ▶", "fr": "Suiv ▶", "de": "Weiter ▶"},
+    "ng_jump": {"en": "Jump to", "it": "Vai a", "es": "Ir a", "fr": "Aller à", "de": "Springe zu"},
+    "ng_rules": {"en": "Rules (debug)", "it": "Regole (debug)", "es": "Reglas (debug)",
+                 "fr": "Règles (debug)", "de": "Regeln (Debug)"},
 }
 
 STATUS_NAMES = {
@@ -218,21 +223,50 @@ def render_progress():
 def render_names():
     st.caption(t("ng_intro"))
     packs = load_rulepacks()
-    flt = st.text_input(t("ng_filter"), value="Namer")
+    ss = st.session_state
+
+    f1, f2 = st.columns([3, 1])
+    flt = f1.text_input(t("ng_filter"), value="Namer")
     keys = [k for k in packs if flt.lower() in k.lower()] if flt else list(packs)
     if not keys:
         st.info(t("ng_none"))
         return
-    c1, c2 = st.columns([4, 1])
-    key = c1.selectbox(t("ng_pack"), keys)
-    count = c2.number_input(t("ng_count"), min_value=5, max_value=60, value=15, step=5)
-    # seed dal pulsante: cambia ad ogni click per rigenerare
-    if st.button(t("ng_gen"), type="primary"):
-        st.session_state["ng_seed"] = st.session_state.get("ng_seed", 0) + 1
-    seed = st.session_state.get("ng_seed", 1)
-    names, root = namegen_mod.generate(packs, key, int(count), seed=seed)
-    st.caption(f"root = [{root}] · {packs[key]['file']}")
+    count = f2.number_input(t("ng_count"), min_value=5, max_value=60, value=15, step=5)
+
+    # --- paginatore: ◀ Prec / salto / Succ ▶ ---
+    ss.setdefault("ng_idx", 0)
+    if ss.get("ng_flt") != flt:           # reset posizione se cambia il filtro
+        ss.ng_idx = 0
+        ss.ng_flt = flt
+    nav_prev, nav_jump, nav_next = st.columns([1, 6, 1], vertical_alignment="bottom")
+    if nav_prev.button(t("ng_prev"), use_container_width=True):
+        ss.ng_idx = (ss.ng_idx - 1) % len(keys)
+    if nav_next.button(t("ng_next"), use_container_width=True):
+        ss.ng_idx = (ss.ng_idx + 1) % len(keys)
+    ss.ng_idx = max(0, min(ss.ng_idx, len(keys) - 1))
+    sel = nav_jump.selectbox(f"{t('ng_jump')} ({ss.ng_idx + 1}/{len(keys)})",
+                             range(len(keys)), index=ss.ng_idx, format_func=lambda i: keys[i])
+    if sel != ss.ng_idx:
+        ss.ng_idx = sel
+    key = keys[ss.ng_idx]
+
+    g1, g2 = st.columns([1, 5], vertical_alignment="center")
+    if g1.button(t("ng_gen"), type="primary", use_container_width=True):
+        ss["ng_seed"] = ss.get("ng_seed", 0) + 1
+    g2.caption(f"`{packs[key]['file']}`")
+
+    names, root = namegen_mod.generate(packs, key, int(count), seed=ss.get("ng_seed", 1))
     st.code("\n".join(names), language=None)
+
+    with st.expander(f"{t('ng_rules')} · root = [{root}]"):
+        lines = []
+        for sym, opts in packs[key]["rules"].items():
+            for w, exp in opts:
+                wt = "" if w == 1.0 else f"(p={w:g})"
+                lines.append(f"{sym}{wt} -> {exp}")
+        for sym, rel in packs[key]["files"].items():
+            lines.append(f"{sym} -> [file] {rel}")
+        st.code("\n".join(lines) or "—", language=None)
 
 
 tab_prog, tab_names = st.tabs([t("tab_prog"), t("tab_names")])
