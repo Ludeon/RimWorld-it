@@ -20,6 +20,7 @@ import streamlit as st  # noqa: E402
 
 import config  # noqa: E402
 import ledger as ledger_mod  # noqa: E402
+import namegen as namegen_mod  # noqa: E402
 
 STATE_COLORS = {
     "validated": "#3fb950", "translated": "#58a6ff", "modified": "#d29922",
@@ -72,6 +73,22 @@ TR = {
     "n_strings": {"en": "{n} strings", "it": "{n} stringhe", "es": "{n} cadenas",
                   "fr": "{n} chaînes", "de": "{n} Strings"},
     "lang": {"en": "Language", "it": "Lingua", "es": "Idioma", "fr": "Langue", "de": "Sprache"},
+    "tab_prog": {"en": "Progress", "it": "Progresso", "es": "Progreso", "fr": "Progression", "de": "Fortschritt"},
+    "tab_names": {"en": "Name generator", "it": "Generatore nomi", "es": "Generador de nombres",
+                  "fr": "Générateur de noms", "de": "Namensgenerator"},
+    "ng_intro": {
+        "en": "Preview the names the game would generate from a RulePack (factions, map, gravship). Approximate: unresolved symbols show as <symbol>.",
+        "it": "Anteprima dei nomi che il gioco genererebbe da un RulePack (fazioni, mappa, gravship). Approssimato: i simboli non risolti appaiono come <simbolo>.",
+        "es": "Vista previa de los nombres que el juego generaría desde un RulePack. Aproximado: los símbolos sin resolver aparecen como <símbolo>.",
+        "fr": "Aperçu des noms que le jeu générerait depuis un RulePack. Approximatif : les symboles non résolus s'affichent comme <symbole>.",
+        "de": "Vorschau der Namen, die das Spiel aus einem RulePack generieren würde. Annähernd: ungelöste Symbole erscheinen als <Symbol>."},
+    "ng_filter": {"en": "Filter rulepacks", "it": "Filtra rulepack", "es": "Filtrar rulepacks",
+                  "fr": "Filtrer les rulepacks", "de": "Rulepacks filtern"},
+    "ng_pack": {"en": "RulePack", "it": "RulePack", "es": "RulePack", "fr": "RulePack", "de": "RulePack"},
+    "ng_count": {"en": "How many", "it": "Quanti", "es": "Cuántos", "fr": "Combien", "de": "Wie viele"},
+    "ng_gen": {"en": "🎲 Generate", "it": "🎲 Genera", "es": "🎲 Generar", "fr": "🎲 Générer", "de": "🎲 Generieren"},
+    "ng_none": {"en": "No rulepack matches the filter.", "it": "Nessun rulepack corrisponde al filtro.",
+                "es": "Ningún rulepack coincide.", "fr": "Aucun rulepack ne correspond.", "de": "Kein Rulepack passt."},
 }
 
 STATUS_NAMES = {
@@ -120,75 +137,106 @@ with nav[2]:
         st.success(t("updated"))
 st.divider()
 
-rows = load_rows()
-if not rows:
-    st.warning(t("empty"))
-    st.stop()
+@st.cache_data(show_spinner=False)
+def load_rulepacks():
+    return namegen_mod.load_rulepacks()
 
-total = len(rows)
-overall = Counter(r["status"] for r in rows)
-done = overall.get("validated", 0) + overall.get("translated", 0) + overall.get("modified", 0)
-wrong = sum(1 for r in rows if r["lang_flag"])
 
-c1, c2, c3, c4 = st.columns(4)
-c1.metric(t("completion"), f"{done/total*100:.1f}%")
-c2.metric(t("total"), f"{total:,}")
-c3.metric(t("validated_m"), f"{overall.get('validated', 0):,}")
-c4.metric(t("wrong"), wrong)
+def render_progress():
+    rows = load_rows()
+    if not rows:
+        st.warning(t("empty"))
+        return
+    total = len(rows)
+    overall = Counter(r["status"] for r in rows)
+    done = overall.get("validated", 0) + overall.get("translated", 0) + overall.get("modified", 0)
+    wrong = sum(1 for r in rows if r["lang_flag"])
 
-st.progress(done / total)
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric(t("completion"), f"{done/total*100:.1f}%")
+    c2.metric(t("total"), f"{total:,}")
+    c3.metric(t("validated_m"), f"{overall.get('validated', 0):,}")
+    c4.metric(t("wrong"), wrong)
+    st.progress(done / total)
 
-st.subheader(t("h_states"))
-scols = st.columns(len(ORDER))
-for col, stt in zip(scols, ORDER):
-    col.markdown(
-        f"<div style='border-left:4px solid {STATE_COLORS[stt]};padding-left:8px'>"
-        f"<b>{overall.get(stt, 0):,}</b><br><small>{sname(stt)}</small></div>",
-        unsafe_allow_html=True)
+    st.subheader(t("h_states"))
+    scols = st.columns(len(ORDER))
+    for col, stt in zip(scols, ORDER):
+        col.markdown(
+            f"<div style='border-left:4px solid {STATE_COLORS[stt]};padding-left:8px'>"
+            f"<b>{overall.get(stt, 0):,}</b><br><small>{sname(stt)}</small></div>",
+            unsafe_allow_html=True)
 
-st.subheader(t("h_perdlc"))
-per_dlc: dict[str, Counter] = defaultdict(Counter)
-for r in rows:
-    per_dlc[r["dlc"]][r["status"]] += 1
-for dlc in config.DLCS:
-    if dlc not in per_dlc:
-        continue
-    c = per_dlc[dlc]
-    tot = sum(c.values())
-    d = c.get("validated", 0) + c.get("translated", 0) + c.get("modified", 0)
-    left, right = st.columns([1, 5])
-    left.write(f"**{dlc}**  \n{d}/{tot}")
-    right.progress(d / tot if tot else 0)
+    st.subheader(t("h_perdlc"))
+    per_dlc: dict[str, Counter] = defaultdict(Counter)
+    for r in rows:
+        per_dlc[r["dlc"]][r["status"]] += 1
+    for dlc in config.DLCS:
+        if dlc not in per_dlc:
+            continue
+        c = per_dlc[dlc]
+        tot = sum(c.values())
+        d = c.get("validated", 0) + c.get("translated", 0) + c.get("modified", 0)
+        left, right = st.columns([1, 5])
+        left.write(f"**{dlc}**  \n{d}/{tot}")
+        right.progress(d / tot if tot else 0)
 
-st.subheader(t("h_worklist"))
-fcol1, fcol2 = st.columns(2)
-sel_dlc = fcol1.multiselect("DLC", config.DLCS, default=config.DLCS)
-status_opts = ORDER + ["__wrong__"]
-sel_status = fcol2.multiselect(
-    t("f_status"), status_opts,
-    default=["untranslated", "stale", "modified", "__wrong__"],
-    format_func=lambda s: t("wrong_opt") if s == "__wrong__" else sname(s))
+    st.subheader(t("h_worklist"))
+    fcol1, fcol2 = st.columns(2)
+    sel_dlc = fcol1.multiselect("DLC", config.DLCS, default=config.DLCS)
+    status_opts = ORDER + ["__wrong__"]
+    sel_status = fcol2.multiselect(
+        t("f_status"), status_opts,
+        default=["untranslated", "stale", "modified", "__wrong__"],
+        format_func=lambda s: t("wrong_opt") if s == "__wrong__" else sname(s))
 
-want_lang = "__wrong__" in sel_status
-want_states = {s for s in sel_status if s != "__wrong__"}
-idx = text_index()  # (dlc,file,tag) -> (EN, IT), cachato
-table = []
-for r in rows:
-    if r["dlc"] not in sel_dlc:
-        continue
-    if not (r["status"] in want_states or (want_lang and r["lang_flag"])):
-        continue
-    en, it = idx.get((r["dlc"], r["file"], r["tag"]), ("", ""))
-    table.append({
-        "DLC": r["dlc"], "tag": r["tag"], "EN": en, "IT": it,
-        t("f_status"): sname(r["status"]), t("wrong"): r["lang_flag"],
-    })
-st.caption(t("n_strings", n=len(table)))
-st.dataframe(
-    table, use_container_width=True, height=460, hide_index=True,
-    column_config={
-        "EN": st.column_config.TextColumn("EN", width="large"),
-        "IT": st.column_config.TextColumn("IT", width="large"),
-        "tag": st.column_config.TextColumn("tag", width="medium"),
-    },
-)
+    want_lang = "__wrong__" in sel_status
+    want_states = {s for s in sel_status if s != "__wrong__"}
+    idx = text_index()
+    table = []
+    for r in rows:
+        if r["dlc"] not in sel_dlc:
+            continue
+        if not (r["status"] in want_states or (want_lang and r["lang_flag"])):
+            continue
+        en, it = idx.get((r["dlc"], r["file"], r["tag"]), ("", ""))
+        table.append({
+            "DLC": r["dlc"], "tag": r["tag"], "EN": en, "IT": it,
+            t("f_status"): sname(r["status"]), t("wrong"): r["lang_flag"],
+        })
+    st.caption(t("n_strings", n=len(table)))
+    st.dataframe(
+        table, use_container_width=True, height=460, hide_index=True,
+        column_config={
+            "EN": st.column_config.TextColumn("EN", width="large"),
+            "IT": st.column_config.TextColumn("IT", width="large"),
+            "tag": st.column_config.TextColumn("tag", width="medium"),
+        },
+    )
+
+
+def render_names():
+    st.caption(t("ng_intro"))
+    packs = load_rulepacks()
+    flt = st.text_input(t("ng_filter"), value="Namer")
+    keys = [k for k in packs if flt.lower() in k.lower()] if flt else list(packs)
+    if not keys:
+        st.info(t("ng_none"))
+        return
+    c1, c2 = st.columns([4, 1])
+    key = c1.selectbox(t("ng_pack"), keys)
+    count = c2.number_input(t("ng_count"), min_value=5, max_value=60, value=15, step=5)
+    # seed dal pulsante: cambia ad ogni click per rigenerare
+    if st.button(t("ng_gen"), type="primary"):
+        st.session_state["ng_seed"] = st.session_state.get("ng_seed", 0) + 1
+    seed = st.session_state.get("ng_seed", 1)
+    names, root = namegen_mod.generate(packs, key, int(count), seed=seed)
+    st.caption(f"root = [{root}] · {packs[key]['file']}")
+    st.code("\n".join(names), language=None)
+
+
+tab_prog, tab_names = st.tabs([t("tab_prog"), t("tab_names")])
+with tab_prog:
+    render_progress()
+with tab_names:
+    render_names()

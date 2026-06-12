@@ -27,6 +27,15 @@ Pick the UI language from the sidebar (🌐). Default is English.
 - **States** breakdown and **per-DLC** progress bars.
 - A filterable **worklist** table (by DLC and status) — the strings still to do.
 
+### Tabs
+
+- **Progress** — completion %, per-DLC bars, filterable worklist (EN/IT).
+- **Name generator** — preview the names the game would generate from any
+  RulePack (factions, world/map, gravship) by simulating its grammar in Python.
+  Useful to spot bad vocabulary, wrong articles/gender, or leftover foreign
+  words **without launching the game**. Approximate: engine-provided symbols not
+  in the pack show as `<symbol>`.
+
 ### String states
 
 | State | Meaning |
