@@ -4,6 +4,12 @@ Indicazioni per chi vuole automatizzare parti della QA della traduzione con stru
 girano **in locale e offline** (nessuna API esterna, risultati riproducibili). Adatto a
 job batch sull'intero corpus.
 
+> **Stato (2026-06-12): molti di questi strumenti sono ora REALI** in `scripts/rwit/`:
+> `lang-check [--files]` (lingua sbagliata), `morphit.py` + `variants` (morfologia via
+> **Morph-it!**), `strings-diff` e `reconcile` (allineamento liste all'inglese del gioco),
+> `ledger` + dashboard. Resta da fare l'embedding per la coerenza e l'eventuale `rwit wordinfo`
+> (genera Gender/plural da tutti i label). Vedi `RULEPACK-GRAMMAR.md` per il linguaggio.
+
 ## Principio guida
 
 > Un LLM locale di piccola taglia **non è il traduttore**: su un testo difficile come

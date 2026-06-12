@@ -3,61 +3,72 @@
 > Branch di lavoro: **`aggiornamento-1.6.4850`** (separato da `master`, si fonde solo a rilascio pronto).
 > Documento di sessione. Stato e decisioni aggiornati man mano.
 
-## 0. RIPARTENZA — riprendere da qui (ultimo aggiornamento 2026-06-12)
+## 0. RIPARTENZA — riprendere da qui (ultimo aggiornamento 2026-06-12, sessione sera)
 
 **Branch attivo**: `aggiornamento-1.6.4850` (mai pushare su master). Working tree pulito,
 tutto committato. Per riprendere: `git checkout aggiornamento-1.6.4850`.
 
-**Fatto finora (committato)**:
-1. Tooling Python `rwit` (sostituisce i vecchi script); vecchi prompt GPT-3.5 eliminati
-   (regole ora nei docs).
-2. Docs per contributor (`docs/`) + `CLAUDE.md` tracciato e ripulito + policy "repo pubblico,
-   niente dati personali" (il personale sta in `CLAUDE.local.md`, gitignored).
-3. Sync 1.6.4850 (commenti EN + whitespace) + 2 bug fix reali.
-4. `LanguageWorker_Italian.cs` in **root**, decompilato e **migliorato** (articoli lo/gli,
-   h muta, plurali -io/-ca/-ga; 16/16 test). Commenti in inglese (pronto per PR upstream).
-5. Pulizia load-error (backstory obsolete + inject di def rimosse).
+### Fatto in questa sessione (tutto committato)
 
-**Come funziona la grammatica (capito in questa sessione — vedi GENERAZIONE-NOMI…)**:
-- Articoli/plurali a runtime = **`LanguageWorker`** (codice) che **legge i DATI**:
-  `WordInfo/Gender/` (genere) e `WordInfo/plural.txt` (plurali, lookup keyed `parola;plurale`).
-- `WordInfo/` è **auto-caricato** (nessuna registrazione XML). I file `Strings/` invece
-  vanno montati con **`<rulesFiles>`** (`simbolo->PercorsoRelativo`) per essere usati come
-  `[simbolo]` nelle rulesStrings.
-- Italiano: **manca `WordInfo/plural.txt`** (ce l'ha il tedesco, auto-generato) → oggi i
-  plurali cadono sull'euristica del `.cs`. Il file posizionale `AnimalsPlural.txt` è cosa
-  diversa (e fragile) e NON è ciò che usa `Pluralize`.
+**Tooling `rwit` (Python, offline) — molto ampliato:**
+- `lang-check [--files]` — rileva lingua sbagliata per-stringa e **interi file** copiati
+  (lingua + match cross-repo + margine). Trovò il francese in Anomaly e i 2 Namer Odyssey.
+- `ledger` (build/stats/validate/todo/report) — registro versionato `scripts/dashboard/
+  translation-ledger.csv` (stati untranslated/translated/validated/stale/modified).
+- `strings-diff` — liste `Words/Names` IT vs **inglese del gioco** (mancanti/non tradotte/corte).
+- `reconcile [--fix-glosses]` — pulizia riga-per-riga (glosse inglesi, voci EN, mancanti).
+- `variants` (adj/noun) — genera le varianti morfologiche (genere/numero/articolo) via **Morph-it!**.
+- `morphit.py` — morfologia IT da **Morph-it!** (`scripts/.tools/morph-it.txt`, gitignored;
+  URL di download nel docstring) + fallback a regole. Validato 37/37 sugli aggettivi.
+- **Dashboard** (`scripts/dashboard/`, Streamlit, multilingua): tab **Progresso** +
+  **Generatore nomi** (anteprima offline dei RulePack, con filtro DLC, paginatore, debug regole).
+  `namegen.py` = mini-motore che simula la generazione nomi.
 
-**Strategia corpus (fonte e cosa tradurre)**:
-- **Fonte di verità = INGLESE del gioco** (`Data/<DLC>/Languages/English/Strings`): definisce
-  *cosa* esiste; la worklist si ricava per **diff IT-vs-EN**.
-- **Nomi propri** (`Strings/Names/`) = pool: si **tengono in inglese** (già fatto, contenuti
-  identici). **Liste-parola** (`Strings/Words/` Adjectives/Verbs/Nouns) = si **traducono**.
-- **`WordInfo/Gender` + `plural.txt`** = specifici dell'italiano, derivati dai **nostri**
-  label tradotti (ideale: Morph-it!), NON copiati da EN/DE.
-- **Tedesco = modello del meccanismo** (plural.txt, dati), non fonte dei nomi.
+**Contenuto (traduzioni/grammatica):**
+- **Anomaly**: 40 stringhe francesi ritradotte (Precepts, UnnaturalCorpse/GoldenCube, Tales…).
+- **Namer fazione ricostruiti con accordo di genere** (verificati in anteprima):
+  Odyssey (Factions, Gravship: FR→IT), Core (Tribal, Pirate, Outlander), Biotech
+  (OutlanderPig, PirateWaster, TribalNeanderthal). Royalty (Empire/Refugee) erano già ok.
+- Metodo Namer: tracce maschile (`I/Gli`) / femminile (`Le`) + aggettivi/colori concordi;
+  `di`/apposizione per il genere misto; varianti `_I/_Gli/_Le` e `_Plural_Masculine/Feminine`
+  generate da `rwit variants` e cablate nel `RulePacks_Global.xml`.
+- `PoliticalUnions_Tribal` completata 6→13; glosse pulite; varianti aggettivi rigenerate.
+- **WordInfo (log combattimento)**: creato `plural.txt` (eteroclite: braccio→braccia, ossa,
+  ginocchia, dita, labbra) + ~60 parti del corpo in `Gender/` (mano=F, pelle=F, piede=M…) +
+  forme plurali eteroclite in `Female.txt` (per `ResolveGender("braccia")`=F → "le braccia").
 
-**PROSSIMO PASSO (deciso) — tutto lavoro su FILE DI TESTO, niente `.cs`**:
-1. **`WordInfo/Gender`**: aggiungere le **parti del corpo** (braccio M, gamba F, mano F…).
-2. **`WordInfo/plural.txt`** (nuovo, stile tedesco `singolare;plurale`): plurali irregolari,
-   prima le parti del corpo (braccio→braccia, dito→dita, ginocchio→ginocchia, osso→ossa,
-   labbro→labbra). Auto-caricato, robusto, niente XML.
-3. **Pack-template `Combat_Deflect`**: vincoli di genere `(X_gender==Male/Female)` + suffissi
-   `[X_definite]`, modello = `RimWorld-fr/Core/DefInjected/RulePackDef/RulePacks_CombatMelee.xml`.
-4. **L'utente verifica in Dev mode** (log di combattimento su pawn M e F).
-5. Se regge → scalare: CombatMelee → CombatRanged → Damage → Maneuvers → Interactions sociali.
-6. **Strings mancanti**: diff IT-vs-EN dà ~13 file assenti in Core (pool nomi + alcune
-   `Words/Adjectives|Verbs`). Verificare per file se è gap reale (inglese che trapela) o
-   ristrutturato in varianti di genere; tradurre le liste-parola mancanti.
+**Docs**: nuovo `docs/RULEPACK-GRAMMAR.md` (EN, completo: condizioni `(count==N)`/genere,
+pesi, log combattimento). Doc tecnici rinominati in inglese (riutilizzabili da tutti i team).
 
-**Lavoro aperto minore** (task tracciati): `rwit clean` (rename + 95 keyed inutili),
-revisione ampia iterativa, valutare PR upstream del worker, costruire `rwit wordinfo`
-(genera `WordInfo/plural.txt`/`Gender` da Morph-it!) e `rwit validate`.
+### Decisione strategica chiave — LanguageWorker: **via DATI (stile tedesco), `.cs` opzionale**
 
-**Repo di riferimento** (cartelle sorelle, `origin` = ufficiale Ludeon, **tutti allineati**):
-`RimWorld-fr` (apr), `RimWorld-de` (giu — il più completo, ha `WordInfo/plural.txt`),
-`RimWorld-Spanish` (mag). Decompilatore: `scripts/.tools/ilspycmd.exe` (gitignored).
-Report del gioco: `docs/TranslationReport.txt`.
+Decompilato il worker italiano **di serie**: è già capace (articoli singolari `il/lo/l'/la`,
+`un/uno/una/un'` dal genere; `Pluralize` legge `WordInfo/plural.txt`). Il **tedesco non ha
+`.cs`** → tutto dati WordInfo. **Decisione: andiamo data-driven.** Articoli/plurali li
+controlliamo via `WordInfo` (Gender + plural.txt) e via le `rulesStrings` (articoli espliciti
++ varianti per genere). Il `.cs` migliorato (root, firme verificate contro base e spagnolo)
+resta **bonus opzionale** per gli edge, da valutare per una PR upstream — **non** prerequisito.
+
+- **Eteroclito "le braccia"**: il motore ha `LanguageWordInfo.ResolveGender(stringa)` che
+  legge `WordInfo/Gender`. Setup data-only **già in place** (plural.txt + `braccia` in
+  Female.txt). ⚠️ Dipende dall'ordine del grammar resolver (genere pre/post pluralizzazione)
+  → **da verificare in gioco**. Domanda al team in `EXTRA/discord-languageworker-question.md`.
+
+### PROSSIMI PASSI (domani)
+1. **Inviare/attendere la domanda Discord** (conferma strategia data-driven + ordine resolver
+   eteroclito). Bozza pronta in `EXTRA/`.
+2. **Verifica in Dev mode** (serve il gioco): log di combattimento su pawn M/F →
+   "le braccia"/"la mano"/rami `count==1/2/3`; nomi fazione e mappa generati.
+3. **Namer rimanenti** (qualità minore, apposizioni di nomi-luogo perlopiù accettabili):
+   Settlement (Outlander/Pirate/Tribal) e WorldFeatures.
+4. **Log sociale** (Interactions) — stesso approccio dei rami `count`/genere.
+5. **Reconcile residuo**: pool nomi mancanti (fallback inglese OK), altri `CORTO`; rivedere i
+   fallback Morph-it! segnalati (es. `omicida`→bucket, idiomi).
+6. Eventuale **`rwit wordinfo`**: generare `Gender`/`plural.txt` da *tutti* i label via Morph-it!.
+
+**Riferimento rapido tooling**: `rwit --help`. Dashboard: `python scripts\dashboard\start.py`
+(o `streamlit run scripts\dashboard\app.py`). Repo gemelli: `RimWorld-fr/de/Spanish`
+(de = il più completo, modello data-driven). Decompilatore: `scripts/.tools/ilspycmd.exe`.
 
 ## 1. Contesto
 
