@@ -126,8 +126,21 @@ Per separare il rumore dal lavoro vero e rendere la review pulita:
   (blocco UnnaturalCorpse+GoldenCube, 23), `Tales_Double.xml` (3 label) + parole isolate
   (`cracheur`→sputatore, `noctolithe`→noctolite, refuso `difdeforme`→contorta).
   Restano 2 falsi positivi italiani (`Carne del revenant`, `una figura indistinta`).
-- [ ] **Lingua sbagliata nelle altre DLC**: `rwit lang-check` (corpus intero) segnala ancora
-  ~17 fr + alcuni en/es/de da rivedere (report in `reports/langcheck_*.txt`). Worklist pronta.
+- [x] **Lingua sbagliata per-stringa nelle altre DLC**: triage completato. I ~19 fr del
+  `lang-check` per-stringa sono quasi tutti **falsi positivi italiani** (`noctolite`,
+  `Carne del revenant`, `Menù principale`, `tè di psychite`…) — "revenant"/"menù" ingannano
+  `lingua`. Nessuna azione.
+- [ ] 🟠 **Due interi file Namer FR (Odyssey)** — workstream, NON quick-fix. Scoperti con la
+  nuova modalità `rwit lang-check --files` (la per-stringa li mancava: parole brevi):
+  `Odyssey/DefInjected/RulePackDef/RulePacks_Namers_Factions.xml` (96% FR) e
+  `RulePacks_Namers_Gravship.xml` (99% FR). Sono **generatori di nomi** (fazioni, gravship)
+  copiati da RimWorld-fr con tutta l'**impalcatura di genere/elisione francese**
+  (`_feminine`/`_vowel`, prefissi `le/la/l'`). Vanno **ricostruiti per la grammatica
+  italiana** (non tradotti dal francese) partendo dal sorgente EN, stile come il Namer di
+  Core. ⚠️ Da **verificare in Dev mode** (nomi generati a runtime). Sorella del workstream
+  log-combattimento (§5.2-ter).
+  - NB: Deity_Names, Xenohumans, Genepacks, Biosignatures combaciano col FR ma sono
+    **sillabe inventate neutre** (`[syl][end]`) — NON vanno toccate (confermato da `--files`).
 
 > **TOOLING NUOVO (questa sessione)** — tutto in `scripts/rwit/`, offline, zero token LLM:
 > - **`rwit lang-check`** (`langcheck.py`): rileva lingua sbagliata. Gate `lingua` +

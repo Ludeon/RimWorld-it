@@ -116,6 +116,57 @@ def _build_detector(langs):
     return LanguageDetectorBuilder.from_languages(*chosen).build(), name
 
 
+def scan_files(dlcs=None, min_strings=8, min_frac=0.5):
+    """Trova interi FILE in lingua sbagliata (es. rulePack Namer copiati dal
+    francese), che la scansione per-stringa manca quando sono fatti di parole
+    brevi. Criterio: alta frazione di leaf-text identici a un repo gemello E
+    `lingua` conferma quella stessa lingua sul testo concatenato del file
+    (cosi le sillabe inventate neutre, che coincidono per caso, NON vengono segnalate).
+    Ritorna [(file, dlc, n_stringhe, frazione, lingua, n_match)]."""
+    from collections import defaultdict
+    repo = config.repo_root()
+    dlcs = dlcs or config.DLCS
+    corp = {l: _sibling_corpus(folder) for l, folder in SIBLINGS.items()}
+    detector, _ = _build_detector(["it", "fr", "es", "de", "en"])
+
+    files: dict[str, dict] = {}
+    for dlc in dlcs:
+        for f, _line, _tag, txt, _en in _iter_leaves(repo, dlc):
+            c = _clean(txt)
+            if not c:
+                continue
+            rel = str(f.relative_to(repo))
+            d = files.setdefault(rel, {"dlc": dlc, "texts": [],
+                                       "match": {l: 0 for l in SIBLINGS}})
+            d["texts"].append(c)
+            for l in SIBLINGS:
+                if c in corp[l].get(dlc, ()):
+                    d["match"][l] += 1
+
+    out = []
+    for rel, d in files.items():
+        n = len(d["texts"])
+        if n < min_strings:
+            continue
+        best = max(SIBLINGS, key=lambda l: d["match"][l])
+        frac = d["match"][best] / n
+        if frac < min_frac:
+            continue
+        concat = " ".join(t for t in d["texts"]
+                          if " " in t or len(_letters(t)) >= 4)[:4000]
+        if not concat.strip():
+            continue
+        lng = detector.detect_language_of(concat)
+        iso = lng.iso_code_639_1.name.lower() if lng else "?"
+        # conferma: la lingua rilevata deve essere quella del gemello piu vicino
+        # (filtra i file di sillabe inventate, che lingua classifica a caso).
+        if iso == "it" or iso != best:
+            continue
+        out.append((rel, d["dlc"], n, frac, iso, d["match"][best]))
+    out.sort(key=lambda r: -r[3])
+    return out
+
+
 class Hit:
     __slots__ = ("file", "line", "tag", "text", "verdict", "detail", "en")
 

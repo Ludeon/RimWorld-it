@@ -81,7 +81,18 @@ def analyze(
 def lang_check(
     dlc: Optional[List[str]] = typer.Option(None, "--dlc", help="Limita a una o piu DLC"),
     min_conf: float = typer.Option(0.55, "--min-conf", help="Confidenza minima language-ID (Tier B)"),
+    files: bool = typer.Option(False, "--files", help="Modalita FILE: interi file in lingua sbagliata (es. rulePack copiati)"),
 ):
+    if files:
+        rows = langcheck_mod.scan_files(dlc or None)
+        t = Table(title=f"File in lingua sbagliata - {len(rows)}")
+        t.add_column("Lingua"); t.add_column("%", justify="right")
+        t.add_column("Stringhe", justify="right"); t.add_column("File")
+        for rel, _dlc, n, frac, iso, _m in rows:
+            t.add_row(iso, f"{frac*100:.0f}%", str(n), rel)
+        console.print(t)
+        return
+
     hits = langcheck_mod.scan(dlc or None, min_conf=min_conf)
 
     # Commenti EN adiacenti per la shortlist (best-effort, per la review).
