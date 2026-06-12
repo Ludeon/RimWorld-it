@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-  
+
   <!-- EN:
     <li>r_name->The [spaceAdj] Salvagers</li>
     <li>r_name->The [spaceAdj] Scavengers</li>
@@ -38,67 +38,67 @@
     <li>spaceCollectiveNoun->Reapers</li>
   -->
   <NamerFactionSalvagers.rulePack.rulesStrings>
-    <li>r_name->Les récupérateurs [spaceAdj]</li>
-    <li>r_name->Les charognards [spaceAdj]</li>
-    <li>r_name->[spaceAdj] [AnimalBadass]</li>
-    <li>r_name->Les [AnimalBadass] [spaceAdj]</li>
-    <li>r_name->Les [Enemy] [spaceAdj]</li>
-    <li>r_name->Les [spaceNoun_feminine] [Enemy_Feminine]</li>
-    <li>r_name->Les [spaceNoun_feminine_vowel] [Enemy_Feminine]</li>
-    <li>r_name->Les [spaceNoun_vowel] [Enemy]</li>
-    <li>r_name->Les [spaceNoun] de [groupname]</li>
-    <li>r_name->Les [groupname] [spaceAdj]</li>
-    <li>r_name->Les [spaceNoun_feminine] [ColorBadass_Feminine]</li>
-    <li>r_name->Les [spaceNoun_feminine_vowel] [ColorBadass_Feminine]</li>
-    <li>r_name->L'[spaceNoun_vowel] [ColorBadass]</li>
-    <li>r_name->La [spaceNoun_feminine] [AdjectiveBadass_Feminine]</li>
-    <li>r_name->La [spaceNoun_feminine_vowel] [AdjectiveBadass_Feminine]</li>
-    <li>r_name->L'[spaceNoun_vowel] [AdjectiveBadass]</li>
-    <li>r_name->Les [spaceCollectiveNoun_plurial] [ColorBadass_Plural] </li>
-    <li>r_name->Les [spaceCollectiveNoun_plurial] [AdjectiveBadass_Plural] </li>
-    <li>r_name->La [spaceCollectiveNoun_feminine] [ColorBadass_Feminine]</li>
-    <li>r_name->La [spaceCollectiveNoun_feminine] [AdjectiveBadass_Feminine] </li>
-    <li>r_name->L'[spaceCollectiveNoun_feminine_vowel] [ColorBadass_Feminine]</li>
-    <li>r_name->L'[spaceCollectiveNoun_feminine_vowel] [AdjectiveBadass_Feminine] </li>
-    <li>r_name->Les [spaceCollectiveNoun_feminine_plurial] [ColorBadass_FemPlural]</li>
-    <li>r_name->Les [spaceCollectiveNoun_feminine_plurial] [AdjectiveBadass_FemPlural] </li>
-    <li>r_name->Les [spaceNoun] de [ConceptBadass]</li>
-    <li>r_name(p=2)->La [spaceNoun_feminine] de [NamePerson]</li>
-    <li>r_name(p=2)->l'[spaceNounAny_vowel] de [NamePerson]</li>
-    <li>r_name(p=2)->La [spaceCollectiveNoun_feminine] de [NamePerson]</li>
-    <li>r_name(p=2)->les [spaceCollectiveNounAny_plurial] de [NamePerson]</li>
-    <li>r_name(p=2)->les [spaceCollectiveNoun_plurial] [spaceAdj] de [NamePerson]</li>
-    <li>r_name(p=2)->les [spaceCollectiveNoun_feminine_plurial] [spaceAdj_feminine] de [NamePerson]</li>
-    <li>spaceAdjAny->[spaceAdj]</li>
-    <li>spaceAdjAny->[spaceAdj_indef]</li>
-    <li>spaceAdj->Orbitaux</li>
-    <li>spaceAdj_feminine->Orbitales</li>
-    <li>spaceAdj_indef->Cosmiques</li>
-    <li>spaceAdj->Astraux</li>
-    <li>spaceAdj_feminine->Astrales</li>
-    <li>spaceAdj_indef->Solaires</li>
-    <li>spaceAdj_indef->Célestes</li>
-    <li>spaceNounAny_vowel->[spaceNoun_feminine_vowel]</li>
-    <li>spaceNounAny_vowel->[spaceNoun_vowel]</li>
-    <li>spaceNoun_feminine_vowel->Étoile</li>
-    <li>spaceNoun_feminine->Lune</li>
-    <li>spaceNoun_feminine->Comète</li>
-    <li>spaceNoun_vowel->Astéroïde</li>
-    <li>spaceNoun_feminine_vowel->Éclipse</li>
-    <li>spaceCollectiveNounAny_plurial->[spaceCollectiveNoun_plurial]</li>
-    <li>spaceCollectiveNounAny_plurial->[spaceCollectiveNoun_feminine_plurial]</li>
-    <li>spaceCollectiveNoun_feminine_vowel->Armada</li>
-    <li>spaceCollectiveNoun_feminine->Flotte</li>
-    <li>spaceCollectiveNoun_feminine->Flottille</li>
-    <li>spaceCollectiveNoun_plurial->Corsaires</li>
-    <li>spaceCollectiveNoun_plurial->Pirates</li>
-    <li>spaceCollectiveNoun_feminine_plurial->Pirates</li>
-    <li>spaceCollectiveNoun_plurial->Maraudeurs</li>
-    <li>spaceCollectiveNoun_feminine_plurial->Maraudeuses</li>
-    <li>spaceCollectiveNoun_plurial->Faucheurs</li>
-    <li>spaceCollectiveNoun_feminine_plurial->Faucheuses</li>
+    <!-- IT: ricostruito dal sorgente EN con grammatica italiana. Strategia:
+         apposizione e aggettivi in -e (invarianti di genere) + liste locali a
+         genere/numero controllato, per evitare discordanze di articolo. -->
+    <li>r_name->I Recuperatori [agg_p]</li>
+    <li>r_name->I Saccheggiatori [agg_p]</li>
+    <li>r_name->Gli Sciacalli [agg_p]</li>
+    <li>r_name->I [predoni] [agg_p]</li>
+    <li>r_name->I [predoni] di [ConceptBadassDi]</li>
+    <li>r_name->I [AnimalBadassI] [agg_p]</li>
+    <li>r_name(p=2)->I [predoni] di [NamePerson]</li>
+    <li>r_name->La [flotta] [agg_s]</li>
+    <li>r_name->La [flotta] di [ConceptBadassDi]</li>
+    <li>r_name(p=2)->La [flotta] di [NamePerson]</li>
+    <li>r_name->La [astro] [agg_s]</li>
+    <li>r_name->Le [astro_p] di [ConceptBadassDi]</li>
+    <li>r_name(p=2)->Le [astro_p] di [NamePerson]</li>
+    <li>agg_s->orbitale</li>
+    <li>agg_s->astrale</li>
+    <li>agg_s->solare</li>
+    <li>agg_s->celeste</li>
+    <li>agg_s->stellare</li>
+    <li>agg_s->siderale</li>
+    <li>agg_s->spaziale</li>
+    <li>agg_s->lunare</li>
+    <li>agg_p->orbitali</li>
+    <li>agg_p->astrali</li>
+    <li>agg_p->solari</li>
+    <li>agg_p->celesti</li>
+    <li>agg_p->stellari</li>
+    <li>agg_p->siderali</li>
+    <li>agg_p->spaziali</li>
+    <li>agg_p->lunari</li>
+    <li>predoni->corsari</li>
+    <li>predoni->pirati</li>
+    <li>predoni->predoni</li>
+    <li>predoni->mietitori</li>
+    <li>predoni->razziatori</li>
+    <li>predoni->saccheggiatori</li>
+    <li>predoni->briganti</li>
+    <li>predoni->bucanieri</li>
+    <li>flotta->armata</li>
+    <li>flotta->flotta</li>
+    <li>flotta->flottiglia</li>
+    <li>flotta->ciurma</li>
+    <li>flotta->schiera</li>
+    <li>astro->stella</li>
+    <li>astro->luna</li>
+    <li>astro->cometa</li>
+    <li>astro->nebulosa</li>
+    <li>astro->supernova</li>
+    <li>astro->galassia</li>
+    <li>astro->costellazione</li>
+    <li>astro_p->stelle</li>
+    <li>astro_p->lune</li>
+    <li>astro_p->comete</li>
+    <li>astro_p->nebulose</li>
+    <li>astro_p->supernove</li>
+    <li>astro_p->galassie</li>
+    <li>astro_p->costellazioni</li>
   </NamerFactionSalvagers.rulePack.rulesStrings>
-  
+
   <!-- EN:
     <li>r_name->[tradeAdj] [tradeNoun]</li>
     <li>tradeAdj->merchant's</li>
@@ -127,32 +127,36 @@
     <li>tradeNoun->nexus</li>
   -->
   <NamerFactionTradersGuild.rulePack.rulesStrings>
+    <!-- IT: nome + aggettivo in -e (invariante) o complemento "di", senza
+         articolo iniziale -> nessun problema di genere. -->
     <li>r_name->[tradeNoun] [tradeAdj]</li>
-    <li>tradeAdj->du marchand</li>
-    <li>tradeAdj->l'orbite</li>
-    <li>tradeAdj->commerce</li>
-    <li>tradeAdj->de l'espace</li>
-    <li>tradeAdj->cosmique</li>
-    <li>tradeAdj->céleste</li>
-    <li>tradeAdj->né de la faille</li>
-    <li>tradeAdj->exo</li>
-    <li>tradeNoun->guilde</li>
-    <li>tradeNoun->consortium</li>
-    <li>tradeNoun->syndicat</li>
-    <li>tradeNoun->alliance</li>
-    <li>tradeNoun->cartel</li>
-    <li>tradeNoun->coalition</li>
-    <li>tradeNoun->fédération</li>
-    <li>tradeNoun->conglomérat</li>
-    <li>tradeNoun->corporation</li>
-    <li>tradeNoun->entreprise</li>
-    <li>tradeNoun->réseau</li>
-    <li>tradeNoun->échange</li>
-    <li>tradeNoun->bazaar</li>
-    <li>tradeNoun->magasin</li>
-    <li>tradeNoun->nexus</li>
+    <li>r_name->[tradeNoun] del Vuoto</li>
+    <li>r_name->[tradeNoun] dello Spazio</li>
+    <li>r_name(p=0.5)->[tradeNoun] dei Mercanti</li>
+    <li>tradeNoun->Gilda</li>
+    <li>tradeNoun->Consorzio</li>
+    <li>tradeNoun->Sindacato</li>
+    <li>tradeNoun->Alleanza</li>
+    <li>tradeNoun->Cartello</li>
+    <li>tradeNoun->Coalizione</li>
+    <li>tradeNoun->Federazione</li>
+    <li>tradeNoun->Conglomerato</li>
+    <li>tradeNoun->Corporazione</li>
+    <li>tradeNoun->Compagnia</li>
+    <li>tradeNoun->Lega</li>
+    <li>tradeNoun->Camera</li>
+    <li>tradeNoun->Emporio</li>
+    <li>tradeNoun->Nexus</li>
+    <li>tradeAdj->Stellare</li>
+    <li>tradeAdj->Orbitale</li>
+    <li>tradeAdj->Siderale</li>
+    <li>tradeAdj->Spaziale</li>
+    <li>tradeAdj->Celeste</li>
+    <li>tradeAdj->Mercantile</li>
+    <li>tradeAdj->Astrale</li>
+    <li>tradeAdj->Solare</li>
   </NamerFactionTradersGuild.rulePack.rulesStrings>
-  
+
   <!-- EN:
     <li>r_name->[platAdj] [platform]</li>
     <li>platAdj->starlight</li>
@@ -191,41 +195,37 @@
     <li>platform->ring</li>
   -->
   <NamerSettlementTradersGuild.rulePack.rulesStrings>
+    <!-- IT: "Stazione [Nome]" per apposizione (nessun accordo) + aggettivi -e. -->
+    <li>r_name->[platform] [platName]</li>
     <li>r_name->[platform] [platAdj]</li>
-    <li>platAdj->lumière des étoiles</li>
-    <li>platAdj->soleil</li>
-    <li>platAdj->nébuleuse</li>
-    <li>platAdj->poussière d'étoiles</li>
-    <li>platAdj->orion</li>
-    <li>platAdj->horizon</li>
-    <li>platAdj->galaxie</li>
-    <li>platAdj->cosmos</li>
-    <li>platAdj->vide</li>
-    <li>platAdj->astéroïde</li>
-    <li>platAdj->comète</li>
-    <li>platAdj->éclipse</li>
-    <li>platAdj->quasar</li>
-    <li>platAdj->pulsar</li>
-    <li>platAdj->météore</li>
-    <li>platAdj->zénith</li>
-    <li>platAdj->lunaire</li>
-    <li>platAdj->solaire</li>
-    <li>platAdj->céleste</li>
-    <li>platAdj->rayon de lune</li>
-    <li>platAdj->éclat de soleil</li>
-    <li>platAdj->champ stellaire</li>
-    <li>platAdj->cosmique</li>
-    <li>platAdj->astral</li>
-    <li>platAdj->aurore</li>
-    <li>platAdj->luminaire</li>
-    <li>platAdj->couronne</li>
-    <li>platform->plateforme</li>
-    <li>platform->station</li>
-    <li>platform->centre</li>
-    <li>platform->station</li>
-    <li>platform->base</li>
-    <li>platform->quai</li>
-    <li>platform->anneau</li>
+    <li>platform->Stazione</li>
+    <li>platform->Base</li>
+    <li>platform->Piattaforma</li>
+    <li>platform->Avamposto</li>
+    <li>platform->Scalo</li>
+    <li>platform->Porto</li>
+    <li>platform->Polo</li>
+    <li>platform->Anello</li>
+    <li>platName->Orione</li>
+    <li>platName->Zenit</li>
+    <li>platName->Aurora</li>
+    <li>platName->Quasar</li>
+    <li>platName->Pulsar</li>
+    <li>platName->Corona</li>
+    <li>platName->Nebulosa</li>
+    <li>platName->Meteora</li>
+    <li>platName->Cosmo</li>
+    <li>platName->Orizzonte</li>
+    <li>platName->Galassia</li>
+    <li>platName->Eclissi</li>
+    <li>platName->Cometa</li>
+    <li>platName->Polvere Stellare</li>
+    <li>platName->Luce Stellare</li>
+    <li>platAdj->Stellare</li>
+    <li>platAdj->Orbitale</li>
+    <li>platAdj->Siderale</li>
+    <li>platAdj->Solare</li>
+    <li>platAdj->Lunare</li>
   </NamerSettlementTradersGuild.rulePack.rulesStrings>
-  
+
 </LanguageData>
