@@ -273,7 +273,10 @@ def render_names():
     g2.caption(f"`{packs[key]['file']}`")
 
     names, root = namegen_mod.generate(packs, key, int(count), seed=ss.get("ng_seed", 1))
-    st.code("\n".join(names), language=None)
+    # Casella di testo (non blocco codice): cosi Ctrl+C copia dentro il campo senza
+    # far scattare la scorciatoia "C = clear caches" di Streamlit.
+    st.text_area(t("tab_names"), value="\n".join(names),
+                 height=min(600, 60 + int(count) * 24), label_visibility="collapsed")
 
     with st.expander(f"{t('ng_rules')} · root = [{root}]"):
         lines = []
