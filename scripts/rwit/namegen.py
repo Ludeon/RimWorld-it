@@ -79,8 +79,12 @@ def _load_words(repo: Path, dlc: str, relpath: str) -> list[str] | None:
     for d in (dlc, "Core"):
         f = repo / d / "Strings" / (relpath + ".txt")
         if f.exists():
-            return [ln.strip() for ln in f.read_text(encoding="utf-8").splitlines()
-                    if ln.strip() and not ln.lstrip().startswith("#")]
+            out = []
+            for ln in f.read_text(encoding="utf-8").splitlines():
+                ln = ln.lstrip("﻿").strip()           # via BOM
+                if ln and not ln.startswith(("#", "//")):   # salta i commenti
+                    out.append(ln)
+            return out
     return None
 
 
