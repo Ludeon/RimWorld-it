@@ -80,7 +80,7 @@ next to each string, so an external LLM/tool can translate **only** what is
 
 The **Wrong language** metric comes from `rwit lang-check`, a deterministic,
 offline detector (no LLM) that flags strings accidentally left in French/Spanish/
-German. See [`../../docs/TOOLING-LOCALE.md`](../../docs/TOOLING-LOCALE.md) §3a.
+German. See [`../../docs/LOCAL-TOOLING.md`](../../docs/LOCAL-TOOLING.md) §3a.
 
 ## Dependencies
 

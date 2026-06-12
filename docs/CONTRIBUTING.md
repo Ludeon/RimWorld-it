@@ -4,8 +4,8 @@ Benvenuto. Questo repo contiene la traduzione italiana di RimWorld (gioco base +
 È un language pack: **solo file XML/TXT**, nessuna modifica al codice del gioco.
 
 Prima di tradurre, leggi anche:
-- [`docs/SINTASSI-TRADUZIONE.md`](SINTASSI-TRADUZIONE.md) — sintassi del motore (ternaria genere, variabili, rulesStrings).
-- [`docs/RIFERIMENTI.md`](RIFERIMENTI.md) — repo di altre lingue, strategia WordInfo, link Ludeon.
+- [`docs/TRANSLATION-SYNTAX.md`](TRANSLATION-SYNTAX.md) — sintassi del motore (ternaria genere, variabili, rulesStrings).
+- [`docs/REFERENCES.md`](REFERENCES.md) — repo di altre lingue, strategia WordInfo, link Ludeon.
 
 ---
 
@@ -73,7 +73,7 @@ Override dei percorsi del gioco: opzione `--game-data` o variabile d'ambiente `R
 2. **In gioco** (Dev mode attiva) → lingua **Italiano** → *Pulisci lingue* / rigenera i
    dati di lingua. Il gioco produce un `TranslationReport.txt`.
 3. **`rwit analyze`** — calcola il gap reale e scrive `reports/gap_<data>.txt`.
-4. **Traduci** i tag elencati, seguendo `docs/SINTASSI-TRADUZIONE.md`.
+4. **Traduci** i tag elencati, seguendo `docs/TRANSLATION-SYNTAX.md`.
 5. **Verifica** in gioco (riavvia RimWorld per rileggere la lingua).
 
 > ⚠️ **Genera SEMPRE il report con i symlink funzionanti.** Con link rotti il gioco carica
@@ -98,7 +98,7 @@ un `git diff` per distinguere il rumore (commenti/whitespace) dalle modifiche di
 - rulesStrings: freccia `->`, lato sinistro invariato, stesso numero di `<li>`.
 - Restituire XML completo e ben formato.
 
-Dettagli ed esempi in [`docs/SINTASSI-TRADUZIONE.md`](SINTASSI-TRADUZIONE.md).
+Dettagli ed esempi in [`docs/TRANSLATION-SYNTAX.md`](TRANSLATION-SYNTAX.md).
 
 ### Criterio di qualità
 Correggere **anche le imprecisioni**, non solo gli errori palesi: privilegiare

@@ -46,15 +46,15 @@ Esiste **un solo** tipo di "peso" nei nostri file: i marcatori `(p=N)` nelle
 - Stanno sul **lato sinistro** della freccia `->`, quindi vanno **copiati identici**.
 - Un peso alterato qui cambierebbe solo la probabilità di una *frase*, non di un evento.
 
-Il conteggio `(p=N)` per file è nella colonna apposita di `VALIDAZIONE-FILE.csv`: i file
+Il conteggio `(p=N)` per file è nella colonna apposita di `VALIDATION-FILES.csv`: i file
 con valore alto sono quelli da controllare con più attenzione (left side invariato).
 
 > **Regola**: nelle rulesStrings non toccare mai il lato sinistro, compreso `(p=N)`.
-> Vedi [`SINTASSI-TRADUZIONE.md`](SINTASSI-TRADUZIONE.md) §4.
+> Vedi [`TRANSLATION-SYNTAX.md`](TRANSLATION-SYNTAX.md) §4.
 
 ---
 
-## 2. Foglio di validazione file (`VALIDAZIONE-FILE.csv`)
+## 2. Foglio di validazione file (`VALIDATION-FILES.csv`)
 
 Inventario di **tutti** i file di traduzione del repo, da spuntare man mano che vengono
 validati con Claude Code. È un **CSV** (si apre in Excel, ma resta diffabile in git — un

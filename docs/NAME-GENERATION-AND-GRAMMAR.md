@@ -193,7 +193,7 @@ moltitudine
 schiera
 ```
 Le regole degli articoli (l'/lo/il/la, singolare, generi lessicali particolari) sono in
-[`SINTASSI-TRADUZIONE.md`](SINTASSI-TRADUZIONE.md) §6.
+[`TRANSLATION-SYNTAX.md`](TRANSLATION-SYNTAX.md) §6.
 
 ### Cosa tradurre e da dove (fonte = inglese)
 La **fonte di verità** è l'inglese del gioco (`Data/<DLC>/Languages/English/Strings`):
@@ -219,8 +219,8 @@ i pezzi sopra usando `[riferimenti]` e pesi `(p=N)`:
 ```
 - `[mapType]`, `[subject]` → pescati da altre regole / liste di `Strings/`.
 - `(p=2)` → questa variante è scelta con **peso 2** (più probabile). Sta sul lato sinistro,
-  va **copiato identico** (vedi [`SINTASSI-TRADUZIONE.md`](SINTASSI-TRADUZIONE.md) §4 e la
-  nota integrità in [`VALIDAZIONE.md`](VALIDAZIONE.md)).
+  va **copiato identico** (vedi [`TRANSLATION-SYNTAX.md`](TRANSLATION-SYNTAX.md) §4 e la
+  nota integrità in [`VALIDATION.md`](VALIDATION.md)).
 
 ### Come un file `Strings/` diventa disponibile: `<rulesFiles>`
 Un `rulePack` ha due liste: `<rulesStrings>` (regole inline) e **`<rulesFiles>`**, che

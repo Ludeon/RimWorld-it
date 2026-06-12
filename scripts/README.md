@@ -32,7 +32,7 @@ python -m venv .venv
    (Keyed mancanti/non tradotte, DefInjected mancanti per tipo). Scrive il dettaglio
    in `reports/gap_<data>.txt` (cartella gitignored).
 4. **Traduzione** — si lavora sui tag elencati, rispettando le regole Ludeon
-   (vedi `docs/SINTASSI-TRADUZIONE.md`): variabili `[VAR]` e `{PAWN_...}` intatte, frecce `->`
+   (vedi `docs/TRANSLATION-SYNTAX.md`): variabili `[VAR]` e `{PAWN_...}` intatte, frecce `->`
    nelle rulesStrings, `\n\n` preservati, commenti `<!-- EN: ... -->` invariati.
 
 ## Note

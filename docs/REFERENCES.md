@@ -27,7 +27,7 @@ L'italiano **non ha casi grammaticali**: per una resa corretta bastano
   `LanguageWorker_Italian`, non vanno codificati a mano nei testi.
 - Non serve replicare il sistema di declinazione tedesco.
 
-Dettagli sull'uso pratico in [`docs/SINTASSI-TRADUZIONE.md`](SINTASSI-TRADUZIONE.md) §6.
+Dettagli sull'uso pratico in [`docs/TRANSLATION-SYNTAX.md`](TRANSLATION-SYNTAX.md) §6.
 
 ## Link utili
 

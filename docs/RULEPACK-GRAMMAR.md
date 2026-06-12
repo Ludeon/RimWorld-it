@@ -94,7 +94,7 @@ The engine selects the row by **how many** body parts are involved. In Italian, 
 4. **Generated plurals/articles** come from the `LanguageWorker` + `WordInfo/` (gender and
    `plural.txt`). Irregular noun plurals go in `WordInfo/plural.txt`, not hardcoded into the
    rules (Italian example: braccio→**braccia**, osso→ossa). See
-   [`GENERAZIONE-NOMI-E-GRAMMATICA.md`](GENERAZIONE-NOMI-E-GRAMMATICA.md).
+   [`NAME-GENERATION-AND-GRAMMAR.md`](NAME-GENERATION-AND-GRAMMAR.md).
 5. **Gender in generated proper names**: avoid a fixed-gender leading article in front of a
    mixed-gender list. Robust strategies: apposition, a complement (`of [X]`), gender-invariant
    adjectives, or **lists split by article/gender/number** with coherent weights. (For Italian
@@ -105,7 +105,7 @@ The engine selects the row by **how many** body parts are involved. In Italian, 
 
 - **Gender ternary** inside the final text: `{X_gender ? male : female : neutral}` — picks a
   **letter/word** in the text. Different from the `(X_gender==Female)` condition on the LEFT,
-  which picks a **rule**. (Italian usage: see `SINTASSI-TRADUZIONE.md §3`.)
+  which picks a **rule**. (Italian usage: see `TRANSLATION-SYNTAX.md §3`.)
 - **`{replace: ...}`** post-generation substitution (used by some languages, e.g. German). Rare;
   if present in the EN comment, preserve it.
 - **Capitalization**: the engine capitalizes the first letter of the final result; list entries

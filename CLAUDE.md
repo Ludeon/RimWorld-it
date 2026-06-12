@@ -1,108 +1,109 @@
 # CLAUDE.md
 
-Guida per Claude Code (claude.ai/code) e per i contributor di questo repository.
+Guide for Claude Code (claude.ai/code) and for contributors to this repository.
 
-> Questo file è **tracciato in git** e visibile a tutti i futuri sviluppatori.
-> Non inserire qui percorsi personali o note di sessione: per quelli usa
-> `CLAUDE.local.md` (gitignored) o `docs/`.
+> This file is **tracked in git** and visible to all future developers.
+> Do not put personal paths or session notes here: for those use
+> `CLAUDE.local.md` (gitignored) or `docs/`.
 
-## Privacy — repository pubblico
+## Privacy — public repository
 
-Questo repository è pubblico: non committare dati personali o d'ambiente in file tracciati
-(hardware, percorsi con username, email, token, contesto personale non utile alla
-traduzione). Il contesto personale va in `CLAUDE.local.md` (gitignored); per i percorsi del
-gioco usare meccanismi generici (`Path.home()`, `RIMWORLD_DATA`).
+This repository is public: do not commit personal or environment data into tracked files
+(hardware, paths with usernames, email, tokens, personal context not useful to the
+translation). Personal context goes in `CLAUDE.local.md` (gitignored); for game paths use
+generic mechanisms (`Path.home()`, `RIMWORLD_DATA`).
 
-## Panoramica
+## Overview
 
-Traduzione **italiana** di RimWorld (gioco base + DLC). È un language pack:
-**solo file XML/TXT**, nessuna modifica al codice del gioco.
+**Italian** translation of RimWorld (base game + DLC). It is a language pack:
+**XML/TXT files only**, no changes to the game code.
 
-**Versione gioco target**: 1.6.4850.
+**Target game version**: 1.6.4850.
 
-## Documentazione
+## Documentation
 
-Tutta la documentazione operativa è in `docs/` (tracciata):
+All operational documentation is in `docs/` (tracked):
 
-- [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md) — setup ambiente, tooling `rwit`, flusso di lavoro.
-- [`docs/SINTASSI-TRADUZIONE.md`](docs/SINTASSI-TRADUZIONE.md) — sintassi del motore: ternaria genere, variabili `[VAR]`/`{VAR}`, rulesStrings, `\n\n`, elisione.
-- [`docs/RULEPACK-GRAMMAR.md`](docs/RULEPACK-GRAMMAR.md) — linguaggio completo delle RulePack: condizioni `(count==N)`/genere, pesi `(p=N)`, simboli indicizzati, log di combattimento.
-- [`docs/RIFERIMENTI.md`](docs/RIFERIMENTI.md) — repo di altre lingue (fr/es/de), strategia WordInfo, link Ludeon.
-- [`docs/VALIDAZIONE.md`](docs/VALIDAZIONE.md) — validazione file, integrità (la traduzione NON tocca le priorità eventi), foglio `VALIDAZIONE-FILE.csv`.
-- [`docs/GENERAZIONE-NOMI-E-GRAMMATICA.md`](docs/GENERAZIONE-NOMI-E-GRAMMATICA.md) — come il gioco genera nomi/articoli/plurali e il **log di combattimento/sociale** (LanguageWorker + WordInfo + Strings + rulesStrings, con la strategia di fix per il genere). Codice in [`LanguageWorker_Italian.cs`](LanguageWorker_Italian.cs) (versione migliorata, root).
-- [`docs/TOOLING-LOCALE.md`](docs/TOOLING-LOCALE.md) — strategia per gli strumenti locali/offline: Morph-it! per la morfologia, embedding per la coerenza, LLM locale solo come finder/triage (mai traduttore).
-- `docs/PIANO-AGGIORNAMENTO-<versione>.md` — piano della sessione di aggiornamento in corso.
+- [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md) — environment setup, `rwit` tooling, workflow.
+- [`docs/TRANSLATION-SYNTAX.md`](docs/TRANSLATION-SYNTAX.md) — engine syntax: gender ternary, `[VAR]`/`{VAR}` variables, rulesStrings, `\n\n`, elision.
+- [`docs/RULEPACK-GRAMMAR.md`](docs/RULEPACK-GRAMMAR.md) — full RulePack language: `(count==N)`/gender conditions, weights `(p=N)`, indexed symbols, combat log.
+- [`docs/REFERENCES.md`](docs/REFERENCES.md) — other-language repos (fr/es/de), WordInfo strategy, Ludeon links.
+- [`docs/VALIDATION.md`](docs/VALIDATION.md) — file validation, integrity (the translation does NOT touch event priorities), `VALIDATION-FILES.csv` sheet.
+- [`docs/NAME-GENERATION-AND-GRAMMAR.md`](docs/NAME-GENERATION-AND-GRAMMAR.md) — how the game generates names/articles/plurals and the **combat/social log** (LanguageWorker + WordInfo + Strings + rulesStrings, with the gender-fix strategy). Code in [`LanguageWorker_Italian.cs`](LanguageWorker_Italian.cs) (improved version, root).
+- [`docs/LOCAL-TOOLING.md`](docs/LOCAL-TOOLING.md) — strategy for local/offline tools: Morph-it! for morphology, embeddings for consistency, local LLM only as finder/triage (never as translator).
+- `docs/UPDATE-PLAN-<version>.md` — plan for the in-progress update session.
 
-Regole operative di traduzione: [`docs/SINTASSI-TRADUZIONE.md`](docs/SINTASSI-TRADUZIONE.md)
-e [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md).
+Operational translation rules: [`docs/TRANSLATION-SYNTAX.md`](docs/TRANSLATION-SYNTAX.md)
+and [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md).
 
-## Struttura del repo
+## Repo structure
 
 ```
-Core/  Royalty/  Ideology/  Biotech/  Anomaly/  Odyssey/   # gioco base + DLC
-scripts/                                                    # tooling rwit + regole
-docs/                                                       # documentazione
+Core/  Royalty/  Ideology/  Biotech/  Anomaly/  Odyssey/   # base game + DLC
+scripts/                                                    # rwit tooling + rules
+docs/                                                       # documentation
 ```
 
-Ogni cartella gioco/DLC contiene `DefInjected/`, `Keyed/`, `Strings/`, `WordInfo/`,
+Each game/DLC folder contains `DefInjected/`, `Keyed/`, `Strings/`, `WordInfo/`,
 `LanguageInfo.xml`.
 
 ## Tooling
 
-Tooling in **Python** (`scripts/rwit/`). Setup una tantum dalla radice del repo:
+Tooling in **Python** (`scripts/rwit/`). One-time setup from the repo root:
 
 ```powershell
 python -m venv .venv
 .venv\Scripts\pip install -r scripts\requirements.txt
 ```
 
-Comandi:
+Commands:
 
 ```powershell
 .venv\Scripts\python scripts\rwit --help
-.venv\Scripts\python scripts\rwit analyze    # gap reale: TranslationReport vs repo
-.venv\Scripts\python scripts\rwit link        # (ri)crea i symlink Italiano nel gioco (UAC)
-.venv\Scripts\python scripts\rwit unlink      # rimuove i symlink
+.venv\Scripts\python scripts\rwit analyze    # real gap: TranslationReport vs repo
+.venv\Scripts\python scripts\rwit link        # (re)create the Italian symlinks in the game (UAC)
+.venv\Scripts\python scripts\rwit unlink      # remove the symlinks
 ```
 
-Percorsi del gioco: autodeterminati; override con `--game-data` o `RIMWORLD_DATA`.
-Dettagli in [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md).
+Game paths: auto-detected; override with `--game-data` or `RIMWORLD_DATA`.
+Details in [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md).
 
-## Regole di traduzione (sintesi)
+## Translation rules (summary)
 
-1. Tradurre **solo** stringhe TODO o tag vuoti; **correggere** errori e imprecisioni nelle traduzioni esistenti (privilegiare naturalezza, evitare calchi letterali).
-2. Mai tradurre il contenuto tra `[ ]` né i nomi delle variabili `{ }`.
-3. Mai modificare i commenti `<!-- EN: ... -->` (si copiano identici).
-4. rulesStrings: forma `<li>sinistra->destra</li>`, freccia `->` letterale, lato sinistro invariato, stesso numero di `<li>`.
-5. Preservare struttura XML, indentazione e le sequenze `\n\n` (riscritte identiche, senza andare a capo).
-6. Genere con ternaria: `{PAWN_gender ? o : a}` (un solo `?` e un solo `:`).
+1. Translate **only** TODO strings or empty tags; **fix** errors and inaccuracies in existing translations (favor naturalness, avoid literal calques).
+2. Never translate the content inside `[ ]` nor the names of `{ }` variables.
+3. Never modify the `<!-- EN: ... -->` comments (copy them verbatim).
+4. rulesStrings: form `<li>left->right</li>`, literal `->` arrow, left side unchanged, same number of `<li>`.
+5. Preserve XML structure, indentation and the `\n\n` sequences (rewritten identically, without line breaks).
+6. Gender via ternary: `{PAWN_gender ? o : a}` (exactly one `?` and one `:`).
 
-Riferimento completo: [`docs/SINTASSI-TRADUZIONE.md`](docs/SINTASSI-TRADUZIONE.md).
+Full reference: [`docs/TRANSLATION-SYNTAX.md`](docs/TRANSLATION-SYNTAX.md).
 
-## Flusso di aggiornamento a una nuova versione del gioco
+## Update flow to a new game version
 
-1. `rwit link` — ricollega le cartelle del repo dentro l'installazione.
-2. In gioco (Dev mode) → lingua Italiano → *Pulisci lingue*/rigenera → produce `TranslationReport.txt`.
-3. `rwit analyze` — calcola il gap reale (`reports/gap_<data>.txt`, gitignored).
-4. Traduzione/revisione dei tag elencati seguendo le regole sopra.
+1. `rwit link` — re-link the repo folders inside the installation.
+2. In game (Dev mode) → language Italian → *Clean up translations*/regenerate → produces `TranslationReport.txt`.
+3. `rwit analyze` — compute the real gap (`reports/gap_<date>.txt`, gitignored).
+4. Translate/review the listed tags following the rules above.
 
-> ⚠️ Genera SEMPRE il report con i symlink funzionanti: con link rotti il gioco carica
-> zero italiano e marca tutto come "mancante" (falso positivo).
+> ⚠️ ALWAYS generate the report with working symlinks: with broken links the game loads
+> zero Italian and marks everything as "missing" (false positive).
 >
-> Il *Pulisci lingue* riscrive i file: aggiorna i commenti `<!-- EN: -->` e normalizza il
-> whitespace. Spesso sono solo **refusi inglesi corretti** → la traduzione italiana non va
-> toccata. Fai sempre `git diff` per separare il rumore dalle modifiche di sostanza.
+> *Clean up translations* rewrites the files: it updates the `<!-- EN: -->` comments and
+> normalizes whitespace. Often these are just **corrected English typos** → the Italian
+> translation must not be touched. Always run `git diff` to separate the noise from the
+> substantive changes.
 
-## Note di sviluppo
+## Development notes
 
-- Progetto di sola traduzione: nessuna modifica al codice di gioco.
-- File XML usati direttamente dal gioco: nessun build necessario.
-- Il DefInjected inglese non è shippato (vive nei Defs): la fonte del gap è il
-  `TranslationReport` generato in gioco. Le Keyed inglesi sono in
+- Translation-only project: no changes to the game code.
+- XML files used directly by the game: no build needed.
+- The English DefInjected is not shipped (it lives in the Defs): the source of the gap is the
+  `TranslationReport` generated in game. The English Keyed files are in
   `Data\<DLC>\Languages\English\Keyed`.
 - Gitignored: `.venv/`, `reports/`, `__pycache__/`, `dist/`, `About/`, `CLAUDE.local.md`.
 
-## Riferimenti
+## References
 
 - Wiki: https://rimworldwiki.com/
-- Regole grammaticali Ludeon: https://ludeon.com/forums/index.php?topic=43979.0
+- Ludeon grammar rules: https://ludeon.com/forums/index.php?topic=43979.0

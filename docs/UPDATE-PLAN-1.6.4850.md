@@ -157,7 +157,7 @@ Per separare il rumore dal lavoro vero e rendere la review pulita:
 ### 5.2 Revisione ampia (decisa con il maintainer)
 Passata di qualità file per file, per DLC, su naturalezza/idiomi/coerenza terminologica.
 Criterio: correggere **anche le imprecisioni**, non solo gli errori
-(es. "crushed" → "schiacciati", non "distrutti"). Vedi `docs/SINTASSI-TRADUZIONE.md` e
+(es. "crushed" → "schiacciati", non "distrutti"). Vedi `docs/TRANSLATION-SYNTAX.md` e
 `docs/CONTRIBUTING.md` per le regole.
 
 Ordine suggerito (per impatto/visibilità):
@@ -169,7 +169,7 @@ Per ogni file: variabili `[VAR]`/`{VAR}` intatte, `->` nelle rulesStrings, `\n\n
 preservati, ternaria genere valida, commenti `<!-- EN: -->` invariati.
 
 ### 5.2-bis Nomi, plurali e grammatica (workstream)
-Vedi [`GENERAZIONE-NOMI-E-GRAMMATICA.md`](GENERAZIONE-NOMI-E-GRAMMATICA.md).
+Vedi [`NAME-GENERATION-AND-GRAMMAR.md`](NAME-GENERATION-AND-GRAMMAR.md).
 - [x] Decompilato `LanguageWorker_Italian` dalla DLL (esisteva già nel gioco).
 - [x] **Spostato in root e migliorato** `LanguageWorker_Italian.cs`: articoli `lo`/`gli`
   (gn/ps/pn/x/y/i+vocale), articoli al plurale, plurali femminili `-ca/-ga/-cia/-gia`.
@@ -184,7 +184,7 @@ Vedi [`GENERAZIONE-NOMI-E-GRAMMATICA.md`](GENERAZIONE-NOMI-E-GRAMMATICA.md).
 `WordInfo` derivato dai nostri label (Morph-it!), non copiato da EN/DE.
 
 ### 5.2-ter Log generato (combattimento/sociale) — obiettivo prioritario
-Vedi [`GENERAZIONE-NOMI-E-GRAMMATICA.md`](GENERAZIONE-NOMI-E-GRAMMATICA.md) §5.
+Vedi [`NAME-GENERATION-AND-GRAMMAR.md`](NAME-GENERATION-AND-GRAMMAR.md) §5.
 Causa radice misurata: **it 1 vincolo di genere vs fr 122 / es 100 / de 95** → log con
 genere/articoli sbagliati. Strategia (tutto su FILE DI TESTO, niente `.cs`): vincoli
 `(X_gender==Male/Female)` + suffissi `[X_definite]` + `WordInfo/Gender` e `plural.txt`.
@@ -219,14 +219,14 @@ Decisione: **CLAUDE.md tracciato e ripulito** + docs/ Claude Code compliant.
 - `CLAUDE.md` (root, tracciato): istruzioni di progetto, percorsi personali rimossi,
   punta ai docs.
 - `docs/CONTRIBUTING.md`: setup env, flusso di lavoro, tooling `rwit`.
-- `docs/SINTASSI-TRADUZIONE.md`: sintassi ammessa nelle traduzioni (ternaria genere,
+- `docs/TRANSLATION-SYNTAX.md`: sintassi ammessa nelle traduzioni (ternaria genere,
   variabili, rulesStrings, `\n\n`, elisione, errori comuni).
-- `docs/RIFERIMENTI.md`: repo di riferimento (fr/es/de), strategia WordInfo, link Ludeon.
-- `docs/VALIDAZIONE.md` + `docs/VALIDAZIONE-FILE.csv`: tracciamento validazione dei file
+- `docs/REFERENCES.md`: repo di riferimento (fr/es/de), strategia WordInfo, link Ludeon.
+- `docs/VALIDATION.md` + `docs/VALIDATION-FILES.csv`: tracciamento validazione dei file
   (1812 dopo la pulizia) e nota di integrità (la traduzione **non** può alterare le priorità eventi:
   0 campi-peso evento nel repo; gli unici pesi sono i `(p=N)` delle rulesStrings, da
   preservare sul lato sinistro).
-- `docs/PIANO-AGGIORNAMENTO-1.6.4850.md`: questo file.
+- `docs/UPDATE-PLAN-1.6.4850.md`: questo file.
 
 ## 7. Stato avanzamento
 
