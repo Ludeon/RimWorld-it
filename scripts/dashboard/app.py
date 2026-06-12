@@ -243,22 +243,28 @@ def render_names():
     if ss.get("ng_sig") != sig:           # reset posizione se cambia il filtro
         ss.ng_idx = 0
         ss.ng_sig = sig
+    n = len(keys)
     nav_prev, nav_pos, nav_name, nav_next = st.columns([1, 1.3, 5, 1], vertical_alignment="bottom")
     if nav_prev.button(t("ng_prev"), use_container_width=True):
-        ss.ng_idx = (ss.ng_idx - 1) % len(keys)
+        ss.ng_idx = (ss.ng_idx - 1) % n
     if nav_next.button(t("ng_next"), use_container_width=True):
-        ss.ng_idx = (ss.ng_idx + 1) % len(keys)
-    ss.ng_idx = max(0, min(ss.ng_idx, len(keys) - 1))
-    # salto numerico per pagina...
-    page = nav_pos.number_input(f"{t('ng_jump')} (1–{len(keys)})",
-                                min_value=1, max_value=len(keys), value=ss.ng_idx + 1)
-    if page - 1 != ss.ng_idx:
-        ss.ng_idx = page - 1
-    # ...e combo per nome (entrambi sincronizzati con la posizione corrente)
-    sel = nav_name.selectbox(t("ng_pack"), range(len(keys)), index=ss.ng_idx,
-                             format_func=lambda i: keys[i])
-    if sel != ss.ng_idx:
-        ss.ng_idx = sel
+        ss.ng_idx = (ss.ng_idx + 1) % n
+    ss.ng_idx = max(0, min(ss.ng_idx, n - 1))
+    # Sincronizzazione robusta: la posizione canonica e ss.ng_idx. Prima di creare
+    # i widget allineo le loro chiavi a ss.ng_idx; le callback riscrivono ss.ng_idx.
+    ss.ng_page = ss.ng_idx + 1
+    ss.ng_combo = ss.ng_idx
+
+    def _from_page():
+        ss.ng_idx = int(ss.ng_page) - 1
+
+    def _from_combo():
+        ss.ng_idx = int(ss.ng_combo)
+
+    nav_pos.number_input(f"{t('ng_jump')} (1–{n})", min_value=1, max_value=n, step=1,
+                         key="ng_page", on_change=_from_page)
+    nav_name.selectbox(t("ng_pack"), range(n), key="ng_combo",
+                       format_func=lambda i: keys[i], on_change=_from_combo)
     key = keys[ss.ng_idx]
 
     g1, g2 = st.columns([1, 5], vertical_alignment="center")
