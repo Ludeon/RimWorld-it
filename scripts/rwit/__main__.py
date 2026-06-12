@@ -21,6 +21,7 @@ import link as link_mod
 import langcheck as langcheck_mod
 import ledger as ledger_mod
 import stringsdiff as stringsdiff_mod
+import variants as variants_mod
 
 app = typer.Typer(
     add_completion=False,
@@ -254,6 +255,28 @@ def ledger_todo(
         lines.append(f"     IT: {it['it']}")
     out.write_text("\n".join(lines), encoding="utf-8")
     console.print(f"[green]Worklist ({len(items)} voci):[/] {out}")
+
+
+variants_app = typer.Typer(no_args_is_help=True, help="Genera le varianti morfologiche (genere/numero/articolo) via Morph-it!.")
+app.add_typer(variants_app, name="variants")
+
+
+@variants_app.command("adj", help="Genera i 5 file aggettivo (base + m/f x sing/plur) dai lemmi.")
+def variants_adj(name: str, dlc: str = typer.Option("Core", "--dlc")):
+    if not __import__("morphit").available():
+        console.print("[yellow]Morph-it! assente in scripts/.tools/ — uso solo le regole.[/]")
+    fb = variants_mod.gen_adjective(name, dlc)
+    console.print(f"[green]Generato:[/] {dlc}/Strings/Words/Adjectives/{name}[*].txt")
+    if fb:
+        console.print(f"[yellow]Fallback a regole ({len(fb)}, da rivedere):[/] {', '.join(fb)}")
+
+
+@variants_app.command("noun", help="Genera i bucket nome per articolo del plurale (I/Gli/Le) dai lemmi.")
+def variants_noun(name: str, dlc: str = typer.Option("Core", "--dlc")):
+    fb = variants_mod.gen_noun(name, dlc)
+    console.print(f"[green]Generato:[/] {dlc}/Strings/Words/Nouns/{name}_(I|Gli|Le).txt")
+    if fb:
+        console.print(f"[yellow]Fallback a regole ({len(fb)}, da rivedere):[/] {', '.join(fb)}")
 
 
 def _safe(fn):

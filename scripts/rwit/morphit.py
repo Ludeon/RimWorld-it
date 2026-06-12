@@ -55,6 +55,8 @@ def _load():
 # --- fallback a regole (lemmi assenti dal lessico) ------------------------
 def _adj_rules(a: str):
     """(m_sing, f_sing, m_plur, f_plur) best-effort dal maschile singolare."""
+    if " " in a:                              # locuzioni (es. "alla mano") -> invariabili
+        return a, a, a, a
     if a.endswith("io"):                      # sanguinario -> sanguinari/e
         return a, a[:-2] + "ia", a[:-2] + "i", a[:-2] + "ie" if a[-3] not in "cg" else a[:-3] + "ge"
     if a.endswith(("co", "go")):              # -co/-go: velare (default -chi/-ghi)
@@ -101,6 +103,17 @@ def noun_info(lemma: str):
         if plural:
             return gender, plural
     return _noun_rules(lemma)
+
+
+def has_adjective(lemma: str) -> bool:
+    adj, _ = _load()
+    e = adj.get(lemma)
+    return bool(e) and all(k in e for k in (("m", "s"), ("f", "s"), ("m", "p"), ("f", "p")))
+
+
+def has_noun(lemma: str) -> bool:
+    _, noun = _load()
+    return lemma in noun
 
 
 def available() -> bool:
