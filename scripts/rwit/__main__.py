@@ -22,6 +22,7 @@ import langcheck as langcheck_mod
 import ledger as ledger_mod
 import stringsdiff as stringsdiff_mod
 import variants as variants_mod
+import reconcile as reconcile_mod
 
 app = typer.Typer(
     add_completion=False,
@@ -77,6 +78,35 @@ def analyze(
     lines += [f"{e.deftype}: {e.defpath} | {e.text}" for e in gap.def_missing]
     out.write_text("\n".join(lines), encoding="utf-8")
     console.print(f"[green]Dettaglio completo:[/] {out}")
+
+
+@app.command("reconcile", help="Riconciliazione riga-per-riga delle liste Words con l'inglese: glosse/non tradotte/mancanti.")
+def reconcile_cmd(
+    dlc: Optional[List[str]] = typer.Option(None, "--dlc"),
+    fix_glosses: bool = typer.Option(False, "--fix-glosses", help="Rimuove le glosse tra parentesi (deterministico)"),
+    game_data: Optional[str] = typer.Option(None, "--game-data"),
+):
+    if fix_glosses:
+        n = reconcile_mod.fix_glosses(dlc or None)
+        console.print(f"[green]Glosse rimosse da {n} voci.[/]")
+        return
+    rows = reconcile_mod.scan(dlc or None, game_data)
+    from collections import Counter
+    tally = Counter(kind for _d, _r, issues in rows for _ln, kind, _w, _f in issues)
+    t = Table(title=f"Reconcile liste Words (vs inglese) - {len(rows)} file")
+    t.add_column("Problema"); t.add_column("Conteggio", justify="right", style="bold")
+    for k, c in tally.most_common():
+        t.add_row(k, str(c))
+    console.print(t)
+    out = config.reports_dir() / f"reconcile_{datetime.now():%Y%m%d_%H%M}.txt"
+    lines = [f"# reconcile vs inglese del gioco - {len(rows)} file\n"]
+    for dlc_, rel, issues in sorted(rows, key=lambda r: (r[0], r[1])):
+        lines.append(f"\n=== {dlc_}/Strings/{rel} ===")
+        for ln, kind, w, fix in issues:
+            extra = f"  ->  {fix}" if fix else ""
+            lines.append(f"  L{ln:<4} [{kind:7}] {w}{extra}")
+    out.write_text("\n".join(lines), encoding="utf-8")
+    console.print(f"[green]Dettaglio:[/] {out}")
 
 
 @app.command("strings-diff", help="Confronta i file Strings (Words/Names) con l'inglese del gioco: mancanti/non tradotti/incompleti.")
