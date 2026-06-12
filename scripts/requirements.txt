@@ -11,3 +11,9 @@ lxml>=6.0
 rich>=14.0
 typer>=0.12
 requests>=2.32
+
+# Rilevamento lingua sbagliata (comando `rwit lang-check`), deterministico/offline.
+lingua-language-detector>=2.0
+
+# Dashboard web del progresso (scripts/dashboard/app.py).
+streamlit>=1.40

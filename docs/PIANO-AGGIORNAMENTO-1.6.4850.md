@@ -120,11 +120,26 @@ Per separare il rumore dal lavoro vero e rendere la review pulita:
   in `Core/Keyed/Misc_Gameplay.xml` (`GiveGiftViaTransportPodsTradeRequestWarning`).
 - [ ] Verificare gli 8 argument mismatch legacy (stile posizionale `{0}`): perlopiù ok,
   confermare che non rompano.
-- [ ] 🔴 **Lingua sbagliata (francese)**: ~14 stringhe in **Anomaly** (copia dal repo FR):
-  `Anomaly/Keyed/Misc_Gameplay.xml` (×10) e `Anomaly/DefInjected/ThoughtDef/Precepts_PsychicRituals.xml`
-  (×4). Da ritradurre in italiano (fonte: commento `<!-- EN: -->` / inglese del gioco).
-  Nessuno spagnolo rilevato. Trovare il resto con un language-ID (`rwit lang-check`, vedi
-  [`TOOLING-LOCALE.md`](TOOLING-LOCALE.md) §3a).
+- [x] 🔴 **Lingua sbagliata (francese) in Anomaly** — RISOLTO. La stima "~14" era errata:
+  con `rwit lang-check` (vedi sotto) trovate e ritradotte **40** stringhe FR in Anomaly:
+  `Precepts_PsychicRituals.xml` (intero file, 15), `Keyed/Misc_Gameplay.xml`
+  (blocco UnnaturalCorpse+GoldenCube, 23), `Tales_Double.xml` (3 label) + parole isolate
+  (`cracheur`→sputatore, `noctolithe`→noctolite, refuso `difdeforme`→contorta).
+  Restano 2 falsi positivi italiani (`Carne del revenant`, `una figura indistinta`).
+- [ ] **Lingua sbagliata nelle altre DLC**: `rwit lang-check` (corpus intero) segnala ancora
+  ~17 fr + alcuni en/es/de da rivedere (report in `reports/langcheck_*.txt`). Worklist pronta.
+
+> **TOOLING NUOVO (questa sessione)** — tutto in `scripts/rwit/`, offline, zero token LLM:
+> - **`rwit lang-check`** (`langcheck.py`): rileva lingua sbagliata. Gate `lingua` +
+>   conferma per match cross-repo (fr/es/de) + margine sull'italiano + policy per-lingua.
+>   Report auto-sufficiente con commento EN (si traduce senza riaprire i file).
+> - **`rwit ledger`** (`ledger.py`): registro versionato `scripts/dashboard/translation-ledger.csv`
+>   (tracciato in git). Stato per stringa (untranslated/translated/validated/**stale**/
+>   **modified**) + hash EN (baseline) e IT. `build` (merge preservando le validazioni),
+>   `stats`, `validate`, `todo` (worklist per LLM esterno), `report` (dashboard HTML).
+>   Rileva nel tempo: EN cambiato a monte → `stale`; IT cambiato dopo validazione → `modified`.
+> - **Dashboard**: `rwit ledger report` → `reports/dashboard.html` (progresso per DLC).
+>   Stato attuale: **95,2%** fatto, 1634 da tradurre/uguali-a-EN, su 34.033 stringhe.
 
 ### 5.2 Revisione ampia (decisa con il maintainer)
 Passata di qualità file per file, per DLC, su naturalezza/idiomi/coerenza terminologica.
