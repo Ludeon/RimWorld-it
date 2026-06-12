@@ -113,33 +113,38 @@
     <li>r_name->[ConceptBadass] [groupname]</li>
   -->
   <NamerFactionPirate.rulePack.rulesStrings>
+    <!-- IT: ricostruito con accordo. Tracce parallele maschile (I/Gli) e
+         femminile (Le); l'aggettivo/colore concorda col nome plurale; per i
+         casi a genere misto si usa "di" o l'apposizione (niente articolo+lista
+         mista). Varianti generate con `rwit variants` (Morph-it!). -->
     <li>r_name->I [AnimalBadassI]</li>
+    <li>r_name->Le [AnimalBadassLe]</li>
     <li>r_name->Gli Uomini [AnimalBadassGliUomini]</li>
+    <li>r_name->I [AnimalBadassI] [AdjectiveBadassMP]</li>
+    <li>r_name->Le [AnimalBadassLe] [AdjectiveBadassFP]</li>
+    <li>r_name->I [AnimalBadassI] [ColorBadassI]</li>
+    <li>r_name->Le [AnimalBadassLe] [ColorBadassLe]</li>
     <li>r_name->I [AnimalBadassI] di [ConceptBadassDi]</li>
-    <li>r_name->I [PersonBadass] di [ConceptBadassDi]</li>
-    <li>r_name->I [PersonBadass]</li>
-    <li>r_name->I [Enemy]</li>
-    <li>r_name->Gli Uomini [WeaponGliUomini]</li>
+    <li>r_name->Le [AnimalBadassLe] di [ConceptBadassDi]</li>
+    <li>r_name->I [PersonBadassI]</li>
+    <li>r_name->Gli [PersonBadassGli]</li>
+    <li>r_name->I [PersonBadassI] [AdjectiveBadassMP]</li>
+    <li>r_name->I [PersonBadassI] di [ConceptBadassDi]</li>
+    <li>r_name->I [EnemyI]</li>
+    <li>r_name->Gli [EnemyGli]</li>
+    <li>r_name->Le [EnemyLe]</li>
+    <li>r_name->I [EnemyI] [AdjectiveBadassMP]</li>
+    <li>r_name->I [EnemyI] [ColorBadassI]</li>
     <li>r_name->Le [WeaponLe]</li>
-    <li>r_name->Le [WeaponLe] [AnimalBadassLe]</li>
-    <li>r_name->Le [WeaponLe] [EnemyWeapons]</li>
-    <li>r_name->Le [ColorBadass] [Weapon]</li>
-    <li>r_name->I [ColorBadass] [AnimalBadass]</li>
-    <li>r_name->I [ColorBadass] [PersonBadass]</li>
-    <li>r_name->I [ColorBadass] [Enemy]</li>
-    <li>r_name->I [PersonBadass] [groupname]</li>
-    <li>r_name->I [Enemy] [Enemy]</li>
-    <li>r_name->I [AdjectiveBadass] [groupname]</li>
-    <li>r_name->I [AdjectiveBadass] [AnimalBadass]</li>
-    <li>r_name->I [AdjectiveBadass] [Enemy]</li>
-    <li>r_name->I [AdjectiveBadass] [PersonBadass]</li>
-    <li>r_name->I [PersonAlly] di [ConceptBadass]</li>
-    <li>r_name(p=0.4)->I divoratori di [Gore]</li>
-    <li>r_name->[NamePerson] di [Enemy]</li>
-    <li>r_name->[NamePerson] di [AnimalBadass]</li>
-    <li>r_name->[NamePerson] di [Weapon]</li>
-    <li>r_name->[Weapon] [groupname]</li>
-    <li>r_name->[ConceptBadass] [groupname]</li>
+    <li>r_name->Gli Uomini [WeaponGliUomini]</li>
+    <li>r_name->Le [WeaponLe] [ColorBadassLe]</li>
+    <li>r_name->Le [WeaponLe] di [ConceptBadassDi]</li>
+    <li>r_name(p=0.4)->I Divoratori di [Gore]</li>
+    <li>r_name->I [EnemyI] di [NamePerson]</li>
+    <li>r_name->I [AnimalBadassI] di [NamePerson]</li>
+    <li>r_name->I [PersonBadassI] di [NamePerson]</li>
+    <li>r_name->Le [WeaponLe] di [NamePerson]</li>
+    <li>r_name->[groupname] di [ConceptBadassDi]</li>
   </NamerFactionPirate.rulePack.rulesStrings>
   
   <!-- EN:
