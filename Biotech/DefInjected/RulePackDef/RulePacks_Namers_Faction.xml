@@ -74,7 +74,6 @@
   -->
   <NamerFactionOutlanderPig.rulePack.rulesStrings>
     <li>r_name(p=2)->[nameCore]</li>
-    <li>r_name->[nameCore] [political_union_outlander]</li>
     <li>r_name->[political_union_outlander] di [nameCore]</li>
     <li>maybeHyphen(p=3)-></li>
     <li>maybeHyphen->-</li>
@@ -114,8 +113,10 @@
     <li>men->trash</li>
   -->
   <NamerFactionPirateWaster.rulePack.rulesStrings>
-    <li>r_name->[poison] [groupname]</li>
-    <li>r_name->[poison] [uomini]</li>
+    <!-- IT: le regole referenziavano [uomini]/[groupname] (errati: la lista
+         locale e [men]). Corretto a [men], con apposizione/"di [poison]". -->
+    <li>r_name->[men]</li>
+    <li>r_name->[men] di [poison]</li>
     <li>men->uomini</li>
     <li>men->equipaggio</li>
     <li>men->banda</li>
@@ -189,7 +190,6 @@
   -->
   <NamerFactionTribalNeanderthal.rulePack.rulesStrings>
     <li>r_name(p=2)->[placeNameCore]</li>
-    <li>r_name->[placeNameCore] [political_union_tribal]</li>
     <li>r_name->[political_union_tribal] di [placeNameCore]</li>
   </NamerFactionTribalNeanderthal.rulePack.rulesStrings>
   
