@@ -75,11 +75,15 @@ def _adj_rules(a: str):
 
 def _noun_rules(lemma: str):
     """(genere, plurale) best-effort."""
+    if " " in lemma:                            # multi-parola: pluralizza la TESTA
+        head, _, tail = lemma.partition(" ")    # "trasgressore della legge"
+        g, hp = _noun_rules(head)               # -> "trasgressori" + " della legge"
+        return g, f"{hp} {tail}"
     if lemma.endswith("a"):
         return "f", lemma[:-1] + "e"
     if lemma.endswith(("o", "e")):
         return "m", lemma[:-1] + "i"
-    return "m", lemma                           # invariabile (tribù, citta...)
+    return "m", lemma                           # invariabile (tribù, citta, prestiti...)
 
 
 # --- API ------------------------------------------------------------------
