@@ -120,6 +120,10 @@ Usa la stessa radice della variabile presente nel testo: `PAWN_gender`, `HEIR_ge
 
 ## 4. rulesStrings (grammatica generativa)
 
+> ⚠️ Riferimento completo del linguaggio (condizioni `(count==N)`, vincoli di genere,
+> pesi, simboli indicizzati, log di combattimento): [`RULEPACK-GRAMMAR.md`](RULEPACK-GRAMMAR.md).
+> Questa sezione copre solo le basi.
+
 Liste di regole che il gioco compone per generare testo (nomi, descrizioni, racconti).
 Ogni `<li>` ha la forma `SINISTRA->DESTRA`:
 
