@@ -91,7 +91,7 @@ TR = {
                 "es": "Ningún rulepack coincide.", "fr": "Aucun rulepack ne correspond.", "de": "Kein Rulepack passt."},
     "ng_prev": {"en": "◀ Prev", "it": "◀ Prec", "es": "◀ Ant", "fr": "◀ Préc", "de": "◀ Zurück"},
     "ng_next": {"en": "Next ▶", "it": "Succ ▶", "es": "Sig ▶", "fr": "Suiv ▶", "de": "Weiter ▶"},
-    "ng_jump": {"en": "Jump to", "it": "Vai a", "es": "Ir a", "fr": "Aller à", "de": "Springe zu"},
+    "ng_jump": {"en": "Go to #", "it": "Vai a #", "es": "Ir a #", "fr": "Aller à #", "de": "Gehe zu #"},
     "ng_rules": {"en": "Rules (debug)", "it": "Regole (debug)", "es": "Reglas (debug)",
                  "fr": "Règles (debug)", "de": "Regeln (Debug)"},
 }
@@ -225,30 +225,36 @@ def render_names():
     packs = load_rulepacks()
     ss = st.session_state
 
-    f1, f2 = st.columns([3, 1])
+    f0, f1, f2 = st.columns([1.2, 2.6, 1])
+    dlc_sel = f0.selectbox("DLC", ["—"] + config.DLCS,
+                           format_func=lambda d: "★ " + (d if d != "—" else "tutte"))
     flt = f1.text_input(t("ng_filter"), value="Namer")
-    keys = [k for k in packs if flt.lower() in k.lower()] if flt else list(packs)
+    count = f2.number_input(t("ng_count"), min_value=5, max_value=60, value=15, step=5)
+    keys = [k for k, p in packs.items()
+            if (dlc_sel == "—" or p["dlc"] == dlc_sel)
+            and (not flt or flt.lower() in k.lower())]
     if not keys:
         st.info(t("ng_none"))
         return
-    count = f2.number_input(t("ng_count"), min_value=5, max_value=60, value=15, step=5)
 
-    # --- paginatore: ◀ Prec / salto / Succ ▶ ---
+    # --- paginatore: ◀ Prec / vai a # / nome / Succ ▶ ---
     ss.setdefault("ng_idx", 0)
-    if ss.get("ng_flt") != flt:           # reset posizione se cambia il filtro
+    sig = (dlc_sel, flt)
+    if ss.get("ng_sig") != sig:           # reset posizione se cambia il filtro
         ss.ng_idx = 0
-        ss.ng_flt = flt
-    nav_prev, nav_jump, nav_next = st.columns([1, 6, 1], vertical_alignment="bottom")
+        ss.ng_sig = sig
+    nav_prev, nav_pos, nav_name, nav_next = st.columns([1, 1.3, 5, 1], vertical_alignment="bottom")
     if nav_prev.button(t("ng_prev"), use_container_width=True):
         ss.ng_idx = (ss.ng_idx - 1) % len(keys)
     if nav_next.button(t("ng_next"), use_container_width=True):
         ss.ng_idx = (ss.ng_idx + 1) % len(keys)
     ss.ng_idx = max(0, min(ss.ng_idx, len(keys) - 1))
-    sel = nav_jump.selectbox(f"{t('ng_jump')} ({ss.ng_idx + 1}/{len(keys)})",
-                             range(len(keys)), index=ss.ng_idx, format_func=lambda i: keys[i])
-    if sel != ss.ng_idx:
-        ss.ng_idx = sel
+    page = nav_pos.number_input(f"{t('ng_jump')} (1–{len(keys)})",
+                                min_value=1, max_value=len(keys), value=ss.ng_idx + 1)
+    if page - 1 != ss.ng_idx:
+        ss.ng_idx = page - 1
     key = keys[ss.ng_idx]
+    nav_name.markdown(f"**{key}**")
 
     g1, g2 = st.columns([1, 5], vertical_alignment="center")
     if g1.button(t("ng_gen"), type="primary", use_container_width=True):
