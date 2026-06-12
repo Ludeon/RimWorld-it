@@ -68,13 +68,24 @@
     <li>nearnameinitial->[Direction] [PlaceOutlander]</li>
   -->
   <NamerFactionOutlander.rulePack.rulesStrings>
+    <!-- IT: PoliticalUnions (aggettivi) e tutto femminile; le union sono miste.
+         Le union miste si usano solo con "di [luogo]"; per l'accordo aggettivo
+         si usa il sottoinsieme femminile union_f (aggettivo posposto). -->
     <li>r_name(p=3)->[nearnameinitial]</li>
-    <li>r_name->[nearnameinitial] [political_union_outlander]</li>
-    <li>r_name->[nearnameinitial] [political_adjective] [political_union_outlander]</li>
     <li>r_name->[political_union_outlander] di [nearnameinitial]</li>
-    <li>r_name->[political_adjective] [political_union_outlander] di [nearnameinitial]</li>
+    <li>r_name(p=2)->[union_f] [political_adjective]</li>
+    <li>r_name->[union_f] [political_adjective] di [nearnameinitial]</li>
     <li>nearnameinitial(p=3)->[PlaceOutlander]</li>
     <li>nearnameinitial->[Direction] [PlaceOutlander]</li>
+    <li>union_f->unione</li>
+    <li>union_f->nazione</li>
+    <li>union_f->confederazione</li>
+    <li>union_f->alleanza</li>
+    <li>union_f->coalizione</li>
+    <li>union_f->federazione</li>
+    <li>union_f->lega</li>
+    <li>union_f->concordia</li>
+    <li>union_f->unificazione</li>
   </NamerFactionOutlander.rulePack.rulesStrings>
   
   <!-- EN:
