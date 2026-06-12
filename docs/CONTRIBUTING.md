@@ -1,63 +1,67 @@
-# Guida al contributo — Traduzione italiana di RimWorld
+# Contributing guide — Italian translation of RimWorld
 
-Benvenuto. Questo repo contiene la traduzione italiana di RimWorld (gioco base + DLC).
-È un language pack: **solo file XML/TXT**, nessuna modifica al codice del gioco.
+Welcome. This repo contains the Italian translation of RimWorld (base game + DLC).
+It is a language pack: **XML/TXT files only**, no changes to the game code.
 
-Prima di tradurre, leggi anche:
-- [`docs/TRANSLATION-SYNTAX.md`](TRANSLATION-SYNTAX.md) — sintassi del motore (ternaria genere, variabili, rulesStrings).
-- [`docs/REFERENCES.md`](REFERENCES.md) — repo di altre lingue, strategia WordInfo, link Ludeon.
+Before translating, also read:
+- [`docs/TRANSLATION-SYNTAX.md`](TRANSLATION-SYNTAX.md) — engine syntax (gender ternary, variables, rulesStrings).
+- [`docs/REFERENCES.md`](REFERENCES.md) — other-language repos, WordInfo strategy, Ludeon links.
 
 ---
 
-## 1. Struttura del repo
+## 1. Repo structure
 
-Una cartella per gioco base / DLC, nell'ordine di caricamento:
+One folder per base game / DLC, in load order:
 
 ```
 Core/  Royalty/  Ideology/  Biotech/  Anomaly/  Odyssey/
 ```
 
-Ognuna contiene:
-- `DefInjected/` — traduzioni dei campi dei Def (oggetti, eventi, backstory…)
-- `Keyed/` — testo di interfaccia (chiave→valore)
-- `Strings/` — liste (nomi, ecc.)
-- `WordInfo/` — dati grammaticali (per l'italiano: solo `Gender/`)
-- `LanguageInfo.xml` — metadati lingua
+Each contains:
+- `DefInjected/` — translations of Def fields (items, events, backstories…)
+- `Keyed/` — interface text (key→value)
+- `Strings/` — lists (names, etc.)
+- `WordInfo/` — grammar data (for Italian: `Gender/` + `plural.txt`)
+- `LanguageInfo.xml` — language metadata
 
-`scripts/` contiene il tooling (`rwit`) e le regole di traduzione. `docs/` la documentazione.
+`scripts/` holds the tooling (`rwit`) and translation rules. `docs/` holds the documentation.
 
 ---
 
-## 2. Setup dell'ambiente (una volta)
+## 2. Environment setup (once)
 
-Serve **Python 3.11+**. Dalla radice del repo:
+Requires **Python 3.11+**. From the repo root:
 
 ```powershell
 python -m venv .venv
 .venv\Scripts\pip install -r scripts\requirements.txt
 ```
 
-Questo crea il virtualenv `.venv/` (gitignored) con le dipendenze del tooling
-(lxml, rich, typer, requests).
+This creates the `.venv/` virtualenv (gitignored) with the tooling dependencies
+(lxml, rich, typer, requests; plus lingua / streamlit for the QA tools).
 
-Verifica:
+Check:
 ```powershell
 .venv\Scripts\python scripts\rwit --help
 ```
 
 ---
 
-## 3. Il tooling `rwit`
+## 3. The `rwit` tooling
 
-CLI in `scripts/rwit/`. Tre comandi:
+CLI in `scripts/rwit/`. Core commands:
 
-| Comando | Cosa fa |
-|---------|---------|
-| `rwit link`   | (Ri)crea i symlink che collegano questo repo all'installazione del gioco come lingua "Italiano". Serve admin o **Modalità sviluppatore** di Windows (UAC). Da rifare se sposti la cartella del progetto (i symlink hanno il percorso assoluto). |
-| `rwit analyze` | Confronta il `TranslationReport.txt` del gioco con il repo e calcola il **gap reale** (keyed mancanti/non tradotte, DefInjected mancanti per tipo). Scrive il dettaglio in `reports/gap_<data>.txt`. |
-| `rwit unlink` | Rimuove i symlink dal gioco (non tocca cartelle reali). |
+| Command | What it does |
+|---------|--------------|
+| `rwit link`   | (Re)creates the symlinks that connect this repo to the game install as the "Italiano" language. Needs admin or Windows **Developer Mode** (UAC). Redo it if you move the project folder (the symlinks use absolute paths). |
+| `rwit analyze` | Compares the game's `TranslationReport.txt` with the repo and computes the **real gap** (missing/untranslated keyed, missing DefInjected by type). Writes the detail to `reports/gap_<date>.txt`. |
+| `rwit unlink` | Removes the symlinks from the game (does not touch real folders). |
 
-Override dei percorsi del gioco: opzione `--game-data` o variabile d'ambiente `RIMWORLD_DATA`.
+QA tools (offline, deterministic): `lang-check` (wrong language), `strings-diff` / `reconcile`
+(align lists to the game's English), `variants` (morphological variants via Morph-it!),
+`ledger` (+ Streamlit dashboard). See [`LOCAL-TOOLING.md`](LOCAL-TOOLING.md).
+
+Override the game paths: the `--game-data` option or the `RIMWORLD_DATA` environment variable.
 
 ```powershell
 .venv\Scripts\python scripts\rwit analyze
@@ -66,59 +70,58 @@ Override dei percorsi del gioco: opzione `--game-data` o variabile d'ambiente `R
 
 ---
 
-## 4. Flusso di lavoro completo
+## 4. Full workflow
 
-1. **`rwit link`** — collega il repo al gioco. (Necessario dopo ogni spostamento della
-   cartella del progetto.)
-2. **In gioco** (Dev mode attiva) → lingua **Italiano** → *Pulisci lingue* / rigenera i
-   dati di lingua. Il gioco produce un `TranslationReport.txt`.
-3. **`rwit analyze`** — calcola il gap reale e scrive `reports/gap_<data>.txt`.
-4. **Traduci** i tag elencati, seguendo `docs/TRANSLATION-SYNTAX.md`.
-5. **Verifica** in gioco (riavvia RimWorld per rileggere la lingua).
+1. **`rwit link`** — connect the repo to the game. (Needed after each move of the project
+   folder.)
+2. **In game** (Dev mode on) → language **Italiano** → *Clean languages* / regenerate the
+   language data. The game produces a `TranslationReport.txt`.
+3. **`rwit analyze`** — computes the real gap and writes `reports/gap_<date>.txt`.
+4. **Translate** the listed tags, following `docs/TRANSLATION-SYNTAX.md`.
+5. **Verify** in game (restart RimWorld to reload the language).
 
-> ⚠️ **Genera SEMPRE il report con i symlink funzionanti.** Con link rotti il gioco carica
-> zero italiano e segna l'intero gioco come "mancante" (falso positivo). `rwit analyze`
-> recupera comunque il gap confrontando col repo, ma è meglio partire da un report corretto.
+> ⚠️ **Always generate the report with working symlinks.** With broken links the game loads
+> zero Italian and marks the whole game as "missing" (false positive). `rwit analyze` recovers
+> the gap by comparing with the repo anyway, but it is better to start from a correct report.
 
-### Quando il gioco si aggiorna
-Il comando *Pulisci lingue* riscrive i file del repo: aggiorna i commenti `<!-- EN: -->`
-all'inglese nuovo e normalizza il whitespace. **Spesso sono solo refusi inglesi corretti**:
-se il significato inglese non cambia, la traduzione italiana **non va toccata**. Fai sempre
-un `git diff` per distinguere il rumore (commenti/whitespace) dalle modifiche di sostanza.
-
----
-
-## 5. Regole d'oro
-
-- Tradurre **solo** stringhe TODO o tag vuoti; non riscrivere ciò che è già tradotto e
-  corretto (ma **correggere** errori e rigidità — vedi sotto).
-- Mai tradurre il contenuto tra `[ ]` e i nomi delle variabili `{ }`.
-- Mai modificare i commenti `<!-- EN: -->`.
-- Preservare struttura XML, indentazione e `\n\n`.
-- rulesStrings: freccia `->`, lato sinistro invariato, stesso numero di `<li>`.
-- Restituire XML completo e ben formato.
-
-Dettagli ed esempi in [`docs/TRANSLATION-SYNTAX.md`](TRANSLATION-SYNTAX.md).
-
-### Criterio di qualità
-Correggere **anche le imprecisioni**, non solo gli errori palesi: privilegiare
-naturalezza e fluidità, evitare i calchi letterali dall'inglese
-(es. "crushed" → "schiacciati", non "distrutti").
+### When the game updates
+The *Clean languages* command rewrites the repo files: it updates the `<!-- EN: -->` comments
+to the new English and normalizes whitespace. **Often these are just corrected English typos**:
+if the English meaning does not change, the Italian translation **must not be touched**. Always
+`git diff` to separate the noise (comments/whitespace) from substantive changes.
 
 ---
 
-## 6. Repository pubblico — niente dati personali
+## 5. Golden rules
 
-Non committare dati personali o d'ambiente in file tracciati (hardware, percorsi con
-username, email, token, contesto personale). Il contesto personale va in `CLAUDE.local.md`
-(gitignored). Per un controllo automatico si può usare uno scanner standard (es. **gitleaks**
-via il framework [pre-commit](https://pre-commit.com), o la **push protection** di GitHub),
-da configurare se/quando serve.
+- Translate **only** TODO strings or empty tags; do not rewrite what is already translated and
+  correct (but **do fix** errors and stiffness — see below).
+- Never translate the content inside `[ ]` or the variable names inside `{ }`.
+- Never modify the `<!-- EN: -->` comments.
+- Preserve XML structure, indentation and `\n\n`.
+- rulesStrings: the `->` arrow, left side unchanged, same number of `<li>`.
+- Return complete, well-formed XML.
 
-## 7. Git e branch
+Details and examples in [`docs/TRANSLATION-SYNTAX.md`](TRANSLATION-SYNTAX.md).
 
-- Si lavora su un **branch dedicato** (es. `aggiornamento-<versione>`), si fonde su
-  `master` solo a revisione completata.
-- Separare i commit "baseline" (rigenerazione del gioco: commenti EN + whitespace) dai
-  commit di sostanza (traduzioni, bug fix, pulizia), così la review resta leggibile.
-- File/cartelle ignorati: `.venv/`, `reports/`, `__pycache__/`, `dist/`, `About/`.
+### Quality criterion
+Fix **imprecisions too**, not just blatant errors: favor naturalness and fluency, avoid literal
+calques from English (e.g. "crushed" → "schiacciati", not "distrutti").
+
+---
+
+## 6. Public repository — no personal data
+
+Do not commit personal or environment data in tracked files (hardware, paths with usernames,
+emails, tokens, personal context). Personal context goes in `CLAUDE.local.md` (gitignored). For
+an automated check you can use a standard scanner (e.g. **gitleaks** via the
+[pre-commit](https://pre-commit.com) framework, or GitHub **push protection**), to be configured
+if/when needed.
+
+## 7. Git and branches
+
+- Work on a **dedicated branch** (e.g. `aggiornamento-<version>`), merge to `master` only when
+  the review is complete.
+- Separate "baseline" commits (game regeneration: EN comments + whitespace) from substantive
+  commits (translations, bug fixes, cleanup), so the review stays readable.
+- Ignored files/folders: `.venv/`, `reports/`, `__pycache__/`, `dist/`, `About/`, `EXTRA/`.

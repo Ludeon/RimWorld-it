@@ -1,107 +1,105 @@
-# Validazione e integrità della traduzione
+# Translation validation and integrity
 
-Due cose distinte:
-1. **Tracciare quali file sono stati validati** (foglio Excel/CSV).
-2. **Garantire che la traduzione non abbia alterato la logica di gioco** — in particolare
-   le **priorità/frequenze degli eventi**.
+Two distinct things:
+1. **Track which files have been validated** (an Excel/CSV sheet).
+2. **Make sure the translation did not alter game logic** — in particular the
+   **event priorities/frequencies**.
 
 ---
 
-## 1. La traduzione può cambiare le priorità degli eventi? **No.**
+## 1. Can the translation change event priorities? **No.**
 
-> Dubbio sollevato: "con la traduzione si saranno persi o modificati anche i pesi/priorità
-> con cui compaiono i vari eventi?"
+> Concern raised: "did translating also lose or change the weights/priorities with which
+> the various events appear?"
 
-**Risposta breve: no, è impossibile per costruzione.** Verificato sul repo.
+**Short answer: no, it is impossible by construction.** Verified on the repo.
 
-### Perché
-RimWorld separa nettamente due cose:
+### Why
+RimWorld cleanly separates two things:
 
-| Cosa | Dove vive | Nel nostro repo? |
-|------|-----------|------------------|
-| **Logica/numeri** degli eventi: quali incidenti compaiono, con che frequenza, peso, refire, condizioni (`IncidentDef.baseChance`, `commonality`, `selectionWeight`, `minRefireDays`, StorytellerDef…) | nei **Def del gioco** (cartella `Data\` dell'installazione) | ❌ **NO** |
-| **Testo** mostrato: etichette, descrizioni, testo delle lettere, racconti generati | nei **language pack** (`DefInjected/`, `Keyed/`) | ✅ sì |
+| What | Where it lives | In our repo? |
+|------|----------------|--------------|
+| Event **logic/numbers**: which incidents appear, frequency, weight, refire, conditions (`IncidentDef.baseChance`, `commonality`, `selectionWeight`, `minRefireDays`, StorytellerDef…) | in the game **Defs** (the install's `Data\` folder) | ❌ **NO** |
+| **Text** shown: labels, descriptions, letter text, generated stories | in the **language pack** (`DefInjected/`, `Keyed/`) | ✅ yes |
 
-Un language pack **inietta solo i campi di testo** dei Def. Non contiene — e non può
-contenere — i campi numerici che governano la frequenza degli eventi.
+A language pack **only injects the text fields** of the Defs. It does not — and cannot —
+contain the numeric fields that govern event frequency.
 
-### Prova sul repo
-Ricerca di campi di frequenza/peso evento nei file di traduzione:
+### Proof on the repo
+Search for event frequency/weight fields in the translation files:
 
 ```
 selectionWeight | commonality | baseChance | minRefireDays | <weight> | <chance>
-→ 0 occorrenze reali (l'unico hit è una parola dentro una stringa di UI)
+→ 0 real occurrences (the only hit is a word inside a UI string)
 ```
 
-Quindi: anche se *Pulisci lingue* ha riscritto i file, **non c'è nessun peso-evento da
-perdere o modificare** in questo repo. Le priorità degli eventi restano quelle dei Def
-inglesi del gioco, intatte.
+So: even though *Clean languages* rewrote the files, **there is no event weight to lose or
+change** in this repo. Event priorities remain those of the game's English Defs, intact.
 
-### L'unica eccezione: i pesi `(p=N)` delle rulesStrings
-Esiste **un solo** tipo di "peso" nei nostri file: i marcatori `(p=N)` nelle
-`rulesStrings`/`RulePackDef` (es. `<li>title(p=2)->...`). **1456** in 79 file.
+### The one exception: the `(p=N)` weights in rulesStrings
+There is **only one** kind of "weight" in our files: the `(p=N)` markers in
+`rulesStrings`/`RulePackDef` (e.g. `<li>title(p=2)->...`). **1456** across 79 files.
 
-- Non governano *quali eventi accadono*, ma **quale variante di testo** viene scelta
-  (es. quale nome/descrizione tra più alternative).
-- Stanno sul **lato sinistro** della freccia `->`, quindi vanno **copiati identici**.
-- Un peso alterato qui cambierebbe solo la probabilità di una *frase*, non di un evento.
+- They do not govern *which events happen*, but **which text variant** is chosen
+  (e.g. which name/description among several alternatives).
+- They sit on the **left side** of the `->` arrow, so they must be **copied verbatim**.
+- An altered weight here would only change the probability of a *sentence*, not an event.
 
-Il conteggio `(p=N)` per file è nella colonna apposita di `VALIDATION-FILES.csv`: i file
-con valore alto sono quelli da controllare con più attenzione (left side invariato).
+The per-file `(p=N)` count is in the dedicated column of `VALIDATION-FILES.csv`: files with a
+high value are the ones to check most carefully (left side unchanged).
 
-> **Regola**: nelle rulesStrings non toccare mai il lato sinistro, compreso `(p=N)`.
-> Vedi [`TRANSLATION-SYNTAX.md`](TRANSLATION-SYNTAX.md) §4.
+> **Rule**: in rulesStrings never touch the left side, including `(p=N)`.
+> See [`TRANSLATION-SYNTAX.md`](TRANSLATION-SYNTAX.md) §4.
 
 ---
 
-## 2. Foglio di validazione file (`VALIDATION-FILES.csv`)
+## 2. File validation sheet (`VALIDATION-FILES.csv`)
 
-Inventario di **tutti** i file di traduzione del repo, da spuntare man mano che vengono
-validati con Claude Code. È un **CSV** (si apre in Excel, ma resta diffabile in git — un
-`.xlsx` binario no).
+An inventory of **all** the repo's translation files, to tick off as they get validated with
+Claude Code. It is a **CSV** (opens in Excel, but stays diffable in git — a binary `.xlsx`
+would not).
 
-Colonne:
+Columns:
 
-| Colonna | Significato |
-|---------|-------------|
+| Column | Meaning |
+|--------|---------|
 | `DLC` | Core / Royalty / Ideology / Biotech / Anomaly / Odyssey |
-| `Tipo` | DefInjected / Keyed / Strings / WordInfo |
-| `File` | percorso relativo |
-| `PesiVarianti(p=N)` | quante rulesStrings pesate contiene (più alto = più attenzione al left side) |
-| `Validato` | `no` / `sì` |
-| `DataValidazione` | data del controllo |
-| `Note` | osservazioni (bug trovati, dubbi…) |
+| `Type` | DefInjected / Keyed / Strings / WordInfo |
+| `File` | relative path |
+| `VariantWeights(p=N)` | how many weighted rulesStrings it contains (higher = pay more attention to the left side) |
+| `Validated` | `no` / `yes` |
+| `ValidationDate` | date of the check |
+| `Notes` | observations (bugs found, doubts…) |
 
-### Flusso di validazione di un file
-Per ogni file, Claude Code verifica:
-- [ ] XML ben formato, nessun tag mancante/duplicato rotto
-- [ ] Variabili `[VAR]` e `{VAR}` intatte (nome e indice posizionale)
-- [ ] Ternarie genere valide (un solo `?`, 2 o 3 rami; il 3° = forma neutra, non un errore)
-- [ ] rulesStrings: ogni `<li>` ha una `->`, **left side invariato** (inclusi `(p=N)`),
-      stesso numero di `<li>` dell'inglese
-- [ ] `\n\n` preservati
-- [ ] Commenti `<!-- EN: -->` invariati
-- [ ] Qualità: naturalezza, niente calchi, terminologia coerente
+### Validation flow for a file
+For each file, Claude Code checks:
+- [ ] Well-formed XML, no missing/duplicated broken tag
+- [ ] Variables `[VAR]` and `{VAR}` intact (name and positional index)
+- [ ] Valid gender ternaries (a single `?`, 2 or 3 branches; the 3rd = neuter form, not an error)
+- [ ] rulesStrings: every `<li>` has a `->`, **left side unchanged** (including `(p=N)`),
+      same number of `<li>` as English
+- [ ] `\n\n` preserved
+- [ ] `<!-- EN: -->` comments unchanged
+- [ ] Quality: naturalness, no calques, consistent terminology
 
-Poi imposta `Validato=sì`, `DataValidazione`, ed eventuali `Note`.
+Then set `Validated=yes`, `ValidationDate`, and any `Notes`.
 
-### Rigenerare l'inventario
-Quando si aggiungono/rimuovono file (nuova versione del gioco), rigenerare l'elenco
-mantenendo le spunte già fatte. Candidato per un comando di tooling:
-**`rwit validate`** (vedi sotto).
+### Regenerating the inventory
+When files are added/removed (new game version), regenerate the list while keeping the ticks
+already made. A candidate for a tooling command: **`rwit validate`** (see below).
 
 ---
 
-## 3. Tooling futuro: `rwit validate` (proposto)
+## 3. Future tooling: `rwit validate` (proposed)
 
-Comando che automatizza i controlli meccanici e aggiorna il CSV:
-- XML ben formato (lxml).
-- Ternarie genere: ogni `{... ? ...}` ha un solo `?` e **2 o 3 rami** (`: b` oppure
-  `: b : c`, dove il 3° è la forma neutra/None). Segnala solo le malformate vere
-  (0 rami, 4+ rami, `?` doppio). ⚠️ Una ternaria a 3 rami **non** è un bug.
-- rulesStrings: ogni `<li>` ha una sola `->`; confronto del **left side** (inclusi pesi
-  `(p=N)`) con l'inglese del gioco per intercettare derive.
-- Variabili `[VAR]`/`{N}` coerenti tra commento EN e traduzione.
+A command that automates the mechanical checks and updates the CSV:
+- Well-formed XML (lxml).
+- Gender ternaries: every `{... ? ...}` has a single `?` and **2 or 3 branches** (`: b` or
+  `: b : c`, where the 3rd is the neuter/None form). Flag only the genuinely malformed ones
+  (0 branches, 4+ branches, double `?`). ⚠️ A 3-branch ternary is **not** a bug.
+- rulesStrings: every `<li>` has a single `->`; compare the **left side** (including `(p=N)`
+  weights) with the game's English to catch drift.
+- Variables `[VAR]`/`{N}` consistent between the EN comment and the translation.
 
-Lascia all'umano/Claude solo la parte di **qualità linguistica**. I controlli meccanici
-sopra sono esattamente quelli che danno garanzia sull'integrità (pesi `(p=N)` inclusi).
+It leaves only the **linguistic quality** part to the human/Claude. The mechanical checks
+above are exactly the ones that guarantee integrity (including `(p=N)` weights).

@@ -1,231 +1,176 @@
-# Generazione di nomi, plurali e grammatica (italiano)
+# Name generation, plurals and grammar (Italian)
 
-Come RimWorld costruisce a runtime nomi, articoli, plurali e testi generati per
-l'italiano, e cosa possiamo (e non possiamo) modificare. Tre pezzi che lavorano insieme:
+How RimWorld builds names, articles, plurals and generated text at runtime for Italian, and
+what we can (and cannot) change. Three pieces working together:
 
 ```
-   CODICE (DLL del gioco)        DATI (questo repo)                 DATI (questo repo)
+   CODE (game DLL)               DATA (this repo)                   DATA (this repo)
    ┌───────────────────┐        ┌───────────────────┐             ┌───────────────────┐
-   │ LanguageWorker_   │  usa   │ WordInfo/Gender/   │   vocab.    │ Strings/          │
+   │ LanguageWorker_   │  uses  │ WordInfo/Gender/   │   vocab.    │ Strings/          │
    │ Italian           │◄───────┤ Male/Female/Neuter │◄────────────┤ Names/, Words/    │
-   │ articoli, plurali │ genere │ (genere dei nomi)  │  assemblati │ (nomi, aggettivi) │
-   └───────────────────┘        └───────────────────┘   da ──────► └───────────────────┘
+   │ articles, plurals │ gender │ (noun gender)      │  assembled  │ (names, adjectives)│
+   └───────────────────┘        └───────────────────┘   by ──────► └───────────────────┘
             ▲                                                  rulesStrings / RulePackDef
-            └────────────────── chiamato dal motore di grammatica ──────────────┘
+            └────────────────── called by the grammar engine ───────────────────┘
 ```
 
-> **Dati vs codice — dove lavorare.** La manutenzione quotidiana sta nei **file di testo**
-> (DATI): `WordInfo/Gender` (il genere di ogni parola) e le coppie singolare/plurale per gli
-> irregolari. Il `LanguageWorker` (CODICE) **legge** quei dati e applica articolo/plurale;
-> da genere + ortografia decide solo il caso `lo`/`il` che i dati da soli non possono
-> risolvere. Col worker **già nel gioco** + i dati giusti, gran parte della grammatica
-> funziona **senza toccare il `.cs`** (che resta una proposta upstream, non manutenzione
-> quotidiana).
+> **Data vs code — where to work.** Daily maintenance lives in the **text files** (DATA):
+> `WordInfo/Gender` (the gender of each word) and the singular/plural pairs for irregulars.
+> The `LanguageWorker` (CODE) **reads** that data and applies the article/plural. With the
+> worker **already in the game** + the right data, most of the grammar works **without
+> touching the `.cs`**.
+>
+> **Decision (2026-06-12): go data-driven (German style).** The shipped Italian worker is
+> already capable (singular articles from gender; `Pluralize` reads `WordInfo/plural.txt`),
+> and German ships no custom worker. So we drive grammar from DATA (`WordInfo/Gender` +
+> `plural.txt`) and from explicit articles in the rulesStrings. The improved
+> `LanguageWorker_Italian.cs` (root) is an **optional bonus** for edge cases, not daily
+> maintenance. See [`UPDATE-PLAN-1.6.4850.md`](UPDATE-PLAN-1.6.4850.md) §0.
 
 ---
 
-## 1. `LanguageWorker_Italian` (codice, dentro la DLL del gioco)
+## 1. `LanguageWorker_Italian` (code, inside the game DLL)
 
-È una **classe C# compilata nel gioco** (`Verse.LanguageWorker_Italian`), dichiarata in
-`Core/LanguageInfo.xml` → `<languageWorkerClass>LanguageWorker_Italian</languageWorkerClass>`.
+It is a **C# class compiled into the game** (`Verse.LanguageWorker_Italian`). The engine
+resolves it by name (`LanguageWordInfo`/`LoadedLanguage`), per language.
 
-> Gli sviluppatori **l'hanno fornita**: esiste nell'`Assembly-CSharp.dll` accanto a
-> French, German, Spanish… Mancava solo il **file `.cs` di riferimento** nel nostro repo.
-> Ora c'è, in versione **migliorata**, nella root: [`LanguageWorker_Italian.cs`](../LanguageWorker_Italian.cs)
-> (base decompilata da RimWorld 1.6.4850 con ILSpy).
+> The devs **already provide it**: it exists in `Assembly-CSharp.dll` next to French, German,
+> Spanish… Only the **reference `.cs`** was missing from our repo. It is now in the root, in an
+> **improved** version: [`LanguageWorker_Italian.cs`](../LanguageWorker_Italian.cs) (base
+> decompiled from RimWorld 1.6.4850 with ILSpy).
 
-### Versione migliorata (root del repo) e come deployarla
-Il file in root (aggiornato 2026-06-12) corregge i limiti del worker di serie:
-- articolo `lo`/`gli` anche per gn, ps, pn, x, y, i+vocale (lo gnomo, lo psicologo);
-- **h muta** trattata come vocale per l'elisione (l'hotel, un'hostess, gli hotel);
-- articoli al **plurale** (i/gli/le, partitivi dei/degli/delle) — il worker di serie li ignorava;
-- **fix bug**: plurali `-io` ora collassano a `-i` (figlio→figli, occhio→occhi; prima "figlii");
-- plurali maschili `-ca/-ga→-chi/-ghi` (duca→duchi, collega→colleghi);
-- plurali femminili `-ca→-che`, `-ga→-ghe`, `-cia/-gia→-cie/-gie | -ce/-ge`.
+### What the STOCK worker already does (decompiled)
+- **Indefinite article** `WithIndefiniteArticle` → un / uno / una / un' (s-impure, ps/pn/z/x/y/gn).
+- **Definite article** `WithDefiniteArticle` → il / lo / la / l' (singular), correctly.
+- **Pluralize**: tries `TryLookupPluralForm` first (reads `WordInfo/plural.txt`), then a naive
+  vowel-swap fallback (Female → -e, Male → -i).
+- **Ordinals** `OrdinalNumber` → `N°`.
 
-Tutto verificato con harness di test C# (16/16 casi ok).
+So **singular articles and irregular plurals are already correct via data** (gender +
+plural.txt). The stock worker's gaps: plural articles `i/gli/le` (it ignores `plural`), and the
+naive regular Pluralize on `-io`/`-ca`/`-ga`/`-cia`/`-gia` (which we route through `plural.txt`).
 
-⚠️ **Non basta che stia nel repo**: un language pack è solo dati e NON carica `.cs`. Per
-farlo valere serve una **PR upstream a Ludeon** (lo compilano nel gioco) oppure un **mod
-companion** (patch Harmony sui metodi, o classe con nome diverso in `languageWorkerClass`).
-Logica verificata con un harness di test (articoli e plurali corretti).
+### Improved `.cs` (root) — optional
+The root file adds: `lo`/`gli` for gn/ps/pn/x/y/i+vowel, mute `h`, **plural** articles
+(i/gli/le, partitives dei/degli/delle), the `-io`/`-ca`/`-ga` plural fixes, and heteroclite
+handling. Signatures verified against the decompiled base and `LanguageWorker_Spanish.cs`
+(overrides `WithIndefiniteArticle`/`WithDefiniteArticle`/`Pluralize`/`OrdinalNumber`).
 
-### Cosa fa
-- **Articolo indeterminativo** `WithIndefiniteArticle` → un / uno / una / un'
-  - Femm. + vocale → **un'** (un'arma) · Femm. + consonante → **una**
-  - Masch. + s+consonante → **uno** (uno sgabello) · Masch. + ps/pn/z/x/y/gn → **uno**
-    (uno psicologo, uno zaino) · altrimenti → **un**
-- **Articolo determinativo** `WithDefiniteArticle` → il / lo / la / l'
-  - Femm. + vocale → **l'** · Femm. + consonante → **la**
-  - Masch. + z → **lo** · Masch. + s+consonante → **lo** · Masch. + vocale → **l'**
-    · altrimenti → **il**
-- **Plurale** `Pluralize`:
-  1. prova prima `TryLookupPluralForm` (forme esplicite nei dati / `count`),
-  2. se l'ultima lettera **non** è vocale → invariato (parole straniere: "cobra"→"cobra"),
-  3. Femm. che finisce in vocale → ultima lettera **→ e** (mela→mele),
-  4. Masch. che finisce in vocale → ultima lettera **→ i** (gatto→gatti).
-- **Ordinali** `OrdinalNumber` → `N°` (1°, 2°, …).
-- **IsVowel** considera solo `a e i o u` (niente accentate, niente `h`).
-
-### Limiti noti (candidati a miglioramento)
-Questi sono limiti del **codice del gioco**, non dei nostri dati:
-- **`il psicologo` invece di `lo psicologo`**: l'articolo *determinativo* NON gestisce
-  gn/ps/x/y/pn (l'indeterminativo sì). Incoerenza reale.
-- **Plurali `-ca/-ga/-co/-go`** non gestiti: "amica" → "amice" anziché "amiche".
-  Mitigato dalle liste di plurale esplicite e dal lookup WordInfo.
-- **IsVowel** senza vocali accentate/`h`: casi marginali in italiano.
-
-### ⚠️ Come modificarlo davvero
-Un language pack è **solo dati**: non può sostituire o ricompilare un LanguageWorker.
-Per cambiarne il comportamento ci sono due strade:
-1. **PR upstream a Ludeon** (mantengono loro questi worker) — la via "pulita" per la
-   traduzione ufficiale.
-2. **Mod companion** con assembly compilato (es. patch Harmony che fa override dei metodi).
-Il file in `Notes/` resta comunque utile come riferimento e base per entrambe.
+⚠️ **Being in the repo is not enough**: a language pack is data only and does NOT load `.cs`.
+To make it take effect you need an **upstream PR to Ludeon** (they compile it into the game) or
+a **companion mod** (Harmony patch on the methods, or a class swapped in at runtime). Since the
+stock worker + data already cover most cases, this is a low priority.
 
 ---
 
-## 2. `WordInfo/Gender/` (dati — il genere dei nomi)
+## 2. `WordInfo/Gender/` (data — noun gender)
 
-Tre liste che dicono al LanguageWorker **di che genere è un nome**, così sceglie l'articolo
-e il plurale giusti:
+Lists that tell the LanguageWorker **the gender of a noun**, so it picks the right article and
+plural:
 
-| File | Contenuto | Righe |
-|------|-----------|-------|
-| `Male.txt` | nomi maschili | ~2043 |
-| `Female.txt` | nomi femminili | ~988 |
-| `Neuter.txt` | nomi neutri/senza genere | ~166 |
-| `new_words.txt` | parole nuove non ancora classificate (raccolte dal gioco) | 0 |
+| File | Content | Lines |
+|------|---------|-------|
+| `Male.txt` | masculine nouns | ~2070 |
+| `Female.txt` | feminine nouns | ~1020 |
+| `Neuter.txt` | neuter/genderless nouns | ~166 |
+| `new_words.txt` | new words not yet classified (collected by the game) | 0 |
 
-Regola pratica per popolarle: genere dalla desinenza (**-o → M**, **-a → F**), con i **-e**
-ambigui da decidere a mano. Candidato per un tool `rwit wordinfo` (auto-manutenzione).
+Practical rule to populate them: gender from the ending (**-o → M**, **-a → F**), with the
+ambiguous **-e** ones decided by hand. The engine resolves gender by string via
+`LanguageWordInfo.ResolveGender(str)` (default Male if not found) — so the **plural forms** of
+heteroclite nouns (braccia, ossa…) are added to `Female.txt` so the article comes out "le".
 
-### Voci in inglese: di solito sono conseguenze, non bug del file gender
-Una voce inglese in `Gender/*.txt` riflette quasi sempre un'**etichetta di origine non
-tradotta altrove** (l'oggetto/pianta ha ancora il `.label` inglese): in quel caso la voce
-gender è *corretta* e va sistemata **alla fonte** (il `.label` nel DefInjected), non qui.
-Casi visti:
-- `Female.txt`: `anima grass`, `anima tree` → verificare/tradurre il `.label` della pianta
-  (Ideology); la voce gender seguirà.
-- `Neuter.txt`: `psylink neuroformer` → idem (item Royalty).
-- ✅ Rimosso `psychic shock lance` da `Neuter.txt`: residuo morto, l'italiano corretto
-  `lancia di shock psichico` è già in `Female.txt` (l'item Core è tradotto).
-- `Male.txt`: `jump-pack` è l'etichetta reale tenuta in inglese (`Apparel_PackJump`) → ok.
-
-Candidato a un tool `rwit wordinfo` che riconcili le liste gender con i `.label` tradotti.
+### English entries: usually a symptom, not a gender-file bug
+An English entry in `Gender/*.txt` almost always reflects a **source label untranslated
+elsewhere** (the item/plant still has the English `.label`): in that case the gender entry is
+*correct* and should be fixed **at the source** (the `.label` in DefInjected), not here. A
+future `rwit wordinfo` tool could reconcile the gender lists with the translated `.label`s.
 
 ---
 
-## 3. `Strings/` (dati — il vocabolario per i namer)
+## 3. `Strings/` (data — the vocabulary for the namers)
 
-Il materiale grezzo che le `rulesStrings` assemblano. Due rami principali:
+The raw material the `rulesStrings` assemble. Two main branches:
 
-### `Strings/Names/` — nomi propri
-`Animal_Female.txt`, `Animal_Male.txt`, `Animal_Unisex.txt` (nomi di animali),
-`Business.txt`, `Celestial.txt` (+ `CelestialPrefix/Suffix`), `OutlanderTown.txt`,
-`WorldFeatures/`…
+### `Strings/Names/` — proper names
+`Animal_Female.txt`, `Animal_Male.txt`, `Animal_Unisex.txt`, `Business.txt`, `Celestial.txt`,
+`OutlanderTown.txt`, `WorldFeatures/`…
 
-### `Strings/Words/` — vocabolario comune
-`Nouns/`, `Adjectives/`, `Verbs/`, `Misc/`, `Foreign/`. Qui l'italiano fornisce le
-**varianti flesse esplicite**, perché il genere/numero non si può dedurre sempre a
-codice. Schema ricorrente:
+### `Strings/Words/` — common vocabulary
+`Nouns/`, `Adjectives/`, `Verbs/`, `Misc/`, `Foreign/`. Here Italian provides the **explicit
+inflected variants**, because gender/number cannot always be derived in code. Generated with
+`rwit variants` (Morph-it!). Recurring scheme:
 
 ```
 AnimalGroups_Singular_Feminine.txt   AnimalGroups_Plural_Feminine.txt
-AnimalGroups_Singular_Masculine.txt  AnimalGroups_Plural_Masculine.txt
-Animals.txt                          AnimalsPlural.txt
-Badass_Plural_Feminine.txt           Badass_Plural_Masculine.txt   (aggettivi)
+Badass_Plural_Feminine.txt           Badass_Plural_Masculine.txt   (adjectives)
+Animals_Badass_I.txt  Animals_Badass_Le.txt   (nouns, bucketed by article)
 ```
 
-Così "muffalo→muffali", "cobra→cobra" vengono da `AnimalsPlural.txt` (lookup), non
-dall'euristica del codice.
+### ⚠️ The positional paired files (singular ↔ plural)
+Legacy pairs like `Animals.txt` / `AnimalsPlural.txt` are NOT matched by comparing words: they
+are **synchronized by line position**. Line *N* of the plural file is the plural of line *N* of
+the singular. Fragile: adding/removing/reordering **one** line in only one of the two shifts all
+lines below and every following animal gets the wrong plural, **silently**. The English does
+**not** have `AnimalsPlural.txt` (its LanguageWorker does regular `+s`): it is an Italian-only
+file, and it is **NOT** what `Pluralize` uses (see below). Prefer the keyed `plural.txt`.
 
-### ⚠️ I file accoppiati sono POSIZIONALI (singolare ↔ plurale)
-Le coppie come `Animals.txt` / `AnimalsPlural.txt` (e `..._Singular_*` / `..._Plural_*`) NON
-vengono accoppiate confrontando le parole: sono **sincronizzate per posizione di riga**.
-La riga *N* del file plurale è il plurale della riga *N* del singolare.
-
-```
-Animals.txt        riga 1: muffalo   riga 24: ape   riga 67: oca
-AnimalsPlural.txt  riga 1: muffali   riga 24: api   riga 67: oche
-```
-
-Conseguenze pratiche:
-- I due file **devono avere lo stesso numero di righe** (escl. commenti/vuote); da noi
-  178 = 178. Verificato: nessun disallineamento.
-- **Fragilità**: se aggiungi/rimuovi/riordini **una** riga in un solo file dei due, tutte
-  le righe sotto **scalano** e ogni animale successivo prende il plurale sbagliato
-  (muffalo→"api"), **in silenzio**. Modifica sempre entrambi i file alla stessa posizione.
-- L'inglese **non ha** `AnimalsPlural.txt` (il plurale regolare `+s` lo fa il suo
-  LanguageWorker): è un file **solo italiano**. Serve alla resa dei simboli plurali nelle
-  rulesStrings, ma **NON** è ciò che usa `Pluralize` (vedi sotto).
-- Candidato a controllo `rwit validate`: stesso conteggio righe e coerenza delle coppie.
-
-### ✅ Il vero meccanismo dei plurali: `WordInfo/plural.txt` (keyed, generico)
-Decompilando il `LanguageWorker` di base si vede che `Pluralize → TryLookupPluralForm`
-legge un **dizionario keyed**, non i file posizionali:
+### ✅ The real plural mechanism: `WordInfo/plural.txt` (keyed, generic)
+Decompiling the base `LanguageWorker` shows that `Pluralize → TryLookupPluralForm` reads a
+**keyed dictionary**, not the positional files:
 ```csharp
 var table = LanguageDatabase.activeLanguage.WordInfo.GetLookupTable("plural"); // WordInfo/plural.txt
-string key = str.ToLower();           // lookup PER PAROLA, non per posizione
+string key = str.ToLower();           // lookup BY WORD, not by position
 plural = table[key][1];
 ```
-- È **generico** (funziona col worker di serie, per qualsiasi lingua) e **robusto**
-  (chiave→valore: non si disallinea come i file posizionali).
-- Formato (come il tedesco): righe `Singolare;Plurale`, con commenti `//`. Es. tedesco:
-  ```
-  // Ingame pluralization use this file automatically.
-  Ladung;Ladungen
-  ```
-- **Stato**: il tedesco ha `WordInfo/plural.txt` (+ `plural_decline.txt`), autogenerato.
-  **L'italiano NON ce l'ha** (solo `Gender/`) → oggi il nostro `Pluralize` cade sempre
-  sull'euristica del `.cs`.
-- **Raccomandazione**: gli irregolari italiani (incl. parti del corpo: braccio→braccia,
-  dito→dita, ginocchio→ginocchia, osso→ossa, labbra…) vanno messi in un
-  **`WordInfo/plural.txt`** keyed (modello tedesco), non nel fragile `AnimalsPlural.txt`.
-  Da generare con `rwit wordinfo` (l'equivalente di `update-wordinfo-plural.ps1` tedesco),
-  idealmente da Morph-it!. Nessun `.cs` da deployare.
+- It is **generic** (works with the stock worker, any language) and **robust** (key→value: it
+  cannot drift like the positional files).
+- Format (like German): `Singular;Plural` lines, with `//` comments.
+- **Status (2026-06-12): `WordInfo/plural.txt` now EXISTS** for Italian, with the heteroclite
+  body-part plurals (braccio→braccia, osso→ossa, ginocchio→ginocchia, dito→dita, labbro→labbra).
+  A future `rwit wordinfo` (the equivalent of German's `update-wordinfo-plural.ps1`) could batch
+  it from Morph-it!. No `.cs` to deploy.
 
-### Convenzione: commento-articolo a inizio file
-I file di nomi iniziano con un commento che fissa l'articolo del gruppo, es.:
+### Convention: article comment at the top of a file
+Name files start with a comment fixing the group's article, e.g.:
 ```
 //la, una
 moltitudine
 schiera
 ```
-Le regole degli articoli (l'/lo/il/la, singolare, generi lessicali particolari) sono in
+Article rules (l'/lo/il/la, singular, special lexical genders) are in
 [`TRANSLATION-SYNTAX.md`](TRANSLATION-SYNTAX.md) §6.
 
-### Cosa tradurre e da dove (fonte = inglese)
-La **fonte di verità** è l'inglese del gioco (`Data/<DLC>/Languages/English/Strings`):
-definisce *quali* file/simboli esistono. La worklist si ricava per **diff IT-vs-EN** (se un
-file manca nella nostra lingua, il gioco usa l'inglese → può trapelare). Per tipo di lista:
-- **Nomi propri** (`Strings/Names/`: animali, persone, città, celestiali) = **pool**:
-  si **tengono in inglese** (Abby, Akira…). Non si traducono; al più si cura/arricchisce.
-- **Liste-parola** (`Strings/Words/`: Adjectives, Verbs, Nouns, colori…) = **si traducono**
-  (red→rosso): vengono assemblate in frasi italiane.
-- **`WordInfo/Gender` e `plural.txt`** = specifici dell'italiano, derivati dai **nostri**
-  label tradotti (ideale: Morph-it!), **non** copiati da EN/DE.
-- **Tedesco** = modello del **meccanismo** (ha `WordInfo/plural.txt`), non fonte dei nomi.
+### What to translate and from where (source = English)
+The **source of truth** is the game's English (`Data/<DLC>/Languages/English/Strings`): it
+defines *which* files/symbols exist. The worklist comes from a **diff IT-vs-EN** (tools:
+`rwit strings-diff`, `rwit reconcile`). By list type:
+- **Proper names** (`Strings/Names/`: animals, people, towns, celestial) = **pool**: kept in
+  English (Abby, Akira…). Not translated; at most curated/enriched.
+- **Word lists** (`Strings/Words/`: Adjectives, Verbs, Nouns, colors…) = **translated**
+  (red→rosso): assembled into Italian sentences.
+- **`WordInfo/Gender` and `plural.txt`** = Italian-specific, derived from **our** translated
+  labels (ideally Morph-it!), **not** copied from EN/DE.
+- **German** = model of the **mechanism** (it has `WordInfo/plural.txt`), not a source of names.
 
 ---
 
-## 4. `rulesStrings` / `RulePackDef` — la grammatica che assembla tutto
+## 4. `rulesStrings` / `RulePackDef` — the grammar that assembles everything
 
-Nei `DefInjected/RulePackDef/` (e affini) le regole `<li>sinistra->destra</li>` compongono
-i pezzi sopra usando `[riferimenti]` e pesi `(p=N)`:
+Full reference of the rule language in [`RULEPACK-GRAMMAR.md`](RULEPACK-GRAMMAR.md). In
+`DefInjected/RulePackDef/` the `<li>left->right</li>` rules compose the pieces above using
+`[references]` and weights `(p=N)`:
 
 ```xml
 <li>title(p=2)->[mapType] [mapNoun] di [subject]</li>
 ```
-- `[mapType]`, `[subject]` → pescati da altre regole / liste di `Strings/`.
-- `(p=2)` → questa variante è scelta con **peso 2** (più probabile). Sta sul lato sinistro,
-  va **copiato identico** (vedi [`TRANSLATION-SYNTAX.md`](TRANSLATION-SYNTAX.md) §4 e la
-  nota integrità in [`VALIDATION.md`](VALIDATION.md)).
+- `[mapType]`, `[subject]` → drawn from other rules / `Strings/` lists.
+- `(p=2)` → this variant is chosen with **weight 2** (more likely). It is on the left side, copy
+  it verbatim.
 
-### Come un file `Strings/` diventa disponibile: `<rulesFiles>`
-Un `rulePack` ha due liste: `<rulesStrings>` (regole inline) e **`<rulesFiles>`**, che
-**monta un file di `Strings/` sotto un simbolo**. Esempio dai Def del gioco
-(`Core/Defs/RulePackDefs/RulePacks_Common.xml`):
+### How a `Strings/` file becomes available: `<rulesFiles>`
+A `rulePack` has two lists: `<rulesStrings>` (inline rules) and **`<rulesFiles>`**, which
+**mounts a `Strings/` file under a symbol**:
 ```xml
 <rulePack>
   <rulesFiles>
@@ -234,84 +179,71 @@ Un `rulePack` ha due liste: `<rulesStrings>` (regole inline) e **`<rulesFiles>`*
   </rulesFiles>
 </rulePack>
 ```
-- Sintassi: `<li>simbolo->PercorsoRelativo</li>`, **relativo a `Strings/`, senza `.txt`**.
-  Poi `[simbolo]` nelle rulesStrings pesca una riga a caso da quel file.
-- Nelle traduzioni si può **ridichiarare** `rulesFiles` in DefInjected per puntare ai file
-  `Strings/` italiani (es. `Odyssey/.../Script_SpaceSites.xml`).
-- ⚠️ **Differenza chiave**: i file di **`Strings/`** vanno registrati con `rulesFiles`; i
-  file di **`WordInfo/`** (`Gender/`, `plural.txt`) NO — li carica il motore in automatico
-  per lingua. Quindi il futuro `WordInfo/plural.txt` non richiede nulla negli XML.
-
-### Esempio end-to-end (descrizione di una mappa)
-1. Una `RulePackDef` ha `title->[mapType] [mapNoun] di [subject]`.
-2. `[mapType]` risolve a "deserto", `[mapNoun]` a "distese", `[subject]` a "Vetro".
-3. Il motore chiama il LanguageWorker per articoli/elisioni → "le distese di Vetro".
-4. Il genere di "distese" arriva da `WordInfo/Gender/` per scegliere "le/i".
+- Syntax: `<li>symbol->RelativePath</li>`, **relative to `Strings/`, without `.txt`**. Then
+  `[symbol]` in the rulesStrings draws a random line from that file.
+- ⚠️ **Key difference**: **`Strings/`** files must be registered with `rulesFiles`; **`WordInfo/`**
+  files (`Gender/`, `plural.txt`) must NOT — the engine auto-loads them per language. So
+  `WordInfo/plural.txt` needs nothing in the XML.
 
 ---
 
-## 5. Grammatica del log generato (combattimento/sociale) — il problema storico
+## 5. Generated-log grammar (combat/social) — the historical problem
 
-I log di combattimento e le interazioni sociali sono **generati** dalle `rulesStrings`
-(`RulePacks_Combat*`, `RulePacks_Damage*`, `RulePacks_Maneuvers`, `Interactions_*`).
-È la parte storicamente **più sbagliata** della traduzione italiana.
+Combat logs and social interactions are **generated** by the rulesStrings (`RulePacks_Combat*`,
+`RulePacks_Damage*`, `RulePacks_Maneuvers`, `Interactions_*`). Historically the **most wrong**
+part of the Italian translation.
 
-### Causa radice (misurata)
-Il motore offre un meccanismo per il genere; l'italiano non l'ha quasi mai usato. Vincoli
-`_gender==Male/Female` nelle rulesStrings di combattimento:
+### Root cause (measured)
+The engine offers a gender mechanism; Italian almost never used it. `_gender==Male/Female`
+constraints in the combat rulesStrings:
 
-| Lingua | Vincoli di genere |
-|--------|-------------------|
-| Francese | 122 |
-| Spagnolo | 100 |
-| Tedesco | 95 |
-| **Italiano** | **1** |
+| Language | Gender constraints |
+|----------|-------------------|
+| French | 122 |
+| Spanish | 100 |
+| German | 95 |
+| **Italian** | **1** |
 
-Le regole italiane hanno articoli/participi **fissi** (`nella [recipient_part0_label]`,
-`colpito`) giusti solo per un genere → frasi come "X ha colpito Y nella braccio" o
-participi al maschile per soggetti femminili. In più **`WordInfo/Gender` non ha quasi
-nessuna parte del corpo** (braccio, gamba, mano… assenti), quindi neppure la via
-automatica `[parte_definite]` può mettere l'articolo giusto.
+Italian rules have **fixed** articles/participles (`nella [recipient_part0_label]`, `colpito`)
+correct for one gender only → sentences like "X ha colpito Y nella braccio" or masculine
+participles for feminine subjects. Also, body parts were largely **missing from
+`WordInfo/Gender`** — now **added** (~60, incl. mano=F, pelle=F), so the automatic
+`[part_definite]` path can place the right article.
 
-### I due strumenti del motore per risolvere
-1. **Vincolo di genere sulla regola** (lato sinistro), come fa il francese:
+### The engine's two tools to fix it
+1. **Gender constraint on the rule** (left side), as French does:
    ```xml
    <li>r_logentry(p=0.1,RECIPIENT_gender==Male)->[INITIATOR_definite] [damaged_past] nel [recipient_part0_label] ...</li>
    <li>r_logentry(p=0.1,RECIPIENT_gender==Female)->[INITIATOR_definite] [damaged_past] nella [recipient_part0_label] ...</li>
    ```
-   Sintassi: `nomeRegola(p=PESO, SIMBOLO_gender==Male|Female)`. Il resolver sceglie la
-   variante che combacia col genere dell'entità risolta.
-2. **Suffissi `[X_definite]` / `[X_indefinite]`**: il motore applica l'articolo corretto
-   via `LanguageWorker` + `WordInfo/Gender`. Es. `[recipient_part0_definite]` → "il braccio"
-   / "la gamba" automaticamente, **se** la parte è nel WordInfo col genere giusto.
-   (L'italiano usa 456 di questi suffissi, il francese 617: c'è margine.)
+   Syntax: `ruleName(p=WEIGHT, SYMBOL_gender==Male|Female)`. The resolver picks the variant
+   matching the resolved entity's gender.
+2. **`[X_definite]` / `[X_indefinite]` suffixes**: the engine applies the correct article via
+   `LanguageWorker` + `WordInfo/Gender`. E.g. `[recipient_part0_definite]` → "il braccio" /
+   "la gamba" automatically, **if** the part is in WordInfo with the right gender.
 
-### Strategia di fix
-- Sostituire gli articoli scritti a mano davanti a `[X_label]` con `[X_definite]`/`[X_indefinite]`.
-- Dove serve accordo di participio/aggettivo, sdoppiare la regola con i vincoli
-  `(SIMBOLO_gender==Male/Female)` — **template = i pack francese/spagnolo** (stessi simboli).
-- Popolare `WordInfo/Gender` con le parti del corpo e i nomi usati nei log.
-- Verificare **in gioco** (Dev mode: generatori del log di combattimento/interazioni) su
-  un pawn maschio e uno femmina.
-- Ordine per impatto: CombatMelee → CombatRanged → Damage → DamageEvent → Maneuvers →
-  Interactions sociali → Battles/Tales.
+### Fix strategy
+- Replace hand-written articles before `[X_label]` with `[X_definite]`/`[X_indefinite]`.
+- Where participle/adjective agreement is needed, split the rule with `(SYMBOL_gender==Male/Female)`
+  constraints — **template = the French/Spanish packs** (same symbols).
+- Populate `WordInfo/Gender` with the body parts and nouns used in the logs (done).
+- Verify **in game** (Dev mode: combat-log / interaction generators) on a male and a female pawn.
+- Order by impact: CombatMelee → CombatRanged → Damage → DamageEvent → Maneuvers → social
+  Interactions → Battles/Tales.
 
-Tooling di supporto previsto: `rwit compare` (affianca it/fr/es/de sulle stesse rulesStrings),
-`rwit validate` (lint: niente articolo a mano prima di `[X_label]`, vincoli ben formati).
+The count branches (`recipient_part_count==1/2/3`) are already translated correctly (`e`, no
+Oxford comma). See [`RULEPACK-GRAMMAR.md`](RULEPACK-GRAMMAR.md) §4.
 
-## 6. Piano di revisione di quest'area
+## 6. Review plan for this area
 
-- [ ] Aggiornare `LanguageWorker_Italian.cs` (root) a ogni versione del gioco; valutarne
-  il deploy (PR upstream o mod companion) per attivare le migliorie.
-- [ ] **Log generato**: applicare la strategia di fix §5 (vincoli di genere + `[X_definite]`),
-  partendo da un pack-template (es. `Combat_Deflect`) verificato in gioco.
-- [ ] **WordInfo/Gender**: tradurre l'inglese rimasto (`anima grass/tree`, `psychic shock
-  lance`, `psylink neuroformer`), verificare i generi dubbi (-e), svuotare `new_words.txt`
-  riclassificando.
-- [ ] **Strings**: controllare coerenza singolare/plurale × maschile/femminile e i commenti
-  `//articolo` a inizio file.
-- [ ] **rulesStrings**: lato sinistro e pesi `(p=N)` invariati (lo garantisce la validazione).
-- [ ] Valutare una **PR upstream**/mod per i limiti del worker (articolo `lo` per gn/ps/x/y,
-  plurali `-ca/-ga/-co/-go`).
-- [ ] (Tooling) `rwit wordinfo` per auto-manutenzione del genere; `rwit compare` per
-  confrontare le stesse rulesStrings con fr/es/de.
+- [ ] Keep `LanguageWorker_Italian.cs` (root) updated each game version; evaluate deploy (upstream
+  PR or companion mod) only if data-driven proves insufficient.
+- [ ] **Generated log**: apply the §5 fix strategy (gender constraints + `[X_definite]`), starting
+  from a template pack (e.g. `Combat_Deflect`) verified in game.
+- [ ] **WordInfo/Gender**: translate any remaining English, check doubtful (-e) genders, empty
+  `new_words.txt` by reclassifying.
+- [ ] **Strings**: keep singular/plural × masculine/feminine consistent; align lists to the game's
+  English (`rwit reconcile`).
+- [ ] **rulesStrings**: left side and `(p=N)` weights unchanged (guaranteed by validation).
+- [ ] (Tooling) `rwit wordinfo` for gender auto-maintenance; `rwit compare` to compare the same
+  rulesStrings with fr/es/de.

@@ -1,37 +1,38 @@
-# Riferimenti
+# References
 
-Risorse esterne e repo di altre lingue usati come modello per le scelte di traduzione e
-grammatica.
+External resources and other-language repos used as a model for translation and
+grammar choices.
 
-## Repo di altre lingue (in `progetti/rimworld/`)
+## Other-language repos (in `progetti/rimworld/`)
 
-Cloni locali di language pack ufficiali/community, tenuti accanto a questo repo come
-riferimento per rulesStrings, namer e strategia grammaticale:
+Local clones of official/community language packs, kept next to this repo as a
+reference for rulesStrings, namers, and grammar strategy:
 
-| Repo | Uso |
+| Repo | Use |
 |------|-----|
-| `RimWorld-de` (tedesco) | **Preso a riferimento** per struttura e namer. ⚠️ Il tedesco usa un motore di **declinazione per i 4 casi** in `WordInfo/`: utile da studiare, ma **non si replica** in italiano. |
-| `RimWorld-fr` (francese) | **Modello** per WordInfo: come noi usa **solo `Gender/`**. È il riferimento più vicino all'italiano. |
-| `RimWorld-Spanish` (spagnolo) | Gender + extra leggeri (`plural.txt`, `fix_indefinite.txt`…). Prendere solo se serve un caso reale. |
+| `RimWorld-de` (German) | **Used as a reference** for structure and namers. ⚠️ German uses a **4-case declension** engine in `WordInfo/`: worth studying, but **not replicated** in Italian. It is the most complete repo and the model for the data-driven approach. |
+| `RimWorld-fr` (French) | **Model** for WordInfo: like us it uses **only `Gender/`** (plus `plural.txt`). The closest reference to Italian. |
+| `RimWorld-Spanish` (Spanish) | Gender + light extras (`plural.txt`, `fix_indefinite.txt`…), and a `LanguageWorker_Spanish.cs` we use as the C# reference. Borrow only when a real case calls for it. |
 
-> I cloni di riferimento non fanno parte di questo repo; sono cartelle sorelle in
-> `progetti/rimworld/`. Servono per **confrontare** le stesse rulesStrings tra lingue.
+> The reference clones are not part of this repo; they are sibling folders in
+> `progetti/rimworld/`. They are used to **compare** the same rulesStrings across languages.
 
-## Strategia WordInfo per l'italiano
+## WordInfo strategy for Italian
 
-L'italiano **non ha casi grammaticali**: per una resa corretta bastano
-**genere** + **riformulazione delle frasi** (come già fatto nei namer, es. `Namer_Tome`).
+Italian **has no grammatical cases**: correct output only needs **gender** + **sentence
+rephrasing** (as already done in the namers).
 
-- **WordInfo** → solo `Gender/` (genere dei sostantivi). Modello: francese.
-- Articoli ed elisione (`il/lo/la`, `un/uno/un'`, `l'`) sono gestiti **lato codice** da
-  `LanguageWorker_Italian`, non vanno codificati a mano nei testi.
-- Non serve replicare il sistema di declinazione tedesco.
+- **WordInfo** → `Gender/` (noun gender) + `plural.txt` (irregular plurals). Model: French/German.
+- Articles and elision (`il/lo/la`, `un/uno/un'`, `l'`) are handled **in code** by the stock
+  `LanguageWorker_Italian` (already capable), so they should not be hardcoded into the text.
+- The German declension system does not need to be replicated.
 
-Dettagli sull'uso pratico in [`docs/TRANSLATION-SYNTAX.md`](TRANSLATION-SYNTAX.md) §6.
+Practical usage details in [`docs/TRANSLATION-SYNTAX.md`](TRANSLATION-SYNTAX.md) §6 and the
+data-driven decision in [`docs/UPDATE-PLAN-1.6.4850.md`](UPDATE-PLAN-1.6.4850.md) §0.
 
-## Link utili
+## Useful links
 
-- **Wiki RimWorld**: https://rimworldwiki.com/ — lore e terminologia ufficiale.
-- **Regole grammaticali Ludeon** (sistema di localizzazione, genere, namer):
+- **RimWorld Wiki**: https://rimworldwiki.com/ — official lore and terminology.
+- **Ludeon grammar rules** (localization system, gender, namers):
   https://ludeon.com/forums/index.php?topic=43979.0
-- **Versione gioco target**: 1.6.4850.
+- **Target game version**: 1.6.4850.

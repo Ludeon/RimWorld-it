@@ -1,68 +1,68 @@
-# Strumenti locali / LLM locale — strategia
+# Local tooling / local LLM — strategy
 
-Indicazioni per chi vuole automatizzare parti della QA della traduzione con strumenti che
-girano **in locale e offline** (nessuna API esterna, risultati riproducibili). Adatto a
-job batch sull'intero corpus.
+Guidance for automating parts of the translation QA with tools that run **locally and
+offline** (no external API, reproducible results). Suitable for batch jobs over the whole
+corpus.
 
-> **Stato (2026-06-12): molti di questi strumenti sono ora REALI** in `scripts/rwit/`:
-> `lang-check [--files]` (lingua sbagliata), `morphit.py` + `variants` (morfologia via
-> **Morph-it!**), `strings-diff` e `reconcile` (allineamento liste all'inglese del gioco),
-> `ledger` + dashboard. Resta da fare l'embedding per la coerenza e l'eventuale `rwit wordinfo`
-> (genera Gender/plural da tutti i label). Vedi `RULEPACK-GRAMMAR.md` per il linguaggio.
+> **Status (2026-06-12): many of these tools are now REAL** in `scripts/rwit/`:
+> `lang-check [--files]` (wrong language), `morphit.py` + `variants` (morphology via
+> **Morph-it!**), `strings-diff` and `reconcile` (align lists to the game's English),
+> `ledger` + dashboard. Still to do: embeddings for consistency and a possible `rwit wordinfo`
+> (generate Gender/plural from all labels). See `RULEPACK-GRAMMAR.md` for the rule language.
 
-## Principio guida
+## Guiding principle
 
-> Un LLM locale di piccola taglia **non è il traduttore**: su un testo difficile come
-> RimWorld (genere, ternarie, rulesStrings) introduce errori di lore/grammatica. Va usato
-> come **finder/triage** il cui output è *sempre verificato* — mai come traduzione finale.
+> A small local LLM **is not the translator**: on hard text like RimWorld (gender, ternaries,
+> rulesStrings) it introduces lore/grammar errors. Use it as a **finder/triage** whose output
+> is *always verified* — never as the final translation.
 
-La maggior parte del valore qui è **deterministico**, non generativo.
+Most of the value here is **deterministic**, not generative.
 
-## Dove conviene davvero (in ordine di valore)
+## Where it really pays off (in order of value)
 
-### 1. Morfologia (genere/plurali WordInfo) → lessico, NON LLM
-Per popolare `WordInfo/Gender` e i plurali (la leva che sistema i log) lo strumento giusto
-è un **lessico morfologico italiano**: **`Morph-it!`** (open source) o i dump di Wiktionary.
-Per ogni lemma si *legge* genere e plurale invece di indovinarli: deterministico, gratuito,
-esatto. **Priorità: i plurali irregolari delle parti del corpo** (braccio→braccia,
-dito→dita, ginocchio→ginocchia, osso→ossa, labbro→labbra) che alimentano il log di
-combattimento. → futuro `rwit wordinfo`.
+### 1. Morphology (WordInfo gender/plurals) → lexicon, NOT an LLM
+To populate `WordInfo/Gender` and the plurals (the lever that fixes the logs) the right tool
+is an **Italian morphological lexicon**: **`Morph-it!`** (open source) or Wiktionary dumps.
+For each lemma you *read* gender and plural instead of guessing them: deterministic, free,
+exact. **Priority: the irregular body-part plurals** (braccio→braccia, dito→dita,
+ginocchio→ginocchia, osso→ossa, labbro→labbra) that feed the combat log.
+→ implemented as `rwit variants` / `morphit.py`; a future `rwit wordinfo` could batch it.
 
-### 2. Coerenza terminologica → embedding locali
-Un **embedding model** (es. `bge-m3`, `multilingual-e5`) per trovare lo stesso termine EN
-tradotto in modi diversi e le stringhe quasi-duplicate da uniformare. Deterministico, leggero.
-→ futuro `rwit coherence`.
+### 2. Terminology consistency → local embeddings
+An **embedding model** (e.g. `bge-m3`, `multilingual-e5`) to find the same EN term translated
+in different ways and near-duplicate strings to unify. Deterministic, lightweight.
+→ future `rwit coherence`.
 
-### 3a. Lingua sbagliata → rilevatore di lingua DETERMINISTICO (non serve LLM)
-Per trovare stringhe in lingua sbagliata (es. **francese** copiato per errore) lo strumento
-giusto **non è un LLM** ma un **language-ID** deterministico: `fastText lid.176`, `lingua`,
-o `langdetect`. **Zero token, zero allucinazioni, microsecondi a stringa**, offline.
-- Scansiona ogni valore tradotto; segnala quelli non `it` (whitelist: pool di nomi propri,
-  simboli/unità, termini tenuti in inglese).
-- Caso reale trovato: **~14 stringhe francesi in Anomaly** (`Keyed/Misc_Gameplay.xml`,
-  `DefInjected/ThoughtDef/Precepts_PsychicRituals.xml`). → futuro `rwit lang-check`.
+### 3a. Wrong language → DETERMINISTIC language detector (no LLM needed)
+To find strings in the wrong language (e.g. **French** copied by mistake) the right tool is
+**not** an LLM but a deterministic **language-ID**: `fastText lid.176`, `lingua`, or
+`langdetect`. **Zero tokens, zero hallucinations, microseconds per string**, offline.
+- Scans every translated value; flags non-`it` ones (whitelist: proper-name pools,
+  symbols/units, terms kept in English).
+- Real case found: **French strings in Anomaly** (`Keyed/Misc_Gameplay.xml`,
+  `DefInjected/ThoughtDef/Precepts_PsychicRituals.xml`). → implemented as `rwit lang-check`.
 
-### 3b. Triage fine → LLM locale piccolo come *finder*
-Solo per casi sfumati che il language-ID non risolve (stringhe corte/miste). Via `Ollama`,
-modello 7–8B, a **recall** e poi verificato:
-- **round-trip** IT→EN con confronto al commento `<!-- EN: -->` per segnalare divergenze;
-- candidati di **disaccordo di genere** nei log generati.
+### 3b. Fine triage → small local LLM as a *finder*
+Only for nuanced cases that language-ID does not resolve (short/mixed strings). Via `Ollama`,
+a 7–8B model, for **recall** and then verified:
+- **round-trip** IT→EN compared with the `<!-- EN: -->` comment to flag divergences;
+- **gender-disagreement** candidates in the generated logs.
 
-Output = lista di *candidati da verificare*, mai modifiche dirette.
+Output = a list of *candidates to verify*, never direct edits.
 
-## Cosa NON fare
-- Non usare l'LLM come **traduttore finale** (qualità insufficiente sul lore RimWorld).
-- Non usarlo per **controlli strutturali** (XML, `->`, variabili, ternarie): meglio i
-  **linter deterministici** in `rwit validate`.
+## What NOT to do
+- Do not use the LLM as the **final translator** (insufficient quality on RimWorld lore).
+- Do not use it for **structural checks** (XML, `->`, variables, ternaries): the deterministic
+  **linters** in `rwit validate` are better.
 
-## Note pratiche
-- In locale conviene un modello **7–8B quantizzato** (Q4/Q5) per restare leggeri; taglie
-  maggiori richiedono offload su RAM (più lente).
-- Integrare tutto come **sottocomandi `rwit`**, offline. Le dipendenze extra (client ollama,
-  sentence-transformers) come gruppo opzionale in `scripts/requirements.txt`.
+## Practical notes
+- Locally, a **7–8B quantized** model (Q4/Q5) keeps things light; larger sizes need RAM offload
+  (slower).
+- Integrate everything as **`rwit` subcommands**, offline. Extra dependencies (ollama client,
+  sentence-transformers) as an optional group in `scripts/requirements.txt`.
 
-## Priorità consigliata
-1. **Morph-it! → WordInfo** (parti del corpo + irregolari) — sblocca i log, deterministico.
-2. **`rwit validate`** (linter) — gate qualità, nessun LLM.
-3. **Embedding coerenza** — pulizia terminologica trasversale.
-4. **LLM triage** — finder per lingua sbagliata / round-trip, a verifica umana.
+## Recommended priority
+1. **Morph-it! → WordInfo** (body parts + irregulars) — unblocks the logs, deterministic. ✅ done
+2. **`rwit validate`** (linter) — quality gate, no LLM.
+3. **Embedding consistency** — cross-cutting terminology cleanup.
+4. **LLM triage** — finder for wrong language / round-trip, with human verification.

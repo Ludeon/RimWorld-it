@@ -1,199 +1,197 @@
-# Sintassi delle traduzioni — RimWorld italiano
+# Translation syntax — RimWorld Italian
 
-Guida di riferimento alla sintassi che si può (e si deve) usare nei file di traduzione.
-Vale per `DefInjected/`, `Keyed/` e le `rulesStrings`. Le regole operative stanno in
-`CONTRIBUTING.md`; questo file documenta la **sintassi del motore di RimWorld**.
+Reference for the syntax you can (and must) use in the translation files. Applies to
+`DefInjected/`, `Keyed/` and the `rulesStrings`. Operational rules are in `CONTRIBUTING.md`;
+this file documents the **RimWorld engine syntax**. Examples are in Italian (this is the
+Italian pack), but the engine syntax is the same for any language.
 
 ---
 
-## 1. Struttura dei file
+## 1. File structure
 
-Ogni file è un `LanguageData` XML. Due famiglie:
+Each file is a `LanguageData` XML. Two families:
 
-- **Keyed** (`<DLC>/Keyed/*.xml`): coppie chiave→testo dell'interfaccia.
+- **Keyed** (`<DLC>/Keyed/*.xml`): key→text pairs for the interface.
   ```xml
   <LanguageData>
     <!-- EN: Required -->
     <Required>Richiesto</Required>
   </LanguageData>
   ```
-- **DefInjected** (`<DLC>/DefInjected/<DefType>/*.xml`): traduzioni di campi dei Def.
-  La chiave è il **percorso del def**: `NomeDef.campo` o `NomeDef.sotto.campo`.
+- **DefInjected** (`<DLC>/DefInjected/<DefType>/*.xml`): translations of Def fields.
+  The key is the **def path**: `DefName.field` or `DefName.sub.field`.
   ```xml
   <!-- EN: ancient bridge -->
   <AncientBridge.label>ponte antico</AncientBridge.label>
   ```
 
-### Commenti `<!-- EN: ... -->`
-Mostrano l'originale inglese. **Si copiano identici, non si traducono mai.** Quando il
-gioco aggiorna l'inglese, riscrive questi commenti: se cambia solo un refuso inglese, la
-traduzione italiana sottostante **non va toccata**.
+### `<!-- EN: ... -->` comments
+They show the English original. **Copy them verbatim, never translate them.** When the game
+updates the English, it rewrites these comments: if only an English typo changed, the Italian
+translation below **must not be touched**.
 
-### Tag vuoti = TODO
-`<tag />` o `<tag></tag>` vanno trattati come da tradurre: inserire la traduzione del
-commento `<!-- EN: -->` precedente.
+### Empty tags = TODO
+`<tag />` or `<tag></tag>` are to be translated: insert the translation of the preceding
+`<!-- EN: -->` comment.
 
 ---
 
-## 2. Variabili — NON tradurre mai il nome
+## 2. Variables — never translate the name
 
-Due notazioni, entrambe da **lasciare intatte** nel nome:
+Two notations, both to be **left intact** in the name:
 
-| Forma | Dove | Esempio |
-|-------|------|---------|
-| `[VARIABILE]` | DefInjected, rulesStrings, backstory | `[PAWN_nameDef]`, `[WEAPON_label]` |
-| `{VARIABILE}` | Keyed, lettere | `{PAWN_labelShort}`, `{FACTION_name}`, `{0}`, `{1}` |
+| Form | Where | Example |
+|------|-------|---------|
+| `[VARIABLE]` | DefInjected, rulesStrings, backstory | `[PAWN_nameDef]`, `[WEAPON_label]` |
+| `{VARIABLE}` | Keyed, letters | `{PAWN_labelShort}`, `{FACTION_name}`, `{0}`, `{1}` |
 
-Si traduce **solo il testo fuori** dalle parentesi.
+Translate **only the text outside** the brackets.
 
 ```xml
 <!-- EN: {0} is low on resources -->
 <AlertWarqueenHasLowResources>{0} ha poche risorse</AlertWarqueenHasLowResources>
 ```
 
-Suffissi comuni delle variabili pawn (utili per accordare le frasi):
-`_nameDef`, `_nameFull`, `_labelShort`, `_pronoun` (lui/lei), `_possessive` (suo/sua),
-`_objective` (lo/la), `_gender`.
+Common pawn variable suffixes (useful for agreement): `_nameDef`, `_nameFull`, `_labelShort`,
+`_pronoun` (lui/lei), `_possessive` (suo/sua), `_objective` (lo/la), `_gender`.
 
-> ⚠️ Le variabili posizionali `{0}`, `{1}`, `{0_label}`, `{1_gender}` devono restare e
-> mantenere lo stesso indice dell'inglese: cambiare il numero rompe il testo in gioco.
+> ⚠️ Positional variables `{0}`, `{1}`, `{0_label}`, `{1_gender}` must remain and keep the
+> same index as the English: changing the number breaks the in-game text.
 
 ---
 
-## 3. Genere: la notazione ternaria
+## 3. Gender: the ternary notation
 
-L'italiano accorda gli aggettivi/participi al genere. RimWorld offre una **ternaria** con
-**due o tre rami**:
+Italian agrees adjectives/participles to gender. RimWorld offers a **ternary** with **two or
+three branches**:
 
 ```
-{VARIABILE_gender ? MASCHILE : FEMMINILE}              # 2 rami
-{VARIABILE_gender ? MASCHILE : FEMMINILE : NEUTRO}     # 3 rami
+{VARIABLE_gender ? MASCULINE : FEMININE}              # 2 branches
+{VARIABLE_gender ? MASCULINE : FEMININE : NEUTER}     # 3 branches
 ```
 
-Il motore mappa il genere così: **Maschile → 1° ramo, Femminile → 2° ramo,
-Nessuno (None) → 3° ramo**. Il genere `None` riguarda cose **senza genere**: oggetti,
-costruzioni, animali di sesso ignoto (es. `{CRAFTED_gender ...}`, `{0_gender ...}` di un
-item). Per questo la forma a 3 rami è **valida e diffusa** (la usano anche fr/de/es).
+The engine maps gender as: **Male → 1st branch, Female → 2nd branch, None → 3rd branch**.
+Gender `None` covers things **without gender**: items, buildings, animals of unknown sex
+(e.g. `{CRAFTED_gender ...}`, `{0_gender ...}` of an item). That is why the 3-branch form is
+**valid and common** (fr/de/es use it too).
 
-### Tre usi
+### Three uses
 
-**Inline a 2 rami** (desinenza singola — caso più frequente per i pawn):
+**Inline, 2 branches** (single ending — the most frequent case for pawns):
 ```
 stat{PAWN_gender ? o : a} uccis{PAWN_gender ? o : a}
 → "stato ucciso" / "stata uccisa"
 ```
 
-**A 3 rami** (quando serve la forma neutra per genere `None`):
+**3 branches** (when the neuter form is needed for gender `None`):
 ```
-è entrat{0_gender ? o : a : o}                    # masch / femm / neutro
+è entrat{0_gender ? o : a : o}                    # masc / fem / neuter
 {CRAFTED_gender ? un : una : uno} {CRAFTED_labelShort}
-{PAWN_gender ? morto : morta : mortə}             # neutro con schwa
+{PAWN_gender ? morto : morta : mortə}             # neuter with schwa
 ```
-Il 3° ramo può ripetere il maschile (`o : a : o`) o usare una forma neutra esplicita
-(`o/a`, `o(a)`, `ə`, `*`). Entrambe le scelte sono accettate; **mantieni lo stile del
-file**.
+The 3rd branch can repeat the masculine (`o : a : o`) or use an explicit neuter form
+(`o/a`, `o(a)`, `ə`, `*`). Both choices are accepted; **keep the file's style**.
 
-**Frase/parola intera**:
+**Whole word/phrase**:
 ```
 {PAWN_gender ? un bambino : una bambina}
 {PAWN_gender ? stato ucciso : stata uccisa}
 ```
 
-### Quale variabile
-Usa la stessa radice della variabile presente nel testo: `PAWN_gender`, `HEIR_gender`,
-`CRAFTED_gender`, oppure la posizionale `{0_gender ? o : a}` quando il testo usa `{0}`.
+### Which variable
+Use the same root as the variable present in the text: `PAWN_gender`, `HEIR_gender`,
+`CRAFTED_gender`, or the positional `{0_gender ? o : a}` when the text uses `{0}`.
 
-### Cosa è davvero un errore
+### What is actually an error
 
-| ❌ Sbagliato | ✅ Corretto | Perché |
-|-------------|-------------|--------|
-| `entrat{0_gender ? o : a}` su un soggetto che può essere `None` | `entrat{0_gender ? o : a : o}` | manca il ramo neutro: con genere `None` il motore non trova la forma |
-| `{0_gender ? o : a : o : x}` | `{0_gender ? o : a : o}` | **quattro** rami: il massimo è 3 |
-| `statoa` | `stat{PAWN_gender ? o : a}` | concatenazione errata dei rami |
+| ❌ Wrong | ✅ Correct | Why |
+|----------|-----------|-----|
+| `entrat{0_gender ? o : a}` on a subject that can be `None` | `entrat{0_gender ? o : a : o}` | missing neuter branch: with gender `None` the engine finds no form |
+| `{0_gender ? o : a : o : x}` | `{0_gender ? o : a : o}` | **four** branches: the max is 3 |
+| `statoa` | `stat{PAWN_gender ? o : a}` | wrong concatenation of the branches |
 
-> **Regola d'oro**: la ternaria ha **2 o 3 rami** separati da `:`, con **un solo `?`**.
-> `{ ? a : b }` e `{ ? a : b : c }` sono entrambe corrette. `{ ? a : b : c : d }` no.
-> ⚠️ Non "correggere" una ternaria a 3 rami togliendo il terzo: è la forma neutra (None),
-> non un bug — controllato sui language pack fr/de/es.
+> **Golden rule**: the ternary has **2 or 3 branches** separated by `:`, with **a single `?`**.
+> `{ ? a : b }` and `{ ? a : b : c }` are both correct. `{ ? a : b : c : d }` is not.
+> ⚠️ Do not "fix" a 3-branch ternary by removing the third: it is the neuter (None) form,
+> not a bug — verified on the fr/de/es language packs.
 
 ---
 
-## 4. rulesStrings (grammatica generativa)
+## 4. rulesStrings (generative grammar)
 
-> ⚠️ Riferimento completo del linguaggio (condizioni `(count==N)`, vincoli di genere,
-> pesi, simboli indicizzati, log di combattimento): [`RULEPACK-GRAMMAR.md`](RULEPACK-GRAMMAR.md).
-> Questa sezione copre solo le basi.
+> ⚠️ Full reference for the language (conditions `(count==N)`, gender constraints, weights,
+> indexed symbols, combat log): [`RULEPACK-GRAMMAR.md`](RULEPACK-GRAMMAR.md).
+> This section only covers the basics.
 
-Liste di regole che il gioco compone per generare testo (nomi, descrizioni, racconti).
-Ogni `<li>` ha la forma `SINISTRA->DESTRA`:
+Rule lists the game composes to generate text (names, descriptions, stories). Each `<li>` has
+the form `LEFT->RIGHT`:
 
 ```xml
 <li>subject->generazione di energia da bioferrite</li>
 <li>subject_story->fu addestrat{PAWN_gender ? o : a} all'uso di fonti innovative</li>
 ```
 
-Regole:
-- Freccia **letterale `->`** (mai `>`, mai `-&gt;`).
-- **Sinistra invariata** (è un identificatore del motore): si traduce **solo la destra**.
-- Stesso **numero di `<li>`** dell'originale.
-- Dentro la destra si possono usare `[VARIABILI]` e ternarie genere.
-- Controllo finale: ogni `<li>` deve contenere **esattamente una `->`**.
-  Se manca (`<li>introduction>…`), correggere in `<li>introduction->…`.
+Rules:
+- The **literal `->` arrow** (never `>`, never `-&gt;`).
+- **Left side unchanged** (it is an engine identifier): translate **only the right side**.
+- Same **number of `<li>`** as the original.
+- Inside the right side you can use `[VARIABLES]` and gender ternaries.
+- Final check: every `<li>` must contain **exactly one `->`**.
+  If it is missing (`<li>introduction>…`), fix it to `<li>introduction->…`.
 
-I commenti `<!-- EN: -->` delle rulesStrings contengono il blocco inglese multilinea: si
-copiano identici.
+The `<!-- EN: -->` comments of the rulesStrings contain the multi-line English block: copy
+them verbatim.
 
 ---
 
-## 5. A capo e formattazione
+## 5. Line breaks and formatting
 
-- La sequenza `\n\n` (e `\n`) è **letterale**: si riscrive **identica**, senza andare a
-  capo davvero nell'XML. Vale sia nei commenti che nel testo.
+- The `\n\n` (and `\n`) sequence is **literal**: rewrite it **identically**, without actually
+  breaking the line in the XML. This applies both in comments and in text.
   ```xml
   <Tutorial>Riga uno.\n\nRiga due.</Tutorial>
   ```
-- Mantenere indentazione e struttura originali.
-- Restituire sempre l'XML **completo**, senza omettere tag (anche se duplicati).
+- Keep the original indentation and structure.
+- Always return the **complete** XML, without omitting tags (even duplicated ones).
 
 ---
 
-## 6. Articoli ed elisione — chi fa cosa
+## 6. Articles and elision — who does what
 
-L'italiano **non ha i casi** (a differenza del tedesco): bastano **genere** +
-**riformulazione** della frase. Articoli ed elisione (`il/lo/la`, `un/uno/un'`, `l'`)
-sono in gran parte gestiti **dal codice** (`LanguageWorker_Italian`) e dai dati in
-`WordInfo/Gender/`.
+Italian **has no cases** (unlike German): **gender** + sentence **rephrasing** are enough.
+Articles and elision (`il/lo/la`, `un/uno/un'`, `l'`) are largely handled **in code**
+(`LanguageWorker_Italian`) and by the data in `WordInfo/Gender/`.
 
-Quando devi scegliere un articolo a mano (es. nelle liste nomi), regole rapide:
-- **l'** = singolari (m/f) che iniziano per vocale → *l'accento, l'idea*
-- **lo** = maschili con s+consonante, z, ps, gn, x, y → *lo sguardo, lo zaino*
-- **il** = maschili con altra consonante
-- **la** = femminili con consonante
-- Rispetta i generi lessicali particolari (es. *la fronte*).
+When you must choose an article by hand (e.g. in name lists), quick rules:
+- **l'** = singulars (m/f) starting with a vowel → *l'accento, l'idea*
+- **lo** = masculine with s+consonant, z, ps, gn, x, y → *lo sguardo, lo zaino*
+- **il** = masculine with another consonant
+- **la** = feminine with a consonant
+- Respect special lexical genders (e.g. *la fronte*).
 
 ---
 
-## 7. Terminologia (lore RimWorld)
+## 7. Terminology (RimWorld lore)
 
-Termini fissati per coerenza:
+Terms fixed for consistency:
 
-| Inglese | Italiano |
-|---------|----------|
+| English | Italian |
+|---------|---------|
 | ideoligion | ideologia |
 | scarification | incisione rituale |
 
-Principio: fedeltà **+ naturalezza**. Evitare calchi letterali; preferire la forma più
-idiomatica e "giocabile" (es. un termine scientifico corretto ma rigido → versione più
-semplice nel contesto di gioco).
+Principle: fidelity **+ naturalness**. Avoid literal calques; prefer the most idiomatic and
+"playable" form (e.g. a correct but stiff scientific term → a simpler version in the game
+context).
 
 ---
 
-## 8. Checklist finale per ogni file
+## 8. Final checklist for each file
 
-- [ ] Solo testo fuori da `[ ]` e `{ }` tradotto
-- [ ] Ogni ternaria genere ha **un solo `?`** e **2 o 3 rami** (`: b` o `: b : c`); il 3° è la forma neutra, non un errore
-- [ ] rulesStrings: `->` presente in ogni `<li>`, sinistra invariata, stesso numero di `<li>`
-- [ ] `\n\n` preservati identici
-- [ ] Commenti `<!-- EN: -->` copiati identici
-- [ ] XML ben formato, nessun tag mancante
-- [ ] Variabili posizionali `{0}`, `{1}` con lo stesso indice dell'inglese
+- [ ] Only text outside `[ ]` and `{ }` translated
+- [ ] Every gender ternary has **a single `?`** and **2 or 3 branches** (`: b` or `: b : c`); the 3rd is the neuter form, not an error
+- [ ] rulesStrings: `->` present in every `<li>`, left side unchanged, same number of `<li>`
+- [ ] `\n\n` preserved identically
+- [ ] `<!-- EN: -->` comments copied verbatim
+- [ ] Well-formed XML, no missing tag
+- [ ] Positional variables `{0}`, `{1}` with the same index as the English
