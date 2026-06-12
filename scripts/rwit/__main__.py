@@ -20,6 +20,7 @@ import analyze as analyze_mod
 import link as link_mod
 import langcheck as langcheck_mod
 import ledger as ledger_mod
+import stringsdiff as stringsdiff_mod
 
 app = typer.Typer(
     add_completion=False,
@@ -75,6 +76,27 @@ def analyze(
     lines += [f"{e.deftype}: {e.defpath} | {e.text}" for e in gap.def_missing]
     out.write_text("\n".join(lines), encoding="utf-8")
     console.print(f"[green]Dettaglio completo:[/] {out}")
+
+
+@app.command("strings-diff", help="Confronta i file Strings (Words/Names) con l'inglese del gioco: mancanti/non tradotti/incompleti.")
+def strings_diff(
+    dlc: Optional[List[str]] = typer.Option(None, "--dlc"),
+    game_data: Optional[str] = typer.Option(None, "--game-data"),
+):
+    rows = stringsdiff_mod.diff(dlc or None, game_data)
+    from collections import Counter
+    by = Counter(r[2] for r in rows)
+    t = Table(title=f"Strings da sistemare (vs inglese del gioco) - {len(rows)}")
+    t.add_column("Stato"); t.add_column("Conteggio", justify="right", style="bold")
+    for s, n in by.most_common():
+        t.add_row(s, str(n))
+    console.print(t)
+    out = config.reports_dir() / f"stringsdiff_{datetime.now():%Y%m%d_%H%M}.txt"
+    lines = [f"# strings-diff vs inglese del gioco - {len(rows)} file\n"]
+    for dlc_, rel, st_, n_en, n_it in sorted(rows, key=lambda r: (r[0], r[2], r[1])):
+        lines.append(f"  [{st_:9}] {dlc_}/Strings/{rel}  (EN={n_en} IT={n_it})")
+    out.write_text("\n".join(lines), encoding="utf-8")
+    console.print(f"[green]Dettaglio:[/] {out}")
 
 
 @app.command("lang-check", help="Trova stringhe in lingua sbagliata (FR/ES/DE) - deterministico, offline.")
