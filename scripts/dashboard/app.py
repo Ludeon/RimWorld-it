@@ -249,12 +249,17 @@ def render_names():
     if nav_next.button(t("ng_next"), use_container_width=True):
         ss.ng_idx = (ss.ng_idx + 1) % len(keys)
     ss.ng_idx = max(0, min(ss.ng_idx, len(keys) - 1))
+    # salto numerico per pagina...
     page = nav_pos.number_input(f"{t('ng_jump')} (1–{len(keys)})",
                                 min_value=1, max_value=len(keys), value=ss.ng_idx + 1)
     if page - 1 != ss.ng_idx:
         ss.ng_idx = page - 1
+    # ...e combo per nome (entrambi sincronizzati con la posizione corrente)
+    sel = nav_name.selectbox(t("ng_pack"), range(len(keys)), index=ss.ng_idx,
+                             format_func=lambda i: keys[i])
+    if sel != ss.ng_idx:
+        ss.ng_idx = sel
     key = keys[ss.ng_idx]
-    nav_name.markdown(f"**{key}**")
 
     g1, g2 = st.columns([1, 5], vertical_alignment="center")
     if g1.button(t("ng_gen"), type="primary", use_container_width=True):
