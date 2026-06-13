@@ -16,18 +16,50 @@
     <li>r_name->[story] [RomanNumeral]</li>
   -->
   <NamerScenario.rulePack.rulesStrings>
-    <li>r_name->[story] [Trans] il [Weapon]</li>
-    <li>r_name->[story] [Trans] l'[Animal]</li>
-    <li>r_name->[story] [Trans] la [TerrainFeature]</li>
-    <li>r_name->[story] [Trans] i [PersonJob]s</li>
+    <!-- [story] + preposizione-articolo fusa e accordata + nome -->
+    <li>r_name->[story] [transM] [Weapon_Masculine]</li>
+    <li>r_name->[story] [transF] [Weapon_Feminine]</li>
+    <li>r_name->[story] [transM] [Animal_Masculine]</li>
+    <li>r_name->[story] [transF] [Animal_Feminine]</li>
+    <li>r_name->[story] [transM] [TerrainFeature_Masculine]</li>
+    <li>r_name->[story] [transF] [TerrainFeature_Feminine]</li>
+    <li>r_name->[story] [transVowel][TerrainFeature_Vowel]</li>
+    <li>r_name->[story] [transM] [Game_Masculine]</li>
+    <li>r_name->[story] [transF] [Game_Feminine]</li>
+    <li>r_name->[story] [transPluralM] [PersonJob_PluralMasculine]</li>
+    <li>r_name->[story] [transPluralF] [PersonJob_PluralFeminine]</li>
     <li>r_name->[story] [Trans] [ConceptAny]</li>
     <li>r_name->[ConceptAny] [story]</li>
     <li>r_name->[story] [Trans] una [Community]</li>
-    <li>r_name>una [AdjectiveAny] [story]</li>
-    <li>r_name->[story] [Trans] il [Game]</li>
     <li>r_name->[story] in [Color] e [Color]</li>
     <li>r_name->[Color] [story]</li>
     <li>r_name->[story] [RomanNumeral]</li>
+    <!-- preposizione + articolo fusi (genere/numero/elisione) -->
+    <li>transM->del</li>
+    <li>transM->dal</li>
+    <li>transM->nel</li>
+    <li>transM->sul</li>
+    <li>transM->per il</li>
+    <li>transF->della</li>
+    <li>transF->dalla</li>
+    <li>transF->nella</li>
+    <li>transF->sulla</li>
+    <li>transF->per la</li>
+    <li>transVowel->dell'</li>
+    <li>transVowel->dall'</li>
+    <li>transVowel->nell'</li>
+    <li>transVowel->sull'</li>
+    <li>transVowel->per l'</li>
+    <li>transPluralM->dei</li>
+    <li>transPluralM->dai</li>
+    <li>transPluralM->nei</li>
+    <li>transPluralM->sui</li>
+    <li>transPluralM->per i</li>
+    <li>transPluralF->delle</li>
+    <li>transPluralF->dalle</li>
+    <li>transPluralF->nelle</li>
+    <li>transPluralF->sulle</li>
+    <li>transPluralF->per le</li>
   </NamerScenario.rulePack.rulesStrings>
   
 </LanguageData>
