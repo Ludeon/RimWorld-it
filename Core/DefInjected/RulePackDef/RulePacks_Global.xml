@@ -119,6 +119,32 @@
     <li>PersonalCharacteristic->Words/Nouns/PersonalCharacteristics</li>
     <li>PersonalCharacteristic_Female->Words/Nouns/PersonalCharacteristics_Female</li>
     <li>PersonalCharacteristic_Male->Words/Nouns/PersonalCharacteristics_Male</li>
+    <!-- Concetti per genere (accordo aggettivo/articolo nei namer) -->
+    <li>ConceptPositive_Masculine->Words/Nouns/Concepts_Positive_Masculine</li>
+    <li>ConceptPositive_Feminine->Words/Nouns/Concepts_Positive_Feminine</li>
+    <li>ConceptBadass_Masculine->Words/Nouns/Concepts_Badass_Masculine</li>
+    <li>ConceptBadass_Feminine->Words/Nouns/Concepts_Badass_Feminine</li>
+    <li>ConceptAngsty_Masculine->Words/Nouns/Concepts_Angsty_Masculine</li>
+    <li>ConceptAngsty_Feminine->Words/Nouns/Concepts_Angsty_Feminine</li>
+    <!-- Aggettivi singolari per genere -->
+    <li>AdjectiveBadassMS->Words/Adjectives/Badass_Singular_Masculine</li>
+    <li>AdjectiveBadassFS->Words/Adjectives/Badass_Singular_Feminine</li>
+    <li>AdjectiveAngstyMS->Words/Adjectives/Angsty_Singular_Masculine</li>
+    <li>AdjectiveAngstyFS->Words/Adjectives/Angsty_Singular_Feminine</li>
+    <li>AdjectiveFriendlyMS->Words/Adjectives/Friendly_Singular_Masculine</li>
+    <li>AdjectiveFriendlyFS->Words/Adjectives/Friendly_Singular_Feminine</li>
+    <li>AdjectiveNaturalMS->Words/Adjectives/Natural_Singular_Masculine</li>
+    <li>AdjectiveNaturalFS->Words/Adjectives/Natural_Singular_Feminine</li>
+    <!-- Armi/giochi per genere -->
+    <li>Game_Masculine->Words/Nouns/Games_Masculine</li>
+    <li>Game_Feminine->Words/Nouns/Games_Feminine</li>
+    <li>Weapon_Masculine->Words/Nouns/Weapons_Masculine</li>
+    <li>Weapon_Feminine->Words/Nouns/Weapons_Feminine</li>
+    <!-- Caratteristiche del terreno per genere/iniziale -->
+    <li>TerrainFeature_Masculine->Words/Nouns/TerrainFeatures_Masculine</li>
+    <li>TerrainFeature_Feminine->Words/Nouns/TerrainFeatures_Feminine</li>
+    <li>TerrainFeature_Vowel->Words/Nouns/TerrainFeatures_Vowel</li>
+    <li>TerrainFeature_Lo->Words/Nouns/TerrainFeatures_Lo</li>
   </GlobalUtility.rulePack.rulesFiles>
   <!-- EN:
     <li>Trans->of</li>
@@ -210,6 +236,25 @@
     <li>ConceptAny->[ConceptPositive]</li>
     <li>ConceptAny->[ConceptBadass]</li>
     <li>ConceptAny->[ConceptAngsty]</li>
+    <!-- Unioni per genere (per l'accordo nei namer: aggettivo/articolo) -->
+    <li>ConceptAny_Masculine->[ConceptPositive_Masculine]</li>
+    <li>ConceptAny_Masculine->[ConceptBadass_Masculine]</li>
+    <li>ConceptAny_Masculine->[ConceptAngsty_Masculine]</li>
+    <li>ConceptAny_Feminine->[ConceptPositive_Feminine]</li>
+    <li>ConceptAny_Feminine->[ConceptBadass_Feminine]</li>
+    <li>ConceptAny_Feminine->[ConceptAngsty_Feminine]</li>
+    <li>AdjectiveAny_MS->[AdjectiveBadassMS]</li>
+    <li>AdjectiveAny_MS->[AdjectiveAngstyMS]</li>
+    <li>AdjectiveAny_MS->[AdjectiveFriendlyMS]</li>
+    <li>AdjectiveAny_MS->[AdjectiveNaturalMS]</li>
+    <li>AdjectiveAny_FS->[AdjectiveBadassFS]</li>
+    <li>AdjectiveAny_FS->[AdjectiveAngstyFS]</li>
+    <li>AdjectiveAny_FS->[AdjectiveFriendlyFS]</li>
+    <li>AdjectiveAny_FS->[AdjectiveNaturalFS]</li>
+    <li>ObjectAny_Masculine->[Game_Masculine]</li>
+    <li>ObjectAny_Masculine->[Weapon_Masculine]</li>
+    <li>ObjectAny_Feminine->[Game_Feminine]</li>
+    <li>ObjectAny_Feminine->[Weapon_Feminine]</li>
     <li>PersonalCharacteristic(p=0.15)->genitali</li>
     <li>PersonalCharacteristic(p=0.15)->peli pubici</li>
     <li>PersonalCharacteristic(p=0.15)->peli corporei</li>

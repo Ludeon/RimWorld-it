@@ -190,109 +190,145 @@
     <li>story->Whimsy</li>
   -->
   <Namer_Novel.rulePack.rulesStrings>
+    <!-- TITOLI: schemi monogenere (accordo garantito a livello di regola) -->
     <li>title(p=3)->[titleNaked]</li>
-    <li>title->[ANYPAWN_nameIndef] [titleNaked]</li>
-    <li>title->[Character] [story]</li>
-    <li>title->[Character] [objectAny]</li>
-    <li>title->[Character] [linkagePlace] [place]</li>
-    <li>title->Il [adjective] [Character]</li>
-    <li>title->Il [adjective] [objectAny]</li>
+    <li>title->[titleNaked] di [ANYPAWN_nameIndef]</li>
+    <li>title->[story] di [ANYPAWN_nameIndef]</li>
+    <li>title->[Character] [linkPlaceM] [placeM]</li>
+    <li>title->[Character] [linkPlaceF] [placeF]</li>
+    <li>title->[Character] [linkPlaceVowel][placeVowel]</li>
+    <li>title->[Character] [linkPlacePlural] [placePlural]</li>
+    <li>title->[Character] [linkPlaceLo] [placeLo]</li>
+    <li>title->[ConceptAny_Masculine] [AdjectiveAny_MS]</li>
+    <li>title->[ConceptAny_Feminine] [AdjectiveAny_FS]</li>
+    <li>title->[AdjectiveAny_MS] [ObjectAny_Masculine]</li>
+    <li>title->[AdjectiveAny_FS] [ObjectAny_Feminine]</li>
+    <!-- titleNaked -->
     <li>titleNaked->[ConceptAny]</li>
-    <li>titleNaked->[adjective] [ConceptAny]</li>
+    <li>titleNaked->[AdjectiveAny_MS] [ConceptAny_Masculine]</li>
+    <li>titleNaked->[AdjectiveAny_FS] [ConceptAny_Feminine]</li>
+    <li>titleNaked->[ConceptAny_Masculine] [AdjectiveAny_MS]</li>
+    <li>titleNaked->[ConceptAny_Feminine] [AdjectiveAny_FS]</li>
     <li>titleNaked->[ConceptAny] [linkage] [ConceptAny]</li>
-    <li>titleNaked->[ConceptAny] [linkagePlace] [place]</li>
+    <li>titleNaked->[ConceptAny] [linkPlaceM] [placeM]</li>
+    <li>titleNaked->[ConceptAny] [linkPlaceF] [placeF]</li>
+    <li>titleNaked->[ConceptAny] [linkPlaceVowel][placeVowel]</li>
+    <li>titleNaked->[ConceptAny] [linkPlacePlural] [placePlural]</li>
+    <li>titleNaked->[ConceptAny] [linkPlaceLo] [placeLo]</li>
     <li>titleNaked->[objectAny] [linkage] [ConceptAny]</li>
     <li>objectAny->[Game]</li>
     <li>objectAny->[Weapon]</li>
+    <!-- linkage prepositivo tra astratti (nessun articolo) -->
     <li>linkage->di</li>
     <li>linkage->da</li>
     <li>linkage->per</li>
     <li>linkage->senza</li>
     <li>linkage->con</li>
-    <li>linkagePlace->nel</li>
-    <li>linkagePlace->presso il</li>
-    <li>linkagePlace->sul</li>
-    <li>linkagePlace->Vicino a</li>
-    <li>adjective->[AdjectiveAny]</li>
-    <li>place(p=25)->[TerrainFeature]</li>
-    <li>place->Abisso</li>
-    <li>place->Anfiteatro</li>
-    <li>place->Acquario</li>
-    <li>place->Acquedotto</li>
-    <li>place->Arena</li>
-    <li>place->Manicomio</li>
-    <li>place->Caserma</li>
-    <li>place->Base</li>
-    <li>place->Bunker</li>
-    <li>place->Capanna</li>
-    <li>place->Campo</li>
-    <li>place->Castello</li>
-    <li>place->Cattedrale</li>
-    <li>place->Caverna</li>
-    <li>place->Cittadella</li>
-    <li>place->Città</li>
-    <li>place->Colosseo</li>
-    <li>place->Colonia</li>
-    <li>place->Profondità</li>
-    <li>place->Deserto</li>
-    <li>place->Ascensore</li>
-    <li>place->Fabbrica</li>
-    <li>place->Festival</li>
-    <li>place->Fortezza</li>
-    <li>place->Radura</li>
-    <li>place->Cimitero</li>
-    <li>place->Serra</li>
-    <li>place->Boschetto</li>
-    <li>place->Porto</li>
-    <li>place->Cuore</li>
-    <li>place->Alveare</li>
-    <li>place->Ospedale</li>
-    <li>place->Isola</li>
-    <li>place->Giungla</li>
-    <li>place->Campo di lavoro</li>
-    <li>place->Laboratorio</li>
-    <li>place->Labirinto</li>
-    <li>place->Piattaforma di lancio</li>
-    <li>place->Biblioteca</li>
-    <li>place->Faro</li>
-    <li>place->Maniero</li>
-    <li>place->Villa</li>
-    <li>place->Mercato</li>
-    <li>place->Miniera</li>
-    <li>place->Monastero</li>
-    <li>place->Montagna</li>
-    <li>place->Nexus</li>
-    <li>place->Oasi</li>
-    <li>place->Osservatorio</li>
-    <li>place->Frutteto</li>
-    <li>place->Avamposto</li>
-    <li>place->Palazzo</li>
-    <li>place->Altopiano</li>
-    <li>place->Prigione</li>
-    <li>place->Raffineria</li>
-    <li>place->Resort</li>
-    <li>place->Fenditura</li>
-    <li>place->Rovine</li>
-    <li>place->Santuario</li>
-    <li>place->Scuola</li>
-    <li>place->Insediamento</li>
-    <li>place->Nave</li>
-    <li>place->Anima</li>
-    <li>place->Stazione Spaziale</li>
-    <li>place->Porto Spaziale</li>
-    <li>place->Guglia</li>
-    <li>place->Palude</li>
-    <li>place->Taverna</li>
-    <li>place->Tempio</li>
-    <li>place->Cittadina</li>
-    <li>place->Tundra</li>
-    <li>place->Università</li>
-    <li>place->Villaggio</li>
-    <li>place->Vulcano</li>
-    <li>place->Magazzino</li>
-    <li>place->Desolazione</li>
-    <li>place->Wilderness</li>
-    <li>place->Zoo</li>
+    <!-- preposizioni articolate per classe d'articolo del luogo -->
+    <li>linkPlaceM->nel</li>
+    <li>linkPlaceM->sul</li>
+    <li>linkPlaceM->presso il</li>
+    <li>linkPlaceM->vicino al</li>
+    <li>linkPlaceF->nella</li>
+    <li>linkPlaceF->sulla</li>
+    <li>linkPlaceF->presso la</li>
+    <li>linkPlaceF->vicino alla</li>
+    <li>linkPlaceVowel->nell'</li>
+    <li>linkPlaceVowel->sull'</li>
+    <li>linkPlaceVowel->presso l'</li>
+    <li>linkPlaceVowel->vicino all'</li>
+    <li>linkPlacePlural->nelle</li>
+    <li>linkPlacePlural->sulle</li>
+    <li>linkPlacePlural->presso le</li>
+    <li>linkPlacePlural->vicino alle</li>
+    <li>linkPlaceLo->nello</li>
+    <li>linkPlaceLo->sullo</li>
+    <li>linkPlaceLo->presso lo</li>
+    <li>linkPlaceLo->vicino allo</li>
+    <!-- luoghi per classe: terrain (pesato) + lista locale -->
+    <li>placeM(p=18)->[TerrainFeature_Masculine]</li>
+    <li>placeM->Manicomio</li>
+    <li>placeM->Bunker</li>
+    <li>placeM->Campo</li>
+    <li>placeM->Castello</li>
+    <li>placeM->Colosseo</li>
+    <li>placeM->Deserto</li>
+    <li>placeM->Festival</li>
+    <li>placeM->Cimitero</li>
+    <li>placeM->Boschetto</li>
+    <li>placeM->Porto</li>
+    <li>placeM->Cuore</li>
+    <li>placeM->Campo di lavoro</li>
+    <li>placeM->Laboratorio</li>
+    <li>placeM->Labirinto</li>
+    <li>placeM->Faro</li>
+    <li>placeM->Maniero</li>
+    <li>placeM->Mercato</li>
+    <li>placeM->Monastero</li>
+    <li>placeM->Nexus</li>
+    <li>placeM->Frutteto</li>
+    <li>placeM->Palazzo</li>
+    <li>placeM->Resort</li>
+    <li>placeM->Santuario</li>
+    <li>placeM->Porto Spaziale</li>
+    <li>placeM->Tempio</li>
+    <li>placeM->Villaggio</li>
+    <li>placeM->Vulcano</li>
+    <li>placeM->Magazzino</li>
+    <li>placeF(p=18)->[TerrainFeature_Feminine]</li>
+    <li>placeF->Caserma</li>
+    <li>placeF->Base</li>
+    <li>placeF->Capanna</li>
+    <li>placeF->Cattedrale</li>
+    <li>placeF->Caverna</li>
+    <li>placeF->Cittadella</li>
+    <li>placeF->Città</li>
+    <li>placeF->Colonia</li>
+    <li>placeF->Fabbrica</li>
+    <li>placeF->Fortezza</li>
+    <li>placeF->Radura</li>
+    <li>placeF->Serra</li>
+    <li>placeF->Giungla</li>
+    <li>placeF->Piattaforma di lancio</li>
+    <li>placeF->Biblioteca</li>
+    <li>placeF->Villa</li>
+    <li>placeF->Miniera</li>
+    <li>placeF->Montagna</li>
+    <li>placeF->Prigione</li>
+    <li>placeF->Raffineria</li>
+    <li>placeF->Fenditura</li>
+    <li>placeF->Scuola</li>
+    <li>placeF->Nave</li>
+    <li>placeF->Stazione Spaziale</li>
+    <li>placeF->Guglia</li>
+    <li>placeF->Palude</li>
+    <li>placeF->Taverna</li>
+    <li>placeF->Cittadina</li>
+    <li>placeF->Tundra</li>
+    <li>placeF->Desolazione</li>
+    <li>placeF->Landa</li>
+    <li>placeVowel(p=5)->[TerrainFeature_Vowel]</li>
+    <li>placeVowel->Abisso</li>
+    <li>placeVowel->Anfiteatro</li>
+    <li>placeVowel->Acquario</li>
+    <li>placeVowel->Acquedotto</li>
+    <li>placeVowel->Arena</li>
+    <li>placeVowel->Ascensore</li>
+    <li>placeVowel->Alveare</li>
+    <li>placeVowel->Ospedale</li>
+    <li>placeVowel->Isola</li>
+    <li>placeVowel->Oasi</li>
+    <li>placeVowel->Osservatorio</li>
+    <li>placeVowel->Avamposto</li>
+    <li>placeVowel->Altopiano</li>
+    <li>placeVowel->Insediamento</li>
+    <li>placeVowel->Anima</li>
+    <li>placeVowel->Università</li>
+    <li>placePlural->Rovine</li>
+    <li>placePlural->Profondità</li>
+    <li>placeLo(p=2)->[TerrainFeature_Lo]</li>
+    <li>placeLo->Zoo</li>
+    <!-- racconti -->
     <li>story->Avventura</li>
     <li>story->Avventure</li>
     <li>story->Allegoria</li>
