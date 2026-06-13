@@ -17,12 +17,9 @@
     <li>terrain_word(p=0.3)->tract</li>
   -->
   <NamerGlacialPlain.rulePack.rulesStrings>
-    <li>r_name(p=0.2)->[narrative_name] [glacialPlain_adjective]</li>
+    <li>r_name(p=0.1)->[narrative_name_M] [glacialPlain_adjective_M]</li>
+    <li>r_name(p=0.1)->[narrative_name_F] [glacialPlain_adjective_F]</li>
     <li>glacialPlain_adjective(p=2)->glaciale</li>
-    <li>glacialPlain_adjective->frigida</li>
-    <li>glacialPlain_adjective->ghiacciata</li>
-    <li>glacialPlain_adjective->maestosa</li>
-    <li>glacialPlain_adjective->gelata</li>
     <li>terrain_word->ghiacciaio</li>
     <li>terrain_word(p=0.5)->campo di ghiaccio</li>
     <li>terrain_word(p=0.5)->calotta glaciale</li>
@@ -30,6 +27,14 @@
     <li>terrain_word(p=0.3)->pianura glaciale</li>
     <li>terrain_word(p=0.3)->troncone di ghiacciaio</li>
     <li>terrain_word(p=0.3)->porzione di ghiacciaio</li>
+    <li>glacialPlain_adjective_M->frigido</li>
+    <li>glacialPlain_adjective_M->ghiacciato</li>
+    <li>glacialPlain_adjective_M->maestoso</li>
+    <li>glacialPlain_adjective_M->gelato</li>
+    <li>glacialPlain_adjective_F->frigida</li>
+    <li>glacialPlain_adjective_F->ghiacciata</li>
+    <li>glacialPlain_adjective_F->maestosa</li>
+    <li>glacialPlain_adjective_F->gelata</li>
   </NamerGlacialPlain.rulePack.rulesStrings>
   
   <!-- EN:
@@ -46,17 +51,22 @@
     <li>terrain_word->dark forest</li>
   -->
   <NamerGlowforest.rulePack.rulesStrings>
-    <li>r_name(p=0.3)->[narrative_name] [glowForest_adjective]</li>
+    <li>r_name(p=0.15)->[narrative_name_M] [glowForest_adjective_M]</li>
+    <li>r_name(p=0.15)->[narrative_name_F] [glowForest_adjective_F]</li>
     <li>glowForest_adjective(p=2)->fungina</li>
-    <li>glowForest_adjective->in fiore</li>
-    <li>glowForest_adjective->oscura</li>
-    <li>glowForest_adjective->invasa</li>
-    <li>glowForest_adjective->nodosa</li>
     <li>terrain_word(p=3)->foresta luminescente</li>
     <li>terrain_word->letto di micelio</li>
     <li>terrain_word->foresta fungina</li>
     <li>terrain_word->terre oscure</li>
     <li>terrain_word->foresta oscura</li>
+    <li>glowForest_adjective_M->in fiore</li>
+    <li>glowForest_adjective_M->oscuro</li>
+    <li>glowForest_adjective_M->invaso</li>
+    <li>glowForest_adjective_M->nodoso</li>
+    <li>glowForest_adjective_F->in fiore</li>
+    <li>glowForest_adjective_F->oscura</li>
+    <li>glowForest_adjective_F->invasa</li>
+    <li>glowForest_adjective_F->nodosa</li>
   </NamerGlowforest.rulePack.rulesStrings>
   
   <!-- EN:
@@ -74,18 +84,23 @@
     <li>terrain_word->flats</li>
   -->
   <NamerGrasslands.rulePack.rulesStrings>
-    <li>r_name(p=0.3)->[narrative_name] [grasslands_adjective]</li>
+    <li>r_name(p=0.15)->[narrative_name_M] [grasslands_adjective_M]</li>
+    <li>r_name(p=0.15)->[narrative_name_F] [grasslands_adjective_F]</li>
     <li>grasslands_adjective(p=2)->piatta</li>
-    <li>grasslands_adjective->secca</li>
-    <li>grasslands_adjective->sferzata dal vento</li>
-    <li>grasslands_adjective->ondulata</li>
-    <li>grasslands_adjective->infinita</li>
     <li>terrain_word(p=2)->praterie</li>
     <li>terrain_word(p=2)->prateria</li>
     <li>terrain_word(p=2)->pianure</li>
     <li>terrain_word->savana</li>
     <li>terrain_word->steppa</li>
     <li>terrain_word->distese</li>
+    <li>grasslands_adjective_M->secco</li>
+    <li>grasslands_adjective_M->sferzato dal vento</li>
+    <li>grasslands_adjective_M->ondulato</li>
+    <li>grasslands_adjective_M->infinito</li>
+    <li>grasslands_adjective_F->secca</li>
+    <li>grasslands_adjective_F->sferzata dal vento</li>
+    <li>grasslands_adjective_F->ondulata</li>
+    <li>grasslands_adjective_F->infinita</li>
   </NamerGrasslands.rulePack.rulesStrings>
   
   <!-- EN:
@@ -105,12 +120,9 @@
     <li>terrain_word->range</li>
   -->
   <NamerLavaField.rulePack.rulesStrings>
-    <li>r_name(p=0.3)->[narrative_name] [lavaField_adjective]</li>
+    <li>r_name(p=0.15)->[narrative_name_M] [lavaField_adjective_M]</li>
+    <li>r_name(p=0.15)->[narrative_name_F] [lavaField_adjective_F]</li>
     <li>lavaField_adjective(p=2)->vulcanico</li>
-    <li>lavaField_adjective->fiammeggiante</li>
-    <li>lavaField_adjective->infernale</li>
-    <li>lavaField_adjective->bollente</li>
-    <li>lavaField_adjective->ardente</li>
     <li>terrain_word(p=3)->campi di lava</li>
     <li>terrain_word->faglia</li>
     <li>terrain_word->altura</li>
@@ -119,6 +131,14 @@
     <li>terrain_word->fornace</li>
     <li>terrain_word->inferno</li>
     <li>terrain_word->catena</li>
+    <li>lavaField_adjective_M->fiammeggiante</li>
+    <li>lavaField_adjective_M->infernale</li>
+    <li>lavaField_adjective_M->bollente</li>
+    <li>lavaField_adjective_M->ardente</li>
+    <li>lavaField_adjective_F->fiammeggiante</li>
+    <li>lavaField_adjective_F->infernale</li>
+    <li>lavaField_adjective_F->bollente</li>
+    <li>lavaField_adjective_F->ardente</li>
   </NamerLavaField.rulePack.rulesStrings>
   
   <!-- EN:
@@ -142,14 +162,10 @@
     <li>terrain_word->bastion</li>
   -->
   <NamerScarlands.rulePack.rulesStrings>
-    <li>r_name(p=0.2)->[narrative_name] [ruin_adjective]</li>
+    <li>r_name(p=0.1)->[narrative_name_M] [ruin_adjective_M]</li>
+    <li>r_name(p=0.1)->[narrative_name_F] [ruin_adjective_F]</li>
     <li>r_name(p=0.2)->le [narrative_name] [terrain_word]</li>
     <li>ruin_adjective(p=2)->in rovina</li>
-    <li>ruin_adjective->antico</li>
-    <li>ruin_adjective->vecchio</li>
-    <li>ruin_adjective->frantumato</li>
-    <li>ruin_adjective->devastato</li>
-    <li>ruin_adjective->cinerino</li>
     <li>terrain_word(p=6)->rovine</li>
     <li>terrain_word(p=3)->terre cicatrizzate</li>
     <li>terrain_word->megastruttura</li>
@@ -160,6 +176,16 @@
     <li>terrain_word->terre tossiche</li>
     <li>terrain_word->terre</li>
     <li>terrain_word->bastione</li>
+    <li>ruin_adjective_M->antico</li>
+    <li>ruin_adjective_M->vecchio</li>
+    <li>ruin_adjective_M->frantumato</li>
+    <li>ruin_adjective_M->devastato</li>
+    <li>ruin_adjective_M->cinerino</li>
+    <li>ruin_adjective_F->antica</li>
+    <li>ruin_adjective_F->vecchia</li>
+    <li>ruin_adjective_F->frantumata</li>
+    <li>ruin_adjective_F->devastata</li>
+    <li>ruin_adjective_F->cinerina</li>
   </NamerScarlands.rulePack.rulesStrings>
   
 </LanguageData>

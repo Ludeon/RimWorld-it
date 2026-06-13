@@ -108,21 +108,36 @@
     <li>terrain_word->barrens</li>
   -->
   <NamerDesert.rulePack.rulesStrings>
-    <li>r_name(p=0.4)->[narrative_name] [desert_adjective]</li>
-    <li>desert_adjective->piatto</li>
-    <li>desert_adjective->bianco</li>
-    <li>desert_adjective->infinito</li>
-    <li>desert_adjective->spietato</li>
-    <li>desert_adjective->arido</li>
-    <li>desert_adjective->secco</li>
-    <li>desert_adjective->lungo</li>
-    <li>desert_adjective->bruciato dal sole</li>
-    <li>desert_adjective->soleggiato</li>
-    <li>desert_adjective->abbagliante</li>
-    <li>desert_adjective->caldo</li>
-    <li>desert_adjective->sudato</li>
-    <li>desert_adjective->sabbioso</li>
-    <li>desert_adjective->roccioso</li>
+    <li>r_name(p=0.2)->[narrative_name_M] [desert_adjective_M]</li>
+    <li>r_name(p=0.2)->[narrative_name_F] [desert_adjective_F]</li>
+    <li>desert_adjective_M->piatto</li>
+    <li>desert_adjective_M->bianco</li>
+    <li>desert_adjective_M->infinito</li>
+    <li>desert_adjective_M->spietato</li>
+    <li>desert_adjective_M->arido</li>
+    <li>desert_adjective_M->secco</li>
+    <li>desert_adjective_M->lungo</li>
+    <li>desert_adjective_M->bruciato dal sole</li>
+    <li>desert_adjective_M->soleggiato</li>
+    <li>desert_adjective_M->abbagliante</li>
+    <li>desert_adjective_M->caldo</li>
+    <li>desert_adjective_M->sudato</li>
+    <li>desert_adjective_M->sabbioso</li>
+    <li>desert_adjective_M->roccioso</li>
+    <li>desert_adjective_F->piatta</li>
+    <li>desert_adjective_F->bianca</li>
+    <li>desert_adjective_F->infinita</li>
+    <li>desert_adjective_F->spietata</li>
+    <li>desert_adjective_F->arida</li>
+    <li>desert_adjective_F->secca</li>
+    <li>desert_adjective_F->lunga</li>
+    <li>desert_adjective_F->bruciata dal sole</li>
+    <li>desert_adjective_F->soleggiata</li>
+    <li>desert_adjective_F->abbagliante</li>
+    <li>desert_adjective_F->calda</li>
+    <li>desert_adjective_F->sudata</li>
+    <li>desert_adjective_F->sabbiosa</li>
+    <li>desert_adjective_F->rocciosa</li>
     <li>terrain_word(p=6)->deserto</li>
     <li>terrain_word->altopiano</li>
     <li>terrain_word->distese</li>
@@ -243,23 +258,37 @@
     <li>terrain_word->expanse</li>
   -->
   <NamerOcean.rulePack.rulesStrings>
-    <li>r_name(p=0.4)->[ocean_adjective] [narrative_name]</li>
-    <li>ocean_adjective->blu</li>
-    <li>ocean_adjective->bianco</li>
-    <li>ocean_adjective->grigio</li>
-    <li>ocean_adjective->limpido</li>
-    <li>ocean_adjective->ventoso</li>
-    <li>ocean_adjective->tempestoso</li>
-    <li>ocean_adjective->calmo</li>
-    <li>ocean_adjective->vasto</li>
-    <li>ocean_adjective->infinito</li>
-    <li>ocean_adjective->piatto</li>
-    <li>ocean_adjective->immobile</li>
-    <li>ocean_adjective->ondoso</li>
-    <li>ocean_adjective->mite</li>
+    <li>r_name(p=0.2)->[ocean_adjective_M] [narrative_name_M]</li>
+    <li>r_name(p=0.2)->[ocean_adjective_F] [narrative_name_F]</li>
     <li>terrain_word(p=6)->oceano</li>
     <li>terrain_word(p=3)->mare</li>
     <li>terrain_word->distesa</li>
+    <li>ocean_adjective_M->blu</li>
+    <li>ocean_adjective_M->bianco</li>
+    <li>ocean_adjective_M->grigio</li>
+    <li>ocean_adjective_M->limpido</li>
+    <li>ocean_adjective_M->ventoso</li>
+    <li>ocean_adjective_M->tempestoso</li>
+    <li>ocean_adjective_M->calmo</li>
+    <li>ocean_adjective_M->vasto</li>
+    <li>ocean_adjective_M->infinito</li>
+    <li>ocean_adjective_M->piatto</li>
+    <li>ocean_adjective_M->immobile</li>
+    <li>ocean_adjective_M->ondoso</li>
+    <li>ocean_adjective_M->mite</li>
+    <li>ocean_adjective_F->blu</li>
+    <li>ocean_adjective_F->bianca</li>
+    <li>ocean_adjective_F->grigia</li>
+    <li>ocean_adjective_F->limpida</li>
+    <li>ocean_adjective_F->ventosa</li>
+    <li>ocean_adjective_F->tempestosa</li>
+    <li>ocean_adjective_F->calma</li>
+    <li>ocean_adjective_F->vasta</li>
+    <li>ocean_adjective_F->infinita</li>
+    <li>ocean_adjective_F->piatta</li>
+    <li>ocean_adjective_F->immobile</li>
+    <li>ocean_adjective_F->ondosa</li>
+    <li>ocean_adjective_F->mite</li>
   </NamerOcean.rulePack.rulesStrings>
   
   <!-- EN:
@@ -314,16 +343,8 @@
   -->
   <NamerSwamp.rulePack.rulesStrings>
     <li>r_name(p=0.1)->palude [narrative_name]</li>
-    <li>r_name(p=0.3)->[swamp_adjective] [narrative_name]</li>
-    <li>swamp_adjective->umida</li>
-    <li>swamp_adjective->vaporosa</li>
-    <li>swamp_adjective->soffocante</li>
-    <li>swamp_adjective->marcia</li>
-    <li>swamp_adjective->in decomposizione</li>
-    <li>swamp_adjective->invasa</li>
-    <li>swamp_adjective->ingarbugliata</li>
-    <li>swamp_adjective->piena di rampicanti</li>
-    <li>swamp_adjective->spinosa</li>
+    <li>r_name(p=0.15)->[swamp_adjective_M] [narrative_name_M]</li>
+    <li>r_name(p=0.15)->[swamp_adjective_F] [narrative_name_F]</li>
     <li>terrain_word(p=6)->palude</li>
     <li>terrain_word->bacino</li>
     <li>terrain_word->zone umide</li>
@@ -331,6 +352,24 @@
     <li>terrain_word->torbiera</li>
     <li>terrain_word->palude erbosa</li>
     <li>terrain_word->palude bassa</li>
+    <li>swamp_adjective_M->umido</li>
+    <li>swamp_adjective_M->vaporoso</li>
+    <li>swamp_adjective_M->soffocante</li>
+    <li>swamp_adjective_M->marcio</li>
+    <li>swamp_adjective_M->in decomposizione</li>
+    <li>swamp_adjective_M->invaso</li>
+    <li>swamp_adjective_M->ingarbugliato</li>
+    <li>swamp_adjective_M->pieno di rampicanti</li>
+    <li>swamp_adjective_M->spinoso</li>
+    <li>swamp_adjective_F->umida</li>
+    <li>swamp_adjective_F->vaporosa</li>
+    <li>swamp_adjective_F->soffocante</li>
+    <li>swamp_adjective_F->marcia</li>
+    <li>swamp_adjective_F->in decomposizione</li>
+    <li>swamp_adjective_F->invasa</li>
+    <li>swamp_adjective_F->ingarbugliata</li>
+    <li>swamp_adjective_F->piena di rampicanti</li>
+    <li>swamp_adjective_F->spinosa</li>
   </NamerSwamp.rulePack.rulesStrings>
   
   <!-- EN:
@@ -350,20 +389,28 @@
     <li>terrain_word->tangle</li>
   -->
   <NamerTropicalRainforest.rulePack.rulesStrings>
-    <li>r_name(p=0.3)->[rainforest_adjective] [narrative_name]</li>
-    <li>rainforest_adjective->umida</li>
-    <li>rainforest_adjective->vaporosa</li>
-    <li>rainforest_adjective->soffocante</li>
-    <li>rainforest_adjective->invasa</li>
-    <li>rainforest_adjective->ingarbugliata</li>
-    <li>rainforest_adjective->piena di rampicanti</li>
-    <li>rainforest_adjective->spinosa</li>
+    <li>r_name(p=0.15)->[rainforest_adjective_M] [narrative_name_M]</li>
+    <li>r_name(p=0.15)->[rainforest_adjective_F] [narrative_name_F]</li>
     <li>terrain_word(p=6)->foresta pluviale</li>
     <li>terrain_word(p=3)->giungla</li>
     <li>terrain_word->foresta</li>
     <li>terrain_word->boschetto</li>
     <li>terrain_word->boscaglia</li>
     <li>terrain_word->groviglio</li>
+    <li>rainforest_adjective_M->umido</li>
+    <li>rainforest_adjective_M->vaporoso</li>
+    <li>rainforest_adjective_M->soffocante</li>
+    <li>rainforest_adjective_M->invaso</li>
+    <li>rainforest_adjective_M->ingarbugliato</li>
+    <li>rainforest_adjective_M->pieno di rampicanti</li>
+    <li>rainforest_adjective_M->spinoso</li>
+    <li>rainforest_adjective_F->umida</li>
+    <li>rainforest_adjective_F->vaporosa</li>
+    <li>rainforest_adjective_F->soffocante</li>
+    <li>rainforest_adjective_F->invasa</li>
+    <li>rainforest_adjective_F->ingarbugliata</li>
+    <li>rainforest_adjective_F->piena di rampicanti</li>
+    <li>rainforest_adjective_F->spinosa</li>
   </NamerTropicalRainforest.rulePack.rulesStrings>
   
   <!-- EN:
@@ -458,7 +505,10 @@
   -->
   <WorldFeatureNamerCommon.rulePack.rulesStrings>
     <li>r_name->[narrative_name] [terrain_word]</li>
+    <li>r_name->[narrative_name_M] [terrain_word]</li>
+    <li>r_name->[narrative_name_F] [terrain_word]</li>
     <li>r_name(p=0.05)->[storyname] [terrain_word]</li>
+    <!-- gender-neutral: proprio/composto/apposizione, nessun aggettivo da accordare -->
     <li>narrative_name(p=12)->[WordTribal]</li>
     <li>narrative_name(p=12)->[PlaceOutlander]</li>
     <li>narrative_name->[Color][NaturalObject]</li>
@@ -468,9 +518,14 @@
     <li>narrative_name->[Color][Animal]</li>
     <li>narrative_name->[AdjectiveNatural][Animal]</li>
     <li>narrative_name->[Animal][BodyPart]</li>
-    <li>narrative_name->[Color] [Animal]</li>
-    <li>narrative_name->[AdjectiveNatural] [Animal]</li>
     <li>narrative_name->[Animal] [BodyPart]</li>
+    <!-- gendered: terminano in nome di genere noto, per gli aggettivi che si accordano -->
+    <li>narrative_name_M->[Animal_Masculine]</li>
+    <li>narrative_name_M->[Color_Masculine] [Animal_Masculine]</li>
+    <li>narrative_name_M->[AdjectiveNaturalMS] [Animal_Masculine]</li>
+    <li>narrative_name_F->[Animal_Feminine]</li>
+    <li>narrative_name_F->[Color_Feminine] [Animal_Feminine]</li>
+    <li>narrative_name_F->[AdjectiveNaturalFS] [Animal_Feminine]</li>
     <li>storyname(p=50)->[subject] [story_result]</li>
     <li>storyname(p=2)->[subject] [BodyPart]</li>
     <li>storyname->[subject] [Gore]</li>
