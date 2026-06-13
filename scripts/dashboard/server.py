@@ -327,8 +327,18 @@ def namegen_view():
                 f'<button class=btn style="padding:2px 8px" '
                 f'onclick=\'copyTxt("{_js(relfile)}",this)\'>📋</button></p>')
 
+    # blocco debug: un solo copia con pack (dove sei) + file + nomi<-template,
+    # pronto da incollare in console.
+    dbg = [f"# {sel}", f"# {relfile}", ""]
+    for name, tmpl in uniq:
+        c = cnt[(name, tmpl)]
+        dbg.append(f"{name}\t<- {tmpl}" + (f"  x{c}" if c > 1 else ""))
+    copy_dbg = (f'<p><button class=btn onclick="copyTxt(document.getElementById(\'dbg\')'
+                f'.textContent,this)">📋 {"copia per debug (pack + nomi + tag)" if lang()=="it" else "copy for debug (pack + names + tags)"}</button></p>'
+                f'<pre id=dbg hidden>{_h(chr(10).join(dbg))}</pre>')
+
     body = (f'<p class=muted>{t("ng_intro")}</p>{_ng_form(q_raw, sel, n, i, len(shown))}'
-            f'<h3>{_h(sel)}</h3>{fileline}{pager}{names_html}')
+            f'<h3>{_h(sel)}</h3>{fileline}{pager}{copy_dbg}{names_html}')
     return render(body, "names")
 
 
