@@ -38,7 +38,7 @@ python -m venv .venv
 ```
 
 This creates the `.venv/` virtualenv (gitignored) with the tooling dependencies
-(lxml, rich, typer, requests; plus lingua / streamlit for the QA tools).
+(lxml, rich, typer, requests; plus lingua / flask for the QA tools and dashboard).
 
 Check:
 ```powershell
@@ -58,8 +58,10 @@ CLI in `scripts/rwit/`. Core commands:
 | `rwit unlink` | Removes the symlinks from the game (does not touch real folders). |
 
 QA tools (offline, deterministic): `lang-check` (wrong language), `strings-diff` / `reconcile`
-(align lists to the game's English), `variants` (morphological variants via Morph-it!),
-`ledger` (+ Streamlit dashboard). See [`LOCAL-TOOLING.md`](LOCAL-TOOLING.md).
+(align lists to the game's English), `freshness` (Words lists vs the game + gender variants vs
+base), `variants` (morphological variants via Morph-it!; `variants noun-gender` splits a noun
+list by gender), `ledger` (+ the **Flask** review dashboard: `python scripts\dashboard\server.py`
+→ http://127.0.0.1:5000 — stateless, no cache). See [`LOCAL-TOOLING.md`](LOCAL-TOOLING.md).
 
 Override the game paths: the `--game-data` option or the `RIMWORLD_DATA` environment variable.
 

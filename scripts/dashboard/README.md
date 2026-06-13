@@ -3,8 +3,14 @@
 A small, multilingual (EN/IT/ES/FR/DE) web dashboard to **see the state of the
 translation at a glance** and find what still needs work.
 
-It is a *viewer*. The source of truth stays the XML files and the git-tracked
-ledger `translation-ledger.csv` (in this folder). The dashboard never edits anything.
+The source of truth stays the XML files and the git-tracked ledger
+`translation-ledger.csv` (in this folder). The dashboard reads it for the numbers and
+writes back only the **review status** (`validated`/`keep`) when you click a button.
+
+It is a **Flask** app (`server.py`), not Streamlit. **Stateless, no cache**: it re-reads
+the CSV + XML fresh on every request (and sends `Cache-Control: no-store`), so it can
+NEVER show stale data — that was the whole reason for replacing the old Streamlit `app.py`
+(its `@st.cache_data` kept showing old numbers). `app.py` is kept but deprecated.
 
 ## Quick start
 
@@ -15,11 +21,12 @@ From the repository root, with the project venv already set up
 # 1. one-time: build the ledger (scans the repo, ~1s)
 .venv\Scripts\python scripts\rwit ledger build
 
-# 2. launch the dashboard (opens in your browser)
-.venv\Scripts\streamlit run scripts\dashboard\app.py
+# 2. launch the dashboard, then open http://127.0.0.1:5000
+.venv\Scripts\python scripts\dashboard\server.py
 ```
 
-Pick the UI language from the sidebar (🌐). Default is English.
+Pick the UI language from the selector at the top (🌐, stored in a cookie). Default is English.
+Code changes auto-reload; data changes just need a page refresh (F5).
 
 ## What you see
 
@@ -29,12 +36,17 @@ Pick the UI language from the sidebar (🌐). Default is English.
 
 ### Tabs
 
-- **Progress** — completion %, per-DLC bars, filterable worklist (EN/IT).
-- **Name generator** — preview the names the game would generate from any
-  RulePack (factions, world/map, gravship) by simulating its grammar in Python.
-  Useful to spot bad vocabulary, wrong articles/gender, or leftover foreign
-  words **without launching the game**. Approximate: engine-provided symbols not
-  in the pack show as `<symbol>`.
+- **Progress / review** — completion %, per-DLC bars, and a per-file table filtered by
+  DLC/status. Click **✓ validate** / **keep** on a string or a whole file (writes the CSV;
+  sticky across rebuilds).
+- **Name generator** — preview the names the game would generate from any RulePack by
+  simulating its grammar in Python. Default filter "Namer"; paginator; copyable source file;
+  a **template column** showing which `[tag]` each part of a name comes from (so you don't
+  delete an important tag); a **copy-for-debug** button (pack + file + names+templates). It
+  resolves file-backed symbols from the base-game Defs (e.g. `celestial_name`) and runtime
+  `Digit/Letter/RomanNumeral`; only true runtime person names stay as `<symbol>`. For the
+  combat/social log, `namegen.generate(..., context={...})` simulates a pawn/body-part/tool to
+  verify gender agreement offline.
 
 ### String states
 
@@ -43,6 +55,7 @@ Pick the UI language from the sidebar (🌐). Default is English.
 | `untranslated` | empty, or identical to the English source |
 | `translated` | translated, not yet human-validated |
 | `validated` | reviewed and locked (baseline hashes recorded) |
+| `keep` | intentionally English (loanword/proper noun/format/symbol) — counts as done, sticky |
 | `stale` | the **English source changed upstream** after validation → re-translate |
 | `modified` | the **Italian changed** after validation → re-validate |
 
@@ -51,11 +64,12 @@ translations drift as the game (or a contributor) changes them.
 
 ## Is it live?
 
-The dashboard reads the ledger CSV on every interaction — **instant (~100 ms),
-no re-scan of the 34k strings.** It reflects the latest *committed* state.
+Yes. The dashboard re-reads the ledger CSV (and XML for the per-file/review views) **fresh on
+every request** — no cache, so it always reflects the current files on disk (not just the last
+commit). After editing translations just refresh the page (F5).
 
-To refresh the numbers after editing translations, click **🔄 Rebuild ledger**
-(re-scans the repo, ~1s) — or run `rwit ledger build` from the CLI.
+To refresh the **states/hashes** after content changes (so `stale`/`modified`/`keep` are
+recomputed), click **🔄 Rebuild ledger** (re-scans the repo, ~1s) — or run `rwit ledger build`.
 
 ## How it fits the workflow
 
@@ -84,5 +98,5 @@ German. See [`../../docs/LOCAL-TOOLING.md`](../../docs/LOCAL-TOOLING.md) §3a.
 
 ## Dependencies
 
-`streamlit` and `lingua-language-detector` (in
+`flask` and `lingua-language-detector` (in
 [`../requirements.txt`](../requirements.txt)). Everything runs locally and offline.

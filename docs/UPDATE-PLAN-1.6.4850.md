@@ -4,12 +4,22 @@
 > for release).
 > Session document. Status and decisions updated as we go.
 
-## 0. RESUME — start here (last update 2026-06-13)
+## 0. RESUME — start here (last update 2026-06-14)
 
 **Active branch**: `aggiornamento-1.6.4850` (never push to master). Clean working tree,
 everything committed (NOT pushed). To resume: `git checkout aggiornamento-1.6.4850`.
 
-### Done in the 2026-06-13 session (all committed)
+> **Reusable recipe** for a gender-aware namer (use this for any remaining one):
+> 1. Need gender-split noun lists? `rwit variants noun-gender <List>` → `<List>_Singular_
+>    Masculine/Feminine.txt` (Morph-it! + ending heuristic). Adjectives: `rwit variants adj`.
+> 2. Wire the `_Masculine/_Feminine` symbols in `RulePacks_Global` (or local `<rulesFiles>` in
+>    the pack, like NamerQuestDefault).
+> 3. Make each template branch internally one-gender: `[X_Masculine] [adjM]` / `[X_Feminine]
+>    [adjF]`; articulated prepositions per class (`nel/nella/nell'/nelle/nello`); explicit "di".
+> 4. **Verify** with `namegen.generate(packs, key, context={...})` — for the combat/social log
+>    pass a `context` with sample `_gender`/`_definite`/`_label` values (the simulator).
+
+### Done in the 2026-06-13/14 session (all committed)
 
 **Tooling / dashboard — major changes:**
 - **Dashboard rewritten in Flask** (`scripts/dashboard/server.py`, replaces the Streamlit
@@ -68,6 +78,11 @@ Done & verified in preview:
   `dei/delle`), and a malformed rule (`r_name>una`, missing `->`).
 - **NamerSettlementPirate/Tribal**: the `[Color] [TerrainFeature]` agreement (`Rosso borgata`→
   `Rossa borgata`); appositions kept.
+- **NamerQuestDefault**: `[questMasc] [adjCuriousMasc]` / `[questFem] [adjCuriousFem]` (noun→adj,
+  local `<rulesFiles>` in the pack; lists via `rwit variants noun-gender`).
+- **New tool `rwit variants noun-gender <List>`** — splits a noun list into `_Singular_
+  Masculine/Feminine` (formalises the ad-hoc split used in the bonifica); morphit gained an
+  Italian ending heuristic (`-a/-zione/-tà…`) as a fallback.
 
 ⚠️ **Lesson — the bonifica had wrongly split `Colors`/`Colors_Badass` as NOUNS** (all masc, fem
 empty → "Grigio valle"). They're ADJECTIVES (each colour needs both forms). Fixed + `rwit
@@ -102,8 +117,9 @@ was English-fallback for `[VerbFriendly]`) + adapted 4 Tales frames to gerund. L
      (`le braccia`) — accept the residual or pursue the upstream PR.
    - To verify: `namegen.generate(packs, "...· Combat_X", context={...})` with sample M and F
      part/tool; or add a small dashboard combat-preview later.
-3. Other namers if any remain (most are done: Namer_Novel, 9 biomes, Art ×2, Scenario,
-   Settlement Pirate/Tribal, factions from the prior session).
+3. Other namers if any remain (done: Namer_Novel, 9 biomes, Art ×2, Scenario, Settlement
+   Pirate/Tribal, QuestDefault, factions). Spot-check the People/Animal/Trader/World namers for
+   any residual `[adj] [noun]` agreement; most are appositions/proper names and already fine.
 4. **In Dev mode (needs the game)**: verify the generated namer output (book titles, world/biome
    names, art names) and the combat log "le braccia"/"la mano" + `count==1/2/3` branches.
 5. Optional cleanup: standardise the gender-variant file naming (`_Singular_Masculine` vs
@@ -234,7 +250,11 @@ See [`NAME-GENERATION-AND-GRAMMAR.md`](NAME-GENERATION-AND-GRAMMAR.md) §5. Meas
 | Wrong-language cleanup (Anomaly FR + Odyssey Namers) | ✅ |
 | Name/grammar workstream (tooling + Namers rewired + WordInfo) | ✅ |
 | LanguageWorker decision (data-driven) | ✅ |
-| Combat log (plural.txt + Gender) | ✅ data; ⬜ in-game verify |
+| Gender-aware namers (Novel, 9 biomes, Art×2, Scenario, Settlement, Quest, factions) | ✅ verified in preview |
+| Tooling: Flask dashboard, `rwit freshness`, `variants noun-gender`, namegen constraints+context | ✅ |
+| Data hygiene (gender variants regenerated, `_Neuter` cruft removed, Colors fixed) | ✅ |
+| Combat/social log gender-aware | 🔄 Combat_Deflect done+verified; rest to replicate |
+| Combat log in-game verification (Dev mode) | ⬜ needs the game |
 | Cleanup rename/unused keyed (→ `rwit clean`) | ⬜ tooling |
 | Broad translation review (iterative, per DLC) | 🔄 in progress |
 | Merge to master | ⬜ at release (never direct push) |

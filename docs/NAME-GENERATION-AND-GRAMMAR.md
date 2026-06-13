@@ -207,8 +207,9 @@ constraints in the combat rulesStrings:
 Italian rules have **fixed** articles/participles (`nella [recipient_part0_label]`, `colpito`)
 correct for one gender only → sentences like "X ha colpito Y nella braccio" or masculine
 participles for feminine subjects. Also, body parts were largely **missing from
-`WordInfo/Gender`** — now **added** (~60, incl. mano=F, pelle=F), so the automatic
-`[part_definite]` path can place the right article.
+`WordInfo/Gender`** — now **comprehensively populated** (≈2074 masculine / 1029 feminine entries,
+incl. body parts mano=F, pelle=F, items, kinds), so the automatic `[part_definite]` /
+`[TOOL_definite]` path places the right article.
 
 ### The engine's two tools to fix it
 1. **Gender constraint on the rule** (left side), as French does:
@@ -234,12 +235,34 @@ participles for feminine subjects. Also, body parts were largely **missing from
 The count branches (`recipient_part_count==1/2/3`) are already translated correctly (`e`, no
 Oxford comma). See [`RULEPACK-GRAMMAR.md`](RULEPACK-GRAMMAR.md) §4.
 
+### STATUS (2026-06-14) — started & now verifiable offline
+- **`Combat_Deflect` done** as the verified template: `(recipient_part0_gender==M/F)` → `nel/
+  nella [part]`; `[TOOL_definite]` for the weapon article; adjective split by `(TOOL_gender==M/F)`
+  (`la spada è sfiorata` / `il coltello è sfiorato`); dropped the wrong "a" (transitive verb).
+- **Verification unblocked**: `namegen` now parses `(X_gender==…)` constraints and takes a
+  `context=` dict that simulates the runtime symbols (`RECIPIENT_definite`, `recipient_part0_
+  label/_gender`, `TOOL_definite/_gender`…). So the combat/social log can be checked OFFLINE on a
+  sample male and female pawn/part/tool — before, those symbols only showed as `<...>`.
+  Still confirm in-game (Dev mode), but the preview now catches the agreement bugs.
+- **Remaining (same recipe)**: Combat_Dodge/Miss, CombatRanged (Deflect/Fire), Damage,
+  Interactions. The only thing the data path can't form is the plural article (`le braccia`) —
+  accept the residual, or pursue the upstream `.cs` PR.
+
+### The same gender recipe powers the NAMERS too (done)
+The namers (book titles, biomes, art, scenario, settlement, quest, factions) were made
+gender-aware with the data-driven version of the above: **gender-split Words lists**
+(`rwit variants noun-gender <List>` / `variants adj`), wired in `RulePacks_Global` (or local
+`<rulesFiles>`), with gender-consistent templates and articulated prepositions
+(`nel/nella/nell'/nelle/nello`). Those are verifiable directly in the dashboard's Name generator.
+
 ## 6. Review plan for this area
 
 - [ ] Keep `LanguageWorker_Italian.cs` (root) updated each game version; evaluate deploy (upstream
   PR or companion mod) only if data-driven proves insufficient.
-- [ ] **Generated log**: apply the §5 fix strategy (gender constraints + `[X_definite]`), starting
-  from a template pack (e.g. `Combat_Deflect`) verified in game.
+- [x] **Namers gender-aware** (Novel, biomes, Art, Scenario, Settlement, Quest, factions) via the
+  data-driven recipe — verified in the dashboard Name generator.
+- [~] **Generated log**: §5 fix strategy applied to `Combat_Deflect` (done + verified offline via
+  the namegen simulator); replicate to Combat_Dodge/Miss, Ranged, Damage, Interactions.
 - [ ] **WordInfo/Gender**: translate any remaining English, check doubtful (-e) genders, empty
   `new_words.txt` by reclassifying.
 - [ ] **Strings**: keep singular/plural × masculine/feminine consistent; align lists to the game's
