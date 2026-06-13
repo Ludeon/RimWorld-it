@@ -23,6 +23,29 @@ import config
 
 _SYM = re.compile(r"\[([^\]]+)\]")
 _WEIGHT = re.compile(r"^(\w+)\s*\((?:p=)?([0-9.]+)\)$")
+_LEFT = re.compile(r"^(\w+)\s*(?:\((.*)\))?$")
+
+
+def _parse_left(left: str):
+    """Lato sinistro 'sym(p=N,VINCOLI)' -> (nome, peso, [(chiave, valore)]).
+
+    Gestisce i pesi (p=N o N) e i vincoli di uguaglianza (X_gender==Male). I vincoli
+    non-uguaglianza (es. length_x[less_than]20) sono ignorati (sempre veri)."""
+    m = _LEFT.match(left.strip())
+    if not m:
+        return left.strip(), 1.0, []
+    name, args = m.group(1), m.group(2)
+    weight, cons = 1.0, []
+    if args:
+        for tok in args.split(","):
+            tok = tok.strip()
+            wm = re.match(r"^(?:p=)?([0-9.]+)$", tok)
+            if wm:
+                weight = float(wm.group(1))
+            elif "==" in tok:
+                k, v = tok.split("==", 1)
+                cons.append((k.strip(), v.strip()))
+    return name, weight, cons
 
 # Nessun campione hardcoded: lo strumento e AGNOSTICO alla lingua. I nomi escono
 # nella lingua del repo in cui gira. I simboli forniti dal motore/altri RulePack
@@ -120,12 +143,11 @@ def load_rulepacks(repo: Path | None = None, dlcs=None) -> dict[str, dict]:
                     if "->" not in txt:
                         continue
                     left, right = txt.split("->", 1)
-                    m = _WEIGHT.match(left.strip())
-                    sym, w = (m.group(1), float(m.group(2))) if m else (left.strip(), 1.0)
+                    sym, w, cons = _parse_left(left)
                     if el.tag.endswith("rulesFiles"):
                         p["files"][sym] = right.strip()
                     else:
-                        p["rules"][sym].append((w, right))
+                        p["rules"][sym].append((w, cons, right))
     return packs
 
 
@@ -167,8 +189,13 @@ def _global_tables(packs: dict):
 
 
 def generate(packs: dict, key: str, n: int = 15, repo: Path | None = None,
-             root: str | None = None, seed: int | None = None):
-    """Genera n nomi dal rulePack indicato. Ritorna (lista, simbolo_radice)."""
+             root: str | None = None, seed: int | None = None, context: dict | None = None):
+    """Genera n nomi dal rulePack indicato. Ritorna (lista, simbolo_radice).
+
+    `context` simula i simboli runtime (combat/social log): es.
+    {"RECIPIENT_gender":"Female", "recipient_part0_label":"mano",
+     "recipient_part0_definite":"la mano", ...}. Filtra le regole per i vincoli
+     (X_gender==Y) e risolve i simboli del contesto."""
     repo = repo or config.repo_root()
     pack = packs[key]
     rules, files = pack["rules"], pack["files"]
@@ -187,22 +214,36 @@ def generate(packs: dict, key: str, n: int = 15, repo: Path | None = None,
                 wcache[sym] = None
         return wcache[sym]
 
-    def _choose(opts, depth):
+    ctx = context or {}
+
+    def _ok(cons):
+        """Vincoli X==Y soddisfatti dal contesto (X non in contesto -> passa)."""
+        return all(ctx.get(k, v) == v for k, v in cons)
+
+    def _weighted(opts):
+        """Filtra per vincoli, sceglie pesato; ritorna l'espansione grezza (o None)."""
+        opts = [(w, exp) for w, cons, exp in opts if _ok(cons)]
+        if not opts:
+            return None
         total = sum(w for w, _ in opts)
         r = rng.uniform(0, total)
         acc = 0.0
-        chosen = opts[-1][1]
         for w, exp in opts:
             acc += w
             if r <= acc:
-                chosen = exp
-                break
-        return _SYM.sub(lambda m: expand(m.group(1), depth + 1), chosen)
+                return exp
+        return opts[-1][1]
+
+    def _choose(opts, depth):
+        exp = _weighted(opts)
+        return "" if exp is None else _SYM.sub(lambda m: expand(m.group(1), depth + 1), exp)
 
     def expand(sym: str, depth: int = 0) -> str:
         if depth > 30:
             return f"<{sym}>"
-        if sym in rules:                       # 1. pack selezionato
+        if sym in ctx:                           # 0. contesto simulato (runtime)
+            return ctx[sym]
+        if sym in rules:                         # 1. pack selezionato
             return _choose(rules[sym], depth)
         wl = words(sym)                          # 2. liste Words/ (rulesFiles)
         if wl:
@@ -217,22 +258,11 @@ def generate(packs: dict, key: str, n: int = 15, repo: Path | None = None,
             return rt
         return f"<{sym}>"                        # 6. runtime non risolvibile (pawn names)
 
-    def _pick(opts):
-        """Sceglie un'alternativa (pesata) e ritorna il template GREZZO (non espanso)."""
-        total = sum(w for w, _ in opts)
-        r = rng.uniform(0, total)
-        acc = 0.0
-        for w, exp in opts:
-            acc += w
-            if r <= acc:
-                return exp
-        return opts[-1][1]
-
     root = root or _pick_root(rules)
     root_opts = rules.get(root) or g_rules.get(root) or []
     out = []
     for _ in range(n):
-        tmpl = _pick(root_opts) if root_opts else root
+        tmpl = (_weighted(root_opts) or root) if root_opts else root
         s = _SYM.sub(lambda m: expand(m.group(1), 1), tmpl)
         s = re.sub(r"\s+", " ", s).strip()
         if s:
