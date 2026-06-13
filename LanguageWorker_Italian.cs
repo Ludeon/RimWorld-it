@@ -1,6 +1,30 @@
 // LanguageWorker_Italian — improved article and plural handling.
 // Updated: 2026-06-12
 //
+// ============================================================================
+// STRATEGY NOTE — this file is NOT shipped and NOT loaded by the translation.
+// ============================================================================
+// The Italian translation is a pure language pack (XML/TXT only). The game
+// resolves <languageWorkerClass>LanguageWorker_Italian</languageWorkerClass>
+// by name to the engine's BUILT-IN class, so this .cs is never compiled or run
+// by a data-only pack. We therefore drive grammar entirely through DATA + RULES,
+// the same way the German pack does (no custom worker at all):
+//   - WordInfo/plural.txt  -> noun plurals (lookup wins over the engine algorithm;
+//                             fixes "figlii"->"figli", "amica"->"amiche", and the
+//                             heteroclite forms such as braccio->braccia).
+//   - WordInfo/Gender/*    -> ResolveGender for engine-inserted articles.
+//   - rulesStrings         -> we write the correct article inline (e.g. "le braccia",
+//                             "gli animali"), instead of relying on the engine.
+// The engine pluralizes first and resolves gender on the already-pluralized string
+// (verified: WithDefiniteArticle(Pluralize(label), ResolveGender(Pluralize(label)),
+// plural:true)), so plural.txt + Gender already yield the right gender. The one
+// thing the stock worker cannot do is FORM the plural article (i/gli/le, dei/degli/
+// delle) — that is the only residual the data path leaves slightly imperfect for
+// text the engine auto-assembles. We accept that residual.
+//
+// This file is kept ONLY as a candidate for an upstream PR to Ludeon (to fix the
+// stock Italian worker for all users). It is not a prerequisite for the pack.
+//
 // Changes over the previous version:
 //   1. Definite article "lo" now also applies to words starting with gn, ps, pn,
 //      x, y, and i+vowel (lo gnomo, lo psicologo, lo pneumatico, lo xilofono,
