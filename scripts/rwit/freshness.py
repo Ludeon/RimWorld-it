@@ -98,6 +98,11 @@ def check(dlcs=None, game_override: str | None = None):
                 mc, fc = vc["Masculine"], vc["Feminine"]
                 total = sum(vc.values())
                 # nomi: somma di tutte le classi == base ; aggettivi/colori: M == base == F
-                if not (total == it_n or mc == it_n == fc):
+                ok = total == it_n or mc == it_n == fc
+                # un genere VUOTO mentre l'altro e pieno = quasi sempre un errore (es. una
+                # lista di aggettivi/colori splittata per sbaglio come nome): segnalalo
+                # anche se la somma tornasse (M=base, F=0 -> M+F=base ma e sbagliato).
+                one_empty = (mc == 0) != (fc == 0)
+                if not ok or one_empty:
                     var_issues.append((dlc, rel, it_n, mc, fc, total))
     return base_issues, var_issues, game is not None
