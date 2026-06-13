@@ -123,17 +123,22 @@
   -->
   <NamerArtWeapon.rulePack.rulesStrings>
     <li>r_art_name->[ConceptBadass]</li>
-    <li>r_art_name->Il [AnimalBadass]</li>
-    <li>r_art_name->[AdjectiveBadass] [AnimalBadass]</li>
-    <li>r_art_name->[ColorBadass] [AnimalBadass]</li>
-    <li>r_art_name->[ConceptBadass] [ColorBadass]</li>
+    <!-- articolo/aggettivo/colore accordati per genere col nome -->
+    <li>r_art_name->Il [AnimalBadass_Masculine]</li>
+    <li>r_art_name->La [AnimalBadass_Feminine]</li>
+    <li>r_art_name->[AdjectiveBadassMS] [AnimalBadass_Masculine]</li>
+    <li>r_art_name->[AdjectiveBadassFS] [AnimalBadass_Feminine]</li>
+    <li>r_art_name->[ColorBadass_Masculine] [AnimalBadass_Masculine]</li>
+    <li>r_art_name->[ColorBadass_Feminine] [AnimalBadass_Feminine]</li>
+    <li>r_art_name->[ConceptBadass_Masculine] [ColorBadass_Masculine]</li>
+    <li>r_art_name->[ConceptBadass_Feminine] [ColorBadass_Feminine]</li>
+    <!-- possessivi -->
     <li>r_art_name(p=3)->[ConceptBadass] di [ANYPAWN_nameIndef]</li>
     <li>r_art_name(p=3)->[AnimalBadass] di [ANYPAWN_nameIndef]</li>
     <li>r_art_name(p=3)->[PersonBadass] di [ANYPAWN_nameIndef]</li>
     <li>r_art_name(p=3)->[PersonAlly] di [ANYPAWN_nameIndef]</li>
     <li>r_art_name(p=3)->[PersonFamily] di [ANYPAWN_nameIndef]</li>
-    <li>r_art_name(p=3)->[ConceptBadass] di [ANYPAWN_nameIndef]</li>
-    <li>r_art_name(p=3)->[ColorBadass] [ANYPAWN_nameIndef]</li>
+    <li>r_art_name(p=3)->[ColorBadass] di [ANYPAWN_nameIndef]</li>
   </NamerArtWeapon.rulePack.rulesStrings>
   
 </LanguageData>
