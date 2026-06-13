@@ -267,6 +267,21 @@ def ledger_validate(
     console.print(f"[green]Validate {n} stringhe.[/]")
 
 
+@ledger_app.command("keep", help="Marca come 'keep' (da NON tradurre: prestiti, nomi propri, sigle) le voci attualmente 'untranslated'.")
+def ledger_keep(
+    dlc: Optional[List[str]] = typer.Option(None, "--dlc"),
+    yes: bool = typer.Option(False, "--yes", "-y", help="Conferma senza prompt"),
+):
+    target = ", ".join(dlc) if dlc else "TUTTE le DLC"
+    if not yes:
+        console.print(f"[yellow]Marchero 'keep' (da-non-tradurre) le voci 'untranslated' in: {target}.[/]")
+        console.print("Sono le stringhe IT == EN gia riviste (prestiti/nomi propri/format).")
+        console.print("Rilancia con --yes per confermare.")
+        raise typer.Exit(1)
+    n = ledger_mod.set_keep(dlc or None)
+    console.print(f"[green]Marcate 'keep' {n} stringhe (escluse dal worklist e contate come completate).[/]")
+
+
 @ledger_app.command("todo", help="Esporta la worklist (da tradurre/ritradurre) per LLM/tool esterno.")
 def ledger_todo(
     dlc: Optional[List[str]] = typer.Option(None, "--dlc"),

@@ -24,9 +24,9 @@ import namegen as namegen_mod  # noqa: E402
 
 STATE_COLORS = {
     "validated": "#3fb950", "translated": "#58a6ff", "modified": "#d29922",
-    "stale": "#db6d28", "untranslated": "#6e7681",
+    "keep": "#8b949e", "stale": "#db6d28", "untranslated": "#6e7681",
 }
-ORDER = ["validated", "translated", "modified", "stale", "untranslated"]
+ORDER = ["validated", "translated", "keep", "modified", "stale", "untranslated"]
 
 # --- i18n -------------------------------------------------------------------
 LANGS = {"en": "English", "it": "Italiano", "es": "Español", "fr": "Français", "de": "Deutsch"}
@@ -100,6 +100,8 @@ STATUS_NAMES = {
     "validated": {"en": "validated", "it": "validato", "es": "validado", "fr": "validé", "de": "validiert"},
     "translated": {"en": "translated", "it": "tradotto", "es": "traducido", "fr": "traduit", "de": "übersetzt"},
     "modified": {"en": "modified", "it": "modificato", "es": "modificado", "fr": "modifié", "de": "geändert"},
+    "keep": {"en": "do not translate", "it": "da non tradurre", "es": "no traducir",
+             "fr": "ne pas traduire", "de": "nicht übersetzen"},
     "stale": {"en": "stale", "it": "obsoleto", "es": "obsoleto", "fr": "obsolète", "de": "veraltet"},
     "untranslated": {"en": "untranslated", "it": "da tradurre", "es": "sin traducir",
                      "fr": "non traduit", "de": "unübersetzt"},
@@ -154,7 +156,8 @@ def render_progress():
         return
     total = len(rows)
     overall = Counter(r["status"] for r in rows)
-    done = overall.get("validated", 0) + overall.get("translated", 0) + overall.get("modified", 0)
+    done = (overall.get("validated", 0) + overall.get("translated", 0)
+            + overall.get("modified", 0) + overall.get("keep", 0))
     wrong = sum(1 for r in rows if r["lang_flag"])
 
     c1, c2, c3, c4 = st.columns(4)
@@ -181,7 +184,8 @@ def render_progress():
             continue
         c = per_dlc[dlc]
         tot = sum(c.values())
-        d = c.get("validated", 0) + c.get("translated", 0) + c.get("modified", 0)
+        d = (c.get("validated", 0) + c.get("translated", 0)
+             + c.get("modified", 0) + c.get("keep", 0))
         left, right = st.columns([1, 5])
         left.write(f"**{dlc}**  \n{d}/{tot}")
         right.progress(d / tot if tot else 0)

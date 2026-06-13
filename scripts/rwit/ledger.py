@@ -13,7 +13,8 @@ solo cio che git da solo non sa, cioe lo STATO e gli HASH di riferimento:
   - it_sha: hash dell'italiano al momento della validazione. Se l'italiano cambia
     dopo la validazione, la stringa diventa `modified` -> da rivalidare.
 
-Stati: untranslated | translated | validated | stale | modified.
+Stati: untranslated | translated | validated | keep | stale | modified.
+('keep' = volutamente non tradotto: prestiti, nomi propri, sigle, format-string.)
 
 Comandi:
   rwit ledger build      (ri)costruisce/fonde il CSV, preservando le validazioni
@@ -42,6 +43,28 @@ def _sha(text: str) -> str:
     return hashlib.sha1(text.encode("utf-8")).hexdigest()[:12] if text else ""
 
 
+_LI = re.compile(r"<li>(.*?)</li>", re.S)
+
+
+def _value_side(s: str) -> str:
+    """Lato destro di 'simbolo->valore' (la lingua vera); intero se non c'e '->'."""
+    s = s.strip()
+    return s.rsplit("->", 1)[1].strip() if "->" in s else s
+
+
+def _li_values_from_text(raw: str) -> str:
+    """Valori (lato destro) di ogni <li> in una stringa grezza (es. commento EN)."""
+    return "\n".join(_value_side(m) for m in _LI.findall(raw or "")).strip()
+
+
+def _li_values_from_children(el) -> str:
+    """Valori (lato destro) di ogni <li> discendente di un elemento.
+
+    Copre sia i rulesStrings (li figli diretti) sia gli slateRef, che annidano
+    i <li> sotto un <rulesStrings> interno (quindi li-nipoti)."""
+    return "\n".join(_value_side(c.text or "") for c in el.iter("li")).strip()
+
+
 def iter_strings(repo: Path, dlcs):
     """(dlc, relfile, tag, line, it_text, en_text) per Keyed e DefInjected."""
     for dlc in dlcs:
@@ -57,18 +80,30 @@ def iter_strings(repo: Path, dlcs):
                 for el in root:
                     if not isinstance(el.tag, str):
                         continue
-                    it = (el.text or "").strip()
                     prev = el.getprevious()
-                    en = ""
-                    if prev is not None and not isinstance(prev.tag, str) and prev.text:
-                        m = _EN.match(prev.text)
-                        en = (m.group(1) if m else prev.text).strip()
+                    comment = (prev.text if prev is not None
+                               and not isinstance(prev.tag, str) and prev.text else "")
+                    has_li = next(el.iter("li"), None) is not None
+                    if has_li:
+                        # rulesStrings & liste: il testo IT sta nei figli <li>, non in
+                        # el.text. Confronta solo il lato-valore (dopo '->') con l'EN
+                        # elencato nel commento, altrimenti tutto risulterebbe vuoto.
+                        it = _li_values_from_children(el)
+                        en = _li_values_from_text(comment)
+                    else:
+                        it = (el.text or "").strip()
+                        m = _EN.match(comment) if comment else None
+                        en = (m.group(1) if m else comment).strip()
                     yield dlc, str(f.relative_to(repo)), el.tag, el.sourceline, it, en
 
 
 def _base_status(it: str, en: str) -> str:
-    """Stato iniziale euristico: senza intervento umano."""
-    if not it or (en and it == en):
+    """Stato iniziale euristico: senza intervento umano.
+
+    Untranslated = c'e una fonte inglese ma l'italiano manca o la ricopia. Se anche
+    l'inglese e vuoto (es. <li>questDescription-></li>, valore-vuoto rispecchiato)
+    non c'e nulla da tradurre."""
+    if (not it and en) or (en and it == en):
         return "untranslated"
     return "translated"
 
@@ -107,6 +142,16 @@ def build(dlcs=None, lang_flags: dict | None = None) -> dict:
                 status = "modified"   # italiano cambiato dopo la validazione
             else:
                 status = "validated"
+        elif prev["status"] == "keep":
+            # 'keep' = volutamente non tradotto (prestito, nome proprio, sigla...).
+            # Sticky finche l'inglese non cambia; se cambia a monte torna in
+            # revisione (stale). Se qualcuno la traduce davvero (it != en) -> translated.
+            if prev["en_sha"] != en_sha:
+                status = "stale"
+            elif base == "translated":
+                status = "translated"
+            else:
+                status = "keep"
         elif prev["status"] in ("stale", "modified"):
             status = "untranslated" if base == "untranslated" else prev["status"]
         else:
@@ -160,9 +205,37 @@ def validate(dlcs=None, only_translated=True) -> int:
     return n
 
 
+def set_keep(dlcs=None, only_untranslated=True) -> int:
+    """Marca come 'keep' (da-non-tradurre) le voci volutamente lasciate in inglese
+    (prestiti, nomi propri, sigle, format-string). Di default agisce sulle sole
+    'untranslated' (cioe IT == EN gia riviste). Ritorna quante righe toccate."""
+    repo = config.repo_root()
+    dlcs = set(dlcs or config.DLCS)
+    cur = {(d, f, t): (it, en) for d, f, t, _l, it, en in iter_strings(repo, dlcs)}
+    rows = list(load().values())
+    n = 0
+    for row in rows:
+        if row["dlc"] not in dlcs:
+            continue
+        if only_untranslated and row["status"] != "untranslated":
+            continue
+        key = (row["dlc"], row["file"], row["tag"])
+        if key not in cur:
+            continue
+        it, en = cur[key]
+        row["status"] = "keep"
+        row["en_sha"], row["it_sha"] = _sha(en), _sha(it)
+        n += 1
+    with LEDGER.open("w", encoding="utf-8", newline="") as fh:
+        w = csv.DictWriter(fh, fieldnames=FIELDS)
+        w.writeheader()
+        w.writerows(rows)
+    return n
+
+
 _STATE_COLORS = {
     "validated": "#3fb950", "translated": "#58a6ff", "modified": "#d29922",
-    "stale": "#db6d28", "untranslated": "#6e7681",
+    "keep": "#8b949e", "stale": "#db6d28", "untranslated": "#6e7681",
 }
 
 
@@ -177,7 +250,7 @@ def report_html(out_path: Path, generated: str) -> Path:
     for r in rows:
         per_dlc[r["dlc"]][r["status"]] += 1
 
-    order = ["validated", "translated", "modified", "stale", "untranslated"]
+    order = ["validated", "translated", "keep", "modified", "stale", "untranslated"]
 
     def bar(counts: Counter, tot: int) -> str:
         if not tot:
@@ -191,7 +264,8 @@ def report_html(out_path: Path, generated: str) -> Path:
         return f'<div class="bar">{"".join(segs)}</div>'
 
     def pct_done(counts: Counter, tot: int) -> str:
-        done = counts.get("validated", 0) + counts.get("translated", 0) + counts.get("modified", 0)
+        done = (counts.get("validated", 0) + counts.get("translated", 0)
+                + counts.get("modified", 0) + counts.get("keep", 0))
         return f"{done/tot*100:.1f}%" if tot else "-"
 
     dlc_rows = ""
