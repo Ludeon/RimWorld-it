@@ -97,6 +97,30 @@ def iter_strings(repo: Path, dlcs):
                     yield dlc, str(f.relative_to(repo)), el.tag, el.sourceline, it, en
 
 
+def texts_for_file(relfile: str) -> dict:
+    """{tag: (it, en)} per un singolo file, testi live dall'XML (li-aware)."""
+    path = config.repo_root() / relfile
+    out: dict[str, tuple[str, str]] = {}
+    try:
+        root = etree.parse(str(path)).getroot()
+    except (etree.XMLSyntaxError, OSError):
+        return out
+    for el in root:
+        if not isinstance(el.tag, str):
+            continue
+        prev = el.getprevious()
+        comment = (prev.text if prev is not None
+                   and not isinstance(prev.tag, str) and prev.text else "")
+        if next(el.iter("li"), None) is not None:
+            it, en = _li_values_from_children(el), _li_values_from_text(comment)
+        else:
+            it = (el.text or "").strip()
+            m = _EN.match(comment) if comment else None
+            en = (m.group(1) if m else comment).strip()
+        out[el.tag] = (it, en)
+    return out
+
+
 def _base_status(it: str, en: str) -> str:
     """Stato iniziale euristico: senza intervento umano.
 
@@ -225,6 +249,35 @@ def set_keep(dlcs=None, only_untranslated=True) -> int:
         it, en = cur[key]
         row["status"] = "keep"
         row["en_sha"], row["it_sha"] = _sha(en), _sha(it)
+        n += 1
+    with LEDGER.open("w", encoding="utf-8", newline="") as fh:
+        w = csv.DictWriter(fh, fieldnames=FIELDS)
+        w.writeheader()
+        w.writerows(rows)
+    return n
+
+
+def set_status_keys(keys, status: str) -> int:
+    """Imposta lo stato di righe specifiche (set/list di tuple (dlc,file,tag)).
+
+    Per 'validated'/'keep' rifissa la baseline degli hash dal testo XML corrente,
+    cosi diventano sticky finche l'inglese non cambia. Ritorna le righe toccate."""
+    keys = {tuple(k) for k in keys}
+    # testi solo dei file toccati (veloce: niente scansione dell'intera DLC)
+    cur: dict[tuple, tuple[str, str]] = {}
+    for relf in {k[1] for k in keys}:
+        for tag, (it, en) in texts_for_file(relf).items():
+            cur[(relf, tag)] = (it, en)
+    rows = list(load().values())
+    n = 0
+    for row in rows:
+        key = (row["dlc"], row["file"], row["tag"])
+        if key not in keys:
+            continue
+        row["status"] = status
+        tx = cur.get((row["file"], row["tag"]))
+        if tx and status in ("validated", "keep"):
+            row["en_sha"], row["it_sha"] = _sha(tx[1]), _sha(tx[0])
         n += 1
     with LEDGER.open("w", encoding="utf-8", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=FIELDS)

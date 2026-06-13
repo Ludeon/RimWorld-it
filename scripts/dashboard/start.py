@@ -62,8 +62,10 @@ def _run(args: list[str]) -> int:
 
 
 def dashboard() -> int:
-    print("Launching dashboard — press Ctrl+C here to stop it.")
-    return _run([str(_venv_bin("streamlit")), "run", str(DASH / "app.py")])
+    # Flask review dashboard: stateless, reads the CSV/XML fresh on every request
+    # (no caching -> never shows stale data). Replaces the old Streamlit app.
+    print("Review dashboard → http://127.0.0.1:5000  (Ctrl+C here to stop it)")
+    return _run([str(_venv_bin("python")), str(DASH / "server.py")])
 
 
 def rwit(extra: list[str]) -> int:
