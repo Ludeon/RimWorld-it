@@ -23,6 +23,7 @@ import ledger as ledger_mod
 import stringsdiff as stringsdiff_mod
 import variants as variants_mod
 import reconcile as reconcile_mod
+import freshness as freshness_mod
 
 app = typer.Typer(
     add_completion=False,
@@ -176,6 +177,41 @@ def lang_check(
     console.print(f"[green]Dettaglio:[/] {out}")
 
 
+@app.command("freshness", help="Freschezza liste Words: IT vs inglese del gioco + varianti di genere vs base.")
+def freshness_cmd(
+    dlc: Optional[List[str]] = typer.Option(None, "--dlc"),
+    game_data: Optional[str] = typer.Option(None, "--game-data", help="Cartella Data del gioco"),
+):
+    base_issues, var_issues, has_game = freshness_mod.check(dlc or None, game_data)
+    if not has_game:
+        console.print("[yellow]Gioco non trovato: salto il confronto con l'inglese "
+                      "(usa --game-data o RIMWORLD_DATA). Controllo solo le varianti.[/]")
+
+    t1 = Table(title="Base IT vs inglese del gioco")
+    t1.add_column("DLC"); t1.add_column("file"); t1.add_column("IT", justify="right")
+    t1.add_column("EN", justify="right"); t1.add_column("", justify="left")
+    for dlc, rel, it_n, en_n in base_issues:
+        flag = "[red]indietro[/]" if it_n < en_n else "[yellow]in eccesso[/]"
+        t1.add_row(dlc, rel, str(it_n), str(en_n), flag)
+    if base_issues:
+        console.print(t1)
+
+    t2 = Table(title="Varianti di genere vs base (stale)")
+    t2.add_column("DLC"); t2.add_column("file"); t2.add_column("base", justify="right")
+    t2.add_column("M", justify="right"); t2.add_column("F", justify="right")
+    t2.add_column("manca", justify="right")
+    for dlc, rel, base, m, f, total in var_issues:
+        t2.add_row(dlc, rel, str(base), str(m), str(f), str(base - total))
+    if var_issues:
+        console.print(t2)
+
+    if not base_issues and not var_issues:
+        console.print("[green]Tutto fresco: nessuna divergenza.[/]")
+    else:
+        console.print(f"[bold]{len(base_issues)} liste base divergenti, "
+                      f"{len(var_issues)} varianti stale.[/]")
+
+
 @app.command(help="(Ri)crea i symlink Italiano nell'installazione del gioco.")
 def link(game_data: Optional[str] = typer.Option(None, "--game-data")):
     data = config.game_data(game_data)
@@ -221,6 +257,14 @@ def ledger_build(dlc: Optional[List[str]] = typer.Option(None, "--dlc")):
         t.add_row(s, str(n))
     console.print(t)
     console.print(f"[green]Ledger:[/] {ledger_mod.LEDGER}")
+    # avviso freschezza: liste base divergenti dal gioco / varianti di genere stale
+    try:
+        bi, vi, _ = freshness_mod.check(dlc or None)
+        if bi or vi:
+            console.print(f"[yellow]⚠ Freschezza: {len(bi)} liste base divergenti dal "
+                          f"gioco, {len(vi)} varianti stale. Dettagli: [bold]rwit freshness[/].[/]")
+    except Exception:  # noqa: BLE001 - l'avviso non deve mai far fallire il build
+        pass
 
 
 @ledger_app.command("stats", help="Conteggi per stato e per DLC dal ledger esistente.")
