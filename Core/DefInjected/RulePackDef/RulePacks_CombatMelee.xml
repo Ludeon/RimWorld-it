@@ -32,28 +32,37 @@
     <li>deflecting->glancing</li>
   -->
   <Combat_Deflect.rulePack.rulesStrings>
-    <li>r_logentry(p=0.5)->[INITIATOR_definite] [damaged_past] [atMaybe] [RECIPIENT_definite] nella [recipient_part0_label] [deflected_result].</li>
-    <li>r_logentry(p=0.3)->[INITIATOR_definite] [skillAdvMaybe] [damaged_past] [atMaybe] [RECIPIENT_definite] con [implement] [deflected_result].</li>
-    <li>r_logentry(p=0.3)->[INITIATOR_definite] [skillAdvMaybe] [damaged_past] [atMaybe] [RECIPIENT_definite] [deflected_result].</li>
-    <li>r_logentry(p=0.1)->[INITIATOR_definite], [skillDescMelee], [damaged_past] [RECIPIENT_definite] nella [recipient_part0_label] [deflected_result].</li>
+    <!-- "nel/nella [parte]" accordato col genere della parte colpita -->
+    <li>r_logentry(p=0.25,recipient_part0_gender==Male)->[INITIATOR_definite] [damaged_past] [RECIPIENT_definite] nel [recipient_part0_label] [deflected_result].</li>
+    <li>r_logentry(p=0.25,recipient_part0_gender==Female)->[INITIATOR_definite] [damaged_past] [RECIPIENT_definite] nella [recipient_part0_label] [deflected_result].</li>
+    <li>r_logentry(p=0.3)->[INITIATOR_definite] [skillAdvMaybe] [damaged_past] [RECIPIENT_definite] con [implement] [deflected_result].</li>
+    <li>r_logentry(p=0.3)->[INITIATOR_definite] [skillAdvMaybe] [damaged_past] [RECIPIENT_definite] [deflected_result].</li>
+    <li>r_logentry(p=0.05,recipient_part0_gender==Male)->[INITIATOR_definite], [skillDescMelee], [damaged_past] [RECIPIENT_definite] nel [recipient_part0_label] [deflected_result].</li>
+    <li>r_logentry(p=0.05,recipient_part0_gender==Female)->[INITIATOR_definite], [skillDescMelee], [damaged_past] [RECIPIENT_definite] nella [recipient_part0_label] [deflected_result].</li>
     <li>r_logentry(p=0.1)->[INITIATOR_definite] ha colpito [RECIPIENT_definite] con un [damaged_inf] di [implement] [deflected_result].</li>
     <li>r_logentry(p=0.1)->[INITIATOR_definite] [skillAdvMaybe] ha usato [implement] per [damaged_inf] [RECIPIENT_definite] [deflected_result].</li>
     <li>skillAdvMaybe-></li>
     <li>skillAdvMaybe->[skillAdv]</li>
-    <li>atMaybe-></li>
-    <li>atMaybe->a</li>
-    <li>deflected_result->, ma il [TOOL_label] è [deflected] via [harmlessly_opt]</li>
+    <!-- [TOOL_definite] = articolo dal motore (la spada/il coltello); aggettivo accordato col genere dell'arma -->
+    <li>deflected_result(TOOL_gender==Male)->, ma [TOOL_definite] è [deflected_m] via [harmlessly_opt]</li>
+    <li>deflected_result(TOOL_gender==Female)->, ma [TOOL_definite] è [deflected_f] via [harmlessly_opt]</li>
     <li>deflected_result->, [deflecting] sull'armatura di [RECIPIENT_possessive] [harmlessly_opt]</li>
     <li>harmlessly_opt(p=4)-></li>
     <li>harmlessly_opt->[harmlessly]</li>
-    <li>harmlessly->innocuo</li>
+    <li>harmlessly->innocuamente</li>
     <li>harmlessly->inutilmente</li>
-    <li>deflected->deviato</li>
-    <li>deflected->raschiato</li>
-    <li>deflected->scivolato</li>
-    <li>deflected->sfiorato</li>
-    <li>deflected->rimbalzato</li>
-    <li>deflected->scivolato di lato</li>
+    <li>deflected_m->deviato</li>
+    <li>deflected_m->raschiato</li>
+    <li>deflected_m->scivolato</li>
+    <li>deflected_m->sfiorato</li>
+    <li>deflected_m->rimbalzato</li>
+    <li>deflected_m->scivolato di lato</li>
+    <li>deflected_f->deviata</li>
+    <li>deflected_f->raschiata</li>
+    <li>deflected_f->scivolata</li>
+    <li>deflected_f->sfiorata</li>
+    <li>deflected_f->rimbalzata</li>
+    <li>deflected_f->scivolata di lato</li>
     <li>deflecting->deviando</li>
     <li>deflecting->raschiando</li>
     <li>deflecting->scivolando</li>
