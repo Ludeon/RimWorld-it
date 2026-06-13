@@ -87,10 +87,21 @@ was English-fallback for `[VerbFriendly]`) + adapted 4 Tales frames to gerund. L
 ### NEXT STEPS (tomorrow)
 1. **Restart the Flask dashboard** after pulling code changes (it auto-reloads, but the first
    time start fresh): `python scripts\dashboard\server.py`. NEVER use the old Streamlit `app.py`.
-2. **Combat/social log** (the §5.2-ter workstream, the big remaining piece): explicit articles +
-   gender constraints in the Interactions/CombatMelee/Ranged/Damage rulePacks; the only thing
-   needing the worker is plural articles (`le braccia`) — accept the residual or pursue upstream.
-   Use the same gender-split-lists + articulated-prepositions recipe as the namers.
+2. **Combat/social log** (the §5.2-ter workstream) — STARTED & now VERIFIABLE:
+   - **namegen got a combat-context simulator**: it parses rule constraints `(X_gender==Male/
+     Female)` and accepts a `context=` dict (sample `RECIPIENT_definite`, `recipient_part0_label/
+     _gender`, `TOOL_definite/_gender`…) → you can finally verify the log's agreement OFFLINE
+     (before, the runtime symbols showed as `<...>`).
+   - **Combat_Deflect done as the verified template** (`RulePacks_CombatMelee.xml`): recipe =
+     `(recipient_part0_gender==M/F)` → `nel/nella [part]`; `[TOOL_definite]` for the weapon
+     article (engine uses our WordInfo/Gender, already huge: 2074 M / 1029 F); adjective split by
+     `(TOOL_gender==M/F)` (`la spada è sfiorata` vs `il coltello è sfiorato`); dropped the wrong
+     "a" (transitive verb). Verified for both genders via the simulator.
+   - **Remaining (same recipe)**: Combat_Dodge/Miss (same file), CombatRanged (Deflect/Fire),
+     Damage, social Interactions. The ONLY thing needing the worker is plural articles
+     (`le braccia`) — accept the residual or pursue the upstream PR.
+   - To verify: `namegen.generate(packs, "...· Combat_X", context={...})` with sample M and F
+     part/tool; or add a small dashboard combat-preview later.
 3. Other namers if any remain (most are done: Namer_Novel, 9 biomes, Art ×2, Scenario,
    Settlement Pirate/Tribal, factions from the prior session).
 4. **In Dev mode (needs the game)**: verify the generated namer output (book titles, world/biome
