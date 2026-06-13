@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-  <!-- EN:
-    <li>defaultQuestName->[adjectiveCurious] [quest]</li>
-  -->
   <!-- Nome + aggettivo accordati per genere (alla tedesca: liste appaiate per
        genere), con ordine italiano nome->aggettivo (es. "cronaca genuina",
        "sforzo infinito"). Liste *_Singular_* generate da `rwit variants`. -->
+  <!-- EN:
+    <li>quest->Words/Nouns/Quests</li>
+    <li>adjectiveCurious->Words/Adjectives/Curious</li>
+  -->
   <NamerQuestDefault.rulePack.rulesFiles>
     <li>questMasc->Words/Nouns/Quests_Singular_Masculine</li>
     <li>questFem->Words/Nouns/Quests_Singular_Feminine</li>
     <li>adjCuriousMasc->Words/Adjectives/Curious_Singular_Masculine</li>
     <li>adjCuriousFem->Words/Adjectives/Curious_Singular_Feminine</li>
   </NamerQuestDefault.rulePack.rulesFiles>
+  <!-- EN:
+    <li>defaultQuestName->[adjectiveCurious] [quest]</li>
+  -->
   <NamerQuestDefault.rulePack.rulesStrings>
     <li>defaultQuestName->[questMasc] [adjCuriousMasc]</li>
     <li>defaultQuestName->[questFem] [adjCuriousFem]</li>
