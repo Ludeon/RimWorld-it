@@ -61,8 +61,17 @@ Done & verified in preview:
 - **9 biome WorldFeatures namers**: Core (Desert/Ocean/Swamp/TropicalRainforest) + Odyssey
   (GlacialPlain/Glowforest/Grasslands/LavaField/Scarlands). Shared `narrative_name` split into
   `narrative_name_M/F` (+ a neutral one for terrain apposition).
-- **NamerArtCommon** (art names): every `[article][adj][noun]` gendered; possessive with "di".
-- **NamerArtWeapon**: possessives fixed; full agreement still TODO (needs `*Badass` gender-split).
+- **NamerArtCommon** + **NamerArtWeapon** (art names): every `[article][adj][noun]` gendered;
+  possessive with "di"; ArtWeapon uses `*Badass_M/F` lists. Art group complete.
+- **NamerScenario**: fixed preposition+article fusion (`[Trans] il`→`del/dal/nel/sul`, +F/Vowel/
+  Plural), the English-plural bug (`[PersonJob]s`→`armaiolos` → `PersonJob_Plural_M/F` with
+  `dei/delle`), and a malformed rule (`r_name>una`, missing `->`).
+- **NamerSettlementPirate/Tribal**: the `[Color] [TerrainFeature]` agreement (`Rosso borgata`→
+  `Rossa borgata`); appositions kept.
+
+⚠️ **Lesson — the bonifica had wrongly split `Colors`/`Colors_Badass` as NOUNS** (all masc, fem
+empty → "Grigio valle"). They're ADJECTIVES (each colour needs both forms). Fixed + `rwit
+freshness` now also flags an EMPTY gender side (the noun-sum check alone missed it: M=base, F=0).
 
 **Data hygiene (bonifica, guided by `rwit freshness`):** regenerated 28 stale `_Singular_M/F`
 variant sets from current base; removed 37 `_Neuter` cruft files (Italian has no neuter, unused);
@@ -78,11 +87,12 @@ was English-fallback for `[VerbFriendly]`) + adapted 4 Tales frames to gerund. L
 ### NEXT STEPS (tomorrow)
 1. **Restart the Flask dashboard** after pulling code changes (it auto-reloads, but the first
    time start fresh): `python scripts\dashboard\server.py`. NEVER use the old Streamlit `app.py`.
-2. **Remaining gender-aware namers**: NamerArtWeapon agreement (generate `*Badass` gender-split
-   first), Scenario (`da il`→`dal`, malformed plurals `armaiolos`), Settlement Pirate/Tribal
-   (`Rosso borgata`→`Rossa borgata`), social-log Interactions.
-3. **Combat/social log** (the §5.2-ter workstream): explicit articles + gender constraints; the
-   only thing needing the worker is plural articles — accept the residual or pursue the upstream PR.
+2. **Combat/social log** (the §5.2-ter workstream, the big remaining piece): explicit articles +
+   gender constraints in the Interactions/CombatMelee/Ranged/Damage rulePacks; the only thing
+   needing the worker is plural articles (`le braccia`) — accept the residual or pursue upstream.
+   Use the same gender-split-lists + articulated-prepositions recipe as the namers.
+3. Other namers if any remain (most are done: Namer_Novel, 9 biomes, Art ×2, Scenario,
+   Settlement Pirate/Tribal, factions from the prior session).
 4. **In Dev mode (needs the game)**: verify the generated namer output (book titles, world/biome
    names, art names) and the combat log "le braccia"/"la mano" + `count==1/2/3` branches.
 5. Optional cleanup: standardise the gender-variant file naming (`_Singular_Masculine` vs
