@@ -28,12 +28,17 @@ _VARIANT_RE = re.compile(
 
 
 def _count(p: Path) -> int | None:
-    """Voci non vuote e non-commento (// o #) in un file Words; None se assente."""
+    """Righe-voce (non vuote, non-commento) in un file Words; None se assente.
+
+    Conta le RIGHE, non le voci uniche: una lista pool e 'completa' se ogni slot
+    inglese ha la sua riga italiana, anche se piu righe ripetono la stessa parola
+    (sinonimi inglesi che collassano su un'unica parola italiana). Toglie il BOM
+    PRIMA dello strip, cosi i commenti malformati '﻿ //...' sono riconosciuti."""
     if not p.exists():
         return None
     n = 0
     for ln in p.read_text(encoding="utf-8", errors="ignore").splitlines():
-        s = ln.strip().lstrip("﻿")
+        s = ln.lstrip("﻿").strip()
         if s and not s.startswith(_COMMENT):
             n += 1
     return n
