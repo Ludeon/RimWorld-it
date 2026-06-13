@@ -29,6 +29,60 @@ _WEIGHT = re.compile(r"^(\w+)\s*\((?:p=)?([0-9.]+)\)$")
 # si risolvono cross-pack dentro lo stesso repo; cio che resta -> <simbolo>.
 
 
+# Simboli RUNTIME comuni del motore (cifre, lettere, numeri romani): l'anteprima li
+# genera cosi i nomi numerici (es. "H-72", "Vega III") escono realistici.
+_ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII"]
+
+
+def _runtime(sym: str, rng: random.Random) -> str | None:
+    if sym == "Digit":
+        return rng.choice("0123456789")
+    if sym == "Letter":
+        return rng.choice("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+    if sym == "RomanNumeral":
+        return rng.choice(_ROMAN)
+    return None
+
+
+_game_files_cache: dict | None = None
+
+
+def _game_def_files(dlcs) -> dict:
+    """Mappe simbolo->file dai <rulesFiles> dei Def del GIOCO BASE (non presenti nel
+    nostro DefInjected, es. celestial_name->Names/Celestial). Permette all'anteprima
+    di risolverle caricando le liste ITALIANE corrispondenti (Strings/Names/...)."""
+    global _game_files_cache
+    if _game_files_cache is not None:
+        return _game_files_cache
+    out: dict = {}
+    try:
+        game = config.game_data()
+    except Exception:  # noqa: BLE001 - senza gioco l'anteprima resta com'era
+        _game_files_cache = out
+        return out
+    for dlc in dlcs:
+        base = game / dlc / "Defs" / "RulePackDefs"
+        if not base.exists():
+            continue
+        for f in sorted(base.glob("*.xml")):
+            try:
+                root = etree.parse(str(f)).getroot()
+            except (etree.XMLSyntaxError, OSError):
+                continue
+            for rf in root.iter():
+                if not (isinstance(rf.tag, str) and rf.tag.endswith("rulesFiles")):
+                    continue
+                for li in rf:
+                    t = (li.text or "").strip()
+                    if "->" not in t:
+                        continue
+                    sym, path = (x.strip() for x in t.split("->", 1))
+                    if path.startswith(("Words/", "Names/")) and sym not in out:
+                        out[sym] = (dlc, path)
+    _game_files_cache = out
+    return out
+
+
 def _pack_root(tag: str) -> str | None:
     if ".rulePack." not in tag:
         return None
@@ -106,6 +160,9 @@ def _global_tables(packs: dict):
             g_rules[sym].extend(opts)
         for sym, rel in p["files"].items():
             g_files.setdefault(sym, (p["dlc"], rel))
+    # simboli file-backed definiti SOLO nei Def del gioco base (es. celestial_name)
+    for sym, dlc_rel in _game_def_files(config.DLCS).items():
+        g_files.setdefault(sym, dlc_rel)
     return g_rules, g_files
 
 
@@ -155,13 +212,30 @@ def generate(packs: dict, key: str, n: int = 15, repo: Path | None = None,
         base = sym.split("_")[0]                 # 4. variante di genere/numero -> base
         if base != sym and (base in rules or base in g_rules or base in files or base in g_files):
             return expand(base, depth + 1)
-        return f"<{sym}>"                        # 5. simbolo di runtime: non risolvibile
+        rt = _runtime(sym, rng)                   # 5. simbolo runtime noto (Digit/Letter/...)
+        if rt is not None:
+            return rt
+        return f"<{sym}>"                        # 6. runtime non risolvibile (pawn names)
+
+    def _pick(opts):
+        """Sceglie un'alternativa (pesata) e ritorna il template GREZZO (non espanso)."""
+        total = sum(w for w, _ in opts)
+        r = rng.uniform(0, total)
+        acc = 0.0
+        for w, exp in opts:
+            acc += w
+            if r <= acc:
+                return exp
+        return opts[-1][1]
 
     root = root or _pick_root(rules)
+    root_opts = rules.get(root) or g_rules.get(root) or []
     out = []
     for _ in range(n):
-        s = re.sub(r"\s+", " ", expand(root)).strip()
+        tmpl = _pick(root_opts) if root_opts else root
+        s = _SYM.sub(lambda m: expand(m.group(1), 1), tmpl)
+        s = re.sub(r"\s+", " ", s).strip()
         if s:
             s = s[0].upper() + s[1:]
-        out.append(s)
+        out.append((s, tmpl.strip()))           # (nome risolto, template d'origine)
     return out, root

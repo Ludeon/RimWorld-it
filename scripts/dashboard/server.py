@@ -285,23 +285,30 @@ def namegen_view():
     sel = shown[i]
 
     try:
-        names, _ = NG.generate(packs, sel, n=n)
+        pairs, _ = NG.generate(packs, sel, n=n)       # [(nome risolto, template d'origine)]
     except Exception as e:                            # noqa: BLE001
-        names = [f"<error: {e}>"]
-    # dedup preservando l'ordine: mostra solo i risultati UNICI (con ×N se ripetuti).
-    # Cosi un pack a regola singola = 1 riga; un namer mostra la varieta reale.
-    cnt = Counter(names)
-    uniq = list(dict.fromkeys(names))
-    # SEMPRE una tabella full-width, una stringa per riga: niente colonne (le stringhe
-    # corte andavano a capo in modo confuso, sembravano avere un a-capo nel testo).
+        pairs = [(f"<error: {e}>", "")]
+    # dedup preservando l'ordine (per coppia nome+template): un pack a regola singola
+    # = 1 riga; un namer mostra la varieta reale, con ×N se ripetuto.
+    cnt = Counter(pairs)
+    uniq = list(dict.fromkeys(pairs))
+    # tabella full-width: NOME risolto | TEMPLATE coi [tag] d'origine (cosi sai da
+    # quale simbolo viene ogni parte e non cancelli tag importanti) | ×N.
     rows_html = "".join(
-        f'<tr><td>{_h(x)}</td>'
-        f'<td class="right muted" style="width:64px;white-space:nowrap">'
-        f'{"×"+str(cnt[x]) if cnt[x] > 1 else ""}</td></tr>'
-        for x in uniq)
-    cap = (f'{len(uniq)} unici / {len(names)} generati' if lang() == "it"
-           else f'{len(uniq)} unique / {len(names)} generated')
-    names_html = f'<p class=muted>{cap}</p><table class=gen>{rows_html}</table>'
+        f'<tr><td>{_h(name)}</td>'
+        f'<td class=tag>{_h(tmpl)}</td>'
+        f'<td class="right muted" style="width:48px;white-space:nowrap">'
+        f'{"×"+str(cnt[(name, tmpl)]) if cnt[(name, tmpl)] > 1 else ""}</td></tr>'
+        for name, tmpl in uniq)
+    cap = (f'{len(uniq)} unici / {len(pairs)} generati' if lang() == "it"
+           else f'{len(uniq)} unique / {len(pairs)} generated')
+    legend = ("la colonna «template» mostra da quale [tag] deriva ogni parte — non "
+              "cancellarli nei file." if lang() == "it"
+              else "the «template» column shows which [tag] each part comes from.")
+    th = ("nome", "template (tag d'origine)") if lang() == "it" else ("name", "template (source tags)")
+    names_html = (f'<p class=muted>{cap} · {legend}</p>'
+                  f'<table class=gen><thead><tr><th>{th[0]}</th><th>{th[1]}</th><th></th>'
+                  f'</tr></thead><tbody>{rows_html}</tbody></table>')
 
     qs = f'q={quote(q_raw)}&n={n}'
     prev = f'<a class=btn href="/namegen?{qs}&i={i-1}">{t("ng_prev")}</a>' if i > 0 else f'<span class="btn" style="opacity:.4">{t("ng_prev")}</span>'
