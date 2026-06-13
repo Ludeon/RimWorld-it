@@ -3,8 +3,11 @@
 Copre due classi di problema che gli altri controlli (presenza file, risoluzione
 dei riferimenti) NON vedono perche guardano la struttura, non il contenuto:
 
-  1. Base IT indietro/avanti rispetto all'INGLESE DEL GIOCO: voci aggiunte a monte
-     e non tradotte (IT < EN), o voci stantie di troppo (IT > EN).
+  1. Base IT indietro/avanti rispetto all'INGLESE DEL GIOCO (EURISTICO): il conteggio
+     righe IT != EN puo' indicare voci mancanti, MA spesso e' benigno - sinonimi
+     inglesi che collassano su un'unica parola italiana, liste riordinate
+     alfabeticamente, voci tenute volutamente in inglese. Verificare il CONTENUTO
+     (es. con `rwit reconcile`) prima di aggiungere/togliere.
   2. Varianti di genere che non coprono piu la base, perche rigenerate da una base
      piu vecchia (es. Animals 141/178). Per i NOMI: somma M+F deve == base; per
      AGGETTIVI/COLORI (ogni voce ha forma M e F): ciascuna variante == base.

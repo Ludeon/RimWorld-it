@@ -187,7 +187,9 @@ def freshness_cmd(
         console.print("[yellow]Gioco non trovato: salto il confronto con l'inglese "
                       "(usa --game-data o RIMWORLD_DATA). Controllo solo le varianti.[/]")
 
-    t1 = Table(title="Base IT vs inglese del gioco")
+    t1 = Table(title="Base IT vs inglese del gioco  (EURISTICO: differenze spesso "
+                     "benigne - sinonimi che collassano, liste riordinate, voci tenute "
+                     "in inglese. Verificare il CONTENUTO prima di agire.)")
     t1.add_column("DLC"); t1.add_column("file"); t1.add_column("IT", justify="right")
     t1.add_column("EN", justify="right"); t1.add_column("", justify="left")
     for dlc, rel, it_n, en_n in base_issues:
@@ -260,9 +262,12 @@ def ledger_build(dlc: Optional[List[str]] = typer.Option(None, "--dlc")):
     # avviso freschezza: liste base divergenti dal gioco / varianti di genere stale
     try:
         bi, vi, _ = freshness_mod.check(dlc or None)
-        if bi or vi:
-            console.print(f"[yellow]⚠ Freschezza: {len(bi)} liste base divergenti dal "
-                          f"gioco, {len(vi)} varianti stale. Dettagli: [bold]rwit freshness[/].[/]")
+        if vi:
+            console.print(f"[yellow]⚠ Freschezza: {len(vi)} varianti di genere STALE "
+                          f"(azionabile). Dettagli: [bold]rwit freshness[/].[/]")
+        if bi:
+            console.print(f"[dim]i {len(bi)} scostamenti base vs gioco sono euristici "
+                          f"(spesso sinonimi/ordinamento): verificare il contenuto.[/]")
     except Exception:  # noqa: BLE001 - l'avviso non deve mai far fallire il build
         pass
 
