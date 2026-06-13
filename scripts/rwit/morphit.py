@@ -86,6 +86,21 @@ def _noun_rules(lemma: str):
     return "m", lemma                           # invariabile (tribù, citta, prestiti...)
 
 
+# Suffissi italiani a genere quasi-certo: disambiguano i lemmi che Morph-it!
+# registra con entrambi i generi (es. "azione" -> f, non m).
+_FEM_SUFFIX = ("zione", "sione", "gione", "tà", "tù", "udine", "aggine",
+               "ezza", "izia", "enza", "anza", "trice")
+_MAS_SUFFIX = ("ore", "ame", "mento", "ismo", "iere")
+
+
+def _suffix_gender(lemma: str) -> str | None:
+    if lemma.endswith(_FEM_SUFFIX):
+        return "f"
+    if lemma.endswith(_MAS_SUFFIX):
+        return "m"
+    return None
+
+
 # --- API ------------------------------------------------------------------
 def adjective_forms(lemma: str):
     """(m_sing, f_sing, m_plur, f_plur). Morph-it! se disponibile, altrimenti regole."""
@@ -101,8 +116,11 @@ def noun_info(lemma: str):
     _, noun = _load()
     e = noun.get(lemma)
     if e:
-        gender = "f" if ("f", "s") in e and ("m", "s") not in e else \
-                 "m" if ("m", "s") in e else next(iter(e))[0]
+        has_m, has_f = ("m", "s") in e, ("f", "s") in e
+        if has_m and has_f:                     # ambiguo: disambigua dal suffisso
+            gender = _suffix_gender(lemma) or "m"
+        else:
+            gender = "f" if has_f else "m" if has_m else next(iter(e))[0]
         plural = e.get((gender, "p")) or e.get(("m", "p")) or e.get(("f", "p"))
         if plural:
             return gender, plural

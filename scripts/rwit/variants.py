@@ -101,3 +101,29 @@ def gen_noun(name: str, dlc: str = "Core", lemmas: list[str] | None = None):
         if words:
             _write(base / f"{name}_{art}.txt", words)
     return fallback
+
+
+def gen_noun_gender(name: str, dlc: str = "Core", lemmas: list[str] | None = None):
+    """Spezza una lista nomi (singolari) per genere -> 2 file:
+        <Nome>_Singular_Masculine.txt
+        <Nome>_Singular_Feminine.txt
+    Serve ai namer che accordano aggettivo/articolo col nome (es. NamerQuestDefault).
+    Ritorna i lemmi caduti sul fallback (genere indovinato dalle regole, da rivedere).
+    """
+    base = config.repo_root() / dlc / "Strings" / "Words" / "Nouns"
+    if lemmas is None:
+        cand = base / f"{name}.txt"
+        if cand.exists():
+            lemmas = _read(cand)
+    if not lemmas:
+        raise FileNotFoundError(f"Nessun lemma per {name} in {base}")
+
+    ms, fs, fallback = [], [], []
+    for lem in lemmas:
+        gender, _ = morphit.noun_info(lem)
+        (fs if gender == "f" else ms).append(lem)
+        if not morphit.has_noun(lem):
+            fallback.append(lem)
+    _write(base / f"{name}_Singular_Masculine.txt", ms)
+    _write(base / f"{name}_Singular_Feminine.txt", fs)
+    return fallback

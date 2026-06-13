@@ -373,6 +373,16 @@ def variants_noun(name: str, dlc: str = typer.Option("Core", "--dlc")):
         console.print(f"[yellow]Fallback a regole ({len(fb)}, da rivedere):[/] {', '.join(fb)}")
 
 
+@variants_app.command("noun-gender", help="Spezza una lista nomi (singolari) per genere: _Singular_Masculine/_Feminine.")
+def variants_noun_gender(name: str, dlc: str = typer.Option("Core", "--dlc")):
+    if not __import__("morphit").available():
+        console.print("[yellow]Morph-it! assente in scripts/.tools/ — uso solo le regole.[/]")
+    fb = variants_mod.gen_noun_gender(name, dlc)
+    console.print(f"[green]Generato:[/] {dlc}/Strings/Words/Nouns/{name}_Singular_(Masculine|Feminine).txt")
+    if fb:
+        console.print(f"[yellow]Fallback a regole ({len(fb)}, da rivedere):[/] {', '.join(fb)}")
+
+
 def _safe(fn):
     try:
         fn()
