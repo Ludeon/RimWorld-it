@@ -20,13 +20,16 @@
     <li>destroyed_present->breaking</li>
   -->
   <DamageEvent_Ceiling.rulePack.rulesStrings>
-    <li>damage_source->il/la [roof] è [collapsed] su</li>
-    <li>roof->tetto</li>
-    <li>roof->copertura</li>
-    <li>roof->soffitto</li>
-    <li>collapsed->crollato</li>
-    <li>collapsed->caduto</li>
-    <li>collapsed->sprofondato</li>
+    <!-- articolo+participio accordati per genere del soffitto (era 'il/la [roof] è [collapsed]') -->
+    <li>damage_source->il tetto è [collapsed_m] su</li>
+    <li>damage_source->il soffitto è [collapsed_m] su</li>
+    <li>damage_source->la copertura è [collapsed_f] su</li>
+    <li>collapsed_m->crollato</li>
+    <li>collapsed_m->caduto</li>
+    <li>collapsed_m->sprofondato</li>
+    <li>collapsed_f->crollata</li>
+    <li>collapsed_f->caduta</li>
+    <li>collapsed_f->sprofondata</li>
     <li>damaged_present->schiacciando</li>
     <li>damaged_present->colpendo</li>
     <li>damaged_present->contundendo</li>
@@ -80,9 +83,10 @@
     <li>r_logentry(p=0.1)->[damage_source] [RECIPIENT_nameDef].</li>
   -->
   <DamageEvent_Include.rulePack.rulesStrings>
-    <li>r_logentry->[damage_source] [RECIPIENT_nameDef], [destroyed_present] [RECIPIENT_possessive] [destroyed_targets].</li>
-    <li>r_logentry->[damage_source] [RECIPIENT_nameDef], [destroyed_present] [RECIPIENT_possessive] [destroyed_targets] e [damaged_present] [RECIPIENT_possessive] [damaged_targets].</li>
-    <li>r_logentry(recipient_part_destroyed_count==0)->[damage_source] [RECIPIENT_nameDef], [damaged_present] [RECIPIENT_possessive] [damaged_targets].</li>
+    <!-- possessivo rimosso: [destroyed/damaged_targets] hanno gia' l'articolo (_definite) -->
+    <li>r_logentry->[damage_source] [RECIPIENT_nameDef], [destroyed_present] [destroyed_targets].</li>
+    <li>r_logentry->[damage_source] [RECIPIENT_nameDef], [destroyed_present] [destroyed_targets] e [damaged_present] [damaged_targets].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0)->[damage_source] [RECIPIENT_nameDef], [damaged_present] [damaged_targets].</li>
     <li>r_logentry(p=0.1)->[damage_source] [RECIPIENT_nameDef].</li>
   </DamageEvent_Include.rulePack.rulesStrings>
   
@@ -102,12 +106,12 @@
     <li>light(p=0.2)->incandescence</li>
   -->
   <DamageEvent_PowerBeam.rulePack.rulesStrings>
-    <li>damage_source->Il/la [sky] si è aperto/a su</li>
+    <!-- articolo+participio per genere/numero del cielo (era 'Il/la [sky] si è aperto/a') -->
+    <li>damage_source->Il cielo si è aperto su</li>
+    <li>damage_source->I cieli si sono aperti su</li>
+    <li>damage_source->Le nuvole si sono aperte su</li>
     <li>damage_source->Un raggio di incredibile [power] ha [damaged_past]</li>
     <li>damage_source->Una colonna di [light] ha [damaged_past]</li>
-    <li>sky->cielo</li>
-    <li>sky->nuvole</li>
-    <li>sky->cieli</li>
     <li>power->potere</li>
     <li>power->energia</li>
     <li>power->calore</li>
@@ -132,8 +136,8 @@
     <li>damage_source->Un tornado [spiraling] ha [enveloped]</li>
     <li>destroyed_present(p=3)->strappando via</li>
     <li>spiraling->vorticoso</li>
-    <li>spiraling->turbinando</li>
-    <li>spiraling->girando</li>
+    <li>spiraling->turbinante</li>
+    <li>spiraling->roteante</li>
     <li>spiraling(p=10)-></li>
     <li>enveloped(p=8)->avvolto</li>
     <li>enveloped->inghiottito</li>
@@ -161,10 +165,10 @@
   <DamageEvent_TrapSpike.rulePack.rulesStrings>
     <li>damage_source->[spiketrap] ha trafitto</li>
     <li>damage_source->[spiketrap] ha colpito</li>
-    <li>damage_source->[spiketrap] è stato lanciato contro</li>
+    <li>damage_source->[spiketrap] ha colpito da lontano</li>
     <li>spiketrap(p=3)->una trappola a punte</li>
     <li>spiketrap(p=3)->la trappola a punte</li>
-    <li>spiketrap->punte</li>
+    <li>spiketrap->una scarica di punte</li>
     <li>spiketrap->una trappola appuntita</li>
     <li>spiketrap->una trappola spinosa</li>
     <li>damaged_present->perforando</li>
