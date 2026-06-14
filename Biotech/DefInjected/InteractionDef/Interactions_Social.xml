@@ -36,7 +36,7 @@
     <li>babyGame->fingerpuppets</li>
   -->
   <BabyPlay.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] ha fatto [reaction] a [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha fatto [reaction] [RECIPIENT_nameDef].</li>
     <li>r_logentry->[INITIATOR_nameDef] ha [interaction] [RECIPIENT_nameDef].</li>
     <li>r_logentry->[INITIATOR_nameDef] ha giocato a [babyGame] con [RECIPIENT_nameDef].</li>
     <li>reaction->ridere fragorosamente</li>
@@ -48,15 +48,15 @@
     <li>reaction->strillare</li>
     <li>reaction->ruttare</li>
     <li>reaction->guardare con fascinazione</li>
-    <li>interaction->deliziato a</li>
+    <li>interaction->deliziato</li>
     <li>interaction->giocato con</li>
-    <li>interaction->intrattenuto a</li>
-    <li>interaction->divertito a</li>
+    <li>interaction->intrattenuto</li>
+    <li>interaction->divertito</li>
     <li>interaction->fatto il solletico a</li>
-    <li>interaction->strofinato con il naso a</li>
-    <li>interaction->annusato a</li>
-    <li>interaction->abbracciato a</li>
-    <li>interaction->lanciato a</li>
+    <li>interaction->strofinato il naso contro</li>
+    <li>interaction->annusato</li>
+    <li>interaction->abbracciato</li>
+    <li>interaction->lanciato in aria</li>
     <li>interaction->cantato a</li>
     <li>interaction->raccontato una storia a</li>
     <li>interaction->fatto un trucco di magia a</li>
@@ -708,21 +708,22 @@
     <li>planType->enjoying endless life</li>
   -->
   <SanguophageChat.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] e [RECIPIENT_nameDef] [talkedabout] [subject].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [talkedabout] [subject] con [RECIPIENT_nameDef].</li>
-    <li>talkedabout->ha parlato di</li>
-    <li>talkedabout->ha discusso di</li>
-    <li>talkedabout->ha sussurrato di</li>
-    <li>talkedabout(p=0.5)->ha parlato [adverb] di</li>
-    <li>talkedabout(p=0.5)->ha discusso [adverb] di</li>
-    <li>talkedabout(p=0.5)->ha sussurrato [adverb] di</li>
-    <li>talkedabout->ha condiviso una parola su</li>
-    <li>talkedabout->ha scambiato pensieri su</li>
-    <li>talkedabout->ha scambiato idee su</li>
-    <li>talkedabout->ha espresso un interesse comune per</li>
-    <li>talkedabout->ha dibattuto su</li>
-    <li>talkedabout->ha litigato su</li>
-    <li>talkedabout->ha condiviso storie di</li>
+    <!-- 'hanno' (sogg. plurale) / 'ha' (singolare); talkedabout = participio nudo -->
+    <li>r_logentry->[INITIATOR_nameDef] e [RECIPIENT_nameDef] hanno [talkedabout] [subject].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha [talkedabout] [subject] con [RECIPIENT_nameDef].</li>
+    <li>talkedabout->parlato di</li>
+    <li>talkedabout->discusso di</li>
+    <li>talkedabout->sussurrato di</li>
+    <li>talkedabout(p=0.5)->parlato [adverb] di</li>
+    <li>talkedabout(p=0.5)->discusso [adverb] di</li>
+    <li>talkedabout(p=0.5)->sussurrato [adverb] di</li>
+    <li>talkedabout->condiviso una parola su</li>
+    <li>talkedabout->scambiato pensieri su</li>
+    <li>talkedabout->scambiato idee su</li>
+    <li>talkedabout->espresso un interesse comune per</li>
+    <li>talkedabout->dibattuto su</li>
+    <li>talkedabout->litigato su</li>
+    <li>talkedabout->condiviso storie di</li>
     <li>adverb->amichevolmente</li>
     <li>adverb->silenziosamente</li>
     <li>adverb->dolcemente</li>
