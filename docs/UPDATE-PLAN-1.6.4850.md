@@ -121,15 +121,36 @@ was English-fallback for `[VerbFriendly]`) + adapted 4 Tales frames to gerund. L
      gender, RW≥1.4); dropped the fixed article from `shot_a`/`threw_a`, restricted `shot_a` to a
      transitive verb (`ha sparato`). ⚠️ Needs **in-game confirm** that `[WEAPON_indefinite]`/
      `[projectile_indefinite]` resolve (FR ships them, so expected OK).
-   - **Remaining (same recipe)**: Combat_Dodge/Miss subject-agreement (`è balzato/scivolato` →
-     gender of RECIPIENT/INITIATOR), RangedDamage/Deflect/ExplosionImpact participles
-     (`è stato [damaged_past]` → body-part or pawn gender), social Interactions. Plus a pervasive
-     `di [RECIPIENT_possessive]` ("sull'armatura di suo") — same possessive issue, present even in
-     the verified `Combat_Deflect` (line 49) + RangedDamage/Deflect; decide: drop the possessive
-     ("sull'armatura") or render "la sua armatura". The ONLY thing needing the worker is plural
-     articles (`le braccia`) — accept the residual or pursue the upstream PR.
-   - To verify: `namegen.generate(packs, "...· Combat_X", context={...})` with sample M and F
-     part/tool; or add a small dashboard combat-preview later.
+   - **WHOLE melee + ranged combat log DONE (2026-06-14)** — found & fixed **three systematic
+     bugs** (all solved by porting the **FR** model; verified offline with the simulator):
+     1. **Missing auxiliary**: `[INITIATOR] [damaged_past] [RECIPIENT]` rendered "Ursula ferito
+        Cassio" — `[damaged_past]`/`[destroyed_past]` resolve to a BARE participle (from
+        `RulePacks_Damage`/`_Maneuvers`); the aux goes in the TEMPLATE (FR: `a [damaged_past]`).
+        Added `ha` to every active line.
+     2. **`damaged_inf` is an INFINITIVE in IT** ("colpire", from `RulePacks_Maneuvers`): the
+        noun-uses (`il [damaged_inf]`, `con un [damaged_inf]`) gave "il colpire" → restructured to
+        infinitive (`che cercava di [damaged_inf]`) or replaced with `[implement]`.
+     3. **`[X_possessive]` = "suo/sua" (no article, genderless)**: `[implement]` was
+        `[INITIATOR_possessive] [WEAPON_label]` ("suo fucile") → now `[WEAPON_indefinite]`/
+        `[TOOL_definite]`; `di [RECIPIENT_possessive]` → `di [RECIPIENT_definite]` or "sulla sua
+        armatura"; part lists now use `[recipient_partN_definite]` (engine article: "il braccio"/
+        "l'occhio").
+     Also: **passive `è stato [damaged_past]` converted to ACTIVE** (IT can't append a gender
+     suffix to the participle like FR's `[damaged_past]e`/`s`; `avere` avoids agreement entirely),
+     fixed/full files: `RulePacks_CombatMelee` (Hit/Deflect/Dodge/Miss), `RulePacks_CombatIncludes`
+     (implement/targetlist/wound-targets/result/wince/FailIncludes), `RulePacks_CombatRanged`
+     (RangedDamage/ExplosionImpact/RangedDeflect; RangedFire/Thrown were done earlier).
+   - **Still TODO**: **social Interactions** (`Interactions_Social/Romance/Prisoner`, + DLCs) —
+     check for the SAME 3 bugs. `RulePacks_DamageEvent`/`_Maneuvers` spot-check (Maneuvers holds
+     the `damaged_inf`/`damaged_past` lists — verify infinitive vs participle consistency).
+   - ⚠️ **In-game confirm needed**: that `[projectile_definite/indefinite]`, `[WEAPON_definite/
+     indefinite]`, `[recipient_partN_definite]` all resolve (FR ships them on RW≥1.4 → expected
+     OK). Residual: vowel-initial parts after `nel/al` (no Vowel constraint exists → "nel occhio"
+     not "nell'occhio"); plural articles (`le braccia`) still need the upstream `.cs`.
+   - Verify pattern: `namegen.generate(packs, "...· Combat_X", context={...})` passing the runtime
+     symbols (`damaged_past='ferito'`, `damaged_inf='colpire'`, `implement='una spada'`,
+     `recipient_part0_gender/_label`, `projectile_definite`…). Space-before-comma in sim output is
+     an artifact (EN has the same structure; the engine normalizes).
 3. Other namers if any remain (done: Namer_Novel, 9 biomes, Art ×2, Scenario, Settlement
    Pirate/Tribal, QuestDefault, factions). Spot-check the People/Animal/Trader/World namers for
    any residual `[adj] [noun]` agreement; most are appositions/proper names and already fine.
