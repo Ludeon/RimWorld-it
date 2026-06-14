@@ -201,8 +201,8 @@
     <li>title->[Character] [linkPlaceLo] [placeLo]</li>
     <li>title->[ConceptAny_Masculine] [AdjectiveAny_MS]</li>
     <li>title->[ConceptAny_Feminine] [AdjectiveAny_FS]</li>
-    <li>title->[AdjectiveAny_MS] [ObjectAny_Masculine]</li>
-    <li>title->[AdjectiveAny_FS] [ObjectAny_Feminine]</li>
+    <li>title->[ObjectAny_Masculine] [AdjectiveAny_MS]</li>
+    <li>title->[ObjectAny_Feminine] [AdjectiveAny_FS]</li>
     <!-- titleNaked -->
     <li>titleNaked->[ConceptAny]</li>
     <li>titleNaked->[AdjectiveAny_MS] [ConceptAny_Masculine]</li>
@@ -357,7 +357,7 @@
     <li>story->Fiaba</li>
     <li>story->Fantasia</li>
     <li>story->Fantasy</li>
-    <li>story->Fantasy</li>
+    <li>story->Fantastico</li>
     <li>story->Narrativa</li>
     <li>story->Folklore</li>
     <li>story->Storia</li>
@@ -377,12 +377,12 @@
     <li>story->Ricordi</li>
     <li>story->Mente</li>
     <li>story->Musical</li>
-    <li>story->Riflessioni</li>
+    <li>story->Meditazioni</li>
     <li>story->Mito</li>
     <li>story->Mitologia</li>
     <li>story->Miti</li>
     <li>story->Narrazione</li>
-    <li>story->Narrativa</li>
+    <li>story->Cronistoria</li>
     <li>story->Romanzo</li>
     <li>story->Osservazioni</li>
     <li>story->Ode</li>
@@ -390,7 +390,7 @@
     <li>story->Carte</li>
     <li>story->Parabola</li>
     <li>story->Prosa</li>
-    <li>story->Racconti</li>
+    <li>story->Reminiscenze</li>
     <li>story->Resoconto</li>
     <li>story->Riflessione</li>
     <li>story->Riflessioni</li>
@@ -402,7 +402,7 @@
     <li>story->Copione</li>
     <li>story->Schizzo</li>
     <li>story->Schizzi</li>
-    <li>story->Storia</li>
+    <li>story->Vicenda</li>
     <li>story->Racconto</li>
     <li>story->Racconti</li>
     <li>story->Testamento</li>
@@ -411,7 +411,7 @@
     <li>story->Tributo</li>
     <li>story->Verso</li>
     <li>story->Volume</li>
-    <li>story->Fantasia</li>
+    <li>story->Capriccio</li>
   </Namer_Novel.rulePack.rulesStrings>
   
   <!-- EN:
@@ -552,18 +552,18 @@
     <li>title->I fondamenti di [subject_primary]</li>
     <li>title->[subject_primary]: Parte [volNumeral]</li>
     <li>title->[subject_primary] Vol. [volNumeral]</li>
-    <li>title->[randAdjective] [subject_primary]</li>
-    <li>title->[randAdjective] [subject_primary] Vol. [volNumeral]</li>
+    <li>title->[subject_primary] [randAdjective]</li>
+    <li>title->[subject_primary] [randAdjective] Vol. [volNumeral]</li>
     <li>title->[maybe_authored_title]</li>
     <li>title(has_subject_secondary==true)->[studiesStart] [subject_primary] nel settore [subject_secondary]</li>
     <li>title->[studiesStart] [subject_primary] dopo [lifeEvent]</li>
     <li>title->[studiesStart] [subject_primary]: [anecdotes]</li>
-    <li>title->[studiesStart] [subject_primary]: una [randAdjective] [discussionNoun]</li>
-    <li>title->Il [randAdjective] [subject_primary] [referenceType]</li>
-    <li>title->Il [referenceType] di [randAdjective] [subject_primary], Vol. [volNumeral]</li>
-    <li>title->[studiesStart] [randAdjective] [subject_primary], Vol. [volNumeral]</li>
-    <li>title->Il [referenceType] di [studiesStart] [randAdjective] [subject_primary]</li>
-    <li>title->La [lifeEvent] [discussionNoun] e [subject_primary]</li>
+    <li>title->[studiesStart] [subject_primary]: un [discussionNoun] [randAdjective]</li>
+    <li>title->[referenceType] di [subject_primary] [randAdjective]</li>
+    <li>title->[referenceType] di [subject_primary] [randAdjective], Vol. [volNumeral]</li>
+    <li>title->[studiesStart] [subject_primary] [randAdjective], Vol. [volNumeral]</li>
+    <li>title->Compendio di [subject_primary] [randAdjective]</li>
+    <li>title->[discussionNoun] su [lifeEvent] e [subject_primary]</li>
     <li>studiesStart->Studi su</li>
     <li>studiesStart->Fondamenti di</li>
     <li>studiesStart->Gestione di</li>
@@ -591,14 +591,14 @@
     <li>anecdotes->dicerie</li>
     <li>anecdotes->storie</li>
     <li>anecdotes->narrazioni</li>
-    <li>discussionNoun->discussione</li>
+    <li>discussionNoun->confronto</li>
     <li>discussionNoun->dibattito</li>
     <li>discussionNoun->discorso</li>
     <li>discussionNoun->dialogo</li>
-    <li>discussionNoun->dialettica</li>
+    <li>discussionNoun->ragionamento</li>
     <li>discussionNoun->esame</li>
-    <li>discussionNoun->consultazione</li>
-    <li>discussionNoun->controversia</li>
+    <li>discussionNoun->approfondimento</li>
+    <li>discussionNoun->contraddittorio</li>
     <li>lifeEvent->infortunio</li>
     <li>lifeEvent->clonazione</li>
     <li>lifeEvent->trauma</li>
@@ -626,9 +626,9 @@
     <li>titleTwoSubjects->Introduzione a [subjectsTuple]</li>
     <li>titleTwoSubjects->Analisi di [subjectsTuple]</li>
     <li>maybe_authored_title->[author_gen]</li>
-    <li>author_gen->[ANYPAWN_nameIndef] Studi</li>
-    <li>author_gen->[ANYPAWN_nameIndef] Appunti</li>
-    <li>author_gen->[ANYPAWN_nameIndef] Seminari</li>
+    <li>author_gen->Studi di [ANYPAWN_nameIndef]</li>
+    <li>author_gen->Appunti di [ANYPAWN_nameIndef]</li>
+    <li>author_gen->Seminari di [ANYPAWN_nameIndef]</li>
     <li>maybe_authored_title(length_subject_primary[less_than]20,p=2)->[authored_title_gen]</li>
     <li>maybe_authored_title(length_subject_primary[less_than]20,has_subject_secondary==true,length_subject_secondary[less_than]20,p=4)->[authored_title_gen_two]</li>
     <li>authored_title_gen->Guida di [ANYPAWN_nameIndef] a [subject_primary]</li>
@@ -645,14 +645,14 @@
     <li>randAdjective->Arcaico</li>
     <li>randAdjective->Lurido</li>
     <li>randAdjective->Crepuscolare</li>
-    <li>randAdjective->Mondo della morte</li>
+    <li>randAdjective->Letale</li>
     <li>randAdjective->Grottesco</li>
     <li>randAdjective->Sepolcrale</li>
     <li>randAdjective->Sacro</li>
     <li>randAdjective->Oscurissimo</li>
-    <li>randAdjective->Sottomondo</li>
+    <li>randAdjective->Sotterraneo</li>
     <li>randAdjective->Primitivo</li>
-    <li>randAdjective->Sopravvivenza</li>
+    <li>randAdjective->Essenziale</li>
     <li>randAdjective->Stigio</li>
     <li>randAdjective->Morboso</li>
     <li>randAdjective->Ossessionante</li>
@@ -825,7 +825,7 @@
     <li>title(length_subject_primary[less_than]20,p=4)->[titleAuthoredOneSubject]</li>
     <li>title(length_subject_primary[less_than]20,has_subject_secondary==true,length_subject_secondary[less_than]20,p=4)->[titleBasicTwoSubjects]</li>
     <li>title(length_subject_primary[less_than]20,has_subject_secondary==true,length_subject_secondary[less_than]20,p=4)->[titleAuthoredTwoSubjects]</li>
-    <li>titleBasic(p=6)->[randAdjective] [subject_primary]</li>
+    <li>titleBasic(p=6)->[subject_primary] [randAdjective]</li>
     <li>titleBasic(p=6)->[randNoun] e [subject_primary]</li>
     <li>titleBasic->Lezioni su [subject_primary]</li>
     <li>titleBasic->Riflessioni su [subject_primary]</li>
@@ -853,8 +853,8 @@
     <li>titleBasic->Segreti di [subject_primary]</li>
     <li>titleBasic->Dominare [subject_primary]</li>
     <li>titleBasic->Studio approfondito di [subject_primary]</li>
-    <li>titleAuthoredNoSubject->[ANYPAWN_nameIndef] Studi</li>
-    <li>titleAuthoredNoSubject->[ANYPAWN_nameIndef] [randAdjective] Studi</li>
+    <li>titleAuthoredNoSubject->Studi di [ANYPAWN_nameIndef]</li>
+    <li>titleAuthoredNoSubject->Trattato [randAdjective] di [ANYPAWN_nameIndef]</li>
     <li>titleAuthoredNoSubject->Diario di [ANYPAWN_nameIndef]</li>
     <li>titleAuthoredNoSubject->Cronache di [ANYPAWN_nameIndef]</li>
     <li>titleAuthoredNoSubject->Memorie di [ANYPAWN_nameIndef]</li>
