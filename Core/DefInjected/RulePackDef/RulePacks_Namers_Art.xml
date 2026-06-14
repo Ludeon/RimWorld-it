@@ -46,26 +46,26 @@
   -->
   <NamerArtCommon.rulePack.rulesStrings>
     <li>r_art_name(p=4)->[Artwork] [Trans] [ConceptAny]</li>
-    <!-- aggettivo + nome accordati per genere -->
-    <li>r_art_name(p=2)->[maybe_am] [maybe_adjective] [Artwork_Masculine]</li>
-    <li>r_art_name(p=2)->[maybe_af] [maybe_adjective_fem] [Artwork_Feminine]</li>
-    <li>r_art_name->[maybe_am] [maybe_adjective] [ConceptAny_Masculine]</li>
-    <li>r_art_name->[maybe_af] [maybe_adjective_fem] [ConceptAny_Feminine]</li>
-    <li>r_art_name->[maybe_am] [maybe_adjective] [TerrainFeature_Masculine]</li>
-    <li>r_art_name->[maybe_af] [maybe_adjective_fem] [TerrainFeature_Feminine]</li>
-    <li>r_art_name->[maybe_am] [maybe_adjective] [Vegetable_Masculine]</li>
-    <li>r_art_name->[maybe_af] [maybe_adjective_fem] [Vegetable_Feminine]</li>
-    <li>r_art_name->[maybe_am] [maybe_adjective] [Game_Masculine]</li>
-    <li>r_art_name->[maybe_af] [maybe_adjective_fem] [Game_Feminine]</li>
-    <li>r_art_name->[maybe_am] [maybe_adjective] [Animal_Masculine]</li>
-    <li>r_art_name->[maybe_af] [maybe_adjective_fem] [Animal_Feminine]</li>
-    <li>r_art_name->[maybe_am] [maybe_adjective] [NaturalObject_Masculine]</li>
-    <li>r_art_name->[maybe_af] [maybe_adjective_fem] [NaturalObject_Feminine]</li>
-    <li>r_art_name->[maybe_am] [maybe_adjective] [PersonFamily_Masculine]</li>
-    <li>r_art_name->[maybe_af] [maybe_adjective_fem] [PersonFamily_Feminine]</li>
-    <li>r_art_name->[maybe_am] [maybe_adjective] [Enemy_Masculine]</li>
-    <li>r_art_name->[maybe_af] [maybe_adjective_fem] [Enemy_Feminine]</li>
-    <li>r_art_name->[maybe_a] [maybe_adjective] [Gore]</li>
+    <!-- nome + aggettivo accordati per genere (in italiano l'aggettivo segue il nome) -->
+    <li>r_art_name(p=2)->[maybe_am] [Artwork_Masculine] [maybe_adjective]</li>
+    <li>r_art_name(p=2)->[maybe_af] [Artwork_Feminine] [maybe_adjective_fem]</li>
+    <li>r_art_name->[maybe_am] [ConceptAny_Masculine] [maybe_adjective]</li>
+    <li>r_art_name->[maybe_af] [ConceptAny_Feminine] [maybe_adjective_fem]</li>
+    <li>r_art_name->[maybe_am] [TerrainFeature_Masculine] [maybe_adjective]</li>
+    <li>r_art_name->[maybe_af] [TerrainFeature_Feminine] [maybe_adjective_fem]</li>
+    <li>r_art_name->[maybe_am] [Vegetable_Masculine] [maybe_adjective]</li>
+    <li>r_art_name->[maybe_af] [Vegetable_Feminine] [maybe_adjective_fem]</li>
+    <li>r_art_name->[maybe_am] [Game_Masculine] [maybe_adjective]</li>
+    <li>r_art_name->[maybe_af] [Game_Feminine] [maybe_adjective_fem]</li>
+    <li>r_art_name->[maybe_am] [Animal_Masculine] [maybe_adjective]</li>
+    <li>r_art_name->[maybe_af] [Animal_Feminine] [maybe_adjective_fem]</li>
+    <li>r_art_name->[maybe_am] [NaturalObject_Masculine] [maybe_adjective]</li>
+    <li>r_art_name->[maybe_af] [NaturalObject_Feminine] [maybe_adjective_fem]</li>
+    <li>r_art_name->[maybe_am] [PersonFamily_Masculine] [maybe_adjective]</li>
+    <li>r_art_name->[maybe_af] [PersonFamily_Feminine] [maybe_adjective_fem]</li>
+    <li>r_art_name->[maybe_am] [Enemy_Masculine] [maybe_adjective]</li>
+    <li>r_art_name->[maybe_af] [Enemy_Feminine] [maybe_adjective_fem]</li>
+    <li>r_art_name->[maybe_a] [Gore] [maybe_adjective]</li>
     <!-- numerici / possessivi (nessun accordo) -->
     <li>r_art_name(p=2)->[Artwork] N. [art_name_numeric]</li>
     <li>r_art_name->N. [art_name_numeric]</li>
@@ -126,10 +126,10 @@
     <!-- articolo/aggettivo/colore accordati per genere col nome -->
     <li>r_art_name->Il [AnimalBadass_Masculine]</li>
     <li>r_art_name->La [AnimalBadass_Feminine]</li>
-    <li>r_art_name->[AdjectiveBadassMS] [AnimalBadass_Masculine]</li>
-    <li>r_art_name->[AdjectiveBadassFS] [AnimalBadass_Feminine]</li>
-    <li>r_art_name->[ColorBadass_Masculine] [AnimalBadass_Masculine]</li>
-    <li>r_art_name->[ColorBadass_Feminine] [AnimalBadass_Feminine]</li>
+    <li>r_art_name->[AnimalBadass_Masculine] [AdjectiveBadassMS]</li>
+    <li>r_art_name->[AnimalBadass_Feminine] [AdjectiveBadassFS]</li>
+    <li>r_art_name->[AnimalBadass_Masculine] [ColorBadass_Masculine]</li>
+    <li>r_art_name->[AnimalBadass_Feminine] [ColorBadass_Feminine]</li>
     <li>r_art_name->[ConceptBadass_Masculine] [ColorBadass_Masculine]</li>
     <li>r_art_name->[ConceptBadass_Feminine] [ColorBadass_Feminine]</li>
     <!-- possessivi -->

@@ -358,8 +358,8 @@
     <li>townname_combo->[Enemy] [geography]</li>
     <li>townname_combo->[Weapon] di [geography]</li>
     <li>townname_combo->[Weapon] [geography]</li>
-    <li>townname_combo->[ColorBadass_Masculine] [TerrainFeature_Masculine]</li>
-    <li>townname_combo->[ColorBadass_Feminine] [TerrainFeature_Feminine]</li>
+    <li>townname_combo->[TerrainFeature_Masculine] [ColorBadass_Masculine]</li>
+    <li>townname_combo->[TerrainFeature_Feminine] [ColorBadass_Feminine]</li>
     <li>geography(p=2)->[TerrainFeature]</li>
     <li>geography->[Community]</li>
     <li>townname_wordgen(p=2)->[SylE][SylE]</li>
@@ -397,8 +397,8 @@
   <NamerSettlementTribal.rulePack.rulesStrings>
     <li>r_name(p=2)->[WordTribal]</li>
     <li>r_name->[Color] [WordTribal]</li>
-    <li>r_name->[Color_Masculine] [TerrainFeature_Masculine]</li>
-    <li>r_name->[Color_Feminine] [TerrainFeature_Feminine]</li>
+    <li>r_name->[TerrainFeature_Masculine] [Color_Masculine]</li>
+    <li>r_name->[TerrainFeature_Feminine] [Color_Feminine]</li>
     <li>r_name->[WordTribal] [TerrainFeature]</li>
   </NamerSettlementTribal.rulePack.rulesStrings>
   
