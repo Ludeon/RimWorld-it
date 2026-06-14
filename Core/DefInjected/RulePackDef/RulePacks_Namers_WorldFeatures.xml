@@ -504,10 +504,12 @@
     <li>story_result->fraud</li>
   -->
   <WorldFeatureNamerCommon.rulePack.rulesStrings>
-    <li>r_name->[narrative_name] [terrain_word]</li>
-    <li>r_name->[narrative_name_M] [terrain_word]</li>
-    <li>r_name->[narrative_name_F] [terrain_word]</li>
-    <li>r_name(p=0.05)->[storyname] [terrain_word]</li>
+    <!-- bioma PRIMA del nome (apposizione, come 'Monte Bianco'/'Fiume Po'): in italiano
+         'Arvicola foresta pluviale' non funziona → 'Foresta pluviale arvicola' (modello FR/ES) -->
+    <li>r_name->[terrain_word] [narrative_name]</li>
+    <li>r_name->[terrain_word] [narrative_name_M]</li>
+    <li>r_name->[terrain_word] [narrative_name_F]</li>
+    <li>r_name(p=0.05)->[terrain_word] [storyname]</li>
     <!-- gender-neutral: proprio/composto/apposizione, nessun aggettivo da accordare -->
     <li>narrative_name(p=12)->[WordTribal]</li>
     <li>narrative_name(p=12)->[PlaceOutlander]</li>
@@ -521,14 +523,15 @@
     <li>narrative_name->[Animal] [BodyPart]</li>
     <!-- gendered: terminano in nome di genere noto, per gli aggettivi che si accordano -->
     <li>narrative_name_M->[Animal_Masculine]</li>
-    <li>narrative_name_M->[Color_Masculine] [Animal_Masculine]</li>
-    <li>narrative_name_M->[AdjectiveNaturalMS] [Animal_Masculine]</li>
+    <li>narrative_name_M->[Animal_Masculine] [Color_Masculine]</li>
+    <li>narrative_name_M->[Animal_Masculine] [AdjectiveNaturalMS]</li>
     <li>narrative_name_F->[Animal_Feminine]</li>
-    <li>narrative_name_F->[Color_Feminine] [Animal_Feminine]</li>
-    <li>narrative_name_F->[AdjectiveNaturalFS] [Animal_Feminine]</li>
-    <li>storyname(p=50)->[subject] [story_result]</li>
-    <li>storyname(p=2)->[subject] [BodyPart]</li>
-    <li>storyname->[subject] [Gore]</li>
+    <li>narrative_name_F->[Animal_Feminine] [Color_Feminine]</li>
+    <li>narrative_name_F->[Animal_Feminine] [AdjectiveNaturalFS]</li>
+    <!-- 'Follia di Lupo' (genitivo), non 'Lupo follia' -->
+    <li>storyname(p=50)->[story_result] di [subject]</li>
+    <li>storyname(p=2)->[BodyPart] di [subject]</li>
+    <li>storyname->[Gore] di [subject]</li>
     <li>subject(p=5)->[NamePerson]</li>
     <li>subject->[Animal]</li>
     <li>subject->[WordTribal]</li>
