@@ -47,10 +47,10 @@
     <li>tried->attempted</li>
   -->
   <Combat_FailIncludes.rulePack.rulesStrings>
-    <li>action->[INITIATOR_definite] [tried] di [damaged_inf] [RECIPIENT_definite]</li>
-    <li>action->[INITIATOR_definite] [tried] di [damaged_inf] [RECIPIENT_definite] con [implement]</li>
-    <li>action->[INITIATOR_definite] [tried] a usare [implement] per [damaged_inf] [RECIPIENT_definite]</li>
-    <li>action->[INITIATOR_definite] ha brandito [INITIATOR_possessive] [WEAPON_label] contro [RECIPIENT_definite]</li>
+    <li>action->[INITIATOR_definite] [tried] [damaged_inf] [RECIPIENT_definite]</li>
+    <li>action->[INITIATOR_definite] [tried] [damaged_inf] [RECIPIENT_definite] con [implement]</li>
+    <li>action->[INITIATOR_definite] [tried] usare [implement] per [damaged_inf] [RECIPIENT_definite]</li>
+    <li>action->[INITIATOR_definite] ha brandito [WEAPON_definite] contro [RECIPIENT_definite]</li>
     <li>action(p=0.3)->[INITIATOR_definite] [verb_genericattack] [towardsat] [RECIPIENT_definite] con [implement]</li>
     <li>action(p=0.3)->[INITIATOR_definite] [verb_genericattack] [towardsat] [RECIPIENT_definite]</li>
     <li>action(p=0.3)->[INITIATOR_definite] [verb_genericattack] con [implement]</li>
@@ -59,8 +59,8 @@
     <li>verb_genericattack->ha brandito</li>
     <li>verb_genericattack->ha agitato</li>
     <li>verb_genericattack->ha colpito</li>
-    <li>tried->ha provato</li>
-    <li>tried->ha tentato</li>
+    <li>tried->ha cercato di</li>
+    <li>tried->ha tentato di</li>
   </Combat_FailIncludes.rulePack.rulesStrings>
   
   <!-- EN:
@@ -77,17 +77,17 @@
     <li>flavortext_consequence(p=0.2)->throwing [RECIPIENT_objective] off balance</li>
   -->
   <Combat_MeleeDamageIncludes.rulePack.rulesStrings>
-    <li>result(p=1)->[damaged_present] [RECIPIENT_possessive] [targetlist]</li>
-    <li>result(p=0.2)->[damaged_present] [RECIPIENT_possessive] [targetlist] e [flavortext_consequence]</li>
-    <li>result(p=0.1)->[damaged_present] [RECIPIENT_possessive] [targetlist] [strikeAdv]</li>
+    <li>result(p=1)->[damaged_present] [targetlist]</li>
+    <li>result(p=0.2)->[damaged_present] [targetlist] e [flavortext_consequence]</li>
+    <li>result(p=0.1)->[damaged_present] [targetlist] [strikeAdv]</li>
     <li>strikeAdv->dolorosamente</li>
     <li>strikeAdv->orribilmente</li>
     <li>strikeAdv->ferocemente</li>
     <li>strikeAdv->brutalmente</li>
     <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid)->lasciando una ferita disgustosa</li>
     <li>flavortext_consequence->lasciando una ferita orribile</li>
-    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid)->facendo [RECIPIENT_objective] [wince] [painevent]</li>
-    <li>flavortext_consequence(p=0.2)->facendo perdere l'equilibrio a [RECIPIENT_objective]</li>
+    <li>flavortext_consequence(RECIPIENT_flesh!=Mechanoid)->facendo [wince] [RECIPIENT_definite] [painevent]</li>
+    <li>flavortext_consequence(p=0.2)->facendo perdere l'equilibrio a [RECIPIENT_definite]</li>
   </Combat_MeleeDamageIncludes.rulePack.rulesStrings>
   
   <!-- EN:
@@ -133,32 +133,36 @@
   <Combat_MeleeIncludes.rulePack.rulesStrings>
     <li>r_logentry->[action], [result].</li>
     <li>r_logentry(priority=-10)->[action].</li>
-    <li>implement(IMPLEMENTOWNER_type==weapon,p=2)->[INITIATOR_possessive] [WEAPON_label] [TOOL_label]</li>
-    <li>implement(IMPLEMENTOWNER_type==weapon,p=1)->[INITIATOR_possessive] [WEAPON_label]</li>
-    <li>implement(IMPLEMENTOWNER_type==weapon,p=1)->un [WEAPON_label] [TOOL_label]</li>
-    <li>implement(IMPLEMENTOWNER_type==weapon,p=0.5)->un [WEAPON_label]</li>
-    <li>implement(IMPLEMENTOWNER_type==bodypart,p=2)->[INITIATOR_possessive] [TOOL_label]</li>
-    <li>implement(IMPLEMENTOWNER_type==hediff,p=2)->[INITIATOR_possessive] [WEAPON_label] [TOOL_label]</li>
-    <li>implement(IMPLEMENTOWNER_type==hediff,p=1)->[INITIATOR_possessive] [WEAPON_label]</li>
-    <li>implement(IMPLEMENTOWNER_type==hediff,p=1)->[INITIATOR_possessive] [TOOL_label]</li>
-    <li>targetlist(recipient_part_count==1)->[recipient_part0_label]</li>
-    <li>targetlist(recipient_part_count==2)->[recipient_part0_label] e [recipient_part1_label]</li>
-    <li>targetlist(recipient_part_count==3)->[recipient_part0_label], [recipient_part1_label] e [recipient_part2_label]</li>
-    <li>targetlist->[recipient_part0_label], [recipient_part1_label], [recipient_part2_label] e [recipient_part3_label]</li>
+    <!-- [X_possessive] in italiano = "suo/sua" (senza articolo) → uso [WEAPON_indefinite]/
+         [TOOL_definite] come il modello FR: "con una spada", "con la lama di una spada" -->
+    <li>implement(IMPLEMENTOWNER_type==weapon,p=2)->[TOOL_definite] di [WEAPON_indefinite]</li>
+    <li>implement(IMPLEMENTOWNER_type==weapon,p=1)->[WEAPON_indefinite]</li>
+    <li>implement(IMPLEMENTOWNER_type==weapon,p=1)->[TOOL_definite] di [WEAPON_indefinite]</li>
+    <li>implement(IMPLEMENTOWNER_type==weapon,p=0.5)->[WEAPON_indefinite]</li>
+    <li>implement(IMPLEMENTOWNER_type==bodypart,p=2)->[TOOL_definite]</li>
+    <li>implement(IMPLEMENTOWNER_type==hediff,p=2)->[TOOL_definite] di [WEAPON_indefinite]</li>
+    <li>implement(IMPLEMENTOWNER_type==hediff,p=1)->[WEAPON_indefinite]</li>
+    <li>implement(IMPLEMENTOWNER_type==hediff,p=1)->[TOOL_definite]</li>
+    <!-- [recipient_partN_definite]: il motore mette l'articolo giusto (il braccio/l'occhio/la gamba) -->
+    <li>targetlist(recipient_part_count==1)->[recipient_part0_definite]</li>
+    <li>targetlist(recipient_part_count==2)->[recipient_part0_definite] e [recipient_part1_definite]</li>
+    <li>targetlist(recipient_part_count==3)->[recipient_part0_definite], [recipient_part1_definite] e [recipient_part2_definite]</li>
+    <li>targetlist->[recipient_part0_definite], [recipient_part1_definite], [recipient_part2_definite] e [recipient_part3_definite]</li>
     <li>damaged_present(deflected!=True)->ferendo</li>
     <li>damaged_present(deflected!=True)->ferendo</li>
     <li>destroyed(p=0.5)->distrutto</li>
     <li>destroyed(p=0.5)->demolito</li>
     <li>destroyed(p=0.5)->rovinato</li>
     <li>destroyed(p=0.5)->danneggiato</li>
-    <li>wince(RECIPIENT_flesh==Normal)->fa una smorfia</li>
-    <li>wince(RECIPIENT_flesh==Normal)->grima</li>
-    <li>wince(RECIPIENT_flesh==Normal)->si irrigidisce</li>
-    <li>wince(RECIPIENT_flesh==Normal)->geme</li>
-    <li>wince(RECIPIENT_flesh!=Mechanoid)->urla</li>
-    <li>wince(RECIPIENT_flesh!=Mechanoid)->grida</li>
-    <li>wince->indietreggia</li>
-    <li>wince->barcolla</li>
+    <!-- infiniti: usati in "facendo [wince] [RECIPIENT_definite]" = "facendo urlare X" -->
+    <li>wince(RECIPIENT_flesh==Normal)->fare una smorfia</li>
+    <li>wince(RECIPIENT_flesh==Normal)->trasalire</li>
+    <li>wince(RECIPIENT_flesh==Normal)->irrigidirsi</li>
+    <li>wince(RECIPIENT_flesh==Normal)->gemere</li>
+    <li>wince(RECIPIENT_flesh!=Mechanoid)->urlare</li>
+    <li>wince(RECIPIENT_flesh!=Mechanoid)->gridare</li>
+    <li>wince->indietreggiare</li>
+    <li>wince->barcollare</li>
     <li>painstate->in</li>
     <li>painstate->con</li>
     <li>painstate->dal</li>
@@ -283,14 +287,14 @@
     <li>damaged_targets->[recipient_part_damaged0_label], [recipient_part_damaged1_label], [recipient_part_damaged2_label], and [recipient_part_damaged3_label]</li>
   -->
   <Combat_WoundIncludes.rulePack.rulesStrings>
-    <li>destroyed_targets(recipient_part_destroyed_count==1)->[recipient_part_destroyed0_label]</li>
-    <li>destroyed_targets(recipient_part_destroyed_count==2)->[recipient_part_destroyed0_label] e [recipient_part_destroyed1_label]</li>
-    <li>destroyed_targets(recipient_part_destroyed_count==3)->[recipient_part_destroyed0_label], [recipient_part_destroyed1_label] e [recipient_part_destroyed2_label]</li>
-    <li>destroyed_targets->[recipient_part_destroyed0_label], [recipient_part_destroyed1_label], [recipient_part_destroyed2_label] e [recipient_part_destroyed3_label]</li>
-    <li>damaged_targets(recipient_part_damaged_count==1)->[recipient_part_damaged0_label]</li>
-    <li>damaged_targets(recipient_part_damaged_count==2)->[recipient_part_damaged0_label] e [recipient_part_damaged1_label]</li>
-    <li>damaged_targets(recipient_part_damaged_count==3)->[recipient_part_damaged0_label], [recipient_part_damaged1_label] e [recipient_part_damaged2_label]</li>
-    <li>damaged_targets->[recipient_part_damaged0_label], [recipient_part_damaged1_label], [recipient_part_damaged2_label] e [recipient_part_damaged3_label]</li>
+    <li>destroyed_targets(recipient_part_destroyed_count==1)->[recipient_part_destroyed0_definite]</li>
+    <li>destroyed_targets(recipient_part_destroyed_count==2)->[recipient_part_destroyed0_definite] e [recipient_part_destroyed1_definite]</li>
+    <li>destroyed_targets(recipient_part_destroyed_count==3)->[recipient_part_destroyed0_definite], [recipient_part_destroyed1_definite] e [recipient_part_destroyed2_definite]</li>
+    <li>destroyed_targets->[recipient_part_destroyed0_definite], [recipient_part_destroyed1_definite], [recipient_part_destroyed2_definite] e [recipient_part_destroyed3_definite]</li>
+    <li>damaged_targets(recipient_part_damaged_count==1)->[recipient_part_damaged0_definite]</li>
+    <li>damaged_targets(recipient_part_damaged_count==2)->[recipient_part_damaged0_definite] e [recipient_part_damaged1_definite]</li>
+    <li>damaged_targets(recipient_part_damaged_count==3)->[recipient_part_damaged0_definite], [recipient_part_damaged1_definite] e [recipient_part_damaged2_definite]</li>
+    <li>damaged_targets->[recipient_part_damaged0_definite], [recipient_part_damaged1_definite], [recipient_part_damaged2_definite] e [recipient_part_damaged3_definite]</li>
   </Combat_WoundIncludes.rulePack.rulesStrings>
   
 </LanguageData>
