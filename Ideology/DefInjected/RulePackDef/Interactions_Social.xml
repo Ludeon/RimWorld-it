@@ -5,14 +5,16 @@
     <li>sent->[RECIPIENT_nameDef] was not convinced.</li>
   -->
   <Sentence_ConvertIdeoAttemptFail.rulePack.rulesStrings>
-    <li>sent->[RECIPIENT_nameDef] non è stato convinto.</li>
+    <li>sent(RECIPIENT_gender==Male)->[RECIPIENT_nameDef] non è stato convinto.</li>
+    <li>sent(RECIPIENT_gender==Female)->[RECIPIENT_nameDef] non è stata convinta.</li>
   </Sentence_ConvertIdeoAttemptFail.rulePack.rulesStrings>
   
   <!-- EN:
     <li>sent->[RECIPIENT_nameDef] was not convinced and resented the attempt.</li>
   -->
   <Sentence_ConvertIdeoAttemptFailResentment.rulePack.rulesStrings>
-    <li>sent->[RECIPIENT_nameDef] non è stato convinto e ha risentito del tentativo.</li>
+    <li>sent(RECIPIENT_gender==Male)->[RECIPIENT_nameDef] non è stato convinto e ha risentito del tentativo.</li>
+    <li>sent(RECIPIENT_gender==Female)->[RECIPIENT_nameDef] non è stata convinta e ha risentito del tentativo.</li>
   </Sentence_ConvertIdeoAttemptFailResentment.rulePack.rulesStrings>
   
   <!-- EN:
@@ -26,7 +28,8 @@
     <li>sent->[RECIPIENT_nameDef] was convinced and changed [RECIPIENT_possessive] ideoligion.</li>
   -->
   <Sentence_ConvertIdeoAttemptSuccess.rulePack.rulesStrings>
-    <li>sent->[RECIPIENT_nameDef] è stato convinto e ha cambiato la propria ideoligia.</li>
+    <li>sent(RECIPIENT_gender==Male)->[RECIPIENT_nameDef] è stato convinto e ha cambiato la propria ideoligia.</li>
+    <li>sent(RECIPIENT_gender==Female)->[RECIPIENT_nameDef] è stata convinta e ha cambiato la propria ideoligia.</li>
   </Sentence_ConvertIdeoAttemptSuccess.rulePack.rulesStrings>
   
 </LanguageData>
