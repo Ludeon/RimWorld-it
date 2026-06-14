@@ -112,9 +112,22 @@ was English-fallback for `[VerbFriendly]`) + adapted 4 Tales frames to gerund. L
      article (engine uses our WordInfo/Gender, already huge: 2074 M / 1029 F); adjective split by
      `(TOOL_gender==M/F)` (`la spada è sfiorata` vs `il coltello è sfiorato`); dropped the wrong
      "a" (transitive verb). Verified for both genders via the simulator.
-   - **Remaining (same recipe)**: Combat_Dodge/Miss (same file), CombatRanged (Deflect/Fire),
-     Damage, social Interactions. The ONLY thing needing the worker is plural articles
-     (`le braccia`) — accept the residual or pursue the upstream PR.
+   - **Combat_Hit done (2026-06-14)**: same `nel/nella [recipient_part0_label]` split by
+     `(recipient_part0_gender==M/F)`, verified offline (was hardcoded `nella` → "nella braccio").
+   - **CombatRanged possessive bug fixed (2026-06-14)**: `Combat_RangedFire`/`_Thrown` used
+     `il/la [WEAPON_label] di [INITIATOR_possessive]` / `[projectile] …` — but `[X_possessive]`
+     is the **pronoun** → "di suo/sua" (wrong) and `il/la` showed literally. Adopted the **FR
+     model**: `[WEAPON_indefinite]` / `[projectile_indefinite]` (engine supplies the article from
+     gender, RW≥1.4); dropped the fixed article from `shot_a`/`threw_a`, restricted `shot_a` to a
+     transitive verb (`ha sparato`). ⚠️ Needs **in-game confirm** that `[WEAPON_indefinite]`/
+     `[projectile_indefinite]` resolve (FR ships them, so expected OK).
+   - **Remaining (same recipe)**: Combat_Dodge/Miss subject-agreement (`è balzato/scivolato` →
+     gender of RECIPIENT/INITIATOR), RangedDamage/Deflect/ExplosionImpact participles
+     (`è stato [damaged_past]` → body-part or pawn gender), social Interactions. Plus a pervasive
+     `di [RECIPIENT_possessive]` ("sull'armatura di suo") — same possessive issue, present even in
+     the verified `Combat_Deflect` (line 49) + RangedDamage/Deflect; decide: drop the possessive
+     ("sull'armatura") or render "la sua armatura". The ONLY thing needing the worker is plural
+     articles (`le braccia`) — accept the residual or pursue the upstream PR.
    - To verify: `namegen.generate(packs, "...· Combat_X", context={...})` with sample M and F
      part/tool; or add a small dashboard combat-preview later.
 3. Other namers if any remain (done: Namer_Novel, 9 biomes, Art ×2, Scenario, Settlement
