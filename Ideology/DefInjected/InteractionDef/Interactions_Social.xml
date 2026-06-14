@@ -16,7 +16,7 @@
     <li>r_logentry->[INITIATOR_nameDef] tried to convert [RECIPIENT_nameDef] and succeeded.</li>
   -->
   <Convert_Success.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] è riuscito a convertire [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha convertito con successo [RECIPIENT_nameDef].</li>
   </Convert_Success.logRulesInitiator.rulesStrings>
   
   <!-- EN: convert ideoligion attempt -->
@@ -49,11 +49,12 @@
     <li>problems->recent difficulties</li>
   -->
   <Counsel_Success.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] ha consigliato [RECIPIENT_nameDef] riguardo ai [problems].</li>
-    <li>r_logentry->[INITIATOR_nameDef] ha aiutato [RECIPIENT_nameDef] a riflettere su [problems]</li>
+    <!-- problems include gia' l'articolo → template senza preposizione+articolo (niente 'ai [..]') -->
+    <li>r_logentry->[INITIATOR_nameDef] ha consigliato [RECIPIENT_nameDef] su come superare [problems].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha aiutato [RECIPIENT_nameDef] ad affrontare [problems].</li>
     <li>r_logentry->[INITIATOR_nameDef] ha dato consigli a [RECIPIENT_nameDef] per affrontare la negatività.</li>
     <li>problems->i suoi problemi</li>
-    <li>problems->i suoi disordini</li>
+    <li>problems->i suoi guai</li>
     <li>problems->i suoi pensieri dolorosi</li>
     <li>problems->le sue recenti difficoltà</li>
   </Counsel_Success.logRulesInitiator.rulesStrings>
@@ -107,7 +108,7 @@
     <li>r_logentry->[INITIATOR_nameDef] ha appellato alle emozioni degli spettatori.</li>
     <li>r_logentry->[INITIATOR_nameDef] ha accusato [RECIPIENT_nameDef] di [wrongdoing].</li>
     <li>wrongdoing->sabotare la colonia</li>
-    <li>wrongdoing->essere pigro[RECIPIENT_o_a]</li>
+    <li>wrongdoing->essere pigr{RECIPIENT_gender ? o : a}</li>
     <li>wrongdoing->mangiare troppo</li>
     <li>wrongdoing->rubare</li>
     <li>wrongdoing->essere una persona orribile</li>
@@ -118,7 +119,7 @@
     <li>wrongdoing->blasfemia</li>
     <li>wrongdoing->tradimento</li>
     <li>wrongdoing->pensieri di odio</li>
-    <li>wrongdoing->disloyalty</li>
+    <li>wrongdoing->slealtà</li>
   </Trial_Accuse.logRulesInitiator.rulesStrings>
   
   <!-- EN: defend -->
@@ -135,7 +136,8 @@
   <Trial_Defend.logRulesInitiator.rulesStrings>
     <li>r_logentry->[INITIATOR_nameDef] ha respinto l'accusa.</li>
     <li>r_logentry->[INITIATOR_nameDef] ha presentato altre prove.</li>
-    <li>r_logentry->[INITIATOR_nameDef] ha dichiarato al giurato.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha fatto appello alla giuria.</li>
+
     <li>r_logentry->[INITIATOR_nameDef] ha chiesto pietà.</li>
     <li>r_logentry->[INITIATOR_nameDef] ha paralizzato la procedura.</li>
     <li>r_logentry->[INITIATOR_nameDef] ha respinto le accuse.</li>
