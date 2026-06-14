@@ -140,9 +140,32 @@ was English-fallback for `[VerbFriendly]`) + adapted 4 Tales frames to gerund. L
      fixed/full files: `RulePacks_CombatMelee` (Hit/Deflect/Dodge/Miss), `RulePacks_CombatIncludes`
      (implement/targetlist/wound-targets/result/wince/FailIncludes), `RulePacks_CombatRanged`
      (RangedDamage/ExplosionImpact/RangedDeflect; RangedFire/Thrown were done earlier).
-   - **Still TODO**: **social Interactions** (`Interactions_Social/Romance/Prisoner`, + DLCs) —
-     check for the SAME 3 bugs. `RulePacks_DamageEvent`/`_Maneuvers` spot-check (Maneuvers holds
-     the `damaged_inf`/`damaged_past` lists — verify infinitive vs participle consistency).
+   - **Social Interactions DONE (2026-06-14)** — swept ALL interaction logs (RulePackDef
+     `Sentence_*` + InteractionDef `*.logRulesInitiator`) across Core + Royalty + Ideology +
+     Biotech + Anomaly. Same bug classes + a few interaction-specific ones, all fixed:
+     - **missing/auxiliary**: bare participles → `ha [v]`; **plural subject** (`[INITIATOR] e
+       [RECIPIENT] [v]`) → `hanno [v]` (Chitchat/DeepTalk/SanguophageChat); verb symbols normalised
+       to bare participles (were mixing `ha …`/imperfect/adjective).
+     - **gender (essere)**: `era attratto`/`è riuscito`/`(non) è stato convinto`/`coinvolto` →
+       split by `(RECIPIENT_gender==M/F)` or reworded to `avere` (no agreement).
+     - **possessive `[X_possessive]`**: → `di [nameDef]` / `la propria …` / `le proprie qualità` /
+       fixed-gender `la sua armatura`/`la sua crisi`; objective `[X_objective]` → `[nameDef]` or
+       `tra sé e sé`; one botched `[RECIPIENT_possessive]del suo` (Anomaly) → `del suo`.
+     - **prepositions/typos**: `detto su`→`parlato di`, `collare [nome]`→`collare a`, double-article
+       `ai [problems]`, double-`di` (`di del`/`di degli`), invented symbol `pigro[RECIPIENT_o_a]`→
+       ternary, `disloyalty`/untranslated, typo `esiguto`→`imposto`, tense (`accarezza`→`ha
+       accarezzato`, `afferrò`→`ha afferrato`).
+     - **genitive topics** (Anomaly `subjectDarkStudy`/`Insane` = `degli horax`/`dei fallimenti`;
+       Ideology Speech): templates de-prepositioned (`a proposito [topic]` / `ha parlato [topic]`)
+       to avoid `di degli`/`su degli`.
+     Ideology `Interactions_Slave` was already clean. **Known residuals (documented, need data
+     work, NOT bugs introduced now):** (1) **`[PersonalCharacteristic]`** article — shared
+     mixed-gender Words list used in possessive+object+namer contexts → can't add article → e.g.
+     "ha insultato eleganza di X" (missing l'). (2) **`di`+definite-article fusion** in 6 Ideology
+     Speech packs with article-topics (AcceptRole/Blinding/Conversion/Execution/Funeral/Leader):
+     "ha parlato di il …" instead of "del" — needs per-topic genitive conversion.
+   - `RulePacks_DamageEvent`/`_Maneuvers` spot-check still pending (Maneuvers holds the
+     `damaged_inf`(infinitive)/`damaged_past`(participle) lists — confirmed consistent for combat).
    - ⚠️ **In-game confirm needed**: that `[projectile_definite/indefinite]`, `[WEAPON_definite/
      indefinite]`, `[recipient_partN_definite]` all resolve (FR ships them on RW≥1.4 → expected
      OK). Residual: vowel-initial parts after `nel/al` (no Vowel constraint exists → "nel occhio"
