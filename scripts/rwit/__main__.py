@@ -24,6 +24,7 @@ import stringsdiff as stringsdiff_mod
 import variants as variants_mod
 import reconcile as reconcile_mod
 import freshness as freshness_mod
+import argscheck as argscheck_mod
 
 app = typer.Typer(
     add_completion=False,
@@ -212,6 +213,43 @@ def freshness_cmd(
     else:
         console.print(f"[bold]{len(base_issues)} liste base divergenti, "
                       f"{len(var_issues)} varianti stale.[/]")
+
+
+@app.command("args-check", help="Trova segnaposto {...} discordanti fra IT ed EN (es. {0} residuo che appare a schermo).")
+def args_check(
+    dlc: Optional[List[str]] = typer.Option(None, "--dlc", help="Limita a una o piu DLC"),
+):
+    hits = argscheck_mod.scan(dlc or None)
+    from collections import Counter
+    by = Counter(h.kind for h in hits)
+    t = Table(title=f"Segnaposto discordanti IT vs EN - {len(hits)} stringhe")
+    t.add_column("Tipo"); t.add_column("Conteggio", justify="right", style="bold")
+    labels = {"extra-pos": "posizionale IN PIU' nell'IT (es. {0} residuo) — BUG probabile",
+              "manca-pos": "posizionale MANCANTE nell'IT — BUG probabile",
+              "manca-var": "variabile {NOME} di contenuto MANCANTE — da rivedere",
+              "extra-var": "variabile {NOME} IN PIU' (spesso nome al posto del pronome: lecito)"}
+    for k, n in by.most_common():
+        t.add_row(labels.get(k, k), str(n))
+    console.print(t)
+    if not hits:
+        console.print("[green]Nessuna discordanza di segnaposto.[/]")
+        return
+    out = config.reports_dir() / f"argscheck_{datetime.now():%Y%m%d_%H%M}.txt"
+    lines = [f"# args-check - {len(hits)} stringhe con segnaposto discordanti\n"]
+    cur = None
+    for h in sorted(hits, key=lambda h: (h.file, h.line or 0)):
+        if h.file != cur:
+            lines.append(f"\n=== {h.file} ==="); cur = h.file
+        diff = []
+        if h.extra_num: diff.append(f"+pos{{{','.join(h.extra_num)}}}")
+        if h.miss_num:  diff.append(f"-pos{{{','.join(h.miss_num)}}}")
+        if h.extra_var: diff.append(f"+var{{{','.join(h.extra_var)}}}")
+        if h.miss_var:  diff.append(f"-var{{{','.join(h.miss_var)}}}")
+        lines.append(f"  L{h.line:<5} [{' '.join(diff)}] {h.tag}")
+        lines.append(f"     EN: {h.en}")
+        lines.append(f"     IT: {h.it}")
+    out.write_text("\n".join(lines), encoding="utf-8")
+    console.print(f"[green]Dettaglio (+ = in piu' nell'IT, - = mancante):[/] {out}")
 
 
 @app.command(help="(Ri)crea i symlink Italiano nell'installazione del gioco.")
