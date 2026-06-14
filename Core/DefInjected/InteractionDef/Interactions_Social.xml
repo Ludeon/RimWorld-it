@@ -23,21 +23,23 @@
     <li>commentedabout->told a joke about</li>
   -->
   <Chitchat.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] e [RECIPIENT_nameDef] [talkedabout] [TalkTopicLight].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [talkedabout] [TalkTopicLight] con [RECIPIENT_nameDef].</li>
-    <li>r_logentry(p=0.8)->[INITIATOR_nameDef] [commentedabout] [TalkTopicLight] a [RECIPIENT_nameDef].</li>
+    <!-- ausiliare nel template: 'hanno' (sogg. plurale) / 'ha' (sogg. singolare);
+         talkedabout/commentedabout = participi NUDI -->
+    <li>r_logentry->[INITIATOR_nameDef] e [RECIPIENT_nameDef] hanno [talkedabout] [TalkTopicLight].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha [talkedabout] [TalkTopicLight] con [RECIPIENT_nameDef].</li>
+    <li>r_logentry(p=0.8)->[INITIATOR_nameDef] ha [commentedabout] [TalkTopicLight] a [RECIPIENT_nameDef].</li>
     <li>talkedabout(p=4)->chiacchierato di</li>
-    <li>talkedabout->ha condiviso una parola su</li>
-    <li>talkedabout->ha parlato di</li>
+    <li>talkedabout->condiviso una parola su</li>
     <li>talkedabout->parlato di</li>
-    <li>talkedabout->parlato di</li>
-    <li>talkedabout->scherzava su</li>
-    <li>talkedabout->ha scherzato su</li>
-    <li>commentedabout->ha detto qualcosa su</li>
-    <li>commentedabout->ha detto una parola su</li>
-    <li>commentedabout->ha fatto un commento su</li>
-    <li>commentedabout->ha commentato</li>
-    <li>commentedabout->ha raccontato una barzelletta su</li>
+    <li>talkedabout->discusso di</li>
+    <li>talkedabout->chiacchierato di</li>
+    <li>talkedabout->scherzato su</li>
+    <li>talkedabout->ironizzato su</li>
+    <li>commentedabout->detto qualcosa su</li>
+    <li>commentedabout->detto una parola su</li>
+    <li>commentedabout->fatto un commento su</li>
+    <li>commentedabout->commentato</li>
+    <li>commentedabout->raccontato una barzelletta su</li>
   </Chitchat.logRulesInitiator.rulesStrings>
   
   <!-- EN: deep talk -->
@@ -59,18 +61,18 @@
     <li>subject(INITIATOR_cubeInterest==true)->[TalkTopicCube]</li>
   -->
   <DeepTalk.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] e [RECIPIENT_nameDef] [talkedabout] [subject].</li>
-    <li>r_logentry->[INITIATOR_nameDef] [talkedabout] [subject] con [RECIPIENT_nameDef].</li>
-    <li>talkedabout->ha comunicato pensieri su</li>
-    <li>talkedabout->ha scambiato pensieri su</li>
-    <li>talkedabout->ha scambiato idee su</li>
-    <li>talkedabout->ha condiviso opinioni su</li>
-    <li>talkedabout->ha condiviso credenze su</li>
-    <li>talkedabout->ha discusso l’argomento di</li>
-    <li>talkedabout->ha avuto una conversazione sincera su</li>
-    <li>talkedabout->ha parlato tranquillamente di</li>
-    <li>talkedabout->ha parlato profondamente di</li>
-    <li>talkedabout->si è connesso sul tema di</li>
+    <li>r_logentry->[INITIATOR_nameDef] e [RECIPIENT_nameDef] hanno [talkedabout] [subject].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha [talkedabout] [subject] con [RECIPIENT_nameDef].</li>
+    <li>talkedabout->comunicato pensieri su</li>
+    <li>talkedabout->scambiato pensieri su</li>
+    <li>talkedabout->scambiato idee su</li>
+    <li>talkedabout->condiviso opinioni su</li>
+    <li>talkedabout->condiviso credenze su</li>
+    <li>talkedabout->discusso l’argomento di</li>
+    <li>talkedabout->avuto una conversazione sincera su</li>
+    <li>talkedabout->parlato tranquillamente di</li>
+    <li>talkedabout->parlato profondamente di</li>
+    <li>talkedabout->approfondito il tema di</li>
     <li>subject(INITIATOR_cubeInterest==false)->[TalkTopicHeavy]</li>
     <li>subject(INITIATOR_cubeInterest==true)->[TalkTopicCube]</li>
   </DeepTalk.logRulesInitiator.rulesStrings>
@@ -105,20 +107,20 @@
     <li>insultcomparison(INITIATOR_cubeInterest==true)->a non-cubic platonic object</li>
   -->
   <Insult.logRulesInitiator.rulesStrings>
-    <li>r_logentry(p=3)->[INITIATOR_nameDef] [insulted] [target] [PersonalCharacteristic].</li>
-    <li>r_logentry->[INITIATOR_nameDef] ha confrontato [target] con un [insultcomparison].</li>
-    <li>r_logentry->[INITIATOR_nameDef] ha chiamato [target] un [insultcomparison].</li>
-    <li>target(p=4)->[RECIPIENT_nameDef]</li>
-    <li>target->[RECIPIENT_nameDef] [PersonFamily]</li>
+    <!-- 'ha [insulted] [caratteristica] di [RECIPIENT]' (modello FR); participi NUDI transitivi.
+         Residuo: l'articolo sulla caratteristica (lista a genere misto, condivisa) non e' risolvibile. -->
+    <li>r_logentry(p=3)->[INITIATOR_nameDef] ha [insulted] [PersonalCharacteristic] di [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha confrontato [RECIPIENT_nameDef] con un [insultcomparison].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha chiamato [RECIPIENT_nameDef] un [insultcomparison].</li>
     <li>insulted(p=3)->insultato</li>
     <li>insulted->insultato apertamente</li>
     <li>insulted->insultato a gran voce</li>
     <li>insulted->insultato palesemente</li>
     <li>insulted->insultato direttamente</li>
     <li>insulted->insultato ferocemente</li>
-    <li>insulted->palesemente irrispettoso</li>
+    <li>insulted->denigrato</li>
     <li>insulted->calunniato</li>
-    <li>insulted->ha lanciato invettive su</li>
+    <li>insulted->schernito</li>
     <li>insulted->deriso</li>
     <li>insultcomparison(p=2)->[Animal]</li>
     <li>insultcomparison->[Enemy]</li>
@@ -145,20 +147,20 @@
     <li>complimented->said good things about</li>
   -->
   <KindWords.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] [complimented] [RECIPIENT_nameDef] [PersonalCharacteristic].</li>
-    <li>complimented(p=3)->complimentato</li>
-    <li>complimented->decantato</li>
-    <li>complimented->raccomandato</li>
-    <li>complimented->lodato</li>
-    <li>complimented->applaudito</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha [complimented] [PersonalCharacteristic] di [RECIPIENT_nameDef].</li>
+    <li>complimented(p=3)->lodato</li>
+    <li>complimented->elogiato</li>
+    <li>complimented->apprezzato</li>
+    <li>complimented->ammirato</li>
     <li>complimented->celebrato</li>
-    <li>complimented->salutato</li>
-    <li>complimented->ha parlato gentilmente di</li>
-    <li>complimented->ha espresso giudizi positivi su</li>
-    <li>complimented->ha offerto parole gentili su</li>
-    <li>complimented->apprezzato verbalmente</li>
-    <li>complimented->ha espresso apprezzamento per</li>
-    <li>complimented->ha parlato bene di</li>
+    <li>complimented->decantato</li>
+    <li>complimented->esaltato</li>
+    <li>complimented->encomiato</li>
+    <li>complimented->applaudito</li>
+    <li>complimented->apprezzato molto</li>
+    <li>complimented->lodato con calore</li>
+    <li>complimented->elogiato apertamente</li>
+    <li>complimented->apprezzato sinceramente</li>
   </KindWords.logRulesInitiator.rulesStrings>
   
   <!-- EN: slight -->
@@ -183,21 +185,19 @@
     <li>madefunof->offered a backhanded compliment about</li>
   -->
   <Slight.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] [madefunof] [target] [PersonalCharacteristic].</li>
-    <li>target(p=4)->[RECIPIENT_nameDef]</li>
-    <li>target->[RECIPIENT_nameDef] [PersonFamily]</li>
-    <li>madefunof->preso in giro</li>
-    <li>madefunof->non rispettata</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha [madefunof] [PersonalCharacteristic] di [RECIPIENT_nameDef].</li>
+    <li>madefunof->deriso</li>
+    <li>madefunof->disprezzato</li>
     <li>madefunof->sottilmente disprezzato</li>
     <li>madefunof->sottilmente svergognato</li>
-    <li>madefunof->ha parlato male di</li>
-    <li>madefunof->ha parlato negativamente di</li>
-    <li>madefunof->riso di</li>
-    <li>madefunof->ridacchiava</li>
-    <li>madefunof->implicito di cose negative su</li>
+    <li>madefunof->criticato</li>
     <li>madefunof->sminuito</li>
-    <li>madefunof->ha fatto un commento sprezzante su</li>
-    <li>madefunof->ha fatto un complimento alla rovescia su</li>
+    <li>madefunof->ridicolizzato</li>
+    <li>madefunof->sbeffeggiato</li>
+    <li>madefunof->schernito</li>
+    <li>madefunof->denigrato</li>
+    <li>madefunof->beffeggiato</li>
+    <li>madefunof->preso in giro</li>
   </Slight.logRulesInitiator.rulesStrings>
   
 </LanguageData>
