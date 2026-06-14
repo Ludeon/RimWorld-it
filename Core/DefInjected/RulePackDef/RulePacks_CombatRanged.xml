@@ -34,28 +34,34 @@
     <li>fromof->of</li>
   -->
   <Combat_ExplosionImpact.rulePack.rulesStrings>
-    <li>prefix->L'[blast] [fromof] [INITIATOR_definite] [projectile]</li>
-    <li>prefix->L'[blast] [fromof] [INITIATOR_definite] [WEAPON_label]</li>
-    <li>prefix->L'[blast] [fromof] [INITIATOR_definite] [projectile]</li>
-    <li>prefix->L'[blast] [fromof] [INITIATOR_definite] [WEAPON_label]</li>
+    <!-- prefix senza fusione di+il (uso 'da [X_indefinite]' o '[X_definite] di'); EN aveva il
+         possessivo 's reso male ('di Bob colpo') -->
+    <li>prefix->[blast] da [projectile_indefinite] di [INITIATOR_definite]</li>
+    <li>prefix->[blast] da [WEAPON_indefinite] di [INITIATOR_definite]</li>
+    <li>prefix->[blast] da [projectile_indefinite] di [INITIATOR_definite]</li>
+    <li>prefix->[blast] da [WEAPON_indefinite] di [INITIATOR_definite]</li>
     <li>prefix->[blast] di [INITIATOR_definite]</li>
-    <li>prefix->[projectile] [blast] di [INITIATOR_definite]</li>
-    <li>prefix->[WEAPON_label] [blast] di [INITIATOR_definite]</li>
-    <li>prefix->[projectile] di [INITIATOR_definite]</li>
-    <li>prefix->[WEAPON_label] di [INITIATOR_definite]</li>
-    <li>r_logentry->[prefix] [injured] [RECIPIENT_definite].</li>
-    <li>r_logentry->[prefix] [destroyed_past] [RECIPIENT_definite] [RECIPIENT_possessive] [destroyed_targets].</li>
-    <li>r_logentry->[prefix] [destroyed_past] [RECIPIENT_definite] [RECIPIENT_possessive] [destroyed_targets] [strikeAdv].</li>
-    <li>r_logentry->[prefix] [strikeAdv] [destroyed_past] [RECIPIENT_definite] [RECIPIENT_possessive] [destroyed_targets].</li>
-    <li>r_logentry->[prefix] [destroyed_past] [RECIPIENT_definite] [RECIPIENT_possessive] [destroyed_targets] e [damaged_past] [RECIPIENT_possessive] [damaged_targets].</li>
-    <li>r_logentry(recipient_part_destroyed_count==0)->[prefix] [damaged_past] [RECIPIENT_definite] [RECIPIENT_possessive] [damaged_targets].</li>
-    <li>r_logentry(recipient_part_destroyed_count==0)->[prefix] [damaged_past] [RECIPIENT_definite] [RECIPIENT_possessive] [damaged_targets] [strikeAdv].</li>
-    <li>r_logentry(recipient_part_destroyed_count==0)->[prefix] [strikeAdv] [damaged_past] [RECIPIENT_definite] [RECIPIENT_possessive] [damaged_targets].</li>
-    <li>r_logentry->[RECIPIENT_definite] è stato [damaged_past] da [INITIATOR_definite].</li>
-    <li>r_logentry->[RECIPIENT_definite] è stato [damaged_past] [strikeAdv] da [INITIATOR_definite].</li>
-    <li>r_logentry->[RECIPIENT_definite] è stato [damaged_past].</li>
-    <li>r_logentry(p=0.001)->[RECIPIENT_definite] è stato coinvolto in un'esplosione.</li>
-    <li>r_logentry(p=0.001)->[RECIPIENT_definite] è stato colpito da un'esplosione.</li>
+    <li>prefix->[blast] di [projectile_indefinite] di [INITIATOR_definite]</li>
+    <li>prefix->[blast] di [WEAPON_indefinite] di [INITIATOR_definite]</li>
+    <li>prefix->[projectile_definite] di [INITIATOR_definite]</li>
+    <li>prefix->[WEAPON_definite] di [INITIATOR_definite]</li>
+    <!-- 'ha' (avere → niente accordo del participio); possessivo → 'di [RECIPIENT_definite]';
+         passivi 'è stato [participio]' resi attivi (participio runtime sempre maschile) -->
+    <li>r_logentry->[prefix] ha [damaged_past] [RECIPIENT_definite].</li>
+    <li>r_logentry(recipient_part_destroyed_count>=1)->[prefix] ha [destroyed_past] [destroyed_targets] di [RECIPIENT_definite].</li>
+    <li>r_logentry(recipient_part_destroyed_count>=1)->[prefix] ha [destroyed_past] [destroyed_targets] di [RECIPIENT_definite] [strikeAdv].</li>
+    <li>r_logentry(recipient_part_destroyed_count>=1)->[prefix] ha [strikeAdv] [destroyed_past] [destroyed_targets] di [RECIPIENT_definite].</li>
+    <li>r_logentry(recipient_part_destroyed_count>=1)->[prefix] ha [destroyed_past] [destroyed_targets] di [RECIPIENT_definite] e ha [damaged_past] [damaged_targets].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0)->[prefix] ha [damaged_past] [damaged_targets] di [RECIPIENT_definite].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0)->[prefix] ha [damaged_past] [damaged_targets] di [RECIPIENT_definite] [strikeAdv].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0)->[prefix] ha [strikeAdv] [damaged_past] [damaged_targets] di [RECIPIENT_definite].</li>
+    <li>r_logentry->[INITIATOR_definite] ha [damaged_past] [RECIPIENT_definite].</li>
+    <li>r_logentry->[INITIATOR_definite] ha [damaged_past] [strikeAdv] [RECIPIENT_definite].</li>
+    <li>r_logentry->[INITIATOR_definite] ha [damaged_past] [RECIPIENT_definite].</li>
+    <li>r_logentry(p=0.001,RECIPIENT_gender==Male)->[RECIPIENT_definite] è stato coinvolto in un'esplosione.</li>
+    <li>r_logentry(p=0.001,RECIPIENT_gender==Female)->[RECIPIENT_definite] è stata coinvolta in un'esplosione.</li>
+    <li>r_logentry(p=0.001,RECIPIENT_gender==Male)->[RECIPIENT_definite] è stato colpito da un'esplosione.</li>
+    <li>r_logentry(p=0.001,RECIPIENT_gender==Female)->[RECIPIENT_definite] è stata colpita da un'esplosione.</li>
     <li>blast->esplosione</li>
     <li>blast->deflagrazione</li>
     <li>blast->onda d'urto</li>
@@ -133,23 +139,26 @@
     <li>missed->narrowly missed</li>
   -->
   <Combat_RangedDamage.rulePack.rulesStrings>
-    <li>r_logentry->[projectile] di [INITIATOR_definite] [destroyed_past] [destroyed_targets] di [RECIPIENT_definite].</li>
-    <li>r_logentry->[projectile] di [INITIATOR_definite] [destroyed_past] [destroyed_targets] di [RECIPIENT_definite] [to] [destroyed_suffix].</li>
-    <li>r_logentry(p=2)->[projectile] di [INITIATOR_definite] [missed] [ORIGINALTARGET_definite] e [destroyed_past] [destroyed_targets] di [RECIPIENT_definite].</li>
-    <li>r_logentry(p=2)->[projectile] di [INITIATOR_definite] [missed] [ORIGINALTARGET_definite], [destroyed_present] [destroyed_targets] di [RECIPIENT_definite].</li>
-    <li>r_logentry->[destroyed_targets] di [RECIPIENT_definite] è stato [destroyed_past] da [projectile] di [INITIATOR_definite].</li>
-    <li>r_logentry->[destroyed_targets] di [RECIPIENT_definite] è stato [destroyed_past] in [destroyed_suffix] da [projectile] di [INITIATOR_definite].</li>
-    <li>r_logentry(recipient_part_destroyed_count==0)->[projectile] di [INITIATOR_definite] [damaged_past] [damaged_targets] di [RECIPIENT_definite].</li>
-    <li>r_logentry(recipient_part_destroyed_count==0,p=2)->[projectile] di [INITIATOR_definite] [missed] [ORIGINALTARGET_definite] e [damaged_past] [damaged_targets] di [RECIPIENT_definite].</li>
-    <li>r_logentry(recipient_part_destroyed_count==0,p=2)->[projectile] di [INITIATOR_definite] [missed] [ORIGINALTARGET_definite], [damaged_present] [damaged_targets] di [RECIPIENT_definite].</li>
-    <li>r_logentry(recipient_part_destroyed_count==0)->[damaged_targets] di [RECIPIENT_definite] è stato [damaged_past] da [projectile] di [INITIATOR_definite].</li>
-    <li>r_logentry(p=3)->[projectile] di [INITIATOR_definite] [destroyed_past] [destroyed_targets] di [RECIPIENT_definite] e [damaged_past] [damaged_targets] di [RECIPIENT_possessive].</li>
-    <li>r_logentry(p=6)->[projectile] di [INITIATOR_definite] [missed] [ORIGINALTARGET_definite], [destroyed_present] [destroyed_targets] di [RECIPIENT_definite] e [damaged_present] [damaged_targets] di [RECIPIENT_possessive].</li>
-    <li>r_logentry(p=0.2)->[INITIATOR_definite] ha colpito [RECIPIENT_definite] con un [projectile].</li>
-    <li>r_logentry(p=0.2)->[projectile] di [INITIATOR_definite] ha colpito [RECIPIENT_definite].</li>
-    <li>r_logentry(p=0.4)->[INITIATOR_definite] [missed] [ORIGINALTARGET_definite] e ha colpito [RECIPIENT_definite] con un [projectile].</li>
-    <li>r_logentry(p=0.4)->[projectile] di [INITIATOR_definite] [missed] [ORIGINALTARGET_definite] e ha colpito [RECIPIENT_definite].</li>
-    <li>r_logentry(p=0.2)->[INITIATOR_definite] ha colpito [RECIPIENT_definite] con un [projectile] destinato a [ORIGINALTARGET_definite].</li>
+    <!-- ausiliare 'ha' (il colpo HA frantumato); [projectile_definite]=articolo dal motore;
+         i passivi 'è stato [participio]' resi attivi (in IT il participio non prende suffisso
+         come in FR); 'di [RECIPIENT_possessive]' rimosso (la parte è già riferita) -->
+    <li>r_logentry->[projectile_definite] di [INITIATOR_definite] ha [destroyed_past] [destroyed_targets] di [RECIPIENT_definite].</li>
+    <li>r_logentry->[projectile_definite] di [INITIATOR_definite] ha [destroyed_past] [destroyed_targets] di [RECIPIENT_definite] [to] [destroyed_suffix].</li>
+    <li>r_logentry(p=2)->[projectile_definite] di [INITIATOR_definite] [missed] [ORIGINALTARGET_definite] e ha [destroyed_past] [destroyed_targets] di [RECIPIENT_definite].</li>
+    <li>r_logentry(p=2)->[projectile_definite] di [INITIATOR_definite] [missed] [ORIGINALTARGET_definite], [destroyed_present] [destroyed_targets] di [RECIPIENT_definite].</li>
+    <li>r_logentry->[projectile_definite] di [INITIATOR_definite] ha [destroyed_past] [destroyed_targets] di [RECIPIENT_definite].</li>
+    <li>r_logentry->[projectile_definite] di [INITIATOR_definite] ha [destroyed_past] [destroyed_targets] di [RECIPIENT_definite] [to] [destroyed_suffix].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0)->[projectile_definite] di [INITIATOR_definite] ha [damaged_past] [damaged_targets] di [RECIPIENT_definite].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0,p=2)->[projectile_definite] di [INITIATOR_definite] [missed] [ORIGINALTARGET_definite] e ha [damaged_past] [damaged_targets] di [RECIPIENT_definite].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0,p=2)->[projectile_definite] di [INITIATOR_definite] [missed] [ORIGINALTARGET_definite], [damaged_present] [damaged_targets] di [RECIPIENT_definite].</li>
+    <li>r_logentry(recipient_part_destroyed_count==0)->[projectile_definite] di [INITIATOR_definite] ha [damaged_past] [damaged_targets] di [RECIPIENT_definite].</li>
+    <li>r_logentry(p=3)->[projectile_definite] di [INITIATOR_definite] ha [destroyed_past] [destroyed_targets] di [RECIPIENT_definite] e ha [damaged_past] [damaged_targets].</li>
+    <li>r_logentry(p=6)->[projectile_definite] di [INITIATOR_definite] [missed] [ORIGINALTARGET_definite], [destroyed_present] [destroyed_targets] di [RECIPIENT_definite] e [damaged_present] [damaged_targets].</li>
+    <li>r_logentry(p=0.2)->[INITIATOR_definite] ha colpito [RECIPIENT_definite] con [projectile_indefinite].</li>
+    <li>r_logentry(p=0.2)->[projectile_definite] di [INITIATOR_definite] ha colpito [RECIPIENT_definite].</li>
+    <li>r_logentry(p=0.4)->[INITIATOR_definite] [missed] [ORIGINALTARGET_definite] e ha colpito [RECIPIENT_definite] con [projectile_indefinite].</li>
+    <li>r_logentry(p=0.4)->[projectile_definite] di [INITIATOR_definite] [missed] [ORIGINALTARGET_definite] e ha colpito [RECIPIENT_definite].</li>
+    <li>r_logentry(p=0.2)->[INITIATOR_definite] ha colpito [RECIPIENT_definite] con [projectile_indefinite] mirando a [ORIGINALTARGET_definite].</li>
     <li>projectile(p=0.05)->colpo</li>
     <li>destroyed_past->frantumato</li>
     <li>destroyed_past->schiacciato</li>
@@ -165,10 +174,11 @@
     <li>destroyed_present->trafiggendo</li>
     <li>destroyed_present->perforando</li>
     <li>destroyed_present->forando</li>
-    <li>destroyed_suffix->a pezzi</li>
-    <li>destroyed_suffix->in frammenti</li>
-    <li>destroyed_suffix->in una nube sottile</li>
-    <li>destroyed_suffix->in frammenti</li>
+    <!-- nomi nudi: la preposizione la mette [to] ('in') → 'in pezzi', 'in frammenti' -->
+    <li>destroyed_suffix->pezzi</li>
+    <li>destroyed_suffix->frammenti</li>
+    <li>destroyed_suffix->una nube sottile</li>
+    <li>destroyed_suffix->minuscoli frammenti</li>
     <li>destroyed_suffix(p=0.5)->una massa bucata</li>
     <li>destroyed_suffix(RECIPIENT_flesh!=Mechanoid,p=0.2)->carne macinata</li>
     <li>damaged_past->ferito</li>
@@ -185,7 +195,7 @@
     <li>damaged_suffix(RECIPIENT_flesh!=Mechanoid)->con sangue visibile</li>
     <li>damaged_suffix(RECIPIENT_flesh!=Mechanoid)->con la carne visibile</li>
     <li>to->in</li>
-    <li>to->verso</li>
+    <li>to->in</li>
     <li>missed->ha mancato</li>
     <li>missed->ha mancato per un pelo</li>
   </Combat_RangedDamage.rulePack.rulesStrings>
@@ -216,17 +226,20 @@
     <li>missed->narrowly missed</li>
   -->
   <Combat_RangedDeflect.rulePack.rulesStrings>
-    <li>r_logentry->[projectile] di [INITIATOR_definite] [damaged_past] [RECIPIENT_definite][damaged_target] [deflected_result].</li>
-    <li>r_logentry(p=2)->[projectile] di [INITIATOR_definite] [missed] [ORIGINALTARGET_definite] e [damaged_past] [RECIPIENT_definite][damaged_target_possessive_opt] [deflected_result].</li>
-    <li>r_logentry->[RECIPIENT_definite][damaged_target_possessive_opt] è stato [damaged_past] da [projectile] di [INITIATOR_definite] [deflected_result].</li>
-    <li>r_logentry(p=0.2)->[INITIATOR_definite] ha colpito [RECIPIENT_definite][damaged_target_possessive_opt] con un [projectile] [deflected_result].</li>
-    <li>r_logentry(p=0.2)->[projectile] di [INITIATOR_definite] ha colpito [RECIPIENT_definite][damaged_target_possessive_opt] [deflected_result].</li>
-    <li>r_logentry(p=0.4)->[INITIATOR_definite] [missed] [ORIGINALTARGET_definite] e ha colpito [RECIPIENT_definite][damaged_target_possessive_opt] con un [projectile] [deflected_result].</li>
-    <li>r_logentry(p=0.4)->[projectile] di [INITIATOR_definite] [missed] [ORIGINALTARGET_definite] e ha colpito [RECIPIENT_definite][damaged_target_possessive_opt] [deflected_result].</li>
-    <li>r_logentry(p=0.2)->[INITIATOR_definite] ha colpito [RECIPIENT_definite][damaged_target_possessive_opt] con un [projectile] destinato a [ORIGINALTARGET_definite] [deflected_result].</li>
+    <!-- 'ha' (attivo, avere → niente accordo); [projectile_definite/indefinite]; passivo reso attivo;
+         _opt: 'al/alla [parte]' per genere (era 'Cassio di braccio') -->
+    <li>r_logentry->[projectile_definite] di [INITIATOR_definite] ha [damaged_past] [RECIPIENT_definite][damaged_target_possessive_opt] [deflected_result].</li>
+    <li>r_logentry(p=2)->[projectile_definite] di [INITIATOR_definite] [missed] [ORIGINALTARGET_definite] e ha [damaged_past] [RECIPIENT_definite][damaged_target_possessive_opt] [deflected_result].</li>
+    <li>r_logentry->[projectile_definite] di [INITIATOR_definite] ha [damaged_past] [RECIPIENT_definite][damaged_target_possessive_opt] [deflected_result].</li>
+    <li>r_logentry(p=0.2)->[INITIATOR_definite] ha colpito [RECIPIENT_definite][damaged_target_possessive_opt] con [projectile_indefinite] [deflected_result].</li>
+    <li>r_logentry(p=0.2)->[projectile_definite] di [INITIATOR_definite] ha colpito [RECIPIENT_definite][damaged_target_possessive_opt] [deflected_result].</li>
+    <li>r_logentry(p=0.4)->[INITIATOR_definite] [missed] [ORIGINALTARGET_definite] e ha colpito [RECIPIENT_definite][damaged_target_possessive_opt] con [projectile_indefinite] [deflected_result].</li>
+    <li>r_logentry(p=0.4)->[projectile_definite] di [INITIATOR_definite] [missed] [ORIGINALTARGET_definite] e ha colpito [RECIPIENT_definite][damaged_target_possessive_opt] [deflected_result].</li>
+    <li>r_logentry(p=0.2)->[INITIATOR_definite] ha colpito [RECIPIENT_definite][damaged_target_possessive_opt] con [projectile_indefinite] mirando a [ORIGINALTARGET_definite] [deflected_result].</li>
     <li>projectile(p=0.05)->colpo</li>
     <li>damaged_target_possessive_opt-></li>
-    <li>damaged_target_possessive_opt(recipient_part_damaged0_outside==True)-> di [recipient_part_damaged0_label]</li>
+    <li>damaged_target_possessive_opt(recipient_part_damaged0_outside==True,recipient_part_damaged0_gender==Male)-> al [recipient_part_damaged0_label]</li>
+    <li>damaged_target_possessive_opt(recipient_part_damaged0_outside==True,recipient_part_damaged0_gender==Female)-> alla [recipient_part_damaged0_label]</li>
     <li>deflected_result-> [adverb_deflected]</li>
     <li>deflected_result->, [deflected_consequence]</li>
     <li>adverb_deflected_opt(p=4)-></li>
@@ -234,7 +247,7 @@
     <li>adverb_deflected->innocuamente</li>
     <li>adverb_deflected->inutilmente</li>
     <li>deflected_consequence->ma ha [scraped_past] via [adverb_deflected_opt]</li>
-    <li>deflected_consequence->[scraped_present] sull'armatura di [RECIPIENT_possessive] [adverb_deflected_opt]</li>
+    <li>deflected_consequence->[scraped_present] sulla sua armatura [adverb_deflected_opt]</li>
     <li>scraped_past->rimbalzato</li>
     <li>scraped_present->rimbalzando</li>
     <li>missed->ha mancato</li>
