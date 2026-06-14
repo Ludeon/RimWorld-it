@@ -10,7 +10,7 @@
     <li>r_logentry->[INITIATOR_nameDef] told [RECIPIENT_nameDef] that it would be best to see other people.</li>
   -->
   <Breakup.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] ha chiesto una pausa a [RECIPIENT_nameDef]</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha chiesto una pausa a [RECIPIENT_nameDef].</li>
     <li>r_logentry->[INITIATOR_nameDef] ha chiesto a [RECIPIENT_nameDef] un po' di spazio.</li>
     <li>r_logentry->[INITIATOR_nameDef] ha detto a [RECIPIENT_nameDef] che non sta funzionando.</li>
     <li>r_logentry->[INITIATOR_nameDef] ha detto a [RECIPIENT_nameDef] che sarebbe stato meglio vedere altre persone.</li>
@@ -24,9 +24,9 @@
     <li>r_logentry->[INITIATOR_nameDef] told [RECIPIENT_nameDef] that [INITIATOR_pronoun] wants to spend [INITIATOR_possessive] life with [RECIPIENT_objective].</li>
   -->
   <MarriageProposal.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] proposta di matrimonio a [RECIPIENT_nameDef].</li>
-    <li>r_logentry->[INITIATOR_nameDef] ha proposto un impegno a vita per [RECIPIENT_nameDef].</li>
-    <li>r_logentry->[INITIATOR_nameDef] ha detto a [RECIPIENT_nameDef] che [INITIATOR_pronoun] vuole trascorrere la vita di [INITIATOR_possessive] con [RECIPIENT_objective].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha proposto il matrimonio a [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha proposto un impegno a vita a [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha detto a [RECIPIENT_nameDef] di voler passare la vita insieme.</li>
   </MarriageProposal.logRulesInitiator.rulesStrings>
   
   <!-- EN: romance attempt -->
@@ -94,40 +94,42 @@
     <li>romantic_noun(p=2)->[NaturalObject]</li>
   -->
   <RomanceAttempt.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] [wooed] [RECIPIENT_nameDef], [wootactic].</li>
-    <li>wooed->ha cercato di flirtare con</li>
+    <!-- 'ha [wooed]' (participi nudi); wootactic come frase gerundiva; possessivo →
+         '[caratteristica] di [RECIPIENT]' / 'il proprio [caratteristica]' -->
+    <li>r_logentry->[INITIATOR_nameDef] ha [wooed] [RECIPIENT_nameDef], [wootactic].</li>
+    <li>wooed->cercato di flirtare con</li>
     <li>wooed->flirtato con</li>
-    <li>wooed->ha cercato di attrarre</li>
-    <li>wooed->ha cercato di fare il romantico</li>
-    <li>wooed->ha cercato di corteggiare</li>
+    <li>wooed->cercato di attrarre</li>
+    <li>wooed->cercato di fare il romantico con</li>
+    <li>wooed->cercato di corteggiare</li>
     <li>wooed->corteggiato</li>
-    <li>wooed->perseguito</li>
+    <li>wooed->inseguito</li>
     <li>wooed->affascinato</li>
-    <li>wooed->corteggiato</li>
-    <li>wootactic(p=4)->[complimenting] [RECIPIENT_possessive] [PersonalCharacteristic]</li>
-    <li>wootactic->raccontare una storia [TalkTopicAny]</li>
-    <li>wootactic->raccontando una storia di [TalkTopicAny]</li>
-    <li>wootactic->scherzare su [TalkTopicAny]</li>
-    <li>wootactic->fare un'osservazione su [TalkTopicAny]</li>
-    <li>wootactic(p=2)->[boasting] [INITIATOR_possessive] proprio [PersonalCharacteristic]</li>
-    <li>wootactic->confrontando [RECIPIENT_objective] con un [romantic_adj] [romantic_noun]</li>
-    <li>wootactic->che descrive [RECIPIENT_objective] come un [romantic_adj] [romantic_noun]</li>
-    <li>boasting->vantarsi di</li>
-    <li>boasting->menzione</li>
-    <li>boasting->che implica cose buone su</li>
-    <li>boasting->esagerare</li>
-    <li>boasting->parlare di</li>
-    <li>boasting->attirare l'attenzione su</li>
-    <li>complimenting(p=3)->complimento</li>
-    <li>complimenting->complimento sottile</li>
-    <li>complimenting->elogiando</li>
-    <li>complimenting->elogio</li>
-    <li>complimenting->dicendo cose buone su</li>
-    <li>complimenting(p=2)->prendersi gioco scherzosamente di</li>
-    <li>complimenting->scherzando</li>
-    <li>complimenting->scherzosamente a metà tra i due</li>
-    <li>complimenting->interrogando imprudentemente</li>
-    <li>complimenting->prendersi allegramente gioco di</li>
+    <li>wooed->conquistato</li>
+    <li>wootactic(p=4)->[complimenting] [PersonalCharacteristic] di [RECIPIENT_nameDef]</li>
+    <li>wootactic->raccontando una storia su [TalkTopicAny]</li>
+    <li>wootactic->raccontando un aneddoto su [TalkTopicAny]</li>
+    <li>wootactic->scherzando su [TalkTopicAny]</li>
+    <li>wootactic->facendo un'osservazione su [TalkTopicAny]</li>
+    <li>wootactic(p=2)->[boasting] il proprio [PersonalCharacteristic]</li>
+    <li>wootactic->paragonando [RECIPIENT_nameDef] a un [romantic_adj] [romantic_noun]</li>
+    <li>wootactic->descrivendo [RECIPIENT_nameDef] come un [romantic_adj] [romantic_noun]</li>
+    <li>boasting->vantando</li>
+    <li>boasting->menzionando</li>
+    <li>boasting->esagerando</li>
+    <li>boasting->sottolineando</li>
+    <li>boasting->evidenziando</li>
+    <li>boasting->esibendo</li>
+    <li>complimenting(p=3)->elogiando</li>
+    <li>complimenting->elogiando con discrezione</li>
+    <li>complimenting->lodando</li>
+    <li>complimenting->apprezzando</li>
+    <li>complimenting->dicendo cose belle su</li>
+    <li>complimenting(p=2)->prendendo in giro scherzosamente</li>
+    <li>complimenting->punzecchiando scherzosamente</li>
+    <li>complimenting->facendo un mezzo complimento su</li>
+    <li>complimenting->stuzzicando con malizia</li>
+    <li>complimenting->prendendo in giro allegramente</li>
     <li>romantic_adj->bella</li>
     <li>romantic_adj->splendente</li>
     <li>romantic_adj->scintillante</li>

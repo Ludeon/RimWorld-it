@@ -41,12 +41,12 @@
   -->
   <BuildRapport.logRulesInitiator.rulesStrings>
     <li>r_logentry->[INITIATOR_nameDef] [toldastoryabout] [subject] a [RECIPIENT_nameDef].</li>
-    <li>r_logentry->[INITIATOR_nameDef] ha detto a [RECIPIENT_nameDef] su [subject].</li>
-    <li>r_logentry->[INITIATOR_nameDef] descritto [subject] a [RECIPIENT_nameDef].</li>
-    <li>r_logentry->[INITIATOR_nameDef] incoraggiato [RECIPIENT_nameDef] a [talkabout] [subject].</li>
-    <li>r_logentry->[INITIATOR_nameDef] ha offerto la possibilità di [RECIPIENT_nameDef] a [talkabout] [subject].</li>
-    <li>r_logentry->[INITIATOR_nameDef] ha espresso interesse per [RECIPIENT_nameDef] [PersonalCharacteristic].</li>
-    <li>r_logentry->[INITIATOR_nameDef] ha chiesto a [RECIPIENT_nameDef] su [RECIPIENT_possessive] [PersonalCharacteristic].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato a [RECIPIENT_nameDef] di [subject].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha descritto [subject] a [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha incoraggiato [RECIPIENT_nameDef] a [talkabout] [subject].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha offerto a [RECIPIENT_nameDef] la possibilità di [talkabout] [subject].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha espresso interesse per [PersonalCharacteristic] di [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha chiesto a [RECIPIENT_nameDef] della propria [PersonalCharacteristic].</li>
     <li>toldastoryabout(p=2)->ha raccontato una storia di</li>
     <li>toldastoryabout->ha raccontato una storia divertente su</li>
     <li>toldastoryabout->ha raccontato una storia sentita su</li>
@@ -66,13 +66,13 @@
     <li>subject->cambio di squadra</li>
     <li>subject->trovare amici</li>
     <li>subject->incontrare nuove persone</li>
-    <li>subject->riconsiderare le idee di [RECIPIENT_possessive]</li>
-    <li>subject->ripensare le lealtà di [RECIPIENT_possessive]</li>
+    <li>subject->riconsiderare le proprie idee</li>
+    <li>subject->ripensare le proprie lealtà</li>
     <li>subject->salute</li>
     <li>subject->il futuro</li>
     <li>subject->lasciarsi andare</li>
     <li>subject(p=4)->[ConceptPositive]</li>
-    <li>subject(p=2)->[INITIATOR_possessive] [PersonalCharacteristic]</li>
+    <li>subject(p=2)->le proprie qualità</li>
     <li>subject(p=8)->[TalkTopicLight]</li>
   </BuildRapport.logRulesInitiator.rulesStrings>
   
@@ -86,7 +86,7 @@
   -->
   <RecruitAttempt.logRulesInitiator.rulesStrings>
     <li>r_logentry->[INITIATOR_nameDef] ha chiesto a [RECIPIENT_nameDef] di unirsi a noi.</li>
-    <li>r_logentry->[INITIATOR_nameDef] ha promesso [goodthing] a [RECIPIENT_nameDef], e ha chiesto a [RECIPIENT_objective] di unirsi a noi.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha promesso [goodthing] a [RECIPIENT_nameDef] e gli ha chiesto di unirsi a noi.</li>
     <li>goodthing(p=15)->[ConceptPositive]</li>
     <li>goodthing->libero, fresco [Vegetable]</li>
   </RecruitAttempt.logRulesInitiator.rulesStrings>
@@ -104,7 +104,7 @@
     <li>freedom->self-determination</li>
   -->
   <SparkJailbreak.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] parlava della gioia della [freedom] e offriva una via di fuga.</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato della gioia della [freedom] e ha offerto una via di fuga.</li>
     <li>r_logentry->[INITIATOR_nameDef] ha parlato di quanto sia bella la [TerrainFeature] e ha offerto libertà.</li>
     <li>r_logentry->[INITIATOR_nameDef] ha mostrato un mezzo di fuga a [RECIPIENT_nameDef] e ha promesso [freedom].</li>
     <li>r_logentry->[INITIATOR_nameDef] ha detto a [RECIPIENT_nameDef] che la sicurezza è poco rigorosa e ha incoraggiato la fuga.</li>
