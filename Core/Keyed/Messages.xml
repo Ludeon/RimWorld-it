@@ -92,9 +92,9 @@
   <!-- EN: New recruit -->
   <LetterLabelMessageRecruitSuccess>Nuova recluta</LetterLabelMessageRecruitSuccess>
   <!-- EN: {RECRUITER_nameFull} successfully recruited {RECRUITEE_nameFull}. -->
-  <MessageRecruitSuccess>{RECRUITER_nameFull} ha reclutato con successo {RECRUITEE_nameFull} ({2} di probabilità).</MessageRecruitSuccess>
+  <MessageRecruitSuccess>{RECRUITER_nameFull} ha reclutato con successo {RECRUITEE_nameFull}.</MessageRecruitSuccess>
   <!-- EN: {RECRUITER_labelShort} successfully tamed {1}. -->
-  <MessageTameSuccess>{RECRUITER_labelShort} ha addomesticato con successo {1} ({2} di probabilità).</MessageTameSuccess>
+  <MessageTameSuccess>{RECRUITER_labelShort} ha addomesticato con successo {1}.</MessageTameSuccess>
   <!-- EN: {RECRUITER_labelShort} successfully tamed {1}. It is now called {RECRUITEE_nameFull}. -->
   <MessageTameAndNameSuccess>{RECRUITER_labelShort} ha addomesticato con successo {1} e l'ha chiamat{RECRUITEE_gender ? o : a : o} {RECRUITEE_nameFull}.</MessageTameAndNameSuccess>
   <!-- EN: There is no suitable animal pen for {ANIMAL_labelShort}. It will eventually roam away. -->
@@ -317,7 +317,7 @@
   <!-- EN: {0} has died because of poison. -->
   <MessagePlantDiedOfPoison>{0} è stat{0_gender ? o : a : o} avvelenat{0_gender ? o : a : o}.</MessagePlantDiedOfPoison>
   <!-- EN: {1_label} has died because of blight. -->
-  <MessagePlantDiedOfBlight>{1_label} è mort{0_gender ? o : a : o} per colpa della piaga.</MessagePlantDiedOfBlight>
+  <MessagePlantDiedOfBlight>La piaga ha distrutto {1_label}.</MessagePlantDiedOfBlight>
 
   <!-- EN: {1_labelShort} is being burned by superheated air! -->
   <MessagePawnBeingBurned>{1_labelShort} viene ustionato dall'aria bollente!</MessagePawnBeingBurned>
@@ -627,7 +627,7 @@
   <MessagePermitCooldownFinished>{0_labelShort} ora può usare liberamente "{1}".</MessagePermitCooldownFinished>
 
   <!-- EN: {PREDATOR} is hunting {PREY_definite} ({PREY_kindBase}) for food! -->
-  <MessagePredatorHuntingPlayerAnimal>{PREDATOR} sta cacciando {PREY_definite} per nutrirsi!</MessagePredatorHuntingPlayerAnimal>
+  <MessagePredatorHuntingPlayerAnimal>{PREDATOR} sta cacciando {PREY_definite} ({PREY_kindBase}) per nutrirsi!</MessagePredatorHuntingPlayerAnimal>
 
   <!-- EN: Prisoner {PRISONER_labelShort}'s resistance has been broken by {WARDEN_labelShort}. -->
   <MessagePrisonerResistanceBroken>La resistenza del prigioniero {PRISONER_labelShort} è stata spezzata da {WARDEN_labelShort}.</MessagePrisonerResistanceBroken>
