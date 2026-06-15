@@ -385,30 +385,31 @@
     <li>townname_combo->[TerrainFeature_Feminine] [ColorBadass_Feminine]</li>
     <li>geography(p=2)->[TerrainFeature]</li>
     <li>geography->[Community]</li>
-    <li>townname_wordgen(p=2)->[SylE][SylE]</li>
-    <li>townname_wordgen(p=2)->[SylE][SylE][SylE]</li>
-    <li>townname_wordgen(p=2)->[SylE][townendevil]</li>
-    <li>townname_wordgen(p=2)->[SylE][SylE][townendevil]</li>
-    <li>townendevil->vasto</li>
-    <li>townendevil->varg</li>
-    <li>townendevil->vix</li>
-    <li>townendevil->tor</li>
-    <li>townendevil->lacrima</li>
+    <!-- IT: sillabe italiane [SylI] + suffissi "cattivi" italiani (taglio,
+         sangue, rogo, teschio...) al posto dei residui inglesi
+         (varg/vix/tor/warg/wug/thot/thard/thad). Tono duro ma in italiano. -->
+    <li>townname_wordgen(p=2)->[SylI][SylI]</li>
+    <li>townname_wordgen(p=2)->[SylI][SylI][SylI]</li>
+    <li>townname_wordgen(p=3)->[SylI][townendevil]</li>
+    <li>townname_wordgen(p=3)->[SylI][SylI][townendevil]</li>
     <li>townendevil->taglio</li>
     <li>townendevil->strappo</li>
-    <li>townendevil->ozzo</li>
-    <li>townendevil->ozzolo</li>
-    <li>townendevil->lucchetto</li>
     <li>townendevil->fuoco</li>
     <li>townendevil->bruciato</li>
     <li>townendevil->coltello</li>
     <li>townendevil->ferita</li>
-    <li>townendevil->vash</li>
-    <li>townendevil->warg</li>
-    <li>townendevil->wug</li>
-    <li>townendevil->thot</li>
-    <li>townendevil->thard</li>
-    <li>townendevil->thad</li>
+    <li>townendevil->lacrima</li>
+    <li>townendevil->sangue</li>
+    <li>townendevil->teschio</li>
+    <li>townendevil->forca</li>
+    <li>townendevil->rogo</li>
+    <li>townendevil->cenere</li>
+    <li>townendevil->artiglio</li>
+    <li>townendevil->veleno</li>
+    <li>townendevil->zanna</li>
+    <li>townendevil->tormento</li>
+    <li>townendevil->vasto</li>
+    <li>townendevil->ozzo</li>
   </NamerSettlementPirate.rulePack.rulesStrings>
   
   <!-- EN:

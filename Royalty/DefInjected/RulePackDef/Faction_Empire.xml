@@ -111,6 +111,12 @@
     <li>townend->aeum</li>
   -->
   <NamerSettlementEmpire.rulePack.rulesStrings>
+    <!-- IT: l'Impero ha estetica greco-latina, perfetta per l'italiano (eredita'
+         romana). Tengo le desinenze imperiali forti (-ium, -polis, -ior...) e
+         sostituisco le piu' deboli/sci-fi (-lan, -lax, -lix, -phrum, -ople,
+         -opium) con desinenze italo-romane reali: -ona (Verona/Cremona),
+         -entum (Tarentum), -enza (Firenze/Piacenza), -opoli (Costantinopoli),
+         -anum (Aurelianum). -->
     <li>r_name->[townname_wordgen]</li>
     <li>r_name->[townname_fixed]</li>
     <li>townname_wordgen->[WordImperial]</li>
@@ -118,23 +124,21 @@
     <li>townend(p=3)->ium</li>
     <li>townend(p=3)->ior</li>
     <li>townend(p=3)->polis</li>
+    <li>townend(p=2)->opoli</li>
     <li>townend->nor</li>
-    <li>townend->lan</li>
-    <li>townend->lax</li>
-    <li>townend->lix</li>
+    <li>townend->ona</li>
+    <li>townend->entum</li>
     <li>townend->lin</li>
     <li>townend->lian</li>
-    <li>townend->phrum</li>
+    <li>townend->enza</li>
     <li>townend->phor</li>
     <li>townend->teor</li>
-    <li>townend->ople</li>
-    <li>townend->opium</li>
+    <li>townend->anum</li>
     <li>townend->or</li>
     <li>townend->aetor</li>
     <li>townend->aeum</li>
     <li>townend->aetium</li>
     <li>townend->am</li>
-    <li>townend->aeum</li>
   </NamerSettlementEmpire.rulePack.rulesStrings>
   
 </LanguageData>
