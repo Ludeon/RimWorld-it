@@ -29,17 +29,17 @@
     <li>r_logentry->[INITIATOR_nameDef] ha [talkedabout] [TalkTopicLight] con [RECIPIENT_nameDef].</li>
     <li>r_logentry(p=0.8)->[INITIATOR_nameDef] ha [commentedabout] [TalkTopicLight] a [RECIPIENT_nameDef].</li>
     <li>talkedabout(p=4)->chiacchierato di</li>
-    <li>talkedabout->condiviso una parola su</li>
+    <li>talkedabout->condiviso una parola a proposito di</li>
     <li>talkedabout->parlato di</li>
     <li>talkedabout->discusso di</li>
     <li>talkedabout->chiacchierato di</li>
-    <li>talkedabout->scherzato su</li>
-    <li>talkedabout->ironizzato su</li>
-    <li>commentedabout->detto qualcosa su</li>
-    <li>commentedabout->detto una parola su</li>
-    <li>commentedabout->fatto un commento su</li>
-    <li>commentedabout->commentato</li>
-    <li>commentedabout->raccontato una barzelletta su</li>
+    <li>talkedabout->scherzato sul tema di</li>
+    <li>talkedabout->ironizzato sul tema di</li>
+    <li>commentedabout->detto qualcosa a proposito di</li>
+    <li>commentedabout->detto una parola a proposito di</li>
+    <li>commentedabout->fatto un commento a proposito di</li>
+    <li>commentedabout->commentato qualcosa a proposito di</li>
+    <li>commentedabout->raccontato una barzelletta sul tema di</li>
   </Chitchat.logRulesInitiator.rulesStrings>
   
   <!-- EN: deep talk -->
@@ -63,13 +63,13 @@
   <DeepTalk.logRulesInitiator.rulesStrings>
     <li>r_logentry->[INITIATOR_nameDef] e [RECIPIENT_nameDef] hanno [talkedabout] [subject].</li>
     <li>r_logentry->[INITIATOR_nameDef] ha [talkedabout] [subject] con [RECIPIENT_nameDef].</li>
-    <li>talkedabout->comunicato pensieri su</li>
-    <li>talkedabout->scambiato pensieri su</li>
-    <li>talkedabout->scambiato idee su</li>
-    <li>talkedabout->condiviso opinioni su</li>
-    <li>talkedabout->condiviso credenze su</li>
+    <li>talkedabout->comunicato pensieri a proposito di</li>
+    <li>talkedabout->scambiato pensieri a proposito di</li>
+    <li>talkedabout->scambiato idee a proposito di</li>
+    <li>talkedabout->condiviso opinioni a proposito di</li>
+    <li>talkedabout->condiviso credenze a proposito di</li>
     <li>talkedabout->discusso l’argomento di</li>
-    <li>talkedabout->avuto una conversazione sincera su</li>
+    <li>talkedabout->avuto una conversazione sincera a proposito di</li>
     <li>talkedabout->parlato tranquillamente di</li>
     <li>talkedabout->parlato profondamente di</li>
     <li>talkedabout->approfondito il tema di</li>

@@ -167,6 +167,14 @@
     <!-- lavoratori plurali per genere (namer Scenario) -->
     <li>PersonJob_PluralMasculine->Words/Nouns/People_Jobs_Plural_Masculine</li>
     <li>PersonJob_PluralFeminine->Words/Nouns/People_Jobs_Plural_Feminine</li>
+    <!-- plurali per i topic di conversazione (TalkTopicLight) - evita la '-s' inglese -->
+    <li>Vegetable_PluralM->Words/Nouns/Vegetables_Plural_Masculine</li>
+    <li>Vegetable_PluralF->Words/Nouns/Vegetables_Plural_Feminine</li>
+    <li>Enemy_PluralM->Words/Nouns/Enemies_Plural_Masculine</li>
+    <li>TerrainFeature_PluralM->Words/Nouns/TerrainFeatures_Plural_Masculine</li>
+    <li>TerrainFeature_PluralF->Words/Nouns/TerrainFeatures_Plural_Feminine</li>
+    <li>NaturalObject_PluralM->Words/Nouns/NaturalObject_Plural_Masculine</li>
+    <li>NaturalObject_PluralF->Words/Nouns/NaturalObject_Plural_Feminine</li>
     <!-- animali/colori 'badass' per genere (namer ArtWeapon) -->
     <li>AnimalBadass_Masculine->Words/Nouns/Animals_Badass_Singular_Masculine</li>
     <li>AnimalBadass_Feminine->Words/Nouns/Animals_Badass_Singular_Feminine</li>
@@ -282,6 +290,16 @@
     <li>ObjectAny_Masculine->[Weapon_Masculine]</li>
     <li>ObjectAny_Feminine->[Game_Feminine]</li>
     <li>ObjectAny_Feminine->[Weapon_Feminine]</li>
+    <!-- Plurali combinati M/F (globali: topic, racconti, mappe, meme) - evitano la '-s' inglese -->
+    <li>VegetablePlural->[Vegetable_PluralM]</li>
+    <li>VegetablePlural->[Vegetable_PluralF]</li>
+    <li>EnemyPlural->[Enemy_PluralM]</li>
+    <li>TerrainFeaturePlural->[TerrainFeature_PluralM]</li>
+    <li>TerrainFeaturePlural->[TerrainFeature_PluralF]</li>
+    <li>NaturalObjectPlural->[NaturalObject_PluralM]</li>
+    <li>NaturalObjectPlural->[NaturalObject_PluralF]</li>
+    <li>PersonJobPlural(p=3)->[PersonJob_PluralMasculine]</li>
+    <li>PersonJobPlural->[PersonJob_PluralFeminine]</li>
     <li>PersonalCharacteristic(p=0.15)->genitali</li>
     <li>PersonalCharacteristic(p=0.15)->peli pubici</li>
     <li>PersonalCharacteristic(p=0.15)->peli corporei</li>
@@ -340,29 +358,29 @@
     <li>TalkTopicHeavy(p=0.08)->la connessione tra [talktopicheavyfile] e [talktopicheavyfile]</li>
     <li>TalkTopicHeavy(p=0.08)->la relazione tra [talktopicheavyfile] e [talktopicheavyfile]</li>
     <li>TalkTopicLight(p=25)->[talktopiclightfile]</li>
-    <li>TalkTopicLight->[Vegetable]s</li>
-    <li>TalkTopicLight->mangiare [Vegetable]s</li>
-    <li>TalkTopicLight->cucinare con [Vegetable]s</li>
+    <li>TalkTopicLight->[VegetablePlural]</li>
+    <li>TalkTopicLight->mangiare [VegetablePlural]</li>
+    <li>TalkTopicLight->cucinare con [VegetablePlural]</li>
     <li>TalkTopicLight->[Game]</li>
     <li>TalkTopicLight->giocare a [Game]</li>
-    <li>TalkTopicLight->allenarsi con [Game]</li>
+    <li>TalkTopicLight->allenarsi a [Game]</li>
     <li>TalkTopicLight->imparare [Game]</li>
     <li>TalkTopicLight->[AnimalPlural]</li>
     <li>TalkTopicLight->addestrare [AnimalPlural]</li>
     <li>TalkTopicLight->addomesticare [AnimalPlural]</li>
     <li>TalkTopicLight->combattere [AnimalPlural]</li>
     <li>TalkTopicLight->[AnimalPlural] impazziti</li>
-    <li>TalkTopicLight->[Weapon]s</li>
-    <li>TalkTopicLight->usare [Weapon]s</li>
-    <li>TalkTopicLight->allenarsi con [Weapon]s</li>
-    <li>TalkTopicLight->[TerrainFeature]s</li>
-    <li>TalkTopicLight->[NaturalObject]s</li>
+    <li>TalkTopicLight->[WeaponPlural]</li>
+    <li>TalkTopicLight->usare [WeaponPlural]</li>
+    <li>TalkTopicLight->allenarsi con [WeaponPlural]</li>
+    <li>TalkTopicLight->[TerrainFeaturePlural]</li>
+    <li>TalkTopicLight->[NaturalObjectPlural]</li>
     <li>TalkTopicLight->alberi di [TreeType]</li>
-    <li>TalkTopicLight->[PersonJob]s</li>
-    <li>TalkTopicLight->[PersonJob]s amichevoli</li>
-    <li>TalkTopicLight->[PersonJob]s ostili</li>
-    <li>TalkTopicLight->[Enemy]s</li>
-    <li>TalkTopicLight->combattere [Enemy]s</li>
+    <li>TalkTopicLight->[PersonJobPlural]</li>
+    <li>TalkTopicLight->[PersonJobPlural] amichevoli</li>
+    <li>TalkTopicLight->[PersonJobPlural] ostili</li>
+    <li>TalkTopicLight->[EnemyPlural]</li>
+    <li>TalkTopicLight->combattere [EnemyPlural]</li>
     <li>TalkTopicLight->[Apparel_Plural]</li>
     <li>TalkTopicLight->indossare [Apparel_Plural]</li>
     <li>TalkTopicLight->creare [Apparel_Plural]</li>
