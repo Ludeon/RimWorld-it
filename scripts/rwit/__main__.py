@@ -25,6 +25,7 @@ import variants as variants_mod
 import reconcile as reconcile_mod
 import freshness as freshness_mod
 import argscheck as argscheck_mod
+import pluralcheck as pluralcheck_mod
 
 app = typer.Typer(
     add_completion=False,
@@ -250,6 +251,29 @@ def args_check(
         lines.append(f"     IT: {h.it}")
     out.write_text("\n".join(lines), encoding="utf-8")
     console.print(f"[green]Dettaglio (+ = in piu' nell'IT, - = mancante):[/] {out}")
+
+
+@app.command("plural-check", help="Trova il plurale inglese [Simbolo]s nelle regole IT (es. 'razzos'/'cittadinos' a schermo).")
+def plural_check(
+    dlc: Optional[List[str]] = typer.Option(None, "--dlc", help="Limita a una o piu DLC"),
+):
+    hits = pluralcheck_mod.scan(dlc or None)
+    console.print(f"[bold]Plurale inglese [..]s nelle stringhe IT:[/] {len(hits)} stringhe")
+    if not hits:
+        console.print("[green]Nessun plurale inglese residuo.[/]")
+        return
+    out = config.reports_dir() / f"pluralcheck_{datetime.now():%Y%m%d_%H%M}.txt"
+    lines = [f"# plural-check - {len(hits)} stringhe IT con plurale inglese [..]s\n"]
+    cur = None
+    for h in sorted(hits, key=lambda h: (h.file, h.line or 0)):
+        if h.file != cur:
+            lines.append(f"\n=== {h.file} ==="); cur = h.file
+        syms = ", ".join("[" + s + "]s" for s in h.symbols) or "?"
+        lines.append(f"  L{(h.line or 0):<5} {h.tag}")
+        lines.append(f"     simboli: {syms}")
+        lines.append(f"     IT: {h.it}")
+    out.write_text("\n".join(lines), encoding="utf-8")
+    console.print(f"[green]Dettaglio:[/] {out}")
 
 
 @app.command(help="(Ri)crea i symlink Italiano nell'installazione del gioco.")
