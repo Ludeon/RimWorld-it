@@ -67,18 +67,24 @@
     <li>r_ideoName(p=6)->[packIdeoName]</li>
     <li>r_ideoName(p=2,forcePrefix==False)->[hyphenPrefix]-[packIdeoName]</li>
     <li>r_ideoName(p=2,forcePrefix==False)->[hyphenPrefix]-[packIdeoNameStructure]</li>
-    <li>r_ideoName(p=2)->[creed] [memeAdjective]</li>
+    <li>r_ideoName(p=2)->[creedM] [memeAdjective]</li>
+    <li>r_ideoName(p=2)->[creedF] [memeAdjectiveFem]</li>
     <li>r_ideoName(p=1)->[creed] di [packTheme]</li>
-    <li>r_ideoName(p=1)->[creed] [place_adjective]</li>
+    <li>r_ideoName(p=1)->[creedM] [place_adjective]</li>
     <li>r_ideoName(p=0.25)->Il [memeCreed]</li>
+    <li>r_ideoName(p=0.25)->La [memeCreedFem]</li>
     <li>r_ideoAdjective(priority=1)->[packAdjective]</li>
     <li>r_memberName->[packMember]</li>
-    <li>creed(priority=1)->[memeCreed]</li>
-    <li>creed->[genericCreed]</li>
-    <li>genericCreed->credo</li>
-    <li>genericCreed->dottrina</li>
-    <li>genericCreed->via</li>
-    <li>genericCreed->percorso</li>
+    <li>creed(priority=1)->[creedM]</li>
+    <li>creed->[creedF]</li>
+    <li>creedM(priority=1)->[memeCreed]</li>
+    <li>creedM->[genericCreedM]</li>
+    <li>creedF(priority=1)->[memeCreedFem]</li>
+    <li>creedF->[genericCreedF]</li>
+    <li>genericCreedM->credo</li>
+    <li>genericCreedM->percorso</li>
+    <li>genericCreedF->dottrina</li>
+    <li>genericCreedF->via</li>
     <li>hyphenPrefix->[globalHyphenPrefix]</li>
     <li>hyphenPrefix->[memeHyphenPrefix]</li>
     <li>globalHyphenPrefix(p=4)->neo</li>
