@@ -259,6 +259,16 @@
     <li>townend->well</li>
   -->
   <NamerSettlementOutlander.rulePack.rulesStrings>
+    <!-- IT: italianizzazione totale (modello: repo spagnolo).
+         - wordgen su sillabe ITALIANE [SylI] (gia mappate in RulePacks_Global),
+           cosa che de/fr/es non fanno (restano su [SylE] inglese);
+         - suffissi toponomastici italiani (-ano, -ino, -asco, -engo...) e
+           prefissi-composto incollati (Borgo-, Castel-, Monte-, Villa-, San-...)
+           sul modello reale di "Borgosesia / Castelfranco / Sanremo";
+         - 'near' con concordanza di genere (TerrainFeature_Masculine/Feminine),
+           niente piu' "vicino-al-dorsale" (dorsale e' femminile);
+         - il glue di parole intere (topicalnoun+townend, tipo "Backgammonlegno")
+           e' depotenziato come nel tedesco. -->
     <li>r_name(p=12)->[townname_wordgen]</li>
     <li>r_name(p=6)->[townname_fixed]</li>
     <li>r_name(p=4)->[townname_combo]</li>
@@ -275,32 +285,45 @@
     <li>townname_combo(p=2)->[concept_positive] [Community]</li>
     <li>townname_combo(p=3)->[Character] di [TerrainFeature]</li>
     <li>townname_combo(p=3)->[Character] di [Community]</li>
-    <li>townname_near->[nearnameinitial]-sul-[TerrainFeature]</li>
-    <li>townname_near->[nearnameinitial]-vicino-al-[TerrainFeature]</li>
-    <li>townname_near->[nearnameinitial]-sopra-il-[TerrainFeature]</li>
+    <li>townname_near->[nearnameinitial] sul [TerrainFeature_Masculine]</li>
+    <li>townname_near->[nearnameinitial] sulla [TerrainFeature_Feminine]</li>
+    <li>townname_near->[nearnameinitial] presso il [TerrainFeature_Masculine]</li>
+    <li>townname_near->[nearnameinitial] presso la [TerrainFeature_Feminine]</li>
     <li>nearnameinitial->[townname_wordgen]</li>
     <li>nearnameinitial->[Community]</li>
-    <li>townname_wordgen(p=2)->[SylE][SylE]</li>
-    <li>townname_wordgen(p=2)->[SylE][SylE][SylE]</li>
-    <li>townname_wordgen(p=2)->[SylE][townend]</li>
-    <li>townname_wordgen(p=2)->[SylE][SylE][townend]</li>
+    <li>townname_wordgen(p=2)->[SylI][SylI]</li>
+    <li>townname_wordgen(p=2)->[SylI][SylI][SylI]</li>
+    <li>townname_wordgen(p=3)->[SylI][townend]</li>
+    <li>townname_wordgen(p=3)->[SylI][SylI][townend]</li>
+    <li>townname_wordgen(p=3)->[townbegin][SylI][SylI]</li>
+    <li>townname_wordgen(p=2)->[townbegin][SylI]</li>
     <li>townname_wordgen->[TerrainFeature][townend]</li>
-    <li>townname_wordgen->[topicalnoun][townend]</li>
-    <li>townend->villa</li>
-    <li>townend->borgo</li>
-    <li>townend->bosco</li>
+    <li>townname_wordgen(p=0.1)->[topicalnoun][townend]</li>
+    <li>townbegin->borgo</li>
+    <li>townbegin->castel</li>
+    <li>townbegin->monte</li>
+    <li>townbegin->villa</li>
+    <li>townbegin->poggio</li>
+    <li>townbegin->rocca</li>
+    <li>townbegin->casal</li>
+    <li>townbegin->colle</li>
+    <li>townbegin->pieve</li>
+    <li>townbegin->san</li>
+    <li>townend->ano</li>
+    <li>townend->ino</li>
+    <li>townend->ello</li>
+    <li>townend->etto</li>
+    <li>townend->eto</li>
+    <li>townend->asco</li>
+    <li>townend->engo</li>
+    <li>townend->ate</li>
+    <li>townend->ona</li>
+    <li>townend->ago</li>
+    <li>townend->ena</li>
     <li>townend->valle</li>
     <li>townend->fonte</li>
-    <li>townend->speranza</li>
-    <li>townend->terra</li>
-    <li>townend->selva</li>
-    <li>townend->den</li>
-    <li>townend->tas</li>
-    <li>townend->legno</li>
-    <li>townend->paese</li>
-    <li>townend->ron</li>
-    <li>townend->pozza</li>
-    <li>townend->pozzo</li>
+    <li>townend->bosco</li>
+    <li>townend->colle</li>
   </NamerSettlementOutlander.rulePack.rulesStrings>
   
   <!-- EN:
