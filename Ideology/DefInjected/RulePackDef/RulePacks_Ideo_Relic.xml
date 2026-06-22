@@ -66,68 +66,57 @@
     <li>second->krome</li>
   -->
   <NamerIdeoRelic.rulePack.rulesStrings>
-    <li>r_ideoRelicName(p=2)->[first][second]</li>
+    <li>r_ideoRelicName(p=2)->[first] [second]</li>
     <li>r_ideoRelicName->[thingLabel] di [memeConcept]</li>
     <li>r_ideoRelicName->[thingLabel] [memeAdjective]</li>
     <li>r_ideoRelicName->[memeHyphenPrefix]-[thingLabel]</li>
-    <li>r_ideoRelicName->[relic] [memeAdjective]</li>
+    <li>r_ideoRelicName->[relic_M] [memeAdjective]</li>
+    <li>r_ideoRelicName->[relic_F] [memeAdjectiveFem]</li>
     <li>r_ideoRelicName->[relic] di [memeConcept]</li>
     <li>r_ideoRelicName->[memeHyphenPrefix]-[relic]</li>
-    <li>relic->reliquia</li>
-    <li>relic->manufatto</li>
-    <li>relic->cimelio</li>
-    <li>relic->memento</li>
-    <li>relic->reperto</li>
-    <li>relic->eredità</li>
-    <li>relic->ricordo</li>
-    <li>first(p=5)->[memeHyphenPrefix]</li>
-    <li>first->lungo</li>
-    <li>first->cielo</li>
-    <li>first->stella</li>
-    <li>first->profondo</li>
-    <li>first->lontano</li>
-    <li>first->morto</li>
-    <li>first->vita</li>
-    <li>first->luce</li>
-    <li>first->oscuro</li>
-    <li>first->fine</li>
-    <li>first->hor</li>
-    <li>first->an</li>
-    <li>first->ex</li>
-    <li>first->ton</li>
-    <li>first->dow</li>
-    <li>first->bor</li>
-    <li>first->ven</li>
-    <li>first->xan</li>
-    <li>first->arl</li>
-    <li>first->hex</li>
-    <li>first->bax</li>
-    <li>first->cel</li>
-    <li>first->loc</li>
-    <li>first->polo</li>
-    <li>first->lode</li>
-    <li>second->evocatore</li>
-    <li>second->portatore</li>
-    <li>second->parlatore</li>
-    <li>second->bugiardo</li>
-    <li>second->collegamento</li>
-    <li>second->legame</li>
-    <li>second->anello</li>
-    <li>second->nexus</li>
-    <li>second->nucleo</li>
-    <li>second->crocevia</li>
-    <li>second->massa</li>
-    <li>second->corpus</li>
-    <li>second->fuoco</li>
-    <li>second->lente</li>
-    <li>second->luce</li>
-    <li>second->ombra</li>
-    <li>second->certo</li>
-    <li>second->luogo</li>
-    <li>second->forma</li>
-    <li>second->dito</li>
-    <li>second->frusta</li>
-    <li>second->krome</li>
+    <li>relic->[relic_M]</li>
+    <li>relic->[relic_F]</li>
+    <li>relic_M->manufatto</li>
+    <li>relic_M->cimelio</li>
+    <li>relic_M->memento</li>
+    <li>relic_M->reperto</li>
+    <li>relic_M->ricordo</li>
+    <li>relic_F->reliquia</li>
+    <li>relic_F->eredità</li>
+    <li>first->Eco</li>
+    <li>first->Manto</li>
+    <li>first->Flagello</li>
+    <li>first->Voce</li>
+    <li>first->Nexo</li>
+    <li>first->Cuore</li>
+    <li>first->Sigillo</li>
+    <li>first->Lama</li>
+    <li>first->Canto</li>
+    <li>first->Custode</li>
+    <li>first->Araldo</li>
+    <li>first->Verbo</li>
+    <li>first->Specchio</li>
+    <li>first->Corona</li>
+    <li>first->Soffio</li>
+    <li>first->Calice</li>
+    <li>second->di fuoco</li>
+    <li>second->di morte</li>
+    <li>second->di luce</li>
+    <li>second->di sangue</li>
+    <li>second->di tenebra</li>
+    <li>second->di tempesta</li>
+    <li>second->di gloria</li>
+    <li>second->di stella</li>
+    <li>second->di cielo</li>
+    <li>second->di vita</li>
+    <li>second->di guerra</li>
+    <li>second->di cenere</li>
+    <li>second->di ferro</li>
+    <li>second->di pietra</li>
+    <li>second->di terrore</li>
+    <li>second->d'ombra</li>
+    <li>second->d'abisso</li>
+    <li>second->d'oscurità</li>
   </NamerIdeoRelic.rulePack.rulesStrings>
   
 </LanguageData>
