@@ -21,17 +21,20 @@
     <li>r_ritualName->[ritNoun] di [keyDeity]</li>
     <li>r_ritualName->[ritNoun] di [chosenTheme]</li>
     <li>r_ritualName->[ritNoun] di [memeConcept]</li>
-    <li>r_ritualName->[ritNoun] [memeAdjective]</li>
-    <li>ritNoun->mutilazione</li>
-    <li>ritNoun->taglio</li>
-    <li>ritNoun->affettatura</li>
-    <li>ritNoun->scorticatura</li>
-    <li>ritNoun->strappo di lama</li>
-    <li>ritNoun->strappo</li>
-    <li>ritNoun->deturpazione</li>
-    <li>ritNoun->scultura di carne</li>
-    <li>ritNoun->sfregio</li>
-    <li>ritNoun->lacerazione</li>
+    <li>r_ritualName->[ritNoun_M] [memeAdjective]</li>
+    <li>r_ritualName->[ritNoun_F] [memeAdjectiveFem]</li>
+    <li>ritNoun->[ritNoun_M]</li>
+    <li>ritNoun->[ritNoun_F]</li>
+    <li>ritNoun_M->taglio</li>
+    <li>ritNoun_M->strappo di lama</li>
+    <li>ritNoun_M->strappo</li>
+    <li>ritNoun_M->sfregio</li>
+    <li>ritNoun_F->mutilazione</li>
+    <li>ritNoun_F->affettatura</li>
+    <li>ritNoun_F->scorticatura</li>
+    <li>ritNoun_F->deturpazione</li>
+    <li>ritNoun_F->scultura di carne</li>
+    <li>ritNoun_F->lacerazione</li>
   </NamerRitualMutilation.rulePack.rulesStrings>
   
 </LanguageData>

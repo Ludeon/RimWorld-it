@@ -18,19 +18,22 @@
     <li>festival->fiesta</li>
   -->
   <NamerFestivalGlobal.rulePack.rulesStrings>
-    <li>festivalName(p=2)->[festival] [memeAdjective]</li>
+    <li>festivalName(p=2)->[festival_M] [memeAdjective]</li>
+    <li>festivalName(p=2)->[festival_F] [memeAdjectiveFem]</li>
     <li>festivalName->[festival] di [chosenTheme]</li>
-    <li>festivalName->[festival] [chosenAdjective]</li>
+    <li>festivalName->[festival_M] [chosenAdjective]</li>
     <li>festivalName->[festival] di [keyDeity]</li>
     <li>festivalName->[festival] di [memeConcept]</li>
     <li>festivalName->[festival] di [chosenIdeoName]</li>
-    <li>festival->festival</li>
-    <li>festival->celebrazione</li>
-    <li>festival->festa</li>
-    <li>festival->avvento</li>
-    <li>festival->fiera</li>
-    <li>festival->giubileo</li>
-    <li>festival->sagra</li>
+    <li>festival->[festival_M]</li>
+    <li>festival->[festival_F]</li>
+    <li>festival_M->festival</li>
+    <li>festival_M->avvento</li>
+    <li>festival_M->giubileo</li>
+    <li>festival_F->celebrazione</li>
+    <li>festival_F->festa</li>
+    <li>festival_F->fiera</li>
+    <li>festival_F->sagra</li>
   </NamerFestivalGlobal.rulePack.rulesStrings>
   
   <!-- EN:

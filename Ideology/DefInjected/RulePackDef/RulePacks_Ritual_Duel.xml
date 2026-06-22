@@ -16,12 +16,15 @@
     <li>r_ritualName->[ritNoun] di [keyDeity]</li>
     <li>r_ritualName->[ritNoun] di [chosenTheme]</li>
     <li>r_ritualName->[ritNoun] di [memeConcept]</li>
-    <li>r_ritualName->[ritNoun] [memeAdjective]</li>
-    <li>ritNoun->combattimento</li>
-    <li>ritNoun->duello</li>
-    <li>ritNoun->battaglia</li>
-    <li>ritNoun->rissa</li>
-    <li>ritNoun->confronto</li>
+    <li>r_ritualName->[ritNoun_M] [memeAdjective]</li>
+    <li>r_ritualName->[ritNoun_F] [memeAdjectiveFem]</li>
+    <li>ritNoun->[ritNoun_M]</li>
+    <li>ritNoun->[ritNoun_F]</li>
+    <li>ritNoun_M->combattimento</li>
+    <li>ritNoun_M->duello</li>
+    <li>ritNoun_M->confronto</li>
+    <li>ritNoun_F->battaglia</li>
+    <li>ritNoun_F->rissa</li>
   </NamerRitualGladiatorDuel.rulePack.rulesStrings>
   
 </LanguageData>

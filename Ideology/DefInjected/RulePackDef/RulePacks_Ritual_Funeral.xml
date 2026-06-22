@@ -18,19 +18,22 @@
     <li>funeral->requiem</li>
   -->
   <NamerRitualFuneral.rulePack.rulesStrings>
-    <li>r_ritualName(p=2)->[funeral] [memeAdjective]</li>
+    <li>r_ritualName(p=2)->[funeral_M] [memeAdjective]</li>
+    <li>r_ritualName(p=2)->[funeral_F] [memeAdjectiveFem]</li>
     <li>r_ritualName->[funeral] di [chosenTheme]</li>
-    <li>r_ritualName->[funeral] [chosenAdjective]</li>
+    <li>r_ritualName->[funeral_M] [chosenAdjective]</li>
     <li>r_ritualName->[funeral] di [keyDeity]</li>
     <li>r_ritualName->[funeral] di [memeConcept]</li>
     <li>r_ritualName->[funeral] di [chosenIdeoName]</li>
     <li>r_ritualName(p=0.01)->funerale</li>
-    <li>funeral->funerale</li>
-    <li>funeral->lutto</li>
-    <li>funeral->elogio funebre</li>
-    <li>funeral->sepoltura</li>
-    <li>funeral->inumazione</li>
-    <li>funeral->requiem</li>
+    <li>funeral->[funeral_M]</li>
+    <li>funeral->[funeral_F]</li>
+    <li>funeral_M->funerale</li>
+    <li>funeral_M->lutto</li>
+    <li>funeral_M->elogio funebre</li>
+    <li>funeral_M->requiem</li>
+    <li>funeral_F->sepoltura</li>
+    <li>funeral_F->inumazione</li>
   </NamerRitualFuneral.rulePack.rulesStrings>
   
 </LanguageData>
