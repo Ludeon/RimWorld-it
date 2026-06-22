@@ -124,7 +124,22 @@ tr:hover td{{background:#161b22}}
 select,input{{background:#0d1117;border:1px solid #30363d;color:#c9d1d9;border-radius:6px;padding:5px 8px;font:inherit}}
 .muted{{color:#8b949e}} .right{{text-align:right}}
 .names div{{break-inside:avoid;padding:2px 0}}
-</style></head><body>
+</style>
+<script>
+// Ricorda l'ultima pagina visitata e ripristinala UNA VOLTA per sessione del browser:
+// riaprendo la dashboard (es. il giorno dopo) torni dov'eri; dentro la stessa sessione
+// la navigazione resta libera (Home non ti rimbalza indietro).
+(function(){{try{{
+  var KEY='rwit_last', here=location.pathname+location.search;
+  if(location.pathname=='/'&&!location.search&&!sessionStorage.getItem('rwit_restored')){{
+    sessionStorage.setItem('rwit_restored','1');
+    var last=localStorage.getItem(KEY);
+    if(last&&last!='/'&&last!=here){{location.replace(last);return;}}
+  }}
+  localStorage.setItem(KEY,here);
+}}catch(e){{}}}})();
+</script>
+</head><body>
 <header>
   <h1>🌍 RimWorld IT</h1>
   <nav><a href="/" class="{on_prog}">{tab_prog}</a><a href="/namegen" class="{on_names}">{tab_names}</a></nav>
