@@ -225,6 +225,9 @@
   <NamerSettlementOutlander.rulePack.rulesFiles>
     <li>townname_fixed->Names/OutlanderTown</li>
     <li>concept_positive->Words/Nouns/Concepts_Positive</li>
+    <li>VegetableI->Words/Nouns/Vegetables_I</li>
+    <li>VegetableGli->Words/Nouns/Vegetables_Gli</li>
+    <li>VegetableLe->Words/Nouns/Vegetables_Le</li>
   </NamerSettlementOutlander.rulePack.rulesFiles>
   <!-- EN:
     <li>r_name(p=12)->[townname_wordgen]</li>
@@ -296,10 +299,11 @@
     <li>topicalnoun->[Vegetable]</li>
     <li>topicalnoun->[Game]</li>
     <li>topicalnoun->[BodyPart]</li>
-    <li>townname_combo->[TerrainFeature] di [topicalnoun]</li>
-    <li>townname_combo->[Community] di [topicalnoun]</li>
-    <li>townname_combo->[TerrainFeature] di [topicalnoun]</li>
-    <li>townname_combo->[Community] di [topicalnoun]</li>
+    <li>geo(p=2)->[TerrainFeature]</li>
+    <li>geo->[Community]</li>
+    <li>townname_combo->[geo] dei [VegetableI]</li>
+    <li>townname_combo->[geo] degli [VegetableGli]</li>
+    <li>townname_combo->[geo] delle [VegetableLe]</li>
     <li>townname_combo(p=2)->[TerrainFeature] di [concept_positive]</li>
     <li>townname_combo(p=2)->[Community] di [concept_positive]</li>
     <li>townname_combo(p=2)->[TerrainFeature] di [concept_positive]</li>
@@ -401,6 +405,7 @@
     <li>townname_combo->[geography] dei [EnemyI]</li>
     <li>townname_combo->[geography] degli [EnemyGli]</li>
     <li>townname_combo->[geography] delle [EnemyLe]</li>
+    <li>townname_combo->[geography] dei [WeaponI]</li>
     <li>townname_combo->[geography] delle [WeaponLe]</li>
     <li>townname_combo->[TerrainFeature_Masculine] [ColorBadass_Masculine]</li>
     <li>townname_combo->[TerrainFeature_Feminine] [ColorBadass_Feminine]</li>
