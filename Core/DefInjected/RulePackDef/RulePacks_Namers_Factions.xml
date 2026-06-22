@@ -296,15 +296,15 @@
     <li>topicalnoun->[Vegetable]</li>
     <li>topicalnoun->[Game]</li>
     <li>topicalnoun->[BodyPart]</li>
-    <li>townname_combo->[topicalnoun] [TerrainFeature]</li>
-    <li>townname_combo->[topicalnoun] [Community]</li>
-    <li>townname_combo->[topicalnoun] di [TerrainFeature]</li>
-    <li>townname_combo->[topicalnoun] di [Community]</li>
-    <li>townname_combo(p=2)->[concept_positive] di [TerrainFeature]</li>
-    <li>townname_combo(p=2)->[concept_positive] [TerrainFeature]</li>
-    <li>townname_combo(p=2)->[concept_positive] [Community]</li>
-    <li>townname_combo(p=3)->[Character] di [TerrainFeature]</li>
-    <li>townname_combo(p=3)->[Character] di [Community]</li>
+    <li>townname_combo->[TerrainFeature] di [topicalnoun]</li>
+    <li>townname_combo->[Community] di [topicalnoun]</li>
+    <li>townname_combo->[TerrainFeature] di [topicalnoun]</li>
+    <li>townname_combo->[Community] di [topicalnoun]</li>
+    <li>townname_combo(p=2)->[TerrainFeature] di [concept_positive]</li>
+    <li>townname_combo(p=2)->[Community] di [concept_positive]</li>
+    <li>townname_combo(p=2)->[TerrainFeature] di [concept_positive]</li>
+    <li>townname_combo(p=3)->[TerrainFeature] di [Character]</li>
+    <li>townname_combo(p=3)->[Community] di [Character]</li>
     <li>townname_near->[nearnameinitial] sul [TerrainFeature_Masculine]</li>
     <li>townname_near->[nearnameinitial] sulla [TerrainFeature_Feminine]</li>
     <li>townname_near->[nearnameinitial] presso il [TerrainFeature_Masculine]</li>
@@ -391,16 +391,16 @@
   <NamerSettlementPirate.rulePack.rulesStrings>
     <li>r_name(p=4)->[townname_combo]</li>
     <li>r_name->[townname_wordgen]</li>
-    <li>townname_combo->[AnimalBadass] [geography]</li>
-    <li>townname_combo->[AnimalBadass] di [geography]</li>
-    <li>townname_combo->[ConceptBadass] [geography]</li>
-    <li>townname_combo->[ConceptBadass] di [geography]</li>
-    <li>townname_combo->[PersonBadass] [geography]</li>
-    <li>townname_combo->[PersonBadass] di [geography]</li>
-    <li>townname_combo->[Enemy] di [geography]</li>
-    <li>townname_combo->[Enemy] [geography]</li>
-    <li>townname_combo->[Weapon] di [geography]</li>
-    <li>townname_combo->[Weapon] [geography]</li>
+    <li>townname_combo->[geography] di [AnimalBadass]</li>
+    <li>townname_combo->[geography] di [AnimalBadass]</li>
+    <li>townname_combo->[geography] di [ConceptBadass]</li>
+    <li>townname_combo->[geography] di [ConceptBadass]</li>
+    <li>townname_combo->[geography] di [PersonBadass]</li>
+    <li>townname_combo->[geography] di [PersonBadass]</li>
+    <li>townname_combo->[geography] di [Enemy]</li>
+    <li>townname_combo->[geography] di [Enemy]</li>
+    <li>townname_combo->[geography] di [Weapon]</li>
+    <li>townname_combo->[geography] di [Weapon]</li>
     <li>townname_combo->[TerrainFeature_Masculine] [ColorBadass_Masculine]</li>
     <li>townname_combo->[TerrainFeature_Feminine] [ColorBadass_Feminine]</li>
     <li>geography(p=2)->[TerrainFeature]</li>
