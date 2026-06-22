@@ -96,7 +96,7 @@
     <li>r_name(p=2)->[union_f] [political_adjective]</li>
     <li>r_name->[union_f] [political_adjective] di [nearnameinitial]</li>
     <li>nearnameinitial(p=3)->[PlaceOutlander]</li>
-    <li>nearnameinitial->[Direction] [PlaceOutlander]</li>
+    <li>nearnameinitial->[PlaceOutlander] [Direction]</li>
     <li>union_f->unione</li>
     <li>union_f->nazione</li>
     <li>union_f->confederazione</li>
