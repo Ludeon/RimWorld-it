@@ -228,6 +228,12 @@
     <li>VegetableI->Words/Nouns/Vegetables_I</li>
     <li>VegetableGli->Words/Nouns/Vegetables_Gli</li>
     <li>VegetableLe->Words/Nouns/Vegetables_Le</li>
+    <li>BodyPartI->Words/Nouns/Bodyparts_I</li>
+    <li>BodyPartGli->Words/Nouns/Bodyparts_Gli</li>
+    <li>BodyPartLe->Words/Nouns/Bodyparts_Le</li>
+    <li>JobI->Words/Nouns/People_Jobs_I</li>
+    <li>JobGli->Words/Nouns/People_Jobs_Gli</li>
+    <li>JobLe->Words/Nouns/People_Jobs_Le</li>
   </NamerSettlementOutlander.rulePack.rulesFiles>
   <!-- EN:
     <li>r_name(p=12)->[townname_wordgen]</li>
@@ -304,11 +310,15 @@
     <li>townname_combo->[geo] dei [VegetableI]</li>
     <li>townname_combo->[geo] degli [VegetableGli]</li>
     <li>townname_combo->[geo] delle [VegetableLe]</li>
+    <li>townname_combo->[geo] dei [BodyPartI]</li>
+    <li>townname_combo->[geo] degli [BodyPartGli]</li>
+    <li>townname_combo->[geo] delle [BodyPartLe]</li>
     <li>townname_combo(p=2)->[TerrainFeature] di [concept_positive]</li>
     <li>townname_combo(p=2)->[Community] di [concept_positive]</li>
     <li>townname_combo(p=2)->[TerrainFeature] di [concept_positive]</li>
-    <li>townname_combo(p=3)->[TerrainFeature] di [Character]</li>
-    <li>townname_combo(p=3)->[Community] di [Character]</li>
+    <li>townname_combo(p=3)->[geo] dei [JobI]</li>
+    <li>townname_combo(p=2)->[geo] degli [JobGli]</li>
+    <li>townname_combo->[geo] delle [JobLe]</li>
     <li>townname_near->[nearnameinitial] sul [TerrainFeature_Masculine]</li>
     <li>townname_near->[nearnameinitial] sulla [TerrainFeature_Feminine]</li>
     <li>townname_near->[nearnameinitial] presso il [TerrainFeature_Masculine]</li>
