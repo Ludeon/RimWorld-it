@@ -26,6 +26,8 @@ import reconcile as reconcile_mod
 import freshness as freshness_mod
 import argscheck as argscheck_mod
 import pluralcheck as pluralcheck_mod
+import clean as clean_mod
+import report as report_mod
 
 app = typer.Typer(
     add_completion=False,
@@ -274,6 +276,102 @@ def plural_check(
         lines.append(f"     IT: {h.it}")
     out.write_text("\n".join(lines), encoding="utf-8")
     console.print(f"[green]Dettaglio:[/] {out}")
+
+
+@app.command("clean", help="Voci morte dal TranslationReport: keyed inutili (rimovibili) + load-error def (diagnosi).")
+def clean(
+    report: Optional[Path] = typer.Option(None, "--report", "-r", help="Percorso del TranslationReport.txt"),
+    dlc: Optional[List[str]] = typer.Option(None, "--dlc", help="Limita a una o piu DLC"),
+    game_data: Optional[str] = typer.Option(None, "--game-data"),
+    apply_keyed: bool = typer.Option(False, "--apply-keyed", help="RIMUOVE le keyed orfane (assenti anche dall'inglese)"),
+    apply_defs: bool = typer.Option(False, "--apply-defs", help="RIMUOVE le voci DefInjected dei load-error (iniezioni inerti)"),
+    yes: bool = typer.Option(False, "--yes", "-y", help="Conferma la rimozione senza prompt"),
+):
+    rep_path = report or config.desktop_report()
+    if not rep_path or not Path(rep_path).exists():
+        console.print("[red]Report non trovato.[/] Generalo in gioco o passa --report.")
+        raise typer.Exit(1)
+    try:
+        data = config.game_data(game_data)
+    except FileNotFoundError:
+        console.print("[red]Gioco non trovato[/] (serve l'inglese del gioco per l'incrocio): usa --game-data o RIMWORLD_DATA.")
+        raise typer.Exit(1)
+
+    dlcs = dlc or config.DLCS
+    rep = report_mod.parse(rep_path)
+    krows = clean_mod.scan_keyed(rep, dlcs, data)
+    lrows = clean_mod.scan_load_errors(rep, dlcs)
+
+    from collections import Counter
+    kc = Counter(r.verdict for r in krows)
+    t = Table(title=f"Keyed inutili - {len(krows)} (incrocio con l'inglese del gioco)")
+    t.add_column("Verdetto"); t.add_column("Conteggio", justify="right", style="bold")
+    vlabel = {"orfana": "orfana (assente anche in EN) -> RIMOVIBILE",
+              "in-EN": "presente in EN -> falso positivo, TENERE",
+              "assente": "gia' assente dal repo"}
+    for v, n in kc.most_common():
+        t.add_row(vlabel.get(v, v), str(n))
+    console.print(t)
+
+    lc = Counter(r.kind for r in lrows)
+    if lrows:
+        t2 = Table(title=f"Load-error def-injected - {len(lrows)} (solo diagnosi, rimappatura manuale)")
+        t2.add_column("Tipo"); t2.add_column("Conteggio", justify="right", style="bold")
+        for k, n in lc.most_common():
+            t2.add_row(k, str(n))
+        console.print(t2)
+
+    out = config.reports_dir() / f"clean_{datetime.now():%Y%m%d_%H%M}.txt"
+    lines = ["# clean - keyed inutili + load-error def-injected\n"]
+    lines.append("## KEYED INUTILI (orfana=rimovibile, in-EN=tenere, assente=gia' via)")
+    cur = None
+    for r in sorted(krows, key=lambda r: (r.verdict, r.rel or "", r.line or 0)):
+        if r.verdict != cur:
+            lines.append(f"\n### {r.verdict} ###"); cur = r.verdict
+        loc = f"{r.rel}:{r.line}" if r.rel else "(non nel repo)"
+        lines.append(f"  {r.key:40} {loc}")
+        lines.append(f"     IT: {r.text}")
+    lines.append("\n## LOAD-ERROR DEF-INJECTED (diagnosi)")
+    cur = None
+    for r in sorted(lrows, key=lambda r: (r.kind, r.rel or "")):
+        if r.kind != cur:
+            lines.append(f"\n### {r.kind} ###"); cur = r.kind
+        loc = f"{r.rel}:{r.line}" if r.rel else f"(non in DefInjected repo; origine Defs: {r.src_file})"
+        lines.append(f"  [{r.deftype}] {r.inject_path}")
+        lines.append(f"     {r.detail}")
+        lines.append(f"     repo: {loc}")
+    out.write_text("\n".join(lines), encoding="utf-8")
+    console.print(f"[green]Dettaglio:[/] {out}")
+
+    orphans = [r for r in krows if r.verdict == "orfana"]
+    located_defs = [r for r in lrows if r.rel and r.line]
+    if not apply_keyed and not apply_defs:
+        if orphans:
+            console.print(f"[bold]{len(orphans)} keyed orfane rimovibili.[/] "
+                          f"Per rimuoverle: [cyan]rwit clean --apply-keyed --yes[/].")
+        if located_defs:
+            console.print(f"[bold]{len(located_defs)} voci DefInjected di load-error localizzate.[/] "
+                          f"Per rimuoverle: [cyan]rwit clean --apply-defs --yes[/].")
+        return
+    if not yes:
+        todo = []
+        if apply_keyed:
+            todo.append(f"{len(orphans)} keyed orfane")
+        if apply_defs:
+            todo.append(f"{len(located_defs)} voci DefInjected di load-error")
+        console.print(f"[yellow]Rimuovero': {', '.join(todo)} (+ i commenti EN/UNUSED adiacenti).[/]")
+        console.print("Rilancia con --yes per confermare. (git e' la rete di sicurezza)")
+        raise typer.Exit(1)
+    if apply_keyed:
+        n, warns = clean_mod.apply_keyed(orphans)
+        console.print(f"[green]Rimosse {n} voci keyed orfane.[/]")
+        for w in warns:
+            console.print(f"  [yellow]! {w}[/]")
+    if apply_defs:
+        n, warns = clean_mod.apply_defs(located_defs)
+        console.print(f"[green]Rimosse {n} voci DefInjected di load-error.[/]")
+        for w in warns:
+            console.print(f"  [yellow]! {w}[/]")
 
 
 @app.command(help="(Ri)crea i symlink Italiano nell'installazione del gioco.")
