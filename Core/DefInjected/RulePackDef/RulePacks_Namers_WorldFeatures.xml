@@ -37,14 +37,22 @@
     <li>terrain_word->barrens</li>
   -->
   <NamerAridShrubland.rulePack.rulesStrings>
-    <li>terrain_word(p=4)->landa arbustiva</li>
-    <li>terrain_word(p=4)->landadiboscaglia</li>
+    <!-- IT: bioma "arid shrubland" = macchia/gariga arida. Pool ampliato con
+         termini geo-botanici reali (modello FR garrigue/maquis/steppe/savane,
+         ES matorral/sabana/páramo). Corretti: "landadiboscaglia" (compound
+         sbagliato) e "brulle" (aggettivo nudo) → "lande brulle". -->
+    <li>terrain_word(p=4)->macchia</li>
+    <li>terrain_word(p=4)->gariga</li>
     <li>terrain_word(p=2)->altopiano</li>
     <li>terrain_word(p=2)->boscaglia</li>
-    <li>terrain_word->deserto</li>
-    <li>terrain_word->cespuglio</li>
+    <li>terrain_word(p=2)->arbusteto</li>
+    <li>terrain_word->landa arbustiva</li>
     <li>terrain_word->sterpaglia</li>
-    <li>terrain_word->brulle</li>
+    <li>terrain_word->cespuglieto</li>
+    <li>terrain_word->steppa</li>
+    <li>terrain_word->savana</li>
+    <li>terrain_word->deserto</li>
+    <li>terrain_word->lande brulle</li>
   </NamerAridShrubland.rulePack.rulesStrings>
   
   <!-- EN:
@@ -80,7 +88,7 @@
     <li>terrain_word->boscaglia</li>
     <li>terrain_word->boschi</li>
     <li>terrain_word->groviglio</li>
-    <li>terrain_word->fitto</li>
+    <li>terrain_word->macchia</li>
   </NamerBorealForest.rulePack.rulesStrings>
   
   <!-- EN:
@@ -108,8 +116,17 @@
     <li>terrain_word->barrens</li>
   -->
   <NamerDesert.rulePack.rulesStrings>
-    <li>r_name(p=0.2)->[narrative_name_M] [desert_adjective_M]</li>
-    <li>r_name(p=0.2)->[narrative_name_F] [desert_adjective_F]</li>
+    <!-- IT: ramo "nome + aggettivo desertico". Il soggetto è un nome NUDO
+         (oggetto naturale/animale) con genere noto, così l'unico aggettivo è
+         quello desertico (accordato). Evita i doppioni del pool comune
+         narrative_name_* (es. "Zampa buona infinita", "Ala piccola lunga") e i
+         body-part poco adatti a un deserto. -->
+    <li>r_name(p=0.2)->[desert_subject_M] [desert_adjective_M]</li>
+    <li>r_name(p=0.2)->[desert_subject_F] [desert_adjective_F]</li>
+    <li>desert_subject_M(p=2)->[NaturalObject_Masculine]</li>
+    <li>desert_subject_M->[Animal_Masculine]</li>
+    <li>desert_subject_F(p=2)->[NaturalObject_Feminine]</li>
+    <li>desert_subject_F->[Animal_Feminine]</li>
     <li>desert_adjective_M->piatto</li>
     <li>desert_adjective_M->bianco</li>
     <li>desert_adjective_M->infinito</li>
@@ -171,14 +188,18 @@
     <li>terrain_word(p=0.3)->tract</li>
   -->
   <NamerIceSheet.rulePack.rulesStrings>
+    <!-- IT: l'EN usa parole astratte (sheet/expanse/reach/span/tract) che in italiano
+         come nome di luogo suonano vuote. Come fr/es/de, si usano termini glaciologici
+         reali. Corretti: "lastra" (slab, scala piccola/materiale), "apertura" (varco,
+         fuori senso) ed "estensione" (astratto). Tenuti: distesa, spianata. -->
     <li>terrain_word->distesa</li>
-    <li>terrain_word->lastra</li>
-    <li>terrain_word(p=0.5)->estensione</li>
-    <li>terrain_word(p=0.3)->campo</li>
-    <li>terrain_word(p=0.3)->apertura</li>
+    <li>terrain_word->calotta</li>
+    <li>terrain_word(p=0.5)->distesa gelata</li>
+    <li>terrain_word(p=0.3)->campo di ghiaccio</li>
+    <li>terrain_word(p=0.3)->piana gelata</li>
     <li>terrain_word(p=0.3)->spianata</li>
-    <li>terrain_word(p=0.3)->striscia</li>
-    <li>terrain_word(p=0.3)->tratto</li>
+    <li>terrain_word(p=0.3)->ghiacciaio</li>
+    <li>terrain_word(p=0.3)->nevaio</li>
   </NamerIceSheet.rulePack.rulesStrings>
   
   <!-- EN:
@@ -258,8 +279,15 @@
     <li>terrain_word->expanse</li>
   -->
   <NamerOcean.rulePack.rulesStrings>
-    <li>r_name(p=0.2)->[ocean_adjective_M] [narrative_name_M]</li>
-    <li>r_name(p=0.2)->[ocean_adjective_F] [narrative_name_F]</li>
+    <!-- IT: soggetto NUDO a genere noto + aggettivo posposto e accordato; così
+         l'unico aggettivo è quello oceanico (niente doppioni del pool comune,
+         es. "Blu lupo grigio") e l'ordine è naturale ("Squalo blu"). -->
+    <li>r_name(p=0.2)->[ocean_subject_M] [ocean_adjective_M]</li>
+    <li>r_name(p=0.2)->[ocean_subject_F] [ocean_adjective_F]</li>
+    <li>ocean_subject_M(p=2)->[NaturalObject_Masculine]</li>
+    <li>ocean_subject_M->[Animal_Masculine]</li>
+    <li>ocean_subject_F(p=2)->[NaturalObject_Feminine]</li>
+    <li>ocean_subject_F->[Animal_Feminine]</li>
     <li>terrain_word(p=6)->oceano</li>
     <li>terrain_word(p=3)->mare</li>
     <li>terrain_word->distesa</li>
@@ -342,9 +370,16 @@
     <li>terrain_word->fen</li>
   -->
   <NamerSwamp.rulePack.rulesStrings>
+    <!-- IT: "Palude [nome]" resta (testa + nome). I rami con aggettivo usano un
+         soggetto NUDO a genere noto + aggettivo posposto e accordato: niente
+         doppioni del pool comune (es. "Umido lupo grigio"). -->
     <li>r_name(p=0.1)->palude [narrative_name]</li>
-    <li>r_name(p=0.15)->[swamp_adjective_M] [narrative_name_M]</li>
-    <li>r_name(p=0.15)->[swamp_adjective_F] [narrative_name_F]</li>
+    <li>r_name(p=0.15)->[swamp_subject_M] [swamp_adjective_M]</li>
+    <li>r_name(p=0.15)->[swamp_subject_F] [swamp_adjective_F]</li>
+    <li>swamp_subject_M(p=2)->[NaturalObject_Masculine]</li>
+    <li>swamp_subject_M->[Animal_Masculine]</li>
+    <li>swamp_subject_F(p=2)->[NaturalObject_Feminine]</li>
+    <li>swamp_subject_F->[Animal_Feminine]</li>
     <li>terrain_word(p=6)->palude</li>
     <li>terrain_word->bacino</li>
     <li>terrain_word->zone umide</li>
@@ -389,8 +424,14 @@
     <li>terrain_word->tangle</li>
   -->
   <NamerTropicalRainforest.rulePack.rulesStrings>
-    <li>r_name(p=0.15)->[rainforest_adjective_M] [narrative_name_M]</li>
-    <li>r_name(p=0.15)->[rainforest_adjective_F] [narrative_name_F]</li>
+    <!-- IT: soggetto NUDO a genere noto + aggettivo posposto e accordato; un
+         solo aggettivo (quello della foresta pluviale), ordine naturale. -->
+    <li>r_name(p=0.15)->[rainforest_subject_M] [rainforest_adjective_M]</li>
+    <li>r_name(p=0.15)->[rainforest_subject_F] [rainforest_adjective_F]</li>
+    <li>rainforest_subject_M(p=2)->[NaturalObject_Masculine]</li>
+    <li>rainforest_subject_M->[Animal_Masculine]</li>
+    <li>rainforest_subject_F(p=2)->[NaturalObject_Feminine]</li>
+    <li>rainforest_subject_F->[Animal_Feminine]</li>
     <li>terrain_word(p=6)->foresta pluviale</li>
     <li>terrain_word(p=3)->giungla</li>
     <li>terrain_word->foresta</li>
@@ -433,10 +474,10 @@
     <li>terrain_word(p=2)->taiga</li>
     <li>terrain_word->boscaglia</li>
     <li>terrain_word->landa arbustiva</li>
-    <li>terrain_word->landadiboscaglia</li>
-    <li>terrain_word->cespuglio</li>
+    <li>terrain_word->brughiera</li>
+    <li>terrain_word->cespuglieto</li>
     <li>terrain_word->sterpaglia</li>
-    <li>terrain_word->brulle</li>
+    <li>terrain_word->lande brulle</li>
     <li>terrain_word->distesa</li>
     <li>terrain_word->prateria</li>
     <li>terrain_word->pianure</li>
@@ -510,24 +551,32 @@
     <li>r_name->[terrain_word] [narrative_name_M]</li>
     <li>r_name->[terrain_word] [narrative_name_F]</li>
     <li>r_name(p=0.05)->[terrain_word] [storyname]</li>
-    <!-- gender-neutral: proprio/composto/apposizione, nessun aggettivo da accordare -->
+    <!-- gender-neutral: nome proprio, nome singolo o genitivo 'X di Y' (nessun accordo).
+         NIENTE compound schiacciati: in EN '[Color][NaturalObject]'='Redrock' funziona,
+         in IT 'rossolegno'/'grandeartiglio' no → spostati sui pool con genere qui sotto. -->
     <li>narrative_name(p=12)->[WordTribal]</li>
     <li>narrative_name(p=12)->[PlaceOutlander]</li>
-    <li>narrative_name->[Color][NaturalObject]</li>
-    <li>narrative_name->[AdjectiveNatural][BodyPart]</li>
     <li>narrative_name->[Animal]</li>
     <li>narrative_name->[Color]</li>
-    <li>narrative_name->[Color][Animal]</li>
-    <li>narrative_name->[AdjectiveNatural][Animal]</li>
-    <li>narrative_name->[Animal][BodyPart]</li>
-    <li>narrative_name->[Animal] [BodyPart]</li>
-    <!-- gendered: terminano in nome di genere noto, per gli aggettivi che si accordano -->
+    <!-- genitivo: 'Artiglio di Lupo', 'Corno di Cervo' (apposizione che in IT suona) -->
+    <li>narrative_name->[BodyPart] di [Animal]</li>
+    <!-- ponte: anche 'Isola/Lago/Monte [narrative_name]' pescano le forme accordate -->
+    <li>narrative_name(p=2)->[narrative_name_M]</li>
+    <li>narrative_name(p=2)->[narrative_name_F]</li>
+    <!-- gendered: nome (genere noto) + colore/aggettivo accordato. I body-part
+         NON prendono qui l'aggettivo (dava nomi deboli: "naso ruvido", "ala
+         saggia"): le parti del corpo restano solo nel genitivo "X di [Animale]"
+         sopra (modello EN "Wolfpaw"/"Wolf Paw"). -->
     <li>narrative_name_M->[Animal_Masculine]</li>
     <li>narrative_name_M->[Animal_Masculine] [Color_Masculine]</li>
     <li>narrative_name_M->[Animal_Masculine] [AdjectiveNaturalMS]</li>
+    <li>narrative_name_M->[NaturalObject_Masculine] [Color_Masculine]</li>
+    <li>narrative_name_M->[NaturalObject_Masculine] [AdjectiveNaturalMS]</li>
     <li>narrative_name_F->[Animal_Feminine]</li>
     <li>narrative_name_F->[Animal_Feminine] [Color_Feminine]</li>
     <li>narrative_name_F->[Animal_Feminine] [AdjectiveNaturalFS]</li>
+    <li>narrative_name_F->[NaturalObject_Feminine] [Color_Feminine]</li>
+    <li>narrative_name_F->[NaturalObject_Feminine] [AdjectiveNaturalFS]</li>
     <!-- 'Follia di Lupo' (genitivo), non 'Lupo follia' -->
     <li>storyname(p=50)->[story_result] di [subject]</li>
     <li>storyname(p=2)->[BodyPart] di [subject]</li>

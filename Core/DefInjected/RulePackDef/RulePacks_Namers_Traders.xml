@@ -20,22 +20,102 @@
     <li>maybe_adjective->[AdjectiveBadass]</li>
   -->
   <NamerTraderGeneral.rulePack.rulesStrings>
+    <!-- IT: nomi commerciali ricostruiti con accordo di genere/numero (modello
+         dei namer Factions/Settlement). L'inglese mette il modificatore davanti
+         alla "testa" ([adj/animale] [businesstype]); in italiano:
+         - i marchi/sigle/nomi propri restano in apposizione (ordine EN), sono
+           grammaticali in qualunque caso;
+         - i descrittori (animale, oggetto naturale, albero, ortaggio) seguono il
+           businesstype come testa, con aggettivo POSPOSTO e concordato (liste M/F);
+         - l'aggettivo riferito direttamente al businesstype usa sottoinsiemi di
+           businesstype divisi per genere/numero (Friendly solo singolare: mancano
+           le varianti plurali);
+         - [Direction] reso con complemento invariante ("del nord", "dell'est").
+         Pesi: mantenuti gli stessi totali dell'EN (Friendly 0.5 = 0.25x2,
+         Badass 0.5 = 0.13x4). -->
     <li>r_name(p=4)->[businessname] [businesstype]</li>
     <li>r_name->[NamePerson] [businesstype]</li>
-    <li>r_name->[maybe_adjective] [Animal] [businesstype]</li>
     <li>r_name->[Letter][Letter] [businesstype]</li>
     <li>r_name(p=0.5)->[PersonAlly] [businesstype]</li>
-    <li>r_name(p=0.5)->[AdjectiveFriendly] [businesstype]</li>
-    <li>r_name(p=0.5)->[AdjectiveBadass] [businesstype]</li>
     <li>r_name(p=0.3)->[PersonFamily] [businesstype]</li>
-    <li>r_name(p=0.3)->[maybe_adjective] [NaturalObject] [businesstype]</li>
-    <li>r_name(p=0.2)->[maybe_adjective] [TreeType] [businesstype]</li>
-    <li>r_name(p=0.2)->[maybe_adjective] [Vegetable] [businesstype]</li>
-    <li>r_name(p=0.2)->[Direction] [businesstype]</li>
-    <li>maybe_adjective-></li>
-    <li>maybe_adjective->[Color]</li>
-    <li>maybe_adjective->[AdjectiveFriendly]</li>
-    <li>maybe_adjective->[AdjectiveBadass]</li>
+    <!-- descrittori con accordo (testa = btype_head, solo nomi, non aggettivali) -->
+    <li>r_name->[btype_head] [animalbrand]</li>
+    <li>r_name(p=0.3)->[btype_head] [natbrand]</li>
+    <li>r_name(p=0.2)->[btype_head] [treebrand]</li>
+    <li>r_name(p=0.2)->[btype_head] [vegbrand]</li>
+    <!-- aggettivo concordato direttamente col businesstype -->
+    <li>r_name(p=0.25)->[btype_ms] [AdjectiveFriendlyMS]</li>
+    <li>r_name(p=0.25)->[btype_fs] [AdjectiveFriendlyFS]</li>
+    <li>r_name(p=0.13)->[btype_ms] [AdjectiveBadassMS]</li>
+    <li>r_name(p=0.13)->[btype_fs] [AdjectiveBadassFS]</li>
+    <li>r_name(p=0.13)->[btype_mp] [AdjectiveBadassMP]</li>
+    <li>r_name(p=0.13)->[btype_fp] [AdjectiveBadassFP]</li>
+    <!-- direzione come complemento invariante -->
+    <li>r_name(p=0.2)->[btype_head] [dir_compl]</li>
+    <!-- marchi descrittivi: nome + aggettivo concordato (2/8 ~ 25% senza aggettivo, come l'EN) -->
+    <li>animalbrand->[Animal_Masculine]</li>
+    <li>animalbrand->[Animal_Feminine]</li>
+    <li>animalbrand->[Animal_Masculine] [Color_Masculine]</li>
+    <li>animalbrand->[Animal_Feminine] [Color_Feminine]</li>
+    <li>animalbrand->[Animal_Masculine] [AdjectiveFriendlyMS]</li>
+    <li>animalbrand->[Animal_Feminine] [AdjectiveFriendlyFS]</li>
+    <li>animalbrand->[Animal_Masculine] [AdjectiveBadassMS]</li>
+    <li>animalbrand->[Animal_Feminine] [AdjectiveBadassFS]</li>
+    <li>natbrand->[NaturalObject_Masculine]</li>
+    <li>natbrand->[NaturalObject_Feminine]</li>
+    <li>natbrand->[NaturalObject_Masculine] [Color_Masculine]</li>
+    <li>natbrand->[NaturalObject_Feminine] [Color_Feminine]</li>
+    <li>natbrand->[NaturalObject_Masculine] [AdjectiveFriendlyMS]</li>
+    <li>natbrand->[NaturalObject_Feminine] [AdjectiveFriendlyFS]</li>
+    <li>natbrand->[NaturalObject_Masculine] [AdjectiveBadassMS]</li>
+    <li>natbrand->[NaturalObject_Feminine] [AdjectiveBadassFS]</li>
+    <li>treebrand->[TreeType_Masculine]</li>
+    <li>treebrand->[TreeType_Feminine]</li>
+    <li>treebrand->[TreeType_Masculine] [Color_Masculine]</li>
+    <li>treebrand->[TreeType_Feminine] [Color_Feminine]</li>
+    <li>treebrand->[TreeType_Masculine] [AdjectiveFriendlyMS]</li>
+    <li>treebrand->[TreeType_Feminine] [AdjectiveFriendlyFS]</li>
+    <li>treebrand->[TreeType_Masculine] [AdjectiveBadassMS]</li>
+    <li>treebrand->[TreeType_Feminine] [AdjectiveBadassFS]</li>
+    <li>vegbrand->[Vegetable_Masculine]</li>
+    <li>vegbrand->[Vegetable_Feminine]</li>
+    <li>vegbrand->[Vegetable_Masculine] [Color_Masculine]</li>
+    <li>vegbrand->[Vegetable_Feminine] [Color_Feminine]</li>
+    <li>vegbrand->[Vegetable_Masculine] [AdjectiveFriendlyMS]</li>
+    <li>vegbrand->[Vegetable_Feminine] [AdjectiveFriendlyFS]</li>
+    <li>vegbrand->[Vegetable_Masculine] [AdjectiveBadassMS]</li>
+    <li>vegbrand->[Vegetable_Feminine] [AdjectiveBadassFS]</li>
+    <!-- sottoinsiemi di businesstype per genere/numero (accordo aggettivo;
+         esclusi incorporata/interplanetaria/interstellare: già aggettivali) -->
+    <li>btype_ms->consorzio</li>
+    <li>btype_ms->partner</li>
+    <li>btype_fs->compagnia</li>
+    <li>btype_fs->corporazione</li>
+    <li>btype_fs->società di esportazione</li>
+    <li>btype_fs->società di importazione</li>
+    <li>btype_fs->società di trasporti</li>
+    <li>btype_fs->società di transito</li>
+    <li>btype_mp->commercianti</li>
+    <li>btype_mp->viaggiatori</li>
+    <li>btype_mp->titoli</li>
+    <li>btype_mp->lubrificanti</li>
+    <li>btype_fp->industrie</li>
+    <li>btype_fp->spedizioni</li>
+    <li>btype_fp->soluzioni</li>
+    <!-- testa "nominale" per i descrittori: unione dei soli businesstype-nome -->
+    <li>btype_head->[btype_ms]</li>
+    <li>btype_head->[btype_fs]</li>
+    <li>btype_head->[btype_mp]</li>
+    <li>btype_head->[btype_fp]</li>
+    <!-- complementi di direzione invarianti (validi con qualsiasi businesstype) -->
+    <li>dir_compl->del nord</li>
+    <li>dir_compl->del sud</li>
+    <li>dir_compl->dell'est</li>
+    <li>dir_compl->dell'ovest</li>
+    <li>dir_compl->del nord-est</li>
+    <li>dir_compl->del nord-ovest</li>
+    <li>dir_compl->del sud-est</li>
+    <li>dir_compl->del sud-ovest</li>
   </NamerTraderGeneral.rulePack.rulesStrings>
   
 </LanguageData>
