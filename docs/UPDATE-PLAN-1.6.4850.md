@@ -4,10 +4,48 @@
 > for release).
 > Session document. Status and decisions updated as we go.
 
-## 0. RESUME — start here (last update 2026-06-14)
+## 0. RESUME — start here (last update 2026-06-23)
 
-**Active branch**: `aggiornamento-1.6.4850` (never push to master). Clean working tree,
-everything committed (NOT pushed). To resume: `git checkout aggiornamento-1.6.4850`.
+**Active branch**: `aggiornamento-1.6.4850` (never push to master). Everything committed (NOT
+pushed). To resume: `git checkout aggiornamento-1.6.4850`. **A second session works in parallel**
+on Core namers (People/Scenarios/Outlander/settlements + `Strings/WordParts/Syllables`); always
+`git add` your own files explicitly, never `git add -A`.
+
+### Done in the 2026-06-22/23 session (all committed)
+
+**In-game namer review (driven screen-by-screen in the Ideoligion editor) — fixes:**
+- **Role names** (`RulePacks_Ideo_Role`): the `[firstPart][secondPart]` glue gave "Bossoloocchio".
+  Ported the FR model → `[secondPart] [firstPart]` (agent noun + prepositional complement),
+  all firstParts → "dei bossoli"/"delle foglie"…, junk English suffix secondParts → real agent
+  nouns. Now "Occhio dei bossoli", "Tiratore della mira".
+- **Ritual names** (Festival/Funeral/Duel/Sacrifice/Mutilation): `[noun] [memeAdjective]` with
+  mixed-gender noun lists gave "Fiera santo". Gender split (ES model, **no weight-zeroing, no name
+  lost**): `[noun_M] [memeAdjective]` + `[noun_F] [memeAdjectiveFem]`; genitives on a general
+  `[noun]` indirecting to both pools; `[chosenAdjective]` constrained to masculine nouns.
+- **ideoName** (Structure_Ideological): bare "Etica" → doctrine `-ismo` like FR/ES:
+  Eticismo/Ideologismo/Giustizialismo.
+- **Deity titles** (`Memes_Structures_OriginsReligious`): "Creatore di l'universo" → moved the
+  preposition into the values (`Creatore [all]` + `all->dell'universo`) → "Creatore dell'universo".
+- **Relic names** (`RulePacks_Ideo_Relic`): `[first][second]` glue ("Lungoevocatore") → ES-style
+  `[first] [second]` (evocative head + "di/d' X" complement, elision pre-resolved: "Eco di fuoco",
+  "Manto d'ombra"); gender split relic_M/_F fixes "Eredità aperto" → "aperta". Known residual (as
+  ES): `[thingLabel] [memeAdjective]` ("Fucile aperto") — runtime item gender, needs DE-style
+  machinery.
+- **lang-check / args-check pass**: fixed `stat{i}`→`stati` (Royalty Hospitality), 3 Spanish
+  leftovers (`chatarra`→rottami, `carroñero`→spazzino in Ideology Places). Confirmed the remaining
+  lang-check (32) and args-check (70) are all false positives (loanwords, proper nouns,
+  name-for-pronoun, EN `UNUSED`/truncated comments, FR-validated `{1_gender}` indices).
+
+**Dashboard review progress**: at **page 21** of the Name-generator paginator (resume there).
+
+**New dev tool — `LangLive` mod** (separate repo `../LangLive`, MIT, packageId `b4p3p.langlive`):
+live-reloads the active language in-game so edits show without restarting. Native reload via
+`LanguageDatabase.SelectLanguage` (correct for Keyed+Strings+DefInjected, no unsafe reflection).
+Auto-detects the active language folders (no config). **Guard: only reloads in `ProgramState.
+Playing`** — a reload during the new-game/ideoligion setup runs ClearAllPlayData and WIPES the
+in-progress config (learned the hard way). `install.ps1`/`install.sh` for one-command install.
+Inspired by lordfanger/RimLanguageHotReload (unlicensed upstream → not forked). v1.1 roadmap:
+fast per-file Keyed/Strings reload (no loading screen).
 
 > **Reusable recipe** for a gender-aware namer (use this for any remaining one):
 > 1. Need gender-split noun lists? `rwit variants noun-gender <List>` → `<List>_Singular_
@@ -232,8 +270,9 @@ To separate noise from real work and keep the review clean:
   is the valid **3-branch** form (masc/fem/neuter-None), confirmed on fr/de/es. No change.
 - [x] `"Ma ai le basi adesso"` → `"Ma hai le basi adesso"` + realigned the 5 tutorial steps.
 - [x] `"Sei sei sicuro"` → `"Sei sicuro"`.
-- [ ] Verify the 8 legacy argument mismatches (positional `{0}` style): mostly ok, confirm they
-  do not break.
+- [x] Verify the legacy argument mismatches (positional `{0}` style): `rwit args-check` triaged
+  them; the certain bugs were fixed (incl. `stat{i}`→`stati`), the remaining ~70 are confirmed
+  false positives (name-for-pronoun, EN `UNUSED`/truncated comments, FR-validated `{N_gender}`).
 - [x] 🔴 **Wrong language (French) in Anomaly** — RESOLVED. The "~14" estimate was wrong: with
   `rwit lang-check` found and re-translated **40** FR strings in Anomaly (`Precepts` whole file,
   `Keyed/Misc_Gameplay.xml` UnnaturalCorpse+GoldenCube block, `Tales_Double.xml`, + isolated
@@ -272,8 +311,11 @@ See [`NAME-GENERATION-AND-GRAMMAR.md`](NAME-GENERATION-AND-GRAMMAR.md) §5. Meas
 `(X_gender==Male/Female)` constraints + `[X_definite]` suffixes + `WordInfo/Gender` and
 `plural.txt`. Works with the stock worker.
 - [x] Body parts in `WordInfo/Gender` + irregular plurals in `WordInfo/plural.txt`.
-- [ ] Template pack `Combat_Deflect` with gender constraints (template = fr pack); verify in Dev mode.
-- [ ] Scale: CombatMelee → CombatRanged → Damage → Maneuvers → social Interactions.
+- [x] Template pack `Combat_Deflect` with gender constraints (template = fr pack) — done + verified
+  offline with the namegen combat-context simulator.
+- [x] Scale: CombatMelee → CombatRanged → Damage → Maneuvers → social Interactions — **DONE**
+  (whole melee+ranged combat log + all social interaction logs, 3 systematic bugs fixed via the FR
+  model; see §0 of the 06-13/14 session). ⬜ remaining: **in-game Dev-mode confirm** only.
 - [ ] Tooling: `rwit wordinfo` (Gender/plural from Morph-it!), `rwit compare` (it↔fr↔es↔de).
 
 ### 5.3 Cleanup (priority 🧹)
@@ -310,8 +352,10 @@ See [`NAME-GENERATION-AND-GRAMMAR.md`](NAME-GENERATION-AND-GRAMMAR.md) §5. Meas
 | Gender-aware namers (Novel, 9 biomes, Art×2, Scenario, Settlement, Quest, factions) | ✅ verified in preview |
 | Tooling: Flask dashboard, `rwit freshness`, `variants noun-gender`, namegen constraints+context | ✅ |
 | Data hygiene (gender variants regenerated, `_Neuter` cruft removed, Colors fixed) | ✅ |
-| Combat/social log gender-aware | 🔄 Combat_Deflect done+verified; rest to replicate |
+| Combat/social log gender-aware | ✅ whole melee+ranged + social interactions (verified offline) |
+| Ideoligion namers (roles, rituals, deity, relics, ideoName) gender/agreement | ✅ 2026-06-22/23 |
 | Combat log in-game verification (Dev mode) | ⬜ needs the game |
+| `LangLive` live-reload dev mod (separate repo) | ✅ built + guarded (`Playing` only); v1.1 fast-path TODO |
 | Cleanup rename/unused keyed (→ `rwit clean`) | ⬜ tooling |
-| Broad translation review (iterative, per DLC) | 🔄 in progress |
+| Broad translation review (iterative, per DLC) | 🔄 in progress — dashboard at **page 21** |
 | Merge to master | ⬜ at release (never direct push) |
