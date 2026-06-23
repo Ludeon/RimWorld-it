@@ -28,6 +28,39 @@ STATES = ["validated", "keep", "translated", "modified", "stale", "untranslated"
 DONE = {"validated", "translated", "modified", "keep"}
 COLORS = L._STATE_COLORS
 
+# Istruzioni antemposte al blocco "copy for debug": query in inglese, risposta
+# nella lingua dell'utente, cosi la sessione di review e ripetibile senza
+# riscriverle ogni volta. NON e una f-string: { } e [ ] restano letterali.
+DEBUG_PROMPT = """\
+This block is from the namegen dashboard "copy for debug" of the Italian
+RimWorld translation (repo RimWorld-it). Line 1 = pack (game/DLC, file, namer),
+line 2 = source file, then rows `generated name <- template`, where the template
+shows the source [tags] and xN = how often it recurred.
+
+Review the Italian for errors and unnatural output, FIX them in the file, and
+cross-check the other language packs.
+
+Look specifically for:
+- concatenated compounds that don't exist in Italian (EN "Redrock"/"Greatclaw"
+  -> "rossolegno"/"grandeartiglio"): Italian needs noun+adjective with
+  agreement, or a "X di Y" genitive
+- English calques / literal translations
+- bare adjectives or abstract words that don't read as a place name
+- wrong sense/register, or a word that's wrong for that biome/feature
+- gender agreement (noun <-> adjective/color/article): use the gendered symbol
+  variants (_Masculine/_Feminine, ...MS/FS) when an adjective must agree, and
+  verify the referenced word-list .txt exists and is populated before using it
+
+Cross-check how the sibling repos solved the SAME namer (folders next to this
+repo): RimWorld-fr (closest model), RimWorld-Spanish, RimWorld-de.
+
+Respect the rules: never touch the <!-- EN: --> comments; keep [tags] and {var}
+names; rulesStrings keep the -> arrow and identical left side; preserve XML
+structure/indent and \\n\\n; gender ternary {X_gender ? o : a}. This block is a
+snapshot: open and read the real file before editing, then validate the XML.
+
+Write the analysis in English; reply to me in Italian."""
+
 # ---------------------------------------------------------------- i18n --------
 LANGS = {"en": "English", "it": "Italiano", "es": "Español", "fr": "Français", "de": "Deutsch"}
 TR = {
@@ -344,12 +377,12 @@ def namegen_view():
 
     # blocco debug: un solo copia con pack (dove sei) + file + nomi<-template,
     # pronto da incollare in console.
-    dbg = [f"# {sel}", f"# {relfile}", ""]
+    dbg = [DEBUG_PROMPT, "", "---", "", f"# {sel}", f"# {relfile}", ""]
     for name, tmpl in uniq:
         c = cnt[(name, tmpl)]
         dbg.append(f"{name}\t<- {tmpl}" + (f"  x{c}" if c > 1 else ""))
     copy_dbg = (f'<p><button class=btn onclick="copyTxt(document.getElementById(\'dbg\')'
-                f'.textContent,this)">📋 {"copia per debug (pack + nomi + tag)" if lang()=="it" else "copy for debug (pack + names + tags)"}</button></p>'
+                f'.textContent,this)">📋 {"copia per debug (istruzioni + pack + nomi + tag)" if lang()=="it" else "copy for debug (instructions + pack + names + tags)"}</button></p>'
                 f'<pre id=dbg hidden>{_h(chr(10).join(dbg))}</pre>')
 
     body = (f'<p class=muted>{t("ng_intro")}</p>{_ng_form(q_raw, sel, n, i, len(shown))}'
