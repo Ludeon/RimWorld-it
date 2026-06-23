@@ -23,10 +23,12 @@
   <NamerPersonCorunan.rulePack.rulesStrings>
     <li>r_name(p=2)->[WordTribal] [WordTribal]</li>
     <li>r_name->[WordTribal] '[AnimalBadass]' [WordTribal]</li>
+    <!-- parola tribale = nome inventato senza genere, fa da "cognome": la parola descrittiva reale precede -->
     <li>r_name->[Color] [WordTribal]</li>
-    <li>r_name->[WordTribal] [Animal]</li>
     <li>r_name->[Animal] [WordTribal]</li>
-    <li>r_name->[Color] [Animal]</li>
+    <!-- animale + colore: vera concordanza aggettivo-sostantivo, sdoppiata per genere -->
+    <li>r_name->[Animal_Masculine] [Color_Masculine]</li>
+    <li>r_name->[Animal_Feminine] [Color_Feminine]</li>
   </NamerPersonCorunan.rulePack.rulesStrings>
   
 </LanguageData>

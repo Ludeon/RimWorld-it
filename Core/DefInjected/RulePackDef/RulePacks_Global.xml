@@ -106,7 +106,11 @@
     <li>ConceptAngsty->Words/Nouns/Concepts_Angsty</li>
     <li>Community->Words/Nouns/Communities</li>
     <li>Community_Masculine->Words/Nouns/Communities_Singular_Masculine</li>
+    <li>Community_MascCons->Words/Nouns/Communities_Singular_Masculine_Cons</li>
+    <li>Community_MascVowel->Words/Nouns/Communities_Singular_Masculine_Vowel</li>
     <li>Community_Feminine->Words/Nouns/Communities_Singular_Feminine</li>
+    <li>Story_Masculine->Words/Nouns/Stories_Singular_Masculine</li>
+    <li>Story_Feminine->Words/Nouns/Stories_Singular_Feminine</li>
     <li>BodyPart->Words/Nouns/Bodyparts</li>
     <li>AdjectiveLarge->Words/Adjectives/Large</li>
     <li>AdjectiveBadass->Words/Adjectives/Badass</li>
@@ -295,15 +299,23 @@
     <li>CommunityAny_indef->una [Community_Feminine]</li>
     <li>CommunityAny_indefCap->Un [Community_Masculine]</li>
     <li>CommunityAny_indefCap->Una [Community_Feminine]</li>
-    <li>CommunityAny_def->il [Community_Masculine]</li>
+    <!-- forme con articolo determinativo: elisione l'/all'/nell'/sull' davanti a vocale (accampamento, insediamento) -->
+    <li>CommunityAny_defM->il [Community_MascCons]</li>
+    <li>CommunityAny_defM->l'[Community_MascVowel]</li>
+    <li>CommunityAny_def->il [Community_MascCons]</li>
+    <li>CommunityAny_def->l'[Community_MascVowel]</li>
     <li>CommunityAny_def->la [Community_Feminine]</li>
-    <li>CommunityAny_a->al [Community_Masculine]</li>
+    <li>CommunityAny_a->al [Community_MascCons]</li>
+    <li>CommunityAny_a->all'[Community_MascVowel]</li>
     <li>CommunityAny_a->alla [Community_Feminine]</li>
-    <li>CommunityAny_in->nel [Community_Masculine]</li>
+    <li>CommunityAny_in->nel [Community_MascCons]</li>
+    <li>CommunityAny_in->nell'[Community_MascVowel]</li>
     <li>CommunityAny_in->nella [Community_Feminine]</li>
-    <li>CommunityAny_su->sul [Community_Masculine]</li>
+    <li>CommunityAny_su->sul [Community_MascCons]</li>
+    <li>CommunityAny_su->sull'[Community_MascVowel]</li>
     <li>CommunityAny_su->sulla [Community_Feminine]</li>
-    <li>CommunityAny_per->per il [Community_Masculine]</li>
+    <li>CommunityAny_per->per il [Community_MascCons]</li>
+    <li>CommunityAny_per->per l'[Community_MascVowel]</li>
     <li>CommunityAny_per->per la [Community_Feminine]</li>
     <li>ObjectAny_Masculine->[Game_Masculine]</li>
     <li>ObjectAny_Masculine->[Weapon_Masculine]</li>

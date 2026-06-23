@@ -283,30 +283,61 @@
     <li>town->tank</li>
   -->
   <NamerSettlementPirateWaster.rulePack.rulesStrings>
-    <li>r_name->[townNameWordgen]</li>
-    <li>r_name->[townNameCombo]</li>
-    <li>townNameWordgen->[SylE][SylE]</li>
-    <li>townNameWordgen->[SylE][SylE][SylE]</li>
-    <li>townNameWordgen->[SylE][townEndToxic]</li>
-    <li>townNameWordgen->[SylE][SylE][townEndToxic]</li>
-    <li>townEndToxic->tox</li>
-    <li>townEndToxic->vor</li>
-    <li>townEndToxic->son</li>
-    <li>townEndToxic->zon</li>
-    <li>townEndToxic->toth</li>
-    <li>townEndToxic->zoun</li>
-    <li>townEndToxic->slick</li>
-    <li>townEndToxic->pill</li>
-    <li>townEndToxic->ash</li>
-    <li>townEndToxic->ven</li>
-    <li>townNameCombo->[poison] [città]</li>
-    <li>town->città</li>
-    <li>town->base</li>
-    <li>town->forte</li>
-    <li>town->porto</li>
-    <li>town->mattatoio</li>
-    <li>town->macelleria</li>
-    <li>town->serbatoio</li>
+    <!-- IT: italianizzazione TEMATICA (tossico/decomposizione) al posto delle
+         sillabe inglesi: nomi evocativi con parole reali, piu' minacciosi del
+         gibberish. Schema come i namer pirata: [geografia] aggettivo / di [tossico]. -->
+    <li>r_name->[geoM] [adjM]</li>
+    <li>r_name->[geoF] [adjF]</li>
+    <li>r_name->[geoM] di [tossico]</li>
+    <li>r_name->[geoF] di [tossico]</li>
+    <li>geoM->forte</li>
+    <li>geoM->lago</li>
+    <li>geoM->cratere</li>
+    <li>geoM->porto</li>
+    <li>geoM->covo</li>
+    <li>geoM->pozzo</li>
+    <li>geoM->bunker</li>
+    <li>geoM->mattatoio</li>
+    <li>geoM->serbatoio</li>
+    <li>geoF->fossa</li>
+    <li>geoF->palude</li>
+    <li>geoF->base</li>
+    <li>geoF->tana</li>
+    <li>geoF->valle</li>
+    <li>geoF->discarica</li>
+    <li>geoF->rovina</li>
+    <li>geoF->cloaca</li>
+    <li>geoF->macelleria</li>
+    <li>adjM->marcio</li>
+    <li>adjM->putrido</li>
+    <li>adjM->acido</li>
+    <li>adjM->tossico</li>
+    <li>adjM->corrotto</li>
+    <li>adjM->rancido</li>
+    <li>adjM->fetido</li>
+    <li>adjF->marcia</li>
+    <li>adjF->putrida</li>
+    <li>adjF->acida</li>
+    <li>adjF->tossica</li>
+    <li>adjF->corrotta</li>
+    <li>adjF->rancida</li>
+    <li>adjF->fetida</li>
+    <li>tossico->tanfo</li>
+    <li>tossico->veleno</li>
+    <li>tossico->fango</li>
+    <li>tossico->morbo</li>
+    <li>tossico->liquame</li>
+    <li>tossico->pus</li>
+    <li>tossico->marciume</li>
+    <li>tossico->contagio</li>
+    <li>tossico->scoria</li>
+    <li>tossico->ruggine</li>
+    <li>tossico->cenere</li>
+    <li>tossico->peste</li>
+    <li>tossico->putredine</li>
+    <li>tossico->melma</li>
+    <li>tossico->muffa</li>
+    <li>tossico->cancrena</li>
   </NamerSettlementPirateWaster.rulePack.rulesStrings>
   
   <!-- EN:

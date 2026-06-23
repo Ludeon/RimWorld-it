@@ -68,7 +68,8 @@
     <li>circumstance_phrase->mentre gli amici costruiscono un forte</li>
     <li>circumstance_phrase->mentre gli amici costruiscono una famiglia di pupazzi di neve</li>
     <li>desc_sentence->Un'aurora [Color] brilla sullo sfondo.</li>
-    <li>desc_sentence->In lontananza, una [Community] è coperta di neve.</li>
+    <li>desc_sentence->In lontananza, un [Community_Masculine] è coperto di neve.</li>
+    <li>desc_sentence->In lontananza, una [Community_Feminine] è coperta di neve.</li>
     <li>desc_sentence->Un campo di [Vegetable] è appena visibile attraverso la neve.</li>
     <li>desc_sentence->Un [TerrainFeature] coperto di neve si vede in lontananza.</li>
   </BuiltSnowman.rulePack.rulesStrings>
@@ -110,7 +111,8 @@
     <li>circumstance_phrase->guardando un lontano [TerrainFeature]</li>
     <li>circumstance_phrase->parlando sommessamente al memoriale</li>
     <li>desc_sentence->Un'aurora [Color] brilla sullo sfondo.</li>
-    <li>desc_sentence->In lontananza, una [Community] è coperta di neve.</li>
+    <li>desc_sentence->In lontananza, un [Community_Masculine] è coperto di neve.</li>
+    <li>desc_sentence->In lontananza, una [Community_Feminine] è coperta di neve.</li>
     <li>desc_sentence->Un'immagine spettrale di [CORPSE_nameDef] osserva la scena con un'espressione [AdjectiveFriendly].</li>
     <li>desc_sentence->Un'immagine spettrale di [CORPSE_nameDef] si trova accanto a [DIGGER_nameDef], con un'espressione [AdjectiveFriendly].</li>
     <li>desc_sentence->Un'immagine spettrale di [CORPSE_nameDef] osserva la scena con un'espressione [AdjectiveAngsty].</li>
@@ -417,9 +419,9 @@
     <li>circumstance_phrase->con un'espressione soddisfatta sul volto di [PAWN_possessive]</li>
     <li>desc_sentence->[Quantity_adjphrase]->[ally] aiutano.</li>
     <li>desc_sentence->[Quantity_adjphrase]->[Animal] si aggirano nell'area.</li>
-    <li>desc_sentence>Una [Community] si vede sullo sfondo.</li>
+    <li>desc_sentence->[CommunityAny_indefCap] si vede sullo sfondo.</li>
     <li>desc_sentence->[Quantity_adjphrase]->altre vene sono visibili in lontananza.</li>
-    <li>desc_sentence>Un [TerrainFeature] è visibile in lontananza.</li>
+    <li>desc_sentence->Un [TerrainFeature] è visibile in lontananza.</li>
     <li>desc_sentence->[PAWN_nameDef]->è sudato e sporco dal lavoro.</li>
   </MinedValuable.rulePack.rulesStrings>
   
@@ -467,13 +469,13 @@
     <li>circumstance_phrase->[angstyverb] con un'espressione [AdjectiveAngsty]</li>
     <li>circumstance_phrase->con uno sguardo [AdjectiveAngsty]</li>
     <li>circumstance_phrase->[angstyverb]</li>
-    <li>desc_sentence>Un'aurora [Color] brilla sullo sfondo.</li>
-    <li>desc_sentence>In lontananza si vede una [Community].</li>
-    <li>desc_sentence>In lontananza si vede un [TerrainFeature].</li>
+    <li>desc_sentence->Un'aurora [Color] brilla sullo sfondo.</li>
+    <li>desc_sentence->In lontananza si vede [CommunityAny_indef].</li>
+    <li>desc_sentence->In lontananza si vede un [TerrainFeature].</li>
     <li>desc_sentence->[Quantity_adjphrase]->[PersonJob] stanno giocando anch'essi.</li>
     <li>desc_sentence->[Quantity_adjphrase]->[Animal] giocano nelle vicinanze.</li>
     <li>desc_sentence->[PAWN_nameDef]->è avvolto da un'aura [Color].</li>
-    <li>desc_sentence>I tratti di [PAWN_nameDef] sono esagerati.</li>
+    <li>desc_sentence->I tratti di [PAWN_nameDef] sono esagerati.</li>
     <li>desc_sentence->[PAWN_nameDef]->torreggia sulla scena.</li>
     <li>desc_sentence->[Quantity_adjphrase]->[PersonJob] sono abbacchiati dalla sconfitta.</li>
   </PlayedGame.rulePack.rulesStrings>
@@ -624,7 +626,8 @@
     <li>circumstance_phrase->mentre guarda un lontano [TerrainFeature]</li>
     <li>circumstance_phrase->e parla piano alla lapide</li>
     <li>desc_sentence->Un'aurora [Color] brilla sullo sfondo.</li>
-    <li>desc_sentence->In lontananza una [Community] è coperta di neve.</li>
+    <li>desc_sentence->In lontananza un [Community_Masculine] è coperto di neve.</li>
+    <li>desc_sentence->In lontananza una [Community_Feminine] è coperta di neve.</li>
     <li>desc_sentence->Un'immagine spettrale di [CORPSE_nameDef] osserva la scena con un'espressione [AdjectiveFriendly].</li>
     <li>desc_sentence->Un'immagine spettrale di [CORPSE_nameDef] sta accanto a [VISITOR_nameDef], con un'espressione [AdjectiveFriendly].</li>
     <li>desc_sentence->Un'immagine spettrale di [CORPSE_nameDef] osserva la scena con un'espressione [AdjectiveAngsty].</li>

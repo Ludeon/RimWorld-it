@@ -30,9 +30,11 @@
     <li>r_name->[story] [transPluralF] [PersonJob_PluralFeminine]</li>
     <li>r_name->[story] [Trans] [ConceptAny]</li>
     <li>r_name->[ConceptAny] [story]</li>
-    <li>r_name->[story] [Trans] una [Community]</li>
+    <li>r_name->[story] [Trans] [CommunityAny_indef]</li>
     <li>r_name->[story] in [Color] e [Color]</li>
-    <li>r_name->[Color] [story]</li>
+    <!-- "[Color] [story]" EN: in italiano sostantivo + aggettivo, accordato per genere -->
+    <li>r_name->[Story_Masculine] [Color_Masculine]</li>
+    <li>r_name->[Story_Feminine] [Color_Feminine]</li>
     <li>r_name->[story] [RomanNumeral]</li>
     <!-- preposizione + articolo fusi (genere/numero/elisione) -->
     <li>transM->del</li>

@@ -220,9 +220,10 @@
     <li>artextra_clause->c'è [subimagesingle] [side_position]</li>
     <li>artextra_clause->i soggetti sono davanti a [subimageany]</li>
     <li>artextra_clause->la parte inferiore dell'immagine è dominata da [subimageany]</li>
-    <li>artextra_clause->la scena si svolge nel mezzo di una [Community]</li>
-    <li>artextra_clause->la scena si svolge ai margini di una [Community]</li>
-    <li>artextra_clause->la scena si svolge all'interno di una [Community] costruita vicino a una [TerrainFeature]</li>
+    <li>artextra_clause->la scena si svolge nel mezzo di [CommunityAny_indef]</li>
+    <li>artextra_clause->la scena si svolge ai margini di [CommunityAny_indef]</li>
+    <li>artextra_clause->la scena si svolge all'interno di un [Community_Masculine] costruito vicino a una [TerrainFeature]</li>
+    <li>artextra_clause->la scena si svolge all'interno di una [Community_Feminine] costruita vicino a una [TerrainFeature]</li>
     <li>artextra_clause->un [Character] [idles] [side_position]</li>
     <li>artextra_clause->un [pawn_adj] [Character] [idles] [side_position]</li>
     <li>artextra_clause->[Quantity_adjphrase] [Character] compaiono [side_position]</li>
@@ -237,7 +238,7 @@
     <li>subimageany->[subimageplural]</li>
     <li>subimagesingle(p=4)->un [Character]</li>
     <li>subimagesingle->una [TerrainFeature]</li>
-    <li>subimagesingle->una [Community]</li>
+    <li>subimagesingle->[CommunityAny_indef]</li>
     <li>subimagesingle->un albero di tipo [TreeType]</li>
     <li>subimagesingle->una [Vegetable]</li>
     <li>subimagesingle->un [AnimalGroup] di [Animal]</li>
