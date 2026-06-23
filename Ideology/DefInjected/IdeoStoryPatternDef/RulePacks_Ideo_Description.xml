@@ -84,9 +84,9 @@
     <li>setup->Colpito dalla malvagità del mondo, [founderName] studiò la storia e la filosofia e scoprì la nuova verità che ci guida.</li>
     <li>setup->Un giorno, mentre lavorava, [founderName] fu colpito da una grande epifania. [founder_pronoun] lasciò cadere i suoi attrezzi e iniziò a diffondere la sua parola tra gli altri lavoratori.</li>
     <li>setup->[founderName] si sedette su una panchina del parco per vent’anni mentre contemplava il nostro mondo. Con la sua perspicacia, [founder_pronoun] scrisse il nostro libro fondativo.</li>
-    <li>story(uses=1,priority=-10)->Il gruppo dei [memberNamePlural] non avrebbe compreso la vera natura di [memeConceptDef] senza gli insegnamenti di [founderName].</li>
+    <li>story(uses=1,priority=-10)->Il gruppo dei [memberNamePlural] non avrebbe mai compreso davvero [memeConceptDef] senza gli insegnamenti di [founderName].</li>
     <li>story(uses=1,priority=-10)->Il discorso di [founderName] durante un(a) [ritualName] ispirò molti a condurre una vita [memeAdjectiveFem].</li>
-    <li>story(uses=1,priority=-10)->Nessuno poté superare la comprensione di [founderName] di [memeConceptDef], e [founderName] fu nominato primo [leaderTitle] dei [memberNamePlural].</li>
+    <li>story(uses=1,priority=-10)->Nessuno comprese [memeConceptDef] meglio di [founderName], e [founderName] fu nominato primo [leaderTitle] dei [memberNamePlural].</li>
     <li>story(uses=1,priority=-10)->[founderName] portava sempre con sé un(a) [relic0_thingDef_label] chiamato [relic0_name] per ricordare alla gente di vivere una vita [memeAdjectiveFem].</li>
   </IdeologicalFounder.rules.rulesStrings>
   
@@ -163,7 +163,7 @@
     <li>lessonAttribution->[founder_nameFull], sul letto di morte</li>
     <li>lessonAttribution->[founder_nameFull], poco prima dell’esecuzione</li>
     <li>lessonAttribution->[founder_nameFull], [speech] al [TerrainFeature]</li>
-    <li>lessonAttribution->[founder_nameFull], [speech] al [Community]</li>
+    <li>lessonAttribution->[founder_nameFull], [speech] [CommunityAny_in]</li>
     <li>attributionSource->[memeConcept]</li>
     <li>attributionSource(p=0.0001)->[memeConcept] [memeAdjective]</li>
     <li>attributionSource->Una vita [memeAdjectiveFem]</li>
