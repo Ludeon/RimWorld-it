@@ -77,8 +77,18 @@
     <li>projectile->[WEAPON_projectile_label]</li>
   -->
   <Combat_RangedBase.rulePack.rulesStrings>
+    <!-- IT: oltre al label definiamo anche projectile_definite/_indefinite (assenti nell'EN,
+         esattamente come fa il francese). Sono un ponte verso gli entity reali del motore
+         [PROJECTILE_*] / [WEAPON_projectile_*], che applicano l'articolo giusto in base al
+         GENERE del proiettile (il proiettile / la freccia; un proiettile / una granata),
+         con genere preso da WordInfo/Gender. Senza queste righe [projectile_definite] cadeva
+         sul label nudo, senza genere -> nessun articolo ("Proiettile di X ha colpito ..."). -->
     <li>projectile(WEAPON_missing==True, p=3)->[PROJECTILE_label]</li>
+    <li>projectile_definite(WEAPON_missing==True, p=3)->[PROJECTILE_definite]</li>
+    <li>projectile_indefinite(WEAPON_missing==True, p=3)->[PROJECTILE_indefinite]</li>
     <li>projectile->[WEAPON_projectile_label]</li>
+    <li>projectile_definite->[WEAPON_projectile_definite]</li>
+    <li>projectile_indefinite->[WEAPON_projectile_indefinite]</li>
   </Combat_RangedBase.rulePack.rulesStrings>
   
   <!-- EN:
@@ -159,6 +169,14 @@
     <li>r_logentry(p=0.4)->[INITIATOR_definite] [missed] [ORIGINALTARGET_definite] e ha colpito [RECIPIENT_definite] con [projectile_indefinite].</li>
     <li>r_logentry(p=0.4)->[projectile_definite] di [INITIATOR_definite] [missed] [ORIGINALTARGET_definite] e ha colpito [RECIPIENT_definite].</li>
     <li>r_logentry(p=0.2)->[INITIATOR_definite] ha colpito [RECIPIENT_definite] con [projectile_indefinite] mirando a [ORIGINALTARGET_definite].</li>
+    <!-- IT FIX (anti-crash "Grammar unresolvable"): se il bersaglio non ha genere
+         noto al motore (gli EDIFICI, es. "trappola anticarro") i simboli *_definite
+         non si risolvono (servono per scegliere l'articolo il/lo/la). Senza una
+         regola fatta di soli simboli sempre risolvibili, l'intera voce fallisce.
+         Reti di sicurezza a priorità minima: [projectile] (regola, sempre OK) e in
+         ultima istanza solo INITIATOR/RECIPIENT. Non toccano l'output normale. -->
+    <li>r_logentry(priority=-40)->[projectile] di [INITIATOR_definite] ha colpito [RECIPIENT_definite].</li>
+    <li>r_logentry(priority=-50)->[INITIATOR_definite] ha colpito [RECIPIENT_definite].</li>
     <li>projectile(p=0.05)->colpo</li>
     <li>destroyed_past->frantumato</li>
     <li>destroyed_past->schiacciato</li>
