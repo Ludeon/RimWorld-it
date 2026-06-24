@@ -15,12 +15,29 @@ import report as report_mod
 import repo as repo_mod
 
 
+# Path "fantasma" che il translator del gioco emette come DefInjected mancanti ma
+# che NON sono contenuto traducibile persistente (quindi non iniettabili):
+#  - unlockedRolesCachedFor.* / unlockedRituals.*: cache RUNTIME sul MemeDef (ruoli e
+#    rituali sbloccati), popolata solo quando un'ideoligione che usa quel meme e' attiva
+#    mentre si genera il report. Non esiste in alcun Def del gioco ne' in alcun
+#    DefInjected di alcuna lingua; i valori sono gia' i label tradotti dai precept reali.
+#  - requiredMemeList: lista di RIFERIMENTI a MemeDef, mostrata per label (i label
+#    arrivano dai MemeDef, gia' tradotti) -> tradurla significherebbe tradurre defName.
+# Confermato cross-lingua (fr/de/es): nessuno li inietta. Vedi UPDATE-PLAN.
+PHANTOM_DEFPATH_MARKERS = ("unlockedRolesCachedFor", "unlockedRituals", "requiredMemeList")
+
+
+def _is_phantom(e: report_mod.DefEntry) -> bool:
+    return any(m in e.defpath for m in PHANTOM_DEFPATH_MARKERS)
+
+
 @dataclass
 class Gap:
     report: report_mod.Report
     keyed_missing: list       # chiavi assenti nel repo
     keyed_untranslated: list  # presenti nel repo ma vuote o == inglese
-    def_missing: list         # def non ancora tradotti
+    def_missing: list         # def non ancora tradotti (esclusi i path fantasma)
+    def_phantom: int = 0      # quanti scartati come fantasma (cache/riferimenti)
 
 
 def _def_translated(e: report_mod.DefEntry, def_repo: dict) -> bool:
@@ -53,8 +70,10 @@ def compute(report_path, dlcs=None) -> Gap:
             if val == "" or val == e.text.strip():
                 keyed_untrans.append(e)
 
-    def_missing = [e for e in rep.defs if not _def_translated(e, def_repo)]
-    return Gap(rep, keyed_missing, keyed_untrans, def_missing)
+    untranslated = [e for e in rep.defs if not _def_translated(e, def_repo)]
+    def_missing = [e for e in untranslated if not _is_phantom(e)]
+    def_phantom = len(untranslated) - len(def_missing)
+    return Gap(rep, keyed_missing, keyed_untrans, def_missing, def_phantom)
 
 
 def def_by_type(def_missing) -> Counter:

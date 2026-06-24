@@ -69,6 +69,16 @@ TR = {
     "tab_prog": {"en": "Progress", "it": "Progresso", "es": "Progreso", "fr": "Progression", "de": "Fortschritt"},
     "tab_names": {"en": "Name generator", "it": "Generatore nomi", "es": "Generador de nombres",
                   "fr": "Générateur de noms", "de": "Namensgenerator"},
+    "hdr_done": {"en": "translated", "it": "tradotto", "es": "traducido", "fr": "traduit", "de": "übersetzt"},
+    "hdr_val": {"en": "validated", "it": "validato", "es": "validado", "fr": "validé", "de": "validiert"},
+    "to_namegen": {"en": "review in the name generator", "it": "rivedi nel generatore nomi",
+                   "es": "revisar en el generador de nombres", "fr": "réviser dans le générateur de noms",
+                   "de": "im Namensgenerator prüfen"},
+    "ng_badge": {"en": "name/grammar generator — review in the Name generator tab",
+                 "it": "generatore nomi/grammatica — rivedi nella scheda Generatore nomi",
+                 "es": "generador de nombres/gramática — revisar en la pestaña Generador de nombres",
+                 "fr": "générateur de noms/grammaire — réviser dans l'onglet Générateur de noms",
+                 "de": "Namens-/Grammatikgenerator — im Tab Namensgenerator prüfen"},
     "rebuild": {"en": "↻ Rebuild ledger", "it": "↻ Ricostruisci ledger", "es": "↻ Reconstruir registro",
                 "fr": "↻ Reconstruire", "de": "↻ Neu aufbauen"},
     "by_dlc": {"en": "By DLC", "it": "Per DLC", "es": "Por DLC", "fr": "Par DLC", "de": "Nach DLC"},
@@ -224,6 +234,7 @@ def index():
     total = len(rows)
     overall = Counter(r["status"] for r in rows)
     done = sum(overall.get(s, 0) for s in DONE)
+    validated = overall.get("validated", 0)
     sel_dlc = request.args.get("dlc", "")
     sel_status = request.args.get("status", "translated")
 
@@ -240,8 +251,9 @@ def index():
             continue
         c = perdlc[d]
         tot = sum(c.values())
-        dn = sum(c.get(s, 0) for s in DONE)
-        dlcbars += f'<div class=dlcrow><span class=nm>{d}</span>{segbar(c,tot)}<span class=pct>{dn}/{tot}</span></div>'
+        v = c.get("validated", 0)
+        dlcbars += (f'<div class=dlcrow><span class=nm>{d}</span>{segbar(c,tot)}'
+                    f'<span class=pct><b style="color:{COLORS["validated"]}">{v:,}</b>/{tot:,}</span></div>')
 
     perfile = defaultdict(Counter)
     for r in rows:
@@ -252,15 +264,26 @@ def index():
          if c.get(sel_status, 0) and (not sel_dlc or d == sel_dlc)),
         key=lambda x: -x[0])
 
+    # File-namegen (RulePackDef): si revisionano nella scheda Generatore nomi, non
+    # leggendo l'XML. Set derivato live dai pack -> badge + scorciatoia, niente DB.
+    ng_files = {p["file"] for p in NG.load_rulepacks().values()}
+
     opt_dlc = "".join(f'<option {"selected" if d==sel_dlc else ""}>{d}</option>' for d in [""] + config.DLCS)
     opt_st = "".join(f'<option value="{s}" {"selected" if s==sel_status else ""}>{sname(s)}</option>' for s in STATES)
     trs = ""
     for pend, d, f, tot, dn, c in frows[:400]:
         short = f.replace("\\", "/").split("/")[-1]
-        trs += (f'<tr><td><a href="/file?f={quote(f, safe="")}">{short}</a><br><span class=tag>{d} · {_h(f)}</span></td>'
+        is_ng = f in ng_files
+        stem = short[:-4] if short.endswith(".xml") else short
+        badge = (f' <span title="{t("ng_badge")}" style="cursor:help">🎲</span>' if is_ng else "")
+        ngbtn = (f'<a class="btn" title="{t("to_namegen")}" href="/namegen?q={quote(f"{d} · {stem}")}">🎲</a> '
+                 if is_ng else "")
+        trs += (f'<tr><td><a href="/file?f={quote(f, safe="")}">{short}</a>{badge}<br><span class=tag>{d} · {_h(f)}</span></td>'
                 f'<td class=right><b>{pend}</b></td><td>{segbar(c,tot)}</td><td class="right pct">{dn}/{tot}</td>'
-                f'<td class=right><button class="btn g" onclick=\'fileAction("{_js(f)}","validated")\'>{t("validate_all")}</button> '
-                f'<button class="btn k" onclick=\'fileAction("{_js(f)}","keep")\'>{t("keep_all")}</button></td></tr>')
+                f'<td class="right pct"><b style="color:{COLORS["validated"]}">{c.get("validated",0)}</b>/{tot}</td>'
+                f'<td class=right style="white-space:nowrap">{ngbtn}'
+                f'<button class="btn g" title="{t("validate_all")}" onclick=\'fileAction("{_js(f)}","validated")\'>✓</button> '
+                f'<button class="btn k" title="{t("keep_all")}" onclick=\'fileAction("{_js(f)}","keep")\'>🔒</button></td></tr>')
 
     body = f"""<div class=chips>{chips}</div>{segbar(overall,total)}
     <h3>{t("by_dlc")}</h3>{dlcbars}
@@ -269,8 +292,11 @@ def index():
       <select onchange="location.href='/?dlc={sel_dlc}&status='+this.value">{opt_st}</select>
       <span class=muted>{t("files_with", n=len(frows), s=sname(sel_status))}</span></div>
     <table><thead><tr><th>{t("col_file")}</th><th class=right>«{sname(sel_status)}»</th><th>{t("col_comp")}</th>
-      <th class=right>{t("col_done")}</th><th class=right>{t("col_actions")}</th></tr></thead><tbody>{trs}</tbody></table>"""
-    return render(body, "prog", f"{done/total*100:.1f}% • {done:,}/{total:,}" if total else "")
+      <th class=right>{t("col_done")}</th><th class=right>{t("hdr_val")}</th><th class=right>{t("col_actions")}</th></tr></thead><tbody>{trs}</tbody></table>"""
+    completion = (f'{t("hdr_done")} {done/total*100:.1f}% · '
+                  f'{t("hdr_val")} {validated/total*100:.1f}% ({validated:,}/{total:,})'
+                  if total else "")
+    return render(body, "prog", completion)
 
 
 @app.route("/file")
@@ -369,11 +395,20 @@ def namegen_view():
     pager = (f'<div class=flt>{prev}{nxt}'
              f'<span class=muted>{t("ng_pos", i=i+1, n=len(shown))}</span>{dropdown}{jump}</div>')
 
-    # file sorgente del pack: copiabile + link alla revisione di quel file
+    # file sorgente del pack: copiabile + link alla revisione di quel file +
+    # azioni di validazione (valida/keep tutto il file) e progresso, cosi i
+    # generatori nomi si validano da qui senza aprire l'XML.
     relfile = packs[sel].get("file", "")
+    lrows = [r for r in L.load().values() if r["file"] == relfile]
+    vdone = sum(1 for r in lrows if r["status"] == "validated")
+    valbtns = (f'<button class="btn g" onclick=\'fileAction("{_js(relfile)}","validated")\'>{t("validate_file")}</button> '
+               f'<button class="btn k" onclick=\'fileAction("{_js(relfile)}","keep")\'>{t("keep_all")}</button> '
+               f'<span class=pct><b style="color:{COLORS["validated"]}">{vdone}</b>/{len(lrows)}</span>'
+               if relfile and lrows else "")
     fileline = (f'<p>📄 <a href="/file?f={quote(relfile, safe="")}">{_h(relfile)}</a> '
                 f'<button class=btn style="padding:2px 8px" '
-                f'onclick=\'copyTxt("{_js(relfile)}",this)\'>📋</button></p>')
+                f'onclick=\'copyTxt("{_js(relfile)}",this)\'>📋</button></p>'
+                f'<p>{valbtns}</p>')
 
     # blocco debug: un solo copia con pack (dove sei) + file + nomi<-template,
     # pronto da incollare in console.

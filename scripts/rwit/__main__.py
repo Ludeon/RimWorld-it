@@ -26,6 +26,7 @@ import reconcile as reconcile_mod
 import freshness as freshness_mod
 import argscheck as argscheck_mod
 import pluralcheck as pluralcheck_mod
+import syntaxcheck as syntaxcheck_mod
 import clean as clean_mod
 import report as report_mod
 
@@ -61,6 +62,9 @@ def analyze(
     t.add_row("Keyed non tradotte (vuote o == inglese)", str(len(gap.keyed_untranslated)))
     t.add_row("DefInjected mancanti", str(len(gap.def_missing)))
     console.print(t)
+    if gap.def_phantom:
+        console.print(f"[dim]({gap.def_phantom} voci 'fantasma' escluse: cache runtime "
+                      f"unlockedRolesCachedFor / requiredMemeList, non traducibili)[/]")
 
     by_type = analyze_mod.def_by_type(gap.def_missing)
     if by_type:
@@ -372,6 +376,36 @@ def clean(
         console.print(f"[green]Rimosse {n} voci DefInjected di load-error.[/]")
         for w in warns:
             console.print(f"  [yellow]! {w}[/]")
+
+
+@app.command("syntax-check", help="Linter sintassi motore: ternarie di genere + bilanciamento graffe/parentesi (rompono il parser).")
+def syntax_check(
+    dlc: Optional[List[str]] = typer.Option(None, "--dlc", help="Limita a una o piu DLC"),
+):
+    hits = syntaxcheck_mod.scan(dlc or None)
+    from collections import Counter
+    by = Counter(h.kind for h in hits)
+    t = Table(title=f"Sintassi sospetta IT - {len(hits)} stringhe")
+    t.add_column("Tipo"); t.add_column("Conteggio", justify="right", style="bold")
+    labels = {"ternary-malformed": "ternaria di genere malformata (non 1?/1-2:)",
+              "brace-unbalanced": "graffe {} sbilanciate",
+              "bracket-unbalanced": "parentesi-simbolo [] sbilanciate"}
+    for k, n in by.most_common():
+        t.add_row(labels.get(k, k), str(n))
+    console.print(t)
+    if not hits:
+        console.print("[green]Nessun problema di sintassi: ternarie e simboli ben formati.[/]")
+        return
+    out = config.reports_dir() / f"syntaxcheck_{datetime.now():%Y%m%d_%H%M}.txt"
+    lines = [f"# syntax-check - {len(hits)} stringhe con sintassi sospetta\n"]
+    cur = None
+    for h in sorted(hits, key=lambda h: (h.file, h.line or 0)):
+        if h.file != cur:
+            lines.append(f"\n=== {h.file} ==="); cur = h.file
+        lines.append(f"  L{(h.line or 0):<5} [{h.kind}] {h.detail}")
+        lines.append(f"     IT: {h.it}")
+    out.write_text("\n".join(lines), encoding="utf-8")
+    console.print(f"[green]Dettaglio:[/] {out}")
 
 
 @app.command(help="(Ri)crea i symlink Italiano nell'installazione del gioco.")
