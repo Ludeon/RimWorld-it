@@ -259,7 +259,16 @@ def generate(packs: dict, key: str, n: int = 15, repo: Path | None = None,
         return f"<{sym}>"                        # 6. runtime non risolvibile (pawn names)
 
     root = root or _pick_root(rules)
-    root_opts = rules.get(root) or g_rules.get(root) or []
+    root_opts = list(rules.get(root) or g_rules.get(root) or [])
+    # Namer di tipo landmark/worldfeature: nel gioco la radice r_name ha un default
+    # implicito r_name->[terrain_word] (il nome COMUNE del luogo) che nei file non e
+    # scritto. Senza, i pack le cui sole regole r_name usano simboli runtime (es.
+    # [NamePerson]) producono solo "<NamePerson>" x N. Iniettiamo [terrain_word]
+    # (peso 1, come il default del gioco) cosi l'anteprima mostra anche i nomi comuni
+    # (citta, avamposto...) accanto alle varianti "fancy", nelle giuste proporzioni.
+    if (root in ("r_name", "r_root", "name") and "terrain_word" in rules
+            and root != "terrain_word"):
+        root_opts = root_opts + [(1.0, [], "[terrain_word]")]
     out = []
     for _ in range(n):
         tmpl = (_weighted(root_opts) or root) if root_opts else root
