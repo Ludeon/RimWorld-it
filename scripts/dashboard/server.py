@@ -173,6 +173,9 @@ select,input{{background:#0d1117;border:1px solid #30363d;color:#c9d1d9;border-r
 .toast{{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#238636;color:#fff;padding:10px 18px;border-radius:8px;box-shadow:0 4px 16px #0008;z-index:50;opacity:0;pointer-events:none;transition:opacity .2s;font-weight:600}}
 .toast.show{{opacity:1}}
 .toast.err{{background:#da3633}}
+.vbadge{{display:inline-block;padding:4px 12px;border-radius:6px;font-weight:700;font-size:13px;vertical-align:middle}}
+.vbadge.ok{{background:#238636;color:#fff}}
+.vbadge.part{{background:#3d2c00;color:#e3b341;border:1px solid #9e6a03}}
 </style>
 <script>
 // Ricorda l'ultima pagina visitata e ripristinala UNA VOLTA per sessione del browser:
@@ -424,10 +427,23 @@ def namegen_view():
     # generatori nomi si validano da qui senza aprire l'XML.
     relfile = packs[sel].get("file", "")
     lrows = [r for r in L.load().values() if r["file"] == relfile]
+    total = len(lrows)
     vdone = sum(1 for r in lrows if r["status"] == "validated")
-    valbtns = (f'<button class="btn g" onclick=\'fileAction("{_js(relfile)}","validated")\'>{t("validate_file")}</button> '
+    itl = lang() == "it"
+    # badge ben visibile: VERDE solo quando TUTTO il file è validated (cioè dopo
+    # "valida tutto il file"); altrimenti ambra col conteggio dei validati.
+    if not lrows:
+        vbadge = ""
+    elif vdone == total:
+        vbadge = f'<span class="vbadge ok">✓ {"FILE VALIDATO" if itl else "FILE VALIDATED"}</span> '
+    else:
+        vbadge = (f'<span class="vbadge part">⚠ '
+                  f'{("da validare " if itl else "to validate ") + str(vdone) + "/" + str(total)}'
+                  f'</span> ')
+    valbtns = (f'{vbadge}'
+               f'<button class="btn g" onclick=\'fileAction("{_js(relfile)}","validated")\'>{t("validate_file")}</button> '
                f'<button class="btn k" onclick=\'fileAction("{_js(relfile)}","keep")\'>{t("keep_all")}</button> '
-               f'<span class=pct><b style="color:{COLORS["validated"]}">{vdone}</b>/{len(lrows)}</span>'
+               f'<span class=pct><b style="color:{COLORS["validated"]}">{vdone}</b>/{total}</span>'
                if relfile and lrows else "")
     fileline = (f'<p>📄 <a href="/file?f={quote(relfile, safe="")}">{_h(relfile)}</a> '
                 f'<button class=btn style="padding:2px 8px" '
