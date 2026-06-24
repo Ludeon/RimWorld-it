@@ -223,6 +223,14 @@ incl. body parts mano=F, pelle=F, items, kinds), so the automatic `[part_definit
    `LanguageWorker` + `WordInfo/Gender`. E.g. `[recipient_part0_definite]` → "il braccio" /
    "la gamba" automatically, **if** the part is in WordInfo with the right gender.
 
+> ⚠️ **Gotcha — the article suffix needs a real entity.** `[X_definite]` only adds an article
+> when `X` carries gender (UPPERCASE engine entities like `PROJECTILE`/`WEAPON`/`RECIPIENT`).
+> A **lowercase convenience symbol** defined inside the rulePack (e.g. `projectile` = just a
+> label) has no `_gender`, so `[projectile_definite]` silently drops the article. Bridge it to
+> the entity (`projectile_definite->[WEAPON_projectile_definite]`), French-style. Full pattern +
+> why German's `{replace:}`/`{lookup:}` are unnecessary for us:
+> [`RULEPACK-GRAMMAR.md` §7–8](RULEPACK-GRAMMAR.md).
+
 ### Fix strategy
 - Replace hand-written articles before `[X_label]` with `[X_definite]`/`[X_indefinite]`.
 - Where participle/adjective agreement is needed, split the rule with `(SYMBOL_gender==Male/Female)`
@@ -247,6 +255,14 @@ Oxford comma). See [`RULEPACK-GRAMMAR.md`](RULEPACK-GRAMMAR.md) §4.
 - **Remaining (same recipe)**: Combat_Dodge/Miss, CombatRanged (Deflect/Fire), Damage,
   Interactions. The only thing the data path can't form is the plural article (`le braccia`) —
   accept the residual, or pursue the upstream `.cs` PR.
+
+### STATUS (2026-06-24) — CombatRanged projectile article
+- **`Combat_RangedBase`**: added the entity-bridge for `projectile_definite`/`_indefinite`
+  (→ `[WEAPON_projectile_*]` / `[PROJECTILE_*]`), French-style. Fixes the missing article in
+  every ranged log line built as `[projectile_definite] di [INITIATOR_definite] …`
+  ("Proiettile di X…" → "Il proiettile di X…"; indefinite `con un/una …`). Article is
+  gender-driven, so `freccia` was added to `WordInfo/Gender/Female.txt`. Pattern documented in
+  [`RULEPACK-GRAMMAR.md` §7](RULEPACK-GRAMMAR.md). Still confirm in-game on a bow and a gun shot.
 
 ### The same gender recipe powers the NAMERS too (done)
 The namers (book titles, biomes, art, scenario, settlement, quest, factions) were made

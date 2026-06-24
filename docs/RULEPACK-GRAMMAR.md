@@ -106,12 +106,70 @@ The engine selects the row by **how many** body parts are involved. In Italian, 
 - **Gender ternary** inside the final text: `{X_gender ? male : female : neutral}` — picks a
   **letter/word** in the text. Different from the `(X_gender==Female)` condition on the LEFT,
   which picks a **rule**. (Italian usage: see `TRANSLATION-SYNTAX.md §3`.)
-- **`{replace: ...}`** post-generation substitution (used by some languages, e.g. German). Rare;
+- **`{replace: ...}` / `{lookup: ...}`** — string operations applied **after** a sub-rule is
+  resolved (see §8 for the full syntax). Used heavily by German for its case system. Rare;
   if present in the EN comment, preserve it.
 - **Capitalization**: the engine capitalizes the first letter of the final result; list entries
   stay lowercase except proper nouns.
 
-## 7. Related tools (this repo)
+## 7. Articles in generated text — the entity-bridge pattern ⚠️
+
+`[X_definite]` / `[X_indefinite]` add the article (`il/lo/la/l'`, `un/uno/una/un'`) **only when
+`X` is a real grammatical entity** that carries gender. Two kinds of symbol look alike but
+behave differently:
+
+| Symbol | What it is | Has gender → article? |
+|--------|-----------|-----------------------|
+| `[WEAPON_…]`, `[PROJECTILE_…]`, `[INITIATOR_…]`, `[RECIPIENT_…]` (UPPERCASE) | a full entity from the game code (`GrammarUtility.RulesForDef`): label **plus** `_gender`, `_definite`, `_indefinite`, `_possessive`… | **yes** — gender resolved from the def + `WordInfo/Gender`, article correct |
+| `[projectile]`, `[implement]`… (lowercase) | a **convenience symbol** defined *inside the rulePack* (`projectile->[WEAPON_projectile_label]`), usually just a **label string** | **no** — no `_gender`, so `[projectile_definite]` falls back to the bare label with **no article** |
+
+So writing `[projectile_definite]` does **not** auto-produce an article: if the rulePack only
+defines `projectile` (the label), the `_definite` suffix has no gender to work with and you get
+the bare word (`Proiettile di X ha colpito…` instead of `Il proiettile di X…`).
+
+**Fix (the French model): bridge the lowercase symbol to the UPPERCASE entity** for every form
+you use. In `Combat_RangedBase`:
+
+```xml
+<li>projectile(WEAPON_missing==True, p=3)->[PROJECTILE_label]</li>
+<li>projectile_definite(WEAPON_missing==True, p=3)->[PROJECTILE_definite]</li>
+<li>projectile_indefinite(WEAPON_missing==True, p=3)->[PROJECTILE_indefinite]</li>
+<li>projectile->[WEAPON_projectile_label]</li>
+<li>projectile_definite->[WEAPON_projectile_definite]</li>
+<li>projectile_indefinite->[WEAPON_projectile_indefinite]</li>
+```
+
+Now `[projectile_definite]` resolves through the entity, which picks the article from the
+projectile's gender (`il proiettile` / `la freccia`; `un proiettile` / `una granata`). For this
+to be correct the head-noun of each label must have the right gender in `WordInfo/Gender`
+(Italian example: `freccia` belongs in `Female.txt`, or you get `il freccia`). The
+`WEAPON_missing==True` branch covers shots that have a projectile def but no weapon (e.g. bows
+vs thrown).
+
+> **Why not the German `{replace:}` trick?** German needs to bend the noun through four
+> grammatical **cases** (Nominativ/Akkusativ/Dativ/Genitiv), which the article suffixes can't
+> express, so it post-processes the resolved string (§8). Italian (like French/Spanish) only
+> needs the **article**, which the engine already provides via the UPPERCASE entity — so the
+> bridge above is enough; the `{replace:}`/`{lookup:}` machinery is unnecessary here.
+
+## 8. The German string operations `{replace:}` / `{lookup:}` (reference)
+
+You will see these in the German pack and occasionally in EN comments. They run **after** the
+inner symbols are resolved, operating on the produced string. Italian does not use them, but
+recognize them so you can preserve them verbatim when copying EN comments:
+
+- **`{replace: TEXT; "find"-"replace"; …}`** — resolve `TEXT`, then apply literal
+  find→replace substitutions. German uses it to repair contractions/forms after assembly, e.g.
+  `{replace: [INITIATOR_label]'s [blast]; "Feuer's Explosion"-"Eine durch Feuer ausgelöste Explosion"}`.
+- **`{lookup: [SYMBOL]; decline; CASE}`** — resolve `[SYMBOL]`, then **decline** it to a
+  grammatical case via the language's declension table (`CASE`: `1`=Nom, `2`=Gen, `3`=Dat,
+  `4`=Akk). This is the core of German's case handling; Italian has no equivalent need.
+
+**Rule for us**: never *add* these to Italian rules (we solve agreement with gender conditions,
+`[X_definite]`, the entity bridge above, and `WordInfo`); only **preserve** them unchanged if
+they appear inside a `<!-- EN: -->` comment.
+
+## 9. Related tools (this repo)
 
 - `rwit variants` — generates morphological variants (gender/number/article) via Morph-it!.
 - Offline preview: dashboard → **Name generator** tab (`scripts/dashboard/`), or

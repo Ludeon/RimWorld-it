@@ -54,14 +54,18 @@ CLI in `scripts/rwit/`. Core commands:
 | Command | What it does |
 |---------|--------------|
 | `rwit link`   | (Re)creates the symlinks that connect this repo to the game install as the "Italiano" language. Needs admin or Windows **Developer Mode** (UAC). Redo it if you move the project folder (the symlinks use absolute paths). |
-| `rwit analyze` | Compares the game's `TranslationReport.txt` with the repo and computes the **real gap** (missing/untranslated keyed, missing DefInjected by type). Writes the detail to `reports/gap_<date>.txt`. |
+| `rwit analyze` | Compares the game's `TranslationReport.txt` with the repo and computes the **real gap** (missing/untranslated keyed, missing DefInjected by type). Excludes **phantom paths** — runtime caches the game's translator spuriously lists as missing but that aren't translatable (`unlockedRolesCachedFor`/`unlockedRituals` = a meme's runtime-cached roles/rituals, populated only when an ideoligion using that meme is active; `requiredMemeList` = a list of MemeDef *references*). Writes the detail to `reports/gap_<date>.txt`. |
+| `rwit clean` | Removes dead entries the report flags. **Unused keyed**: removed only if the key is also **absent from the game's English Keyed** (genuinely orphaned — guards against false positives where the key still exists). **DefInjected load-errors**: entries the game can't inject (renamed/removed defs, moved comps, restructured body parts); reported with their repo location. Dry-run by default; `--apply-keyed` / `--apply-defs` perform the removal (single-line surgery + the adjacent `<!-- EN: -->`/`<!-- UNUSED -->` comment; needs `--yes`; **git is the safety net**). |
 | `rwit unlink` | Removes the symlinks from the game (does not touch real folders). |
 
-QA tools (offline, deterministic): `lang-check` (wrong language), `strings-diff` / `reconcile`
-(align lists to the game's English), `freshness` (Words lists vs the game + gender variants vs
-base), `variants` (morphological variants via Morph-it!; `variants noun-gender` splits a noun
-list by gender), `ledger` (+ the **Flask** review dashboard: `python scripts\dashboard\server.py`
-→ http://127.0.0.1:5000 — stateless, no cache). See [`LOCAL-TOOLING.md`](LOCAL-TOOLING.md).
+QA tools (offline, deterministic): `lang-check` (wrong language), `args-check` (placeholder
+mismatch EN↔IT), `plural-check` (English `[Symbol]s` plural leaking on screen), `syntax-check`
+(engine-breaking syntax: malformed gender ternaries + unbalanced `{}`/`[]`), `strings-diff` /
+`reconcile` (align lists to the game's English), `freshness` (Words lists vs the game + gender
+variants vs base), `variants` (morphological variants via Morph-it!; `variants noun-gender`
+splits a noun list by gender), `ledger` (+ the **Flask** review dashboard:
+`python scripts\dashboard\server.py` → http://127.0.0.1:5000 — stateless, no cache). See
+[`LOCAL-TOOLING.md`](LOCAL-TOOLING.md).
 
 Override the game paths: the `--game-data` option or the `RIMWORLD_DATA` environment variable.
 
@@ -91,6 +95,14 @@ The *Clean languages* command rewrites the repo files: it updates the `<!-- EN: 
 to the new English and normalizes whitespace. **Often these are just corrected English typos**:
 if the English meaning does not change, the Italian translation **must not be touched**. Always
 `git diff` to separate the noise (comments/whitespace) from substantive changes.
+
+A version bump also leaves **dead entries** behind: keyed whose English key was renamed/removed,
+and DefInjected pointing at defs/comps/body-parts that moved. These are inert (the game logs a
+load error and ignores them — no crash), but they clutter the report and hide real future
+errors. Run `rwit clean` to review them and `--apply-keyed`/`--apply-defs` to remove them.
+Note: a stale entry is often just a leftover **duplicate** of an already-corrected one (e.g. the
+old `comps.CompReloadable.chargeNoun` next to the new `comps.CompApparelReloadable.chargeNoun`),
+so removing it loses nothing.
 
 ---
 
