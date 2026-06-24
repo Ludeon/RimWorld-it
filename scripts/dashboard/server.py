@@ -74,6 +74,9 @@ TR = {
     "to_namegen": {"en": "review in the name generator", "it": "rivedi nel generatore nomi",
                    "es": "revisar en el generador de nombres", "fr": "réviser dans le générateur de noms",
                    "de": "im Namensgenerator prüfen"},
+    "ng_only": {"en": "name generators only", "it": "solo generatori nomi",
+                "es": "solo generadores de nombres", "fr": "générateurs de noms seulement",
+                "de": "nur Namensgeneratoren"},
     "ng_badge": {"en": "name/grammar generator — review in the Name generator tab",
                  "it": "generatore nomi/grammatica — rivedi nella scheda Generatore nomi",
                  "es": "generador de nombres/gramática — revisar en la pestaña Generador de nombres",
@@ -167,6 +170,9 @@ tr:hover td{{background:#161b22}}
 select,input{{background:#0d1117;border:1px solid #30363d;color:#c9d1d9;border-radius:6px;padding:5px 8px;font:inherit}}
 .muted{{color:#8b949e}} .right{{text-align:right}}
 .names div{{break-inside:avoid;padding:2px 0}}
+.toast{{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#238636;color:#fff;padding:10px 18px;border-radius:8px;box-shadow:0 4px 16px #0008;z-index:50;opacity:0;pointer-events:none;transition:opacity .2s;font-weight:600}}
+.toast.show{{opacity:1}}
+.toast.err{{background:#da3633}}
 </style>
 <script>
 // Ricorda l'ultima pagina visitata e ripristinala UNA VOLTA per sessione del browser:
@@ -191,13 +197,25 @@ select,input{{background:#0d1117;border:1px solid #30363d;color:#c9d1d9;border-r
   <select onchange="document.cookie='lang='+this.value+';path=/;max-age=31536000';location.reload()">{langopts}</select>
   <button class=btn onclick="rebuild()">{rebuild}</button>
 </header><main>{body}</main>
+<div id=toast class=toast></div>
 <script>
+function showToast(msg,err){{
+  var el=document.getElementById('toast'); if(!el)return;
+  el.textContent=msg; el.className='toast show'+(err?' err':'');
+  clearTimeout(window.__tt); window.__tt=setTimeout(function(){{el.className='toast';}},2400);
+}}
+// messaggio "flash" che sopravvive al reload (l'azione è salvata PRIMA del reload)
+(function(){{try{{var f=sessionStorage.getItem('rwit_flash');if(f){{sessionStorage.removeItem('rwit_flash');showToast(f);}}}}catch(e){{}}}})();
 async function setStatus(keys,status){{
   const r=await fetch('/api/set',{{method:'POST',headers:{{'Content-Type':'application/json'}},body:JSON.stringify({{keys,status}})}});
-  if(r.ok) location.reload(); else alert('error');
+  if(r.ok){{
+    let c=0; try{{c=(await r.json()).changed;}}catch(e){{}}
+    try{{sessionStorage.setItem('rwit_flash','✓ '+c+' voci salvate → '+status);}}catch(e){{}}
+    location.reload();
+  }} else {{ showToast('errore nel salvataggio',true); }}
 }}
 function fileAction(f,status){{ setStatus([['__file__',f,'*']],status); }}
-async function rebuild(){{ const r=await fetch('/api/rebuild',{{method:'POST'}}); if(r.ok) location.reload(); }}
+async function rebuild(){{ const r=await fetch('/api/rebuild',{{method:'POST'}}); if(r.ok){{try{{sessionStorage.setItem('rwit_flash','↻ ledger ricostruito');}}catch(e){{}}location.reload();}} else showToast('errore',true); }}
 function copyTxt(t,el){{ navigator.clipboard.writeText(t).then(()=>{{if(el){{const o=el.textContent;el.textContent='✓';setTimeout(()=>el.textContent=o,900);}}}}); }}
 </script></body></html>"""
 
@@ -237,6 +255,7 @@ def index():
     validated = overall.get("validated", 0)
     sel_dlc = request.args.get("dlc", "")
     sel_status = request.args.get("status", "translated")
+    sel_ng = request.args.get("ng", "")
 
     chips = "".join(
         f'<div class=chip style="border-color:{COLORS[s]}"><b>{overall.get(s,0):,}</b>'
@@ -258,16 +277,20 @@ def index():
     perfile = defaultdict(Counter)
     for r in rows:
         perfile[(r["dlc"], r["file"])][r["status"]] += 1
+    # File-namegen (RulePackDef): si revisionano nella scheda Generatore nomi, non
+    # leggendo l'XML. Set derivato live dai pack -> badge + filtro + scorciatoia,
+    # niente DB. Hanno poche stringhe l'uno, quindi senza il filtro ng finiscono
+    # in fondo alla lista (oltre il taglio a 400) e non si vedono.
+    ng_files = {p["file"] for p in NG.load_rulepacks().values()}
     frows = sorted(
         ((c.get(sel_status, 0), d, f, sum(c.values()), sum(c.get(s, 0) for s in DONE), c)
          for (d, f), c in perfile.items()
-         if c.get(sel_status, 0) and (not sel_dlc or d == sel_dlc)),
+         if c.get(sel_status, 0) and (not sel_dlc or d == sel_dlc)
+         and (not sel_ng or f in ng_files)),
         key=lambda x: -x[0])
 
     # File-namegen (RulePackDef): si revisionano nella scheda Generatore nomi, non
     # leggendo l'XML. Set derivato live dai pack -> badge + scorciatoia, niente DB.
-    ng_files = {p["file"] for p in NG.load_rulepacks().values()}
-
     opt_dlc = "".join(f'<option {"selected" if d==sel_dlc else ""}>{d}</option>' for d in [""] + config.DLCS)
     opt_st = "".join(f'<option value="{s}" {"selected" if s==sel_status else ""}>{sname(s)}</option>' for s in STATES)
     trs = ""
@@ -288,8 +311,9 @@ def index():
     body = f"""<div class=chips>{chips}</div>{segbar(overall,total)}
     <h3>{t("by_dlc")}</h3>{dlcbars}
     <h3>{t("files_review")}</h3>
-    <div class=flt>DLC <select onchange="location.href='/?dlc='+this.value+'&status={sel_status}'">{opt_dlc}</select>
-      <select onchange="location.href='/?dlc={sel_dlc}&status='+this.value">{opt_st}</select>
+    <div class=flt>DLC <select onchange="location.href='/?dlc='+this.value+'&status={sel_status}&ng={sel_ng}'">{opt_dlc}</select>
+      <select onchange="location.href='/?dlc={sel_dlc}&status='+this.value+'&ng={sel_ng}'">{opt_st}</select>
+      <a class="btn{' g' if sel_ng else ''}" href="/?dlc={sel_dlc}&status={sel_status}&ng={'' if sel_ng else '1'}">🎲 {t("ng_only")}</a>
       <span class=muted>{t("files_with", n=len(frows), s=sname(sel_status))}</span></div>
     <table><thead><tr><th>{t("col_file")}</th><th class=right>«{sname(sel_status)}»</th><th>{t("col_comp")}</th>
       <th class=right>{t("col_done")}</th><th class=right>{t("hdr_val")}</th><th class=right>{t("col_actions")}</th></tr></thead><tbody>{trs}</tbody></table>"""
