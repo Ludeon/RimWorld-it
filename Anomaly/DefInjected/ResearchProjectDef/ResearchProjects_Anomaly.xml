@@ -201,7 +201,7 @@
     <li>subject->lobotomia</li>
     <li>subject_story->ha subito una lobotomia per crimini di pensiero contro lo Stato</li>
     <li>subject_story->ha rieducato i pochi sopravvissuti all’esperimento di Eldof</li>
-    <li>subject_story->ha seguito un apprendistato come {subject_gender ? neurochirurgo : neurochirurga : neurochirurgo/a} e {1_gender ? barbiere : barbiera : barbiere/a}</li>
+    <li>subject_story->ha seguito un apprendistato come {subject_gender ? neurochirurgo : neurochirurga : neurochirurgo/a} e {subject_gender ? barbiere : barbiera : barbiere/a}</li>
     <li>subject_gerund->eseguendo lobotomie</li>
     <li>subject_gerund->asportando porzioni di tessuto cerebrale</li>
   </BlissLobotomy.generalRules.rulesStrings>
