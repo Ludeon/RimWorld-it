@@ -71,6 +71,11 @@ TR = {
                   "fr": "Générateur de noms", "de": "Namensgenerator"},
     "hdr_done": {"en": "translated", "it": "tradotto", "es": "traducido", "fr": "traduit", "de": "übersetzt"},
     "hdr_val": {"en": "validated", "it": "validato", "es": "validado", "fr": "validé", "de": "validiert"},
+    "hdr_review": {"en": "review", "it": "revisione", "es": "revisión", "fr": "révision", "de": "Prüfung"},
+    "rv_done": {"en": "reviewed", "it": "fatte", "es": "hechas", "fr": "faites", "de": "erledigt"},
+    "rv_todo": {"en": "to review", "it": "da revisionare", "es": "por revisar",
+                "fr": "à réviser", "de": "zu prüfen"},
+    "rv_tot": {"en": "total", "it": "tot", "es": "total", "fr": "total", "de": "gesamt"},
     "to_namegen": {"en": "review in the name generator", "it": "rivedi nel generatore nomi",
                    "es": "revisar en el generador de nombres", "fr": "réviser dans le générateur de noms",
                    "de": "im Namensgenerator prüfen"},
@@ -97,6 +102,14 @@ TR = {
     "validate_file": {"en": "✓ validate whole file", "it": "✓ valida tutto il file", "es": "✓ validar todo el archivo",
                       "fr": "✓ valider tout le fichier", "de": "✓ ganze Datei validieren"},
     "keep_all": {"en": "keep all", "it": "keep tutto", "es": "keep todo", "fr": "keep tout", "de": "alle keep"},
+    "copy_skill": {"en": "📋 copy the /valida-file instruction for Claude (this file)",
+                   "it": "📋 copia l'istruzione /valida-file per Claude (questo file)",
+                   "es": "📋 copiar la instrucción /valida-file para Claude (este archivo)",
+                   "fr": "📋 copier l'instruction /valida-file pour Claude (ce fichier)",
+                   "de": "📋 /valida-file-Anweisung für Claude kopieren (diese Datei)"},
+    "act_validate": {"en": "validate", "it": "valida", "es": "validar", "fr": "valider", "de": "validieren"},
+    "act_keep": {"en": "do not translate (keep)", "it": "non tradurre (keep)", "es": "no traducir (keep)",
+                 "fr": "ne pas traduire (keep)", "de": "nicht übersetzen (keep)"},
     "back": {"en": "← back", "it": "← indietro", "es": "← atrás", "fr": "← retour", "de": "← zurück"},
     "empty_val": {"en": "empty", "it": "vuoto", "es": "vacío", "fr": "vide", "de": "leer"},
     "ng_intro": {
@@ -153,6 +166,9 @@ nav a{{padding:5px 10px;border-radius:6px}} nav a.on{{background:#21262d;color:#
 .sp{{flex:1}}
 .btn{{background:#21262d;border:1px solid #30363d;color:#c9d1d9;border-radius:6px;padding:6px 12px;cursor:pointer;font:inherit}}
 .btn:hover{{border-color:#8b949e}} .btn.g{{border-color:#238636;color:#3fb950}} .btn.k{{border-color:#6e7681}}
+.acts{{display:flex;gap:6px;justify-content:flex-end}}
+.ibtn{{background:#21262d;border:1px solid #30363d;color:#c9d1d9;border-radius:6px;width:30px;height:30px;padding:0;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;font:14px inherit;line-height:1}}
+.ibtn:hover{{border-color:#8b949e}} .ibtn.g{{border-color:#238636;color:#3fb950}} .ibtn.k{{border-color:#6e7681}}
 main{{padding:20px;max-width:1200px;margin:auto}}
 .bar{{display:flex;height:14px;border-radius:7px;overflow:hidden;margin:8px 0}} .bar span{{display:block}}
 .chips{{display:flex;gap:18px;flex-wrap:wrap;margin:10px 0}}
@@ -223,7 +239,48 @@ function copyTxt(t,el){{ navigator.clipboard.writeText(t).then(()=>{{if(el){{con
 </script></body></html>"""
 
 
-def render(body: str, active: str = "prog", completion: str = "") -> str:
+def review_stats(counts: Counter) -> tuple[int, int, int, float]:
+    """Statistiche di REVISIONE da un Counter di stati (globale o per DLC/file).
+
+    Il lavoro di revisione agisce solo sulle voci GIÀ tradotte: il bacino è
+    DONE = translated+modified+keep+validated (NON l'intero corpus — le voci
+    ancora da tradurre o `stale` non sono lavoro di revisione). Una voce è
+    «revisionata» quando è validated o keep (entrambi stati terminali decisi in
+    revisione). Ritorna (fatte, da_revisionare, bacino, percentuale).
+    """
+    reviewable = sum(counts.get(s, 0) for s in DONE)
+    reviewed = counts.get("validated", 0) + counts.get("keep", 0)
+    todo = reviewable - reviewed
+    pct = reviewed / reviewable * 100 if reviewable else 0.0
+    return reviewed, todo, reviewable, pct
+
+
+def completion_str() -> str:
+    """Metrica in header: completamento della REVISIONE + traduzione complessiva.
+
+    Mostra lo split esplicito (fatte / da revisionare / totale) invece del solo
+    `fatte/tot`: il numero «da revisionare» coincide col chip `tradotte`, così il
+    bacino totale (denominatore) diventa leggibile a colpo d'occhio. «tradotto»
+    resta la copertura complessiva (voci tradotte / totale del corpus).
+    """
+    overall = Counter(r["status"] for r in L.load().values())
+    total = sum(overall.values())
+    if not total:
+        return ""
+    reviewed, todo, reviewable, pct = review_stats(overall)
+    rev = (f'<b style="color:{COLORS["validated"]}">{t("hdr_review")} {pct:.1f}%</b> '
+           f'<span class=muted>({reviewed:,} {t("rv_done")} · {todo:,} {t("rv_todo")} · '
+           f'{reviewable:,} {t("rv_tot")})</span>'
+           if reviewable else "")
+    tr = f'{t("hdr_done")} {reviewable/total*100:.1f}%'
+    title = ("revisione = (validate+keep) / voci gia tradotte "
+             "(translated+modified+keep+validated) · tradotto = voci tradotte / totale")
+    return f'<span title="{title}">{rev}{" · " if rev else ""}{tr}</span>'
+
+
+def render(body: str, active: str = "prog", completion: str | None = None) -> str:
+    if completion is None:
+        completion = completion_str()
     langopts = "".join(f'<option value="{c}" {"selected" if c==lang() else ""}>{n}</option>'
                        for c, n in LANGS.items())
     return SHELL.format(
@@ -254,8 +311,6 @@ def index():
     rows = list(L.load().values())
     total = len(rows)
     overall = Counter(r["status"] for r in rows)
-    done = sum(overall.get(s, 0) for s in DONE)
-    validated = overall.get("validated", 0)
     sel_dlc = request.args.get("dlc", "")
     sel_status = request.args.get("status", "translated")
     sel_ng = request.args.get("ng", "")
@@ -273,9 +328,15 @@ def index():
             continue
         c = perdlc[d]
         tot = sum(c.values())
-        v = c.get("validated", 0)
+        rdone, rtodo, rable, rpct = review_stats(c)
+        # % di revisione del DLC (validate+keep / voci tradotte), coerente con
+        # l'header; accanto il dettaglio fatte/bacino. Due celle a larghezza fissa
+        # (% | conteggio) così le percentuali restano incolonnate riga per riga.
         dlcbars += (f'<div class=dlcrow><span class=nm>{d}</span>{segbar(c,tot)}'
-                    f'<span class=pct><b style="color:{COLORS["validated"]}">{v:,}</b>/{tot:,}</span></div>')
+                    f'<span class=pct style="width:42px;text-align:right">'
+                    f'<b style="color:{COLORS["validated"]}">{rpct:.0f}%</b></span>'
+                    f'<span class="pct muted" style="width:120px;text-align:right">'
+                    f'{rdone:,}/{rable:,}</span></div>')
 
     perfile = defaultdict(Counter)
     for r in rows:
@@ -304,7 +365,11 @@ def index():
         badge = (f' <span title="{t("ng_badge")}" style="cursor:help">🎲</span>' if is_ng else "")
         ngbtn = (f'<a class="btn" title="{t("to_namegen")}" href="/namegen?q={quote(f"{d} · {stem}")}">🎲</a> '
                  if is_ng else "")
-        trs += (f'<tr><td><a href="/file?f={quote(f, safe="")}">{short}</a>{badge}<br><span class=tag>{d} · {_h(f)}</span></td>'
+        trs += (f'<tr><td style="width:1%;vertical-align:middle;padding-right:0">'
+                f'<button class=btn title="{t("copy_skill")}" style="padding:2px 6px"'
+                f' onclick=\'copyTxt("/valida-file {_js(f)}",this)\'>📋</button></td>'
+                f'<td><a href="/file?f={quote(f, safe="")}">{short}</a>{badge}'
+                f'<br><span class=tag>{d} · {_h(f)}</span></td>'
                 f'<td class=right><b>{pend}</b></td><td>{segbar(c,tot)}</td><td class="right pct">{dn}/{tot}</td>'
                 f'<td class="right pct"><b style="color:{COLORS["validated"]}">{c.get("validated",0)}</b>/{tot}</td>'
                 f'<td class=right style="white-space:nowrap">{ngbtn}'
@@ -318,12 +383,9 @@ def index():
       <select onchange="location.href='/?dlc={sel_dlc}&status='+this.value+'&ng={sel_ng}'">{opt_st}</select>
       <a class="btn{' g' if sel_ng else ''}" href="/?dlc={sel_dlc}&status={sel_status}&ng={'' if sel_ng else '1'}">🎲 {t("ng_only")}</a>
       <span class=muted>{t("files_with", n=len(frows), s=sname(sel_status))}</span></div>
-    <table><thead><tr><th>{t("col_file")}</th><th class=right>«{sname(sel_status)}»</th><th>{t("col_comp")}</th>
+    <table><thead><tr><th></th><th>{t("col_file")}</th><th class=right>«{sname(sel_status)}»</th><th>{t("col_comp")}</th>
       <th class=right>{t("col_done")}</th><th class=right>{t("hdr_val")}</th><th class=right>{t("col_actions")}</th></tr></thead><tbody>{trs}</tbody></table>"""
-    completion = (f'{t("hdr_done")} {done/total*100:.1f}% · '
-                  f'{t("hdr_val")} {validated/total*100:.1f}% ({validated:,}/{total:,})'
-                  if total else "")
-    return render(body, "prog", completion)
+    return render(body, "prog")
 
 
 @app.route("/file")
@@ -342,8 +404,9 @@ def file_view():
         it, en = texts.get(r["tag"], ("", ""))
         st = r["status"]
         k = f'["{_js(r["dlc"])}","{_js(r["file"])}","{_js(r["tag"])}"]'
-        acts = ("" if st == "validated" else f'<button class="btn g" onclick=\'setStatus({k},"validated")\'>✓</button> ')
-        acts += ("" if st == "keep" else f'<button class="btn k" onclick=\'setStatus({k},"keep")\'>keep</button>')
+        acts = ("" if st == "validated" else f'<button class="ibtn g" title="{t("act_validate")}" onclick=\'setStatus({k},"validated")\'>✓</button>')
+        acts += ("" if st == "keep" else f'<button class="ibtn k" title="{t("act_keep")}" onclick=\'setStatus({k},"keep")\'>🔒</button>')
+        acts = f'<div class=acts>{acts}</div>'
         it_cell = _h(it) or empty_it
         en_cell = _h(en) or "—"
         trs += (f'<tr><td class=tag>{_h(r["tag"])}</td><td class=en>{en_cell}</td>'
