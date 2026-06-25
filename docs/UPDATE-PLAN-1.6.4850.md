@@ -38,6 +38,20 @@ on Core namers (People/Scenarios/Outlander/settlements + `Strings/WordParts/Syll
   plural axis as a *residual* (guarded, no double-count) → **0 variant stale**. Verified via `namegen`.
 - `Solid_Adult.xml` validated in `VALIDATION-FILES.csv` (live fields clean).
 
+### 2026-06-26 (this session, Core console)
+- **Phase A — `Solid_Child.xml` validation, ~50% done**: reviewed+validated in ~20-entry blocks
+  from `BrothelGofer84` through **`OffworldRecruit91`** (≈541 strings → `validated`). **Resume at the
+  next non-validated entry** (`rwit ledger validate --file Solid_Child.xml --list`, first entry after
+  `OffworldRecruit91`, i.e. the `O…/P…` range).
+- Content fixes committed (2 commits): slash forms `lo/la`/`preso/a` → ternaries; many fixed-gender
+  adjectives/nouns (`pessimo`, `privo`, `pigro`, `l'eroe`, `neonato`, `scienziato`/`scienziata`
+  titles, `lo costrinse`, `inviato`); a `Sebbene`+indicativo → congiuntivo; `mondo/pianeta` title
+  coherence; one `\n\n` not in EN removed. **`GlitterworldKid85` was a full mistranslation** (wrong
+  story) → retranslated to match the EN comment.
+- ⚠️ **Shared ledger CSV not committed**: it interleaves this console's `Solid_Child` validations with
+  the other console's `Solid_Adult` rows (other console committed `Solid_Adult.xml` but not the CSV).
+  Validations are safe on disk (dashboard reads disk); commit the CSV in a coordinated `tooling()` step.
+
 ### NEXT SESSION — TODO (priority order)
 1. **Art namer plurals** (`RulePacks_Namers_Art.xml`): same treatment as the Scenari namer above, but
    Art needs the plural *indefinite* article (dei/degli/delle/∅) + **plural adjective agreement**
