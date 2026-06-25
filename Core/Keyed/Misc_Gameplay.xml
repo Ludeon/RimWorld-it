@@ -73,7 +73,7 @@
   <!-- EN: Immunity -->
   <Immunity>Immunità</Immunity>
   <!-- EN: {0} days to recover -->
-  <DaysToRecover>{0} giorni per il recovero</DaysToRecover>
+  <DaysToRecover>{0} giorni per il recupero</DaysToRecover>
   <!-- EN: Ineffective -->
   <Ineffective>Inefficace</Ineffective>
   <!-- EN: illegal -->
@@ -111,17 +111,17 @@
   <!-- EN: Execute guilty colonist\n\nIf you toggle this on, a warden will proceed to execute this person. -->
   <ExecuteColonist>Esecuzione dei coloni colpevoli\n\nSe si attiva questa opzione, un guardiano procederà all'esecuzione di questa persona.</ExecuteColonist>
   <!-- EN: {0_labelShort} is now marked for execution. The next available warden will go execute {0_objective}. -->
-  <MessageColonistMarkedForExecution>{0_labelShort} è ora contrassegnato per l'esecuzione. Il prossimo guardiano disponibile andrà a completare esecuzione di {0_objective}.</MessageColonistMarkedForExecution>
+  <MessageColonistMarkedForExecution>{0_labelShort} è ora contrassegnato per l'esecuzione. Il prossimo guardiano disponibile andrà a giustiziare {0_objective}.</MessageColonistMarkedForExecution>
   <!-- EN: {0} of {1} -->
   <TitleOfFaction>{0} di {1}</TitleOfFaction>
   <!-- EN: This action will make {PAWN_nameDef} lose {PAWN_possessive} {TITLE} title. You will receive no compensation for renouncing the title.\n\nThis will have the following effects:\n\n{EFFECTS} -->
   <RenounceTitleDescription>Questa azione farà perdere a {PAWN_nameDef} il {PAWN_possessive} titolo di {TITLE}. Non riceverai alcun compenso per la rinuncia al titolo.\n\nQuesto avrà i seguenti effetti:\n\n{EFFECTS}</RenounceTitleDescription>
   <!-- EN: {PAWN_pronoun} will lose these permissions -->
-  <RenounceTitleWillLoosePermits>{PAWN_possessive} perderà queste autorizzazioni</RenounceTitleWillLoosePermits>
+  <RenounceTitleWillLoosePermits>{PAWN_pronoun} perderà queste autorizzazioni</RenounceTitleWillLoosePermits>
   <!-- EN: {PAWN_nameDef} will lose {POINTS} unspent permit points with {FACTION_name}. -->
   <RenounceTitleWillLosePermitPoints>{PAWN_nameDef} perderà {POINTS} punti permesso non spesi con {FACTION_name}.</RenounceTitleWillLosePermitPoints>
   <!-- EN: {PAWN_pronoun} will keep all {PAWN_possessive} psylink levels and psycasts. -->
-  <RenounceTitleWillKeepPsylinkLevels>{PAWN_pronoun} manterrà tutti i livelli psylink e gli psycast di {PAWN_possessive}.</RenounceTitleWillKeepPsylinkLevels>
+  <RenounceTitleWillKeepPsylinkLevels>{PAWN_pronoun} manterrà tutti i {PAWN_possessive} livelli psylink e psycast.</RenounceTitleWillKeepPsylinkLevels>
   <!-- EN: unknown -->
   <UnknownLower>sconosciuto</UnknownLower>
   <!-- EN: On -->
@@ -153,7 +153,7 @@
   <!-- EN: Overheating -->
   <Overheating>Surriscaldato</Overheating>
   <!-- EN: Ruined by temperature. -->
-  <RuinedByTemperature>Rovinato dal caldo.</RuinedByTemperature>
+  <RuinedByTemperature>Rovinato dalla temperatura.</RuinedByTemperature>
   <!-- EN: Missing body parts -->
   <CorpsePercentMissing>Parti del corpo mancanti</CorpsePercentMissing>
   <!-- EN: Reproduces in -->
@@ -277,7 +277,7 @@
   <!-- EN: {0} until enemies arrive -->
   <CaravanDetectedRaidCountdown>Nemici in arrivo tra {0}</CaravanDetectedRaidCountdown>
   <!-- EN: Enemies have learned of your location. They will arrive in {0}. -->
-  <CaravanDetectedRaidCountdownTip>I rinforzi nemici arriveranno in quest'area tra {0}.</CaravanDetectedRaidCountdownTip>
+  <CaravanDetectedRaidCountdownTip>I nemici hanno scoperto la tua posizione. Arriveranno tra {0}.</CaravanDetectedRaidCountdownTip>
   <!-- EN: Room -->
   <Room>Stanza</Room>
   <!-- EN: Beauty here -->
@@ -453,7 +453,7 @@
   <!-- EN: location -->
   <Location>posizione</Location>
   <!-- EN: animals -->
-  <AnimalsLower>alimali</AnimalsLower>
+  <AnimalsLower>animali</AnimalsLower>
   <!-- EN: items -->
   <ItemsLower>oggetti</ItemsLower>
   <!-- EN: {0} x{1} -->
@@ -463,7 +463,7 @@
   <!-- EN: Required -->
   <Required>Richiesto</Required>
   <!-- EN: Warning: You cannot complete trade requests by using transport pods.\nIf you send the goods, the settlement will accept them as gifts but they will not reward you.\n\nFor trading, approach the settlement with a caravan!\n\nAre you sure you want to gift the loaded goods to the faction? -->
-  <GiveGiftViaTransportPodsTradeRequestWarning>Attenzione: non è possibile completare le richieste commerciali utilizzando i contenitori di trasporto.\nSe si invia la merce, il destinatario li accetterà come regali ma non ti ricompenserà.\n\nPer commerciare, avvicinati al destinatario con una carovana!\n\nSei sicuro di voler regalare la merce caricata alla fazione?</GiveGiftViaTransportPodsTradeRequestWarning>
+  <GiveGiftViaTransportPodsTradeRequestWarning>Attenzione: non è possibile completare le richieste commerciali utilizzando i contenitori di trasporto.\nSe si invia la merce, il destinatario la accetterà come regali ma non ti ricompenserà.\n\nPer commerciare, avvicinati al destinatario con una carovana!\n\nSei sicuro di voler regalare la merce caricata alla fazione?</GiveGiftViaTransportPodsTradeRequestWarning>
   <!-- EN: prisoner -->
   <PrisonerLower>prigioniero</PrisonerLower>
   <!-- EN: prisoners -->
@@ -537,7 +537,7 @@
   <!-- EN: Natural goodwill range -->
   <NaturalGoodwillRange>Gamma dell'avviamento naturale</NaturalGoodwillRange>
   <!-- EN: Natural goodwill is based on faction identities and beliefs. If current goodwill is far from natural goodwill, it will slowly shift towards natural goodwill over time.\n\nAll goodwill effects are multiplied by {0} when moving towards natural goodwill. -->
-  <NaturalGoodwillDescription>L'avvenimento naturale si basa sull'identità e sulle credenze della fazione. Se l'attuale avvenimento è lontana da quella naturale, col tempo si sposterà lentamente verso quella naturale.\n\nTutti gli effetti dell'avvenimento sono moltiplicati per {0} quando si spostano verso l'avvenimento naturale.</NaturalGoodwillDescription>
+  <NaturalGoodwillDescription>L'avviamento naturale si basa sull'identità e sulle credenze della fazione. Se l'avviamento attuale è lontano da quello naturale, col tempo si sposterà lentamente verso quello naturale.\n\nTutti gli effetti dell'avviamento sono moltiplicati per {0} quando si spostano verso l'avviamento naturale.</NaturalGoodwillDescription>
   <!-- EN: reducing resistance of {0_nameIndef} -->
   <JobReport_ReduceResistance>riduzione della resistenza di {0_nameIndef}</JobReport_ReduceResistance>
   <!-- EN: Too large -->
@@ -756,9 +756,9 @@
   <!-- EN: Roped by -->
   <RopedByPawn>Condotto da</RopedByPawn>
   <!-- EN: Roped to -->
-  <RopedToThing>In sella a</RopedToThing>
+  <RopedToThing>Legato a</RopedToThing>
   <!-- EN: Roped to spot. -->
-  <RopedToSpot>Rotta verso il punto</RopedToSpot>
+  <RopedToSpot>Legato sul posto</RopedToSpot>
   <!-- EN: Pen size -->
   <PenSizeLabel>Dimensione del recinto</PenSizeLabel>
   <!-- EN: Very small pen -->
@@ -1031,7 +1031,7 @@
   <!-- EN: The faction {PAWN_labelShort} currently belongs to. -->
   <FactionDesc>La fazione a cui {PAWN_labelShort} attualmente appartiene.</FactionDesc>
   <!-- EN: The faction {PAWN_labelShort} originally belongs to. -->
-  <ExtraFactionDesc>La fazione a cui {PAWN_labelShort} originariamente appartieneva.</ExtraFactionDesc>
+  <ExtraFactionDesc>La fazione a cui {PAWN_labelShort} originariamente apparteneva.</ExtraFactionDesc>
   <!-- EN: Equipped -->
   <Equipped>Equipaggiato</Equipped>
   <!-- EN: nothing -->
@@ -1127,7 +1127,7 @@
   <!-- EN: Frozen -->
   <CurrentlyFrozen>Surgelato (non marcirà)</CurrentlyFrozen> 
   <!-- EN: Refrigerated, spoils in {0} -->
-  <CurrentlyRefrigerated>Congelato (marcirà tra {0})</CurrentlyRefrigerated> 
+  <CurrentlyRefrigerated>Refrigerato (marcirà tra {0})</CurrentlyRefrigerated> 
   <!-- EN: Unrefrigerated, spoils in {0} -->
   <NotRefrigerated>Non refrigerato (marcirà tra {0})</NotRefrigerated> 
   <!-- EN: over a decade -->
@@ -1387,7 +1387,7 @@
   <!-- EN: requires -->
   <ShipReportMissingPartRequires>richiede</ShipReportMissingPartRequires>
   <!-- EN: No full cryptosleep caskets -->
-  <ShipReportNoFullPods>Niente bare criptosonno</ShipReportNoFullPods>
+  <ShipReportNoFullPods>Nessuna bara criptosonno piena</ShipReportNoFullPods>
   <!-- EN: Hibernating component -->
   <ShipReportHibernating>Componente ibernante</ShipReportHibernating>
   <!-- EN: Component not yet ready -->
@@ -1557,7 +1557,7 @@
   <!-- EN: Due for maintenance. -->
   <DueForMaintenance>Per manutenzione.</DueForMaintenance>
   <!-- EN: Deteriorating due to lack of maintenance. -->
-  <DeterioratingDueToLackOfMaintenance>In deterioramente per mancanza di manutenzione.</DeterioratingDueToLackOfMaintenance>
+  <DeterioratingDueToLackOfMaintenance>In deterioramento per mancanza di manutenzione.</DeterioratingDueToLackOfMaintenance>
 
   <!-- Deep drill -->
   <!-- EN: Progress to next lump -->
@@ -1609,7 +1609,7 @@
   <!-- EN: Right mouse button: Add/remove waypoints. -->
   <RoutePlannerPressRMBToAddAndRemoveWaypoints>Clic destro: Aggiungi/Rimuovi tappa.</RoutePlannerPressRMBToAddAndRemoveWaypoints>
   <!-- EN: Left trigger button: Add/remove waypoints. -->
-  <RoutePlannerPressRMBToAddAndRemoveWaypointsController>Pulsante di attivazione sinistro: Aggiungere/rimuovere waypoint.</RoutePlannerPressRMBToAddAndRemoveWaypointsController>
+  <RoutePlannerPressRMBToAddAndRemoveWaypointsController>Pulsante di attivazione sinistro: Aggiungere/rimuovere tappe.</RoutePlannerPressRMBToAddAndRemoveWaypointsController>
   <!-- EN: ESC: Exit planning mode. -->
   <RoutePlannerPressEscapeToExit>ESC: Uscire dalla modalità pianificazione.</RoutePlannerPressEscapeToExit>
   <!-- EN: {Key:Cancel}: Exit planning mode. -->
@@ -1683,15 +1683,15 @@
   <!-- EN: a {0_age}-year-old {0_title} named {0_nameDef} will join you {0_relationInfoInParentheses} -->
   <Reward_Pawn_Caravan>un {0_title} di {0_age} anni di nome {0_nameDef} si unirà a te {0_relationInfoInParentheses}</Reward_Pawn_Caravan>
   <!-- EN: transport pods with the following resources will arrive (total value {1}):\n\n{0} -->
-  <Reward_Items>arriveranno capsule di trasporto con le seguenti risorse (valore totale {1}): \n{0}</Reward_Items>
+  <Reward_Items>arriveranno capsule di trasporto con le seguenti risorse (valore totale {1}):\n\n{0}</Reward_Items>
   <!-- EN: you will receive (total value {1}):\n\n{0} -->
-  <Reward_Items_Caravan>riceverai (valore totale {1}):\n{0}</Reward_Items_Caravan>
+  <Reward_Items_Caravan>riceverai (valore totale {1}):\n\n{0}</Reward_Items_Caravan>
   <!-- EN: your faction relations with {0_name} will improve by {1} -->
   <Reward_Goodwill>i rapporti della tua fazione con {0_name} miglioreranno di {1}</Reward_Goodwill>
   <!-- EN: you will be taken to the stars -->
   <Reward_PassageOffworld>sarai portato tra le stelle</Reward_PassageOffworld>
   <!-- EN: Passage offworld -->
-  <Reward_PassageOffworld_Label>Passaggio per il paradiso</Reward_PassageOffworld_Label>
+  <Reward_PassageOffworld_Label>Passaggio verso le stelle</Reward_PassageOffworld_Label>
   <!-- EN: you can loot everything from the camp -->
   <Reward_CampLoot>puoi saccheggiare tutto dal campo</Reward_CampLoot>
   <!-- EN: Camp loot -->
@@ -1776,7 +1776,7 @@
   <!-- EN: {0_nameDef}'s {1} was healed. -->
   <HealingHealHediff>{1} di {0_nameDef} è stato curato.</HealingHealHediff>
   <!-- EN: {0_nameDef}'s {1} was restored. -->
-  <HealingRestoreBodyPart>Il {0_nomeDef} di {1} è stato ripristinato.</HealingRestoreBodyPart>
+  <HealingRestoreBodyPart>{1} di {0_nameDef} è stato ripristinato.</HealingRestoreBodyPart>
 
   <!-- EN: Caution: Placing a building here will anger {FACTION_name}! -->
   <WarningBuildingCausesHostility>Attenzione: Se si posiziona un edificio in questo punto, si rischia di far arrabbiare {FACTION_name}!</WarningBuildingCausesHostility>
@@ -1786,7 +1786,7 @@
 
   <!-- LordJobs -->
   <!-- EN: Outcome chances at {0} quality -->
-  <LordJobOutcomeChances>Probabilità di successo {0}</LordJobOutcomeChances>
+  <LordJobOutcomeChances>Probabilità di esito con qualità {0}</LordJobOutcomeChances>
   <!-- EN: Expected duration -->
   <ExpectedLordJobDuration>Durata stimata</ExpectedLordJobDuration>
 
@@ -1799,7 +1799,7 @@
   <!-- EN: Any {0} -->
   <RitualTargetThingDefsInfo>Qualsiasi {0}</RitualTargetThingDefsInfo>
   <!-- EN: Attending {0} -->
-  <LordReportAttending>Presenti {0}</LordReportAttending>
+  <LordReportAttending>Partecipa a {0}</LordReportAttending>
   <!-- EN: {0} has been canceled. -->
   <RitualCalledOff>{0} è stato annullato.</RitualCalledOff>
   <!-- EN: {0} was not completed because of lack of attendance. -->
@@ -1807,7 +1807,7 @@
   <!-- EN: {0} has been completed. -->
   <RitualFinished>{0} è stato completato.</RitualFinished>
   <!-- EN: ends in {0} -->
-  <RitualEndsIn>termina con {0}</RitualEndsIn>
+  <RitualEndsIn>termina tra {0}</RitualEndsIn>
   <!-- EN: Can start any time -->
   <RitualStartAnyTime>Può iniziare in qualsiasi momento</RitualStartAnyTime>
   <!-- EN: Can start after event -->
@@ -1868,7 +1868,7 @@
   <!-- EN: Begin -->
   <Begin>Inizia</Begin>
   <!-- EN: Begin {0} -->
-  <BeginRitual>Inizio {0}</BeginRitual>
+  <BeginRitual>Inizia {0}</BeginRitual>
   <!-- EN: Begin {0} for {1} -->
   <BeginRitualFor>Iniziare {0} per {1}</BeginRitualFor>
   <!-- EN: {0} (out of {1}) -->
@@ -1885,7 +1885,7 @@
   <!-- EN: Starting quality -->
   <StartingQuality>Qualità iniziale</StartingQuality>
   <!-- EN: {PAWN_labelShort}'s {1} -->
-  <RitualPredictedOutcomeDescPawnStat>{PAWN_labelShort} è {1}</RitualPredictedOutcomeDescPawnStat>
+  <RitualPredictedOutcomeDescPawnStat>{1} di {PAWN_labelShort}</RitualPredictedOutcomeDescPawnStat>
   <!-- EN: Room beauty -->
   <RitualPredictedOutcomeDescRoomBeauty>Bellezza della camera</RitualPredictedOutcomeDescRoomBeauty>
   <!-- EN: {PAWN_labelShort}'s expectations -->
@@ -1976,7 +1976,7 @@
   <ShieldPersonalTip>Uno scudo personale che tenta di fermare i proiettili o le schegge in arrivo. Impedisce a chi lo indossa di sparare e si spegne istantaneamente se colpito da un EMP.</ShieldPersonalTip>
 
   <!-- EN: {PAWN_nameDef} is so loyal to {PAWN_possessive} home that {PAWN_pronoun} will refuse to be recruited if taken prisoner. -->
-  <UnrecruitableDesc>{PAWN_nameDef} è così fedele alla casa {PAWN_possessive} che {PAWN_pronoun} rifiuterà di essere reclutato se fatto prigioniero.</UnrecruitableDesc>
+  <UnrecruitableDesc>{PAWN_nameDef} è così fedele alla {PAWN_possessive} casa che {PAWN_pronoun} rifiuterà di essere reclutato se fatto prigioniero.</UnrecruitableDesc>
 
   <!-- EN: Random -->
   <Random>Casuale</Random>
@@ -2099,7 +2099,7 @@
 
   <!-- Hacking -->
   <!-- EN: Hack progress -->
-  <HackProgress>Hackerare i progressi</HackProgress>
+  <HackProgress>Progresso hacking</HackProgress>
   <!-- EN: hacking speed -->
   <HackingSpeed>velocità dell'hacking</HackingSpeed>
   <!-- EN: {0}'s -->
