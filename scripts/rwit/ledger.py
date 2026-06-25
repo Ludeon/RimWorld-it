@@ -257,6 +257,31 @@ def set_keep(dlcs=None, only_untranslated=True) -> int:
     return n
 
 
+def keys_matching(files=None, tags=None, dlcs=None,
+                  statuses=("translated", "modified")) -> list[tuple]:
+    """Chiavi (dlc,file,tag) del ledger che combaciano coi filtri.
+
+    files/tags: sottostringhe (match case-insensitive su path-file / tag). statuses:
+    stati ammessi (default: le sole righe ancora da validare). Usato dalla validazione
+    per-file/per-tag (la skill valida cio' che ha rivisto, senza toccare l'intera DLC).
+    """
+    files = [f.lower() for f in (files or [])]
+    tags = [t.lower() for t in (tags or [])]
+    dlcs = set(dlcs) if dlcs else None
+    out: list[tuple] = []
+    for (dlc, f, t), row in load().items():
+        if dlcs and dlc not in dlcs:
+            continue
+        if statuses and row["status"] not in statuses:
+            continue
+        if files and not any(s in f.lower() for s in files):
+            continue
+        if tags and not any(s in t.lower() for s in tags):
+            continue
+        out.append((dlc, f, t))
+    return out
+
+
 def set_status_keys(keys, status: str) -> int:
     """Imposta lo stato di righe specifiche (set/list di tuple (dlc,file,tag)).
 

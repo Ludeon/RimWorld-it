@@ -27,8 +27,10 @@ import freshness as freshness_mod
 import argscheck as argscheck_mod
 import pluralcheck as pluralcheck_mod
 import syntaxcheck as syntaxcheck_mod
+import gendercheck as gendercheck_mod
 import clean as clean_mod
 import report as report_mod
+import stripbasedesc as stripbasedesc_mod
 
 app = typer.Typer(
     add_completion=False,
@@ -408,6 +410,55 @@ def syntax_check(
     console.print(f"[green]Dettaglio:[/] {out}")
 
 
+@app.command("strip-basedesc", help="Rimuove le iniezioni morte *.baseDesc dalle BackstoryDef (il gioco 1.6 usa <description>). DRY-RUN salvo --apply.")
+def strip_basedesc(
+    dlc: Optional[List[str]] = typer.Option(None, "--dlc", help="Limita a una o piu DLC"),
+    exclude: Optional[List[str]] = typer.Option(None, "--exclude", help="Salta file per nome (es. Solid_Child) - utile per non collidere con un'altra sessione"),
+    apply: bool = typer.Option(False, "--apply", help="Scrive i file (default: solo anteprima)"),
+):
+    results = stripbasedesc_mod.run(dlc or None, set(exclude or []), apply=apply)
+    total = sum(r.removed for r in results)
+    mode = "RIMOSSE" if apply else "DA RIMUOVERE (anteprima)"
+    t = Table(title=f"strip-basedesc - {total} righe {mode} in {len(results)} file")
+    t.add_column("File"); t.add_column("baseDesc", justify="right", style="bold")
+    for r in sorted(results, key=lambda r: -r.removed):
+        t.add_row(r.rel, str(r.removed))
+    console.print(t)
+    if not results:
+        console.print("[green]Nessun baseDesc morto: BackstoryDef gia' pulite.[/]")
+        return
+    if apply:
+        console.print(f"[green]Fatto:[/] rimosse {total} righe morte. Ricostruisci il ledger: rwit ledger build")
+    else:
+        console.print("[yellow]Anteprima.[/] Riesegui con [bold]--apply[/] per scrivere i file.")
+
+
+@app.command("gender-check", help="Linter concordanza di genere: articolo/aggettivo FISSO davanti a costrutto che flette ({gender ? o:a}).")
+def gender_check(
+    dlc: Optional[List[str]] = typer.Option(None, "--dlc", help="Limita a una o piu DLC"),
+):
+    hits = gendercheck_mod.scan(dlc or None)
+    t = Table(title=f"Concordanza di genere sospetta IT - {len(hits)} stringhe")
+    t.add_column("DLC"); t.add_column("Conteggio", justify="right", style="bold")
+    from collections import Counter
+    for d, n in Counter(h.dlc for h in hits).most_common():
+        t.add_row(d, str(n))
+    console.print(t)
+    if not hits:
+        console.print("[green]Nessun problema: nessun articolo/aggettivo fisso davanti a un costrutto flesso.[/]")
+        return
+    out = config.reports_dir() / f"gendercheck_{datetime.now():%Y%m%d_%H%M}.txt"
+    lines = [f"# gender-check - {len(hits)} stringhe con concordanza di genere sospetta\n"]
+    cur = None
+    for h in sorted(hits, key=lambda h: (h.file, h.line or 0)):
+        if h.file != cur:
+            lines.append(f"\n=== {h.file} ==="); cur = h.file
+        lines.append(f"  L{(h.line or 0):<5} [{h.kind}] {h.detail}")
+        lines.append(f"     IT: {h.it}")
+    out.write_text("\n".join(lines), encoding="utf-8")
+    console.print(f"[green]Dettaglio:[/] {out}")
+
+
 @app.command(help="(Ri)crea i symlink Italiano nell'installazione del gioco.")
 def link(game_data: Optional[str] = typer.Option(None, "--game-data")):
     data = config.game_data(game_data)
@@ -496,11 +547,32 @@ def ledger_report(
         webbrowser.open(out.as_uri())
 
 
-@ledger_app.command("validate", help="Promuove a 'validated' (fissa la baseline degli hash).")
+@ledger_app.command("validate", help="Promuove a 'validated' (fissa la baseline degli hash). Filtra con --file/--tag per validare solo cio' che hai rivisto.")
 def ledger_validate(
     dlc: Optional[List[str]] = typer.Option(None, "--dlc"),
+    file: Optional[List[str]] = typer.Option(None, "--file", help="Solo i file che combaciano (sottostringa, ripetibile)"),
+    tag: Optional[List[str]] = typer.Option(None, "--tag", help="Solo i tag che combaciano (sottostringa, ripetibile)"),
+    list_only: bool = typer.Option(False, "--list", help="Elenca le voci ANCORA da validare (translated/modified) e esci, senza validare"),
     yes: bool = typer.Option(False, "--yes", "-y", help="Conferma senza prompt"),
 ):
+    if file or tag or list_only:
+        keys = ledger_mod.keys_matching(files=file, tags=tag, dlcs=dlc or None)
+        if list_only:
+            console.print(f"[cyan]{len(keys)} voci ancora da validare[/] (translated/modified):")
+            for _d, _f, tg in keys:
+                console.print(f"  {tg}")
+            return
+        if not keys:
+            console.print("[yellow]Nessuna riga 'translated'/'modified' combacia coi filtri.[/]")
+            raise typer.Exit(1)
+        if not yes:
+            filt = f"file={file or '*'} tag={tag or '*'}" + (f" dlc={dlc}" if dlc else "")
+            console.print(f"[yellow]Marchero 'validated' {len(keys)} righe ({filt}).[/]")
+            console.print("Rilancia con --yes per confermare.")
+            raise typer.Exit(1)
+        n = ledger_mod.set_status_keys(keys, "validated")
+        console.print(f"[green]Validate {n} stringhe.[/]")
+        return
     target = ", ".join(dlc) if dlc else "TUTTE le DLC"
     if not yes:
         console.print(f"[yellow]Marchero 'validated' le stringhe tradotte in: {target}.[/]")
