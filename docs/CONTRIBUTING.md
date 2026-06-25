@@ -60,7 +60,9 @@ CLI in `scripts/rwit/`. Core commands:
 
 QA tools (offline, deterministic): `lang-check` (wrong language), `args-check` (placeholder
 mismatch EN↔IT), `plural-check` (English `[Symbol]s` plural leaking on screen), `syntax-check`
-(engine-breaking syntax: malformed gender ternaries + unbalanced `{}`/`[]`), `strings-diff` /
+(engine-breaking syntax: malformed gender ternaries + unbalanced `{}`/`[]`), `gender-check`
+(agreement: a fixed gendered article/adjective left before a construct that flips gender, e.g.
+"un guerriera"), `strings-diff` /
 `reconcile` (align lists to the game's English), `freshness` (Words lists vs the game + gender
 variants vs base), `variants` (morphological variants via Morph-it!; `variants noun-gender`
 splits a noun list by gender), `ledger` (+ the **Flask** review dashboard:

@@ -4,12 +4,54 @@
 > for release).
 > Session document. Status and decisions updated as we go.
 
-## 0. RESUME — start here (last update 2026-06-23)
+## 0. RESUME — start here (last update 2026-06-25)
+
+### Since 06-23 (committed)
+- Namer review continued (Ideology roles/factions/places ordering + FR residuals + validations),
+  `rwit namegen` injects the implicit `r_name->[terrain_word]` default, dashboard got
+  validation-state badges + confirmation toasts in the Name-generator tab.
+- **The translation itself is complete.** `rwit ledger todo` = 0. The remaining workstream is the
+  **validation pass** (promote `translated → validated`): see the roadmap in **§5.4**.
+- Ledger 2026-06-25: 34,034 strings — **161 validated · 677 keep · 33,196 to validate**. RulePackDef
+  name-generators are essentially validated (all 161 validated rows are RulePackDef). Now starting
+  **Phase A — backstories**, file `Core/DefInjected/BackstoryDef/Solid_Child.xml` (prose, in blocks).
 
 **Active branch**: `aggiornamento-1.6.4850` (never push to master). Everything committed (NOT
 pushed). To resume: `git checkout aggiornamento-1.6.4850`. **A second session works in parallel**
 on Core namers (People/Scenarios/Outlander/settlements + `Strings/WordParts/Syllables`); always
 `git add` your own files explicitly, never `git add -A`.
+
+### Also done 2026-06-25 (this session)
+- **Dead `baseDesc` cleanup**: in RW 1.6 backstories are `BackstoryDef` and the shown text is
+  `<description>` (inherited from `Def`); the old `<baseDesc>` is no longer a Def field, so those
+  injections were phantom strings the game never read (confirmed: game Defs + official FR/DE/ES×2
+  ship `.description`, zero `.baseDesc`). New tool **`rwit strip-basedesc`** removed ~825 dead lines
+  across 23 `*/DefInjected/BackstoryDef/*.xml`. When validating a backstory file, only
+  `description`/`title*` are the live fields.
+- **Games pluralia tantum in the Scenari namer**: `i dadi` / `gli scacchi` / `le carte` couldn't fit
+  the singular `Game_Masculine/Feminine` (those feed `[maybe_am]`/`[transM]` = singular il/la-class).
+  Wired 3 article-class plural files (`Games_Plural_Masculine` //i, `Games_Plural_Masculine_Gli` //gli
+  *(new)*, `Games_Plural_Feminine` //le) + symbols in `RulePacks_Global` + branches in
+  `RulePacks_Namers_Scenarios` with a **new `transPluralGli`** (degli/negli/sugli…) alongside
+  `transPluralM`(dei) / `transPluralF`(delle). NB the file `//` header is **documentation only** —
+  the article comes from the template's `trans*` symbol, not the header. `freshness` now counts the
+  plural axis as a *residual* (guarded, no double-count) → **0 variant stale**. Verified via `namegen`.
+- `Solid_Adult.xml` validated in `VALIDATION-FILES.csv` (live fields clean).
+
+### NEXT SESSION — TODO (priority order)
+1. **Art namer plurals** (`RulePacks_Namers_Art.xml`): same treatment as the Scenari namer above, but
+   Art needs the plural *indefinite* article (dei/degli/delle/∅) + **plural adjective agreement**
+   (`maybe_adjective_mp`/`_fp` from the existing `*_Plural_Masculine/Feminine` adjective lists). Today
+   Art still uses only the singular `Game_Masculine/Feminine`.
+2. **Validation pass — Phase A backstories** (§5.4): keep walking `docs/VALIDATION-FILES.csv` in file
+   order. `Solid_Adult` done; `Solid_Child` in progress on the other console. **Partition to avoid
+   collisions**: one console owns Core, the other owns the DLCs' `DefInjected`.
+3. **In-game tests** (needs the game): combat log `le braccia`/vowel elision after `nel/al`,
+   `[WEAPON_indefinite]`/`[recipient_partN_definite]` resolution, namer output.
+4. **Data-model residuals**: `[PersonalCharacteristic]` article; `di`+article fusion in the 6 Ideology
+   Speech packs (`di il`→`del`).
+5. **Cleanup**: remove the now-unused `Games_Singular_*` variant cruft (the live split is
+   `_Masculine`/`_Feminine`; `_Singular_*` is unreferenced and was misleading).
 
 ### Done in the 2026-06-22/23 session (all committed)
 
@@ -220,7 +262,8 @@ was English-fallback for `[VerbFriendly]`) + adapted 4 Tales frames to gerund. L
 5. Optional cleanup: standardise the gender-variant file naming (`_Singular_Masculine` vs
    `_Masculine`); the few base-vs-game divergences if any turn out to be real (`rwit reconcile`).
 
-**Quick tooling reference**: `rwit --help` · `rwit freshness` · `rwit ledger build|keep|todo`.
+**Quick tooling reference**: `rwit --help` · `rwit freshness` · `rwit ledger build|keep|todo` ·
+`rwit syntax-check` · `rwit gender-check` (concordanza di genere, §5.4).
 Dashboard: `python scripts\dashboard\server.py` (Flask, :5000). Sibling repos:
 `RimWorld-fr` (M/F, our gender model) `/de` (M/F/N + cases, fully data-driven) `/Spanish`.
 Game install auto-detected (`config.game_data()`); decompiler: `scripts/.tools/ilspycmd.exe`.
@@ -326,6 +369,48 @@ See [`NAME-GENERATION-AND-GRAMMAR.md`](NAME-GENERATION-AND-GRAMMAR.md) §5. Meas
 - [ ] **95 unused keyed**: NOT removed in bulk — some are actually referenced. Needs `rwit clean`.
 - [ ] Review the 109 keyed = English: most should be kept (symbols/units/acronyms).
 
+### 5.4 Validation roadmap — next sessions (from 2026-06-25)
+
+The translation is complete; what remains is the **quality/validation pass** that promotes
+`translated → validated` in the ledger. State at 2026-06-25: **33,196 to validate** (161 done).
+Too large to eyeball string-by-string, so combine three modes (leverage before brute force):
+
+1. **Automated lint sweep (whole corpus, once).** Checker for the recurring bug classes: fixed
+   article/adjective before a `{gender ? o:a}` suffix (e.g. `un bravo cadett{o:a}` → wrong for
+   female), malformed ternaries (`>1 ?`/`:`, redundant `{e:e}`), broken `\n\n`, residual FR/EN,
+   `[VAR]`/`{VAR}` integrity. Most exists already (`rwit lang-check`/`args-check`/`syntax-check`);
+   **add a gender-agreement check**. Fix the real hits, then the files validate fast.
+2. **Human prose review (high-visibility files only).** Read in blocks, fix naturalness + gender,
+   validate in the dashboard. Reserve for player-facing narrative.
+3. **Bulk-validate short labels (low risk).** Single-word/short-label defs — once the lint is
+   clean, validate whole files from the dashboard without per-string reading.
+
+**Phased order (by visibility/impact, resumable):**
+
+| Phase | Content | ~strings | Mode |
+|-------|---------|----------|------|
+| **A** (in progress) | BackstoryDef: `Solid_Child` → `Solid_Adult` → `Solid_Rare`/`Special` → `Tribal_*` → `Offworld_*` → `Pirate`/`Outsider` → Royalty `Imperial*` → Anomaly | 4,157 | prose, blocks |
+| **B** | ThoughtDef (Ideology 1001 → Core 847 → Biotech → Anomaly → Royalty → Odyssey) | 2,384 | lint + quick confirm |
+| **C** | Keyed/UI (Core 4787 → Biotech → Ideology → Anomaly → Odyssey → Royalty) | 8,096 | lint placeholders + fast read |
+| **D** | Def descriptions (Thing/Gene/Precept/Meme/Hediff/Incident/Tale/QuestScript) | ~10k | prose on `<description>`, bulk on `.label` |
+| **E** | Short labels left (Body/Stat/Skill/Color/Recipe/categories…) | ~8k | lint + bulk-validate |
+| **F** | Remaining RulePackDef + **in-game Dev-mode confirm** (combat/social log, namer output, §5.2-ter) → merge to master | — | needs the game |
+
+**Per-session protocol:** (1) start `server.py`, pick the next file in the phase order; (2) optional
+lint sweep on that file/phase → fix real hits, commit `content(<dlc>): …`; (3) review block-by-block
+(prose) or whole-file (labels), validate in the dashboard (writes the CSV); (4) commit the ledger CSV
++ content fixes, update §0 RESUME with the file reached.
+
+**`rwit gender-check` (NEW, 2026-06-25) — the gender-agreement linter.** Flags a FIXED gendered
+article/adjective (un/il/del/nel/bravo…) left in front of a construct that flips gender
+(`radice{VAR_gender ? o:a}` or `{VAR_gender ? uomo:donna}`) → one of the two renders is
+ungrammatical (e.g. "un guerriera", "un donna", "il la propria figlia"). Skips article-only
+ternaries (`{gender ? lo:la}`/`{un:una}`) so the clitic FP "Questo {lo:la}" is not flagged.
+First run on the whole corpus: **5 real bugs, 0 false positives**, all fixed (`Solid_Child` ×4,
+`Pirate_Adult`, `MechanoidNerd10`, `VatgrownAssassin20`, `AcademyStudent58`). Run per file/phase
+before validating; the buggy form is usually in `.description` while the `.baseDesc` sibling is
+already correct (move the article inside the ternary: `{gender ? un guerriero:una guerriera}`).
+
 ## 6. Documentation for future developers (this session)
 
 - `CLAUDE.md` (root, tracked): project instructions, personal paths removed, points to the docs.
@@ -357,5 +442,6 @@ See [`NAME-GENERATION-AND-GRAMMAR.md`](NAME-GENERATION-AND-GRAMMAR.md) §5. Meas
 | Combat log in-game verification (Dev mode) | ⬜ needs the game |
 | `LangLive` live-reload dev mod (separate repo) | ✅ built + guarded (`Playing` only); v1.1 fast-path TODO |
 | Cleanup rename/unused keyed (→ `rwit clean`) | ⬜ tooling |
-| Broad translation review (iterative, per DLC) | 🔄 in progress — dashboard at **page 21** |
+| RulePackDef namers validated (via Name-generator tab) | ✅ 161 validated rows |
+| Validation pass `translated → validated` (roadmap §5.4) | 🔄 Phase A — `Solid_Child` baseDesc stripped (1547→1247), first block reviewed+validated; **213 validated** total |
 | Merge to master | ⬜ at release (never direct push) |
