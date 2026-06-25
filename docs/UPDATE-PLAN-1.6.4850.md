@@ -55,6 +55,15 @@ on Core namers (People/Scenarios/Outlander/settlements + `Strings/WordParts/Syll
   the other console's `Solid_Adult` rows (other console committed `Solid_Adult.xml` but not the CSV).
   Validations are safe on disk (dashboard reads disk); commit the CSV in a coordinated `tooling()` step.
 
+### 2026-06-26 (Keyed pass — Core console)
+- **`Core/Keyed/Misc_Gameplay.xml` validation COMPLETE**: intero file riletto (2191 righe, IT↔EN);
+  linter puliti. 27 fix in 1 commit `content(core)`: refusi (`recovero`,`alimali`,`appartieneva`,
+  `deterioramente`); token rotti (`{0_nomeDef}`→`{0_nameDef}`, `{PAWN_possessive}`→`{PAWN_pronoun}`);
+  falsi sensi (`Passaggio per il paradiso`/offworld, `Hackerare i progressi`, `Roped*` non "in sella",
+  `Congelato`→`Refrigerato`); divergenze EN (CaravanDetectedRaidCountdownTip, RitualEndsIn `tra`,
+  LordReportAttending, …); `avvenimento`→`avviamento`; `\n\n` ripristinati. Validato **962 voci**
+  (scoping `--dlc Core` per non toccare le copie Anomaly/Biotech/Odyssey). CSV committato a parte.
+
 ### NEXT SESSION — TODO (priority order)
 1. **Art namer plurals** (`RulePacks_Namers_Art.xml`): same treatment as the Scenari namer above, but
    Art needs the plural *indefinite* article (dei/degli/delle/∅) + **plural adjective agreement**
