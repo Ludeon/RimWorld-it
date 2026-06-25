@@ -26,6 +26,10 @@
     <li>r_name->[story] [transVowel][TerrainFeature_Vowel]</li>
     <li>r_name->[story] [transM] [Game_Masculine]</li>
     <li>r_name->[story] [transF] [Game_Feminine]</li>
+    <!-- giochi pluralia tantum: i dadi / gli scacchi / le carte (3 classi d'articolo) -->
+    <li>r_name->[story] [transPluralM] [Game_PluralMasculine]</li>
+    <li>r_name->[story] [transPluralGli] [Game_PluralMasculineGli]</li>
+    <li>r_name->[story] [transPluralF] [Game_PluralFeminine]</li>
     <li>r_name->[story] [transPluralM] [PersonJob_PluralMasculine]</li>
     <li>r_name->[story] [transPluralF] [PersonJob_PluralFeminine]</li>
     <li>r_name->[story] [Trans] [ConceptAny]</li>
@@ -57,6 +61,11 @@
     <li>transPluralM->nei</li>
     <li>transPluralM->sui</li>
     <li>transPluralM->per i</li>
+    <li>transPluralGli->degli</li>
+    <li>transPluralGli->dagli</li>
+    <li>transPluralGli->negli</li>
+    <li>transPluralGli->sugli</li>
+    <li>transPluralGli->per gli</li>
     <li>transPluralF->delle</li>
     <li>transPluralF->dalle</li>
     <li>transPluralF->nelle</li>

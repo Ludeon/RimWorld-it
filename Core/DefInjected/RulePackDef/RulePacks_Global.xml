@@ -146,6 +146,11 @@
     <!-- Armi/giochi per genere -->
     <li>Game_Masculine->Words/Nouns/Games_Masculine</li>
     <li>Game_Feminine->Words/Nouns/Games_Feminine</li>
+    <!-- giochi pluralia tantum, divisi per classe d'articolo (i / gli / le): l'articolo
+         lo mette il template del namer (transPluralM/Gli/F), non l'header del file -->
+    <li>Game_PluralMasculine->Words/Nouns/Games_Plural_Masculine</li>
+    <li>Game_PluralMasculineGli->Words/Nouns/Games_Plural_Masculine_Gli</li>
+    <li>Game_PluralFeminine->Words/Nouns/Games_Plural_Feminine</li>
     <li>Weapon_Masculine->Words/Nouns/Weapons_Masculine</li>
     <li>Weapon_Feminine->Words/Nouns/Weapons_Feminine</li>
     <!-- Caratteristiche del terreno per genere/iniziale -->

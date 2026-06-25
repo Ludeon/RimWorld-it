@@ -65,6 +65,16 @@ def _variant_counts(base: Path) -> dict[str, int]:
     return out
 
 
+def _plural_total(base: Path) -> int:
+    """Voci totali nei file plurali X_Plural_*.txt (tutte le classi d'articolo: i/gli/le).
+
+    Serve SOLO come residuo per i pluralia tantum (scacchi/carte/dadi) che non hanno
+    forma singolare e quindi non stanno nello split _Masculine/_Feminine. NON va sommato
+    sempre: per i nomi regolari i _Plural_ sono la forma plurale degli stessi nomi (vedi
+    la guardia in check(): si conta solo se il singolare da' solo NON copre la base)."""
+    return sum(_count(p) or 0 for p in base.parent.glob(f"{base.stem}_Plural_*.txt"))
+
+
 def check(dlcs=None, game_override: str | None = None):
     """Ritorna (base_issues, var_issues, has_game).
 
@@ -97,8 +107,11 @@ def check(dlcs=None, game_override: str | None = None):
             if "Masculine" in vc and "Feminine" in vc and it_n is not None:
                 mc, fc = vc["Masculine"], vc["Feminine"]
                 total = sum(vc.values())
-                # nomi: somma di tutte le classi == base ; aggettivi/colori: M == base == F
-                ok = total == it_n or mc == it_n == fc
+                # nomi: somma classi singolari == base ; aggettivi/colori: M == base == F ;
+                # pluralia tantum: il residuo non-singolarizzabile vive nei _Plural_* (guardia:
+                # ci si arriva solo se il singolare da solo NON copre, quindi niente doppi conteggi)
+                ok = (total == it_n or mc == it_n == fc
+                      or total + _plural_total(f) == it_n)
                 # un genere VUOTO mentre l'altro e pieno = quasi sempre un errore (es. una
                 # lista di aggettivi/colori splittata per sbaglio come nome): segnalalo
                 # anche se la somma tornasse (M=base, F=0 -> M+F=base ma e sbagliato).
