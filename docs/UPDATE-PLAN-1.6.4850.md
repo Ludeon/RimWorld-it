@@ -39,10 +39,13 @@ on Core namers (People/Scenarios/Outlander/settlements + `Strings/WordParts/Syll
 - `Solid_Adult.xml` validated in `VALIDATION-FILES.csv` (live fields clean).
 
 ### 2026-06-26 (this session, Core console)
-- **Phase A — `Solid_Child.xml` validation, ~50% done**: reviewed+validated in ~20-entry blocks
-  from `BrothelGofer84` through **`OffworldRecruit91`** (≈541 strings → `validated`). **Resume at the
-  next non-validated entry** (`rwit ledger validate --file Solid_Child.xml --list`, first entry after
-  `OffworldRecruit91`, i.e. the `O…/P…` range).
+- **Phase A — `Solid_Child.xml` validation COMPLETE**: whole file reviewed in ~20-entry blocks and
+  validated (1074 strings → `validated`, 0 left). **Next file**: continue `docs/VALIDATION-FILES.csv`
+  in order — `Solid_Adult` already done, so next is `Solid_Rare`/`Special`, then `Tribal_*` etc.
+- ⚠️ **Shared-CSV race observed**: midway, the other console's `ledger build` clobbered the
+  validations written after its read (blocks from `RitualChild20` on reverted to `translated`).
+  Recovered with a final `rwit ledger validate --file Solid_Child.xml --yes`. Lesson: after a parallel
+  `ledger build`, re-run the per-file validate to confirm it stuck (`--list` should show 0).
 - Content fixes committed (2 commits): slash forms `lo/la`/`preso/a` → ternaries; many fixed-gender
   adjectives/nouns (`pessimo`, `privo`, `pigro`, `l'eroe`, `neonato`, `scienziato`/`scienziata`
   titles, `lo costrinse`, `inviato`); a `Sebbene`+indicativo → congiuntivo; `mondo/pianeta` title
