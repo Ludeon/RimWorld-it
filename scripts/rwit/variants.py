@@ -103,6 +103,61 @@ def gen_noun(name: str, dlc: str = "Core", lemmas: list[str] | None = None):
     return fallback
 
 
+def _def_article(word: str, gender: str) -> str:
+    """Articolo determinativo singolare per la parola (testa = prima parola del sintagma)."""
+    w = word.lower().lstrip("﻿ ").strip()
+    if not w:
+        return "il"
+    if w[0] in "aeiou":           # vocale -> elisione (entrambi i generi): l'
+        return "l'"
+    if gender == "f":
+        return "la"
+    # maschile: lo davanti a s impura / z / gn / pn / ps / x / y, altrimenti il
+    if w[:2] in ("gn", "pn", "ps") or w[0] in ("z", "x", "y") or (
+        w[0] == "s" and len(w) > 1 and w[1] not in "aeiou"
+    ):
+        return "lo"
+    return "il"
+
+
+def gen_def_article(name: str, dlc: str = "Core") -> dict[str, int]:
+    """Dalle liste già divise per genere produce i bucket per articolo determinativo
+    singolare (il/lo/la/l'), pronti per un simbolo `<Nome>_def->il [<Nome>_Def_Il]`…:
+        <Nome>_Def_Il.txt   (il …)
+        <Nome>_Def_Lo.txt   (lo … : s impura, z, gn, ps…)
+        <Nome>_Def_La.txt   (la …)
+        <Nome>_Def_L.txt    (l'…  : iniziale vocalica, entrambi i generi)
+    Il genere NON viene re-inferito: si fida delle liste curate a mano
+    `<Nome>_Male.txt`/`<Nome>_Female.txt` (fallback `_Singular_Masculine/_Feminine`).
+    Ritorna i conteggi per bucket (utili per pesare le `<li>` del simbolo).
+    """
+    base = config.repo_root() / dlc / "Strings" / "Words" / "Nouns"
+    pairs = [
+        (base / f"{name}_Male.txt", base / f"{name}_Singular_Masculine.txt", "m"),
+        (base / f"{name}_Female.txt", base / f"{name}_Singular_Feminine.txt", "f"),
+    ]
+    buckets = {"Il": [], "Lo": [], "La": [], "L": []}
+    found = False
+    for primary, fallback, gender in pairs:
+        src = primary if primary.exists() else fallback
+        if not src.exists():
+            continue
+        found = True
+        for w in _read(src):
+            art = _def_article(w, gender)
+            key = {"il": "Il", "lo": "Lo", "la": "La", "l'": "L"}[art]
+            buckets[key].append(w)
+    if not found:
+        raise FileNotFoundError(
+            f"Nessuna lista di genere per {name} in {base} "
+            f"(attesi {name}_Male/_Female o _Singular_Masculine/_Feminine)"
+        )
+    for art, words in buckets.items():
+        if words:
+            _write(base / f"{name}_Def_{art}.txt", words)
+    return {k: len(v) for k, v in buckets.items()}
+
+
 def gen_noun_gender(name: str, dlc: str = "Core", lemmas: list[str] | None = None):
     """Spezza una lista nomi (singolari) per genere -> 2 file:
         <Nome>_Singular_Masculine.txt

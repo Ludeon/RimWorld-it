@@ -106,12 +106,13 @@
     <li>wooed->inseguito</li>
     <li>wooed->affascinato</li>
     <li>wooed->conquistato</li>
-    <li>wootactic(p=4)->[complimenting] [PersonalCharacteristic] di [RECIPIENT_nameDef]</li>
+    <li>wootactic(p=4)->[complimenting] [PersonalCharacteristic_def] di [RECIPIENT_nameDef]</li>
     <li>wootactic->raccontando una storia su [TalkTopicAny]</li>
     <li>wootactic->raccontando un aneddoto su [TalkTopicAny]</li>
     <li>wootactic->scherzando su [TalkTopicAny]</li>
     <li>wootactic->facendo un'osservazione su [TalkTopicAny]</li>
-    <li>wootactic(p=2)->[boasting] il proprio [PersonalCharacteristic]</li>
+    <li>wootactic(p=1)->[boasting] il proprio [PersonalCharacteristic_Male]</li>
+    <li>wootactic(p=1)->[boasting] la propria [PersonalCharacteristic_Female]</li>
     <li>wootactic->paragonando [RECIPIENT_nameDef] a un [romantic_adj] [romantic_noun]</li>
     <li>wootactic->descrivendo [RECIPIENT_nameDef] come un [romantic_adj] [romantic_noun]</li>
     <li>boasting->vantando</li>

@@ -127,6 +127,11 @@
     <li>PersonalCharacteristic->Words/Nouns/PersonalCharacteristics</li>
     <li>PersonalCharacteristic_Female->Words/Nouns/PersonalCharacteristics_Female</li>
     <li>PersonalCharacteristic_Male->Words/Nouns/PersonalCharacteristics_Male</li>
+    <!-- bucket per articolo determinativo singolare (l'articolo è nel simbolo *_def sotto) -->
+    <li>PersonalCharacteristic_Def_Il->Words/Nouns/PersonalCharacteristics_Def_Il</li>
+    <li>PersonalCharacteristic_Def_Lo->Words/Nouns/PersonalCharacteristics_Def_Lo</li>
+    <li>PersonalCharacteristic_Def_La->Words/Nouns/PersonalCharacteristics_Def_La</li>
+    <li>PersonalCharacteristic_Def_L->Words/Nouns/PersonalCharacteristics_Def_L</li>
     <!-- Concetti per genere (accordo aggettivo/articolo nei namer) -->
     <li>ConceptPositive_Masculine->Words/Nouns/Concepts_Positive_Masculine</li>
     <li>ConceptPositive_Feminine->Words/Nouns/Concepts_Positive_Feminine</li>
@@ -338,6 +343,13 @@
     <li>NaturalObjectPlural->[NaturalObject_PluralF]</li>
     <li>PersonJobPlural(p=3)->[PersonJob_PluralMasculine]</li>
     <li>PersonJobPlural->[PersonJob_PluralFeminine]</li>
+    <!-- caratteristica con articolo determinativo singolare corretto (il/lo/la/l'), per i log
+         insulto/complimento/scherno ("ha insultato l'eleganza di X"). Pesi = dimensione bucket
+         (88 voci totali) -> distribuzione uniforme sulle singole caratteristiche. -->
+    <li>PersonalCharacteristic_def(p=23)->il [PersonalCharacteristic_Def_Il]</li>
+    <li>PersonalCharacteristic_def(p=1)->lo [PersonalCharacteristic_Def_Lo]</li>
+    <li>PersonalCharacteristic_def(p=24)->la [PersonalCharacteristic_Def_La]</li>
+    <li>PersonalCharacteristic_def(p=40)->l'[PersonalCharacteristic_Def_L]</li>
     <li>PersonalCharacteristic(p=0.15)->genitali</li>
     <li>PersonalCharacteristic(p=0.15)->peli pubici</li>
     <li>PersonalCharacteristic(p=0.15)->peli corporei</li>

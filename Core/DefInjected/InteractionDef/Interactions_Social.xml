@@ -110,9 +110,9 @@
     <!-- 'ha [insulted] [caratteristica] di [RECIPIENT]' (modello FR); participi NUDI transitivi.
          'compared to' -> 'ha paragonato ... a' (non 'confrontato con'); articolo dentro
          insultcomparison con accordo di genere (un/una via liste Animal/Enemy _Masculine/_Feminine).
-         Residui: l'articolo sulla caratteristica (lista a genere misto) e i casi fonologici
-         dell'indefinito (uno scorpione, un'iena) non risolvibili senza split vocale/s-impura. -->
-    <li>r_logentry(p=3)->[INITIATOR_nameDef] ha [insulted] [PersonalCharacteristic] di [RECIPIENT_nameDef].</li>
+         [PersonalCharacteristic_def] porta l'articolo determinativo corretto (il/lo/la/l').
+         Residuo: i casi fonologici dell'indefinito (uno scorpione, un'iena) in insultcomparison. -->
+    <li>r_logentry(p=3)->[INITIATOR_nameDef] ha [insulted] [PersonalCharacteristic_def] di [RECIPIENT_nameDef].</li>
     <li>r_logentry->[INITIATOR_nameDef] ha paragonato [RECIPIENT_nameDef] a [insultcomparison].</li>
     <li>r_logentry->[INITIATOR_nameDef] ha chiamato [RECIPIENT_nameDef] [insultcomparison].</li>
     <li>insulted(p=3)->insultato</li>
@@ -152,7 +152,7 @@
     <li>complimented->said good things about</li>
   -->
   <KindWords.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] ha [complimented] [PersonalCharacteristic] di [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha [complimented] [PersonalCharacteristic_def] di [RECIPIENT_nameDef].</li>
     <li>complimented(p=3)->lodato</li>
     <li>complimented->elogiato</li>
     <li>complimented->apprezzato</li>
@@ -190,7 +190,7 @@
     <li>madefunof->offered a backhanded compliment about</li>
   -->
   <Slight.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] ha [madefunof] [PersonalCharacteristic] di [RECIPIENT_nameDef].</li>
+    <li>r_logentry->[INITIATOR_nameDef] ha [madefunof] [PersonalCharacteristic_def] di [RECIPIENT_nameDef].</li>
     <li>madefunof->deriso</li>
     <li>madefunof->disprezzato</li>
     <li>madefunof->sottilmente disprezzato</li>

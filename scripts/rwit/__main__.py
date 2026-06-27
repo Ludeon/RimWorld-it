@@ -649,6 +649,13 @@ def variants_noun_gender(name: str, dlc: str = typer.Option("Core", "--dlc")):
         console.print(f"[yellow]Fallback a regole ({len(fb)}, da rivedere):[/] {', '.join(fb)}")
 
 
+@variants_app.command("def-article", help="Dai bucket di genere (_Male/_Female) crea i bucket per articolo determinativo singolare: _Def_Il/Lo/La/L.")
+def variants_def_article(name: str, dlc: str = typer.Option("Core", "--dlc")):
+    counts = variants_mod.gen_def_article(name, dlc)
+    console.print(f"[green]Generato:[/] {dlc}/Strings/Words/Nouns/{name}_Def_(Il|Lo|La|L).txt")
+    console.print(f"  conteggi (per pesare le <li>): {counts}")
+
+
 def _safe(fn):
     try:
         fn()
