@@ -68,7 +68,7 @@
   <!-- EN: {0} to {1} -->
   <PreceptThoughtMoodRange>Da {0} a {1}</PreceptThoughtMoodRange>
   <!-- EN: Comes from ideo -->
-  <ComesFromIdeo>Nasce da un'idea</ComesFromIdeo>
+  <ComesFromIdeo>Deriva dall'ideoligione</ComesFromIdeo>
   <!-- EN: Current total animal bodysize per colonist -->
   <CurrentTotalAnimalBodySizePerColonist>Dimensione corporea totale attuale dell'animale per colono</CurrentTotalAnimalBodySizePerColonist>
   <!-- EN: total bodysize per colonist -->
@@ -78,7 +78,7 @@
   <!-- EN: Expecting at least {0} body size per colonist. -->
   <MinAnimalBodySizePerColonist>Sono previste almeno {0} dimensioni corporee per colono.</MinAnimalBodySizePerColonist>
   <!-- EN: Disables -->
-  <Disables>Disabili</Disables>
+  <Disables>Disabilita</Disables>
   <!-- EN: Requires one of precepts -->
   <RequiresOnePrecept>Richiede uno dei precetti</RequiresOnePrecept>
   <!-- EN: Required precepts -->
@@ -96,7 +96,7 @@
   <!-- EN: , or the color of {PAWN_possessive} ideoligion, -->
   <OrIdeoColor>, o il colore dell'ideoligione {PAWN_possessive},</OrIdeoColor>
   <!-- EN: Set ideo color -->
-  <SetIdeoColor>Set di idee a colori</SetIdeoColor>
+  <SetIdeoColor>Imposta colore ideoligione</SetIdeoColor>
   <!-- EN: Set to favorite color -->
   <SetFavoriteColor>Imposta il colore preferito</SetFavoriteColor>
   <!-- EN: {PAWN_nameDef}'s favorite color. Having more than 60% of {PAWN_possessive} apparel in this color, or the color of {PAWN_possessive} ideoligion, will make {PAWN_objective} slightly happier. -->
@@ -108,13 +108,13 @@
   <!-- EN: Not enough dye. -->
   <NotEnoughDye>Non abbastanza colorante.</NotEnoughDye>
   <!-- EN: {PAWN_nameDef} is unwilling to recolor {PAWN_possessive} {APPAREL_labelShort}. -->
-  <ApparelLockedCannotRecolor>{PAWN_nameDef} non è disposto a ricolorare {PAWN_possessive} {APPAREL_labelShort}.</ApparelLockedCannotRecolor>
+  <ApparelLockedCannotRecolor>{PAWN_nameDef} non è {PAWN_gender ? disposto : disposta} a ricolorare {PAWN_possessive} {APPAREL_labelShort}.</ApparelLockedCannotRecolor>
   <!-- EN: The colonist will recolor the apparel when dye becomes available. -->
   <NotEnoughDyeWillRecolorApparel>Il colono ricolorerà i vestiti quando la tintura sarà disponibile.</NotEnoughDyeWillRecolorApparel>
   <!-- EN: The colonist will recolor their hair when dye becomes available. -->
   <NotEnoughDyeWillRecolorHair>Il colono ricolorerà i propri capelli quando la tintura sarà disponibile.</NotEnoughDyeWillRecolorHair>
   <!-- EN: {PAWN_labelShort}'s certainty in {IDEO} is at {PERCENTAGE} -->
-  <IdeoCertaintyTooltip>La certezza di {PAWN_labelShort} in {IDEO} è in {PERCENTAGE}</IdeoCertaintyTooltip>
+  <IdeoCertaintyTooltip>La certezza di {PAWN_labelShort} in {IDEO} è al {PERCENTAGE}</IdeoCertaintyTooltip>
   <!-- EN: Disabled by precept {0} -->
   <DisabledByPrecept>Disabilitato dal precetto {0}</DisabledByPrecept>
   <!-- EN: Everyone -->
@@ -142,7 +142,7 @@
   <!-- EN: Points needed to reform -->
   <ReformDevelopmentPoints>Punti necessari per la riforma</ReformDevelopmentPoints>
   <!-- EN: quest -->
-  <QuestLower>ricerca</QuestLower>
+  <QuestLower>missione</QuestLower>
   <!-- EN: Vegetarian -->
   <MealKindVegetarian>Vegetariano</MealKindVegetarian>
   <!-- EN: Contains meat -->
@@ -214,11 +214,11 @@
   <!-- EN: Accuse -->
   <Accuse>Accusare</Accuse>
   <!-- EN: {PAWN_labelShort} does not believe in ideoligious scarification and will not like being scarified. -->
-  <RitualScarificationWarnNonScarificationIdeo>{PAWN_labelShort} non crede nella scarificazione ideologica e non gli piacerà essere scarificato.</RitualScarificationWarnNonScarificationIdeo>
+  <RitualScarificationWarnNonScarificationIdeo>{PAWN_labelShort} non crede nella scarificazione ideologica e non {PAWN_gender ? gli : le} piacerà essere {PAWN_gender ? scarificato : scarificata}.</RitualScarificationWarnNonScarificationIdeo>
   <!-- EN: {PAWN_labelShort} is a wimp and will not like being scarified. -->
-  <RitualScarificationWarnWimp>{PAWN_labelShort} è un buono a nulla e non gli piacerà essere scarificato.</RitualScarificationWarnWimp>
+  <RitualScarificationWarnWimp>{PAWN_labelShort} è {PAWN_gender ? un vigliacco : una vigliacca} e non {PAWN_gender ? gli : le} piacerà essere {PAWN_gender ? scarificato : scarificata}.</RitualScarificationWarnWimp>
   <!-- EN: {PAWN_labelShort} is a wimp and will not like being blinded. -->
-  <RitualBlindingWarnWimp>{PAWN_labelShort} è un fifone e non gli piacerà essere accecato.</RitualBlindingWarnWimp>
+  <RitualBlindingWarnWimp>{PAWN_labelShort} è {PAWN_gender ? un vigliacco : una vigliacca} e non {PAWN_gender ? gli : le} piacerà essere {PAWN_gender ? accecato : accecata}.</RitualBlindingWarnWimp>
   <!-- EN: Scarification is expected for {IDEOMEMBERPLURAL} as long as there are fewer than {0} scarified {IDEOMEMBERPLURAL}. -->
   <RitualScarificationTriggerExtraDesc>È prevista la scarificazione per {IDEOMEMBERPLURAL} purché siano presenti meno di {0} scarificati {IDEOMEMBERPLURAL}.</RitualScarificationTriggerExtraDesc>
   <!-- EN: Blinding is expected for each current and joining {IDEOMEMBER} colonist. -->
@@ -229,7 +229,7 @@
   <!-- EN: Thanks to a satisfying blinding ritual, {PAWN_labelShort} gained a psylink level! -->
   <RitualOutcomeExtraDesc_BlindingPsylink>Grazie ad un soddisfacente rituale di accecamento, {PAWN_labelShort} ha guadagnato un livello di collegamento psichico!</RitualOutcomeExtraDesc_BlindingPsylink>
   <!-- EN: With a new pyslink level {PAWN_pronoun} gained a {0} psycast. -->
-  <RitualOutcomeExtraDesc_BlindingPsylinkAbility>Con un nuovo livello pyslink, {PAWN_pronoun} ha ottenuto uno psycast {0}.</RitualOutcomeExtraDesc_BlindingPsylinkAbility>
+  <RitualOutcomeExtraDesc_BlindingPsylinkAbility>Con un nuovo livello di collegamento psichico, {PAWN_pronoun} ha ottenuto uno psycast {0}.</RitualOutcomeExtraDesc_BlindingPsylinkAbility>
   <!-- EN: Thanks to a satisfying {RITUAL}, {PAWN_labelShort} gained {INSPIRATION}! -->
   <RitualOutcomeExtraDesc_ConsumableInspiration>Grazie ad un soddisfacente {RITUAL}, {PAWN_labelShort} ha guadagnato {INSPIRATION}!</RitualOutcomeExtraDesc_ConsumableInspiration>
   <!-- EN: Your skylanterns have attracted some friendly travelers. They will visit and leave a gift. -->
@@ -245,7 +245,7 @@
   <RitualOutcomeExtraDesc_NoDevelopmentPointsAwarded>A causa della scarsa qualità del rituale, non sono stati guadagnati punti sviluppo.</RitualOutcomeExtraDesc_NoDevelopmentPointsAwarded>
 
   <!-- EN: Additional reward -->
-  <RitualAttachedReward>Premi aggiuntivi</RitualAttachedReward>
+  <RitualAttachedReward>Premio aggiuntivo</RitualAttachedReward>
   <!-- EN: Choose -->
   <RitualAttachedRewardChoose>Scegliere</RitualAttachedRewardChoose>
   <!-- EN: Can't use {0} with {1}. -->
@@ -257,7 +257,7 @@
   <!-- EN: positive -->
   <RitualAttachedOutcomes_Positive>positivo</RitualAttachedOutcomes_Positive>
   <!-- EN: negative -->
-  <RitualAttachedOutcomes_Negative>negativo negativo</RitualAttachedOutcomes_Negative>
+  <RitualAttachedOutcomes_Negative>negativo</RitualAttachedOutcomes_Negative>
   <!-- EN: If the {0} is {1} -->
   <RitualAttachedOutcomesInfo>Se {0} è {1}</RitualAttachedOutcomesInfo>
   <!-- EN: Upon any {0} outcome -->
@@ -290,9 +290,9 @@
   <!-- EN: Repeating a ritual within {0} days reduces its quality. {1} days have passed since the last ritual, so the current quality reduction is {2}. This penalty will fall to zero {3} days from now. -->
   <RitualRepeatPenaltyTip>La ripetizione di un rituale entro {0} giorni ne riduce la qualità. Sono trascorsi {1} giorni dall'ultimo rituale, quindi l'attuale riduzione della qualità è {2}. Questa penalità scenderà a zero {3} giorni da adesso.</RitualRepeatPenaltyTip>
   <!-- EN: For best quality, start the {0} at {1}. -->
-  <RitualOutcomeCompTip_RitualTargetDefsPart1>Per una qualità migliore, iniziare {0} da {1}.</RitualOutcomeCompTip_RitualTargetDefsPart1>
+  <RitualOutcomeCompTip_RitualTargetDefsPart1>Per una qualità migliore, iniziare {0} presso {1}.</RitualOutcomeCompTip_RitualTargetDefsPart1>
   <!-- EN: Currently, the {0} is being started at {1_labelShortIndef}. -->
-  <RitualOutcomeCompTip_RitualTargetDefsPart2>Attualmente, {0} viene avviato alle {1_labelShortIndef}.</RitualOutcomeCompTip_RitualTargetDefsPart2>
+  <RitualOutcomeCompTip_RitualTargetDefsPart2>Attualmente, {0} viene avviato presso {1_labelShortIndef}.</RitualOutcomeCompTip_RitualTargetDefsPart2>
   <!-- EN: Development points -->
   <RitualDevelopmentPoints>Punti di sviluppo</RitualDevelopmentPoints>
   <!-- EN: Completing this ritual gives {0}-{1} development points depending on quality. -->
@@ -314,11 +314,11 @@
 
   <!-- TextMotes -->
   <!-- EN: Slave suppression: {0} -->
-  <TextMote_SuppressionIncreased>Soppressione degli slave: {0}</TextMote_SuppressionIncreased>
+  <TextMote_SuppressionIncreased>Soppressione degli schiavi: {0}</TextMote_SuppressionIncreased>
 
   <!-- Role requirements -->
   <!-- EN: Requirements -->
-  <RoleRequirementsLabel>requisiti</RoleRequirementsLabel>
+  <RoleRequirementsLabel>Requisiti</RoleRequirementsLabel>
   <!-- EN: Passive effects -->
   <RoleEffectsLabel>Effetti passivi</RoleEffectsLabel>
   <!-- EN: Must be {0} -->
@@ -326,7 +326,7 @@
   <!-- EN: Must be {0} -->
   <RoleRequirementLabelSupremeGender>Deve essere {0}</RoleRequirementLabelSupremeGender>
   <!-- EN: Cannot be child -->
-  <RoleRequirementCannotBe>Non posso essere bambino</RoleRequirementCannotBe>
+  <RoleRequirementCannotBe>Non può essere bambino</RoleRequirementCannotBe>
 
   <!-- EN: Abilities -->
   <RoleGrantedAbilitiesLabel>Abilità</RoleGrantedAbilitiesLabel>
@@ -354,7 +354,7 @@
   <AbilityDisabledNoRitualSpot>Luogo rituale non raggiungibile.</AbilityDisabledNoRitualSpot>
 
   <!-- EN: Will\n{0} to {1} -->
-  <TextMote_WillReduced>Sarà\n{0} a {1}</TextMote_WillReduced>
+  <TextMote_WillReduced>Volontà\n{0} a {1}</TextMote_WillReduced>
 
   <!-- EN: Accepting this join offer is an act of charity. If you refuse, the following people will be unhappy due to their pro-charity beliefs:\n{0}\n\nAre you sure you want to reject this join offer? -->
   <ConfirmationCharityJoiner>Accettare questa offerta di adesione è un atto di carità. Se rifiuti, le seguenti persone saranno insoddisfatte a causa delle loro convinzioni a favore della beneficenza:\n{0}\n\nSei sicuro di voler rifiutare questa offerta di adesione?</ConfirmationCharityJoiner>
@@ -374,7 +374,7 @@
   <!-- EN: Give {0} to {1_nameDef} -->
   <GiveItemsTo>Dai {0} a {1_nameDef}</GiveItemsTo>
   <!-- EN: Cannot give {0} to {1_nameDef} -->
-  <CannotGiveItemsTo>Impossibile fornire da {0} a {1_nameDef}</CannotGiveItemsTo>
+  <CannotGiveItemsTo>Impossibile dare {0} a {1_nameDef}</CannotGiveItemsTo>
   <!-- EN: No item found -->
   <NoItemFound>Nessun articolo trovato</NoItemFound>
 
@@ -385,7 +385,7 @@
   <!-- EN: Relic info found -->
   <RelicInfoFound>Trovate informazioni sulla reliquia</RelicInfoFound>
   <!-- EN: inactive, requires at least {0} {1}s (have {2}) -->
-  <InactiveRoleRequiresMoreBelievers>inattivo, richiede almeno {0} {1} s (avere {2})</InactiveRoleRequiresMoreBelievers>
+  <InactiveRoleRequiresMoreBelievers>inattivo, richiede almeno {0} {1} (ne hai {2})</InactiveRoleRequiresMoreBelievers>
   
   <!-- EN: certainty -->
   <Certainty>certezza</Certainty>
@@ -446,17 +446,17 @@
   <!-- EN: The person this {TREE_label} is connected to. If the connected person dies, this {TREE_label} will be unable to connect to another for {DURATION}. -->
   <ConnectedPawnDesc>La persona a cui è connesso questo {TREE_label}. Se la persona connessa muore, questo {TREE_label} non sarà in grado di connettersi a un'altra per {DURATION}.</ConnectedPawnDesc>
   <!-- EN: Connection torn. Can connect in {0}. -->
-  <ConnectionTorn>Vite di collegamento. Può connettersi in {0}.</ConnectionTorn>
+  <ConnectionTorn>Connessione recisa. Può connettersi tra {0}.</ConnectionTorn>
   <!-- EN: {PAWN_nameDef} is too far away -->
   <ConnectedPawnAway>{PAWN_nameDef} è troppo lontano</ConnectedPawnAway>
   <!-- EN: Planting {PLANT_definite} near artificial buildings will cause its connection strength to decay over time. Connection strength determines the maximum number of dryads {PLANT_definite} can support at once.\n\nAre you sure you wish to plant here? -->
   <TreeBlockedByNearbyBuildingsDesc>Piantare {PLANT_definite} vicino a edifici artificiali causerà il decadimento della sua forza di connessione nel tempo. La forza della connessione determina il numero massimo di driadi che {PLANT_definite} può supportare contemporaneamente.\n\nSei sicuro di voler piantare qui?</TreeBlockedByNearbyBuildingsDesc>
   <!-- EN: Changing {TREE_definite}'s dryad caste takes time and energy.\n\nAfter the connected person interacts with the tree, all dryads will spend {DURATION} days inside cocoons while they morph to the selected caste.\n\nExisting cocoons will cancel their transformation so they can morph to the current caste. -->
-  <GauranlenModeChangeDescFull>Cambiare la casta della driade di {TREE_definite} richiede tempo ed energia.\n\nDopo che la persona connessa interagisce con l'albero, tutte le driadi trascorreranno {DURATION} giorni all'interno dei bozzoli mentre si trasformano nella casta selezionata.\n\nI bozzoli esistenti verranno annullati la loro trasformazione in modo che possano trasformarsi nella casta attuale.</GauranlenModeChangeDescFull>
+  <GauranlenModeChangeDescFull>Cambiare la casta della driade di {TREE_definite} richiede tempo ed energia.\n\nDopo che la persona connessa interagisce con l'albero, tutte le driadi trascorreranno {DURATION} giorni all'interno dei bozzoli mentre si trasformano nella casta selezionata.\n\nI bozzoli esistenti annulleranno la loro trasformazione in modo da potersi trasformare nella casta attuale.</GauranlenModeChangeDescFull>
   <!-- EN: Change the type of dryads created by {TREE_definite}. -->
   <ChangeModeDesc>Cambia il tipo di driadi create da {TREE_definite}.</ChangeModeDesc>
   <!-- EN: Connection strength fall -->
-  <ConnectionStrengthFall>La forza della connessione non è riuscita</ConnectionStrengthFall>
+  <ConnectionStrengthFall>Calo della forza di connessione</ConnectionStrengthFall>
   <!-- EN: Connection strength -->
   <ConnectionStrength>Forza della connessione</ConnectionStrength>
   <!-- EN: {0} strength -->
@@ -464,7 +464,7 @@
   <!-- EN: Determines how many dryads this tree can support. -->
   <ConnectionStrengthDesc>Determina quante driadi può supportare questo albero.</ConnectionStrengthDesc>
   <!-- EN: Max dryads -->
-  <MaximumDryads>massimo driadi</MaximumDryads>
+  <MaximumDryads>Driadi massime</MaximumDryads>
   <!-- EN: The maximum number of dryads this tree can support. -->
   <MaximumDryadsDesc>Il numero massimo di driadi che questo albero può supportare.</MaximumDryadsDesc>
   <!-- EN: Max dryads based on connection strength -->
@@ -482,7 +482,7 @@
   <!-- EN: Dryad caste -->
   <GauranlenTreeMode>Casta delle Driadi</GauranlenTreeMode>
   <!-- EN: no caste -->
-  <NoCaste>non castare</NoCaste>
+  <NoCaste>nessuna casta</NoCaste>
   <!-- EN: Determines the currently created dryad caste. -->
   <GauranlenTreeModeDesc>Determina la casta delle driadi attualmente creata.</GauranlenTreeModeDesc>
   <!-- EN: Spawning {DRYAD_label} in {TIME} -->
@@ -496,7 +496,7 @@
   <!-- EN: {DRYAD_labelPlural} produce {RESOURCES} every {DURATION}. -->
   <DryadProducesResourcesDesc>{DRYAD_labelPlural} produce {RESOURCES} ogni {DURATION}.</DryadProducesResourcesDesc>
   <!-- EN: {ANIMAL_nameDef} is connected to {MASTER_nameDef} through {ANIMAL_possessive} Gauranlen tree. {ANIMAL_possessive} master cannot be changed. -->
-  <DryadCannotChangeMaster>{ANIMAL_nameDef} è collegato all'albero Gauranlen da {MASTER_nameDef} tramite {ANIMAL_possessive}. Il master {ANIMAL_possessive} non può essere modificato.</DryadCannotChangeMaster>
+  <DryadCannotChangeMaster>{ANIMAL_nameDef} è collegato a {MASTER_nameDef} tramite il suo albero Gauranlen. Il suo master non può essere modificato.</DryadCannotChangeMaster>
   <!-- EN: Connection strength too low to create Gauranlen pod. -->
   <ConnectionStrengthTooWeakForGaumakerPod>La forza della connessione è troppo bassa per creare il pod Gauranlen.</ConnectionStrengthTooWeakForGaumakerPod>
   <!-- EN: Unconnected -->
@@ -514,11 +514,11 @@
 
   <!-- Shooting report -->
   <!-- EN: Target outdoors and night-time -->
-  <TargetNightOutdoors>Mira all'aperto e di notte</TargetNightOutdoors>
+  <TargetNightOutdoors>Bersaglio all'aperto e di notte</TargetNightOutdoors>
   <!-- EN: Target indoors and dark -->
   <TargetDarkIndoors>Bersaglio in ambienti chiusi e al buio</TargetDarkIndoors>
   <!-- EN: Target outdoors and daytime -->
-  <TargetDayOutdoors>Obiettivo all'aperto e di giorno</TargetDayOutdoors>
+  <TargetDayOutdoors>Bersaglio all'aperto e di giorno</TargetDayOutdoors>
   <!-- EN: Target indoors and lit -->
   <TargetLitIndoors>Bersaglio all'interno e illuminato</TargetLitIndoors>  
   <!-- EN: Charging -->
@@ -539,7 +539,7 @@
   <!-- EN: Hunting revenge chance {0} -->
   <RoleEffectHuntingRevengeChance>Possibilità di vendetta a caccia {0}</RoleEffectHuntingRevengeChance>
   <!-- EN: Give thought -->
-  <RoleEffectGiveThoughtOnTended>Pensaci</RoleEffectGiveThoughtOnTended>
+  <RoleEffectGiveThoughtOnTended>Conferisce un pensiero</RoleEffectGiveThoughtOnTended>
 
   <!-- EN: Assign colonists to your ideoligion -->
   <AssignColonists>Assegna i coloni alla tua ideoligione</AssignColonists>
@@ -568,7 +568,7 @@
   <!-- EN: Linked to -->
   <LinkedTo>Collegato a</LinkedTo>
   <!-- EN: Supply satellite -->
-  <SupplySatellite>Fornitura satellitare</SupplySatellite>
+  <SupplySatellite>Satellite di rifornimento</SupplySatellite>
 
   <!-- EN: Colonist is not willing to extract skull from corpse (missing pro-skullspike precept) -->
   <CannotExtractSkull>Il colono non è disposto a estrarre il teschio dal cadavere (manca il precetto pro-skullspike)</CannotExtractSkull>
@@ -578,7 +578,7 @@
   <!-- EN: Choose -->
   <ChooseStuffForRelic>Scegliere</ChooseStuffForRelic>
   <!-- EN: Made from stuff -->
-  <RelicStuff>Fatto di roba</RelicStuff>
+  <RelicStuff>Fatto di materiale</RelicStuff>
 
   <!-- Bioscuplter pod -->
   <!-- EN: Cycle -->
@@ -620,7 +620,7 @@
   <!-- EN: {0} nutrition -->
   <NumNutrition>{0} nutrimento</NumNutrition>
   <!-- EN: {PAWN_labelShort} was ejected from a biosculpter pod due to lack of power. -->
-  <BiosculpterNoPowerEjectedMessage>{PAWN_labelShort} è stato espulso da una capsula bioscultore per mancanza di energia.</BiosculpterNoPowerEjectedMessage>
+  <BiosculpterNoPowerEjectedMessage>{PAWN_labelShort} è {PAWN_gender ? stato espulso : stata espulsa} da una capsula bioscultore per mancanza di energia.</BiosculpterNoPowerEjectedMessage>
   <!-- EN: {PAWN_labelShort} completed healing cycle. -->
   <BiosculpterHealCompletedMessage>{PAWN_labelShort} ha completato il ciclo di guarigione.</BiosculpterHealCompletedMessage>
   <!-- EN: {PAWN_labelShort} completed healing cycle, and {PAWN_possessive} {HEDIFF_label} was cured. -->
@@ -651,7 +651,7 @@
   <!-- EN: basic -->
   <Basic>DI BASE</Basic>
   <!-- EN: Change the style this will be built in. This is purely visual and has no gameplay impact. -->
-  <ChangeStyleDesc>Cambia lo stile in cui verrà integrato. Questo è puramente visivo e non ha alcun impatto sul gameplay.</ChangeStyleDesc>
+  <ChangeStyleDesc>Cambia lo stile in cui verrà costruito. Questo è puramente visivo e non ha alcun impatto sul gameplay.</ChangeStyleDesc>
   <!-- EN: No available styles. -->
   <ChangeStyleDisabledNoCategories>Stili non disponibili.</ChangeStyleDisabledNoCategories>
   <!-- EN: Spacedrone self-destructs in {0} -->
