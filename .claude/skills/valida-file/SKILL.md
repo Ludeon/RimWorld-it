@@ -21,6 +21,10 @@ prossimo della fase corrente leggendo il RESUME in `docs/UPDATE-PLAN-1.6.4850.md
 
 ## 1. Inquadra il file
 - Risolvi il percorso reale (di solito `<DLC>/DefInjected/<DefType>/<file>` o `<DLC>/Keyed/...`).
+- 🔑 **Usa il path ESATTAMENTE come fornito in `$ARGUMENTS`** in tutti i comandi `rwit ledger ... --file`.
+  La dashboard copia il path completo DLC-qualified (es. `Core\Keyed\Dialogs_Various.xml`): passalo
+  verbatim, **non ridurlo mai al solo nome file** (`Dialogs_Various.xml`). `--file` è una sottostringa
+  sul path e molti file sono omonimi tra DLC → il solo nome file validerebbe le copie di TUTTI i DLC.
 - **Se è un `RulePackDef/*.xml`** (name generator: namer, log combat/social, descrizioni): NON si
   valida leggendo l'XML grezzo → si rivede nella tab **Name generator** della dashboard
   (anteprima dei nomi/frasi generati), poi si valida da lì. Ferma qui la parte "prosa" sotto.
@@ -53,7 +57,7 @@ Poi esegui i linter sul file (o sull'intera DLC) e correggi SOLO i veri hit:
 
 ## 3. Review prosa a blocchi
 **Riprendi dal non-validato.** Non rileggere ciò che è già a posto: elenca le voci ancora da fare
-con `.venv\Scripts\python scripts\rwit ledger validate --file <NomeFile.xml> --list` (mostra le
+con `.venv\Scripts\python scripts\rwit ledger validate --file "$ARGUMENTS" --list` (mostra le
 righe `translated`/`modified`; salta `validated`/`keep`) e rivedi solo quelle, a blocchi (~20 voci).
 
 **REGOLA N.1 — il commento `<!-- EN: ... -->` è la GUIDA (fonte del significato).** Per OGNI voce,
@@ -76,21 +80,21 @@ Dopo ogni modifica verifica che l'XML resti valido (`ET.parse`).
 A fine file (o a fine di ogni blocco rivisto) promuovi a `validated` **da CLI** le sole voci che
 hai EFFETTIVAMENTE riletto/corretto in §2-3:
 ```powershell
-# intero file rivisto:
-.venv\Scripts\python scripts\rwit ledger validate --file <NomeFile.xml> --yes
+# intero file rivisto (path completo come fornito in $ARGUMENTS):
+.venv\Scripts\python scripts\rwit ledger validate --file "$ARGUMENTS" --yes
 # solo alcune voci/blocchi (--tag = sottostringa del tag, ripetibile):
-.venv\Scripts\python scripts\rwit ledger validate --file <NomeFile.xml> --tag <Tag1> --tag <Tag2> --yes
+.venv\Scripts\python scripts\rwit ledger validate --file "$ARGUMENTS" --tag <Tag1> --tag <Tag2> --yes
 ```
 - `--file`/`--tag` sono sottostringhe case-insensitive; valida le righe `translated`/`modified`
   che combaciano (`set_status_keys`), ri-fissando gli hash → diventano sticky. Senza `--yes`
   stampa solo l'anteprima del conteggio; con `--list` elenca le voci ancora da validare.
-- ⚠️ **`--file` è una SOTTOSTRINGA sul path, non un nome esatto.** Molti file sono omonimi tra
-  DLC (es. `Dialogs_Various.xml`, `Misc_Gameplay.xml`, `Letters.xml` esistono in Core/Royalty/
-  Ideology/Biotech/Anomaly/Odyssey). `--file Dialogs_Various.xml --yes` valida le copie di TUTTI i
-  DLC. Per validare solo quello che hai riletto **passa `--dlc <DLC>` oppure il path completo**
-  (`--file Core\Keyed\Dialogs_Various.xml`). Controlla sempre il conteggio con `--list` PRIMA di
-  `--yes`: se è più alto delle voci del tuo file, stai per timbrare file non letti. Se è già
-  successo: `git checkout HEAD -- scripts/dashboard/translation-ledger.csv` e rivalida con lo scope giusto.
+- ⚠️ **`--file` è una SOTTOSTRINGA sul path, non un nome esatto** → passa il path completo di `$ARGUMENTS`
+  (vedi §1), mai il solo nome file. Molti file sono omonimi tra DLC (`Dialogs_Various.xml`,
+  `Misc_Gameplay.xml`, `Letters.xml` esistono in Core/Royalty/Ideology/Biotech/Anomaly/Odyssey):
+  col solo nome file valideresti le copie di TUTTI i DLC. **Sanity check**: il conteggio di `--list`
+  deve combaciare con le voci del tuo file; se è molto più alto, stai per timbrare file non letti →
+  ferma. Recupero se è già successo: `git checkout HEAD -- scripts/dashboard/translation-ledger.csv`
+  e rivalida col path completo.
 - **Ignora già `validated`/`keep`** (idempotente): puoi rilanciarla senza ri-toccare il fatto.
 - **Valida per VOCE intera, non per singolo tag**: usa `--tag <NomeVoce>` (es. `--tag Cadet96`),
   non `--tag Cadet96.description` → così validi anche `.title/.titleFemale/.titleShort...` ed eviti
