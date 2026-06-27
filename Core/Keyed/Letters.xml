@@ -126,7 +126,7 @@
   <LetterFriendlyTrapSprung>{1_labelShort} ha attivato accidentalmente una trappola ed ha subito dei danni.</LetterFriendlyTrapSprung>
 
   <!-- EN: {PAWN_labelShort} has developed a health condition:\n\n  {1}\n\nThis was caused by:\n\n  {2} -->
-  <LetterHealthComplications>{PAWN_labelShort} ha sviluppato:\n\n {1}\n\nQuesto è dovuto da:n\n  {2}</LetterHealthComplications>
+  <LetterHealthComplications>{PAWN_labelShort} ha sviluppato una condizione di salute:\n\n  {1}\n\nQuesto è stato causato da:\n\n  {2}</LetterHealthComplications>
   <!-- EN: {PAWN_labelShort}: {1} -->
   <LetterHealthComplicationsLabel>{PAWN_labelShort}: {1}</LetterHealthComplicationsLabel>
   
@@ -151,13 +151,13 @@
   <!-- EN: The final straw was: {0} -->
   <FinalStraw>La causa scatenante è stata: {0}.</FinalStraw>
   <!-- EN: This happened because of poor mood. -->
-  <MentalStateReason_Mood>E' avvenuto a causa del malumore.</MentalStateReason_Mood>
+  <MentalStateReason_Mood>È avvenuto a causa del malumore.</MentalStateReason_Mood>
   <!-- EN: This happened because of the trait: {0}. -->
-  <MentalStateReason_Trait>E' avvenuto a causa del tratto: {0}.</MentalStateReason_Trait>
+  <MentalStateReason_Trait>È avvenuto a causa del tratto: {0}.</MentalStateReason_Trait>
   <!-- EN: This happened because of: {0}. -->
-  <MentalStateReason_Hediff>E' avvenuto a causa di: {0}.</MentalStateReason_Hediff>
+  <MentalStateReason_Hediff>È avvenuto a causa di: {0}.</MentalStateReason_Hediff>
   <!-- EN: This happened because of {0_definite}'s death. -->
-  <MentalStateReason_BondedHumanDeath>E' avvenuto a causa della morte di {0_definite}.</MentalStateReason_BondedHumanDeath>
+  <MentalStateReason_BondedHumanDeath>È avvenuto a causa della morte di {0_definite}.</MentalStateReason_BondedHumanDeath>
   <!-- EN: The last event was -->
   <LastFactionRelationsEvent>L'ultimo avvenimento è stato</LastFactionRelationsEvent>
 
@@ -252,13 +252,13 @@
   <!-- EN: Prison break -->
   <LetterLabelPrisonBreak>Evasione</LetterLabelPrisonBreak>
   <!-- EN: Prisoners have staged a breakout! They've somehow defeated the door locks and are making their way out. They may seek weapons, fight, or try to escape. These prisoners are involved:\n\n{0}\n\nPrisoners are more likely to attempt breakout when they are numerous and healthy. -->
-  <LetterPrisonBreak>I prigionieri hanno organizzato un'evasione! Hanno aggirato in qualche modo trovato le serrature e si stanno facendo strada verso l'esterno. Potrebbero cercare armi, combattere o provare a scappare. Risultano coinvolti questi prigionieri:\n\n{0}\n\nI prigionieri hanno maggiore probabilità di evadere quando sono numerosi ed in buona salute.</LetterPrisonBreak>
+  <LetterPrisonBreak>I prigionieri hanno organizzato un'evasione! Hanno in qualche modo forzato le serrature delle porte e si stanno facendo strada verso l'esterno. Potrebbero cercare armi, combattere o provare a scappare. Risultano coinvolti questi prigionieri:\n\n{0}\n\nI prigionieri hanno maggiore probabilità di evadere quando sono numerosi ed in buona salute.</LetterPrisonBreak>
 
   <!-- Newly addicted -->
   <!-- EN: {0} addiction -->
   <LetterLabelNewlyAddicted>Dipendenza da {0}</LetterLabelNewlyAddicted>
   <!-- EN: {PAWN_labelShort} has developed an addiction to {1}.\n\n{PAWN_pronoun} now has a need for {1}, visible on {PAWN_possessive} Needs tab. {PAWN_pronoun} will automatically consume the drug to fulfil {PAWN_possessive} need. If {PAWN_pronoun} cannot get any {1}, {PAWN_pronoun} will go into withdrawal. -->
-  <LetterNewlyAddicted>{PAWN_labelShort} ha sviluppato una dipendenza da {1}.\n\n{PAWN_pronoun} ha ormai bisogno di {1}, visibile nella sua scheda Bisogni. Assumerà automaticamente la droga per soddisfare la sua dipendenza. Se non potrà procurarsi {1}, andrà in astinenza.</LetterNewlyAddicted>
+  <LetterNewlyAddicted>{PAWN_labelShort} ha sviluppato una dipendenza da {1}.\n\n{PAWN_pronoun} ha ormai bisogno di {1}, visibile nella sua scheda Bisogni. Assumerà automaticamente la droga per soddisfare il suo bisogno. Se non potrà procurarsi {1}, andrà in astinenza.</LetterNewlyAddicted>
 
   <!-- Drug binge -->
   <!-- EN: {0} binge -->
@@ -310,13 +310,13 @@
 
   <!-- Long-range mineral scanner -->
   <!-- EN: Distant resource scanned -->
-  <LetterLabelFoundPreciousLump>Ritrovamento minerali preziosi</LetterLabelFoundPreciousLump>
+  <LetterLabelFoundPreciousLump>Risorsa distante rilevata</LetterLabelFoundPreciousLump>
   <!-- EN: Using your long-range mineral scanner, {WORKER_labelShort} has found a lump of {0} some distance away.\n\nUnfortunately, it won't last - others will mine it first in {1} days if we don't.\n\n{2}. -->
-  <LetterFoundPreciousLump>Usando il tuo scanner minerario e lungo raggio, {WORKER_labelShort} ha trovato una vena di {0} nelle vicinanze.\n\nSfortunatamente, non durerà... altri la estrarranno in {1} giorni se non lo faremo noi.\n\n{2}.</LetterFoundPreciousLump>
+  <LetterFoundPreciousLump>Usando il tuo scanner minerario a lungo raggio, {WORKER_labelShort} ha trovato una vena di {0} a una certa distanza.\n\nSfortunatamente, non durerà... altri la estrarranno in {1} giorni se non lo faremo noi.\n\n{2}.</LetterFoundPreciousLump>
 
   <!-- Ground penetrating scanner -->
   <!-- EN: Scanned underground -->
-  <LetterLabelDeepScannerFoundLump>Ritrovamento minerali preziosi</LetterLabelDeepScannerFoundLump>
+  <LetterLabelDeepScannerFoundLump>Scansione sotterranea</LetterLabelDeepScannerFoundLump>
   <!-- EN: {FINDER_nameDef} has found a lump of buried {0} using the ground-penetrating scanner! -->
   <LetterDeepScannerFoundLump>{FINDER_nameDef} ha trovato una vena di {0} utilizzando il suo scanner del terreno!</LetterDeepScannerFoundLump>
 
@@ -334,7 +334,7 @@
   <!-- EN: Peace talks backfire -->
   <LetterLabelPeaceTalks_Backfire>Trattative di pace controproducenti</LetterLabelPeaceTalks_Backfire>
   <!-- EN: The talks have backfired. Despite trading some pleasantries, the delegates made no progress on substantive issues, and multiple statements were interpreted as insults.\n\nRelations with {0}: {1}. -->
-  <LetterPeaceTalks_Backfire>Le trattative sono state controproducenti. Nonostante lo scambio di convenevoli, i delegati non hanno fatto progressi su questioni di fondo e molte affermazioni cono state interpretate come insulti.\n\nRelazioni con {0}: {1}.</LetterPeaceTalks_Backfire>
+  <LetterPeaceTalks_Backfire>Le trattative sono state controproducenti. Nonostante lo scambio di convenevoli, i delegati non hanno fatto progressi su questioni di fondo e molte affermazioni sono state interpretate come insulti.\n\nRelazioni con {0}: {1}.</LetterPeaceTalks_Backfire>
   <!-- EN: Peace talks flounder -->
   <LetterLabelPeaceTalks_TalksFlounder>Trattative di pace arenate</LetterLabelPeaceTalks_TalksFlounder>
   <!-- EN: The talks floundered. Delegates managed to communicate clearly and with basic respect, but were not able to make progress on any genuine issues.\n\nRelations with {0} remain unchanged. -->
@@ -412,13 +412,13 @@
   <!-- EN: Caravan battle won -->
   <LetterLabelCaravansBattlefieldVictory>Vittoria battaglia carovana</LetterLabelCaravansBattlefieldVictory>
   <!-- EN: Your caravan has won the battle.\n\nYou can reform the caravan now in the World screen by selecting the battlefield and choosing the "Reform caravan" option.\n\nThere's no need to collect items manually, the reform caravan tool can do it instantly.\n\nIn {0}, your caravan will be attacked by enemies. They will begin sending forces to attack the caravan, unless it reforms and leaves. -->
-  <LetterCaravansBattlefieldVictory>La tua carovana ha vinto la battaglia.\n\nOra puoi riorganizzare la carovana selezionando il campo di battaglia e scegliendo l'opzione "Riorganizza Carovana".\n\nNon è necessario raccogliere gli oggetti manualmente, lo strumento di riorganizzazione carovana può farlo istantaneamente.\n\nIn {0}, la carovana verrà attaccata dai nemici. Inizieranno a inviare forze per attaccare la carovana, a meno che non si riformi e se ne vada.</LetterCaravansBattlefieldVictory>
+  <LetterCaravansBattlefieldVictory>La tua carovana ha vinto la battaglia.\n\nOra puoi riorganizzare la carovana selezionando il campo di battaglia e scegliendo l'opzione "Riforma carovana".\n\nNon è necessario raccogliere gli oggetti manualmente, lo strumento di riorganizzazione carovana può farlo istantaneamente.\n\nIn {0}, la carovana verrà attaccata dai nemici. Inizieranno a inviare forze per attaccare la carovana, a meno che non si riformi e se ne vada.</LetterCaravansBattlefieldVictory>
 
   <!-- Rescue quest -->
   <!-- EN: Rescuee joins -->
   <LetterLabelRescueQuestFinished>Persona soccorsa si unisce</LetterLabelRescueQuestFinished>
   <!-- EN: You have rescued {PAWN_nameDef} and {PAWN_pronoun} has joined your group. -->
-  <LetterRescueQuestFinished>Hai salvato {PAWN_nameDef} e {PAWN_pronoun} ha deciso di unirsi al tuo gruppo.\n\nPuoi prenderl{PAWN_gender ? o : a : o} con te riorganizzando la carovana nella schermata del Mondo selezionando quest'area e scegliendo l'opzione "Riorganizza Carovana".</LetterRescueQuestFinished>
+  <LetterRescueQuestFinished>Hai salvato {PAWN_nameDef} e {PAWN_pronoun} ha deciso di unirsi al tuo gruppo.\n\nPuoi prenderl{PAWN_gender ? o : a : o} con te riorganizzando la carovana nella schermata del Mondo selezionando quest'area e scegliendo l'opzione "Riforma carovana".</LetterRescueQuestFinished>
   <!-- EN: \n\nYou can now take {PAWN_objective} with you. To do so, open the World screen, select this site and choose the "Reform caravan" command. -->
   <LetterRescueQuestFinishedCaravanExtra>\n\nOra puoi portare {PAWN_objective} con te. Per farlo, apri la schermata Mondo, seleziona questo sito e scegli il comando "Riforma carovana".</LetterRescueQuestFinishedCaravanExtra>
 
@@ -550,7 +550,7 @@
   <LetterBladelinkWeaponBondedLabel>Legame stabilito: {PAWN_labelShort}</LetterBladelinkWeaponBondedLabel>
   <!-- EN: {PAWN_labelShort} has established a bond with the persona of {WEAPON_labelShort}.
 \nFrom now on, {WEAPON_labelShort} will refuse to be wielded by anyone except {PAWN_labelShort}. -->
-  <LetterBladelinkWeaponBonded>{PAWN_labelShort} ha stabilito un legame con il personaggio di {WEAPON_labelShort}.\nDa ora in poi, {WEAPON_labelShort} rifiuterà di essere esercitato da chiunque tranne {PAWN_labelShort}.</LetterBladelinkWeaponBonded>
+  <LetterBladelinkWeaponBonded>{PAWN_labelShort} ha stabilito un legame con la persona di {WEAPON_labelShort}.\nDa ora in poi, {WEAPON_labelShort} rifiuterà di essere {WEAPON_gender ? impugnato : impugnata : impugnato} da chiunque tranne {PAWN_labelShort}.</LetterBladelinkWeaponBonded>
   
   <!-- Mech cluster -->
   <!-- EN: Mechanoids arrived -->
@@ -572,7 +572,7 @@
 
   <!-- Lung rot -->
   <!-- EN: {PAWN} has gotten sick from {1} due to long-term exposure to rot stink gas (which is given off by rotting corpses).\n\nEnsure you have a medical bed and a doctor. Make sure that {PAWN_definite} gets proper treatment. -->
-  <LetterTextLungRot>{PAWN} si è ammalato da {1} a causa dell'esposizione prolungata al gas puzzolente della putrefazione (che viene emesso dai cadaveri in decomposizione).\n\nAssicuratevi di avere un letto medico e un dottore. Assicuratevi che {PAWN_definite} riceva le cure adeguate.</LetterTextLungRot>
+  <LetterTextLungRot>{PAWN} si è ammalat{PAWN_gender ? o : a} di {1} a causa dell'esposizione prolungata al gas puzzolente della putrefazione (che viene emesso dai cadaveri in decomposizione).\n\nAssicurati di avere un letto medico e un dottore. Accertati che {PAWN_definite} riceva le cure adeguate.</LetterTextLungRot>
 
   <!-- Join Offer -->
   <!-- EN: Join offer: {PAWN_nameDef} -->
