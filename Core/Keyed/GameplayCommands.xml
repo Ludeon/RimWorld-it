@@ -25,7 +25,7 @@
   <!-- EN: Reconnect -->
   <CommandTryReconnectLabel>Riconnetti</CommandTryReconnectLabel>
   <!-- EN: Try to connect to a different power net within my connection radius. This is useful if I'm connected to an unpowered net but there is a powered net nearby. -->
-  <CommandTryReconnectDesc>Provare a riconnetterti alla rete elettrica più vicina. Questo è utile se sono collegato ad una rete disalimentata ma c'è una rete alimentata nelle vicinanze.</CommandTryReconnectDesc>
+  <CommandTryReconnectDesc>Prova a connettermi a una rete elettrica diversa entro il mio raggio di connessione. Questo è utile se sono collegato ad una rete disalimentata ma c'è una rete alimentata nelle vicinanze.</CommandTryReconnectDesc>
 
   <!-- EN: Gather spot -->
   <CommandGatherSpotToggleLabel>Punto di raccolta</CommandGatherSpotToggleLabel>
@@ -49,10 +49,10 @@
   <!-- EN: Fire at will -->
   <CommandFireAtWillLabel>Fuoco a volontà</CommandFireAtWillLabel>
   <!-- EN: Toggle fire at will.\n\nWhen disabled, this character will not automatically shoot at ranged targets. Does not affect melee combat. -->
-  <CommandFireAtWillDesc>Apri fuoco a volontà.\n\nQuando disattivato, questo personaggio non sparerà automaticamente agli obiettivi a distanza. Non influenza il combattimento in mischia.</CommandFireAtWillDesc>
+  <CommandFireAtWillDesc>Attiva o disattiva il fuoco a volontà.\n\nQuando disattivato, questo personaggio non sparerà automaticamente agli obiettivi a distanza. Non influenza il combattimento in mischia.</CommandFireAtWillDesc>
   
   <!-- EN: Clear prioritized work -->
-  <CommandClearPrioritizedWork>Cancellare lavoro con priorità</CommandClearPrioritizedWork>
+  <CommandClearPrioritizedWork>Cancella lavoro con priorità</CommandClearPrioritizedWork>
   <!-- EN: Clear any prioritized work you assigned. The character will go back to their usual self-directed activities. -->
   <CommandClearPrioritizedWorkDesc>Cancella lavoro con priorità che hai assegnato. Il personaggio riprenderà le sue attività autonome abituali.</CommandClearPrioritizedWorkDesc>
   
@@ -109,14 +109,14 @@
   <CommandDetonateDesc>Avvia il conto alla rovescia per la detonazione.</CommandDetonateDesc>
   
   <!-- EN: Hide -->
-  <CommandHideLabel>nascondi</CommandHideLabel>
+  <CommandHideLabel>Nascondi</CommandHideLabel>
   <!-- EN: Unhide -->
-  <CommandUnhideLabel>visualizza</CommandUnhideLabel>
+  <CommandUnhideLabel>Mostra</CommandUnhideLabel>
   
   <!-- EN: Toggle this plan's visibility.\n\nRight-click to hide or unhide all zones. -->
   <CommandHidePlanDesc>Attiva o disattiva la visibilità di questo piano.\n\nTasto destro per nascondere o mostrare tutte le zone.</CommandHidePlanDesc>
   <!-- EN: Hide/unhide this zone.\n\nRight-click to hide or unhide all zones. -->
-  <CommandHideZoneDesc>Nasconde/mostra questa zona.</CommandHideZoneDesc>
+  <CommandHideZoneDesc>Nascondi/mostra questa zona.\n\nTasto destro per nascondere o mostrare tutte le zone.</CommandHideZoneDesc>
   
   <!-- EN: Show all zones -->
   <ShowAllZones>Mostra tutte le zone</ShowAllZones>
@@ -181,7 +181,7 @@
   <!-- EN: Select {0_label} -->
   <CommandSelectStoredThing>Seleziona {0_label}</CommandSelectStoredThing>
   <!-- EN: Select the item stored in here. -->
-  <CommandSelectStoredThingDesc>Selezionate l'elemento memorizzato qui.</CommandSelectStoredThingDesc>
+  <CommandSelectStoredThingDesc>Seleziona l'oggetto immagazzinato qui.</CommandSelectStoredThingDesc>
 
   <!-- Artillery -->
   <!-- EN: Set forced target -->
@@ -201,7 +201,7 @@
   <!-- EN: Target beyond maximum range. -->
   <MessageTargetBeyondMaximumRange>Bersaglio oltre portata massima.</MessageTargetBeyondMaximumRange>
   <!-- EN: Target below minimum range. -->
-  <MessageTargetBelowMinimumRange>Bersaglio oltre portata minima.</MessageTargetBelowMinimumRange>
+  <MessageTargetBelowMinimumRange>Bersaglio sotto la portata minima.</MessageTargetBelowMinimumRange>
   <!-- EN: Warning: The mortar won't fire because it's set to "Hold fire". -->
   <MessageTurretWontFireBecauseHoldFire>Attenzione: Il mortaio non sparerà perché è impostato su "Cessa il fuoco".</MessageTurretWontFireBecauseHoldFire>
   
@@ -257,7 +257,7 @@
   <!-- EN: Designate this item to be uninstalled and reinstalled somewhere else. -->
   <CommandReinstallDesc>Ordina di rimuovere ed installare questo oggetto da qualche altra parte.</CommandReinstallDesc>
   <!-- EN: Replant -->
-  <CommandReplant>Ripiantare</CommandReplant>
+  <CommandReplant>Ripianta</CommandReplant>
   <!-- EN: This tree is currently packaged up for storage and transport. Use this command to replant it in a new location. -->
   <CommandReplantDesc>Questo albero è attualmente imballato per essere conservato e trasportato. Utilizza questo comando per ripiantarlo in una nuova posizione.</CommandReplantDesc>
   
@@ -481,7 +481,7 @@
   <!-- EN: Take off -->
   <CommandTakeOff>Parti</CommandTakeOff>
   <!-- EN: Get on board the ship and escape the planet. -->
-  <CommandTakeOffDesc>Salire a bordo della nave e lascia il pianeta.</CommandTakeOffDesc>
+  <CommandTakeOffDesc>Sali a bordo della nave e lascia il pianeta.</CommandTakeOffDesc>
   <!-- EN: Are you sure you want to launch the ship?\n\nEveryone in this area will escape the planet. Everyone else will be left behind. -->
   <CommandTakeOffConfirmation>Sei sicuro di voler lanciare la nave?\n\nTutti quelli in quest'area lasceranno il pianeta. Tutti gli altri saranno lasciati indietro.</CommandTakeOffConfirmation>
 
@@ -589,7 +589,7 @@
 
   <!-- Pause caravan -->
   <!-- EN: Rest -->
-  <CommandPauseCaravan>Accampati</CommandPauseCaravan>
+  <CommandPauseCaravan>Riposa</CommandPauseCaravan>
   <!-- EN: Start resting. This has the following benefits:\n\n  - People can interact socially\n  - Forage for food {0} times faster\n  - Visibility multiplied by {1} -->
   <CommandToggleCaravanPauseDesc>Inizia a riposare. Questo offre i seguenti benefici:\n\n  - Le persone possono interagire socialmente\n  - Il procacciamento di cibo è {0} volte più veloce\n  - La visibilità è moltiplicata per {1}</CommandToggleCaravanPauseDesc>
   
@@ -679,7 +679,7 @@
 
   <!-- Take a drug -->
   <!-- EN: Take drug... -->
-  <TakeDrug>Prendi farmaco ...</TakeDrug>
+  <TakeDrug>Prendi farmaco...</TakeDrug>
   <!-- EN: Choose a drug from inventory to ingest immediately. -->
   <TakeDrugDesc>Scegli un farmaco dall'inventario da ingerire immediatamente.</TakeDrugDesc>
 
