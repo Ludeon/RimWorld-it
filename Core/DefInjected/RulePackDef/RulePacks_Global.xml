@@ -182,6 +182,10 @@
     <li>TreeType_Feminine->Words/Nouns/TreeTypes_Singular_Feminine</li>
     <li>PersonFamily_Masculine->Words/Nouns/People_Family_Singular_Masculine</li>
     <li>PersonFamily_Feminine->Words/Nouns/People_Family_Singular_Feminine</li>
+    <!-- bucket per articolo determinativo singolare (l'articolo è nei simboli *_def/_defGen sotto) -->
+    <li>PersonFamily_Def_Il->Words/Nouns/People_Family_Def_Il</li>
+    <li>PersonFamily_Def_Lo->Words/Nouns/People_Family_Def_Lo</li>
+    <li>PersonFamily_Def_La->Words/Nouns/People_Family_Def_La</li>
     <li>Enemy_Masculine->Words/Nouns/Enemies_Singular_Masculine</li>
     <li>Enemy_Feminine->Words/Nouns/Enemies_Singular_Feminine</li>
     <!-- lavoratori plurali per genere (namer Scenario) -->
@@ -350,6 +354,14 @@
     <li>PersonalCharacteristic_def(p=1)->lo [PersonalCharacteristic_Def_Lo]</li>
     <li>PersonalCharacteristic_def(p=24)->la [PersonalCharacteristic_Def_La]</li>
     <li>PersonalCharacteristic_def(p=40)->l'[PersonalCharacteristic_Def_L]</li>
+    <!-- familiare con articolo determinativo (il/lo/la) e con di+articolo (del/dello/della).
+         Pesi = dimensione bucket (Il=4, Lo=1, La=2). Nessun ramo l' (nessun familiare vocalico). -->
+    <li>PersonFamily_def(p=4)->il [PersonFamily_Def_Il]</li>
+    <li>PersonFamily_def(p=1)->lo [PersonFamily_Def_Lo]</li>
+    <li>PersonFamily_def(p=2)->la [PersonFamily_Def_La]</li>
+    <li>PersonFamily_defGen(p=4)->del [PersonFamily_Def_Il]</li>
+    <li>PersonFamily_defGen(p=1)->dello [PersonFamily_Def_Lo]</li>
+    <li>PersonFamily_defGen(p=2)->della [PersonFamily_Def_La]</li>
     <li>PersonalCharacteristic(p=0.15)->genitali</li>
     <li>PersonalCharacteristic(p=0.15)->peli pubici</li>
     <li>PersonalCharacteristic(p=0.15)->peli corporei</li>
