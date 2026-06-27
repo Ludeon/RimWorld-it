@@ -38,9 +38,9 @@
   <!-- EN: {0} from {1} are leaving the map because of dangerous temperature. -->
   <MessageVisitorsDangerousTemperature>I {0} provenienti da {1} stanno lasciando la zona a causa delle temperature proibitive.</MessageVisitorsDangerousTemperature>
   <!-- EN: {0} from {1} are leaving the map because of dangerous weather. -->
-  <MessageVisitorsAnomalousWeather>{0} di {1} stanno lasciando la mappa a causa delle condizioni meteorologiche pericolose.</MessageVisitorsAnomalousWeather>
+  <MessageVisitorsAnomalousWeather>I {0} provenienti da {1} stanno lasciando la zona a causa delle condizioni meteorologiche pericolose.</MessageVisitorsAnomalousWeather>
   <!-- EN: {0} from {1} are leaving the map because of dangerous conditions. -->
-  <MessageVisitorsDangerousConditions>{0} di {1} stanno lasciando la mappa a causa delle condizioni pericolose.</MessageVisitorsDangerousConditions>
+  <MessageVisitorsDangerousConditions>I {0} provenienti da {1} stanno lasciando la zona a causa delle condizioni pericolose.</MessageVisitorsDangerousConditions>
 
   <!-- EN: {0} worn by {1_nameFull} deteriorated away to nothing. -->
   <MessageWornApparelDeterioratedAway>{0} indossat{0_gender ? o : a : o} da {1} si è deteriorato del tutto.</MessageWornApparelDeterioratedAway>
@@ -87,7 +87,7 @@
   <MessageNoHuntersWithProperWeapon>Nessun cacciatore ha un'arma adatta per la caccia. Assegna a un cacciatore un'arma a distanza adeguata.</MessageNoHuntersWithProperWeapon>
 
   <!-- EN: Warning: The {PAWN_labelShort} is hostile and will attack while your colonist tries to tame it. -->
-  <MessageInsectsHostileOnTaming>Il {PAWN_labelShort} è ostile e attaccherà mentre il vostro colono cerca di domarlo.</MessageInsectsHostileOnTaming>
+  <MessageInsectsHostileOnTaming>Il {PAWN_labelShort} è ostile e attaccherà mentre il tuo colono cerca di domarlo.</MessageInsectsHostileOnTaming>
   
   <!-- EN: New recruit -->
   <LetterLabelMessageRecruitSuccess>Nuova recluta</LetterLabelMessageRecruitSuccess>
@@ -119,7 +119,7 @@
   <!-- EN: Must designate plants. -->
   <MessageMustDesignatePlants>Devi selezionare colture.</MessageMustDesignatePlants>
   <!-- EN: Must designate haulable items. Some items are always haulable and can't be designated. -->
-  <MessageMustDesignateHaulable>Devi selezionare un oggetti trasportabili. Alcuni oggetti sono sempre trasportabili e non possono essere selezionati.</MessageMustDesignateHaulable>
+  <MessageMustDesignateHaulable>Devi selezionare oggetti trasportabili. Alcuni oggetti sono sempre trasportabili e non possono essere selezionati.</MessageMustDesignateHaulable>
   <!-- EN: Must designate impassable mineable rocks. -->
   <MessageMustDesignateMineable>Devi selezionare rocce da scavare invalicabili.</MessageMustDesignateMineable>
   <!-- EN: Must designate huntable animals. -->
@@ -129,11 +129,11 @@
   <!-- EN: Must designate abandoned claimable structures or items. -->
   <MessageMustDesignateClaimable>Devi selezionare strutture artificiali abbandonate.</MessageMustDesignateClaimable>
   <!-- EN: Must designate paintable buildings not already painted {0_label}. -->
-  <MessageMustDesignatePaintableBuildings>Deve designare gli edifici verniciabili non già dipinti {0_label}.</MessageMustDesignatePaintableBuildings>
+  <MessageMustDesignatePaintableBuildings>Devi selezionare edifici verniciabili non già verniciati {0_label}.</MessageMustDesignatePaintableBuildings>
   <!-- EN: Must designate paintable floors which are not already painted {0_label}. -->
-  <MessageMustDesignatePaintableFloors>Deve designare i pavimenti verniciabili che non sono già verniciati {0_label}.</MessageMustDesignatePaintableFloors>
+  <MessageMustDesignatePaintableFloors>Devi selezionare pavimenti verniciabili non già verniciati {0_label}.</MessageMustDesignatePaintableFloors>
   <!-- EN: Must designate painted buildings or floors. -->
-  <MessageMustDesignatePainted>Deve designare edifici o pavimenti dipinti.</MessageMustDesignatePainted>
+  <MessageMustDesignatePainted>Devi selezionare edifici o pavimenti verniciati.</MessageMustDesignatePainted>
   <!-- EN: You must defeat a mech cluster before you can deconstruct it. -->
   <MessageMustDesignateDeconstructibleMechCluster>Devi sconfiggere un gruppo di Mechanoidi prima di poterlo smantellare.</MessageMustDesignateDeconstructibleMechCluster>
   <!-- EN: Must designate rough stone surfaces. -->
@@ -255,7 +255,7 @@
   <!-- EN: {ANIMAL} has had a mental break because of {HUMAN_labelShort}'s death. -->
   <MessageBondedAnimalMentalBreak>{ANIMAL} ha avuto un crollo mentale per la morte di {HUMAN_labelShort}.</MessageBondedAnimalMentalBreak>
   <!-- EN: {ANIMAL_kindIndef} named {ANIMAL_label} has had a mental break because of {HUMAN_labelShort}'s death. -->
-  <MessageNamedBondedAnimalMentalBreak>{ANIMAL_kindIndef} chiamato {ANIMAL_label} a avuto un crollo mentale per la morte di {HUMAN_labelShort}.</MessageNamedBondedAnimalMentalBreak>
+  <MessageNamedBondedAnimalMentalBreak>{ANIMAL_kindIndef} chiamato {ANIMAL_label} ha avuto un crollo mentale per la morte di {HUMAN_labelShort}.</MessageNamedBondedAnimalMentalBreak>
   <!-- EN: {0} animals have a mental break because of {HUMAN_labelShort}'s death. -->
   <MessageBondedAnimalsMentalBreak>{0} hanno avuto un crollo mentale per la morte di {HUMAN_labelShort}.</MessageBondedAnimalsMentalBreak>
   
@@ -284,7 +284,7 @@
   <MessageNoLongerOnTargetedInsultingSpree>{PAWN_labelShort} non è più in preda ad insulti compulsivi nei confronti di {TARGET_label}.</MessageNoLongerOnTargetedInsultingSpree>
 
   <!-- EN: {1_label} has rotted away in storage. -->
-  <MessageRottedAwayInStorage>{1_label} si è marcito in magazzino.</MessageRottedAwayInStorage>
+  <MessageRottedAwayInStorage>{1_label} è marcit{1_gender ? o : a : o} nel deposito.</MessageRottedAwayInStorage>
   
   <!-- EN: {PAWN_labelShort} has gotten food poisoning from: {FOOD_labelShort}. Cause: {2}. -->
   <MessageFoodPoisoning>{PAWN_labelShort} è vittima di un'intossicazione alimentare per colpa di: {FOOD_labelShort}. Causa: {2}.</MessageFoodPoisoning>
@@ -311,7 +311,7 @@
   <!-- EN: {0} has died from rotting due to being left unharvested. -->
   <MessagePlantDiedOfRot_LeftUnharvested>{0} è marcit{0_gender ? o : a : o} per non essere stat{0_gender ? o : a : o} raccolt{0_gender ? o : a : o}.</MessagePlantDiedOfRot_LeftUnharvested>
   <!-- EN: {0} has died due to being exposed to light. -->
-  <MessagePlantDiedOfRot_ExposedToLight>{0} è mort{0_gender ? o : a : o} per essere stat{0} è mort{0_gender ? o : a : o} espost{0} è mort{0_gender ? o : a : o} alla luce.</MessagePlantDiedOfRot_ExposedToLight>
+  <MessagePlantDiedOfRot_ExposedToLight>{0} è mort{0_gender ? o : a : o} per essere stat{0_gender ? o : a : o} espost{0_gender ? o : a : o} alla luce.</MessagePlantDiedOfRot_ExposedToLight>
   <!-- EN: {0} has died from rotting. -->
   <MessagePlantDiedOfRot>{0} è marcit{0_gender ? o : a : o}.</MessagePlantDiedOfRot>
   <!-- EN: {0} has died because of poison. -->
@@ -400,9 +400,9 @@
   <!-- EN: Cannot equip: {1_labelShort} is incapable of shooting. -->
   <MessageCantEquipIncapableOfShooting>Impossibile equipaggiare: {1_labelShort} non è in grado di sparare.</MessageCantEquipIncapableOfShooting>
   <!-- EN: Cannot equip: Incapable. -->
-  <MessageCantEquipIncapableOfManipulation>Impossibile equipaggiare: incosciente.</MessageCantEquipIncapableOfManipulation>
+  <MessageCantEquipIncapableOfManipulation>Impossibile equipaggiare: incapace.</MessageCantEquipIncapableOfManipulation>
   <!-- EN: Cannot wear: {1_labelShort} is missing required body parts. -->
-  <MessageCantWearApparelMissingBodyParts>Impossibile indossare: {1_labelShort} mancano le parti del corpo richieste.</MessageCantWearApparelMissingBodyParts>
+  <MessageCantWearApparelMissingBodyParts>Impossibile indossare: a {1_labelShort} mancano le parti del corpo richieste.</MessageCantWearApparelMissingBodyParts>
   <!-- EN: This person refuses to remove this. -->
   <MessageCantUnequipLockedApparel>Questa persona rifiuta di rimuoverlo.</MessageCantUnequipLockedApparel>
   <!-- EN: Cannot wear: This would replace apparel {1_labelShort} refues to remove. -->
@@ -422,7 +422,7 @@
   <MessageSelectOwnBaseToFormCaravan>Per formare una carovana seleziona la tua colonia o un sito dove hai delle persone.</MessageSelectOwnBaseToFormCaravan>
 
   <!-- EN: At this resolution and UI scale, the game interface would not fit on-screen. Please reduce UI scale or increase resolution. -->
-  <MessageScreenResTooSmallForUIScale>Con questa risoluzione e  questa scala UI l'interfaccia di gioco non si adatterà allo schermo. Riduci la scala UI o aumenta la risoluzione.</MessageScreenResTooSmallForUIScale>
+  <MessageScreenResTooSmallForUIScale>Con questa risoluzione e questa scala UI l'interfaccia di gioco non si adatterà allo schermo. Riduci la scala UI o aumenta la risoluzione.</MessageScreenResTooSmallForUIScale>
   
   <!-- EN: You have to reform the caravan now. Everyone left behind will be abandoned. -->
   <MessageYouHaveToReformCaravanNow>Adesso devi riorganizzare la carovana. Chiunque sia lasciato indietro sarà abbandonato.</MessageYouHaveToReformCaravanNow>
@@ -525,7 +525,7 @@
   <!-- EN: used {0} on {1} -->
   <GoodwillChangedReason_UsedAbility>usato {0} su {1}</GoodwillChangedReason_UsedAbility>
   <!-- EN: harvested {0} -->
-  <GoodwillChangedReason_RemovedBodyPart>raccolto {0}</GoodwillChangedReason_RemovedBodyPart>
+  <GoodwillChangedReason_RemovedBodyPart>espiantato {0}</GoodwillChangedReason_RemovedBodyPart>
   <!-- EN: removed {0} -->
   <GoodwillChangedReason_RemovedImplant>rimosso {0}</GoodwillChangedReason_RemovedImplant>
   <!-- EN: downgraded {0} -->
@@ -537,9 +537,9 @@
   <!-- EN: {1_labelShort} crushed -->
   <GoodwillChangedReason_PawnCrushed>{1_labelShort} {1_gender ? schiacciato : schiacciata : schiacciato}</GoodwillChangedReason_PawnCrushed>
   <!-- EN: {1_labelShort} died -->
-  <GoodwillChangedReason_PawnDied>{1_labelShort} morto</GoodwillChangedReason_PawnDied>
+  <GoodwillChangedReason_PawnDied>{1_labelShort} {1_gender ? morto : morta : morto}</GoodwillChangedReason_PawnDied>
   <!-- EN: {0_labelShort} stripped -->
-  <GoodwillChangedReason_PawnStripped>{0_labelShort} rimosso</GoodwillChangedReason_PawnStripped>
+  <GoodwillChangedReason_PawnStripped>{0_labelShort} {0_gender ? spogliato : spogliata : spogliato}</GoodwillChangedReason_PawnStripped>
   <!-- EN: traded -->
   <GoodwillChangedReason_Traded>scambiato</GoodwillChangedReason_Traded>
   <!-- EN: attacked a caravan -->
@@ -555,7 +555,7 @@
   <!-- EN: finished a quest -->
   <GoodwillChangedReason_FinishedQuest>terminato una missione</GoodwillChangedReason_FinishedQuest>
   <!-- EN: {PAWN_labelShort} used {CULPRIT} -->
-  <GoodwillChangedReason_UsedForbiddenThing>{PAWN_labelShort} usa {CULPRIT}</GoodwillChangedReason_UsedForbiddenThing>
+  <GoodwillChangedReason_UsedForbiddenThing>{PAWN_labelShort} ha usato {CULPRIT}</GoodwillChangedReason_UsedForbiddenThing>
   <!-- EN: sold {0_labelShort} -->
   <GoodwillChangedReason_SoldPawn>venduto {0_labelShort}</GoodwillChangedReason_SoldPawn>
   <!-- EN: euthanized {PAWN_labelShort} -->
@@ -563,7 +563,7 @@
   <!-- EN: requested military aid -->
   <GoodwillChangedReason_RequestedMilitaryAid>richiesto aiuto militare</GoodwillChangedReason_RequestedMilitaryAid>
   <!-- EN: requested trader caravan -->
-  <GoodwillChangedReason_RequestedTrader>carovana richiesta</GoodwillChangedReason_RequestedTrader>
+  <GoodwillChangedReason_RequestedTrader>richiesto una carovana commerciale</GoodwillChangedReason_RequestedTrader>
   <!-- EN: caused neuroquake echo -->
   <GoodwillChangedReason_CausedNeuroquakeEcho>causato l'eco di un neuro-terremoto</GoodwillChangedReason_CausedNeuroquakeEcho>
   <!-- EN: caused berserk on {PAWN_labelShort} -->
@@ -599,18 +599,18 @@
   <!-- EN: {1}'s "{0}" can no longer count items in deleted stockpile {2}. -->
   <MessageBillValidationIncludeZoneDeleted>{0_gender ? Il : La : Lo} "{0}" di {1} non può più contare oggetti nel deposito eliminato {2}.</MessageBillValidationIncludeZoneDeleted>
   <!-- EN: {1}'s "{0}" can no longer count items in deleted building {2}. -->
-  <MessageBillValidationIncludeBuildingDeleted>"{0}" di {1} non può più contare gli oggetti nell'edificio eliminato {2}.</MessageBillValidationIncludeBuildingDeleted>
+  <MessageBillValidationIncludeBuildingDeleted>{0_gender ? Il : La : Lo} "{0}" di {1} non può più contare oggetti nell'edificio eliminato {2}.</MessageBillValidationIncludeBuildingDeleted>
   <!-- EN: {1}'s "{0}" can no longer count items in deleted storage group {2}. -->
-  <MessageBillValidationIncludeStorageGroupDeleted>"{0}" di {1} non può più contare gli oggetti nel gruppo di stoccaggio eliminato {2}.</MessageBillValidationIncludeStorageGroupDeleted>
+  <MessageBillValidationIncludeStorageGroupDeleted>{0_gender ? Il : La : Lo} "{0}" di {1} non può più contare oggetti nel gruppo di stoccaggio eliminato {2}.</MessageBillValidationIncludeStorageGroupDeleted>
   <!-- EN: {1}'s "{0}" can no longer count items in unavailable stockpile {2}. -->
   <MessageBillValidationIncludeZoneUnavailable>{0_gender ? Il : La : Lo} "{0}" di {1} non può più contare oggetti nel deposito non disponibile {2}.</MessageBillValidationIncludeZoneUnavailable>
   <!-- EN: {1}'s "{0}" can no longer deliver all products to stockpile {2}. -->
   <MessageBillValidationStoreZoneInsufficient>{0_gender ? Il : La : Lo} "{0}" di {1} non può più mandare nessun prodotto verso il deposito {2}.</MessageBillValidationStoreZoneInsufficient>
 
   <!-- EN: Because of a lack of taming maintenance, {1_labelShort} has returned to the wild. -->
-  <MessageAnimalReturnedWild>A causa dell'assenza di un continuo addomesticamento, {1_labelShort} è ritornat{1_gender ? o : a : o} selvaggi{1_gender ? o : a : o}.</MessageAnimalReturnedWild>
+  <MessageAnimalReturnedWild>A causa dell'assenza di un continuo addomesticamento, {1_labelShort} è ritornat{1_gender ? o : a : o} selvatic{1_gender ? o : a : o}.</MessageAnimalReturnedWild>
   <!-- EN: {1_labelShort} has been returned to the wild. -->
-  <MessageAnimalReturnedWildReleased>{1_labelShort} è stato restituito alla natura.</MessageAnimalReturnedWildReleased>
+  <MessageAnimalReturnedWildReleased>{1_labelShort} è stat{1_gender ? o : a : o} restituit{1_gender ? o : a : o} alla natura.</MessageAnimalReturnedWildReleased>
   <!-- EN: Due to a lack of maintenance training, {ANIMAL_labelShort} has lost a skill: {1} -->
   <MessageAnimalLostSkill>A causa dell'assenza di un continuo addestramento, {ANIMAL_labelShort} ha perso un'abilità: {1}</MessageAnimalLostSkill>
 
@@ -644,13 +644,13 @@
   <MessageTranslationFilesCleanupDone>Fatto. Cartelle interessate: {0}</MessageTranslationFilesCleanupDone>
 
   <!-- EN: One of the translation files ({0}) couldn't be loaded. All XML parsing errors must be resolved first. -->
-  <MessageCantCleanupTranslationFilesBeucaseOfXmlError>Uno dei file di traduzione ({0}) non può essere caricato. Devono essere prima risolte tutte le analisi errori XML.</MessageCantCleanupTranslationFilesBeucaseOfXmlError>
+  <MessageCantCleanupTranslationFilesBeucaseOfXmlError>Uno dei file di traduzione ({0}) non può essere caricato. Devono prima essere risolti tutti gli errori di analisi XML.</MessageCantCleanupTranslationFilesBeucaseOfXmlError>
 
   <!-- EN: Warning: Capturing {PAWN_nameDef} will anger {PAWN_possessive} faction {PAWN_factionName}. -->
   <MessageCapturingWillAngerFaction>Attenzione: Catturare {PAWN_nameDef} manderà in collera la sua fazione {PAWN_factionName}.</MessageCapturingWillAngerFaction>
 
   <!-- EN: Warning: Stripping {PAWN_nameDef} will anger {PAWN_factionName}. -->
-  <MessageStrippingWillAngerFaction>Avviso: L'uccisione di {PAWN_nameDef} manderà in collera la sua fazione {PAWN_factionName}.</MessageStrippingWillAngerFaction>
+  <MessageStrippingWillAngerFaction>Attenzione: Spogliare {PAWN_nameDef} manderà in collera {PAWN_factionName}.</MessageStrippingWillAngerFaction>
 
   <!-- EN: Cannot shoot in melee. -->
   <MessageCantShootInMelee>Non può sparare in mischia.</MessageCantShootInMelee>
@@ -692,7 +692,7 @@
   <MessagePrisonerCannotEquipWeapon>{PAWN_nameDef} è un prigioniero</MessagePrisonerCannotEquipWeapon>
 
   <!-- EN: Warning: {0_nameDef}'s beliefs oppose {1} work. {0_pronoun} may become unhappy. -->
-  <MessageIdeoOpposedWorkTypeSelected>Attenzione: Le convinzioni di {0_nomeDef} si oppongono al lavoro di {1}. {0_pronoun} potrebbe diventare infelice.</MessageIdeoOpposedWorkTypeSelected>
+  <MessageIdeoOpposedWorkTypeSelected>Attenzione: Le convinzioni di {0_nameDef} si oppongono al lavoro di {1}. {0_pronoun} potrebbe diventare infelice.</MessageIdeoOpposedWorkTypeSelected>
 
   <!-- EN: {0} is no longer assigned to {1_nameDef}. -->
   <MessageBedLostAssignment>{0} non è più assegnato a {1_nameDef}.</MessageBedLostAssignment>
@@ -825,7 +825,7 @@
   <MessageWarningCutImportantPlant>Attenzione: {0} è stato contrassegnato per il taglio.</MessageWarningCutImportantPlant>
 
   <!-- EN: {0_labelShort} is incapable of manipulation. -->
-  <MessageIncapableOfManipulation>{0_labelShort} non è manipolabile.</MessageIncapableOfManipulation>
+  <MessageIncapableOfManipulation>{0_labelShort} è incapace di manipolazione.</MessageIncapableOfManipulation>
 
   <!-- EN: {0_labelShort} activation canceled -->
   <MessageActivationCanceled>{0_labelShort} attivazione annullata</MessageActivationCanceled>
