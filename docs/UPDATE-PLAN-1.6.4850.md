@@ -38,32 +38,6 @@ on Core namers (People/Scenarios/Outlander/settlements + `Strings/WordParts/Syll
   plural axis as a *residual* (guarded, no double-count) → **0 variant stale**. Verified via `namegen`.
 - `Solid_Adult.xml` validated in `VALIDATION-FILES.csv` (live fields clean).
 
-### 2026-06-26 (this session, Core console)
-- **Phase A — `Solid_Child.xml` validation COMPLETE**: whole file reviewed in ~20-entry blocks and
-  validated (1074 strings → `validated`, 0 left). **Next file**: continue `docs/VALIDATION-FILES.csv`
-  in order — `Solid_Adult` already done, so next is `Solid_Rare`/`Special`, then `Tribal_*` etc.
-- ⚠️ **Shared-CSV race observed**: midway, the other console's `ledger build` clobbered the
-  validations written after its read (blocks from `RitualChild20` on reverted to `translated`).
-  Recovered with a final `rwit ledger validate --file Solid_Child.xml --yes`. Lesson: after a parallel
-  `ledger build`, re-run the per-file validate to confirm it stuck (`--list` should show 0).
-- Content fixes committed (2 commits): slash forms `lo/la`/`preso/a` → ternaries; many fixed-gender
-  adjectives/nouns (`pessimo`, `privo`, `pigro`, `l'eroe`, `neonato`, `scienziato`/`scienziata`
-  titles, `lo costrinse`, `inviato`); a `Sebbene`+indicativo → congiuntivo; `mondo/pianeta` title
-  coherence; one `\n\n` not in EN removed. **`GlitterworldKid85` was a full mistranslation** (wrong
-  story) → retranslated to match the EN comment.
-- ⚠️ **Shared ledger CSV not committed**: it interleaves this console's `Solid_Child` validations with
-  the other console's `Solid_Adult` rows (other console committed `Solid_Adult.xml` but not the CSV).
-  Validations are safe on disk (dashboard reads disk); commit the CSV in a coordinated `tooling()` step.
-
-### 2026-06-26 (Keyed pass — Core console)
-- **`Core/Keyed/Misc_Gameplay.xml` validation COMPLETE**: intero file riletto (2191 righe, IT↔EN);
-  linter puliti. 27 fix in 1 commit `content(core)`: refusi (`recovero`,`alimali`,`appartieneva`,
-  `deterioramente`); token rotti (`{0_nomeDef}`→`{0_nameDef}`, `{PAWN_possessive}`→`{PAWN_pronoun}`);
-  falsi sensi (`Passaggio per il paradiso`/offworld, `Hackerare i progressi`, `Roped*` non "in sella",
-  `Congelato`→`Refrigerato`); divergenze EN (CaravanDetectedRaidCountdownTip, RitualEndsIn `tra`,
-  LordReportAttending, …); `avvenimento`→`avviamento`; `\n\n` ripristinati. Validato **962 voci**
-  (scoping `--dlc Core` per non toccare le copie Anomaly/Biotech/Odyssey). CSV committato a parte.
-
 ### NEXT SESSION — TODO (priority order)
 1. **Art namer plurals** (`RulePacks_Namers_Art.xml`): same treatment as the Scenari namer above, but
    Art needs the plural *indefinite* article (dei/degli/delle/∅) + **plural adjective agreement**
