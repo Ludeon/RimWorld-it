@@ -76,7 +76,7 @@
   
   <!-- Missing Steam -->
   <!-- EN: Could not initialize Steam API. Possible causes:\n\n-Steam is not running.\n-Launched from outside Steam without steam_appid.txt in place.\n-Running with different privileges than Steam client (e.g. "as administrator").\n\nIn most cases, rebooting your computer will fix this problem.\n\nYou can play anyway, but no Steam stats will be recorded and Steam features won't be available. -->
-  <SteamClientMissing>Impossibile inizializzare l'API di Steam. Possibili cause:\n\n-Steam non è avviato.\n-Avvio fuori Steam senza steam_appid.txt.\n-Avvio con privilegi diversi da quelli del client di Steam (a.e. "come amministratore").\n\nNella maggior parte dei casi riavviare il tuo computer risolverà questo problema.\n\nPuoi comunque giocare, ma non verrà registrata nessuna statistica di Steam e le funzionalità di Steam non saranno disponibili.</SteamClientMissing>
+  <SteamClientMissing>Impossibile inizializzare l'API di Steam. Possibili cause:\n\n-Steam non è avviato.\n-Avvio fuori Steam senza steam_appid.txt.\n-Avvio con privilegi diversi da quelli del client di Steam (ad es. "come amministratore").\n\nNella maggior parte dei casi riavviare il tuo computer risolverà questo problema.\n\nPuoi comunque giocare, ma non verrà registrata nessuna statistica di Steam e le funzionalità di Steam non saranno disponibili.</SteamClientMissing>
   
   <!-- Long events -->
   <!-- EN: Initializing interface -->
@@ -190,7 +190,7 @@
   <!-- EN: mother -->
   <Mother>madre</Mother>
   <!-- EN: father -->
-  <Father>fratello</Father>
+  <Father>padre</Father>
   <!-- EN: unknown -->
   <Unknown>sconosciuto</Unknown>
   <!-- EN: first name -->
@@ -242,7 +242,7 @@
 
   <!-- Backstory translation restart dialog -->
   <!-- EN: Backstories are now implemented as a def and all legacy backstory translations have been imported into def translations. The file {0} has been imported and moved to {1}. It can now be deleted.\n\nRestart the game for changes to take effect. -->
-  <RestartAfterImportingLegacyBackstoryTanslations>Le storie secondarie sono ora implementate come defenitiva e tutte le traduzioni delle storie secondarie sono state importate nelle traduzioni definitiva. Il file {0} è stato importato e spostato in {1}. Ora può essere eliminato.\n\nRiavviare il gioco per rendere effettive le modifiche.</RestartAfterImportingLegacyBackstoryTanslations>
+  <RestartAfterImportingLegacyBackstoryTanslations>Le storie secondarie sono ora implementate come def e tutte le vecchie traduzioni delle storie secondarie sono state importate nelle traduzioni dei def. Il file {0} è stato importato e spostato in {1}. Ora può essere eliminato.\n\nRiavviare il gioco per rendere effettive le modifiche.</RestartAfterImportingLegacyBackstoryTanslations>
 
   <!-- Game start -->
   <!-- EN: Must include exactly {SUMMARY} -->
@@ -317,9 +317,9 @@
   <!-- EN: nutrition -->
   <BillNutrition>alimentazione</BillNutrition>
   <!-- EN: Note: Small-volume ingredients like gold require {0}x as much. -->
-  <BillRequiresMayVary>Nota: gli ingredienti di piccolo volume come oro richiedono {0} di più.</BillRequiresMayVary>
+  <BillRequiresMayVary>Nota: gli ingredienti di piccolo volume come oro ne richiedono {0} volte tanto.</BillRequiresMayVary>
   <!-- EN: This is a small-volume ingredient. This means that each 'unit' is only 1/{0} as much as a normal-volume ingredient. So, to fill the same ingredient requirement, you'll need {0}x as much as usual. -->
-  <ThisIsSmallVolume>Questo è un ingrediente di piccolo volume. Questo significa che ogni 'unità' conta per 1/{0} di un ingrediente di volume normale. Perciò, per soddisfare gli stessi requisiti, te ne servirà {0} più del normale.</ThisIsSmallVolume>
+  <ThisIsSmallVolume>Questo è un ingrediente di piccolo volume. Questo significa che ogni 'unità' conta per 1/{0} di un ingrediente di volume normale. Perciò, per soddisfare gli stessi requisiti, te ne servirà {0} volte tanto rispetto al solito.</ThisIsSmallVolume>
   <!-- EN: ingredients -->
   <UsableIngredients>ingredienti</UsableIngredients>
   <!-- EN: To {0} -->
@@ -403,7 +403,7 @@
   <!-- EN: Miss radius -->
   <MissRadius>Portata fallimento</MissRadius>
   <!-- EN: Grows wild -->
-  <GrowsWild>Cresce spontaneamento</GrowsWild>
+  <GrowsWild>Cresce spontaneamente</GrowsWild>
   <!-- EN: Harvestable -->
   <Harvestable>Si può raccogliere</Harvestable>
   <!-- EN: Limited lifespan -->
@@ -517,7 +517,7 @@
   <!-- EN: Addiction need dose interval -->
   <AddictionNeedDoseInterval>Intervallo di dose richiesta per la dipendenza</AddictionNeedDoseInterval>
   <!-- EN: Addiction recovery time -->
-  <AddictionRecoveryTime>Tempo di recovero dalla dipendenza</AddictionRecoveryTime>
+  <AddictionRecoveryTime>Tempo di recupero dalla dipendenza</AddictionRecoveryTime>
   <!-- EN: Addiction cost -->
   <AddictionCost>Costo della dipendenza</AddictionCost>
   <!-- EN: Random overdose chance -->
@@ -569,13 +569,13 @@
   <!-- EN: Rearm cost -->
   <RearmCost>Costo ricarica</RearmCost>
   <!-- EN: Resources needed to rearm this turret -->
-  <RearmCostExplanation>Risorse necessarie per ricaricare questa torretta (influenzato da difficoltà).</RearmCostExplanation>
+  <RearmCostExplanation>Risorse necessarie per ricaricare questa torretta.</RearmCostExplanation>
   <!-- EN: affected by difficulty -->
-  <RearmCostExplanationDifficulty>colpiti da difficoltà</RearmCostExplanationDifficulty>
+  <RearmCostExplanationDifficulty>influenzato dalla difficoltà</RearmCostExplanationDifficulty>
   <!-- EN: Shots before rearm -->
   <ShotsBeforeRearm>Colpi prima di ricarica</ShotsBeforeRearm>
   <!-- EN: How many shots this turret can fire before it has to be rearmed. -->
-  <ShotsBeforeRearmExplanation>Quanti colpi queste torretta può sparare prima di dove essere riarmata.</ShotsBeforeRearmExplanation>
+  <ShotsBeforeRearmExplanation>Quanti colpi questa torretta può sparare prima di dover essere riarmata.</ShotsBeforeRearmExplanation>
   <!-- EN: Power consumption -->
   <PowerConsumption>Consumo energia</PowerConsumption>
   <!-- EN: Target -->
@@ -603,7 +603,7 @@
   <!-- EN: The types of meditation focus this object offers. A meditating person can focus on this object to boost their psyfocus gain, but only if they are able to use one of its meditation types. Each person can use different meditation types depending on their background, traits, social position, and so on. -->
   <MeditationFocusesDesc>I tipi di meditazione che questo oggetto offre. Una persona in meditazione può concentrarsi su questo oggetto per aumentare il guadagno di psyfocus, ma solo se è in grado di utilizzare uno dei suoi tipi di meditazione. Ogni persona può usare diversi tipi di meditazione a seconda del proprio passato, tratti, posizione sociale e così via.</MeditationFocusesDesc>
   <!-- EN: Can use {0} focus type because -->
-  <MeditationFocusCanUse>Può utilizzare {0} tipi di concentrazione perchè</MeditationFocusCanUse>
+  <MeditationFocusCanUse>Può utilizzare {0} tipi di concentrazione perché</MeditationFocusCanUse>
   <!-- EN: {0} focus objects -->
   <MeditationFocusObjects>{0} oggetti di meditazione</MeditationFocusObjects>
   <!-- EN: holds title: {TITLE} ({FACTION_name}). -->
@@ -613,11 +613,11 @@
   <!-- EN: has adulthood -->
   <MeditationFocusEnabledByAdulthood>ha l'età adulta</MeditationFocusEnabledByAdulthood>
   <!-- EN: has trait -->
-  <MeditationFocusEnabledByTrait>ha carattere</MeditationFocusEnabledByTrait>
+  <MeditationFocusEnabledByTrait>ha il tratto</MeditationFocusEnabledByTrait>
   <!-- EN: has health condition -->
   <MeditationFocusEnabledByHediff>ha una condizione di salute</MeditationFocusEnabledByHediff> 
   <!-- EN: does not have trait -->
-  <MeditationFocusDisabledByTrait>non ha carattere</MeditationFocusDisabledByTrait>
+  <MeditationFocusDisabledByTrait>non ha il tratto</MeditationFocusDisabledByTrait>
   <!-- EN: Enables meditation focus types -->
   <EnablesMeditationFocusType>Abilita i tipi di meditazione</EnablesMeditationFocusType>
   
@@ -777,7 +777,7 @@
   <!-- EN: Your caravan only has {0} days worth of food and will become hungry quickly. -->
   <DaysWorthOfFoodWarningDialog>La tua carovana ha solo {0} giorni di autonomia di cibo e sarà presto affamata.</DaysWorthOfFoodWarningDialog>
   <!-- EN: Some peoples' diets don't allow most of the food in your caravan. If they're forced to eat it due to hunger, they will become unhappy. -->
-  <DaysWorthOfFoodDietWarningDialog>La dieta di alcune persone non consente di mangiare la maggior parte degli alimenti presenti nella roulotte. Se sono costretti a mangiarli per fame, diventeranno infelici.</DaysWorthOfFoodDietWarningDialog>
+  <DaysWorthOfFoodDietWarningDialog>La dieta di alcune persone non consente di mangiare la maggior parte degli alimenti presenti nella carovana. Se sono costretti a mangiarli per fame, diventeranno infelici.</DaysWorthOfFoodDietWarningDialog>
   <!-- EN: Your caravan has no food and will become hungry very quickly. -->
   <DaysWorthOfFoodWarningDialog_NoFood>La tua carovana non ha cibo e sarà molto presto affamata.</DaysWorthOfFoodWarningDialog_NoFood>
   <!-- EN: The average amount of food per day your people will forage. This value will change as you travel across biomes with different forage yield rates. -->
@@ -851,7 +851,7 @@
   <!-- EN: None -->
   <TilesPerDayImmobileShort>Nessuno</TilesPerDayImmobileShort>
   <!-- EN: Movement speed depends on carried mass, ridden animals, and terrain movement difficulty. -->
-  <CaravanMovementSpeedTip>La velocità di movimento dipende dalla velocità media di tutte le persone e gli animali, il peso trasportato la difficoltà di movimento del terreno.</CaravanMovementSpeedTip>
+  <CaravanMovementSpeedTip>La velocità di movimento dipende dal peso trasportato, dagli animali cavalcati e dalla difficoltà di movimento del terreno.</CaravanMovementSpeedTip>
   <!-- EN: Animals will be able to graze -->
   <AnimalsWillBeAbleToGraze>Gli animali potranno pascolare</AnimalsWillBeAbleToGraze>
   <!-- EN: Animals can graze -->
@@ -985,9 +985,9 @@
   <!-- EN: Drug policy -->
   <DrugPolicy>Politica sulle droghe</DrugPolicy>
   <!-- EN: Drugs policy is in use by {0}. -->
-  <DrugPolicyInUse>Questa politica sulle droghe è in effetto su {0}.</DrugPolicyInUse>
+  <DrugPolicyInUse>Questa politica sulle droghe è in uso da {0}.</DrugPolicyInUse>
   <!-- EN: Food restriction is in use by {0}. -->
-  <FoodRestrictionInUse>Questa limitazione sul cibo è in effetto su {0}.</FoodRestrictionInUse>
+  <FoodRestrictionInUse>Questa limitazione sul cibo è in uso da {0}.</FoodRestrictionInUse>
   <!-- EN: Add drug... -->
   <AddDrug>Aggiungi droga...</AddDrug>
   <!-- EN: Drug -->
@@ -1011,7 +1011,7 @@
   <!-- EN: Any -->
   <NoDrugUseRequirement>Chiunque</NoDrugUseRequirement>
   <!-- EN: Delete this drug. -->
-  <DeleteDrugTooltip>Distruggi questa droga.</DeleteDrugTooltip>
+  <DeleteDrugTooltip>Elimina questa droga.</DeleteDrugTooltip>
   <!-- EN: The name of a drug. -->
   <DrugNameColumnDesc>Il nome di una droga.</DrugNameColumnDesc>
   <!-- EN: How often the colonists should try to take this drug. -->
@@ -1163,9 +1163,9 @@
   
   <!-- Cleanup translation files -->
   <!-- EN: Are you sure you want to cleanup all translation files for language {0}?\n\nThis will:\n  - Add placeholders for missing keyed translations, def-injected translations, and backstories\n  - Add or update comments containing the original, untranslated text\n  - Move all keyed and def-injected translations to the appropriate XML files\n  - Apply automatic formatting to all XML files\n  - Update back-compatible def names\n  - Remove all existing XML comments (except in full-list injections)\n\nNon-XML files will not be removed or modified.\n\nRemember to restart the game after modifying the language files before running this tool in order to reload all data.\n\nMake sure to back up all translation files before using this tool. -->
-  <ConfirmCleanupTranslationFiles>Se sicuro di voler ripulire tutti i file di traduzione per la lingua {0}?\n\nQuesto:\n  - Aggiungerà segnaposti per traduzioni mancanti di keyed, def-injected e backstories\n  - Aggiungerà o aggiornerà i commenti contenenti il testo originale non tradotto\n  - Sposterà tutte le traduzioni di keyed e def-injected sull'appropriato file XML\n  - Applicherà automaticamente la formattazione a tutti i file XML\n  - Aggiornerà i nomi dei def precedentemente compatibili\n  - Rimuoverà tutti i commenti XML esistenti (tranne negli inserimenti a lista intera)\n\nI file non XML non saranno rimossi o modificati.\n\nRicorda di riavviare il gioco dopo aver modificato i file della lingua avviando questo tool per ricaricare tutti i dati.\n\nAssicurati di fare un backup di tutti i file di traduzione prima di usare questo tool.</ConfirmCleanupTranslationFiles>
+  <ConfirmCleanupTranslationFiles>Sei sicuro di voler ripulire tutti i file di traduzione per la lingua {0}?\n\nQuesto:\n  - Aggiungerà segnaposti per traduzioni mancanti di keyed, def-injected e backstories\n  - Aggiungerà o aggiornerà i commenti contenenti il testo originale non tradotto\n  - Sposterà tutte le traduzioni di keyed e def-injected sull'appropriato file XML\n  - Applicherà automaticamente la formattazione a tutti i file XML\n  - Aggiornerà i nomi dei def precedentemente compatibili\n  - Rimuoverà tutti i commenti XML esistenti (tranne negli inserimenti a lista intera)\n\nI file non XML non saranno rimossi o modificati.\n\nRicorda di riavviare il gioco dopo aver modificato i file della lingua, prima di avviare questo strumento, per ricaricare tutti i dati.\n\nAssicurati di fare un backup di tutti i file di traduzione prima di usare questo tool.</ConfirmCleanupTranslationFiles>
   <!-- EN: Yes, I have a backup -->
-  <ConfirmCleanupTranslationFiles_Confirm>Si, ho un backup</ConfirmCleanupTranslationFiles_Confirm>
+  <ConfirmCleanupTranslationFiles_Confirm>Sì, ho un backup</ConfirmCleanupTranslationFiles_Confirm>
 
   <!-- Load transporters -->
   <!-- EN: The caravan will be immobile if you launch to an empty tile. Continue anyway? -->
@@ -1209,7 +1209,7 @@
   <!-- EN: {0_labelShort} is not mentally broken. -->
   <AbilityCanOnlyApplyToMentallyBroken>{0_labelShort} non ha un crollo mentale.</AbilityCanOnlyApplyToMentallyBroken>
   <!-- EN: {0_labelShort} is not maddened. -->
-  <AbilityCanOnlyApplyToManhunter>{0_labelShort} non è arrabbiato.</AbilityCanOnlyApplyToManhunter>
+  <AbilityCanOnlyApplyToManhunter>{0_labelShort} non è inferocito.</AbilityCanOnlyApplyToManhunter>
   <!-- EN: {0_labelShort} has scaria, which can only be treated medically. -->
   <AbilityCantApplyToScaria>{0_labelShort} ha la scaria, che può essere trattata solo da un medico.</AbilityCantApplyToScaria>
   <!-- EN: {0} doesn't work on the '{1}' mental state. -->
@@ -1269,7 +1269,7 @@
   <!-- EN: Psychic love for -->
   <PsychicLoveFor>Amore psichico per</PsychicLoveFor>
   <!-- EN: If you skip {PAWN_labelShort} to another map or a caravan, the associated quest will fail and {PAWN_pronoun} will leave immediately.\n\nDo you really want to farskip {PAWN_labelShort}? -->
-  <FarskipConfirmTeleportingLodger>Se lanci {PAWN_labelShort} su un'altra mappa o su una roulotte, la missione associata fallirà e {PAWN_pronoun} se ne andrà immediatamente.\n\nVuoi davvero lanciare {PAWN_labelShort}?</FarskipConfirmTeleportingLodger>
+  <FarskipConfirmTeleportingLodger>Se lanci {PAWN_labelShort} su un'altra mappa o su una carovana, la missione associata fallirà e {PAWN_pronoun} se ne andrà immediatamente.\n\nVuoi davvero lanciare {PAWN_labelShort}?</FarskipConfirmTeleportingLodger>
   
   <!-- EN: minor -->
   <MentalBreakIntensityMinor>leggero</MentalBreakIntensityMinor>
@@ -1354,12 +1354,12 @@
   <!-- EN: all fine floored -->
   <RoomRequirementAllFineFloored>tutto pavimentato raffinatamente</RoomRequirementAllFineFloored>
   <!-- EN: no work facilities allowed -->
-  <RoomRequirementNoProductionFacilities>nessun banco di lavoro ammessa</RoomRequirementNoProductionFacilities>
+  <RoomRequirementNoProductionFacilities>nessun banco di lavoro ammesso</RoomRequirementNoProductionFacilities>
   <!-- EN: no altars allowed -->
   <RoomRequirementNoAltars>non sono ammessi altari</RoomRequirementNoAltars>
 
   <!-- EN: Lifestage max food factor -->
-  <LifeStageMaxFood>Alimento per la fase di vita massima</LifeStageMaxFood>
+  <LifeStageMaxFood>Fattore cibo massimo per fase di vita</LifeStageMaxFood>
 
   <!-- EN: Expand all -->
   <ExpandAllCategories>Espandi tutto</ExpandAllCategories>
@@ -1404,7 +1404,7 @@
   <!-- EN: Paste color -->
   <CommandPasteColorLabel>Incolla il colore</CommandPasteColorLabel>
   <!-- EN: Overwrite the color with the color in the clipboard. -->
-  <CommandPasteColorDesc>Sovrascri il colore con quello presente negli appunti.</CommandPasteColorDesc>
+  <CommandPasteColorDesc>Sovrascrivi il colore con quello presente negli appunti.</CommandPasteColorDesc>
   <!-- EN: The clipboard does not contain a valid color. -->
   <ClipboardInvalidColor>Gli appunti non contengono un colore valido.</ClipboardInvalidColor>
   <!-- EN: Color copied to clipboard. -->
