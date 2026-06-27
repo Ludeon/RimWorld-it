@@ -31,7 +31,7 @@
   <!-- EN: Cleaning translation files -->
   <CleaningTranslationFiles>Pulizia file di traduzione</CleaningTranslationFiles>
   <!-- EN: Dev quicktest -->
-  <DevQuickTest> Test rapido dei dispositivi</DevQuickTest>
+  <DevQuickTest>Test rapido</DevQuickTest>
   <!-- EN: Credits -->
   <Credits>Crediti</Credits>
   <!-- EN: Quit to main menu -->
@@ -159,7 +159,7 @@
   <!-- EN: Show mods data location -->
   <ShowModsDataLocation>Mostra percorso dati mod</ShowModsDataLocation>
   <!-- EN: Are you sure you want to disable the core mod? The game won't work at all unless you have another mod that replaces all the core functionality.\n\nRemember, other mods can override defs in the core mod by using the same defName. -->
-  <ConfirmDisableCoreMod>Sei sicuro di voler disabilitare la mod principale? Il gioco non funzionerà finché non avrai un'altra mod che sostituisca tutte le funzionalità principali.\n\nRicorda, altre mod possono sovrascrivere file nella mod principale usando lo stesso defName.</ConfirmDisableCoreMod>
+  <ConfirmDisableCoreMod>Sei sicuro di voler disabilitare la mod principale? Il gioco non funzionerà finché non avrai un'altra mod che sostituisca tutte le funzionalità principali.\n\nRicorda, altre mod possono sovrascrivere i def nella mod principale usando lo stesso defName.</ConfirmDisableCoreMod>
   <!-- EN: Are you sure you want to delete all the content for {0}? -->
   <ConfirmDeleteMod>Sei sicuro di voler eliminare tutti i contenuti di {0}?</ConfirmDeleteMod>
   <!-- EN: Auto-sort mods -->
@@ -167,7 +167,7 @@
   <!-- EN: Save and apply changes -->
   <SaveModChanges>Salva e applica le modifiche</SaveModChanges>
   <!-- EN: Mod changes have not been saved. Are you sure you want to continue? -->
-  <DiscardModChanges>Le mod apportate non sono state salvate. Sei sicuro di voler continuare?</DiscardModChanges>
+  <DiscardModChanges>Le modifiche alle mod non sono state salvate. Sei sicuro di voler continuare?</DiscardModChanges>
   <!-- EN: Cannot move {0}: It must be loaded after {1}. -->
   <ModReorderConflict_MustLoadAfter>Impossibile spostare {0}: Deve essere caricato dopo {1}.</ModReorderConflict_MustLoadAfter>
   <!-- EN: Cannot move {0}: It must be loaded before {1}. -->
@@ -179,7 +179,7 @@
   <!-- EN: Are you sure you want to unsubscribe from {0}? -->
   <ConfirmUnsubscribeFrom>Sei sicuro di voler annullare l'iscrizione a {0}?</ConfirmUnsubscribeFrom>
   <!-- EN: Are you sure you want to unsubscribe from:\n\n{0} -->
-  <ConfirmUnsubscribeFromMultiple> Sei sicuro di voler annullare l'iscrizione a:\n\n{0}</ConfirmUnsubscribeFromMultiple>
+  <ConfirmUnsubscribeFromMultiple>Sei sicuro di voler annullare l'iscrizione a:\n\n{0}</ConfirmUnsubscribeFromMultiple>
   <!-- EN: Author -->
   <Author>Autore</Author>
   <!-- EN: Enabled -->
@@ -201,7 +201,7 @@
   <!-- EN: Load mod list -->
   <LoadModList>Carica la lista delle mod</LoadModList>
   <!-- EN: Added mods -->
-  <AddedModsList>Aggiungi mod</AddedModsList>
+  <AddedModsList>Mod aggiunte</AddedModsList>
   <!-- EN: Missing mods -->
   <MissingModsList>Mod mancanti</MissingModsList>
   <!-- EN: Shared mods -->
@@ -233,7 +233,7 @@
   <!-- EN: Upload already in progress. -->
   <UploadAlreadyInProgress>Caricamento già in corso.</UploadAlreadyInProgress>
   <!-- EN: Workshop submission failed.\n\nReason: {0} -->
-  <WorkshopSubmissionFailed>Invio al Workshop fallito.\n\Causa: {0}</WorkshopSubmissionFailed>
+  <WorkshopSubmissionFailed>Invio al Workshop fallito.\n\nCausa: {0}</WorkshopSubmissionFailed>
   <!-- EN: Successfully uploaded {0}. -->
   <WorkshopUploadSucceeded>{0} caricato correttamente.</WorkshopUploadSucceeded>
   <!-- EN: Downloading -->
@@ -281,7 +281,7 @@
   <!-- EN: Mod needs properly formatted supported version information in About.xml. Like this: <supportedVersions><li>{0}</li></supportedVersions> - <targetVersion> is deprecated. Check log for further information. -->
   <MessageModNeedsWellFormattedTargetVersion>La mod necessita di una versione di riferimento correttamente formattata in About.xml. Come questa: {0}.</MessageModNeedsWellFormattedTargetVersion>
   <!-- EN: Mod needs a unique, properly formatted packageId in About.xml. It must must meet following requirements:\n\n  - Alphanumeric characters and dot only.\n  - No spaces.\n  - At least one dot.\n  - No repeated dots in a row, or starting or ending with a dot.\n  - 60 characters or less.\n  - Cannot contain word "Ludeon".\n\nFor example:\n<packageId>AuthorName.ModName</packageId>\n<packageId>AuthorName.ModName.Specific</packageId> -->
-  <MessageModNeedsWellFormattedPackageId>La mod ha bisogno di un 'packageId' unico e correttamente formattato in 'About.xml'. Deve soddisfare i seguenti requisiti:\n\n  - Solamente lettere e punti.\n  - Nessuno spazio.\n - Almeno un punto.\n  - Nessuno punto ripetuto, all'inizio o alla fine di una riga.\n  - Massimo 60 caratteri.\n  - Non può contenere la parola "Ludeon".\n\nPer esempio:\nNomeAutore.NomeMod\nNomeAutore.NomeMod.Specifica</MessageModNeedsWellFormattedPackageId>
+  <MessageModNeedsWellFormattedPackageId>La mod ha bisogno di un 'packageId' unico e correttamente formattato in 'About.xml'. Deve soddisfare i seguenti requisiti:\n\n  - Solo caratteri alfanumerici e punti.\n  - Nessuno spazio.\n  - Almeno un punto.\n  - Nessun punto ripetuto di seguito, né all'inizio né alla fine.\n  - Massimo 60 caratteri.\n  - Non può contenere la parola "Ludeon".\n\nPer esempio:\nNomeAutore.NomeMod\nNomeAutore.NomeMod.Specifica</MessageModNeedsWellFormattedPackageId>
   <!-- EN: This mod has issues in LoadFolders.xml, that you need to resolve before uploading: -->
   <ModHadLoadFolderIssues>Questa mod presenta problemi in LoadFolders.xml, che devi risolvere prima di caricare:</ModHadLoadFolderIssues>
   <!-- EN: Folder {0} specified for version {1} doesn't exist. -->
@@ -299,7 +299,7 @@
   <!-- EN: Using 'default' in load folders is deprecated. Please define folders for each version using the <v...> tags. -->
   <ModLoadFolderDefaultDeprecated>L'utilizzo di "default" nelle cartelle di caricamento è deprecato. Definire le cartelle per ogni versione utilizzando i tags "v...".</ModLoadFolderDefaultDeprecated>
   <!-- EN: Version {0} is defined in load folders, but is not listed in 'supportedVersions' of mod's About.xml. -->
-  <ModLoadFolderDefinesUnsupportedGameVersion>La versione {0} è definita nelle cartelle di caricamento, ma non è elencata in "supportVersions" di About.xml della mod.</ModLoadFolderDefinesUnsupportedGameVersion>
+  <ModLoadFolderDefinesUnsupportedGameVersion>La versione {0} è definita nelle cartelle di caricamento, ma non è elencata in "supportedVersions" di About.xml della mod.</ModLoadFolderDefinesUnsupportedGameVersion>
   <!-- EN: Drag to reorder -->
   <DragToReorder>Trascina per riordinare</DragToReorder>
 
@@ -347,7 +347,7 @@
   <!-- EN: Choose AI Storyteller -->
   <ChooseAIStoryteller>Scegli IA narratrice</ChooseAIStoryteller>
   <!-- EN: The AI Storyteller creates events like pirate raids, resource drops, or animal attacks. Their choices will affect the story of your colony. You can change these settings at any time. -->
-  <HowStorytellersWork>La IA narratrice crea eventi come assalti di pirati, lanci di risorse o attacchi di animali. Le loro scelte influenzeranno la storia della tua colonia. Puoi cambiare queste impostazioni in qualsiasi momento.</HowStorytellersWork>
+  <HowStorytellersWork>La IA narratrice crea eventi come assalti di pirati, lanci di risorse o attacchi di animali. Le sue scelte influenzeranno la storia della tua colonia. Puoi cambiare queste impostazioni in qualsiasi momento.</HowStorytellersWork>
   <!-- EN: Please choose a difficulty setting. -->
   <MustChooseDifficulty>Scegli un livello di difficoltà.</MustChooseDifficulty>
   <!-- EN: Difficulty -->
@@ -359,9 +359,9 @@
   <!-- EN: Please choose commitment mode or reload anytime mode. -->
   <MustChoosePermadeath>Scegli modalità Ironman o modalità Salvataggi liberi</MustChoosePermadeath>
   <!-- EN: You can save and load the game at any time.\n\nThis is a good choice if you're still learning the game, if it fits your personal playstyle, if you're using mods that may break your game, or if you intend to self-enforce commitment mode. -->
-  <ReloadAnytimeModeInfo>Puoi salvare e caricare il gioco in qualsiasi momento.\n\nQuesta è una buona scelta se stai ancora imparando a giocare, se si adatta al tuo stile di gioco personale, se stai usando mod che potrebbero compromettere la tua partita o se hai intenzione di allenarti alla modalità difficile.</ReloadAnytimeModeInfo>
+  <ReloadAnytimeModeInfo>Puoi salvare e caricare il gioco in qualsiasi momento.\n\nQuesta è una buona scelta se stai ancora imparando a giocare, se si adatta al tuo stile di gioco personale, se stai usando mod che potrebbero compromettere la tua partita o se hai intenzione di auto-importi la modalità Ironman.</ReloadAnytimeModeInfo>
   <!-- EN: You can only save when quitting the game.\n\nSince RimWorld is a story generator, even losing all but one person is not the end of the game - it's part of the story. The game is designed to allow recovery after losses.\n\nPlaying out these terrible situations makes a story with both tragedy and triumph. It's the way RimWorld was designed to be played.\n\nThere's a reason Luke Skywalker didn't quit and reload when his family got killed - loss and recovery is dramatic. -->
-  <PermadeathModeInfo>Puoi salvare solo quando esci dal gioco.\n\nDal momento che RimWorld è un generatore di storie, fintanto che rimane anche una sola persona il gioco non è finito... è parte della storia. Il gioco è pensato per permettere di riprendersi dopo le perdite.\n\nInscenare queste situazioni terribili rende una storia sia una tragedia che un trionfo. E' il modo in cui RimWorld è stato pensato per essere giocato.\n\nC'è un motivo se Luke Skywalker non è uscito e ha ricaricato quando la sua famiglia è stata uccisa... cadere e rialzarsi è drammatico.</PermadeathModeInfo>
+  <PermadeathModeInfo>Puoi salvare solo quando esci dal gioco.\n\nDal momento che RimWorld è un generatore di storie, fintanto che rimane anche una sola persona il gioco non è finito... è parte della storia. Il gioco è pensato per permettere di riprendersi dopo le perdite.\n\nInscenare queste situazioni terribili rende una storia sia una tragedia che un trionfo. È il modo in cui RimWorld è stato pensato per essere giocato.\n\nC'è un motivo se Luke Skywalker non è uscito e ha ricaricato quando la sua famiglia è stata uccisa... cadere e rialzarsi è drammatico.</PermadeathModeInfo>
   <!-- EN: Storyteller and playstyle can be changed any time. -->
   <CanChangeStorytellerSettingsDuringPlay>Narratore e stile di gioco possono essere sempre cambiati.</CanChangeStorytellerSettingsDuringPlay>
 
@@ -429,7 +429,7 @@
   <!-- EN: Adjust the value of loot carried by raiders.\n\nNote: Raid loot value is also automatically scaled to compensate for threat scale. If you adjust this setting, you'll be adding an additional multiplier. -->
   <Difficulty_RaidLootPointsFactor_Info>Regola il valore del bottino trasportato dai predoni.\n\nNota: anche il valore del bottino dalle invasioni viene automaticamente ridimensionato per compensare la scala delle minacce. Se modifichi questa impostazione, aggiungerai un ulteriore moltiplicatore.</Difficulty_RaidLootPointsFactor_Info>
   <!-- EN: Turret rearm cost -->
-  <Difficulty_MaintenanceCostFactor_Label>Costo di riarmo delle torretta</Difficulty_MaintenanceCostFactor_Label>
+  <Difficulty_MaintenanceCostFactor_Label>Costo di riarmo delle torrette</Difficulty_MaintenanceCostFactor_Label>
   <!-- EN: Adjust the cost of rearming turrets. -->
   <Difficulty_MaintenanceCostFactor_Info>Regola il costo del riarmo delle torrette.</Difficulty_MaintenanceCostFactor_Info>
   <!-- EN: Scaria rot chance -->
@@ -518,13 +518,13 @@
   <!-- EN: Adaptation -->
   <DifficultyAdaptationSection>Adattamento</DifficultyAdaptationSection>
   <!-- EN: Adaptation growth rate -->
-  <Difficulty_AdaptationGrowthRateFactorOverZero_Label>Crescita dell'adattamento dei danni</Difficulty_AdaptationGrowthRateFactorOverZero_Label>
+  <Difficulty_AdaptationGrowthRateFactorOverZero_Label>Tasso di crescita dell'adattamento</Difficulty_AdaptationGrowthRateFactorOverZero_Label>
   <!-- EN: Adaptation means the storyteller makes the game more challenging when you're doing well. An adaptation score grows over time, and is knocked down when you take damage.\n\nThis setting adjusts how fast the adaptation score grows over time. -->
-  <Difficulty_AdaptationGrowthRateFactorOverZero_Info>Adattamento significa che il narratore rende il gioco più impegnativo nel tempo purché non subisca perdite. Questo è separato dagli effetti della storia della ricchezza e della popolazione.\n\nQuesto regola il tasso di crescita della sfida.</Difficulty_AdaptationGrowthRateFactorOverZero_Info>
+  <Difficulty_AdaptationGrowthRateFactorOverZero_Info>L'adattamento significa che il narratore rende il gioco più impegnativo quando le cose vanno bene. Un punteggio di adattamento cresce nel tempo e viene ridotto quando subisci danni.\n\nQuesta impostazione regola la velocità con cui il punteggio di adattamento cresce nel tempo.</Difficulty_AdaptationGrowthRateFactorOverZero_Info>
   <!-- EN: Adaptation impact -->
-  <Difficulty_AdaptationEffectFactor_Label>Effetto di adattamento dei danni</Difficulty_AdaptationEffectFactor_Label>
+  <Difficulty_AdaptationEffectFactor_Label>Impatto dell'adattamento</Difficulty_AdaptationEffectFactor_Label>
   <!-- EN: Adaptation means the storyteller makes the game more challenging when you're doing well. An adaptation score grows over time, and is knocked down when you take damage.\n\nThis setting adjusts how much the adaptation score affects the difficulty. -->
-  <Difficulty_AdaptationEffectFactor_Info>Adattamento significa che il narratore rende il gioco più impegnativo nel tempo purché non subisca perdite. Questo è separato dagli effetti della storia della ricchezza e della popolazione.\n\nQuesto regola l'effetto del valore di adattamento sulle minacce effettive.</Difficulty_AdaptationEffectFactor_Info>
+  <Difficulty_AdaptationEffectFactor_Info>L'adattamento significa che il narratore rende il gioco più impegnativo quando le cose vanno bene. Un punteggio di adattamento cresce nel tempo e viene ridotto quando subisci danni.\n\nQuesta impostazione regola quanto il punteggio di adattamento influisce sulla difficoltà.</Difficulty_AdaptationEffectFactor_Info>
   <!-- EN: Wealth-independent progress mode -->
   <Difficulty_FixedWealthMode_Label>Modalità di avanzamento indipendente dalla ricchezza</Difficulty_FixedWealthMode_Label>
   <!-- EN: Play in a wealth-independent progress mode.\n\nIn normal mode, the storyteller scales threats according to colonist count, player wealth, and a variety of other factors. Wealth-independent mode removes the wealth factor and replaces it with a fixed progress curve based on time. The time is counted from the founding of each colony.\n\nThis is only recommended for those looking for a strict skill challenge. In wealth-independent mode, it may be nearly impossible to recover from serious losses unless you found a new settlement. It's also possible to get too far ahead of the curve and find the game too easy. -->
@@ -617,7 +617,7 @@
   <!-- EN: temperature -->
   <TemperatureLower>temperatura</TemperatureLower>
   <!-- EN: light -->
-  <LightLower>Luce</LightLower>
+  <LightLower>luce</LightLower>
 
   <!-- Character chooser -->
   <!-- EN: Create characters -->
@@ -734,7 +734,7 @@
   <GeneratingMapForNewEncounter>Generazione mappa per nuovo incontro</GeneratingMapForNewEncounter>
 
   <!-- EN: Click for more info. -->
-  <ClickForMoreInfo>Clicca per maggiori informazioni</ClickForMoreInfo>
+  <ClickForMoreInfo>Clicca per maggiori informazioni.</ClickForMoreInfo>
   <!-- EN: No more information is available. -->
   <NoMoreInfoAvailable>Non sono disponibili ulteriori informazioni.</NoMoreInfoAvailable>
   <!-- EN: Best skill -->
@@ -758,7 +758,7 @@
   <!-- EN: Disabling {0} means less spontaneous threat variety. -->
   <InsectsDisabledContentWarning>Disabilitare {0} significa ridurre la varietà di minacce spontanee.</InsectsDisabledContentWarning>
   <!-- EN: Disabling {0} means less quest and spontaneous threat variety. -->
-  <MechanoidsDisabledContentWarning>Disabilitare {0} significa ridurre la varietà delle quest e delle minacce spontanee.</MechanoidsDisabledContentWarning>
+  <MechanoidsDisabledContentWarning>Disabilitare {0} significa ridurre la varietà delle missioni e delle minacce spontanee.</MechanoidsDisabledContentWarning>
   <!-- EN: Without other factions, raids, trading, and quests won't occur as normal. -->
   <FactionsDisabledWarning>Senza altre fazioni, le incursioni, il commercio e le missioni non si svolgeranno normalmente.</FactionsDisabledWarning>
   <!-- EN: Cannot be removed for this scenario. -->
