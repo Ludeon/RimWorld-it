@@ -2,6 +2,27 @@
 <LanguageData>
   
   <!-- EN:
+    <li>businessname->Names/Business</li>
+    <li>businesstype->Words/Nouns/BusinessTypes</li>
+  -->
+  <NamerTraderGeneral.rulePack.rulesFiles>
+    <li>businessname->Names/Business</li>
+    <li>businesstype->Words/Nouns/BusinessTypes</li>
+    <!-- IT: marchi descrittivi al genitivo. Le liste *_Genitive_* hanno la
+         preposizione articolata gia' fusa e accordata (del/dello/dell'/della),
+         generate da scripts/gen_genitive_lists.py dai sorgenti *_Singular_*;
+         il file porta il genere, cosi' il colore/aggettivo posposto concorda. -->
+    <li>animalgen_m->Words/Nouns/Animals_Genitive_Masculine</li>
+    <li>animalgen_f->Words/Nouns/Animals_Genitive_Feminine</li>
+    <li>natgen_m->Words/Nouns/NaturalObject_Genitive_Masculine</li>
+    <li>natgen_f->Words/Nouns/NaturalObject_Genitive_Feminine</li>
+    <li>treegen_m->Words/Nouns/TreeTypes_Genitive_Masculine</li>
+    <li>treegen_f->Words/Nouns/TreeTypes_Genitive_Feminine</li>
+    <li>veggen_m->Words/Nouns/Vegetables_Genitive_Masculine</li>
+    <li>veggen_f->Words/Nouns/Vegetables_Genitive_Feminine</li>
+  </NamerTraderGeneral.rulePack.rulesFiles>
+
+  <!-- EN:
     <li>r_name(p=4)->[businessname] [businesstype]</li>
     <li>r_name->[NamePerson] [businesstype]</li>
     <li>r_name->[maybe_adjective] [Animal] [businesstype]</li>
@@ -26,7 +47,9 @@
          - i marchi/sigle/nomi propri restano in apposizione (ordine EN), sono
            grammaticali in qualunque caso;
          - i descrittori (animale, oggetto naturale, albero, ortaggio) seguono il
-           businesstype come testa, con aggettivo POSPOSTO e concordato (liste M/F);
+           businesstype come testa con un genitivo ("Compagnia del toporagno"):
+           preposizione articolata fusa e accordata (del/dello/dell'/della, liste
+           *_Genitive_*), colore/aggettivo posposto e concordato col nome;
          - l'aggettivo riferito direttamente al businesstype usa sottoinsiemi di
            businesstype divisi per genere/numero (Friendly solo singolare: mancano
            le varianti plurali);
@@ -52,39 +75,41 @@
     <li>r_name(p=0.13)->[btype_fp] [AdjectiveBadassFP]</li>
     <!-- direzione come complemento invariante -->
     <li>r_name(p=0.2)->[btype_head] [dir_compl]</li>
-    <!-- marchi descrittivi: nome + aggettivo concordato (2/8 ~ 25% senza aggettivo, come l'EN) -->
-    <li>animalbrand->[Animal_Masculine]</li>
-    <li>animalbrand->[Animal_Feminine]</li>
-    <li>animalbrand->[Animal_Masculine] [Color_Masculine]</li>
-    <li>animalbrand->[Animal_Feminine] [Color_Feminine]</li>
-    <li>animalbrand->[Animal_Masculine] [AdjectiveFriendlyMS]</li>
-    <li>animalbrand->[Animal_Feminine] [AdjectiveFriendlyFS]</li>
-    <li>animalbrand->[Animal_Masculine] [AdjectiveBadassMS]</li>
-    <li>animalbrand->[Animal_Feminine] [AdjectiveBadassFS]</li>
-    <li>natbrand->[NaturalObject_Masculine]</li>
-    <li>natbrand->[NaturalObject_Feminine]</li>
-    <li>natbrand->[NaturalObject_Masculine] [Color_Masculine]</li>
-    <li>natbrand->[NaturalObject_Feminine] [Color_Feminine]</li>
-    <li>natbrand->[NaturalObject_Masculine] [AdjectiveFriendlyMS]</li>
-    <li>natbrand->[NaturalObject_Feminine] [AdjectiveFriendlyFS]</li>
-    <li>natbrand->[NaturalObject_Masculine] [AdjectiveBadassMS]</li>
-    <li>natbrand->[NaturalObject_Feminine] [AdjectiveBadassFS]</li>
-    <li>treebrand->[TreeType_Masculine]</li>
-    <li>treebrand->[TreeType_Feminine]</li>
-    <li>treebrand->[TreeType_Masculine] [Color_Masculine]</li>
-    <li>treebrand->[TreeType_Feminine] [Color_Feminine]</li>
-    <li>treebrand->[TreeType_Masculine] [AdjectiveFriendlyMS]</li>
-    <li>treebrand->[TreeType_Feminine] [AdjectiveFriendlyFS]</li>
-    <li>treebrand->[TreeType_Masculine] [AdjectiveBadassMS]</li>
-    <li>treebrand->[TreeType_Feminine] [AdjectiveBadassFS]</li>
-    <li>vegbrand->[Vegetable_Masculine]</li>
-    <li>vegbrand->[Vegetable_Feminine]</li>
-    <li>vegbrand->[Vegetable_Masculine] [Color_Masculine]</li>
-    <li>vegbrand->[Vegetable_Feminine] [Color_Feminine]</li>
-    <li>vegbrand->[Vegetable_Masculine] [AdjectiveFriendlyMS]</li>
-    <li>vegbrand->[Vegetable_Feminine] [AdjectiveFriendlyFS]</li>
-    <li>vegbrand->[Vegetable_Masculine] [AdjectiveBadassMS]</li>
-    <li>vegbrand->[Vegetable_Feminine] [AdjectiveBadassFS]</li>
+    <!-- marchi descrittivi al genitivo ("businesstype + del/della Y"); il genere
+         lo porta il file *_Genitive_*, colore/aggettivo posposto concordato.
+         2/8 ~ 25% senza aggettivo, come l'EN. -->
+    <li>animalbrand->[animalgen_m]</li>
+    <li>animalbrand->[animalgen_f]</li>
+    <li>animalbrand->[animalgen_m] [Color_Masculine]</li>
+    <li>animalbrand->[animalgen_f] [Color_Feminine]</li>
+    <li>animalbrand->[animalgen_m] [AdjectiveFriendlyMS]</li>
+    <li>animalbrand->[animalgen_f] [AdjectiveFriendlyFS]</li>
+    <li>animalbrand->[animalgen_m] [AdjectiveBadassMS]</li>
+    <li>animalbrand->[animalgen_f] [AdjectiveBadassFS]</li>
+    <li>natbrand->[natgen_m]</li>
+    <li>natbrand->[natgen_f]</li>
+    <li>natbrand->[natgen_m] [Color_Masculine]</li>
+    <li>natbrand->[natgen_f] [Color_Feminine]</li>
+    <li>natbrand->[natgen_m] [AdjectiveFriendlyMS]</li>
+    <li>natbrand->[natgen_f] [AdjectiveFriendlyFS]</li>
+    <li>natbrand->[natgen_m] [AdjectiveBadassMS]</li>
+    <li>natbrand->[natgen_f] [AdjectiveBadassFS]</li>
+    <li>treebrand->[treegen_m]</li>
+    <li>treebrand->[treegen_f]</li>
+    <li>treebrand->[treegen_m] [Color_Masculine]</li>
+    <li>treebrand->[treegen_f] [Color_Feminine]</li>
+    <li>treebrand->[treegen_m] [AdjectiveFriendlyMS]</li>
+    <li>treebrand->[treegen_f] [AdjectiveFriendlyFS]</li>
+    <li>treebrand->[treegen_m] [AdjectiveBadassMS]</li>
+    <li>treebrand->[treegen_f] [AdjectiveBadassFS]</li>
+    <li>vegbrand->[veggen_m]</li>
+    <li>vegbrand->[veggen_f]</li>
+    <li>vegbrand->[veggen_m] [Color_Masculine]</li>
+    <li>vegbrand->[veggen_f] [Color_Feminine]</li>
+    <li>vegbrand->[veggen_m] [AdjectiveFriendlyMS]</li>
+    <li>vegbrand->[veggen_f] [AdjectiveFriendlyFS]</li>
+    <li>vegbrand->[veggen_m] [AdjectiveBadassMS]</li>
+    <li>vegbrand->[veggen_f] [AdjectiveBadassFS]</li>
     <!-- sottoinsiemi di businesstype per genere/numero (accordo aggettivo;
          esclusi incorporata/interplanetaria/interstellare: già aggettivali) -->
     <li>btype_ms->consorzio</li>
