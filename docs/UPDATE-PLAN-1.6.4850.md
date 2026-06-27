@@ -58,7 +58,9 @@ on Core namers (People/Scenarios/Outlander/settlements + `Strings/WordParts/Syll
    M/F. Verified with namegen ("ha insultato l'eleganza di X"). (c) **`[PersonFamily]` article DONE**
    too: same `def-article` buckets + globals `[PersonFamily_def]`(il/lo/la) and `[PersonFamily_defGen]`
    (del/dello/della) wired into the 2 Monument lines ("onorare il padre", "commemorare … dello zio").
-   Residual still open (separate class, pre-existing): `[PersonJob]` plural with `dei` ("dei fabbro").
+   (d) **`[PersonJob]` plural DONE** too: Monument "il lavoro dei [PersonJob]" ("dei fabbro", singular)
+   → split `dei [PersonJob_PluralMasculine]` / `delle [PersonJob_PluralFeminine]` (the M list is all
+   dei-compatible, no vowel/s-impure) → "il lavoro dei contadini / delle ballerine".
 5. **Cleanup**: remove the now-unused `Games_Singular_*` variant cruft (the live split is
    `_Masculine`/`_Feminine`; `_Singular_*` is unreferenced and was misleading).
 
@@ -364,8 +366,9 @@ See [`NAME-GENERATION-AND-GRAMMAR.md`](NAME-GENERATION-AND-GRAMMAR.md).
   are all intentional RW coinages** (drugs/weapons/animals: yayo, monosword, devilstrand…) → no action.
 - [x] **Strings reconcile checked 2026-06-27**: 53 "ENGLISH" are all benign loanwords/identical
   scientific names (cobra, alpaca, panda…); even "ape" is a false positive (correct IT for *bee*, not
-  *great ape* which is already "scimmia"). Only `duster`→spolverino is borderline. 4 MISSING = minor
-  list-completeness. No substantive action; the legacy positional pairs remain (args-check FPs).
+  *great ape* which is already "scimmia"). `duster`→**mantello** fixed (Apparel.txt, to match the
+  `Apparel_Duster.label` = "mantello"). 4 MISSING = minor list-completeness. The legacy positional
+  pairs remain (args-check FPs).
 
 ### 5.2-ter Generated log (combat/social) — priority objective
 See [`NAME-GENERATION-AND-GRAMMAR.md`](NAME-GENERATION-AND-GRAMMAR.md) §5. Measured root cause:
