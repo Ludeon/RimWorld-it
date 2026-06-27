@@ -354,8 +354,18 @@ See [`NAME-GENERATION-AND-GRAMMAR.md`](NAME-GENERATION-AND-GRAMMAR.md).
 - [x] Decompiled `LanguageWorker_Italian` from the DLL; improved `.cs` in root (signatures verified).
 - [x] **Faction Namers rewired** with gender agreement (Core/Odyssey/Biotech) + variants generator.
 - [x] **`WordInfo/plural.txt`** created (heteroclite body parts) + ~60 body parts in `Gender/`.
-- [ ] WordInfo/Gender: remaining English (fix at the `.label`), doubtful (-e) genders.
-- [ ] Strings: align lists to the game's English (`rwit reconcile`); the legacy positional pairs.
+- [x] **WordInfo/Gender verified 2026-06-27** (Morph-it!-assisted triage, head-gender of the phrase
+  — handles masc `-a` pilota/pirata/duca/puma and fem `-o` mano). (1) **Gender correctness: 0 real
+  errors** on Morph-it!-verifiable words (the 4 "mismatch" are common-gender nouns). (2) **77 misfiled
+  gendered backstory titles moved** to the correct file (67 fem `Male→Female` e.g. "cuoca reale",
+  "scienziata…", "sopravvissuta…"; 10 masc `Female→Male` e.g. "ballerino di danza classica",
+  "prigioniero di guerra"). Left: 2 invariant/verb forms + a few common-gender/inconsistent-source
+  borderline (medico/ingegnere di fanteria, paria, "schiavo sessuale urbana"). (3) **"English" residuals
+  are all intentional RW coinages** (drugs/weapons/animals: yayo, monosword, devilstrand…) → no action.
+- [x] **Strings reconcile checked 2026-06-27**: 53 "ENGLISH" are all benign loanwords/identical
+  scientific names (cobra, alpaca, panda…); even "ape" is a false positive (correct IT for *bee*, not
+  *great ape* which is already "scimmia"). Only `duster`→spolverino is borderline. 4 MISSING = minor
+  list-completeness. No substantive action; the legacy positional pairs remain (args-check FPs).
 
 ### 5.2-ter Generated log (combat/social) — priority objective
 See [`NAME-GENERATION-AND-GRAMMAR.md`](NAME-GENERATION-AND-GRAMMAR.md) §5. Measured root cause:
