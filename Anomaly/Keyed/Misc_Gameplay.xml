@@ -178,7 +178,7 @@
   <!-- EN: Obelisk mutation -->
   <ObeliskTreeMutationLetterLabel>Mutazione dell'obelisco</ObeliskTreeMutationLetterLabel>
   <!-- EN: While interacting with the obelisk, {PAWN_nameDef} observed a sudden pulse of energy. The obelisk has twisted a nearby tree into a harbinger tree. These monstrous trees are capable of feeding on nearby corpses and raw meat. -->
-  <ObeliskTreeMutationLetter>Mentre interagiva con l'obelisco, {PAWN_nameDef} ha osservato un impulso improvviso di energia. L'obelisco ha distorto un albero vicino trasformandolo in un albero-araldo. Questi alberi mostruosi si nutrono di cadaveri e carne cruda nelle vicinanze.</ObeliskTreeMutationLetter>
+  <ObeliskTreeMutationLetter>Mentre interagiva con l'obelisco, {PAWN_nameDef} ha osservato un impulso improvviso di energia. L'obelisco ha distorto un albero vicino trasformandolo in un albero araldo. Questi alberi mostruosi si nutrono di cadaveri e carne cruda nelle vicinanze.</ObeliskTreeMutationLetter>
 
   <!-- EN: Obelisk duplicate -->
   <ObeliskDuplicationLetterLabel>Duplicazione dell'obelisco</ObeliskDuplicationLetterLabel>
@@ -251,7 +251,7 @@
   <!-- EN: resist -->
   <Resisted>resistere</Resisted>
   <!-- EN: Damaged -->
-  <HealthFactor>Daneggiato</HealthFactor>
+  <HealthFactor>Danneggiato</HealthFactor>
 
   <!-- EN: {PAWN_labelShort} was sent. -->
   <CommandSent>{PAWN_labelShort} è stat{PAWN_gender ? o : a : o/a} inviat{PAWN_gender ? o : a : o/a}.</CommandSent>
@@ -267,9 +267,9 @@
   <!-- EN: Automatic suppression is currently disabled. Enable it to have wardens suppress the {0}. -->
   <ActivitySuppressionTooltipDisabled>La repressione automatica è attualmente disattivata. Attivala per far sì che i guardiani reprimano il/la {0}.</ActivitySuppressionTooltipDisabled>
   <!-- EN: The {0}'s activity level rises over time. Activity rises faster if the {0} is damaged or provoked.\n\nIf the activity level reaches 100%, the {0} will activate.\n\nWardens can suppress the {0} to keep its activity at a safe level. They will suppress it any time its activity is above the assigned level: {LEVEL}\n\nEntities that have higher activity levels will give more knowledge when studied. -->
-  <ActivitySuppressionTooltipDesc>Il livello di attività di {0} aumenta col tempo. L'attività aumenta più rapidamente se {0} è danneggiat{PAWN_gender ? o : a : o/a} o provocat{PAWN_gender ? o : a : o/a}.\n\nSe il livello raggiunge il 100%, {0} si attiverà.\n\nI guardiani possono reprimere {0} per mantenerne l’attività a un livello sicuro. Lo faranno ogni volta che il livello supera quello assegnato: {LEVEL}\n\nLe entità con livelli di attività più elevati forniscono più conoscenze quando vengono studiate.</ActivitySuppressionTooltipDesc>
+  <ActivitySuppressionTooltipDesc>Il livello di attività di {0} aumenta col tempo. L'attività aumenta più rapidamente se {0} è danneggiat{0_gender ? o : a : o/a} o provocat{0_gender ? o : a : o/a}.\n\nSe il livello raggiunge il 100%, {0} si attiverà.\n\nI guardiani possono reprimere {0} per mantenerne l’attività a un livello sicuro. Lo faranno ogni volta che il livello supera quello assegnato: {LEVEL}\n\nLe entità con livelli di attività più elevati forniscono più conoscenze quando vengono studiate.</ActivitySuppressionTooltipDesc>
   <!-- EN: This determines whether the {0} will be automatically suppressed when its activity is above {LEVEL}.\n\nAutomatic suppression is currently {ONOFF}. -->
-  <ActivitySuppressionToggleTooltipDesc>Determina se {0} sarà automaticamente repress{PAWN_gender ? o : a : o/a} quando il suo livello di attività supera {LEVEL}.\n\nLa repressione automatica è attualmente {ONOFF}.</ActivitySuppressionToggleTooltipDesc>
+  <ActivitySuppressionToggleTooltipDesc>Determina se {0} sarà automaticamente repress{0_gender ? o : a : o/a} quando il suo livello di attività supera {LEVEL}.\n\nLa repressione automatica è attualmente {ONOFF}.</ActivitySuppressionToggleTooltipDesc>
 
   <!-- Activity Descs -->
   <!-- EN: activity level -->
@@ -281,7 +281,7 @@
   <!-- EN: Capture -->
   <CaptureEntity>Cattura</CaptureEntity>
   <!-- EN: Capture {0_definite}. It must be restrained on a holding platform. Once restrained, it can be studied. -->
-  <CaptureEntityDesc>Cattura {0_definite}. Deve essere contenut{PAWN_gender ? o : a : o/a} su una piattaforma di detenzione prima di poter essere studiato/a.</CaptureEntityDesc>
+  <CaptureEntityDesc>Cattura {0_definite}. Deve essere contenut{0_gender ? o : a : o/a} su una piattaforma di detenzione prima di poter essere studiato/a.</CaptureEntityDesc>
   <!-- EN: Cancel capture -->
   <CancelCapture>Annulla la cattura</CancelCapture>
   <!-- EN: Cancel capturing {0_definite}. -->
@@ -430,7 +430,7 @@
   <!-- EN: {PAWN_nameDef} wants to join -->
   <LetterCreeperInviteJoins>{PAWN_nameDef} vuole unirsi a voi.</LetterCreeperInviteJoins>
   <!-- EN: {PAWN_pronoun} may be very useful, but you also sense there is something {PAWN_nameDef} is not telling you. -->
-  <LetterCreeperInviteAppend>{PAWN_pronoun} potrebbe essere molto utile, ma hai la sensazione che {PAWN_pronoun} ti stia nascondendo qualcosa.</LetterCreeperInviteAppend>
+  <LetterCreeperInviteAppend>{PAWN_pronoun} potrebbe essere molto utile, ma hai la sensazione che {PAWN_nameDef} ti stia nascondendo qualcosa.</LetterCreeperInviteAppend>
   
   <!-- EN: Allow {PAWN_nameDef} to join -->
   <AcceptCreeper>Accogli {PAWN_nameDef}</AcceptCreeper>
@@ -523,7 +523,7 @@
   <!-- EN: The unnatural corpse has vanished. -->
   <LetterCorpseDisappeared>Il cadavere innaturale è scomparso.</LetterCorpseDisappeared>
   <!-- EN: {PAWN_nameDef} is starting to feel calmer. -->
-  <LetterCorpseDisappearedPawnAliveAppend>{PAWN_nameDef} inizia a sentirsi più calmo.</LetterCorpseDisappearedPawnAliveAppend>
+  <LetterCorpseDisappearedPawnAliveAppend>{PAWN_nameDef} inizia a sentirsi più {PAWN_gender ? calmo : calma}.</LetterCorpseDisappearedPawnAliveAppend>
 
   <!-- EN: Corpse appearance -->
   <LetterLabelCorpseReappeared>Riapparizione del cadavere</LetterLabelCorpseReappeared>
@@ -535,7 +535,7 @@
   <!-- EN: Failed to resurrect {PAWN_nameDef}. It simply does not respond. -->
   <MessageUnnaturalCorpseResurrect>La resurrezione di {PAWN_nameDef} è fallita. Nessuna risposta.</MessageUnnaturalCorpseResurrect>
   <!-- EN: The unnatural corpse has caused {PAWN_nameDef} to faint. -->
-  <MessagePawnFainted>{PAWN_nameDef} è svenuto alla vista del cadavere innaturale.</MessagePawnFainted>
+  <MessagePawnFainted>{PAWN_nameDef} è {PAWN_gender ? svenuto : svenuta} alla vista del cadavere innaturale.</MessagePawnFainted>
   <!-- EN: The unnatural corpse has appeared near {PAWN_nameDef} and is approaching! -->
   <MessageAwokenReappeared>Il cadavere innaturale è apparso vicino a {PAWN_nameDef} e si sta avvicinando!</MessageAwokenReappeared>
   <!-- EN: The unnatural corpse has vanished. It will come for {PAWN_nameDef} later. -->
@@ -583,7 +583,7 @@
   <!-- EN: Unnatural corpse -->
   <UnnaturalCorpseAwakeningLetter>Cadavere innaturale</UnnaturalCorpseAwakeningLetter>
   <!-- EN: {PAWN_nameDef} feels the unnatural corpse growing rapidly stronger. Some horrible consciousness is flickering within it.\n\nSomething awful will happen in the next few days. -->
-  <UnnaturalCorpseAwakeningLetterDesc>{PAWN_nameDef} percepisce il cadavere innaturale farsi rapidamente piu forte. Una coscienza orribile guizza al suo interno.\n\nNei prossimi giorni accadra qualcosa di tremendo.</UnnaturalCorpseAwakeningLetterDesc>
+  <UnnaturalCorpseAwakeningLetterDesc>{PAWN_nameDef} percepisce il cadavere innaturale farsi rapidamente più forte. Una coscienza orribile guizza al suo interno.\n\nNei prossimi giorni accadrà qualcosa di tremendo.</UnnaturalCorpseAwakeningLetterDesc>
   <!-- EN: Destroy the corpse before it's too late. -->
   <UnnaturalCorpseAwakeningLetterExtra_StudyComplete>Distruggi il cadavere prima che sia troppo tardi.</UnnaturalCorpseAwakeningLetterExtra_StudyComplete>
   <!-- EN: Study the corpse to learn how to destroy it. -->
@@ -592,24 +592,24 @@
   <!-- EN: Corpse awakened -->
   <UnnaturalCorpseAwokenLetter>Cadavere risvegliato</UnnaturalCorpseAwokenLetter>
   <!-- EN: The unnatural corpse is rising! It intends to attack {PAWN_nameDef}!\n\nThe corpse will follow {PAWN_nameDef} forever no matter how far {PAWN_pronoun} goes.\n\nYou must destroy it now. -->
-  <UnnaturalCorpseAwokenLetterDesc>Il cadavere innaturale si sta sollevando! Vuole attaccare {PAWN_nameDef}!\n\nInseguira {PAWN_nameDef} per sempre, per quanto lontano {PAWN_pronoun} vada.\n\nDevi distruggerlo subito.</UnnaturalCorpseAwokenLetterDesc>
+  <UnnaturalCorpseAwokenLetterDesc>Il cadavere innaturale si sta sollevando! Vuole attaccare {PAWN_nameDef}!\n\nInseguirà {PAWN_nameDef} per sempre, per quanto lontano {PAWN_pronoun} vada.\n\nDevi distruggerlo subito.</UnnaturalCorpseAwokenLetterDesc>
 
   <!-- EN: Unnatural corpse destroyed! -->
   <UnnaturalCorpseAwokenDefeatedLetter>Cadavere innaturale distrutto!</UnnaturalCorpseAwokenDefeatedLetter>
   <!-- EN: The unnatural corpse charging towards {PAWN_nameDef} has been defeated!\n\nThe corpse will no longer torment {PAWN_nameDef}. -->
-  <UnnaturalCorpseAwokenDefeatedLetterDesc>Il cadavere innaturale che caricava verso {PAWN_nameDef} e stato sconfitto!\n\nNon tormentera piu {PAWN_nameDef}.</UnnaturalCorpseAwokenDefeatedLetterDesc>
+  <UnnaturalCorpseAwokenDefeatedLetterDesc>Il cadavere innaturale che caricava verso {PAWN_nameDef} è stato sconfitto!\n\nNon tormenterà più {PAWN_nameDef}.</UnnaturalCorpseAwokenDefeatedLetterDesc>
 
   <!-- Golden Cube -->
   <!-- EN: {PAWN_labelShort}'s obsession with the golden cube has intensified. -->
-  <MessageGoldenCubeSeverityIncreased>L'ossessione di {PAWN_labelShort} per il cubo dorato si e intensificata.</MessageGoldenCubeSeverityIncreased>
+  <MessageGoldenCubeSeverityIncreased>L'ossessione di {PAWN_labelShort} per il cubo dorato si è intensificata.</MessageGoldenCubeSeverityIncreased>
   <!-- EN: {PAWN_labelShort} is experiencing cube withdrawal. -->
   <MessageGoldenCubeWithdrawal>{PAWN_labelShort} sta avendo una crisi di astinenza da cubo.</MessageGoldenCubeWithdrawal>
   <!-- EN: {PAWN_labelShort}'s cube withdrawal has worsened. -->
-  <MessageGoldenCubeWithdrawalIncreased>L'astinenza da cubo di {PAWN_labelShort} e peggiorata.</MessageGoldenCubeWithdrawalIncreased>
+  <MessageGoldenCubeWithdrawalIncreased>L'astinenza da cubo di {PAWN_labelShort} è peggiorata.</MessageGoldenCubeWithdrawalIncreased>
   <!-- EN: {PAWN_labelShort} has become intrigued by the golden cube. -->
   <MessageGoldenCubeInterest>{PAWN_labelShort} ha cominciato a provare interesse per il cubo dorato.</MessageGoldenCubeInterest>
   <!-- EN: {PAWN_labelShort} is enraged that {PAWN_possessive} cube sculpture was removed. {PAWN_pronoun} might become violent. -->
-  <MessageGoldenCubeSculptureDestroyed>{PAWN_labelShort} va su tutte le furie perche la sua scultura di cubo e stata rimossa. {PAWN_pronoun} potrebbe diventare violento.</MessageGoldenCubeSculptureDestroyed>
+  <MessageGoldenCubeSculptureDestroyed>{PAWN_labelShort} va su tutte le furie perché la sua scultura di cubo è stata rimossa. {PAWN_pronoun} potrebbe diventare {PAWN_gender ? violento : violenta}.</MessageGoldenCubeSculptureDestroyed>
 
   <!-- EN: {PAWN_labelShort} refuses to deactivate the golden cube. -->
   <CannotDisableCube>{PAWN_labelShort} si rifiuta di disattivare il cubo dorato.</CannotDisableCube>
@@ -661,9 +661,9 @@
   <!-- EN: Entering the labyrinth -->
   <GeneratingLabyrinth>Sta entrando nel labirinto</GeneratingLabyrinth>
   <!-- EN: {PAWN_nameDef} has vanished. -->
-  <MessagePawnVanished>{PAWN_nameDef} è scomparso.</MessagePawnVanished>
+  <MessagePawnVanished>{PAWN_nameDef} è {PAWN_gender ? scomparso : scomparsa}.</MessagePawnVanished>
   <!-- EN: {PAWN_nameDef} has reappeared. -->
-  <MessagePawnReappeared>{PAWN_nameDef} è riapparso.</MessagePawnReappeared>
+  <MessagePawnReappeared>{PAWN_nameDef} è {PAWN_gender ? riapparso : riapparsa}.</MessagePawnReappeared>
   
   <!-- EN: Exit direction -->
   <FloorEtchingsInspectorExit>Direzione dell’uscita</FloorEtchingsInspectorExit>
@@ -789,7 +789,7 @@
 
   <!-- HediffComp_GiveLovinMTBFactor -->
   <!-- EN: Increases the chance of lovin` -->
-  <IncreasesChanceOfLovin>Aumenta le probabilità di innamorarsi.</IncreasesChanceOfLovin>
+  <IncreasesChanceOfLovin>Aumenta le probabilità di fare sesso.</IncreasesChanceOfLovin>
 
   <!-- EN: Unnatural {0_label} corpse -->
   <UnnaturalCorpse>Cadavere innaturale di {0_label}</UnnaturalCorpse>
@@ -800,7 +800,7 @@
 
   <!-- Unnatural darkness -->
   <!-- EN: Emergence in {0} -->
-  <EmergenceIn>Emergenza in {0}</EmergenceIn>
+  <EmergenceIn>Emersione tra {0}</EmergenceIn>
   <!-- EN: Something will emerge from the ground in {0}. -->
   <EmergenceInDesc>Qualcosa emergerà dal terreno in {0}.</EmergenceInDesc>
   
