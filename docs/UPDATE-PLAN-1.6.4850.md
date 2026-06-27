@@ -55,8 +55,10 @@ on Core namers (People/Scenarios/Outlander/settlements + `Strings/WordParts/Syll
    `rwit variants def-article` generates the singular definite-article buckets (`_Def_Il/Lo/La/L`);
    new global symbol `[PersonalCharacteristic_def]` (article baked in, il/lo/la/l') wired into the
    insult/compliment/slight + Prisoner/Romance/Monument/Hospitality templates; possessive cases split
-   M/F. Verified with namegen ("ha insultato l'eleganza di X"). Residual left (separate): `[PersonFamily]`
-   article ("della figlio") — same class, needs the same treatment if pursued.
+   M/F. Verified with namegen ("ha insultato l'eleganza di X"). (c) **`[PersonFamily]` article DONE**
+   too: same `def-article` buckets + globals `[PersonFamily_def]`(il/lo/la) and `[PersonFamily_defGen]`
+   (del/dello/della) wired into the 2 Monument lines ("onorare il padre", "commemorare … dello zio").
+   Residual still open (separate class, pre-existing): `[PersonJob]` plural with `dei` ("dei fabbro").
 5. **Cleanup**: remove the now-unused `Games_Singular_*` variant cruft (the live split is
    `_Masculine`/`_Feminine`; `_Singular_*` is unreferenced and was misleading).
 
