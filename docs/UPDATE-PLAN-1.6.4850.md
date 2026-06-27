@@ -39,17 +39,24 @@ on Core namers (People/Scenarios/Outlander/settlements + `Strings/WordParts/Syll
 - `Solid_Adult.xml` validated in `VALIDATION-FILES.csv` (live fields clean).
 
 ### NEXT SESSION — TODO (priority order)
-1. **Art namer plurals** (`RulePacks_Namers_Art.xml`): same treatment as the Scenari namer above, but
-   Art needs the plural *indefinite* article (dei/degli/delle/∅) + **plural adjective agreement**
-   (`maybe_adjective_mp`/`_fp` from the existing `*_Plural_Masculine/Feminine` adjective lists). Today
-   Art still uses only the singular `Game_Masculine/Feminine`.
+1. ~~**Art namer plurals** (`RulePacks_Namers_Art.xml`)~~ → **DONE 2026-06-27**. Added 3 plural-game
+   branches (one per article class) on the Scenari model: partitive plural article `maybe_amp`(dei)/
+   `maybe_gli`(degli)/`maybe_afp`(delle) (∅-weighted p=3) + agreed plural adjective `maybe_adjective_mp`/
+   `_fp` (Badass/Angsty `_Plural_*`; no plural Color list). Verified offline with namegen ("Dei dadi
+   distrutti", "Degli scacchi solitari", "Delle carte vuote" — class+agreement correct), syntax-check clean.
 2. **Validation pass — Phase A backstories** (§5.4): keep walking `docs/VALIDATION-FILES.csv` in file
    order. `Solid_Adult` done; `Solid_Child` in progress on the other console. **Partition to avoid
    collisions**: one console owns Core, the other owns the DLCs' `DefInjected`.
 3. **In-game tests** (needs the game): combat log `le braccia`/vowel elision after `nel/al`,
    `[WEAPON_indefinite]`/`[recipient_partN_definite]` resolution, namer output.
-4. **Data-model residuals**: `[PersonalCharacteristic]` article; `di`+article fusion in the 6 Ideology
-   Speech packs (`di il`→`del`).
+4. ~~**Data-model residuals**~~ → **DONE 2026-06-27**. (a) `di`+article fusion: the 6 Ideology Speech
+   packs (AcceptRole/Blinding/Conversion/Execution/Funeral/Leader) converted to the genitive-fused
+   model ("ha parlato del…", no more "di il"). (b) `[PersonalCharacteristic]` article: new tool
+   `rwit variants def-article` generates the singular definite-article buckets (`_Def_Il/Lo/La/L`);
+   new global symbol `[PersonalCharacteristic_def]` (article baked in, il/lo/la/l') wired into the
+   insult/compliment/slight + Prisoner/Romance/Monument/Hospitality templates; possessive cases split
+   M/F. Verified with namegen ("ha insultato l'eleganza di X"). Residual left (separate): `[PersonFamily]`
+   article ("della figlio") — same class, needs the same treatment if pursued.
 5. **Cleanup**: remove the now-unused `Games_Singular_*` variant cruft (the live split is
    `_Masculine`/`_Feminine`; `_Singular_*` is unreferenced and was misleading).
 
