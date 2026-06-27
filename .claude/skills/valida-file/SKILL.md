@@ -84,6 +84,13 @@ hai EFFETTIVAMENTE riletto/corretto in §2-3:
 - `--file`/`--tag` sono sottostringhe case-insensitive; valida le righe `translated`/`modified`
   che combaciano (`set_status_keys`), ri-fissando gli hash → diventano sticky. Senza `--yes`
   stampa solo l'anteprima del conteggio; con `--list` elenca le voci ancora da validare.
+- ⚠️ **`--file` è una SOTTOSTRINGA sul path, non un nome esatto.** Molti file sono omonimi tra
+  DLC (es. `Dialogs_Various.xml`, `Misc_Gameplay.xml`, `Letters.xml` esistono in Core/Royalty/
+  Ideology/Biotech/Anomaly/Odyssey). `--file Dialogs_Various.xml --yes` valida le copie di TUTTI i
+  DLC. Per validare solo quello che hai riletto **passa `--dlc <DLC>` oppure il path completo**
+  (`--file Core\Keyed\Dialogs_Various.xml`). Controlla sempre il conteggio con `--list` PRIMA di
+  `--yes`: se è più alto delle voci del tuo file, stai per timbrare file non letti. Se è già
+  successo: `git checkout HEAD -- scripts/dashboard/translation-ledger.csv` e rivalida con lo scope giusto.
 - **Ignora già `validated`/`keep`** (idempotente): puoi rilanciarla senza ri-toccare il fatto.
 - **Valida per VOCE intera, non per singolo tag**: usa `--tag <NomeVoce>` (es. `--tag Cadet96`),
   non `--tag Cadet96.description` → così validi anche `.title/.titleFemale/.titleShort...` ed eviti
@@ -105,8 +112,12 @@ validare è `<description>` (il `baseDesc` è morto, già rimosso in §2).
   `tooling(...)`/`tooling(dashboard): ...` per CSV/strumenti.
 - NON aggiungere il trailer "Co-Authored-By: Claude".
 
-## 6. Aggiorna il RESUME
-In `docs/UPDATE-PLAN-1.6.4850.md` (§0 RESUME) annota il file raggiunto e lo stato della fase.
+## 6. NON loggare il progresso per-file nel piano
+Lo stato `validated` è tracciato dal ledger CSV (`scripts/dashboard/translation-ledger.csv`) +
+dashboard: è quella la fonte di verità del progresso. **Non** aggiungere righe "file X validato,
+N voci" in `docs/UPDATE-PLAN-1.6.4850.md` — il piano contiene solo piani/decisioni generali, non
+un log di sessione. Tocca il piano SOLO se cambia qualcosa di generale (una nuova fase, una
+decisione di strategia, una regola che vale per tutti i file).
 
 > Riferimenti: `docs/VALIDATION.md`, `docs/NAME-GENERATION-AND-GRAMMAR.md`,
 > `docs/RULEPACK-GRAMMAR.md`. Stato/conteggi: `.venv\Scripts\python scripts\rwit ledger stats`.
