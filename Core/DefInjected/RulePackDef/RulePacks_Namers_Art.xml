@@ -57,6 +57,10 @@
     <li>r_art_name->[maybe_af] [Vegetable_Feminine] [maybe_adjective_fem]</li>
     <li>r_art_name->[maybe_am] [Game_Masculine] [maybe_adjective]</li>
     <li>r_art_name->[maybe_af] [Game_Feminine] [maybe_adjective_fem]</li>
+    <!-- giochi pluralia tantum: dei dadi / degli scacchi / delle carte (3 classi d'articolo) + aggettivo plurale concordato -->
+    <li>r_art_name->[maybe_amp] [Game_PluralMasculine] [maybe_adjective_mp]</li>
+    <li>r_art_name->[maybe_gli] [Game_PluralMasculineGli] [maybe_adjective_mp]</li>
+    <li>r_art_name->[maybe_afp] [Game_PluralFeminine] [maybe_adjective_fp]</li>
     <li>r_art_name->[maybe_am] [Animal_Masculine] [maybe_adjective]</li>
     <li>r_art_name->[maybe_af] [Animal_Feminine] [maybe_adjective_fem]</li>
     <li>r_art_name->[maybe_am] [NaturalObject_Masculine] [maybe_adjective]</li>
@@ -97,6 +101,13 @@
     <li>maybe_am->un</li>
     <li>maybe_af(p=3)-></li>
     <li>maybe_af->una</li>
+    <!-- articoli indeterminativi plurali (partitivo): dei/degli/delle o nessuno -->
+    <li>maybe_amp(p=3)-></li>
+    <li>maybe_amp->dei</li>
+    <li>maybe_gli(p=3)-></li>
+    <li>maybe_gli->degli</li>
+    <li>maybe_afp(p=3)-></li>
+    <li>maybe_afp->delle</li>
     <li>maybe_adjective(p=5)-></li>
     <li>maybe_adjective(p=2)->[AdjectiveAngstyMS]</li>
     <li>maybe_adjective->[AdjectiveBadassMS]</li>
@@ -105,6 +116,13 @@
     <li>maybe_adjective_fem(p=2)->[AdjectiveAngstyFS]</li>
     <li>maybe_adjective_fem->[AdjectiveBadassFS]</li>
     <li>maybe_adjective_fem->[Color_Feminine]</li>
+    <!-- aggettivi plurali concordati (niente lista colori plurale: solo Badass/Angsty) -->
+    <li>maybe_adjective_mp(p=5)-></li>
+    <li>maybe_adjective_mp(p=2)->[AdjectiveAngstyMP]</li>
+    <li>maybe_adjective_mp->[AdjectiveBadassMP]</li>
+    <li>maybe_adjective_fp(p=5)-></li>
+    <li>maybe_adjective_fp(p=2)->[AdjectiveAngstyFP]</li>
+    <li>maybe_adjective_fp->[AdjectiveBadassFP]</li>
   </NamerArtCommon.rulePack.rulesStrings>
   
   <!-- EN:
