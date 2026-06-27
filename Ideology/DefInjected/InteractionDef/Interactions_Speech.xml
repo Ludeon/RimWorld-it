@@ -30,30 +30,34 @@
     <li>speechtopic->putting a role above [INITIATOR_possessive] personal desires</li>
   -->
   <Speech_AcceptRole.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] ha parlato di [speechtopic].</li>
-    <li>speechtopic->il suo nuovo ruolo nella comunità</li>
-    <li>speechtopic->la responsabilità del suo nuovo ruolo</li>
-    <li>speechtopic->l'importanza del suo nuovo ruolo</li>
-    <li>speechtopic->le sue buone qualità</li>
-    <li>speechtopic->i suoi punti di forza e come sfruttarli</li>
-    <li>speechtopic->le sue mancanze</li>
-    <li>speechtopic->le sue debolezze e come superarle</li>
-    <li>speechtopic->il suo desiderio di servire la comunità</li>
-    <li>speechtopic->la sua dedizione alle sue convinzioni</li>
-    <li>speechtopic->le sue convinzioni sul futuro</li>
-    <li>speechtopic->il suo desiderio di servire uno scopo più grande</li>
-    <li>speechtopic->la sua [PersonalCharacteristic] e come si relaziona al ruolo</li>
-    <li>speechtopic->come la sua [PersonalCharacteristic] lo rende adatto al ruolo</li>
-    <li>speechtopic->come userà la sua [PersonalCharacteristic] per superare gli ostacoli</li>
-    <li>speechtopic->gratitudine</li>
-    <li>speechtopic->mostrare riconoscenza</li>
-    <li>speechtopic->lo scopo della vita</li>
-    <li>speechtopic->il futuro della colonia</li>
-    <li>speechtopic->migliorare la colonia</li>
-    <li>speechtopic->prendere decisioni sotto stress</li>
-    <li>speechtopic->la struttura sociale della comunità</li>
-    <li>speechtopic->assumersi responsabilità</li>
-    <li>speechtopic->mettere il ruolo al di sopra dei desideri personali</li>
+    <!-- "ha parlato [topic]" col genitivo già fuso nel topic (no "di il"); PersonalCharacteristic diviso M/F (il suo / la sua) -->
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato [speechtopic].</li>
+    <li>speechtopic->del suo nuovo ruolo nella comunità</li>
+    <li>speechtopic->della responsabilità del suo nuovo ruolo</li>
+    <li>speechtopic->dell'importanza del suo nuovo ruolo</li>
+    <li>speechtopic->delle sue buone qualità</li>
+    <li>speechtopic->dei suoi punti di forza e di come sfruttarli</li>
+    <li>speechtopic->delle sue mancanze</li>
+    <li>speechtopic->delle sue debolezze e di come superarle</li>
+    <li>speechtopic->del suo desiderio di servire la comunità</li>
+    <li>speechtopic->della sua dedizione alle proprie convinzioni</li>
+    <li>speechtopic->delle sue convinzioni sul futuro</li>
+    <li>speechtopic->del suo desiderio di servire uno scopo più grande</li>
+    <li>speechtopic->del suo [PersonalCharacteristic_Male] e di come si relaziona al ruolo</li>
+    <li>speechtopic->della sua [PersonalCharacteristic_Female] e di come si relaziona al ruolo</li>
+    <li>speechtopic->di come il suo [PersonalCharacteristic_Male] lo rende adatto al ruolo</li>
+    <li>speechtopic->di come la sua [PersonalCharacteristic_Female] lo rende adatto al ruolo</li>
+    <li>speechtopic->di come userà il suo [PersonalCharacteristic_Male] per superare gli ostacoli</li>
+    <li>speechtopic->di come userà la sua [PersonalCharacteristic_Female] per superare gli ostacoli</li>
+    <li>speechtopic->di gratitudine</li>
+    <li>speechtopic->di come mostrare riconoscenza</li>
+    <li>speechtopic->dello scopo della vita</li>
+    <li>speechtopic->del futuro della colonia</li>
+    <li>speechtopic->di come migliorare la colonia</li>
+    <li>speechtopic->del prendere decisioni sotto stress</li>
+    <li>speechtopic->della struttura sociale della comunità</li>
+    <li>speechtopic->di come assumersi le responsabilità</li>
+    <li>speechtopic->del mettere il ruolo al di sopra dei desideri personali</li>
   </Speech_AcceptRole.logRulesInitiator.rulesStrings>
   
   <!-- EN: blinding speech -->
@@ -75,20 +79,21 @@
     <li>speechtopic->psychic connections</li>
   -->
   <Speech_Blinding.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] ha parlato di [speechtopic].</li>
-    <li>speechtopic->cecità</li>
-    <li>speechtopic->la purezza della cecità</li>
-    <li>speechtopic->il significato spirituale dei non vedenti</li>
-    <li>speechtopic->mondi nascosti oltre la vista</li>
-    <li>speechtopic->la falsità della nostra realtà visiva</li>
-    <li>speechtopic->la tecnica dell'accecamento</li>
-    <li>speechtopic->la maledizione della vista</li>
-    <li>speechtopic->la gelatina all'interno del bulbo oculare</li>
-    <li>speechtopic->crescere vedente</li>
-    <li>speechtopic->crescere cieco</li>
-    <li>speechtopic->esplorare senza vedere o muoversi</li>
-    <li>speechtopic->i veri strati della realtà sotto il visivo</li>
-    <li>speechtopic->connessioni psichiche</li>
+    <!-- "ha parlato [topic]" col genitivo già fuso nel topic (no "di la/di il") -->
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato [speechtopic].</li>
+    <li>speechtopic->di cecità</li>
+    <li>speechtopic->della purezza della cecità</li>
+    <li>speechtopic->del significato spirituale dei non vedenti</li>
+    <li>speechtopic->di mondi nascosti oltre la vista</li>
+    <li>speechtopic->della falsità della nostra realtà visiva</li>
+    <li>speechtopic->della tecnica dell'accecamento</li>
+    <li>speechtopic->della maledizione della vista</li>
+    <li>speechtopic->della gelatina all'interno del bulbo oculare</li>
+    <li>speechtopic->di crescere vedente</li>
+    <li>speechtopic->di crescere cieco</li>
+    <li>speechtopic->di esplorare senza vedere o muoversi</li>
+    <li>speechtopic->dei veri strati della realtà sotto il visivo</li>
+    <li>speechtopic->di connessioni psichiche</li>
   </Speech_Blinding.logRulesInitiator.rulesStrings>
   
   <!-- EN: conversion speech -->
@@ -112,22 +117,23 @@
     <li>speechtopic->progress towards the future</li>
   -->
   <Speech_Conversion.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] ha parlato di [speechtopic].</li>
-    <li>speechtopic->unirsi per il bene comune</li>
-    <li>speechtopic->l'errore dell'apostasia</li>
-    <li>speechtopic->scegliere le giuste credenze</li>
-    <li>speechtopic->la struttura morale dell'universo</li>
-    <li>speechtopic->giusto e sbagliato</li>
-    <li>speechtopic->lo scopo della vita</li>
-    <li>speechtopic->il significato della vita</li>
-    <li>speechtopic->la storia dell'umanità</li>
-    <li>speechtopic->il futuro dell'umanità</li>
-    <li>speechtopic->amore e odio</li>
-    <li>speechtopic->paura e sicurezza</li>
-    <li>speechtopic->la giustezza dell'appartenenza</li>
-    <li>speechtopic->unirsi e appartenere</li>
-    <li>speechtopic->false credenze altrui</li>
-    <li>speechtopic->progresso verso il futuro</li>
+    <!-- "ha parlato [topic]" col genitivo già fuso nel topic (no "di l'/di la") -->
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato [speechtopic].</li>
+    <li>speechtopic->di unirsi per il bene comune</li>
+    <li>speechtopic->dell'errore dell'apostasia</li>
+    <li>speechtopic->di scegliere le giuste credenze</li>
+    <li>speechtopic->della struttura morale dell'universo</li>
+    <li>speechtopic->di giusto e sbagliato</li>
+    <li>speechtopic->dello scopo della vita</li>
+    <li>speechtopic->del significato della vita</li>
+    <li>speechtopic->della storia dell'umanità</li>
+    <li>speechtopic->del futuro dell'umanità</li>
+    <li>speechtopic->di amore e odio</li>
+    <li>speechtopic->di paura e sicurezza</li>
+    <li>speechtopic->della giustezza dell'appartenenza</li>
+    <li>speechtopic->di unirsi e appartenere</li>
+    <li>speechtopic->di false credenze altrui</li>
+    <li>speechtopic->del progresso verso il futuro</li>
   </Speech_Conversion.logRulesInitiator.rulesStrings>
   
   <!-- EN: celebration speech -->
@@ -208,16 +214,17 @@
     <li>speechtopic->the reasons for the execution</li>
   -->
   <Speech_Execution.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] ha parlato di [speechtopic].</li>
-    <li>speechtopic->la vita e la morte</li>
-    <li>speechtopic->la necessità della giustizia</li>
-    <li>speechtopic->i metodi di esecuzione</li>
-    <li>speechtopic->la morte e la crudeltà</li>
-    <li>speechtopic->l'uccisione misericordiosa</li>
-    <li>speechtopic->la misericordia di un'uccisione corretta</li>
-    <li>speechtopic->il simbolismo della morte</li>
-    <li>speechtopic->la pena capitale e la sua storia</li>
-    <li>speechtopic->le ragioni dell'esecuzione</li>
+    <!-- "ha parlato [topic]" col genitivo già fuso nel topic (no "di la/di i") -->
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato [speechtopic].</li>
+    <li>speechtopic->della vita e della morte</li>
+    <li>speechtopic->della necessità della giustizia</li>
+    <li>speechtopic->dei metodi di esecuzione</li>
+    <li>speechtopic->della morte e della crudeltà</li>
+    <li>speechtopic->dell'uccisione misericordiosa</li>
+    <li>speechtopic->della misericordia di un'uccisione corretta</li>
+    <li>speechtopic->del simbolismo della morte</li>
+    <li>speechtopic->della pena capitale e della sua storia</li>
+    <li>speechtopic->delle ragioni dell'esecuzione</li>
   </Speech_Execution.logRulesInitiator.rulesStrings>
   
   <!-- EN: funeral speech -->
@@ -238,19 +245,20 @@
     <li>speechtopic->carrying forward unfinished work</li>
   -->
   <Speech_Funeral.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] ha parlato di [speechtopic].</li>
-    <li>speechtopic->la nobiltà del sacrificio</li>
-    <li>speechtopic->la morte</li>
-    <li>speechtopic->la vita dopo la morte</li>
-    <li>speechtopic->la morte e la famiglia</li>
-    <li>speechtopic->il concetto di una vita buona</li>
-    <li>speechtopic->la morte come via verso la dignità</li>
-    <li>speechtopic->gli inizi e le fini</li>
-    <li>speechtopic->cosa accade dopo la morte</li>
-    <li>speechtopic->celebrare il prossimo passo</li>
-    <li>speechtopic->amici assenti</li>
-    <li>speechtopic->vita e gioia</li>
-    <li>speechtopic->portare avanti il lavoro incompiuto</li>
+    <!-- "ha parlato [topic]" col genitivo già fuso nel topic (no "di la/di gli") -->
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato [speechtopic].</li>
+    <li>speechtopic->della nobiltà del sacrificio</li>
+    <li>speechtopic->della morte</li>
+    <li>speechtopic->della vita dopo la morte</li>
+    <li>speechtopic->della morte e della famiglia</li>
+    <li>speechtopic->del concetto di una vita buona</li>
+    <li>speechtopic->della morte come via verso la dignità</li>
+    <li>speechtopic->degli inizi e delle fini</li>
+    <li>speechtopic->di cosa accade dopo la morte</li>
+    <li>speechtopic->di celebrare il prossimo passo</li>
+    <li>speechtopic->degli amici assenti</li>
+    <li>speechtopic->di vita e gioia</li>
+    <li>speechtopic->di portare avanti il lavoro incompiuto</li>
   </Speech_Funeral.logRulesInitiator.rulesStrings>
   
   <!-- EN: leader speech -->
@@ -292,40 +300,43 @@
     <li>speechtopic(p=0.25)->the right to survive</li>
   -->
   <Speech_Leader.logRulesInitiator.rulesStrings>
-    <li>r_logentry->[INITIATOR_nameDef] ha parlato di [speechtopic].</li>
-    <li>speechtopic->la ricerca di [Vegetable]</li>
-    <li>speechtopic->come essere [AdjectiveFriendly]</li>
-    <li>speechtopic->evitare [AnimalBadass]</li>
-    <li>speechtopic->come la vita assomiglia a [Game]</li>
-    <li>speechtopic->la mente come [Weapon]</li>
-    <li>speechtopic->esplorare tra [TerrainFeature] e [TerrainFeature]</li>
-    <li>speechtopic->promesse verso [Direction]</li>
-    <li>speechtopic->come essere più simili a [Animal]</li>
-    <li>speechtopic->il simbolismo di [NaturalObject] e [NaturalObject]</li>
-    <li>speechtopic->come tutti siano [PersonFamily] e [PersonFamily]</li>
-    <li>speechtopic->come essere un buon [PersonAlly]</li>
-    <li>speechtopic->la necessità di [PersonJob]</li>
-    <li>speechtopic->evitare [PersonBadass]</li>
-    <li>speechtopic->sconfiggere [Enemy] attraverso [ConceptPositive]</li>
-    <li>speechtopic->vedere [Gore] durante il combattimento</li>
-    <li>speechtopic->la storia di [Mechanoid]</li>
-    <li>speechtopic->il significato di [ConceptPositive]</li>
-    <li>speechtopic->il [ConceptPositive] della colonia</li>
-    <li>speechtopic->come essere [AdjectiveBadass] senza essere [AdjectiveBadass]</li>
-    <li>speechtopic->quanto [AdjectiveBadass] sia la colonia</li>
-    <li>speechtopic->[AdjectiveNatural] [TerrainFeature]</li>
-    <li>speechtopic->il [AdjectiveLarge] potenziale della colonia</li>
-    <li>speechtopic->il [PersonalCharacteristic] di ogni colono</li>
-    <li>speechtopic->il terribile [PersonalCharacteristic] dei nemici della colonia</li>
-    <li>speechtopic(p=0.25)->restare uniti come gruppo</li>
-    <li>speechtopic(p=0.25)->il percorso avanti attraverso la tragedia</li>
-    <li>speechtopic(p=0.25)->la comunità e la sua importanza</li>
-    <li>speechtopic(p=0.25)->sopravvivenza contro lusso</li>
-    <li>speechtopic(p=0.25)->felicità attraverso le difficoltà</li>
-    <li>speechtopic(p=0.25)->soddisfazione attraverso la sofferenza</li>
-    <li>speechtopic(p=0.25)->la morte come motivatore</li>
-    <li>speechtopic(p=0.25)->mani e cuori forti</li>
-    <li>speechtopic(p=0.25)->il diritto di sopravvivere</li>
+    <!-- "ha parlato [topic]" col genitivo già fuso nel topic (no "di la/di il"). I topic con
+         articolo nudo su simbolo ([PersonalCharacteristic]/[ConceptPositive]/[AdjectiveLarge])
+         sono riformulati per evitare elisione/genere non gestibili dal motore. -->
+    <li>r_logentry->[INITIATOR_nameDef] ha parlato [speechtopic].</li>
+    <li>speechtopic->della ricerca di [Vegetable]</li>
+    <li>speechtopic->di come essere [AdjectiveFriendly]</li>
+    <li>speechtopic->di come evitare [AnimalBadass]</li>
+    <li>speechtopic->di come la vita assomiglia a [Game]</li>
+    <li>speechtopic->della mente come [Weapon]</li>
+    <li>speechtopic->di esplorare tra [TerrainFeature] e [TerrainFeature]</li>
+    <li>speechtopic->delle promesse verso [Direction]</li>
+    <li>speechtopic->di come essere più simili a [Animal]</li>
+    <li>speechtopic->del simbolismo di [NaturalObject] e [NaturalObject]</li>
+    <li>speechtopic->di come tutti siano [PersonFamily] e [PersonFamily]</li>
+    <li>speechtopic->di come essere un buon [PersonAlly]</li>
+    <li>speechtopic->della necessità di [PersonJob]</li>
+    <li>speechtopic->di come evitare [PersonBadass]</li>
+    <li>speechtopic->di come sconfiggere [Enemy] attraverso [ConceptPositive]</li>
+    <li>speechtopic->di vedere [Gore] durante il combattimento</li>
+    <li>speechtopic->della storia di [Mechanoid]</li>
+    <li>speechtopic->del significato di [ConceptPositive]</li>
+    <li>speechtopic->dei valori della colonia</li>
+    <li>speechtopic->di come essere [AdjectiveBadass] senza essere [AdjectiveBadass]</li>
+    <li>speechtopic->di quanto [AdjectiveBadass] sia la colonia</li>
+    <li>speechtopic->di [TerrainFeature] [AdjectiveNatural]</li>
+    <li>speechtopic->di quanto sia [AdjectiveLarge] il potenziale della colonia</li>
+    <li>speechtopic->delle qualità di ogni colono</li>
+    <li>speechtopic->dei terribili difetti dei nemici della colonia</li>
+    <li>speechtopic(p=0.25)->di restare uniti come gruppo</li>
+    <li>speechtopic(p=0.25)->del percorso avanti attraverso la tragedia</li>
+    <li>speechtopic(p=0.25)->della comunità e della sua importanza</li>
+    <li>speechtopic(p=0.25)->di sopravvivenza contro lusso</li>
+    <li>speechtopic(p=0.25)->di felicità attraverso le difficoltà</li>
+    <li>speechtopic(p=0.25)->di soddisfazione attraverso la sofferenza</li>
+    <li>speechtopic(p=0.25)->della morte come motivatore</li>
+    <li>speechtopic(p=0.25)->di mani e cuori forti</li>
+    <li>speechtopic(p=0.25)->del diritto di sopravvivere</li>
   </Speech_Leader.logRulesInitiator.rulesStrings>
   
   <!-- EN: role removal speech -->
