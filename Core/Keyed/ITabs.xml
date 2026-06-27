@@ -87,7 +87,7 @@
   <!-- EN: Paste -->
   <PasteBillTip>Incolla</PasteBillTip>
   <!-- EN: can't add more -->
-  <PasteBillTip_LimitReached>impossibile aggiungere ancore</PasteBillTip_LimitReached>
+  <PasteBillTip_LimitReached>impossibile aggiungere ancora</PasteBillTip_LimitReached>
   <!-- EN: Finishes in -->
   <FinishesIn>Finisce tra</FinishesIn>
 
@@ -95,17 +95,17 @@
   <!-- EN: Resistance -->
   <RecruitmentResistance>Resistenza rimanente</RecruitmentResistance>
   <!-- EN: How much doubt this prisoner has about joining your faction. When this reaches zero, they can be recruited. -->
-  <RecruitmentResistanceDesc>Quanti dubbi ha il prigioniero di unirsi alla sua fazione. Quando raggiunge lo zero, può essere reclutato.</RecruitmentResistanceDesc>
+  <RecruitmentResistanceDesc>Quanti dubbi ha il prigioniero di unirsi alla tua fazione. Quando raggiunge lo zero, può essere reclutato.</RecruitmentResistanceDesc>
   <!-- EN: {0} base resistance -->
   <RecruitmentResistanceFromPawnKind>{0} resistenza di base</RecruitmentResistanceFromPawnKind>
   <!-- EN: Relations gain on release -->
   <PrisonerReleasePotentialRelationGains>Incremento reputazione se rilasciato</PrisonerReleasePotentialRelationGains>
   <!-- EN: The faction goodwill you will get from the prisoner's faction if you release them. This is affected by the prisoner's identity, health, and mental condition. -->
-  <PrisonerReleaseRelationGainsDesc>Il miglioramento delle relazioni che otterrai dalla fazione del prigioniero se le rilasci. Ciò è influenzato dalla salute e dalle condizioni mentali del prigioniero.</PrisonerReleaseRelationGainsDesc>
+  <PrisonerReleaseRelationGainsDesc>Il miglioramento delle relazioni che otterrai dalla fazione del prigioniero se lo rilasci. Ciò è influenzato dall'identità, dalla salute e dalle condizioni mentali del prigioniero.</PrisonerReleaseRelationGainsDesc>
   <!-- EN: Prison break interval -->
   <PrisonBreakMTBDays>Intervallo tra evasioni</PrisonBreakMTBDays>
   <!-- EN: The average days awake between prison breaks. This is affected by mood, mobility, the number of prison doors, and time since the last prison break.\n\nNote that this does not include time spent asleep. -->
-  <PrisonBreakMTBDaysDescription>Il numero medio di giorni tra i tentativi di evasione dalla prigione. Interessato dall'umore, dalla mobilità e dal tempo trascorso dall'ultima tentativo di evasione.\n\nQuesto numero ignora il tempo trascorso a dormire, quindi l'intervallo effettivo sarà generalmente più lungo.</PrisonBreakMTBDaysDescription>
+  <PrisonBreakMTBDaysDescription>Il numero medio di giorni da svegli tra i tentativi di evasione. È influenzato dall'umore, dalla mobilità, dal numero di porte della prigione e dal tempo trascorso dall'ultimo tentativo di evasione.\n\nNota che questo non include il tempo trascorso a dormire.</PrisonBreakMTBDaysDescription>
   <!-- EN: Never -->
   <Never>Mai</Never>
   <!-- EN: Not while asleep -->
@@ -115,7 +115,7 @@
   <!-- EN: Door count -->
   <FactorForDoorCount>Moltiplicatore per il numero di porte</FactorForDoorCount>
   <!-- EN: Movement -->
-  <FactorForMovement> Moltiplicatore per il movimento</FactorForMovement>
+  <FactorForMovement>Moltiplicatore per il movimento</FactorForMovement>
   <!-- EN: Slave price -->
   <SlavePrice>Valore come schiavo</SlavePrice>
   <!-- EN: The base market value of this slave if sold. -->
@@ -135,7 +135,7 @@
   <!-- EN: Last resistance reduction -->
   <LastRecruitment>Riduzione dell'ultima resistenza</LastRecruitment>
   <!-- EN: How much {0_nameDef}'s resistance was reduced by {1} when {0_pronoun} was last recruited. -->
-  <LastRecruitmentDescription>La resistenza di {0_nomeDef} è stata ridotta di {1} quando {0_pronoun} è stato reclutato per l'ultima volta.</LastRecruitmentDescription>
+  <LastRecruitmentDescription>La resistenza di {0_nameDef} è stata ridotta di {1} quando {0_pronoun} è stato reclutato per l'ultima volta.</LastRecruitmentDescription>
   <!-- EN: Opinion of recruiter -->
   <OpinionOfRecruiter>Opinione del reclutatore</OpinionOfRecruiter>
   <!-- EN: Recruiter negotiation ability -->
@@ -164,7 +164,7 @@
   <!-- EN: Destroyed -->
   <DestroyedBodyPart>Distrutta</DestroyedBodyPart>
   <!-- EN: Shattered -->
-  <ShatteredBodyPart>Deformata</ShatteredBodyPart>
+  <ShatteredBodyPart>Frantumata</ShatteredBodyPart>
   <!-- EN: Removed -->
   <RemovedBodyPart>Amputata</RemovedBodyPart>
   <!-- EN: Healthy -->
@@ -176,7 +176,7 @@
   <!-- EN: Injured -->
   <Injured>Ferito</Injured>
   <!-- EN: untended injury -->
-  <UntendedInjury>Lesioni non intenzionali</UntendedInjury>
+  <UntendedInjury>lesione non curata</UntendedInjury>
   <!-- EN: no health conditions -->
   <NoHealthConditions>nessun problema di salute</NoHealthConditions>
   <!-- EN: Whole body -->
@@ -373,7 +373,7 @@
 
   <!-- Animal pen food tab -->
   <!-- EN: enclose the pen marker to calculate food information -->
-  <PenFoodTab_NotEnclosed>allegare il pennarello per calcolare le informazioni sugli alimenti</PenFoodTab_NotEnclosed>
+  <PenFoodTab_NotEnclosed>racchiudi il cartello del recinto per calcolare le informazioni sul cibo</PenFoodTab_NotEnclosed>
 
   <!-- EN: Nutrition stockpiled -->
   <PenFoodTab_StockpileTotal>Scorte di nutrimento</PenFoodTab_StockpileTotal>
@@ -406,7 +406,7 @@
   <!-- EN: The average nutrition provided by edible plants in this pen. -->
   <PenFoodTab_NaturalNutritionGrowthRateDescription>La nutrizione media fornita dalle piante commestibili in questo recinto.</PenFoodTab_NaturalNutritionGrowthRateDescription>
   <!-- EN: The nutrition needed by animals currently in this pen.\n\nTo get more food, expand the pen to cover more wild plant growth, or deliver stockpiled food like haygrass to the pen. -->
-  <PenFoodTab_NutritionConsumptionDescription>Per ottenere più cibo, espandere il recinto per coprire una maggiore quantità di piante selvatiche o consegnare al recinto il cibo immagazzinato, come l'erba da fieno.</PenFoodTab_NutritionConsumptionDescription>
+  <PenFoodTab_NutritionConsumptionDescription>Il nutrimento necessario agli animali attualmente in questo recinto.\n\nPer ottenere più cibo, espandere il recinto per coprire una maggiore quantità di piante selvatiche o consegnare al recinto il cibo immagazzinato, come l'erba da fieno.</PenFoodTab_NutritionConsumptionDescription>
   <!-- EN: Note: Plant growth rate varies due to seasons, weather, theft by wild animals, and other factors. These calculations are approximations. -->
   <PenFoodTab_NaturalNutritionGrowthRateSeasonal>Nota: il tasso di crescita delle piante varia a seconda delle stagioni, del tempo, del furto da parte di animali selvatici e di altri fattori. Questi calcoli sono approssimativi.</PenFoodTab_NaturalNutritionGrowthRateSeasonal>
 
