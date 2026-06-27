@@ -127,6 +127,16 @@ TR = {
     "ng_next": {"en": "Next ▶", "it": "Succ ▶", "es": "Sig ▶", "fr": "Suiv ▶", "de": "Weiter ▶"},
     "ng_pos": {"en": "pack {i}/{n}", "it": "pack {i}/{n}", "es": "pack {i}/{n}",
                "fr": "pack {i}/{n}", "de": "Pack {i}/{n}"},
+    "gn_intro": {
+        "en": "Preview xenotype names fused from a gene's symbolPack fragments (this gene's fragment + the global pool). Approximate. Reload to reroll. Fragments should be short stems, not full words.",
+        "it": "Anteprima dei nomi-xenotipo composti dai frammenti symbolPack di un gene (frammento del gene + pool globale). Approssimato. Ricarica per rigenerare. I frammenti devono essere stem brevi, non parole intere."},
+    "gn_tab_rp": {"en": "RulePacks", "it": "RulePack"},
+    "gn_tab_gene": {"en": "Gene names", "it": "Nomi geni"},
+    "gn_frags": {"en": "fragments", "it": "frammenti"},
+    "gn_none": {"en": "No gene matches the filter.", "it": "Nessun gene corrisponde."},
+    "gn_pos": {"en": "gene {i}/{n}", "it": "gene {i}/{n}"},
+    "gn_badge": {"en": "gene name fragments — review in the Name generator (Gene names) tab",
+                 "it": "frammenti dei nomi geni — rivedi nella tab Generatore nomi (Nomi geni)"},
 }
 STATUS_NAMES = {
     "validated": {"en": "validated", "it": "validate", "es": "validadas", "fr": "validées", "de": "validiert"},
@@ -345,7 +355,9 @@ def index():
     # leggendo l'XML. Set derivato live dai pack -> badge + filtro + scorciatoia,
     # niente DB. Hanno poche stringhe l'uno, quindi senza il filtro ng finiscono
     # in fondo alla lista (oltre il taglio a 400) e non si vedono.
-    ng_files = {p["file"] for p in NG.load_rulepacks().values()}
+    ng_files_rp = {p["file"] for p in NG.load_rulepacks().values()}
+    ng_files_gene = {p["file"] for p in NG.load_gene_symbolpacks().values()}
+    ng_files = ng_files_rp | ng_files_gene
     frows = sorted(
         ((c.get(sel_status, 0), d, f, sum(c.values()), sum(c.get(s, 0) for s in DONE), c)
          for (d, f), c in perfile.items()
@@ -361,9 +373,13 @@ def index():
     for pend, d, f, tot, dn, c in frows[:400]:
         short = f.replace("\\", "/").split("/")[-1]
         is_ng = f in ng_files
+        is_gene = f in ng_files_gene
         stem = short[:-4] if short.endswith(".xml") else short
-        badge = (f' <span title="{t("ng_badge")}" style="cursor:help">🎲</span>' if is_ng else "")
-        ngbtn = (f'<a class="btn" title="{t("to_namegen")}" href="/namegen?q={quote(f"{d} · {stem}")}">🎲</a> '
+        badge = (f' <span title="{t("gn_badge") if is_gene else t("ng_badge")}" style="cursor:help">🎲</span>'
+                 if is_ng else "")
+        nghref = (f"/namegen?kind=gene&q={quote(f'{d} · {stem}')}" if is_gene
+                  else f"/namegen?q={quote(f'{d} · {stem}')}")
+        ngbtn = (f'<a class="btn" title="{t("to_namegen")}" href="{nghref}">🎲</a> '
                  if is_ng else "")
         trs += (f'<tr><td style="width:1%;vertical-align:middle;padding-right:0">'
                 f'<button class=btn title="{t("copy_skill")}" style="padding:2px 6px"'
@@ -430,6 +446,8 @@ def _pack_order(k: str):
 
 @app.route("/namegen")
 def namegen_view():
+    if request.args.get("kind") == "gene":
+        return _genenames_view()
     packs = NG.load_rulepacks()                       # rilettura fresca
     keys = sorted(packs.keys(), key=_pack_order)      # Core per primo
     # default "Namer" come la vecchia dashboard: mostra solo i pack che generano
@@ -440,7 +458,7 @@ def namegen_view():
     n = max(1, min(200, int(request.args.get("n", 20) or 20)))
 
     if not shown:
-        return render(f'<p class=muted>{t("ng_intro")}</p>'
+        return render(f'{_ng_toggle("rulepack")}<p class=muted>{t("ng_intro")}</p>'
                       f'{_ng_form(q_raw, "", n, 0, 0)}<p class=muted>{t("ng_none")}</p>', "names")
 
     # paginatore: indice del pack nella lista filtrata (Prec/Succ/Vai a #)
@@ -523,17 +541,108 @@ def namegen_view():
                 f'.textContent,this)">📋 {"copia per debug (istruzioni + pack + nomi + tag)" if lang()=="it" else "copy for debug (instructions + pack + names + tags)"}</button></p>'
                 f'<pre id=dbg hidden>{_h(chr(10).join(dbg))}</pre>')
 
-    body = (f'<p class=muted>{t("ng_intro")}</p>{_ng_form(q_raw, sel, n, i, len(shown))}'
+    body = (f'{_ng_toggle("rulepack")}<p class=muted>{t("ng_intro")}</p>{_ng_form(q_raw, sel, n, i, len(shown))}'
             f'<h3>{_h(sel)}</h3>{fileline}{pager}{copy_dbg}{names_html}')
     return render(body, "names")
 
 
-def _ng_form(q: str, sel: str, n: int, i: int, total: int) -> str:
+def _genenames_view():
+    """Anteprima dei nomi-xenotipo dai symbolPack dei GeneDef (frammenti tradotti)."""
+    packs = NG.load_gene_symbolpacks()
+    keys = sorted(packs.keys(), key=_pack_order)
+    q_raw = request.args.get("q", "").strip()
+    q = q_raw.lower()
+    shown = [k for k in keys if q in k.lower()] if q else keys
+    n = max(1, min(200, int(request.args.get("n", 20) or 20)))
+    toggle = _ng_toggle("gene")
+    if not shown:
+        return render(f'{toggle}<p class=muted>{t("gn_intro")}</p>'
+                      f'{_ng_form(q_raw, "", n, 0, 0, kind="gene")}<p class=muted>{t("gn_none")}</p>', "names")
+
+    i = max(0, min(int(request.args.get("i", 0) or 0), len(shown) - 1))
+    sel = shown[i]
+    g = packs[sel]
+    try:
+        pairs = NG.generate_xenotype_names(packs, sel, n=n)
+    except Exception as e:                            # noqa: BLE001
+        pairs = [(f"<error: {e}>", "")]
+    cnt = Counter(pairs)
+    uniq = list(dict.fromkeys(pairs))
+    rows_html = "".join(
+        f'<tr><td>{_h(name)}</td><td class=tag>{_h(recipe)}</td>'
+        f'<td class="right muted" style="width:48px;white-space:nowrap">'
+        f'{"×"+str(cnt[(name, recipe)]) if cnt[(name, recipe)] > 1 else ""}</td></tr>'
+        for name, recipe in uniq)
+    th = ("nome xenotipo", "ricetta") if lang() == "it" else ("xenotype name", "recipe")
+    names_html = (f'<table class=gen><thead><tr><th>{th[0]}</th><th>{th[1]}</th><th></th>'
+                  f'</tr></thead><tbody>{rows_html}</tbody></table>')
+
+    # frammenti del gene (IT) per slot — è ciò che si sta valutando
+    def _frag_row(slot, label):
+        if not g[slot]:
+            return ""
+        return (f'<tr><td class=tag style="width:90px">{label}</td>'
+                f'<td>{", ".join(_h(s) for s in g[slot])}</td></tr>')
+    frag_tbl = (f'<table class=gen><tbody>{_frag_row("whole", "wholeName")}'
+                f'{_frag_row("prefix", "prefix")}{_frag_row("suffix", "suffix")}</tbody></table>')
+    glabel = f' <span class=tag>{_h(g["label"])}</span>' if g["label"] else ""
+
+    qs = f'kind=gene&q={quote(q_raw)}&n={n}'
+    prev = (f'<a class=btn href="/namegen?{qs}&i={i-1}">{t("ng_prev")}</a>' if i > 0
+            else f'<span class="btn" style="opacity:.4">{t("ng_prev")}</span>')
+    nxt = (f'<a class=btn href="/namegen?{qs}&i={i+1}">{t("ng_next")}</a>' if i < len(shown) - 1
+           else f'<span class="btn" style="opacity:.4">{t("ng_next")}</span>')
+    opts = "".join(f'<option {"selected" if j==i else ""}>{_h(k)}</option>' for j, k in enumerate(shown))
+    dropdown = (f'<select style="min-width:340px" '
+                f'onchange="location.href=\'/namegen?{qs}&i=\'+this.selectedIndex">{opts}</select>')
+    jump = (f'<input type=number min=1 max={len(shown)} value="{i+1}" style="width:64px" '
+            f"onchange=\"location.href='/namegen?{qs}&i='+(this.value-1)\">")
+    pager = (f'<div class=flt>{prev}{nxt}'
+             f'<span class=muted>{t("gn_pos", i=i+1, n=len(shown))}</span>{dropdown}{jump}</div>')
+
+    relfile = g.get("file", "")
+    lrows = [r for r in L.load().values() if r["file"] == relfile]
+    total = len(lrows)
+    vdone = sum(1 for r in lrows if r["status"] == "validated")
+    itl = lang() == "it"
+    if not lrows:
+        vbadge = ""
+    elif vdone == total:
+        vbadge = f'<span class="vbadge ok">✓ {"FILE VALIDATO" if itl else "FILE VALIDATED"}</span> '
+    else:
+        vbadge = (f'<span class="vbadge part">⚠ '
+                  f'{("da validare " if itl else "to validate ") + str(vdone) + "/" + str(total)}</span> ')
+    valbtns = (f'{vbadge}'
+               f'<button class="btn g" onclick=\'fileAction("{_js(relfile)}","validated")\'>{t("validate_file")}</button> '
+               f'<button class="btn k" onclick=\'fileAction("{_js(relfile)}","keep")\'>{t("keep_all")}</button> '
+               f'<span class=pct><b style="color:{COLORS["validated"]}">{vdone}</b>/{total}</span>'
+               if relfile and lrows else "")
+    fileline = (f'<p>📄 <a href="/file?f={quote(relfile, safe="")}">{_h(relfile)}</a></p><p>{valbtns}</p>')
+
+    body = (f'{toggle}<p class=muted>{t("gn_intro")}</p>{_ng_form(q_raw, sel, n, i, len(shown), kind="gene")}'
+            f'<h3>{_h(sel)}{glabel}</h3>{fileline}{pager}'
+            f'<p class=muted>{t("gn_frags")}:</p>{frag_tbl}{names_html}')
+    return render(body, "names")
+
+
+def _ng_form(q: str, sel: str, n: int, i: int, total: int, kind: str = "rulepack") -> str:
+    ph = "namer / faction / map…" if kind == "rulepack" else "gene / xenotype…"
     return (f'<form class=flt method=get>{t("ng_filter")} '
-            f'<input name=q value="{_h(q)}" style="width:220px" placeholder="namer / faction / map…">'
+            f'<input type=hidden name=kind value="{kind}">'
+            f'<input name=q value="{_h(q)}" style="width:220px" placeholder="{ph}">'
             f'<input type=hidden name=i value="{i}">'
             f'{t("ng_count")} <input name=n type=number min=1 max=200 value="{n}" style="width:70px">'
             f'<button class=btn type=submit>{t("ng_gen")}</button></form>')
+
+
+def _ng_toggle(active: str) -> str:
+    """Interruttore tra anteprima RulePack e anteprima nomi-geni."""
+    def tab(kind, label):
+        on = " g" if kind == active else ""
+        href = "/namegen" if kind == "rulepack" else "/namegen?kind=gene"
+        return f'<a class="btn{on}" href="{href}">{label}</a>'
+    return (f'<div class=flt style="margin-bottom:6px">'
+            f'{tab("rulepack", t("gn_tab_rp"))}{tab("gene", t("gn_tab_gene"))}</div>')
 
 
 @app.post("/api/set")

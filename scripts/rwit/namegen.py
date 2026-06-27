@@ -151,6 +151,120 @@ def load_rulepacks(repo: Path | None = None, dlcs=None) -> dict[str, dict]:
     return packs
 
 
+_GENE_SLOTS = {"prefixSymbols": "prefix", "suffixSymbols": "suffix",
+               "wholeNameSymbols": "whole"}
+
+
+def load_gene_symbolpacks(repo: Path | None = None, dlcs=None) -> dict[str, dict]:
+    """Carica i symbolPack dei GeneDef: i frammenti con cui il gioco compone i nomi
+    degli XENOTIPI (prefix + suffix, oppure un wholeName).
+
+    Chiave leggibile 'DLC · file · Gene' -> {prefix/suffix/whole: [str], label, file}.
+    I pesi non sono nel DefInjected (c'è solo il testo .symbol) -> peso implicito 1."""
+    repo = repo or config.repo_root()
+    dlcs = dlcs or config.DLCS
+    out: dict[str, dict] = {}
+    for dlc in dlcs:
+        base = repo / dlc / "DefInjected" / "GeneDef"
+        if not base.exists():
+            continue
+        for f in sorted(base.glob("*.xml")):
+            try:
+                root = etree.parse(str(f)).getroot()
+            except (etree.XMLSyntaxError, OSError):
+                continue
+            labels: dict[str, str] = {}
+            slots: dict[str, dict[str, list]] = defaultdict(
+                lambda: {"prefix": [], "suffix": [], "whole": []})
+            for el in root:
+                if not isinstance(el.tag, str):
+                    continue
+                tag = el.tag
+                if ".symbolPack." in tag:
+                    gene, rest = tag.split(".symbolPack.", 1)
+                    parts = rest.split(".")
+                    slot = _GENE_SLOTS.get(parts[0])
+                    if slot is None or parts[-1] != "symbol":
+                        continue
+                    try:
+                        idx = int(parts[1])
+                    except (IndexError, ValueError):
+                        idx = len(slots[gene][slot])
+                    txt = (el.text or "").strip()
+                    if txt:
+                        slots[gene][slot].append((idx, txt))
+                elif tag.endswith(".label"):
+                    labels[tag[:-len(".label")]] = (el.text or "").strip()
+            for gene, sl in slots.items():
+                if not any(sl.values()):
+                    continue
+                key = f"{dlc} · {f.stem} · {gene}"
+                out[key] = {
+                    "dlc": dlc, "file": str(f.relative_to(repo)), "gene": gene,
+                    "label": labels.get(gene, ""),
+                    "prefix": [s for _, s in sorted(sl["prefix"])],
+                    "suffix": [s for _, s in sorted(sl["suffix"])],
+                    "whole": [s for _, s in sorted(sl["whole"])],
+                }
+    return out
+
+
+def _gene_pools(packs: dict):
+    """Pool globale dei frammenti di TUTTI i geni (il gioco unisce i symbolPack dei
+    geni presenti in uno xenotipo; per l'anteprima uniamo tutto)."""
+    pre: list[str] = []
+    suf: list[str] = []
+    for p in packs.values():
+        pre += p["prefix"]
+        suf += p["suffix"]
+    return pre, suf
+
+
+def _fuse(a: str, b: str) -> str:
+    """Concatena due frammenti come fa il namer xenotipi: senza spazio, collassando
+    la lettera doppia alla giuntura, con iniziale maiuscola."""
+    a, b = a.strip(), b.strip()
+    if not a:
+        return (b[:1].upper() + b[1:]) if b else ""
+    if not b:
+        return a[:1].upper() + a[1:]
+    if a[-1].lower() == b[0].lower():
+        b = b[1:]
+    s = a + b
+    return s[:1].upper() + s[1:]
+
+
+def generate_xenotype_names(packs: dict, key: str, n: int = 20, seed: int | None = None):
+    """Nomi-xenotipo d'esempio che USANO i frammenti del gene `key`, mescolati col
+    pool globale. Ritorna [(nome, ricetta)]. APPROSSIMATO (vedi docstring del modulo):
+    il vero namer pesa i simboli e fa dedup più sofisticato, ma basta a vedere come
+    rendono i frammenti tradotti dentro un nome."""
+    rng = random.Random(seed)
+    g = packs[key]
+    pre_pool, suf_pool = _gene_pools(packs)
+    my_pre, my_suf, my_whole = g["prefix"], g["suffix"], g["whole"]
+    out: list[tuple[str, str]] = []
+    for _ in range(n):
+        if my_whole and rng.random() < 0.30:
+            w = rng.choice(my_whole)
+            out.append((w[:1].upper() + w[1:], f"whole «{w}»"))
+            continue
+        # almeno una parte viene SEMPRE dal gene selezionato (così si valuta il suo
+        # frammento); l'altra dal pool globale o dal gene stesso.
+        if my_pre and (my_suf or suf_pool) and (not my_suf or rng.random() < 0.5):
+            a, b = rng.choice(my_pre), rng.choice(my_suf or suf_pool)
+        elif my_suf and (my_pre or pre_pool):
+            a, b = rng.choice(my_pre or pre_pool), rng.choice(my_suf)
+        elif my_whole:
+            w = rng.choice(my_whole)
+            out.append((w[:1].upper() + w[1:], f"whole «{w}»"))
+            continue
+        else:
+            continue
+        out.append((_fuse(a, b), f"{a} + {b}"))
+    return out
+
+
 def _load_words(repo: Path, dlc: str, relpath: str) -> list[str] | None:
     for d in (dlc, "Core"):
         f = repo / d / "Strings" / (relpath + ".txt")
