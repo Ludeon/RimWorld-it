@@ -229,36 +229,59 @@ def args_check(
     dlc: Optional[List[str]] = typer.Option(None, "--dlc", help="Limita a una o piu DLC"),
 ):
     hits = argscheck_mod.scan(dlc or None)
+    refs = [c for c, _ in argscheck_mod.ref_roots()]
     from collections import Counter
     by = Counter(h.kind for h in hits)
     t = Table(title=f"Segnaposto discordanti IT vs EN - {len(hits)} stringhe")
     t.add_column("Tipo"); t.add_column("Conteggio", justify="right", style="bold")
-    labels = {"extra-pos": "posizionale IN PIU' nell'IT (es. {0} residuo) — BUG probabile",
+    labels = {"extra-pos-bug": "posizionale IN PIU' che NESSUNA lingua usa — BUG molto probabile",
+              "extra-suffix": "radice '...Def' flessa per genere/pronome (i Def non hanno genere) — BUG",
+              "extra-pos-ok": "posizionale IN PIU' ma usato anche da fr/de/es — arg valido (l'EN non lo mostra)",
+              "extra-pos": "posizionale IN PIU' nell'IT (nessuna lingua di rif. per giudicare)",
               "manca-pos": "posizionale MANCANTE nell'IT — BUG probabile",
               "manca-var": "variabile {NOME} di contenuto MANCANTE — da rivedere",
               "extra-var": "variabile {NOME} IN PIU' (spesso nome al posto del pronome: lecito)"}
-    for k, n in by.most_common():
-        t.add_row(labels.get(k, k), str(n))
+    # priorita' di visualizzazione: i sospetti veri in cima.
+    order = {"extra-pos-bug": 0, "extra-suffix": 1, "manca-pos": 2, "extra-pos": 3,
+             "manca-var": 4, "extra-pos-ok": 5, "extra-var": 6}
+    for k in sorted(by, key=lambda k: order.get(k, 9)):
+        style = "bold red" if k in ("extra-pos-bug", "extra-suffix") else None
+        t.add_row(labels.get(k, k), str(by[k]), style=style)
     console.print(t)
+    if refs:
+        console.print(f"[dim]Lingue di riferimento per l'incrocio: {', '.join(refs)}[/]")
+    else:
+        console.print("[yellow]Nessun clone di riferimento (RimWorld-fr/de/Spanish) accanto al repo: "
+                      "confidenza non calcolata.[/]")
     if not hits:
         console.print("[green]Nessuna discordanza di segnaposto.[/]")
         return
     out = config.reports_dir() / f"argscheck_{datetime.now():%Y%m%d_%H%M}.txt"
-    lines = [f"# args-check - {len(hits)} stringhe con segnaposto discordanti\n"]
+    lines = [f"# args-check - {len(hits)} stringhe con segnaposto discordanti",
+             f"# lingue di riferimento: {', '.join(refs) or '(nessuna)'}",
+             "# +pos{N}(fr,de) = indice in piu' usato da quelle lingue (probabile arg valido)",
+             "# +pos{N}(0 ling) = nessuna lingua lo usa -> BUG probabile (Could not resolve symbol N)",
+             "# +suff:ROOT = radice '...Def' (un Def, senza genere) flessa per genere dall'IT -> non risolvibile\n"]
     cur = None
-    for h in sorted(hits, key=lambda h: (h.file, h.line or 0)):
+    # i casi piu' gravi per primi, poi per file/riga.
+    for h in sorted(hits, key=lambda h: (order.get(h.kind, 9), h.file, h.line or 0)):
         if h.file != cur:
             lines.append(f"\n=== {h.file} ==="); cur = h.file
         diff = []
-        if h.extra_num: diff.append(f"+pos{{{','.join(h.extra_num)}}}")
+        for i in h.extra_num:
+            sup = h.num_sup.get(i, [])
+            tag = (",".join(sup) if sup else "0 ling") if h.ref_judged else "?"
+            diff.append(f"+pos{{{i}}}({tag})")
+        for r in h.suffix_sus:
+            diff.append(f"+suff:{r}")
         if h.miss_num:  diff.append(f"-pos{{{','.join(h.miss_num)}}}")
         if h.extra_var: diff.append(f"+var{{{','.join(h.extra_var)}}}")
         if h.miss_var:  diff.append(f"-var{{{','.join(h.miss_var)}}}")
-        lines.append(f"  L{h.line:<5} [{' '.join(diff)}] {h.tag}")
+        lines.append(f"  L{h.line:<5} [{h.kind}] [{' '.join(diff)}] {h.tag}")
         lines.append(f"     EN: {h.en}")
         lines.append(f"     IT: {h.it}")
     out.write_text("\n".join(lines), encoding="utf-8")
-    console.print(f"[green]Dettaglio (+ = in piu' nell'IT, - = mancante):[/] {out}")
+    console.print(f"[green]Dettaglio (+ = in piu' nell'IT, - = mancante, confidenza incrociata):[/] {out}")
 
 
 @app.command("plural-check", help="Trova il plurale inglese [Simbolo]s nelle regole IT (es. 'razzos'/'cittadinos' a schermo).")
