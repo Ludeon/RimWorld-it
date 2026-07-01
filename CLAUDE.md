@@ -68,14 +68,14 @@ Commands:
 Game paths: auto-detected; override with `--game-data` or `RIMWORLD_DATA`.
 Details in [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md).
 
-### Live reload while testing (LangLive)
+### Live reload while testing (RimLiveTongue)
 
 Optional companion **dev mod** for previewing edits without restarting the game:
-[**LangLive**](https://github.com/b4p3p/LangLive) (`packageId: b4p3p.langlive`, RimWorld 1.6).
+[**RimLiveTongue**](https://github.com/b4p3p/RimLiveTongue) (`packageId: b4p3p.rimlivetongue`, RimWorld 1.6).
 On a file change it does a *language-only* reload through the engine's native loading path
 (Keyed + Strings + DefInjected), so edits to this repo show up live. Point its **watch folder**
-(Options → Mod settings → LangLive) at the active language folder — with the `rwit link` symlink
-setup that is this repo root. It can also be triggered by touching a `.langlive-reload` sentinel
+(Options → Mod settings → RimLiveTongue) at the active language folder — with the `rwit link` symlink
+setup that is this repo root. It can also be triggered by touching a `.rimlivetongue-reload` sentinel
 file in the watch folder. Dev tool only: it is **not** shipped inside the translation pack.
 
 ## Translation rules (summary)
@@ -117,4 +117,4 @@ Full reference: [`docs/TRANSLATION-SYNTAX.md`](docs/TRANSLATION-SYNTAX.md).
 
 - Wiki: https://rimworldwiki.com/
 - Ludeon grammar rules: https://ludeon.com/forums/index.php?topic=43979.0
-- LangLive (live-reload dev mod): https://github.com/b4p3p/LangLive
+- RimLiveTongue (live-reload dev mod): https://github.com/b4p3p/RimLiveTongue

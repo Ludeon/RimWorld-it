@@ -91,7 +91,7 @@ on Core namers (People/Scenarios/Outlander/settlements + `Strings/WordParts/Syll
 
 **Dashboard review progress**: at **page 21** of the Name-generator paginator (resume there).
 
-**New dev tool — `LangLive` mod** (separate repo `../LangLive`, MIT, packageId `b4p3p.langlive`):
+**New dev tool — `RimLiveTongue` mod** (separate repo `../RimLiveTongue`, MIT, packageId `b4p3p.rimlivetongue`):
 live-reloads the active language in-game so edits show without restarting. Native reload via
 `LanguageDatabase.SelectLanguage` (correct for Keyed+Strings+DefInjected, no unsafe reflection).
 Auto-detects the active language folders (no config). **Guard: only reloads in `ProgramState.
@@ -462,7 +462,7 @@ already correct (move the article inside the ternary: `{gender ? un guerriero:un
 | Combat/social log gender-aware | ✅ whole melee+ranged + social interactions (verified offline) |
 | Ideoligion namers (roles, rituals, deity, relics, ideoName) gender/agreement | ✅ 2026-06-22/23 |
 | Combat log in-game verification (Dev mode) | ⬜ needs the game |
-| `LangLive` live-reload dev mod (separate repo) | ✅ built + guarded (`Playing` only); v1.1 fast-path TODO |
+| `RimLiveTongue` live-reload dev mod (separate repo) | ✅ built + guarded (`Playing` only); v1.1 fast-path TODO |
 | Cleanup rename/unused keyed (→ `rwit clean`) | ⬜ tooling |
 | RulePackDef namers validated (via Name-generator tab) | ✅ 161 validated rows |
 | Validation pass `translated → validated` (roadmap §5.4) | 🔄 Phase A — `Solid_Child` baseDesc stripped (1547→1247), first block reviewed+validated; **213 validated** total |
