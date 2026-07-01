@@ -34,13 +34,17 @@
   -->
   <OpportunitySite_AncientComplex_Giver.questNameRules.rulesStrings>
     <li>questName(p=3)->[finalWord] del [complex] [complexAdj]</li>
-    <li>questName(p=3)->[finalWord] della [complexFem] [complexAdjFem]</li>
+    <li>questName(p=1.5)->[finalWord] della [complexFem_cons] [complexAdjFem]</li>
+    <li>questName(p=1.5)->[finalWord] dell’[complexFem_vow] [complexAdjFem]</li>
     <li>questName(p=3)->[finalWordVar] al [complex] [complexAdj]</li>
-    <li>questName(p=3)->[finalWordVar] alla [complexFem] [complexAdjFem]</li>
+    <li>questName(p=1.5)->[finalWordVar] alla [complexFem_cons] [complexAdjFem]</li>
+    <li>questName(p=1.5)->[finalWordVar] all’[complexFem_vow] [complexAdjFem]</li>
     <li>questName->[finalWord] del [complex] </li>
-    <li>questName->[finalWord] della [complexFem] </li>
+    <li>questName(p=0.5)->[finalWord] della [complexFem_cons] </li>
+    <li>questName(p=0.5)->[finalWord] dell’[complexFem_vow] </li>
     <li>questName->[finalWordVar] al [complex] </li>
-    <li>questName->[finalWordVar] alla [complexFem] </li>
+    <li>questName(p=0.5)->[finalWordVar] alla [complexFem_cons] </li>
+    <li>questName(p=0.5)->[finalWordVar] all’[complexFem_vow] </li>
     <li>complexAdj->segreto</li>
     <li>complexAdj->misterioso</li>
     <li>complexAdj->antico</li>
@@ -54,8 +58,8 @@
     <li>complexAdjFem->nascosta</li>
     <li>complexAdjFem->mortale</li>
     <li>complex->complesso</li>
-    <li>complexFem->installazione</li>
-    <li>complexFem->struttura</li>
+    <li>complexFem_vow->installazione</li>
+    <li>complexFem_cons->struttura</li>
     <li>finalWord->il tesoro</li>
     <li>finalWord->le ricchezze</li>
     <li>finalWord->la collezione</li>

@@ -176,19 +176,19 @@
     <li>questName(generateThreats==true,priority=1)->[lodgerIndef] con nemici</li>
     <li>questName(generateThreats==true,priority=1)->[lodgerIndef] nel mirino</li>
     <li>lodgerIndef(askerIsNull==true,lodgersCount==1)->[lodgers0_label]</li>
-    <li>lodgerIndef(askerIsNull==true,lodgersCount==1)->un [lodgers0_title]</li>
+    <li>lodgerIndef(askerIsNull==true,lodgersCount==1)->{lodgers0_gender ? un : una} [lodgers0_title]</li>
     <li>lodgerIndef(askerIsNull==true,lodgersCount>=2)->viaggiatori</li>
     <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1)->[lodgers0_label]</li>
-    <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1)->un [lodgers0_title]</li>
-    <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1)->un amico</li>
-    <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1)->un alleato</li>
+    <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1)->{lodgers0_gender ? un : una} [lodgers0_title]</li>
+    <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1)->{lodgers0_gender ? un amico : un'amica}</li>
+    <li>lodgerIndef(asker_factionLeader==True,lodgersCount==1)->{lodgers0_gender ? un alleato : un'alleata}</li>
     <li>lodgerIndef(asker_factionLeader==True,lodgersCount>=2)->amici</li>
     <li>lodgerIndef(asker_factionLeader==True,lodgersCount>=2)->alleati</li>
-    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1,p=3)->un [asker_royalTitleInCurrentFaction]</li>
+    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1,p=3)->{asker_gender ? un : una} [asker_royalTitleInCurrentFaction]</li>
     <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1)->[asker_label]</li>
-    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1)->un reale</li>
-    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1)->un nobile</li>
-    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1)->un aristocratico</li>
+    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1)->{asker_gender ? un reale : una reale}</li>
+    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1)->{asker_gender ? un nobile : una nobile}</li>
+    <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount==1)->{asker_gender ? un aristocratico : un'aristocratica}</li>
     <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount>=2)->reali</li>
     <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount>=2)->nobili</li>
     <li>lodgerIndef(asker_royalInCurrentFaction==True,lodgersCount>=2)->aristocratici</li>

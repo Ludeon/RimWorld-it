@@ -37,17 +37,31 @@
     <li>shipNoun->transport</li>
   -->
   <MechanitorShip.questNameRules.rulesStrings>
-    <li>questName->[shipAdjective] [shipNoun]</li>
-    <li>shipAdjective->meccanista</li>
-    <li>shipAdjective->il supervisore</li>
-    <li>shipAdjective->antico</li>
-    <li>shipAdjective->mecanoide</li>
-    <li>shipNoun->nave</li>
-    <li>shipNoun->navetta</li>
-    <li>shipNoun->artigianato</li>
-    <li>shipNoun->naufragio</li>
-    <li>shipNoun->resti</li>
-    <li>shipNoun->trasporto</li>
+    <!-- "[shipAdjective] [shipNoun]": "antico" non concordava su nave/navetta (f) e "il
+         supervisore" era un sintagma con determinante finito nello slot aggettivo → "il
+         supervisore nave" (parole a caso, perde il possessivo). Riordinato nome-modificatore
+         con aggettivi concordati per genere; il possessivo reso come complemento post-nominale
+         "del supervisore" (simbolo proprio). Corretto "artigianato" (mistraduzione di "craft")
+         → "velivolo" e "resti" (plurale, rompeva la concordanza di numero) → "relitto". I pesi
+         (2/4) preservano la prevalenza dei nomi maschili della lista originale. -->
+    <li>questName(p=2)->[shipNoun_f] [modF]</li>
+    <li>questName(p=4)->[shipNoun_m] [modM]</li>
+    <li>modM(p=3)->[adjM]</li>
+    <li>modM(p=1)->del supervisore</li>
+    <li>modF(p=3)->[adjF]</li>
+    <li>modF(p=1)->del supervisore</li>
+    <li>shipNoun_f->nave</li>
+    <li>shipNoun_f->navetta</li>
+    <li>shipNoun_m->velivolo</li>
+    <li>shipNoun_m->relitto</li>
+    <li>shipNoun_m->naufragio</li>
+    <li>shipNoun_m->trasporto</li>
+    <li>adjM->meccanista</li>
+    <li>adjM->antico</li>
+    <li>adjM->mecanoide</li>
+    <li>adjF->meccanista</li>
+    <li>adjF->antica</li>
+    <li>adjF->mecanoide</li>
   </MechanitorShip.questNameRules.rulesStrings>
   
 </LanguageData>

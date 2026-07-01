@@ -29,25 +29,37 @@
     <li>discovered->scanned</li>
   -->
   <LongRangeMineralScannerLump.questNameRules.rulesStrings>
+    <!-- [lump] è inline (genere noto): la "vena" è femminile e "ammasso" inizia per vocale, quindi
+         "Il [lump]" produceva "Il vena"/"Il ammasso". Nei template con articolo si usa [lump_def]
+         con articolo cotto ed eliso. [targetMineableThing_label] è una label di MOTORE (genere
+         ignoto a runtime: es. "Giada" femminile): non le si può anteporre un articolo fisso né
+         forzarle aggettivi/participi maschili ("lontano Giada", "Giada scoperto"). I template con
+         [adj]/[discovered] sono stati riformulati con forme invarianti rispetto al genere della
+         label. FLAG: verifica in-game i template con [targetMineableThing_label]. -->
     <li>questName->[lump] di [targetMineableThing_label]</li>
-    <li>questName->[targetMineableThing_label] [lump]</li>
-    <li>questName->Il [lump] di [targetMineableThing_label]</li>
-    <li>questName->[adj] [targetMineableThing_label]</li>
-    <li>questName->[targetMineableThing_label] [discovered]</li>
+    <li>questName->[lump_def] di [targetMineableThing_label]</li>
+    <li>questName->[targetMineableThing_label] [descrInv]</li>
+    <li>questName->[scopertaNoun] di [targetMineableThing_label]</li>
     <li>lump->giacimento</li>
     <li>lump->cumulo</li>
     <li>lump->deposito</li>
     <li>lump->vena</li>
     <li>lump->blocco</li>
     <li>lump->ammasso</li>
-    <li>adj->lontano</li>
-    <li>adj->distante</li>
-    <li>adj->sconosciuto</li>
-    <li>adj->scannerizzato</li>
-    <li>discovered->scoperto</li>
-    <li>discovered->individuato</li>
-    <li>discovered->trovato</li>
-    <li>discovered->scannerizzato</li>
+    <li>lump_def->il giacimento</li>
+    <li>lump_def->il cumulo</li>
+    <li>lump_def->il deposito</li>
+    <li>lump_def->la vena</li>
+    <li>lump_def->il blocco</li>
+    <li>lump_def->l'ammasso</li>
+    <li>descrInv->nelle vicinanze</li>
+    <li>descrInv->in lontananza</li>
+    <li>descrInv->all'orizzonte</li>
+    <li>descrInv->da estrarre</li>
+    <li>scopertaNoun->Scoperta</li>
+    <li>scopertaNoun->Rilevamento</li>
+    <li>scopertaNoun->Ritrovamento</li>
+    <li>scopertaNoun->Scansione</li>
   </LongRangeMineralScannerLump.questNameRules.rulesStrings>
   <!-- EN: Quest expired: [resolvedQuestName] -->
   <LongRangeMineralScannerLump.LetterLabelQuestExpired.slateRef>Missione scaduta: [resolvedQuestName]</LongRangeMineralScannerLump.LetterLabelQuestExpired.slateRef>

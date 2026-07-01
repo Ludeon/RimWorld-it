@@ -53,25 +53,37 @@
     <li>meetNoun->parley</li>
   -->
   <SanguophageMeetingHost.questNameRules.rulesStrings>
-    <li>questName->[meetAdjective] [meetNoun]</li>
-    <li>meetAdjective->sanguifago</li>
-    <li>meetAdjective->assetato di sangue</li>
-    <li>meetAdjective->sanguinario</li>
-    <li>meetAdjective->sangue</li>
-    <li>meetAdjective->ombra</li>
-    <li>meetAdjective->oscurità</li>
-    <li>meetAdjective->carmesì</li>
-    <li>meetAdjective->rosso</li>
-    <li>meetAdjective->crosta</li>
-    <li>meetAdjective->emico</li>
-    <li>meetAdjective->sanguigno</li>
-    <li>meetNoun->riunione</li>
-    <li>meetNoun->ospite</li>
-    <li>meetNoun->raduno</li>
-    <li>meetNoun->assemblea</li>
-    <li>meetNoun->conclave</li>
-    <li>meetNoun->congresso</li>
-    <li>meetNoun->parlamento</li>
+    <!-- "[meetAdjective] [meetNoun]": in inglese l'aggettivo precede il nome, ma i nomi qui sono
+         in prevalenza femminili (riunione, assemblea) mentre gli aggettivi erano tutti maschili
+         → "sanguifago riunione". Riordinato nome-aggettivo con forme concordate per genere. I
+         pesi delle due tracce (5/2) preservano la prevalenza dei nomi maschili. -->
+    <li>questName(p=5)->[meetNoun_m] [adjM]</li>
+    <li>questName(p=2)->[meetNoun_f] [adjF]</li>
+    <li>meetNoun_m->convegno</li>
+    <li>meetNoun_m->raduno</li>
+    <li>meetNoun_m->conclave</li>
+    <li>meetNoun_m->congresso</li>
+    <li>meetNoun_m->parlamento</li>
+    <li>meetNoun_f->riunione</li>
+    <li>meetNoun_f->assemblea</li>
+    <li>adjM->sanguifago</li>
+    <li>adjM->assetato di sangue</li>
+    <li>adjM->sanguinario</li>
+    <li>adjM->tenebroso</li>
+    <li>adjM->oscuro</li>
+    <li>adjM->cremisi</li>
+    <li>adjM->rosso</li>
+    <li>adjM->emico</li>
+    <li>adjM->sanguigno</li>
+    <li>adjF->sanguifaga</li>
+    <li>adjF->assetata di sangue</li>
+    <li>adjF->sanguinaria</li>
+    <li>adjF->tenebrosa</li>
+    <li>adjF->oscura</li>
+    <li>adjF->cremisi</li>
+    <li>adjF->rossa</li>
+    <li>adjF->emica</li>
+    <li>adjF->sanguigna</li>
   </SanguophageMeetingHost.questNameRules.rulesStrings>
   
 </LanguageData>

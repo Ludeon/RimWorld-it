@@ -36,22 +36,38 @@
     <li>terminalName->silicon</li>
   -->
   <Hack_WorshippedTerminal.questNameRules.rulesStrings>
-    <li>questName->Il [adj] [terminalName]</li>
-    <li>adj->venerato</li>
-    <li>adj->adorato</li>
-    <li>adj->antico</li>
-    <li>adj->del villaggio</li>
-    <li>adj->del villaggio tribale</li>
-    <li>adj->tribale</li>
-    <li>adj->segreto</li>
-    <li>terminalName(p=4)->terminale</li>
-    <li>terminalName->macchina</li>
-    <li>terminalName->dispositivo</li>
-    <li>terminalName->schermo</li>
-    <li>terminalName->computer</li>
-    <li>terminalName->banca dati</li>
-    <li>terminalName->database</li>
-    <li>terminalName->silicio</li>
+    <!-- "The [adj] [noun]": in italiano l'articolo dipende da genere e iniziale del nome
+         (il/lo/l'/la) e l'aggettivo deve concordare. Inoltre "village/villager's" non sono
+         aggettivi ma complementi ("del villaggio") → vanno post-nominali, non nello slot
+         aggettivo (era la causa di "Il del villaggio terminale"). Articolo cotto nel nome;
+         modificatore (aggettivo concordato o complemento) sempre post-nominale. I pesi delle
+         due tracce (9/2) preservano la prevalenza dei nomi maschili della lista originale. -->
+    <li>questName(p=9)->[terminal_m_def] [modM]</li>
+    <li>questName(p=2)->[terminal_f_def] [modF]</li>
+    <li>terminal_m_def(p=4)->il terminale</li>
+    <li>terminal_m_def->il dispositivo</li>
+    <li>terminal_m_def->lo schermo</li>
+    <li>terminal_m_def->il computer</li>
+    <li>terminal_m_def->il silicio</li>
+    <li>terminal_m_def->il database</li>
+    <li>terminal_f_def->la macchina</li>
+    <li>terminal_f_def->la banca dati</li>
+    <li>modM(p=5)->[adjM]</li>
+    <li>modM(p=2)->[complement]</li>
+    <li>modF(p=5)->[adjF]</li>
+    <li>modF(p=2)->[complement]</li>
+    <li>adjM->venerato</li>
+    <li>adjM->adorato</li>
+    <li>adjM->antico</li>
+    <li>adjM->segreto</li>
+    <li>adjM->tribale</li>
+    <li>adjF->venerata</li>
+    <li>adjF->adorata</li>
+    <li>adjF->antica</li>
+    <li>adjF->segreta</li>
+    <li>adjF->tribale</li>
+    <li>complement->del villaggio</li>
+    <li>complement->del villaggio tribale</li>
   </Hack_WorshippedTerminal.questNameRules.rulesStrings>
   
 </LanguageData>

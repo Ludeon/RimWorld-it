@@ -26,18 +26,24 @@
     <li>itemAdj->venerated</li>
   -->
   <RelicHunt.questNameRules.rulesStrings>
-    <li>questName->La [hunt] per il [item]</li>
-    <li>questName->Il [itemAdj] [item]</li>
-    <li>questName(classicMode==False)->Il [item] di [ideo_name]</li>
+    <li>questName->La [hunt] per [itemDef]</li>
+    <li>questName->[itemAdjPhrase]</li>
+    <li>questName(classicMode==False)->[itemDef] di [ideo_name]</li>
     <li>hunt->caccia</li>
     <li>hunt->ricerca</li>
     <li>hunt->missione</li>
-    <li>item(p=4)->[relic_name]</li>
-    <li>item->reliquia</li>
-    <li>item->manufatto</li>
-    <li>itemAdj->antico</li>
-    <li>itemAdj->riverito</li>
-    <li>itemAdj->venerato</li>
+    <li>itemDef(p=4)->[relic_name]</li>
+    <li>itemDef->la reliquia</li>
+    <li>itemDef->il manufatto</li>
+    <li>itemAdjPhrase(p=4)->[relic_name]</li>
+    <li>itemAdjPhrase->la reliquia [itemAdjF]</li>
+    <li>itemAdjPhrase->il manufatto [itemAdjM]</li>
+    <li>itemAdjM->antico</li>
+    <li>itemAdjM->riverito</li>
+    <li>itemAdjM->venerato</li>
+    <li>itemAdjF->antica</li>
+    <li>itemAdjF->riverita</li>
+    <li>itemAdjF->venerata</li>
   </RelicHunt.questNameRules.rulesStrings>
   
 </LanguageData>

@@ -25,19 +25,28 @@
     <li>bandit->Brigand</li>
   -->
   <OpportunitySite_BanditCamp.questNameRules.rulesStrings>
-    <li>questName->Il [camp] dei [bandit]</li>
+    <!-- I nomi di [camp] sono tutti maschili ma alcuni iniziano per vocale (Accampamento,
+         Avamposto): "Il [camp]" produceva "Il Accampamento" invece di "L'Accampamento". Nei
+         template con articolo si usa [camp_def] con articolo eliso cotto (minuscolo: il motore
+         maiuscola la prima lettera del nome). Il template senza articolo continua a usare [camp]
+         nudo. Corretto anche "Marauderi" (non-parola) → "Razziatori". -->
+    <li>questName->[camp_def] dei [bandit]</li>
     <li>questName->[camp] dei [bandit]</li>
-    <li>questName->[asker_nameDef] e il [camp]</li>
+    <li>questName->[asker_nameDef] e [camp_def]</li>
     <li>camp->Accampamento</li>
     <li>camp->Avamposto</li>
     <li>camp->Covo</li>
     <li>camp->Campo</li>
+    <li>camp_def->l'Accampamento</li>
+    <li>camp_def->l'Avamposto</li>
+    <li>camp_def->il Covo</li>
+    <li>camp_def->il Campo</li>
     <li>bandit->Banditi</li>
     <li>bandit->Predoni</li>
     <li>bandit->Fuorilegge</li>
     <li>bandit->Desperados</li>
     <li>bandit->Fuggitivi</li>
-    <li>bandit->Marauderi</li>
+    <li>bandit->Razziatori</li>
     <li>bandit->Rapinatori</li>
     <li>bandit->Briganti</li>
   </OpportunitySite_BanditCamp.questNameRules.rulesStrings>

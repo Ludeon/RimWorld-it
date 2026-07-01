@@ -45,23 +45,36 @@
     <li>shipNoun->wreck</li>
   -->
   <SanguophageShip.questNameRules.rulesStrings>
-    <li>questName->[shipAdjective] [shipNoun]</li>
-    <li>shipAdjective->sanguophage</li>
-    <li>shipAdjective->assetato di sangue</li>
-    <li>shipAdjective->sanguinoso</li>
-    <li>shipAdjective->ombra</li>
-    <li>shipAdjective->scuro</li>
-    <li>shipAdjective->carmesì</li>
-    <li>shipAdjective->rosso</li>
-    <li>shipAdjective->crosta</li>
-    <li>shipAdjective->emico</li>
-    <li>shipAdjective->sanguigno</li>
-    <li>shipNoun->nave</li>
-    <li>shipNoun->navetta</li>
-    <li>shipNoun->astronave</li>
-    <li>shipNoun->relitto</li>
-    <li>shipNoun->schianto</li>
-    <li>shipNoun->rovina</li>
+    <!-- "[shipAdjective] [shipNoun]": nomi in prevalenza femminili (nave, navetta, astronave,
+         rovina) con aggettivi maschili → "scuro nave". Riordinato nome-aggettivo con forme
+         concordate per genere; corretto "sanguophage" non tradotto → "sanguifago". I pesi (2/4)
+         preservano la prevalenza dei nomi femminili della lista originale. -->
+    <li>questName(p=2)->[shipNoun_m] [adjM]</li>
+    <li>questName(p=4)->[shipNoun_f] [adjF]</li>
+    <li>shipNoun_m->relitto</li>
+    <li>shipNoun_m->schianto</li>
+    <li>shipNoun_f->nave</li>
+    <li>shipNoun_f->navetta</li>
+    <li>shipNoun_f->astronave</li>
+    <li>shipNoun_f->rovina</li>
+    <li>adjM->sanguifago</li>
+    <li>adjM->assetato di sangue</li>
+    <li>adjM->sanguinoso</li>
+    <li>adjM->tenebroso</li>
+    <li>adjM->scuro</li>
+    <li>adjM->cremisi</li>
+    <li>adjM->rosso</li>
+    <li>adjM->emico</li>
+    <li>adjM->sanguigno</li>
+    <li>adjF->sanguifaga</li>
+    <li>adjF->assetata di sangue</li>
+    <li>adjF->sanguinosa</li>
+    <li>adjF->tenebrosa</li>
+    <li>adjF->scura</li>
+    <li>adjF->cremisi</li>
+    <li>adjF->rossa</li>
+    <li>adjF->emica</li>
+    <li>adjF->sanguigna</li>
   </SanguophageShip.questNameRules.rulesStrings>
   
 </LanguageData>

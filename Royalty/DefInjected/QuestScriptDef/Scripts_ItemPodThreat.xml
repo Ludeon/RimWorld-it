@@ -111,17 +111,38 @@
     <li>beasts->animals</li>
   -->
   <ThreatReward_Manhunters_ItemPod.questNameRules.rulesStrings>
-    <li>questName(animalCount==1)->Il [AdjectiveBadass] [beast]</li>
-    <li>questName(animalCount==1)->Un [AdjectiveBadass] [beast]</li>
-    <li>questName(animalCount==1)->[AdjectiveBadass] [beast]</li>
-    <li>questName(animalCount>=2)->I [AdjectiveBadass] [beasts]</li>
-    <li>questName(animalCount>=2)->[AdjectiveBadass] [beasts]</li>
-    <li>beast(p=4)->[animalKind_label]</li>
-    <li>beast->bestia</li>
-    <li>beast->animale</li>
-    <li>beasts(p=4)->[animalKind_labelPlural]</li>
-    <li>beasts->bestie</li>
-    <li>beasts->animali</li>
+    <li>questName(animalCount==1)->[the_beast]</li>
+    <li>questName(animalCount==1)->[a_beast]</li>
+    <li>questName(animalCount>=2)->[the_beasts]</li>
+    <li>the_beast(p=4)->[animalKindDef_definite]</li>
+    <li>the_beast->la bestia [adjF]</li>
+    <li>the_beast->l'animale [adjM]</li>
+    <li>a_beast(p=4)->[animalKindDef_indefinite]</li>
+    <li>a_beast->una bestia [adjF]</li>
+    <li>a_beast->un animale [adjM]</li>
+    <li>the_beasts(p=4)->branco di [animalKind_labelPlural]</li>
+    <li>the_beasts->le bestie [adjFpl]</li>
+    <li>the_beasts->gli animali [adjMpl]</li>
+    <li>adjF->feroce</li>
+    <li>adjF->spietata</li>
+    <li>adjF->letale</li>
+    <li>adjF->sanguinaria</li>
+    <li>adjF->temibile</li>
+    <li>adjM->feroce</li>
+    <li>adjM->spietato</li>
+    <li>adjM->letale</li>
+    <li>adjM->sanguinario</li>
+    <li>adjM->temibile</li>
+    <li>adjFpl->feroci</li>
+    <li>adjFpl->spietate</li>
+    <li>adjFpl->letali</li>
+    <li>adjFpl->sanguinarie</li>
+    <li>adjFpl->temibili</li>
+    <li>adjMpl->feroci</li>
+    <li>adjMpl->spietati</li>
+    <li>adjMpl->letali</li>
+    <li>adjMpl->sanguinari</li>
+    <li>adjMpl->temibili</li>
   </ThreatReward_Manhunters_ItemPod.questNameRules.rulesStrings>
   <!-- EN: {BASETEXT}\n\n[manhunterArrivalLetterEnd] -->
   <ThreatReward_Manhunters_ItemPod.LetterTextManhunterArrival.slateRef>{BASETEXT}\n\n[manhunterArrivalLetterEnd]</ThreatReward_Manhunters_ItemPod.LetterTextManhunterArrival.slateRef>

@@ -51,8 +51,8 @@
   -->
   <ThreatReward_GameCondition_Joiner.questNameRules.rulesStrings>
     <li>questName->[gameCondition_label] di [joiner_nameDef]</li>
-    <li>questName->[joiner_nameDef] e il [gameCondition_label]</li>
-    <li>questName->Il [gameCondition_label] e [joiner_nameDef]</li>
+    <li>questName->[joiner_nameDef] e [gameCondition_definite]</li>
+    <li>questName->[gameCondition_definite] e [joiner_nameDef]</li>
   </ThreatReward_GameCondition_Joiner.questNameRules.rulesStrings>
   
   <!-- EN:
@@ -111,12 +111,12 @@
     <li>questName(animalCount>=2)->the [animalKind_labelPlural] and [joiner_nameDef]</li>
   -->
   <ThreatReward_Manhunters_Joiner.questNameRules.rulesStrings>
-    <li>questName(animalCount==1)->Il [animalKind_label] di [joiner_nameDef]</li>
-    <li>questName(animalCount==1)->[joiner_nameDef] e il [animalKind_label]</li>
-    <li>questName(animalCount==1)->Il [animalKind_label] e [joiner_nameDef]</li>
-    <li>questName(animalCount>=2)->I [animalKind_labelPlural] di [joiner_nameDef]</li>
-    <li>questName(animalCount>=2)->[joiner_nameDef] e i [animalKind_labelPlural]</li>
-    <li>questName(animalCount>=2)->I [animalKind_labelPlural] e [joiner_nameDef]</li>
+    <li>questName(animalCount==1)->[animalKindDef_definite] di [joiner_nameDef]</li>
+    <li>questName(animalCount==1)->[joiner_nameDef] e [animalKindDef_definite]</li>
+    <li>questName(animalCount==1)->[animalKindDef_definite] e [joiner_nameDef]</li>
+    <li>questName(animalCount>=2)->[animalKind_labelPlural] di [joiner_nameDef]</li>
+    <li>questName(animalCount>=2)->[joiner_nameDef] e il branco di [animalKind_labelPlural]</li>
+    <li>questName(animalCount>=2)->Il branco di [animalKind_labelPlural] e [joiner_nameDef]</li>
   </ThreatReward_Manhunters_Joiner.questNameRules.rulesStrings>
   <!-- EN: {BASELABEL}: Chasing [joiner_nameDef] -->
   <ThreatReward_Manhunters_Joiner.LetterLabelChasing.slateRef>{BASELABEL}: Inseguendo [joiner_nameDef]</ThreatReward_Manhunters_Joiner.LetterLabelChasing.slateRef>
@@ -142,11 +142,11 @@
     <li>problem->Secret</li>
   -->
   <ThreatReward_MysteryThreat_Joiner.questNameRules.rulesStrings>
-    <li>questName->Il [problem] di [joiner_nameDef]</li>
-    <li>questName->Il [problem] di [joiner_nameDef]</li>
-    <li>problem->Problema</li>
-    <li>problem->Vergogna</li>
-    <li>problem->Segreto</li>
+    <li>questName->[problem] di [joiner_nameDef]</li>
+    <li>questName->[problem] di [joiner_nameDef]</li>
+    <li>problem->il problema</li>
+    <li>problem->la vergogna</li>
+    <li>problem->il segreto</li>
   </ThreatReward_MysteryThreat_Joiner.questNameRules.rulesStrings>
   <!-- EN: {BASELABEL} chasing [joiner_nameDef] -->
   <ThreatReward_MysteryThreat_Joiner.LetterLabelChasingRaid.slateRef>{BASELABEL}: Inseguendo [joiner_nameDef]</ThreatReward_MysteryThreat_Joiner.LetterLabelChasingRaid.slateRef>
@@ -226,8 +226,8 @@
   -->
   <ThreatReward_SiteThreat_Joiner.questNameRules.rulesStrings>
     <li>questName->[site/site_label] di [joiner_nameDef]</li>
-    <li>questName->[joiner_nameDef] e il [site/site_label]</li>
-    <li>questName->il [site/site_label] e [joiner_nameDef]</li>
+    <li>questName->[joiner_nameDef] e [site/site_definite]</li>
+    <li>questName->[site/site_definite] e [joiner_nameDef]</li>
   </ThreatReward_SiteThreat_Joiner.questNameRules.rulesStrings>
   <!-- EN: Since you accepted [../joiner_nameDef], [../threat] have set up a nearby site to harass you.\n                    \n[allSitePartsDescriptions] -->
   <ThreatReward_SiteThreat_Joiner.LetterTextSiteAppeared.value.slateRef>Dato che hai accettato [../joiner_nameDef], [../threat] ha allestito un accampamento nelle vicinanze per perseguitarti.\n                    \n[allSitePartsDescriptions]</ThreatReward_SiteThreat_Joiner.LetterTextSiteAppeared.value.slateRef>

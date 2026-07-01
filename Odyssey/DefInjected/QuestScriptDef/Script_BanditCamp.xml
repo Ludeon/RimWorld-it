@@ -25,13 +25,16 @@
     <li>bandit->Brigand</li>
   -->
   <OpportunitySite_BanditCamp_Giver.questNameRules.rulesStrings>
-    <li>questName->Il [camp] del [bandit]</li>
-    <li>questName->[bandit] [camp]</li>
-    <li>questName->[asker_nameDef] e il [camp]</li>
-    <li>camp->Campo</li>
-    <li>camp->Avamposto</li>
-    <li>camp->Covo</li>
-    <li>camp->Accampamento</li>
+    <li>questName->Il [camp_cons] del [bandit]</li>
+    <li>questName->L’[camp_vow] del [bandit]</li>
+    <li>questName->[bandit] [camp_cons]</li>
+    <li>questName->[bandit] [camp_vow]</li>
+    <li>questName->[asker_nameDef] e il [camp_cons]</li>
+    <li>questName->[asker_nameDef] e l’[camp_vow]</li>
+    <li>camp_cons->Campo</li>
+    <li>camp_cons->Covo</li>
+    <li>camp_vow->Avamposto</li>
+    <li>camp_vow->Accampamento</li>
     <li>bandit->Bandito</li>
     <li>bandit->Predone</li>
     <li>bandit->Fuorilegge</li>

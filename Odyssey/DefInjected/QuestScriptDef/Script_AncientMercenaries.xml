@@ -23,11 +23,15 @@
     <li>mercenaries->Fighters</li>
   -->
   <OpportunitySite_AncientMercenaries.questNameRules.rulesStrings>
-    <li>questName->I [ancient] [mercenaries]</li>
-    <li>questName->[ancient] [mercenaries]</li>
+    <li>questName(p=2)->I [ancient_cons] [mercenaries]</li>
+    <li>questName->Gli [ancient_vow] [mercenaries]</li>
+    <li>questName(p=3)->[ancient] [mercenaries]</li>
     <li>ancient->Antichi</li>
     <li>ancient->Risvegliati</li>
     <li>ancient->Criptosonno</li>
+    <li>ancient_cons->Risvegliati</li>
+    <li>ancient_cons->Criptosonno</li>
+    <li>ancient_vow->Antichi</li>
     <li>mercenaries->Mercenari</li>
     <li>mercenaries->Soldati</li>
     <li>mercenaries->Guerrieri</li>

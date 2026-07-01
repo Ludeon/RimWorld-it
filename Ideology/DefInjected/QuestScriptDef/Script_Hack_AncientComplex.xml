@@ -29,17 +29,25 @@
     <li>dig->excavation</li>
   -->
   <AncientComplex_Standard.questNameRules.rulesStrings>
-    <li>questName(p=6)->Il [complexAdj] [complex]</li>
-    <li>questName->Lo [dig]</li>
-    <li>complexAdj->antico</li>
-    <li>complexAdj->vecchio</li>
-    <li>complexAdj->polveroso</li>
-    <li>complexAdj->segreto</li>
-    <li>complex->complesso</li>
-    <li>complex->composto</li>
-    <li>complex->installazione</li>
-    <li>dig->scavo</li>
-    <li>dig->escavazione</li>
+    <li>questName(p=6)->[complexPhrase]</li>
+    <li>questName->[digPhrase]</li>
+    <li>complexPhrase(p=2)->[complexM] [complexAdjM]</li>
+    <li>complexPhrase(p=1)->[complexF] [complexAdjF]</li>
+    <li>complexM->il complesso</li>
+    <li>complexM->il composto</li>
+    <li>complexF->l'installazione</li>
+    <li>complexAdjM->antico</li>
+    <li>complexAdjM->vecchio</li>
+    <li>complexAdjM->polveroso</li>
+    <li>complexAdjM->segreto</li>
+    <li>complexAdjF->antica</li>
+    <li>complexAdjF->vecchia</li>
+    <li>complexAdjF->polverosa</li>
+    <li>complexAdjF->segreta</li>
+    <li>digPhrase->[digM]</li>
+    <li>digPhrase->[digF]</li>
+    <li>digM->lo scavo</li>
+    <li>digF->l'escavazione</li>
   </AncientComplex_Standard.questNameRules.rulesStrings>
   
 </LanguageData>

@@ -33,17 +33,27 @@
     <li>finalWord->booty</li>
   -->
   <OpportunitySite_AncientComplex.questNameRules.rulesStrings>
-    <li>questName(p=3)->[complexAdj] [complex] [finalWord]</li>
-    <li>questName->[complex] [finalWord]</li>
-    <li>complexAdj->segreto</li>
-    <li>complexAdj->misterioso</li>
-    <li>complexAdj->antico</li>
-    <li>complexAdj->vecchio</li>
-    <li>complexAdj->nascosto</li>
-    <li>complexAdj->mortale</li>
-    <li>complex->complesso</li>
-    <li>complex->installazione</li>
-    <li>complex->struttura</li>
+    <li>questName(p=3)->[complexPhrase] [finalWord]</li>
+    <li>questName->[complexNoun] [finalWord]</li>
+    <li>complexPhrase(p=1)->[complexAdjM] [complexM]</li>
+    <li>complexPhrase(p=2)->[complexAdjF] [complexF]</li>
+    <li>complexNoun->[complexM]</li>
+    <li>complexNoun->[complexF]</li>
+    <li>complexM->complesso</li>
+    <li>complexF->installazione</li>
+    <li>complexF->struttura</li>
+    <li>complexAdjM->segreto</li>
+    <li>complexAdjM->misterioso</li>
+    <li>complexAdjM->antico</li>
+    <li>complexAdjM->vecchio</li>
+    <li>complexAdjM->nascosto</li>
+    <li>complexAdjM->mortale</li>
+    <li>complexAdjF->segreta</li>
+    <li>complexAdjF->misteriosa</li>
+    <li>complexAdjF->antica</li>
+    <li>complexAdjF->vecchia</li>
+    <li>complexAdjF->nascosta</li>
+    <li>complexAdjF->mortale</li>
     <li>finalWord->tesoro</li>
     <li>finalWord->ricchezze</li>
     <li>finalWord->scrigno</li>

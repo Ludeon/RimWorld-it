@@ -30,21 +30,36 @@
     <li>complex->mechsite</li>
   -->
   <OpportunitySite_AncientComplex_Mechanitor.questNameRules.rulesStrings>
-    <li>questName(p=3)->Il [complex] [complexAdj] del meccanista</li>
-    <li>questName->Il [complex] del meccanista</li>
-    <li>complexAdj->segreto</li>
-    <li>complexAdj->antico</li>
-    <li>complexAdj->vecchio</li>
-    <li>complexAdj->nascosto</li>
-    <li>complexAdj->polveroso</li>
-    <li>complexAdj->pericoloso</li>
-    <li>complex->complesso</li>
-    <li>complex->tana</li>
-    <li>complex->base</li>
-    <li>complex->compound</li>
-    <li>complex->cripta</li>
-    <li>complex->mechplex</li>
-    <li>complex->mechsite</li>
+    <!-- "Il [complex] [complexAdj] del meccanista": il nome ha genere misto (tana/base/cripta
+         femminili) ma gli aggettivi erano tutti maschili → "Il tana antico". Articolo cotto nel
+         nome (con elisione), aggettivo concordato per genere, complemento "del meccanista" sempre
+         post-nominale. I pesi delle due tracce (4/3) preservano la prevalenza dei nomi maschili
+         della lista originale. -->
+    <li>questName(p=4)->[complex_m_def] [tailM]</li>
+    <li>questName(p=3)->[complex_f_def] [tailF]</li>
+    <li>tailM(p=3)->[adjM] del meccanista</li>
+    <li>tailM(p=1)->del meccanista</li>
+    <li>tailF(p=3)->[adjF] del meccanista</li>
+    <li>tailF(p=1)->del meccanista</li>
+    <li>complex_m_def->il complesso</li>
+    <li>complex_m_def->il compound</li>
+    <li>complex_m_def->il mechplex</li>
+    <li>complex_m_def->il mechsite</li>
+    <li>complex_f_def->la tana</li>
+    <li>complex_f_def->la base</li>
+    <li>complex_f_def->la cripta</li>
+    <li>adjM->segreto</li>
+    <li>adjM->antico</li>
+    <li>adjM->vecchio</li>
+    <li>adjM->nascosto</li>
+    <li>adjM->polveroso</li>
+    <li>adjM->pericoloso</li>
+    <li>adjF->segreta</li>
+    <li>adjF->antica</li>
+    <li>adjF->vecchia</li>
+    <li>adjF->nascosta</li>
+    <li>adjF->polverosa</li>
+    <li>adjF->pericolosa</li>
   </OpportunitySite_AncientComplex_Mechanitor.questNameRules.rulesStrings>
   
 </LanguageData>

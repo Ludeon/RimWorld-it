@@ -30,11 +30,20 @@
     <li>data->info</li>
   -->
   <Hack_Spacedrone.questNameRules.rulesStrings>
-    <li>questName->hacking [droneAdj] [drone]</li>
+    <li>questName->hacking [dronePhrase]</li>
     <li>questName->hacking [drone] [data]</li>
-    <li>droneAdj->orbitale</li>
-    <li>droneAdj->dati</li>
-    <li>droneAdj->antico</li>
+    <li>dronePhrase(p=3)->[droneAdjM] [droneM]</li>
+    <li>dronePhrase(p=1)->[droneAdjF] [droneF]</li>
+    <li>droneM->drone</li>
+    <li>droneM->drone spaziale</li>
+    <li>droneM->cryptodrone</li>
+    <li>droneF->navicella</li>
+    <li>droneAdjM->orbitale</li>
+    <li>droneAdjM->dati</li>
+    <li>droneAdjM->antico</li>
+    <li>droneAdjF->orbitale</li>
+    <li>droneAdjF->dati</li>
+    <li>droneAdjF->antica</li>
     <li>drone->drone</li>
     <li>drone->navicella</li>
     <li>drone->drone spaziale</li>

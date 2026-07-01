@@ -223,14 +223,18 @@
     <li>stash_noun->Cache</li>
   -->
   <OpportunitySite_OrbitalItemStash.questNameRules.rulesStrings>
-    <li>questName->[stash_noun] [orbital] [adjective]</li>
-    <li>questName->[stash_noun] [orbital]</li>
-    <li>adjective->Nascosta</li>
-    <li>adjective->Segreta</li>
+    <li>questName->[stash_noun_fem] [orbital] [adjective_fem]</li>
+    <li>questName->[stash_noun_masc] [orbital] [adjective_masc]</li>
+    <li>questName->[stash_noun_fem] [orbital]</li>
+    <li>questName->[stash_noun_masc] [orbital]</li>
+    <li>adjective_fem->Nascosta</li>
+    <li>adjective_fem->Segreta</li>
+    <li>adjective_masc->Nascosto</li>
+    <li>adjective_masc->Segreto</li>
     <li>orbital->Orbitale</li>
     <li>orbital->Asteroide</li>
-    <li>stash_noun->Riserva</li>
-    <li>stash_noun->Nascondiglio</li>
+    <li>stash_noun_fem->Riserva</li>
+    <li>stash_noun_masc->Nascondiglio</li>
   </OpportunitySite_OrbitalItemStash.questNameRules.rulesStrings>
   <!-- EN: You have discovered -->
   <OpportunitySite_OrbitalItemStash.root.nodes.IsSet.elseNode.nodes.Set.value.slateRef>Hai scoperto</OpportunitySite_OrbitalItemStash.root.nodes.IsSet.elseNode.nodes.Set.value.slateRef>
@@ -304,7 +308,7 @@
   -->
   <OpportunitySite_OrbitalWreck.questNameRules.rulesStrings>
     <li>questName(p=2)->le rovine della [platform] [platAdj]</li>
-    <li>questName(p=2)->le rovine del [platform_masculine] [platAdj_masculine]</li>
+    <li>questName(p=2)->le rovine del [platform_masculine] [platAdj]</li>
     <li>questName->[wreckage] [platAdj]</li>
     <li>questName->[wreckage] [PlaceOutlander]</li>
     <li>questName->[platform] [ruined] [platAdj]</li>

@@ -56,10 +56,25 @@
     <li>missionAdj->secret</li>
   -->
   <AncientComplex_Mission.questNameRules.rulesStrings>
-    <li>questName->[missionAdj] [complex] [investigation]</li>
-    <li>missionAdj->nascosta</li>
-    <li>missionAdj->coperta</li>
-    <li>missionAdj->segreta</li>
+    <li>questName->[investPhrase] [complexPP]</li>
+    <li>investPhrase(p=3)->[investM] [missionAdjM]</li>
+    <li>investPhrase(p=2)->[investF] [missionAdjF]</li>
+    <li>investM->esame</li>
+    <li>investM->scavo</li>
+    <li>investM->hacking</li>
+    <li>investF->indagine</li>
+    <li>investF->missione</li>
+    <li>missionAdjM->nascosto</li>
+    <li>missionAdjM->coperto</li>
+    <li>missionAdjM->segreto</li>
+    <li>missionAdjF->nascosta</li>
+    <li>missionAdjF->coperta</li>
+    <li>missionAdjF->segreta</li>
+    <li>complexPP->sul complesso</li>
+    <li>complexPP->sul composto</li>
+    <li>complexPP->sull'installazione</li>
+    <li>complexPP->sulla struttura</li>
+    <li>complexPP->sulla costruzione</li>
   </AncientComplex_Mission.questNameRules.rulesStrings>
   
 </LanguageData>

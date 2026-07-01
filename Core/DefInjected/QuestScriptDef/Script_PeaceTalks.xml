@@ -31,13 +31,21 @@
     <li>peaceTalks->Meeting</li>
   -->
   <OpportunitySite_PeaceTalks.questNameRules.rulesStrings>
+    <!-- [peaceTalks] mescola "Trattati di pace" (m.pl), "Diplomazia" (f.sg) e "Incontro"
+         (m.sg, iniziale vocalica): l'articolo fisso "I" produceva "I Diplomazia"/"I Incontro".
+         Il template con articolo usa ora [peaceTalks_def] con l'articolo corretto cotto ed eliso
+         (minuscolo: il motore maiuscola la prima lettera). I template senza articolo restano su
+         [peaceTalks] nudo. Varietà preservata. -->
     <li>questName->[peaceTalks] di [faction_leader_nameDef]</li>
     <li>questName->[peaceTalks] con [faction_leader_nameDef]</li>
-    <li>questName->I [peaceTalks]</li>
+    <li>questName->[peaceTalks_def]</li>
     <li>questName->[peaceTalks]</li>
     <li>peaceTalks->Trattati di pace</li>
     <li>peaceTalks->Diplomazia</li>
     <li>peaceTalks->Incontro</li>
+    <li>peaceTalks_def->i Trattati di pace</li>
+    <li>peaceTalks_def->la Diplomazia</li>
+    <li>peaceTalks_def->l'Incontro</li>
   </OpportunitySite_PeaceTalks.questNameRules.rulesStrings>
   <!-- EN: Quest expired: [resolvedQuestName] -->
   <OpportunitySite_PeaceTalks.LetterLabelQuestExpired.slateRef>Missione scaduta: [resolvedQuestName]</OpportunitySite_PeaceTalks.LetterLabelQuestExpired.slateRef>

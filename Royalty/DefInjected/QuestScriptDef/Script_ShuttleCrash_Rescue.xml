@@ -117,25 +117,38 @@
     <li>landing->approach</li>
   -->
   <ShuttleCrash_Rescue.questNameRules.rulesStrings>
-    <li>questName->[shuttle] [crash]</li>
-    <li>questName->[shuttle] [crash] di [asker_faction_pawnSingular]</li>
-    <li>questName->[shuttle] [damaged]</li>
-    <li>questName->[shuttle] [damaged] di [asker_nameDef]</li>
-    <li>questName->[landing] [emergency]</li>
-    <li>questName->[landing] [emergency] di [asker_nameDef]</li>
-    <li>shuttle->navetta</li>
-    <li>shuttle->trasporto</li>
-    <li>shuttle->astronave</li>
-    <li>crash->precipitata</li>
-    <li>crash->abbattuta</li>
-    <li>damaged->danneggiata</li>
-    <li>damaged->in avaria</li>
-    <li>damaged->guasta</li>
-    <li>emergency->d'emergenza</li>
-    <li>emergency->forzato</li>
-    <li>landing->atterraggio</li>
-    <li>landing->discesa</li>
-    <li>landing->avvicinamento</li>
+    <li>questName(p=2)->[shuttleF] [crashF]</li>
+    <li>questName->[shuttleM] [crashM]</li>
+    <li>questName(p=2)->[shuttleF] [crashF] di [asker_faction_pawnSingular]</li>
+    <li>questName->[shuttleM] [crashM] di [asker_faction_pawnSingular]</li>
+    <li>questName(p=2)->[shuttleF] [damagedF]</li>
+    <li>questName->[shuttleM] [damagedM]</li>
+    <li>questName(p=2)->[shuttleF] [damagedF] di [asker_nameDef]</li>
+    <li>questName->[shuttleM] [damagedM] di [asker_nameDef]</li>
+    <li>questName(p=2)->[landingM] [emergencyM]</li>
+    <li>questName->[landingF] [emergencyF]</li>
+    <li>questName(p=2)->[landingM] [emergencyM] di [asker_nameDef]</li>
+    <li>questName->[landingF] [emergencyF] di [asker_nameDef]</li>
+    <li>shuttleF->navetta</li>
+    <li>shuttleF->astronave</li>
+    <li>shuttleM->trasporto</li>
+    <li>crashF->precipitata</li>
+    <li>crashF->abbattuta</li>
+    <li>crashM->precipitato</li>
+    <li>crashM->abbattuto</li>
+    <li>damagedF->danneggiata</li>
+    <li>damagedF->in avaria</li>
+    <li>damagedF->guasta</li>
+    <li>damagedM->danneggiato</li>
+    <li>damagedM->in avaria</li>
+    <li>damagedM->guasto</li>
+    <li>landingM->atterraggio</li>
+    <li>landingM->avvicinamento</li>
+    <li>landingF->discesa</li>
+    <li>emergencyM->d'emergenza</li>
+    <li>emergencyM->forzato</li>
+    <li>emergencyF->d'emergenza</li>
+    <li>emergencyF->forzata</li>
   </ShuttleCrash_Rescue.questNameRules.rulesStrings>
   
 </LanguageData>

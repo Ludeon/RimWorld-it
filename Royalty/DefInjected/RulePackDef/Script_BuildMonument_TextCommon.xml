@@ -86,33 +86,71 @@
     <li>construction->assembly</li>
   -->
   <QuestConstructionNameCommon.rulePack.rulesStrings>
-    <li>questName->[constAdj] [construction]</li>
-    <li>questName->Un [constAdj] [construction]</li>
-    <li>questName->Il [constAdj] [construction]</li>
-    <li>constAdj(p=20)->[AdjectiveLarge]</li>
-    <li>constAdj->terribile</li>
-    <li>constAdj->grande</li>
-    <li>constAdj->maestoso</li>
-    <li>constAdj->pericoloso</li>
-    <li>constAdj->monumentale</li>
-    <li>constAdj->sfarzoso</li>
-    <li>constAdj->minaccioso</li>
-    <li>constAdj->spaventoso</li>
-    <li>constAdj->orribile</li>
-    <li>constAdj->temibile</li>
-    <li>constAdj->impressionante</li>
-    <li>constAdj->profetico</li>
-    <li>constAdj->struggente</li>
-    <li>constAdj->splendente</li>
-    <li>constAdj->luminoso</li>
-    <li>constAdj->sorprendente</li>
-    <li>construction(p=3)->costruzione</li>
-    <li>construction(p=2)->struttura</li>
-    <li>construction(p=2)->edificio</li>
-    <li>construction->monumento</li>
-    <li>construction->edificio sacro</li>
-    <li>construction->progetto</li>
-    <li>construction->assemblaggio</li>
+    <!-- Concordanza di genere: l'inglese ha un aggettivo/articolo invariabili davanti a
+         una lista di nomi mista, in italiano no. Sdoppiamo in due binari M/F. L'articolo
+         è "cotto" nel sostantivo (evita l'elisione il/lo/l'/un'); nelle varianti con
+         articolo l'aggettivo va post-nominale (evita anche uno/un' davanti all'aggettivo). -->
+    <li>questName->[constAdjM] [construction_m]</li>
+    <li>questName->[construction_m_indef] [constAdjM]</li>
+    <li>questName->[construction_m_def] [constAdjM]</li>
+    <li>questName->[constAdjF] [construction_f]</li>
+    <li>questName->[construction_f_indef] [constAdjF]</li>
+    <li>questName->[construction_f_def] [constAdjF]</li>
+    <li>constAdjM(p=20)->[AdjectiveLarge]</li>
+    <li>constAdjM->terribile</li>
+    <li>constAdjM->grande</li>
+    <li>constAdjM->maestoso</li>
+    <li>constAdjM->pericoloso</li>
+    <li>constAdjM->monumentale</li>
+    <li>constAdjM->sfarzoso</li>
+    <li>constAdjM->minaccioso</li>
+    <li>constAdjM->spaventoso</li>
+    <li>constAdjM->orribile</li>
+    <li>constAdjM->temibile</li>
+    <li>constAdjM->impressionante</li>
+    <li>constAdjM->profetico</li>
+    <li>constAdjM->struggente</li>
+    <li>constAdjM->splendente</li>
+    <li>constAdjM->luminoso</li>
+    <li>constAdjM->sorprendente</li>
+    <li>constAdjF(p=20)->[AdjectiveLargeF]</li>
+    <li>constAdjF->terribile</li>
+    <li>constAdjF->grande</li>
+    <li>constAdjF->maestosa</li>
+    <li>constAdjF->pericolosa</li>
+    <li>constAdjF->monumentale</li>
+    <li>constAdjF->sfarzosa</li>
+    <li>constAdjF->minacciosa</li>
+    <li>constAdjF->spaventosa</li>
+    <li>constAdjF->orribile</li>
+    <li>constAdjF->temibile</li>
+    <li>constAdjF->impressionante</li>
+    <li>constAdjF->profetica</li>
+    <li>constAdjF->struggente</li>
+    <li>constAdjF->splendente</li>
+    <li>constAdjF->luminosa</li>
+    <li>constAdjF->sorprendente</li>
+    <li>construction_m(p=2)->edificio</li>
+    <li>construction_m->monumento</li>
+    <li>construction_m->edificio sacro</li>
+    <li>construction_m->progetto</li>
+    <li>construction_m->assemblaggio</li>
+    <li>construction_m_indef(p=2)->un edificio</li>
+    <li>construction_m_indef->un monumento</li>
+    <li>construction_m_indef->un edificio sacro</li>
+    <li>construction_m_indef->un progetto</li>
+    <li>construction_m_indef->un assemblaggio</li>
+    <li>construction_m_def(p=2)->l'edificio</li>
+    <li>construction_m_def->il monumento</li>
+    <li>construction_m_def->l'edificio sacro</li>
+    <li>construction_m_def->il progetto</li>
+    <li>construction_m_def->l'assemblaggio</li>
+    <li>construction_f(p=3)->costruzione</li>
+    <li>construction_f(p=2)->struttura</li>
+    <li>construction_f_indef(p=3)->una costruzione</li>
+    <li>construction_f_indef(p=2)->una struttura</li>
+    <li>construction_f_def(p=3)->la costruzione</li>
+    <li>construction_f_def(p=2)->la struttura</li>
   </QuestConstructionNameCommon.rulePack.rulesStrings>
   
 </LanguageData>
