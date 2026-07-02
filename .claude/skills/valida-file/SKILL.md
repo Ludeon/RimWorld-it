@@ -13,7 +13,9 @@ Segui questi passi **in ordine** per il file indicato dall'utente (`$ARGUMENTS`,
 prossimo della fase corrente leggendo il RESUME in `docs/UPDATE-PLAN-1.6.4850.md`.
 
 ## 0. Contesto
-- Branch di lavoro: **`aggiornamento-1.6.4850`** (MAI push su `master`). Verifica con `git status`.
+- Branch di lavoro: **`master`** (l'aggiornamento 1.6.4850 è stato integrato in `master` il 2026-07-02).
+  Verifica con `git status`. Il push va su **entrambi** i remoti `origin` (fork) e `ludeon` (ufficiale,
+  accesso completo) previa verifica di fast-forward pulito.
 - Dashboard Flask attiva: `.venv\Scripts\python scripts\dashboard\server.py` → http://127.0.0.1:5000
   (avviala solo se non già in esecuzione; è stateless, rilegge CSV+XML a ogni richiesta).
 - Roadmap e fasi: §5.4 di `docs/UPDATE-PLAN-1.6.4850.md`. Ordine di validazione = ordine dei file
