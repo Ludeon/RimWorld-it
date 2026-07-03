@@ -23,7 +23,7 @@
   <!-- EN: Warning: The average of relevant skills is very low. -->
   <SelectedWorkTypeWithVeryBadSkill>Attenzione: La media delle competenze pertinenti è molto bassa.</SelectedWorkTypeWithVeryBadSkill>
   <!-- EN: Priority 1 is done first. Priority 4 is done last. -->
-  <PriorityOneDoneFirst>1 priorità maggiore.\n4 priorità inferiore.</PriorityOneDoneFirst>
+  <PriorityOneDoneFirst>La priorità 1 viene svolta per prima. La priorità 4 per ultima.</PriorityOneDoneFirst>
   <!-- EN: Will not do -->
   <Priority0>Non lo farà</Priority0>
   <!-- EN: Top priority -->
@@ -223,7 +223,7 @@
   <!-- EN: Required research bench facilities -->
   <RequiredResearchBenchFacilities>Strutture del banco da ricerca necessarie</RequiredResearchBenchFacilities>
   <!-- EN: Project base cost {0} becomes {1} for you because of your tech level. -->
-  <ResearchCostComparison>Il costo base di {0} diventerà per te di {1} a causa del tuo livello tecnologico.</ResearchCostComparison>
+  <ResearchCostComparison>Il costo base del progetto, {0}, diventa {1} per te a causa del tuo livello tecnologico.</ResearchCostComparison>
   <!-- EN: Techprints are available from these factions via trade and quests: -->
   <ResearchTechprintsFromFactions>Gli schemi tecnici sono disponibili presso queste fazioni tramite commercio e missioni:</ResearchTechprintsFromFactions>
   <!-- EN: Your faction tech level is {0}, but this project's tech level is {1}. Research speed will be multiplied by {2}. -->
@@ -269,7 +269,7 @@
   <!-- EN: Average guest mood (previous {0}): {1} -->
   <QuestAveragePawnMood>Stato d'animo medio degli ospiti (nei {0} precedenti): {1}</QuestAveragePawnMood>
   <!-- EN: The average mood of {0} over the previous {1} -->
-  <QuestAveragePawnMoodTargets>L'umore medio di {0} rispetto ai precedenti {1}</QuestAveragePawnMoodTargets>
+  <QuestAveragePawnMoodTargets>L'umore medio di {0} nei precedenti {1}</QuestAveragePawnMoodTargets>
   <!-- EN: Shuttle arrives in {0} -->
   <ShuttleArrivesIn>La navetta arriverà tra {0}</ShuttleArrivesIn>
   <!-- EN: Shuttle arrives on {0} -->
@@ -305,7 +305,7 @@
   <!-- EN: Select hives -->
   <SelectHiveTargets>Seleziona gli alveari</SelectHiveTargets>
   <!-- EN: Challenge rating. This is a general rating for how difficult the quest will be relative to your current strength. More challenging quests give greater rewards.\n\n1: Normal\n2: Hard\n3: Extreme\n4: Ultimate -->
-  <QuestChallengeRatingTip>Grado di sfida. Questa è un classifica generica di quanto difficile sarà la sfida relativamente alla tua forza attuale. Sfide più impegnative danno premi maggiori.\n\n1: Normale\n2: Difficile\n3: Estrema\n4: Suprema</QuestChallengeRatingTip>
+  <QuestChallengeRatingTip>Grado di sfida. È una valutazione generale di quanto sarà difficile la missione rispetto alla tua forza attuale. Missioni più impegnative danno ricompense maggiori.\n\n1: Normale\n2: Difficile\n3: Estrema\n4: Suprema</QuestChallengeRatingTip>
   <!-- EN: To accept this quest, you need -->
   <QuestAcceptanceRequirementsDescription>Per accettare questa missione, hai bisogno di</QuestAcceptanceRequirementsDescription>
   <!-- EN: free bedrooms that satisfy the title requirements of -->
@@ -315,9 +315,9 @@
   <!-- EN: a throneroom that satisfies the requirements of {PAWN_definite}'s {TITLE} title -->
   <QuestThroneRoomRequirementsUnsatisfied>una sala del trono disponibile che soddisfi i requisiti del titolo di {TITLE} di {PAWN_definite}</QuestThroneRoomRequirementsUnsatisfied>
   <!-- EN: assign a throne for {PAWN_definite} -->
-  <QuestNoThroneRoom>una sala del trono disponibile che soddisfi i requisiti del titolo di {TITLE} di {PAWN_definite}</QuestNoThroneRoom>
+  <QuestNoThroneRoom>assegnare un trono a {PAWN_definite}</QuestNoThroneRoom>
   <!-- EN: a colonist with the title of {0} -->
-  <QuestNoColonistWithTitle>un colono con il titolo di {0}.</QuestNoColonistWithTitle>
+  <QuestNoColonistWithTitle>un colono con il titolo di {0}</QuestNoColonistWithTitle>
   <!-- EN: {PAWN_definite} to be in your home colony -->
   <QuestPawnNotOnColonyMap>{PAWN_definite} per essere nella tua colonia</QuestPawnNotOnColonyMap>
   <!-- EN: the map clear of enemies of the bestower's faction -->
@@ -329,7 +329,7 @@
   <!-- EN: Reward preferences -->
   <ChooseRewards>Preferenze per le ricompense</ChooseRewards>
   <!-- EN: Tell other factions what kinds of rewards you want in future quests. This doesn't affect quests that were already offered. -->
-  <ChooseRewardsDesc>Fai sapere alle altre fazioni che tipo di ricompense preferisci per le future quest. Non ha influenza sulle quest già offerte.</ChooseRewardsDesc>
+  <ChooseRewardsDesc>Fai sapere alle altre fazioni che tipo di ricompense preferisci per le missioni future. Non ha influenza sulle missioni già offerte.</ChooseRewardsDesc>
   <!-- EN: Accept {FACTION_royalFavorLabel} -->
   <AcceptRoyalFavor>Accetta {FACTION_royalFavorLabel}</AcceptRoyalFavor>
   <!-- EN: Whether you wish to be rewarded with {FACTION_royalFavorLabel} from {FACTION_name}.\n\nIf this is disabled, {FACTION_name} will offer other types of rewards instead.\n\nThis setting only affects newly-arriving quests. -->
@@ -343,7 +343,7 @@
   <!-- EN: You are currently opting out of receiving {FACTION_royalFavorLabel}. -->
   <RoyalFavorOff>Stai attualmente rifiutando di ricevere {FACTION_royalFavorLabel}.</RoyalFavorOff>
   <!-- EN: Your goodwill with {0_name} will improve by {1}.\n\nCurrent goodwill: {4} ({5}).\n\nGoodwill measures the general relationship between factions. If it falls below {2}, the faction becomes hostile and will raid your settlements and caravans. If it rises above {3}, the faction will become your ally and send fighters to help you when they can. Otherwise, the faction remains neutral and will trade and talk with you freely. -->
-  <GoodwillTip>Le relazioni con {0_name} miglioreranno di {1}.\n\nRelazione corrente: {4} ({5}).\n\nSe le relazioni scendono al di sotto di {2}, la fazione diventa ostile e attacherà i tuoi insediamenti e carovane. Se le relazioni superano {3}, la fazione diventerà tua alleata e invierà combattenti per aiutarti quando possono. Altrimenti, la fazione rimarrà neutrale e commercierà con te liberamente.</GoodwillTip>
+  <GoodwillTip>Le relazioni con {0_name} miglioreranno di {1}.\n\nRelazione corrente: {4} ({5}).\n\nSe le relazioni scendono al di sotto di {2}, la fazione diventa ostile e attaccherà i tuoi insediamenti e carovane. Se le relazioni superano {3}, la fazione diventerà tua alleata e invierà combattenti per aiutarti quando possono. Altrimenti, la fazione rimarrà neutrale e commercierà con te liberamente.</GoodwillTip>
   <!-- EN: {0_labelShort} joins -->
   <PawnQuestReward>{0_labelShort} si unisce</PawnQuestReward>
   <!-- EN: Betrayal offer: {0} targets remain -->
@@ -351,11 +351,11 @@
   <!-- EN: {0} will grant you a reward for killing all members of the {1}. -->
   <QuestBetrayalOfferTip>{0} ti garantirà una ricompensa per aver ucciso tutti i membri di {1}.</QuestBetrayalOfferTip>
   <!-- EN: a colony wealth of at least {0} -->
-  <QuestRequiredPlayerWealth> una ricchezza della colonia di almeno {0}</QuestRequiredPlayerWealth>
+  <QuestRequiredPlayerWealth>una ricchezza della colonia di almeno {0}</QuestRequiredPlayerWealth>
   <!-- EN: alliance with {0} -->
   <QuestAlliedTo>alleanza con {0}</QuestAlliedTo>
   <!-- EN: hostile to {0} -->
-  <QuestHostileTo> ostile a {0}</QuestHostileTo>
+  <QuestHostileTo>ostile a {0}</QuestHostileTo>
   <!-- EN: neutral to {0} -->
   <QuestNeutralTo>neutrale a {0}</QuestNeutralTo>
   <!-- EN: studied {0_labelShort} -->
