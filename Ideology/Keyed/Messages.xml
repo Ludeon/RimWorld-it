@@ -18,9 +18,9 @@
   <!-- EN: {0_labelShort} refuses to do this because of {0_possessive} ideoligion. -->
   <MessagePawnUnwillingToDoDueToIdeo>{0_labelShort} si rifiuta di farlo a causa dell'ideoligione di {0_possessive}.</MessagePawnUnwillingToDoDueToIdeo>
   <!-- EN: {INITIATOR_nameDef} tried to convert {RECIPIENT_nameDef} to {INITIATOR_possessive} ideoligion. {RECIPIENT_nameDef}'s certainty has fallen from {CERTAINTYBEFORE} to {CERTAINTYAFTER}. {RECIPIENT_pronoun} resents the conversion attempt. -->
-  <MessageFailedConvertIdeoAttempt>{INITIATOR_nameDef} ha provato a convertire l'ideoligione da {RECIPIENT_nameDef} a {INITIATOR_possessive}. La certezza di {RECIPIENT_nameDef} è scesa da {CERTAINTYBEFORE} a {CERTAINTYAFTER}. {RECIPIENT_pronoun} risente del tentativo di conversione.</MessageFailedConvertIdeoAttempt>
+  <MessageFailedConvertIdeoAttempt>{INITIATOR_nameDef} ha provato a convertire {RECIPIENT_nameDef} alla {INITIATOR_possessive} ideoligione. La certezza di {RECIPIENT_nameDef} è scesa da {CERTAINTYBEFORE} a {CERTAINTYAFTER}. {RECIPIENT_pronoun} prova risentimento per il tentativo di conversione.</MessageFailedConvertIdeoAttempt>
   <!-- EN: {PAWN1_nameDef} tried to convert {PAWN2_nameDef} to {PAWN1_possessive} ideoligion. This led to a social fight! -->
-  <MessageFailedConvertIdeoAttemptSocialFight>{PAWN1_nameDef} ha provato a convertire l'ideoligione da {PAWN2_nameDef} a {PAWN1_possessive}. Ciò ha portato ad una lotta sociale!</MessageFailedConvertIdeoAttemptSocialFight>
+  <MessageFailedConvertIdeoAttemptSocialFight>{PAWN1_nameDef} ha provato a convertire {PAWN2_nameDef} alla {PAWN1_possessive} ideoligione. Ciò ha portato ad una lotta sociale!</MessageFailedConvertIdeoAttemptSocialFight>
   <!-- EN: You must choose at least {0} memes. -->
   <MessageNotEnoughMemes>Devi scegliere almeno {0} meme.</MessageNotEnoughMemes>
   <!-- EN: You can't choose more than {0} memes. -->
@@ -57,7 +57,7 @@
   <!-- EN: {0_nameDef} has been enslaved by {1_nameDef}. -->
   <MessagePrisonerEnslaved>{0_nameDef} è stato ridotto in schiavitù da {1_nameDef}.</MessagePrisonerEnslaved>
   <!-- EN: Prisoner {1_nameDef}'s will has been broken by {0_nameDef}. -->
-  <MessagePrisonerWillBroken>I prigionieri {1_nameDef} saranno stati spezzati da {0_nameDef}.</MessagePrisonerWillBroken>
+  <MessagePrisonerWillBroken>La volontà del prigioniero {1_nameDef} è stata spezzata da {0_nameDef}.</MessagePrisonerWillBroken>
   <!-- EN: Enslavement will follow. -->
   <MessagePrisonerWillBroken_RecruitAttempsWillBegin>Seguirà la schiavitù.</MessagePrisonerWillBroken_RecruitAttempsWillBegin>
 
@@ -65,7 +65,7 @@
   <!-- EN: No warden is capable of this enslavement. -->
   <MessageNoWardenCapableOfEnslavement>Nessun guardiano è capace di questa schiavitù.</MessageNoWardenCapableOfEnslavement>
   <!-- EN: You have no {MEMBERNAME} wardens to convert {PRISONER_nameDef}. {PRISONER_possessive} interaction mode has reverted to "No interaction". -->
-  <MessageNoWardenOfIdeo>Non hai {MEMBERNAME} guardiani da convertire {PRISONER_nameDef}. La modalità di interazione {PRISONER_possessive} è tornata a "Nessuna interazione".</MessageNoWardenOfIdeo>
+  <MessageNoWardenOfIdeo>Non hai guardiani {MEMBERNAME} per convertire {PRISONER_nameDef}. La {PRISONER_possessive} modalità di interazione è tornata a "Nessuna interazione".</MessageNoWardenOfIdeo>
 
   <!-- Camps -->
   <!-- EN: You've detected a {CAMP_label} nearby controlled by {FACTION_name}. -->
@@ -73,7 +73,7 @@
 
   <!-- Charity -->
   <!-- EN: Charity refused -->
-  <MessageCharityEventRefused>La carità rifiutò</MessageCharityEventRefused>
+  <MessageCharityEventRefused>Carità rifiutata</MessageCharityEventRefused>
   <!-- EN: Charity fulfilled -->
   <MessageCharityEventFulfilled>Carità compiuta</MessageCharityEventFulfilled>
   <!-- EN: {0} are leaving empty-handed. -->
@@ -89,7 +89,7 @@
   <!-- EN: {0_nameDef} was recruited. -->
   <MessageWandererRecruited>{0_nameDef} è stato reclutato.</MessageWandererRecruited>
   <!-- EN: {0_nameDef} left healthy. -->
-  <MessageWandererLeftHealthy>{0_nameDef} rimasto sano.</MessageWandererLeftHealthy>
+  <MessageWandererLeftHealthy>{0_nameDef} se n'è andato sano.</MessageWandererLeftHealthy>
   <!-- EN: {0} has been failed. -->
   <MessageCharityQuestEndedFailed>{0} non è riuscito.</MessageCharityQuestEndedFailed>
   <!-- EN: {0} has been successfully completed. -->
@@ -120,7 +120,7 @@
   <!-- EN: An ancient supply satellite has been activated. Supplies will drop nearby. -->
   <MessageAncientSignalActivated>È stato attivato un antico satellite di rifornimento. Le scorte cadranno nelle vicinanze.</MessageAncientSignalActivated>
   <!-- EN: {0} from the {1} have detected the supply signal and are attacking. -->
-  <MessageAncientSignalHostileDetected>{0} da {1} hanno rilevato il segnale di alimentazione e stanno attaccando.</MessageAncientSignalHostileDetected>
+  <MessageAncientSignalHostileDetected>{0} da {1} hanno rilevato il segnale di rifornimento e stanno attaccando.</MessageAncientSignalHostileDetected>
 
   <!-- Ancient altar -->
   <!-- EN: All security systems are waking up! -->

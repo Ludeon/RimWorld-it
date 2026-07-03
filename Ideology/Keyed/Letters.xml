@@ -5,7 +5,7 @@
   <!-- EN: Conversion -->
   <LetterLabelConvertIdeoAttempt_Success>Conversione</LetterLabelConvertIdeoAttempt_Success>
   <!-- EN: {INITIATOR_nameDef} has successfully turned {RECIPIENT_nameDef} away from {OLDIDEO_name} and towards {IDEO_name}. -->
-  <LetterConvertIdeoAttempt_Success>{INITIATOR_nameDef} ha girato con successo {RECIPIENT_nameDef} lontano da {OLDIDEO_name} e verso {IDEO_name}.</LetterConvertIdeoAttempt_Success>
+  <LetterConvertIdeoAttempt_Success>{INITIATOR_nameDef} ha convertito con successo {RECIPIENT_nameDef} da {OLDIDEO_name} a {IDEO_name}.</LetterConvertIdeoAttempt_Success>
 
   <!-- Slave rebellion -->
   <!-- EN: Grand slave rebellion -->
@@ -13,11 +13,11 @@
   <!-- EN: A grand slave rebellion has begun! All of your slaves are rising up to fight back against you. They will seek weapons and try to eliminate your colonists.\n\nThese slaves are involved:\n\n{0} -->
   <LetterGrandSlaveRebellion>Una grande ribellione degli schiavi è iniziata! Tutti i tuoi schiavi si stanno ribellando per combattere contro di te. Cercheranno armi e cercheranno di eliminare i tuoi coloni.\n\nQuesti schiavi sono coinvolti:\n\n{0}</LetterGrandSlaveRebellion>
   <!-- EN: Local slave rebellion -->
-  <LetterLabelLocalSlaveRebellion>Ribellione degli schiavi locali</LetterLabelLocalSlaveRebellion>
+  <LetterLabelLocalSlaveRebellion>Ribellione locale degli schiavi</LetterLabelLocalSlaveRebellion>
   <!-- EN: A local slave rebellion has begun! {0_nameDef} and some nearby slaves are rising up to fight back against you. They will seek weapons and try to eliminate your colonists.\n\nThese slaves are involved:\n\n{1} -->
-  <LetterLocalSlaveRebellion>Una ribellione locale degli schiavi è iniziata! {0_nameDef} e alcuni schiavi nelle vicinanze si stanno ribellando per contrattaccare contro di te. Cercheranno armi e cercheranno di eliminare i tuoi coloni.\n\nSono coinvolti questi schiavi:\n\n{1}</LetterLocalSlaveRebellion> 
+  <LetterLocalSlaveRebellion>Una ribellione locale degli schiavi è iniziata! {0_nameDef} e alcuni schiavi nelle vicinanze si stanno ribellando per combattere contro di te. Cercheranno armi e cercheranno di eliminare i tuoi coloni.\n\nSono coinvolti questi schiavi:\n\n{1}</LetterLocalSlaveRebellion> 
   <!-- EN: Slave rebellion -->
-  <LetterLabelSingleSlaveRebellion>ribellione degli schiavi</LetterLabelSingleSlaveRebellion>
+  <LetterLabelSingleSlaveRebellion>Ribellione degli schiavi</LetterLabelSingleSlaveRebellion>
   <!-- EN: {0_nameDef} is rebelling! {0_pronoun} will seek weapons and try to eliminate your colonists. -->
   <LetterSingleSlaveRebellion>{0_nameDef} si sta ribellando! {0_pronoun} cercherà armi e tenterà di eliminare i tuoi coloni.</LetterSingleSlaveRebellion>
 
@@ -27,9 +27,9 @@
   <!-- EN: A grand slave escape has begun! All of your slaves are making a break for it.\n\nThese slaves are involved:\n\n{0} -->
   <LetterGrandSlaveEscape>Una grande fuga di schiavi è iniziata! Tutti i tuoi schiavi stanno scappando.\n\nQuesti schiavi sono coinvolti:\n\n{0}</LetterGrandSlaveEscape>
   <!-- EN: Local slave escape -->
-  <LetterLabelLocalSlaveEscape>Fuga di schiavi locali</LetterLabelLocalSlaveEscape>
+  <LetterLabelLocalSlaveEscape>Fuga locale di schiavi</LetterLabelLocalSlaveEscape>
   <!-- EN: A local slave escape has begun! {0_nameDef} and some nearby slaves are making a break for it.\n\nThese slaves are involved:\n\n{1} -->
-  <LetterLocalSlaveEscape>La fuga degli schiavi locali è iniziata! {0_nameDef} e alcuni schiavi nelle vicinanze stanno fuggendo.\n\nQuesti schiavi sono coinvolti:\n\n{1}</LetterLocalSlaveEscape>
+  <LetterLocalSlaveEscape>La fuga locale di schiavi è iniziata! {0_nameDef} e alcuni schiavi nelle vicinanze stanno fuggendo.\n\nQuesti schiavi sono coinvolti:\n\n{1}</LetterLocalSlaveEscape>
   <!-- EN: Slave escape -->
   <LetterLabelSingleSlaveEscape>Fuga dello schiavo</LetterLabelSingleSlaveEscape>
   <!-- EN: {0_nameDef} is attempting to escape! -->
@@ -54,11 +54,11 @@
   <!-- EN: {PAWN_labelShort} no longer holds the role of {ROLE_labelIndef}. Reason: -->
   <LetterRoleLostDesc>{PAWN_labelShort} non ricopre più il ruolo di {ROLE_labelIndef}. Motivo:</LetterRoleLostDesc>
   <!-- EN: {PAWN_pronoun} was unassigned. -->
-  <LetterRoleLostReasonUnassignedDesc>{PAWN_pronoun} non era assegnato.</LetterRoleLostReasonUnassignedDesc>
+  <LetterRoleLostReasonUnassignedDesc>{PAWN_pronoun} è {PAWN_gender ? stato rimosso : stata rimossa} dall'incarico.</LetterRoleLostReasonUnassignedDesc>
   <!-- EN: Role became inactive due to low {0} count. -->
-  <LetterRoleLostReasonLowBelieversDesc>Il ruolo è diventato inattivo a causa del conteggio {0} basso.</LetterRoleLostReasonLowBelieversDesc>
+  <LetterRoleLostReasonLowBelieversDesc>Il ruolo è diventato inattivo a causa del basso numero di {0}.</LetterRoleLostReasonLowBelieversDesc>
   <!-- EN: {PAWN_labelShort} has lost {PAWN_possessive} position as {ROLE_labelDef} because {PAWN_pronoun} abandoned the {OLDIDEO_name}. -->
-  <LetterRoleLostLetterIdeoChangedPostfix>{PAWN_labelShort} ha perso {PAWN_possessive} la posizione come {ROLE_labelDef} perché {PAWN_pronoun} ha abbandonato {OLDIDEO_name}.</LetterRoleLostLetterIdeoChangedPostfix>
+  <LetterRoleLostLetterIdeoChangedPostfix>{PAWN_labelShort} ha perso la {PAWN_possessive} posizione di {ROLE_labelDef} perché {PAWN_pronoun} ha abbandonato {OLDIDEO_name}.</LetterRoleLostLetterIdeoChangedPostfix>
   <!-- EN: {0} skipped -->
   <LetterObligationRoleInactive>{0} saltato.</LetterObligationRoleInactive>
   <!-- EN: {0} is the date of the {1}, but since {ROLE_labelDef} role is inactive, the {2}s will skip the {1}. -->
@@ -66,7 +66,7 @@
   
   <!-- Ideo misc -->
   <!-- EN: {PAWN_pronoun}'s speech converted following people to {IDEO} -->
-  <LetterSpeechConvertedListeners>Il discorso di {PAWN_pronoun} è stato convertito dalle persone che seguono in {IDEO}</LetterSpeechConvertedListeners>
+  <LetterSpeechConvertedListeners>Il discorso di {PAWN_pronoun} ha convertito le seguenti persone a {IDEO}</LetterSpeechConvertedListeners>
 
   <!-- EN: {0} rituals activated -->
   <LetterTitleObligationsActivated>{0} rituali attivati</LetterTitleObligationsActivated>
@@ -82,11 +82,11 @@
   <!-- EN: Bond(s) removed -->
   <LetterBondRemoved>Obbligazioni rimosse</LetterBondRemoved>
   <!-- EN: {PAWN_nameDef} has converted to {IDEO}. Since {IDEO} disapproves of bonding with animals, {PAWN_pronoun} has renounced {PAWN_possessive} bonds with the following animals:\n\n{BONDS} -->
-  <LetterBondRemovedDesc>{PAWN_nameDef} è stato convertito in {IDEO}. Poiché {IDEO} disapprova il legame con gli animali, {PAWN_pronoun} ha rinunciato {PAWN_possessive} ai legami con i seguenti animali:\n\n{BONDS}</LetterBondRemovedDesc>
+  <LetterBondRemovedDesc>{PAWN_nameDef} si è convertito a {IDEO}. Poiché {IDEO} disapprova il legame con gli animali, {PAWN_pronoun} ha rinunciato ai {PAWN_possessive} legami con i seguenti animali:\n\n{BONDS}</LetterBondRemovedDesc>
 
   <!-- Slave will -->
   <!-- EN: Enslaved -->
-  <LetterLabelEnslavementSuccess>Schiavo</LetterLabelEnslavementSuccess>
+  <LetterLabelEnslavementSuccess>Asservito</LetterLabelEnslavementSuccess>
   <!-- EN: {0_nameDef} successfully enslaved {1_nameDef}. -->
   <LetterEnslavementSuccess>{0_nameDef} ha asservito con successo {1_nameDef}.</LetterEnslavementSuccess>
 
@@ -106,19 +106,19 @@
 
   <!-- Change ideo mental state -->
   <!-- EN: {PAWN_pronoun} decided that {PAWN_possessive} belief in {OLDIDEO_name} no longer made any sense.\n\n{PAWN_pronoun} now believes in {NEWIDEO_name}. -->
-  <LetterIdeoChangeConverted>{PAWN_pronoun} ha deciso che {PAWN_possessive} credere in {OLDIDEO_name} non ha più alcun senso.\n\n{PAWN_pronoun} ora crede in {NEWIDEO_name}.</LetterIdeoChangeConverted>
+  <LetterIdeoChangeConverted>{PAWN_pronoun} ha deciso che la {PAWN_possessive} fede in {OLDIDEO_name} non ha più alcun senso.\n\n{PAWN_pronoun} ora crede in {NEWIDEO_name}.</LetterIdeoChangeConverted>
   <!-- EN: {PAWN_nameDef}'s certainty with {PAWN_possessive} belief in {OLDIDEO_name} has been reduced to {NEWCERTAINTY}. -->
-  <LetterIdeoChangeNotConverted>La certezza di {PAWN_nameDef} riguardo alla fiducia di {PAWN_possessive} in {OLDIDEO_name} è stata ridotta a {NEWCERTAINTY}.</LetterIdeoChangeNotConverted>
+  <LetterIdeoChangeNotConverted>La certezza di {PAWN_nameDef} riguardo alla {PAWN_possessive} fede in {OLDIDEO_name} è stata ridotta a {NEWCERTAINTY}.</LetterIdeoChangeNotConverted>
   <!-- EN: To come to terms with {PAWN_possessive} beliefs, {PAWN_nameDef} is now hiding in {PAWN_possessive} room. -->
-  <LetterIdeoChangedWanderOwnRoom>Per venire a patti con {PAWN_possessive} convinzioni, {PAWN_nameDef} ora si nasconde nella stanza {PAWN_possessive}.</LetterIdeoChangedWanderOwnRoom>
+  <LetterIdeoChangedWanderOwnRoom>Per venire a patti con le {PAWN_possessive} convinzioni, {PAWN_nameDef} ora si nasconde nella {PAWN_possessive} stanza.</LetterIdeoChangedWanderOwnRoom>
   <!-- EN: {PAWN_nameDef} is now wandering in shock while grappling with {PAWN_possessive} beliefs. -->
-  <LetterIdeoChangedSadWander>{PAWN_nameDef} ora vaga sotto shock mentre è alle prese con le convinzioni di {PAWN_possessive}.</LetterIdeoChangedSadWander>
+  <LetterIdeoChangedSadWander>{PAWN_nameDef} ora vaga sotto shock mentre è alle prese con le {PAWN_possessive} convinzioni.</LetterIdeoChangedSadWander>
 
   <!-- Change ideo divorces -->
   <!-- EN: Divorce -->
   <LetterIdeoChangedDivorce>Divorzio</LetterIdeoChangedDivorce>
   <!-- EN: {PAWN_nameDef}'s new beliefs forbid {PAWN_possessive} current number of spouses.\n\n{PAWN_nameDef} has decided to divorce these people:\n{1} -->
-  <LetterIdeoChangedDivorcedPawns>Le nuove convinzioni di {PAWN_nameDef} vietano {PAWN_possessive} il numero attuale di coniugi.\n\n{PAWN_nameDef} ha deciso di divorziare da queste persone:\n{1}</LetterIdeoChangedDivorcedPawns>
+  <LetterIdeoChangedDivorcedPawns>Le nuove convinzioni di {PAWN_nameDef} vietano il {PAWN_possessive} numero attuale di coniugi.\n\n{PAWN_nameDef} ha deciso di divorziare da queste persone:\n{1}</LetterIdeoChangedDivorcedPawns>
 
   <!-- Surprise reinforcement -->
   <!-- EN: Surprise reinforcements! -->
@@ -128,13 +128,13 @@
 
   <!-- Style change -->
   <!-- EN: Look change desired -->
-  <LetterWantLookChange>Guarda il cambiamento desiderato</LetterWantLookChange>
+  <LetterWantLookChange>Cambio d'aspetto desiderato</LetterWantLookChange>
   <!-- EN: {PAWN_nameDef} wishes to change {PAWN_possessive} look, as it no longer matches what {PAWN_pronoun} believes.\n\n{PAWN_pronoun} will automatically use an available styling station and choose a look. If you want to customize {PAWN_possessive} look, select {PAWN_objective} and right-click the styling station. -->
-  <LetterWantLookChangeDesc>{PAWN_nameDef} desidera cambiare {PAWN_possessive} aspetto, poiché non corrisponde più a ciò che {PAWN_pronoun} credi.\n\n{PAWN_pronoun} utilizzerà automaticamente una stazione di styling disponibile e sceglierà un aspetto. Se desideri personalizzare l'aspetto {PAWN_possessive}, seleziona {PAWN_objective} e fai clic con il pulsante destro del mouse sulla stazione di styling.</LetterWantLookChangeDesc>
+  <LetterWantLookChangeDesc>{PAWN_nameDef} desidera cambiare il {PAWN_possessive} aspetto, poiché non corrisponde più a ciò che {PAWN_pronoun} crede.\n\n{PAWN_pronoun} utilizzerà automaticamente una stazione di styling disponibile e sceglierà un aspetto. Se desideri personalizzare il {PAWN_possessive} aspetto, seleziona {PAWN_objective} e fai clic con il pulsante destro del mouse sulla stazione di styling.</LetterWantLookChangeDesc>
 
   <!-- Spacedrone incoming -->
   <!-- EN: Spacedrone incoming -->
-  <LetterLabelSpacedroneIncoming>Drone spaziato in arrivo</LetterLabelSpacedroneIncoming>
+  <LetterLabelSpacedroneIncoming>Drone spaziale in arrivo</LetterLabelSpacedroneIncoming>
   <!-- EN: A spacedrone is landing nearby. -->
   <LetterTextSpacedroneIncoming>Un drone spaziale sta atterrando nelle vicinanze.</LetterTextSpacedroneIncoming>
   <!-- EN: A raid from {0} has arrived to destroy the {1} that was forced to land nearby. -->
@@ -154,7 +154,7 @@
   <!-- EN: Relic lost -->
   <LetterLabelRelicLost>Reliquia perduta</LetterLabelRelicLost>
   <!-- EN: {0} has been lost!\n\nThe following people will suffer a mood reduction:\n{1} -->
-  <LetterTextRelicLost>{0} ti sei perso!\in\Le seguenti persone subiranno una riduzione dell'umore:\n{1}</LetterTextRelicLost>
+  <LetterTextRelicLost>{0} è stato perso!\n\nLe seguenti persone subiranno una riduzione dell'umore:\n{1}</LetterTextRelicLost>
 
   <!-- Caravan destroyed -->
   <!-- EN: All non-slave members of {0} have died. The remaining slaves have walked away. The caravan has disbanded. -->
@@ -162,7 +162,7 @@
 
   <!-- Hacker lost -->
   <!-- EN: Last hacker lost -->
-  <LetterLabelLastHackerLost>L'ultimo hacker ha perso</LetterLabelLastHackerLost>
+  <LetterLabelLastHackerLost>Ultimo hacker perduto</LetterLabelLastHackerLost>
   <!-- EN: The last hacker capable of unlocking the secrets of the ancient complex has been lost. Call reinforcements capable of hacking, or abandon the quest. -->
   <LetterTextLastHackerLost>L'ultimo hacker capace di svelare i segreti dell'antico complesso è andato perduto. Chiama rinforzi in grado di hackerare o abbandona la missione.</LetterTextLastHackerLost>
 
@@ -184,11 +184,11 @@
 
   <!-- Gauranlen tree connection -->
   <!-- EN: {TREE_label} connection -->
-  <LetterLabelPawnConnected>{TREE_label} connessione</LetterLabelPawnConnected>
+  <LetterLabelPawnConnected>Connessione con {TREE_label}</LetterLabelPawnConnected>
   <!-- EN: {CONNECTOR_nameDef} has connected with {TREE_definite}.\n\n{TREE_definite} will produce small animals called dryads by growing them in pods at its base. These dryads can specialize into different castes. You can choose which caste of dryads you want the tree to produce.\n\nThe stronger the connection between tree and human, the more dryads {TREE_definite} can sustain. {CONNECTOR_nameDef} can strengthen the connection by pruning {TREE_definite}. Maintaining a higher connection strength requires more frequent pruning. -->
-  <LetterTextPawnConnected>{CONNECTOR_nameDef} si è connesso con {TREE_definite}.\n\n{TREE_definite} produrrà piccoli animali chiamati driadi facendoli crescere in baccelli alla sua base. Queste driadi possono specializzarsi in caste diverse. Puoi scegliere quale casta di driadi vuoi che l'albero produca.\n\nPiù forte è la connessione tra albero e essere umano, più driadi {TREE_definite} può sostenere. {CONNECTOR_nameDef} può rafforzare la connessione eliminando {TREE_definite}. Mantenere una forza di connessione più elevata richiede potature più frequenti.</LetterTextPawnConnected>
+  <LetterTextPawnConnected>{CONNECTOR_nameDef} si è connesso con {TREE_definite}.\n\n{TREE_definite} produrrà piccoli animali chiamati driadi facendoli crescere in baccelli alla sua base. Queste driadi possono specializzarsi in caste diverse. Puoi scegliere quale casta di driadi vuoi che l'albero produca.\n\nPiù forte è la connessione tra albero e essere umano, più driadi {TREE_definite} può sostenere. {CONNECTOR_nameDef} può rafforzare la connessione potando {TREE_definite}. Mantenere una forza di connessione più elevata richiede potature più frequenti.</LetterTextPawnConnected>
   <!-- EN: Connected {TREE_label} destroyed -->
-  <LetterLabelConnectedTreeDestroyed>Connesso {TREE_label} distrutto</LetterLabelConnectedTreeDestroyed>
+  <LetterLabelConnectedTreeDestroyed>{TREE_label} connesso distrutto</LetterLabelConnectedTreeDestroyed>
   <!-- EN: A {TREE_label} connected to {CONNECTEDPAWN_nameDef} has been destroyed, killing the dryad queen housed inside.\n\nWithout a queen, the dryad brood-mind has collapsed. All dryads from that tree have died. -->
   <LetterTextConnectedTreeDestroyed>Un {TREE_label} connesso a {CONNECTEDPAWN_nameDef} è stato distrutto, uccidendo la regina driade ospitata all'interno.\n\nSenza una regina, la mente-covata driade è crollata. Tutte le driadi di quell'albero sono morte.</LetterTextConnectedTreeDestroyed>
 
@@ -200,7 +200,7 @@
   <!-- EN: {0_labelShort} studied -->
   <LetterLabelArchonexusStructureResearched>{0_labelShort} studiato</LetterLabelArchonexusStructureResearched>
   <!-- EN: You have completed your study of the {0_labelShort}.\n\nYou can't say that you understand it in any complete way, but you have detected patterns in its behavior and the way it seems to express information.\n\nWith this knowledge, you will be able to interpret the next piece of the archonexus map. -->
-  <LetterTextArchonexusStructureResearched>Hai completato il tuo studio su {0_labelShort}.\n\nNon puoi dire di averlo compreso in modo completo, ma hai rilevato degli schemi nel suo comportamento e nel modo in cui sembra esprimere informazioni.\n\nCon questo conoscenza, sarai in grado di interpretare il prossimo pezzo della mappa dell'Arconesso.</LetterTextArchonexusStructureResearched>
+  <LetterTextArchonexusStructureResearched>Hai completato il tuo studio su {0_labelShort}.\n\nNon puoi dire di averlo compreso in modo completo, ma hai rilevato degli schemi nel suo comportamento e nel modo in cui sembra esprimere informazioni.\n\nCon questa conoscenza, sarai in grado di interpretare il prossimo pezzo della mappa dell'Arconesso.</LetterTextArchonexusStructureResearched>
   <!-- EN: Archotech structures abandoned -->
   <LetterLabelArchotechStructuresAbandoned>Strutture Archotech abbandonate</LetterLabelArchotechStructuresAbandoned>
   <!-- EN: You have abandoned the archotech structures at {0_definite}.\n\nDistant observers say they saw a great flash emanating from this location not long after you left. -->
@@ -208,8 +208,8 @@
 
   <!-- Reforming ideo -->
   <!-- EN: Reform ideoligion -->
-  <LetterLabelReformIdeo>Ideologia della riforma</LetterLabelReformIdeo>
+  <LetterLabelReformIdeo>Riforma ideoligione</LetterLabelReformIdeo>
   <!-- EN: You have enough development points to reform {0}!\n\nReforming allows you to do one of the following:\n\n- Add a meme\n- Remove a meme\n- Change structure\n- Change style\n\nYou can also make unlimited changes to precepts, deities, narrative text, and other symbols.\n\nTo reform the ideoligion, open it in the ideoligions tab. -->
-  <LetterTextReformIdeo>Hai abbastanza punti di sviluppo per riformare {0}!\n\nLa riforma ti permette di fare una delle seguenti cose:\n\n- Aggiungere un meme\n- Rimuovere un meme\n- Cambiare struttura\n- Cambiare stile\n \nPuoi anche apportare modifiche illimitate a precetti, divinità, testo narrativo e altri simboli.\n\nPer riformare l'ideoligione, aprila nella scheda ideoligioni.</LetterTextReformIdeo>
+  <LetterTextReformIdeo>Hai abbastanza punti di sviluppo per riformare {0}!\n\nLa riforma ti permette di fare una delle seguenti cose:\n\n- Aggiungere un meme\n- Rimuovere un meme\n- Cambiare struttura\n- Cambiare stile\n\nPuoi anche apportare modifiche illimitate a precetti, divinità, testo narrativo e altri simboli.\n\nPer riformare l'ideoligione, aprila nella scheda ideoligioni.</LetterTextReformIdeo>
 
 </LanguageData>
