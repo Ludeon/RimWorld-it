@@ -20,6 +20,12 @@
     <li>treegen_f->Words/Nouns/TreeTypes_Genitive_Feminine</li>
     <li>veggen_m->Words/Nouns/Vegetables_Genitive_Masculine</li>
     <li>veggen_f->Words/Nouns/Vegetables_Genitive_Feminine</li>
+    <!-- persone (famiglia/alleati) come descrittori al genitivo: come fr
+         ("de le [PersonAlly]") ed es ("del [PersonAlly]"), non in apposizione. -->
+    <li>famgen_m->Words/Nouns/People_Family_Genitive_Masculine</li>
+    <li>famgen_f->Words/Nouns/People_Family_Genitive_Feminine</li>
+    <li>allygen_m->Words/Nouns/People_Allies_Genitive_Masculine</li>
+    <li>allygen_f->Words/Nouns/People_Allies_Genitive_Feminine</li>
   </NamerTraderGeneral.rulePack.rulesFiles>
 
   <!-- EN:
@@ -44,12 +50,14 @@
     <!-- IT: nomi commerciali ricostruiti con accordo di genere/numero (modello
          dei namer Factions/Settlement). L'inglese mette il modificatore davanti
          alla "testa" ([adj/animale] [businesstype]); in italiano:
-         - i marchi/sigle/nomi propri restano in apposizione (ordine EN), sono
-           grammaticali in qualunque caso;
-         - i descrittori (animale, oggetto naturale, albero, ortaggio) seguono il
-           businesstype come testa con un genitivo ("Compagnia del toporagno"):
-           preposizione articolata fusa e accordata (del/dello/dell'/della, liste
-           *_Genitive_*), colore/aggettivo posposto e concordato col nome;
+         - solo i marchi/sigle/nomi propri ([businessname], [NamePerson]) restano
+           in apposizione (ordine EN), sono grammaticali in qualunque caso;
+         - i descrittori (animale, oggetto naturale, albero, ortaggio) e le persone
+           comuni (alleato, famiglia) seguono il businesstype come testa con un
+           genitivo ("Compagnia del toporagno", "Consorzio dello zio"): preposizione
+           articolata fusa e accordata (del/dello/dell'/della, liste *_Genitive_*);
+           per animali/oggetti colore/aggettivo posposto e concordato col nome, per
+           le persone nessun aggettivo (come fr/es);
          - l'aggettivo riferito direttamente al businesstype usa sottoinsiemi di
            businesstype divisi per genere/numero (Friendly solo singolare: mancano
            le varianti plurali);
@@ -59,8 +67,11 @@
     <li>r_name(p=4)->[businessname] [businesstype]</li>
     <li>r_name->[NamePerson] [businesstype]</li>
     <li>r_name->[Letter][Letter] [businesstype]</li>
-    <li>r_name(p=0.5)->[PersonAlly] [businesstype]</li>
-    <li>r_name(p=0.3)->[PersonFamily] [businesstype]</li>
+    <!-- persone comuni (alleato/famiglia): genitivo su testa nominale, non
+         apposizione. "Difensore commercianti"/"Zio partner" non sono italiano;
+         fr/es rendono entrambi col genitivo ("de le [PersonAlly]", "del [PersonAlly]"). -->
+    <li>r_name(p=0.5)->[btype_head] [allybrand]</li>
+    <li>r_name(p=0.3)->[btype_head] [familybrand]</li>
     <!-- descrittori con accordo (testa = btype_head, solo nomi, non aggettivali) -->
     <li>r_name->[btype_head] [animalbrand]</li>
     <li>r_name(p=0.3)->[btype_head] [natbrand]</li>
@@ -110,6 +121,12 @@
     <li>vegbrand->[veggen_f] [AdjectiveFriendlyFS]</li>
     <li>vegbrand->[veggen_m] [AdjectiveBadassMS]</li>
     <li>vegbrand->[veggen_f] [AdjectiveBadassFS]</li>
+    <!-- marchi "persona" al genitivo (senza colore/aggettivo: "del compagno
+         verde" non ha senso su una persona; anche fr/es li tengono nudi) -->
+    <li>allybrand->[allygen_m]</li>
+    <li>allybrand->[allygen_f]</li>
+    <li>familybrand->[famgen_m]</li>
+    <li>familybrand->[famgen_f]</li>
     <!-- sottoinsiemi di businesstype per genere/numero (accordo aggettivo;
          esclusi incorporata/interplanetaria/interstellare: già aggettivali) -->
     <li>btype_ms->consorzio</li>

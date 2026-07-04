@@ -29,6 +29,10 @@ SOURCES = [
     ("TreeTypes_Singular_Feminine", "f"),
     ("Vegetables_Singular_Masculine", "m"),
     ("Vegetables_Singular_Feminine", "f"),
+    ("People_Family_Singular_Masculine", "m"),
+    ("People_Family_Singular_Feminine", "f"),
+    ("People_Allies_Singular_Masculine", "m"),
+    ("People_Allies_Singular_Feminine", "f"),
 ]
 
 VOWELS = set("aeiouAEIOU")
