@@ -132,17 +132,17 @@
   <!-- EN: Hemogen is a biological energy source derived from compounds in human blood. Baseliner humans produce it endogenously and consume it over time in their own internal balance. Some human xenotypes use it as a kind of fuel for specific abilities, while others must consume it to survive at all. -->
   <HemogenDesc>L'emogeno è una fonte di energia biologica derivata da composti presenti nel sangue umano. Gli esseri umani di base lo producono in modo endogeno e lo consumano nel tempo nel proprio equilibrio interno. Alcuni xenotipi umani lo usano come una sorta di carburante per abilità specifiche, mentre altri devono consumarlo per sopravvivere.</HemogenDesc>
   <!-- EN: deathrest capacity -->
-  <DeathrestCapacity>capacità di Deathrest</DeathrestCapacity>
+  <DeathrestCapacity>capacità di riposo mortale</DeathrestCapacity>
   <!-- EN: This determines how many deathrest buildings a person can connect to while deathresting. Each deathrest building confers a specific benefit, so it's better to be able to connect to more of them.\n\nDeathrest capacity can be increased using deathrest capacity serums. These serums can be purchased from traders. -->
-  <DeathrestCapacityDesc>Ciò determina a quanti edifici del Deathrest una persona può connettersi durante il Deathrest. Ogni edificio Deathrest conferisce un vantaggio specifico, quindi è meglio essere in grado di connettersi a più di essi.\n\nLa capacità Deathrest può essere aumentata utilizzando i sieri Deathrest. Questi sieri possono essere acquistati dai commercianti.</DeathrestCapacityDesc>
+  <DeathrestCapacityDesc>Ciò determina a quanti edifici di riposo mortale una persona può connettersi durante il riposo mortale. Ogni edificio riposo mortale conferisce un vantaggio specifico, quindi è meglio essere in grado di connettersi a più di essi.\n\nLa capacità di riposo mortale può essere aumentata utilizzando i sieri di riposo mortale. Questi sieri possono essere acquistati dai commercianti.</DeathrestCapacityDesc>
   <!-- EN: {PAWN_nameDef} is connected to {CURRENT} / {MAX} (max) deathrest buildings. -->
-  <PawnIsConnectedToBuildings>{PAWN_nameDef} è collegato a {CURRENT} / {MAX} (max) edifici di Deathrest.</PawnIsConnectedToBuildings>
+  <PawnIsConnectedToBuildings>{PAWN_nameDef} è collegato a {CURRENT} / {MAX} (max) edifici di riposo mortale.</PawnIsConnectedToBuildings>
   <!-- EN: wake now -->
   <Wake>svegliati adesso</Wake>
   <!-- EN: Wake up from deathrest.\n\n{PAWN_nameDef} has been in deathrest for {DURATION}. -->
   <WakeDesc>Svegliati dal riposo mortale.\n\n{PAWN_nameDef} è stato nel riposo mortale per {DURATION}.</WakeDesc>
   <!-- EN: {PAWN_nameDef} needs to deathrest for at least {TOTAL}. Waking {PAWN_objective} early will make {PAWN_objective} ill, and {PAWN_pronoun} will not benefit from any deathrest buildings. -->
-  <WakeExtraDesc_Exhaustion>{PAWN_nameDef} deve essere sottoposto a riposo mortale per almeno {TOTAL}. Svegliare {PAWN_objective} presto farà ammalare {PAWN_objective} e {PAWN_pronoun} non trarrà beneficio da alcun edificio del Deathrest.</WakeExtraDesc_Exhaustion>
+  <WakeExtraDesc_Exhaustion>{PAWN_nameDef} deve essere sottoposto a riposo mortale per almeno {TOTAL}. Svegliare {PAWN_objective} presto farà ammalare {PAWN_objective} e {PAWN_pronoun} non trarrà beneficio da alcun edificio del riposo mortale.</WakeExtraDesc_Exhaustion>
   <!-- EN: {PAWN_nameDef} can now wake safely. -->
   <WakeExtraDesc_Safe>{PAWN_nameDef} ora può riattivarsi in sicurezza.</WakeExtraDesc_Safe>
   <!-- EN: Cannot wake. Need at least {0} hemogen. -->
@@ -158,7 +158,7 @@
   <!-- EN: Start deathrest -->
   <StartDeathrest>Inizia il riposo mortale</StartDeathrest>
   <!-- EN: Safely completing deathrest takes {MINDURATION}, but {PAWN_nameDef} has only been deathresting for {CURDURATION}.\n\nWaking {PAWN_nameDef} now would interrupt {PAWN_possessive} deathrest, throwing {PAWN_possessive} metabolism out of balance and making {PAWN_objective} sick for days to come.\n\nAre you sure you wish to wake {PAWN_objective}? -->
-  <ConfirmExitDeathrestUnderMinDays>Per completare in sicurezza il Deathrest occorre {MINDURATION}, ma {PAWN_nameDef} lo ha fatto solo per {CURDURATION}.\n\nSvegliare {PAWN_nameDef} ora interromperebbe il Deathrest di {PAWN_possessive}, sbilanciando il metabolismo di {PAWN_possessive} e facendo ammalare {PAWN_objective} per i giorni a venire.\n\nSei sicuro di voler riattivare {PAWN_objective}?</ConfirmExitDeathrestUnderMinDays>
+  <ConfirmExitDeathrestUnderMinDays>Per completare in sicurezza il riposo mortale occorre {MINDURATION}, ma {PAWN_nameDef} lo ha fatto solo per {CURDURATION}.\n\nSvegliare {PAWN_nameDef} ora interromperebbe il {PAWN_possessive} riposo mortale, sbilanciando il {PAWN_possessive} metabolismo e facendo ammalare {PAWN_objective} per i giorni a venire.\n\nSei sicuro di voler riattivare {PAWN_objective}?</ConfirmExitDeathrestUnderMinDays>
   <!-- EN: deathresting -->
   <Deathresting>riposo a morte</Deathresting>
   <!-- EN: can wake safely now. -->
@@ -424,7 +424,7 @@
   <!-- EN: {PAWN_nameDef} will remain in a regeneration coma so long as {PAWN_pronoun} has lethal injuries. -->
   <PawnWillKeepRegeneratingLethalInjuries>{PAWN_nameDef} rimarrà in coma rigenerativo finché {PAWN_pronoun} avrà ferite letali.</PawnWillKeepRegeneratingLethalInjuries>
   <!-- EN: Deathrest stopped -->
-  <DeathrestPaused>Il Deathrest si è fermato</DeathrestPaused>
+  <DeathrestPaused>Il riposo mortale si è fermato</DeathrestPaused>
   <!-- EN: Lethal injuries -->
   <LethalInjuries>Lesioni letali</LethalInjuries>
   <!-- EN: deathrest -->
