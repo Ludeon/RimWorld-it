@@ -82,6 +82,15 @@ TR = {
     "ng_only": {"en": "name generators only", "it": "solo generatori nomi",
                 "es": "solo generadores de nombres", "fr": "générateurs de noms seulement",
                 "de": "nur Namensgeneratoren"},
+    "ng_flt_all": {"en": "all files", "it": "tutti i file", "es": "todos los archivos",
+                   "fr": "tous les fichiers", "de": "alle Dateien"},
+    "ng_flt_ng": {"en": "🎲 name generators (all)", "it": "🎲 generatori nomi (tutti)",
+                  "es": "🎲 generadores de nombres (todos)", "fr": "🎲 générateurs de noms (tous)",
+                  "de": "🎲 Namensgeneratoren (alle)"},
+    "ng_flt_rp": {"en": "🎲 RulePacks only", "it": "🎲 solo RulePack", "es": "🎲 solo RulePacks",
+                  "fr": "🎲 RulePacks seulement", "de": "🎲 nur RulePacks"},
+    "ng_flt_gene": {"en": "🧬 gene names only", "it": "🧬 solo nomi geni", "es": "🧬 solo nombres de genes",
+                    "fr": "🧬 noms de gènes seulement", "de": "🧬 nur Gennamen"},
     "ng_badge": {"en": "name/grammar generator — review in the Name generator tab",
                  "it": "generatore nomi/grammatica — rivedi nella scheda Generatore nomi",
                  "es": "generador de nombres/gramática — revisar en la pestaña Generador de nombres",
@@ -102,6 +111,21 @@ TR = {
     "validate_file": {"en": "✓ validate whole file", "it": "✓ valida tutto il file", "es": "✓ validar todo el archivo",
                       "fr": "✓ valider tout le fichier", "de": "✓ ganze Datei validieren"},
     "keep_all": {"en": "keep all", "it": "keep tutto", "es": "keep todo", "fr": "keep tout", "de": "alle keep"},
+    "reset_file": {"en": "↺ restore whole file", "it": "↺ ripristina tutto il file",
+                   "es": "↺ restaurar todo el archivo", "fr": "↺ restaurer tout le fichier",
+                   "de": "↺ ganze Datei zurücksetzen"},
+    "act_reset": {"en": "restore computed status", "it": "ripristina lo stato calcolato",
+                  "es": "restaurar estado calculado", "fr": "restaurer l'état calculé",
+                  "de": "berechneten Status zurücksetzen"},
+    "ng_reset_all": {"en": "↺ reset ALL these files", "it": "↺ azzera TUTTI questi file",
+                     "es": "↺ restablecer TODOS estos archivos", "fr": "↺ réinitialiser TOUS ces fichiers",
+                     "de": "↺ ALLE diese Dateien zurücksetzen"},
+    "ng_reset_all_ask": {
+        "en": "Remove validation from ALL name-generator files and start the review over? (recoverable: re-validate anytime)",
+        "it": "Togliere la validazione a TUTTI i file dei generatori nomi e ricominciare la revisione? (recuperabile: rivalidi quando vuoi)",
+        "es": "¿Quitar la validación de TODOS los archivos de generadores de nombres y reiniciar la revisión?",
+        "fr": "Retirer la validation de TOUS les fichiers de générateurs de noms et recommencer la revue ?",
+        "de": "Validierung von ALLEN Namensgenerator-Dateien entfernen und die Prüfung neu starten?"},
     "copy_skill": {"en": "📋 copy the /valida-file instruction for Claude (this file)",
                    "it": "📋 copia l'istruzione /valida-file per Claude (questo file)",
                    "es": "📋 copiar la instrucción /valida-file para Claude (este archivo)",
@@ -119,6 +143,16 @@ TR = {
         "fr": "Aperçu des noms générés depuis un RulePack. Approximatif : symboles non résolus en «symbole». Rechargez pour relancer.",
         "de": "Vorschau der aus einem RulePack generierten Namen. Annähernd: ungelöste Symbole als «Symbol». Neu laden zum Neuwürfeln."},
     "ng_filter": {"en": "Filter", "it": "Filtra", "es": "Filtrar", "fr": "Filtrer", "de": "Filtern"},
+    "ng_pre_namers": {"en": "🎲 name generators (Namer)", "it": "🎲 generatori di nomi (Namer)",
+                      "es": "🎲 generadores de nombres (Namer)", "fr": "🎲 générateurs de noms (Namer)",
+                      "de": "🎲 Namensgeneratoren (Namer)"},
+    "ng_pre_all": {"en": "everything (incl. phrases/log)", "it": "tutto (incl. frasi/log)",
+                   "es": "todo (incl. frases/log)", "fr": "tout (incl. phrases/journal)",
+                   "de": "alles (inkl. Phrasen/Log)"},
+    "ng_pre_all_gene": {"en": "all gene names", "it": "tutti i nomi geni",
+                        "es": "todos los nombres de genes", "fr": "tous les noms de gènes",
+                        "de": "alle Gennamen"},
+    "ng_pre_dlc": {"en": "— DLC:", "it": "— DLC:", "es": "— DLC:", "fr": "— DLC :", "de": "— DLC:"},
     "ng_count": {"en": "How many", "it": "Quanti", "es": "Cuántos", "fr": "Combien", "de": "Wie viele"},
     "ng_gen": {"en": "🎲 Generate", "it": "🎲 Genera", "es": "🎲 Generar", "fr": "🎲 Générer", "de": "🎲 Generieren"},
     "ng_none": {"en": "No rulepack matches the filter.", "it": "Nessun rulepack corrisponde.",
@@ -244,6 +278,15 @@ async function setStatus(keys,status){{
   }} else {{ showToast('errore nel salvataggio',true); }}
 }}
 function fileAction(f,status){{ setStatus([['__file__',f,'*']],status); }}
+async function resetNG(kind,msg){{
+  if(!confirm(msg)) return;
+  const r=await fetch('/api/reset_ng',{{method:'POST',headers:{{'Content-Type':'application/json'}},body:JSON.stringify({{kind}})}});
+  if(r.ok){{
+    let c=0; try{{c=(await r.json()).changed;}}catch(e){{}}
+    try{{sessionStorage.setItem('rwit_flash','↺ '+c+' voci ripristinate');}}catch(e){{}}
+    location.reload();
+  }} else {{ showToast('errore',true); }}
+}}
 async function rebuild(){{ const r=await fetch('/api/rebuild',{{method:'POST'}}); if(r.ok){{try{{sessionStorage.setItem('rwit_flash','↻ ledger ricostruito');}}catch(e){{}}location.reload();}} else showToast('errore',true); }}
 function copyTxt(t,el){{ navigator.clipboard.writeText(t).then(()=>{{if(el){{const o=el.textContent;el.textContent='✓';setTimeout(()=>el.textContent=o,900);}}}}); }}
 </script></body></html>"""
@@ -358,28 +401,44 @@ def index():
     ng_files_rp = {p["file"] for p in NG.load_rulepacks().values()}
     ng_files_gene = {p["file"] for p in NG.load_gene_symbolpacks().values()}
     ng_files = ng_files_rp | ng_files_gene
+    # filtro namegen a più stati: ""=tutti, "rp"=solo RulePack, "gene"=solo geni,
+    # altro-truthy ("1"/"all", retrocompat bookmark)=tutti i namegen.
+    if sel_ng == "rp":
+        ng_set = ng_files_rp
+    elif sel_ng == "gene":
+        ng_set = ng_files_gene
+    elif sel_ng:
+        ng_set = ng_files
+    else:
+        ng_set = None
     frows = sorted(
         ((c.get(sel_status, 0), d, f, sum(c.values()), sum(c.get(s, 0) for s in DONE), c)
          for (d, f), c in perfile.items()
          if c.get(sel_status, 0) and (not sel_dlc or d == sel_dlc)
-         and (not sel_ng or f in ng_files)),
+         and (ng_set is None or f in ng_set)),
         key=lambda x: -x[0])
 
     # File-namegen (RulePackDef): si revisionano nella scheda Generatore nomi, non
     # leggendo l'XML. Set derivato live dai pack -> badge + scorciatoia, niente DB.
     opt_dlc = "".join(f'<option {"selected" if d==sel_dlc else ""}>{d}</option>' for d in [""] + config.DLCS)
     opt_st = "".join(f'<option value="{s}" {"selected" if s==sel_status else ""}>{sname(s)}</option>' for s in STATES)
+    ng_sel_norm = sel_ng if sel_ng in ("rp", "gene", "") else "all"
+    opt_ng = "".join(
+        f'<option value="{v}" {"selected" if v==ng_sel_norm else ""}>{lbl}</option>'
+        for v, lbl in (("", t("ng_flt_all")), ("all", t("ng_flt_ng")),
+                       ("rp", t("ng_flt_rp")), ("gene", t("ng_flt_gene"))))
     trs = ""
     for pend, d, f, tot, dn, c in frows[:400]:
         short = f.replace("\\", "/").split("/")[-1]
         is_ng = f in ng_files
         is_gene = f in ng_files_gene
         stem = short[:-4] if short.endswith(".xml") else short
-        badge = (f' <span title="{t("gn_badge") if is_gene else t("ng_badge")}" style="cursor:help">🎲</span>'
+        ng_ico = "🧬" if is_gene else "🎲"
+        badge = (f' <span title="{t("gn_badge") if is_gene else t("ng_badge")}" style="cursor:help">{ng_ico}</span>'
                  if is_ng else "")
         nghref = (f"/namegen?kind=gene&q={quote(f'{d} · {stem}')}" if is_gene
                   else f"/namegen?q={quote(f'{d} · {stem}')}")
-        ngbtn = (f'<a class="btn" title="{t("to_namegen")}" href="{nghref}">🎲</a> '
+        ngbtn = (f'<a class="btn" title="{t("to_namegen")}" href="{nghref}">{ng_ico}</a> '
                  if is_ng else "")
         trs += (f'<tr><td style="width:1%;vertical-align:middle;padding-right:0">'
                 f'<button class=btn title="{t("copy_skill")}" style="padding:2px 6px"'
@@ -390,14 +449,15 @@ def index():
                 f'<td class="right pct"><b style="color:{COLORS["validated"]}">{c.get("validated",0)}</b>/{tot}</td>'
                 f'<td class=right style="white-space:nowrap">{ngbtn}'
                 f'<button class="btn g" title="{t("validate_all")}" onclick=\'fileAction("{_js(f)}","validated")\'>✓</button> '
-                f'<button class="btn k" title="{t("keep_all")}" onclick=\'fileAction("{_js(f)}","keep")\'>🔒</button></td></tr>')
+                f'<button class="btn k" title="{t("keep_all")}" onclick=\'fileAction("{_js(f)}","keep")\'>🔒</button> '
+                f'<button class="btn" title="{t("reset_file")}" onclick=\'fileAction("{_js(f)}","reset")\'>↺</button></td></tr>')
 
     body = f"""<div class=chips>{chips}</div>{segbar(overall,total)}
     <h3>{t("by_dlc")}</h3>{dlcbars}
     <h3>{t("files_review")}</h3>
-    <div class=flt>DLC <select onchange="location.href='/?dlc='+this.value+'&status={sel_status}&ng={sel_ng}'">{opt_dlc}</select>
-      <select onchange="location.href='/?dlc={sel_dlc}&status='+this.value+'&ng={sel_ng}'">{opt_st}</select>
-      <a class="btn{' g' if sel_ng else ''}" href="/?dlc={sel_dlc}&status={sel_status}&ng={'' if sel_ng else '1'}">🎲 {t("ng_only")}</a>
+    <div class=flt>DLC <select onchange="location.href='/?dlc='+this.value+'&status={sel_status}&ng={ng_sel_norm}'">{opt_dlc}</select>
+      <select onchange="location.href='/?dlc={sel_dlc}&status='+this.value+'&ng={ng_sel_norm}'">{opt_st}</select>
+      <select onchange="location.href='/?dlc={sel_dlc}&status={sel_status}&ng='+this.value">{opt_ng}</select>
       <span class=muted>{t("files_with", n=len(frows), s=sname(sel_status))}</span></div>
     <table><thead><tr><th></th><th>{t("col_file")}</th><th class=right>«{sname(sel_status)}»</th><th>{t("col_comp")}</th>
       <th class=right>{t("col_done")}</th><th class=right>{t("hdr_val")}</th><th class=right>{t("col_actions")}</th></tr></thead><tbody>{trs}</tbody></table>"""
@@ -422,6 +482,7 @@ def file_view():
         k = f'["{_js(r["dlc"])}","{_js(r["file"])}","{_js(r["tag"])}"]'
         acts = ("" if st == "validated" else f'<button class="ibtn g" title="{t("act_validate")}" onclick=\'setStatus({k},"validated")\'>✓</button>')
         acts += ("" if st == "keep" else f'<button class="ibtn k" title="{t("act_keep")}" onclick=\'setStatus({k},"keep")\'>🔒</button>')
+        acts += ("" if st in ("translated", "untranslated") else f'<button class="ibtn" title="{t("act_reset")}" onclick=\'setStatus({k},"reset")\'>↺</button>')
         acts = f'<div class=acts>{acts}</div>'
         it_cell = _h(it) or empty_it
         en_cell = _h(en) or "—"
@@ -433,7 +494,8 @@ def file_view():
     comp = " · ".join(f'<span style="color:{COLORS[s]}">{sname(s)}: {c[s]}</span>' for s in STATES if c.get(s))
     body = f"""<p><a href="/">{t("back")}</a></p><h3>{short} <span class=tag>{_h(f)}</span></h3><p>{comp}</p>
     <p><button class="btn g" onclick='fileAction("{_js(f)}","validated")'>{t("validate_file")}</button>
-       <button class="btn k" onclick='fileAction("{_js(f)}","keep")'>{t("keep_all")}</button></p>
+       <button class="btn k" onclick='fileAction("{_js(f)}","keep")'>{t("keep_all")}</button>
+       <button class="btn" onclick='fileAction("{_js(f)}","reset")'>{t("reset_file")}</button></p>
     <table><thead><tr><th>tag</th><th>EN</th><th>IT</th><th></th><th></th></tr></thead><tbody>{trs}</tbody></table>"""
     return render(body, "prog")
 
@@ -454,12 +516,17 @@ def namegen_view():
     # nomi (~158), non le frasi di interazione/log/descrizioni (i ~288 totali).
     q_raw = request.args.get("q", "Namer").strip()
     q = q_raw.lower()
-    shown = [k for k in keys if q in k.lower()] if q else keys
+    hidev = request.args.get("hidev") == "1"
+    presets = _ng_presets(keys, "rulepack")
+    shown = [k for k in keys if q in k.lower()] if q else list(keys)
+    if hidev:
+        vf = _validated_files()
+        shown = [k for k in shown if packs[k].get("file", "") not in vf]
     n = max(1, min(200, int(request.args.get("n", 20) or 20)))
 
     if not shown:
         return render(f'{_ng_toggle("rulepack")}<p class=muted>{t("ng_intro")}</p>'
-                      f'{_ng_form(q_raw, "", n, 0, 0)}<p class=muted>{t("ng_none")}</p>', "names")
+                      f'{_ng_form(q_raw, "", n, 0, 0, hidev=hidev, presets=presets)}<p class=muted>{t("ng_none")}</p>', "names")
 
     # paginatore: indice del pack nella lista filtrata (Prec/Succ/Vai a #)
     i = int(request.args.get("i", 0) or 0)
@@ -492,7 +559,7 @@ def namegen_view():
                   f'<table class=gen><thead><tr><th>{th[0]}</th><th>{th[1]}</th><th></th>'
                   f'</tr></thead><tbody>{rows_html}</tbody></table>')
 
-    qs = f'q={quote(q_raw)}&n={n}'
+    qs = f'q={quote(q_raw)}&n={n}' + ('&hidev=1' if hidev else '')
     prev = f'<a class=btn href="/namegen?{qs}&i={i-1}">{t("ng_prev")}</a>' if i > 0 else f'<span class="btn" style="opacity:.4">{t("ng_prev")}</span>'
     nxt = f'<a class=btn href="/namegen?{qs}&i={i+1}">{t("ng_next")}</a>' if i < len(shown) - 1 else f'<span class="btn" style="opacity:.4">{t("ng_next")}</span>'
     opts = "".join(f'<option {"selected" if j==i else ""}>{_h(k)}</option>' for j, k in enumerate(shown))
@@ -524,6 +591,7 @@ def namegen_view():
     valbtns = (f'{vbadge}'
                f'<button class="btn g" onclick=\'fileAction("{_js(relfile)}","validated")\'>{t("validate_file")}</button> '
                f'<button class="btn k" onclick=\'fileAction("{_js(relfile)}","keep")\'>{t("keep_all")}</button> '
+               f'<button class="btn" onclick=\'fileAction("{_js(relfile)}","reset")\'>{t("reset_file")}</button> '
                f'<span class=pct><b style="color:{COLORS["validated"]}">{vdone}</b>/{total}</span>'
                if relfile and lrows else "")
     fileline = (f'<p>📄 <a href="/file?f={quote(relfile, safe="")}">{_h(relfile)}</a> '
@@ -541,7 +609,7 @@ def namegen_view():
                 f'.textContent,this)">📋 {"copia per debug (istruzioni + pack + nomi + tag)" if lang()=="it" else "copy for debug (instructions + pack + names + tags)"}</button></p>'
                 f'<pre id=dbg hidden>{_h(chr(10).join(dbg))}</pre>')
 
-    body = (f'{_ng_toggle("rulepack")}<p class=muted>{t("ng_intro")}</p>{_ng_form(q_raw, sel, n, i, len(shown))}'
+    body = (f'{_ng_toggle("rulepack")}<p class=muted>{t("ng_intro")}</p>{_ng_form(q_raw, sel, n, i, len(shown), hidev=hidev, presets=presets)}'
             f'<h3>{_h(sel)}</h3>{fileline}{pager}{copy_dbg}{names_html}')
     return render(body, "names")
 
@@ -552,12 +620,17 @@ def _genenames_view():
     keys = sorted(packs.keys(), key=_pack_order)
     q_raw = request.args.get("q", "").strip()
     q = q_raw.lower()
-    shown = [k for k in keys if q in k.lower()] if q else keys
+    hidev = request.args.get("hidev") == "1"
+    presets = _ng_presets(keys, "gene")
+    shown = [k for k in keys if q in k.lower()] if q else list(keys)
+    if hidev:
+        vf = _validated_files()
+        shown = [k for k in shown if packs[k].get("file", "") not in vf]
     n = max(1, min(200, int(request.args.get("n", 20) or 20)))
     toggle = _ng_toggle("gene")
     if not shown:
         return render(f'{toggle}<p class=muted>{t("gn_intro")}</p>'
-                      f'{_ng_form(q_raw, "", n, 0, 0, kind="gene")}<p class=muted>{t("gn_none")}</p>', "names")
+                      f'{_ng_form(q_raw, "", n, 0, 0, kind="gene", hidev=hidev, presets=presets)}<p class=muted>{t("gn_none")}</p>', "names")
 
     i = max(0, min(int(request.args.get("i", 0) or 0), len(shown) - 1))
     sel = shown[i]
@@ -587,7 +660,7 @@ def _genenames_view():
                 f'{_frag_row("prefix", "prefix")}{_frag_row("suffix", "suffix")}</tbody></table>')
     glabel = f' <span class=tag>{_h(g["label"])}</span>' if g["label"] else ""
 
-    qs = f'kind=gene&q={quote(q_raw)}&n={n}'
+    qs = f'kind=gene&q={quote(q_raw)}&n={n}' + ('&hidev=1' if hidev else '')
     prev = (f'<a class=btn href="/namegen?{qs}&i={i-1}">{t("ng_prev")}</a>' if i > 0
             else f'<span class="btn" style="opacity:.4">{t("ng_prev")}</span>')
     nxt = (f'<a class=btn href="/namegen?{qs}&i={i+1}">{t("ng_next")}</a>' if i < len(shown) - 1
@@ -615,23 +688,60 @@ def _genenames_view():
     valbtns = (f'{vbadge}'
                f'<button class="btn g" onclick=\'fileAction("{_js(relfile)}","validated")\'>{t("validate_file")}</button> '
                f'<button class="btn k" onclick=\'fileAction("{_js(relfile)}","keep")\'>{t("keep_all")}</button> '
+               f'<button class="btn" onclick=\'fileAction("{_js(relfile)}","reset")\'>{t("reset_file")}</button> '
                f'<span class=pct><b style="color:{COLORS["validated"]}">{vdone}</b>/{total}</span>'
                if relfile and lrows else "")
     fileline = (f'<p>📄 <a href="/file?f={quote(relfile, safe="")}">{_h(relfile)}</a></p><p>{valbtns}</p>')
 
-    body = (f'{toggle}<p class=muted>{t("gn_intro")}</p>{_ng_form(q_raw, sel, n, i, len(shown), kind="gene")}'
+    body = (f'{toggle}<p class=muted>{t("gn_intro")}</p>{_ng_form(q_raw, sel, n, i, len(shown), kind="gene", hidev=hidev, presets=presets)}'
             f'<h3>{_h(sel)}{glabel}</h3>{fileline}{pager}'
             f'<p class=muted>{t("gn_frags")}:</p>{frag_tbl}{names_html}')
     return render(body, "names")
 
 
-def _ng_form(q: str, sel: str, n: int, i: int, total: int, kind: str = "rulepack") -> str:
-    ph = "namer / faction / map…" if kind == "rulepack" else "gene / xenotype…"
+def _validated_files() -> set[str]:
+    """File il cui insieme di tag è tutto 'validated' (badge verde) — per nasconderli."""
+    by: dict[str, list] = defaultdict(list)
+    for r in L.load().values():
+        by[r["file"]].append(r)
+    return {f for f, rs in by.items()
+            if rs and all(x["status"] == "validated" for x in rs)}
+
+
+def _ng_presets(keys, kind: str) -> list[tuple[str, str]]:
+    """Voci predefinite del filtro (valore-q, etichetta): namer/tutto + un preset
+    per ogni DLC presente. Il valore-q è la sottostringa che il filtro già usa."""
+    seen = {k.split(" · ", 1)[0] for k in keys}
+    dlcs_present = [d for d in config.DLCS if d in seen]
+    if kind == "gene":
+        base = [("", t("ng_pre_all_gene"))]
+    else:
+        base = [("Namer", t("ng_pre_namers")), ("", t("ng_pre_all"))]
+    return base + [(f"{d} · ", f'{t("ng_pre_dlc")} {d}') for d in dlcs_present]
+
+
+def _ng_form(q: str, sel: str, n: int, i: int, total: int, kind: str = "rulepack",
+             hidev: bool = False, presets: list | None = None) -> str:
+    hv_lbl = "nascondi file validati" if lang() == "it" else "hide validated files"
+    chk = " checked" if hidev else ""
+    # menu a tendina predefinito al posto del testo libero. Se q non è tra i preset
+    # (es. arrivo da un link «DLC · file» dalla scheda progressi) lo aggiungo come
+    # voce selezionata così resta visibile che filtro è attivo.
+    presets = presets or []
+    pvals = {v for v, _ in presets}
+    opts = "".join(f'<option value="{_h(v)}"{" selected" if v == q else ""}>{_h(lbl)}</option>'
+                   for v, lbl in presets)
+    if q not in pvals:
+        opts = f'<option value="{_h(q)}" selected>« {_h(q)} »</option>' + opts
+    qsel = (f'<select name=q style="min-width:220px" '
+            f'onchange="this.form.i.value=0;this.form.submit()">{opts}</select>')
     return (f'<form class=flt method=get>{t("ng_filter")} '
             f'<input type=hidden name=kind value="{kind}">'
-            f'<input name=q value="{_h(q)}" style="width:220px" placeholder="{ph}">'
+            f'{qsel}'
             f'<input type=hidden name=i value="{i}">'
             f'{t("ng_count")} <input name=n type=number min=1 max=200 value="{n}" style="width:70px">'
+            f'<label style="margin-left:8px;font-size:.9em" title="{hv_lbl}">'
+            f'<input type=checkbox name=hidev value=1{chk} onchange="this.form.submit()"> {hv_lbl}</label>'
             f'<button class=btn type=submit>{t("ng_gen")}</button></form>')
 
 
@@ -641,8 +751,12 @@ def _ng_toggle(active: str) -> str:
         on = " g" if kind == active else ""
         href = "/namegen" if kind == "rulepack" else "/namegen?kind=gene"
         return f'<a class="btn{on}" href="{href}">{label}</a>'
+    reset_all = (f'<button class="btn" style="margin-left:auto" '
+                 f'title="{t("ng_reset_all_ask")}" '
+                 f'onclick=\'resetNG("{active}","{_js(t("ng_reset_all_ask"))}")\'>'
+                 f'{t("ng_reset_all")}</button>')
     return (f'<div class=flt style="margin-bottom:6px">'
-            f'{tab("rulepack", t("gn_tab_rp"))}{tab("gene", t("gn_tab_gene"))}</div>')
+            f'{tab("rulepack", t("gn_tab_rp"))}{tab("gene", t("gn_tab_gene"))}{reset_all}</div>')
 
 
 @app.post("/api/set")
@@ -654,7 +768,22 @@ def api_set():
         keys = {(r["dlc"], r["file"], r["tag"]) for r in L.load().values() if r["file"] == f}
     else:
         keys = {tuple(k) for k in raw}
+    if data["status"] == "reset":
+        return jsonify(ok=True, changed=L.reset_keys(keys))
     return jsonify(ok=True, changed=L.set_status_keys(keys, data["status"]))
+
+
+@app.post("/api/reset_ng")
+def api_reset_ng():
+    """Reset massivo: riporta allo stato calcolato TUTTI i file namegen della
+    sotto-scheda (rulepack o gene). Per «ricominciare da capo» la revisione nomi."""
+    kind = (request.get_json(force=True) or {}).get("kind", "rulepack")
+    if kind == "gene":
+        files = {p["file"] for p in NG.load_gene_symbolpacks().values()}
+    else:
+        files = {p["file"] for p in NG.load_rulepacks().values()}
+    keys = {(r["dlc"], r["file"], r["tag"]) for r in L.load().values() if r["file"] in files}
+    return jsonify(ok=True, changed=L.reset_keys(keys))
 
 
 @app.post("/api/rebuild")

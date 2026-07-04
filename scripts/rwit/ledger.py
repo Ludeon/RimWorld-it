@@ -311,6 +311,32 @@ def set_status_keys(keys, status: str) -> int:
     return n
 
 
+def reset_keys(keys) -> int:
+    """Riporta righe specifiche allo stato *calcolato* da _base_status (annulla una
+    validazione/keep manuale). Rifissa gli hash dal testo XML corrente cosi il reset
+    e stabile a un rebuild successivo. Ritorna le righe toccate."""
+    keys = {tuple(k) for k in keys}
+    cur: dict[tuple, tuple[str, str]] = {}
+    for relf in {k[1] for k in keys}:
+        for tag, (it, en) in texts_for_file(relf).items():
+            cur[(relf, tag)] = (it, en)
+    rows = list(load().values())
+    n = 0
+    for row in rows:
+        key = (row["dlc"], row["file"], row["tag"])
+        if key not in keys:
+            continue
+        it, en = cur.get((row["file"], row["tag"]), ("", ""))
+        row["status"] = _base_status(it, en)
+        row["en_sha"], row["it_sha"] = _sha(en), _sha(it)
+        n += 1
+    with LEDGER.open("w", encoding="utf-8", newline="") as fh:
+        w = csv.DictWriter(fh, fieldnames=FIELDS)
+        w.writeheader()
+        w.writerows(rows)
+    return n
+
+
 _STATE_COLORS = {
     "validated": "#3fb950", "translated": "#58a6ff", "modified": "#d29922",
     "keep": "#8b949e", "stale": "#db6d28", "untranslated": "#6e7681",
