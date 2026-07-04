@@ -9,7 +9,7 @@
   <MessageColonistInFinalStagesOfLabor>Il lavoro di {PAWN_labelShort} è entrato nelle fasi finali.</MessageColonistInFinalStagesOfLabor>
 
   <!-- EN: A mech charger was destroyed while {PAWN_nameDef} was charging! The power disruption has scrambled its brain, and it is going berserk. -->
-  <MessageMechChargerDestroyedMechGoesBerserk>Un caricatore del mech è stato distrutto mentre {PAWN_nameDef} stava caricando! L'interruzione del potere gli ha confuso il cervello e sta impazzendo.</MessageMechChargerDestroyedMechGoesBerserk>
+  <MessageMechChargerDestroyedMechGoesBerserk>Un caricatore del mech è stato distrutto mentre {PAWN_nameDef} stava caricando! L'interruzione dell'energia gli ha confuso il cervello e sta impazzendo.</MessageMechChargerDestroyedMechGoesBerserk>
 
   <!-- EN: Cannot use {ABILITY_label} on anyone who would actively resist. -->
   <MessageCantUseOnResistingPerson>Non puoi usare {ABILITY_label} su chiunque voglia resistere attivamente.</MessageCantUseOnResistingPerson>
@@ -20,7 +20,7 @@
   <!-- EN: Xenogerms can only be implanted into colonists, prisoners, and slaves. -->
   <MessageCanOnlyTargetColonistsPrisonersAndSlaves>Gli xenogermi possono essere impiantati solo nei coloni, nei prigionieri e negli schiavi.</MessageCanOnlyTargetColonistsPrisonersAndSlaves>
   <!-- EN: Cannot implant in temporary faction members. -->
-  <MessageCannotImplantInTempFactionMembers>Non è possibile impiantarsi in membri temporanei della fazione.</MessageCannotImplantInTempFactionMembers>
+  <MessageCannotImplantInTempFactionMembers>Non è possibile eseguire l'impianto in membri temporanei della fazione.</MessageCannotImplantInTempFactionMembers>
   <!-- EN: A xenogerm has been completed. -->
   <MessageXenogermCompleted>Uno xenogerme è stato completato.</MessageXenogermCompleted>
   <!-- EN: Work on the xenogerm at {0_labelShort} was cancelled: Missing required genepack. -->
@@ -38,7 +38,7 @@
   <MessageCaravanRemovingEscortingMech>Rimozione automatica di {MECH_nameDef} dalla carovana, poiché sta scortando {OVERSEER_nameDef}</MessageCaravanRemovingEscortingMech>
 
   <!-- EN: {0} was a mechanitor. You can remove {0_possessive} {1_label} and use it on a colonist. -->
-  <MessageMechanitorCasketOpened>{0} era un meccanitor. Puoi rimuovere il {1_label} di {0_possessive} e usarlo su un colono.</MessageMechanitorCasketOpened>
+  <MessageMechanitorCasketOpened>{0} era un meccanista. Puoi rimuovere il {0_possessive} {1_label} e usarlo su un colono.</MessageMechanitorCasketOpened>
   
   <!-- EN: Some prisoners' interaction mode required a bloodfeeder. Since the last bloodfeeder is gone, their interaction modes have reset to "No interaction". -->
   <MessageNoBloodfeedersPrisonerInteractionReset>La modalità di interazione di alcuni prigionieri richiedeva un mangiatore di sangue. Da quando l'ultimo mangiatore di sangue se n'è andato, le loro modalità di interazione sono state reimpostate su "Nessuna interazione".</MessageNoBloodfeedersPrisonerInteractionReset>
@@ -48,7 +48,7 @@
   
   <!-- Pollution -->
   <!-- EN: {0} has been angered ({1}) -->
-  <MessageAngeredPollutedCell>{0} è stato arrabbiato ({1})</MessageAngeredPollutedCell>
+  <MessageAngeredPollutedCell>{0} si è arrabbiato ({1})</MessageAngeredPollutedCell>
   <!-- EN: Need unpolluted terrain. -->
   <MessageWarningPollutedCell>Hai bisogno di terreno non inquinato.</MessageWarningPollutedCell>
   <!-- EN: Need polluted terrain. -->
@@ -67,13 +67,13 @@
   <MessagePlantDiedOfRot_PollutedTerrain>{0} è marcito a causa del terreno inquinato.</MessagePlantDiedOfRot_PollutedTerrain>
 
   <!-- EN: {PAWN_nameDef} must be downed before you can force {PAWN_objective} to reimplant {PAWN_possessive} xenogerm. -->
-  <MessageTargetMustBeDownedToForceReimplant>{PAWN_nameDef} deve essere abbattuto prima di poter forzare {PAWN_objective} a reimpiantare lo xenogerme di {PAWN_possessive}.</MessageTargetMustBeDownedToForceReimplant>
+  <MessageTargetMustBeDownedToForceReimplant>{PAWN_nameDef} deve essere abbattuto prima di poter forzare {PAWN_objective} a reimpiantare il {PAWN_possessive} xenogerme.</MessageTargetMustBeDownedToForceReimplant>
 
   <!-- EN: {0_nameDef} is only {1} years old. {2} work can only be done from age {3}. -->
   <MessageWorkTypeDisabledAge>{0_nameDef} ha solo {1} anni. {2} lavoro può essere svolto solo dall'età di {3} anni.</MessageWorkTypeDisabledAge>
 
   <!-- EN: {PAWN_nameDef} can now wake from deathrest safely. -->
-  <MessageDeathrestingPawnCanWakeSafely>{PAWN_nameDef} ora può risvegliarsi dal Deathrest in tutta sicurezza.</MessageDeathrestingPawnCanWakeSafely>
+  <MessageDeathrestingPawnCanWakeSafely>{PAWN_nameDef} ora può risvegliarsi dal riposo mortale in tutta sicurezza.</MessageDeathrestingPawnCanWakeSafely>
 
   <!-- EN: {0_nameDef} has lost control of a {1_kindBase} mech -->
   <MessageMechanitorLostControlOfMech>{0_nameDef} ha perso il controllo di un mech {1_kindBase}</MessageMechanitorLostControlOfMech>
@@ -97,7 +97,7 @@
   <MessageGeneMissingPrerequisite>{0} non ha un gene prerequisito</MessageGeneMissingPrerequisite>
 
   <!-- EN: {PAWN_nameDef}'s deathrest capacity has increased from {OLD} to {NEW}. -->
-  <MessageDeathrestCapacityChanged>La capacità di Deathrest di {PAWN_nameDef} è stata aumentata da {OLD} a {NEW}.</MessageDeathrestCapacityChanged>
+  <MessageDeathrestCapacityChanged>La capacità di riposo mortale di {PAWN_nameDef} è stata aumentata da {OLD} a {NEW}.</MessageDeathrestCapacityChanged>
 
   <!-- EN: The sanguophages will arrive in a few hours for their meeting. -->
   <SanguophagesArrivingSoon>I sanguofagi arriveranno tra poche ore per il loro incontro.</SanguophagesArrivingSoon>
@@ -107,18 +107,18 @@
   <SanguophagesLeavingTemperature>I sanguofagi se ne vanno a causa della temperatura pericolosa per la vita.</SanguophagesLeavingTemperature>
 
   <!-- EN: {PAWN_nameDef} was woken from {PAWN_possessive} deathrest due to sunlight exposure. -->
-  <MessagePawnWokenFromSunlight>{PAWN_nameDef} è stato svegliato dal riposo mortale di {PAWN_possessive} a causa dell'esposizione alla luce solare.</MessagePawnWokenFromSunlight>
+  <MessagePawnWokenFromSunlight>{PAWN_nameDef} è stato svegliato dal {PAWN_possessive} riposo mortale a causa dell'esposizione alla luce solare.</MessagePawnWokenFromSunlight>
   <!-- EN: The {BED_labelShort} {PAWN_nameDef} is assigned to use for deathrest has been exposed to sunlight. {PAWN_nameDef} cannot deathrest there. -->
-  <MessageBedExposedToSunlight>Il {BED_labelShort} {PAWN_nameDef} è stato assegnato per essere utilizzato per il riposo mortale se è stato esposto alla luce solare. {PAWN_nameDef} non può recarsi lì.</MessageBedExposedToSunlight>
+  <MessageBedExposedToSunlight>Il {BED_labelShort} a cui {PAWN_nameDef} è assegnato per il riposo mortale è stato esposto alla luce solare. {PAWN_nameDef} non può fare il riposo mortale lì.</MessageBedExposedToSunlight>
 
   <!-- EN: {PAWN_labelShort} was ejected from a gene extractor due to lack of power. -->
   <GeneExtractorNoPowerEjectedMessage>{PAWN_labelShort} è stato espulso da un estrattore di geni per mancanza di alimentazione.</GeneExtractorNoPowerEjectedMessage>
 
   <!-- Mechanitor -->
   <!-- EN: {PAWN_nameDef}'s brain has been destroyed by the subcore ripscanner. -->
-  <MessagePawnKilledRipscanner>Il cervello di {PAWN_nameDef} è stato distrutto dal ripscanner del subcore.</MessagePawnKilledRipscanner>
+  <MessagePawnKilledRipscanner>Il cervello di {PAWN_nameDef} è stato distrutto dal ripscanner del sottonucleo.</MessagePawnKilledRipscanner>
   <!-- EN: Subcore softscanner completed for {PAWN_nameDef}. -->
-  <MessageSubcoreSoftscannerCompleted>Softscanner del sottocore completato per {PAWN_nameDef}.</MessageSubcoreSoftscannerCompleted>
+  <MessageSubcoreSoftscannerCompleted>Softscanner del sottonucleo completato per {PAWN_nameDef}.</MessageSubcoreSoftscannerCompleted>
 
   <!-- EN: Cannot resurrect dessicated corpses. -->
   <MessageCannotResurrectDessicatedCorpse>Non è possibile resuscitare cadaveri essiccati.</MessageCannotResurrectDessicatedCorpse>
@@ -138,7 +138,7 @@
   <MessageConflictingGenesPresent>Impossibile salvare lo xenotipo con più geni in conflitto.</MessageConflictingGenesPresent>
 
   <!-- EN: {BUILDING_labelShort} has been bound to {PAWN_nameDef} ({CUR}/{MAX} deathrest capacity). -->
-  <MessageDeathrestBuildingBound>{BUILDING_labelShort} è stato vincolato a {PAWN_nameDef} ({CUR}/{MAX} capacità di Deathrest).</MessageDeathrestBuildingBound>
+  <MessageDeathrestBuildingBound>{BUILDING_labelShort} è stato vincolato a {PAWN_nameDef} ({CUR}/{MAX} capacità di riposo mortale).</MessageDeathrestBuildingBound>
 
   <!-- EN: Developmental stage selection disabled by scenario. -->
   <MessageDevelopmentalStageSelectionDisabledByScenario>Selezione della fase di sviluppo disabilitata dallo scenario.</MessageDevelopmentalStageSelectionDisabledByScenario>

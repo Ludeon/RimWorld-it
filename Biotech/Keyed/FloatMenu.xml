@@ -20,13 +20,13 @@
   <!-- EN: Disconnect from {0} -->
   <DisconnectMech>Disconnetti da {0}</DisconnectMech>
   <!-- EN: Permanently disassemble {0} -->
-  <DisassembleMech>{0} smontato permanentemente</DisassembleMech>
+  <DisassembleMech>Smonta permanentemente {0}</DisassembleMech>
   <!-- EN: Cannot permanently disassemble {0} -->
   <CannotDisassembleMech>Impossibile smontare permanentemente {0}</CannotDisassembleMech>
   <!-- EN: Must be overseer -->
   <MustBeOverseer>Deve essere supervisore</MustBeOverseer>
   <!-- EN: Extract -->
-  <Extract>Estratto</Extract>
+  <Extract>Estrai</Extract>
   <!-- EN: Out of command range -->
   <OutOfCommandRange>Fuori campo di comando</OutOfCommandRange>
   <!-- EN: Cannot go here -->
@@ -68,7 +68,7 @@
   <AssignedToOtherPawn>{0_labelShort} è assegnato a un'altra persona.</AssignedToOtherPawn>
 
   <!-- EN: Absorb xenogerm of {PAWN_nameDef} -->
-  <AbsorbXenogerm>Assorbe lo xenogerme di {PAWN_nameDef}</AbsorbXenogerm>
+  <AbsorbXenogerm>Assorbi lo xenogerme di {PAWN_nameDef}</AbsorbXenogerm>
   <!-- EN: Cannot absorb {PAWN_nameDef}'s xenogerm -->
   <CannotAbsorbXenogerm>Impossibile assorbire lo xenogerme di {PAWN_nameDef}</CannotAbsorbXenogerm>
   <!-- EN: {PAWN_nameDef} is already {PAWN_xenotype} -->
@@ -98,10 +98,10 @@
   <!-- EN: Already breastfeeding {BABY_labelShort} -->
   <AlreadyBreastfeeding>Sta già allattando {BABY_labelShort}</AlreadyBreastfeeding>
   <!-- EN: No baby-edible food -->
-  <NoBabyFood>Alimento non commestibile per i bambini</NoBabyFood>
+  <NoBabyFood>Nessun alimento commestibile per i bambini</NoBabyFood>
 
   <!-- EN: play need full -->
-  <CannotInteractBabyPlayFull>il gioco ha bisogno di essere pieno</CannotInteractBabyPlayFull>
+  <CannotInteractBabyPlayFull>bisogno di gioco pieno</CannotInteractBabyPlayFull>
 
   <!-- EN: Feed on {PAWN_nameDef} -->
   <BloodfeedOn>Nutriti con {PAWN_nameDef}</BloodfeedOn>
@@ -122,7 +122,7 @@
   <!-- EN: {BABY_labelShort} is forbidden to {HAULER_labelShort} -->
   <BreastfeedFailReason_BabyForbiddenToHauler>{BABY_labelShort} è vietato a {HAULER_labelShort}</BreastfeedFailReason_BabyForbiddenToHauler>
   <!-- EN: {MOM_labelShort} is forbidden to {HAULER_labelShort} -->
-  <BreastfeedFailReason_MomForbiddenToHauler>{MOM_labelShort} non è consentito a {HAULER_labelShort}</BreastfeedFailReason_MomForbiddenToHauler>
+  <BreastfeedFailReason_MomForbiddenToHauler>{MOM_labelShort} è vietata a {HAULER_labelShort}</BreastfeedFailReason_MomForbiddenToHauler>
   <!-- EN: {MOM_labelShort} can breastfeed {BABY_labelShort} without help -->
   <BreastfeedFailReason_MomIsMobile>{MOM_labelShort} può allattare {BABY_labelShort} senza aiuto</BreastfeedFailReason_MomIsMobile>
   <!-- EN: {HAULER_labelShort} cannot go from {BABY_labelShort} to {MOM_labelShort} -->
@@ -132,7 +132,7 @@
   <!-- EN: No lactating {BABY_factionPawnsPlural} are assigned to {BABY_labelShort} -->
   <BreastfeedFailReason_NoMomsAssignedToBaby>Nessun {BABY_factionPawnsPlural} in allattamento è assegnato a {BABY_labelShort}</BreastfeedFailReason_NoMomsAssignedToBaby>
   <!-- EN: {MOM_labelShort} is not assigned to childcare -->
-  <BreastfeedFailReason_MomNotAssignedToChildcare>{MOM_labelShort} non è assegnato all'assistenza all'infanzia</BreastfeedFailReason_MomNotAssignedToChildcare>
+  <BreastfeedFailReason_MomNotAssignedToChildcare>{MOM_labelShort} non è assegnata all'assistenza all'infanzia</BreastfeedFailReason_MomNotAssignedToChildcare>
   <!-- EN: {MOM_labelShort} is inside a container -->
   <BreastfeedFailReason_MomInsideContainer>{MOM_labelShort} è all'interno di un contenitore</BreastfeedFailReason_MomInsideContainer>
   <!-- EN: {MOM_labelShort} is being carried -->
@@ -144,9 +144,9 @@
   <AcceptXenogerm>Accetta xenogerme {0_xenotype}</AcceptXenogerm>
 
   <!-- EN: Carry {PAWN_labelShort} to recharger -->
-  <CarryToRechargerOrdered>Porta con te {PAWN_labelShort} per ricaricarti</CarryToRechargerOrdered>
+  <CarryToRechargerOrdered>Porta {PAWN_labelShort} al ricaricatore</CarryToRechargerOrdered>
   <!-- EN: Cannot carry {PAWN_labelShort} to recharger -->
-  <CannotCarryToRecharger>Impossibile trasportare {PAWN_labelShort} per ricaricare</CannotCarryToRecharger>
+  <CannotCarryToRecharger>Impossibile trasportare {PAWN_labelShort} al ricaricatore</CannotCarryToRecharger>
   <!-- EN: No available recharger -->
   <CannotCarryToRechargerNoneAvailable>Ricaricatore non disponibile</CannotCarryToRechargerNoneAvailable>
 

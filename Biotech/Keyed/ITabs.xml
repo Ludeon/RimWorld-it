@@ -2,7 +2,7 @@
 <LanguageData>
 
   <!-- EN: The recipe {0} requires a mechanitor to work on it. None of your colonists are mechanitors, so nobody will do this bill. -->
-  <RecipeRequiresMechanitor>La ricetta {0} richiede che un meccanista lavori su di essa. Nessuno dei tuoi coloni è meccanista, quindi nessuno farà questo disegno di legge.</RecipeRequiresMechanitor>
+  <RecipeRequiresMechanitor>La ricetta {0} richiede che un meccanista lavori su di essa. Nessuno dei tuoi coloni è meccanista, quindi nessuno eseguirà questo ordine di lavoro.</RecipeRequiresMechanitor>
 
   <!-- EN: genepacks -->
   <GenepackPlural>pacchetti genetici</GenepackPlural>
@@ -60,19 +60,19 @@
 
   <!-- Social tab (romance) -->
   <!-- EN: Romance -->
-  <TryRomanceButtonLabel>Romanza</TryRomanceButtonLabel>
+  <TryRomanceButtonLabel>Corteggia</TryRomanceButtonLabel>
   <!-- EN: Nobody for {0_labelShort} to romance. -->
-  <TryRomanceNoOptsMessage>Nessuno per {0_labelShort} con cui fare romanticismo.</TryRomanceNoOptsMessage>
+  <TryRomanceNoOptsMessage>Nessuno da corteggiare per {0_labelShort}.</TryRomanceNoOptsMessage>
   <!-- EN: unreachable -->
   <CantRomanceTargetUnreachable>irraggiungibile</CantRomanceTargetUnreachable>
   <!-- EN: sleeping -->
-  <CantRomanceTargetSleeping>dormire</CantRomanceTargetSleeping>
+  <CantRomanceTargetSleeping>addormentato</CantRomanceTargetSleeping>
   <!-- EN: incapacitated -->
   <CantRomanceTargetDowned>incapace</CantRomanceTargetDowned>
   <!-- EN: drafted -->
-  <CantRomanceTargetDrafted>redatto</CantRomanceTargetDrafted>
+  <CantRomanceTargetDrafted>arruolato</CantRomanceTargetDrafted>
   <!-- EN: mental break -->
-  <CantRomanceTargetMentalState>pausa mentale</CantRomanceTargetMentalState>
+  <CantRomanceTargetMentalState>crollo mentale</CantRomanceTargetMentalState>
   <!-- EN: incestuous -->
   <CantRomanceTargetIncest>incestuoso</CantRomanceTargetIncest>
   <!-- EN: low opinion -->
@@ -88,29 +88,29 @@
   <!-- EN: {0_labelShort} cannot try to romance because {0_pronoun} is a prisoner. -->
   <CantRomanceInitiateMessagePrisoner>{0_labelShort} non può provare ad avere una storia d'amore perché {0_pronoun} è prigioniero.</CantRomanceInitiateMessagePrisoner>
   <!-- EN: {0_labelShort} cannot try to romance because {0_pronoun} is a slave. -->
-  <CantRomanceInitiateMessageSlave>{0_labelShort} non può provare ad avere una storia d'amore perché {0_labelShort} è uno schiavo.</CantRomanceInitiateMessageSlave>
+  <CantRomanceInitiateMessageSlave>{0_labelShort} non può provare ad avere una storia d'amore perché {0_pronoun} è uno schiavo.</CantRomanceInitiateMessageSlave>
   <!-- EN: {0_labelShort} cannot try to romance because {0_pronoun} has the asexual trait. -->
-  <CantRomanceInitiateMessageAsexual>{0_labelShort} non può provare ad avere una storia d'amore perché {0_labelShort} ha il tratto asessuale.</CantRomanceInitiateMessageAsexual>
+  <CantRomanceInitiateMessageAsexual>{0_labelShort} non può provare ad avere una storia d'amore perché {0_pronoun} ha il tratto asessuale.</CantRomanceInitiateMessageAsexual>
   <!-- EN: {0_labelShort} cannot try to romance because {0_pronoun} is incapacitated. -->
   <CantRomanceInitiateMessageDowned>{0_labelShort} non può provare ad avere una relazione romantica perché {0_pronoun} non è in grado di farlo.</CantRomanceInitiateMessageDowned>
   <!-- EN: {0_labelShort} cannot try to romance because {0_pronoun} is drafted. -->
-  <CantRomanceInitiateMessageDrafted>{0_labelShort} non può provare ad avere una relazione romantica perché {0_labelShort} è al draft.</CantRomanceInitiateMessageDrafted>
+  <CantRomanceInitiateMessageDrafted>{0_labelShort} non può provare ad avere una relazione romantica perché {0_pronoun} è arruolato.</CantRomanceInitiateMessageDrafted>
   <!-- EN: {0_labelShort} cannot try to romance because {0_pronoun} is in an unfit mental state. -->
   <CantRomanceInitiateMessageMentalState>{0_labelShort} non può provare ad avere una relazione romantica perché {0_pronoun} è in uno stato mentale inadatto.</CantRomanceInitiateMessageMentalState>
   <!-- EN: {0_labelShort} cannot try to romance because {0_pronoun} is unable to speak. -->
   <CantRomanceInitiateMessageTalk>{0_labelShort} non può provare ad avere una relazione romantica perché {0_pronoun} non è in grado di parlare.</CantRomanceInitiateMessageTalk>
   <!-- EN: {0_labelShort} tried romancing recently and must wait {1} until trying again. -->
-  <CantRomanceInitiateMessageCooldown>{0_labelShort} ha provato a fare l'amore di recente e deve attendere {1} finché non riproverà.</CantRomanceInitiateMessageCooldown>
+  <CantRomanceInitiateMessageCooldown>{0_labelShort} ha provato a corteggiare di recente e deve attendere {1} finché non riproverà.</CantRomanceInitiateMessageCooldown>
   <!-- EN: {0_labelShort}'s attempt to romance {1_labelShort} was unsuccessful. -->
   <TryRomanceFailedMessage>Il tentativo di {0_labelShort} di fare una storia d'amore con {1_labelShort} non ha avuto successo.</TryRomanceFailedMessage>
   <!-- EN: Having {INITIATOR_nameDef} romance {TARGET_nameDef} could sow resentment among existing partners, lead to breakups, and cause altercations. -->
-  <RomanceExistingRelationshipWarning>Avere una storia d'amore con {INITIATOR_nameDef} {TARGET_nameDef} potrebbe seminare risentimento tra i partner esistenti, portare a rotture e causare alterchi.</RomanceExistingRelationshipWarning>
+  <RomanceExistingRelationshipWarning>Il fatto che {INITIATOR_nameDef} corteggi {TARGET_nameDef} potrebbe seminare risentimento tra i partner esistenti, portare a rotture e causare alterchi.</RomanceExistingRelationshipWarning>
   <!-- EN: Romance chance -->
-  <RomanceChance>Possibilità di romanticismo</RomanceChance>
+  <RomanceChance>Probabilità di corteggiamento</RomanceChance>
   <!-- EN: already {PAWN_nameDef}'s {RELATION} -->
   <RomanceChanceExistingRelation>già {RELATION} di {PAWN_nameDef}</RomanceChanceExistingRelation>
   <!-- EN: Cannot romance -->
-  <RomanceChanceCant>Non posso fare romanticismo</RomanceChanceCant>
+  <RomanceChanceCant>Impossibile corteggiare</RomanceChanceCant>
   <!-- EN: Relative age -->
   <RomanceChanceAgeFactor>Età relativa</RomanceChanceAgeFactor>
   <!-- EN: Beauty -->
@@ -118,9 +118,9 @@
   <!-- EN: Opinion -->
   <RomanceChanceOpinionFactor>Opinione</RomanceChanceOpinionFactor>
   <!-- EN: Opinion of partner -->
-  <RomanceChancePartnerFactor>Opinione del socio</RomanceChancePartnerFactor>
+  <RomanceChancePartnerFactor>Opinione del partner</RomanceChancePartnerFactor>
   <!-- EN: {0_labelShort} was unable to romance {1_labelShort} -->
-  <RomanceFailedUnexpected>{0_labelShort} non è riuscito a fare l'amore con {1_labelShort}</RomanceFailedUnexpected>
+  <RomanceFailedUnexpected>{0_labelShort} non è riuscito a corteggiare {1_labelShort}</RomanceFailedUnexpected>
   <!-- EN: {0_nameDef} is already in a relationship. -->
   <RomanceWarningMonogamous>{0_nameDef} ha già una relazione.</RomanceWarningMonogamous>
   <!-- EN: {0_nameDef} already has {1} partners. -->
