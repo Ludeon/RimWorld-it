@@ -17,11 +17,11 @@
   <!-- EN: Holders of this title must be covered in some combination of -->
   <RoyalTitleRequiredApparelStatDescription>I detentori di questo titolo devono indossare una combinazione di</RoyalTitleRequiredApparelStatDescription>
   <!-- EN: Any prestige armor -->
-  <ApparelRequirementAnyPrestigeArmor>Qualsiasi armatura prestigiosa</ApparelRequirementAnyPrestigeArmor>
+  <ApparelRequirementAnyPrestigeArmor>Qualsiasi armatura di prestigio</ApparelRequirementAnyPrestigeArmor>
   <!-- EN: Any psycaster apparel -->
-  <ApparelRequirementAnyPsycasterApparel>Qualsiasi abbigliamento psycaster</ApparelRequirementAnyPsycasterApparel>
+  <ApparelRequirementAnyPsycasterApparel>Qualsiasi abbigliamento da psycaster</ApparelRequirementAnyPsycasterApparel>
   <!-- EN: or any psycaster or prestige apparel -->
-  <ApparelRequirementOrAnyPsycasterOrPrestigeApparel>o qualsiasi abito da psionico o d’alta classe</ApparelRequirementOrAnyPsycasterOrPrestigeApparel>
+  <ApparelRequirementOrAnyPsycasterOrPrestigeApparel>o qualsiasi abbigliamento da psycaster o di prestigio</ApparelRequirementOrAnyPsycasterOrPrestigeApparel>
   <!-- EN: Disallowed work types -->
   <DisabledWorkTypes>Compiti non consentiti</DisabledWorkTypes>
   <!-- EN: Allowed foods -->
@@ -31,15 +31,15 @@
 
   <!-- Royal implants -->
   <!-- EN: According to laws of {FACTION_name}, one must have the title of {TITLE} to legally use a {IMPLANT}.\n\n{VIOLATIONTRIGGER}, there is a chance {FACTION_name} will detect its psychic signature. This will lead to diplomatic consequences. -->
-  <RoyalImplantIllegalUseWarning>Secondo le leggi di {FACTION_name}, una persona deve avere il titolo di {TITLE} per usare legalmente un {IMPLANT}.\n\n{VIOLATIONTRIGGER}, c'è la possibilità che {FACTION_name} rilevi la sua presenza psichica. Ciò porterà a conseguenze diplomatiche.</RoyalImplantIllegalUseWarning>
+  <RoyalImplantIllegalUseWarning>Secondo le leggi di {FACTION_name}, per usare legalmente un {IMPLANT} bisogna avere il titolo di {TITLE}.\n\n{VIOLATIONTRIGGER}, c'è la possibilità che {FACTION_name} ne rilevi la firma psichica. Questo porterà a conseguenze diplomatiche.</RoyalImplantIllegalUseWarning>
   <!-- EN: Install this implant anyway? -->
-  <RoyalImplantInstallConfirmation>Installare comunque questo congegno?</RoyalImplantInstallConfirmation>
+  <RoyalImplantInstallConfirmation>Installare comunque questo impianto?</RoyalImplantInstallConfirmation>
   <!-- EN: Upgrade this implant anyway? -->
-  <RoyalImplantUpgradeConfirmation>Aggiornare comunque questo congegno?</RoyalImplantUpgradeConfirmation>
+  <RoyalImplantUpgradeConfirmation>Potenziare comunque questo impianto?</RoyalImplantUpgradeConfirmation>
 
   <!-- Royal weapons -->
   <!-- EN: Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else. -->
-  <BladelinkEquipWarning>Una volta legata a chi la impugna, lo spirito dell'arma si rifiuterà di farsi impugnare da chiunque altro.</BladelinkEquipWarning>
+  <BladelinkEquipWarning>Una volta legata a qualcuno, la personalità dell'arma rifiuterà di farsi impugnare da chiunque altro.</BladelinkEquipWarning>
   <!-- EN: The weapon has the following traits -->
   <BladelinkEquipWarningTraits>L'arma ha i seguenti tratti</BladelinkEquipWarningTraits>
   <!-- EN: Are you sure you want to equip this item? -->
@@ -53,7 +53,7 @@
 
   <!-- Skip -->
   <!-- EN: Cannot skip {PAWN_labelShort} -->
-  <CannotSkipTarget>Impossibile saltare {PAWN_labelShort}</CannotSkipTarget>
+  <CannotSkipTarget>Impossibile teletrasportare {PAWN_labelShort}</CannotSkipTarget>
   <!-- EN: Too large -->
   <CannotSkipTargetTooLarge>Troppo grande</CannotSkipTargetTooLarge>
   <!-- EN: Psychic resistance -->
@@ -61,13 +61,13 @@
 
   <!-- Warning -->
   <!-- EN: This quest will reward {FACTION_royalFavorLabel} and thus royal titles for {PAWN_labelShort}. -->
-  <QuestGivesRoyalFavor>Questa missione ricompenserà {FACTION_royalFavorLabel} e quindi i titoli reali per {PAWN_labelShort}.</QuestGivesRoyalFavor>
+  <QuestGivesRoyalFavor>Questa missione darà {FACTION_royalFavorLabel}, e quindi titoli reali, a {PAWN_labelShort}.</QuestGivesRoyalFavor>
   <!-- EN: {PAWN_labelShort} is incapable of social tasks. Those with royal titles have great need of social skills, so if {PAWN_labelShort} gains a title, {PAWN_pronoun} may have a difficult time. Another colonist might be more socially-adept. -->
   <RoyalIncapableOfSocial>{PAWN_labelShort} non è in grado di svolgere attività sociali. Quelli con titoli reali hanno un grande bisogno di abilità sociali, quindi se {PAWN_labelShort} ottiene un titolo, {PAWN_pronoun} potrebbe avere difficoltà. Un altro colono sarebbe probabilmente più socialmente abile.</RoyalIncapableOfSocial>
   <!-- EN: Since {PAWN_labelShort} is {2}, {PAWN_pronoun} will demand that the title's privileges be fully respected. {PAWN_labelShort} may refuse to do certain work types or eat low-class food, and will issue decrees. Another colonist would probably be more flexible. -->
   <RoyalWithConceitedTrait>Poiché {PAWN_labelShort} è {2}, {PAWN_pronoun} richiederà che i privilegi del titolo siano pienamente rispettati. {PAWN_labelShort} può rifiutarsi di svolgere determinati tipi di lavoro o mangiare cibo di bassa qualità e potrà emanare decreti. Un altro colono sarebbe probabilmente più flessibile.</RoyalWithConceitedTrait>
   <!-- EN: Since {PAWN_labelShort} is {2}, the psylink might not be useful for {PAWN_objective}. -->
-  <RoyalWithTraitAffectingPsylinkNegatively>Poiché {PAWN_labelShort} è {2}, lo psylink potrebbe non essere utile per {PAWN_objective}.</RoyalWithTraitAffectingPsylinkNegatively>
+  <RoyalWithTraitAffectingPsylinkNegatively>Poiché {PAWN_labelShort} è {2}, lo psylink potrebbe non {PAWN_gender ? essergli : esserle} utile.</RoyalWithTraitAffectingPsylinkNegatively>
   <!-- EN: {PAWN_labelShort}'s psylink is not at a high enough level to use {ABILITY}.\n\nGain this power anyways? -->
   <PsylinkTooLowForGainAbility>Lo psylink di {PAWN_labelShort} non è a un livello sufficientemente alto per poter usare {ABILITY}.\n\nVuoi ottenere comunque questo potere?</PsylinkTooLowForGainAbility>
   <!-- EN: This shuttle is empty. If you send it away, you won't be able to use it again.\n\nSend it anyways? -->

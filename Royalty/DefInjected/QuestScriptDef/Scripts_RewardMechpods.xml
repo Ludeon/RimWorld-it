@@ -13,7 +13,7 @@
     <li>dangersDescription-></li>
     <li>questDescription(asker_factionLeader==True)->[asker_nameDef], [asker_faction_leaderTitle] di [asker_faction_name], ha una richiesta. [commonMainPart]</li>
     <li>questDescription(asker_royalInCurrentFaction==True)->[asker_nameDef], un [asker_royalTitleInCurrentFaction] di [asker_faction_name], ha una richiesta. [commonMainPart]</li>
-    <li>commonMainPart->Uno sciame di mechanoidi ha attaccato gli insediamenti di [asker_possessive]. [asker_pronoun] vuole che tu invii un segnale ai mechanoidi per distrarli mentre [asker_pronoun] elimina l’alveare. Se lo farai, (*Threat)un cluster di mechanoidi(/Threat) atterrerà presso [map_definite].[dangersDescription]\n\nIl cluster sarà inizialmente dormiente. Potrebbe avere un attivatore a conto alla rovescia, oppure potrebbe rimanere inattivo per sempre finché non verrà disturbato.[helpersParagraph]</li>
+    <li>commonMainPart->Uno sciame di meccanoidi ha attaccato i suoi insediamenti. [asker_pronoun] vuole che tu invii un segnale ai meccanoidi per distrarli mentre [asker_pronoun] elimina l’alveare. Se lo farai, (*Threat)un cluster di meccanoidi(/Threat) atterrerà presso [map_definite].[dangersDescription]\n\nIl cluster sarà inizialmente dormiente. Potrebbe avere un attivatore a conto alla rovescia, oppure potrebbe rimanere inattivo per sempre finché non verrà disturbato.[helpersParagraph]</li>
   </ThreatReward_MechPods_MiscReward.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->[menace] cluster</li>
@@ -31,13 +31,13 @@
     <li>menace->fear</li>
   -->
   <ThreatReward_MechPods_MiscReward.questNameRules.rulesStrings>
-    <li>questName->[menace] cluster</li>
-    <li>questName->[menace] capsule</li>
+    <li>questName->Cluster di [menace]</li>
+    <li>questName->Capsule di [menace]</li>
     <li>questName->[nameBased]</li>
     <li>nameBased->i mech di [asker_nameDef]</li>
-    <li>nameBased->i mechanoidi di [asker_nameDef]</li>
-    <li>nameBased->il cluster di mechanoidi di [asker_nameDef]</li>
-    <li>nameBased->i mech di [asker_nameDef] [menace]</li>
+    <li>nameBased->i meccanoidi di [asker_nameDef]</li>
+    <li>nameBased->il cluster di meccanoidi di [asker_nameDef]</li>
+    <li>nameBased->[menace]: i mech di [asker_nameDef]</li>
     <li>menace->minaccia</li>
     <li>menace->flagello</li>
     <li>menace->pericolo</li>

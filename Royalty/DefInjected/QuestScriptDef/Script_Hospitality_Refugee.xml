@@ -204,11 +204,11 @@
     <li>claimInfo(lodgerCount==1)->[asker_nameDef] afferma di aver perso la propria casa in un recente attacco.</li>
     <li>claimInfo(lodgerCount==1)->[asker_nameDef] afferma di essersi svegliat[helpers_o_a] dal criptosonno da sol[helpers_o_a] e senza amici.</li>
     <li>claimInfo(lodgerCount==1)->[asker_nameDef] afferma di essere stat[helpers_o_a] cacciat[helpers_o_a] di casa da un ex amante vendicativo.</li>
-    <li>claimInfo(lodgerCount==1)->[asker_nameDef] afferma di essere stat[helpers_o_a] bandit{asker_gender ? a : 0} dopo una discussione con il capo villaggio.</li>
+    <li>claimInfo(lodgerCount==1)->[asker_nameDef] afferma di essere stat[helpers_o_a] bandit[helpers_o_a] dopo una discussione con il capo villaggio.</li>
     <li>claimInfo(lodgerCount>=2)->Affermano di aver perso la loro casa in un recente attacco.</li>
     <li>claimInfo(lodgerCount>=2)->Affermano di essere sfuggiti a un’operazione di espianto di organi.</li>
     <li>claimInfo(lodgerCount>=2)->Dicono di essere scappati da una carovana di schiavi.</li>
-    <li>claimInfo(lodgerCount>=2)->Dicono che una carestia li ha fatti morire di fame nel loro villaggio.</li>
+    <li>claimInfo(lodgerCount>=2)->Dicono che la ruggine delle colture li ha costretti ad abbandonare il villaggio per fame.</li>
     <li>claimInfo(lodgerCount>=2)->Dicono che una grande tempesta elettrica ha bruciato la loro casa.</li>
     <li>claimInfo(lodgerCount>=2)->Dicono che la loro carovana è stata assaltata e tutto è stato rubato.</li>
     <li>claimInfo(lodgerCount>=2)->Dicono di essere stati banditi dalla loro città per disaccordi morali.</li>
@@ -276,7 +276,7 @@
     <li>lodgerAdj->sconosciut[asker_a_o_i]</li>
     <li>lodgerAdj->desolat[asker_a_o_i]</li>
     <li>lodgerAdj->abbandonat[asker_a_o_i]</li>
-    <li>lodgerSingle->viaggiator[helpers_e_ice]</li>
+    <li>lodgerSingle->{asker_gender ? viaggiatore : viaggiatrice}</li>
     <li>lodgerSingle->rifugiat[asker_o_a]</li>
     <li>lodgerSingle->vagabond[asker_o_a]</li>
     <li>lodgerSingle->sopravvissut[asker_o_a]</li>
@@ -343,7 +343,7 @@
     <li>areIs(lodgerCount>=2)->are</li>
   -->
   <RefugeeBetrayal.questDescriptionRules.rulesStrings>
-    <li>questDescription->[factionOpponent_nameDef], un [factionOpponent_faction_pawnSingular] di [factionOpponent_faction_name], ha saputo che [asker_nameDef] [otherLodgers] [areIs] ospitato presso [map_definite]. [factionOpponent_pronoun] è nemico di [asker_nameDef] e vuole vedere [asker_objective] morto.\n\n[factionOpponent_pronoun] ti invierà la seguente ricompensa se uccidi tutti i membri di [faction_name] (valore totale [betrayalRewardMarketValue_money]):\n\n[betrayalRewards]</li>
+    <li>questDescription->[factionOpponent_nameDef], un [factionOpponent_faction_pawnSingular] di [factionOpponent_faction_name], ha saputo che [asker_nameDef] [otherLodgers] [areIs] ospitato presso [map_definite]. [factionOpponent_pronoun] è nemico di [asker_nameDef] e vuole la sua morte.\n\n[factionOpponent_pronoun] ti invierà la seguente ricompensa se uccidi tutti i membri di [faction_name] (valore totale [betrayalRewardMarketValue_money]):\n\n[betrayalRewards]</li>
     <li>lodgersLabelSingularOrPlural(lodgerCount==1)->[lodgersLabel]</li>
     <li>lodgersLabelSingularOrPlural(lodgerCount>=2)->[lodgersLabelPlural]</li>
     <li>otherLodgers(lodgerCount==1)-></li>
@@ -367,7 +367,7 @@
   -->
   <RefugeeDelayedReward.questContentRules.rulesStrings>
     <li>rewardLetterLabel->Ricompensa per l'ospitalità</li>
-    <li>rewardLetterText->[rewardGiver_nameDef] ti ha contattato. [rewardDelayTicks_duration] fa, hai aiutato [rewardGiver_objective] in circostanze disperate.\n\nDa allora, [rewardGiver_pronoun] si è ripres{rewardGiver_gender ? o : a} e ora vuole ricompensarti adeguatamente per il tuo aiuto. [rewardGiver_pronoun] ti sta inviando quanto segue tramite capsula di atterraggio:\n\n[listOfRewards]</li>
+    <li>rewardLetterText->[rewardGiver_nameDef] ti ha contattato. [rewardDelayTicks_duration] fa, {rewardGiver_gender ? l'hai aiutato : l'hai aiutata} in un momento disperato.\n\nDa allora, [rewardGiver_pronoun] si è ripres{rewardGiver_gender ? o : a} e ora vuole ricompensarti adeguatamente per il tuo aiuto. [rewardGiver_pronoun] ti sta inviando quanto segue tramite capsula di atterraggio:\n\n[listOfRewards]</li>
   </RefugeeDelayedReward.questContentRules.rulesStrings>
   <!-- EN:
     <li>questDescription->a delayed reward for refugee quest</li>

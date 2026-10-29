@@ -5,7 +5,7 @@
     <li>questDescription->[decreeIntro]\n\nYou must build a monument. It is [monumentSize] in size and will require these resources (total value [monumentRequiredResourcesMarketValue_money]):\n\n[monumentRequiredResources]\n\n[decreeThreatInfo]\n\nYou must keep the monument safe for [keepMonumentTicks_duration] after completion, otherwise [asker_nameDef] will be unhappy.</li>
   -->
   <Decree_BuildMonument.questDescriptionRules.rulesStrings>
-    <li>questDescription->[decreeIntro]\n\nDevi costruire un monumento. È grande [monumentSize] e richiederà queste risorse (valore totale [monumentRequiredResourcesMarketValue_money]):\n\n[monumentRequiredResources]\n\n[decreeThreatInfo]\n\nDevi mantenere il monumento al sicuro per [keepMonumentTicks_duration] dopo il completamento, altrimenti [asker_nameDef] sarà scontento.</li>
+    <li>questDescription->[decreeIntro]\n\nDevi costruire un monumento. È grande [monumentSize] e richiederà queste risorse (valore totale [monumentRequiredResourcesMarketValue_money]):\n\n[monumentRequiredResources]\n\n[decreeThreatInfo]\n\nDevi mantenere il monumento al sicuro per [keepMonumentTicks_duration] dopo il completamento, altrimenti [asker_nameDef] sarà scontent{asker_gender ? o : a}.</li>
   </Decree_BuildMonument.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->monument decree</li>
@@ -20,11 +20,11 @@
   <!-- EN: Monument completed -->
   <Decree_BuildMonument.LetterLabelMonumentCompleted.slateRef>Monumento completato</Decree_BuildMonument.LetterLabelMonumentCompleted.slateRef>
   <!-- EN: You have completed construction of the monument.\n\nYou must keep it safe for [keepMonumentTicks_duration], otherwise [asker_nameDef] will be displeased. -->
-  <Decree_BuildMonument.LetterTextMonumentCompleted.slateRef>Hai completato la costruzione del monumento.\n\nDevi tenerlo al sicuro per [keepMonumentTicks_duration], altrimenti [asker_nameDef] sarà scontento.</Decree_BuildMonument.LetterTextMonumentCompleted.slateRef>
+  <Decree_BuildMonument.LetterTextMonumentCompleted.slateRef>Hai completato la costruzione del monumento.\n\nDevi tenerlo al sicuro per [keepMonumentTicks_duration], altrimenti [asker_nameDef] se ne dispiacerà.</Decree_BuildMonument.LetterTextMonumentCompleted.slateRef>
   <!-- EN: Monument destroyed -->
   <Decree_BuildMonument.LetterLabelMonumentDestroyed.slateRef>Monumento distrutto</Decree_BuildMonument.LetterLabelMonumentDestroyed.slateRef>
   <!-- EN: [asker_nameDef] is offended that you allowed the monument to be ruined so soon after completion.\n\n[asker_pronoun] will be unhappy about this. -->
-  <Decree_BuildMonument.LetterTextMonumentDestroyed.slateRef>[asker_nameDef] si è offeso, dato che hai permesso che il monumento venisse rovinato così presto dopo il completamento.\n\n[asker_pronoun] sarà infelice per questo.</Decree_BuildMonument.LetterTextMonumentDestroyed.slateRef>
+  <Decree_BuildMonument.LetterTextMonumentDestroyed.slateRef>Per [asker_nameDef] è un'offesa che tu abbia lasciato distruggere il monumento così presto dopo il completamento.\n\nNon la prenderà bene.</Decree_BuildMonument.LetterTextMonumentDestroyed.slateRef>
   <!-- EN: Do not destroy the monument for {0} -->
   <Decree_BuildMonument.DontDestroyMonumentForDays.slateRef>Non distruggere il monumento per {0}</Decree_BuildMonument.DontDestroyMonumentForDays.slateRef>
   <!-- EN: Do not destroy the monument for {0} -->

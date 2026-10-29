@@ -79,7 +79,7 @@
     <li>healthInfo(lodgersAreParalyzed==true,priority=1)->\n\n[paralyzedInfo]</li>
     <li>healthInfo(lodgersHaveBloodRot==true,priority=1)->\n\n[bloodRotInfo]</li>
     <li>paralyzedInfo->[lodgersLabelSingOrPluralDef] [areIs] affett[lodgers_o_a_i] da abasia paralitica e [lodgersDeveDevono] essere tenut[lodgers_o_a_i] a letto.</li>
-    <li>bloodRotInfo->[lodgersLabelSingOrPluralDef] [areIs] malat[lodgers_o_a_i] di necrosi sanguigna e necessiter[lodgersAAnno] di cure quotidiane. La malattia può essere rallentata con cure e medicine di alta qualità, ma generalmente non può essere curata del tutto. Se la malattia diventa grave, [lodgersLabelSingOrPluralDef] morir[lodgersAAnno], quindi assicurati di avere le forniture mediche necessarie.</li>
+    <li>bloodRotInfo->[lodgersLabelSingOrPluralDef] [areIs] malat[lodgers_o_a_i] di putrefazione sanguigna e necessiter[lodgersAAnno] di cure quotidiane. La malattia può essere rallentata con cure e medicine di alta qualità, ma generalmente non può essere curata del tutto. Se la malattia diventa grave, [lodgersLabelSingOrPluralDef] morir[lodgersAAnno], quindi assicurati di avere le forniture mediche necessarie.</li>
     <li>minMoodInfo-></li>
     <li>minMoodInfo(lodgersCountWithMoodThreshold>0,priority=1)->\n\nDevi mantenere l'umore di [lodgersLabelSingOrPluralDef] sopra [lodgersMoodThreshold_percent].</li>
     <li>workInfo-></li>
@@ -90,18 +90,18 @@
     <li>threatDescriptionParagraph(threatType==Raids,threatCount==1,threatSize>1)->ci sarà (*Threat)un'incursione(/Threat) di forza [threatSize]x e di circa queste dimensioni:\n\n[threatExample]</li>
     <li>threatDescriptionParagraph(threatType==Raids,threatCount>1,threatSize==1)->ci saranno (*Threat)[threatCount] incursioni(/Threat) di circa queste dimensioni:\n\n[threatExample]</li>
     <li>threatDescriptionParagraph(threatType==Raids,threatCount>1,threatSize>1)->ci saranno (*Threat)[threatCount] incursioni(/Threat) di forza [threatSize]x e di circa queste dimensioni:\n\n[threatExample]</li>
-    <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==1,threatSize==1)->(*Threat)un cluster di mechanoid(/Threat) si dispiegherà nelle vicinanze.</li>
-    <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==2,threatSize==1)->(*Threat)due cluster di mechanoid(/Threat) si dispiegheranno nelle vicinanze.</li>
-    <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==1,threatSize>1)->(*Threat)un cluster di mechanoid(/Threat) di dimensione [threatSize]x si dispiegherà nelle vicinanze.</li>
-    <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==2,threatSize>1)->(*Threat)due cluster di mechanoid(/Threat) di dimensione [threatSize]x si dispiegheranno nelle vicinanze.</li>
-    <li>threatsInfoMechClustersSingleHuman->[lodgers0_nameDef] recentemente [mechViolation], ed è stat[lodgers_o_a_i] preso di mira da uno sciame di mechanoid in orbita.</li>
-    <li>threatsInfoMechClustersMultiPrisoners->I prigionieri hanno recentemente [mechViolation] e sono stati presi di mira da uno sciame di mechanoid in orbita.</li>
-    <li>threatsInfoMechRaidsSingleHuman->[lodgers0_nameDef] recentemente [mechViolation], ed è stat[lodgers_o_a_i] preso di mira da un alveare di mechanoid.</li>
-    <li>threatsInfoMechRaidsMultiHuman->Hanno recentemente [mechViolation] e sono stati presi di mira da un alveare di mechanoid.</li>
-    <li>mechViolation->in qualche modo ha fatto infuriare una personalità meccanica</li>
+    <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==1,threatSize==1)->(*Threat)un cluster di meccanoidi(/Threat) si dispiegherà nelle vicinanze.</li>
+    <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==2,threatSize==1)->(*Threat)due cluster di meccanoidi(/Threat) si dispiegheranno nelle vicinanze.</li>
+    <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==1,threatSize>1)->(*Threat)un cluster di meccanoidi(/Threat) di dimensione [threatSize]x si dispiegherà nelle vicinanze.</li>
+    <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==2,threatSize>1)->(*Threat)due cluster di meccanoidi(/Threat) di dimensione [threatSize]x si dispiegheranno nelle vicinanze.</li>
+    <li>threatsInfoMechClustersSingleHuman->[lodgers0_nameDef] recentemente [mechViolation], ed è stat[lodgers_o_a_i] preso di mira da uno sciame di meccanoidi in orbita.</li>
+    <li>threatsInfoMechClustersMultiPrisoners->I prigionieri hanno recentemente [mechViolation] e sono stati presi di mira da uno sciame di meccanoidi in orbita.</li>
+    <li>threatsInfoMechRaidsSingleHuman->[lodgers0_nameDef] recentemente [mechViolation], ed è stat[lodgers_o_a_i] preso di mira da un alveare di meccanoidi.</li>
+    <li>threatsInfoMechRaidsMultiHuman->Hanno recentemente [mechViolation] e sono stati presi di mira da un alveare di meccanoidi.</li>
+    <li>mechViolation->in qualche modo ha fatto infuriare una personalità artificiale</li>
     <li>mechViolation->ha violato un antico terminale di supercomputer</li>
     <li>mechViolation->ha ucciso un bambino umano favorito da un archotech</li>
-    <li>mechViolation->ha tentato di hackerare un nodo di controllo dei mechanoid</li>
+    <li>mechViolation->ha tentato di hackerare un nodo di controllo dei meccanoidi</li>
     <li>mechViolation->ha tentato di rubare da un antico sito di stoccaggio</li>
     <li>letterSubject->{SUBJECT_definite}</li>
     <li>lodgersObjective(lodgersCount==1)->[lodgers0_objective]</li>

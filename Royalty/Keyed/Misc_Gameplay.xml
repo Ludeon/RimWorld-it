@@ -19,13 +19,13 @@
   <!-- EN: psytrainer ({0}) -->
   <PsycastNeurotrainerLabel>psytrainer ({0})</PsycastNeurotrainerLabel>
   <!-- EN: Use psytrainer to learn {0} psycast -->
-  <PsycastNeurotrainerUseLabel>Usa il psytrainer per imparare il potere psionico {0}</PsycastNeurotrainerUseLabel>
+  <PsycastNeurotrainerUseLabel>Usa lo psytrainer per imparare il potere psichico {0}</PsycastNeurotrainerUseLabel>
   <!-- EN: A one-use super-dose of mechanites which trains a specific psychic power.\n\nThe dose is administered through the orbit of the eye. Once released into the brain, the mechanites form knowledge of a specific ability, transmuting themselves into neural tissue as needed.\n\n{PSYCAST_label}\n\n{PSYCASTDESCRIPTION} -->
   <PsycastNeurotrainerDescription>Una superdose monouso di meccaniti che addestra un potere psichico specifico.\n\nLa dose viene somministrata attraverso l'orbita dell'occhio. Una volta rilasciati nel cervello, i meccaniti formano la conoscenza di un'abilità specifica, trasmutandosi in tessuto neurale secondo necessità.\n\n{PSYCAST_label}\n\n{PSYCASTDESCRIPTION}</PsycastNeurotrainerDescription>
   <!-- EN: {USER_labelShort} used neurotrainer to learn the {1} power. -->
   <AbilityNeurotrainerUsed>{USER_labelShort} ha utilizzato il neurotrainer per apprendere il potere {1}.</AbilityNeurotrainerUsed>
   <!-- EN: requires psylink -->
-  <PsycastNeurotrainerNoPsylink>Richiede collegamento psionico</PsycastNeurotrainerNoPsylink>
+  <PsycastNeurotrainerNoPsylink>richiede psylink</PsycastNeurotrainerNoPsylink>
   <!-- EN: {USER_labelShort} already knows {1}. -->
   <PsycastNeurotrainerAbilityAlreadyLearned>{USER_labelShort} conosce già {1}.</PsycastNeurotrainerAbilityAlreadyLearned>
 
@@ -38,7 +38,7 @@
   <!-- EN: Not usable -->
   <NotUsable>Non utilizzabile</NotUsable>
   <!-- EN: unpowered -->
-  <Unpowered>scarico</Unpowered>
+  <Unpowered>non alimentato</Unpowered>
   <!-- EN: Too close to other beacon -->
   <TooCloseToOtherBeacon>Troppo vicino ad un altro faro</TooCloseToOtherBeacon>
   
@@ -48,13 +48,13 @@
   <!-- EN: Psyfocus -->
   <PsyfocusLabelGizmo>Psyfocus</PsyfocusLabelGizmo>
   <!-- EN: Psyfocus is a special type of mental structuring which is necessary to use psychic powers. Psyfocus dissipates over time, and must be built by regular meditation. Losing all psyfocus makes someone unable to use psychic powers, but has no other consequences.\n\nHigher levels of psyfocus permit higher-level powers, but also increase the rate of psyfocus dissipation -->
-  <PsyfocusDesc>Lo Psyfocus è un tipo speciale di strutturazione mentale necessaria per utilizzare i poteri psichici. Lo Psyfocus si dissolve nel tempo e deve essere costruito con una meditazione regolare. La perdita di tutto lo psyfocus rende qualcuno incapace di usare i poteri psichici, ma non ha altre conseguenze.\n\nI livelli più alti di psyfocus consentono poteri di livello superiore, ma aumentano anche il tasso di dissipazione dello psyfocus</PsyfocusDesc>
+  <PsyfocusDesc>Lo psyfocus è un tipo speciale di strutturazione mentale necessario per usare i poteri psichici. Lo psyfocus si dissipa col tempo e va accumulato con una meditazione regolare. Perdere tutto lo psyfocus impedisce di usare i poteri psichici, ma non ha altre conseguenze.\n\nLivelli più alti di psyfocus permettono poteri di livello superiore, ma fanno anche dissipare lo psyfocus più velocemente</PsyfocusDesc>
   <!-- EN: {0}-{1}% -->
   <PsyfocusLevelInfoRange>{0}-{1}%</PsyfocusLevelInfoRange>
   <!-- EN: Up to level {0} powers. -->
   <PsyfocusLevelInfoPsycasts>Fino a poteri di livello {0}.</PsyfocusLevelInfoPsycasts>
   <!-- EN: Psyfocus falls at {0} per day. -->
-  <PsyfocusLevelInfoFallRate>Lo Psyfocus cala di {0} al giorno.</PsyfocusLevelInfoFallRate>
+  <PsyfocusLevelInfoFallRate>Lo psyfocus cala di {0} al giorno.</PsyfocusLevelInfoFallRate>
   <!-- EN: Meditation focus strength for {LASTUSER_labelShort} -->
   <UserMeditationFocusStrength>Intensità della concentrazione della meditazione per {LASTUSER_labelShort}</UserMeditationFocusStrength>
   <!-- EN: Focus effect impacted by -->
@@ -80,7 +80,7 @@
   <!-- EN: {2} per nearby lit flame source ({0} / {1}) -->
   <MeditationFocusPerFlame>{2} per ogni vicina sorgente di fuoco accesa ({0} / {1})</MeditationFocusPerFlame>
   <!-- EN: Psyfocus gain rate: {0}/d -->
-  <PsyfocusPerDayOfMeditation>Tasso di guadagno di Psyfocus: {0}/d</PsyfocusPerDayOfMeditation>
+  <PsyfocusPerDayOfMeditation>Guadagno di psyfocus: {0}/g</PsyfocusPerDayOfMeditation>
   <!-- EN: Desired psyfocus -->
   <DesiredPsyfocus>Psyfocus desiderato</DesiredPsyfocus>
   <!-- EN: Click to set desired psyfocus. -->
@@ -93,7 +93,7 @@
   <!-- EN: throne not usable because it is undignified. -->
   <AbilitySpeechDisabledNoThroneUndignified>trono non utilizzabile perché poco dignitoso.</AbilitySpeechDisabledNoThroneUndignified>
   <!-- EN: already giving a speech. -->
-  <AbilitySpeechDisabledAlreadyGivingSpeech>già tenendo un discorso.</AbilitySpeechDisabledAlreadyGivingSpeech>
+  <AbilitySpeechDisabledAlreadyGivingSpeech>sta già tenendo un discorso.</AbilitySpeechDisabledAlreadyGivingSpeech>
   <!-- EN: Outcome chances -->
   <AbilitySpeechPossibleOutcomes>Possibilità di risultato</AbilitySpeechPossibleOutcomes>
   <!-- EN: {ORGANIZER_labelShort}'s {1} stat -->
@@ -104,9 +104,9 @@
   <!-- EN: no accessible altar. -->
   <RitualDisabledNoAltar>nessun altare accessibile.</RitualDisabledNoAltar>
   <!-- EN: Bestowing Ceremony -->
-  <RitualBestowingCeremony>Cerimonia di investitura</RitualBestowingCeremony>
+  <RitualBestowingCeremony>Cerimonia di conferimento</RitualBestowingCeremony>
   <!-- EN: No suitable location near bestower -->
-  <BestowingSpotUnavailable>Nessun luogo adatto vicino all’investitore</BestowingSpotUnavailable>
+  <BestowingSpotUnavailable>Nessun luogo adatto vicino al cerimoniere</BestowingSpotUnavailable>
 
   <!-- EN: Total meditation today: {0} (progress multiplier {1}) -->
   <TotalMeditationToday>Meditazione totale di oggi: {0} (moltiplicatore del progresso {1})</TotalMeditationToday>
@@ -115,7 +115,7 @@
   <!-- EN: Begin linking ritual -->
   <BeginLinkingRitualFloatMenu>Inizia rituale di collegamento</BeginLinkingRitualFloatMenu>
   <!-- EN: Need {0} {1} here (have {2}) -->
-  <BeginLinkingRitualNeedSubplants>Hai bisogno di {0} {1} (ne hai {2})</BeginLinkingRitualNeedSubplants>
+  <BeginLinkingRitualNeedSubplants>Servono {0} {1} qui (ne hai {2})</BeginLinkingRitualNeedSubplants>
   <!-- EN: Need {0} psylink focus type -->
   <BeginLinkingRitualNeedFocus>Serve il tipo di concentrazione psylink {0}</BeginLinkingRitualNeedFocus>
   <!-- EN: Max psylink level -->
@@ -125,12 +125,12 @@
   <!-- EN: Linking ritual completed -->
   <LetterLabelLinkingRitualCompleted>Rituale di collegamento completato</LetterLabelLinkingRitualCompleted>
   <!-- EN: {PAWN_labelShort} has completed the linking ritual with {LINKABLE_labelShort}.\n\n{PAWN_pronoun} now has an upgraded psylink, permitting the use of new psychic powers. -->
-  <LetterTextLinkingRitualCompleted>{PAWN_labelShort} ha completato il rituale di collegamento con {LINKABLE_labelShort}.\n\n{PAWN_pronoun} ora ha uno psylink aggiornato, che consente l'uso di nuovi poteri psichici.</LetterTextLinkingRitualCompleted>
+  <LetterTextLinkingRitualCompleted>{PAWN_labelShort} ha completato il rituale di collegamento con {LINKABLE_labelShort}.\n\n{PAWN_pronoun} ora ha uno psylink potenziato, che permette di usare nuovi poteri psichici.</LetterTextLinkingRitualCompleted>
   <!-- EN: Additionally, {0} anima grass has been restored. -->
-  <LetterTextLinkingRitualCompletedAnimaGrass>Inoltre, {0} erba dell’anima è stata ripristinata.</LetterTextLinkingRitualCompletedAnimaGrass>
+  <LetterTextLinkingRitualCompletedAnimaGrass>Inoltre, sono state ripristinate {0} piante di erba dell'anima.</LetterTextLinkingRitualCompletedAnimaGrass>
 
   <!-- EN: Land shuttle here -->
-  <LandHere>Atterra la navetta qui</LandHere>
+  <LandHere>Fai atterrare la navetta qui</LandHere>
   <!-- EN: Destination is out of range. -->
   <MessageShuttleDestinationIsTooFar>La destinazione è fuori portata.</MessageShuttleDestinationIsTooFar>
 
@@ -139,18 +139,18 @@
   <!-- EN: {PAWN_definite}'s throneroom does not satisfy the requirements of the title of {TITLE}. -->
   <BestowingCeremonyThroneroomRequirementsNotSatisfiedShort>La sala del trono di {PAWN_definite} non soddisfa i requisiti del titolo di {TITLE}.</BestowingCeremonyThroneroomRequirementsNotSatisfiedShort>
   <!-- EN: The bestower is offended that {PAWN_definite}'s throneroom does not satisfy the requirements of the title of {TITLE}. The bestowing ceremony has been cancelled. -->
-  <BestowingCeremonyThroneroomRequirementsNotSatisfied>L’investitore è offeso dal fatto che la sala del trono di {PAWN_definite} non soddisfi i requisiti del titolo di {TITLE}. La cerimonia di investitura è stata annullata.</BestowingCeremonyThroneroomRequirementsNotSatisfied>
+  <BestowingCeremonyThroneroomRequirementsNotSatisfied>Il cerimoniere si sente offeso perché la sala del trono di {PAWN_definite} non soddisfa i requisiti del titolo di {TITLE}. La cerimonia di conferimento è stata annullata.</BestowingCeremonyThroneroomRequirementsNotSatisfied>
   <!-- EN: bestowing ceremony -->
-  <BestowingCeremonyLabel>cerimonia di investitura</BestowingCeremonyLabel>
+  <BestowingCeremonyLabel>cerimonia di conferimento</BestowingCeremonyLabel>
   <!-- EN: Bestowing ceremony total quality was {0}, determined by these factors -->
-  <BestowingOutcomeQualitySpecific>La qualità complessiva della cerimonia di investitura è stata {0}, determinata da questi fattori</BestowingOutcomeQualitySpecific>
+  <BestowingOutcomeQualitySpecific>La qualità complessiva della cerimonia di conferimento è stata {0}, determinata da questi fattori</BestowingOutcomeQualitySpecific>
   
   <!-- EN: No colonists that can link with anima tree right now. -->
   <RitualTargetAnimaTreeNoPawnsToLink>Nessun colono può legarsi all’albero dell’anima in questo momento.</RitualTargetAnimaTreeNoPawnsToLink>
   <!-- EN: No colonists with the natural meditation focus type. -->
   <RitualTargetAnimaTreeNoPawnsWithNatureFocus>Nessun colono con tipo di concentrazione meditativa naturale.</RitualTargetAnimaTreeNoPawnsWithNatureFocus>
   <!-- EN: Need at least {0} anima grass. -->
-  <RitualTargetAnimaTreeNotEnoughAnimaGrass>Sono necessarie almeno {0} erbe dell’anima.</RitualTargetAnimaTreeNotEnoughAnimaGrass>
+  <RitualTargetAnimaTreeNotEnoughAnimaGrass>Servono almeno {0} piante di erba dell'anima.</RitualTargetAnimaTreeNotEnoughAnimaGrass>
   <!-- EN: an anima tree -->
   <RitualTargetAnimaTreeInfo>un albero dell’anima</RitualTargetAnimaTreeInfo>
   <!-- EN: Must be a colonist with the natural meditation focus type who is below maximum psylink level. -->
@@ -159,7 +159,7 @@
   <RitualTargetAnimaTreeMustBePsychicallySensitive>Non deve essere sordo psichico.</RitualTargetAnimaTreeMustBePsychicallySensitive>
 
   <!-- EN: The anima linking ceremony is more powerful with more participants. The more people participate, the less time the ceremony takes, and the more anima grass will grow.\n\nWith {0} additional participants, {1} anima grass will be restored at the end of the ceremony. -->
-  <AnimaLinkingExplanationBase>La cerimonia di legame con l’anima è più potente con più partecipanti. Più persone partecipano, meno tempo richiede la cerimonia e più erba dell’anima crescerà.\n\nCon {0} partecipanti aggiuntivi, {1} erbe dell’anima saranno ripristinate alla fine della cerimonia.</AnimaLinkingExplanationBase>
+  <AnimaLinkingExplanationBase>La cerimonia di collegamento con l'albero dell'anima è più potente con più partecipanti. Più persone partecipano, meno tempo richiede la cerimonia e più erba dell'anima crescerà.\n\nCon {0} partecipanti in più, alla fine della cerimonia verranno ripristinate {1} piante di erba dell'anima.</AnimaLinkingExplanationBase>
   <!-- EN: Not all required cargo is loaded yet! -->
   <ShuttleRequiredItemsNotSatisfied>Non tutto il carico richiesto è stato ancora caricato!</ShuttleRequiredItemsNotSatisfied>
   <!-- EN: Cannot load {0_labelShort} -->

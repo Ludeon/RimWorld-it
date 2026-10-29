@@ -7,13 +7,13 @@
   <!-- EN: You're about to change the heir of the title {HOLDER_nameIndef} received from {0_name}. This requires building a monument in a limited time, to consecrate the new inheritance. -->
   <MakeHeirConfirm>Stai per cambiare l'erede del titolo di {HOLDER_nameIndef} ricevuto da {0_name}. Ciò richiede la costruzione di un monumento in un tempo limitato, per consacrare la nuova eredità.</MakeHeirConfirm>
   <!-- EN: This will upset {HOLDER_possessive} current heir {HEIR_nameFull}. -->
-  <MakeHeirPreviousHeirWarning>Ciò turberà {HOLDER_possessive} attuale erede, {HEIR_nameFull}.</MakeHeirPreviousHeirWarning>
+  <MakeHeirPreviousHeirWarning>Questo turberà l'attuale erede di {HOLDER_labelShort}, {HEIR_nameFull}.</MakeHeirPreviousHeirWarning>
 
   <!-- Call aid -->
   <!-- EN: Call aid... -->
   <CommandCallRoyalAid>Chiama aiuto...</CommandCallRoyalAid>
   <!-- EN: Call for aid using a special permit.\n\nEach type of aid may be used for free once, after which you must wait to use it for free again. You can use the aid more frequently, but it costs honor to do so. -->
-  <CommandCallRoyalAidDesc>Chiedere aiuto utilizzando un permesso speciale.\n\nOgni tipo di aiuto può essere utilizzato gratuitamente una volta, dopodiché è necessario attendere per riutilizzarlo gratuitamente. Puoi usare gli aiuti più frequentemente, ma ciò costa onore.</CommandCallRoyalAidDesc>
+  <CommandCallRoyalAidDesc>Chiedi aiuto usando un permesso speciale.\n\nOgni tipo di aiuto si può usare gratis una volta, poi bisogna aspettare per poterlo usare di nuovo gratis. Puoi usarlo più spesso, ma ti costerà onore.</CommandCallRoyalAidDesc>
   <!-- EN: Guests will not use their aid permits. -->
   <CommandCallRoyalAidLodger>Gli ospiti non useranno i loro permessi di aiuto.</CommandCallRoyalAidLodger>
   <!-- EN: Slaves cannot use their permits. -->
@@ -25,9 +25,9 @@
   <!-- EN: {0} days left, costs {1} {FACTION_royalFavorLabel} -->
   <CommandCallRoyalAidFavorOption>{0} giorni rimanenti, costa {1} {FACTION_royalFavorLabel}</CommandCallRoyalAidFavorOption>
   <!-- EN: You are about to call for aid, but there are people from factions whom {0_name} is not hostile to. Any soldiers you call will not attack them: {1} -->
-  <CommandCallRoyalAidWarningNonHostileFactions>Stai per chiedere aiuto, ma ci sono persone da alcune fazioni a cui {0_name} non è ostile. Tutti i soldati che chiami non li attaccheranno: {1}</CommandCallRoyalAidWarningNonHostileFactions>
+  <CommandCallRoyalAidWarningNonHostileFactions>Stai per chiedere aiuto, ma ci sono persone di fazioni con cui {0_name} non è ostile. I soldati che chiamerai non le attaccheranno: {1}</CommandCallRoyalAidWarningNonHostileFactions>
   <!-- EN: Not enough honor. -->
-  <CommandCallRoyalAidNotEnoughFavor>Non abbastanza onore.</CommandCallRoyalAidNotEnoughFavor>
+  <CommandCallRoyalAidNotEnoughFavor>Onore insufficiente.</CommandCallRoyalAidNotEnoughFavor>
   <!-- EN: {FACTION_name} cannot reach this area. -->
   <CommandCallRoyalAidMapUnreachable>{FACTION_name} non può raggiungere quest’area.</CommandCallRoyalAidMapUnreachable>
   <!-- EN: Cannot call aid here. -->
@@ -53,11 +53,11 @@
   <!-- EN: level {0} psylink is required. -->
   <CommandPsycastHigherLevelPsylinkRequired>è richiesto un livello {0} di psylink.</CommandPsycastHigherLevelPsylinkRequired>
   <!-- EN: Zero psychic sensitivity. -->
-  <CommandPsycastZeroPsychicSensitivity>Zero sensibilità psichica.</CommandPsycastZeroPsychicSensitivity>
+  <CommandPsycastZeroPsychicSensitivity>Sensibilità psichica nulla.</CommandPsycastZeroPsychicSensitivity>
   <!-- EN: Ability user is unconscious. -->
-  <CommandPsycastPawnIsUnconscious>L'utente dell'abilità è incosciente.</CommandPsycastPawnIsUnconscious>
+  <CommandPsycastPawnIsUnconscious>Chi usa l'abilità è incosciente.</CommandPsycastPawnIsUnconscious>
   <!-- EN: Need at least {0} psyfocus to cast this. -->
-  <CommandPsycastLowPsyfocus>Serve almeno {0} psyfocus per usare questo.</CommandPsycastLowPsyfocus>
+  <CommandPsycastLowPsyfocus>Serve almeno {0} di psyfocus per usare questo potere.</CommandPsycastLowPsyfocus>
   <!-- EN: Psychic insanity immune. -->
   <CommandPsycastInsanityImmune>Immunità a follia psichica.</CommandPsycastInsanityImmune>
   <!-- EN: H -->
@@ -86,13 +86,13 @@
   <ChooseRoyalPermit_Desc>Apri la schermata di selezione dei permessi e scegli un nuovo permesso.</ChooseRoyalPermit_Desc>
 
   <!-- EN: Leave bestowing ceremony -->
-  <CommandLeaveBestowingCeremony>Lascia la cerimonia di investitura</CommandLeaveBestowingCeremony>
+  <CommandLeaveBestowingCeremony>Lascia la cerimonia di conferimento</CommandLeaveBestowingCeremony>
   <!-- EN: Stop participating in the bestowing ceremony. -->
-  <CommandLeaveBestowingCeremonyDesc>Interrompi la partecipazione alla cerimonia di investitura.</CommandLeaveBestowingCeremonyDesc>
+  <CommandLeaveBestowingCeremonyDesc>Interrompi la partecipazione alla cerimonia di conferimento.</CommandLeaveBestowingCeremonyDesc>
   <!-- EN: Cancel bestowing ceremony -->
-  <CommandCancelBestowingCeremony>Annulla la cerimonia di investitura</CommandCancelBestowingCeremony>
+  <CommandCancelBestowingCeremony>Annulla la cerimonia di conferimento</CommandCancelBestowingCeremony>
   <!-- EN: End the bestowing ceremony immediately. The bestower will leave, but another opportunity to perform the ceremony will arise soon. -->
-  <CommandCancelBestowingCeremonyDesc>Termina immediatamente la cerimonia di investitura. L’investitore se ne andrà, ma presto sorgerà un’altra occasione per svolgere la cerimonia.</CommandCancelBestowingCeremonyDesc>
+  <CommandCancelBestowingCeremonyDesc>Termina subito la cerimonia di conferimento. Il cerimoniere se ne andrà, ma presto ci sarà un'altra occasione per celebrarla.</CommandCancelBestowingCeremonyDesc>
   <!-- EN: Are you sure you want to cancel bestowing ceremony? -->
-  <CommandCancelBestowingCeremonyConfirm>Sei sicuro di voler annullare la cerimonia di investitura?</CommandCancelBestowingCeremonyConfirm>
+  <CommandCancelBestowingCeremonyConfirm>Sei sicuro di voler annullare la cerimonia di conferimento?</CommandCancelBestowingCeremonyConfirm>
 </LanguageData>

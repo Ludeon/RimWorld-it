@@ -16,7 +16,7 @@
   -->
   <Util_MaybeGenerateHelpers.questDescriptionRules.rulesStrings>
     <li>helpersParagraph(helpersCount==0)-></li>
-    <li>helpersParagraph(helpersCount==1)->\n\nUn [helperKind_label] sarà posto sotto il tuo controllo. Dovrai nutrire e ospitare [helpers0_objective], ma [helpers0_pronoun] potrà morire in battaglia senza conseguenze.\n\n</li>
+    <li>helpersParagraph(helpersCount==1)->\n\nUn [helperKind_label] sarà posto sotto il tuo controllo. Dovrai nutrire e ospitar[helpers0_objective], ma [helpers0_pronoun] potrà morire in battaglia senza conseguenze.\n\n</li>
     <li>helpersParagraph(helpersCount>=2)->\n\n[helpersCount] [helperKind_labelPlural] saranno posti sotto il tuo controllo. Dovrai nutrirli e ospitarli, ma potranno morire in battaglia senza conseguenze.\n\n</li>
     <li>helpersArrivalLetterEnd(helpersCount==0)-></li>
     <li>helpersArrivalLetterEnd(helpersCount>=1)->\n\n[helpersCount] [helpersLabelSingOrPlural] [helpersIsAre] stat[helpers_o_i] inviat[helpers_o_i] per assisterti.</li>
@@ -38,12 +38,12 @@
   <!-- EN: [helpersLabelSingOrPlural] arrived -->
   <Util_MaybeGenerateHelpers.LetterLabelHelpersArrived.value.slateRef>[helpersLabelSingOrPlural] arrivat[helpers_o_i]</Util_MaybeGenerateHelpers.LetterLabelHelpersArrived.value.slateRef>
   <!-- EN: The [helpersLabelSingOrPlural] sent by [asker_nameDef] [helpersHasHave] arrived to aid you with the quest '[resolvedQuestName]'. -->
-  <Util_MaybeGenerateHelpers.LetterTextHelpersArrived.value.slateRef>[helpers_il_i] [helpersLabelSingOrPlural] inviato da [asker_nameDef] [helpersIsAre] arrivat[helpers_o_i] per aiutarti con la missione "[resolvedQuestName]".</Util_MaybeGenerateHelpers.LetterTextHelpersArrived.value.slateRef>
+  <Util_MaybeGenerateHelpers.LetterTextHelpersArrived.value.slateRef>[helpers_il_i] [helpersLabelSingOrPlural] inviat[helpers_o_i] da [asker_nameDef] [helpersIsAre] arrivat[helpers_o_i] per aiutarti con la missione "[resolvedQuestName]".</Util_MaybeGenerateHelpers.LetterTextHelpersArrived.value.slateRef>
   <!-- EN: the [helpersLabelSingOrPlural] -->
   <Util_MaybeGenerateHelpers.ArrivingPawnsLabelDefinite.value.slateRef>[helpers_il_i] [helpersLabelSingOrPlural]</Util_MaybeGenerateHelpers.ArrivingPawnsLabelDefinite.value.slateRef>
   <!-- EN: [helpersLabelSingOrPlural] leaving -->
   <Util_MaybeGenerateHelpers.LetterLabelHelpersLeaving.slateRef>[helpersLabelSingOrPlural] se ne [helpers_va_vanno]</Util_MaybeGenerateHelpers.LetterLabelHelpersLeaving.slateRef>
   <!-- EN: The [helpersLabelSingOrPlural] sent by [asker_nameDef] to aid you [helpersHasHave] spent too much time with you, and [helpersIsAre] now leaving. -->
-  <Util_MaybeGenerateHelpers.LetterTextHelpersLeaving.slateRef>[helpers_il_i] [helpersLabelSingOrPlural] inviat[helpers_o_i] da [asker_nameDef] per aiutarti [helpers_ha_hanno] passato troppo tempo con te e ora se ne [helpers_va_vanno].</Util_MaybeGenerateHelpers.LetterTextHelpersLeaving.slateRef>
+  <Util_MaybeGenerateHelpers.LetterTextHelpersLeaving.slateRef>[helpers_il_i] [helpersLabelSingOrPlural] inviat[helpers_o_i] da [asker_nameDef] per aiutarti [helpersHasHave] passato troppo tempo con te e ora se ne [helpers_va_vanno].</Util_MaybeGenerateHelpers.LetterTextHelpersLeaving.slateRef>
   
 </LanguageData>

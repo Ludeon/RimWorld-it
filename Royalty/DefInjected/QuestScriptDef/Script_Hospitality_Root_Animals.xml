@@ -56,10 +56,10 @@
     <li>asker_gender_o_a(asker_gender!=Female)->o</li>
     <li>asker_gender_un_una(asker_gender!=Female)->un</li>
     <li>asker_gender_un_una(asker_gender==Female)->una</li>
-    <li>threatsInfoMechClustersSingleAnimal->Per ragioni sconosciute, il [lodgersLabel] è stato preso di mira da uno sciame di mechanoidi in orbita.</li>
-    <li>threatsInfoMechClustersMultiAnimal->Per ragioni sconosciute, i [lodgersLabelPlural] sono stati presi di mira da uno sciame di mechanoidi in orbita.</li>
-    <li>threatsInfoMechRaidsSingleAnimal->Per ragioni sconosciute, il [lodgersLabel] è stato preso di mira da un alveare di mechanoidi.</li>
-    <li>threatsInfoMechRaidsMultiAnimal->Per ragioni sconosciute, i [lodgersLabelPlural] sono stati presi di mira da un alveare di mechanoidi.</li>
+    <li>threatsInfoMechClustersSingleAnimal->Per ragioni sconosciute, il [lodgersLabel] è stato preso di mira da uno sciame di meccanoidi in orbita.</li>
+    <li>threatsInfoMechClustersMultiAnimal->Per ragioni sconosciute, i [lodgersLabelPlural] sono stati presi di mira da uno sciame di meccanoidi in orbita.</li>
+    <li>threatsInfoMechRaidsSingleAnimal->Per ragioni sconosciute, il [lodgersLabel] è stato preso di mira da un alveare di meccanoidi.</li>
+    <li>threatsInfoMechRaidsMultiAnimal->Per ragioni sconosciute, i [lodgersLabelPlural] sono stati presi di mira da un alveare di meccanoidi.</li>
     <li>questDescription(askerIsNull==true,lodgersCount==1)->Un'organizzazione di salvataggio animali vuole che tu ti prenda cura di un [lodgersLabel] di nome [lodgers0_nameDef] a [map_definite] per [shuttleDelayTicks_duration]. [healthInfo][threatsInfo1][commonDescEnding]</li>
     <li>threatsInfo1(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\nGli attivisti hanno sottratto [lodgers0_nameDef] da una cerimonia di macellazione organizzata da [enemyFaction_name]. Ora i [enemyFaction_pawnsPlural] stanno arrivando per vendicarsi. Se accetti [lodgers0_nameDef], [enemyGroupsParagraph]</li>
     <li>threatsInfo1(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\n[threatsInfoMechRaidsSingleAnimal] [enemyGroupsParagraph]</li>
@@ -86,7 +86,7 @@
     <li>threatsInfo4(generateThreats==true,threatType==MechClusters)->\n\n[threatsInfoMechClustersMultiAnimal] [enemyGroupsParagraph]</li>
     <li>threatsInfo4(generateThreats==false)-></li>
     <li>questDescription(asker_royalInCurrentFaction==True,lodgersCount==1,priority=1)->[asker_nameFull], [asker_gender_un_una] [asker_royalTitleInCurrentFaction] della fazione di [asker_faction_name], fa una richiesta. [asker_pronoun] vuole che tu ti prenda cura del suo animale preferito, [lodgersLabel] [lodgers0_nameDef], a [map_definite] per [shuttleDelayTicks_duration]. [healthInfo][threatsInfo5][commonDescEnding]</li>
-    <li>threatsInfo5(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\n[lodgers0_nameDef] è un dono promesso al figlio di [asker_nameDef] per una cerimonia di matrimonio. Per impedire il matrimonio, [enemyFaction_name] sta inviando [enemyFaction_pawnsPlural] contro [lodgers0_objective]. Se accetti [lodgers0_nameDef], [enemyGroupsParagraph]</li>
+    <li>threatsInfo5(generateThreats==true,threatType==Raids,enemyFaction!=Mechanoid)->\n\n[lodgers0_nameDef] è un dono promesso al figlio di [asker_nameDef] per una cerimonia di matrimonio. Per impedire il matrimonio, [enemyFaction_name] sta inviando [enemyFaction_pawnsPlural] contro l'animale. Se accetti [lodgers0_nameDef], [enemyGroupsParagraph]</li>
     <li>threatsInfo5(generateThreats==true,threatType==Raids,enemyFaction==Mechanoid)->\n\n[threatsInfoMechRaidsSingleAnimal] [enemyGroupsParagraph]</li>
     <li>threatsInfo5(generateThreats==true,threatType==MechClusters)->\n\n[threatsInfoMechClustersSingleAnimal] [enemyGroupsParagraph]</li>
     <li>threatsInfo5(generateThreats==false)-></li>

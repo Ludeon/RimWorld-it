@@ -12,7 +12,7 @@
     <li>asker_gender_lo_la(asker_gender==Female)->la</li>
     <li>asker_gender_lo_la(asker_gender!=Female)->lo</li>
     <!-- CORE -->
-    <li>questDescription->[asker_nameFull], [asker_gender_un_una] [asker_royalTitleInCurrentFaction] della fazione di [asker_faction_name], sta chiamando da qui vicino. Le guardie di [asker_possessive] sono state uccise in un'imboscata. [asker_pronoun] è riuscit[asker_gender_o_a] a fuggire, ma ora è inseguit[asker_gender_o_a] da (*Threat)un [animalKindDef_label] da caccia all'uomo(/Threat).\n\n[asker_nameDef] vuole che tu [asker_gender_lo_la] mantenga al sicuro a [map_definite] per alcune ore, finché la sua navetta non potrà venire a prenderl[asker_gender_o_a].\n\n [asker_pronoun] conferirà [royalFavorReward] [asker_faction_royalFavorLabel] a chiunque accetti questa missione.\nÈ abbastanza [asker_faction_royalFavorLabel] per ricevere il titolo reale di Novizio, e tutti i benefici che ne derivano (incluso il primo livello di poteri psionici.)</li>
+    <li>questDescription->[asker_nameFull], [asker_gender_un_una] [asker_royalTitleInCurrentFaction] della fazione di [asker_faction_name], sta chiamando da qui vicino. Le sue guardie sono state uccise in un'imboscata. [asker_pronoun] è riuscit[asker_gender_o_a] a fuggire, ma ora è inseguit[asker_gender_o_a] da (*Threat)un [animalKindDef_label] da caccia all'uomo(/Threat).\n\n[asker_nameDef] vuole che tu [asker_gender_lo_la] mantenga al sicuro a [map_definite] per alcune ore, finché la sua navetta non potrà venire a prenderl[asker_gender_o_a].\n\n[asker_pronoun] conferirà [royalFavorReward] [asker_faction_royalFavorLabel] a chiunque accetti questa missione. È abbastanza [asker_faction_royalFavorLabel] per ricevere il titolo reale di Novizio, e tutti i benefici che ne derivano (incluso il primo livello di poteri psichici).</li>
   </Intro_Wimp.questDescriptionRules.rulesStrings>
   <!-- EN:
     <li>questName->the [adjAny] [asker_royalTitleInCurrentFaction]</li>
@@ -43,19 +43,19 @@
   <!-- EN: Shuttle arrived -->
   <Intro_Wimp.LetterLabelShuttleArrived.slateRef>Navetta arrivata</Intro_Wimp.LetterLabelShuttleArrived.slateRef>
   <!-- EN: The shuttle has arrived to collect [asker_nameDef]. -->
-  <Intro_Wimp.LetterTextShuttleArrived.slateRef>La navetta è arrivata per ritirare [asker_nameDef]</Intro_Wimp.LetterTextShuttleArrived.slateRef>
+  <Intro_Wimp.LetterTextShuttleArrived.slateRef>La navetta è arrivata a prendere [asker_nameDef].</Intro_Wimp.LetterTextShuttleArrived.slateRef>
   <!-- EN: Guest died: {SUBJECT_definite} -->
   <Intro_Wimp.LetterLabelGuestDied.slateRef>Ospite morto: {SUBJECT_definite}</Intro_Wimp.LetterLabelGuestDied.slateRef>
   <!-- EN: {SUBJECT_definite}, who you were charged to protect, has died. [failLetterEndingCommon] -->
-  <Intro_Wimp.LetterTextGuestDied.slateRef>{SUBJECT_definite}, che eri stato incaricato di proteggere, è mort[asker_gender_o_a]. [failLetterEndingCommon]</Intro_Wimp.LetterTextGuestDied.slateRef>
+  <Intro_Wimp.LetterTextGuestDied.slateRef>{SUBJECT_definite}, che avevi il compito di proteggere, è mort{SUBJECT_gender ? o : a}. [failLetterEndingCommon]</Intro_Wimp.LetterTextGuestDied.slateRef>
   <!-- EN: Guest left behind: {SUBJECT_definite} -->
   <Intro_Wimp.root.nodes.askerLeftBehind.node.nodes.Letter.label.slateRef>Ospite lasciato indietro: {SUBJECT_definite}</Intro_Wimp.root.nodes.askerLeftBehind.node.nodes.Letter.label.slateRef>
   <!-- EN: {SUBJECT_definite}, who you were charged to protect, has been left behind. [failLetterEndingCommon] -->
-  <Intro_Wimp.root.nodes.askerLeftBehind.node.nodes.Letter.text.slateRef>{SUBJECT_definite}, che eri stato incaricato di proteggere, è stato lasciato indietro. [failLetterEndingCommon]</Intro_Wimp.root.nodes.askerLeftBehind.node.nodes.Letter.text.slateRef>
+  <Intro_Wimp.root.nodes.askerLeftBehind.node.nodes.Letter.text.slateRef>{SUBJECT_definite}, che avevi il compito di proteggere, è stat{SUBJECT_gender ? o : a} lasciat{SUBJECT_gender ? o : a} indietro. [failLetterEndingCommon]</Intro_Wimp.root.nodes.askerLeftBehind.node.nodes.Letter.text.slateRef>
   <!-- EN: Unauthorized surgery: {SUBJECT_definite} -->
   <Intro_Wimp.LetterLabelUnauthorizedSurgery.slateRef>Chirurgia non autorizzata: {SUBJECT_definite}</Intro_Wimp.LetterLabelUnauthorizedSurgery.slateRef>
   <!-- EN: Unauthorized, violating surgery has been performed on {SUBJECT_definite}, who you were charged to protect. Because of this violation, [asker_pronoun] will now attempt to leave. [failLetterEndingCommon] -->
-  <Intro_Wimp.LetterTextUnauthorizedSurgery.slateRef>Un intervento chirurgico non autorizzato è stato eseguito su {SUBJECT_definite}, che eri stato incaricato di proteggere. A causa di questa violazione, [asker_pronoun] ora tenterà di andarsene. [failLetterEndingCommon]</Intro_Wimp.LetterTextUnauthorizedSurgery.slateRef>
+  <Intro_Wimp.LetterTextUnauthorizedSurgery.slateRef>Su {SUBJECT_definite}, che avevi il compito di proteggere, è stato eseguito un intervento chirurgico non autorizzato e invasivo. A causa di questa violazione, [asker_pronoun] ora tenterà di andarsene. [failLetterEndingCommon]</Intro_Wimp.LetterTextUnauthorizedSurgery.slateRef>
   <!-- EN: Xenogerm absorbed: {SUBJECT_definite} -->
   <Intro_Wimp.root.nodes.askerXenogermAbsorbed.node.nodes.Letter.label.slateRef>Xenogerm assorbito: {SUBJECT_definite}</Intro_Wimp.root.nodes.askerXenogermAbsorbed.node.nodes.Letter.label.slateRef>
   <!-- EN: {SUBJECT_definite}, who you were charged to protect, has had {SUBJECT_possessive} xenogerm forcibly absorbed. Because of this violation, {SUBJECT_pronoun} will now attempt to leave. [failLetterEndingCommon] -->
@@ -63,19 +63,19 @@
   <!-- EN: Captured: {SUBJECT_definite} -->
   <Intro_Wimp.LetterLabelCaptured.slateRef>Catturato: {SUBJECT_definite}</Intro_Wimp.LetterLabelCaptured.slateRef>
   <!-- EN: {SUBJECT_definite}, who you were charged to host, has been arrested. [failLetterEndingCommon] -->
-  <Intro_Wimp.LetterTextCaptured.slateRef>{SUBJECT_definite}, che eri stato incaricato di proteggere, è stat[asker_gender_o_a] arrestat[asker_gender_o_a]. [failLetterEndingCommon]</Intro_Wimp.LetterTextCaptured.slateRef>
+  <Intro_Wimp.LetterTextCaptured.slateRef>{SUBJECT_definite}, che avevi il compito di ospitare, è stat{SUBJECT_gender ? o : a} arrestat{SUBJECT_gender ? o : a}. [failLetterEndingCommon]</Intro_Wimp.LetterTextCaptured.slateRef>
   <!-- EN: Guest lost: {SUBJECT_definite} -->
   <Intro_Wimp.LetterLabelGuestLost.slateRef>Ospite perso: {SUBJECT_definite}</Intro_Wimp.LetterLabelGuestLost.slateRef>
   <!-- EN: {SUBJECT_definite}, who you were charged to protect, has left the designated settlement. [failLetterEndingCommon] -->
-  <Intro_Wimp.LetterTextGuestLost.slateRef>{SUBJECT_definite}, che eri stato incaricato di proteggere, ha lasciato la colonia. [failLetterEndingCommon]</Intro_Wimp.LetterTextGuestLost.slateRef>
+  <Intro_Wimp.LetterTextGuestLost.slateRef>{SUBJECT_definite}, che avevi il compito di proteggere, ha lasciato l'insediamento assegnato. [failLetterEndingCommon]</Intro_Wimp.LetterTextGuestLost.slateRef>
   <!-- EN: Guest lost: {SUBJECT_definite} -->
   <Intro_Wimp.LetterLabelLodgerRanWild.slateRef>Ospite perso: {SUBJECT_definite}</Intro_Wimp.LetterLabelLodgerRanWild.slateRef>
   <!-- EN: {SUBJECT_definite}, who you were charged to protect, has run wild. [failLetterEndingCommon] -->
-  <Intro_Wimp.LetterTextLodgerRanWild.slateRef>{SUBJECT_definite}, che eri stato incaricato di proteggere, è impazzit[asker_gender_o_a] ed è scappat[asker_gender_o_a]. [failLetterEndingCommon]</Intro_Wimp.LetterTextLodgerRanWild.slateRef>
+  <Intro_Wimp.LetterTextLodgerRanWild.slateRef>{SUBJECT_definite}, che avevi il compito di proteggere, è diventat{SUBJECT_gender ? o : a} selvaggi{SUBJECT_gender ? o : a}. [failLetterEndingCommon]</Intro_Wimp.LetterTextLodgerRanWild.slateRef>
   <!-- EN: Shuttle destroyed -->
   <Intro_Wimp.LetterLabelShuttleDestroyed.slateRef>Navetta distrutta</Intro_Wimp.LetterLabelShuttleDestroyed.slateRef>
   <!-- EN: The shuttle sent to collect [asker_nameDef] has been destroyed. [asker_pronoun] will now leave on foot. [failLetterEndingCommon] -->
-  <Intro_Wimp.LetterTextShuttleDestroyed.slateRef>[asker_nameDef] dovrà partire a piedi, perchè la navetta inviata per recuperar[asker_objective] è stato distrutta.[failLetterEndingCommon]</Intro_Wimp.LetterTextShuttleDestroyed.slateRef>
+  <Intro_Wimp.LetterTextShuttleDestroyed.slateRef>La navetta inviata a prendere [asker_nameDef] è stata distrutta: ora [asker_pronoun] dovrà andarsene a piedi. [failLetterEndingCommon]</Intro_Wimp.LetterTextShuttleDestroyed.slateRef>
   <!-- EN: Shuttle left behind -->
   <Intro_Wimp.root.nodes.pickupShipThingLeftBehind.node.nodes.Letter.label.slateRef>Navetta lasciata indietro</Intro_Wimp.root.nodes.pickupShipThingLeftBehind.node.nodes.Letter.label.slateRef>
   <!-- EN: The shuttle sent to collect [asker_nameDef] has been left behind. [asker_pronoun] will now leave on foot. -->
@@ -83,6 +83,6 @@
   <!-- EN: Quest failed: [resolvedQuestName] -->
   <Intro_Wimp.LetterLabelQuestFailed.slateRef>Missione fallita: [resolvedQuestName]</Intro_Wimp.LetterLabelQuestFailed.slateRef>
   <!-- EN: The shuttle sent to collect [asker_nameDef] has departed without [asker_objective]. [asker_pronoun] will now leave on foot. [failLetterEndingCommon] -->
-  <Intro_Wimp.LetterTextQuestFailed.slateRef>[asker_nameDef] dovrà partire a piedi, perchè la navetta inviata per recuperar[asker_objective] è partita senza di [asker_pronoun].[failLetterEndingCommon]</Intro_Wimp.LetterTextQuestFailed.slateRef>
+  <Intro_Wimp.LetterTextQuestFailed.slateRef>La navetta inviata a prendere [asker_nameDef] è ripartita senza di [asker_pronoun]: ora dovrà andarsene a piedi. [failLetterEndingCommon]</Intro_Wimp.LetterTextQuestFailed.slateRef>
   
 </LanguageData>

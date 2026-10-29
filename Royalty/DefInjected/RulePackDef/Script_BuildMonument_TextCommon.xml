@@ -28,23 +28,23 @@
     <li>failLetterEndingCommon->You have failed the quest '[resolvedQuestName]'.\n\nYour relations with [asker_faction_name] have decreased by [goodwillPenalty].</li>
   -->
   <QuestConstructionDescriptionCommon.rulePack.rulesStrings>
-    <li>questDescription(askerIsNull==true)->È arrivato un messaggio misterioso. Sembra sia stato trasmesso da una personalità meccanica che si rifiuta di rivelare il proprio nome. Il messaggio chiede di costruire un monumento molto specifico.\n\n[commonEnding]</li>
+    <li>questDescription(askerIsNull==true)->È arrivato un messaggio misterioso. Sembra sia stato trasmesso da una personalità artificiale che si rifiuta di rivelare il proprio nome. Il messaggio chiede di costruire un monumento molto specifico.\n\n[commonEnding]</li>
     <li>questDescription(asker_factionLeader==True)->[asker_faction_leaderTitle] [asker_nameFull] di [asker_faction_name] richiede che tu costruisca un monumento [buildReason].\n\n[commonEnding]</li>
     <li>questDescription(asker_royalInCurrentFaction==True)->[asker_royalTitleInCurrentFaction] [asker_nameFull] di [asker_faction_name] richiede che tu costruisca un monumento [buildReason].\n\n[commonEnding]</li>
     <li>asker2(askerIsNull==true)->l'archotech</li>
     <li>asker2(asker_factionLeader==True)->[asker_nameDef]</li>
     <li>asker2(asker_royalInCurrentFaction==True)->il [asker_royalTitleInCurrentFaction]</li>
-    <li>buildReason->per commemorare [PersonalCharacteristic_def] [PersonFamily_defGen] di [asker_possessive]</li>
+    <li>buildReason->per commemorare [PersonalCharacteristic_def] [PersonFamily_defGen] di [asker_nameDef]</li>
     <li>buildReason->per commemorare il proprio [PersonalCharacteristic_Male]</li>
     <li>buildReason->per commemorare la propria [PersonalCharacteristic_Female]</li>
-    <li>buildReason->per insultare [PersonalCharacteristic_def] del rivale di [asker_possessive]</li>
+    <li>buildReason->per insultare [PersonalCharacteristic_def] del rivale di [asker_nameDef]</li>
     <li>buildReason->per ridurre i sentimenti di [ConceptAngsty] tra la popolazione</li>
     <li>buildReason->per esprimere quanto [AdjectiveBadass] sia [asker_pronoun]</li>
-    <li>buildReason->per commemorare i [asker_faction_pawnsPlural] di [asker_possessive] caduti in battaglia</li>
-    <li>buildReason->per onorare [PersonFamily_def] di [asker_possessive]</li>
+    <li>buildReason->per commemorare i [asker_faction_pawnsPlural] di [asker_nameDef] caduti in battaglia</li>
+    <li>buildReason->per onorare [PersonFamily_def] di [asker_nameDef]</li>
     <li>buildReason->per onorare il lavoro dei [PersonJob_PluralMasculine]</li>
     <li>buildReason->per onorare il lavoro delle [PersonJob_PluralFeminine]</li>
-    <li>buildReason->per diffondere immagini della [glory] di [asker_possessive] in tutta la terra</li>
+    <li>buildReason->per diffondere immagini della [glory] di [asker_nameDef] in tutta la terra</li>
     <li>glory->gloria</li>
     <li>glory->onore marziale</li>
     <li>glory->vittorie</li>
