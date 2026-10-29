@@ -168,10 +168,10 @@
   -->
   <ArtDescription_Statue.rulePack.rulesStrings>
     <li>r_statue_description->Questa statua [statueDepicts] [SUBJECT_nameFull] [statueSubjectDesc]. [statueFaceDesc] [style_group_statue]</li>
-    <li>r_statue_description->Una [statueAdj] statua raffigurante [SUBJECT_nameFull] [statueSubjectDesc]. [statueFaceDesc] [style_group_statue]</li>
+    <li>r_statue_description->Una statua [statueAdj] raffigurante [SUBJECT_nameFull] [statueSubjectDesc]. [statueFaceDesc] [style_group_statue]</li>
     <li>r_statue_description->Una statua [carvedAdverb] [carvedVerb] di [SUBJECT_nameFull]. Essa [statueDepicts] [SUBJECT_indefinite] [statueSubjectDesc]. [statueFaceDesc] [style_group_statue]</li>
     <li>r_statue_description->Una statua che rappresenta [SUBJECT_nameFull] [statueSubjectDesc]. [statueFaceDesc] [style_group_statue]</li>
-    <li>r_statue_description->Una [statueAdj] statua di [SUBJECT_nameFull]. [statueFaceDesc] [style_group_statue]</li>
+    <li>r_statue_description->Una statua [statueAdj] di [SUBJECT_nameFull]. [statueFaceDesc] [style_group_statue]</li>
     <li>statueSubjectDesc->in piedi, tenendo con entrambe le mani un [prop]</li>
     <li>statueSubjectDesc->in piedi, tenendo con entrambe le mani una [prop_feminine]</li>
     <li>statueSubjectDesc->in piedi e guardando nobilmente in lontananza</li>
@@ -191,9 +191,9 @@
     <li>statueSubjectDesc->tenendo un [prop] in una mano[maybeOtherHand]</li>
     <li>statueSubjectDesc->tenendo una [prop_feminine] in una mano[maybeOtherHand]</li>
     <li>statueSubjectDesc->salutando con una mano[maybeOtherHand]</li>
-    <li>statueSubjectDesc->puntando verso l'orizzonte[maybeOtherHand]</li>
+    <li>statueSubjectDesc->indicando l'orizzonte[maybeOtherHand]</li>
     <li>statueSubjectDesc->tendendo la mano in segno di benvenuto[maybeOtherHand]</li>
-    <li>statueSubjectDesc->puntando l'orizzonte con una mano[maybeOtherHand]</li>
+    <li>statueSubjectDesc->indicando l'orizzonte con una mano[maybeOtherHand]</li>
     <li>statueSubjectDesc->danzando in modo seducente</li>
     <li>statueSubjectDesc->rilassandosi in modo seducente</li>
     <li>statueSubjectDesc->preparandosi a combattere</li>
@@ -214,7 +214,7 @@
     <li>statueSubjectDesc->annusando un mazzo di fiori[maybeNoNose]</li>
     <li>maybeOtherHand->. [otherHand]</li>
     <li>maybeOtherHand-></li>
-    <li>otherHand->L'altra mano della statua tiene [prop]</li>
+    <li>otherHand->L'altra mano della statua tiene un [prop]</li>
     <li>otherHand->L'altra mano della statua poggia sul fianco</li>
     <li>otherHand->L'altra mano della statua fa un gesto osceno</li>
     <li>otherHand->L'altra mano della statua è assente[maybeInsult]</li>
@@ -229,7 +229,7 @@
     <li>statueFaceDesc(p=2)->L'espressione di [facialLook] può essere osservata sul volto di [SUBJECT_indefinite].</li>
     <li>statueFaceDesc(p=2)->L'espressione d'[facialLook_vowel] può essere osservata sul volto di [SUBJECT_indefinite].</li>
     <li>statueFaceDesc->[SUBJECT_indefinite] ha un'aria di [facialLook].</li>
-    <li>statueFaceDesc->[SUBJECT_indefinite] ha un'aria d'[facialLook].</li>
+    <li>statueFaceDesc->[SUBJECT_indefinite] ha un'aria d'[facialLook_vowel].</li>
     <li>statueFaceDesc->Il volto di [SUBJECT_indefinite] [depicts] un'espressione di [facialLook].</li>
     <li>statueFaceDesc->Il volto di [SUBJECT_indefinite] [depicts] un'espressione d'[facialLook_vowel].</li>
     <li>statueFaceDesc->[SUBJECT_indefinite] ha un volto saggio e riflessivo.</li>
@@ -248,10 +248,10 @@
     <li>facialLook->dolori indicibili</li>
     <li>facialLook->profonda contemplazione</li>
     <li>facialLook->confusione</li>
-    <li>facialLook->orgoglio e soddisfazione</li>
-    <li>facialLook_vowel->divertimento</li>
+    <li>facialLook_vowel->orgoglio e soddisfazione</li>
+    <li>facialLook->divertimento</li>
     <li>facialLook->disgusto</li>
-    <li>facialLook->diffidenza</li>
+    <li>facialLook->sfida</li>
     <li>facialFeature->un sorriso storto</li>
     <li>facialFeature->un sopracciglio aggrottato</li>
     <li>facialFeature->un sopracciglio alzato, come se stesse interrogando l'artista</li>
@@ -270,7 +270,7 @@
     <li>artextra_clause_statue->Incisi sulla pelle del soggetto ci sono [subimageplural]</li>
     <li>artextra_clause_statue->Diverse incisioni più piccole circondano la statua. Ognuna assomiglia a [subimagesingle]</li>
     <li>artextra_clause_statue->Le gambe della statua sono coperte da [subimageplural]</li>
-    <li>artextra_clause_statue->Il volto della statua è [carvedVerb] con l'immagine di [subimageany]</li>
+    <li>artextra_clause_statue->Sul volto della statua è [carvedVerb] l'immagine di [subimageany]</li>
     <li>artextra_clause_statue->[SUBJECT_indefinite] si trova al centro di [CommunityAny_indef]</li>
     <li>artextra_clause_statue->[SUBJECT_indefinite] si trova al centro di una [Community_Feminine]</li>
     <li>artextra_clause_statue->La base della statua sembra essere un [TerrainFeature]</li>
@@ -338,9 +338,9 @@
     <li>side_position_statue->sgorgando dall'[statueBodyPart_vowel] di [SUBJECT_indefinite]</li>
     <li>side_position_statue->uscendo dalla bocca di [SUBJECT_indefinite]</li>
     <li>side_position_statue->sulla schiena di [SUBJECT_indefinite]</li>
-    <li>statueBodyPart_feminine->petto</li>
+    <li>statueBodyPart->petto</li>
     <li>statueBodyPart->ventre</li>
-    <li>statueBodyPart->schiena</li>
+    <li>statueBodyPart_feminine->schiena</li>
     <li>statueBodyPart_feminine->testa</li>
     <li>statueBodyPart_vowel->occhio</li>
     <li>prop->libro</li>
@@ -432,7 +432,7 @@
     <li>r_statue_name->Uno studio in [statueIdea]</li>
     <!--<li>r_statue_name(SUBJECT_gender==Female)->[statueAdj] [SUBJECT_indefinite]</li>-->
     <!-- Not possible in french, same as others-->
-    <li>r_statue_name(SUBJECT_gender==Female)->[SUBJECT_indefinite], il [statueAdj]</li>
+    <li>r_statue_name(SUBJECT_gender!=Female)->[SUBJECT_indefinite], il [statueAdj]</li>
     <li>r_statue_name(SUBJECT_gender==Female)->[SUBJECT_indefinite], la [statueAdj_feminine]</li>
     <li>r_statue_name(SUBJECT_gender!=Female)->[SUBJECT_indefinite], l'[statueAdj_vowel]</li>
     <li>r_statue_name(SUBJECT_gender!=Female)->[SUBJECT_indefinite], l'[statueAdj_feminine_vowel]</li>
@@ -475,8 +475,8 @@
     <li>statueAdj_feminine->perfetta</li>
     <li>statueAdj->cesellato</li>
     <li>statueAdj_feminine->cesellata</li>
-    <li>statueAdj_vowel->senza tempo</li>
-    <li>statueAdj_feminine_vowel->senza tempo</li>
+    <li>statueAdj->senza tempo</li>
+    <li>statueAdj_feminine->senza tempo</li>
     <li>statueAdj_vowel->infrangibile</li>
     <li>statueAdj_feminine_vowel->infrangibile</li>
     <li>statueAdj_vowel->ideale</li>
@@ -489,10 +489,10 @@
     <li>statueAdj_feminine->vigile</li>
     <li>statueAdj->risonante</li>
     <li>statueAdj_feminine->risonante</li>
-    <li>statueAdj_vowel->in lutto</li>
-    <li>statueAdj_feminine_vowel->in lutto</li>
-    <li>statueAdj->gelato</li>
-    <li>statueAdj_feminine->gelata</li>
+    <li>statueAdj->in lutto</li>
+    <li>statueAdj_feminine->in lutto</li>
+    <li>statueAdj->congelato</li>
+    <li>statueAdj_feminine->congelata</li>
     <li>statueAdj_vowel->crollato</li>
     <li>subjectNounAny->[subjectNoun]</li>
     <li>subjectNounAny->[subjectNoun_vowel]</li>
@@ -510,14 +510,14 @@
     <li>subjectNoun_feminine_vowel->Osservatrice</li>
     <li>subjectNoun->Eroe</li>
     <li>subjectNoun_feminine->Eroina</li>
-    <li>subjectNoun->Leggenda</li>
+    <li>subjectNoun_feminine->Leggenda</li>
     <li>subjectNoun->Difensore</li>
-    <li>subjectNoun->Sentinella</li>
+    <li>subjectNoun->Guardiano</li>
     <li>subjectNoun_feminine->Sentinella</li>
     <li>subjectNoun_vowel->Adone</li>
     <li>subjectNoun_feminine->Figura</li>
     <li>subjectNoun_feminine_vowel->Immagine</li>
-    <li>subjectNoun_vowel->Anima</li>
+    <li>subjectNoun_feminine_vowel->Anima</li>
     <li>subjectNoun->Corpo</li>
     <li>subjectNoun->Volto</li>
     <li>subjectNoun_feminine->Contemplazione</li>
@@ -531,19 +531,19 @@
     <li>statueIdea(p=3)->[ConceptAngsty]</li>
     <li>statueIdea->forza</li>
     <li>statueIdea->saggezza</li>
-    <li>statueIdea->l'astuzia</li>
-    <li>statueIdea->l'eroismo</li>
+    <li>statueIdea->astuzia</li>
+    <li>statueIdea->eroismo</li>
     <li>statueIdea->potere</li>
     <li>statueIdea->memoria</li>
-    <li>statueIdea->lo spirito</li>
+    <li>statueIdea->spirito</li>
     <li>statueIdea->luce</li>
     <li>statueIdea->patriottismo</li>
-    <li>statueIdea->la luce del mattino</li>
+    <li>statueIdea->luce del mattino</li>
     <li>statueIdea->cielo notturno</li>
-    <li>statueIdea->l'alba</li>
-    <li>statueIdea->la deriva delle sabbie</li>
-    <li>statueIdea->l'amore eterno</li>
-    <li>statueIdea->la passione</li>
+    <li>statueIdea->alba</li>
+    <li>statueIdea->sabbie alla deriva</li>
+    <li>statueIdea->amore eterno</li>
+    <li>statueIdea->passione</li>
   </NamerStatue.rulePack.rulesStrings>
   
 </LanguageData>

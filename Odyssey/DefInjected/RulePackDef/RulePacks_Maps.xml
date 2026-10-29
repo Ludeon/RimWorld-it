@@ -308,14 +308,14 @@
     <li>specialFact->La mappa ha un sigillo di cera sbiadito [noteLocation]. Somiglia a un [emotionalState] [Animal].</li>
     <li>maybe_questInfo-></li>
     <li>maybe_questInfo(p=3)->[questInfo]</li>
-    <li>questInfo->Un’area della mappa è cerchiata e etichettata: '[mapText]!'</li>
+    <li>questInfo->Un’area della mappa è cerchiata ed etichettata: '[mapText]!'</li>
     <li>questInfo->Un biglietto allegato reca la scritta '[mapText]?'</li>
     <li>questInfo->'[mapText]' è scarabocchiato con inchiostro sbiadito [noteLocation].</li>
     <li>questInfo->Un appunto [noteLocation] recita: '[mapText].'</li>
     <li>questInfo->Una nota scritta in fretta [noteLocation] recita: '[mapText]!'</li>
     <li>questInfo->Un enigma criptico è stato scarabocchiato [noteLocation]. Termina con '...[mapText].'</li>
     <li>questInfo->Accanto a un [Color] [mapSymbol] ci sono le parole '[mapText].'</li>
-    <li>questInfo->Incise sulla mappa ci sono le parole '[mapText].'</li>
+    <li>questInfo->Impresse a fuoco sulla mappa ci sono le parole '[mapText].'</li>
     <li>questInfo->Un grande [mapSymbol] è disegnato vicino a un [mapFeature]. È etichettato '[mapText].'</li>
     <li>questInfo->Una rosa dei venti [Color] è incisa sulla mappa. Stranamente, nord e sud sono invertiti. Al centro della rosa ci sono le parole: '[mapText].'</li>
     <li>questInfo->Il precedente proprietario della mappa stava chiaramente cercando qualcosa. Un’area è cerchiata accanto alle parole: '[mapText].'</li>
@@ -354,7 +354,7 @@
     <li>smell->escrementi di [Animal]</li>
     <li>conditionStains->Graffi e macchie di [stain] oscurano alcuni dettagli, rendendo difficile la lettura.</li>
     <li>conditionStains->Macchie di [stain] e segni di bruciatura suggeriscono un uso frequente in condizioni difficili.</li>
-    <li>conditionStains->I diagrammi sono oscurati da quella che sembra essere [stain].</li>
+    <li>conditionStains->I diagrammi sono oscurati da quello che sembra essere [stain].</li>
     <li>conditionStains->La mappa è incompleta e macchiata di [stain].</li>
     <li>conditionTouch->Macchie di [stain] e bordi sfilacciati le danno un aspetto logoro e utilitario.</li>
     <li>stain->sangue</li>
@@ -388,8 +388,8 @@
     <li>emotionalState->sensuale</li>
     <li>mapType(p=4)->mappa</li>
     <li>mapType->carta</li>
-    <li>mapType->atlante</li>
-    <li>mapType->rilievo</li>
+    <li>mapType->carta geografica</li>
+    <li>mapType->carta topografica</li>
     <li>mapSymbol->chiave</li>
     <li>mapSymbol->'X'</li>
     <li>mapSymbol->stella</li>
@@ -753,10 +753,10 @@
   -->
   <Namer_Map.rulePack.rulesStrings>
     <!-- title -->
-    <li>title(p=2)->[mapType] [mapNoun] di [subject]</li>
+    <li>title(p=2)->[mapNoun] [mapType] di [subject]</li>
     <li>title(p=2)->[map] [maybeThe] [mapType]</li>
     <li>title(p=2)->[map] [maybeAdjective] [ANYPAWN_nameIndef]</li>
-    <li>title->[mapType] [mapNoun]: [subject]</li>
+    <li>title->[mapNoun] [mapType]: [subject]</li>
     <li>title->[mapNoun] di [mapSubjectAdj] [mapSubject]</li>
     <li>title->[map] [maybeThe] [AdjectiveAny] </li>
     <li>title(p=0.5)->mappe per [mapSubjectAdj] [mapSubject]</li>
@@ -767,7 +767,7 @@
     <li>adjective->[Color]</li>
     <li>adjective->[AdjectiveLarge]</li>
     <li>maybeThe-></li>
-    <li>maybeThe->il</li>
+    <li>maybeThe-></li>
     <li>map->[mapNoun]</li>
     <li>map(p=2)->[mapNoun] di [place]</li>
     <li>map->[mapNoun] di [mapSubject]</li>

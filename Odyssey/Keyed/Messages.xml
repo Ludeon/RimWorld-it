@@ -9,7 +9,7 @@
   <!-- EN: Cannot be placed under rock or mountain roofs. -->
   <MessageCannotPlaceUnderRockRoof>Non può essere posizionato sotto montagne o tetti rocciosi.</MessageCannotPlaceUnderRockRoof>
   <!-- EN: {ACTIVATOR_labelShort} has finished hacking {SUBJECT_definite}. -->
-  <MessageStabilizerDeactivated>{ACTIVATOR_labelShort} ha terminato l’hacking di {SUBJECT_definite}.</MessageStabilizerDeactivated>
+  <MessageStabilizerDeactivated>{ACTIVATOR_labelShort} ha terminato di violare {SUBJECT_definite}.</MessageStabilizerDeactivated>
   <!-- EN: Can't be placed on gravship substructure. -->
   <MessageCannotPlaceOverSubstructure>Non può essere posizionato sulla sottostruttura della nave gravitazionale.</MessageCannotPlaceOverSubstructure>
   <!-- EN: Gravship substructure is blocked. -->
@@ -19,7 +19,7 @@
 
   <!-- Alerts -->
   <!-- EN: {0} has died from vacuum exposure. -->
-  <MessagePlantDiedOfRot_ExposedToVacuum>{0} è morto per esposizione al vuoto.</MessagePlantDiedOfRot_ExposedToVacuum>
+  <MessagePlantDiedOfRot_ExposedToVacuum>{0} è mort{0_gender ? o : a : o} per esposizione al vuoto.</MessagePlantDiedOfRot_ExposedToVacuum>
 
   <!-- Ancient Vents -->
   <!-- EN: The ancient smoke vents have become active, darkening the sky. -->
@@ -39,10 +39,10 @@
   <CannotPlaceFishingZone>Deve essere posizionato su acque basse contenenti pesci.</CannotPlaceFishingZone>
   
   <!-- EN: {TRAP_indefinite} was triggered. -->
-  <MessageTrapSprung>{TRAP_labelShort} è stato attivato.</MessageTrapSprung>
+  <MessageTrapSprung>Trappola scattata: {TRAP_labelShort}.</MessageTrapSprung>
 
   <!-- EN: {0} is ready to launch again. -->
-  <GravshipReadyToLaunch>{0} è pronto per essere lanciato di nuovo.</GravshipReadyToLaunch>
+  <GravshipReadyToLaunch>{0} è di nuovo pronta al lancio.</GravshipReadyToLaunch>
 
   <!-- EN: An orbital scanner has found a signal and is locating its origin -->
   <MessageOrbitalSignalDetected>Uno scanner orbitale ha rilevato un segnale e ne sta localizzando l’origine.</MessageOrbitalSignalDetected>

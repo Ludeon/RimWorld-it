@@ -95,12 +95,12 @@
   <NamerLandmark_Archipelago.rulePack.rulesStrings>
     <li>r_name(p=0.2)->isola [narrative_name]</li>
     <li>terrain_word(p=4)->isole</li>
-    <li>terrain_word(p=3)->isolotti</li>
+    <li>terrain_word(p=3)->isole minori</li>
     <li>terrain_word(p=3)->arcipelago</li>
     <li>terrain_word->scogliera</li>
     <li>terrain_word->rocce</li>
     <li>terrain_word->isolotti</li>
-    <li>terrain_word->punti</li>
+    <li>terrain_word->punte</li>
     <li>terrain_word->catena</li>
   </NamerLandmark_Archipelago.rulePack.rulesStrings>
   
@@ -331,7 +331,7 @@
   -->
   <NamerLandmark_Iceberg.rulePack.rulesStrings>
     <li>terrain_word(p=2)->iceberg</li>
-    <li>terrain_word->berga</li>
+    <li>terrain_word->blocco di ghiaccio</li>
   </NamerLandmark_Iceberg.rulePack.rulesStrings>
   
   <!-- EN:
@@ -352,10 +352,10 @@
     <li>fallen->infested</li>
   -->
   <NamerLandmark_InfestedSettlement.rulePack.rulesStrings>
-    <li>r_name(p=18)->[caduta] [nome_città_gen]</li>
-    <li>r_name(p=18)->alveare di [nome_città_gen]</li>
-    <li>fallen->caduto</li>
-    <li>fallen->infestato</li>
+    <li>r_name(p=18)->[townname_wordgen] [fallen]</li>
+    <li>r_name(p=18)->alveare di [townname_wordgen]</li>
+    <li>fallen->caduta</li>
+    <li>fallen->infestata</li>
   </NamerLandmark_InfestedSettlement.rulePack.rulesStrings>
   
   <!-- EN:
@@ -474,7 +474,7 @@
     <li>terrain_word->town</li>
   -->
   <NamerLandmark_Ruins.rulePack.rulesStrings>
-    <li>r_name(p=0.4)->[ruin_adjective] [narrative_name]</li>
+    <li>r_name(p=0.4)->[narrative_name] [ruin_adjective]</li>
     <li>r_name(p=0.2)->la [story_result] di [NamePerson]</li>
     <li>ruin_adjective->in rovina</li>
     <li>ruin_adjective->fatiscente</li>
@@ -514,21 +514,21 @@
     <li>r_name(p=0.05)->La [terrain_word]</li>
     <li>r_name(p=0.05)->L'[terrain_word_vowel]</li>
     <li>terrain_word(p=3)->cicatrice</li>
-    <li>terrain_word->faglia</li>
+    <li>terrain_word->fenditura</li>
     <li>terrain_word->spaccatura</li>
     <li>terrain_word->ferita</li>
-    <li>terrain_word->colpa</li>
+    <li>terrain_word->faglia</li>
     <li>terrain_word_vowel->urlo</li>
     <li>mistake->errore</li>
     <li>mistake->follia</li>
     <li>mistake->illusione</li>
     <li>mistake->difetto</li>
     <li>large->grande</li>
-    <li>large->grandioso</li>
+    <li>large->grandiosa</li>
     <li>dread->temibile</li>
     <li>dread->lugubre</li>
     <li>dread->infame</li>
-    <li>dread->oscuro</li>
+    <li>dread->oscura</li>
   </NamerLandmark_TerraformingScar.rulePack.rulesStrings>
   
   <!-- EN:

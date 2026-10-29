@@ -31,12 +31,12 @@
   <OrbitalDebris.rulePack.rulesStrings>
     <li>tale_noun->una tempesta di micrometeoriti spazza sopra [CommunityAny_def] di [PAWN_nameDef]</li>
     <li>tale_noun->frammenti di micrometeoriti ricoprono [CommunityAny_def] di [PAWN_nameDef]</li>
-    <li>image->una cascata di micrometeoriti scintillanti di scintille [Color_FemPlurial] [airborne_circumstance]</li>
+    <li>image->una cascata di micrometeoriti che brillano di scintille color [Color] [airborne_circumstance]</li>
     <li>image->una dispersione di micrometeoriti luccicanti [airborne_circumstance]</li>
-    <li>image->una pioggia di scintille [Color_FemPlurial] di micrometeoriti fiammeggianti [airborne_circumstance]</li>
+    <li>image->una pioggia di scintille color [Color] di micrometeoriti fiammeggianti [airborne_circumstance]</li>
     <li>airborne_circumstance->attraversando il cielo a tutta velocità</li>
     <li>airborne_circumstance->precipitandosi in un vortice di luce</li>
-    <li>airborne_circumstance->si dissolvono in polvere scintillante man mano che cadono</li>
+    <li>airborne_circumstance->dissolvendosi in polvere scintillante mentre cadono</li>
     <li>image->un raggruppamento di segni d'impatto fumanti, [ground_circumstance]</li>
     <li>image->un frammento [Color] carbonizzato, [ground_circumstance]</li>
     <li>image->una dispersione di piccoli ciottoli [Color], [ground_circumstance]</li>
@@ -46,13 +46,13 @@
     <li>ground_circumstance->sparsi attraverso il paesaggio</li>
     <li>ground_circumstance->costellato in mezzo a un campo di piccoli crateri</li>
     <li>desc_sentence->[PAWN_nameDef] guarda la pioggia con ammirazione.</li>
-    <li>desc_sentence->[PAWN_nameDef] alza gli occhi, meravigli{PAWN_gender ? o : ata : o(a)}.</li>
+    <li>desc_sentence->[PAWN_nameDef] alza gli occhi, meravigliat{PAWN_gender ? o : a : o(a)}.</li>
     <li>desc_sentence->[PAWN_nameDef] è sorpres{PAWN_gender ? o : a : o(a)} dal flusso incessante.</li>
     <li>desc_sentence->[Quantity_adjphrase] sagome emergono da un [TerrainFeature] vicino per mettersi al riparo.</li>
     <li>desc_sentence->[Quantity_adjphrase] sagome emergono da una [TerrainFeature_Feminine] vicina per mettersi al riparo.</li>
     <li>desc_sentence->[Quantity_adjphrase] comparse si precipitano a mettere al sicuro i propri beni.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [Animal_Plurial] si agitano in tutte le direzioni, cercando riparo.</li>
-    <li>desc_sentence->[Quantity_adjphrase] [Animal_FemPlurial] si agitano in tutte le direzioni, cercando riparo.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [AnimalPlural] si agitano in tutte le direzioni, cercando riparo.</li>
+    <li>desc_sentence->[Quantity_adjphrase] [AnimalPlural] corrono qua e là in tutte le direzioni, cercando riparo.</li>
     <li>desc_sentence->Lo spazio è carico di un potere strano.</li>
   </OrbitalDebris.rulePack.rulesStrings>
   

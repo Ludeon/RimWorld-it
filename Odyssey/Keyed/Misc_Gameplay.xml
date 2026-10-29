@@ -115,13 +115,13 @@
   <!-- EN: View range -->
   <ViewRange>Mostra raggio</ViewRange>
   <!-- EN: View the gravship’s current range on the world map. -->
-  <ViewRangeDesc>Mostra il raggio attuale del vascello gravitazionale sulla mappa del mondo.</ViewRangeDesc>
+  <ViewRangeDesc>Mostra il raggio attuale della nave gravitazionale sulla mappa del mondo.</ViewRangeDesc>
 
   <!-- Map generation -->
   <!-- EN: Landmark -->
   <Landmark>Punto di riferimento</Landmark>
   <!-- EN: {ANIMALKIND_label} habitat -->
-  <AnimalHabitat>habitat dei {ANIMALKIND_labelPlural}</AnimalHabitat>
+  <AnimalHabitat>habitat: {ANIMALKIND_labelPlural}</AnimalHabitat>
   <!-- EN: {0} grove -->
   <PlantGrove>boscaglia di {0}</PlantGrove>
   <!-- EN: {0} -->
@@ -135,7 +135,7 @@
   <!-- EN: Cave entrance -->
   <CaveEntranceLetter>Ingresso della grotta</CaveEntranceLetter>
   <!-- EN: The gravcore energy signature is coming from a nearby cave network. The entrance is guarded by insect hives.\n\nExplore the cave network to find the gravcore. -->
-  <CaveEntranceLetterText>La firma energetica del nucleo a gravitoni proviene da una rete di grotte vicina. L’ingresso è sorvegliato da alveari di insetti.\n\nEsplora la rete di grotte per trovare il cuore a gravitoni.</CaveEntranceLetterText>
+  <CaveEntranceLetterText>La firma energetica del nucleo a gravitoni proviene da una rete di grotte vicina. L’ingresso è sorvegliato da alveari di insetti.\n\nEsplora la rete di grotte per trovare il nucleo a gravitoni.</CaveEntranceLetterText>
   <!-- EN: Insect ambush -->
   <InsectAmbushLetter>Agguato di insetti</InsectAmbushLetter>
   <!-- EN: Insects are tunneling up from underneath the ground. Be prepared! -->
@@ -157,7 +157,7 @@
   <!-- EN: Dying from vacuum exposure -->
   <DyingBecauseExposedToVacuum>Muore per esposizione al vuoto</DyingBecauseExposedToVacuum>
   <!-- EN: Vacstone with traces of {RESOURCE_label} -->
-  <TracesOfPreciousResource>Vacolite con tracce di {RESOURCE_label}</TracesOfPreciousResource>
+  <TracesOfPreciousResource>Vaccolite con tracce di {RESOURCE_label}</TracesOfPreciousResource>
   <!-- EN: Requires signal jammer -->
   <TransportPodDestinationRequiresSignalJammer>Richiede un disturbatore di segnale</TransportPodDestinationRequiresSignalJammer>
   <!-- EN: cannot function in vacuum. -->
@@ -167,7 +167,7 @@
   
   <!-- Ruins -->
   <!-- EN: Hack to open. -->
-  <HackableDoorLocked>Hackerare per aprire.</HackableDoorLocked>
+  <HackableDoorLocked>Viola per aprire.</HackableDoorLocked>
   
   <!-- Fishing -->
   <!-- EN: Fish -->
@@ -233,23 +233,23 @@
   
   <!-- Outfit Stand -->
   <!-- EN: equip outfit -->
-  <SwapOutfit>indossare l'outfit</SwapOutfit>
+  <SwapOutfit>indossare il vestiario</SwapOutfit>
   <!-- EN: equip outfit... -->
-  <SwapOutfitGizmo>indossare l'outfit...</SwapOutfitGizmo>
+  <SwapOutfitGizmo>indossare il vestiario...</SwapOutfitGizmo>
   <!-- EN: Order a colonist to wear all apparel on the stand. The colonist will place any unequipped clothing back on the stand. -->
   <SwapOutfitDesc>Ordina a un colono di indossare tutti i vestiti sul supporto. Il colono rimetterà sul supporto qualsiasi indumento non indossato.</SwapOutfitDesc>
   <!-- EN: cannot equip outfit -->
-  <CannotSwapOutfit>impossibile indossare l'outfit</CannotSwapOutfit>
+  <CannotSwapOutfit>impossibile indossare il vestiario</CannotSwapOutfit>
   <!-- EN: outfit stand is empty -->
-  <OutfitStandEmpty>il porta-abiti è vuoto</OutfitStandEmpty>
+  <OutfitStandEmpty>l’appendiabiti è vuoto</OutfitStandEmpty>
   <!-- EN: Remove this from the outfit stand. -->
-  <EjectApparelTooltip>Rimuovi questo dal porta-abiti.</EjectApparelTooltip>
+  <EjectApparelTooltip>Rimuovi questo dall’appendiabiti.</EjectApparelTooltip>
   
   <!-- Orbital mechanoid platform -->
   <!-- EN: Ancient grav engine -->
   <LetterAncientGravEngineDiscoveredLabel>Antico motore gravitazionale</LetterAncientGravEngineDiscoveredLabel>
   <!-- EN: You've discovered an ancient grav engine. Destroy it to obtain a gravcore. -->
-  <LetterAncientGravEngineDiscovered>Hai scoperto un antico motore gravitazionale. Distruggilo per ottenere un gravcore.</LetterAncientGravEngineDiscovered>
+  <LetterAncientGravEngineDiscovered>Hai scoperto un antico motore gravitazionale. Distruggilo per ottenere un nucleo a gravitoni.</LetterAncientGravEngineDiscovered>
 
   <!-- EN: Gravship -->
   <PlayerPawnsArriveMethod_Gravship>Astronave gravitazionale</PlayerPawnsArriveMethod_Gravship>
@@ -291,12 +291,12 @@
   <OrbitalScannerLocating>Localizzazione del segnale orbitale</OrbitalScannerLocating>
 
   <!-- EN: Traits -->
-  <WeaponTraits>Caratteristiche dell'arma</WeaponTraits>
+  <WeaponTraits>Tratti</WeaponTraits>
   <!-- EN: Unique weapon -->
   <UniqueWeapon>Arma unica</UniqueWeapon>
 
   <!-- EN: Reforming a caravan will abandon your gravship. Are you sure you want to continue?\n\nTo leave with your gravship, select the gravship's pilot console, then select 'launch'. -->
-  <ConfirmLoseGravship>Riformare una carovana comporterà l'abbandono del tuo vascello gravitazionale. Sei sicuro di voler continuare?\n\nPer partire con il tuo vascello gravitazionale, seleziona la console di pilotaggio del vascello e poi seleziona "lancia".</ConfirmLoseGravship>
+  <ConfirmLoseGravship>Riformare una carovana comporterà l'abbandono della tua nave gravitazionale. Sei sicuro di voler continuare?\n\nPer partire con la tua nave gravitazionale, seleziona la console di pilotaggio della nave e poi seleziona "lancia".</ConfirmLoseGravship>
   <!-- EN: Reforming a caravan will abandon your shuttle. Are you sure you want to continue?\n\nTo leave with your shuttle, select the shuttle, then select 'launch'. -->
   <ConfirmLoseShuttle>Riformare una carovana comporterà l'abbandono della tua navetta. Sei sicuro di voler continuare?\n\nPer partire con la tua navetta, seleziona la navetta e poi seleziona "lancia".</ConfirmLoseShuttle>
 
@@ -308,7 +308,7 @@
   <!-- EN: Your orbital scanner has detected -->
   <QuestDiscoveredFromOrbitalScanner>Il tuo scanner orbitale ha rilevato</QuestDiscoveredFromOrbitalScanner>
   <!-- EN: {HACKER_nameDef} hacked an uplink and discovered -->
-  <QuestDiscoveredFromUplink>{HACKER_nameDef} ha violato un uplink e ha scoperto</QuestDiscoveredFromUplink>
+  <QuestDiscoveredFromUplink>{HACKER_nameDef} ha violato un ponte radio e ha scoperto</QuestDiscoveredFromUplink>
 
   <!-- Special Trainables -->
   <!-- EN: Attack -->

@@ -3,7 +3,7 @@
 
   <!-- Grav engine/substructrues -->
   <!-- EN: Are you sure you want to launch?\n\nYour current map, as well as anything not on gravship substructure, will be permanently lost. The launch process is destructive, meaning you won't be able to return. Build a grav anchor to prevent this map from being destroyed. -->
-  <ConfirmGravEngineLaunch>Sei sicuro di voler procedere al lancio?\n\nLa tua mappa attuale, così come tutto ciò che non si trova sulla sottostruttura del vascello gravitazionale, andrà perso in modo permanente. Il processo di lancio è distruttivo, il che significa che non potrai tornare indietro. Costruisci un'ancora gravitazionale per evitare che questa mappa venga distrutta.</ConfirmGravEngineLaunch>
+  <ConfirmGravEngineLaunch>Sei sicuro di voler procedere al lancio?\n\nLa tua mappa attuale, così come tutto ciò che non si trova sulla sottostruttura della nave gravitazionale, andrà perso in modo permanente. Il processo di lancio è distruttivo, il che significa che non potrai tornare indietro. Costruisci un'ancora gravitazionale per evitare che questa mappa venga distrutta.</ConfirmGravEngineLaunch>
   <!-- EN: Warning -->
   <GravEngineWarning>Avviso</GravEngineWarning>
   <!-- EN: The following people will be left behind -->
@@ -13,7 +13,7 @@
   <!-- EN: The following people and animals from another faction will be taken with you. This will upset their faction, potentially turning them hostile -->
   <PawnsKidnappedOnGravship>Le seguenti persone e animali di un’altra fazione verranno portati con te. Ciò farà infuriare la loro fazione, che potrebbe diventare ostile.</PawnsKidnappedOnGravship>
   <!-- EN: The following buildings are not fully on the gravship and will be left behind -->
-  <BuildingsWillBeLeftBehind>I seguenti edifici non si trovano interamente sul vascello gravitazionale e saranno lasciati indietro</BuildingsWillBeLeftBehind>
+  <BuildingsWillBeLeftBehind>I seguenti edifici non si trovano interamente sulla nave gravitazionale e saranno lasciati indietro</BuildingsWillBeLeftBehind>
   <!-- EN: Some substructure has invalid placement and will be left behind -->
   <SubstructureWillBeLeftBehind>Alcune sottostrutture hanno un posizionamento non valido e saranno lasciate indietro</SubstructureWillBeLeftBehind>
   <!-- EN: Disconnected from grav engine -->
@@ -24,27 +24,27 @@
   <SubstructureOutsideFootprint>Fuori portata</SubstructureOutsideFootprint>
 
   <!-- EN: {0} has high hopes for your new gravship and wants to christen it with a good name. What should your gravship be called? -->
-  <NamePlayerGravshipMessage>{0} ripone grandi speranze nel tuo nuovo vascello gravitazionale e vuole battezzarlo con un bel nome. Come dovrebbe chiamarsi?</NamePlayerGravshipMessage>
+  <NamePlayerGravshipMessage>{0} ripone grandi speranze nella tua nuova nave gravitazionale e vuole battezzarla con un bel nome. Come dovrebbe chiamarsi?</NamePlayerGravshipMessage>
   <!-- EN: The gravship is now known as {0}. -->
-  <PlayerGravshipGainsName>Il vascello gravitazionale è ora conosciuto come {0}.</PlayerGravshipGainsName>
+  <PlayerGravshipGainsName>La nave gravitazionale è ora conosciuta come {0}.</PlayerGravshipGainsName>
   <!-- EN: That name isn't valid. -->
   <PlayerGravshipNameIsInvalid>Quel nome non è valido.</PlayerGravshipNameIsInvalid>
 
   <!-- EN: Force visitors to leave -->
   <GravshipForceVisitorsToLeaveLabel>Costringi i visitatori ad andarsene</GravshipForceVisitorsToLeaveLabel>
   <!-- EN: Wait for all visitors to leave the gravship before launching. This won’t affect enemies, prisoners, or downed visitors. -->
-  <GravshipForceVisitorsToLeaveTooltip>Attendi che tutti i visitatori lascino il vascello gravitazionale prima del lancio. Questo non influenzerà nemici, prigionieri o visitatori a terra.</GravshipForceVisitorsToLeaveTooltip>
+  <GravshipForceVisitorsToLeaveTooltip>Attendi che tutti i visitatori lascino la nave gravitazionale prima del lancio. Questo non influenzerà nemici, prigionieri o visitatori a terra.</GravshipForceVisitorsToLeaveTooltip>
   <!-- EN: Board colony animals -->
   <GravshipBoardColonyAnimalsLabel>Fai salire gli animali della colonia</GravshipBoardColonyAnimalsLabel>
   <!-- EN: Order all colony animals to board the gravship. The gravship won’t launch until they are aboard. -->
-  <GravshipBoardColonyAnimalsTooltip>Ordina a tutti gli animali della colonia di salire sul vascello gravitazionale. Il vascello non partirà finché non saranno a bordo.</GravshipBoardColonyAnimalsTooltip>
+  <GravshipBoardColonyAnimalsTooltip>Ordina a tutti gli animali della colonia di salire sulla nave gravitazionale. La nave non partirà finché non saranno a bordo.</GravshipBoardColonyAnimalsTooltip>
   <!-- EN: Board colony mechanoids -->
   <GravshipBoardColonyMechsLabel>Fai salire i meccanoidi della colonia</GravshipBoardColonyMechsLabel>
   <!-- EN: Order all colony mechanoids to board the gravship. The gravship won’t launch until they are aboard. -->
-  <GravshipBoardColonyMechsTooltip>Ordina a tutti i meccanoidi della colonia di salire sul vascello gravitazionale. Il vascello non partirà finché non saranno a bordo.</GravshipBoardColonyMechsTooltip>
+  <GravshipBoardColonyMechsTooltip>Ordina a tutti i meccanoidi della colonia di salire sulla nave gravitazionale. La nave non partirà finché non saranno a bordo.</GravshipBoardColonyMechsTooltip>
 
   <!-- EN: {0} are hostile. If you land here they will attack you. -->
-  <ConfirmLandOnHostileFactionBase>{0} è ostile. Se atterri qui ti attaccheranno.</ConfirmLandOnHostileFactionBase>
+  <ConfirmLandOnHostileFactionBase>{0} è ostile. Se atterri qui, ti attaccherà.</ConfirmLandOnHostileFactionBase>
   <!-- EN: Landing here will be seen as an aggressive act by {0}. They will become hostile and attack. -->
   <ConfirmLandOnNeutralFactionBase>Atterrare qui sarà considerato un atto ostile da {0}. Diventeranno ostili e attaccheranno.</ConfirmLandOnNeutralFactionBase>
 
@@ -52,9 +52,9 @@
   <ConfirmLand>Atterrare comunque qui?</ConfirmLand>
 
   <!-- EN: Orbital locations are dangerous. Make sure you're prepared:\n - Equip your colonists with vacsuits or other advanced armors.\n - Plan your return trip. Living in orbit for extended periods is extremely challenging. -->
-  <OrbitalWarning>Le posizioni orbitali sono pericolose. Assicurati di essere preparato:\n – Equipaggia i tuoi coloni con tute pressurizzate o altre armature avanzate.\n – Pianifica il viaggio di ritorno. Vivere in orbita per lunghi periodi è estremamente difficile.</OrbitalWarning>
+  <OrbitalWarning>Le posizioni orbitali sono pericolose. Assicurati di essere preparato:\n – Equipaggia i tuoi coloni con tute spaziali o altre armature avanzate.\n – Pianifica il viaggio di ritorno. Vivere in orbita per lunghi periodi è estremamente difficile.</OrbitalWarning>
   <!-- EN: Prepare your gravship for orbit:\n- Use airtight walls and doors.\n- Ensure rooms are well heated and fully roofed.\n- Construct oxygen pumps. -->
-  <OrbitalWarning_Gravship>Prepara il tuo vascello gravitazionale per l’orbita:\n- Usa muri e porte ermetici.\n- Assicurati che le stanze siano ben riscaldate e completamente coperte.\n- Costruisci pompe per l’ossigeno.</OrbitalWarning_Gravship>
+  <OrbitalWarning_Gravship>Prepara la tua nave gravitazionale per l’orbita:\n- Usa muri e porte ermetici.\n- Assicurati che le stanze siano ben riscaldate e completamente coperte.\n- Costruisci pompe per l’ossigeno.</OrbitalWarning_Gravship>
   <!-- EN: Warning -->
   <OrbitalWarning_Warning>Avviso</OrbitalWarning_Warning>
   <!-- EN: Some exterior walls or doors are not airtight. -->
@@ -73,8 +73,8 @@
   <!-- EN: Caravan is immobile due to shuttle -->
   <CaravanMovementSpeedShuttle>La carovana è immobile a causa della navetta</CaravanMovementSpeedShuttle>
   <!-- EN: Refuel {0}x chemfuel -->
-  <RefuelShuttleCount>Rifornisci {0}x carburante chimico</RefuelShuttleCount>
+  <RefuelShuttleCount>Rifornisci {0}x chemfuel</RefuelShuttleCount>
   <!-- EN: Zoom range (gravship) {0} -->
-  <ZoomRangeGravshipCutscene>Livello di zoom (vascello gravitazionale) {0}</ZoomRangeGravshipCutscene>
+  <ZoomRangeGravshipCutscene>Livello di zoom (nave gravitazionale) {0}</ZoomRangeGravshipCutscene>
 
 </LanguageData>
